@@ -1,0 +1,37 @@
+{
+    "read": {
+        "_state.consumed_mah": [
+            [
+                "_params__pack_capacity",
+                "constrain_int16_pwm_full",
+                "pwm_source_get_pwm_us",
+                "constrain_int16_pwm_empty",
+                "constrain_int16_pulse_width",
+                "float_pwm_full",
+                "pwm_empty",
+                "float_pwm_empty"
+            ],
+            3
+        ],
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.healthy": [
+            [
+                "_state_last_time_micros",
+                "micros",
+                "250000u"
+            ],
+            1
+        ]
+    }
+}

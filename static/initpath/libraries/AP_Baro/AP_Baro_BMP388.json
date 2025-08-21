@@ -1,0 +1,141 @@
+{
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "status": [
+            [
+                "buf"
+            ],
+            0
+        ]
+    },
+    "scale_calibration_data": {
+        "calib.par_p3": [
+            [
+                "calib_p_nvm_par_p3"
+            ],
+            0
+        ],
+        "calib.par_p8": [
+            [
+                "calib_p_nvm_par_p8"
+            ],
+            0
+        ],
+        "calib.par_p10": [
+            [
+                "calib_p_nvm_par_p10"
+            ],
+            0
+        ],
+        "calib.par_p2": [
+            [
+                "calib_p_nvm_par_p2"
+            ],
+            0
+        ],
+        "calib.par_p7": [
+            [
+                "calib_p_nvm_par_p7"
+            ],
+            0
+        ],
+        "calib.par_p9": [
+            [
+                "calib_p_nvm_par_p9"
+            ],
+            0
+        ],
+        "calib.par_p4": [
+            [
+                "calib_p_nvm_par_p4"
+            ],
+            0
+        ],
+        "calib.par_t3": [
+            [
+                "calib_t_nvm_par_t3"
+            ],
+            0
+        ],
+        "calib.par_p5": [
+            [
+                "calib_p_nvm_par_p5"
+            ],
+            0
+        ],
+        "calib.par_p11": [
+            [
+                "calib_p_nvm_par_p11"
+            ],
+            0
+        ],
+        "calib.par_t1": [
+            [
+                "calib_t_nvm_par_t1"
+            ],
+            0
+        ],
+        "calib.par_p6": [
+            [
+                "calib_p_nvm_par_p6"
+            ],
+            0
+        ],
+        "calib.par_t2": [
+            [
+                "calib_t_nvm_par_t2"
+            ],
+            0
+        ],
+        "calib.par_p1": [
+            [
+                "calib_p_nvm_par_p1"
+            ],
+            0
+        ]
+    },
+    "update_temperature": {
+        "temperature": [
+            [
+                "sq_partial1",
+                "calib_par_t3",
+                "calib_par_t2",
+                "calib_par_t1",
+                "data"
+            ],
+            2
+        ]
+    },
+    "update_pressure": {
+        "pressure_sum": [
+            [
+                "calib_par_p7",
+                "calib_par_p9",
+                "powf_temperature",
+                "temperature",
+                "calib_par_p10",
+                "calib_par_p3",
+                "powf_temperature",
+                "calib_par_p8",
+                "calib_par_p2",
+                "temperature",
+                "powf_data",
+                "calib_par_p6",
+                "calib_par_p4",
+                "calib_par_p11",
+                "powf_data",
+                "calib_par_p1",
+                "data",
+                "calib_par_p5"
+            ],
+            7
+        ]
+    }
+}

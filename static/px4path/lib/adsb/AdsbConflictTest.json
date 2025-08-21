@@ -1,0 +1,18 @@
+{
+    "set_traffic_buffer": {
+        "_traffic_buffer": [
+            [
+                "traffic_buffer"
+            ],
+            0
+        ]
+    },
+    "set_conflict": {
+        "_conflict_detected": [
+            [
+                "conflict_detected"
+            ],
+            0
+        ]
+    }
+}

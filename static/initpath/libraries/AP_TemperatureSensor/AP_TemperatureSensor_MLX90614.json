@@ -1,0 +1,26 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move__params_bus",
+                "move__params_bus_address",
+                "move_hal_i2c_mgr_get_device"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "tmp": [
+            [
+                "kelvin_to_c__crude_value"
+            ],
+            0
+        ],
+        "_crude_value": [
+            [
+                "read_data_mlx90614_ta"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Run": {
+        "total_current_a": [
+            [
+                "_esc_current",
+                "i",
+                "count_set_bits_esc_status_esc_online_flags",
+                "esc_status_esc"
+            ],
+            1
+        ],
+        "average_temperature_c": [
+            [
+                "i",
+                "count_set_bits_esc_status_esc_online_flags",
+                "esc_status_esc",
+                "_esc_temperature"
+            ],
+            1
+        ],
+        "average_voltage_v": [
+            [
+                "_esc_voltage",
+                "i",
+                "count_set_bits_esc_status_esc_online_flags",
+                "esc_status_esc"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "esc_battery"
+            ],
+            0
+        ]
+    }
+}

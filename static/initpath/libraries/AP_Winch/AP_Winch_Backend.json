@@ -1,0 +1,49 @@
+{
+    "init": {
+        "rc_input": [
+            [
+                "rc_find_channel_for_option_winch_control"
+            ],
+            0
+        ]
+    },
+    "read_pilot_desired_rate": {
+        "config.control_mode": [
+            [
+                "rate_from_rc"
+            ],
+            0
+        ],
+        "rc_input": [
+            [
+                "rc_find_channel_for_option_winch_control"
+            ],
+            0
+        ],
+        "config.rate_desired": [
+            [
+                "rc_input_norm_input_dz",
+                "config_rate_max"
+            ],
+            0
+        ],
+        "previous_radio_in": [
+            [
+                "rc_input_get_radio_in",
+                "rc_input_get_radio_in"
+            ],
+            1
+        ]
+    },
+    "get_rate_limited_by_accel": {
+        "rate_limited": [
+            [
+                "rate",
+                "previous_rate",
+                "config_rate_max",
+                "dt"
+            ],
+            1
+        ]
+    }
+}

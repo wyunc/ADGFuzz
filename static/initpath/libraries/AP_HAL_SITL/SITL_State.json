@@ -1,0 +1,396 @@
+{
+    "_set_param_default": {
+        "vp": [
+            [
+                "find_pdup",
+                "find_var_type"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strchr_pdup"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "strtof_nullptr",
+                "strtof_p"
+            ],
+            0
+        ],
+        "pdup": [
+            [
+                "strdup_parm"
+            ],
+            0
+        ]
+    },
+    "_sitl_setup": {
+        "rcin_port": [
+            [
+                "_rcin_port"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "gimbal": [
+            [
+                "solo_gimbal",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "_parent_pid": [
+            [
+                "getppid"
+            ],
+            0
+        ],
+        "irlock_port": [
+            [
+                "_irlock_port"
+            ],
+            0
+        ]
+    },
+    "wait_clock": {
+        "queue_length": [
+            [
+                "uart_get_system_outqueue_length"
+            ],
+            0
+        ],
+        "speedup": [
+            [
+                "sitl_model_get_speedup"
+            ],
+            0
+        ],
+        "current_thread": [
+            [
+                "from_hal_scheduler_get_current_thread_name"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "uart_driver",
+                "hal_serial"
+            ],
+            0
+        ]
+    },
+    "_output_to_flightgear": {
+        "fdm.phi": [
+            [
+                "radians_sfdm_roll_deg"
+            ],
+            0
+        ],
+        "fdm.version": [
+            [
+                "0x18"
+            ],
+            0
+        ],
+        "fdm.agl": [
+            [
+                "sfdm_altitude"
+            ],
+            0
+        ],
+        "fdm.psi": [
+            [
+                "radians_sfdm_yaw_deg"
+            ],
+            0
+        ],
+        "fdm.altitude": [
+            [
+                "sfdm_altitude"
+            ],
+            0
+        ],
+        "fdm.latitude": [
+            [
+                "sfdm_latitude",
+                "deg_to_rad_double"
+            ],
+            0
+        ],
+        "sfdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "fdm.longitude": [
+            [
+                "deg_to_rad_double",
+                "sfdm_longitude"
+            ],
+            0
+        ],
+        "fdm.vcas": [
+            [
+                "sfdm_velocity_air_bf_length"
+            ],
+            0
+        ],
+        "fdm.theta": [
+            [
+                "radians_sfdm_pitch_deg"
+            ],
+            0
+        ]
+    },
+    "_simulator_servos": {
+        "input.wind.dir_z": [
+            [
+                "_sitl_wind_dir_z_active"
+            ],
+            1
+        ],
+        "wind_start_delay_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "engine_fail": [
+            [
+                "_sitl",
+                "_sitl_engine_fail_get"
+            ],
+            0
+        ],
+        "wind_direction_active": [
+            [
+                "wrap_180__sitl_wind_direction_active",
+                "wrap_180__sitl_wind_direction",
+                "calc_lowpass_alpha_dt_tc",
+                "calc_lowpass_alpha_dt_dt"
+            ],
+            1
+        ],
+        "tc": [
+            [
+                "_sitl_wind_change_tc"
+            ],
+            0
+        ],
+        "last_wind_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "throttle": [
+            [
+                "input_servos",
+                "running_motors",
+                "input_servos",
+                "bit",
+                "fabsf_input_servos",
+                "running_motors"
+            ],
+            4
+        ],
+        "input.wind.turbulence": [
+            [
+                "_sitl",
+                "_sitl_wind_turbulance"
+            ],
+            0
+        ],
+        "input.wind.direction": [
+            [
+                "_sitl_wind_direction_active"
+            ],
+            1
+        ],
+        "last_update_usec": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "wind_dir_z_active": [
+            [
+                "_sitl_wind_dir_z_active",
+                "calc_lowpass_alpha_dt_tc",
+                "calc_lowpass_alpha_dt_dt",
+                "_sitl_wind_dir_z"
+            ],
+            1
+        ],
+        "engine_mul": [
+            [
+                "_sitl",
+                "_sitl_engine_mul_get"
+            ],
+            0
+        ],
+        "input.wind.speed": [
+            [
+                "_sitl_wind_speed_active",
+                "baro_get_altitude",
+                "sqrtf_altitude",
+                "sqrtf__sitl_wind_type_alt",
+                "_sitl_wind_type_coef",
+                "_sitl_wind_type_alt"
+            ],
+            2
+        ],
+        "dt": [
+            [
+                "micros",
+                "_0e"
+            ],
+            2
+        ],
+        "wind_speed_active": [
+            [
+                "_sitl_wind_speed",
+                "calc_lowpass_alpha_dt_tc",
+                "calc_lowpass_alpha_dt_dt",
+                "_sitl_wind_speed_active"
+            ],
+            1
+        ],
+        "mask": [
+            [
+                "_sitl_state_motor_mask"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_scheduler": [
+            [
+                "from_hal_scheduler"
+            ],
+            0
+        ]
+    },
+    "set_height_agl": {
+        "_terrain": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "state.height_agl": [
+            [
+                "_sitl_state_altitude",
+                "terrain_height_amsl",
+                "_sitl_state_altitude"
+            ],
+            1
+        ],
+        "location.lng": [
+            [
+                "_0e7",
+                "_sitl_state_longitude"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "_0e7",
+                "_sitl_state_latitude"
+            ],
+            0
+        ]
+    },
+    "multicast_state_open": {
+        "ret": [
+            [
+                "fcntl_servo_in_fd",
+                "sockaddr",
+                "connect_struct",
+                "fcntl_fd_cloexec",
+                "bind_sockaddr",
+                "bind_servo_in_fd",
+                "fcntl_f_setfd",
+                "connect_sockaddr",
+                "sizeof_sockaddr",
+                "bind_struct",
+                "fcntl_mc_out_fd",
+                "connect_mc_out_fd"
+            ],
+            0
+        ],
+        "sockaddr.sin_port": [
+            [
+                "htons_sitl_servo_port",
+                "htons_sitl_mcast_port",
+                "htons__instance"
+            ],
+            0
+        ],
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "inet_addr_sitl_mcast_ip",
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "servo_in_fd": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram"
+            ],
+            0
+        ],
+        "mc_out_fd": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram"
+            ],
+            0
+        ]
+    },
+    "multicast_state_send": {
+        "sfdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "multicast_servo_update": {
+        "mask": [
+            [
+                "1u",
+                "i"
+            ],
+            0
+        ],
+        "can_mask": [
+            [
+                "uint32_t__sitl_can_servo_mask_get"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,216 @@
+{
+    "calculate_forces": {
+        "elevator": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "accel_body.x": [
+            [
+                "vel_body_x",
+                "accel_body_x",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "balloon": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ],
+        "vel_body": [
+            [
+                "dcm_transposed",
+                "velocity_ef"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "get_force_rudder",
+                "get_force_aileron",
+                "get_force_elevator",
+                "model_mass"
+            ],
+            1
+        ],
+        "rot_accel": [
+            [
+                "get_torque_elevator",
+                "get_torque_aileron",
+                "get_torque_force",
+                "get_torque_rudder"
+            ],
+            0
+        ],
+        "balloon_position": [
+            [
+                "frame_time_us",
+                "vector3f_balloon_rate",
+                "vector3f_wind_ef_x",
+                "vector3f_wind_ef_z",
+                "vector3f_balloon",
+                "vector3f_wind_ef_y",
+                "float",
+                "_0e"
+            ],
+            1
+        ],
+        "carriage_state": [
+            [
+                "released",
+                "pre_release"
+            ],
+            0
+        ],
+        "aileron": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "betarad": [
+            [
+                "model_beta_rad_max",
+                "atan2f_velocity_air_bf_x",
+                "atan2f_velocity_air_bf_y"
+            ],
+            0
+        ],
+        "alpharad": [
+            [
+                "model_alpha_rad_max",
+                "atan2f_velocity_air_bf_x",
+                "atan2f_velocity_air_bf_z"
+            ],
+            0
+        ],
+        "balloon_cut": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ],
+        "accel_body.z": [
+            [
+                "gravity_mss",
+                "accel_body_z"
+            ],
+            0
+        ],
+        "height_AMSL": [
+            [
+                "home_alt",
+                "position_z",
+                "float"
+            ],
+            0
+        ],
+        "accel_body.y": [
+            [
+                "accel_body_y",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "accel_body": [
+            [
+                "dcm_transposed",
+                "vector3f_gravity_mss"
+            ],
+            0
+        ]
+    },
+    "update_balloon": {
+        "tension_moment_vector_bf": [
+            [
+                "tether_pos_bf",
+                "dcm_transposed",
+                "relative_position_normalized",
+                "model_tether_length",
+                "relative_position_length",
+                "relative_position_normalized",
+                "balloon_velocity",
+                "dcm",
+                "tether_pos_bf",
+                "velocity_ef",
+                "gyro",
+                "model_mass",
+                "zeta",
+                "m_2pi",
+                "model_tether_pogo_freq",
+                "model_mass",
+                "sq_omega"
+            ],
+            11
+        ],
+        "force": [
+            [
+                "vector3f_model_mass",
+                "dcm_transposed",
+                "air_density",
+                "vector3f_velocity_air_bf_y",
+                "model_sref",
+                "fabsf_velocity_air_bf_z",
+                "vector3f_fabsf",
+                "velocity_air_bf_z",
+                "vector3f_gravity_mss",
+                "dcm_transposed",
+                "relative_position_normalized",
+                "model_tether_length",
+                "relative_position_length",
+                "relative_position_normalized",
+                "balloon_velocity",
+                "dcm",
+                "tether_pos_bf",
+                "velocity_ef",
+                "gyro",
+                "model_mass",
+                "zeta",
+                "m_2pi",
+                "model_tether_pogo_freq",
+                "model_mass",
+                "sq_omega"
+            ],
+            12
+        ],
+        "rot_accel": [
+            [
+                "air_density",
+                "gyro",
+                "vector3f_tension_moment_vector_bf_z",
+                "vector3f_tension_moment_vector_bf_y",
+                "vector3f_model_ixx",
+                "vector3f_tension_moment_vector_bf_x",
+                "vector3f_model_iyy",
+                "vector3f_model_izz"
+            ],
+            1
+        ],
+        "carriage_state": [
+            [
+                "waiting_for_release"
+            ],
+            0
+        ],
+        "relative_position": [
+            [
+                "position_tofloat",
+                "balloon_position",
+                "tether_pos_bf",
+                "dcm"
+            ],
+            0
+        ]
+    }
+}

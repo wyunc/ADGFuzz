@@ -1,0 +1,15 @@
+{
+    "motor_test_output": {
+        "test_result": [
+            [
+                "g2_motors_output_test_pwm_motor_test_instance",
+                "g2_motors_output_test_pwm_motor_test_throttle_value",
+                "g2_motors_output_test_pct_motor_test_throttle_value",
+                "g2_motors_output_test_pct_motor_test_instance",
+                "g2_motors_output_test_pct_channel_throttle_get_control_in",
+                "g2_motors_output_test_pct_channel_steer_norm_input_dz"
+            ],
+            0
+        ]
+    }
+}

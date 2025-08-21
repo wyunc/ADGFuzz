@@ -1,0 +1,90 @@
+{
+    "init": {
+        "rssi_analog_source": [
+            [
+                "hal_analogin_channel_analog_input_none"
+            ],
+            0
+        ]
+    },
+    "read_receiver_rssi": {
+        "rssi": [
+            [
+                "get_receiver_rssi"
+            ],
+            0
+        ]
+    },
+    "read_pin_rssi": {
+        "current_analog_voltage": [
+            [
+                "rssi_analog_source_voltage_average"
+            ],
+            0
+        ]
+    },
+    "read_channel_rssi": {
+        "c": [
+            [
+                "rc_channel_rssi_channel"
+            ],
+            0
+        ],
+        "rssi_channel_value": [
+            [
+                "c_get_radio_in"
+            ],
+            0
+        ],
+        "channel_rssi": [
+            [
+                "scale_and_constrain_float_rssi_rssi_channel_low_pwm_value",
+                "scale_and_constrain_float_rssi_rssi_channel_high_pwm_value",
+                "scale_and_constrain_float_rssi_rssi_channel_value"
+            ],
+            0
+        ]
+    },
+    "read_pwm_pin_rssi": {
+        "pwm_state.rssi_value": [
+            [
+                "scale_and_constrain_float_rssi_pwm_us",
+                "scale_and_constrain_float_rssi_rssi_channel_low_pwm_value",
+                "scale_and_constrain_float_rssi_rssi_channel_high_pwm_value"
+            ],
+            0
+        ],
+        "pwm_state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pwm_us": [
+            [
+                "pwm_state_pwm_source_get_pwm_us"
+            ],
+            0
+        ]
+    },
+    "scale_and_constrain_float_rssi": {
+        "rssi_value_scaled": [
+            [
+                "low_rssi_range",
+                "fabsf_low_rssi_range",
+                "high_rssi_range",
+                "fabsf_current_rssi_value",
+                "fabsf_low_rssi_range",
+                "fabsf_high_rssi_range"
+            ],
+            2
+        ],
+        "range_is_inverted": [
+            [
+                "low_rssi_range",
+                "high_rssi_range"
+            ],
+            0
+        ]
+    }
+}

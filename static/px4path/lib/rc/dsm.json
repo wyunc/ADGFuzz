@@ -1,0 +1,216 @@
+{
+    "dsm_decode_channel": {
+        "servo_position": [
+            [
+                "raw",
+                "mask_2048_sxpos",
+                "0x01ff",
+                "mask_1024_sxpos"
+            ],
+            0
+        ],
+        "MASK_1024_SXPOS": [
+            [
+                "0x03ff"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "raw",
+                "0x0f",
+                "raw",
+                "0x03",
+                "channel_unused",
+                "mask_1024_chanid"
+            ],
+            1
+        ],
+        "value": [
+            [
+                "offset",
+                "roundf_servo_position"
+            ],
+            0
+        ],
+        "MASK_1024_CHANID": [
+            [
+                "0x_fc00"
+            ],
+            0
+        ],
+        "MASK_2048_SXPOS": [
+            [
+                "0x07ff"
+            ],
+            0
+        ],
+        "phase": [
+            [
+                "raw",
+                "0x01"
+            ],
+            0
+        ]
+    },
+    "dsm_guess_format": {
+        "dsm_chan_count": [
+            [
+                "i",
+                "i"
+            ],
+            2
+        ],
+        "raw": [
+            [
+                "dsm_frame",
+                "i"
+            ],
+            1
+        ]
+    },
+    "dsm_config": {
+        "dsm_last_rx_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "dsm_proto_init": {
+        "dsm_decode_state": [
+            [
+                "dsm_decode_state_desync"
+            ],
+            0
+        ]
+    },
+    "dsm_init": {
+        "dsm_fd": [
+            [
+                "open_device",
+                "open_o_rdwr",
+                "open_o_nonblock"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "dsm_config_dsm_fd"
+            ],
+            0
+        ]
+    },
+    "dsm_decode": {
+        "dsm_11_bit": [
+            [
+                "dsm_channel_shift"
+            ],
+            0
+        ],
+        ".value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        ".last_seen": [
+            [
+                "frame_time"
+            ],
+            0
+        ],
+        "dbm": [
+            [
+                "dsm_frame",
+                "int8_t"
+            ],
+            0
+        ],
+        "dsm_last_rx_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "dsm_last_frame_time": [
+            [
+                "frame_time"
+            ],
+            0
+        ],
+        "raw": [
+            [
+                "dsm_frame",
+                "i"
+            ],
+            1
+        ],
+        "rssi_percent": [
+            [
+                "spek_dbm_to_percent_dbm"
+            ],
+            0
+        ]
+    },
+    "dsm_input": {
+        "bytes": [
+            [
+                "dsm_buf"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "n_bytes": [
+            [
+                "read_sizeof",
+                "read_dsm_buf",
+                "read_fd",
+                "sizeof_dsm_buf"
+            ],
+            1
+        ]
+    },
+    "dsm_parse": {
+        "dsm_last_rx_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "frame_drops": [
+            [
+                "dsm_frame_drops"
+            ],
+            0
+        ],
+        "dsm_decode_state": [
+            [
+                "dsm_decode_state_desync",
+                "dsm_decode_state_sync"
+            ],
+            0
+        ],
+        "channel_data_available": [
+            [
+                "dsm_decode_dsm_chan_count",
+                "dsm_decode_dsm_11_bit",
+                "dsm_decode_rssi_percent",
+                "dsm_decode_now"
+            ],
+            0
+        ],
+        "num_values": [
+            [
+                "dsm_max_channel_count",
+                "dsm_chan_count"
+            ],
+            2
+        ]
+    }
+}

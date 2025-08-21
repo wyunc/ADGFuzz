@@ -1,0 +1,68 @@
+{
+    "set_loiter_position": {
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_idle"
+            ],
+            0
+        ],
+        "on_loiter": [
+            [
+                "pos_sp_triplet_current_loiter_radius",
+                "d_current",
+                "_navigator_get_acceptance_radius"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_idle"
+            ],
+            0
+        ]
+    },
+    "reposition": {
+        "previous.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "previous.yaw": [
+            [
+                "_navigator_get_local_position_heading"
+            ],
+            0
+        ],
+        "rep": [
+            [
+                "_navigator_get_reposition_triplet"
+            ],
+            0
+        ],
+        "previous.alt": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "previous.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ]
+    }
+}

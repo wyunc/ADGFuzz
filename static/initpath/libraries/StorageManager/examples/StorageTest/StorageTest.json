@@ -1,0 +1,29 @@
+{
+    "setup": {
+        "storage": [
+            [
+                "all_storage",
+                "type"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "storage": [
+            [
+                "all_storage",
+                "get_random"
+            ],
+            1
+        ],
+        "length": [
+            [
+                "get_random",
+                "get_random",
+                "storage_size",
+                "storage_size"
+            ],
+            1
+        ]
+    }
+}

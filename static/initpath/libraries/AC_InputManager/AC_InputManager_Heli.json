@@ -1,0 +1,38 @@
+{
+    "get_pilot_desired_collective": {
+        "collective_out": [
+            [
+                "_acro_col_expo",
+                "float",
+                "control_in",
+                "float",
+                "control_in",
+                "control_in",
+                "_loop_rate",
+                "float",
+                "_heli_stab_col_max",
+                "_heli_stab_col_low",
+                "_heli_stab_col_high",
+                "_heli_stab_col_low",
+                "_heli_stab_col_min",
+                "_heli_stab_col_high",
+                "slope_range",
+                "_heli_stab_col_low",
+                "_heli_stab_col_min",
+                "_heli_stab_col_high",
+                "control_in",
+                "float"
+            ],
+            10
+        ]
+    },
+    "parameter_check": {
+        "check": [
+            [
+                "stab_checks",
+                "i"
+            ],
+            0
+        ]
+    }
+}

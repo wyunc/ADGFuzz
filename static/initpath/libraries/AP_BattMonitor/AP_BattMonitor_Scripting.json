@@ -1,0 +1,82 @@
+{
+    "capacity_remaining_pct": {
+        "percentage": [
+            [
+                "internal_state_capacity_remaining_pct"
+            ],
+            0
+        ]
+    },
+    "get_cycle_count": {
+        "cycles": [
+            [
+                "internal_state_cycle_count"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.consumed_mah": [
+            [
+                "internal_state_consumed_mah"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "internal_state_temperature"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "internal_state_consumed_wh"
+            ],
+            0
+        ],
+        "_state.healthy": [
+            [
+                "internal_state_healthy"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "last_update_us"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "internal_state_voltage"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "internal_state_current_amps"
+            ],
+            0
+        ]
+    },
+    "handle_scripting": {
+        "dt_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "internal_state": [
+            [
+                "battmon_state"
+            ],
+            0
+        ],
+        "last_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

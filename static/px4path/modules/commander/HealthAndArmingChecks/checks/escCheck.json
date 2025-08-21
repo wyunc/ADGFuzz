@@ -1,0 +1,57 @@
+{
+    "checkAndReport": {
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "esc_telemetry_timeout": [
+            [
+                "700_ms"
+            ],
+            0
+        ]
+    },
+    "checkEscStatus": {
+        "fault_reason_index": [
+            [
+                "fault_index",
+                "static_cast",
+                "esc_fault_reason_t"
+            ],
+            0
+        ],
+        "action": [
+            [
+                "land",
+                "reduce_throttle",
+                "none"
+            ],
+            0
+        ],
+        "required_modes": [
+            [
+                "none",
+                "all",
+                "_param_escs_checks_required_get"
+            ],
+            0
+        ],
+        "motor_index": [
+            [
+                "_actuator_function",
+                "esc_status_esc",
+                "actuator_function_motor1",
+                "index"
+            ],
+            0
+        ],
+        "online_bitmask": [
+            [
+                "esc_status_esc_count"
+            ],
+            0
+        ]
+    }
+}

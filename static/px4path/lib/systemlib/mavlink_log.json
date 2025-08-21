@@ -1,0 +1,24 @@
+{
+    "mavlink_vasprintf": {
+        "log_msg.severity": [
+            [
+                "severity"
+            ],
+            0
+        ],
+        "mavlink_log_pub": [
+            [
+                "orb_advertise_mavlink_log",
+                "orb_advertise_orb_id",
+                "log_msg"
+            ],
+            0
+        ],
+        "log_msg.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

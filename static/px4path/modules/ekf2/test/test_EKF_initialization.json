@@ -1,0 +1,68 @@
+{
+    "initializedOrienationIsMatchingGroundTruth": {
+        "quat_est": [
+            [
+                "_ekf_get_quaternion"
+            ],
+            0
+        ]
+    },
+    "quaternionVarianceBigEnoughAfterOrientationInitialization": {
+        "quat_variance": [
+            [
+                "_ekf_get_rot_var_body"
+            ],
+            0
+        ]
+    },
+    "velocityAndPositionCloseToZero": {
+        "pos": [
+            [
+                "_ekf_get_position"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "_ekf_get_velocity"
+            ],
+            0
+        ]
+    },
+    "velocityVarianceBigEnoughAfterOrientationInitialization": {
+        "vel_var": [
+            [
+                "_ekf_get_velocity_variance"
+            ],
+            0
+        ]
+    },
+    "positionVarianceBigEnoughAfterOrientationInitialization": {
+        "pos_var": [
+            [
+                "_ekf_get_position_variance"
+            ],
+            0
+        ]
+    },
+    "learningCorrectAccelBias": {
+        "accel_bias_var": [
+            [
+                "_ekf_get_accel_bias_variance"
+            ],
+            0
+        ],
+        "accel_bias": [
+            [
+                "_ekf_get_accel_bias"
+            ],
+            0
+        ],
+        "R_to_earth": [
+            [
+                "dcmf__ekf_get_quaternion"
+            ],
+            0
+        ]
+    }
+}

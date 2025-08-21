@@ -1,0 +1,44 @@
+{
+    "init": {
+        "_actuators_pub": [
+            [
+                "actuators",
+                "model_name",
+                "_node_advertise"
+            ],
+            1
+        ],
+        "motor_speed_topic": [
+            [
+                "model_name"
+            ],
+            0
+        ]
+    },
+    "motorSpeedCallback": {
+        ".esc_rpm": [
+            [
+                "actuators_velocity_i"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "esc_status.esc_count": [
+            [
+                "actuators_velocity_size"
+            ],
+            0
+        ],
+        "esc_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

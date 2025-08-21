@@ -1,0 +1,56 @@
+{
+    "init": {
+        "bus_sem": [
+            [
+                "_bus_get_semaphore"
+            ],
+            0
+        ]
+    },
+    "_make_adc_sensitivity_adjustment": {
+        "field": [
+            [
+                "adc_16bit_resolution"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "raw_field": [
+            [
+                "vector3f_regs_val",
+                "ak09916_milligauss_scale"
+            ],
+            0
+        ]
+    },
+    "_check_id": {
+        "_devtype": [
+            [
+                "devtype_ak09916",
+                "devtype_ak09918",
+                "devtype_ak09915"
+            ],
+            0
+        ]
+    },
+    "block_read": {
+        "r": [
+            [
+                "_slave_passthrough_read_size",
+                "_slave_passthrough_read_buf",
+                "_slave_passthrough_read_reg"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "_slave_read_buf",
+                "size",
+                "static_cast",
+                "int"
+            ],
+            0
+        ]
+    }
+}

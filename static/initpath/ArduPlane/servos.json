@@ -1,0 +1,388 @@
+{
+    "throttle_slew_limit": {
+        "slewrate": [
+            [
+                "aparm_throttle_slewrate",
+                "g_takeoff_throttle_slewrate",
+                "landing_get_throttle_slewrate"
+            ],
+            0
+        ],
+        "do_throttle_slew": [
+            [
+                "quadplane_in_vtol_mode",
+                "quadplane_in_assisted_flight",
+                "control_mode_does_auto_throttle"
+            ],
+            0
+        ]
+    },
+    "suppress_throttle": {
+        "launch_duration_ms": [
+            [
+                "g_takeoff_throttle_delay",
+                "int32_t"
+            ],
+            0
+        ],
+        "auto_state.baro_takeoff_alt": [
+            [
+                "barometer_get_altitude"
+            ],
+            0
+        ],
+        "gps_movement": [
+            [
+                "gps_status",
+                "gps_ground_speed",
+                "gps_ok_fix_2d"
+            ],
+            0
+        ]
+    },
+    "channel_function_mixer": {
+        "out1": [
+            [
+                "g_mixing_offset",
+                "get_output_scaled_func1_in",
+                "g_mixing_offset",
+                "get_output_scaled_func2_in",
+                "g_mixing_gain"
+            ],
+            2
+        ],
+        "out2": [
+            [
+                "g_mixing_offset",
+                "get_output_scaled_func1_in",
+                "g_mixing_offset",
+                "get_output_scaled_func2_in",
+                "g_mixing_gain"
+            ],
+            2
+        ]
+    },
+    "flaperon_update": {
+        "flaperon_right": [
+            [
+                "get_slew_limited_output_scaled_k_flap_auto",
+                "get_output_scaled_k_aileron"
+            ],
+            2
+        ],
+        "flaperon_left": [
+            [
+                "get_slew_limited_output_scaled_k_flap_auto",
+                "get_output_scaled_k_aileron"
+            ],
+            2
+        ]
+    },
+    "dspoiler_update": {
+        "dspoiler_inner_left": [
+            [
+                "get_output_scaled_k_elevon_left",
+                "get_output_scaled_k_aileron",
+                "g_dspoiler_rud_rate",
+                "get_output_scaled_k_rudder",
+                "g2_crow_flap_aileron_matching_get",
+                "get_slew_limited_output_scaled_k_flap_auto",
+                "g2_crow_flap_weight_inner_get"
+            ],
+            9
+        ],
+        "progressive_crow": [
+            [
+                "g2_crow_flap_options_get",
+                "crow_mode",
+                "progressive"
+            ],
+            1
+        ],
+        "dspoiler_outer_right": [
+            [
+                "get_output_scaled_k_elevon_right",
+                "get_output_scaled_k_aileron",
+                "g2_crow_flap_weight_outer_get",
+                "g_dspoiler_rud_rate",
+                "get_output_scaled_k_rudder",
+                "get_slew_limited_output_scaled_k_flap_auto"
+            ],
+            7
+        ],
+        "flying_wing": [
+            [
+                "g2_crow_flap_options_get",
+                "flyingwing"
+            ],
+            1
+        ],
+        "dspoiler_outer_left": [
+            [
+                "get_output_scaled_k_elevon_left",
+                "get_output_scaled_k_aileron",
+                "g2_crow_flap_weight_outer_get",
+                "g_dspoiler_rud_rate",
+                "get_output_scaled_k_rudder",
+                "get_slew_limited_output_scaled_k_flap_auto"
+            ],
+            7
+        ],
+        "full_span_aileron": [
+            [
+                "g2_crow_flap_options_get",
+                "fullspan"
+            ],
+            1
+        ],
+        "dspoiler_inner_right": [
+            [
+                "get_output_scaled_k_elevon_right",
+                "get_output_scaled_k_aileron",
+                "g_dspoiler_rud_rate",
+                "get_output_scaled_k_rudder",
+                "g2_crow_flap_aileron_matching_get",
+                "get_slew_limited_output_scaled_k_flap_auto",
+                "g2_crow_flap_weight_inner_get"
+            ],
+            9
+        ]
+    },
+    "airbrake_update": {
+        "airbrake_pc": [
+            [
+                "channel_airbrake_percent_input",
+                "get_output_scaled_k_throttle"
+            ],
+            2
+        ],
+        "throttle_min": [
+            [
+                "aparm_throttle_min_get"
+            ],
+            0
+        ]
+    },
+    "wiggle_servos": {
+        "servo_valueAileronRudder": [
+            [
+                "wiggle_stage"
+            ],
+            0
+        ],
+        "servo_valueElevator": [
+            [
+                "wiggle_stage"
+            ],
+            0
+        ]
+    },
+    "throttle_watt_limiter": {
+        "throttle_watt_limit_timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "max_throttle": [
+            [
+                "constrain_int16_throttle_watt_limit_max",
+                "constrain_int16_max_throttle"
+            ],
+            0
+        ],
+        "min_throttle": [
+            [
+                "constrain_int16_min_throttle",
+                "constrain_int16_throttle_watt_limit_min"
+            ],
+            0
+        ]
+    },
+    "apply_throttle_limits": {
+        "min_throttle": [
+            [
+                "aparm_throttle_cruise_get",
+                "takeoff_state_throttle_lim_min",
+                "aparm_takeoff_throttle_min_get",
+                "takeoff_state_throttle_lim_max",
+                "aparm_takeoff_throttle_max_get",
+                "aparm_throttle_max_get",
+                "aparm_throttle_min_get"
+            ],
+            1
+        ],
+        "flight_stage": [
+            [
+                "abort_landing"
+            ],
+            0
+        ]
+    },
+    "set_throttle": {
+        "throttle": [
+            [
+                "g2_fwd_batt_cmp_apply_throttle_get_output_scaled",
+                "g2_fwd_batt_cmp_apply_throttle_k_throttle"
+            ],
+            0
+        ],
+        "limited_throttle": [
+            [
+                "apply_throttle_limits_k_throttle",
+                "apply_throttle_limits_get_output_scaled"
+            ],
+            0
+        ]
+    },
+    "set_takeoff_expected": {
+        "throttle_up_detected": [
+            [
+                "aparm_throttle_cruise",
+                "get_output_scaled_k_throttle"
+            ],
+            1
+        ],
+        "throw_detected": [
+            [
+                "ahrs_get_accel_x",
+                "ahrs_sin_pitch",
+                "gravity_mss",
+                "gravity_mss"
+            ],
+            2
+        ]
+    },
+    "set_servos_flaps": {
+        "auto_flap_percent": [
+            [
+                "g_takeoff_flap_percent",
+                "g_flap_2_percent",
+                "g2_soaring_controller_get_thermalling_flap",
+                "channel_flap_percent_input",
+                "g_flap_1_percent",
+                "landing_get_flap_percent"
+            ],
+            1
+        ],
+        "flapSpeedSource": [
+            [
+                "target_airspeed_cm",
+                "aparm_throttle_cruise"
+            ],
+            0
+        ]
+    },
+    "set_landing_gear": {
+        "gear.last_flight_stage": [
+            [
+                "flight_stage"
+            ],
+            0
+        ]
+    },
+    "servos_twin_engine_mix": {
+        "throttle_right": [
+            [
+                "get_output_scaled_k_throttle",
+                "get_output_scaled_k_rudder",
+                "servo_max",
+                "float_plane_g2_rudd_dt_gain"
+            ],
+            3
+        ],
+        "throttle_left": [
+            [
+                "get_output_scaled_k_throttle",
+                "get_output_scaled_k_rudder",
+                "servo_max",
+                "float_plane_g2_rudd_dt_gain"
+            ],
+            3
+        ]
+    },
+    "force_flare": {
+        "tilt": [
+            [
+                "servo_max"
+            ],
+            0
+        ]
+    },
+    "set_servos": {
+        "base_throttle": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ],
+        "override_pct": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ]
+    },
+    "landing_neutral_control_surface_servos": {
+        "chan": [
+            [
+                "srv_channel_i"
+            ],
+            0
+        ]
+    },
+    "servos_auto_trim": {
+        "auto_trim.last_trim_save": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dspoiler_inner_left": [
+            [
+                "roll_i",
+                "pitch_i"
+            ],
+            1
+        ],
+        "pitch_I": [
+            [
+                "pitch_controller_get_pid_info_i"
+            ],
+            0
+        ],
+        "full_span_aileron": [
+            [
+                "fullspan",
+                "g2_crow_flap_options_get"
+            ],
+            1
+        ],
+        "flying_wing": [
+            [
+                "g2_crow_flap_options_get",
+                "flyingwing"
+            ],
+            1
+        ],
+        "roll_I": [
+            [
+                "roll_controller_get_pid_info_i"
+            ],
+            0
+        ],
+        "dspoiler_inner_right": [
+            [
+                "roll_i",
+                "pitch_i"
+            ],
+            1
+        ],
+        "auto_trim.last_trim_check": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

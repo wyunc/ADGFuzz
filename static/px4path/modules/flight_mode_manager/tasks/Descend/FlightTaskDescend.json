@@ -1,0 +1,36 @@
+{
+    "activate": {
+        "_gear.landing_gear": [
+            [
+                "gear_down"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

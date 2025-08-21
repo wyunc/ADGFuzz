@@ -1,0 +1,68 @@
+{
+    "init": {
+        "addr.can_family": [
+            [
+                "af_can"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "socket_sock_raw",
+                "socket_pf_can",
+                "socket_can_raw",
+                "socket_sock_nonblock"
+            ],
+            0
+        ],
+        "addr.can_ifindex": [
+            [
+                "ifr_ifr_ifindex"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ioctl_fd",
+                "bind_sockaddr",
+                "ioctl_ifr",
+                "sizeof_addr",
+                "addr",
+                "bind_fd",
+                "bind_struct",
+                "ioctl_siocgifindex"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "transmit_frame.can_dlc": [
+            [
+                "frame_dlc"
+            ],
+            0
+        ],
+        "transmit_frame.can_id": [
+            [
+                "frame_id"
+            ],
+            0
+        ],
+        "data_length": [
+            [
+                "dlc_to_data_length_frame_dlc"
+            ],
+            0
+        ]
+    },
+    "receive": {
+        "ret": [
+            [
+                "read_fd",
+                "read_receive_frame",
+                "read_sizeof"
+            ],
+            0
+        ]
+    }
+}

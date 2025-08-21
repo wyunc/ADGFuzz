@@ -1,0 +1,97 @@
+{
+    "decode_control": {
+        "failsafe": [
+            [
+                "frame_data",
+                "byte_input_control_len",
+                "flags_failsafe_bit"
+            ],
+            1
+        ],
+        "scaled_rssi": [
+            [
+                "frame_data",
+                "byte_input_control_len"
+            ],
+            1
+        ]
+    },
+    "decode_downlink": {
+        "uart": [
+            [
+                "get_uart"
+            ],
+            0
+        ],
+        "tdelay": [
+            [
+                "micros64",
+                "uart_receive_time_constraint_us"
+            ],
+            2
+        ],
+        "telem_data.packet.frame": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "telem_data.packet.data": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "telem_data.packet.appid": [
+            [
+                "0x00"
+            ],
+            0
+        ]
+    },
+    "process_pulse": {
+        "w0": [
+            [
+                "width_s0"
+            ],
+            0
+        ],
+        "saved_width": [
+            [
+                "width_s1"
+            ],
+            0
+        ],
+        "w1": [
+            [
+                "width_s0",
+                "width_s1"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "byte_input.last_byte_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "frame": [
+            [
+                "const",
+                "f_port2_frame",
+                "byte_input_buf"
+            ],
+            0
+        ],
+        "have_frame_gap": [
+            [
+                "timestamp_us",
+                "2000u",
+                "byte_input_last_byte_us"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "new_input": {
+        "last_rc_input_count": [
+            [
+                "rc_input_count"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "rc_input_count"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "n": [
+            [
+                "max_rcin_channels"
+            ],
+            0
+        ]
+    },
+    "add_input": {
+        "_num_channels": [
+            [
+                "max_rcin_channels"
+            ],
+            1
+        ],
+        "rx_link_quality": [
+            [
+                "_rx_link_quality"
+            ],
+            0
+        ],
+        "rssi": [
+            [
+                "_rssi"
+            ],
+            0
+        ]
+    },
+    "decode_11bit_channels": {
+        "data": [
+            [
+                "sizeof_channels"
+            ],
+            0
+        ],
+        "channels": [
+            [
+                "const",
+                "channels11bit_8chan"
+            ],
+            0
+        ]
+    },
+    "log_data": {
+        "len": [
+            [
+                "sizeof_u32"
+            ],
+            0
+        ]
+    }
+}

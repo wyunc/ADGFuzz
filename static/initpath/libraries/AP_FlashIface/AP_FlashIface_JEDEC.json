@@ -1,0 +1,475 @@
+{
+    "init": {
+        "_dev_list_idx": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "hal_wspi_get_device_i",
+                "wspi_get_device_supported_devices",
+                "nullptr",
+                "wspi_get_device__name",
+                "hal_wspi_get_device__name",
+                "hal_wspi_get_device_supported_devices",
+                "wspi_get_device_i"
+            ],
+            0
+        ]
+    },
+    "reset_device": {
+        "cmd.cmd": [
+            [
+                "cmd_reset_memory",
+                "cmd_reset_enable"
+            ],
+            0
+        ],
+        "cmd.cfg": [
+            [
+                "cfg_cmd_mode_one_line"
+            ],
+            0
+        ]
+    },
+    "detect_device": {
+        "_desc.param_rev": [
+            [
+                "sfdp_hdr_param_rev_sfdp_header"
+            ],
+            0
+        ],
+        "cmd.cmd": [
+            [
+                "cmd_read_id",
+                "cmd_read_sfdp"
+            ],
+            0
+        ],
+        "_desc.entry_method": [
+            [
+                "xip_entry_method_2",
+                "xip_entry_method_1"
+            ],
+            0
+        ],
+        ".delay_ms": [
+            [
+                "i",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        "_desc.status_read_ins": [
+            [
+                "0x70",
+                "cmd_read_status_1"
+            ],
+            0
+        ],
+        "_desc.param_table_pointer": [
+            [
+                "sfdp_param_pointer_param_header"
+            ],
+            0
+        ],
+        "_desc.mass_erase_delay_ms": [
+            [
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        "_desc.fast_read_mode_clocks": [
+            [
+                "sfdp_get_bits_fast_read_dword",
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        "_desc.sector_size": [
+            [
+                "1ul",
+                "i",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        "_desc.write_enable_ins": [
+            [
+                "0x50",
+                "0x06"
+            ],
+            0
+        ],
+        "_desc.page_prog_timeout_us": [
+            [
+                "sfdp_get_bits_param_table",
+                "_desc_page_prog_delay_us"
+            ],
+            1
+        ],
+        "_desc.fast_read_dummy_cycles": [
+            [
+                "sfdp_get_bits_fast_read_dword",
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        "_desc.fast_read_ins": [
+            [
+                "sfdp_get_bits_fast_read_dword",
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        "_desc.sector_count": [
+            [
+                "_desc_flash_size",
+                "_desc_sector_size"
+            ],
+            0
+        ],
+        "_desc.wide_mode_enable": [
+            [
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        ".ins": [
+            [
+                "i",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        ".size": [
+            [
+                "1ul",
+                "i",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        "cmd.addr": [
+            [
+                "sizeof_uint32_t",
+                "_desc_param_table_pointer"
+            ],
+            0
+        ],
+        "_desc.flash_size": [
+            [
+                "max_supported_flash_size",
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        "_desc.mass_erase_timeout_ms": [
+            [
+                "_desc_mass_erase_delay_ms"
+            ],
+            0
+        ],
+        "_desc.page_prog_delay_us": [
+            [
+                "i",
+                "sfdp_get_bit_param_table",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        "_desc.page_size": [
+            [
+                "1ul",
+                "sfdp_get_bits_param_table"
+            ],
+            0
+        ],
+        ".timeout_ms": [
+            [
+                "_desc_erase_type",
+                "_delay_ms",
+                "i"
+            ],
+            0
+        ],
+        "_desc.param_table_len": [
+            [
+                "sfdp_param_dword_len_20ul",
+                "sfdp_param_dword_len_param_header"
+            ],
+            0
+        ],
+        "_desc.min_erase_size": [
+            [
+                "1ul",
+                "i",
+                "sfdp_get_bits_i",
+                "sfdp_get_bits_param_table"
+            ],
+            1
+        ],
+        "_desc.page_count": [
+            [
+                "_desc_flash_size",
+                "_desc_page_size"
+            ],
+            0
+        ]
+    },
+    "configure_device": {
+        "reg1": [
+            [
+                "reg2"
+            ],
+            0
+        ],
+        "_wide_spi_mode": [
+            [
+                "quad_spi",
+                "octo_spi"
+            ],
+            0
+        ]
+    },
+    "modify_reg": {
+        "reg_val": [
+            [
+                "mask",
+                "val"
+            ],
+            0
+        ]
+    },
+    "read_reg": {
+        "cmd.cmd": [
+            [
+                "read_ins"
+            ],
+            0
+        ]
+    },
+    "write_reg": {
+        "cmd.cmd": [
+            [
+                "write_ins"
+            ],
+            0
+        ]
+    },
+    "send_cmd": {
+        "cmd.cmd": [
+            [
+                "ins"
+            ],
+            0
+        ],
+        "cmd.cfg": [
+            [
+                "cfg_cmd_mode_one_line"
+            ],
+            0
+        ]
+    },
+    "start_mass_erase": {
+        "delay_ms": [
+            [
+                "_desc_mass_erase_delay_ms"
+            ],
+            0
+        ],
+        "cmd.cfg": [
+            [
+                "cfg_cmd_mode_one_line"
+            ],
+            0
+        ],
+        "cmd.cmd": [
+            [
+                "cmd_mass_erase"
+            ],
+            0
+        ],
+        "timeout_ms": [
+            [
+                "_desc_mass_erase_timeout_ms"
+            ],
+            0
+        ]
+    },
+    "start_sector_erase": {
+        "ret": [
+            [
+                "start_erase_offset__desc_sector_size",
+                "start_erase_offset_erasing",
+                "start_erase_offset_timeout_ms",
+                "start_erase_offset_sector",
+                "start_erase_offset_delay_ms"
+            ],
+            0
+        ]
+    },
+    "start_erase_offset": {
+        "timeout_ms": [
+            [
+                "i",
+                "_timeout_ms",
+                "_desc_erase_type"
+            ],
+            0
+        ],
+        "delay_ms": [
+            [
+                "i",
+                "_delay_ms",
+                "_desc_erase_type"
+            ],
+            0
+        ],
+        "cmd.addr": [
+            [
+                "offset"
+            ],
+            0
+        ],
+        "erasing": [
+            [
+                "size"
+            ],
+            1
+        ],
+        "cmd.cmd": [
+            [
+                "i",
+                "_ins",
+                "_desc_erase_type"
+            ],
+            1
+        ]
+    },
+    "verify_sector_erase": {
+        "offset": [
+            [
+                "sector",
+                "_desc_sector_size"
+            ],
+            0
+        ]
+    },
+    "start_program_page": {
+        "ret": [
+            [
+                "start_program_offset_delay_us",
+                "start_program_offset_programming",
+                "start_program_offset_data",
+                "start_program_offset_page",
+                "start_program_offset_timeout_us",
+                "start_program_offset__desc_sector_size",
+                "start_program_offset__desc_page_size"
+            ],
+            0
+        ]
+    },
+    "start_program_offset": {
+        "cmd.addr": [
+            [
+                "offset"
+            ],
+            0
+        ],
+        "cmd.cmd": [
+            [
+                "cmd_page_program"
+            ],
+            0
+        ],
+        "programming": [
+            [
+                "offset",
+                "_desc_page_size"
+            ],
+            1
+        ],
+        "timeout_us": [
+            [
+                "_desc_page_prog_timeout_us",
+                "offset",
+                "_desc_page_size",
+                "_desc_page_size"
+            ],
+            1
+        ],
+        "delay_us": [
+            [
+                "_desc_page_size",
+                "offset",
+                "_desc_page_size",
+                "_desc_page_prog_delay_us"
+            ],
+            1
+        ]
+    },
+    "read": {
+        "read_size": [
+            [
+                "offset",
+                "size",
+                "offset",
+                "max_read_size"
+            ],
+            1
+        ],
+        "cmd.addr": [
+            [
+                "offset"
+            ],
+            1
+        ],
+        "cmd.cmd": [
+            [
+                "_desc_fast_read_ins"
+            ],
+            0
+        ],
+        "cmd.dummy": [
+            [
+                "_desc_fast_read_dummy_cycles"
+            ],
+            0
+        ]
+    },
+    "start_xip_mode": {
+        "cmd.alt": [
+            [
+                "0x_f0"
+            ],
+            0
+        ],
+        "cmd.dummy": [
+            [
+                "_desc_fast_read_dummy_cycles"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "_dev_enter_xip_mode_addr"
+            ],
+            0
+        ],
+        "cmd.cmd": [
+            [
+                "_desc_fast_read_ins"
+            ],
+            0
+        ]
+    }
+}

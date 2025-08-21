@@ -1,0 +1,36 @@
+{
+    "checkAndReport": {
+        "is_sensor_ok": [
+            [
+                "is_valid",
+                "find_current_calibration_index_accel_data_device_id"
+            ],
+            1
+        ],
+        "exists": [
+            [
+                "_sensor_accel_sub",
+                "instance",
+                "_advertised"
+            ],
+            0
+        ],
+        "is_required": [
+            [
+                "instance",
+                "is_accel_required_instance"
+            ],
+            0
+        ]
+    },
+    "isAccelRequired": {
+        "device_id": [
+            [
+                "sensor_accel_device_id",
+                "static_cast",
+                "uint32_t"
+            ],
+            0
+        ]
+    }
+}

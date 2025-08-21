@@ -1,0 +1,96 @@
+{
+    "handle_update": {
+        "msg.sequence": [
+            [
+                "ulog_data_msg_sequence"
+            ],
+            0
+        ],
+        "msg.target_component": [
+            [
+                "_target_component"
+            ],
+            0
+        ],
+        "_last_sent_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_wait_for_ack_sequence": [
+            [
+                "ulog_data_msg_sequence"
+            ],
+            0
+        ],
+        "msg.first_message_offset": [
+            [
+                "ulog_data_first_message_offset"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_ulog_stream_sub_get_last_generation"
+            ],
+            0
+        ],
+        "_current_rate_factor": [
+            [
+                "_current_num_msgs",
+                "float",
+                "_max_rate_factor",
+                "_max_num_messages"
+            ],
+            0
+        ],
+        "ulog_data": [
+            [
+                "_ulog_stream_sub_get"
+            ],
+            0
+        ],
+        "msg.target_system": [
+            [
+                "_target_system"
+            ],
+            0
+        ],
+        "_next_rate_check": [
+            [
+                "_rate_calculation_delta_t",
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "msg.length": [
+            [
+                "ulog_data_length"
+            ],
+            0
+        ]
+    },
+    "stop": {
+        "_instance": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "publish_ack": {
+        "ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ack.msg_sequence": [
+            [
+                "sequence"
+            ],
+            0
+        ]
+    }
+}

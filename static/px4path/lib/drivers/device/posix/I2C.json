@@ -1,0 +1,79 @@
+{
+    "init": {
+        "ret": [
+            [
+                "px4_error",
+                "init",
+                "probe",
+                "enoent"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "open_o_rdwr",
+                "open_dev_path"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "packets.msgs": [
+            [
+                "msgv"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_error",
+                "px4_ok"
+            ],
+            0
+        ],
+        ".len": [
+            [
+                "recv_len",
+                "send_len"
+            ],
+            0
+        ],
+        "packets.nmsgs": [
+            [
+                "msgs"
+            ],
+            0
+        ],
+        ".addr": [
+            [
+                "get_device_address"
+            ],
+            0
+        ],
+        "ret_ioctl": [
+            [
+                "ioctl_unsigned",
+                "packets",
+                "ioctl__fd",
+                "ioctl_i2c_rdwr",
+                "ioctl_long"
+            ],
+            0
+        ],
+        ".flags": [
+            [
+                "i2c_m_rd"
+            ],
+            0
+        ],
+        ".buf": [
+            [
+                "uint8_t",
+                "send",
+                "recv",
+                "const_cast"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "init_realtime": {
+        "param": [
+            [
+                "apm_linux_main_priority",
+                "_sched_priority"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "n_threads": [
+            [
+                "array_size_sched_table"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "sched_table",
+                "i"
+            ],
+            0
+        ],
+        "_main_ctx": [
+            [
+                "pthread_self"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pthread_barrier_init__initialized_barrier",
+                "pthread_barrier_init_n_threads",
+                "pthread_barrier_init_nullptr"
+            ],
+            0
+        ]
+    },
+    "_debug_stack": {
+        "_last_stack_debug_msec": [
+            [
+                "millis64"
+            ],
+            1
+        ]
+    },
+    "microsleep": {
+        "errno": [
+            [
+                "eintr"
+            ],
+            0
+        ],
+        "ts.tv_nsec": [
+            [
+                "1000ul",
+                "usec"
+            ],
+            0
+        ]
+    },
+    "delay": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "1000ul",
+                "ms",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "register_timer_failsafe": {
+        "_failsafe": [
+            [
+                "failsafe"
+            ],
+            0
+        ]
+    },
+    "_wait_all_threads": {
+        "r": [
+            [
+                "pthread_barrier_wait__initialized_barrier"
+            ],
+            0
+        ]
+    },
+    "stop_clock": {
+        "_stopped_clock_usec": [
+            [
+                "time_usec"
+            ],
+            0
+        ]
+    },
+    "thread_create": {
+        "thread": [
+            [
+                "proc",
+                "task_t",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "thread_priority": [
+            [
+                "calculate_thread_priority_priority",
+                "calculate_thread_priority_base"
+            ],
+            0
+        ]
+    }
+}

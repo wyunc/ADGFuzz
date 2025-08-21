@@ -1,0 +1,39 @@
+{
+    "set_pin": {
+        "_pin": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "_last_update_timestamp": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "rc": [
+            [
+                "_adc_read_reports"
+            ],
+            0
+        ],
+        "_value": [
+            [
+                "reports",
+                "i",
+                "_data"
+            ],
+            0
+        ],
+        "source": [
+            [
+                "j",
+                "_channels"
+            ],
+            0
+        ]
+    }
+}

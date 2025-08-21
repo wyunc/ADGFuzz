@@ -1,0 +1,59 @@
+{
+    "get_item_as_mission_item": {
+        "ret_packet.command": [
+            [
+                "mav_cmd_nav_fence_circle_exclusion",
+                "mav_cmd_nav_fence_return_point",
+                "mav_cmd_nav_fence_circle_inclusion",
+                "mav_cmd_nav_fence_polygon_vertex_inclusion",
+                "mav_cmd_nav_fence_polygon_vertex_exclusion"
+            ],
+            1
+        ],
+        "ret_packet.x": [
+            [
+                "fenceitem_loc_x"
+            ],
+            0
+        ],
+        "ret_packet.param1": [
+            [
+                "fenceitem_vertex_count",
+                "fenceitem_radius"
+            ],
+            1
+        ],
+        "ret_packet.mission_type": [
+            [
+                "mav_mission_type_fence"
+            ],
+            0
+        ],
+        "num_stored_items": [
+            [
+                "fence_polyfence_num_stored_items"
+            ],
+            0
+        ],
+        "ret_packet.y": [
+            [
+                "fenceitem_loc_y"
+            ],
+            0
+        ]
+    },
+    "free_upload_resources": {
+        "_new_items": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_updated_mask": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

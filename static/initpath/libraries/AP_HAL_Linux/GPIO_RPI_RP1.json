@@ -1,0 +1,161 @@
+{
+    "openMemoryDevice": {
+        "_system_memory_device": [
+            [
+                "open_o_sync",
+                "open_path_dev_gpiomem",
+                "open_o_cloexec",
+                "open_o_rdwr"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_gpio": [
+            [
+                "get_memory_pointer_io_bank0_offset",
+                "get_memory_pointer_mem_size"
+            ],
+            0
+        ]
+    },
+    "set_direction": {
+        "offset": [
+            [
+                "clr_offset",
+                "output",
+                "rio_oe",
+                "set_offset",
+                "mode",
+                "sys_rio0_offset",
+                "reg_size"
+            ],
+            0
+        ]
+    },
+    "input_enable": {
+        "offset": [
+            [
+                "pads_gpio",
+                "set_offset",
+                "pin",
+                "pads_offset",
+                "reg_size",
+                "pads_bank0_offset"
+            ],
+            0
+        ]
+    },
+    "input_disable": {
+        "offset": [
+            [
+                "pads_bank0_offset",
+                "clr_offset",
+                "pin",
+                "pads_gpio",
+                "pads_offset",
+                "reg_size"
+            ],
+            0
+        ]
+    },
+    "output_enable": {
+        "offset": [
+            [
+                "pads_offset",
+                "pads_bank0_offset",
+                "reg_size",
+                "pin",
+                "clr_offset",
+                "pads_gpio"
+            ],
+            0
+        ]
+    },
+    "output_disable": {
+        "offset": [
+            [
+                "set_offset",
+                "reg_size",
+                "pin",
+                "pads_bank0_offset",
+                "pads_gpio",
+                "pads_offset"
+            ],
+            0
+        ]
+    },
+    "set_mode": {
+        "reg_val": [
+            [
+                "read_register_ctrl_offset"
+            ],
+            0
+        ],
+        "ctrl_offset": [
+            [
+                "reg_size",
+                "gpio_offset",
+                "gpio_ctrl",
+                "rw_offset",
+                "pin",
+                "io_bank0_offset"
+            ],
+            0
+        ],
+        "alt_value": [
+            [
+                "alt5",
+                "alt2",
+                "null",
+                "alt1",
+                "alt6",
+                "alt0",
+                "alt8",
+                "alt7",
+                "alt4",
+                "alt3"
+            ],
+            0
+        ]
+    },
+    "set_pull": {
+        "pads_offset": [
+            [
+                "reg_size",
+                "pads_gpio",
+                "rw_offset",
+                "pin",
+                "pads_bank0_offset"
+            ],
+            0
+        ],
+        "reg_val": [
+            [
+                "read_register_pads_offset"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "offset": [
+            [
+                "clr_offset",
+                "value",
+                "set_offset",
+                "rio_out",
+                "sys_rio0_offset",
+                "reg_size"
+            ],
+            1
+        ]
+    },
+    "toggle": {
+        "flag": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    }
+}

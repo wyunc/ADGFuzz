@@ -1,0 +1,38 @@
+{
+    "read_fifo_accel": {
+        "d": [
+            [
+                "i",
+                "data"
+            ],
+            0
+        ],
+        "temp_degc": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "gravity_mss"
+            ],
+            1
+        ]
+    },
+    "read_fifo_gyro": {
+        "d": [
+            [
+                "data",
+                "i"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "radians"
+            ],
+            1
+        ]
+    }
+}

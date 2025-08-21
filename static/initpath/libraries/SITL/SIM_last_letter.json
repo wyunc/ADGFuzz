@@ -1,0 +1,81 @@
+{
+    "start_last_letter": {
+        "child_pid": [
+            [
+                "fork"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "location.alt": [
+            [
+                "_0e2",
+                "pkt_altitude"
+            ],
+            0
+        ],
+        "velocity_ef": [
+            [
+                "vector3f_pkt_speed_e",
+                "vector3f_pkt_speed_d",
+                "vector3f_pkt_speed_n"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "location.lng": [
+            [
+                "_0e7",
+                "pkt_longitude"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_pkt_z_accel",
+                "vector3f_pkt_x_accel",
+                "vector3f_pkt_y_accel"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_pkt_pitch_rate",
+                "vector3f_pkt_roll_rate",
+                "vector3f_pkt_yaw_rate"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "pkt_timestamp_us"
+            ],
+            1
+        ],
+        "last_timestamp_us": [
+            [
+                "pkt_timestamp_us"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "_0e7",
+                "pkt_latitude"
+            ],
+            0
+        ]
+    }
+}

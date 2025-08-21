@@ -1,0 +1,43 @@
+{
+    "update_servobased": {
+        "demand": [
+            [
+                "gripper_pwm"
+            ],
+            0
+        ]
+    },
+    "update_from_demand": {
+        "reported_field_strength": [
+            [
+                "field_decay_rate",
+                "field_degauss_rate",
+                "field_strength_slew_rate",
+                "_0e",
+                "micros64"
+            ],
+            3
+        ],
+        "last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "last_report_us": [
+            [
+                "micros64"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "gripper_pwm": [
+            [
+                "input_servos",
+                "gripper_emp_servo_pin"
+            ],
+            0
+        ]
+    }
+}

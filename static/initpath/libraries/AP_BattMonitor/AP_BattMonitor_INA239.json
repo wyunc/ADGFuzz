@@ -1,0 +1,100 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_spi_get_device_ap_battery_ina239_spi_device"
+            ],
+            0
+        ]
+    },
+    "configure": {
+        "shunt_cal": [
+            [
+                "current_lsb",
+                "r_shunt_get",
+                "1e6"
+            ],
+            0
+        ],
+        "voltage_LSB": [
+            [
+                "_125e"
+            ],
+            0
+        ],
+        "current_LSB": [
+            [
+                "0x8000",
+                "max_amps_get"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.current_amps": [
+            [
+                "accumulate_count",
+                "accumulate_current_sum"
+            ],
+            0
+        ],
+        "_state.healthy": [
+            [
+                "accumulate_count"
+            ],
+            0
+        ],
+        "dt_us": [
+            [
+                "_state_last_time_micros",
+                "micros"
+            ],
+            1
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.voltage": [
+            [
+                "accumulate_count",
+                "accumulate_volt_sum"
+            ],
+            0
+        ]
+    },
+    "read_word": {
+        "data": [
+            [
+                "int16_t_uint16_t",
+                "int16_t_be16toh",
+                "int16_t_data"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "last_configure_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "accumulate.volt_sum": [
+            [
+                "voltage_lsb",
+                "bus_voltage"
+            ],
+            0
+        ],
+        "accumulate.current_sum": [
+            [
+                "current_lsb",
+                "current"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "wgsllh2ecef": {
+        "N": [
+            [
+                "sqrt_d",
+                "wgs84_a"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "sin_llh",
+                "wgs84_e"
+            ],
+            0
+        ]
+    },
+    "wgsecef2llh": {
+        "S": [
+            [
+                "z",
+                "s",
+                "b_n",
+                "f_n",
+                "d_n",
+                "c"
+            ],
+            0
+        ],
+        "A_n": [
+            [
+                "sqrt_s",
+                "sqrt_c"
+            ],
+            0
+        ],
+        "prev_C": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "wgs84_a",
+                "sqrt_ecef"
+            ],
+            1
+        ],
+        "prev_S": [
+            [
+                "s"
+            ],
+            0
+        ],
+        "B_n": [
+            [
+                "wgs84_e",
+                "double",
+                "z",
+                "s",
+                "a_n",
+                "c",
+                "sqrt_ecef"
+            ],
+            1
+        ],
+        "F_n": [
+            [
+                "a_n",
+                "wgs84_e",
+                "c",
+                "sqrt_ecef"
+            ],
+            1
+        ],
+        "C": [
+            [
+                "s",
+                "b_n",
+                "f_n",
+                "c",
+                "sqrt_wgs84_e",
+                "sqrt_ecef"
+            ],
+            2
+        ],
+        "D_n": [
+            [
+                "a_n",
+                "wgs84_e",
+                "z",
+                "s"
+            ],
+            0
+        ],
+        "Z": [
+            [
+                "wgs84_a",
+                "sqrt_wgs84_e",
+                "fabs_ecef"
+            ],
+            1
+        ]
+    }
+}

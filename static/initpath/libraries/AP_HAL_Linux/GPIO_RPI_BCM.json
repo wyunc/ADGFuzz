@@ -1,0 +1,142 @@
+{
+    "set_gpio_mode_alt": {
+        "register_value": [
+            [
+                "pins_per_register",
+                "_gpio",
+                "pin"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "pins_per_register",
+                "pin",
+                "0b111"
+            ],
+            1
+        ],
+        "mask_with_alt": [
+            [
+                "pins_per_register",
+                "pin",
+                "alternative",
+                "static_cast",
+                "uint32_t"
+            ],
+            2
+        ]
+    },
+    "set_gpio_mode_in": {
+        "mask": [
+            [
+                "0b111",
+                "pins_per_register",
+                "pin"
+            ],
+            1
+        ]
+    },
+    "set_gpio_mode_out": {
+        "register_value": [
+            [
+                "_gpio",
+                "pin",
+                "pins_per_register"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "0b111",
+                "pin",
+                "pins_per_register"
+            ],
+            1
+        ],
+        "mask_with_bit": [
+            [
+                "0b001",
+                "pin",
+                "pins_per_register"
+            ],
+            1
+        ]
+    },
+    "set_gpio_high": {
+        "gpset0_index_value": [
+            [
+                "sizeof__gpio",
+                "0x1c"
+            ],
+            1
+        ]
+    },
+    "set_gpio_low": {
+        "gpclr0_index_value": [
+            [
+                "0x28",
+                "sizeof__gpio"
+            ],
+            1
+        ]
+    },
+    "get_gpio_logic_state": {
+        "gplev0_index_value": [
+            [
+                "sizeof__gpio",
+                "0x34"
+            ],
+            1
+        ]
+    },
+    "openMemoryDevice": {
+        "_system_memory_device": [
+            [
+                "open__system_memory_device_path",
+                "open_o_sync",
+                "open_o_rdwr",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "peripheral_base": [
+            [
+                "bcm2708_peripheral_base",
+                "bcm2711_peripheral_base",
+                "bcm2709_peripheral_base"
+            ],
+            0
+        ],
+        "gpio_address": [
+            [
+                "get_address_gpio",
+                "get_address_peripheral_base"
+            ],
+            0
+        ],
+        "rpi_version": [
+            [
+                "from_hal_util_detect_linux_board_type"
+            ],
+            0
+        ],
+        "_gpio": [
+            [
+                "get_memory_pointer_gpio_address",
+                "get_memory_pointer__gpio_registers_memory_range"
+            ],
+            0
+        ]
+    },
+    "toggle": {
+        "flag": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    }
+}

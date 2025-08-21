@@ -1,0 +1,351 @@
+{
+    "update_vel_accel": {
+        "vel": [
+            [
+                "accel",
+                "fabsf_fabsf",
+                "dt",
+                "fabsf_vel"
+            ],
+            1
+        ]
+    },
+    "update_pos_vel_accel": {
+        "pos": [
+            [
+                "sq_dt",
+                "vel",
+                "accel",
+                "dt"
+            ],
+            1
+        ]
+    },
+    "update_vel_accel_xy": {
+        "vel": [
+            [
+                "dt",
+                "accel"
+            ],
+            1
+        ]
+    },
+    "update_pos_vel_accel_xy": {
+        "pos": [
+            [
+                "delta_pos_topostype"
+            ],
+            0
+        ],
+        "delta_pos": [
+            [
+                "dt",
+                "vel",
+                "sq_dt",
+                "accel"
+            ],
+            0
+        ]
+    },
+    "shape_accel": {
+        "accel": [
+            [
+                "jerk_max",
+                "accel_input",
+                "dt"
+            ],
+            1
+        ]
+    },
+    "shape_accel_xy": {
+        "accel.x": [
+            [
+                "accel_2f_x"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "accel_input"
+            ],
+            1
+        ],
+        "accel.y": [
+            [
+                "accel_2f_y"
+            ],
+            0
+        ]
+    },
+    "shape_vel_accel": {
+        "vel_error": [
+            [
+                "vel",
+                "vel_input"
+            ],
+            0
+        ],
+        "accel_target": [
+            [
+                "sqrt_controller_jerk_max",
+                "sqrt_controller_dt",
+                "sqrt_controller_vel_error",
+                "accel_max",
+                "sqrt_controller_k_pa",
+                "accel_input",
+                "accel_min"
+            ],
+            0
+        ],
+        "KPa": [
+            [
+                "jerk_max",
+                "accel_max",
+                "accel_min"
+            ],
+            0
+        ]
+    },
+    "shape_vel_accel_xy": {
+        "accel_target": [
+            [
+                "sqrt_controller_k_pa",
+                "sqrt_controller_jerk_max",
+                "vel_input_normalized",
+                "sqrt_controller_vel_error",
+                "accel_input",
+                "safe_sqrt_sq",
+                "accel_cross_length_squared",
+                "safe_sqrt_accel_max",
+                "vel_input_normalized",
+                "sqrt_controller_dt",
+                "vel_input_normalized"
+            ],
+            4
+        ],
+        "vel_error": [
+            [
+                "vel_input",
+                "vel"
+            ],
+            0
+        ],
+        "KPa": [
+            [
+                "accel_max",
+                "jerk_max"
+            ],
+            0
+        ]
+    },
+    "shape_pos_vel_accel": {
+        "accel_tc_max": [
+            [
+                "accel_min",
+                "accel_max"
+            ],
+            0
+        ],
+        "vel_target": [
+            [
+                "sqrt_controller_dt",
+                "vel_max",
+                "vel_min",
+                "sqrt_controller_accel_tc_max",
+                "sqrt_controller_pos_error",
+                "vel_input",
+                "sqrt_controller_k_pv"
+            ],
+            0
+        ],
+        "KPv": [
+            [
+                "accel_min",
+                "accel_max",
+                "jerk_max"
+            ],
+            0
+        ],
+        "pos_error": [
+            [
+                "pos_input",
+                "pos"
+            ],
+            0
+        ]
+    },
+    "shape_pos_vel_accel_xy": {
+        "vel_target": [
+            [
+                "vel_input",
+                "sqrt_controller_accel_tc_max",
+                "sqrt_controller_dt",
+                "sqrt_controller_k_pv",
+                "sqrt_controller_pos_error"
+            ],
+            0
+        ],
+        "accel_tc_max": [
+            [
+                "accel_max"
+            ],
+            0
+        ],
+        "pos_error": [
+            [
+                "pos_input",
+                "pos",
+                "_tofloat"
+            ],
+            0
+        ],
+        "KPv": [
+            [
+                "jerk_max",
+                "accel_max"
+            ],
+            0
+        ]
+    },
+    "limit_accel_xy": {
+        "accel": [
+            [
+                "vel_normalized",
+                "vel_normalized",
+                "safe_sqrt_sq",
+                "accel_cross_length_squared",
+                "safe_sqrt_accel_max",
+                "vel_normalized"
+            ],
+            4
+        ]
+    },
+    "sqrt_controller": {
+        "linear_dist": [
+            [
+                "sq_p",
+                "second_ord_lim"
+            ],
+            0
+        ],
+        "correction_rate": [
+            [
+                "p",
+                "safe_sqrt_linear_dist",
+                "safe_sqrt_error",
+                "error",
+                "safe_sqrt_second_ord_lim"
+            ],
+            0
+        ]
+    },
+    "inv_sqrt_controller": {
+        "linear_velocity": [
+            [
+                "p",
+                "d_max"
+            ],
+            0
+        ],
+        "stopping_dist": [
+            [
+                "sq_p",
+                "d_max",
+                "d_max",
+                "sq_output"
+            ],
+            1
+        ]
+    },
+    "kinematic_limit": {
+        "slope": [
+            [
+                "direction_z",
+                "direction_x",
+                "vector2f",
+                "_length",
+                "direction_y"
+            ],
+            1
+        ],
+        "max_xy": [
+            [
+                "fabsf_max_xy"
+            ],
+            0
+        ],
+        "max_z_pos": [
+            [
+                "fabsf_max_z_pos"
+            ],
+            0
+        ],
+        "max_z_neg": [
+            [
+                "fabsf_max_z_neg"
+            ],
+            0
+        ]
+    },
+    "rc_input_to_roll_pitch": {
+        "roll_rad": [
+            [
+                "thrust_y",
+                "atanf_pitch_rad",
+                "atanf_cosf"
+            ],
+            0
+        ],
+        "roll_out_deg": [
+            [
+                "degrees_roll_rad"
+            ],
+            0
+        ],
+        "thrust_limit": [
+            [
+                "tanf_angle_limit_deg",
+                "tanf_radians"
+            ],
+            0
+        ],
+        "rc_2_rad": [
+            [
+                "radians_angle_max_deg"
+            ],
+            0
+        ],
+        "pitch_out_deg": [
+            [
+                "degrees_pitch_rad"
+            ],
+            0
+        ],
+        "thrust.x": [
+            [
+                "tanf_rc_2_rad",
+                "tanf_pitch_in_unit"
+            ],
+            0
+        ],
+        "angle_limit_deg": [
+            [
+                "angle_max_deg"
+            ],
+            0
+        ],
+        "thrust.y": [
+            [
+                "tanf_roll_in_unit",
+                "tanf_rc_2_rad"
+            ],
+            0
+        ],
+        "pitch_rad": [
+            [
+                "atanf_thrust_x"
+            ],
+            0
+        ]
+    }
+}

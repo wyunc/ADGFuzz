@@ -1,0 +1,52 @@
+{
+    "Log_Write_NKF1": {
+        "posDownDeriv": [
+            [
+                "get_pos_down_derivative"
+            ],
+            0
+        ]
+    },
+    "Log_Write_NKF4": {
+        "tempVar": [
+            [
+                "fmax_f_fmax_f",
+                "fmax_f_mag_var_y",
+                "mag_var_z",
+                "fmax_f_mag_var_x"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Beacon": {
+        "report": [
+            [
+                "rng_bcn_fusion_report",
+                "rng_bcn_fuse_data_report_index"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Timing": {
+        "lastTimingLogTime_ms": [
+            [
+                "dal_millis"
+            ],
+            0
+        ]
+    },
+    "Log_Write": {
+        "time_us": [
+            [
+                "dal_micros64"
+            ],
+            0
+        ],
+        "lastLogWrite_us": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ]
+    }
+}

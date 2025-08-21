@@ -1,0 +1,925 @@
+{
+    "init_offboard_mission": {
+        "_land_marker": [
+            [
+                "mission_state_land_index"
+            ],
+            0
+        ],
+        "_my_mission_dataman_id": [
+            [
+                "mission_state_mission_dataman_id",
+                "dm_item_t"
+            ],
+            1
+        ],
+        "_current_seq": [
+            [
+                "mission_state_current_seq"
+            ],
+            0
+        ],
+        "_land_start_marker": [
+            [
+                "mission_state_land_start_index"
+            ],
+            0
+        ]
+    },
+    "load_geofence_stats": {
+        "_my_fence_dataman_id": [
+            [
+                "stats_dataman_id",
+                "dm_item_t",
+                "static_cast"
+            ],
+            1
+        ]
+    },
+    "load_safepoint_stats": {
+        "_my_safepoint_dataman_id": [
+            [
+                "stats_dataman_id",
+                "static_cast",
+                "dm_item_t"
+            ],
+            1
+        ]
+    },
+    "update_active_mission": {
+        "_my_mission_dataman_id": [
+            [
+                "mission_dataman_id"
+            ],
+            1
+        ],
+        "_current_seq": [
+            [
+                "seq"
+            ],
+            0
+        ],
+        "mission.land_start_index": [
+            [
+                "_land_start_marker"
+            ],
+            0
+        ],
+        "mission.count": [
+            [
+                "count"
+            ],
+            0
+        ],
+        "mission.mission_id": [
+            [
+                "mav_mission_type_mission",
+                "_crc32"
+            ],
+            0
+        ],
+        "mission.land_index": [
+            [
+                "_land_marker"
+            ],
+            0
+        ],
+        "mission.safepoint_dataman_id": [
+            [
+                "_safepoint_dataman_id"
+            ],
+            0
+        ],
+        "mission.mission_dataman_id": [
+            [
+                "mission_dataman_id"
+            ],
+            0
+        ],
+        "mission.geofence_id": [
+            [
+                "mav_mission_type_fence",
+                "_crc32"
+            ],
+            0
+        ],
+        "mission.safe_points_id": [
+            [
+                "mav_mission_type_rally",
+                "_crc32"
+            ],
+            0
+        ],
+        "mission.fence_dataman_id": [
+            [
+                "_fence_dataman_id"
+            ],
+            0
+        ],
+        "mission.current_seq": [
+            [
+                "seq"
+            ],
+            0
+        ],
+        "mission.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "update_geofence_count": {
+        "_fence_dataman_id": [
+            [
+                "fence_dataman_id"
+            ],
+            0
+        ],
+        "stats.dataman_id": [
+            [
+                "fence_dataman_id"
+            ],
+            0
+        ],
+        "stats.opaque_id": [
+            [
+                "crc32"
+            ],
+            0
+        ],
+        "stats.num_items": [
+            [
+                "count"
+            ],
+            0
+        ],
+        "_my_fence_dataman_id": [
+            [
+                "fence_dataman_id"
+            ],
+            0
+        ]
+    },
+    "update_safepoint_count": {
+        "stats.dataman_id": [
+            [
+                "safepoint_dataman_id"
+            ],
+            0
+        ],
+        "_safepoint_dataman_id": [
+            [
+                "safepoint_dataman_id"
+            ],
+            0
+        ],
+        "_my_safepoint_dataman_id": [
+            [
+                "safepoint_dataman_id"
+            ],
+            0
+        ],
+        "stats.opaque_id": [
+            [
+                "crc32"
+            ],
+            0
+        ],
+        "stats.num_items": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "send_mission_ack": {
+        "wpa.mission_type": [
+            [
+                "_mission_type"
+            ],
+            0
+        ],
+        "wpa.opaque_id": [
+            [
+                "opaque_id"
+            ],
+            0
+        ],
+        "wpa.target_system": [
+            [
+                "sysid"
+            ],
+            0
+        ],
+        "wpa.type": [
+            [
+                "type"
+            ],
+            0
+        ],
+        "wpa.target_component": [
+            [
+                "compid"
+            ],
+            0
+        ]
+    },
+    "send_mission_current": {
+        "wpc.rally_points_id": [
+            [
+                "mav_mission_type_rally",
+                "_crc32"
+            ],
+            0
+        ],
+        "wpc.seq": [
+            [
+                "seq"
+            ],
+            0
+        ],
+        "wpc.total": [
+            [
+                "uint16_max",
+                "mav_mission_type_mission",
+                "_count"
+            ],
+            0
+        ],
+        "wpc.mission_id": [
+            [
+                "_crc32",
+                "mav_mission_type_mission"
+            ],
+            0
+        ],
+        "wpc.fence_id": [
+            [
+                "mav_mission_type_fence",
+                "_crc32"
+            ],
+            0
+        ]
+    },
+    "send_mission_count": {
+        "wpc.mission_type": [
+            [
+                "mission_type"
+            ],
+            0
+        ],
+        "wpc.count": [
+            [
+                "count"
+            ],
+            0
+        ],
+        "wpc.target_component": [
+            [
+                "compid"
+            ],
+            0
+        ],
+        "wpc.target_system": [
+            [
+                "sysid"
+            ],
+            0
+        ],
+        "wpc.opaque_id": [
+            [
+                "opaque_id"
+            ],
+            0
+        ],
+        "_time_last_sent": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "send_mission_item": {
+        "mission_item.lat": [
+            [
+                "mission_fence_point_lat"
+            ],
+            0
+        ],
+        "mission_item.vertex_count": [
+            [
+                "mission_fence_point_vertex_count"
+            ],
+            0
+        ],
+        "wp.target_system": [
+            [
+                "sysid"
+            ],
+            0
+        ],
+        "_time_last_sent": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "wp.current": [
+            [
+                "seq",
+                "_current_seq"
+            ],
+            0
+        ],
+        "mission_item.altitude": [
+            [
+                "mission_fence_point_alt"
+            ],
+            0
+        ],
+        "mission_item.lon": [
+            [
+                "mission_fence_point_lon"
+            ],
+            0
+        ],
+        "wp.target_component": [
+            [
+                "compid"
+            ],
+            0
+        ],
+        "mission_item.circle_radius": [
+            [
+                "mission_fence_point_circle_radius"
+            ],
+            0
+        ],
+        "mission_item.nav_cmd": [
+            [
+                "mission_fence_point_nav_cmd"
+            ],
+            0
+        ],
+        "mission_item.frame": [
+            [
+                "mission_fence_point_frame"
+            ],
+            0
+        ],
+        "wp.seq": [
+            [
+                "seq"
+            ],
+            0
+        ]
+    },
+    "send_mission_request": {
+        "wpr.mission_type": [
+            [
+                "_mission_type"
+            ],
+            0
+        ],
+        "wpr.target_component": [
+            [
+                "compid"
+            ],
+            0
+        ],
+        "wpr.target_system": [
+            [
+                "sysid"
+            ],
+            0
+        ],
+        "_time_last_sent": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "wpr.seq": [
+            [
+                "seq"
+            ],
+            0
+        ]
+    },
+    "send_mission_item_reached": {
+        "wp_reached.seq": [
+            [
+                "seq"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "_current_seq": [
+            [
+                "mission_result_seq_current"
+            ],
+            0
+        ],
+        "_last_reached": [
+            [
+                "mission_result_seq_reached"
+            ],
+            0
+        ],
+        "_mission_type": [
+            [
+                "mav_mission_type_mission"
+            ],
+            0
+        ]
+    },
+    "handle_mission_ack": {
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_mission_set_current": {
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request_list": {
+        "_mission_type": [
+            [
+                "mav_mission_type",
+                "wprl_mission_type"
+            ],
+            0
+        ],
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "mavlink_wpm_state_sendlist"
+            ],
+            0
+        ],
+        "_transfer_partner_sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "maybe_completed": [
+            [
+                "_transfer_seq",
+                "current_item_count"
+            ],
+            0
+        ],
+        "_transfer_count": [
+            [
+                "current_item_count"
+            ],
+            0
+        ],
+        "_transfer_partner_compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request_both": {
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_mission_count": {
+        "_state": [
+            [
+                "mavlink_wpm_state_getlist"
+            ],
+            0
+        ],
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_transfer_count": [
+            [
+                "wpc_count"
+            ],
+            0
+        ],
+        "_transfer_partner_compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "_transfer_partner_sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "_mission_type": [
+            [
+                "wpc_mission_type",
+                "mav_mission_type"
+            ],
+            0
+        ],
+        "_fence_dataman_id": [
+            [
+                "dm_key_fence_points_0",
+                "dm_key_fence_points_1"
+            ],
+            0
+        ]
+    },
+    "switch_to_idle_state": {
+        "_state": [
+            [
+                "mavlink_wpm_state_idle"
+            ],
+            0
+        ]
+    },
+    "handle_mission_item_both": {
+        "mission_fence_point.circle_radius": [
+            [
+                "mission_item_circle_radius"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "update_safepoint_count__transfer_count",
+                "update_safepoint_count__transfer_dataman_id",
+                "update_geofence_count__transfer_count",
+                "parse_mavlink_mission_item_wp",
+                "parse_mavlink_mission_item_mission_item",
+                "update_geofence_count__transfer_dataman_id",
+                "update_geofence_count__transfer_current_crc32",
+                "update_safepoint_count__transfer_current_crc32"
+            ],
+            0
+        ],
+        "mission_fence_point.vertex_count": [
+            [
+                "mission_item_vertex_count"
+            ],
+            0
+        ],
+        "_transfer_seq": [
+            [
+                "wp_seq"
+            ],
+            0
+        ],
+        "_transfer_current_crc32": [
+            [
+                "crc32_for_mission_item__transfer_current_crc32",
+                "crc32_for_mission_item_wp"
+            ],
+            0
+        ],
+        "mission_fence_point.nav_cmd": [
+            [
+                "mission_item_nav_cmd"
+            ],
+            0
+        ],
+        "mission_fence_point.frame": [
+            [
+                "mission_item_frame"
+            ],
+            0
+        ],
+        "mission_fence_point.alt": [
+            [
+                "mission_item_altitude"
+            ],
+            0
+        ],
+        "_land_marker": [
+            [
+                "wp_seq"
+            ],
+            1
+        ],
+        "mission_fence_point.lon": [
+            [
+                "mission_item_lon"
+            ],
+            0
+        ],
+        "_land_start_marker": [
+            [
+                "wp_seq",
+                "wp_seq"
+            ],
+            2
+        ],
+        "mission_fence_point.lat": [
+            [
+                "mission_item_lat"
+            ],
+            0
+        ],
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_transfer_current_seq": [
+            [
+                "wp_seq"
+            ],
+            0
+        ]
+    },
+    "handle_mission_clear_all": {
+        "_mission_type": [
+            [
+                "wpca_mission_type",
+                "mav_mission_type"
+            ],
+            0
+        ],
+        "_time_last_recv": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "parse_mavlink_mission_item": {
+        "do_jump_mission_index": [
+            [
+                "mavlink_mission_item_param1"
+            ],
+            0
+        ],
+        "nav_cmd": [
+            [
+                "nav_cmd_condition_gate",
+                "nav_cmd_loiter_to_alt",
+                "nav_cmd_loiter_unlimited",
+                "nav_cmd_do_set_roi_location",
+                "nav_cmd_fence_return_point",
+                "nav_cmd_land",
+                "nav_cmd_do_set_roi",
+                "nav_cmd_loiter_time_limit",
+                "nav_cmd_waypoint",
+                "mavlink_mission_item_command",
+                "nav_cmd_invalid",
+                "nav_cmd_do_jump",
+                "nav_cmd_takeoff"
+            ],
+            0
+        ],
+        "loiter_exit_xtrack": [
+            [
+                "mavlink_mission_item_param4"
+            ],
+            0
+        ],
+        "force_heading": [
+            [
+                "mavlink_mission_item_param2",
+                "mavlink_mission_item_param1"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "item_int_x",
+                "mavlink_mission_item_x",
+                "double",
+                "1e"
+            ],
+            0
+        ],
+        "origin": [
+            [
+                "origin_mavlink"
+            ],
+            0
+        ],
+        "item_int": [
+            [
+                "mavlink_mission_item_int_t",
+                "const",
+                "mavlink_mission_item",
+                "reinterpret_cast"
+            ],
+            0
+        ],
+        "frame": [
+            [
+                "mav_frame_mission",
+                "mavlink_mission_item_frame"
+            ],
+            0
+        ],
+        "vertex_count": [
+            [
+                "mavlink_mission_item_param1",
+                "uint16_t"
+            ],
+            0
+        ],
+        "land_precision": [
+            [
+                "mavlink_mission_item_param2"
+            ],
+            0
+        ],
+        "circle_radius": [
+            [
+                "mavlink_mission_item_param1"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "wrap_2pi_mavlink_mission_item_param4",
+                "wrap_2pi_radians"
+            ],
+            0
+        ],
+        "autocontinue": [
+            [
+                "mavlink_mission_item_autocontinue"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "mavlink_mission_item_z"
+            ],
+            0
+        ],
+        "loiter_radius": [
+            [
+                "mavlink_mission_item_param2",
+                "mavlink_mission_item_param3"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "item_int_y",
+                "1e",
+                "mavlink_mission_item_y",
+                "double"
+            ],
+            0
+        ],
+        "do_jump_repeat_count": [
+            [
+                "mavlink_mission_item_param2"
+            ],
+            0
+        ],
+        "time_inside": [
+            [
+                "mavlink_mission_item_param1"
+            ],
+            0
+        ],
+        "roi_mode": [
+            [
+                "mavlink_mission_item_param1"
+            ],
+            0
+        ],
+        "acceptance_radius": [
+            [
+                "mavlink_mission_item_param2"
+            ],
+            0
+        ]
+    },
+    "format_mavlink_mission_item": {
+        "param4": [
+            [
+                "mission_item_params",
+                "mission_item_loiter_exit_xtrack",
+                "degrees_mission_item_yaw"
+            ],
+            0
+        ],
+        "autocontinue": [
+            [
+                "mission_item_autocontinue"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "round_1e7",
+                "round_mission_item_lat",
+                "float",
+                "mission_item_params",
+                "mission_item_lat",
+                "round_mission_item_params"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "round_1e7",
+                "float",
+                "mission_item_lon",
+                "mission_item_params",
+                "round_mission_item_params",
+                "round_mission_item_lon"
+            ],
+            0
+        ],
+        "command": [
+            [
+                "mission_item_nav_cmd"
+            ],
+            0
+        ],
+        "mission_type": [
+            [
+                "_mission_type"
+            ],
+            0
+        ],
+        "z": [
+            [
+                "mission_item_params",
+                "mission_item_altitude"
+            ],
+            0
+        ],
+        "frame": [
+            [
+                "mav_frame_global_relative_alt_int",
+                "mission_item_frame",
+                "mav_frame_global_relative_alt",
+                "mav_frame_global_int",
+                "mav_frame_global"
+            ],
+            0
+        ],
+        "param3": [
+            [
+                "mission_item_loiter_radius",
+                "mission_item_params"
+            ],
+            0
+        ],
+        "param2": [
+            [
+                "mission_item_land_precision",
+                "mission_item_do_jump_repeat_count",
+                "mission_item_force_heading",
+                "mission_item_acceptance_radius",
+                "mission_item_params",
+                "mission_item_loiter_radius"
+            ],
+            0
+        ],
+        "item_int": [
+            [
+                "mavlink_mission_item",
+                "mavlink_mission_item_int_t",
+                "reinterpret_cast"
+            ],
+            0
+        ],
+        "param1": [
+            [
+                "mission_item_circle_radius",
+                "float",
+                "mission_item_force_heading",
+                "mission_item_do_jump_mission_index",
+                "mission_item_params",
+                "mission_item_vertex_count",
+                "mission_item_time_inside"
+            ],
+            0
+        ]
+    }
+}

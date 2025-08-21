@@ -1,0 +1,269 @@
+{
+    "set_center": {
+        "config.center_pos": [
+            [
+                "center_pos_cm"
+            ],
+            0
+        ],
+        "config.center_loc": [
+            [
+                "center_loc"
+            ],
+            0
+        ],
+        "config.radius": [
+            [
+                "fabsf_radius_m",
+                "fabsf_ar_circle_radius_min"
+            ],
+            0
+        ],
+        "config.dir": [
+            [
+                "dir_ccw",
+                "cw",
+                "ccw"
+            ],
+            0
+        ]
+    },
+    "_enter": {
+        "jerk_max": [
+            [
+                "is_positive_g2_wp_nav_get_default_jerk",
+                "g2_wp_nav_get_default_jerk",
+                "ar_circle_accel_default",
+                "g2_attitude_control_get_accel_max_g2_attitude_control_get_decel_max",
+                "g2_wp_nav_get_default_accel_atc_accel_max",
+                "is_positive_g2_wp_nav_get_default_accel"
+            ],
+            2
+        ],
+        "config.speed": [
+            [
+                "is_positive_speed",
+                "g2_wp_nav_get_default_speed",
+                "speed"
+            ],
+            0
+        ],
+        "config.radius": [
+            [
+                "fabsf_radius",
+                "fabsf_ar_circle_radius_min"
+            ],
+            0
+        ],
+        "config.dir": [
+            [
+                "ccw",
+                "cw",
+                "direction"
+            ],
+            0
+        ],
+        "target.yaw_rad": [
+            [
+                "ahrs_get_yaw"
+            ],
+            0
+        ],
+        "config.center_loc": [
+            [
+                "rover_current_loc"
+            ],
+            0
+        ]
+    },
+    "init_target_yaw_rad": {
+        "center_to_veh": [
+            [
+                "curr_pos_ne",
+                "config_center_pos"
+            ],
+            0
+        ],
+        "target.yaw_rad": [
+            [
+                "center_to_veh_angle",
+                "ahrs_get_yaw"
+            ],
+            0
+        ],
+        "dist_m": [
+            [
+                "center_to_veh_length"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_distance_to_destination": [
+            [
+                "_length",
+                "target_pos_tofloat",
+                "curr_pos"
+            ],
+            0
+        ],
+        "desired_speed": [
+            [
+                "g2_pos_control_get_desired_speed"
+            ],
+            0
+        ],
+        "desired_turn_rate": [
+            [
+                "g2_pos_control_get_desired_turn_rate_rads"
+            ],
+            0
+        ],
+        "position_ok": [
+            [
+                "ahrs_get_relative_position_ne_origin_curr_pos"
+            ],
+            0
+        ],
+        "center_to_veh": [
+            [
+                "config_center_pos",
+                "curr_pos"
+            ],
+            0
+        ],
+        "config.speed": [
+            [
+                "config_speed"
+            ],
+            0
+        ],
+        "dist_to_edge_m": [
+            [
+                "config_radius",
+                "fabsf_center_to_veh_length"
+            ],
+            0
+        ]
+    },
+    "update_drive_to_radius": {
+        "target.pos": [
+            [
+                "config_center_pos_topostype"
+            ],
+            0
+        ],
+        "dist_thresh_m": [
+            [
+                "ar_circle_reached_edge_dist",
+                "g2_turn_radius"
+            ],
+            0
+        ]
+    },
+    "update_circling": {
+        "target.yaw_rad": [
+            [
+                "wrap_pi_target_yaw_rad",
+                "wrap_pi_angle_dt"
+            ],
+            0
+        ],
+        "angle_total_rad": [
+            [
+                "cw",
+                "config_dir",
+                "target_speed",
+                "m_pi",
+                "config_radius",
+                "m_2pi",
+                "rover_g_dt"
+            ],
+            3
+        ],
+        "target.speed": [
+            [
+                "rover_g_dt",
+                "g2_pos_control_get_accel_max",
+                "config_speed",
+                "target_speed"
+            ],
+            2
+        ],
+        "target.pos": [
+            [
+                "config_center_pos_topostype"
+            ],
+            0
+        ],
+        "target.vel": [
+            [
+                "vector2f_target_speed"
+            ],
+            0
+        ],
+        "target.accel": [
+            [
+                "rover_g_dt",
+                "g2_pos_control_get_accel_max",
+                "config_speed",
+                "target_speed",
+                "vector2f_target_speed",
+                "config_radius",
+                "rover_g_dt",
+                "vector2f_sq"
+            ],
+            2
+        ]
+    },
+    "wp_bearing": {
+        "veh_to_center": [
+            [
+                "curr_pos_ne",
+                "target_pos_tofloat"
+            ],
+            0
+        ]
+    },
+    "nav_bearing": {
+        "pos_error": [
+            [
+                "g2_pos_control_get_pos_error"
+            ],
+            0
+        ]
+    },
+    "set_desired_speed": {
+        "config.speed": [
+            [
+                "speed_ms"
+            ],
+            0
+        ]
+    },
+    "get_desired_location": {
+        "destination": [
+            [
+                "config_center_loc"
+            ],
+            0
+        ]
+    },
+    "check_config_speed": {
+        "config.speed": [
+            [
+                "safe_sqrt_config_radius",
+                "safe_sqrt_g2_attitude_control_get_turn_lat_accel_max"
+            ],
+            1
+        ]
+    },
+    "check_config_radius": {
+        "config.radius": [
+            [
+                "g2_turn_radius"
+            ],
+            0
+        ]
+    }
+}

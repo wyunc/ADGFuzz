@@ -1,0 +1,178 @@
+{
+    "init_backend": {
+        "spi_dev": [
+            [
+                "move_hal_spi_get_device"
+            ],
+            0
+        ]
+    },
+    "update_stats": {
+        "_stats.max_current_a": [
+            [
+                "fmaxf__stats_max_current_a",
+                "fmaxf_amps"
+            ],
+            0
+        ],
+        "_stats.min_rssi": [
+            [
+                "fminf_ap_rssi_read_receiver_rssi",
+                "fminf__stats_min_rssi"
+            ],
+            0
+        ],
+        "home_is_set": [
+            [
+                "ahrs_home_is_set",
+                "ahrs_get_location_loc"
+            ],
+            0
+        ],
+        "_stats.max_speed_mps": [
+            [
+                "fmaxf__stats_max_speed_mps",
+                "fmaxf_speed"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "home_loc_get_distance_loc"
+            ],
+            0
+        ],
+        "_stats.max_dist_m": [
+            [
+                "fmaxf__stats_max_dist_m",
+                "fmaxf_distance"
+            ],
+            0
+        ],
+        "_stats.min_voltage_v": [
+            [
+                "fminf_voltage",
+                "fminf__stats_min_voltage_v"
+            ],
+            0
+        ],
+        "_stats.max_alt_m": [
+            [
+                "fmaxf_alt",
+                "fmaxf__stats_max_alt_m"
+            ],
+            0
+        ],
+        "home_loc": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "ap_rssi": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_stats.max_airspeed_mps": [
+            [
+                "fmaxf_aspd_mps",
+                "fmaxf__stats_max_airspeed_mps"
+            ],
+            0
+        ],
+        "_stats.max_esc_temp": [
+            [
+                "_stats_max_esc_temp",
+                "highest_temperature"
+            ],
+            0
+        ],
+        "have_airspeed_estimate": [
+            [
+                "ahrs_airspeed_estimate_aspd_mps"
+            ],
+            0
+        ],
+        "telem": [
+            [
+                "esc_telem"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "_stats.last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "voltage": [
+            [
+                "battery_voltage"
+            ],
+            0
+        ],
+        "_stats.last_distance_m": [
+            [
+                "_stats_last_update_ms",
+                "millis",
+                "v_length"
+            ],
+            4
+        ]
+    },
+    "update_current_screen": {
+        "channel": [
+            [
+                "rc_channel_rc_channel"
+            ],
+            0
+        ],
+        "last_switch_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "current_screen": [
+            [
+                "i",
+                "disarm_scr",
+                "arm_scr",
+                "failsafe_scr",
+                "previous_pwm_screen",
+                "pre_fs_screen"
+            ],
+            0
+        ],
+        "previous_channel_value": [
+            [
+                "channel_get_radio_in"
+            ],
+            1
+        ]
+    },
+    "next_screen": {
+        "current_screen": [
+            [
+                "ap_osd_num_screens"
+            ],
+            1
+        ]
+    },
+    "set_nav_info": {
+        "nav_info": [
+            [
+                "navinfo"
+            ],
+            0
+        ]
+    }
+}

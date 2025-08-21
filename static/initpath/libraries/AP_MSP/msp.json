@@ -1,0 +1,74 @@
+{
+    "msp_parse_received_data": {
+        "cmd_msp": [
+            [
+                "hdr_cmd",
+                "hdrv2_cmd"
+            ],
+            0
+        ],
+        "c_state": [
+            [
+                "msp_header_v2_over_v1",
+                "msp_header_m",
+                "msp_checksum_v1",
+                "msp_checksum_v2_native",
+                "msp_payload_v2_native",
+                "msp_command_received",
+                "msp_header_x",
+                "msp_payload_v1",
+                "msp_checksum_v2_over_v1",
+                "msp_data_size",
+                "msp_header_start",
+                "msp_header_v2_native",
+                "msp_payload_v2_over_v1",
+                "msp_header_v1",
+                "msp_idle"
+            ],
+            0
+        ],
+        "cmd_flags": [
+            [
+                "hdrv2_flags"
+            ],
+            0
+        ],
+        "msp_version": [
+            [
+                "msp_v2_over_v1",
+                "msp_v1",
+                "msp_v2_native"
+            ],
+            0
+        ],
+        "checksum2": [
+            [
+                "crc8_dvb_s2_c",
+                "crc8_dvb_s2_msp_checksum2"
+            ],
+            0
+        ],
+        "hdrv2": [
+            [
+                "msp_in_buf",
+                "sizeof_msp_header_v1_t",
+                "msp_header_v2_t"
+            ],
+            0
+        ],
+        "hdr": [
+            [
+                "msp_in_buf",
+                "msp_header_v1_t"
+            ],
+            0
+        ],
+        "data_size": [
+            [
+                "hdr_size",
+                "hdrv2_size"
+            ],
+            0
+        ]
+    }
+}

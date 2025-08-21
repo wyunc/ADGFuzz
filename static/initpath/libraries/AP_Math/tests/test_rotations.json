@@ -1,0 +1,59 @@
+{
+    "test_euler": {
+        "q_accuracy": [
+            [
+                "_0e"
+            ],
+            0
+        ],
+        "pitch_diff": [
+            [
+                "fabsf_qc_pitch",
+                "fabsf_qe_pitch",
+                "fabsf_wrap_pi",
+                "fabsf_q_pitch"
+            ],
+            0
+        ],
+        "diff": [
+            [
+                "v",
+                "rotmat",
+                "v"
+            ],
+            2
+        ],
+        "yaw_diff": [
+            [
+                "fabsf_qc_yaw",
+                "fabsf_wrap_pi",
+                "fabsf_q_yaw",
+                "fabsf_qe_yaw"
+            ],
+            0
+        ],
+        "accuracy": [
+            [
+                "_0e"
+            ],
+            0
+        ],
+        "roll_diff": [
+            [
+                "fabsf_q_roll",
+                "fabsf_wrap_pi",
+                "fabsf_qe_roll",
+                "fabsf_qc_roll"
+            ],
+            0
+        ]
+    },
+    "rotate_ordered": {
+        "m": [
+            [
+                "m2"
+            ],
+            0
+        ]
+    }
+}

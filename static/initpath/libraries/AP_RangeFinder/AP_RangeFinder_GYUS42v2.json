@@ -1,0 +1,33 @@
+{
+    "find_signature_in_buffer": {
+        "buffer_used": [
+            [
+                "start"
+            ],
+            1
+        ]
+    },
+    "get_reading": {
+        "buffer_used": [
+            [
+                "uart_read_buffer_used",
+                "uart_read_buffer",
+                "uart_read_array_size"
+            ],
+            1
+        ],
+        "reading_m": [
+            [
+                "buffer"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "i",
+                "buffer"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "safety_button_check": {
+        "safety_button_pressed": [
+            [
+                "px4_arch_gpioread_gpio_btn_safety"
+            ],
+            0
+        ],
+        "pattern": [
+            [
+                "led_pattern_fmu_refuse_to_arm",
+                "led_pattern_fmu_ok_to_arm",
+                "led_pattern_io_armed",
+                "led_pattern_io_fmu_armed",
+                "led_pattern_fmu_armed"
+            ],
+            0
+        ]
+    }
+}

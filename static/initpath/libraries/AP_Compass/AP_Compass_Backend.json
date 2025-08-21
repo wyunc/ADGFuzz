@@ -1,0 +1,202 @@
+{
+    "rotate_field": {
+        "dev_id": [
+            [
+                "uint32_t__compass__state",
+                "_dev_id",
+                "uint32_t_state_index",
+                "uint32_t_instance"
+            ],
+            0
+        ],
+        "mag": [
+            [
+                "bc_get_heater_duty_cycle",
+                "o_ofs"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_index_instance",
+                "_compass__state"
+            ],
+            0
+        ],
+        "bc": [
+            [
+                "board_config"
+            ],
+            0
+        ]
+    },
+    "publish_raw_field": {
+        "state.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "cal": [
+            [
+                "_compass__get_priority_state_index",
+                "_compass__get_priority_instance",
+                "_compass__calibrator"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_index_instance",
+                "_compass__state"
+            ],
+            0
+        ]
+    },
+    "correct_field": {
+        "state": [
+            [
+                "_compass__state",
+                "state_index_i"
+            ],
+            0
+        ],
+        "mag": [
+            [
+                "state_motor_offset",
+                "state_scale_factor",
+                "state_offset_get",
+                "mat"
+            ],
+            1
+        ],
+        "offdiagonals": [
+            [
+                "state_offdiagonals_get"
+            ],
+            0
+        ],
+        "state.motor_offset": [
+            [
+                "_compass__thr",
+                "current",
+                "state_motor_compensation_get"
+            ],
+            1
+        ],
+        "diagonals": [
+            [
+                "state_diagonals_get"
+            ],
+            0
+        ]
+    },
+    "accumulate_sample": {
+        "state": [
+            [
+                "_compass__state",
+                "state_index_instance"
+            ],
+            0
+        ],
+        "state.accum": [
+            [
+                "field"
+            ],
+            0
+        ]
+    },
+    "drain_accumulated_samples": {
+        "state": [
+            [
+                "state_index_instance",
+                "_compass__state"
+            ],
+            0
+        ],
+        "state.accum": [
+            [
+                "state_accum_count",
+                "scaling"
+            ],
+            0
+        ]
+    },
+    "publish_filtered_field": {
+        "state.field": [
+            [
+                "mag"
+            ],
+            0
+        ],
+        "state.last_update_usec": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "state.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_index_instance",
+                "_compass__state"
+            ],
+            0
+        ]
+    },
+    "set_last_update_usec": {
+        "state.last_update_usec": [
+            [
+                "last_update"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_index_instance",
+                "_compass__state"
+            ],
+            0
+        ]
+    },
+    "set_dev_id": {
+        ".detected_dev_id": [
+            [
+                "dev_id"
+            ],
+            0
+        ]
+    },
+    "set_rotation": {
+        ".rotation": [
+            [
+                "rotation"
+            ],
+            0
+        ]
+    },
+    "field_ok": {
+        "range": [
+            [
+                "_compass_get_filter_range",
+                "float"
+            ],
+            0
+        ],
+        "_mean_field_length": [
+            [
+                "fabsf__mean_field_length",
+                "fabsf_length",
+                "field_length",
+                "filter_koef",
+                "field_length"
+            ],
+            3
+        ]
+    }
+}

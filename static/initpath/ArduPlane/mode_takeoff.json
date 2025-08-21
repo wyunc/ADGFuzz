@@ -1,0 +1,75 @@
+{
+    "update": {
+        "direction": [
+            [
+                "start_loc_get_bearing_to_plane_current_loc",
+                "degrees_ahrs_get_yaw"
+            ],
+            0
+        ],
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "plane.takeoff_state.throttle_max_timer_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "plane.auto_state.takeoff_altitude_rel_cm": [
+            [
+                "target_alt"
+            ],
+            1
+        ],
+        "plane.takeoff_state.start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "target_dist"
+            ],
+            0
+        ],
+        "plane.next_WP_loc": [
+            [
+                "plane_current_loc",
+                "plane_current_loc"
+            ],
+            1
+        ],
+        "plane.steer_state.hold_course_cd": [
+            [
+                "wrap_360_cd_direction"
+            ],
+            0
+        ],
+        "plane.next_WP_loc.alt": [
+            [
+                "plane_relative_ground_altitude_true",
+                "plane_relative_ground_altitude_false",
+                "target_alt"
+            ],
+            2
+        ],
+        "plane.auto_state.takeoff_pitch_cd": [
+            [
+                "level_pitch"
+            ],
+            0
+        ],
+        "altitude_cm": [
+            [
+                "start_loc_alt",
+                "plane_current_loc_alt"
+            ],
+            0
+        ]
+    }
+}

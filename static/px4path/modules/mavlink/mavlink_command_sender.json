@@ -1,0 +1,127 @@
+{
+    "initialize": {
+        "_instance": [
+            [
+                "new",
+                "mavlink_command_sender"
+            ],
+            0
+        ]
+    },
+    "handle_vehicle_command": {
+        "msg.target_system": [
+            [
+                "command_target_system"
+            ],
+            0
+        ],
+        "msg.param7": [
+            [
+                "command_param7"
+            ],
+            0
+        ],
+        "new_item.command": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "msg.confirmation": [
+            [
+                "command_confirmation"
+            ],
+            0
+        ],
+        "msg.param4": [
+            [
+                "command_param4"
+            ],
+            0
+        ],
+        "msg.param2": [
+            [
+                "command_param2"
+            ],
+            0
+        ],
+        "msg.target_component": [
+            [
+                "command_target_component"
+            ],
+            0
+        ],
+        "msg.param6": [
+            [
+                "command_param6"
+            ],
+            0
+        ],
+        "new_item.last_time_sent_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "msg.param3": [
+            [
+                "command_param3"
+            ],
+            0
+        ],
+        "msg.param1": [
+            [
+                "command_param1"
+            ],
+            0
+        ],
+        "new_item.timestamp_us": [
+            [
+                "command_timestamp"
+            ],
+            0
+        ],
+        "msg.param5": [
+            [
+                "command_param5"
+            ],
+            0
+        ],
+        "msg.command": [
+            [
+                "command_command"
+            ],
+            0
+        ]
+    },
+    "check_timeout": {
+        "max_sent": [
+            [
+                "i",
+                "item_num_sent_per_channel"
+            ],
+            0
+        ],
+        "min_sent": [
+            [
+                "i",
+                "item_num_sent_per_channel",
+                "int8_max"
+            ],
+            0
+        ],
+        "command.confirmation": [
+            [
+                "channel",
+                "item_num_sent_per_channel"
+            ],
+            0
+        ],
+        "last_time_sent_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

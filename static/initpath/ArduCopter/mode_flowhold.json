@@ -1,0 +1,256 @@
+{
+    "init": {
+        "last_ins_height": [
+            [
+                "copter_inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    },
+    "flowhold_flow_to_angle": {
+        "ef_output": [
+            [
+                "xy_i",
+                "copter_aparm_angle_max",
+                "flow_pi_xy_get_p"
+            ],
+            0
+        ],
+        "limited": [
+            [
+                "fabsf_bf_angles_x",
+                "fabsf_bf_angles_y",
+                "copter_aparm_angle_max"
+            ],
+            0
+        ],
+        "raw_flow.y": [
+            [
+                "raw_flow_y",
+                "flow_max"
+            ],
+            0
+        ],
+        "last_stick_input_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "velocity": [
+            [
+                "i",
+                "height_min",
+                "flow_filter_apply_raw_flow",
+                "copter_inertial_nav_get_position_z_up_cm",
+                "height_offset",
+                "height_max"
+            ],
+            3
+        ],
+        "bf_angles": [
+            [
+                "copter_ahrs_earth_to_body2d_ef_output"
+            ],
+            0
+        ],
+        "lean_angle_cd": [
+            [
+                "fabsf_velocity",
+                "brake_rate_dps_get"
+            ],
+            2
+        ],
+        "xy_I": [
+            [
+                "flow_pi_xy_get_i_shrink",
+                "flow_pi_xy_get_pi"
+            ],
+            0
+        ],
+        "input_ef": [
+            [
+                "copter_ahrs_body_to_earth2d_sensor_flow"
+            ],
+            0
+        ],
+        "bf_angles.x": [
+            [
+                "bf_angles_x",
+                "copter_aparm_angle_max"
+            ],
+            0
+        ],
+        "bf_angles.y": [
+            [
+                "copter_aparm_angle_max",
+                "bf_angles_y"
+            ],
+            0
+        ],
+        "raw_flow": [
+            [
+                "copter_optflow_body_rate",
+                "copter_optflow_flow_rate"
+            ],
+            0
+        ],
+        "raw_flow.x": [
+            [
+                "flow_max",
+                "raw_flow_x"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "pitch_in": [
+            [
+                "copter_channel_pitch_get_control_in"
+            ],
+            0
+        ],
+        "quality_filtered": [
+            [
+                "filter_constant",
+                "copter_optflow_quality"
+            ],
+            0
+        ],
+        "flowhold_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "flow_angles.y": [
+            [
+                "flow_angles_y",
+                "copter_aparm_angle_max"
+            ],
+            1
+        ],
+        "target_climb_rate": [
+            [
+                "get_pilot_speed_dn_copter_g_pilot_speed_up",
+                "copter_get_pilot_desired_climb_rate_copter_channel_throttle_get_control_in",
+                "get_avoidance_adjusted_climbrate_target_climb_rate"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "bf_angles": [
+            [
+                "flow_angles"
+            ],
+            0
+        ],
+        "roll_in": [
+            [
+                "copter_channel_roll_get_control_in"
+            ],
+            0
+        ],
+        "bf_angles.y": [
+            [
+                "bf_angles_y",
+                "copter_aparm_angle_max"
+            ],
+            1
+        ],
+        "bf_angles.x": [
+            [
+                "bf_angles_x",
+                "copter_aparm_angle_max"
+            ],
+            1
+        ],
+        "flow_angles.x": [
+            [
+                "flow_angles_x",
+                "copter_aparm_angle_max"
+            ],
+            1
+        ]
+    },
+    "update_height_estimate": {
+        "last_flow_rate_rps": [
+            [
+                "copter_optflow_flow_rate",
+                "copter_optflow_body_rate"
+            ],
+            1
+        ],
+        "last_flow_ms": [
+            [
+                "copter_optflow_last_update",
+                "millis"
+            ],
+            0
+        ],
+        "delta_vel": [
+            [
+                "rot_mat"
+            ],
+            0
+        ],
+        "delta_vel_bf": [
+            [
+                "copter_ahrs_earth_to_body2d_delta_velocity_ne"
+            ],
+            0
+        ],
+        "delta_velocity_ne.y": [
+            [
+                "delta_vel_y"
+            ],
+            0
+        ],
+        "height_estimate": [
+            [
+                "copter_inertial_nav_get_position_z_up_cm",
+                "height_min",
+                "fabsf_delta_flowrate",
+                "fabsf_i",
+                "delta_vel_rate",
+                "i",
+                "copter_optflow_flow_rate",
+                "copter_optflow_body_rate",
+                "fabsf_delta_flowrate",
+                "fabsf_i",
+                "height_delta_max",
+                "copter_inertial_nav_get_position_z_up_cm"
+            ],
+            9
+        ],
+        "delta_velocity_ne.x": [
+            [
+                "delta_vel_x"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "copter_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "dt_ms": [
+            [
+                "copter_optflow_last_update"
+            ],
+            0
+        ],
+        "last_ins_height": [
+            [
+                "copter_inertial_nav_get_position_z_up_cm"
+            ],
+            1
+        ]
+    }
+}

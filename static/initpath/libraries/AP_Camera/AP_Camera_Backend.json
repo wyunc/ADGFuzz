@@ -1,0 +1,237 @@
+{
+    "init": {
+        "_camera_info.sensor_size_v": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "_camera_info.sensor_size_h": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "_camera_info.focal_length": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "_camera_info.flags": [
+            [
+                "camera_cap_flags_capture_image"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_location": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "delta_ms": [
+            [
+                "last_picture_time_ms",
+                "millis"
+            ],
+            0
+        ],
+        "last_is_armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ]
+    },
+    "take_picture": {
+        "last_picture_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "take_multiple_pictures": {
+        "time_interval_settings": [
+            [
+                "total_num",
+                "time_interval_ms"
+            ],
+            0
+        ]
+    },
+    "send_camera_information": {
+        "camera_info.sensor_size_h": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "camera_info.sensor_size_v": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "camera_info.focal_length": [
+            [
+                "na_nf"
+            ],
+            0
+        ],
+        "camera_info.lens_id": [
+            [
+                "_instance"
+            ],
+            0
+        ],
+        "camera_info.flags": [
+            [
+                "camera_cap_flags_capture_image"
+            ],
+            0
+        ],
+        "camera_info": [
+            [
+                "_camera_info"
+            ],
+            0
+        ],
+        "camera_info.time_boot_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "camera_info.gimbal_device_id": [
+            [
+                "get_gimbal_device_id"
+            ],
+            0
+        ]
+    },
+    "set_camera_information": {
+        "_camera_info": [
+            [
+                "camera_info"
+            ],
+            0
+        ]
+    },
+    "set_stream_information": {
+        "_stream_info": [
+            [
+                "stream_info"
+            ],
+            0
+        ]
+    },
+    "send_camera_capture_status": {
+        "image_status": [
+            [
+                "time_interval_settings_num_remaining"
+            ],
+            0
+        ]
+    },
+    "setup_feedback_callback": {
+        "trigger_polarity": [
+            [
+                "_params_feedback_polarity"
+            ],
+            0
+        ]
+    },
+    "feedback_pin_isr": {
+        "feedback_trigger_timestamp_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ]
+    },
+    "feedback_pin_timer": {
+        "trigger_polarity": [
+            [
+                "_params_feedback_polarity"
+            ],
+            0
+        ],
+        "last_pin_state": [
+            [
+                "hal_gpio_read__params_feedback_pin"
+            ],
+            1
+        ],
+        "feedback_trigger_timestamp_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "check_feedback": {
+        "feedback_trigger_logged_count": [
+            [
+                "feedback_trigger_count"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "tdiff": [
+            [
+                "micros",
+                "feedback_trigger_timestamp_us"
+            ],
+            1
+        ]
+    },
+    "prep_mavlink_msg_camera_feedback": {
+        "camera_feedback.pitch_sensor": [
+            [
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "camera_feedback.roll_sensor": [
+            [
+                "ahrs_roll_sensor"
+            ],
+            0
+        ],
+        "camera_feedback.feedback_trigger_logged_count": [
+            [
+                "feedback_trigger_logged_count"
+            ],
+            0
+        ],
+        "camera_feedback.timestamp_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "camera_feedback.yaw_sensor": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "log_picture": {
+        "using_feedback_pin": [
+            [
+                "_params_feedback_pin"
+            ],
+            0
+        ]
+    }
+}

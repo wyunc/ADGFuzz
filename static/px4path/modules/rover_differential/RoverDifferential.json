@@ -1,0 +1,88 @@
+{
+    "Run": {
+        "_dt": [
+            [
+                "constrain_5000_ms",
+                "constrain_timestamp_prev",
+                "1e",
+                "constrain_1_ms",
+                "constrain__timestamp"
+            ],
+            0
+        ],
+        "_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "generateSteeringAndThrottleSetpoint": {
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_x": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_y": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "rover_steering_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_steering_setpoint.normalized_speed_diff": [
+            [
+                "manual_control_setpoint_roll"
+            ],
+            0
+        ]
+    },
+    "generateActuatorSetpoint": {
+        "actuator_motors.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "actuator_motors.reversible_flags": [
+            [
+                "_param_r_rev_get"
+            ],
+            0
+        ],
+        "_current_throttle_body_x": [
+            [
+                "_f",
+                "actuator_motors_control"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "rover_differential"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

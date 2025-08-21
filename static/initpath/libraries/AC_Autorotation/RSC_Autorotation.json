@@ -1,0 +1,18 @@
+{
+    "set_active": {
+        "state": [
+            [
+                "active",
+                "bailing_out",
+                "deactivated"
+            ],
+            1
+        ],
+        "bail_out_started_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

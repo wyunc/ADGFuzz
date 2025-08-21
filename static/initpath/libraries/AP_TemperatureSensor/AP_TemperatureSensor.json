@@ -1,0 +1,44 @@
+{
+    "init": {
+        ".instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "_num_instances": [
+            [
+                "instance"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_logging_type": [
+            [
+                "i",
+                "_params",
+                "none",
+                "source_none",
+                "_source"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temp": [
+            [
+                "instance",
+                "_temperature",
+                "_state"
+            ],
+            0
+        ]
+    }
+}

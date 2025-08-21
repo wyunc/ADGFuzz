@@ -1,0 +1,196 @@
+{
+    "get_target_location_and_velocity": {
+        "last_loc.alt": [
+            [
+                "vel_ned_z",
+                "_last_location_update_ms",
+                "millis"
+            ],
+            1
+        ],
+        "loc": [
+            [
+                "_target_location"
+            ],
+            1
+        ]
+    },
+    "get_target_dist_and_vel_ned": {
+        "dist_with_offs": [
+            [
+                "offsets",
+                "current_loc_get_distance_ned_target_loc"
+            ],
+            1
+        ],
+        "vel_ned": [
+            [
+                "veh_vel"
+            ],
+            0
+        ],
+        "_dist_to_target": [
+            [
+                "safe_sqrt_dist_with_offs_x",
+                "safe_sqrt_sq",
+                "sq_dist_with_offs_y"
+            ],
+            0
+        ],
+        "dist_ned": [
+            [
+                "current_loc_get_distance_ned_target_loc"
+            ],
+            1
+        ],
+        "_bearing_to_target": [
+            [
+                "degrees_dist_with_offs_x",
+                "degrees_atan2f",
+                "degrees_dist_with_offs_y"
+            ],
+            0
+        ]
+    },
+    "get_target_heading_deg": {
+        "heading": [
+            [
+                "_target_heading"
+            ],
+            0
+        ]
+    },
+    "handle_msg": {
+        "updated": [
+            [
+                "handle_follow_target_message_msg",
+                "handle_global_position_int_message_msg"
+            ],
+            0
+        ]
+    },
+    "handle_global_position_int_message": {
+        "_target_velocity_ned.y": [
+            [
+                "packet_vy"
+            ],
+            0
+        ],
+        "_target_velocity_ned.x": [
+            [
+                "packet_vx"
+            ],
+            0
+        ],
+        "_target_velocity_ned.z": [
+            [
+                "packet_vz"
+            ],
+            0
+        ],
+        "_target_location.lng": [
+            [
+                "packet_lon"
+            ],
+            0
+        ],
+        "_target_heading": [
+            [
+                "packet_hdg"
+            ],
+            0
+        ],
+        "_target_location.lat": [
+            [
+                "packet_lat"
+            ],
+            0
+        ],
+        "_last_heading_update_ms": [
+            [
+                "_jitter_correct_offboard_timestamp_msec_packet_time_boot_ms",
+                "_jitter_correct_offboard_timestamp_msec_millis"
+            ],
+            1
+        ]
+    },
+    "handle_follow_target_message": {
+        "new_loc.lat": [
+            [
+                "packet_lat"
+            ],
+            0
+        ],
+        "_target_location": [
+            [
+                "new_loc"
+            ],
+            0
+        ],
+        "_target_velocity_ned.y": [
+            [
+                "packet_vel"
+            ],
+            0
+        ],
+        "_target_velocity_ned.x": [
+            [
+                "packet_vel"
+            ],
+            0
+        ],
+        "_last_heading_update_ms": [
+            [
+                "_jitter_correct_offboard_timestamp_msec_millis",
+                "_jitter_correct_offboard_timestamp_msec_packet_timestamp"
+            ],
+            1
+        ],
+        "_target_velocity_ned.z": [
+            [
+                "packet_vel"
+            ],
+            0
+        ],
+        "_target_heading": [
+            [
+                "degrees_y"
+            ],
+            0
+        ],
+        "new_loc.lng": [
+            [
+                "packet_lon"
+            ],
+            0
+        ]
+    },
+    "get_velocity_ned": {
+        "vel_ned": [
+            [
+                "_target_accel_ned",
+                "dt",
+                "_target_velocity_ned"
+            ],
+            0
+        ]
+    },
+    "get_offsets_ned": {
+        "offset": [
+            [
+                "rotate_vector_target_heading_deg",
+                "_offset_get",
+                "rotate_vector_off"
+            ],
+            1
+        ]
+    },
+    "get_target_location_and_velocity_ofs": {
+        "loc.alt": [
+            [
+                "ofs_z"
+            ],
+            0
+        ]
+    }
+}

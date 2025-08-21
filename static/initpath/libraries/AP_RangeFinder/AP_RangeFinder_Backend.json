@@ -1,0 +1,18 @@
+{
+    "set_status": {
+        "state_arg.status": [
+            [
+                "_status"
+            ],
+            0
+        ]
+    },
+    "get_state": {
+        "state_arg": [
+            [
+                "state"
+            ],
+            0
+        ]
+    }
+}

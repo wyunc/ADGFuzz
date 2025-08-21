@@ -1,0 +1,81 @@
+{
+    "Log_Write_XKF1": {
+        "posDownDeriv": [
+            [
+                "get_pos_down_derivative"
+            ],
+            0
+        ]
+    },
+    "Log_Write_XKF4": {
+        "tempVar": [
+            [
+                "fmax_f_mag_var_x",
+                "mag_var_z",
+                "fmax_f_fmax_f",
+                "fmax_f_mag_var_y"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Beacon": {
+        "report": [
+            [
+                "rng_bcn_fuse_data_report_index",
+                "rng_bcn_fusion_report"
+            ],
+            0
+        ]
+    },
+    "Log_Write_BodyOdom": {
+        "updateTime_ms": [
+            [
+                "body_odm_data_delayed_time_ms",
+                "wheel_odm_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "lastUpdateTime_ms": [
+            [
+                "update_time_ms"
+            ],
+            0
+        ]
+    },
+    "Log_Write_State_Variances": {
+        "lastEkfStateVarLogTime_ms": [
+            [
+                "dal_millis"
+            ],
+            0
+        ]
+    },
+    "Log_Write": {
+        "level": [
+            [
+                "frontend__log_level"
+            ],
+            0
+        ],
+        "lastLogWrite_us": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "time_us": [
+            [
+                "dal_micros64"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Timing": {
+        "lastTimingLogTime_ms": [
+            [
+                "dal_millis"
+            ],
+            0
+        ]
+    }
+}

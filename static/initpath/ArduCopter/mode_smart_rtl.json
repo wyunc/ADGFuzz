@@ -1,0 +1,82 @@
+{
+    "init": {
+        "smart_rtl_state": [
+            [
+                "wait_for_path_cleanup"
+            ],
+            0
+        ]
+    },
+    "is_landing": {
+        "smart_rtl_state": [
+            [
+                "land"
+            ],
+            0
+        ]
+    },
+    "wait_cleanup_run": {
+        "smart_rtl_state": [
+            [
+                "path_follow"
+            ],
+            0
+        ]
+    },
+    "path_follow_run": {
+        "path_follow_last_pop_fail_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "dest_NED_backup": [
+            [
+                "dest_ned"
+            ],
+            0
+        ],
+        "smart_rtl_state": [
+            [
+                "preland_position"
+            ],
+            0
+        ]
+    },
+    "pre_land_position_run": {
+        "smart_rtl_state": [
+            [
+                "descend",
+                "land"
+            ],
+            0
+        ]
+    },
+    "save_position": {
+        "should_save_position": [
+            [
+                "copter_flightmode_mode_number",
+                "smart_rtl",
+                "motors_armed"
+            ],
+            0
+        ]
+    },
+    "use_pilot_yaw": {
+        "final_landing": [
+            [
+                "smart_rtl_state",
+                "land"
+            ],
+            0
+        ],
+        "land_repositioning": [
+            [
+                "descend",
+                "smart_rtl_state",
+                "g_land_repositioning"
+            ],
+            0
+        ]
+    }
+}

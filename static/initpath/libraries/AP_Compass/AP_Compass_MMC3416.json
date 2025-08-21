@@ -1,0 +1,52 @@
+{
+    "timer": {
+        "state": [
+            [
+                "state_refill1_wait",
+                "state_measure_wait2",
+                "state_refill1",
+                "state_refill2_wait",
+                "state_measure_wait1",
+                "state_measure_wait3"
+            ],
+            0
+        ],
+        "counts_to_milliGauss": [
+            [
+                "sensitivity",
+                "_0e3f"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "f1",
+                "counts_to_milli_gauss",
+                "f1",
+                "counts_to_milli_gauss",
+                "f2",
+                "f2"
+            ],
+            2
+        ],
+        "field.y": [
+            [
+                "field_y"
+            ],
+            0
+        ],
+        "last_sample_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "refill_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

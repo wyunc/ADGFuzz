@@ -1,0 +1,1329 @@
+{
+    "write_sentinal": {
+        "sentinal_offset": [
+            [
+                "ofs"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "_sentinal_group"
+            ],
+            0
+        ],
+        "phdr.type": [
+            [
+                "_sentinal_type"
+            ],
+            0
+        ]
+    },
+    "erase_all": {
+        "hdr.revision": [
+            [
+                "k_eeprom_revision"
+            ],
+            0
+        ]
+    },
+    "check_frame_type": {
+        "frame_flags": [
+            [
+                "flags",
+                "ap_param_frame_type_shift"
+            ],
+            0
+        ]
+    },
+    "check_group_info": {
+        "size": [
+            [
+                "type_size_enum",
+                "type_size_ap_var_typetype"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "i",
+                "group_info",
+                "_idx"
+            ],
+            0
+        ],
+        "ginfo": [
+            [
+                "get_group_info_group_info",
+                "get_group_info_i"
+            ],
+            0
+        ],
+        "param_name_length": [
+            [
+                "prefix_length",
+                "strlen_i",
+                "strlen_group_info",
+                "strlen__name"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "i",
+                "group_info",
+                "_type",
+                "ap_param_none"
+            ],
+            0
+        ]
+    },
+    "duplicate_key": {
+        "key2": [
+            [
+                "var_info_i_key"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "vindex"
+            ],
+            0
+        ]
+    },
+    "check_var_info": {
+        "type": [
+            [
+                "info_type"
+            ],
+            0
+        ],
+        "total_size": [
+            [
+                "sizeof_param_header",
+                "type_size_ap_var_typetype",
+                "type_size_enum",
+                "sizeof_eeprom_header",
+                "sizeof_struct"
+            ],
+            1
+        ],
+        "group_info": [
+            [
+                "get_group_info_info"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "var_info_i"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "info_key"
+            ],
+            0
+        ]
+    },
+    "adjust_group_offset": {
+        "new_offset": [
+            [
+                "ptrdiff_t",
+                "base",
+                "base",
+                "void",
+                "group_info_offset",
+                "group_info_offset"
+            ],
+            1
+        ]
+    },
+    "get_base": {
+        "base": [
+            [
+                "info_ptr",
+                "ptrdiff_t"
+            ],
+            0
+        ]
+    },
+    "set_key": {
+        "phdr.key_low": [
+            [
+                "0x_ff",
+                "key"
+            ],
+            0
+        ],
+        "phdr.key_high": [
+            [
+                "key"
+            ],
+            0
+        ]
+    },
+    "is_sentinal": {
+        "v": [
+            [
+                "phdr",
+                "uint32_t"
+            ],
+            0
+        ]
+    },
+    "scan": {
+        "pofs": [
+            [
+                "0xffff"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "type_size_enum",
+                "sizeof_eeprom_header",
+                "type_size_ap_var_typephdr_type",
+                "sizeof_phdr"
+            ],
+            0
+        ]
+    },
+    "add_vector3f_suffix": {
+        "len": [
+            [
+                "strnlen_buffer_size",
+                "strnlen_buffer"
+            ],
+            0
+        ]
+    },
+    "copy_name_token": {
+        "info": [
+            [
+                "find_var_info_token_token",
+                "find_var_info_token_group_element",
+                "find_var_info_token_group_nesting",
+                "find_var_info_token_idx",
+                "find_var_info_token_ginfo"
+            ],
+            0
+        ]
+    },
+    "copy_name_info": {
+        "len": [
+            [
+                "strnlen_buffer_size",
+                "strnlen_buffer"
+            ],
+            0
+        ]
+    },
+    "find_key_by_pointer_group": {
+        "ginfo": [
+            [
+                "get_group_info_i",
+                "get_group_info_group_info"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "var_info_vindex_key"
+            ],
+            0
+        ],
+        "new_offset": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "find_key_by_pointer": {
+        "info": [
+            [
+                "var_info_i"
+            ],
+            0
+        ],
+        "ginfo": [
+            [
+                "get_group_info_info"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "info_key"
+            ],
+            0
+        ]
+    },
+    "find_top_level_key_by_pointer": {
+        "key": [
+            [
+                "info_key"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "var_info_i"
+            ],
+            0
+        ]
+    },
+    "get_param_by_index": {
+        "type_info": [
+            [
+                "old_ptype",
+                "idx",
+                "nullptr",
+                "key"
+            ],
+            0
+        ]
+    },
+    "notify": {
+        "param_header_type": [
+            [
+                "info_type",
+                "ginfo_type"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "find_var_info_idx",
+                "find_var_info_group_element",
+                "find_var_info_group_nesting",
+                "find_var_info_ginfo"
+            ],
+            0
+        ]
+    },
+    "save_sync": {
+        "info": [
+            [
+                "find_var_info_group_element",
+                "find_var_info_ginfo",
+                "find_var_info_group_nesting",
+                "find_var_info_idx"
+            ],
+            0
+        ],
+        "phdr.type": [
+            [
+                "ginfo_type",
+                "info_type"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "group_element"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "get_default_value_info",
+                "get_default_value_ginfo",
+                "get_default_value_this"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "ap_param",
+                "ptrdiff_t",
+                "this",
+                "idx",
+                "sizeof_float",
+                "const"
+            ],
+            0
+        ],
+        "v1": [
+            [
+                "cast_to_float_enum",
+                "cast_to_float_ap_var_typephdr_type"
+            ],
+            0
+        ]
+    },
+    "save": {
+        "p.force_save": [
+            [
+                "force_save"
+            ],
+            0
+        ],
+        "p.param": [
+            [
+                "this"
+            ],
+            0
+        ]
+    },
+    "load": {
+        "ap": [
+            [
+                "idx",
+                "ptrdiff_t",
+                "ap_param",
+                "this",
+                "sizeof_float"
+            ],
+            0
+        ],
+        "phdr.type": [
+            [
+                "ginfo_type",
+                "info_type"
+            ],
+            0
+        ],
+        "group_offset": [
+            [
+                "_offset",
+                "i",
+                "group_nesting_group_ret"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "group_element"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "find_var_info_ginfo",
+                "find_var_info_idx",
+                "find_var_info_group_element",
+                "find_var_info_group_nesting"
+            ],
+            0
+        ]
+    },
+    "configured_in_storage": {
+        "phdr.type": [
+            [
+                "info_type",
+                "ap_param_vector3f",
+                "ginfo_type",
+                "idx"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "find_var_info_group_element",
+                "find_var_info_idx",
+                "find_var_info_group_nesting",
+                "find_var_info_ginfo"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "group_element"
+            ],
+            0
+        ]
+    },
+    "configured_in_defaults_file": {
+        "read_only": [
+            [
+                "_read_only",
+                "param_overrides",
+                "i"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "find_var_info_idx",
+                "find_var_info_group_element",
+                "find_var_info_ginfo",
+                "find_var_info_group_nesting"
+            ],
+            0
+        ]
+    },
+    "setup_object_defaults": {
+        "ptr": [
+            [
+                "ptrdiff_t",
+                "object_pointer",
+                "_offset",
+                "void",
+                "i",
+                "group_info"
+            ],
+            1
+        ],
+        "type": [
+            [
+                "i",
+                "_type",
+                "ap_param_none",
+                "group_info"
+            ],
+            0
+        ],
+        "default_val": [
+            [
+                "get_default_value_const",
+                "i",
+                "get_default_value_ap_paramptr",
+                "group_info"
+            ],
+            0
+        ]
+    },
+    "set_object_value": {
+        "ptr": [
+            [
+                "group_info",
+                "_offset",
+                "void",
+                "ptrdiff_t",
+                "object_pointer",
+                "i"
+            ],
+            1
+        ],
+        "type": [
+            [
+                "_type",
+                "group_info",
+                "ap_param_none",
+                "i"
+            ],
+            0
+        ]
+    },
+    "setup_sketch_defaults": {
+        "type": [
+            [
+                "info_type"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "var_info_i"
+            ],
+            0
+        ]
+    },
+    "load_all": {
+        "info": [
+            [
+                "find_by_header_ptr",
+                "find_by_header_phdr"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "sizeof_eeprom_header",
+                "type_size_enum",
+                "type_size_ap_var_typephdr_type",
+                "sizeof_phdr"
+            ],
+            0
+        ]
+    },
+    "reload_defaults_file": {
+        "default_file": [
+            [
+                "hal_util_get_custom_defaults_file"
+            ],
+            0
+        ]
+    },
+    "load_defaults_file_from_romfs": {
+        "trimmed_filename": [
+            [
+                "strlen_prefix",
+                "default_file"
+            ],
+            0
+        ],
+        "text": [
+            [
+                "find_decompress_trimmed_filename",
+                "find_decompress_string_length"
+            ],
+            0
+        ]
+    },
+    "load_object_from_eeprom": {
+        "info": [
+            [
+                "find_by_header_ptr",
+                "find_by_header_phdr"
+            ],
+            0
+        ],
+        "ginfo": [
+            [
+                "get_group_info_i",
+                "get_group_info_group_info"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "sizeof_phdr",
+                "sizeof_eeprom_header",
+                "type_size_enum",
+                "type_size_ap_var_typephdr_type"
+            ],
+            0
+        ]
+    },
+    "find_old_parameter": {
+        "header.type": [
+            [
+                "info_type"
+            ],
+            0
+        ],
+        "header.group_element": [
+            [
+                "info_old_group_element"
+            ],
+            0
+        ]
+    },
+    "convert_old_parameter": {
+        "v": [
+            [
+                "is_equal_v",
+                "ap_cast_to_float_info_type"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "ap_param",
+                "old_value"
+            ],
+            0
+        ],
+        "ap2": [
+            [
+                "find_ptype",
+                "find_info_new_name"
+            ],
+            0
+        ]
+    },
+    "convert_class": {
+        "ap2": [
+            [
+                "i",
+                "group_info",
+                "_offset",
+                "object_pointer",
+                "ap_param",
+                "uint8_t"
+            ],
+            0
+        ],
+        "info.old_key": [
+            [
+                "param_key"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "ap_param",
+                "old_value"
+            ],
+            0
+        ],
+        "info.old_group_element": [
+            [
+                "is_top_level",
+                "i",
+                "group_info",
+                "_idx",
+                "old_index"
+            ],
+            2
+        ],
+        "info.type": [
+            [
+                "group_info",
+                "_type",
+                "i",
+                "ap_var_type"
+            ],
+            0
+        ],
+        "info.new_name": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "_convert_parameter_width": {
+        "old_float_value": [
+            [
+                "old_ap_cast_to_float_old_ptype"
+            ],
+            0
+        ],
+        "new_ptype": [
+            [
+                "ginfo_type",
+                "info_type",
+                "ap_var_type"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "group_element"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "find_var_info_idx",
+                "find_var_info_group_element",
+                "find_var_info_ginfo",
+                "find_var_info_group_nesting"
+            ],
+            0
+        ],
+        "phdr.type": [
+            [
+                "old_ptype"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "uint16_t",
+                "ap_param",
+                "old_value",
+                "ap_int32",
+                "ap_int16",
+                "ap_int8",
+                "uint32_t",
+                "uint8_t"
+            ],
+            1
+        ]
+    },
+    "set_float": {
+        "v": [
+            [
+                "int16_min",
+                "int32_min",
+                "int32_max",
+                "rounding_addition",
+                "int8_min",
+                "value",
+                "int16_max",
+                "int8_max"
+            ],
+            0
+        ]
+    },
+    "parse_param_line": {
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "strtof_null",
+                "strtof_value_s"
+            ],
+            0
+        ],
+        "value_s": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "flags_s": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "vname": [
+            [
+                "strtok_r_line",
+                "strtok_r_saveptr"
+            ],
+            1
+        ]
+    },
+    "count_defaults_in_file": {
+        "file_apfs": [
+            [
+                "_open_true",
+                "_open_o_rdonly",
+                "fs_open_filename"
+            ],
+            0
+        ]
+    },
+    "read_param_defaults_file": {
+        ".read_only": [
+            [
+                "read_only"
+            ],
+            0
+        ],
+        "file_apfs": [
+            [
+                "fs_open_filename",
+                "_open_true",
+                "_open_o_rdonly"
+            ],
+            0
+        ],
+        ".value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        ".object_ptr": [
+            [
+                "find_var_type",
+                "find_pname"
+            ],
+            1
+        ],
+        "done_all_default_params": [
+            [
+                "done_all"
+            ],
+            0
+        ]
+    },
+    "load_defaults_file": {
+        "param_overrides_len": [
+            [
+                "num_defaults"
+            ],
+            0
+        ],
+        "mutable_filename": [
+            [
+                "strdup_filename"
+            ],
+            0
+        ],
+        "param_overrides": [
+            [
+                "new_nothrow",
+                "param_override",
+                "num_defaults"
+            ],
+            0
+        ],
+        "num_param_overrides": [
+            [
+                "num_defaults"
+            ],
+            0
+        ],
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "pname": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_mutable_filename"
+            ],
+            0
+        ]
+    },
+    "count_param_defaults": {
+        "length": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "ptr": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "linelen": [
+            [
+                "sizeof_line",
+                "i"
+            ],
+            0
+        ]
+    },
+    "load_param_defaults": {
+        "param_overrides_len": [
+            [
+                "num_defaults"
+            ],
+            0
+        ],
+        "ptr": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "linelen": [
+            [
+                "i",
+                "sizeof_line"
+            ],
+            0
+        ],
+        ".value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        ".object_ptr": [
+            [
+                "find_var_type",
+                "find_pname"
+            ],
+            1
+        ],
+        "num_param_overrides": [
+            [
+                "num_defaults"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".read_only": [
+            [
+                "read_only"
+            ],
+            0
+        ],
+        "param_overrides": [
+            [
+                "num_defaults",
+                "nullptr",
+                "param_override",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "send_parameter": {
+        "var_type": [
+            [
+                "ap_param_float"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "this",
+                "ap_vector3f",
+                "_get"
+            ],
+            0
+        ],
+        "name_axis": [
+            [
+                "name2",
+                "strlen_name"
+            ],
+            0
+        ]
+    },
+    "set_default_by_name": {
+        "vp": [
+            [
+                "find_vtype",
+                "find_name"
+            ],
+            0
+        ]
+    },
+    "set_by_name": {
+        "vp": [
+            [
+                "find_vtype",
+                "find_name"
+            ],
+            0
+        ]
+    },
+    "get": {
+        "value": [
+            [
+                "ap_int16",
+                "ap_int8",
+                "ap_float",
+                "find_name",
+                "find_vtype",
+                "_get",
+                "ap_int32"
+            ],
+            1
+        ]
+    },
+    "set_and_save_by_name": {
+        "vp": [
+            [
+                "find_name",
+                "find_vtype"
+            ],
+            0
+        ]
+    },
+    "set_and_save_by_name_ifchanged": {
+        "vp": [
+            [
+                "find_name",
+                "find_vtype"
+            ],
+            0
+        ]
+    },
+    "check_default": {
+        "item": [
+            [
+                "default_list"
+            ],
+            0
+        ],
+        "default_value": [
+            [
+                "item_val"
+            ],
+            0
+        ]
+    },
+    "add_default": {
+        "default_list": [
+            [
+                "defaults_list",
+                "new_nothrow"
+            ],
+            1
+        ],
+        "val": [
+            [
+                "v"
+            ],
+            0
+        ]
+    },
+    "show_all": {
+        "item": [
+            [
+                "default_list"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "first_default_value",
+                "first_token",
+                "first_type"
+            ],
+            0
+        ],
+        "default_value": [
+            [
+                "na_nf"
+            ],
+            0
+        ]
+    },
+    "add_table": {
+        "hinfo": [
+            [
+                "const_cast",
+                "info_group_info",
+                "group_info"
+            ],
+            0
+        ],
+        "info.ptr": [
+            [
+                "nullptr",
+                "calloc_float",
+                "calloc_sizeof",
+                "calloc_num_params"
+            ],
+            0
+        ],
+        "ginfo.name": [
+            [
+                "_empty_string"
+            ],
+            0
+        ],
+        "crc_param": [
+            [
+                "ap_int32",
+                "const_cast",
+                "info_ptr"
+            ],
+            0
+        ],
+        "info.group_info": [
+            [
+                "calloc_sizeof",
+                "nullptr",
+                "calloc_group_info",
+                "group_info",
+                "calloc_num_params"
+            ],
+            0
+        ],
+        "hinfo.type": [
+            [
+                "ap_param_int32"
+            ],
+            0
+        ],
+        "_num_vars": [
+            [
+                "ap_param_max_dynamic"
+            ],
+            0
+        ],
+        "info.type": [
+            [
+                "ap_param_group",
+                "ap_param_none"
+            ],
+            0
+        ],
+        "info.name": [
+            [
+                "_empty_string",
+                "strdup_prefix"
+            ],
+            0
+        ],
+        "ginfo": [
+            [
+                "gi",
+                "const_cast",
+                "info_group_info",
+                "group_info"
+            ],
+            0
+        ],
+        "hinfo.flags": [
+            [
+                "ap_param_flag_hidden"
+            ],
+            0
+        ],
+        "ginfo.idx": [
+            [
+                "0xff"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "int32_t_uint8_tprefix",
+                "int32_t_const",
+                "int32_t_crc32_small",
+                "strlen_prefix"
+            ],
+            0
+        ],
+        "info.key": [
+            [
+                "0x_ffff",
+                "ap_param_dynamic_key_base",
+                "uint16_t__key"
+            ],
+            1
+        ],
+        "info": [
+            [
+                "calloc_info",
+                "calloc_struct",
+                "calloc_ap_param_max_dynamic",
+                "calloc_sizeof",
+                "i"
+            ],
+            1
+        ],
+        "hinfo.name": [
+            [
+                "_empty_string"
+            ],
+            0
+        ]
+    },
+    "load_int32": {
+        "phdr.type": [
+            [
+                "ap_param_int32"
+            ],
+            0
+        ],
+        "phdr.group_element": [
+            [
+                "group_element"
+            ],
+            0
+        ]
+    },
+    "add_param": {
+        "def_value": [
+            [
+                "default_value",
+                "ginfo_def_value",
+                "float",
+                "const_cast"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "float_to_int32_le_hinfo_def_value"
+            ],
+            0
+        ],
+        "ginfo.offset": [
+            [
+                "param_num",
+                "sizeof_float"
+            ],
+            0
+        ],
+        "g.flags": [
+            [
+                "ap_param_flag_hidden"
+            ],
+            0
+        ],
+        "hinfo": [
+            [
+                "group_info",
+                "const_cast",
+                "info_group_info"
+            ],
+            0
+        ],
+        "ginfo.name": [
+            [
+                "_empty_string",
+                "strdup_pname"
+            ],
+            0
+        ],
+        "ginfo.idx": [
+            [
+                "param_num"
+            ],
+            0
+        ],
+        "g.type": [
+            [
+                "ap_param_float"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "param_num",
+                "info_ptr",
+                "const",
+                "ap_float",
+                "const_cast"
+            ],
+            1
+        ],
+        "g.idx": [
+            [
+                "j"
+            ],
+            0
+        ],
+        "ginfo": [
+            [
+                "group_info",
+                "param_num",
+                "const_cast",
+                "info_group_info"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "i",
+                "_var_info_dynamic"
+            ],
+            0
+        ],
+        "ginfo.type": [
+            [
+                "ap_param_float"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "uint16_t__key",
+                "ap_param_dynamic_key_base"
+            ],
+            0
+        ],
+        "g": [
+            [
+                "group_info",
+                "j",
+                "const_cast",
+                "info_group_info"
+            ],
+            0
+        ],
+        "g.offset": [
+            [
+                "j",
+                "sizeof_float"
+            ],
+            0
+        ]
+    }
+}

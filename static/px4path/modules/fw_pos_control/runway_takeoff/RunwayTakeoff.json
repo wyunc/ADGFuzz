@@ -1,0 +1,94 @@
+{
+    "init": {
+        "start_pos_global_": [
+            [
+                "start_pos_global"
+            ],
+            0
+        ],
+        "takeoff_state_": [
+            [
+                "throttle_ramp"
+            ],
+            0
+        ],
+        "initial_yaw_": [
+            [
+                "initial_yaw"
+            ],
+            0
+        ],
+        "time_initialized_": [
+            [
+                "time_now"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "takeoff_state_": [
+            [
+                "climbout",
+                "clamped_to_runway",
+                "fly"
+            ],
+            0
+        ],
+        "takeoff_time_": [
+            [
+                "time_now"
+            ],
+            0
+        ]
+    },
+    "getThrottle": {
+        "throttle": [
+            [
+                "external_throttle_setpoint",
+                "param_rwto_max_thr__get",
+                "idle_throttle"
+            ],
+            0
+        ]
+    },
+    "getMinPitch": {
+        "taxi_pitch_min": [
+            [
+                "radians_param_rwto_psp__get"
+            ],
+            0
+        ]
+    },
+    "getMaxPitch": {
+        "taxi_pitch_max": [
+            [
+                "radians_param_rwto_psp__get"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "takeoff_state_": [
+            [
+                "throttle_ramp"
+            ],
+            0
+        ]
+    },
+    "interpolateValuesOverAbsoluteTime": {
+        "seconds_since_start": [
+            [
+                "hrt_elapsed_time_start_time",
+                "_e"
+            ],
+            0
+        ],
+        "interpolator": [
+            [
+                "constrain_interpolation_time",
+                "constrain_seconds_since_start"
+            ],
+            0
+        ]
+    }
+}

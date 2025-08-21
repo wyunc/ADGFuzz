@@ -1,0 +1,23 @@
+{
+    "push_back": {
+        "result": [
+            [
+                "_ringbuffer_push_back_const",
+                "_ringbuffer_push_back_packet",
+                "sizeof_header",
+                "_ringbuffer_push_back_header",
+                "_ringbuffer_push_back_packet_len",
+                "_ringbuffer_push_back_uint8_t",
+                "_ringbuffer_push_back_reinterpret_cast"
+            ],
+            0
+        ],
+        "space_required": [
+            [
+                "sizeof_header",
+                "packet_len"
+            ],
+            0
+        ]
+    }
+}

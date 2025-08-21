@@ -1,0 +1,24 @@
+{
+    "cruise_learn_start": {
+        "cruise_learn.learn_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "cruise_learn_complete": {
+        "speed": [
+            [
+                "cruise_learn_speed_filt_get"
+            ],
+            0
+        ],
+        "thr": [
+            [
+                "cruise_learn_throttle_filt_get"
+            ],
+            0
+        ]
+    }
+}

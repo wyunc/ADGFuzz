@@ -1,0 +1,35 @@
+{
+    "timer": {
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.current_amps": [
+            [
+                "uint32_t",
+                "buff",
+                "float",
+                "int32_t"
+            ],
+            0
+        ],
+        "pressed": [
+            [
+                "buff",
+                "0x01"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "float",
+                "buff",
+                "i",
+                "1e"
+            ],
+            2
+        ]
+    }
+}

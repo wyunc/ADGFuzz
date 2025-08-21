@@ -1,0 +1,18 @@
+{
+    "SetPower": {
+        "last_power": [
+            [
+                "power"
+            ],
+            0
+        ]
+    },
+    "WriteRegCheck": {
+        "v": [
+            [
+                "read_reg_address"
+            ],
+            0
+        ]
+    }
+}

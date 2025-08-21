@@ -1,0 +1,97 @@
+{
+    "_run_trampoline": {
+        "thread": [
+            [
+                "arg",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "_run": {
+        "dt": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "next_run_usec": [
+            [
+                "micros64",
+                "_period_usec"
+            ],
+            0
+        ]
+    },
+    "_poison_stack": {
+        "curr": [
+            [
+                "uint32_t",
+                "align_to_sizeof",
+                "align_to_uint32_t",
+                "align_to_alloca",
+                "alignof_uint32_t"
+            ],
+            0
+        ],
+        "_stack_debug.start": [
+            [
+                "sizeof_uint32_t"
+            ],
+            2
+        ],
+        "_stack_debug.end": [
+            [
+                "stackp",
+                "sizeof_uint32_t",
+                "uint32_t"
+            ],
+            2
+        ],
+        "p": [
+            [
+                "stack_poison",
+                "stackp",
+                "sizeof_uint32_t",
+                "uint32_t"
+            ],
+            2
+        ]
+    },
+    "start": {
+        "param": [
+            [
+                "prio",
+                "_sched_priority"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "pthread_create__ctx",
+                "pthread_create_attr",
+                "pthread_create__run_trampoline",
+                "pthread_create_this"
+            ],
+            0
+        ]
+    },
+    "set_rate": {
+        "_period_usec": [
+            [
+                "hz_to_usec_rate_hz"
+            ],
+            0
+        ]
+    },
+    "set_stack_size": {
+        "_stack_size": [
+            [
+                "size_t",
+                "stack_size",
+                "pthread_stack_min"
+            ],
+            0
+        ]
+    }
+}

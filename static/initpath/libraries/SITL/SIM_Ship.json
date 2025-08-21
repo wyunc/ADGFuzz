@@ -1,0 +1,115 @@
+{
+    "update": {
+        "position": [
+            [
+                "dpos"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_0e",
+                "micros"
+            ],
+            1
+        ],
+        "last_report_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "home.alt": [
+            [
+                "ofs_z"
+            ],
+            0
+        ],
+        "heading_deg": [
+            [
+                "wrap_360_heading_deg",
+                "m_pi",
+                "sim_path_size_get",
+                "sim_speed_get_speed",
+                "sim_speed_get_dspeed_max",
+                "delta_t"
+            ],
+            4
+        ],
+        "last_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "home": [
+            [
+                "sitl_state_home"
+            ],
+            0
+        ],
+        "ship.sim": [
+            [
+                "this"
+            ],
+            0
+        ],
+        "dspeed_max": [
+            [
+                "delta_t",
+                "max_accel"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "offset_get"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "radians_dangle",
+                "delta_t"
+            ],
+            0
+        ]
+    },
+    "get_location": {
+        "loc": [
+            [
+                "home"
+            ],
+            0
+        ]
+    },
+    "send_report": {
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_buf",
+                "mavlink_msg_to_send_buffer_msg"
+            ],
+            0
+        ],
+        "alt_mm": [
+            [
+                "home_alt",
+                "height"
+            ],
+            0
+        ],
+        "component_id": [
+            [
+                "mav_comp_id_user10"
+            ],
+            0
+        ],
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

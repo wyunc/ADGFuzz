@@ -1,0 +1,36 @@
+{
+    "init": {
+        "cntl2": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "field": [
+            [
+                "int16_t",
+                "static_cast",
+                "le16toh_buffer_ry",
+                "int16_t",
+                "static_cast",
+                "le16toh_buffer_rx",
+                "int16_t",
+                "le16toh_buffer_rz",
+                "static_cast",
+                "vector3f"
+            ],
+            3
+        ],
+        "ret": [
+            [
+                "sizeof_buffer",
+                "_dev_read_registers_output_x_l_reg",
+                "_dev_read_registers_uint8_t",
+                "buffer"
+            ],
+            0
+        ]
+    }
+}

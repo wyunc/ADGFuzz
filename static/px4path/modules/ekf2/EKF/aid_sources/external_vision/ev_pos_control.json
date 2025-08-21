@@ -1,0 +1,100 @@
+{
+    "controlEvPosFusion": {
+        "R_ev_to_ekf": [
+            [
+                "dcmf__ev_q_error_filt_get_state"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "r_ev_to_ekf",
+                "ev_sample_pos",
+                "_params_imu_pos_body",
+                "_params_ev_pos_body",
+                "_r_to_earth"
+            ],
+            2
+        ],
+        "pos_cov": [
+            [
+                "r_ev_to_ekf",
+                "r_ev_to_ekf_transpose",
+                "diag_ev_sample_position_var"
+            ],
+            0
+        ],
+        "pos_obs_var": [
+            [
+                "_ev_pos_b_est_get_bias_var",
+                "measurement_var"
+            ],
+            0
+        ],
+        "measurement_valid": [
+            [
+                "measurement_is_all_finite",
+                "measurement_var_is_all_finite"
+            ],
+            0
+        ],
+        "reset": [
+            [
+                "yaw_alignment_changed",
+                "ev_reset",
+                "_ev_pos_b_est_fusion_active",
+                "_ev_pos_b_est_fusion_active"
+            ],
+            2
+        ],
+        "position": [
+            [
+                "_ev_pos_b_est_get_bias",
+                "measurement"
+            ],
+            0
+        ],
+        "orientation_var_max": [
+            [
+                "ev_sample_orientation_var_max"
+            ],
+            0
+        ],
+        "position_estimate": [
+            [
+                "get_local_horizontal_position"
+            ],
+            0
+        ]
+    },
+    "startEvPosFusion": {
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "updateEvPosFusion": {
+        "is_fusion_failing": [
+            [
+                "is_timed_out_aid_src_time_last_fuse",
+                "is_timed_out__params_no_aid_timeout_max"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "pos_xy_fusion_failing": [
+            [
+                "is_timed_out__time_last_hor_pos_fuse",
+                "is_timed_out__params_no_aid_timeout_max"
+            ],
+            0
+        ]
+    }
+}

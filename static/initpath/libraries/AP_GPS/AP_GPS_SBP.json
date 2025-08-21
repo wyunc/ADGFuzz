@@ -1,0 +1,210 @@
+{
+    "inject_data": {
+        "last_injected_data_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_sbp_process": {
+        "parser_state.msg_len": [
+            [
+                "port_read"
+            ],
+            1
+        ],
+        "parser_state.state": [
+            [
+                "get_type",
+                "get_crc",
+                "get_len",
+                "get_sender",
+                "waiting",
+                "get_msg"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_parser_state_msg_buff",
+                "crc16_ccitt_crc",
+                "parser_state_sender_id",
+                "crc16_ccitt_uint8_t",
+                "crc16_ccitt_parser_state_msg_len",
+                "parser_state_msg_type"
+            ],
+            0
+        ]
+    },
+    "_sbp_process_message": {
+        "last_pos_llh_rtk": [
+            [
+                "parser_state_msg_buff",
+                "struct",
+                "sbp_pos_llh_t"
+            ],
+            1
+        ],
+        "last_heatbeat_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_iar_num_hypotheses": [
+            [
+                "iar_num_hypotheses"
+            ],
+            0
+        ],
+        "last_pos_llh_spp": [
+            [
+                "parser_state_msg_buff",
+                "struct",
+                "sbp_pos_llh_t"
+            ],
+            1
+        ],
+        "iar": [
+            [
+                "parser_state_msg_buff",
+                "struct",
+                "sbp_iar_state_t"
+            ],
+            0
+        ]
+    },
+    "_attempt_state_update": {
+        "state.rtk_iar_num_hypotheses": [
+            [
+                "last_iar_num_hypotheses"
+            ],
+            0
+        ],
+        "last_full_update_tow": [
+            [
+                "last_vel_ned_tow"
+            ],
+            0
+        ],
+        "state.location.alt": [
+            [
+                "int32_t",
+                "pos_llh_height"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "last_gps_time_wn"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "pos_llh_n_sats"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "last_dops_hdop"
+            ],
+            0
+        ],
+        "last_full_update_cpu_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pos_llh": [
+            [
+                "last_pos_llh_rtk"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "1e7",
+                "int32_t",
+                "double",
+                "pos_llh_lon"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d_rtk_float",
+                "no_fix"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "last_vel_ned_tow"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "1e7",
+                "int32_t",
+                "double",
+                "pos_llh_lat"
+            ],
+            0
+        ]
+    },
+    "_detect": {
+        "state.state": [
+            [
+                "get_msg",
+                "get_crc",
+                "get_len",
+                "get_type",
+                "get_sender",
+                "waiting"
+            ],
+            0
+        ],
+        "heartbeat": [
+            [
+                "state_heartbeat_buff",
+                "struct",
+                "sbp_heartbeat_t"
+            ],
+            0
+        ],
+        "state.crc_so_far": [
+            [
+                "crc16_ccitt_data",
+                "crc16_ccitt_state_crc_so_far"
+            ],
+            0
+        ],
+        "state.msg_len": [
+            [
+                "data"
+            ],
+            0
+        ]
+    },
+    "logging_log_raw_sbp": {
+        "pages": [
+            [
+                "msg_len"
+            ],
+            0
+        ],
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    }
+}

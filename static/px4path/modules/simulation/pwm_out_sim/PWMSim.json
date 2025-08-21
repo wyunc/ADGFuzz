@@ -1,0 +1,80 @@
+{
+    "updateOutputs": {
+        "actuator_outputs.noutputs": [
+            [
+                "num_outputs"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "outputs",
+                "i"
+            ],
+            0
+        ],
+        "actuator_outputs.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pwm_delta": [
+            [
+                "pwm_sim_pwm_max_magic",
+                "_f",
+                "pwm_sim_pwm_min_magic"
+            ],
+            0
+        ],
+        "pwm_center": [
+            [
+                "pwm_sim_pwm_max_magic",
+                "_f",
+                "pwm_sim_pwm_min_magic"
+            ],
+            0
+        ],
+        "function": [
+            [
+                "_mixing_output_output_function_i"
+            ],
+            0
+        ],
+        "is_reversible": [
+            [
+                "1u",
+                "i",
+                "_mixing_output_reversible_outputs"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "myoptarg": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "hil_mode": [
+            [
+                "strcmp_myoptarg"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "pwm_sim_hil_mode"
+            ],
+            0
+        ]
+    }
+}

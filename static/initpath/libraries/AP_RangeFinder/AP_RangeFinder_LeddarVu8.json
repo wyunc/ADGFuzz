@@ -1,0 +1,68 @@
+{
+    "get_reading": {
+        "last_distance_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "reading_m": [
+            [
+                "max_distance_cm_leddarvu8_out_of_range_add_cm",
+                "count",
+                "latest_dist_cm",
+                "leddarvu8_dist_max_cm"
+            ],
+            1
+        ]
+    },
+    "request_distances": {
+        "crc": [
+            [
+                "calc_crc_modbus_req_buf",
+                "calc_crc_modbus_req_buf_len"
+            ],
+            0
+        ],
+        "last_distance_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "req_buf_len": [
+            [
+                "sizeof_req_buf"
+            ],
+            0
+        ]
+    },
+    "parse_byte": {
+        "reading_cm": [
+            [
+                "uint16_t",
+                "parsed_msg_payload",
+                "i"
+            ],
+            2
+        ],
+        "expected_crc": [
+            [
+                "calc_crc_modbus_parsed_msg_payload_recv",
+                "calc_crc_modbus_parsed_msg_address"
+            ],
+            0
+        ],
+        "parsed_msg.state": [
+            [
+                "waiting_for_payload_len",
+                "waiting_for_address",
+                "waiting_for_crc_low",
+                "waiting_for_function_code",
+                "waiting_for_crc_high",
+                "waiting_for_payload"
+            ],
+            0
+        ]
+    }
+}

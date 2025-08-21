@@ -1,0 +1,11 @@
+{
+    "read_rangefinder": {
+        "height": [
+            [
+                "relative_altitude",
+                "height_above_target"
+            ],
+            0
+        ]
+    }
+}

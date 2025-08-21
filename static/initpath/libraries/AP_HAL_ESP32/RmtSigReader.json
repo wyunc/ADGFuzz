@@ -1,0 +1,72 @@
+{
+    "init": {
+        "config.rmt_mode": [
+            [
+                "rmt_mode_rx"
+            ],
+            0
+        ],
+        "config.rx_config.idle_threshold": [
+            [
+                "idle_threshold"
+            ],
+            0
+        ],
+        "config.channel": [
+            [
+                "rmt_channel_4"
+            ],
+            0
+        ],
+        "config.gpio_num": [
+            [
+                "hal_esp32_rcin"
+            ],
+            0
+        ]
+    },
+    "add_item": {
+        "ready_low": [
+            [
+                "idle_threshold"
+            ],
+            1
+        ],
+        "ready_high": [
+            [
+                "idle_threshold"
+            ],
+            2
+        ]
+    },
+    "read": {
+        "width_high": [
+            [
+                "ready_high"
+            ],
+            0
+        ],
+        "width_low": [
+            [
+                "ready_low"
+            ],
+            0
+        ],
+        "buffer_empty": [
+            [
+                "item_size",
+                "current_item"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "x_ringbuffer_receive_item_size",
+                "nullptr",
+                "rmt_item32_t",
+                "x_ringbuffer_receive_handle"
+            ],
+            0
+        ]
+    }
+}

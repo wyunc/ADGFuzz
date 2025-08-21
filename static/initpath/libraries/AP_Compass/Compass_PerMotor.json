@@ -1,0 +1,67 @@
+{
+    "scaled_output": {
+        "pwm": [
+            [
+                "hal_rcout_read_last_sent_motor_map",
+                "hal_rcout_read_last_sent_motor"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "powf_output",
+                "voltage",
+                "hal_rcout_scale_esc_to_unity_pwm",
+                "powf_expo"
+            ],
+            0
+        ]
+    },
+    "calibration_start": {
+        "base_field": [
+            [
+                "compass_get_field"
+            ],
+            0
+        ]
+    },
+    "calibration_update": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "scaled_output_i"
+            ],
+            0
+        ]
+    },
+    "calibration_end": {
+        "c": [
+            [
+                "i",
+                "count",
+                "output_sum",
+                "i",
+                "base_field",
+                "field_sum",
+                "count"
+            ],
+            2
+        ]
+    },
+    "compensate": {
+        "offset": [
+            [
+                "scaled_output_i",
+                "_get",
+                "i",
+                "compensation"
+            ],
+            2
+        ]
+    }
+}

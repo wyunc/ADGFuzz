@@ -1,0 +1,45 @@
+{
+    "open": {
+        "_fd": [
+            [
+                "open_o_cloexec",
+                "open_o_rdwr",
+                "open__device_path",
+                "open_o_noctty"
+            ],
+            0
+        ]
+    },
+    "set_blocking": {
+        "flags": [
+            [
+                "o_nonblock",
+                "fcntl__fd",
+                "fcntl_f_getfl"
+            ],
+            0
+        ]
+    },
+    "set_speed": {
+        "tio.c_ispeed": [
+            [
+                "baudrate"
+            ],
+            0
+        ],
+        "tio.c_ospeed": [
+            [
+                "baudrate"
+            ],
+            0
+        ]
+    },
+    "set_flow_control": {
+        "_flow_control": [
+            [
+                "flow_control_setting"
+            ],
+            0
+        ]
+    }
+}

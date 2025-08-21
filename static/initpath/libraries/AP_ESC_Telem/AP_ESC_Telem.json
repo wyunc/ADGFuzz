@@ -1,0 +1,477 @@
+{
+    "get_average_motor_rpm": {
+        "rpm_avg": [
+            [
+                "rpm",
+                "valid_escs"
+            ],
+            0
+        ]
+    },
+    "are_motors_running": {
+        "rpmdata": [
+            [
+                "_rpm_data",
+                "i"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "get_rpm": {
+        "rpm": [
+            [
+                "micros",
+                "1e6f",
+                "rpmdata_update_rate_hz",
+                "rpmdata_last_update_us",
+                "esc_index",
+                "rpmdata_prev_rpm",
+                "rpmdata_rpm",
+                "rpm_scale_factor"
+            ],
+            2
+        ],
+        "rpmdata": [
+            [
+                "esc_index",
+                "_rpm_data"
+            ],
+            0
+        ]
+    },
+    "get_raw_rpm": {
+        "rpmdata": [
+            [
+                "_rpm_data",
+                "esc_index"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "rpm": [
+            [
+                "rpmdata_rpm"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "telemdata": [
+            [
+                "_telem_data",
+                "esc_index"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "telemdata_temperature_cdeg"
+            ],
+            0
+        ]
+    },
+    "get_motor_temperature": {
+        "temp": [
+            [
+                "telemdata_motor_temp_cdeg"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "_telem_data",
+                "esc_index"
+            ],
+            0
+        ]
+    },
+    "get_highest_temperature": {
+        "temp": [
+            [
+                "temp_temp"
+            ],
+            0
+        ]
+    },
+    "get_current": {
+        "telemdata": [
+            [
+                "_telem_data",
+                "esc_index"
+            ],
+            0
+        ],
+        "amps": [
+            [
+                "telemdata_current"
+            ],
+            0
+        ]
+    },
+    "get_voltage": {
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ],
+        "volts": [
+            [
+                "telemdata_voltage"
+            ],
+            0
+        ]
+    },
+    "get_consumption_mah": {
+        "consumption_mah": [
+            [
+                "telemdata_consumption_mah"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ]
+    },
+    "get_usage_seconds": {
+        "usage_s": [
+            [
+                "telemdata_usage_s"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ]
+    },
+    "get_input_duty": {
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ],
+        "input_duty": [
+            [
+                "telemdata_input_duty"
+            ],
+            0
+        ]
+    },
+    "get_output_duty": {
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ],
+        "output_duty": [
+            [
+                "telemdata_output_duty"
+            ],
+            0
+        ]
+    },
+    "get_flags": {
+        "flags": [
+            [
+                "telemdata_flags"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "_telem_data",
+                "esc_index"
+            ],
+            0
+        ]
+    },
+    "get_power_percentage": {
+        "telemdata": [
+            [
+                "esc_index",
+                "_telem_data"
+            ],
+            0
+        ],
+        "power_percentage": [
+            [
+                "telemdata_power_percentage"
+            ],
+            0
+        ]
+    },
+    "send_esc_telemetry_mavlink": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "now_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "next_idx": [
+            [
+                "esc_telem_max_escs",
+                "idx"
+            ],
+            2
+        ],
+        "telemdata": [
+            [
+                "_telem_data",
+                "constrain_int16_mavlink_offset",
+                "constrain_int16_esc_telem_max_escs",
+                "esc_telem_max_escs",
+                "idx",
+                "j"
+            ],
+            4
+        ],
+        "chan": [
+            [
+                "mav_chan",
+                "mavlink_channel_t"
+            ],
+            0
+        ]
+    },
+    "update_telem_data": {
+        "telemdata.usage_s": [
+            [
+                "new_data_usage_s"
+            ],
+            0
+        ],
+        "telemdata.consumption_mah": [
+            [
+                "new_data_consumption_mah"
+            ],
+            0
+        ],
+        "telemdata.output_duty": [
+            [
+                "new_data_output_duty"
+            ],
+            0
+        ],
+        "telemdata.input_duty": [
+            [
+                "new_data_input_duty"
+            ],
+            0
+        ],
+        "telemdata.motor_temp_cdeg": [
+            [
+                "new_data_motor_temp_cdeg"
+            ],
+            0
+        ],
+        "telemdata.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "telemdata.flags": [
+            [
+                "new_data_flags"
+            ],
+            0
+        ],
+        "telemdata.edt2_status": [
+            [
+                "merge_edt2_status_new_data_edt2_status",
+                "merge_edt2_status_telemdata_edt2_status"
+            ],
+            0
+        ],
+        "telemdata.temperature_cdeg": [
+            [
+                "new_data_temperature_cdeg"
+            ],
+            0
+        ],
+        "telemdata.current": [
+            [
+                "new_data_current"
+            ],
+            0
+        ],
+        "has_motor_temperature": [
+            [
+                "motor_temperature",
+                "data_mask"
+            ],
+            0
+        ],
+        "telemdata.power_percentage": [
+            [
+                "new_data_power_percentage"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "_telem_data",
+                "esc_index"
+            ],
+            0
+        ],
+        "telemdata.edt2_stress": [
+            [
+                "merge_edt2_stress_new_data_edt2_stress",
+                "merge_edt2_stress_telemdata_edt2_stress"
+            ],
+            0
+        ],
+        "telemdata.voltage": [
+            [
+                "new_data_voltage"
+            ],
+            0
+        ],
+        "has_temperature": [
+            [
+                "temperature",
+                "data_mask"
+            ],
+            0
+        ]
+    },
+    "update_rpm": {
+        "last_update_us": [
+            [
+                "rpmdata_last_update_us"
+            ],
+            0
+        ],
+        "rpmdata.update_rate_hz": [
+            [
+                "1000000u",
+                "constrain_uint32_last_update_us",
+                "10u",
+                "_0e6f",
+                "constrain_uint32_now"
+            ],
+            0
+        ],
+        "rpmdata": [
+            [
+                "esc_index",
+                "_rpm_data"
+            ],
+            0
+        ],
+        "rpmdata.last_update_us": [
+            [
+                "micros",
+                "1u"
+            ],
+            1
+        ],
+        "rpmdata.error_rate": [
+            [
+                "error_rate"
+            ],
+            0
+        ],
+        "rpmdata.prev_rpm": [
+            [
+                "rpmdata_rpm"
+            ],
+            0
+        ],
+        "rpmdata.rpm": [
+            [
+                "new_rpm"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "edt2_stress": [
+            [
+                "telemdata_edt2_stress"
+            ],
+            0
+        ],
+        "now_us64": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "now_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "edt2_status": [
+            [
+                "telemdata_edt2_status"
+            ],
+            0
+        ],
+        "rpm": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ],
+        "raw_rpm": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ],
+        "telemdata": [
+            [
+                "_telem_data",
+                "i"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "rpmdata": [
+            [
+                "_rpm_data",
+                "i"
+            ],
+            0
+        ]
+    }
+}

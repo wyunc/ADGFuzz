@@ -1,0 +1,47 @@
+{
+    "set_cutoff_frequency_override": {
+        "_sample_freq": [
+            [
+                "sample_freq"
+            ],
+            0
+        ],
+        "_DT": [
+            [
+                "sample_freq"
+            ],
+            0
+        ]
+    },
+    "setup": {
+        "type": [
+            [
+                "low_pass_const_dt"
+            ],
+            0
+        ]
+    },
+    "sweep": {
+        "t": [
+            [
+                "sample_rate",
+                "i"
+            ],
+            0
+        ],
+        "input": [
+            [
+                "sinf_t",
+                "sinf_m_2pi",
+                "sinf_f"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "apply_to_filter_under_test_input"
+            ],
+            0
+        ]
+    }
+}

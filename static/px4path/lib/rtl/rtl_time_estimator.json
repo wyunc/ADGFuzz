@@ -1,0 +1,97 @@
+{
+    "addVertDistance": {
+        "_time_estimate": [
+            [
+                "calc_vert_time_estimate_alt"
+            ],
+            0
+        ]
+    },
+    "addDistance": {
+        "hor_time_estimate": [
+            [
+                "hor_dist",
+                "get_cruise_ground_speed_direction_normalized"
+            ],
+            0
+        ],
+        "_time_estimate": [
+            [
+                "max_hor_time_estimate",
+                "max_ver_time_estimate"
+            ],
+            0
+        ]
+    },
+    "addWait": {
+        "_time_estimate": [
+            [
+                "time_s"
+            ],
+            0
+        ]
+    },
+    "getCruiseGroundSpeed": {
+        "wind_across_dir": [
+            [
+                "vector2f_wind",
+                "vector2f_direction_norm",
+                "vector2f_wind_along_dir_norm"
+            ],
+            0
+        ],
+        "wind_along_dir": [
+            [
+                "wind_dot_direction_norm"
+            ],
+            0
+        ],
+        "wind": [
+            [
+                "get_wind"
+            ],
+            0
+        ],
+        "cruise_speed": [
+            [
+                "ground_speed",
+                "get_cruise_speed"
+            ],
+            0
+        ]
+    },
+    "calcVertTimeEstimate": {
+        "time_estimate": [
+            [
+                "get_descend_rate",
+                "get_climb_rate",
+                "fabsf_alt"
+            ],
+            2
+        ]
+    },
+    "getCruiseSpeed": {
+        "ret": [
+            [
+                "1e6f"
+            ],
+            0
+        ]
+    },
+    "getClimbRate": {
+        "ret": [
+            [
+                "1e6f"
+            ],
+            0
+        ]
+    },
+    "getDescendRate": {
+        "ret": [
+            [
+                "1e6f"
+            ],
+            0
+        ]
+    }
+}

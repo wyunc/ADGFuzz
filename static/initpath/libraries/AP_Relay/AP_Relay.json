@@ -1,0 +1,137 @@
+{
+    "convert_params": {
+        "param_index": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "have_default": [
+            [
+                "get_param_by_index_ap_param_int8",
+                "get_param_by_index_default_state",
+                "get_param_by_index_this"
+            ],
+            0
+        ],
+        "new_fun": [
+            [
+                "brushed_reverse_1",
+                "parachute",
+                "camera",
+                "relay",
+                "brushed_reverse_3",
+                "ignition",
+                "brushed_reverse_2",
+                "brushed_reverse_4"
+            ],
+            0
+        ],
+        "chute_relay": [
+            [
+                "parachute_relay_index"
+            ],
+            0
+        ],
+        "ice_relay": [
+            [
+                "ice_relay_index"
+            ],
+            0
+        ],
+        "motors": [
+            [
+                "motors_ugv"
+            ],
+            0
+        ],
+        "cam_relay": [
+            [
+                "camera_relay_index"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "pin": [
+            [
+                "_pin",
+                "instance",
+                "_params"
+            ],
+            0
+        ],
+        "default_state": [
+            [
+                "instance",
+                "_default_state",
+                "_params"
+            ],
+            0
+        ],
+        "use_default_param": [
+            [
+                "relay",
+                "instance",
+                "_function",
+                "_params"
+            ],
+            1
+        ]
+    },
+    "set_pin_by_instance": {
+        "initial_value": [
+            [
+                "get_pin_pin"
+            ],
+            0
+        ],
+        "pin": [
+            [
+                "_pin",
+                "_params",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "DroneCAN_pin": [
+            [
+                "dronecan_valid_pin_pin"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "pin": [
+            [
+                "_pin_get",
+                "_params",
+                "i"
+            ],
+            0
+        ]
+    },
+    "enabled": {
+        ".function": [
+            [
+                "relay"
+            ],
+            0
+        ]
+    },
+    "send_relay_status": {
+        "relay_bit_mask": [
+            [
+                "1u",
+                "i"
+            ],
+            0
+        ]
+    }
+}

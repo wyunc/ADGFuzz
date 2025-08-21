@@ -1,0 +1,217 @@
+{
+    "maybe_send_heartbeat": {
+        "buf_len": [
+            [
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_buf"
+            ],
+            0
+        ],
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_message": {
+        "autopilot_desired_engine_run_state": [
+            [
+                "on",
+                "off"
+            ],
+            0
+        ],
+        "autopilot_desired_startup_state": [
+            [
+                "on",
+                "off"
+            ],
+            0
+        ],
+        "buf_len": [
+            [
+                "mavlink_msg_to_send_buffer_buf",
+                "mavlink_msg_to_send_buffer_ack"
+            ],
+            0
+        ],
+        "manual_throttle_pct": [
+            [
+                "pkt_param4"
+            ],
+            0
+        ],
+        "autopilot_desired_governor_state": [
+            [
+                "on",
+                "off"
+            ],
+            0
+        ]
+    },
+    "update_receive": {
+        "bytes_read": [
+            [
+                "read_from_autopilot_buf",
+                "read_from_autopilot_sizeof"
+            ],
+            0
+        ]
+    },
+    "update_fuel_level": {
+        "last_fuel_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "fuel_consumed": [
+            [
+                "fuel_consumption_lperh_at_8000rpm",
+                "generatorengine_current_rpm",
+                "millis"
+            ],
+            5
+        ],
+        "fuel_level": [
+            [
+                "fuel_consumption_lperh_at_8000rpm",
+                "generatorengine_current_rpm",
+                "millis"
+            ],
+            5
+        ]
+    },
+    "update_send": {
+        "efi_tps": [
+            [
+                "manual_throttle_pct",
+                "float",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            2
+        ],
+        "efi_batt": [
+            [
+                "float",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "efi_pw": [
+            [
+                "float",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "efi_fuel_consumed": [
+            [
+                "float",
+                "numeric_limits",
+                "fuel_consumed",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "last_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "efi_egt": [
+            [
+                "float",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "volt_batt": [
+            [
+                "max_current",
+                "max_current",
+                "sitl_state_battery_current",
+                "base_supply_voltage"
+            ],
+            1
+        ],
+        "buf_len": [
+            [
+                "mavlink_msg_to_send_buffer_buf",
+                "mavlink_msg_to_send_buffer_msg"
+            ],
+            0
+        ],
+        "curr_rot": [
+            [
+                "curr_gen",
+                "curr_batt"
+            ],
+            0
+        ],
+        "efi_clt": [
+            [
+                "float",
+                "generatorengine_temperature",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "generatorengine.current_current": [
+            [
+                "max_current",
+                "sitl_state_battery_current"
+            ],
+            1
+        ],
+        "efi_fuel_level": [
+            [
+                "fuel_level",
+                "float",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "efi_fuel_flow": [
+            [
+                "float",
+                "fuel_flow_lps",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "generatorengine.max_current": [
+            [
+                "max_current"
+            ],
+            0
+        ],
+        "efi_mat": [
+            [
+                "float",
+                "numeric_limits",
+                "baro_get_temperature",
+                "quiet_na_n"
+            ],
+            0
+        ],
+        "efi_baro": [
+            [
+                "float",
+                "baro_get_pressure",
+                "numeric_limits",
+                "quiet_na_n"
+            ],
+            0
+        ]
+    }
+}

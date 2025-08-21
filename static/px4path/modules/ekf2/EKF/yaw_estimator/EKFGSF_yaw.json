@@ -1,0 +1,324 @@
+{
+    "reset": {
+        "_gsf_yaw_variance": [
+            [
+                "infinity"
+            ],
+            0
+        ]
+    },
+    "predict": {
+        "lower_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "_ahrs_accel": [
+            [
+                "delta_vel",
+                "delta_vel_dt",
+                "_f",
+                "fminf__tilt_gain",
+                "fminf__f",
+                "fminf_delta_vel_dt"
+            ],
+            2
+        ],
+        "accel_lpf_norm_sq": [
+            [
+                "_ahrs_accel_norm_squared"
+            ],
+            0
+        ],
+        "upper_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "accel_norm_sq": [
+            [
+                "accel_norm_squared"
+            ],
+            0
+        ]
+    },
+    "fuseVelocity": {
+        "_gsf_yaw_variance": [
+            [
+                "model_index",
+                "_model_weights_model_index",
+                "wrap_pi__ekf_gsf",
+                "atan2f_yaw_vector",
+                "yaw_vector",
+                "wrap_pi__x",
+                "wrap_pi_model_index",
+                "_ekf_gsf"
+            ],
+            2
+        ],
+        "min_weight": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "_model_weights": [
+            [
+                "_model_weights_model_index"
+            ],
+            1
+        ]
+    },
+    "ahrsPredict": {
+        ".gyro_bias": [
+            [
+                "_gyro_bias_gain",
+                "delta_ang_dt",
+                "_ahrs_accel_norm",
+                "_ahrs_accel",
+                "model_index",
+                "delta_ang",
+                "_gyro_bias",
+                "_ahrs_ekf_gsf",
+                "fmaxf_delta_ang_dt",
+                "vector3f__true_airspeed",
+                "_true_airspeed",
+                "vector3f_ang_rate",
+                "_ahrs_ekf_gsf",
+                "model_index",
+                "_q_inversed_dcm_z",
+                "ahrs_calc_accel_gain"
+            ],
+            7
+        ],
+        ".q": [
+            [
+                "model_index",
+                "_normalized",
+                "_q",
+                "_ahrs_ekf_gsf",
+                "dq"
+            ],
+            0
+        ],
+        "spin_rate": [
+            [
+                "ang_rate_length"
+            ],
+            0
+        ]
+    },
+    "ahrsAlignTilt": {
+        ".q": [
+            [
+                "q"
+            ],
+            0
+        ]
+    },
+    "ahrsAlignYaw": {
+        "yaw": [
+            [
+                "wrap_pi_model_index",
+                "wrap_pi__ekf_gsf",
+                "wrap_pi__x"
+            ],
+            0
+        ],
+        ".q": [
+            [
+                "quatf_yaw",
+                "quatf_r",
+                "quatf_update_yaw_in_rot_mat"
+            ],
+            0
+        ]
+    },
+    "predictEKF": {
+        "del_vel_NED": [
+            [
+                "delta_vel",
+                "r"
+            ],
+            0
+        ],
+        "dvx": [
+            [
+                "del_vel_ned",
+                "cosf__x",
+                "cosf_model_index",
+                "cosf__ekf_gsf",
+                "sinf__x",
+                "sinf__ekf_gsf",
+                "sinf_model_index"
+            ],
+            2
+        ],
+        "dvy": [
+            [
+                "del_vel_ned",
+                "cosf__x",
+                "cosf_model_index",
+                "cosf__ekf_gsf",
+                "sinf__x",
+                "sinf__ekf_gsf",
+                "sinf_model_index"
+            ],
+            2
+        ],
+        "min_var": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "d_vel_var": [
+            [
+                "sq_delta_vel_dt",
+                "sq_accel_noise"
+            ],
+            0
+        ],
+        "d_ang_var": [
+            [
+                "sq__gyro_noise",
+                "sq_delta_ang_dt"
+            ],
+            0
+        ],
+        "daz": [
+            [
+                "vector3f_delta_ang",
+                "vector3f_r"
+            ],
+            0
+        ],
+        "accel_noise": [
+            [
+                "in_air",
+                "_f",
+                "_accel_noise"
+            ],
+            0
+        ]
+    },
+    "updateEKF": {
+        "yawDelta": [
+            [
+                "k",
+                "model_index",
+                "_ekf_gsf",
+                "_innov"
+            ],
+            1
+        ],
+        "min_var": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        ".nis": [
+            [
+                "_innov",
+                "s_inverse",
+                "sq__f",
+                "_ekf_gsf",
+                "model_index"
+            ],
+            0
+        ],
+        ".innov": [
+            [
+                "_nis",
+                "sqrtf_sq",
+                "_x_xy",
+                "vel_ne",
+                "sqrtf__f",
+                "_ekf_gsf",
+                "model_index"
+            ],
+            0
+        ],
+        ".P": [
+            [
+                "p_new"
+            ],
+            0
+        ],
+        "vel_obs_var": [
+            [
+                "sq_fmaxf",
+                "sq_vel_accuracy"
+            ],
+            0
+        ],
+        ".q": [
+            [
+                "dq",
+                "_normalized",
+                "model_index",
+                "_ahrs_ekf_gsf",
+                "_q"
+            ],
+            0
+        ]
+    },
+    "initialiseEKFGSF": {
+        "_gsf_yaw_variance": [
+            [
+                "sq__f",
+                "sq_m_pi_f"
+            ],
+            0
+        ],
+        "yaw_increment": [
+            [
+                "float",
+                "n_models_ekfgsf",
+                "_f",
+                "m_pi_f"
+            ],
+            0
+        ]
+    },
+    "getLogData": {
+        "yaw_composite": [
+            [
+                "_gsf_yaw"
+            ],
+            0
+        ],
+        "yaw_variance": [
+            [
+                "_gsf_yaw_variance"
+            ],
+            0
+        ]
+    },
+    "ahrsCalcAccelGain": {
+        "centripetal_accel_compensation_enabled": [
+            [
+                "_true_airspeed",
+                "px4_isfinite__true_airspeed",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "attenuation": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "delta_accel_g": [
+            [
+                "_ahrs_accel_norm",
+                "constants_one_g"
+            ],
+            1
+        ]
+    }
+}

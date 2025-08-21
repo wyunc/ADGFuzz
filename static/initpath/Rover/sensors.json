@@ -1,0 +1,21 @@
+{
+    "update_wheel_encoder": {
+        "delta_angle": [
+            [
+                "wheel_encoder_last_index_sent",
+                "wheel_encoder_last_angle_rad",
+                "g2_wheel_encoder_get_delta_angle_wheel_encoder_last_index_sent"
+            ],
+            1
+        ],
+        "delta_time": [
+            [
+                "millis",
+                "g2_wheel_encoder_get_last_reading_ms_wheel_encoder_last_index_sent",
+                "wheel_encoder_last_index_sent",
+                "wheel_encoder_last_reading_ms"
+            ],
+            3
+        ]
+    }
+}

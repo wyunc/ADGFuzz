@@ -1,0 +1,23 @@
+{
+    "set_linear_velocity_and_yaw_rate": {
+        "turn_rate_cds": [
+            [
+                "isnan_yaw_rate_rads",
+                "degrees_yaw_rate_rads"
+            ],
+            0
+        ],
+        "target_speed": [
+            [
+                "linear_velocity_body_x"
+            ],
+            0
+        ],
+        "linear_velocity_body": [
+            [
+                "ahrs_earth_to_body_linear_velocity"
+            ],
+            0
+        ]
+    }
+}

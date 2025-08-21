@@ -1,0 +1,250 @@
+{
+    "handle_message": {
+        "req.message_type": [
+            [
+                "msg_msgid"
+            ],
+            0
+        ],
+        "req.param_index": [
+            [
+                "req_read_param_index"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "map_rc_parameter_rc_channel_index"
+            ],
+            0
+        ],
+        "param_value.param_count": [
+            [
+                "param_count_used"
+            ],
+            0
+        ],
+        "param": [
+            [
+                "param_find_no_notification_name"
+            ],
+            0
+        ],
+        "req.int_value": [
+            [
+                "val"
+            ],
+            0
+        ],
+        "_send_all_index": [
+            [
+                "param_hash"
+            ],
+            0
+        ],
+        "req.real_value": [
+            [
+                "set_param_value"
+            ],
+            0
+        ],
+        "req.node_id": [
+            [
+                "req_read_target_component",
+                "set_target_component",
+                "req_list_target_component"
+            ],
+            0
+        ],
+        "hash": [
+            [
+                "param_hash_check"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "send_param_param_for_used_index",
+                "send_param_req_read_param_index"
+            ],
+            0
+        ],
+        "req.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "param_value.param_type": [
+            [
+                "mav_param_type_uint32"
+            ],
+            0
+        ],
+        "_rc_param_map.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "req.param_type": [
+            [
+                "mav_param_type_int64",
+                "mav_param_type_real32"
+            ],
+            0
+        ]
+    },
+    "send_untransmitted": {
+        "ret": [
+            [
+                "send_param_param"
+            ],
+            0
+        ],
+        "param": [
+            [
+                "param_for_index__param_update_index"
+            ],
+            0
+        ],
+        "_param_update_time": [
+            [
+                "pupdate_timestamp"
+            ],
+            0
+        ]
+    },
+    "send_one": {
+        "hash": [
+            [
+                "param_hash_check"
+            ],
+            0
+        ],
+        "msg.param_type": [
+            [
+                "mav_param_type_uint32"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "param_for_index__send_all_index"
+            ],
+            0
+        ],
+        "msg.param_count": [
+            [
+                "param_count_used"
+            ],
+            0
+        ]
+    },
+    "send_param": {
+        "msg.param_index": [
+            [
+                "param_get_used_index_param"
+            ],
+            0
+        ],
+        "msg.param_count": [
+            [
+                "param_count_used"
+            ],
+            0
+        ],
+        "msg.param_type": [
+            [
+                "mavlink_type_float",
+                "mavlink_type_int32_t"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "param_type_param"
+            ],
+            0
+        ],
+        "msg.param_value": [
+            [
+                "param_value"
+            ],
+            0
+        ]
+    },
+    "send_uavcan": {
+        "msg.param_type": [
+            [
+                "mavlink_type_float",
+                "mavlink_type_int32_t"
+            ],
+            0
+        ],
+        "msg.param_value": [
+            [
+                "value_real_value"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "value_int_value",
+                "int32_t"
+            ],
+            0
+        ],
+        "msg.param_index": [
+            [
+                "value_param_index"
+            ],
+            0
+        ],
+        "msg.param_count": [
+            [
+                "value_param_count"
+            ],
+            0
+        ]
+    },
+    "request_next_uavcan_parameter": {
+        "req": [
+            [
+                "_uavcan_open_request_list_req"
+            ],
+            0
+        ]
+    },
+    "enque_uavcan_request": {
+        "item": [
+            [
+                "item_next"
+            ],
+            0
+        ],
+        "_uavcan_open_request_list": [
+            [
+                "new",
+                "_uavcan_open_request_list_item"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "nullptr",
+                "new",
+                "_uavcan_open_request_list_item"
+            ],
+            1
+        ]
+    },
+    "dequeue_uavcan_request": {
+        "_uavcan_open_request_list": [
+            [
+                "first_next"
+            ],
+            0
+        ]
+    }
+}

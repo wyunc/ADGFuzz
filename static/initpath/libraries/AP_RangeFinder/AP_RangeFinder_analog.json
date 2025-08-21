@@ -1,0 +1,35 @@
+{
+    "update_voltage": {
+        "state.voltage_mv": [
+            [
+                "source_voltage_average",
+                "1000u",
+                "source_voltage_average_ratiometric"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "function": [
+            [
+                "params_function_get"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "params_max_distance_cm",
+                "state_voltage_mv",
+                "params_offset",
+                "params_scaling"
+            ],
+            5
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

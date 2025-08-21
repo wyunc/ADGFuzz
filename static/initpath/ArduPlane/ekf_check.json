@@ -1,0 +1,40 @@
+{
+    "ekf_check": {
+        "flags.ekf_bad": [
+            [
+                "ekf_check_state_bad_variance"
+            ],
+            0
+        ],
+        "ekf_check_state.last_warn_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "ekf_check_disabled": [
+            [
+                "plane_arming_is_armed",
+                "g2_fs_ekf_thresh"
+            ],
+            0
+        ],
+        "ekf_check_state.fail_count": [
+            [
+                "ekf_check_iterations_max"
+            ],
+            0
+        ]
+    },
+    "ekf_over_threshold": {
+        "mag_max": [
+            [
+                "fmaxf_fmaxf",
+                "fmaxf_mag_variance_y",
+                "fmaxf_mag_variance_x",
+                "mag_variance_z"
+            ],
+            0
+        ]
+    }
+}

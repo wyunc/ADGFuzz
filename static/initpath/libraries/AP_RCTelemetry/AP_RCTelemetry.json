@@ -1,0 +1,103 @@
+{
+    "init": {
+        "_frame_string": [
+            [
+                "gcs_frame_string"
+            ],
+            0
+        ]
+    },
+    "update_avg_packet_rate": {
+        "_scheduler.last_poll_timer": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_scheduler.avg_packet_rate": [
+            [
+                "_scheduler_avg_packet_counter",
+                "_scheduler_avg_packet_rate",
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "process_scheduler_entry": {
+        "queue_empty": [
+            [
+                "_statustext_available",
+                "_statustext_queue_is_empty"
+            ],
+            0
+        ]
+    },
+    "queue_message": {
+        "statustext.severity": [
+            [
+                "severity"
+            ],
+            0
+        ]
+    },
+    "check_sensor_status_flags": {
+        "check_sensor_status_timer": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_sensor_status_flags": [
+            [
+                "sensor_status_flags"
+            ],
+            0
+        ]
+    },
+    "check_ekf_status": {
+        "get_variance": [
+            [
+                "_ahrs_get_variances_pos_var",
+                "_ahrs_get_variances_tas_var",
+                "_ahrs_get_variances_vel_var",
+                "_ahrs_get_variances_hgt_var",
+                "_ahrs_get_variances_mag_var"
+            ],
+            0
+        ],
+        "check_ekf_status_timer": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "get_vspeed_ms": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_baro": [
+            [
+                "baro"
+            ],
+            0
+        ]
+    },
+    "get_nav_alt_m": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "update_healthy_flag": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_copy_to_frontend": {
+        ".pressure": [
+            [
+                "pressure"
+            ],
+            0
+        ],
+        ".temperature": [
+            [
+                "temperature"
+            ],
+            0
+        ],
+        ".last_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        ".last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "pressure_ok": {
+        "range": [
+            [
+                "float",
+                "_frontend_get_filter_range"
+            ],
+            0
+        ],
+        "_mean_pressure": [
+            [
+                "press",
+                "fabsf__mean_pressure",
+                "fabsf_press",
+                "filter_koef",
+                "press"
+            ],
+            2
+        ]
+    }
+}

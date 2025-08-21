@@ -1,0 +1,777 @@
+{
+    "do_gcs_announcements": {
+        "announce_time": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "backup_gains_and_initialise": {
+        "orig_pitch_dff": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_dff"
+            ],
+            0
+        ],
+        "orig_pitch_accel": [
+            [
+                "attitude_control_get_accel_pitch_max_cdss"
+            ],
+            0
+        ],
+        "tune_roll_accel": [
+            [
+                "attitude_control_get_accel_roll_max_cdss"
+            ],
+            0
+        ],
+        "orig_yaw_ri": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_i"
+            ],
+            0
+        ],
+        "tune_yaw_rLPF": [
+            [
+                "attitude_control_get_rate_yaw_pid_filt_e_hz",
+                "autotune_flte_min"
+            ],
+            0
+        ],
+        "orig_bf_feedforward": [
+            [
+                "attitude_control_get_bf_feedforward"
+            ],
+            0
+        ],
+        "orig_yaw_rLPF": [
+            [
+                "attitude_control_get_rate_yaw_pid_filt_e_hz"
+            ],
+            0
+        ],
+        "orig_roll_fltt": [
+            [
+                "attitude_control_get_rate_roll_pid_filt_t_hz"
+            ],
+            0
+        ],
+        "orig_pitch_rp": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_p"
+            ],
+            0
+        ],
+        "tune_roll_rd": [
+            [
+                "attitude_control_get_rate_roll_pid_k_d"
+            ],
+            0
+        ],
+        "orig_roll_dff": [
+            [
+                "attitude_control_get_rate_roll_pid_k_dff"
+            ],
+            0
+        ],
+        "tune_yaw_rp": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_rff": [
+            [
+                "attitude_control_get_rate_yaw_pid_ff"
+            ],
+            0
+        ],
+        "orig_pitch_fltt": [
+            [
+                "attitude_control_get_rate_pitch_pid_filt_t_hz"
+            ],
+            0
+        ],
+        "tune_pitch_rp": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_p"
+            ],
+            0
+        ],
+        "tune_yaw_sp": [
+            [
+                "attitude_control_get_angle_yaw_p_k_p"
+            ],
+            0
+        ],
+        "tune_roll_rp": [
+            [
+                "attitude_control_get_rate_roll_pid_k_p"
+            ],
+            0
+        ],
+        "tune_pitch_sp": [
+            [
+                "attitude_control_get_angle_pitch_p_k_p"
+            ],
+            0
+        ],
+        "orig_pitch_rd": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_d"
+            ],
+            0
+        ],
+        "orig_yaw_rp": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_p"
+            ],
+            0
+        ],
+        "tune_yaw_accel": [
+            [
+                "attitude_control_get_accel_yaw_max_cdss"
+            ],
+            0
+        ],
+        "orig_pitch_ri": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_i"
+            ],
+            0
+        ],
+        "tune_roll_sp": [
+            [
+                "attitude_control_get_angle_roll_p_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_rd": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_d"
+            ],
+            0
+        ],
+        "orig_roll_rff": [
+            [
+                "attitude_control_get_rate_roll_pid_ff"
+            ],
+            0
+        ],
+        "orig_yaw_smax": [
+            [
+                "attitude_control_get_rate_yaw_pid_slew_limit"
+            ],
+            0
+        ],
+        "tune_yaw_rd": [
+            [
+                "min_d",
+                "attitude_control_get_rate_yaw_pid_k_d"
+            ],
+            0
+        ],
+        "orig_pitch_rff": [
+            [
+                "attitude_control_get_rate_pitch_pid_ff"
+            ],
+            0
+        ],
+        "orig_roll_rd": [
+            [
+                "attitude_control_get_rate_roll_pid_k_d"
+            ],
+            0
+        ],
+        "orig_roll_smax": [
+            [
+                "attitude_control_get_rate_roll_pid_slew_limit"
+            ],
+            0
+        ],
+        "orig_yaw_sp": [
+            [
+                "attitude_control_get_angle_yaw_p_k_p"
+            ],
+            0
+        ],
+        "orig_pitch_smax": [
+            [
+                "attitude_control_get_rate_pitch_pid_slew_limit"
+            ],
+            0
+        ],
+        "orig_yaw_accel": [
+            [
+                "attitude_control_get_accel_yaw_max_cdss"
+            ],
+            0
+        ],
+        "orig_roll_accel": [
+            [
+                "attitude_control_get_accel_roll_max_cdss"
+            ],
+            0
+        ],
+        "orig_roll_rp": [
+            [
+                "attitude_control_get_rate_roll_pid_k_p"
+            ],
+            0
+        ],
+        "tune_pitch_accel": [
+            [
+                "attitude_control_get_accel_pitch_max_cdss"
+            ],
+            0
+        ],
+        "orig_roll_sp": [
+            [
+                "attitude_control_get_angle_roll_p_k_p"
+            ],
+            0
+        ],
+        "orig_roll_ri": [
+            [
+                "attitude_control_get_rate_roll_pid_k_i"
+            ],
+            0
+        ],
+        "orig_pitch_sp": [
+            [
+                "attitude_control_get_angle_pitch_p_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_fltt": [
+            [
+                "attitude_control_get_rate_yaw_pid_filt_t_hz"
+            ],
+            0
+        ],
+        "tune_pitch_rd": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_d"
+            ],
+            0
+        ],
+        "orig_yaw_dff": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_dff"
+            ],
+            0
+        ]
+    },
+    "save_tuning_gains": {
+        "orig_pitch_ri": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_i"
+            ],
+            0
+        ],
+        "orig_roll_rd": [
+            [
+                "attitude_control_get_rate_roll_pid_k_d"
+            ],
+            0
+        ],
+        "orig_roll_rp": [
+            [
+                "attitude_control_get_rate_roll_pid_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_rLPF": [
+            [
+                "attitude_control_get_rate_yaw_pid_filt_e_hz"
+            ],
+            0
+        ],
+        "orig_roll_accel": [
+            [
+                "attitude_control_get_accel_roll_max_cdss"
+            ],
+            0
+        ],
+        "orig_yaw_sp": [
+            [
+                "attitude_control_get_angle_yaw_p_k_p"
+            ],
+            0
+        ],
+        "orig_roll_sp": [
+            [
+                "attitude_control_get_angle_roll_p_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_rff": [
+            [
+                "attitude_control_get_rate_yaw_pid_ff"
+            ],
+            0
+        ],
+        "orig_yaw_dff": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_dff"
+            ],
+            0
+        ],
+        "orig_pitch_accel": [
+            [
+                "attitude_control_get_accel_pitch_max_cdss"
+            ],
+            0
+        ],
+        "orig_roll_dff": [
+            [
+                "attitude_control_get_rate_roll_pid_k_dff"
+            ],
+            0
+        ],
+        "orig_roll_ri": [
+            [
+                "attitude_control_get_rate_roll_pid_k_i"
+            ],
+            0
+        ],
+        "orig_yaw_ri": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_i"
+            ],
+            0
+        ],
+        "orig_pitch_rff": [
+            [
+                "attitude_control_get_rate_pitch_pid_ff"
+            ],
+            0
+        ],
+        "orig_pitch_sp": [
+            [
+                "attitude_control_get_angle_pitch_p_k_p"
+            ],
+            0
+        ],
+        "orig_yaw_rd": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_d"
+            ],
+            0
+        ],
+        "orig_pitch_rp": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_p"
+            ],
+            0
+        ],
+        "orig_roll_rff": [
+            [
+                "attitude_control_get_rate_roll_pid_ff"
+            ],
+            0
+        ],
+        "orig_yaw_accel": [
+            [
+                "attitude_control_get_accel_yaw_max_cdss"
+            ],
+            0
+        ],
+        "orig_pitch_dff": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_dff"
+            ],
+            0
+        ],
+        "orig_yaw_rp": [
+            [
+                "attitude_control_get_rate_yaw_pid_k_p"
+            ],
+            0
+        ],
+        "orig_pitch_rd": [
+            [
+                "attitude_control_get_rate_pitch_pid_k_d"
+            ],
+            0
+        ]
+    },
+    "twitching_test_rate": {
+        "step": [
+            [
+                "update_gains"
+            ],
+            0
+        ],
+        "meas_rate_min": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "meas_rate_max": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "step_time_limit_ms": [
+            [
+                "millis",
+                "step_start_time_ms",
+                "autotune_testing_step_timeout_ms"
+            ],
+            1
+        ],
+        "meas_angle_min": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "twitching_abort_rate": {
+        "step": [
+            [
+                "update_gains",
+                "abort"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "failed"
+            ],
+            0
+        ]
+    },
+    "twitching_test_angle": {
+        "step_time_limit_ms": [
+            [
+                "step_start_time_ms",
+                "millis",
+                "autotune_testing_step_timeout_ms"
+            ],
+            1
+        ],
+        "meas_angle_min": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "meas_angle_max": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "meas_rate_max": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "step": [
+            [
+                "update_gains"
+            ],
+            0
+        ],
+        "meas_rate_min": [
+            [
+                "rate"
+            ],
+            0
+        ]
+    },
+    "twitching_measure_acceleration": {
+        "accel_average": [
+            [
+                "rate",
+                "millis",
+                "step_start_time_ms"
+            ],
+            1
+        ]
+    },
+    "set_gains_post_tune": {
+        "tune_pitch_accel": [
+            [
+                "autotune_accel_rp_backoff",
+                "autotune_rp_accel_min",
+                "test_accel_max"
+            ],
+            0
+        ],
+        "tune_yaw_rd": [
+            [
+                "min_d",
+                "autotune_rd_backoff"
+            ],
+            0
+        ],
+        "tune_pitch_rp": [
+            [
+                "autotune_rd_backoff",
+                "autotune_rp_backoff",
+                "autotune_rp_min"
+            ],
+            0
+        ],
+        "tune_roll_sp": [
+            [
+                "autotune_sp_min",
+                "autotune_sp_backoff"
+            ],
+            0
+        ],
+        "tune_pitch_rd": [
+            [
+                "min_d",
+                "autotune_rd_backoff"
+            ],
+            0
+        ],
+        "tune_yaw_rLPF": [
+            [
+                "tune_yaw_r_lpf",
+                "autotune_rlpf_min",
+                "autotune_rd_backoff"
+            ],
+            0
+        ],
+        "tune_roll_rd": [
+            [
+                "min_d",
+                "autotune_rd_backoff"
+            ],
+            0
+        ],
+        "tune_roll_rp": [
+            [
+                "autotune_rd_backoff",
+                "autotune_rp_backoff",
+                "autotune_rp_min"
+            ],
+            0
+        ],
+        "tune_yaw_sp": [
+            [
+                "autotune_sp_min",
+                "autotune_sp_backoff"
+            ],
+            0
+        ],
+        "tune_yaw_accel": [
+            [
+                "autotune_y_accel_min",
+                "autotune_accel_y_backoff",
+                "test_accel_max"
+            ],
+            0
+        ],
+        "tune_yaw_rp": [
+            [
+                "autotune_rd_backoff",
+                "autotune_rp_backoff",
+                "autotune_rp_min"
+            ],
+            0
+        ],
+        "tune_pitch_sp": [
+            [
+                "autotune_sp_min",
+                "autotune_sp_backoff"
+            ],
+            0
+        ],
+        "tune_roll_accel": [
+            [
+                "autotune_accel_rp_backoff",
+                "autotune_rp_accel_min",
+                "test_accel_max"
+            ],
+            0
+        ]
+    },
+    "updating_rate_d_up": {
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ],
+        "tune_d": [
+            [
+                "tune_d_max",
+                "tune_d_step_ratio",
+                "tune_d_min"
+            ],
+            0
+        ],
+        "tune_p": [
+            [
+                "tune_p_max",
+                "tune_p_step_ratio",
+                "tune_p_min"
+            ],
+            0
+        ]
+    },
+    "updating_rate_d_down": {
+        "tune_d": [
+            [
+                "tune_d_step_ratio",
+                "tune_d_min"
+            ],
+            0
+        ],
+        "tune_p": [
+            [
+                "tune_p_max",
+                "tune_p_min",
+                "tune_p_step_ratio"
+            ],
+            0
+        ],
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ]
+    },
+    "updating_rate_p_up_d_down": {
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ],
+        "tune_d": [
+            [
+                "tune_d_step_ratio",
+                "tune_d_min"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "failed"
+            ],
+            0
+        ],
+        "tune_p": [
+            [
+                "tune_p_max",
+                "tune_p_step_ratio",
+                "tune_p_min"
+            ],
+            0
+        ]
+    },
+    "updating_angle_p_down": {
+        "mode": [
+            [
+                "failed"
+            ],
+            0
+        ],
+        "tune_p": [
+            [
+                "tune_p_step_ratio",
+                "tune_p_min"
+            ],
+            0
+        ],
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ]
+    },
+    "updating_angle_p_up": {
+        "tune_p": [
+            [
+                "tune_p_max",
+                "tune_p_step_ratio"
+            ],
+            0
+        ],
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ]
+    },
+    "twitch_test_init": {
+        "target_rate": [
+            [
+                "autotune_target_min_rate_rllpit_cds",
+                "autotune_target_min_rate_yaw_cds",
+                "to_deg_attitude_control_max_rate_step_bf_roll",
+                "to_deg_attitude_control_max_rate_step_bf_yaw",
+                "autotune_target_rate_rllpit_cds",
+                "autotune_target_min_rate_rllpit_cds",
+                "autotune_target_min_rate_yaw_cds",
+                "step_scaler",
+                "autotune_target_rate_yaw_cds",
+                "to_deg_attitude_control_max_rate_step_bf_pitch"
+            ],
+            1
+        ],
+        "target_angle": [
+            [
+                "target_angle_min_rp_cd",
+                "target_angle_max_rp_cd",
+                "target_angle_min_y_cd",
+                "target_angle_max_y_cd",
+                "to_deg_attitude_control_max_angle_step_bf_pitch",
+                "to_deg_attitude_control_max_angle_step_bf_roll",
+                "to_deg_attitude_control_max_angle_step_bf_yaw"
+            ],
+            0
+        ],
+        "angle_abort": [
+            [
+                "target_angle_max_y_cd",
+                "target_angle_max_rp_cd"
+            ],
+            0
+        ]
+    },
+    "twitch_test_run": {
+        "gyro_reading": [
+            [
+                "ahrs_view_get_gyro_x",
+                "ahrs_view_get_gyro_z",
+                "ahrs_view_get_gyro_y"
+            ],
+            0
+        ],
+        "lean_angle": [
+            [
+                "int32_t",
+                "wrap_180_cd_ahrs_view_yaw_sensor",
+                "start_angle",
+                "wrap_180_cd_int32_tstart_angle",
+                "dir_sign",
+                "ahrs_view_roll_sensor",
+                "ahrs_view_pitch_sensor"
+            ],
+            0
+        ],
+        "filter_value": [
+            [
+                "to_deg_gyro_reading",
+                "dir_sign",
+                "start_rate"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "set_buzzer_tone": {
+        "envelope.dSustainTime": [
+            [
+                "duration_ms"
+            ],
+            0
+        ],
+        "tone.dEndFrequency": [
+            [
+                "frequency"
+            ],
+            0
+        ],
+        "tone.dStartFrequency": [
+            [
+                "frequency"
+            ],
+            0
+        ],
+        "tone.waveType": [
+            [
+                "osc_square"
+            ],
+            0
+        ]
+    }
+}

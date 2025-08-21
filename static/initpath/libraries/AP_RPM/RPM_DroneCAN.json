@@ -1,0 +1,63 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_rpm": {
+        "rpm": [
+            [
+                "msg_rpm",
+                "params_scaling"
+            ],
+            0
+        ],
+        "signal_quality": [
+            [
+                "dronecan_sensors_rpm_rpm_flags_unhealthy",
+                "msg_flags"
+            ],
+            1
+        ],
+        "params": [
+            [
+                "i",
+                "_drivers",
+                "_state_instance",
+                "i",
+                "_drivers",
+                "_ap_rpm__params"
+            ],
+            1
+        ],
+        "last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "last_reading_ms"
+            ],
+            0
+        ],
+        "state.signal_quality": [
+            [
+                "signal_quality"
+            ],
+            0
+        ],
+        "state.rate_rpm": [
+            [
+                "rpm"
+            ],
+            0
+        ]
+    }
+}

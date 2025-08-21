@@ -1,0 +1,65 @@
+{
+    "lua_new_Parameter": {
+        "args": [
+            [
+                "lua_gettop_l"
+            ],
+            0
+        ],
+        "ud": [
+            [
+                "lua_newuserdata_sizeof",
+                "lua_newuserdata_l",
+                "lua_newuserdata_parameter"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "lua_l_checkstring_l",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "vp": [
+            [
+                "find_name",
+                "find_vtype"
+            ],
+            0
+        ]
+    },
+    "init_by_info": {
+        "vp": [
+            [
+                "ap_int16",
+                "new_nothrow",
+                "ap_int8",
+                "ap_float",
+                "ap_int32"
+            ],
+            0
+        ],
+        "vtype": [
+            [
+                "type"
+            ],
+            0
+        ]
+    },
+    "get": {
+        "value": [
+            [
+                "ap_int32",
+                "ap_int16",
+                "vp",
+                "ap_float",
+                "ap_int8",
+                "_get"
+            ],
+            0
+        ]
+    }
+}

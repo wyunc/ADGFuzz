@@ -1,0 +1,29 @@
+{
+    "init": {
+        "backend": [
+            [
+                "led_sysfs",
+                "pwm_sysfs"
+            ],
+            0
+        ],
+        "green_pwm_period": [
+            [
+                "green_pwm_get_period"
+            ],
+            0
+        ],
+        "red_pwm_period": [
+            [
+                "red_pwm_get_period"
+            ],
+            0
+        ],
+        "blue_pwm_period": [
+            [
+                "blue_pwm_get_period"
+            ],
+            0
+        ]
+    }
+}

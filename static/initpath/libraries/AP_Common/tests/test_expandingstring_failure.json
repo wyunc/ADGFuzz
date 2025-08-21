@@ -1,0 +1,26 @@
+{
+    "realloc": {
+        "new_mem": [
+            [
+                "malloc_new_size"
+            ],
+            0
+        ]
+    },
+    "print_vprintf": {
+        "p": [
+            [
+                "s",
+                "buffer_printer",
+                "static_cast"
+            ],
+            0
+        ],
+        "_offs": [
+            [
+                "p__size"
+            ],
+            0
+        ]
+    }
+}

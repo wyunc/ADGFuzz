@@ -1,0 +1,19 @@
+{
+    "update": {
+        "result": [
+            [
+                "compass_mag_cal_fixed_yaw_yaw_rad",
+                "hal_compass_max_sensors",
+                "1u",
+                "compass_mag_cal_fixed_yaw_degrees"
+            ],
+            0
+        ],
+        "gsf": [
+            [
+                "ahrs_get_yaw_estimator"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "test_services": {
+        "requester_id": [
+            [
+                "create_requester_requester_reply_type",
+                "create_requester_requester_request_type",
+                "create_requester_requester_name"
+            ],
+            0
+        ],
+        "data_lenght": [
+            [
+                "sizeof_uint32_t"
+            ],
+            0
+        ],
+        "replier_id": [
+            [
+                "create_replier_replier_request_type",
+                "create_replier_replier_name",
+                "create_replier_replier_reply_type"
+            ],
+            0
+        ],
+        "expected_count": [
+            [
+                "expected_matching"
+            ],
+            0
+        ]
+    }
+}

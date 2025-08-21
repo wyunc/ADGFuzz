@@ -1,0 +1,95 @@
+{
+    "skip_ws": {
+        "ch": [
+            [
+                "getc"
+            ],
+            0
+        ]
+    },
+    "_parse_quadhex": {
+        "uni_ch": [
+            [
+                "0xa"
+            ],
+            1
+        ]
+    },
+    "_parse_string": {
+        "ch": [
+            [
+                "in_getc"
+            ],
+            0
+        ]
+    },
+    "set_null": {
+        "out_": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "set_bool": {
+        "out_": [
+            [
+                "value_b"
+            ],
+            0
+        ]
+    },
+    "set_number": {
+        "out_": [
+            [
+                "value_f"
+            ],
+            0
+        ]
+    },
+    "parse_string": {
+        "out_": [
+            [
+                "value_false",
+                "value_string_type"
+            ],
+            0
+        ]
+    },
+    "parse_array_start": {
+        "out_": [
+            [
+                "value_array_type",
+                "value_false"
+            ],
+            0
+        ]
+    },
+    "parse_array_item": {
+        "a": [
+            [
+                "out__get",
+                "array"
+            ],
+            0
+        ]
+    },
+    "parse_object_start": {
+        "out_": [
+            [
+                "value_object_type",
+                "value_false"
+            ],
+            0
+        ]
+    },
+    "parse_object_item": {
+        "o": [
+            [
+                "object",
+                "out__get"
+            ],
+            0
+        ]
+    }
+}

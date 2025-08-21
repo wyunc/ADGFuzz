@@ -1,0 +1,31 @@
+{
+    "set_hysteresis_time_from": {
+        "_time_from_false_us": [
+            [
+                "new_hysteresis_time_us"
+            ],
+            0
+        ],
+        "_time_from_true_us": [
+            [
+                "new_hysteresis_time_us"
+            ],
+            0
+        ]
+    },
+    "set_state_and_update": {
+        "_requested_state": [
+            [
+                "_state",
+                "new_state"
+            ],
+            0
+        ],
+        "_last_time_to_change_state": [
+            [
+                "now_us"
+            ],
+            0
+        ]
+    }
+}

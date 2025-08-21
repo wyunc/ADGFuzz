@@ -1,0 +1,589 @@
+{
+    "initReference": {
+        "_ref_sin_lat": [
+            [
+                "sin__ref_lat"
+            ],
+            0
+        ],
+        "_ref_timestamp": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_ref_lat": [
+            [
+                "radians_lat_0"
+            ],
+            0
+        ],
+        "_ref_lon": [
+            [
+                "radians_lon_0"
+            ],
+            0
+        ],
+        "_ref_cos_lat": [
+            [
+                "cos__ref_lat"
+            ],
+            0
+        ]
+    },
+    "project": {
+        "y": [
+            [
+                "float",
+                "acos_arg",
+                "sin_c",
+                "sin__ref_lon",
+                "static_cast",
+                "cos_lat_rad",
+                "sin_lon_rad",
+                "constants_radius_of_earth"
+            ],
+            3
+        ],
+        "x": [
+            [
+                "_ref_cos_lat",
+                "cos__ref_lon",
+                "cos_lon_rad",
+                "float",
+                "sin_lat_rad",
+                "acos_arg",
+                "sin_c",
+                "static_cast",
+                "_ref_sin_lat",
+                "cos_lat_rad",
+                "constants_radius_of_earth"
+            ],
+            5
+        ],
+        "lat_rad": [
+            [
+                "radians_lat"
+            ],
+            0
+        ],
+        "arg": [
+            [
+                "constrain_sin_lat",
+                "constrain_cos_d_lon",
+                "constrain__ref_cos_lat",
+                "constrain_cos_lat",
+                "constrain__ref_sin_lat"
+            ],
+            0
+        ],
+        "lon_rad": [
+            [
+                "radians_lon"
+            ],
+            0
+        ]
+    },
+    "reproject": {
+        "lat": [
+            [
+                "degrees__ref_lat",
+                "degrees_lat_rad"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "degrees__ref_lon",
+                "degrees_lon_rad"
+            ],
+            0
+        ],
+        "lon_rad": [
+            [
+                "atan2_y_rad",
+                "atan2_cos_c",
+                "atan2__ref_cos_lat",
+                "_ref_lon",
+                "atan2_x_rad",
+                "atan2_c",
+                "atan2__ref_sin_lat",
+                "atan2_sin_c"
+            ],
+            0
+        ],
+        "y_rad": [
+            [
+                "constants_radius_of_earth",
+                "y",
+                "double"
+            ],
+            0
+        ],
+        "x_rad": [
+            [
+                "constants_radius_of_earth",
+                "x",
+                "double"
+            ],
+            0
+        ],
+        "lat_rad": [
+            [
+                "asin_sin_c",
+                "asin__ref_cos_lat",
+                "sqrt_y_rad",
+                "sqrt_x_rad",
+                "asin__ref_sin_lat",
+                "asin_cos_c",
+                "asin_x_rad"
+            ],
+            1
+        ]
+    },
+    "get_distance_to_next_waypoint": {
+        "d_lon": [
+            [
+                "radians_lon_now",
+                "radians_lon_next"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "sqrt_a",
+                "atan2_sqrt",
+                "atan2_a"
+            ],
+            0
+        ],
+        "d_lat": [
+            [
+                "radians_lat_now",
+                "radians_lat_next"
+            ],
+            2
+        ]
+    },
+    "create_waypoint_from_line_and_dist": {
+        "lon_target": [
+            [
+                "lon_a"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "get_bearing_to_next_waypoint_lat_a",
+                "get_bearing_to_next_waypoint_lon_a",
+                "get_bearing_to_next_waypoint_lat_b",
+                "get_bearing_to_next_waypoint_lon_b"
+            ],
+            0
+        ],
+        "lat_target": [
+            [
+                "lat_a"
+            ],
+            0
+        ]
+    },
+    "waypoint_from_heading_and_distance": {
+        "lon_target": [
+            [
+                "degrees_lon_target"
+            ],
+            0
+        ],
+        "lat_target": [
+            [
+                "degrees_lat_target"
+            ],
+            0
+        ],
+        "lon_start_rad": [
+            [
+                "radians_lon_start"
+            ],
+            0
+        ],
+        "lat_start_rad": [
+            [
+                "radians_lat_start"
+            ],
+            0
+        ],
+        "bearing": [
+            [
+                "wrap_2pi_bearing"
+            ],
+            0
+        ],
+        "radius_ratio": [
+            [
+                "static_cast",
+                "dist",
+                "constants_radius_of_earth",
+                "double"
+            ],
+            0
+        ]
+    },
+    "get_bearing_to_next_waypoint": {
+        "lat_next_rad": [
+            [
+                "radians_lat_next"
+            ],
+            0
+        ],
+        "d_lon": [
+            [
+                "radians_lon_now",
+                "radians_lon_next"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "float",
+                "sin_d_lon",
+                "static_cast",
+                "cos_lat_next_rad"
+            ],
+            1
+        ],
+        "lat_now_rad": [
+            [
+                "radians_lat_now"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "float",
+                "sin_lat_now_rad",
+                "cos_lat_now_rad",
+                "cos_d_lon",
+                "cos_lat_next_rad",
+                "static_cast",
+                "sin_lat_next_rad"
+            ],
+            1
+        ]
+    },
+    "get_vector_to_next_waypoint": {
+        "lat_next_rad": [
+            [
+                "radians_lat_next"
+            ],
+            0
+        ],
+        "v_e": [
+            [
+                "constants_radius_of_earth",
+                "float",
+                "sin_d_lon",
+                "cos_lat_next_rad",
+                "static_cast"
+            ],
+            0
+        ],
+        "d_lon": [
+            [
+                "radians_lon_now",
+                "radians_lon_next"
+            ],
+            0
+        ],
+        "lat_now_rad": [
+            [
+                "radians_lat_now"
+            ],
+            0
+        ]
+    },
+    "get_vector_to_next_waypoint_fast": {
+        "v_n": [
+            [
+                "radians_lat_next",
+                "radians_lat_now",
+                "float",
+                "static_cast",
+                "constants_radius_of_earth"
+            ],
+            3
+        ],
+        "v_e": [
+            [
+                "radians_lon_now",
+                "radians_lon_next",
+                "static_cast",
+                "constants_radius_of_earth",
+                "float",
+                "cos_lat_now_rad"
+            ],
+            3
+        ]
+    },
+    "add_vector_to_global_position": {
+        "lat_now_rad": [
+            [
+                "radians_lat_now"
+            ],
+            0
+        ],
+        "lon_res": [
+            [
+                "degrees_lon_now_rad",
+                "constants_radius_of_earth",
+                "cos_lat_now_rad",
+                "degrees_doublev_e"
+            ],
+            0
+        ],
+        "lon_now_rad": [
+            [
+                "radians_lon_now"
+            ],
+            0
+        ],
+        "lat_res": [
+            [
+                "degrees_lat_now_rad",
+                "degrees_doublev_n",
+                "constants_radius_of_earth"
+            ],
+            0
+        ]
+    },
+    "get_distance_to_line": {
+        "crosstrack_error.bearing": [
+            [
+                "wrap_pi_m_pi_2_f",
+                "wrap_pi_bearing_track"
+            ],
+            0
+        ],
+        "crosstrack_error.distance": [
+            [
+                "get_distance_to_next_waypoint_lon_end",
+                "get_distance_to_next_waypoint_lat_end",
+                "get_distance_to_next_waypoint_lat_now",
+                "get_distance_to_next_waypoint_lon_now",
+                "sinf_bearing_diff"
+            ],
+            1
+        ],
+        "bearing_track": [
+            [
+                "get_bearing_to_next_waypoint_lat_start",
+                "get_bearing_to_next_waypoint_lon_end",
+                "get_bearing_to_next_waypoint_lat_end",
+                "get_bearing_to_next_waypoint_lon_start"
+            ],
+            0
+        ],
+        "bearing_diff": [
+            [
+                "wrap_pi_bearing_end",
+                "wrap_pi_bearing_track"
+            ],
+            0
+        ],
+        "bearing_end": [
+            [
+                "get_bearing_to_next_waypoint_lat_now",
+                "get_bearing_to_next_waypoint_lon_end",
+                "get_bearing_to_next_waypoint_lat_end",
+                "get_bearing_to_next_waypoint_lon_now"
+            ],
+            0
+        ]
+    },
+    "get_distance_to_arc": {
+        "lon_end": [
+            [
+                "lon_now",
+                "sin_doublewrap_pi_arc_start_bearing",
+                "radius",
+                "double",
+                "wrap_pi_arc_sweep"
+            ],
+            1
+        ],
+        "lat_start": [
+            [
+                "lat_now",
+                "cos_lat_now",
+                "radius",
+                "cos_doublearc_start_bearing",
+                "double"
+            ],
+            1
+        ],
+        "lon_start": [
+            [
+                "lon_now",
+                "sin_doublearc_start_bearing",
+                "radius",
+                "double"
+            ],
+            1
+        ],
+        "lat_end": [
+            [
+                "lat_now",
+                "cos_lat_now",
+                "radius",
+                "wrap_pi_arc_sweep",
+                "double",
+                "cos_doublewrap_pi_arc_start_bearing"
+            ],
+            1
+        ],
+        "distance": [
+            [
+                "get_distance_to_next_waypoint_lon_now",
+                "get_distance_to_next_waypoint_lat_now",
+                "get_distance_to_next_waypoint_lat_end",
+                "get_distance_to_next_waypoint_lon_end",
+                "get_distance_to_next_waypoint_lon_now",
+                "get_distance_to_next_waypoint_lon_start",
+                "get_distance_to_next_waypoint_lat_now",
+                "get_distance_to_next_waypoint_lat_start",
+                "radius",
+                "get_distance_to_next_waypoint_lon_now",
+                "get_distance_to_next_waypoint_lat_now",
+                "get_distance_to_next_waypoint_lat_center",
+                "get_distance_to_next_waypoint_lon_center"
+            ],
+            3
+        ],
+        "bearing_sector_end": [
+            [
+                "arc_start_bearing",
+                "arc_sweep",
+                "m_pi_f"
+            ],
+            0
+        ],
+        "bearing": [
+            [
+                "get_bearing_to_next_waypoint_lat_end",
+                "m_pi_f",
+                "get_bearing_to_next_waypoint_lon_end",
+                "get_bearing_to_next_waypoint_lat_start",
+                "get_bearing_to_next_waypoint_lon_start",
+                "get_bearing_to_next_waypoint_lon_now",
+                "get_bearing_to_next_waypoint_lat_now",
+                "get_bearing_to_next_waypoint_lat_center",
+                "get_bearing_to_next_waypoint_lon_center",
+                "get_bearing_to_next_waypoint_lon_now",
+                "get_bearing_to_next_waypoint_lat_now",
+                "wrap_pi_crosstrack_error_bearing"
+            ],
+            1
+        ],
+        "bearing_sector_start": [
+            [
+                "arc_start_bearing",
+                "arc_sweep",
+                "m_pi_f"
+            ],
+            0
+        ]
+    },
+    "get_distance_to_point_global_wgs84": {
+        "d_lat": [
+            [
+                "radians_lat_next",
+                "radians_lat_now"
+            ],
+            2
+        ],
+        "dz": [
+            [
+                "alt_now",
+                "float",
+                "static_cast",
+                "alt_next"
+            ],
+            0
+        ],
+        "d_lon": [
+            [
+                "radians_lon_next",
+                "radians_lon_now"
+            ],
+            2
+        ],
+        "dxy": [
+            [
+                "sqrt_a",
+                "atan2_a",
+                "atan2_sqrt",
+                "float",
+                "static_cast",
+                "constants_radius_of_earth"
+            ],
+            1
+        ],
+        "dist_z": [
+            [
+                "fabsf_dz"
+            ],
+            0
+        ],
+        "dist_xy": [
+            [
+                "fabsf_dxy"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "cos_x_rad",
+                "cos_current_x_rad",
+                "sin_d_lon",
+                "sin_d_lat"
+            ],
+            0
+        ]
+    },
+    "mavlink_wpm_distance_to_point_local": {
+        "dy": [
+            [
+                "y_next",
+                "y_now"
+            ],
+            0
+        ],
+        "dist_xy": [
+            [
+                "sqrtf_dy",
+                "sqrtf_dx"
+            ],
+            0
+        ],
+        "dz": [
+            [
+                "z_next",
+                "z_now"
+            ],
+            0
+        ],
+        "dx": [
+            [
+                "x_now",
+                "x_next"
+            ],
+            0
+        ],
+        "dist_z": [
+            [
+                "fabsf_dz"
+            ],
+            0
+        ]
+    }
+}

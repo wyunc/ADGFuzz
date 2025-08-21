@@ -1,0 +1,106 @@
+{
+    "check_result": {
+        "v": [
+            [
+                "rcprot_read_i"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "rcprot_num_channels"
+            ],
+            0
+        ],
+        "have_input": [
+            [
+                "rcprot_new_input"
+            ],
+            0
+        ],
+        "pname": [
+            [
+                "rcprot_protocol_name"
+            ],
+            0
+        ]
+    },
+    "send_bit": {
+        "w0": [
+            [
+                "bits_0",
+                "baudrate",
+                "uint32_t"
+            ],
+            0
+        ],
+        "w1": [
+            [
+                "bits_1",
+                "baudrate",
+                "uint32_t"
+            ],
+            0
+        ]
+    },
+    "send_byte": {
+        "bit": [
+            [
+                "1u",
+                "i"
+            ],
+            0
+        ]
+    },
+    "send_pause": {
+        "nbits": [
+            [
+                "baudrate",
+                "pause_us",
+                "1e6"
+            ],
+            0
+        ]
+    },
+    "test_protocol": {
+        "rcprot": [
+            [
+                "ap_rc_protocol",
+                "new"
+            ],
+            0
+        ]
+    },
+    "test_protocol_bytesonly": {
+        "rcprot": [
+            [
+                "ap_rc_protocol",
+                "new"
+            ],
+            0
+        ]
+    },
+    "test_random": {
+        "buf": [
+            [
+                "uint8_t",
+                "malloc_test_bytes"
+            ],
+            0
+        ],
+        "rcprot": [
+            [
+                "ap_rc_protocol",
+                "new",
+                "nullptr"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_rdonly"
+            ],
+            0
+        ]
+    }
+}

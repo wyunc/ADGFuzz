@@ -1,0 +1,107 @@
+{
+    "init": {
+        "last_frame_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "x_sum": [
+            [
+                "int16_t",
+                "buf",
+                "uint16_t"
+            ],
+            1
+        ],
+        "state.surface_quality": [
+            [
+                "constrain_int16_qual_sum",
+                "constrain_int16_count"
+            ],
+            0
+        ],
+        "state.bodyRate": [
+            [
+                "vector2f_gyro_sum_x",
+                "vector2f_gyro_sum_y",
+                "vector2f_gyro_sum_count"
+            ],
+            0
+        ],
+        "qual_sum": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "last_frame_us": [
+            [
+                "micros",
+                "uart_receive_time_constraint_us_cxof_frame_length"
+            ],
+            1
+        ],
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ],
+        "y_sum": [
+            [
+                "int16_t",
+                "buf",
+                "uint16_t"
+            ],
+            1
+        ],
+        "gyro_sum.y": [
+            [
+                "gyro_y"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "gyro_sum.x": [
+            [
+                "gyro_x"
+            ],
+            0
+        ],
+        "state.flowRate": [
+            [
+                "micros",
+                "uart_receive_time_constraint_us_cxof_frame_length",
+                "_0e",
+                "cxof_pixel_scaling"
+            ],
+            2
+        ],
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ]
+    }
+}

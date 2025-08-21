@@ -1,0 +1,86 @@
+{
+    "init": {
+        "bus_sem": [
+            [
+                "_bus_get_semaphore"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "raw_field": [
+            [
+                "_gain_scale",
+                "vector3f__mag_z",
+                "vector3f__mag_y",
+                "vector3f__mag_x"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "_read_sample"
+            ],
+            0
+        ]
+    },
+    "_read_sample": {
+        "_mag_y": [
+            [
+                "be16toh_val_rz"
+            ],
+            1
+        ],
+        "_mag_z": [
+            [
+                "be16toh_val_ry"
+            ],
+            1
+        ],
+        "_mag_x": [
+            [
+                "be16toh_val_rx"
+            ],
+            1
+        ]
+    },
+    "_calibrate": {
+        "base_config": [
+            [
+                "hmc5843_osr_15hz"
+            ],
+            0
+        ],
+        "calibration_gain": [
+            [
+                "hmc5883l_gain_2_50_ga"
+            ],
+            0
+        ],
+        "numAttempts": [
+            [
+                "good_count"
+            ],
+            0
+        ]
+    },
+    "block_read": {
+        "r": [
+            [
+                "_slave_passthrough_read_reg",
+                "_slave_passthrough_read_size",
+                "_slave_passthrough_read_buf"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "size",
+                "_slave_read_buf",
+                "int",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

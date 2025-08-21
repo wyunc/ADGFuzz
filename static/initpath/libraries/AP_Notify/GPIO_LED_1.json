@@ -1,0 +1,24 @@
+{
+    "update": {
+        "last_timestep_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "new_state": [
+            [
+                "next_bit",
+                "1u",
+                "not_ready_to_arm",
+                "armed",
+                "initializing",
+                "failsafe",
+                "ready_to_arm",
+                "hal_gpio_led_on",
+                "hal_gpio_led_off"
+            ],
+            2
+        ]
+    }
+}

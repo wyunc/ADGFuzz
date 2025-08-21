@@ -1,0 +1,250 @@
+{
+    "updateFailsafeDeferState": {
+        "_failsafe_defer_started": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "updateStartDelay": {
+        "_current_start_delay": [
+            [
+                "dt",
+                "1_s",
+                "_param_com_fail_act_t_get"
+            ],
+            1
+        ]
+    },
+    "updateParams": {
+        "_current_start_delay": [
+            [
+                "1_s",
+                "_param_com_fail_act_t_get"
+            ],
+            0
+        ]
+    },
+    "updateDelay": {
+        "_current_delay": [
+            [
+                "elapsed_us"
+            ],
+            0
+        ]
+    },
+    "removeActions": {
+        "cur_action": [
+            [
+                "_actions",
+                "action_idx"
+            ],
+            0
+        ]
+    },
+    "notifyUser": {
+        "delay_s": [
+            [
+                "_current_delay",
+                "500_ms",
+                "1_s"
+            ],
+            0
+        ],
+        "mavlink_mode": [
+            [
+                "custom_mode_data"
+            ],
+            0
+        ],
+        "1": [
+            [
+                "int",
+                "count"
+            ],
+            0
+        ],
+        "custom_mode": [
+            [
+                "get_px4_custom_mode_user_intended_mode"
+            ],
+            0
+        ],
+        "failsafe_cause": [
+            [
+                "cause",
+                "failsafe_cause_t"
+            ],
+            0
+        ],
+        "failsafe_action": [
+            [
+                "failsafe_action_t",
+                "action",
+                "delayed_action"
+            ],
+            0
+        ]
+    },
+    "checkFailsafe": {
+        ".action": [
+            [
+                "options_action"
+            ],
+            0
+        ],
+        "_current_delay": [
+            [
+                "_current_start_delay"
+            ],
+            0
+        ],
+        "free_idx": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".allow_user_takeover": [
+            [
+                "always_mode_switch_only",
+                "always"
+            ],
+            0
+        ],
+        ".id": [
+            [
+                "caller_id"
+            ],
+            0
+        ],
+        "found_idx": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "removeNonActivatedActions": {
+        "cur_action": [
+            [
+                "_actions",
+                "action_idx"
+            ],
+            0
+        ]
+    },
+    "getSelectedAction": {
+        "returned_state.updated_user_intended_mode": [
+            [
+                "state_user_intended_mode",
+                "navigation_state_posctl"
+            ],
+            0
+        ],
+        "returned_state.failsafe_deferred": [
+            [
+                "warn"
+            ],
+            0
+        ],
+        "returned_state.action": [
+            [
+                "none",
+                "terminate"
+            ],
+            0
+        ],
+        "allow_user_takeover": [
+            [
+                "cur_action_allow_user_takeover",
+                "always",
+                "always_mode_switch_only"
+            ],
+            0
+        ],
+        "cur_action": [
+            [
+                "action_idx",
+                "_actions"
+            ],
+            0
+        ],
+        "selected_action": [
+            [
+                "hold",
+                "cur_action_action",
+                "terminate",
+                "returned_state_action",
+                "land",
+                "warn",
+                "descend",
+                "disarm",
+                "mode_fallback",
+                "rtl",
+                "fallback_stab",
+                "fallback_alt_ctrl",
+                "fallback_pos_ctrl"
+            ],
+            0
+        ],
+        "want_user_takeover": [
+            [
+                "rc_sticks_takeover_request",
+                "_selected_action",
+                "user_intended_mode_updated"
+            ],
+            1
+        ],
+        "returned_state.delayed_action": [
+            [
+                "none"
+            ],
+            0
+        ],
+        "returned_state.cause": [
+            [
+                "cur_action_cause",
+                "generic"
+            ],
+            0
+        ]
+    },
+    "actionAllowsUserTakeover": {
+        "action": [
+            [
+                "land",
+                "rtl",
+                "hold",
+                "descend"
+            ],
+            0
+        ]
+    },
+    "modeCanRun": {
+        "mode_mask": [
+            [
+                "1u",
+                "mode"
+            ],
+            0
+        ]
+    },
+    "deferFailsafes": {
+        "_defer_timeout": [
+            [
+                "1_s",
+                "default_defer_timeout",
+                "timeout_s"
+            ],
+            0
+        ],
+        "_defer_failsafes": [
+            [
+                "enabled"
+            ],
+            0
+        ]
+    }
+}

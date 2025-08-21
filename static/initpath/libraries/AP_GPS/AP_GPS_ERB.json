@@ -1,0 +1,247 @@
+{
+    "read": {
+        "numc": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "_msg_id": [
+            [
+                "port_read"
+            ],
+            1
+        ],
+        "_payload_length": [
+            [
+                "uint16_t",
+                "port_read"
+            ],
+            1
+        ],
+        "_ck_b": [
+            [
+                "_ck_a",
+                "port_read"
+            ],
+            1
+        ]
+    },
+    "_parse_gps": {
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.rtk_baseline_coords_type": [
+            [
+                "rtk_baseline_coordinate_system_ned"
+            ],
+            0
+        ],
+        "state.rtk_week_number": [
+            [
+                "_buffer_rtk_base_week_number"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "_buffer_pos_altitude_ellipsoid",
+                "_buffer_pos_altitude_msl"
+            ],
+            0
+        ],
+        "state.rtk_time_week_ms": [
+            [
+                "_buffer_rtk_base_time_week_ms"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "_buffer_vel_speed_accuracy"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "_buffer_vel_vel_down"
+            ],
+            0
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360__buffer_vel_heading_2d",
+                "wrap_360__0e"
+            ],
+            0
+        ],
+        "_last_pos_time": [
+            [
+                "_buffer_pos_time"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "_buffer_dops_v_dop"
+            ],
+            0
+        ],
+        "state.rtk_num_sats": [
+            [
+                "_buffer_rtk_base_num_sats"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "_buffer_pos_horizontal_accuracy",
+                "_0e"
+            ],
+            0
+        ],
+        "_last_vel_time": [
+            [
+                "_buffer_vel_time"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "no_fix"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "_buffer_dops_h_dop"
+            ],
+            0
+        ],
+        "state.velocity.y": [
+            [
+                "_buffer_vel_vel_east"
+            ],
+            0
+        ],
+        "_new_speed": [
+            [
+                "_new_position"
+            ],
+            0
+        ],
+        "state.rtk_baseline_x_mm": [
+            [
+                "_buffer_rtk_baseline_n_mm"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "_buffer_pos_vertical_accuracy",
+                "_0e"
+            ],
+            0
+        ],
+        "state.rtk_baseline_y_mm": [
+            [
+                "_buffer_rtk_baseline_e_mm"
+            ],
+            0
+        ],
+        "state.ground_speed": [
+            [
+                "_buffer_vel_speed_2d"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "_buffer_vel_vel_north"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "int32_t",
+                "double",
+                "1e7",
+                "_buffer_pos_longitude"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "_buffer_stat_satellites"
+            ],
+            0
+        ],
+        "state.rtk_baseline_z_mm": [
+            [
+                "_buffer_rtk_baseline_d_mm"
+            ],
+            0
+        ],
+        "state.rtk_accuracy": [
+            [
+                "_buffer_rtk_ar_ratio"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "int32_t",
+                "double",
+                "_buffer_pos_latitude",
+                "1e7"
+            ],
+            0
+        ],
+        "state.rtk_age_ms": [
+            [
+                "0x_ffffffff",
+                "_buffer_rtk_age_cs"
+            ],
+            0
+        ],
+        "next_fix": [
+            [
+                "gps_ok_fix_3d_rtk_float",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_rtk_fixed",
+                "no_fix"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "_buffer_stat_week"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "_buffer_stat_time"
+            ],
+            0
+        ]
+    },
+    "_detect": {
+        "state.ck_b": [
+            [
+                "state_ck_a",
+                "data"
+            ],
+            0
+        ],
+        "state.payload_length": [
+            [
+                "data"
+            ],
+            0
+        ]
+    }
+}

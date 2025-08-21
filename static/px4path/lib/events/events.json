@@ -1,0 +1,24 @@
+{
+    "send": {
+        "event.event_sequence": [
+            [
+                "event_sequence"
+            ],
+            0
+        ],
+        "orb_event_pub": [
+            [
+                "orb_advertise_event",
+                "event",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ],
+        "event.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

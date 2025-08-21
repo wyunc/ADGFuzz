@@ -1,0 +1,10 @@
+{
+    "update": {
+        "gp.byte": [
+            [
+                "get_register_general_purpose"
+            ],
+            0
+        ]
+    }
+}

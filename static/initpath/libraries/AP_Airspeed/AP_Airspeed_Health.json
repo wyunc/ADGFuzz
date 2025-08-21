@@ -1,0 +1,73 @@
+{
+    "check_sensor_ahrs_wind_max_failures": {
+        "gps_speed": [
+            [
+                "gps_velocity_length"
+            ],
+            0
+        ],
+        "data_is_implausible": [
+            [
+                "is_positive__wind_max",
+                "fabsf_gps_speed",
+                "fabsf__airspeed",
+                "fabsf_i",
+                "fabsf_state",
+                "_wind_max"
+            ],
+            1
+        ],
+        ".failures.last_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "wind_warn": [
+            [
+                "_wind_warn",
+                "_wind_max"
+            ],
+            0
+        ],
+        "data_is_inconsistent": [
+            [
+                "i",
+                "_failures_test_ratio",
+                "_wind_gate",
+                "state"
+            ],
+            1
+        ],
+        ".failures.health_probability": [
+            [
+                "_failures_health_probability",
+                "i",
+                "probability_coeff",
+                "state"
+            ],
+            0
+        ],
+        ".failures.test_ratio": [
+            [
+                "fabsf_innovation",
+                "safe_sqrt_innovation_variance"
+            ],
+            0
+        ],
+        ".failures.param_use_backup": [
+            [
+                "param",
+                "_use",
+                "i"
+            ],
+            0
+        ],
+        ".failures.last_warn_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

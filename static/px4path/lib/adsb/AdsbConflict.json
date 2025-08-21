@@ -1,0 +1,180 @@
+{
+    "detect_traffic_conflict": {
+        "collision_time_check": [
+            [
+                "_conflict_detection_params_collision_time_threshold",
+                "xyz_traffic_speed",
+                "sqrtf_hor_uav_speed",
+                "sqrtf_vz_now",
+                "sqrtf_d_hor",
+                "sqrtf_d_vert"
+            ],
+            4
+        ],
+        "hor_uav_speed": [
+            [
+                "sqrtf_vy_now",
+                "sqrtf_vx_now"
+            ],
+            0
+        ],
+        "prediction_distance": [
+            [
+                "traffic_to_uav_distance_extension",
+                "d_hor"
+            ],
+            0
+        ]
+    },
+    "get_traffic_state": {
+        "old_conflict_warning_expired": [
+            [
+                "find_icao_address_in_conflict_list__transponder_report_icao_address",
+                "_traffic_buffer_timestamp",
+                "now",
+                "conflict_warning_timeout"
+            ],
+            1
+        ],
+        "old_conflict": [
+            [
+                "find_icao_address_in_conflict_list__transponder_report_icao_address"
+            ],
+            1
+        ],
+        "_traffic_state": [
+            [
+                "remove_old_conflict",
+                "add_conflict",
+                "buffer_full",
+                "remind_conflict",
+                "no_conflict"
+            ],
+            0
+        ],
+        "_traffic_buffer_full": [
+            [
+                "navigator_max_traffic",
+                "_traffic_buffer_icao_address_size"
+            ],
+            0
+        ],
+        "new_traffic": [
+            [
+                "find_icao_address_in_conflict_list__transponder_report_icao_address"
+            ],
+            1
+        ]
+    },
+    "handle_traffic_conflict": {
+        "_traffic_state_previous": [
+            [
+                "_traffic_state"
+            ],
+            0
+        ],
+        "_last_buffer_full_warning_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_last_traffic_warning_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "set_conflict_detection_params": {
+        "_conflict_detection_params.traffic_avoidance_mode": [
+            [
+                "traffic_avoidance_mode"
+            ],
+            0
+        ],
+        "_conflict_detection_params.crosstrack_separation": [
+            [
+                "crosstrack_separation"
+            ],
+            0
+        ],
+        "_conflict_detection_params.vertical_separation": [
+            [
+                "vertical_separation"
+            ],
+            0
+        ],
+        "_conflict_detection_params.collision_time_threshold": [
+            [
+                "collision_time_threshold"
+            ],
+            0
+        ]
+    },
+    "send_traffic_warning": {
+        "_last_traffic_warning_time": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "fake_traffic": {
+        "tr.emitter_type": [
+            [
+                "emitter_type"
+            ],
+            0
+        ],
+        "tr.ver_velocity": [
+            [
+                "ver_velocity"
+            ],
+            0
+        ],
+        "tr.heading": [
+            [
+                "traffic_heading"
+            ],
+            0
+        ],
+        "tr.hor_velocity": [
+            [
+                "hor_velocity"
+            ],
+            0
+        ],
+        "tr.altitude": [
+            [
+                "alt_uav",
+                "altitude_diff"
+            ],
+            1
+        ],
+        "tr.icao_address": [
+            [
+                "icao_address"
+            ],
+            0
+        ],
+        "tr.lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        "tr.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "tr.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

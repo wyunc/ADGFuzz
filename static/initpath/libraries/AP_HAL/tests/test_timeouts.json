@@ -1,0 +1,38 @@
+{
+    "timeout_test": {
+        "ticks": [
+            [
+                "2000u"
+            ],
+            0
+        ],
+        "time_past": [
+            [
+                "timenow"
+            ],
+            0
+        ]
+    },
+    "timeout_remaining": {
+        "timenow": [
+            [
+                "incr"
+            ],
+            0
+        ],
+        "ticks": [
+            [
+                "2000u"
+            ],
+            0
+        ],
+        "last_remaining": [
+            [
+                "timeout_remaining_timenow",
+                "timeout_remaining_1000u",
+                "timeout_remaining_time_past"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "setup_sensor": {
+        "id1": [
+            [
+                "reg_read_pixart_reg_product_id"
+            ],
+            0
+        ],
+        "integral.last_frame_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "id2": [
+            [
+                "reg_read_pixart_reg_inv_prod_id",
+                "reg_read_pixart_reg_inv_prod_id2"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "reg_read16u_pixart_reg_dout_l"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "reg_read_pixart_reg_srom_id"
+            ],
+            0
+        ],
+        "model": [
+            [
+                "pixart_3901",
+                "pixart_3900"
+            ],
+            0
+        ]
+    },
+    "srom_download": {
+        "reg": [
+            [
+                "pixart_write_flag",
+                "pixart_reg_srom_burst"
+            ],
+            0
+        ]
+    },
+    "load_configuration": {
+        "v": [
+            [
+                "reg_read_i",
+                "reg_read__reg",
+                "reg_read_init_data"
+            ],
+            0
+        ]
+    },
+    "motion_burst": {
+        "b": [
+            [
+                "uint8_t",
+                "burst"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "model",
+                "pixart_reg_mot_burst2",
+                "pixart_reg_mot_burst",
+                "pixart_3900"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "integral.gyro": [
+            [
+                "_0e",
+                "integral_last_frame_us",
+                "micros",
+                "vector2f_gyro_x",
+                "vector2f_gyro_y"
+            ],
+            3
+        ],
+        "last_print_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "integral.last_frame_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "integral.sum.y": [
+            [
+                "burst_delta_y"
+            ],
+            0
+        ],
+        "sum_x": [
+            [
+                "burst_delta_x",
+                "burst_delta_y"
+            ],
+            1
+        ],
+        "integral.sum_us": [
+            [
+                "integral_last_frame_us",
+                "micros"
+            ],
+            2
+        ],
+        "integral.sum.x": [
+            [
+                "burst_delta_x"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ins_get_gyro",
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.flowRate": [
+            [
+                "integral_sum_us",
+                "_0e",
+                "flow_pixel_scaling"
+            ],
+            1
+        ],
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.bodyRate": [
+            [
+                "integral_gyro",
+                "integral_sum_us",
+                "_0e"
+            ],
+            1
+        ],
+        "state.surface_quality": [
+            [
+                "burst_squal"
+            ],
+            0
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ],
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ]
+    }
+}

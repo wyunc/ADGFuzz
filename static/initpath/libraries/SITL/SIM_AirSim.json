@@ -1,0 +1,225 @@
+{
+    "set_interface_ports": {
+        "airsim_control_port": [
+            [
+                "port_out"
+            ],
+            0
+        ],
+        "airsim_ip": [
+            [
+                "address"
+            ],
+            0
+        ],
+        "airsim_sensor_port": [
+            [
+                "port_in"
+            ],
+            0
+        ]
+    },
+    "output_copter": {
+        "send_ret": [
+            [
+                "sock_sendto_sizeof",
+                "sock_sendto_pkt",
+                "airsim_control_port",
+                "airsim_ip"
+            ],
+            0
+        ]
+    },
+    "output_rover": {
+        "send_ret": [
+            [
+                "airsim_ip",
+                "sock_sendto_sizeof",
+                "sock_sendto_pkt",
+                "airsim_control_port"
+            ],
+            0
+        ],
+        "pkt.throttle": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "pkt.steering": [
+            [
+                "input_servos"
+            ],
+            0
+        ]
+    },
+    "parse_sensors": {
+        "v": [
+            [
+                "vector3f_array",
+                "float_array",
+                "key_ptr",
+                "vector3f"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strlen_key_section",
+                "strstr_p",
+                "strchr_p",
+                "strlen_key_key",
+                "strstr_key_key",
+                "strstr_json",
+                "strstr_key_section"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "i",
+                "keytable"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "realloc_v_data",
+                "float",
+                "realloc_float",
+                "realloc_vector3f",
+                "n",
+                "vector3f",
+                "realloc_sizeof"
+            ],
+            1
+        ],
+        "length": [
+            [
+                "n"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "location.lng": [
+            [
+                "state_gps_lon",
+                "_0e7"
+            ],
+            0
+        ],
+        "location.alt": [
+            [
+                "state_gps_alt"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "state_imu_angular_velocity"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "state_timestamp"
+            ],
+            1
+        ],
+        "wait_ms": [
+            [
+                "udp_timeout_ms"
+            ],
+            0
+        ],
+        "rng_sensor_count": [
+            [
+                "state_rng_rng_distances_length",
+                "array_size_rangefinder_m"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "origin_get_distance_ned_double_location"
+            ],
+            0
+        ],
+        "p1": [
+            [
+                "uint8_t",
+                "const",
+                "memrchr_sensor_buffer",
+                "memrchr_p2"
+            ],
+            0
+        ],
+        "velocity_bf": [
+            [
+                "dcm_transposed",
+                "state_velocity_world_linear_velocity"
+            ],
+            1
+        ],
+        "sensor_buffer_len": [
+            [
+                "sock_recv_sensor_buffer_len",
+                "sock_recv_sizeof",
+                "udp_timeout_ms",
+                "sock_recv_sensor_buffer",
+                "sensor_buffer",
+                "uint8_t",
+                "memrchr_sensor_buffer_len",
+                "const",
+                "memrchr_sensor_buffer"
+            ],
+            2
+        ],
+        "rcin_chan_count": [
+            [
+                "state_rc_rc_channels_length"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "state_imu_linear_acceleration"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "state_gps_lat",
+                "_0e7"
+            ],
+            0
+        ],
+        "last_timestamp": [
+            [
+                "state_timestamp"
+            ],
+            0
+        ],
+        "average_frame_time": [
+            [
+                "state_timestamp"
+            ],
+            1
+        ],
+        "scanner.points": [
+            [
+                "state_lidar_points"
+            ],
+            0
+        ]
+    },
+    "report_FPS": {
+        "last_frame_count": [
+            [
+                "state_timestamp"
+            ],
+            0
+        ]
+    }
+}

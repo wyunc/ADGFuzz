@@ -1,0 +1,82 @@
+{
+    "controlBetaFusion": {
+        "beta_fusion_time_triggered": [
+            [
+                "is_timed_out__aid_src_sideslip_time_last_fuse",
+                "is_timed_out__params_beta_avg_ft_us"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_sideslip": [
+            [
+                "_aid_src_sideslip_innovation_rejected"
+            ],
+            0
+        ]
+    },
+    "updateSideslip": {
+        "R": [
+            [
+                "max_sq",
+                "sq",
+                "max__params_beta_noise"
+            ],
+            0
+        ],
+        "epsilon": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "observation": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "fuseSideslip": {
+        "H": [
+            [
+                "compute_sideslip_h__state_vector",
+                "1e"
+            ],
+            1
+        ],
+        "update_wind_only": [
+            [
+                "_control_status_flags_wind_dead_reckoning"
+            ],
+            0
+        ],
+        "action_string": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "sideslip.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "K_wind": [
+            [
+                "wind_vel_idx",
+                "wind_vel_dof",
+                "k_slice"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "p",
+                "h",
+                "sideslip_innovation_variance"
+            ],
+            0
+        ]
+    }
+}

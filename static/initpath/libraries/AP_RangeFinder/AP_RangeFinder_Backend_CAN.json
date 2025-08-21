@@ -1,0 +1,19 @@
+{
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "reading_m": [
+            [
+                "_distance_sum",
+                "_distance_count"
+            ],
+            0
+        ]
+    }
+}

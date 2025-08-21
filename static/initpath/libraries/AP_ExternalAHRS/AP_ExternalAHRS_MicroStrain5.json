@@ -1,0 +1,96 @@
+{
+    "build_packet": {
+        "nbytes": [
+            [
+                "uart_available_2048u"
+            ],
+            0
+        ]
+    },
+    "post_imu": {
+        "state.gyro": [
+            [
+                "imu_data_gyro"
+            ],
+            0
+        ],
+        "state.quat": [
+            [
+                "imu_data_quat"
+            ],
+            0
+        ],
+        "state.accel": [
+            [
+                "imu_data_accel"
+            ],
+            0
+        ]
+    },
+    "post_filter": {
+        "state.last_location_update_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "state.velocity": [
+            [
+                "vector3f",
+                "filter_data_ned_velocity_east",
+                "filter_data_ned_velocity_north",
+                "filter_data_ned_velocity_down"
+            ],
+            0
+        ],
+        "state.location": [
+            [
+                "gnss_instance",
+                "gnss_data",
+                "filter_data_lon",
+                "filter_data_lat",
+                "_msl_altitude",
+                "absolute",
+                "location"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_variances": {
+        "hgtVar": [
+            [
+                "gnss_data",
+                "_vertical_position_accuracy",
+                "gnss_instance",
+                "hgt_gate_scale"
+            ],
+            0
+        ],
+        "velVar": [
+            [
+                "gnss_data",
+                "vel_gate_scale",
+                "_speed_accuracy",
+                "gnss_instance"
+            ],
+            0
+        ],
+        "posVar": [
+            [
+                "gnss_data",
+                "_horizontal_position_accuracy",
+                "pos_gate_scale",
+                "gnss_instance"
+            ],
+            0
+        ]
+    }
+}

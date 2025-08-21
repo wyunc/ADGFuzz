@@ -1,0 +1,138 @@
+{
+    "set_control_channels": {
+        "channel_flap": [
+            [
+                "rc_find_channel_for_option_flap"
+            ],
+            0
+        ],
+        "channel_throttle": [
+            [
+                "rc_get_throttle_channel"
+            ],
+            0
+        ],
+        "channel_pitch": [
+            [
+                "rc_get_pitch_channel"
+            ],
+            0
+        ],
+        "quadplane.rc_fwd_thr_ch": [
+            [
+                "rc_find_channel_for_option_fwd_thr"
+            ],
+            0
+        ],
+        "set_throttle_esc_scaling": [
+            [
+                "quadplane_enable"
+            ],
+            0
+        ],
+        "channel_rudder": [
+            [
+                "rc_get_yaw_channel"
+            ],
+            0
+        ],
+        "channel_roll": [
+            [
+                "rc_get_roll_channel",
+                "rc_get_yaw_channel"
+            ],
+            0
+        ],
+        "channel_airbrake": [
+            [
+                "rc_find_channel_for_option_airbrake"
+            ],
+            0
+        ]
+    },
+    "rudder_arm_disarm_check": {
+        "rudder_arm_timer": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rudder_in": [
+            [
+                "channel_rudder_get_control_in"
+            ],
+            0
+        ]
+    },
+    "read_radio": {
+        "throttle_nudge": [
+            [
+                "aparm_throttle_max",
+                "aparm_throttle_cruise",
+                "channel_throttle_get_control_in"
+            ],
+            1
+        ],
+        "failsafe.AFS_last_valid_rc_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "failsafe.last_valid_rc_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "airspeed_nudge_cm": [
+            [
+                "aparm_airspeed_max",
+                "aparm_airspeed_cruise",
+                "channel_throttle_get_control_in"
+            ],
+            1
+        ],
+        "stickmixing": [
+            [
+                "fence_stickmixing"
+            ],
+            0
+        ]
+    },
+    "control_failsafe": {
+        "allow_failsafe_bypass": [
+            [
+                "is_flying",
+                "rc_enabled_protocols",
+                "arming_is_armed"
+            ],
+            0
+        ],
+        "has_had_input": [
+            [
+                "rc_has_had_rc_override",
+                "rc_has_had_rc_receiver"
+            ],
+            0
+        ]
+    },
+    "channel_expo": {
+        "rin": [
+            [
+                "use_dz",
+                "chan_get_control_in_zero_dz",
+                "chan_get_control_in"
+            ],
+            0
+        ]
+    },
+    "throttle_at_zero": {
+        "center_trim": [
+            [
+                "flight_option_enabled_center_throttle_trim"
+            ],
+            0
+        ]
+    }
+}

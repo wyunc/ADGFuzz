@@ -1,0 +1,113 @@
+{
+    "request_missing": {
+        "grid": [
+            [
+                "gcache_grid"
+            ],
+            0
+        ],
+        "gcache": [
+            [
+                "find_grid_cache_info"
+            ],
+            0
+        ]
+    },
+    "get_statistics": {
+        "loaded": [
+            [
+                "bitcount64_i",
+                "bitcount64_cache",
+                "bitcount64__grid_bitmap"
+            ],
+            1
+        ],
+        "pending": [
+            [
+                "terrain_grid_block_mul_x",
+                "terrain_grid_block_mul_y",
+                "bitcount64_i",
+                "bitcount64_cache",
+                "bitcount64__grid_bitmap"
+            ],
+            2
+        ]
+    },
+    "send_terrain_report": {
+        "spacing": [
+            [
+                "grid_spacing"
+            ],
+            0
+        ],
+        "terrain_height": [
+            [
+                "last_current_loc_height"
+            ],
+            0
+        ]
+    },
+    "handle_terrain_check": {
+        "loc.lat": [
+            [
+                "packet_lat"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "packet_lon"
+            ],
+            0
+        ]
+    },
+    "handle_terrain_data": {
+        "gcache": [
+            [
+                "i",
+                "cache"
+            ],
+            0
+        ],
+        "gcache.state": [
+            [
+                "grid_cache_dirty"
+            ],
+            0
+        ],
+        "loc2.lat": [
+            [
+                "grid_lat"
+            ],
+            0
+        ],
+        "loc2.lng": [
+            [
+                "grid_lon"
+            ],
+            0
+        ],
+        "grid": [
+            [
+                "gcache_grid"
+            ],
+            0
+        ],
+        "idx_x": [
+            [
+                "packet_gridbit",
+                "terrain_grid_mavlink_size",
+                "terrain_grid_block_mul_y"
+            ],
+            0
+        ],
+        "idx_y": [
+            [
+                "packet_gridbit",
+                "terrain_grid_mavlink_size",
+                "terrain_grid_block_mul_y"
+            ],
+            0
+        ]
+    }
+}

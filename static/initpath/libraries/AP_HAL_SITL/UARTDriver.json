@@ -1,0 +1,479 @@
+{
+    "_begin": {
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "atoi_args1",
+                "atoi_args2",
+                "strtok_r_nullptr",
+                "strtok_r_saveptr",
+                "mcast_port_default"
+            ],
+            1
+        ],
+        "path": [
+            [
+                "_port_number",
+                "_sitl_state__serial_path"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "_open_o_rdonly",
+                "fs_open_args1",
+                "_open_o_creat",
+                "_open_o_wronly",
+                "_open_o_trunc"
+            ],
+            0
+        ],
+        "_uart_path": [
+            [
+                "strdup_args1"
+            ],
+            0
+        ],
+        "_sim_serial_device": [
+            [
+                "_sitl_state_create_serial_sim__port_number",
+                "_sitl_state_create_serial_sim_args2",
+                "_sitl_state_create_serial_sim_args1",
+                "_sitl_state_create_serial_sim_nullptr"
+            ],
+            0
+        ],
+        "devtype": [
+            [
+                "strtok_r_s",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "strdup_path"
+            ],
+            0
+        ],
+        "wait": [
+            [
+                "strcmp_args2",
+                "strtok_r_nullptr",
+                "strtok_r_saveptr"
+            ],
+            1
+        ],
+        "_uart_baudrate": [
+            [
+                "baud",
+                "baud",
+                "atoi_args2",
+                "strtok_r_nullptr",
+                "strtok_r_saveptr"
+            ],
+            2
+        ],
+        "ip": [
+            [
+                "mcast_ip_default",
+                "strtok_r_nullptr",
+                "strtok_r_saveptr"
+            ],
+            1
+        ]
+    },
+    "_flush": {
+        "start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_tcp_start_connection": {
+        "_listen_sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "fcntl__listen_fd",
+                "bind_sockaddr",
+                "listen__listen_fd",
+                "sizeof__listen_sockaddr",
+                "bind__listen_fd",
+                "bind_struct",
+                "fcntl_fd_cloexec",
+                "_listen_sockaddr",
+                "fcntl_f_setfd"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "accept_nullptr",
+                "accept__listen_fd"
+            ],
+            0
+        ],
+        "_listen_fd": [
+            [
+                "socket_sock_stream",
+                "socket_af_inet"
+            ],
+            0
+        ],
+        "_listen_sockaddr.sin_len": [
+            [
+                "sizeof__listen_sockaddr"
+            ],
+            0
+        ],
+        "_listen_sockaddr.sin_port": [
+            [
+                "port",
+                "htons__sitl_state_base_port",
+                "htons_port"
+            ],
+            0
+        ]
+    },
+    "_tcp_start_client": {
+        "sockaddr.sin_port": [
+            [
+                "htons_port"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "socket_sock_stream",
+                "socket_af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "inet_addr_address"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "connect__fd",
+                "sockaddr",
+                "connect_struct",
+                "fcntl__fd",
+                "connect_sockaddr",
+                "fcntl_f_setfd",
+                "fcntl_fd_cloexec",
+                "sizeof_sockaddr"
+            ],
+            0
+        ]
+    },
+    "_udp_start_client": {
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "inet_addr_address"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "connect_struct",
+                "fcntl__fd",
+                "fcntl_f_setfd",
+                "sockaddr",
+                "fcntl_fd_cloexec",
+                "connect_sockaddr",
+                "connect__fd",
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_port": [
+            [
+                "htons_port"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram"
+            ],
+            0
+        ]
+    },
+    "_udp_start_multicast": {
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_port": [
+            [
+                "htons_port"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "mreq.imr_multiaddr.s_addr": [
+            [
+                "inet_addr_address"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "setsockopt_sizeof",
+                "sockaddr",
+                "setsockopt__mc_fd",
+                "setsockopt_ipproto_ip",
+                "bind_struct",
+                "setsockopt_ip_add_membership",
+                "fcntl_f_setfd",
+                "setsockopt_mreq",
+                "bind_sockaddr",
+                "bind__mc_fd",
+                "sizeof_sockaddr",
+                "fcntl_fd_cloexec",
+                "fcntl__mc_fd"
+            ],
+            0
+        ],
+        "_mc_fd": [
+            [
+                "socket_sock_dgram",
+                "socket_af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "inet_addr_address",
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "mreq.imr_interface.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ]
+    },
+    "_uart_start_connection": {
+        "flags": [
+            [
+                "o_nonblock",
+                "fcntl_f_getfl",
+                "fcntl__fd"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "open_o_rdwr",
+                "open_o_cloexec",
+                "open__uart_path"
+            ],
+            0
+        ],
+        "last_error_print_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_check_connection": {
+        "_fd": [
+            [
+                "accept_nullptr",
+                "accept__listen_fd"
+            ],
+            0
+        ]
+    },
+    "_set_nonblocking": {
+        "v": [
+            [
+                "fcntl_fd",
+                "fcntl_f_getfl"
+            ],
+            0
+        ]
+    },
+    "set_unbuffered_writes": {
+        "_unbuffered_writes": [
+            [
+                "on"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "fcntl__fd",
+                "fcntl_f_getfl"
+            ],
+            0
+        ]
+    },
+    "handle_writing_from_writebuffer_to_device": {
+        "n": [
+            [
+                "mavlink_packetise_n",
+                "baud_limits_write_max_bytes__uart_baudrate",
+                "baud_limits_write_max_bytes_float",
+                "mavlink_packetise__writebuffer",
+                "_writebuffer_available"
+            ],
+            1
+        ],
+        "readptr": [
+            [
+                "_writebuffer_readptr_navail"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "_tx_stats_bytes": [
+            [
+                "send__fd",
+                "send_msg_dontwait",
+                "send_n",
+                "send_tmpbuf",
+                "send__fd",
+                "write__fd",
+                "_sim_serial_device_write_to_device_const",
+                "_sim_serial_device_write_to_device_charreadptr",
+                "send_readptr",
+                "send_msg_dontwait",
+                "baud_limits_write_max_bytes__uart_baudrate",
+                "baud_limits_write_max_bytes_float",
+                "write_navail",
+                "write_readptr",
+                "send_navail"
+            ],
+            4
+        ]
+    },
+    "handle_reading_from_device_to_readbuffer": {
+        "nread": [
+            [
+                "_sim_serial_device_read_from_device_buf",
+                "baud_limits_read_max_bytes_float",
+                "baud_limits_read_max_bytes__uart_baudrate",
+                "_readbuffer_space",
+                "from",
+                "read_from_async_csv_uint8_tbuf",
+                "_sim_serial_device_read_from_device_space",
+                "recvfrom_msg_dontwait",
+                "recvfrom__mc_fd",
+                "recvfrom_struct",
+                "recv_space",
+                "read_buf",
+                "recv__fd",
+                "read_fd",
+                "sizeof_from",
+                "recvfrom_sockaddr",
+                "recvfrom_buf",
+                "read_space",
+                "recv_msg_dontwait",
+                "recvfrom_space",
+                "recv_buf"
+            ],
+            3
+        ],
+        "fd": [
+            [
+                "_fd",
+                "_console"
+            ],
+            0
+        ],
+        "_mc_myport": [
+            [
+                "ntohs_myaddr_sin_port"
+            ],
+            0
+        ],
+        "_receive_timestamp": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "ntohs_from_sin_port"
+            ],
+            0
+        ]
+    },
+    "uart_info": {
+        "tx_bytes": [
+            [
+                "stats_tx_update__tx_stats_bytes"
+            ],
+            0
+        ],
+        "rx_bytes": [
+            [
+                "stats_rx_update__rx_stats_bytes"
+            ],
+            0
+        ]
+    }
+}

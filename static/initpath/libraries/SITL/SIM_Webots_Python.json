@@ -1,0 +1,42 @@
+{
+    "set_interface_ports": {
+        "_webots_port": [
+            [
+                "port_out"
+            ],
+            0
+        ],
+        "_webots_address": [
+            [
+                "address"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "time_now_us": [
+            [
+                "pkt_timestamp",
+                "static_cast",
+                "_0e6",
+                "uint64_t"
+            ],
+            1
+        ],
+        "last_timestamp": [
+            [
+                "pkt_timestamp"
+            ],
+            0
+        ]
+    },
+    "drain_sockets": {
+        "received": [
+            [
+                "socket_sitl_recv_buflen",
+                "socket_sitl_recv_buf"
+            ],
+            0
+        ]
+    }
+}

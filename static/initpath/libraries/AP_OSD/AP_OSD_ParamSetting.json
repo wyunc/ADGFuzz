@@ -1,0 +1,83 @@
+{
+    "update": {
+        "_current_token": [
+            [
+                "param_token"
+            ],
+            0
+        ],
+        "_param": [
+            [
+                "first__current_token",
+                "first__param_type"
+            ],
+            0
+        ]
+    },
+    "set_by_name": {
+        "_current_token": [
+            [
+                "param_token"
+            ],
+            1
+        ],
+        "_param_type": [
+            [
+                "type"
+            ],
+            0
+        ],
+        "_param": [
+            [
+                "find_by_name_type",
+                "find_by_name_token",
+                "find_by_name_name"
+            ],
+            1
+        ]
+    },
+    "guess_ranges": {
+        "incr": [
+            [
+                "powf_digits",
+                "p_get"
+            ],
+            1
+        ],
+        "max": [
+            [
+                "powf_digits"
+            ],
+            0
+        ],
+        "int16p": [
+            [
+                "p_get"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "ap_int32",
+                "ap_int16",
+                "_param",
+                "ap_float"
+            ],
+            0
+        ],
+        "int32p": [
+            [
+                "p_get"
+            ],
+            0
+        ]
+    },
+    "copy_name_camel_case": {
+        "i": [
+            [
+                "n"
+            ],
+            0
+        ]
+    }
+}

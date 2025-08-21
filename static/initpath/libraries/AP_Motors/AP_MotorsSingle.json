@@ -1,0 +1,111 @@
+{
+    "init": {
+        "frame_class": [
+            [
+                "motor_frame_single"
+            ],
+            0
+        ],
+        "_mav_type": [
+            [
+                "mav_type_coaxial"
+            ],
+            0
+        ]
+    },
+    "set_update_rate": {
+        "_speed_hz": [
+            [
+                "speed_hz"
+            ],
+            0
+        ]
+    },
+    "output_armed_stabilizing": {
+        "yaw_thrust": [
+            [
+                "_yaw_in_ff",
+                "fabsf_roll_thrust",
+                "fabsf_pitch_thrust",
+                "fabsf_fabsf",
+                "thr_lin_get_compensation_gain",
+                "_yaw_in"
+            ],
+            3
+        ],
+        "_throttle_out": [
+            [
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle",
+                "fabsf_actuator",
+                "max_fabsf",
+                "fabsf_fabsf",
+                "max_actuator",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle"
+            ],
+            6
+        ],
+        "rp_scale": [
+            [
+                "fabsf_i",
+                "fabsf_actuator",
+                "_throttle_hover",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle",
+                "fabsf_actuator",
+                "max_fabsf",
+                "fabsf_fabsf",
+                "max_actuator",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "get_throttle",
+                "fabsf_yaw_thrust",
+                "fabsf_float",
+                "fabsf_roll_thrust",
+                "fabsf_pitch_thrust",
+                "fabsf_fabsf",
+                "fabsf__yaw_headroom"
+            ],
+            9
+        ],
+        "pitch_thrust": [
+            [
+                "_pitch_in_ff",
+                "thr_lin_get_compensation_gain",
+                "_pitch_in"
+            ],
+            1
+        ],
+        "roll_thrust": [
+            [
+                "_roll_in_ff",
+                "thr_lin_get_compensation_gain",
+                "_roll_in"
+            ],
+            1
+        ]
+    }
+}

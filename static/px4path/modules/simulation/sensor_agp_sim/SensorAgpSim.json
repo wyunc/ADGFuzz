@@ -1,0 +1,137 @@
+{
+    "generate_wgn": {
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "U1": [
+            [
+                "float",
+                "rand",
+                "rand_max"
+            ],
+            0
+        ],
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "v1",
+                "float_s",
+                "float_logf",
+                "float_sqrtf",
+                "v2",
+                "s",
+                "float_float"
+            ],
+            0
+        ],
+        "U2": [
+            [
+                "float",
+                "rand",
+                "rand_max"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "v1",
+                "v2"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "sample.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_measured_lla": [
+            [
+                "lat_lon_alt_gpos_lon",
+                "lat_lon_alt_gpos_lat",
+                "lat_lon_alt_gpos_alt_ellipsoid",
+                "vector3f__f",
+                "gpos_timestamp",
+                "1e"
+            ],
+            3
+        ],
+        "sample.epv": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sample.lon": [
+            [
+                "longitude"
+            ],
+            0
+        ],
+        "sample.eph": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sample.alt_ellipsoid": [
+            [
+                "generate_wgn",
+                "_measured_lla_altitude",
+                "double"
+            ],
+            1
+        ],
+        "_time_last_update": [
+            [
+                "gpos_timestamp"
+            ],
+            1
+        ],
+        "sample.alt": [
+            [
+                "generate_wgn",
+                "_measured_lla_altitude",
+                "double"
+            ],
+            1
+        ],
+        "sample.lat": [
+            [
+                "latitude"
+            ],
+            0
+        ],
+        "sample.timestamp_sample": [
+            [
+                "gpos_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "sensor_agp_sim",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "handle_pose_estimate": {
+        "posErr": [
+            [
+                "pos_err"
+            ],
+            0
+        ],
+        "consume": [
+            [
+                "_frontend_get_quality_min",
+                "quality"
+            ],
+            1
+        ],
+        "angErr": [
+            [
+                "ang_err"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "scale_factor": [
+            [
+                "_frontend_get_pos_scale"
+            ],
+            0
+        ]
+    },
+    "handle_vision_speed_estimate": {
+        "consume": [
+            [
+                "quality",
+                "_frontend_get_quality_min"
+            ],
+            1
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

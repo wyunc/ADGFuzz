@@ -1,0 +1,100 @@
+{
+    "handle_message": {
+        "internal_state.atmospheric_pressure_kpa": [
+            [
+                "telemetry_slow0_baro"
+            ],
+            0
+        ],
+        "internal_state.engine_speed_rpm": [
+            [
+                "uint32_t",
+                "telemetry_fast_rpm",
+                "static_cast"
+            ],
+            0
+        ],
+        "internal_state.fuel_consumption_rate_cm3pm": [
+            [
+                "telemetry_slow2_flow_rate",
+                "kg_per_m3_to_g_per_cm3_get_ecu_fuel_density"
+            ],
+            0
+        ],
+        "internal_state.engine_load_percent": [
+            [
+                "uint8_t",
+                "telemetry_fast_throttle",
+                "static_cast"
+            ],
+            0
+        ],
+        "internal_state.engine_state": [
+            [
+                "stopped",
+                "running"
+            ],
+            0
+        ],
+        "internal_state.last_updated_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "internal_state.general_error": [
+            [
+                "telemetry_fast_ecu_status_bits_error_indicator"
+            ],
+            0
+        ],
+        "internal_state.throttle_position_percent": [
+            [
+                "uint8_t",
+                "telemetry_fast_throttle",
+                "static_cast"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_temperature": [
+            [
+                "c_to_kelvin_telemetry_slow1_mat"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.ignition_timing_deg": [
+            [
+                "telemetry_slow2_ign_angle1"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature": [
+            [
+                "c_to_kelvin_telemetry_slow0_cht"
+            ],
+            0
+        ],
+        "internal_state.estimated_consumed_fuel_volume_cm3": [
+            [
+                "_",
+                "float",
+                "telemetry_fast_fuel_used",
+                "static_cast",
+                "kg_per_m3_to_g_per_cm3_get_ecu_fuel_density"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_pressure_kpa": [
+            [
+                "telemetry_slow0_map"
+            ],
+            0
+        ],
+        "internal_state.fuel_pressure": [
+            [
+                "telemetry_slow1_fuel_pressure"
+            ],
+            0
+        ]
+    }
+}

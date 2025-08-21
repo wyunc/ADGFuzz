@@ -1,0 +1,68 @@
+{
+    "Run": {
+        "capture.timestamp": [
+            [
+                "trig_timestamp"
+            ],
+            0
+        ],
+        "capture.timestamp_utc": [
+            [
+                "trig_timestamp_utc"
+            ],
+            0
+        ],
+        "capture.seq": [
+            [
+                "trig_seq"
+            ],
+            0
+        ],
+        "capture.lon": [
+            [
+                "gpos_lon"
+            ],
+            0
+        ],
+        "capture.alt": [
+            [
+                "gpos_alt"
+            ],
+            0
+        ],
+        "capture.lat": [
+            [
+                "gpos_lat"
+            ],
+            0
+        ],
+        "capture.ground_distance": [
+            [
+                "gpos_terrain_alt",
+                "gpos_alt"
+            ],
+            0
+        ],
+        "q_gimbal": [
+            [
+                "q_heading"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "camera_feedback",
+                "new"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "allocate": {
+        "_ringbuffer": [
+            [
+                "new",
+                "uint8_t",
+                "nullptr",
+                "buffer_size"
+            ],
+            1
+        ]
+    },
+    "deallocate": {
+        "_ringbuffer": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "push_back": {
+        "_end": [
+            [
+                "buf_len",
+                "_size"
+            ],
+            1
+        ],
+        "available": [
+            [
+                "_size",
+                "_start"
+            ],
+            0
+        ]
+    }
+}

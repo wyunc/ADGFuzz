@@ -1,0 +1,38 @@
+{
+    "transfer": {
+        "result": [
+            [
+                "i2c_master_cmd_begin_timeout",
+                "i2c_master_cmd_begin_cmd",
+                "esp_ok",
+                "i2c_master_cmd_begin_bus_port"
+            ],
+            0
+        ],
+        "flag_wr": [
+            [
+                "i2c_nostop",
+                "recv_len",
+                "recv",
+                "nullptr"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "i2c_cmd_link_create"
+            ],
+            0
+        ],
+        "timeout": [
+            [
+                "send_len",
+                "port_tick_period_ms",
+                "16l",
+                "bus_bus_clock",
+                "recv_len"
+            ],
+            0
+        ]
+    }
+}

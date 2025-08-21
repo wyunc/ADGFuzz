@@ -1,0 +1,254 @@
+{
+    "init": {
+        "enabled": [
+            [
+                "chan_offset",
+                "is_gpio_g_pwm_num"
+            ],
+            0
+        ],
+        "g": [
+            [
+                "i",
+                "_gpio_tab"
+            ],
+            0
+        ]
+    },
+    "setup_alt_config": {
+        "bc": [
+            [
+                "board_config"
+            ],
+            0
+        ],
+        "alt_config": [
+            [
+                "bc_get_alt_config"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "alternate_config",
+                "i"
+            ],
+            0
+        ],
+        "g": [
+            [
+                "j",
+                "_gpio_tab"
+            ],
+            0
+        ],
+        "odr": [
+            [
+                "alt_mode",
+                "pal_stm32_high"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "alt_mode",
+                "pal_stm32_high"
+            ],
+            0
+        ]
+    },
+    "pinMode": {
+        "g": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ],
+        "old_mode": [
+            [
+                "pal_read_line_mode_g_pal_line"
+            ],
+            0
+        ],
+        "is_input": [
+            [
+                "output"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "pal_mode_output_opendrain",
+                "pal_mode_input",
+                "pal_mode_output_pushpull",
+                "output"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "g": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "pal_mode_input_pulldown",
+                "value",
+                "pal_mode_input_pullup"
+            ],
+            0
+        ]
+    },
+    "toggle": {
+        "g": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ]
+    },
+    "attach_interrupt": {
+        "g": [
+            [
+                "gpio_by_pin_num_pin",
+                "gpio_by_pin_num_false"
+            ],
+            0
+        ],
+        "isr_mode": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "_attach_interrupt": {
+        "ret": [
+            [
+                "_attach_interrupt_i_line",
+                "_attach_interrupt_i_cb",
+                "_attach_interrupt_i_mode",
+                "_attach_interrupt_i_p"
+            ],
+            0
+        ]
+    },
+    "_attach_interruptI": {
+        "chmode": [
+            [
+                "pal_event_mode_rising_edge",
+                "pal_event_mode_falling_edge",
+                "pal_event_mode_both_edges",
+                "pal_event_mode_disabled"
+            ],
+            0
+        ],
+        "pep": [
+            [
+                "pal_lld_get_line_event_line"
+            ],
+            0
+        ]
+    },
+    "pal_interrupt_cb_functor": {
+        "g": [
+            [
+                "arg",
+                "gpio_entry"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "pal_interrupt_wait": {
+        "g": [
+            [
+                "gpio_entry",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "wait_pin": {
+        "timeout_us": [
+            [
+                "ch_cfg_st_timedelta",
+                "time_us2i_30000u",
+                "constrain_uint32_timeout_us",
+                "constrain_uint32_time_us2i"
+            ],
+            0
+        ],
+        "g": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ],
+        "msg": [
+            [
+                "msg_ok",
+                "osal_thread_suspend_timeout_s_g_thd_wait",
+                "osal_thread_suspend_timeout_s_timeout_us"
+            ],
+            0
+        ]
+    },
+    "pin_to_servo_channel": {
+        "servo_ch": [
+            [
+                "pin",
+                "i",
+                "_pwm_num",
+                "_gpio_tab",
+                "fmu_chan_offset"
+            ],
+            1
+        ]
+    },
+    "get_mode": {
+        "p": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "uint32_t_pal_read_line_mode",
+                "uint32_t_p_pal_line"
+            ],
+            0
+        ]
+    },
+    "set_mode": {
+        "p": [
+            [
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ]
+    },
+    "timer_tick": {
+        "ISR_retry_ticks": [
+            [
+                "100u"
+            ],
+            0
+        ],
+        ".isr_quota": [
+            [
+                "10000u"
+            ],
+            1
+        ]
+    }
+}

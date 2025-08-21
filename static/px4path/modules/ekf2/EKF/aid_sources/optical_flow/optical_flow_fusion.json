@@ -1,0 +1,120 @@
+{
+    "fuseOptFlow": {
+        "_time_last_terrain_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_aid_src_optical_flow.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_optflow_X": [
+            [
+                "_f",
+                "_aid_src_optical_flow_test_ratio"
+            ],
+            0
+        ],
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_optflow_Y": [
+            [
+                "_f",
+                "_aid_src_optical_flow_test_ratio"
+            ],
+            0
+        ],
+        "epsilon": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "state_vector": [
+            [
+                "_state_vector"
+            ],
+            0
+        ],
+        "R_LOS": [
+            [
+                "_aid_src_optical_flow_observation_variance"
+            ],
+            0
+        ],
+        "Kfusion": [
+            [
+                "_aid_src_optical_flow_innovation_variance",
+                "h",
+                "index",
+                "p"
+            ],
+            0
+        ],
+        "flow_gyro_corrected": [
+            [
+                "_flow_gyro_bias",
+                "_flow_sample_delayed_gyro_rate"
+            ],
+            0
+        ]
+    },
+    "predictFlowHagl": {
+        "min_hagl": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "height_above_gnd_est": [
+            [
+                "fabsf_get_hagl",
+                "_params_flow_pos_body",
+                "_params_imu_pos_body",
+                "_r_to_earth"
+            ],
+            2
+        ]
+    },
+    "calcOptFlowMeasVar": {
+        "weighting": [
+            [
+                "_f",
+                "constrain_float__params_flow_qual_min",
+                "float",
+                "_params_flow_qual_min",
+                "constrain_float_flow_sample_quality"
+            ],
+            0
+        ],
+        "R_LOS": [
+            [
+                "sq__f",
+                "sq_weighting",
+                "sq_r_los_worst",
+                "sq_r_los_best"
+            ],
+            0
+        ],
+        "R_LOS_best": [
+            [
+                "fmaxf__params_flow_noise"
+            ],
+            0
+        ],
+        "R_LOS_worst": [
+            [
+                "fmaxf__params_flow_noise_qual_min"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "on_activation": {
+        "_takeoff_state": [
+            [
+                "takeoff_hover"
+            ],
+            0
+        ]
+    },
+    "on_active": {
+        "_mission_item.lon": [
+            [
+                "pos_sp_triplet_current_lon",
+                "_loiter_location"
+            ],
+            0
+        ],
+        "current.cruising_throttle": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "current.cruising_speed": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_mission_item.loiter_radius": [
+            [
+                "_navigator_get_loiter_radius"
+            ],
+            0
+        ],
+        "_mission_item.time_inside": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_loiter_location"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            0
+        ],
+        "reposition_triplet": [
+            [
+                "_navigator_get_reposition_triplet"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_takeoff_state": [
+            [
+                "climb",
+                "transition",
+                "align_heading"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_loiter"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_loiter_location"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint",
+                "nav_cmd_loiter_time_limit"
+            ],
+            0
+        ],
+        "_mission_item.acceptance_radius": [
+            [
+                "_navigator_get_acceptance_radius"
+            ],
+            0
+        ],
+        "_mission_item.altitude": [
+            [
+                "_param_loiter_alt_get",
+                "_takeoff_alt_msl"
+            ],
+            0
+        ],
+        "_mission_item.lat": [
+            [
+                "pos_sp_triplet_current_lat",
+                "_loiter_location"
+            ],
+            0
+        ]
+    },
+    "set_takeoff_position": {
+        "_mission_item.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ],
+        "_takeoff_alt_msl": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "_mission_item.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ]
+    }
+}

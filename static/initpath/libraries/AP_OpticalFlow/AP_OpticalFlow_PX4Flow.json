@@ -1,0 +1,78 @@
+{
+    "scan_buses": {
+        "tdev": [
+            [
+                "hal_i2c_mgr_get_device_get_address",
+                "hal_i2c_mgr_get_device_bus",
+                "hal_i2c_mgr_get_device_px4flow_base_i2c_addr"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "frame",
+                "tdev_read_registers_reg_integral_frame",
+                "sizeof_frame",
+                "tdev_read_registers_uint8_t"
+            ],
+            0
+        ],
+        "bus_mask": [
+            [
+                "hal_i2c_mgr_get_bus_mask",
+                "px4_board_pixhawk2",
+                "get_board_type",
+                "hal_i2c_mgr_get_bus_mask_external"
+            ],
+            1
+        ],
+        "dev": [
+            [
+                "move_tdev"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ],
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "integralToRate": [
+            [
+                "frame_integration_timespan",
+                "_0e6"
+            ],
+            0
+        ],
+        "state.bodyRate": [
+            [
+                "vector2f_frame_gyro_x_rate_integral",
+                "vector2f_frame_gyro_y_rate_integral",
+                "_0e",
+                "integral_to_rate"
+            ],
+            0
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ],
+        "state.surface_quality": [
+            [
+                "frame_qual"
+            ],
+            0
+        ]
+    }
+}

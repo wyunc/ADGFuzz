@@ -1,0 +1,19 @@
+{
+    "get_reading": {
+        "sum": [
+            [
+                "atoi_linebuf",
+                "int"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "params_scaling",
+                "count",
+                "float_sum"
+            ],
+            0
+        ]
+    }
+}

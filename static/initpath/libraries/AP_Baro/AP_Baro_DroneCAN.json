@@ -1,0 +1,59 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "_update_and_wrap_accumulator": {
+        "accum": [
+            [
+                "val"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "max_count"
+            ],
+            0
+        ]
+    },
+    "handle_pressure": {
+        "driver": [
+            [
+                "get_dronecan_backend_true",
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ]
+    },
+    "handle_temperature": {
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_false"
+            ],
+            0
+        ],
+        "_temperature": [
+            [
+                "kelvin_to_c_msg_static_temperature"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "pressure": [
+            [
+                "_pressure_count",
+                "_pressure"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,691 @@
+{
+    "controlFilterModes": {
+        "timeAtArming_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "motorsArmed": [
+            [
+                "dal_get_armed"
+            ],
+            0
+        ],
+        "prevMotorsArmed": [
+            [
+                "motors_armed"
+            ],
+            0
+        ]
+    },
+    "setWindMagStateLearningMode": {
+        "stateStruct.wind_vel.y": [
+            [
+                "sin_f_temp_euler_z",
+                "wind_speed"
+            ],
+            0
+        ],
+        "trueAirspeedVariance": [
+            [
+                "constrain_ftype_tas_data_delayed_tas_variance",
+                "constrain_ftype_wind_vel_variance_min",
+                "sq_wind_vel_variance_max",
+                "constrain_ftype_wind_vel_variance_max"
+            ],
+            0
+        ],
+        "manoeuvring": [
+            [
+                "acc_nav_mag_horiz"
+            ],
+            0
+        ],
+        "effectiveMagCal": [
+            [
+                "always"
+            ],
+            0
+        ],
+        "haveAirspeedMeasurement": [
+            [
+                "imu_data_delayed_time_ms",
+                "tas_data_delayed_allow_fusion",
+                "use_airspeed",
+                "tas_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "magCalDenied": [
+            [
+                "effective_mag_cal",
+                "never",
+                "on_ground",
+                "always",
+                "use_compass"
+            ],
+            0
+        ],
+        "windSpeed": [
+            [
+                "sq_state_struct_velocity_y",
+                "tas_data_delayed_tas",
+                "sqrt_f_sq",
+                "sqrt_f_state_struct_velocity_x"
+            ],
+            0
+        ],
+        "setMagInhibit": [
+            [
+                "mag_cal_requested",
+                "mag_cal_denied"
+            ],
+            0
+        ],
+        "stateStruct.wind_vel.x": [
+            [
+                "cos_f_temp_euler_z",
+                "wind_speed"
+            ],
+            0
+        ]
+    },
+    "setYawSource": {
+        "yaw_source_last": [
+            [
+                "gps",
+                "none",
+                "frontend_sources_get_yaw_source"
+            ],
+            1
+        ]
+    },
+    "setAidingMode": {
+        "posResetSource": [
+            [
+                "gps",
+                "default",
+                "rngbcn",
+                "extnav"
+            ],
+            0
+        ],
+        "PV_AidingMode": [
+            [
+                "aid_absolute",
+                "aid_relative",
+                "aid_none"
+            ],
+            0
+        ],
+        "PV_AidingModePrev": [
+            [
+                "pv_aiding_mode"
+            ],
+            0
+        ],
+        "posAiding": [
+            [
+                "rng_bcn_used",
+                "pos_used"
+            ],
+            0
+        ],
+        "airSpdUsed": [
+            [
+                "last_tas_pass_time_ms",
+                "imu_sample_time_ms",
+                "min_test_time_ms"
+            ],
+            0
+        ],
+        "flowValidMeaTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "flowFusionTimeout": [
+            [
+                "imu_sample_time_ms",
+                "prev_flow_fuse_time_ms"
+            ],
+            0
+        ],
+        "rngBcnUsed": [
+            [
+                "rng_bcn_last_pass_time_ms",
+                "imu_sample_time_ms",
+                "min_test_time_ms"
+            ],
+            0
+        ],
+        "maxLossTime_ms": [
+            [
+                "frontend_pos_retry_time_use_vel_ms",
+                "frontend_pos_retry_time_no_vel_ms"
+            ],
+            0
+        ],
+        "velResetSource": [
+            [
+                "default",
+                "gps",
+                "extnav"
+            ],
+            0
+        ],
+        "velAiding": [
+            [
+                "gps_vel_used",
+                "body_odm_used",
+                "pos_used",
+                "opt_flow_used",
+                "air_spd_used",
+                "rng_bcn_used",
+                "drag_used"
+            ],
+            0
+        ],
+        "dragUsed": [
+            [
+                "last_drag_pass_time_ms",
+                "imu_sample_time_ms",
+                "min_test_time_ms"
+            ],
+            0
+        ],
+        "optFlowUsed": [
+            [
+                "min_test_time_ms",
+                "imu_sample_time_ms",
+                "prev_flow_fuse_time_ms"
+            ],
+            0
+        ],
+        "bodyOdmUsed": [
+            [
+                "prev_body_vel_fuse_time_ms",
+                "imu_sample_time_ms",
+                "min_test_time_ms"
+            ],
+            0
+        ],
+        "prevBodyVelFuseTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "rngBcn.lastPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "hgtMea": [
+            [
+                "ext_nav_data_delayed_pos_z"
+            ],
+            0
+        ],
+        "posDownObsNoise": [
+            [
+                "sq_constrain_ftype",
+                "sq_ext_nav_data_delayed_pos_err"
+            ],
+            0
+        ],
+        "lastGpsPosPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "minTestTime_ms": [
+            [
+                "min_frontend_pos_retry_time_no_vel_ms",
+                "min_frontend_pos_retry_time_use_vel_ms",
+                "frontend_tilt_drift_time_max_ms"
+            ],
+            0
+        ],
+        "lastVelPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "posUsed": [
+            [
+                "last_gps_pos_pass_time_ms",
+                "imu_sample_time_ms",
+                "min_test_time_ms"
+            ],
+            0
+        ],
+        "stateStruct.position.z": [
+            [
+                "mea_hgt_at_take_off"
+            ],
+            0
+        ],
+        "lastKnownPositionNE.y": [
+            [
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        "lastAirspeedEstimate": [
+            [
+                "vector3f_state_struct_wind_vel_x",
+                "state_struct_velocity",
+                "vector3f_state_struct_wind_vel_y",
+                "_length"
+            ],
+            0
+        ],
+        "velTimeout": [
+            [
+                "body_odm_used",
+                "opt_flow_used",
+                "gps_vel_used"
+            ],
+            0
+        ],
+        "meaHgtAtTakeOff": [
+            [
+                "baro_data_delayed_hgt"
+            ],
+            0
+        ],
+        "lastbodyVelPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "attAiding": [
+            [
+                "gps_vel_used",
+                "body_odm_used",
+                "pos_used",
+                "opt_flow_used",
+                "air_spd_used",
+                "rng_bcn_used",
+                "drag_used"
+            ],
+            0
+        ],
+        "windStateIsObservable": [
+            [
+                "gps_vel_used",
+                "body_odm_used",
+                "pos_used",
+                "opt_flow_used",
+                "rng_bcn_used",
+                "inhibit_wind_states"
+            ],
+            0
+        ],
+        "lastKnownPositionD": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "bodyOdmFusionTimeout": [
+            [
+                "prev_body_vel_fuse_time_ms",
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "gpsVelUsed": [
+            [
+                "min_test_time_ms",
+                "imu_sample_time_ms",
+                "last_vel_pass_time_ms"
+            ],
+            0
+        ],
+        "lastKnownPositionNE.x": [
+            [
+                "state_struct_position_x"
+            ],
+            0
+        ],
+        "prevFlowFuseTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "readyToUseBodyOdm": {
+        "visoDataGood": [
+            [
+                "imu_sample_time_ms",
+                "body_odm_data_new_vel_err",
+                "body_odm_meas_time_ms"
+            ],
+            0
+        ],
+        "wencDataGood": [
+            [
+                "wheel_odm_data_delayed_time_ms",
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ]
+    },
+    "use_compass": {
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ]
+    },
+    "setEarthFieldFromLocation": {
+        "stateStruct.earth_magfield": [
+            [
+                "table_earth_field_ga"
+            ],
+            0
+        ],
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ]
+    },
+    "setOrigin": {
+        "public_origin": [
+            [
+                "ekf_origin"
+            ],
+            0
+        ],
+        "EKF_origin": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "ekfGpsRefHgt": [
+            [
+                "double",
+                "ekf_origin_alt"
+            ],
+            0
+        ]
+    },
+    "checkGyroCalStatus": {
+        "temp": [
+            [
+                "del_ang_bias_var_vec",
+                "prev_tnb"
+            ],
+            0
+        ],
+        "delAngBiasVarMax": [
+            [
+                "sq_radians",
+                "sq_dt_ekf_avg"
+            ],
+            0
+        ]
+    },
+    "updateFilterStatus": {
+        "status.flags.initalized": [
+            [
+                "status_flags_initalized",
+                "healthy"
+            ],
+            0
+        ],
+        "status.flags.takeoff": [
+            [
+                "dal_get_takeoff_expected"
+            ],
+            0
+        ],
+        "status.flags.const_pos_mode": [
+            [
+                "pv_aiding_mode",
+                "filter_healthy",
+                "aid_none"
+            ],
+            0
+        ],
+        "status.flags.horiz_pos_abs": [
+            [
+                "filter_healthy",
+                "doing_normal_gps_nav"
+            ],
+            0
+        ],
+        "doingFlowNav": [
+            [
+                "flow_data_valid",
+                "pv_aiding_mode",
+                "aid_none"
+            ],
+            0
+        ],
+        "status.flags.vert_vel": [
+            [
+                "filter_healthy",
+                "some_vert_ref_data"
+            ],
+            0
+        ],
+        "status.flags.takeoff_detected": [
+            [
+                "take_off_detected"
+            ],
+            0
+        ],
+        "hgtNotAccurate": [
+            [
+                "gps",
+                "frontend_sources_get_pos_z_source",
+                "valid_origin"
+            ],
+            0
+        ],
+        "doingBodyVelNav": [
+            [
+                "imu_sample_time_ms",
+                "prev_body_vel_fuse_time_ms",
+                "pv_aiding_mode",
+                "aid_none"
+            ],
+            0
+        ],
+        "filterStatus.value": [
+            [
+                "status_value"
+            ],
+            0
+        ],
+        "status.flags.touchdown": [
+            [
+                "dal_get_touchdown_expected"
+            ],
+            0
+        ],
+        "status.flags.pred_horiz_pos_abs": [
+            [
+                "status_flags_horiz_pos_abs"
+            ],
+            0
+        ],
+        "someHorizRefData": [
+            [
+                "doing_body_vel_nav",
+                "vel_timeout",
+                "tas_timeout",
+                "pos_timeout",
+                "drag_timeout",
+                "doing_flow_nav"
+            ],
+            0
+        ],
+        "status.flags.gps_glitching": [
+            [
+                "gps_accuracy_good",
+                "aid_absolute",
+                "gps",
+                "frontend_sources_get_pos_xy_source",
+                "pv_aiding_mode"
+            ],
+            0
+        ],
+        "status.flags.dead_reckoning": [
+            [
+                "doing_body_vel_nav",
+                "doing_normal_gps_nav",
+                "aid_none",
+                "doing_wind_rel_nav",
+                "pv_aiding_mode",
+                "gnd_offset_valid",
+                "doing_flow_nav"
+            ],
+            0
+        ],
+        "status.flags.attitude": [
+            [
+                "state_struct_quat_is_nan",
+                "filter_healthy"
+            ],
+            0
+        ],
+        "doingNormalGpsNav": [
+            [
+                "aid_absolute",
+                "pv_aiding_mode",
+                "pos_timeout"
+            ],
+            0
+        ],
+        "doingWindRelNav": [
+            [
+                "assume_zero_sideslip",
+                "tas_timeout",
+                "drag_timeout"
+            ],
+            0
+        ],
+        "status.flags.gps_quality_good": [
+            [
+                "gps_good_to_align"
+            ],
+            0
+        ],
+        "status.flags.terrain_alt": [
+            [
+                "gnd_offset_valid",
+                "filter_healthy"
+            ],
+            0
+        ],
+        "someVertRefData": [
+            [
+                "hgt_timeout",
+                "use_ext_nav_vel",
+                "vel_timeout",
+                "use_gps_vert_vel"
+            ],
+            0
+        ],
+        "filterHealthy": [
+            [
+                "yaw_align_complete",
+                "aid_absolute",
+                "tilt_align_complete",
+                "use_compass",
+                "healthy",
+                "pv_aiding_mode"
+            ],
+            0
+        ],
+        "status.flags.pred_horiz_pos_rel": [
+            [
+                "status_flags_horiz_pos_rel"
+            ],
+            0
+        ],
+        "status.flags.horiz_vel": [
+            [
+                "some_horiz_ref_data",
+                "filter_healthy"
+            ],
+            0
+        ],
+        "status.flags.using_gps": [
+            [
+                "imu_sample_time_ms",
+                "aid_absolute",
+                "pv_aiding_mode",
+                "last_gps_pos_pass_time_ms"
+            ],
+            0
+        ],
+        "status.flags.vert_pos": [
+            [
+                "hgt_timeout",
+                "filter_healthy",
+                "hgt_not_accurate"
+            ],
+            0
+        ],
+        "status.flags.horiz_pos_rel": [
+            [
+                "doing_body_vel_nav",
+                "doing_normal_gps_nav",
+                "doing_wind_rel_nav",
+                "filter_healthy",
+                "gnd_offset_valid",
+                "doing_flow_nav"
+            ],
+            0
+        ]
+    },
+    "runYawEstimatorPrediction": {
+        "trueAirspeed": [
+            [
+                "tas_data_delayed_tas"
+            ],
+            0
+        ]
+    },
+    "runYawEstimatorCorrection": {
+        "gpsVelNE": [
+            [
+                "vector2f_gps_data_delayed_vel_y",
+                "vector2f_gps_data_delayed_vel_x"
+            ],
+            0
+        ],
+        "gpsVelAcc": [
+            [
+                "fmax_f_ftype",
+                "fmax_f_frontend__gps_horiz_vel_noise",
+                "fmax_f_gps_spd_accuracy"
+            ],
+            0
+        ]
+    },
+    "EKFGSF_requestYawReset": {
+        "EKFGSF_yaw_reset_request_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    }
+}

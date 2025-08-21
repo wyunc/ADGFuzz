@@ -1,0 +1,33 @@
+{
+    "send_fence_status": {
+        "mavlink_breach_type": [
+            [
+                "fence_breach_minalt",
+                "fence_breach_none",
+                "fence_breach_maxalt",
+                "fence_breach_boundary"
+            ],
+            0
+        ],
+        "breaches": [
+            [
+                "fence_get_breaches"
+            ],
+            0
+        ],
+        "avoid": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "breach_mitigation": [
+            [
+                "fence_mitigate_none",
+                "fence_mitigate_vel_limit",
+                "fence_mitigate_unknown"
+            ],
+            0
+        ]
+    }
+}

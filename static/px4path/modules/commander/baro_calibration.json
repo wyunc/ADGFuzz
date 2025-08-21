@@ -1,0 +1,85 @@
+{
+    "do_baro_calibration": {
+        "temperature": [
+            [
+                "data_sum_count",
+                "instance",
+                "temperature_sum"
+            ],
+            0
+        ],
+        "last": [
+            [
+                "_f",
+                "nan"
+            ],
+            1
+        ],
+        "front": [
+            [
+                "_f",
+                "nan"
+            ],
+            1
+        ],
+        "bias": [
+            [
+                "nan",
+                "nan"
+            ],
+            1
+        ],
+        "altitude_calibrated": [
+            [
+                "get_altitude_from_pressure_temperature",
+                "get_altitude_from_pressure_pressure_pa",
+                "get_altitude_from_pressure_middle"
+            ],
+            0
+        ],
+        "time_start_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pressure_corrected": [
+            [
+                "calibration",
+                "instance",
+                "_correct_sensor_baro_pressure"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "gps_altitude_sum_count",
+                "nan",
+                "float",
+                "sensor_gps_altitude_msl_m",
+                "nan",
+                "get_altitude_from_pressure_temperature",
+                "get_altitude_from_pressure_pressure_pa",
+                "get_altitude_from_pressure_temperature",
+                "get_altitude_from_pressure_pressure_pa"
+            ],
+            5
+        ],
+        "pressure_pa": [
+            [
+                "data_sum",
+                "instance",
+                "data_sum_count"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "calibration",
+                "instance",
+                "_bias_corrected_sensor_offset_bias"
+            ],
+            0
+        ]
+    }
+}

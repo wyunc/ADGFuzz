@@ -1,0 +1,42 @@
+{
+    "open": {
+        "_rd_fd": [
+            [
+                "stdin_fileno"
+            ],
+            0
+        ],
+        "_wr_fd": [
+            [
+                "stdout_fileno"
+            ],
+            0
+        ]
+    },
+    "_set_signal_handlers": {
+        "sa.sa_handler": [
+            [
+                "sig_ign"
+            ],
+            0
+        ]
+    },
+    "set_blocking": {
+        "wr_flags": [
+            [
+                "fcntl_f_getfl",
+                "o_nonblock",
+                "fcntl__wr_fd"
+            ],
+            0
+        ],
+        "rd_flags": [
+            [
+                "fcntl_f_getfl",
+                "o_nonblock",
+                "fcntl__rd_fd"
+            ],
+            0
+        ]
+    }
+}

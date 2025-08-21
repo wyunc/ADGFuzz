@@ -1,0 +1,30 @@
+{
+    "set_temperature": {
+        "_state.last_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    },
+    "update_external_libraries": {
+        "t.temperature_cdeg": [
+            [
+                "temperature"
+            ],
+            0
+        ],
+        "t.motor_temp_cdeg": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    }
+}

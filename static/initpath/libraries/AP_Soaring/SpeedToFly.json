@@ -1,0 +1,100 @@
+{
+    "update": {
+        "WZ": [
+            [
+                "wexp",
+                "wz",
+                "sqrtf__polar_params_k"
+            ],
+            1
+        ],
+        "Jd": [
+            [
+                "powf_cl",
+                "wxp",
+                "cl",
+                "sqrtf_cl",
+                "b",
+                "powf_cl",
+                "wz",
+                "cl",
+                "cd0",
+                "sqrtf_cl",
+                "b",
+                "cl",
+                "wz"
+            ],
+            3
+        ],
+        "minSink": [
+            [
+                "_polar_params_cd0",
+                "sqrtf_c_lmax",
+                "sqrtf__polar_params_k",
+                "c_lmax",
+                "_polar_params_b"
+            ],
+            1
+        ],
+        "CL": [
+            [
+                "jdd",
+                "c_lmin",
+                "c_lmax",
+                "jd",
+                "_cl_estimate",
+                "cl"
+            ],
+            0
+        ],
+        "Jdd": [
+            [
+                "b",
+                "powf_t1",
+                "powf_cl",
+                "wxp",
+                "wz",
+                "b",
+                "powf_cl",
+                "wz",
+                "cl",
+                "cd0",
+                "sqrtf_cl",
+                "cl",
+                "sqrtf_cl",
+                "b",
+                "cl",
+                "wz"
+            ],
+            3
+        ],
+        "B": [
+            [
+                "_polar_params_b"
+            ],
+            0
+        ],
+        "_CL_estimate": [
+            [
+                "c_lmin",
+                "cl",
+                "c_lmax",
+                "_cl_estimate"
+            ],
+            0
+        ],
+        "Wxp": [
+            [
+                "wx",
+                "sqrtf__polar_params_k"
+            ],
+            1
+        ],
+        "CD0": [
+            [
+                "_polar_params_cd0"
+            ],
+            0
+        ]
+    }
+}

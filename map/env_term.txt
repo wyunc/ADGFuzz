@@ -1,0 +1,5 @@
+terrain
+obstacle
+fence
+wind
+beacon

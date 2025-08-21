@@ -1,0 +1,134 @@
+{
+    "configure_gripper": {
+        "config.type": [
+            [
+                "gripper_type",
+                "_param_gripper_type_get"
+            ],
+            0
+        ],
+        "config.sensor": [
+            [
+                "none"
+            ],
+            0
+        ],
+        "config.timeout_us": [
+            [
+                "1000000ull",
+                "hrt_abstime__param_gripper_timeout_s_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "gripper_update": {
+        "_cur_vcmd_gripper_action": [
+            [
+                "gripper_action_none"
+            ],
+            0
+        ]
+    },
+    "handle_vehicle_command": {
+        "_cur_vcmd_target_system": [
+            [
+                "vehicle_command_source_system"
+            ],
+            0
+        ],
+        "_cur_vcmd_gripper_action": [
+            [
+                "roundf_vehicle_command_param2",
+                "int32_t"
+            ],
+            1
+        ],
+        "_cur_vcmd_target_component": [
+            [
+                "vehicle_command_source_component"
+            ],
+            0
+        ]
+    },
+    "send_gripper_vehicle_command": {
+        "vcmd.param2": [
+            [
+                "gripper_action"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_do_gripper"
+            ],
+            0
+        ]
+    },
+    "send_gripper_vehicle_command_ack": {
+        "vcmd_ack.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "vcmd_ack.result": [
+            [
+                "command_result"
+            ],
+            0
+        ],
+        "vcmd_ack.result_param1": [
+            [
+                "uint8_max"
+            ],
+            0
+        ],
+        "vcmd_ack.target_component": [
+            [
+                "target_component"
+            ],
+            0
+        ],
+        "vcmd_ack.command": [
+            [
+                "vehicle_cmd_do_gripper"
+            ],
+            0
+        ],
+        "vcmd_ack.target_system": [
+            [
+                "target_system"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "payload_deliverer"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

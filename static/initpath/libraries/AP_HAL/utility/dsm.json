@@ -1,0 +1,102 @@
+{
+    "dsm_decode_channel": {
+        "value": [
+            [
+                "shift",
+                "raw"
+            ],
+            1
+        ],
+        "channel": [
+            [
+                "shift",
+                "raw",
+                "0xf"
+            ],
+            0
+        ]
+    },
+    "dsm_guess_format": {
+        "raw": [
+            [
+                "i",
+                "dsm_frame"
+            ],
+            1
+        ]
+    },
+    "dsm_decode": {
+        "value": [
+            [
+                "int"
+            ],
+            0
+        ],
+        "dsm_last_frame_time": [
+            [
+                "frame_time"
+            ],
+            0
+        ],
+        "raw": [
+            [
+                "i",
+                "dsm_frame"
+            ],
+            1
+        ],
+        "num_values": [
+            [
+                "channel"
+            ],
+            0
+        ]
+    },
+    "dsm_parse": {
+        "num_values": [
+            [
+                "dsm_chan_count"
+            ],
+            0
+        ],
+        "frame_drops": [
+            [
+                "dsm_frame_drops"
+            ],
+            0
+        ],
+        "dsm_decode_state": [
+            [
+                "dsm_decode_state_desync",
+                "dsm_decode_state_sync"
+            ],
+            0
+        ],
+        "dsm_last_rx_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "decode_ret": [
+            [
+                "dsm_decode_max_channels",
+                "dsm_decode_dsm_chan_count",
+                "dsm_decode_now",
+                "dsm_decode_values",
+                "dsm_decode_dsm_frame"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "fd": [
+            [
+                "open_argv",
+                "open_o_rdonly",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    }
+}

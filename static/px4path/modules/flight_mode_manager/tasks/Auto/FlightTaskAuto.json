@@ -1,0 +1,482 @@
+{
+    "activate": {
+        "_yaw_sp_prev": [
+            [
+                "last_setpoint_yaw",
+                "_yaw",
+                "px4_isfinite_last_setpoint_yaw"
+            ],
+            0
+        ],
+        "_velocity_setpoint": [
+            [
+                "_velocity"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "_position"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "_yaw"
+            ],
+            0
+        ]
+    },
+    "updateInitialize": {
+        "ret": [
+            [
+                "_evaluate_global_reference",
+                "_evaluate_triplets",
+                "update_initialize",
+                "_velocity_is_all_finite",
+                "_position_is_all_finite"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "force_zero_velocity_setpoint": [
+            [
+                "_is_emergency_braking_active",
+                "should_wait_for_yaw_align"
+            ],
+            0
+        ],
+        "_acceleration_setpoint": [
+            [
+                "smoothed_setpoints_acceleration"
+            ],
+            0
+        ],
+        "_unsmoothed_velocity_setpoint": [
+            [
+                "smoothed_setpoints_unsmoothed_velocity"
+            ],
+            0
+        ],
+        "_gear.landing_gear": [
+            [
+                "gear_up"
+            ],
+            0
+        ],
+        "_jerk_setpoint": [
+            [
+                "smoothed_setpoints_jerk"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "vector3f_nan",
+                "smoothed_setpoints_position",
+                "_target",
+                "vector3f__position"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "_want_takeoff": [
+            [
+                "smoothed_setpoints_unsmoothed_velocity"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "_yaw_sp_prev",
+                "_yaw",
+                "px4_isfinite__yaw_sp_prev"
+            ],
+            0
+        ],
+        "_velocity_setpoint": [
+            [
+                "smoothed_setpoints_velocity"
+            ],
+            0
+        ],
+        "_constraints.want_takeoff": [
+            [
+                "_check_takeoff"
+            ],
+            0
+        ],
+        "_type_previous": [
+            [
+                "_type"
+            ],
+            0
+        ]
+    },
+    "overrideCruiseSpeed": {
+        "_time_last_cruise_speed_override": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_mc_cruise_speed": [
+            [
+                "cruise_speed_m_s"
+            ],
+            0
+        ]
+    },
+    "_prepareLandSetpoints": {
+        "_yaw_setpoint": [
+            [
+                "_yaw_sp_prev"
+            ],
+            1
+        ],
+        "_position_setpoint": [
+            [
+                "vector3f__target",
+                "nan",
+                "_target"
+            ],
+            1
+        ],
+        "_gear.landing_gear": [
+            [
+                "gear_down"
+            ],
+            0
+        ],
+        "vertical_speed": [
+            [
+                "_param_mpc_land_crwl_get",
+                "_sticks_get_throttle_zero_centered_expo"
+            ],
+            0
+        ],
+        "sticks_ne": [
+            [
+                "_sticks_get_pitch_roll_expo"
+            ],
+            1
+        ],
+        "range_dist_available": [
+            [
+                "px4_isfinite__dist_to_bottom"
+            ],
+            0
+        ],
+        "max_speed": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_initial_land_position": [
+            [
+                "vector3f__target",
+                "nan",
+                "_target"
+            ],
+            0
+        ]
+    },
+    "_limitYawRate": {
+        "_yaw_sp_aligned": [
+            [
+                "fabsf__yaw_setpoint",
+                "fabsf_wrap_pi",
+                "radians__param_mpc_yawrauto_max_get",
+                "radians__param_mis_yaw_err_get",
+                "fabsf_yaw_setpoint_sat",
+                "fabsf__yawspeed_setpoint"
+            ],
+            1
+        ],
+        "_yaw_sp_prev": [
+            [
+                "px4_isfinite__yaw_setpoint",
+                "wrap_pi__yaw_sp_prev",
+                "wrap_pi_dyaw",
+                "_yaw"
+            ],
+            2
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_yawspeed_filter_get_state",
+                "constrain__yawspeed_setpoint",
+                "constrain_yawrate_max"
+            ],
+            0
+        ],
+        "dyaw_desired": [
+            [
+                "wrap_pi__yaw_sp_prev",
+                "wrap_pi__yaw_setpoint"
+            ],
+            0
+        ],
+        "dyaw_max": [
+            [
+                "_deltatime",
+                "radians__param_mpc_yawrauto_max_get"
+            ],
+            1
+        ],
+        "dyaw": [
+            [
+                "constrain_dyaw_max",
+                "constrain_dyaw_desired"
+            ],
+            0
+        ]
+    },
+    "_evaluateTriplets": {
+        "_next_was_valid": [
+            [
+                "_sub_triplet_setpoint_get_next_valid"
+            ],
+            0
+        ],
+        "_triplet_prev_wp": [
+            [
+                "tmp_target"
+            ],
+            1
+        ],
+        "_yaw_setpoint": [
+            [
+                "_yaw",
+                "nan",
+                "_sub_triplet_setpoint_get_current_yaw"
+            ],
+            0
+        ],
+        "_type": [
+            [
+                "loiter",
+                "_sub_triplet_setpoint_get_current_type",
+                "waypoint_type"
+            ],
+            0
+        ],
+        "_target_acceptance_radius": [
+            [
+                "_sub_triplet_setpoint_get_current_acceptance_radius"
+            ],
+            0
+        ],
+        "_prev_was_valid": [
+            [
+                "_sub_triplet_setpoint_get_previous_valid"
+            ],
+            0
+        ],
+        "_prev_prev_wp": [
+            [
+                "_position"
+            ],
+            0
+        ],
+        "_current_state": [
+            [
+                "_get_current_state"
+            ],
+            0
+        ],
+        "vehicle_is_moving_lateral": [
+            [
+                "_velocity_setpoint_xy_longer_than__param_mpc_xy_cruise_get"
+            ],
+            0
+        ],
+        "_mc_cruise_speed": [
+            [
+                "_param_mpc_xy_cruise_get",
+                "min__mc_cruise_speed",
+                "min__param_mpc_xy_vel_max_get",
+                "_sub_triplet_setpoint_get_current_cruising_speed"
+            ],
+            1
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "nan",
+                "_f",
+                "_weathervane_get_weathervane_yawrate"
+            ],
+            0
+        ],
+        "_triplet_next_wp": [
+            [
+                "tmp_target"
+            ],
+            1
+        ]
+    },
+    "_set_heading_from_mode": {
+        "v": [
+            [
+                "vector2f__target",
+                "vector2f__position",
+                "vector2f__sub_home_position_get_x"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "nan",
+                "_yaw"
+            ],
+            0
+        ]
+    },
+    "_evaluateGlobalReference": {
+        "ref_lon": [
+            [
+                "_sub_vehicle_local_position_get_ref_lon"
+            ],
+            0
+        ],
+        "ref_lat": [
+            [
+                "_sub_vehicle_local_position_get_ref_lat"
+            ],
+            0
+        ],
+        "_reference_altitude": [
+            [
+                "_sub_vehicle_local_position_get_ref_alt"
+            ],
+            0
+        ]
+    },
+    "_updateInternalWaypoints": {
+        "_next_wp": [
+            [
+                "_triplet_next_wp",
+                "_triplet_target"
+            ],
+            0
+        ],
+        "_prev_wp": [
+            [
+                "_triplet_prev_wp",
+                "_position"
+            ],
+            0
+        ],
+        "_target": [
+            [
+                "_triplet_prev_wp",
+                "_triplet_target",
+                "_closest_pt"
+            ],
+            0
+        ]
+    },
+    "_compute_heading_from_2D_vector": {
+        "heading": [
+            [
+                "sign_v",
+                "wrap_pi_v",
+                "wrap_pi_acosf"
+            ],
+            0
+        ]
+    },
+    "_ekfResetHandlerHeading": {
+        "_yaw_sp_prev": [
+            [
+                "delta_psi"
+            ],
+            0
+        ]
+    },
+    "_generateHeadingAlongTraj": {
+        "traj_to_target": [
+            [
+                "vector2f__position",
+                "vector2f__target"
+            ],
+            0
+        ]
+    },
+    "isTargetModified": {
+        "xy_modified": [
+            [
+                "_xy_longer_than_flt_epsilon",
+                "_position_setpoint",
+                "_target"
+            ],
+            0
+        ],
+        "z_modified": [
+            [
+                "flt_epsilon",
+                "fabs__target",
+                "fabs__position_setpoint",
+                "px4_isfinite__position_setpoint"
+            ],
+            1
+        ]
+    },
+    "_updateTrajConstraints": {
+        "z_vel_constraint": [
+            [
+                "_param_mpc_z_v_auto_up_get",
+                "_param_mpc_tko_speed_get"
+            ],
+            0
+        ],
+        "z_accel_constraint": [
+            [
+                "_param_mpc_acc_up_max_get",
+                "_param_mpc_tko_ramp_t_get",
+                "min__param_mpc_tko_speed_get",
+                "min_z_accel_constraint"
+            ],
+            0
+        ],
+        "_constraints.speed_down": [
+            [
+                "max__constraints_speed_down",
+                "max__param_mpc_z_v_auto_dn_get",
+                "_constraints_speed_down",
+                "max__position_smoothing_get_current_velocity_z",
+                "max_fabsf"
+            ],
+            0
+        ],
+        "_constraints.speed_up": [
+            [
+                "_constraints_speed_up",
+                "max__constraints_speed_up",
+                "max__position_smoothing_get_current_velocity_z",
+                "max_fabsf",
+                "max__param_mpc_z_v_auto_up_get"
+            ],
+            0
+        ]
+    }
+}

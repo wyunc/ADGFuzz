@@ -1,0 +1,83 @@
+{
+    "print_vprintf": {
+        "ndigs": [
+            [
+                "sign",
+                "ftoa_engine_value",
+                "ftoa_engine_charbuf"
+            ],
+            1
+        ],
+        "value": [
+            [
+                "va_arg_ap",
+                "va_arg_double"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "fl_fltexp",
+                "fl_fltfix",
+                "va_arg_ap",
+                "va_arg_long",
+                "fl_long",
+                "va_arg_int"
+            ],
+            1
+        ],
+        "base": [
+            [
+                "xtoa_upper"
+            ],
+            0
+        ],
+        "width": [
+            [
+                "ultoa_invert_x",
+                "ultoa_invert_charbuf",
+                "buf",
+                "ulltoa_invert_x",
+                "ulltoa_invert_charbuf",
+                "char",
+                "fmt"
+            ],
+            2
+        ],
+        "prec": [
+            [
+                "ultoa_invert_x",
+                "ultoa_invert_charbuf",
+                "buf",
+                "ulltoa_invert_x",
+                "ulltoa_invert_charbuf",
+                "char",
+                "fmt"
+            ],
+            1
+        ],
+        "vtype": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "strnlen_flags",
+                "strnlen_fl_prec",
+                "strnlen_pnt"
+            ],
+            0
+        ],
+        "pnt": [
+            [
+                "buf",
+                "char",
+                "va_arg_ap",
+                "va_arg_char"
+            ],
+            0
+        ]
+    }
+}

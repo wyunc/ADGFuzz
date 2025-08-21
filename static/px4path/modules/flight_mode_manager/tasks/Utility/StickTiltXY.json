@@ -1,0 +1,22 @@
+{
+    "updateParams": {
+        "_maximum_acceleration": [
+            [
+                "_",
+                "_f",
+                "constrain_maximum_tilt",
+                "constrain_tanf",
+                "constants_one_g"
+            ],
+            0
+        ],
+        "maximum_tilt": [
+            [
+                "radians_constrain",
+                "_f",
+                "radians__param_mpc_man_tilt_max_get"
+            ],
+            0
+        ]
+    }
+}

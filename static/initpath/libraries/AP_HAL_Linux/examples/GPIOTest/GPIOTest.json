@@ -1,0 +1,11 @@
+{
+    "parse_gpio_pin_number": {
+        "pin": [
+            [
+                "argv",
+                "_i"
+            ],
+            0
+        ]
+    }
+}

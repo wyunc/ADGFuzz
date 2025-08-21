@@ -1,0 +1,11 @@
+{
+    "update_using_interlock": {
+        "ap.using_interlock": [
+            [
+                "rc_find_channel_for_option_motor_interlock",
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

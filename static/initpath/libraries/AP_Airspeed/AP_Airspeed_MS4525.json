@@ -1,0 +1,149 @@
+{
+    "probe": {
+        "_dev": [
+            [
+                "hal_i2c_mgr_get_device_bus",
+                "hal_i2c_mgr_get_device_address"
+            ],
+            0
+        ]
+    },
+    "_measure": {
+        "_measurement_started_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_get_pressure": {
+        "diff_press_PSI": [
+            [
+                "p_min",
+                "p_max",
+                "dp_raw"
+            ],
+            0
+        ],
+        "P_max": [
+            [
+                "get_psi_range"
+            ],
+            0
+        ],
+        "press": [
+            [
+                "diff_press_psi",
+                "psi_to_pa"
+            ],
+            0
+        ],
+        "P_min": [
+            [
+                "p_max"
+            ],
+            0
+        ]
+    },
+    "_get_temperature": {
+        "temp": [
+            [
+                "d_t_raw"
+            ],
+            0
+        ]
+    },
+    "_collect": {
+        "dT_raw2": [
+            [
+                "0x_ffe0",
+                "d_t_raw2",
+                "data2"
+            ],
+            0
+        ],
+        "_last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_press_sum": [
+            [
+                "_get_pressure_dp_raw2",
+                "_get_pressure_dp_raw"
+            ],
+            2
+        ],
+        "dT_raw": [
+            [
+                "0x_ffe0",
+                "d_t_raw",
+                "data"
+            ],
+            0
+        ],
+        "dp_raw2": [
+            [
+                "0x3fff",
+                "data2"
+            ],
+            0
+        ],
+        "dp_raw": [
+            [
+                "0x3fff",
+                "data"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "0x_c0",
+                "data"
+            ],
+            0
+        ],
+        "_temp_sum": [
+            [
+                "_get_temperature_d_t_raw",
+                "_get_temperature_d_t_raw2"
+            ],
+            2
+        ]
+    },
+    "_voltage_correction": {
+        "temperature": [
+            [
+                "hal_analogin_board_voltage",
+                "temp_slope"
+            ],
+            1
+        ],
+        "diff_press_pa": [
+            [
+                "slope",
+                "hal_analogin_board_voltage"
+            ],
+            1
+        ]
+    },
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "_press_count",
+                "_press_sum"
+            ],
+            1
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "_temp_sum",
+                "_temp_count"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "adjust_timer": {
+        "callback": [
+            [
+                "h",
+                "callback_info",
+                "static_cast"
+            ],
+            0
+        ],
+        "next_usec": [
+            [
+                "micros64",
+                "period_usec"
+            ],
+            0
+        ]
+    }
+}

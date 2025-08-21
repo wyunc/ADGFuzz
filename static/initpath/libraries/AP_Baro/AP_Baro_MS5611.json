@@ -1,0 +1,460 @@
+{
+    "_init": {
+        "_cal_reg.c1": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "_cal_reg.c3": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "_cal_reg.c4": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "_cal_reg.c5": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "_cal_reg.c6": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "_cal_reg.c2": [
+            [
+                "prom"
+            ],
+            0
+        ],
+        "prom_read_ok": [
+            [
+                "_read_prom_5637_prom",
+                "_read_prom_5611_prom"
+            ],
+            0
+        ],
+        "_ms56xx_type": [
+            [
+                "baro_ms5607"
+            ],
+            0
+        ],
+        "devtype": [
+            [
+                "devtype_baro_ms5607",
+                "devtype_baro_ms5611",
+                "devtype_baro_ms5837",
+                "devtype_baro_ms5637"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "_read_prom_5611": {
+        "crc_read": [
+            [
+                "0xf",
+                "prom",
+                "crc_crc4_prom"
+            ],
+            0
+        ]
+    },
+    "_read_prom_5637": {
+        "crc_read": [
+            [
+                "prom",
+                "crc_crc4_prom",
+                "0xf000"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "_state": [
+            [
+                "next_state"
+            ],
+            0
+        ],
+        "adc_val": [
+            [
+                "_read_adc"
+            ],
+            0
+        ]
+    },
+    "_update_and_wrap_accumulator": {
+        "count": [
+            [
+                "max_count"
+            ],
+            0
+        ],
+        "accum": [
+            [
+                "val"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "sD2": [
+            [
+                "_accum_s_d2"
+            ],
+            0
+        ],
+        "_D2": [
+            [
+                "s_d2",
+                "_accum_d2_count",
+                "float"
+            ],
+            1
+        ],
+        "_D1": [
+            [
+                "_accum_d1_count",
+                "float",
+                "s_d1"
+            ],
+            1
+        ],
+        "sD1": [
+            [
+                "_accum_s_d1"
+            ],
+            0
+        ]
+    },
+    "_calculate_5611": {
+        "Aux": [
+            [
+                "sq_temp"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "d_t",
+                "off",
+                "off2",
+                "_cal_reg_c2",
+                "_cal_reg_c4"
+            ],
+            0
+        ],
+        "SENS2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "uint32_t",
+                "_d2",
+                "_cal_reg_c5"
+            ],
+            0
+        ],
+        "OFF2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "d_t",
+                "temp",
+                "_cal_reg_c6",
+                "t2"
+            ],
+            0
+        ],
+        "T2": [
+            [
+                "0x80000000",
+                "d_t"
+            ],
+            0
+        ],
+        "pressure": [
+            [
+                "sens",
+                "_d1",
+                "off"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "d_t",
+                "sens",
+                "_cal_reg_c1",
+                "sens2",
+                "_cal_reg_c3"
+            ],
+            0
+        ]
+    },
+    "_calculate_5607": {
+        "temperature": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "OFF2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "Aux": [
+            [
+                "sq_temp"
+            ],
+            0
+        ],
+        "SENS2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "T2": [
+            [
+                "d_t",
+                "0x80000000"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "uint32_t",
+                "_d2",
+                "_cal_reg_c5"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "_cal_reg_c1",
+                "d_t",
+                "sens",
+                "_cal_reg_c3",
+                "sens2"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "t2",
+                "d_t",
+                "_cal_reg_c6",
+                "temp"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "_cal_reg_c4",
+                "d_t",
+                "_cal_reg_c2",
+                "off",
+                "off2"
+            ],
+            0
+        ],
+        "pressure": [
+            [
+                "off",
+                "_d1",
+                "sens"
+            ],
+            0
+        ]
+    },
+    "_calculate_5637": {
+        "OFF": [
+            [
+                "_cal_reg_c2",
+                "int64_t",
+                "d_t",
+                "_cal_reg_c4",
+                "off2",
+                "off"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "_cal_reg_c5",
+                "_d2",
+                "uint32_t"
+            ],
+            1
+        ],
+        "SENS": [
+            [
+                "int64_t",
+                "sens",
+                "d_t",
+                "sens2",
+                "_cal_reg_c3",
+                "_cal_reg_c1"
+            ],
+            0
+        ],
+        "SENS2": [
+            [
+                "temp",
+                "sq_temp"
+            ],
+            1
+        ],
+        "temperature": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "_cal_reg_c6",
+                "t2",
+                "int64_t",
+                "d_t",
+                "temp"
+            ],
+            0
+        ],
+        "pressure": [
+            [
+                "off",
+                "sens",
+                "_d1",
+                "int64_t"
+            ],
+            1
+        ],
+        "OFF2": [
+            [
+                "temp",
+                "sq_temp"
+            ],
+            1
+        ],
+        "T2": [
+            [
+                "int64_t",
+                "d_t"
+            ],
+            0
+        ]
+    },
+    "_calculate_5837": {
+        "SENS2": [
+            [
+                "temp"
+            ],
+            1
+        ],
+        "pressure": [
+            [
+                "_d1",
+                "int64_t",
+                "sens",
+                "off"
+            ],
+            1
+        ],
+        "temperature": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "OFF2": [
+            [
+                "temp"
+            ],
+            1
+        ],
+        "OFF": [
+            [
+                "off",
+                "int64_t",
+                "_cal_reg_c4",
+                "d_t",
+                "off2",
+                "_cal_reg_c2"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "int64_t",
+                "sens",
+                "d_t",
+                "_cal_reg_c1",
+                "_cal_reg_c3",
+                "sens2"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "t2",
+                "int64_t",
+                "d_t",
+                "temp",
+                "_cal_reg_c6"
+            ],
+            0
+        ],
+        "T2": [
+            [
+                "int64_t",
+                "d_t"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "_cal_reg_c5",
+                "_d2",
+                "uint32_t"
+            ],
+            1
+        ]
+    }
+}

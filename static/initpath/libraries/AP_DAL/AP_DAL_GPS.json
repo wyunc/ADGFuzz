@@ -1,0 +1,170 @@
+{
+    "start_frame": {
+        "RGPI.gps_yaw_deg_returncode": [
+            [
+                "gps_gps_yaw_deg_rgpj_yaw_deg",
+                "gps_gps_yaw_deg_rgpj_yaw_deg_time_ms",
+                "gps_gps_yaw_deg_i",
+                "gps_gps_yaw_deg_rgpj_yaw_accuracy_deg"
+            ],
+            0
+        ],
+        ".lng": [
+            [
+                "rgpj_lng"
+            ],
+            0
+        ],
+        "_RGPH.num_sensors": [
+            [
+                "gps_num_sensors"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location_i"
+            ],
+            0
+        ],
+        "RGPI.get_lag_returncode": [
+            [
+                "gps_get_lag_i",
+                "gps_get_lag_rgpi_lag_sec"
+            ],
+            0
+        ],
+        "RGPI.horizontal_accuracy_returncode": [
+            [
+                "gps_horizontal_accuracy_rgpj_hacc",
+                "gps_horizontal_accuracy_i"
+            ],
+            0
+        ],
+        "RGPI.have_vertical_velocity": [
+            [
+                "gps_have_vertical_velocity_i"
+            ],
+            0
+        ],
+        "RGPJ.lng": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        ".lat": [
+            [
+                "rgpj_lat"
+            ],
+            0
+        ],
+        "RGPJ.alt": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "RGPI.vertical_accuracy_returncode": [
+            [
+                "gps_vertical_accuracy_rgpj_vacc",
+                "gps_vertical_accuracy_i"
+            ],
+            0
+        ],
+        "RGPJ.hdop": [
+            [
+                "gps_get_hdop_i"
+            ],
+            0
+        ],
+        "RGPI": [
+            [
+                "i",
+                "_rgpi"
+            ],
+            0
+        ],
+        "RGPJ": [
+            [
+                "i",
+                "_rgpj"
+            ],
+            0
+        ],
+        "_RGPH.primary_sensor": [
+            [
+                "gps_primary_sensor"
+            ],
+            0
+        ],
+        "RGPI.num_sats": [
+            [
+                "gps_num_sats_i"
+            ],
+            0
+        ],
+        "RGPI.speed_accuracy_returncode": [
+            [
+                "gps_speed_accuracy_i",
+                "gps_speed_accuracy_rgpj_sacc"
+            ],
+            0
+        ],
+        "old_RGPI": [
+            [
+                "rgpi"
+            ],
+            0
+        ],
+        "RGPI.status": [
+            [
+                "gps_status_i",
+                "gps_status"
+            ],
+            0
+        ],
+        ".alt": [
+            [
+                "rgpj_alt"
+            ],
+            0
+        ],
+        "RGPJ.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "old_RGPJ": [
+            [
+                "rgpj"
+            ],
+            0
+        ],
+        "RGPJ.last_message_time_ms": [
+            [
+                "gps_last_message_time_ms_i"
+            ],
+            0
+        ],
+        "RGPI.antenna_offset": [
+            [
+                "gps_get_antenna_offset_i"
+            ],
+            0
+        ],
+        "RGPJ.velocity": [
+            [
+                "gps_velocity_i"
+            ],
+            0
+        ],
+        "old_RGPH": [
+            [
+                "_rgph"
+            ],
+            0
+        ]
+    }
+}

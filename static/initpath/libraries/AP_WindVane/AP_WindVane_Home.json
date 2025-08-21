@@ -1,0 +1,25 @@
+{
+    "update_direction": {
+        "chan": [
+            [
+                "rc_find_channel_for_option_wind_vane_dir_ofsset"
+            ],
+            0
+        ],
+        "direction_apparent_ef": [
+            [
+                "_frontend__home_heading",
+                "chan_norm_input",
+                "radians"
+            ],
+            0
+        ],
+        "_frontend._direction_apparent_raw": [
+            [
+                "wrap_pi_ahrs_get_yaw",
+                "wrap_pi_direction_apparent_ef"
+            ],
+            0
+        ]
+    }
+}

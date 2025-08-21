@@ -1,0 +1,51 @@
+{
+    "init": {
+        "bus_sem": [
+            [
+                "_dev_get_semaphore"
+            ],
+            0
+        ]
+    },
+    "_dump_registers": {
+        "reg": [
+            [
+                "lsm9ds1m_offset_x_reg_l_m"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "raw_field": [
+            [
+                "_scaling",
+                "vector3f_regs_val"
+            ],
+            0
+        ]
+    },
+    "_check_id": {
+        "value": [
+            [
+                "_register_read_lsm9ds1m_who_am_i"
+            ],
+            0
+        ]
+    },
+    "_set_scale": {
+        "FS_M_MASK": [
+            [
+                "0xc"
+            ],
+            0
+        ]
+    },
+    "_register_modify": {
+        "val": [
+            [
+                "_register_read_reg"
+            ],
+            0
+        ]
+    }
+}

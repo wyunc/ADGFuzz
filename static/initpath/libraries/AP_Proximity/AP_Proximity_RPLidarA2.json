@@ -1,0 +1,131 @@
+{
+    "update": {
+        "_state": [
+            [
+                "awaiting_response"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "reset_rplidar": {
+        "_last_reset_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "consume_bytes": {
+        "_byte_count": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_state": [
+            [
+                "reset"
+            ],
+            0
+        ]
+    },
+    "get_readings": {
+        "previous_loop_byte_count": [
+            [
+                "_uart_read__payload",
+                "_uart_read__byte_count",
+                "_uart_read_bytes_to_read",
+                "uint32_max"
+            ],
+            2
+        ],
+        "_state": [
+            [
+                "awaiting_response",
+                "awaiting_scan_data",
+                "awaiting_device_info",
+                "awaiting_health"
+            ],
+            0
+        ],
+        "bytes_to_read": [
+            [
+                "sizeof__payload",
+                "_uart_available",
+                "sizeof__byte_count"
+            ],
+            1
+        ],
+        "_uart": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "parse_response_device_info": {
+        "_state": [
+            [
+                "awaiting_response"
+            ],
+            0
+        ],
+        "model": [
+            [
+                "a2",
+                "c1",
+                "a1",
+                "s1"
+            ],
+            0
+        ]
+    },
+    "parse_response_data": {
+        "_last_angle_deg": [
+            [
+                "wrap_360_params_yaw_correction",
+                "wrap_360__payload_sensor_scan_angle_q6",
+                "wrap_360_angle_sign"
+            ],
+            1
+        ],
+        "angle_sign": [
+            [
+                "params_orientation"
+            ],
+            0
+        ],
+        "_last_face": [
+            [
+                "frontend_boundary_get_face_angle_deg"
+            ],
+            1
+        ],
+        "quality": [
+            [
+                "_payload_sensor_scan_quality"
+            ],
+            0
+        ],
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_distance_m": [
+            [
+                "_payload_sensor_scan_distance_q2"
+            ],
+            1
+        ]
+    }
+}

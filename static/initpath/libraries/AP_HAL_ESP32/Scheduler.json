@@ -1,0 +1,87 @@
+{
+    "thread_create": {
+        "xReturned": [
+            [
+                "x_task_create_thread_create_trampoline",
+                "x_task_create_thread_priority",
+                "x_task_create_tproc",
+                "x_task_create_actual_stack_size",
+                "x_task_create_name",
+                "x_task_create_xhandle"
+            ],
+            0
+        ],
+        "actual_stack_size": [
+            [
+                "extra_thread_space",
+                "requested_stack_size"
+            ],
+            0
+        ],
+        "tproc": [
+            [
+                "proc",
+                "calloc_proc",
+                "member_proc",
+                "calloc_sizeof"
+            ],
+            0
+        ],
+        "thread_priority": [
+            [
+                "constrain_int16_i",
+                "constrain_int16__p",
+                "constrain_int16_priority",
+                "constrain_int16_priority_map",
+                "io_prio"
+            ],
+            0
+        ]
+    },
+    "_storage_thread": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "_print_profile": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "print_stats": {
+        "last_run": [
+            [
+                "millis64"
+            ],
+            0
+        ]
+    },
+    "print_main_loop_rate": {
+        "last_run": [
+            [
+                "millis64"
+            ],
+            0
+        ],
+        "expected_loop_rate": [
+            [
+                "scheduler_get_loop_rate_hz"
+            ],
+            0
+        ],
+        "actual_loop_rate": [
+            [
+                "scheduler_get_filtered_loop_rate_hz"
+            ],
+            0
+        ]
+    }
+}

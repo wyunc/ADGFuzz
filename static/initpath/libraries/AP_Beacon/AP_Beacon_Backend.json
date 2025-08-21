@@ -1,0 +1,56 @@
+{
+    "set_vehicle_position": {
+        "_frontend.veh_pos_accuracy": [
+            [
+                "accuracy_estimate"
+            ],
+            0
+        ],
+        "_frontend.veh_pos_ned": [
+            [
+                "correct_for_orient_yaw_pos"
+            ],
+            0
+        ],
+        "_frontend.veh_pos_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_beacon_distance": {
+        ".distance": [
+            [
+                "distance"
+            ],
+            0
+        ],
+        ".distance_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_frontend.num_beacons": [
+            [
+                "beacon_instance"
+            ],
+            0
+        ]
+    },
+    "set_beacon_position": {
+        ".position": [
+            [
+                "correct_for_orient_yaw_pos"
+            ],
+            0
+        ],
+        "_frontend.num_beacons": [
+            [
+                "beacon_instance"
+            ],
+            0
+        ]
+    }
+}

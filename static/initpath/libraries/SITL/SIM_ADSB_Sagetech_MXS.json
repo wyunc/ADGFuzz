@@ -1,0 +1,155 @@
+{
+    "move_preamble_in_buffer": {
+        "buflen": [
+            [
+                "search_start_pos"
+            ],
+            1
+        ]
+    },
+    "update_serial_input": {
+        "buflen": [
+            [
+                "read_from_autopilot_buflen",
+                "read_from_autopilot_array_size",
+                "read_from_autopilot_msg_buffer"
+            ],
+            1
+        ],
+        "received_checksum": [
+            [
+                "msg_preamble_payload_length",
+                "sizeof_msg_preamble",
+                "msg_buffer"
+            ],
+            1
+        ],
+        "calculated_checksum": [
+            [
+                "i",
+                "msg_buffer"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "info_from_vehicle.gps.lat": [
+            [
+                "lat_string_to_double__msg_latitude"
+            ],
+            0
+        ],
+        "ack_info.ackType": [
+            [
+                "msg_preamble_msgtype"
+            ],
+            0
+        ],
+        "flight_id_set_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "info_from_vehicle.gps.lng": [
+            [
+                "lon_string_to_double__msg_longitude"
+            ],
+            0
+        ],
+        "ack_info.ackId": [
+            [
+                "msg_preamble_msgid"
+            ],
+            0
+        ]
+    },
+    "lat_string_to_double": {
+        "minutes": [
+            [
+                "ord_str"
+            ],
+            0
+        ],
+        "degrees": [
+            [
+                "ord_str"
+            ],
+            0
+        ]
+    },
+    "update_serial_output_vehicles": {
+        "vehicle": [
+            [
+                "sitl_model_adsb_vehicles",
+                "i"
+            ],
+            0
+        ]
+    },
+    "pack_scaled_geocoord": {
+        "scaled": [
+            [
+                "coord",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "pack_scaled_alt": {
+        "scaled": [
+            [
+                "alt_m",
+                "metres_to_feet"
+            ],
+            0
+        ]
+    },
+    "pack_scaled_airspeed": {
+        "scaled": [
+            [
+                "m_per_sec_to_knots",
+                "speed_m_s"
+            ],
+            0
+        ]
+    },
+    "pack_scaled_vertical_rate": {
+        "scaled": [
+            [
+                "metres_to_feet",
+                "speed_m_s"
+            ],
+            0
+        ]
+    },
+    "send_vehicle_message_state_vector": {
+        "my_report.address_qualifier": [
+            [
+                "0x02"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "vehicle_get_location"
+            ],
+            0
+        ]
+    },
+    "send_vehicle_message_status_report": {
+        "my_report.address_qualifier": [
+            [
+                "0x02"
+            ],
+            0
+        ],
+        "my_report.report_structure": [
+            [
+                "uint8_t_call_sign",
+                "0x2"
+            ],
+            0
+        ]
+    }
+}

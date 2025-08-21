@@ -1,0 +1,39 @@
+{
+    "run": {
+        "_flags.running": [
+            [
+                "_enabled",
+                "activate"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_speed_over_min_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pos": [
+            [
+                "velocity_xy_length",
+                "_pump_pct_1ms",
+                "_pump_min_pct"
+            ],
+            1
+        ],
+        "should_be_spraying": [
+            [
+                "_flags_spraying"
+            ],
+            0
+        ],
+        "_speed_under_min_time": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "checkAndReport": {
+        "log_level": [
+            [
+                "info",
+                "error",
+                "gcs_connection_required"
+            ],
+            0
+        ],
+        "_last_valid_manual_control_setpoint": [
+            [
+                "manual_control_setpoint_timestamp"
+            ],
+            0
+        ],
+        ".gcs_connection_lost": [
+            [
+                "context_status_gcs_connection_lost"
+            ],
+            0
+        ],
+        "affected_modes": [
+            [
+                "all",
+                "none",
+                "gcs_connection_required"
+            ],
+            0
+        ],
+        "elapsed": [
+            [
+                "1e",
+                "hrt_elapsed_time__last_valid_manual_control_setpoint"
+            ],
+            0
+        ]
+    }
+}

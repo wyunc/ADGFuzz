@@ -1,0 +1,30 @@
+{
+    "fuseHaglRng": {
+        "k_terrain": [
+            [
+                "k_terrain_idx"
+            ],
+            0
+        ],
+        "_time_last_terrain_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "p",
+                "h",
+                "aid_src_innovation_variance"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    }
+}

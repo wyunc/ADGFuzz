@@ -1,0 +1,115 @@
+{
+    "updateVerticalPositionAidStatus": {
+        "innov_limit": [
+            [
+                "innovation_gate",
+                "sqrtf_aid_src_innovation_variance"
+            ],
+            0
+        ],
+        "aid_src.innovation": [
+            [
+                "constrain_innov_limit",
+                "constrain_aid_src_innovation"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "_gpos_altitude",
+                "observation"
+            ],
+            0
+        ],
+        "innovation_variance": [
+            [
+                "observation_variance",
+                "pos",
+                "get_state_variance"
+            ],
+            0
+        ]
+    },
+    "fuseHorizontalPosition": {
+        "_time_last_hor_pos_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "fuseVerticalPosition": {
+        "_time_last_hgt_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "resetHorizontalPositionTo": {
+        "delta_horz_pos": [
+            [
+                "compute_delta_horizontal_position_new_latitude",
+                "compute_delta_horizontal_position_new_longitude"
+            ],
+            0
+        ],
+        "_time_last_hor_pos_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "updateHorizontalPositionResetStatus": {
+        "_state_reset_status.posNE_change": [
+            [
+                "delta"
+            ],
+            0
+        ]
+    },
+    "resetAltitudeTo": {
+        "_state.terrain": [
+            [
+                "new_altitude",
+                "_gpos_altitude"
+            ],
+            2
+        ],
+        "_time_last_hgt_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "updateVerticalPositionResetStatus": {
+        "_state_reset_status.posD_change": [
+            [
+                "delta_z"
+            ],
+            0
+        ]
+    },
+    "updateTerrainResetStatus": {
+        "_state_reset_status.hagl_change": [
+            [
+                "delta_z"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "ibus_decode": {
+        "channel": [
+            [
+                "pick"
+            ],
+            0
+        ],
+        "chksum": [
+            [
+                "ibus_frame_size",
+                "frame",
+                "pick"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "byte_input.last_byte_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "have_frame_gap": [
+            [
+                "byte_input_last_byte_us",
+                "2000u",
+                "timestamp_us"
+            ],
+            0
+        ]
+    }
+}

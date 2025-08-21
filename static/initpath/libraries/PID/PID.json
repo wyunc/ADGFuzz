@@ -1,0 +1,82 @@
+{
+    "get_pid": {
+        "_last_derivative": [
+            [
+                "error",
+                "float",
+                "millis"
+            ],
+            4
+        ],
+        "_last_error": [
+            [
+                "error"
+            ],
+            0
+        ],
+        "_pid_info.I": [
+            [
+                "scaler",
+                "float",
+                "millis",
+                "_imax",
+                "_ki",
+                "error"
+            ],
+            4
+        ],
+        "RC": [
+            [
+                "_f_cut",
+                "m_pi"
+            ],
+            0
+        ],
+        "_last_t": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_pid_info.P": [
+            [
+                "_kp",
+                "scaler",
+                "error"
+            ],
+            0
+        ],
+        "_pid_info.D": [
+            [
+                "_kd",
+                "scaler",
+                "error",
+                "float",
+                "millis"
+            ],
+            4
+        ],
+        "_pid_info.target": [
+            [
+                "_pid_info_p",
+                "scaler",
+                "_pid_info_d",
+                "scaler",
+                "float",
+                "millis",
+                "_imax",
+                "_ki",
+                "error"
+            ],
+            5
+        ]
+    },
+    "reset_I": {
+        "_last_derivative": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

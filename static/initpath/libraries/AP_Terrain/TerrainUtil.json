@@ -1,0 +1,111 @@
+{
+    "check_bitmap": {
+        "bitnum": [
+            [
+                "grid_bitnum_idx_x",
+                "grid_bitnum_idx_y"
+            ],
+            0
+        ]
+    },
+    "calculate_grid_info": {
+        "info.grid_lat": [
+            [
+                "ref_lat"
+            ],
+            0
+        ],
+        "ref.lng": [
+            [
+                "1000l",
+                "info_lon_degrees"
+            ],
+            0
+        ],
+        "ref.lat": [
+            [
+                "1000l",
+                "info_lat_degrees"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "ref_get_distance_ne_loc"
+            ],
+            0
+        ],
+        "info.lat_degrees": [
+            [
+                "1000l",
+                "loc_lat",
+                "9999999l"
+            ],
+            0
+        ],
+        "info.frac_y": [
+            [
+                "grid_spacing",
+                "grid_spacing",
+                "offset_y",
+                "offset_y"
+            ],
+            1
+        ],
+        "info.grid_idx_y": [
+            [
+                "terrain_grid_block_spacing_y",
+                "grid_spacing",
+                "offset_y"
+            ],
+            1
+        ],
+        "info.grid_idx_x": [
+            [
+                "grid_spacing",
+                "offset_x",
+                "terrain_grid_block_spacing_x"
+            ],
+            1
+        ],
+        "info.lon_degrees": [
+            [
+                "1000l",
+                "9999999l",
+                "loc_lng"
+            ],
+            0
+        ],
+        "info.idx_y": [
+            [
+                "terrain_grid_block_spacing_y",
+                "grid_spacing",
+                "offset_y"
+            ],
+            1
+        ],
+        "info.grid_lon": [
+            [
+                "ref_lng"
+            ],
+            0
+        ],
+        "info.frac_x": [
+            [
+                "grid_spacing",
+                "offset_x",
+                "grid_spacing",
+                "offset_x"
+            ],
+            1
+        ],
+        "info.idx_x": [
+            [
+                "grid_spacing",
+                "offset_x",
+                "terrain_grid_block_spacing_x"
+            ],
+            1
+        ]
+    }
+}

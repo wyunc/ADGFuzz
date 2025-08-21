@@ -1,0 +1,125 @@
+{
+    "init": {
+        "_time_stamp_last_loop": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "dt": [
+            [
+                "1e6f",
+                "constrain_time_stamp_now",
+                "constrain__time_stamp_last_loop"
+            ],
+            0
+        ],
+        "_time_stamp_last_loop": [
+            [
+                "vehicle_local_position_timestamp_sample"
+            ],
+            1
+        ]
+    },
+    "start_flight_task": {
+        "found_some_task": [
+            [
+                "switch_task_failsafe",
+                "no_error"
+            ],
+            0
+        ],
+        "_no_matching_task_error_printed": [
+            [
+                "no_error",
+                "switch_task_manual_acceleration_slow",
+                "switch_task_manual_position",
+                "switch_task_orbit",
+                "switch_task_auto_follow_target",
+                "switch_task_manual_acceleration",
+                "switch_task_descend",
+                "switch_task_manual_altitude_smooth_vel",
+                "no_error",
+                "switch_task_manual_altitude",
+                "invalid_task"
+            ],
+            3
+        ],
+        "nav_state_descend": [
+            [
+                "navigation_state_descend",
+                "_vehicle_status_sub_get_nav_state"
+            ],
+            0
+        ]
+    },
+    "generateTrajectorySetpoint": {
+        "setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "constraints.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_old_landing_gear_position": [
+            [
+                "landing_gear_landing_gear"
+            ],
+            0
+        ],
+        "landing_gear.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "constraints": [
+            [
+                "empty_constraints",
+                "_current_task_task_get_constraints"
+            ],
+            0
+        ],
+        "setpoint": [
+            [
+                "empty_trajectory_setpoint",
+                "_current_task_task_get_trajectory_setpoint"
+            ],
+            0
+        ],
+        "landing_gear": [
+            [
+                "_current_task_task_get_gear"
+            ],
+            0
+        ],
+        "_takeoff_state": [
+            [
+                "takeoff_status_takeoff_state"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "flight_mode_manager",
+                "new"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "parameters_update": {
+        "temp": [
+            [
+                "_temperature_compensation_set_sensor_id_baro_report_device_id",
+                "_temperature_compensation_set_sensor_id_mag_report_device_id",
+                "_temperature_compensation_set_sensor_id_accel_uorb_index",
+                "_temperature_compensation_set_sensor_id_gyro_uorb_index",
+                "_temperature_compensation_set_sensor_id_mag_uorb_index",
+                "_temperature_compensation_set_sensor_id_baro_uorb_index",
+                "_temperature_compensation_set_sensor_id_accel_report_device_id",
+                "_temperature_compensation_set_sensor_id_gyro_report_device_id"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "ret": [
+            [
+                "run_temperature_calibration_accel",
+                "run_temperature_calibration_gyro",
+                "run_temperature_calibration_baro",
+                "run_temperature_calibration_mag"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_failed",
+                "vehicle_cmd_result_accepted"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ],
+        "_corrections.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "temperature_compensation_module"
+            ],
+            0
+        ]
+    },
+    "custom_command": {
+        "myoptarg": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_preflight_calibration"
+            ],
+            0
+        ],
+        "vcmd.param3": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "vcmd.param6": [
+            [
+                "double",
+                "nan"
+            ],
+            0
+        ],
+        "vcmd.param4": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

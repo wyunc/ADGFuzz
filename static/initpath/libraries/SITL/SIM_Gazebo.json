@@ -1,0 +1,42 @@
+{
+    "set_interface_ports": {
+        "_gazebo_address": [
+            [
+                "address"
+            ],
+            0
+        ],
+        "_gazebo_port": [
+            [
+                "port_out"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "time_now_us": [
+            [
+                "_0e6",
+                "static_cast",
+                "uint64_t",
+                "pkt_timestamp"
+            ],
+            1
+        ],
+        "last_timestamp": [
+            [
+                "pkt_timestamp"
+            ],
+            0
+        ]
+    },
+    "drain_sockets": {
+        "received": [
+            [
+                "socket_sitl_recv_buflen",
+                "socket_sitl_recv_buf"
+            ],
+            0
+        ]
+    }
+}

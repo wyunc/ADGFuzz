@@ -1,0 +1,11 @@
+{
+    "checkAndReport": {
+        ".fd_motor_failure": [
+            [
+                "failure_motor",
+                "context_status_failure_detector_status"
+            ],
+            0
+        ]
+    }
+}

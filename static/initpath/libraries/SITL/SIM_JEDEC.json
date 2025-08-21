@@ -1,0 +1,139 @@
+{
+    "open_storage_fd": {
+        "filepath": [
+            [
+                "filename"
+            ],
+            0
+        ],
+        "storage_fd": [
+            [
+                "open_filepath",
+                "open_o_creat",
+                "open_o_rdwr"
+            ],
+            0
+        ]
+    },
+    "page_erase": {
+        "write_ret": [
+            [
+                "pwrite_sizeof",
+                "addr",
+                "pwrite_fill",
+                "pwrite_storage_fd"
+            ],
+            0
+        ],
+        "fill_length": [
+            [
+                "get_page_size"
+            ],
+            0
+        ]
+    },
+    "rdwr": {
+        "command": [
+            [
+                "uint8_t",
+                "tfr_tx_buf"
+            ],
+            1
+        ],
+        "xfr_addr": [
+            [
+                "parse_addr_tx_buf",
+                "parse_addr_tfr_len"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "reading_rdsr",
+                "reading_rdid",
+                "reading",
+                "writing",
+                "waiting"
+            ],
+            0
+        ],
+        "rx_buf": [
+            [
+                "tfr_rx_buf",
+                "uint8_t"
+            ],
+            0
+        ],
+        "JEDEC_WRITE": [
+            [
+                "0x02"
+            ],
+            0
+        ],
+        "JEDEC_RDSR": [
+            [
+                "0x05"
+            ],
+            0
+        ],
+        "tfr": [
+            [
+                "i",
+                "tfrs"
+            ],
+            0
+        ],
+        "JEDEC_BULK_ERASE": [
+            [
+                "0x_c7"
+            ],
+            0
+        ],
+        "JEDEC_READ": [
+            [
+                "0x03"
+            ],
+            0
+        ],
+        "JEDEC_SECTOR4_ERASE": [
+            [
+                "0x20"
+            ],
+            0
+        ],
+        "write_ret": [
+            [
+                "write_tfr_len",
+                "write_tx_buf",
+                "write_storage_fd"
+            ],
+            0
+        ],
+        "JEDEC_RDID": [
+            [
+                "0x9f"
+            ],
+            0
+        ],
+        "JEDEC_WREN": [
+            [
+                "0x06"
+            ],
+            0
+        ],
+        "read_ret": [
+            [
+                "read_storage_fd",
+                "read_tfr_len",
+                "read_rx_buf"
+            ],
+            0
+        ],
+        "JEDEC_BLOCK64_ERASE": [
+            [
+                "0x_d8"
+            ],
+            0
+        ]
+    }
+}

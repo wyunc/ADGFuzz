@@ -1,0 +1,391 @@
+{
+    "new_file_descriptor": {
+        "stream": [
+            [
+                "fat_file",
+                "calloc_fat_file",
+                "calloc_sizeof"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "enomem",
+                "enfile"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "malloc_strlen",
+                "char",
+                "malloc_pathname"
+            ],
+            1
+        ],
+        "fh": [
+            [
+                "calloc_fil",
+                "calloc_sizeof",
+                "fil"
+            ],
+            0
+        ]
+    },
+    "free_file_descriptor": {
+        "stream": [
+            [
+                "fileno_to_stream_fileno"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "ebadf"
+            ],
+            0
+        ],
+        "fh": [
+            [
+                "stream_fh"
+            ],
+            0
+        ]
+    },
+    "remount_file_system": {
+        "flags": [
+            [
+                "fh_flag",
+                "fa_read",
+                "fa_write"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_open_f_name",
+                "f_open_fh",
+                "f_open_flags"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "fh_fptr"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "file_table",
+                "i"
+            ],
+            0
+        ],
+        "fh": [
+            [
+                "f_fh"
+            ],
+            0
+        ]
+    },
+    "open": {
+        "fileno": [
+            [
+                "new_file_descriptor_pathname"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "fileno_to_stream_fileno"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres",
+                "ebadf"
+            ],
+            0
+        ],
+        "fatfs_modes": [
+            [
+                "fa_write",
+                "fa_read"
+            ],
+            0
+        ],
+        "fh": [
+            [
+                "fileno_to_fatfs_fileno"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_open_byte_0xff",
+                "f_lseek_f_size",
+                "f_open_pathname",
+                "f_lseek_fh",
+                "f_open_byte_fatfs_modes",
+                "f_open_fh"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "fh": [
+            [
+                "fileno_to_fatfs_fileno"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_close_fh"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "fileno_to_stream_fileno"
+            ],
+            0
+        ]
+    },
+    "fsync": {
+        "stream": [
+            [
+                "fileno_to_stream_fileno"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "fh": [
+            [
+                "fileno_to_fatfs_fileno"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_sync_fh"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "st_mtime": [
+            [
+                "fat_time_to_unix_info_fdate",
+                "fat_time_to_unix_info_ftime"
+            ],
+            1
+        ],
+        "st_atime": [
+            [
+                "fat_time_to_unix_info_fdate",
+                "fat_time_to_unix_info_ftime"
+            ],
+            1
+        ],
+        "st_mode": [
+            [
+                "s_ifdir",
+                "fatfs_x",
+                "fatfs_r"
+            ],
+            1
+        ],
+        "st_size": [
+            [
+                "info_fsize"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_stat_name",
+                "f_stat_info"
+            ],
+            0
+        ],
+        "st_ctime": [
+            [
+                "fat_time_to_unix_info_fdate",
+                "fat_time_to_unix_info_ftime"
+            ],
+            1
+        ]
+    },
+    "unlink": {
+        "res": [
+            [
+                "f_unlink_pathname"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ]
+    },
+    "mkdir": {
+        "res": [
+            [
+                "f_mkdir_pathname"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ]
+    },
+    "rename": {
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_rename_newpath",
+                "f_rename_oldpath"
+            ],
+            0
+        ]
+    },
+    "opendir": {
+        "errno": [
+            [
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "new_nothrow",
+                "dir_wrapper"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_opendir_ret_d",
+                "f_opendir_pathdir"
+            ],
+            0
+        ]
+    },
+    "closedir": {
+        "errno": [
+            [
+                "einval",
+                "fatfs_to_errno_fresul_tres"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "f_closedir_dirp"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "dir_wrapper",
+                "struct",
+                "dir",
+                "dirp_void"
+            ],
+            1
+        ]
+    },
+    "unix_time_to_fat": {
+        "t": [
+            [
+                "epoch",
+                "tmd",
+                "gmtime_r_time_t"
+            ],
+            0
+        ]
+    },
+    "set_mtime": {
+        "fno.fdate": [
+            [
+                "fdate"
+            ],
+            0
+        ],
+        "fno.ftime": [
+            [
+                "ftime"
+            ],
+            0
+        ]
+    },
+    "format": {
+        "format_status": [
+            [
+                "pending"
+            ],
+            0
+        ]
+    },
+    "format_handler": {
+        "buf": [
+            [
+                "hal_util_malloc_type_ff_max_ss",
+                "hal_util_malloc_type_mem_dma_safe",
+                "uint8_t"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "f_mkfs_ff_max_ss",
+                "f_mkfs_buf"
+            ],
+            0
+        ],
+        "format_status": [
+            [
+                "in_progress",
+                "success",
+                "failure"
+            ],
+            0
+        ]
+    }
+}

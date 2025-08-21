@@ -1,0 +1,21 @@
+{
+    "sbp_send_message": {
+        "preamble": [
+            [
+                "0x55"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_len",
+                "crc16_ccitt_crc",
+                "crc16_ccitt_payload",
+                "msg_type",
+                "sender_id",
+                "crc16_ccitt_uint8_t"
+            ],
+            0
+        ]
+    }
+}

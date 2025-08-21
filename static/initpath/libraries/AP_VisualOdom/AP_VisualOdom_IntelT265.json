@@ -1,0 +1,214 @@
+{
+    "handle_pose_estimate": {
+        "scale_factor": [
+            [
+                "_frontend_get_pos_scale"
+            ],
+            0
+        ],
+        "posErr": [
+            [
+                "pos_err"
+            ],
+            0
+        ],
+        "_attitude_last": [
+            [
+                "attitude"
+            ],
+            1
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_align_posxy": [
+            [
+                "_align_posz"
+            ],
+            0
+        ],
+        "consume": [
+            [
+                "_frontend_get_quality_min",
+                "should_consume_sensor_data_true",
+                "quality",
+                "should_consume_sensor_data_reset_counter"
+            ],
+            1
+        ],
+        "angErr": [
+            [
+                "ang_err"
+            ],
+            0
+        ]
+    },
+    "handle_vision_speed_estimate": {
+        "vel_corrected": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "consume": [
+            [
+                "_frontend_get_quality_min",
+                "should_consume_sensor_data_false",
+                "quality",
+                "should_consume_sensor_data_reset_counter"
+            ],
+            1
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "rotate_and_correct_position": {
+        "position": [
+            [
+                "_posvel_rotation",
+                "_pos_correction"
+            ],
+            0
+        ]
+    },
+    "rotate_velocity": {
+        "velocity": [
+            [
+                "_posvel_rotation"
+            ],
+            0
+        ]
+    },
+    "rotate_attitude": {
+        "attitude": [
+            [
+                "_att_rotation",
+                "_yaw_rotation"
+            ],
+            0
+        ]
+    },
+    "align_yaw": {
+        "sens_yaw": [
+            [
+                "att_corrected_get_euler_yaw"
+            ],
+            0
+        ],
+        "_pos_correction": [
+            [
+                "position",
+                "position"
+            ],
+            2
+        ],
+        "att_corrected": [
+            [
+                "attitude",
+                "_att_rotation"
+            ],
+            0
+        ],
+        "rot": [
+            [
+                "_frontend_get_orientation"
+            ],
+            0
+        ],
+        "_yaw_trim": [
+            [
+                "wrap_2pi_sens_yaw",
+                "wrap_2pi_yaw_rad"
+            ],
+            0
+        ]
+    },
+    "align_position": {
+        "_pos_correction.z": [
+            [
+                "new_pos_z",
+                "pos_orig_z"
+            ],
+            0
+        ],
+        "_pos_correction.x": [
+            [
+                "pos_orig_x",
+                "new_pos_x"
+            ],
+            0
+        ],
+        "_pos_correction.y": [
+            [
+                "pos_orig_y",
+                "new_pos_y"
+            ],
+            0
+        ],
+        "pos_orig": [
+            [
+                "sensor_pos"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "rp_diff_deg": [
+            [
+                "degrees__attitude_last",
+                "degrees_ahrs_quat_roll_pitch_difference"
+            ],
+            0
+        ],
+        "yaw_diff_deg": [
+            [
+                "degrees_fabsf",
+                "degrees_angle_diff_z"
+            ],
+            0
+        ]
+    },
+    "should_consume_sensor_data": {
+        "_pos_reset_counter_last": [
+            [
+                "reset_counter"
+            ],
+            0
+        ],
+        "_pos_reset_ignore_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "record_voxl_position_and_reset_count": {
+        "_voxl_position_last": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "_voxl_reset_counter_last": [
+            [
+                "reset_counter"
+            ],
+            0
+        ]
+    },
+    "handle_voxl_camera_reset_jump": {
+        "_voxl_reset_counter_last": [
+            [
+                "reset_counter"
+            ],
+            0
+        ]
+    }
+}

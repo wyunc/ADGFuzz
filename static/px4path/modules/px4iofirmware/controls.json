@@ -1,0 +1,127 @@
+{
+    "dsm_port_input": {
+        "sumd_rssi": [
+            [
+                "rssi_max"
+            ],
+            0
+        ],
+        "r_raw_rc_count": [
+            [
+                "sumd_channel_count",
+                "st24_channel_count"
+            ],
+            0
+        ],
+        "rssi": [
+            [
+                "spektrum_rssi",
+                "rssi_max"
+            ],
+            1
+        ],
+        "_frame_drops": [
+            [
+                "frame_drops"
+            ],
+            0
+        ]
+    },
+    "controls_init": {
+        "c_gather_dsm": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "_sbus_fd": [
+            [
+                "sbus_init_false"
+            ],
+            0
+        ],
+        "_dsm_fd": [
+            [
+                "dsm_init"
+            ],
+            0
+        ],
+        "c_gather_ppm": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "c_gather_sbus": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ]
+    },
+    "controls_tick": {
+        "r_raw_rc_count": [
+            [
+                "px4io_rc_input_channels"
+            ],
+            0
+        ],
+        "_rssi": [
+            [
+                "rssi_max",
+                "rssi_max",
+                "m_v"
+            ],
+            1
+        ],
+        "mV": [
+            [
+                "adc_measure_adc_rssi"
+            ],
+            2
+        ],
+        "system_state.rc_channels_timestamp_received": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ppm_updated": [
+            [
+                "ppm_input_r_raw_rc_count",
+                "ppm_input_r_raw_rc_values",
+                "ppm_input_px4io_p_raw_rc_data",
+                "ppm_input_r_page_raw_rc_input"
+            ],
+            0
+        ],
+        "dsm_updated": [
+            [
+                "st24_updated",
+                "sumd_updated"
+            ],
+            0
+        ]
+    },
+    "ppm_input": {
+        "frame_len": [
+            [
+                "ppm_frame_length"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "ppm_decoded_channels",
+                "px4io_rc_input_channels"
+            ],
+            1
+        ],
+        "state": [
+            [
+                "px4_enter_critical_section"
+            ],
+            0
+        ]
+    }
+}

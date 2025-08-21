@@ -1,0 +1,13 @@
+{
+    "_enter": {
+        "loiter_wp": [
+            [
+                "plane_current_loc",
+                "plane_next_wp_loc",
+                "plane_nav_controller_reached_loiter_target",
+                "plane_nav_controller_data_is_stale"
+            ],
+            1
+        ]
+    }
+}

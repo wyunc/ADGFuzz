@@ -1,0 +1,331 @@
+{
+    "calcGpsGoodToAlign": {
+        "gpsDriftFail": [
+            [
+                "frontend__gps_check",
+                "gps_drift_ne",
+                "mask_gps_pos_drift",
+                "on_ground",
+                "check_scaler"
+            ],
+            0
+        ],
+        "gpsHorizVelFail": [
+            [
+                "fabs_f_gps_horiz_vel_filt",
+                "check_scaler",
+                "frontend__gps_check",
+                "mask_gps_horiz_spd"
+            ],
+            0
+        ],
+        "magYawResetTimer_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "gpsHorizVelFilt": [
+            [
+                "gps_horiz_vel_filt",
+                "gps_data_delayed_vel_xy_length",
+                "constrain_ftype_gps_horiz_vel_filt"
+            ],
+            0
+        ],
+        "gps": [
+            [
+                "dal_gps"
+            ],
+            0
+        ],
+        "vAccFail": [
+            [
+                "mask_gps_pos_err",
+                "check_scaler",
+                "v_acc",
+                "frontend__gps_check"
+            ],
+            0
+        ],
+        "gpsDriftNE": [
+            [
+                "pos_filt_time_const",
+                "gpsloc_prev_get_distance_gpsloc",
+                "gps_drift_ne",
+                "delta_time"
+            ],
+            0
+        ],
+        "numSatsFail": [
+            [
+                "frontend__gps_check",
+                "mask_gps_nsats",
+                "gps_num_sats_preferred_gps"
+            ],
+            0
+        ],
+        "gpsVertVelFail": [
+            [
+                "check_scaler",
+                "fabs_f_gps_vert_vel_filt",
+                "frontend__gps_check",
+                "mask_gps_vert_spd"
+            ],
+            0
+        ],
+        "deltaTime": [
+            [
+                "pos_filt_time_const",
+                "constrain_ftype_imu_data_delayed_time_ms",
+                "constrain_ftype_ftype",
+                "constrain_ftype_last_pre_align_gps_check_time_ms"
+            ],
+            0
+        ],
+        "checkScaler": [
+            [
+                "ftype",
+                "frontend__gps_check_scaler"
+            ],
+            0
+        ],
+        "lastGpsVelPass_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "gpsVertVelFilt": [
+            [
+                "constrain_ftype_gps_vert_vel_filt",
+                "gps_data_new_vel_z",
+                "gps_vert_vel_filt"
+            ],
+            0
+        ],
+        "gpsloc_prev": [
+            [
+                "gps_location_preferred_gps"
+            ],
+            1
+        ],
+        "lastPreAlignGpsCheckTime_ms": [
+            [
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "hAccFail": [
+            [
+                "check_scaler",
+                "h_acc",
+                "mask_gps_pos_err",
+                "frontend__gps_check"
+            ],
+            0
+        ],
+        "lastGpsVelFail_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "hdopFail": [
+            [
+                "frontend__gps_check",
+                "gps_get_hdop_preferred_gps",
+                "mask_gps_hdop"
+            ],
+            0
+        ],
+        "gpsSpdAccFail": [
+            [
+                "check_scaler",
+                "mask_gps_spd_err",
+                "frontend__gps_check",
+                "gps_spd_accuracy"
+            ],
+            0
+        ]
+    },
+    "calcGpsGoodForFlight": {
+        "gpsVAccRaw": [
+            [
+                "gps_v_acc_threshold"
+            ],
+            0
+        ],
+        "lastGpsCheckTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "dtLPF": [
+            [
+                "last_gps_check_time_ms",
+                "imu_sample_time_ms",
+                "1e"
+            ],
+            0
+        ],
+        "lastGpsInnovPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "sAccFilterState1": [
+            [
+                "s_acc_filter_state1",
+                "constrain_ftype_alpha1",
+                "constrain_ftype_gps_spd_acc_raw"
+            ],
+            0
+        ],
+        "lastGpsInnovFailTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "lastGpsVertAccFailTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "gpsAccuracyGoodForAltitude": [
+            [
+                "gps_accuracy_good",
+                "gps_vert_acc_pass"
+            ],
+            0
+        ],
+        "gpsAccuracyGood": [
+            [
+                "gps_spd_acc_pass",
+                "ekf_innovations_pass"
+            ],
+            0
+        ],
+        "gpsVAccThreshold": [
+            [
+                "frontend__gps_v_acc_threshold",
+                "ftype"
+            ],
+            0
+        ],
+        "lastGpsVertAccPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "sAccFilterState2": [
+            [
+                "constrain_ftype_dt_lpf",
+                "constrain_ftype_tau",
+                "s_acc_filter_state1",
+                "s_acc_filter_state2"
+            ],
+            1
+        ]
+    },
+    "detectFlight": {
+        "quatAtLastMagReset": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "prevOnGround": [
+            [
+                "on_ground"
+            ],
+            0
+        ],
+        "yawInnovAtLastMagReset": [
+            [
+                "innov_yaw"
+            ],
+            0
+        ],
+        "arsp": [
+            [
+                "dal_airspeed"
+            ],
+            0
+        ],
+        "gndSpdSq": [
+            [
+                "sq_gps_data_new_vel_y",
+                "sq_gps_data_new_vel_x"
+            ],
+            0
+        ],
+        "posDownAtLastMagReset": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "rngAtStartOfFlight": [
+            [
+                "range_data_new_rng"
+            ],
+            0
+        ],
+        "prevInFlight": [
+            [
+                "in_flight"
+            ],
+            0
+        ],
+        "gndSpdThresholdSq": [
+            [
+                "sq"
+            ],
+            0
+        ],
+        "posDownAtTakeoff": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ]
+    },
+    "setTerrainHgtStable": {
+        "terrainHgtStable": [
+            [
+                "val"
+            ],
+            0
+        ]
+    },
+    "detectOptFlowTakeoff": {
+        "angRateVec": [
+            [
+                "ins_get_gyro_gyro_index_active",
+                "gyro_bias"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ],
+        "takeOffDetected": [
+            [
+                "rng_at_start_of_flight",
+                "take_off_detected",
+                "ang_rate_vec_length",
+                "range_data_new_rng"
+            ],
+            0
+        ]
+    }
+}

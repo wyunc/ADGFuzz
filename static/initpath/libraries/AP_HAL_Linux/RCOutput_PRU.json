@@ -1,0 +1,20 @@
+{
+    "init": {
+        "mem_fd": [
+            [
+                "open_o_sync",
+                "open_o_rdwr",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "len": [
+            [
+                "pwm_chan_count"
+            ],
+            0
+        ]
+    }
+}

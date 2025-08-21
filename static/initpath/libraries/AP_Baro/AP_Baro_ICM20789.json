@@ -1,0 +1,127 @@
+{
+    "imu_i2c_init": {
+        "old_address": [
+            [
+                "dev_get_bus_address"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "calculate_conversion_constants": {
+        "A": [
+            [
+                "p_lut",
+                "p_pa",
+                "c"
+            ],
+            0
+        ],
+        "B": [
+            [
+                "a",
+                "p_lut",
+                "p_pa",
+                "c"
+            ],
+            0
+        ]
+    },
+    "get_pressure": {
+        "t": [
+            [
+                "t_lsb"
+            ],
+            0
+        ]
+    },
+    "convert_data": {
+        "dd.Praw": [
+            [
+                "praw"
+            ],
+            0
+        ],
+        "accum.tsum": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "dd.Traw": [
+            [
+                "traw"
+            ],
+            0
+        ],
+        "accum.psum": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "get_pressure_praw",
+                "get_pressure_traw"
+            ],
+            0
+        ],
+        "dd.P": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "T": [
+            [
+                "1u",
+                "traw"
+            ],
+            0
+        ],
+        "dd.T": [
+            [
+                "t"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "last_measure_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "Praw": [
+            [
+                "d",
+                "uint32_t_d"
+            ],
+            0
+        ],
+        "Traw": [
+            [
+                "d",
+                "uint32_t_d"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "accum.psum": [
+            [
+                "accum_tsum"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "set_control_channels": {
+        "channel_steer": [
+            [
+                "rc_get_roll_channel"
+            ],
+            0
+        ],
+        "channel_pitch": [
+            [
+                "rc_find_channel_for_option_pitch"
+            ],
+            0
+        ],
+        "channel_throttle": [
+            [
+                "rc_get_throttle_channel"
+            ],
+            0
+        ],
+        "channel_walking_height": [
+            [
+                "rc_find_channel_for_option_walking_height"
+            ],
+            0
+        ],
+        "channel_lateral": [
+            [
+                "rc_get_yaw_channel"
+            ],
+            0
+        ],
+        "channel_roll": [
+            [
+                "rc_find_channel_for_option_roll"
+            ],
+            0
+        ]
+    },
+    "rudder_arm_disarm_check": {
+        "arming_rudder": [
+            [
+                "arming_get_rudder_arming_type"
+            ],
+            0
+        ],
+        "rudder_arm_timer": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "read_radio": {
+        "failsafe.last_valid_rc_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "radio_failsafe_check": {
+        "flags.failsafe_radio": [
+            [
+                "static_cast",
+                "g_fs_throttle_value",
+                "pwm",
+                "uint16_t"
+            ],
+            1
+        ]
+    }
+}

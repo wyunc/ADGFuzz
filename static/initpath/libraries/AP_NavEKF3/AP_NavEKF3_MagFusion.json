@@ -1,0 +1,892 @@
+{
+    "controlMagYawReset": {
+        "initialResetAllowed": [
+            [
+                "ang_rate_ok",
+                "tilt_align_complete"
+            ],
+            0
+        ],
+        "deltaQuatTemp": [
+            [
+                "state_struct_quat",
+                "quat_at_last_mag_reset",
+                "prev_quat_mag_reset"
+            ],
+            0
+        ],
+        "yawInnovIncreasing": [
+            [
+                "yaw_innov_increase"
+            ],
+            0
+        ],
+        "largeAngleChange": [
+            [
+                "yaw_innov_increase",
+                "delta_rot_vec_temp_length"
+            ],
+            0
+        ],
+        "hgtIncreasing": [
+            [
+                "pos_down_at_last_mag_reset",
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "angRateOK": [
+            [
+                "delta_rot_vec_temp_length"
+            ],
+            0
+        ],
+        "prevQuatMagReset": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "finalResetRequest": [
+            [
+                "state_struct_position_z",
+                "ekf3_mag_final_reset_alt_sub",
+                "pos_down_at_takeoff",
+                "ekf3_mag_final_reset_alt"
+            ],
+            0
+        ],
+        "yawInnovIncrease": [
+            [
+                "fabs_f_innov_yaw",
+                "fabs_f_yaw_innov_at_last_mag_reset"
+            ],
+            0
+        ],
+        "flightResetAllowed": [
+            [
+                "ang_rate_ok",
+                "on_ground"
+            ],
+            0
+        ],
+        "initialResetRequest": [
+            [
+                "initial_reset_allowed",
+                "yaw_align_complete"
+            ],
+            0
+        ]
+    },
+    "realignYawGPS": {
+        "yawErr": [
+            [
+                "fabs_f_wrap_pi",
+                "fabs_f_euler_angles_z",
+                "fabs_f_gps_yaw",
+                "fabs_f_vel_yaw"
+            ],
+            0
+        ],
+        "velYaw": [
+            [
+                "atan2f_state_struct_velocity_x",
+                "atan2f_state_struct_velocity_y"
+            ],
+            0
+        ],
+        "badMagYaw": [
+            [
+                "aid_absolute",
+                "yaw_err",
+                "vel_test_ratio",
+                "pv_aiding_mode",
+                "yaw_align_complete"
+            ],
+            0
+        ],
+        "gps_yaw_variance": [
+            [
+                "sq_gps_vel_acc",
+                "sq__length",
+                "sq_asin_f",
+                "sq_gps_data_delayed_vel_xy"
+            ],
+            0
+        ],
+        "useGSF": [
+            [
+                "gsf",
+                "yaw_source_last",
+                "assume_zero_sideslip"
+            ],
+            0
+        ],
+        "gpsVelAcc": [
+            [
+                "fmax_f_frontend__gps_horiz_vel_noise",
+                "fmax_f_gps_spd_accuracy",
+                "fmax_f_ftype"
+            ],
+            0
+        ],
+        "gpsYaw": [
+            [
+                "atan2f_gps_data_delayed_vel_x",
+                "atan2f_gps_data_delayed_vel_y"
+            ],
+            0
+        ]
+    },
+    "SelectMagFusion": {
+        "earthMagFieldVar.x": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "yawAngDataStatic.order": [
+            [
+                "tait_bryan_321",
+                "tait_bryan_312"
+            ],
+            0
+        ],
+        "yawAngDataStatic.yawAngErr": [
+            [
+                "frontend__yaw_noise"
+            ],
+            0
+        ],
+        "dataReady": [
+            [
+                "states_initialised",
+                "use_compass",
+                "yaw_align_complete",
+                "mag_data_to_fuse"
+            ],
+            0
+        ],
+        "yawAngDataStatic.time_ms": [
+            [
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "earthMagFieldVar.y": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "yawAngDataDelayed.yawAngErr": [
+            [
+                "frontend__yaw_noise"
+            ],
+            0
+        ],
+        "bodyMagFieldVar.x": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "magFieldLearned": [
+            [
+                "sq",
+                "p"
+            ],
+            0
+        ],
+        "last_gps_yaw_fuse_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "earthMagFieldVar.z": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "bodyMagFieldVar.y": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "magFusionSel": [
+            [
+                "fuse_yaw",
+                "fuse_mag"
+            ],
+            0
+        ],
+        "have_fused_gps_yaw": [
+            [
+                "fuse_euler_yaw_gps"
+            ],
+            0
+        ],
+        "yawAngDataStatic.yawAng": [
+            [
+                "atan2f_prev_tnb"
+            ],
+            0
+        ],
+        "lastSynthYawTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "last_gps_yaw_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "gps_yaw_mag_fallback_ok": [
+            [
+                "learn_mag_bias_from_gps"
+            ],
+            0
+        ],
+        "didUseEKFGSF": [
+            [
+                "ekfgsf_get_yaw_gsf_yaw",
+                "yaw_align_complete",
+                "ekfgsf_get_yaw_gsf_yaw_variance",
+                "yaw_source_last",
+                "assume_zero_sideslip",
+                "gsf",
+                "fuse_euler_yaw_gsf"
+            ],
+            0
+        ],
+        "extNavYawDataToFuse": [
+            [
+                "stored_ext_nav_yaw_ang_recall_ext_nav_yaw_ang_data_delayed",
+                "stored_ext_nav_yaw_ang_recall_imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "magDataToFuse": [
+            [
+                "stored_mag_recall_mag_data_delayed",
+                "stored_mag_recall_imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "last_extnav_yaw_fusion_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "lastHealthyMagTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "bodyMagFieldVar.z": [
+            [
+                "p"
+            ],
+            0
+        ]
+    },
+    "FuseMagnetometer": {
+        "magYbias": [
+            [
+                "state_struct_body_magfield"
+            ],
+            0
+        ],
+        "magZbias": [
+            [
+                "state_struct_body_magfield"
+            ],
+            0
+        ],
+        "magXbias": [
+            [
+                "state_struct_body_magfield"
+            ],
+            0
+        ],
+        "magD": [
+            [
+                "state_struct_earth_magfield"
+            ],
+            0
+        ],
+        "magN": [
+            [
+                "state_struct_earth_magfield"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "p",
+                "kh",
+                "i",
+                "j"
+            ],
+            0
+        ],
+        "q1": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "stateIndex": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "R_MAG": [
+            [
+                "imu_data_delayed_del_ang_dt",
+                "sq_frontend_mag_var_rate_scale",
+                "sq_imu_data_delayed_del_ang_length",
+                "sq_constrain_ftype",
+                "sq_frontend__mag_noise"
+            ],
+            0
+        ],
+        "innovMag": [
+            [
+                "mag_pred",
+                "mag_data_delayed_mag"
+            ],
+            0
+        ],
+        "magHealth": [
+            [
+                "mag_test_ratio"
+            ],
+            0
+        ],
+        "q2": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "q0": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "magE": [
+            [
+                "state_struct_earth_magfield"
+            ],
+            0
+        ],
+        "q3": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ]
+    },
+    "fuseEulerYaw": {
+        "varInnovInv": [
+            [
+                "var_innov"
+            ],
+            0
+        ],
+        "varInnov": [
+            [
+                "r_yaw",
+                "row_index",
+                "h_yaw",
+                "ph"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "kh",
+                "row",
+                "p",
+                "column"
+            ],
+            0
+        ],
+        "SB0": [
+            [
+                "state_struct_quat"
+            ],
+            1
+        ],
+        "SA2": [
+            [
+                "sa0",
+                "state_struct_quat",
+                "sa1",
+                "state_struct_quat"
+            ],
+            2
+        ],
+        "yawAngMeasured": [
+            [
+                "wrap_pi_mag_meas_ned_x",
+                "mag_declination",
+                "wrap_pi_atan2f",
+                "wrap_pi_mag_meas_ned_y"
+            ],
+            0
+        ],
+        "SB9": [
+            [
+                "sb6"
+            ],
+            0
+        ],
+        "SB6": [
+            [
+                "sb2"
+            ],
+            0
+        ],
+        "innovYaw": [
+            [
+                "wrap_pi_yaw_ang_predicted",
+                "wrap_pi_yaw_ang_measured",
+                "wrap_pi_yaw_ang_data_delayed_yaw_ang",
+                "wrap_pi_ext_nav_yaw_ang_data_delayed_yaw_ang",
+                "wrap_pi_gsf_yaw",
+                "wrap_pi_yaw_ang_data_static_yaw_ang"
+            ],
+            0
+        ],
+        "SB3": [
+            [
+                "sq_sb2"
+            ],
+            0
+        ],
+        "SA3": [
+            [
+                "sq_q1",
+                "sq_q0",
+                "sq_q3",
+                "sq_q2"
+            ],
+            0
+        ],
+        "magMeasNED": [
+            [
+                "mag_data_delayed_mag",
+                "tbn_zero_yaw"
+            ],
+            0
+        ],
+        "order": [
+            [
+                "yaw_ang_data_static_order",
+                "ext_nav_yaw_ang_data_delayed_order",
+                "fabs_f_prev_tnb",
+                "tait_bryan_321",
+                "tait_bryan_312",
+                "yaw_ang_data_delayed_order"
+            ],
+            0
+        ],
+        "euler312": [
+            [
+                "state_struct_quat_to_vector312"
+            ],
+            0
+        ],
+        "SB4": [
+            [
+                "sq_q1",
+                "sq_q0",
+                "sq_q3",
+                "sq_q2"
+            ],
+            0
+        ],
+        "SB2": [
+            [
+                "state_struct_quat",
+                "sb1",
+                "sb0",
+                "state_struct_quat"
+            ],
+            2
+        ],
+        "SB8": [
+            [
+                "sb7"
+            ],
+            0
+        ],
+        "SA5_inv": [
+            [
+                "sq_sa2",
+                "sa4"
+            ],
+            0
+        ],
+        "SB5": [
+            [
+                "sb5_inv"
+            ],
+            0
+        ],
+        "SA1": [
+            [
+                "state_struct_quat"
+            ],
+            1
+        ],
+        "yawAngPredicted": [
+            [
+                "euler321_z",
+                "euler312_z"
+            ],
+            0
+        ],
+        "SA9": [
+            [
+                "sa6"
+            ],
+            0
+        ],
+        "R_YAW": [
+            [
+                "sq_frontend__yaw_noise",
+                "sq_yaw_ang_data_static_yaw_ang_err",
+                "gsf_yaw_variance",
+                "sq_yaw_ang_data_delayed_yaw_ang_err",
+                "sq_ext_nav_yaw_ang_data_delayed_yaw_ang_err"
+            ],
+            0
+        ],
+        "SB5_inv": [
+            [
+                "sb3",
+                "sq_sb4"
+            ],
+            0
+        ],
+        "canUseA": [
+            [
+                "is_positive_fabs_f",
+                "is_positive_sa5_inv"
+            ],
+            0
+        ],
+        "SA0": [
+            [
+                "state_struct_quat"
+            ],
+            1
+        ],
+        "SA4": [
+            [
+                "sq_sa3"
+            ],
+            0
+        ],
+        "SA8": [
+            [
+                "sa7"
+            ],
+            0
+        ],
+        "SA6": [
+            [
+                "sa3"
+            ],
+            0
+        ],
+        "SB1": [
+            [
+                "state_struct_quat"
+            ],
+            1
+        ],
+        "SB7": [
+            [
+                "sb3",
+                "sb4"
+            ],
+            0
+        ],
+        "canUseB": [
+            [
+                "is_positive_sb5_inv",
+                "is_positive_fabs_f"
+            ],
+            0
+        ],
+        "yawTestRatio": [
+            [
+                "sq_ftypefrontend__yaw_innov_gate",
+                "sq_innov_yaw",
+                "var_innov"
+            ],
+            0
+        ],
+        "SA5": [
+            [
+                "sa5_inv"
+            ],
+            0
+        ],
+        "SA7": [
+            [
+                "sa2",
+                "sa4"
+            ],
+            0
+        ]
+    },
+    "FuseDeclination": {
+        "t13": [
+            [
+                "mag_e",
+                "r_decl",
+                "mag_e",
+                "p",
+                "mag_e",
+                "mag_n",
+                "r_decl",
+                "mag_e",
+                "p",
+                "mag_n",
+                "p",
+                "mag_n",
+                "mag_e",
+                "p",
+                "mag_n",
+                "r_decl",
+                "mag_n"
+            ],
+            12
+        ],
+        "R_DECL": [
+            [
+                "sq_decl_err"
+            ],
+            0
+        ],
+        "stateIndex": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "magDecAng": [
+            [
+                "mag_declination"
+            ],
+            0
+        ],
+        "t21": [
+            [
+                "mag_e",
+                "mag_n"
+            ],
+            3
+        ],
+        "magE": [
+            [
+                "state_struct_earth_magfield_y"
+            ],
+            0
+        ],
+        "t4": [
+            [
+                "mag_e",
+                "mag_n"
+            ],
+            2
+        ],
+        "magN": [
+            [
+                "state_struct_earth_magfield_x"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "atan2f_mag_n",
+                "atan2f_mag_e",
+                "mag_dec_ang"
+            ],
+            0
+        ]
+    },
+    "alignMagStateDeclination": {
+        "stateStruct.earth_magfield.x": [
+            [
+                "mag_length_ne",
+                "cos_f_mag_dec_ang"
+            ],
+            0
+        ],
+        "var_16": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "initMagNED": [
+            [
+                "state_struct_earth_magfield"
+            ],
+            0
+        ],
+        "magDecAng": [
+            [
+                "mag_declination"
+            ],
+            0
+        ],
+        "magLengthNE": [
+            [
+                "init_mag_ned_xy_length"
+            ],
+            0
+        ],
+        "var_17": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "stateStruct.earth_magfield.y": [
+            [
+                "mag_length_ne",
+                "sin_f_mag_dec_ang"
+            ],
+            0
+        ]
+    },
+    "recordMagReset": {
+        "quatAtLastMagReset": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "yawInnovAtLastMagReset": [
+            [
+                "innov_yaw"
+            ],
+            0
+        ],
+        "posDownAtLastMagReset": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ]
+    },
+    "learnMagBiasFromGPS": {
+        "stateStruct.body_magfield": [
+            [
+                "state_struct_body_magfield",
+                "mag_data_mag",
+                "table_earth_field_ga",
+                "dcm_transposed",
+                "ek3_gps_mag_learn_rate"
+            ],
+            2
+        ],
+        "ok": [
+            [
+                "gps_yaw_fallback_good_counter",
+                "fallback_count_threshold"
+            ],
+            0
+        ],
+        "quat": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "euler312": [
+            [
+                "quat_to_vector312"
+            ],
+            0
+        ],
+        "lastHealthyMagTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "EKFGSF_resetMainFilterYaw": {
+        "EKFGSF_yaw_reset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "resetQuatStateYawOnly": {
+        "eulerAngles": [
+            [
+                "state_struct_quat_to_vector312"
+            ],
+            0
+        ],
+        "yawResetAngle": [
+            [
+                "delta_yaw"
+            ],
+            0
+        ],
+        "deltaYaw": [
+            [
+                "wrap_pi_euler_angles_z",
+                "wrap_pi_yaw"
+            ],
+            0
+        ],
+        "angleErrVarVec": [
+            [
+                "vector3f_yaw_variance",
+                "vector3f_tilt_error_variance"
+            ],
+            0
+        ],
+        "quatBeforeReset": [
+            [
+                "state_struct_quat"
+            ],
+            0
+        ],
+        "quat_delta": [
+            [
+                "state_struct_quat",
+                "quat_before_reset"
+            ],
+            0
+        ],
+        "lastYawReset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    }
+}

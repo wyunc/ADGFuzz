@@ -1,0 +1,50 @@
+{
+    "setEffectivenessMatrix": {
+        "_num_actuators": [
+            [
+                "num_actuators"
+            ],
+            0
+        ],
+        "_control_trim": [
+            [
+                "effectiveness",
+                "linearization_point"
+            ],
+            2
+        ],
+        "_actuator_trim": [
+            [
+                "linearization_point",
+                "actuator_trim"
+            ],
+            1
+        ]
+    },
+    "setActuatorSetpoint": {
+        "_actuator_sp": [
+            [
+                "actuator_sp"
+            ],
+            0
+        ]
+    },
+    "applySlewRateLimit": {
+        "delta_sp_max": [
+            [
+                "_actuator_min_i",
+                "dt",
+                "_actuator_max_i",
+                "_actuator_slew_rate_limit_i"
+            ],
+            0
+        ],
+        "delta_sp": [
+            [
+                "_prev_actuator_sp_i",
+                "_actuator_sp_i"
+            ],
+            0
+        ]
+    }
+}

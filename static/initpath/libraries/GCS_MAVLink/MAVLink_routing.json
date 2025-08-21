@@ -1,0 +1,156 @@
+{
+    "check_and_forward": {
+        "out_link": [
+            [
+                "_chan_i",
+                "gcs_chan_routes",
+                "_chan__channel"
+            ],
+            0
+        ],
+        "should_process_locally": [
+            [
+                "in_link_is_private"
+            ],
+            1
+        ],
+        "process_locally": [
+            [
+                "mavlink_system_sysid",
+                "target_system",
+                "target_system",
+                "match_component"
+            ],
+            2
+        ],
+        "target_component": [
+            [
+                "mavlink_system_compid"
+            ],
+            0
+        ]
+    },
+    "send_to_components": {
+        "entry": [
+            [
+                "mavlink_get_msg_entry_msgid"
+            ],
+            0
+        ]
+    },
+    "find_by_mavtype": {
+        "sysid": [
+            [
+                "i",
+                "routes",
+                "_sysid"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "i",
+                "routes",
+                "_channel"
+            ],
+            0
+        ],
+        "compid": [
+            [
+                "_compid",
+                "i",
+                "routes"
+            ],
+            0
+        ]
+    },
+    "find_by_mavtype_and_compid": {
+        "channel": [
+            [
+                "routes",
+                "_channel",
+                "i"
+            ],
+            0
+        ],
+        "sysid": [
+            [
+                "routes",
+                "i",
+                "_sysid"
+            ],
+            0
+        ]
+    },
+    "learn_route": {
+        ".mavtype": [
+            [
+                "mavlink_msg_heartbeat_get_type_msg"
+            ],
+            0
+        ],
+        ".compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        ".sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        ".channel": [
+            [
+                "in_link_get_chan"
+            ],
+            1
+        ]
+    },
+    "handle_heartbeat": {
+        "mask": [
+            [
+                "private_channel_mask",
+                "active_channel_mask"
+            ],
+            0
+        ],
+        "in_channel": [
+            [
+                "link_get_chan"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "i",
+                "mavlink_comm_0",
+                "mavlink_channel_t"
+            ],
+            0
+        ]
+    },
+    "get_targets": {
+        "compid": [
+            [
+                "_mav_return_uint8_t_msg",
+                "_mav_return_uint8_t_msg_entry_target_component_ofs"
+            ],
+            0
+        ],
+        "sysid": [
+            [
+                "_mav_return_uint8_t_msg_entry_target_system_ofs",
+                "_mav_return_uint8_t_msg"
+            ],
+            0
+        ],
+        "msg_entry": [
+            [
+                "mavlink_get_msg_entry_msg_msgid"
+            ],
+            0
+        ]
+    }
+}

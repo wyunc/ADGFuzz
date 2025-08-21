@@ -1,0 +1,33 @@
+{
+    "detect_version": {
+        "byte1": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "_header": [
+            [
+                "usd1_hdr",
+                "usd1_hdr_v0"
+            ],
+            0
+        ],
+        "_version": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "reading_m": [
+            [
+                "count",
+                "_linebuf",
+                "0x7f"
+            ],
+            1
+        ]
+    }
+}

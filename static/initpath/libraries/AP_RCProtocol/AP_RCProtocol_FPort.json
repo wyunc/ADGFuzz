@@ -1,0 +1,110 @@
+{
+    "decode_control": {
+        "scaled_rssi": [
+            [
+                "frame_control_rssi"
+            ],
+            0
+        ],
+        "failsafe": [
+            [
+                "frame_control_flags",
+                "flags_failsafe_bit"
+            ],
+            0
+        ]
+    },
+    "decode_downlink": {
+        "tdelay": [
+            [
+                "uart_receive_time_constraint_us",
+                "micros64"
+            ],
+            2
+        ],
+        "telem_data.packet.appid": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "telem_data.packet.data": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "buf",
+                "i"
+            ],
+            0
+        ],
+        "telem_data.packet.frame": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "get_uart"
+            ],
+            0
+        ]
+    },
+    "process_pulse": {
+        "w0": [
+            [
+                "width_s0"
+            ],
+            0
+        ],
+        "saved_width": [
+            [
+                "width_s1"
+            ],
+            0
+        ],
+        "w1": [
+            [
+                "width_s0",
+                "width_s1"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "byte_input.last_byte_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "frame": [
+            [
+                "byte_input_buf",
+                "const",
+                "f_port_frame"
+            ],
+            0
+        ],
+        "have_frame_gap": [
+            [
+                "2000u",
+                "byte_input_last_byte_us",
+                "timestamp_us"
+            ],
+            0
+        ]
+    },
+    "check_checksum": {
+        "len": [
+            [
+                "byte_input_buf"
+            ],
+            0
+        ]
+    }
+}

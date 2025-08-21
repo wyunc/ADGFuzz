@@ -1,0 +1,48 @@
+{
+    "run": {
+        "ret": [
+            [
+                "z_open_s",
+                "i",
+                "z_open_z_move",
+                "_update",
+                "malloc_u_orb_zenoh_publisher",
+                "malloc_sizeof",
+                "malloc__pub_count",
+                "u_orb_zenoh_publisher",
+                "z_open_config"
+            ],
+            1
+        ],
+        "_pub_count": [
+            [
+                "z_config_get_pub_count"
+            ],
+            0
+        ],
+        "pret": [
+            [
+                "px4_poll__pub_count",
+                "px4_poll_pfds"
+            ],
+            0
+        ],
+        "_zenoh_subscribers": [
+            [
+                "malloc_zenoh_subscriber",
+                "z_config_get_sub_count",
+                "malloc_sizeof",
+                "zenoh_subscriber"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,436 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_hott"
+            ],
+            0
+        ]
+    },
+    "send_EAM": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "eam_sensor_id": [
+            [
+                "0x8e"
+            ],
+            0
+        ],
+        "msg.climbrate": [
+            [
+                "uint16_t_vel_z"
+            ],
+            0
+        ],
+        "sensor_id": [
+            [
+                "0x_e0"
+            ],
+            0
+        ],
+        "msg.electric_sec": [
+            [
+                "60u",
+                "stats_get_flight_time_s"
+            ],
+            1
+        ],
+        "msg.temp1": [
+            [
+                "uint8_t_baro_get_temperature"
+            ],
+            0
+        ],
+        "msg.batt1_voltage": [
+            [
+                "uint16_t_battery_voltage"
+            ],
+            0
+        ],
+        "msg.rpm": [
+            [
+                "rpm_value"
+            ],
+            0
+        ],
+        "msg.batt_used": [
+            [
+                "used_mah"
+            ],
+            0
+        ],
+        "start_byte": [
+            [
+                "0x7c"
+            ],
+            0
+        ],
+        "msg.batt2_voltage": [
+            [
+                "uint16_t_battery_voltage"
+            ],
+            0
+        ],
+        "msg.climbrate3s": [
+            [
+                "vel_z"
+            ],
+            0
+        ],
+        "msg.current": [
+            [
+                "uint16_t_current"
+            ],
+            0
+        ],
+        "msg.speed": [
+            [
+                "uint16_t_ahrs_groundspeed",
+                "uint16_t_airspeed_get_airspeed"
+            ],
+            0
+        ],
+        "stop_byte": [
+            [
+                "0x7d"
+            ],
+            0
+        ],
+        "msg.main_voltage": [
+            [
+                "uint16_t_battery_voltage"
+            ],
+            0
+        ],
+        "msg.altitude": [
+            [
+                "uint16_t_alt"
+            ],
+            0
+        ],
+        "msg.temp2": [
+            [
+                "uint8_t_baro_get_temperature"
+            ],
+            0
+        ],
+        "msg.electric_min": [
+            [
+                "60u",
+                "stats_get_flight_time_s"
+            ],
+            1
+        ]
+    },
+    "GPS_to_DDM": {
+        "dm": [
+            [
+                "uint16_t_deg",
+                "uint16_t_decimal",
+                "uint16_t_decimal"
+            ],
+            2
+        ],
+        "sec": [
+            [
+                "uint16_t_deg",
+                "uint16_t_decimal",
+                "fabsf_decimal",
+                "uint16_t_decimal"
+            ],
+            3
+        ]
+    },
+    "send_GPS": {
+        "msg.speed_acc": [
+            [
+                "sacc"
+            ],
+            0
+        ],
+        "msg.free_char3": [
+            [
+                "msg_gps_fix_char"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "loc_lat",
+                "_0e"
+            ],
+            0
+        ],
+        "msg.horiz_acc": [
+            [
+                "hacc"
+            ],
+            0
+        ],
+        "msg.pos_NS_dm": [
+            [
+                "dm"
+            ],
+            0
+        ],
+        "msg.gps_fix_char": [
+            [
+                "gps_status_onechar"
+            ],
+            0
+        ],
+        "start_byte": [
+            [
+                "0x7c"
+            ],
+            0
+        ],
+        "stop_byte": [
+            [
+                "0x7d"
+            ],
+            0
+        ],
+        "sensor_id": [
+            [
+                "0x_a0"
+            ],
+            0
+        ],
+        "msg.flight_direction": [
+            [
+                "uint16_t_gps_ground_course"
+            ],
+            0
+        ],
+        "msg.vel_east": [
+            [
+                "vel_y"
+            ],
+            0
+        ],
+        "msg.home_distance": [
+            [
+                "home_vec_length"
+            ],
+            0
+        ],
+        "gps_sensor_id": [
+            [
+                "0x8a"
+            ],
+            0
+        ],
+        "msg.altitude": [
+            [
+                "uint16_t_alt"
+            ],
+            0
+        ],
+        "msg.pos_EW_sec": [
+            [
+                "sec"
+            ],
+            0
+        ],
+        "msg.vel_north": [
+            [
+                "vel_x"
+            ],
+            0
+        ],
+        "1": [
+            [
+                "2degrees"
+            ],
+            0
+        ],
+        "msg.climbrate": [
+            [
+                "uint16_t_vel_z"
+            ],
+            0
+        ],
+        "msg.pos_EW_dm": [
+            [
+                "dm"
+            ],
+            0
+        ],
+        "msg.pos_NS_sec": [
+            [
+                "sec"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "loc_lng",
+                "_0e"
+            ],
+            0
+        ],
+        "msg.gps_satelites": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "msg.home_direction": [
+            [
+                "degrees_atan2f",
+                "degrees_home_vec_x",
+                "degrees_home_vec_y"
+            ],
+            0
+        ],
+        "msg.climbrate3s": [
+            [
+                "vel_z"
+            ],
+            0
+        ],
+        "msg.gps_speed_kmh": [
+            [
+                "uint16_t_gps_ground_speed"
+            ],
+            0
+        ]
+    },
+    "send_Vario": {
+        "start_byte": [
+            [
+                "0x7c"
+            ],
+            0
+        ],
+        "max_alt": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "min_alt": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "msg.climbrate": [
+            [
+                "vel_z"
+            ],
+            0
+        ],
+        "msg.yaw": [
+            [
+                "wrap_360_cd_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "msg.climbrate10s": [
+            [
+                "vel_z"
+            ],
+            0
+        ],
+        "msg.altitude_min": [
+            [
+                "uint16_t_min_alt"
+            ],
+            0
+        ],
+        "stop_byte": [
+            [
+                "0x7d"
+            ],
+            0
+        ],
+        "ck": [
+            [
+                "flags_pre_arm_check"
+            ],
+            0
+        ],
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "sensor_id": [
+            [
+                "0x90"
+            ],
+            0
+        ],
+        "vario_id": [
+            [
+                "0x89"
+            ],
+            0
+        ],
+        "msg.climbrate3s": [
+            [
+                "vel_z"
+            ],
+            0
+        ],
+        "msg.altitude_max": [
+            [
+                "uint16_t_max_alt"
+            ],
+            0
+        ],
+        "msg.altitude": [
+            [
+                "uint16_t_alt"
+            ],
+            0
+        ]
+    },
+    "send_packet": {
+        "crc": [
+            [
+                "ob"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "n": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "sensor_id": [
+            [
+                "uart_read"
+            ],
+            0
+        ],
+        "prot_type": [
+            [
+                "uart_read"
+            ],
+            0
+        ]
+    }
+}

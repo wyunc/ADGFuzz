@@ -1,0 +1,140 @@
+{
+    "maybe_send_heartbeat": {
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        ".time_send_us": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_free_msg_buf_index": {
+        "index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_vicon_position_estimate": {
+        "_attitude_prev": [
+            [
+                "attitude_curr"
+            ],
+            0
+        ],
+        "_position_prev": [
+            [
+                "_sitl_vicon_glitch_get",
+                "_sitl_vicon_pos_offset_get",
+                "rot",
+                "vicon_yaw_rot",
+                "position",
+                "_todouble"
+            ],
+            3
+        ],
+        ".time_send_us": [
+            [
+                "unsigned_random",
+                "micros64",
+                "1000ul"
+            ],
+            3
+        ],
+        "vel_corrected_frd": [
+            [
+                "attitude_inverse",
+                "_sitl_vicon_pos_offset_get",
+                "gyro",
+                "rot",
+                "vicon_yaw_rot_tofloat",
+                "velocity",
+                "_sitl_vicon_vel_glitch_get"
+            ],
+            4
+        ],
+        "buf_len": [
+            [
+                "mavlink_msg_to_send_buffer_buf",
+                "mavlink_msg_to_send_buffer_i",
+                "mavlink_msg_to_send_buffer_msg_buf",
+                "mavlink_msg_to_send_buffer__obs_msg"
+            ],
+            0
+        ],
+        "waiting_to_send": [
+            [
+                "msg_buf",
+                "i",
+                "_time_send_us"
+            ],
+            0
+        ],
+        "time_offset_us": [
+            [
+                "1000000ull",
+                "unsigned_random"
+            ],
+            0
+        ],
+        "time_delta": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "yaw": [
+            [
+                "wrap_pi_vicon_yaw_rad",
+                "wrap_pi_yaw",
+                "wrap_pi__sitl_vicon_yaw_error_get",
+                "wrap_pi_radians"
+            ],
+            0
+        ],
+        "attitude_curr_prev": [
+            [
+                "_attitude_prev_inverse",
+                "attitude_curr"
+            ],
+            0
+        ],
+        "pos_delta": [
+            [
+                "_sitl_vicon_glitch_get",
+                "_sitl_vicon_pos_offset_get",
+                "rot",
+                "vicon_yaw_rot",
+                "position",
+                "_todouble",
+                "_tofloat",
+                "body_ned_m"
+            ],
+            3
+        ],
+        "vicon_yaw_rad": [
+            [
+                "radians_vicon_yaw_deg"
+            ],
+            0
+        ],
+        "last_observation_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "vicon_yaw_deg": [
+            [
+                "_sitl_vicon_yaw_get"
+            ],
+            0
+        ]
+    }
+}

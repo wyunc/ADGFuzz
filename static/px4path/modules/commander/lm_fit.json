@@ -1,0 +1,97 @@
+{
+    "lm_sphere_fit_iteration": {
+        "result.cost": [
+            [
+                "samples_collected",
+                "sqrtf_fit2",
+                "_f",
+                "params_radius",
+                "fit1_params",
+                "fit2_params",
+                "sqrtf_b",
+                "sqrtf_c",
+                "sqrtf_a",
+                "samples_collected",
+                "_f",
+                "sqrtf_fit1",
+                "result_cost"
+            ],
+            5
+        ],
+        "params.radius": [
+            [
+                "fit1_params"
+            ],
+            0
+        ],
+        "JTJ2": [
+            [
+                "jtj"
+            ],
+            0
+        ],
+        "result.gradient_damping": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "result.result": [
+            [
+                "failure",
+                "success"
+            ],
+            0
+        ],
+        "JTJ": [
+            [
+                "jtj_transpose",
+                "jtj"
+            ],
+            0
+        ]
+    },
+    "lm_ellipsoid_fit_iteration": {
+        "JTJ2": [
+            [
+                "jtj"
+            ],
+            0
+        ],
+        "result.result": [
+            [
+                "failure",
+                "success"
+            ],
+            0
+        ],
+        "result.cost": [
+            [
+                "result_cost",
+                "params_radius",
+                "sqrtf_b",
+                "sqrtf_c",
+                "sqrtf_a",
+                "sqrtf_fit2",
+                "samples_collected",
+                "sqrtf_fit1",
+                "samples_collected"
+            ],
+            5
+        ],
+        "result.gradient_damping": [
+            [
+                "lma_damping"
+            ],
+            0
+        ]
+    },
+    "lm_mag_fit": {
+        "iter.cost": [
+            [
+                "1e30f"
+            ],
+            0
+        ]
+    }
+}

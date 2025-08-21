@@ -1,0 +1,36 @@
+{
+    "handle_script_msg": {
+        "_state_pending.last_reading_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_state_pending.distance_m": [
+            [
+                "dist_m"
+            ],
+            0
+        ],
+        "_state_pending.signal_quality_pct": [
+            [
+                "signal_quality_unknown"
+            ],
+            0
+        ],
+        "_state_pending": [
+            [
+                "state_arg"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state": [
+            [
+                "_state_pending"
+            ],
+            0
+        ]
+    }
+}

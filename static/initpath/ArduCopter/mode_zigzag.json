@@ -1,0 +1,301 @@
+{
+    "init": {
+        "stage": [
+            [
+                "storing_points"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "line_num": [
+            [
+                "constrain_int16_zigzag_line_infinity",
+                "constrain_int16__line_num"
+            ],
+            0
+        ],
+        "zigzag_direction": [
+            [
+                "constrain_int16__direction",
+                "direction"
+            ],
+            0
+        ],
+        "ab_dest_stored": [
+            [
+                "a",
+                "b"
+            ],
+            0
+        ]
+    },
+    "save_or_move_to_destination": {
+        "auto_stage": [
+            [
+                "ab_moving"
+            ],
+            0
+        ],
+        "ab_dest": [
+            [
+                "line_num",
+                "a",
+                "line_count"
+            ],
+            0
+        ],
+        "dest_A": [
+            [
+                "pos_control_get_pos_desired_cm_xy_tofloat"
+            ],
+            1
+        ],
+        "stage": [
+            [
+                "manual_regain",
+                "auto"
+            ],
+            0
+        ],
+        "dest_B": [
+            [
+                "pos_control_get_pos_desired_cm_xy_tofloat"
+            ],
+            1
+        ]
+    },
+    "move_to_side": {
+        "current_dest": [
+            [
+                "next_dest"
+            ],
+            0
+        ],
+        "current_terr_alt": [
+            [
+                "terr_alt"
+            ],
+            0
+        ],
+        "stage": [
+            [
+                "auto"
+            ],
+            0
+        ],
+        "auto_stage": [
+            [
+                "sideways"
+            ],
+            0
+        ]
+    },
+    "return_to_manual_control": {
+        "wp_dest": [
+            [
+                "wp_nav_get_wp_destination"
+            ],
+            0
+        ],
+        "stage": [
+            [
+                "manual_regain"
+            ],
+            0
+        ]
+    },
+    "auto_control": {
+        "wpnav_ok": [
+            [
+                "wp_nav_update_wpnav"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ]
+    },
+    "manual_control": {
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "althold_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "target_climb_rate": [
+            [
+                "get_avoidance_adjusted_climbrate_target_climb_rate",
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in",
+                "get_pilot_speed_dn_g_pilot_speed_up"
+            ],
+            0
+        ]
+    },
+    "reached_destination": {
+        "reach_wp_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "calculate_next_dest": {
+        "next_dest.y": [
+            [
+                "closest2d_y"
+            ],
+            0
+        ],
+        "AB_diff": [
+            [
+                "dest_a",
+                "dest_b"
+            ],
+            0
+        ],
+        "scalar": [
+            [
+                "veh_to_start_pos_length",
+                "ab_diff_length"
+            ],
+            0
+        ],
+        "next_dest.z": [
+            [
+                "pos_control_get_pos_desired_z_cm",
+                "pos_control_get_pos_terrain_cm",
+                "wp_nav_get_wp_destination_z"
+            ],
+            0
+        ],
+        "closest2d": [
+            [
+                "closest_point_perp1",
+                "closest_point_curr_pos2d",
+                "closest_point_perp2"
+            ],
+            0
+        ],
+        "veh_to_start_pos": [
+            [
+                "a",
+                "ab_dest",
+                "dest_a",
+                "dest_b",
+                "pos_control_get_pos_desired_cm_xy_tofloat"
+            ],
+            2
+        ],
+        "terrain_alt": [
+            [
+                "wp_nav_rangefinder_used_and_healthy",
+                "copter_rangefinder_alt_ok",
+                "wp_nav_origin_and_destination_are_terrain_alt"
+            ],
+            0
+        ],
+        "perp1": [
+            [
+                "vector2f_ab_diff",
+                "a",
+                "ab_dest",
+                "dest_a",
+                "dest_b",
+                "vector2f_scalar"
+            ],
+            1
+        ],
+        "perp2": [
+            [
+                "vector2f_ab_diff",
+                "a",
+                "ab_dest",
+                "dest_a",
+                "dest_b",
+                "vector2f_scalar"
+            ],
+            1
+        ],
+        "next_dest.x": [
+            [
+                "closest2d_x"
+            ],
+            0
+        ]
+    },
+    "calculate_side_dest": {
+        "AB_diff": [
+            [
+                "dest_a",
+                "dest_b"
+            ],
+            0
+        ],
+        "AB_side": [
+            [
+                "vector2f_ab_diff"
+            ],
+            0
+        ],
+        "curr_pos2d": [
+            [
+                "pos_control_get_pos_desired_cm_xy_tofloat"
+            ],
+            0
+        ],
+        "next_dest.z": [
+            [
+                "pos_control_get_pos_desired_z_cm"
+            ],
+            0
+        ],
+        "yaw_ab_sign": [
+            [
+                "ahrs_sin_yaw",
+                "ab_diff",
+                "ahrs_cos_yaw"
+            ],
+            0
+        ],
+        "scalar": [
+            [
+                "safe_sqrt_ab_side_length_squared",
+                "_side_dist"
+            ],
+            0
+        ],
+        "terrain_alt": [
+            [
+                "copter_rangefinder_alt_ok",
+                "wp_nav_rangefinder_used_and_healthy"
+            ],
+            0
+        ]
+    },
+    "run_auto": {
+        "stage": [
+            [
+                "auto"
+            ],
+            0
+        ]
+    },
+    "init_auto": {
+        "auto_stage": [
+            [
+                "manual"
+            ],
+            0
+        ]
+    }
+}

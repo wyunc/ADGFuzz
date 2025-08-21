@@ -1,0 +1,154 @@
+{
+    "sbus_init": {
+        "sbus_fd": [
+            [
+                "open_o_nonblock",
+                "open_o_rdwr",
+                "open_device"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "sbus_config_sbus_fd",
+                "sbus_config_singlewire"
+            ],
+            0
+        ]
+    },
+    "sbus_config": {
+        "last_rx_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "sbus1_output": {
+        "last_txframe_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "value": [
+            [
+                "i",
+                "sbus_scale_factor",
+                "uint16_t",
+                "values",
+                "_",
+                "0x07ff",
+                "sbus_scale_offset"
+            ],
+            0
+        ]
+    },
+    "sbus_input": {
+        "ret": [
+            [
+                "read_sbus_frame_size",
+                "read_buf",
+                "read_sbus_fd"
+            ],
+            0
+        ],
+        "sbus_decode_state": [
+            [
+                "sbus2_decode_state_desync"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "sbus_parse": {
+        "gps_something": [
+            [
+                "frame"
+            ],
+            0
+        ],
+        "decode_ret": [
+            [
+                "sbus_decode_sbus_frame",
+                "sbus_decode_now",
+                "sbus_decode_sbus_frame_drop",
+                "sbus_decode_values",
+                "sbus_decode_num_values",
+                "sbus_decode_sbus_failsafe",
+                "sbus_decode_max_channels"
+            ],
+            0
+        ],
+        "last_rx_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "sbus_decode_state": [
+            [
+                "sbus2_decode_state_sbus2_sync",
+                "sbus2_decode_state_desync",
+                "sbus2_decode_state_sbus_start"
+            ],
+            0
+        ],
+        "rx_voltage": [
+            [
+                "sbus_frame"
+            ],
+            0
+        ],
+        "frame_drops": [
+            [
+                "sbus_frame_drops"
+            ],
+            0
+        ],
+        "partial_frame_count": [
+            [
+                "i"
+            ],
+            1
+        ]
+    },
+    "sbus_decode": {
+        "sbus_decode_state": [
+            [
+                "sbus2_decode_state_sbus2_sync",
+                "sbus2_decode_state_sbus2_rx_voltage",
+                "sbus2_decode_state_sbus2_gps",
+                "sbus2_decode_state_desync",
+                "sbus2_decode_state_sbus1_sync"
+            ],
+            0
+        ],
+        "piece": [
+            [
+                "decode_byte",
+                "frame"
+            ],
+            0
+        ],
+        "decode": [
+            [
+                "pick",
+                "sbus_decoder",
+                "channel"
+            ],
+            0
+        ],
+        "num_values": [
+            [
+                "chancount"
+            ],
+            0
+        ]
+    }
+}

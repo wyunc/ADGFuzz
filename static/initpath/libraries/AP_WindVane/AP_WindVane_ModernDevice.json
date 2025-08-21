@@ -1,0 +1,20 @@
+{
+    "update_speed": {
+        "analog_voltage": [
+            [
+                "_speed_analog_source_voltage_average",
+                "_frontend__speed_sensor_voltage_offset",
+                "_temp_analog_source_voltage_average"
+            ],
+            1
+        ],
+        "_frontend._speed_apparent_raw": [
+            [
+                "powf_powf",
+                "powf_temp_ambient",
+                "powf_analog_voltage"
+            ],
+            0
+        ]
+    }
+}

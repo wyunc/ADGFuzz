@@ -1,0 +1,60 @@
+{
+    "_enter": {
+        "_desired_speed": [
+            [
+                "g2_wp_nav_get_default_speed"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "desired_yaw_cd": [
+            [
+                "wrap_180_cd_desired_velocity_ne_y",
+                "degx100",
+                "wrap_180_cd_desired_velocity_ne_x",
+                "wrap_180_cd_atan2f"
+            ],
+            0
+        ],
+        "desired_velocity_ne": [
+            [
+                "_desired_speed"
+            ],
+            1
+        ],
+        "desired_velocity_ne.y": [
+            [
+                "g2_follow_get_pos_p_k_p",
+                "vel_of_target_y",
+                "dist_vec_offs_y"
+            ],
+            1
+        ],
+        "desired_velocity_ne.x": [
+            [
+                "dist_vec_offs_x",
+                "g2_follow_get_pos_p_k_p",
+                "vel_of_target_x"
+            ],
+            1
+        ],
+        "desired_speed": [
+            [
+                "safe_sqrt_sq",
+                "safe_sqrt_desired_velocity_ne_x",
+                "_desired_speed",
+                "sq_desired_velocity_ne_y"
+            ],
+            0
+        ]
+    },
+    "set_desired_speed": {
+        "_desired_speed": [
+            [
+                "speed"
+            ],
+            0
+        ]
+    }
+}

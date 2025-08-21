@@ -1,0 +1,23 @@
+{
+    "checkAndReport": {
+        "dp": [
+            [
+                "opendir_px4_storagedir"
+            ],
+            0
+        ],
+        "_sdcard_detected": [
+            [
+                "statfs_buf_f_blocks",
+                "statfs_buf_f_bsize"
+            ],
+            0
+        ],
+        "affected_modes": [
+            [
+                "all"
+            ],
+            0
+        ]
+    }
+}

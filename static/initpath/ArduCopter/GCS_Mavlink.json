@@ -1,0 +1,374 @@
+{
+    "send_attitude_target": {
+        "ang_vel": [
+            [
+                "copter_attitude_control_get_attitude_target_ang_vel"
+            ],
+            0
+        ],
+        "quat": [
+            [
+                "copter_attitude_control_get_attitude_target_quat"
+            ],
+            0
+        ],
+        "thrust": [
+            [
+                "copter_attitude_control_get_throttle_in"
+            ],
+            0
+        ]
+    },
+    "send_position_target_global_int": {
+        "POSITION_TARGET_TYPEMASK_LAST_BYTE": [
+            [
+                "0x_f000"
+            ],
+            0
+        ]
+    },
+    "send_position_target_local_ned": {
+        "guided_mode": [
+            [
+                "copter_mode_guided_submode"
+            ],
+            0
+        ],
+        "type_mask": [
+            [
+                "position_target_typemask_yaw_rate_ignore",
+                "position_target_typemask_yaw_ignore"
+            ],
+            0
+        ],
+        "target_accel": [
+            [
+                "copter_mode_guided_get_target_accel"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "copter_mode_guided_get_target_pos_tofloat"
+            ],
+            0
+        ],
+        "target_vel": [
+            [
+                "copter_mode_guided_get_target_vel"
+            ],
+            0
+        ]
+    },
+    "send_nav_controller_output": {
+        "flightmode": [
+            [
+                "copter_flightmode"
+            ],
+            0
+        ],
+        "targets": [
+            [
+                "copter_attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ]
+    },
+    "send_pid_tuning": {
+        "pid_info": [
+            [
+                "nullptr",
+                "copter_attitude_control_get_rate_yaw_pid_get_pid_info",
+                "copter_attitude_control_get_rate_pitch_pid_get_pid_info",
+                "copter_attitude_control_get_rate_roll_pid_get_pid_info",
+                "copter_pos_control_get_accel_z_pid_get_pid_info"
+            ],
+            0
+        ]
+    },
+    "try_send_message": {
+        "oadb": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "mav_frame_for_command_long": {
+        "frame": [
+            [
+                "mav_frame_global_relative_alt"
+            ],
+            0
+        ]
+    },
+    "handle_mount_message": {
+        "yaw_offset_d": [
+            [
+                "mavlink_msg_mount_control_get_input_c_msg"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_attitude_target": {
+        "use_thrust": [
+            [
+                "copter_mode_guided_set_attitude_target_provides_thrust"
+            ],
+            0
+        ],
+        "attitude_quat": [
+            [
+                "quaternion_packet_q"
+            ],
+            0
+        ],
+        "throttle_ignore": [
+            [
+                "attitude_target_typemask_throttle_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "roll_rate_ignore": [
+            [
+                "attitude_target_typemask_body_roll_rate_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "ang_vel_body.y": [
+            [
+                "packet_body_pitch_rate"
+            ],
+            0
+        ],
+        "ang_vel_body.z": [
+            [
+                "packet_body_yaw_rate"
+            ],
+            0
+        ],
+        "pitch_rate_ignore": [
+            [
+                "attitude_target_typemask_body_pitch_rate_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "climb_rate_or_thrust": [
+            [
+                "copter_wp_nav_get_default_speed_down",
+                "packet_thrust",
+                "copter_wp_nav_get_default_speed_up"
+            ],
+            0
+        ],
+        "yaw_rate_ignore": [
+            [
+                "attitude_target_typemask_body_yaw_rate_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "attitude_ignore": [
+            [
+                "attitude_target_typemask_attitude_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "ang_vel_body.x": [
+            [
+                "packet_body_roll_rate"
+            ],
+            0
+        ],
+        "packet.thrust": [
+            [
+                "packet_thrust"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_position_target_local_ned": {
+        "acc_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_acc_ignore"
+            ],
+            0
+        ],
+        "vel_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_vel_ignore"
+            ],
+            0
+        ],
+        "yaw_relative": [
+            [
+                "mav_frame_body_ned",
+                "packet_coordinate_frame",
+                "mav_frame_body_offset_ned"
+            ],
+            0
+        ],
+        "pos_vector": [
+            [
+                "vector3f_packet_x",
+                "copter_inertial_nav_get_position_neu_cm",
+                "vector3f_packet_y",
+                "vector3f_packet_z"
+            ],
+            0
+        ],
+        "force_set": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_force_set"
+            ],
+            0
+        ],
+        "yaw_rate_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_yaw_rate_ignore"
+            ],
+            0
+        ],
+        "yaw_rate_cds": [
+            [
+                "to_deg_packet_yaw_rate"
+            ],
+            0
+        ],
+        "yaw_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_yaw_ignore"
+            ],
+            0
+        ],
+        "pos_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_pos_ignore"
+            ],
+            0
+        ],
+        "vel_vector": [
+            [
+                "packet_vy",
+                "packet_vz",
+                "vector3f",
+                "packet_vx"
+            ],
+            0
+        ],
+        "accel_vector": [
+            [
+                "vector3f_packet_afz",
+                "vector3f_packet_afy",
+                "vector3f_packet_afx"
+            ],
+            0
+        ],
+        "yaw_cd": [
+            [
+                "to_deg_packet_yaw"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_position_target_global_int": {
+        "yaw_cd": [
+            [
+                "to_deg_packet_yaw"
+            ],
+            0
+        ],
+        "vel_vector": [
+            [
+                "packet_vz",
+                "vector3f",
+                "packet_vx",
+                "packet_vy"
+            ],
+            0
+        ],
+        "yaw_rate_ignore": [
+            [
+                "mavlink_set_pos_type_mask_yaw_rate_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "int32_t_packet_alt",
+                "frame",
+                "packet_lon_int",
+                "packet_lat_int"
+            ],
+            0
+        ],
+        "force_set": [
+            [
+                "mavlink_set_pos_type_mask_force_set",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "acc_ignore": [
+            [
+                "mavlink_set_pos_type_mask_acc_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "yaw_rate_cds": [
+            [
+                "to_deg_packet_yaw_rate"
+            ],
+            0
+        ],
+        "vel_ignore": [
+            [
+                "mavlink_set_pos_type_mask_vel_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "yaw_ignore": [
+            [
+                "mavlink_set_pos_type_mask_yaw_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "accel_vector": [
+            [
+                "vector3f_packet_afy",
+                "vector3f_packet_afx",
+                "vector3f_packet_afz"
+            ],
+            0
+        ],
+        "pos_ignore": [
+            [
+                "mavlink_set_pos_type_mask_pos_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ]
+    },
+    "send_wind": {
+        "wind": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ]
+    }
+}

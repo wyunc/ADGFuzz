@@ -1,0 +1,181 @@
+{
+    "update": {
+        "plane.nav_roll_cd": [
+            [
+                "ahrs_roll_sensor",
+                "acro_state_locked_roll_err"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "acro_state_locked_pitch_cd",
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ]
+    },
+    "stabilize": {
+        "roll_rate": [
+            [
+                "plane_roll_in_expo_true",
+                "plane_g_acro_roll_rate",
+                "servo_max"
+            ],
+            1
+        ],
+        "acro_state.locked_pitch_cd": [
+            [
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "speed_scaler": [
+            [
+                "plane_get_speed_scaler"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "ahrs_roll_sensor",
+                "to_deg_acro_state_locked_roll_err"
+            ],
+            1
+        ],
+        "rudder_output": [
+            [
+                "plane_yaw_controller_get_rate_out_speed_scaler",
+                "plane_calc_nav_yaw_coordinated",
+                "plane_rudder_input",
+                "plane_yaw_controller_get_rate_out_false",
+                "plane_yaw_controller_get_rate_out_yaw_rate"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "acro_state_locked_pitch_cd"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "plane_g_acro_yaw_rate",
+                "servo_max",
+                "plane_rudder_in_expo_true"
+            ],
+            1
+        ],
+        "acro_state.locked_roll_err": [
+            [
+                "ahrs_get_gyro_x",
+                "plane_g_dt"
+            ],
+            0
+        ],
+        "pitch_rate": [
+            [
+                "plane_g_acro_pitch_rate",
+                "plane_pitch_in_expo_true",
+                "servo_max"
+            ],
+            1
+        ]
+    },
+    "stabilize_quaternion": {
+        "plane.nav_pitch_cd": [
+            [
+                "degrees_q_get_euler_pitch"
+            ],
+            0
+        ],
+        "desired_rates.z": [
+            [
+                "radians_max_error_t",
+                "radians_plane_g_acro_yaw_rate",
+                "desired_rates_z",
+                "plane_pitch_controller_tau",
+                "servo_max",
+                "plane_rudder_in_expo_true",
+                "plane_g_acro_yaw_rate"
+            ],
+            3
+        ],
+        "desired_rates.x": [
+            [
+                "desired_rates_x",
+                "plane_roll_controller_tau",
+                "radians_plane_g_acro_roll_rate",
+                "radians_max_error_t",
+                "servo_max",
+                "plane_g_acro_roll_rate",
+                "plane_roll_in_expo_true"
+            ],
+            3
+        ],
+        "desired_rates.y": [
+            [
+                "radians_plane_g_acro_pitch_rate",
+                "radians_max_error_t",
+                "desired_rates_y",
+                "plane_pitch_controller_tau",
+                "plane_pitch_in_expo_true",
+                "servo_max",
+                "plane_g_acro_pitch_rate"
+            ],
+            3
+        ],
+        "acro_state.roll_active_last": [
+            [
+                "is_zero_roll_rate"
+            ],
+            1
+        ],
+        "acro_state.pitch_active_last": [
+            [
+                "is_zero_pitch_rate"
+            ],
+            1
+        ],
+        "error_quat": [
+            [
+                "ahrs_q_inverse",
+                "ahrs_q",
+                "acro_state_q"
+            ],
+            1
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "degrees_q_get_euler_roll"
+            ],
+            0
+        ],
+        "speed_scaler": [
+            [
+                "plane_get_speed_scaler"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "plane_g_dt"
+            ],
+            0
+        ],
+        "acro_state.yaw_active_last": [
+            [
+                "is_zero_yaw_rate"
+            ],
+            1
+        ],
+        "desired_rates": [
+            [
+                "degrees",
+                "error_angle1"
+            ],
+            0
+        ]
+    }
+}

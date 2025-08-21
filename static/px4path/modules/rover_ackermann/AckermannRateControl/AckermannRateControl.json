@@ -1,0 +1,121 @@
+{
+    "updateParams": {
+        "_max_yaw_rate": [
+            [
+                "m_deg_to_rad_f",
+                "_param_ro_yaw_rate_limit_get"
+            ],
+            0
+        ]
+    },
+    "updateRateControl": {
+        "_estimated_speed_body_x": [
+            [
+                "_f",
+                "fabsf__estimated_speed_body_x",
+                "_param_ro_speed_th_get"
+            ],
+            0
+        ],
+        "rover_rate_status.adjusted_yaw_rate_setpoint": [
+            [
+                "_yaw_rate_setpoint_get_state"
+            ],
+            0
+        ],
+        "_dt": [
+            [
+                "constrain_timestamp_prev",
+                "constrain_1_ms",
+                "1e",
+                "constrain_5000_ms",
+                "constrain__timestamp"
+            ],
+            0
+        ],
+        "rover_rate_status.measured_yaw_rate": [
+            [
+                "_vehicle_yaw_rate"
+            ],
+            0
+        ],
+        "rover_rate_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "rover_rate_status.pid_yaw_rate_integral": [
+            [
+                "_pid_yaw_rate_get_integral"
+            ],
+            0
+        ]
+    },
+    "generateRateAndThrottleSetpoint": {
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_x": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_y": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "rover_rate_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "generateSteeringSetpoint": {
+        "steering_setpoint": [
+            [
+                "_estimated_speed_body_x",
+                "atanf__yaw_rate_setpoint_get_state",
+                "_param_ra_wheel_base_get",
+                "_pid_yaw_rate_update__vehicle_yaw_rate",
+                "_pid_yaw_rate_update__dt"
+            ],
+            0
+        ],
+        "yaw_rate_limit": [
+            [
+                "min__max_yaw_rate",
+                "min_max_possible_yaw_rate"
+            ],
+            0
+        ],
+        "rover_steering_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "constrained_yaw_rate": [
+            [
+                "constrain__rover_rate_setpoint_yaw_rate_setpoint",
+                "constrain_yaw_rate_limit"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

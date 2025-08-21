@@ -1,0 +1,71 @@
+{
+    "assign_measurements": {
+        "_err_code": [
+            [
+                "_parsed_err_code"
+            ],
+            0
+        ],
+        "_consumed_mah": [
+            [
+                "_parsed_battery_pct"
+            ],
+            0
+        ],
+        "_last_time_ms": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "state",
+                "_parsed_state"
+            ],
+            0
+        ],
+        "_fuel_remaining": [
+            [
+                "_parsed_tank_pct"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "_parsed.tank_pct": [
+            [
+                "strtof__term",
+                "strtof_null"
+            ],
+            0
+        ],
+        "_parsed.err_code": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_sentence_valid": [
+            [
+                "_data_valid"
+            ],
+            0
+        ],
+        "_parsed.state": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_parsed.battery_pct": [
+            [
+                "strtof__term",
+                "strtof_null"
+            ],
+            0
+        ]
+    }
+}

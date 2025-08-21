@@ -1,0 +1,261 @@
+{
+    "AirTemperatureUpdate": {
+        "source": [
+            [
+                "airspeed"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "differential_pressure_temperature",
+                "default_temperature_celsius",
+                "temperature_baro",
+                "external_baro"
+            ],
+            0
+        ]
+    },
+    "ParametersUpdate": {
+        "priority_change": [
+            [
+                "_calibration",
+                "instance",
+                "_priority",
+                "_calibration",
+                "instance",
+                "_priority"
+            ],
+            2
+        ]
+    },
+    "Run": {
+        "out.calibration_count": [
+            [
+                "_calibration",
+                "instance",
+                "_calibration_count"
+            ],
+            0
+        ],
+        "was_advertised": [
+            [
+                "_advertised",
+                "uorb_index"
+            ],
+            0
+        ],
+        "out.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "out.baro_alt_meter": [
+            [
+                "get_altitude_from_pressure_pressure_pa",
+                "get_altitude_from_pressure_pressure_sealevel_pa"
+            ],
+            1
+        ],
+        "out.baro_pressure_pa": [
+            [
+                "_data_sum",
+                "_data_sum_count",
+                "instance"
+            ],
+            1
+        ],
+        "interval_us": [
+            [
+                "1e6f",
+                "_param_sens_baro_rate_get"
+            ],
+            0
+        ],
+        "parameter_update": [
+            [
+                "parameters_update"
+            ],
+            0
+        ],
+        "_last_status_baro_fault": [
+            [
+                "estimator_status_flags_cs_baro_fault"
+            ],
+            0
+        ],
+        "publish": [
+            [
+                "hrt_absolute_time",
+                "1_s",
+                "_data_sum_count",
+                "_timestamp_sample_sum",
+                "instance"
+            ],
+            2
+        ],
+        "pressure_corrected": [
+            [
+                "_calibration",
+                "_correct_report_pressure",
+                "uorb_index"
+            ],
+            0
+        ],
+        "estimator_status_flags_updated": [
+            [
+                "_estimator_status_flags_sub_update_estimator_status_flags"
+            ],
+            0
+        ],
+        "out.rho": [
+            [
+                "get_density_from_pressure_and_temp_pressure_pa",
+                "get_density_from_pressure_and_temp_ambient_temperature"
+            ],
+            1
+        ],
+        "out.baro_device_id": [
+            [
+                "_calibration",
+                "_device_id",
+                "instance"
+            ],
+            0
+        ],
+        "out.ambient_temperature": [
+            [
+                "air_temperature_update_time_now_us",
+                "air_temperature_update_temperature_baro",
+                "air_temperature_update_temperature_source"
+            ],
+            1
+        ],
+        "out.temperature_source": [
+            [
+                "uint8_t",
+                "static_cast",
+                "temperature_source"
+            ],
+            0
+        ],
+        "pressure_sealevel_pa": [
+            [
+                "_param_sens_baro_qnh_get",
+                "_f"
+            ],
+            0
+        ],
+        "_selected_sensor_sub_index": [
+            [
+                "best_index"
+            ],
+            0
+        ],
+        "temperature_baro": [
+            [
+                "_data_sum_count",
+                "instance",
+                "_temperature_sum"
+            ],
+            0
+        ],
+        "_relative_calibration_done": [
+            [
+                "update_relative_calibrations_time_now_us"
+            ],
+            0
+        ],
+        "out.timestamp_sample": [
+            [
+                "_data_sum_count",
+                "_timestamp_sample_sum",
+                "instance"
+            ],
+            1
+        ]
+    },
+    "UpdateRelativeCalibrations": {
+        "new_offset": [
+            [
+                "_selected_sensor_sub_index",
+                "_data_sum_count",
+                "_data_sum",
+                "instance",
+                "_data_sum_count",
+                "_data_sum",
+                "_offset",
+                "instance",
+                "_calibration"
+            ],
+            2
+        ],
+        "_calibration_t_first": [
+            [
+                "time_now_us"
+            ],
+            0
+        ]
+    },
+    "CheckFailover": {
+        "_last_error_message": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "failover_reason": [
+            [
+                "high_error_count",
+                "no_data",
+                "high_error_density",
+                "timeout",
+                "stale_data"
+            ],
+            0
+        ],
+        "_last_failover_count": [
+            [
+                "_voter_failover_count"
+            ],
+            0
+        ],
+        "failover_index": [
+            [
+                "_voter_failover_index"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "_voter_failover_state"
+            ],
+            0
+        ]
+    },
+    "UpdateStatus": {
+        "sensors_status.device_id_primary": [
+            [
+                "_device_id",
+                "_selected_sensor_sub_index",
+                "_calibration"
+            ],
+            0
+        ],
+        "mean": [
+            [
+                "sensor_count",
+                "_last_data",
+                "sensor_index"
+            ],
+            0
+        ],
+        "sensors_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

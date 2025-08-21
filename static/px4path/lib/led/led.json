@@ -1,0 +1,100 @@
+{
+    "update": {
+        ".current_blinking_time": [
+            [
+                "breathe_interval",
+                "breathe_steps",
+                "blink_normal_duration",
+                "blink_slow_duration",
+                "blink_fast_duration",
+                "hrt_absolute_time",
+                "uint16_t"
+            ],
+            4
+        ],
+        "next_priority": [
+            [
+                "_states",
+                "i",
+                "_next_state_priority",
+                "int"
+            ],
+            0
+        ],
+        ".brightness": [
+            [
+                "min__max_brightness",
+                "min__brightness",
+                "min_i",
+                "min_control_data_leds"
+            ],
+            0
+        ],
+        "cur_data": [
+            [
+                "max_priority",
+                "_states",
+                "i",
+                "_priority"
+            ],
+            1
+        ],
+        "_max_brightness": [
+            [
+                "roundf__param_sys_rgb_maxbrt_get",
+                "roundf_constrain",
+                "_f",
+                "uint8_max"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_led_control_sub_get_last_generation"
+            ],
+            0
+        ],
+        "_last_update_call": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "cur_data.mode": [
+            [
+                "mode_disabled"
+            ],
+            0
+        ]
+    },
+    "get_control_data": {
+        "cur_data": [
+            [
+                "_priority",
+                "_states",
+                "i",
+                "max_priority"
+            ],
+            1
+        ],
+        ".brightness": [
+            [
+                "_max_brightness",
+                "breathe_steps",
+                "breathe_steps",
+                "_states",
+                "breathe_interval",
+                "i",
+                "_current_blinking_time"
+            ],
+            2
+        ],
+        ".color": [
+            [
+                "color_off",
+                "cur_data_color"
+            ],
+            0
+        ]
+    }
+}

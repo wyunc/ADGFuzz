@@ -1,0 +1,84 @@
+{
+    "init": {
+        "uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_wind_vane"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_frontend._direction_apparent_raw": [
+            [
+                "wrap_pi_radians",
+                "wrap_pi__frontend__dir_analog_bearing_offset_get",
+                "wrap_pi__wind_dir_deg"
+            ],
+            0
+        ],
+        "_frontend._speed_apparent_raw": [
+            [
+                "_speed_ms"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "uart_read"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "uart_available"
+            ],
+            0
+        ]
+    },
+    "decode": {
+        "valid_sentence": [
+            [
+                "decode_latest_term"
+            ],
+            0
+        ],
+        "_term_is_checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "_wind_dir_deg": [
+            [
+                "strtof__term",
+                "strtof_null"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "_sentence_valid",
+                "char_to_hex__term",
+                "_checksum"
+            ],
+            0
+        ],
+        "term_type": [
+            [
+                "_term"
+            ],
+            0
+        ],
+        "_speed_ms": [
+            [
+                "strtof__term",
+                "km_per_hour_to_m_per_sec",
+                "knots_to_m_per_sec",
+                "strtof_null"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "param_export_internal": {
+        "commit": [
+            [
+                "was_buf_size",
+                "ok",
+                "memcmp_was_buf_size",
+                "memcmp_was_buffer",
+                "parameter_flashfs_read_parameters_token",
+                "parameter_flashfs_read_was_buffer",
+                "parameter_flashfs_read_was_buf_size",
+                "bson_encoder_buf_size_encoder",
+                "memcmp_enc_buff"
+            ],
+            2
+        ],
+        "result": [
+            [
+                "ok",
+                "parameter_flashfs_write_buf_size",
+                "parameter_flashfs_alloc_parameters_token",
+                "parameter_flashfs_write_parameters_token",
+                "bson_encoder_buf_size_encoder",
+                "efbig",
+                "parameter_flashfs_alloc_buf_size",
+                "parameter_flashfs_write_buffer",
+                "parameter_flashfs_alloc_buffer"
+            ],
+            1
+        ],
+        "changed_params": [
+            [
+                "user_config_contained_as_bitset"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "user_config_get_param_f"
+            ],
+            0
+        ],
+        "enc_buff": [
+            [
+                "bson_encoder_buf_data_encoder"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "user_config_get_param_i"
+            ],
+            0
+        ]
+    },
+    "param_import_callback": {
+        "v": [
+            [
+                "nullptr",
+                "node_i32",
+                "node_d"
+            ],
+            2
+        ],
+        "param": [
+            [
+                "param_find_no_notification_node_name"
+            ],
+            0
+        ]
+    },
+    "param_import_internal": {
+        "result": [
+            [
+                "bson_decoder_next_decoder"
+            ],
+            0
+        ]
+    }
+}

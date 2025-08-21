@@ -1,0 +1,12 @@
+{
+    "update_esc_telem_outbound": {
+        "esc_index": [
+            [
+                "_esc_telem_outbound_index",
+                "ap_rpm__params",
+                "state_instance"
+            ],
+            0
+        ]
+    }
+}

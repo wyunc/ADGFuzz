@@ -1,0 +1,12 @@
+{
+    "linearise_throttle": {
+        "ret": [
+            [
+                "coefficient",
+                "offset",
+                "throttle_percent"
+            ],
+            0
+        ]
+    }
+}

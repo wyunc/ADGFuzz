@@ -1,0 +1,16 @@
+{
+    "_uart_set_speed": {
+        "tc.c_ispeed": [
+            [
+                "speed"
+            ],
+            0
+        ],
+        "tc.c_ospeed": [
+            [
+                "speed"
+            ],
+            0
+        ]
+    }
+}

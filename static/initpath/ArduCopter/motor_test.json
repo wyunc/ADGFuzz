@@ -1,0 +1,21 @@
+{
+    "motor_test_output": {
+        "pwm": [
+            [
+                "motor_test_throttle_value",
+                "1e",
+                "motors_get_pwm_output_min",
+                "int16_t",
+                "channel_throttle_get_radio_in",
+                "motors_get_pwm_output_max"
+            ],
+            2
+        ],
+        "motor_test_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

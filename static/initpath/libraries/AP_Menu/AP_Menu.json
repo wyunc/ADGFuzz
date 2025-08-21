@@ -1,0 +1,116 @@
+{
+    "_check_for_input": {
+        "c": [
+            [
+                "_port_read"
+            ],
+            0
+        ]
+    },
+    "_run_command": {
+        ".f": [
+            [
+                "strtof_argc",
+                "strtof__argv",
+                "strtof__str",
+                "strtof_null"
+            ],
+            0
+        ],
+        ".i": [
+            [
+                "atol__argv",
+                "atol_argc",
+                "atol__str"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_call_i",
+                "_call_argc"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "argc"
+            ],
+            0
+        ],
+        ".str": [
+            [
+                "strtok_r__inbuf",
+                "strtok_r_s",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "_port": [
+            [
+                "hal_console"
+            ],
+            0
+        ]
+    },
+    "check_input": {
+        "_port": [
+            [
+                "hal_console"
+            ],
+            0
+        ]
+    },
+    "set_limits": {
+        "_inbuf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_commandline_max": [
+            [
+                "commandline_max"
+            ],
+            0
+        ],
+        "_args_max": [
+            [
+                "args_max"
+            ],
+            0
+        ],
+        "_argv": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "_allocate_buffers": {
+        "_inbuf": [
+            [
+                "char",
+                "_commandline_max",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "_argv": [
+            [
+                "new_nothrow",
+                "arg",
+                "_args_max"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "init": {
+        "_duty_cycle_fd": [
+            [
+                "open_o_rdwr",
+                "open_o_cloexec",
+                "open__duty_path"
+            ],
+            0
+        ]
+    },
+    "set_duty_cycle": {
+        "_nsec_duty_cycle_value": [
+            [
+                "nsec_duty_cycle"
+            ],
+            0
+        ]
+    },
+    "_generate_export_path": {
+        "r": [
+            [
+                "asprintf_path",
+                "asprintf_chip"
+            ],
+            0
+        ]
+    }
+}

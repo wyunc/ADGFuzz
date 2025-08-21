@@ -1,0 +1,119 @@
+{
+    "_load_trim_values": {
+        "_dig.z2": [
+            [
+                "le16toh_trim_registers_dig_z2"
+            ],
+            0
+        ],
+        "_dig.z4": [
+            [
+                "le16toh_trim_registers_dig_z4"
+            ],
+            0
+        ],
+        "_dig.xy2": [
+            [
+                "trim_registers_dig_xy2"
+            ],
+            0
+        ],
+        "_dig.x1": [
+            [
+                "trim_registers_dig_x1"
+            ],
+            0
+        ],
+        "_dig.z3": [
+            [
+                "le16toh_trim_registers_dig_z3"
+            ],
+            0
+        ],
+        "_dig.xyz1": [
+            [
+                "le16toh_trim_registers_dig_xyz1"
+            ],
+            0
+        ],
+        "_dig.x2": [
+            [
+                "trim_registers_dig_x2"
+            ],
+            0
+        ],
+        "_dig.xy1": [
+            [
+                "trim_registers_dig_xy1"
+            ],
+            0
+        ],
+        "_dig.y1": [
+            [
+                "trim_registers_dig_y1"
+            ],
+            0
+        ],
+        "_dig.z1": [
+            [
+                "le16toh_trim_registers_dig_z1"
+            ],
+            0
+        ],
+        "_dig.y2": [
+            [
+                "trim_registers_dig_y2"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ret": [
+            [
+                "_dev_write_register_true",
+                "_dev_read_registers_val",
+                "_dev_write_register_soft_reset",
+                "_dev_write_register_odr_30hz",
+                "_load_trim_values",
+                "_dev_read_registers_chip_id_reg",
+                "_dev_write_register_power_and_operations_reg",
+                "_dev_write_register_repetitions_z_reg",
+                "_dev_write_register_power_control_val",
+                "_dev_write_register_op_mode_self_test_odr_reg",
+                "_dev_write_register_normal_mode",
+                "_dev_write_register_repetitions_xy_reg"
+            ],
+            0
+        ],
+        "_last_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "ret": [
+            [
+                "_dev_read_registers_uint8_t",
+                "data",
+                "_dev_read_registers_data_x_lsb_reg",
+                "sizeof_data"
+            ],
+            0
+        ],
+        "_last_read_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "rhall": [
+            [
+                "le16toh_data"
+            ],
+            0
+        ]
+    }
+}

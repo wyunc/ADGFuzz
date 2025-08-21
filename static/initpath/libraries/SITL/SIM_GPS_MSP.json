@@ -1,0 +1,157 @@
+{
+    "publish": {
+        "msp_gps.crc": [
+            [
+                "msp_gps_hdr_flags",
+                "crc8_dvb_s2_update_uint8_t",
+                "sizeof_msp_gps"
+            ],
+            0
+        ],
+        "msp_gps.month": [
+            [
+                "tm_tm_mon"
+            ],
+            0
+        ],
+        "msp_gps.gps_week": [
+            [
+                "t_week"
+            ],
+            0
+        ],
+        "msp_gps.vertical_pos_accuracy": [
+            [
+                "d_vertical_acc"
+            ],
+            0
+        ],
+        "tm": [
+            [
+                "gmtime_r_tv_tv_sec",
+                "gmtime_r_tvd"
+            ],
+            0
+        ],
+        "msp_gps.ned_vel_down": [
+            [
+                "d_speed_d"
+            ],
+            0
+        ],
+        "msp_gps.fix_type": [
+            [
+                "d_have_lock"
+            ],
+            0
+        ],
+        "msp_gps.ned_vel_north": [
+            [
+                "d_speed_n"
+            ],
+            0
+        ],
+        "msp_gps.true_yaw": [
+            [
+                "100u",
+                "wrap_360_d_yaw_deg"
+            ],
+            0
+        ],
+        "msp_gps.msl_altitude": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "msp_gps.horizontal_pos_accuracy": [
+            [
+                "d_horizontal_acc"
+            ],
+            0
+        ],
+        "msp_gps.year": [
+            [
+                "tm_tm_year"
+            ],
+            0
+        ],
+        "msp_gps.ground_course": [
+            [
+                "to_deg_atan2f",
+                "to_deg_d_speed_e",
+                "to_deg_d_speed_n"
+            ],
+            0
+        ],
+        "msp_gps.day": [
+            [
+                "tm_tm_mday"
+            ],
+            0
+        ],
+        "msp_gps.sec": [
+            [
+                "tm_tm_sec"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "msp_gps.hour": [
+            [
+                "tm_tm_hour"
+            ],
+            0
+        ],
+        "msp_gps.ms_tow": [
+            [
+                "t_ms"
+            ],
+            0
+        ],
+        "msp_gps.latitude": [
+            [
+                "_0e7",
+                "d_latitude"
+            ],
+            0
+        ],
+        "msp_gps.satellites_in_view": [
+            [
+                "d_num_sats",
+                "d_have_lock"
+            ],
+            0
+        ],
+        "msp_gps.min": [
+            [
+                "tm_tm_min"
+            ],
+            0
+        ],
+        "msp_gps.ned_vel_east": [
+            [
+                "d_speed_e"
+            ],
+            0
+        ],
+        "msp_gps.longitude": [
+            [
+                "_0e7",
+                "d_longitude"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "0x1f03"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "Run": {
+        "_last_calibration_update": [
+            [
+                "param_update_timestamp"
+            ],
+            0
+        ],
+        "_system_calibrating": [
+            [
+                "vehicle_status_calibration_enabled"
+            ],
+            0
+        ],
+        "variance": [
+            [
+                "_variance",
+                "gyro",
+                "_gyro_mean"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "gyro_calibration"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "init": {
+        "land_start_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "control_position": [
+            [
+                "copter_position_ok"
+            ],
+            0
+        ]
+    },
+    "nogps_run": {
+        "target_roll": [
+            [
+                "target_pitch"
+            ],
+            0
+        ]
+    }
+}

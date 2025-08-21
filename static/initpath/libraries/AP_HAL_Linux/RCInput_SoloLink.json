@@ -1,0 +1,32 @@
+{
+    "_check_hdr": {
+        "_last_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "delay": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "_last_seq": [
+            [
+                "le16toh__packet_seq"
+            ],
+            1
+        ]
+    },
+    "_timer_tick": {
+        "r": [
+            [
+                "_socket_recv__packet",
+                "_socket_recv_sizeof",
+                "_socket_recv__packet_buf"
+            ],
+            0
+        ]
+    }
+}

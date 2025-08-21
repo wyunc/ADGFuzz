@@ -1,0 +1,67 @@
+{
+    "actuator_to_thrust": {
+        "actuator": [
+            [
+                "spin_min",
+                "spin_max"
+            ],
+            0
+        ]
+    },
+    "apply_thrust_curve_and_volt_scaling": {
+        "battery_scale": [
+            [
+                "batt_voltage_filt_get"
+            ],
+            0
+        ],
+        "throttle_ratio": [
+            [
+                "thrust",
+                "safe_sqrt_thrust_curve_expo",
+                "lift_max",
+                "curve_expo"
+            ],
+            1
+        ]
+    },
+    "remove_thrust_curve_and_volt_scaling": {
+        "thrust": [
+            [
+                "batt_voltage_filt_get",
+                "throttle",
+                "curve_expo",
+                "lift_max"
+            ],
+            2
+        ]
+    },
+    "update_lift_max_from_batt_voltage": {
+        "_batt_voltage": [
+            [
+                "battery_voltage_batt_idx",
+                "battery_voltage_resting_estimate_batt_idx",
+                "motors_has_option_batt_raw_voltage",
+                "batt_voltage_max",
+                "batt_voltage_min"
+            ],
+            0
+        ],
+        "lift_max": [
+            [
+                "curve_expo",
+                "batt_voltage_filt_get"
+            ],
+            1
+        ]
+    },
+    "get_compensation_gain": {
+        "ret": [
+            [
+                "ahrs_get_air_density_ratio",
+                "get_lift_max"
+            ],
+            1
+        ]
+    }
+}

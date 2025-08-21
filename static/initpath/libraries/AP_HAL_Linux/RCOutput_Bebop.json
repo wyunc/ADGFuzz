@@ -1,0 +1,228 @@
+{
+    "_start_prop": {
+        "_state": [
+            [
+                "bebop_bldc_started"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "bebop_bldc_startprop"
+            ],
+            0
+        ]
+    },
+    "_set_ref_speed": {
+        "data.checksum": [
+            [
+                "sizeof_data",
+                "data",
+                "_checksum_uint8_t"
+            ],
+            0
+        ],
+        "data.cmd": [
+            [
+                "bebop_bldc_setrefspeed"
+            ],
+            0
+        ]
+    },
+    "read_obs_data": {
+        "obs.batt_mv": [
+            [
+                "be16toh_data_batt_mv"
+            ],
+            0
+        ],
+        "obs.error": [
+            [
+                "data_error"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "bebop_bldc_stopped",
+                "bebop_bldc_started"
+            ],
+            0
+        ],
+        "obs.motors_err": [
+            [
+                "data_motors_err"
+            ],
+            0
+        ],
+        "obs.temperature": [
+            [
+                "data_temp"
+            ],
+            0
+        ],
+        "bldc_status": [
+            [
+                "0x0f",
+                "enum",
+                "data_status"
+            ],
+            0
+        ],
+        "obs.status": [
+            [
+                "data_status"
+            ],
+            0
+        ]
+    },
+    "_stop_prop": {
+        "data": [
+            [
+                "bebop_bldc_stop_prop"
+            ],
+            0
+        ]
+    },
+    "_clear_error": {
+        "data": [
+            [
+                "bebop_bldc_clear_error"
+            ],
+            0
+        ]
+    },
+    "play_note": {
+        "msg.duration": [
+            [
+                "htobe16_duration_ms"
+            ],
+            0
+        ],
+        "msg.pwm": [
+            [
+                "pwm"
+            ],
+            0
+        ],
+        "msg.header": [
+            [
+                "bebop_bldc_play_sound"
+            ],
+            0
+        ],
+        "msg.period": [
+            [
+                "htobe16_period_us"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "param": [
+            [
+                "rcout_bebop_rtprio",
+                "_sched_priority"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pthread_create__control_thread",
+                "pthread_mutex_init_nullptr",
+                "pthread_create_this",
+                "pthread_cond_init_cond_attr",
+                "pthread_cond_init__cond",
+                "pthread_mutex_init__mutex",
+                "pthread_create__thread",
+                "pthread_attr_init_attr",
+                "pthread_create_attr"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        "_frequency": [
+            [
+                "freq_hz"
+            ],
+            0
+        ]
+    },
+    "_control_thread": {
+        "rcout": [
+            [
+                "arg",
+                "rc_output_bebop"
+            ],
+            0
+        ]
+    },
+    "_run_rcout": {
+        "bebop_bldc_right_front": [
+            [
+                "bebop_bldc_motor_2",
+                "bebop_bldc_motor_1"
+            ],
+            0
+        ],
+        "bebop_bldc_left_back": [
+            [
+                "bebop_bldc_motor_3",
+                "bebop_bldc_motor_4"
+            ],
+            0
+        ],
+        "hw_version": [
+            [
+                "from_hal_util_get_hw_arm32"
+            ],
+            0
+        ],
+        "bebop_bldc_left_front": [
+            [
+                "bebop_bldc_motor_2",
+                "bebop_bldc_motor_1"
+            ],
+            0
+        ],
+        "bebop_bldc_right_back": [
+            [
+                "bebop_bldc_motor_3",
+                "bebop_bldc_motor_4"
+            ],
+            0
+        ],
+        "_max_rpm": [
+            [
+                "bebop_bldc_max_rpm_disco",
+                "bebop_bldc_max_rpm_1",
+                "bebop_bldc_max_rpm_2"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pthread_cond_timedwait_ts",
+                "pthread_cond_timedwait__cond",
+                "clock_gettime_ts",
+                "clock_gettime_clock_monotonic",
+                "pthread_cond_timedwait__mutex"
+            ],
+            0
+        ],
+        "ts.tv_nsec": [
+            [
+                "bebop_bldc_timeout_ns",
+                "ts_tv_nsec"
+            ],
+            0
+        ],
+        "_n_motors": [
+            [
+                "info_n_motors"
+            ],
+            0
+        ]
+    }
+}

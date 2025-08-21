@@ -1,0 +1,72 @@
+{
+    "updateInitialize": {
+        "ret": [
+            [
+                "update_initialize"
+            ],
+            0
+        ]
+    },
+    "activate": {
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ]
+    },
+    "_scaleSticks": {
+        "max_speed_from_estimator": [
+            [
+                "_sub_vehicle_local_position_get_vxy_max"
+            ],
+            0
+        ],
+        "vel_sp_xy": [
+            [
+                "_sticks_get_pitch_roll_expo",
+                "constrain_max_speed_from_estimator",
+                "constrain_velocity_scale",
+                "_param_mpc_vel_manual_get"
+            ],
+            2
+        ]
+    },
+    "_updateXYlock": {
+        "apply_brake": [
+            [
+                "vector2f__velocity_setpoint_length",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "_reset_counter": [
+            [
+                "_sub_vehicle_local_position_get_xy_reset_counter"
+            ],
+            0
+        ],
+        "stopped": [
+            [
+                "vector2f__velocity_length",
+                "flt_epsilon",
+                "_param_mpc_hold_max_xy_get"
+            ],
+            1
+        ]
+    },
+    "_updateSetpoints": {
+        "_yawspeed_setpoint": [
+            [
+                "_weathervane_get_weathervane_yawrate"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

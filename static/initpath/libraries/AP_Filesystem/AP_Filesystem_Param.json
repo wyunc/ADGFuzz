@@ -1,0 +1,189 @@
+{
+    "open": {
+        "r.cursors": [
+            [
+                "cursor",
+                "num_cursors",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "read_only": [
+            [
+                "o_accmode",
+                "o_rdonly",
+                "flags"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "idx",
+                "file"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "einval",
+                "enoent",
+                "enfile",
+                "enomem"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "strchr_fname",
+                "strchr_c"
+            ],
+            0
+        ],
+        "r.with_defaults": [
+            [
+                "strtoul_c",
+                "strtoul_nullptr"
+            ],
+            1
+        ],
+        "r.writebuf": [
+            [
+                "nullptr",
+                "expanding_string",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "r.cursors": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "fd",
+                "file"
+            ],
+            0
+        ],
+        "r.writebuf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "ebadf",
+                "einval"
+            ],
+            0
+        ]
+    },
+    "token_seek": {
+        "c.trailer_len": [
+            [
+                "c_token_ofs",
+                "pack_param_tbuf",
+                "pack_param_c",
+                "pack_param_r"
+            ],
+            2
+        ],
+        "data_ofs": [
+            [
+                "c_token_ofs"
+            ],
+            0
+        ],
+        "c.token_ofs": [
+            [
+                "c_token_ofs",
+                "pack_param_tbuf",
+                "pack_param_c",
+                "pack_param_r",
+                "c_trailer_len",
+                "c_token_ofs"
+            ],
+            3
+        ]
+    },
+    "stat": {
+        "st_size": [
+            [
+                "count_parameters"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "enoent"
+            ],
+            0
+        ]
+    },
+    "check_file_name": {
+        "packed_len": [
+            [
+                "strlen_packed_name"
+            ],
+            0
+        ]
+    },
+    "param_upload_parse": {
+        "b": [
+            [
+                "sizeof_hdr",
+                "const",
+                "uint8_t",
+                "r_writebuf_get_string",
+                "name_len"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "ap_var_type",
+                "enum"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "find_flags2",
+                "find_name",
+                "find_ptype2"
+            ],
+            0
+        ],
+        "ptype": [
+            [
+                "ap_var_type",
+                "enum",
+                "0x0f"
+            ],
+            0
+        ],
+        "ptype2": [
+            [
+                "ap_param_none"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "r_writebuf_get_length"
+            ],
+            0
+        ],
+        "common_len": [
+            [
+                "0x_f"
+            ],
+            0
+        ]
+    }
+}

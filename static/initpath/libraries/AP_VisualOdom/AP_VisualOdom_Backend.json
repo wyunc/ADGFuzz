@@ -1,0 +1,35 @@
+{
+    "handle_vision_position_delta_msg": {
+        "angle_delta": [
+            [
+                "vector3f_packet_angle_delta"
+            ],
+            0
+        ],
+        "rot": [
+            [
+                "_frontend_get_orientation"
+            ],
+            0
+        ],
+        "position_delta": [
+            [
+                "vector3f_packet_position_delta"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "time_delta_sec": [
+            [
+                "_0e",
+                "packet_time_delta_usec"
+            ],
+            0
+        ]
+    }
+}

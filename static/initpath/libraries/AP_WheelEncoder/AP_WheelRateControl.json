@@ -1,0 +1,57 @@
+{
+    "get_rate_controlled_throttle": {
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "actual_rate": [
+            [
+                "_wheel_encoder_get_rate_instance"
+            ],
+            0
+        ],
+        ".lower": [
+            [
+                "rate_pid_update_all__limit",
+                "rate_pid_update_all_desired_rate",
+                "rate_pid_update_all__lower",
+                "rate_pid_get_ff",
+                "rate_pid_update_all__upper",
+                "rate_pid_update_all_actual_rate",
+                "rate_pid_update_all_instance",
+                "rate_pid_update_all_dt"
+            ],
+            1
+        ],
+        "rate_pid": [
+            [
+                "instance",
+                "_rate_pid1",
+                "_rate_pid0"
+            ],
+            0
+        ],
+        "desired_rate": [
+            [
+                "get_rate_max_rads",
+                "desired_rate_pct"
+            ],
+            0
+        ],
+        ".upper": [
+            [
+                "rate_pid_update_all__limit",
+                "rate_pid_update_all_desired_rate",
+                "rate_pid_update_all__lower",
+                "rate_pid_get_ff",
+                "rate_pid_update_all__upper",
+                "rate_pid_update_all_actual_rate",
+                "rate_pid_update_all_instance",
+                "rate_pid_update_all_dt"
+            ],
+            1
+        ]
+    }
+}

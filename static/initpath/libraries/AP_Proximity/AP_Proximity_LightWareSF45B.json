@@ -1,0 +1,92 @@
+{
+    "initialise": {
+        "_last_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_sensor_state.streaming_fields": [
+            [
+                "proximity_sf45b_desired_fields"
+            ],
+            0
+        ]
+    },
+    "process_replies": {
+        "nbytes": [
+            [
+                "_uart_available_1024u"
+            ],
+            0
+        ]
+    },
+    "process_message": {
+        "_minisector": [
+            [
+                "convert_angle_to_minisector_angle_deg"
+            ],
+            1
+        ],
+        "_face_distance": [
+            [
+                "uint16_value__msg_payload",
+                "_distance_filt_apply_int16_t_uint16_value__msg_payload",
+                "int16_max"
+            ],
+            1
+        ],
+        "_sensor_state.stream_data_type": [
+            [
+                "uint32_value__msg_payload"
+            ],
+            0
+        ],
+        "_sensor_state.streaming_fields": [
+            [
+                "uint32_value__msg_payload"
+            ],
+            0
+        ],
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_sensor_state.update_rate": [
+            [
+                "_msg_payload"
+            ],
+            0
+        ],
+        "_face": [
+            [
+                "frontend_boundary_get_face_angle_deg"
+            ],
+            1
+        ],
+        "_minisector_distance": [
+            [
+                "uint16_value__msg_payload",
+                "_distance_filt_apply_int16_t_uint16_value__msg_payload",
+                "int16_max"
+            ],
+            1
+        ],
+        "_minisector_angle": [
+            [
+                "uint16_value__msg_payload",
+                "correct_angle_for_orientation_int16_t_uint16_value__msg_payload"
+            ],
+            1
+        ],
+        "_face_yaw_deg": [
+            [
+                "uint16_value__msg_payload",
+                "correct_angle_for_orientation_int16_t_uint16_value__msg_payload"
+            ],
+            1
+        ]
+    }
+}

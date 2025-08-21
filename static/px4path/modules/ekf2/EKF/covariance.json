@@ -1,0 +1,224 @@
+{
+    "initialiseCovariance": {
+        "z_pos_var": [
+            [
+                "sq__params_gps_pos_noise",
+                "sq__params_baro_noise",
+                "sq__params_range_noise",
+                "sq_fmaxf",
+                "sq__f"
+            ],
+            0
+        ],
+        "vel_var": [
+            [
+                "sq",
+                "sq_fmaxf",
+                "sq__params_gps_vel_noise"
+            ],
+            0
+        ],
+        "xy_pos_var": [
+            [
+                "sq__params_pos_noaid_noise",
+                "sq_fmaxf",
+                "sq__params_gps_pos_noise"
+            ],
+            0
+        ]
+    },
+    "predictCovariance": {
+        "accel_bias_sig": [
+            [
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_vel_dt",
+                "_params_accel_bias_p_noise"
+            ],
+            1
+        ],
+        "wind_vel_nsd_scaled": [
+            [
+                "_f",
+                "fabsf_height_rate",
+                "_params_wind_vel_nsd_scaler",
+                "_params_wind_vel_nsd"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "accel_bias_idx",
+                "wind_vel_idx",
+                "mag_b_idx",
+                "gyro_bias_idx",
+                "mag_i_idx",
+                "index"
+            ],
+            0
+        ],
+        "terrain_process_noise": [
+            [
+                "sq__params_terrain_p_noise",
+                "sq_imu_delayed_delta_vel_dt"
+            ],
+            0
+        ],
+        "mag_B_process_noise": [
+            [
+                "sq_mag_b_sig"
+            ],
+            0
+        ],
+        "mag_I_process_noise": [
+            [
+                "sq_mag_i_sig"
+            ],
+            0
+        ],
+        "gyro_bias_sig": [
+            [
+                "_params_gyro_bias_p_noise",
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_vel_dt"
+            ],
+            1
+        ],
+        "wind_vel_process_noise": [
+            [
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_vel_dt",
+                "sq_wind_vel_nsd_scaled"
+            ],
+            1
+        ],
+        "accel_noise": [
+            [
+                "_params_accel_noise"
+            ],
+            0
+        ],
+        "mag_I_sig": [
+            [
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_vel_dt",
+                "_params_mage_p_noise"
+            ],
+            1
+        ],
+        "mag_B_sig": [
+            [
+                "_params_magb_p_noise",
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_vel_dt"
+            ],
+            1
+        ],
+        "gyro_bias_process_noise": [
+            [
+                "sq_gyro_bias_sig"
+            ],
+            0
+        ],
+        "gyro_var": [
+            [
+                "sq_gyro_noise"
+            ],
+            0
+        ],
+        "accel_bias_process_noise": [
+            [
+                "sq_accel_bias_sig"
+            ],
+            0
+        ],
+        "gyro_noise": [
+            [
+                "_params_gyro_noise"
+            ],
+            0
+        ],
+        "height_rate": [
+            [
+                "imu_delayed_delta_vel_dt",
+                "_height_rate_lpf_update__state_vel"
+            ],
+            0
+        ]
+    },
+    "constrainStateVar": {
+        "i": [
+            [
+                "state_idx"
+            ],
+            0
+        ],
+        "R": [
+            [
+                "_f",
+                "p_i"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "innov_var": [
+            [
+                "p_i",
+                "r"
+            ],
+            0
+        ]
+    },
+    "constrainStateVarLimitRatio": {
+        "i": [
+            [
+                "state_idx"
+            ],
+            0
+        ],
+        "state_var_max": [
+            [
+                "p_i",
+                "_f"
+            ],
+            0
+        ],
+        "limited_max": [
+            [
+                "constrain_min",
+                "constrain_state_var_max",
+                "constrain_max"
+            ],
+            0
+        ],
+        "limited_min": [
+            [
+                "constrain_min",
+                "constrain_max_ratio",
+                "constrain_max",
+                "constrain_limited_max"
+            ],
+            0
+        ]
+    },
+    "resetQuatCov": {
+        "yaw_var": [
+            [
+                "sq_yaw_noise",
+                "sq"
+            ],
+            0
+        ],
+        "tilt_var": [
+            [
+                "sq__params_initial_tilt_err",
+                "sq_max"
+            ],
+            0
+        ]
+    }
+}

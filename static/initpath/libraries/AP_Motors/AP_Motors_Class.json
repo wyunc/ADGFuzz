@@ -1,0 +1,164 @@
+{
+    "get_frame_and_type_string": {
+        "type_str": [
+            [
+                "get_type_string"
+            ],
+            0
+        ],
+        "frame_str": [
+            [
+                "get_frame_string"
+            ],
+            0
+        ]
+    },
+    "armed": {
+        "_armed": [
+            [
+                "arm"
+            ],
+            0
+        ],
+        "flags.armed": [
+            [
+                "arm"
+            ],
+            0
+        ]
+    },
+    "set_desired_spool_state": {
+        "_spool_desired": [
+            [
+                "spool"
+            ],
+            0
+        ]
+    },
+    "set_radio_passthrough": {
+        "_pitch_radio_passthrough": [
+            [
+                "pitch_input"
+            ],
+            0
+        ],
+        "_yaw_radio_passthrough": [
+            [
+                "yaw_input"
+            ],
+            0
+        ],
+        "_throttle_radio_passthrough": [
+            [
+                "throttle_input"
+            ],
+            0
+        ],
+        "_roll_radio_passthrough": [
+            [
+                "roll_input"
+            ],
+            0
+        ]
+    },
+    "rc_write": {
+        "function": [
+            [
+                "get_motor_function_chan"
+            ],
+            0
+        ]
+    },
+    "rc_write_angle": {
+        "function": [
+            [
+                "get_motor_function_chan"
+            ],
+            0
+        ]
+    },
+    "rc_set_freq": {
+        "mask": [
+            [
+                "motor_mask_to_srv_channel_mask_motor_mask"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "_pwm_type"
+            ],
+            0
+        ]
+    },
+    "add_motor_num": {
+        "function": [
+            [
+                "get_motor_function_motor_num"
+            ],
+            0
+        ]
+    },
+    "set_limit_flag_pitch_roll_yaw": {
+        "limit.roll": [
+            [
+                "flag"
+            ],
+            0
+        ],
+        "limit.pitch": [
+            [
+                "flag"
+            ],
+            0
+        ],
+        "limit.yaw": [
+            [
+                "flag"
+            ],
+            0
+        ]
+    },
+    "set_external_limits": {
+        "external_limits.yaw": [
+            [
+                "yaw"
+            ],
+            0
+        ],
+        "external_limits.pitch": [
+            [
+                "pitch"
+            ],
+            0
+        ],
+        "external_limits.throttle_lower": [
+            [
+                "throttle_lower"
+            ],
+            0
+        ],
+        "external_limits.roll": [
+            [
+                "roll"
+            ],
+            0
+        ],
+        "external_limits.throttle_upper": [
+            [
+                "throttle_upper"
+            ],
+            0
+        ]
+    },
+    "set_frame_string": {
+        "custom_frame_string": [
+            [
+                "new_nothrow",
+                "strlen_str",
+                "char"
+            ],
+            1
+        ]
+    }
+}

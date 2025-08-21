@@ -1,0 +1,577 @@
+{
+    "syncHandler": {
+        "ret": [
+            [
+                "px4_poll_timeout_ms",
+                "px4_poll__fds"
+            ],
+            0
+        ],
+        "time_elapsed": [
+            [
+                "hrt_elapsed_time_start_time"
+            ],
+            0
+        ]
+    },
+    "readSync": {
+        "request.item": [
+            [
+                "item",
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_read"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "sync_handler_timeout",
+                "sync_handler_response",
+                "sync_handler_request",
+                "sync_handler_timestamp"
+            ],
+            0
+        ],
+        "request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "request.data_length": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ]
+    },
+    "writeSync": {
+        "request.data_length": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "request.item": [
+            [
+                "item",
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "sync_handler_request",
+                "sync_handler_timestamp",
+                "sync_handler_response",
+                "sync_handler_timeout"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_write"
+            ],
+            0
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ]
+    },
+    "clearSync": {
+        "request.item": [
+            [
+                "static_cast",
+                "item",
+                "uint8_t"
+            ],
+            0
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_clear"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "sync_handler_timeout",
+                "sync_handler_request",
+                "sync_handler_response",
+                "sync_handler_timestamp"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "readAsync": {
+        "request.item": [
+            [
+                "uint8_t",
+                "item",
+                "static_cast"
+            ],
+            0
+        ],
+        "_active_request.buffer": [
+            [
+                "buffer"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_read"
+            ],
+            0
+        ],
+        "request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "request_sent"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_active_request.length": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "_active_request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "_active_request.request_type": [
+            [
+                "dm_read"
+            ],
+            0
+        ],
+        "_active_request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_active_request.item": [
+            [
+                "item"
+            ],
+            0
+        ],
+        "request.data_length": [
+            [
+                "length"
+            ],
+            0
+        ]
+    },
+    "writeAsync": {
+        "_active_request.buffer": [
+            [
+                "buffer"
+            ],
+            0
+        ],
+        "request.item": [
+            [
+                "uint8_t",
+                "static_cast",
+                "item"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_write"
+            ],
+            0
+        ],
+        "request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "_active_request.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "request.data_length": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "_active_request.request_type": [
+            [
+                "dm_write"
+            ],
+            0
+        ],
+        "_active_request.item": [
+            [
+                "item"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "request_sent"
+            ],
+            0
+        ],
+        "_active_request.length": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "_active_request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "clearAsync": {
+        "_state": [
+            [
+                "request_sent"
+            ],
+            0
+        ],
+        "_active_request.index": [
+            [
+                "request_index"
+            ],
+            0
+        ],
+        "_active_request.request_type": [
+            [
+                "dm_clear"
+            ],
+            0
+        ],
+        "request.request_type": [
+            [
+                "dm_clear"
+            ],
+            0
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ],
+        "_active_request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "request.item": [
+            [
+                "static_cast",
+                "uint8_t",
+                "item"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_active_request.item": [
+            [
+                "item"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "request.request_type": [
+            [
+                "_active_request_request_type",
+                "static_cast",
+                "uint8_t"
+            ],
+            0
+        ],
+        "request.index": [
+            [
+                "_active_request_index"
+            ],
+            0
+        ],
+        "request.data_length": [
+            [
+                "_active_request_length"
+            ],
+            0
+        ],
+        "_response_status": [
+            [
+                "response_status"
+            ],
+            0
+        ],
+        "request.item": [
+            [
+                "_active_request_item",
+                "static_cast",
+                "uint8_t"
+            ],
+            0
+        ],
+        "request.client_id": [
+            [
+                "_client_id"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "request_sent",
+                "response_received"
+            ],
+            0
+        ],
+        "_active_request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        ".cache_state": [
+            [
+                "request_sent",
+                "error",
+                "response_received"
+            ],
+            0
+        ],
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "lastOperationCompleted": {
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "abortCurrentOperation": {
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "resize": {
+        "_num_items": [
+            [
+                "num_items"
+            ],
+            0
+        ],
+        "_items": [
+            [
+                "num_items",
+                "item",
+                "new"
+            ],
+            1
+        ],
+        "num_min": [
+            [
+                "num_items"
+            ],
+            0
+        ]
+    },
+    "load": {
+        ".cache_state": [
+            [
+                "request_prepared"
+            ],
+            0
+        ],
+        ".response.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "_load_index": [
+            [
+                "_num_items"
+            ],
+            0
+        ],
+        ".response.item": [
+            [
+                "item"
+            ],
+            0
+        ]
+    },
+    "loadWait": {
+        ".cache_state": [
+            [
+                "response_received"
+            ],
+            0
+        ],
+        "_load_index": [
+            [
+                "_num_items"
+            ],
+            0
+        ],
+        ".response.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "_client_read_sync_buffer",
+                "_client_read_sync_length",
+                "_client_read_sync_index",
+                "_client_read_sync_item",
+                "_client_read_sync_timeout"
+            ],
+            0
+        ],
+        ".response.item": [
+            [
+                "item"
+            ],
+            0
+        ]
+    },
+    "writeWait": {
+        "success": [
+            [
+                "_client_write_sync_item",
+                "_client_write_sync_timeout",
+                "_client_write_sync_length",
+                "_client_write_sync_buffer",
+                "_client_write_sync_index"
+            ],
+            0
+        ],
+        ".cache_state": [
+            [
+                "response_received"
+            ],
+            0
+        ]
+    },
+    "invalidate": {
+        ".cache_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "changeUpdateIndex": {
+        "_update_index": [
+            [
+                "_num_items"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,335 @@
+{
+    "init_internals": {
+        "use_poshold": [
+            [
+                "_use_poshold"
+            ],
+            0
+        ],
+        "pos_control": [
+            [
+                "_pos_control"
+            ],
+            0
+        ],
+        "attitude_control": [
+            [
+                "_attitude_control"
+            ],
+            0
+        ],
+        "motors": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "level_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "step": [
+            [
+                "waiting_for_level"
+            ],
+            0
+        ],
+        "inertial_nav": [
+            [
+                "_inertial_nav"
+            ],
+            0
+        ],
+        "ahrs_view": [
+            [
+                "_ahrs_view"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "tuning"
+            ],
+            0
+        ],
+        "step_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "disarmed": {
+        "tune_complete_no_testing": [
+            [
+                "in_autotune_mode",
+                "have_pilot_testing_command"
+            ],
+            0
+        ],
+        "testing_tuned": [
+            [
+                "loaded_gains",
+                "have_pilot_testing_command",
+                "gain_tuned"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "level_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "desired_yaw_cd": [
+            [
+                "ahrs_view_yaw_sensor"
+            ],
+            0
+        ],
+        "step": [
+            [
+                "waiting_for_level"
+            ],
+            0
+        ],
+        "last_pilot_override_warning": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "zero_rp_input": [
+            [
+                "is_zero_target_pitch_cd",
+                "is_zero_target_roll_cd"
+            ],
+            0
+        ],
+        "step_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "target_climb_rate_cms": [
+            [
+                "get_pilot_desired_climb_rate_cms"
+            ],
+            0
+        ],
+        "override_time": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "currently_level": {
+        "mode": [
+            [
+                "failed"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "threshold_mul": [
+            [
+                "float_level_start_time_ms",
+                "float_now_ms",
+                "autotune_level_timeout_ms",
+                "float"
+            ],
+            0
+        ]
+    },
+    "control_attitude": {
+        "axis": [
+            [
+                "pitch",
+                "yaw",
+                "yaw_d"
+            ],
+            0
+        ],
+        "step_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "positive_direction": [
+            [
+                "twitch_reverse_direction"
+            ],
+            0
+        ],
+        "step_time_limit_ms": [
+            [
+                "get_testing_step_timeout_ms",
+                "autotune_required_level_time_ms"
+            ],
+            0
+        ],
+        "level_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "start_rate": [
+            [
+                "to_deg_ahrs_view_get_gyro_y",
+                "to_deg_ahrs_view_get_gyro_z",
+                "to_deg_ahrs_view_get_gyro_x"
+            ],
+            0
+        ],
+        "step": [
+            [
+                "waiting_for_level",
+                "testing"
+            ],
+            0
+        ],
+        "counter": [
+            [
+                "autotune_success_count"
+            ],
+            0
+        ],
+        "desired_yaw_cd": [
+            [
+                "ahrs_view_yaw_sensor"
+            ],
+            0
+        ],
+        "start_angle": [
+            [
+                "ahrs_view_yaw_sensor",
+                "ahrs_view_pitch_sensor",
+                "ahrs_view_roll_sensor"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "success"
+            ],
+            0
+        ]
+    },
+    "backup_gains_and_initialise": {
+        "axis": [
+            [
+                "roll",
+                "yaw",
+                "yaw_d",
+                "pitch"
+            ],
+            0
+        ],
+        "step_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "desired_yaw_cd": [
+            [
+                "ahrs_view_yaw_sensor"
+            ],
+            0
+        ],
+        "level_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "step": [
+            [
+                "waiting_for_level"
+            ],
+            0
+        ]
+    },
+    "load_gains": {
+        "loaded_gains": [
+            [
+                "gain_type"
+            ],
+            0
+        ]
+    },
+    "position_ok": {
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "get_poshold_attitude": {
+        "angle_ne": [
+            [
+                "pdiff_length",
+                "pdiff_length",
+                "dist_limit_cm",
+                "angle_max_cd"
+            ],
+            2
+        ],
+        "pitch_cd_out": [
+            [
+                "angle_ne_y",
+                "ahrs_view_sin_yaw",
+                "ahrs_view_cos_yaw",
+                "angle_ne_x"
+            ],
+            0
+        ],
+        "yaw_cd_out": [
+            [
+                "degrees_pdiff_y",
+                "degrees_pdiff_x",
+                "degrees_atan2f"
+            ],
+            1
+        ],
+        "roll_cd_out": [
+            [
+                "angle_ne_y",
+                "ahrs_view_sin_yaw",
+                "angle_ne_x",
+                "ahrs_view_cos_yaw"
+            ],
+            0
+        ],
+        "pdiff": [
+            [
+                "inertial_nav_get_position_neu_cm",
+                "inertial_nav_get_position_neu_cm"
+            ],
+            1
+        ]
+    },
+    "next_tune_type": {
+        "curr_tune_type": [
+            [
+                "tune_seq_curr",
+                "tune_seq"
+            ],
+            0
+        ]
+    }
+}

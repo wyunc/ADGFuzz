@@ -1,0 +1,150 @@
+{
+    "simstate_send": {
+        "yaw": [
+            [
+                "state_yaw_deg"
+            ],
+            0
+        ]
+    },
+    "sim_state_send": {
+        "yaw": [
+            [
+                "state_yaw_deg"
+            ],
+            0
+        ]
+    },
+    "Log_Write_SIMSTATE": {
+        "yaw": [
+            [
+                "state_yaw_deg"
+            ],
+            0
+        ]
+    },
+    "convert_body_frame": {
+        "thetaDot": [
+            [
+                "to_rad_pitch_rate"
+            ],
+            0
+        ],
+        "phi": [
+            [
+                "to_rad_roll_deg"
+            ],
+            0
+        ],
+        "psiDot": [
+            [
+                "to_rad_yaw_rate"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "theta_dot",
+                "psi_dot",
+                "cos_theta",
+                "cos_phi",
+                "sin_phi"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "psi_dot",
+                "sin_theta",
+                "phi_dot"
+            ],
+            0
+        ],
+        "phiDot": [
+            [
+                "to_rad_roll_rate"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "to_rad_pitch_deg"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "theta_dot",
+                "psi_dot",
+                "cos_theta",
+                "cos_phi",
+                "sin_phi"
+            ],
+            0
+        ]
+    },
+    "measure_distance_at_angle_bf": {
+        "write_debug_files": [
+            [
+                "count"
+            ],
+            0
+        ],
+        "min_dist_cm": [
+            [
+                "_length",
+                "intersection_point_cm",
+                "vehicle_pos_cm"
+            ],
+            1
+        ],
+        "postfile": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "num_post_offset"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "num_post_offset"
+            ],
+            0
+        ],
+        "post_location": [
+            [
+                "post_origin"
+            ],
+            0
+        ],
+        "intersection_point": [
+            [
+                "location"
+            ],
+            0
+        ],
+        "intersectionsfile": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "location2": [
+            [
+                "location"
+            ],
+            0
+        ],
+        "rayfile": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

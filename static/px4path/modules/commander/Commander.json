@@ -1,0 +1,1002 @@
+{
+    "stop_tune": {
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "power_button_state_notification_cb": {
+        "button_state.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pwr_button_response_shut_down_pending"
+            ],
+            0
+        ],
+        "button_state.event": [
+            [
+                "pwr_button_state_down",
+                "pwr_button_state_up",
+                "pwr_button_state_idel",
+                "pwr_button_state_request_shutdown"
+            ],
+            0
+        ]
+    },
+    "wait_for_vehicle_command_reply": {
+        ".result": [
+            [
+                "vehicle_cmd_result_accepted"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "custom_command": {
+        "longitude": [
+            [
+                "atof_argv"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "broadcast_vehicle_command__f",
+                "broadcast_vehicle_command_vehicle_cmd_start_rx_pair"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "atof_argv"
+            ],
+            0
+        ],
+        "param2": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "atof_argv"
+            ],
+            0
+        ]
+    },
+    "handle_command": {
+        "heading_radians": [
+            [
+                "_f",
+                "px4_isfinite_cmd_param1",
+                "radians_cmd_param1",
+                "radians_roundf"
+            ],
+            0
+        ],
+        "main_ret": [
+            [
+                "transition_changed",
+                "transition_denied",
+                "transition_not_changed"
+            ],
+            0
+        ],
+        "standard_mode": [
+            [
+                "roundf_cmd_param1"
+            ],
+            0
+        ],
+        "arming_action": [
+            [
+                "lroundf_cmd_param1",
+                "static_cast",
+                "int8_t"
+            ],
+            0
+        ],
+        "base_mode": [
+            [
+                "cmd_param1",
+                "uint8_t"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "nan",
+                "cmd_param4"
+            ],
+            0
+        ],
+        "cmd_result": [
+            [
+                "vehicle_cmd_result_failed",
+                "vehicle_cmd_result_temporarily_rejected",
+                "vehicle_cmd_result_accepted",
+                "vehicle_cmd_result_denied",
+                "vehicle_cmd_result_unsupported",
+                "handle_command_actuator_test_cmd"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "cmd_param5"
+            ],
+            0
+        ],
+        "unsupported_bits_set": [
+            [
+                "uint32_t_cmd_param2"
+            ],
+            1
+        ],
+        "param1": [
+            [
+                "cmd_param1"
+            ],
+            0
+        ],
+        "arming_res": [
+            [
+                "arm_forced",
+                "disarm_forced",
+                "arm_arm_disarm_reason",
+                "transition_denied",
+                "disarm_arm_disarm_reason",
+                "arm_cmd_from_external"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "cmd_param3",
+                "nan"
+            ],
+            0
+        ],
+        "force": [
+            [
+                "navigation_state_auto_land"
+            ],
+            0
+        ],
+        "custom_main_mode": [
+            [
+                "cmd_param2",
+                "uint8_t"
+            ],
+            0
+        ],
+        "forced": [
+            [
+                "static_cast",
+                "lroundf_cmd_param2",
+                "int"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "cmd_param6"
+            ],
+            0
+        ],
+        "mode_switch_not_requested": [
+            [
+                "uint32_t_cmd_param2"
+            ],
+            1
+        ],
+        "yaw": [
+            [
+                "nan",
+                "wrap_2pi_cmd_param4",
+                "float",
+                "px4_isfinite_yaw",
+                "wrap_2pi_radians"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "cmd_param7"
+            ],
+            0
+        ],
+        "use_current": [
+            [
+                "cmd_param1"
+            ],
+            0
+        ],
+        "desired_nav_state": [
+            [
+                "navigation_state_stab",
+                "cmd_param1",
+                "navigation_state_position_slow",
+                "navigation_state_auto_mission",
+                "navigation_state_auto_loiter",
+                "cmd_param3",
+                "uint8_t",
+                "navigation_state_acro",
+                "navigation_state_auto_rtl",
+                "navigation_state_auto_takeoff",
+                "navigation_state_manual",
+                "navigation_state_auto_precland",
+                "navigation_state_offboard",
+                "navigation_state_altctl",
+                "navigation_state_max",
+                "px4_custom_sub_mode_external1",
+                "uint8_t",
+                "navigation_state_auto_follow_target",
+                "navigation_state_external1",
+                "navigation_state_auto_land",
+                "navigation_state_posctl"
+            ],
+            1
+        ]
+    },
+    "handleCommandsFromModeExecutors": {
+        "mode_executor_in_charge": [
+            [
+                "_mode_management_mode_executor_in_charge"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_vehicle_command_mode_executor_sub_get_last_generation"
+            ],
+            0
+        ],
+        "cmd.source_system": [
+            [
+                "_vehicle_status_system_id"
+            ],
+            0
+        ],
+        "cmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handleCommandActuatorTest": {
+        "actuator_test.function": [
+            [
+                "actuator_test_function",
+                "first_motor_function",
+                "int",
+                "function_servo1",
+                "function_motor1",
+                "first_servo_function",
+                "cmd_param5"
+            ],
+            0
+        ],
+        "actuator_test.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "actuator_test.timeout_ms": [
+            [
+                "int",
+                "_f",
+                "cmd_param2"
+            ],
+            1
+        ],
+        "actuator_test.action": [
+            [
+                "action_release_control",
+                "action_do_control"
+            ],
+            0
+        ],
+        "actuator_test.value": [
+            [
+                "cmd_param1"
+            ],
+            0
+        ]
+    },
+    "executeActionRequest": {
+        "arm_disarm_reason": [
+            [
+                "rc_button",
+                "stick_gesture",
+                "rc_switch"
+            ],
+            0
+        ],
+        "log_levels.external": [
+            [
+                "critical"
+            ],
+            0
+        ]
+    },
+    "updateParameters": {
+        "_vtol_vehicle_status.vehicle_vtol_state": [
+            [
+                "vehicle_vtol_state_fw"
+            ],
+            0
+        ],
+        "_vehicle_status.is_vtol": [
+            [
+                "is_vtol__vehicle_status"
+            ],
+            0
+        ],
+        "_vehicle_status.is_vtol_tailsitter": [
+            [
+                "is_vtol_tailsitter__vehicle_status"
+            ],
+            0
+        ],
+        "is_ground": [
+            [
+                "is_ground_vehicle__vehicle_status"
+            ],
+            0
+        ],
+        "_vehicle_status.vehicle_type": [
+            [
+                "vehicle_type_rotary_wing",
+                "vehicle_type_rover",
+                "vehicle_type_fixed_wing"
+            ],
+            0
+        ],
+        "_vehicle_status.system_type": [
+            [
+                "value_int32"
+            ],
+            0
+        ],
+        "_mode_switch_mapped": [
+            [
+                "value_int32"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "_vehicle_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "params_updated": [
+            [
+                "_parameter_update_sub_updated"
+            ],
+            0
+        ],
+        "power_button_state_pub": [
+            [
+                "button_state",
+                "orb_advertise_power_button_state",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ],
+        "button_state.event": [
+            [
+                "0xff"
+            ],
+            0
+        ],
+        "_vehicle_status.failure_detector_status": [
+            [
+                "_failure_detector_get_status_value"
+            ],
+            0
+        ],
+        "fd_status.fd_imbalanced_prop": [
+            [
+                "_failure_detector_get_status_flags_imbalanced_prop"
+            ],
+            0
+        ],
+        "fd_status.fd_battery": [
+            [
+                "_failure_detector_get_status_flags_battery"
+            ],
+            0
+        ],
+        "_last_health_and_arming_check": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_actuator_armed.force_failsafe": [
+            [
+                "_vehicle_status_navigation_state_termination",
+                "_vehicle_status_nav_state"
+            ],
+            0
+        ],
+        "nav_state_or_failsafe_changed": [
+            [
+                "handle_mode_intention_and_failsafe"
+            ],
+            0
+        ],
+        "button_state.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vehicle_status.pre_flight_checks_pass": [
+            [
+                "_health_and_arming_checks_can_arm__vehicle_status_nav_state"
+            ],
+            1
+        ],
+        "fd_status.fd_ext": [
+            [
+                "_failure_detector_get_status_flags_ext"
+            ],
+            0
+        ],
+        "fd_status.fd_pitch": [
+            [
+                "_failure_detector_get_status_flags_pitch"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_action_request_sub_get_last_generation",
+                "_vehicle_command_sub_get_last_generation"
+            ],
+            0
+        ],
+        "tune_control_pub": [
+            [
+                "orb_advertise_tune_control",
+                "orb_advertise_orb_id",
+                "tune_control"
+            ],
+            0
+        ],
+        "_actuator_armed.prearmed": [
+            [
+                "get_prearm_state"
+            ],
+            0
+        ],
+        "fd_status.fd_roll": [
+            [
+                "_failure_detector_get_status_flags_roll"
+            ],
+            0
+        ],
+        "fd_status.fd_arm_escs": [
+            [
+                "_failure_detector_get_status_flags_arm_escs"
+            ],
+            0
+        ],
+        "_actuator_armed.ready_to_arm": [
+            [
+                "is_armed",
+                "_vehicle_status_pre_flight_checks_pass"
+            ],
+            0
+        ],
+        "_actuator_armed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_boot_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "fd_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_actuator_armed.armed": [
+            [
+                "is_armed"
+            ],
+            0
+        ],
+        "fd_status.motor_failure_mask": [
+            [
+                "_failure_detector_get_motor_failures"
+            ],
+            0
+        ],
+        "fd_status.imbalanced_prop_metric": [
+            [
+                "_failure_detector_get_imbalanced_prop_metric"
+            ],
+            0
+        ],
+        "fd_status.fd_motor": [
+            [
+                "_failure_detector_get_status_flags_motor"
+            ],
+            0
+        ],
+        "fd_status.fd_alt": [
+            [
+                "_failure_detector_get_status_flags_alt"
+            ],
+            0
+        ]
+    },
+    "checkForMissionUpdate": {
+        "auto_mission_available": [
+            [
+                "mission_result_valid",
+                "mission_result_ok"
+            ],
+            0
+        ],
+        "mission_result": [
+            [
+                "_mission_result_sub_get"
+            ],
+            0
+        ],
+        "prev_mission_mission_id": [
+            [
+                "mission_result_mission_id"
+            ],
+            0
+        ]
+    },
+    "landDetectorUpdate": {
+        "was_landed": [
+            [
+                "_vehicle_land_detected_landed"
+            ],
+            0
+        ],
+        "_vehicle_status.takeoff_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "safetyButtonUpdate": {
+        "_vehicle_status.safety_off": [
+            [
+                "_safety_is_safety_off"
+            ],
+            0
+        ],
+        "_vehicle_status.safety_button_available": [
+            [
+                "_safety_is_button_available"
+            ],
+            0
+        ],
+        "safety_changed": [
+            [
+                "_safety_safety_button_handler"
+            ],
+            0
+        ]
+    },
+    "vtolStatusUpdate": {
+        "_vehicle_status.vehicle_type": [
+            [
+                "new_vehicle_type"
+            ],
+            0
+        ],
+        "_vehicle_status.in_transition_mode": [
+            [
+                "new_in_transition"
+            ],
+            0
+        ],
+        "_vtol_vehicle_status.vehicle_vtol_state": [
+            [
+                "vehicle_vtol_state_transition_to_mc"
+            ],
+            0
+        ]
+    },
+    "checkWorkerThread": {
+        "ret": [
+            [
+                "_worker_thread_get_result_and_reset"
+            ],
+            0
+        ]
+    },
+    "handleAutoDisarm": {
+        "auto_disarm": [
+            [
+                "_actuator_armed_manual_lockdown"
+            ],
+            0
+        ]
+    },
+    "handleModeIntentionAndFailsafe": {
+        "state.user_intended_mode": [
+            [
+                "_user_mode_intention_get"
+            ],
+            0
+        ],
+        "_vehicle_status.failsafe_and_user_took_over": [
+            [
+                "_failsafe_user_takeover_active"
+            ],
+            0
+        ],
+        "_vehicle_status.failsafe": [
+            [
+                "_failsafe_in_failsafe"
+            ],
+            0
+        ],
+        "state.vehicle_type": [
+            [
+                "_vehicle_status_vehicle_type"
+            ],
+            0
+        ],
+        "state.armed": [
+            [
+                "is_armed"
+            ],
+            0
+        ],
+        "mode_change_requested": [
+            [
+                "_user_mode_intention_get_had_mode_change_and_clear"
+            ],
+            0
+        ],
+        "prev_nav_state": [
+            [
+                "_vehicle_status_nav_state"
+            ],
+            0
+        ],
+        "state.mission_finished": [
+            [
+                "_mission_result_sub_get_finished"
+            ],
+            0
+        ],
+        "prev_failsafe_action": [
+            [
+                "_failsafe_selected_action"
+            ],
+            0
+        ],
+        "_vehicle_status.nav_state": [
+            [
+                "_vehicle_status_navigation_state_termination"
+            ],
+            0
+        ],
+        "prev_failsafe_defer_state": [
+            [
+                "_vehicle_status_failsafe_defer_state"
+            ],
+            0
+        ],
+        "_vehicle_status.nav_state_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "state.vtol_in_transition_mode": [
+            [
+                "_vehicle_status_in_transition_mode"
+            ],
+            0
+        ],
+        "_vehicle_status.failsafe_defer_state": [
+            [
+                "failsafe_defer_state_enabled",
+                "failsafe_defer_state_disabled",
+                "failsafe_defer_state_would_failsafe"
+            ],
+            0
+        ],
+        "_vehicle_status.executor_in_charge": [
+            [
+                "_mode_management_mode_executor_in_charge"
+            ],
+            0
+        ]
+    },
+    "control_status_leds": {
+        "_last_overload": [
+            [
+                "cpuload_ram_usage",
+                "hrt_absolute_time",
+                "_param_com_cpu_max_get",
+                "_f",
+                "cpuload_load"
+            ],
+            4
+        ],
+        "led_color": [
+            [
+                "color_green",
+                "color_red",
+                "color_amber",
+                "color_white",
+                "color_yellow",
+                "color_purple",
+                "color_blue"
+            ],
+            0
+        ],
+        "_led_overload_toggle": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "led_mode": [
+            [
+                "mode_off",
+                "mode_on",
+                "mode_blink_fast",
+                "mode_breathe"
+            ],
+            0
+        ],
+        "_led_armed_state_toggle": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "overload_warn_delay": [
+            [
+                "250_ms",
+                "1_ms",
+                "is_armed"
+            ],
+            0
+        ]
+    },
+    "updateControlMode": {
+        "_vehicle_control_mode.flag_armed": [
+            [
+                "is_armed"
+            ],
+            0
+        ],
+        "_vehicle_control_mode.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "printRejectMode": {
+        "mavlink_mode": [
+            [
+                "custom_mode_data"
+            ],
+            0
+        ],
+        "_last_print_mode_reject_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "custom_mode": [
+            [
+                "get_px4_custom_mode_nav_state"
+            ],
+            0
+        ]
+    },
+    "answer_command": {
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "result"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ]
+    },
+    "enable_hil": {
+        "_vehicle_status.hil_state": [
+            [
+                "hil_state_on"
+            ],
+            0
+        ]
+    },
+    "dataLinkCheck": {
+        "_datalink_last_heartbeat_gcs": [
+            [
+                "telemetry_timestamp"
+            ],
+            0
+        ],
+        "_high_latency_datalink_lost": [
+            [
+                "iridium_status_last_at_ok_timestamp"
+            ],
+            1
+        ],
+        "_vehicle_status.open_drone_id_system_healthy": [
+            [
+                "telemetry_open_drone_id_system_healthy",
+                "telemetry_parachute_system_healthy"
+            ],
+            1
+        ],
+        "_high_latency_datalink_regained": [
+            [
+                "iridium_status_last_at_ok_timestamp"
+            ],
+            1
+        ],
+        "_datalink_last_heartbeat_parachute_system": [
+            [
+                "telemetry_timestamp"
+            ],
+            0
+        ],
+        "_datalink_last_heartbeat_open_drone_id_system": [
+            [
+                "telemetry_timestamp"
+            ],
+            0
+        ],
+        "_datalink_last_heartbeat_onboard_controller": [
+            [
+                "telemetry_timestamp"
+            ],
+            0
+        ]
+    },
+    "battery_status_check": {
+        "_battery_warning": [
+            [
+                "_failsafe_flags_battery_warning"
+            ],
+            0
+        ]
+    },
+    "manualControlCheck": {
+        "is_mavlink": [
+            [
+                "source_rc",
+                "manual_control_setpoint_data_source"
+            ],
+            0
+        ],
+        "_is_throttle_above_center": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ],
+        "manual_control_updated": [
+            [
+                "_manual_control_setpoint_sub_update_manual_control_setpoint"
+            ],
+            0
+        ],
+        "_is_throttle_low": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ]
+    },
+    "send_parachute_command": {
+        "vcmd.param1": [
+            [
+                "parachute_action_release",
+                "float",
+                "static_cast"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_do_parachute"
+            ],
+            0
+        ],
+        "vcmd.target_system": [
+            [
+                "_vehicle_status_system_id"
+            ],
+            0
+        ],
+        "vcmd.source_system": [
+            [
+                "_vehicle_status_system_id"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.source_component": [
+            [
+                "_vehicle_status_component_id"
+            ],
+            0
+        ]
+    },
+    "onFailsafeNotifyUserTrampoline": {
+        "commander": [
+            [
+                "arg",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

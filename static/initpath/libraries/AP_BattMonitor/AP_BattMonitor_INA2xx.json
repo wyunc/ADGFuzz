@@ -1,0 +1,169 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_i2c_mgr_get_device_false",
+                "hal_i2c_mgr_get_device_i2c_bus",
+                "hal_i2c_mgr_get_device_i2c_address"
+            ],
+            0
+        ]
+    },
+    "configure": {
+        "voltage_LSB": [
+            [
+                "_3125e",
+                "_125e",
+                "_25e"
+            ],
+            0
+        ],
+        "shunt_cal": [
+            [
+                "uint16_t_r_shunt",
+                "uint16_t__2e6",
+                "uint16_t_current_lsb",
+                "0x7fff"
+            ],
+            0
+        ],
+        "dev_type": [
+            [
+                "dtype"
+            ],
+            0
+        ],
+        "conf": [
+            [
+                "0x5",
+                "0x7",
+                "0x2"
+            ],
+            0
+        ],
+        "cal": [
+            [
+                "r_shunt",
+                "uint16_t_r_shunt",
+                "uint16_t_current_lsb",
+                "current_lsb"
+            ],
+            0
+        ],
+        "current_LSB": [
+            [
+                "1u",
+                "max_amps"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.current_amps": [
+            [
+                "accumulate_count",
+                "accumulate_current_sum"
+            ],
+            0
+        ],
+        "dt_us": [
+            [
+                "micros",
+                "_state_last_time_micros"
+            ],
+            1
+        ],
+        "_state.voltage": [
+            [
+                "accumulate_count",
+                "accumulate_volt_sum"
+            ],
+            0
+        ],
+        "_state.healthy": [
+            [
+                "accumulate_count"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "read_word16": {
+        "data": [
+            [
+                "int16_t_uint16_t",
+                "int16_t_data",
+                "int16_t_be16toh"
+            ],
+            0
+        ]
+    },
+    "read_word24": {
+        "data": [
+            [
+                "d"
+            ],
+            0
+        ]
+    },
+    "detect_device": {
+        "last_detect_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "i2c_probe_next": [
+            [
+                "sizeof_i2c_probe_addresses"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "dev_type": [
+            [
+                "unknown"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "ina_238_temp_c_lsb",
+                "temp16",
+                "0x_fff0",
+                "ina_228_temp_c_lsb"
+            ],
+            0
+        ],
+        "accumulate.current_sum": [
+            [
+                "current16",
+                "current24",
+                "current_lsb"
+            ],
+            1
+        ],
+        "accumulate.volt_sum": [
+            [
+                "bus_voltage24",
+                "voltage_lsb",
+                "bus_voltage16"
+            ],
+            1
+        ]
+    },
+    "get_temperature": {
+        "temp": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    }
+}

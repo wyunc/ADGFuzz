@@ -1,0 +1,181 @@
+{
+    "start": {
+        "_cal_state": [
+            [
+                "running"
+            ],
+            0
+        ],
+        "_start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "stop": {
+        "_cal_state": [
+            [
+                "not_started"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_cal_state": [
+            [
+                "ready_to_calibrate",
+                "success",
+                "failed"
+            ],
+            0
+        ],
+        "_last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "add_sample": {
+        "rates_x_sufficient": [
+            [
+                "fabsf_flow_rate_x",
+                "ap_opticalflow_cal_rollpitch_min_rads",
+                "fabsf_body_rate_x"
+            ],
+            0
+        ],
+        "rates_y_sufficient": [
+            [
+                "fabsf_body_rate_y",
+                "fabsf_flow_rate_y",
+                "ap_opticalflow_cal_rollpitch_min_rads"
+            ],
+            0
+        ],
+        ".body_rate": [
+            [
+                "body_rate_y",
+                "body_rate_x"
+            ],
+            0
+        ],
+        ".flow_rate": [
+            [
+                "flow_rate_y",
+                "flow_rate_x"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "_last_sample_timestamp_ms": [
+            [
+                "timestamp_ms"
+            ],
+            0
+        ],
+        ".los_pred": [
+            [
+                "los_pred_x",
+                "los_pred_y"
+            ],
+            0
+        ]
+    },
+    "run_calibration": {
+        "calx_res": [
+            [
+                "calc_scalars__cal_data",
+                "calc_scalars__best_scalar",
+                "calc_scalars__best_scalar_fitness"
+            ],
+            0
+        ],
+        "caly_res": [
+            [
+                "calc_scalars__cal_data",
+                "calc_scalars__best_scalar",
+                "calc_scalars__best_scalar_fitness"
+            ],
+            0
+        ]
+    },
+    "calc_scalars": {
+        "num_samples": [
+            [
+                "_num_samples",
+                "axis",
+                "_cal_data"
+            ],
+            0
+        ],
+        "sample_residual": [
+            [
+                "calc_sample_residual_samplei"
+            ],
+            0
+        ],
+        "samplei": [
+            [
+                "_samples",
+                "i",
+                "axis",
+                "_cal_data"
+            ],
+            0
+        ],
+        "scalar": [
+            [
+                "fabsf_samplei",
+                "fabsf_calc_sample_residual",
+                "sample_best_scalar",
+                "fabsf_sample_residual"
+            ],
+            2
+        ],
+        "fitness": [
+            [
+                "calc_mean_squared_residuals_axis",
+                "calc_mean_squared_residuals_axis",
+                "calc_mean_squared_residuals_best_scalar_total"
+            ],
+            2
+        ],
+        "axis_str": [
+            [
+                "axis"
+            ],
+            0
+        ]
+    },
+    "calc_sample_best_scalar": {
+        "best_scalar": [
+            [
+                "sample_los_pred",
+                "sample_body_rate",
+                "sample_flow_rate"
+            ],
+            0
+        ]
+    },
+    "calc_mean_squared_residuals": {
+        "sum": [
+            [
+                "num_samples",
+                "sq_i",
+                "sq_axis",
+                "sq_scalar",
+                "sq_calc_sample_residual",
+                "sq__cal_data",
+                "sq__samples"
+            ],
+            0
+        ]
+    }
+}

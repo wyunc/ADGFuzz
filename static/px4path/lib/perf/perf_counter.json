@@ -1,0 +1,283 @@
+{
+    "perf_begin": {
+        "time_start": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "perf_end": {
+        "pce": [
+            [
+                "handle",
+                "perf_ctr_elapsed",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "perf_set_elapsed": {
+        "M2": [
+            [
+                "pce_mean",
+                "pce_mean",
+                "1e6f",
+                "elapsed",
+                "1e6f",
+                "elapsed"
+            ],
+            2
+        ],
+        "time_most": [
+            [
+                "elapsed"
+            ],
+            0
+        ],
+        "time_least": [
+            [
+                "elapsed"
+            ],
+            0
+        ],
+        "time_total": [
+            [
+                "elapsed"
+            ],
+            0
+        ],
+        "pce": [
+            [
+                "struct",
+                "handle",
+                "perf_ctr_elapsed"
+            ],
+            0
+        ],
+        "mean": [
+            [
+                "pce_event_count",
+                "pce_mean",
+                "1e6f",
+                "elapsed"
+            ],
+            2
+        ]
+    },
+    "perf_count_interval": {
+        "mean": [
+            [
+                "pci_time_least",
+                "1e6f",
+                "1e6f",
+                "pci_time_last",
+                "now",
+                "pci_mean",
+                "pci_event_count"
+            ],
+            3
+        ],
+        "time_least": [
+            [
+                "pci_time_last",
+                "now",
+                "pci_time_last",
+                "uint32_t",
+                "now"
+            ],
+            1
+        ],
+        "time_first": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "M2": [
+            [
+                "1e6f",
+                "pci_time_last",
+                "now",
+                "pci_mean",
+                "1e6f",
+                "pci_time_last",
+                "now",
+                "pci_mean"
+            ],
+            3
+        ],
+        "time_last": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "pci": [
+            [
+                "perf_ctr_interval",
+                "struct",
+                "handle"
+            ],
+            0
+        ],
+        "time_most": [
+            [
+                "pci_time_last",
+                "now",
+                "pci_time_last",
+                "uint32_t",
+                "now"
+            ],
+            1
+        ]
+    },
+    "perf_set_count": {
+        "event_count": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "perf_cancel": {
+        "pce": [
+            [
+                "handle",
+                "struct",
+                "perf_ctr_elapsed"
+            ],
+            0
+        ]
+    },
+    "perf_reset": {
+        "pci": [
+            [
+                "handle",
+                "struct",
+                "perf_ctr_interval"
+            ],
+            0
+        ],
+        "pce": [
+            [
+                "handle",
+                "perf_ctr_elapsed",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "perf_print_counter": {
+        "pci": [
+            [
+                "perf_ctr_interval",
+                "struct",
+                "handle"
+            ],
+            0
+        ],
+        "rms": [
+            [
+                "sqrtf_pci_event_count",
+                "sqrtf_pce_m2",
+                "sqrtf_pce_event_count",
+                "sqrtf_pci_m2"
+            ],
+            0
+        ],
+        "pce": [
+            [
+                "perf_ctr_elapsed",
+                "struct",
+                "handle"
+            ],
+            0
+        ]
+    },
+    "perf_print_counter_buffer": {
+        "rms": [
+            [
+                "sqrtf_pce_m2",
+                "sqrtf_pce_event_count",
+                "sqrtf_pci_m2",
+                "sqrtf_pci_event_count"
+            ],
+            0
+        ],
+        "pci": [
+            [
+                "perf_ctr_interval",
+                "struct",
+                "handle"
+            ],
+            0
+        ],
+        "pce": [
+            [
+                "perf_ctr_elapsed",
+                "struct",
+                "handle"
+            ],
+            0
+        ]
+    },
+    "perf_mean": {
+        "pci": [
+            [
+                "struct",
+                "handle",
+                "perf_ctr_interval"
+            ],
+            0
+        ],
+        "pce": [
+            [
+                "struct",
+                "perf_ctr_elapsed",
+                "handle"
+            ],
+            0
+        ]
+    },
+    "perf_iterate_all": {
+        "handle": [
+            [
+                "perf_counter_t",
+                "sq_peek_perf_counters",
+                "sq_next_handle_link"
+            ],
+            0
+        ]
+    },
+    "perf_print_all": {
+        "handle": [
+            [
+                "perf_counter_t",
+                "sq_peek_perf_counters",
+                "sq_next_handle_link"
+            ],
+            0
+        ]
+    },
+    "perf_print_latency": {
+        "latency": [
+            [
+                "get_latency_bucket_count",
+                "get_latency_i",
+                "get_latency_get_latency_bucket_count"
+            ],
+            0
+        ]
+    },
+    "perf_reset_all": {
+        "handle": [
+            [
+                "sq_next_handle_link",
+                "sq_peek_perf_counters",
+                "perf_counter_t"
+            ],
+            0
+        ]
+    }
+}

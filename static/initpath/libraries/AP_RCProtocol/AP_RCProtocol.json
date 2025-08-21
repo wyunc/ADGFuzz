@@ -1,0 +1,236 @@
+{
+    "init": {
+        "UDP_backend": [
+            [
+                "ap_rc_protocol_udp_this",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "FDM_backend": [
+            [
+                "ap_rc_protocol_fdm_this",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "process_pulse": {
+        "frame_count2": [
+            [
+                "backend",
+                "i",
+                "_get_rc_frame_count"
+            ],
+            0
+        ],
+        "frame_count": [
+            [
+                "backend",
+                "i",
+                "_get_rc_frame_count"
+            ],
+            0
+        ],
+        "_detected_protocol": [
+            [
+                "rcprotocol_t",
+                "i",
+                "none",
+                "enum"
+            ],
+            0
+        ],
+        "searching": [
+            [
+                "should_search_now"
+            ],
+            0
+        ],
+        "rc_protocols_mask": [
+            [
+                "rc_enabled_protocols"
+            ],
+            0
+        ],
+        "_new_input": [
+            [
+                "backend",
+                "i",
+                "_get_rc_input_count",
+                "backend",
+                "i",
+                "_get_rc_input_count"
+            ],
+            1
+        ],
+        "_last_input_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "process_pulse_list": {
+        "widths1": [
+            [
+                "widths",
+                "tmp",
+                "widths"
+            ],
+            1
+        ]
+    },
+    "process_byte": {
+        "_detected_protocol": [
+            [
+                "enum",
+                "rcprotocol_t",
+                "i",
+                "none"
+            ],
+            0
+        ],
+        "rc_protocols_mask": [
+            [
+                "rc_enabled_protocols"
+            ],
+            0
+        ],
+        "frame_count2": [
+            [
+                "backend",
+                "i",
+                "_get_rc_frame_count"
+            ],
+            0
+        ],
+        "_last_input_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "searching": [
+            [
+                "should_search_now"
+            ],
+            0
+        ],
+        "_new_input": [
+            [
+                "backend",
+                "i",
+                "_get_rc_input_count",
+                "backend",
+                "i",
+                "_get_rc_input_count"
+            ],
+            1
+        ],
+        "frame_count": [
+            [
+                "backend",
+                "i",
+                "_get_rc_frame_count"
+            ],
+            0
+        ]
+    },
+    "check_added_uart": {
+        "current_baud": [
+            [
+                "serial_configs",
+                "added_config_num",
+                "_baud"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "255u",
+                "added_uart_available"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "added_uart_read"
+            ],
+            0
+        ],
+        "searching": [
+            [
+                "should_search_now"
+            ],
+            0
+        ],
+        "added.last_config_change_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "rc_protocols_mask": [
+            [
+                "rc_enabled_protocols"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "detect_async_protocol": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "protocol",
+                "backend"
+            ],
+            0
+        ],
+        "rc_protocols_mask": [
+            [
+                "rc_enabled_protocols"
+            ],
+            0
+        ],
+        "_detected_protocol": [
+            [
+                "protocol"
+            ],
+            0
+        ]
+    },
+    "new_input": {
+        "_last_input_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_new_input"
+            ],
+            0
+        ]
+    },
+    "add_uart": {
+        "added.uart": [
+            [
+                "uart"
+            ],
+            0
+        ]
+    }
+}

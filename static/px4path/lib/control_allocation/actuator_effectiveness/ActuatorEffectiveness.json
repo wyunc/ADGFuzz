@@ -1,0 +1,11 @@
+{
+    "stopMaskedMotorsWithZeroThrust": {
+        "motor_mask": [
+            [
+                "actuator_idx",
+                "1u"
+            ],
+            0
+        ]
+    }
+}

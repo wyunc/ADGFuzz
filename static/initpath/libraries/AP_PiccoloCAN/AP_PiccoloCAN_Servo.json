@@ -1,0 +1,26 @@
+{
+    "finishServoPacket": {
+        "frame": [
+            [
+                "can_frame",
+                "pkt"
+            ],
+            0
+        ],
+        "dlc": [
+            [
+                "max_data_len"
+            ],
+            1
+        ]
+    },
+    "getServoPacketSize": {
+        "frame": [
+            [
+                "pkt",
+                "can_frame"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,887 @@
+{
+    "run": {
+        "_dist_snsr_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_actuator_out_sub": [
+            [
+                "orb_id_actuator_outputs_sim",
+                "subscription"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_airspeed_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "lockstep_loop": {
+        "speed_factor": [
+            [
+                "atof_speedup",
+                "_f"
+            ],
+            0
+        ],
+        "rate": [
+            [
+                "min__imu_gyro_ratemax_get",
+                "_imu_integration_rate_get"
+            ],
+            0
+        ],
+        "pre_compute_wall_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "current_wall_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "sleep_time": [
+            [
+                "max_rt_interval_us",
+                "max_sim_interval_us",
+                "max_int_pre_compute_wall_time_us",
+                "max_int_current_wall_time_us"
+            ],
+            0
+        ],
+        "rt_interval_us": [
+            [
+                "int_sim_interval_us",
+                "int_roundf",
+                "int_speed_factor"
+            ],
+            0
+        ],
+        "speedup": [
+            [
+                "getenv"
+            ],
+            0
+        ],
+        "_current_simulation_time_us": [
+            [
+                "constrain_rate",
+                "constrain_int",
+                "constrain_roundf",
+                "constrain_1e6f"
+            ],
+            1
+        ]
+    },
+    "realtime_loop": {
+        "rate": [
+            [
+                "_imu_gyro_ratemax_get"
+            ],
+            0
+        ],
+        "interval_us": [
+            [
+                "constrain_int",
+                "constrain_roundf",
+                "constrain_1e6f",
+                "constrain_rate"
+            ],
+            0
+        ]
+    },
+    "sensor_step": {
+        "_dist_snsr_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_airspeed_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_last_run": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "hrt_absolute_time",
+                "1e"
+            ],
+            1
+        ]
+    },
+    "parameters_updated": {
+        "_distance_snsr_min": [
+            [
+                "_sih_distance_snsr_min_get"
+            ],
+            0
+        ],
+        "_T_MAX": [
+            [
+                "_sih_t_max_get"
+            ],
+            0
+        ],
+        "_v_E": [
+            [
+                "_r_n2e",
+                "_v_n"
+            ],
+            0
+        ],
+        "_KDV": [
+            [
+                "_sih_kdv_get"
+            ],
+            0
+        ],
+        "_I": [
+            [
+                "diag__sih_ixx_get",
+                "_sih_iyy_get",
+                "diag_vector3f",
+                "_sih_izz_get"
+            ],
+            0
+        ],
+        "_MASS": [
+            [
+                "_sih_mass_get"
+            ],
+            0
+        ],
+        "_Q_MAX": [
+            [
+                "_sih_q_max_get"
+            ],
+            0
+        ],
+        "_lpos_ref_alt": [
+            [
+                "_sih_h0_get"
+            ],
+            0
+        ],
+        "_KDW": [
+            [
+                "_sih_kdw_get"
+            ],
+            0
+        ],
+        "_L_PITCH": [
+            [
+                "_sih_l_pitch_get"
+            ],
+            0
+        ],
+        "_R_N2E": [
+            [
+                "r_e2n_transpose"
+            ],
+            0
+        ],
+        "_Im1": [
+            [
+                "inv_typeof",
+                "inv_static_cast",
+                "inv__i"
+            ],
+            0
+        ],
+        "_distance_snsr_max": [
+            [
+                "_sih_distance_snsr_max_get"
+            ],
+            0
+        ],
+        "_p_E": [
+            [
+                "_lla_to_ecef"
+            ],
+            0
+        ],
+        "_L_ROLL": [
+            [
+                "_sih_l_roll_get"
+            ],
+            0
+        ],
+        "_T_TAU": [
+            [
+                "_sih_thrust_tau_get"
+            ],
+            0
+        ],
+        "_distance_snsr_override": [
+            [
+                "_sih_distance_snsr_override_get"
+            ],
+            0
+        ],
+        "_q_E": [
+            [
+                "_q",
+                "quatf__r_n2e"
+            ],
+            0
+        ],
+        "R_E2N": [
+            [
+                "compute_rot_ecef_to_ned__lla"
+            ],
+            0
+        ]
+    },
+    "init_variables": {
+        "_q_E": [
+            [
+                "quatf_m_pi_2_f",
+                "quatf_eulerf",
+                "quatf__f"
+            ],
+            0
+        ],
+        "_p_E": [
+            [
+                "vector3d_equatorial_radius"
+            ],
+            0
+        ]
+    },
+    "read_motors": {
+        "_last_actuator_output_time": [
+            [
+                "actuators_out_timestamp"
+            ],
+            0
+        ],
+        "u_sp": [
+            [
+                "i",
+                "actuators_out_output"
+            ],
+            0
+        ]
+    },
+    "generate_force_and_torques": {
+        "_Mt_B": [
+            [
+                "vector3f__u",
+                "vector3f__t_max",
+                "vector3f__l_roll",
+                "_q_max",
+                "_u",
+                "vector3f"
+            ],
+            0
+        ],
+        "_Fa_E": [
+            [
+                "_kdv",
+                "_v_e"
+            ],
+            0
+        ],
+        "_Ma_B": [
+            [
+                "_kdw",
+                "_w_b"
+            ],
+            0
+        ],
+        "_T_B": [
+            [
+                "vector3f__u",
+                "vector3f__t_max"
+            ],
+            0
+        ]
+    },
+    "generate_fw_aerodynamics": {
+        "_Fa_E": [
+            [
+                "_q_e_rotate_vector_fa_b"
+            ],
+            0
+        ],
+        "v_B": [
+            [
+                "_q_e_rotate_vector_inverse__v_e"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "_lla_altitude"
+            ],
+            0
+        ],
+        "_Ma_B": [
+            [
+                "_fuselage_get_ma",
+                "_fin_get_ma",
+                "_wing_r_get_ma",
+                "_tailplane_get_ma",
+                "_w_b",
+                "_kdw",
+                "_wing_l_get_ma"
+            ],
+            0
+        ]
+    },
+    "generate_ts_aerodynamics": {
+        "v_ts": [
+            [
+                "_r_s2b_transpose",
+                "v_b"
+            ],
+            0
+        ],
+        "w_ts": [
+            [
+                "_r_s2b_transpose",
+                "_w_b"
+            ],
+            0
+        ],
+        "_Fa_E": [
+            [
+                "_q_e_rotate_vector_fa_b"
+            ],
+            0
+        ],
+        "Fa_B": [
+            [
+                "v_b",
+                "fa_ts",
+                "_r_s2b",
+                "_kdv"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "_lpos_ref_alt",
+                "_lpos"
+            ],
+            0
+        ],
+        "v_B": [
+            [
+                "_q_e_rotate_vector_inverse__v_e"
+            ],
+            0
+        ],
+        "Ma_ts": [
+            [
+                "_ts",
+                "i",
+                "_get_ma"
+            ],
+            0
+        ],
+        "_Ma_B": [
+            [
+                "ma_ts",
+                "_kdw",
+                "_w_b",
+                "_r_s2b"
+            ],
+            0
+        ],
+        "Fa_ts": [
+            [
+                "_ts",
+                "i",
+                "_get_fa"
+            ],
+            0
+        ]
+    },
+    "equations_of_motion": {
+        "_v_E_dot": [
+            [
+                "acceleration_e",
+                "coriolis_acceleration_e"
+            ],
+            0
+        ],
+        "sum_of_forces_E": [
+            [
+                "ground_force_e",
+                "_fa_e",
+                "_q_e_rotate_vector__t_b",
+                "weight_e"
+            ],
+            0
+        ],
+        "_specific_force_E": [
+            [
+                "acceleration_e",
+                "gravity_acceleration_e"
+            ],
+            0
+        ],
+        "coriolis_acceleration_E": [
+            [
+                "_f",
+                "vector3f__f",
+                "vector3f_constants_earth_spin_rate_cross__v_e"
+            ],
+            0
+        ],
+        "acceleration_E": [
+            [
+                "_mass",
+                "sum_of_forces_e"
+            ],
+            0
+        ],
+        "ground_force_E": [
+            [
+                "_mass",
+                "_r_n2e_col",
+                "dt",
+                "_v_n",
+                "_v_e",
+                "sum_of_forces_e"
+            ],
+            1
+        ],
+        "_v_E": [
+            [
+                "dt",
+                "_v_e",
+                "_v_e_dot"
+            ],
+            0
+        ],
+        "v_E_prev": [
+            [
+                "_v_e"
+            ],
+            0
+        ],
+        "w_B_dot": [
+            [
+                "_w_b_cross__w_b",
+                "_im1",
+                "_w_b_cross__i",
+                "_mt_b",
+                "_ma_b"
+            ],
+            0
+        ],
+        "_p_E": [
+            [
+                "dt",
+                "vector3d_v_e_prev",
+                "_p_e",
+                "double",
+                "static_cast",
+                "vector3d__v_e"
+            ],
+            0
+        ],
+        "weight_E": [
+            [
+                "_mass",
+                "gravity_acceleration_e"
+            ],
+            0
+        ],
+        "_w_B": [
+            [
+                "constrain__w_b",
+                "constrain_m_pi_f",
+                "constrain_w_b_dot",
+                "constrain_dt"
+            ],
+            0
+        ],
+        "force_down": [
+            [
+                "vector3f__r_n2e_transpose",
+                "sum_of_forces_e"
+            ],
+            0
+        ],
+        "_q_E": [
+            [
+                "dq",
+                "_q_e"
+            ],
+            0
+        ],
+        "_v_N_dot": [
+            [
+                "_lla_compute_angular_rate_nav_frame__v_n_cross__v_n",
+                "_r_n2e_transpose",
+                "_v_e_dot"
+            ],
+            1
+        ]
+    },
+    "ecefToNed": {
+        "_v_N": [
+            [
+                "c_se",
+                "_v_e"
+            ],
+            0
+        ],
+        "_lla": [
+            [
+                "from_ecef__p_e"
+            ],
+            0
+        ],
+        "C_SE": [
+            [
+                "compute_rot_ecef_to_ned__lla"
+            ],
+            0
+        ],
+        "_q": [
+            [
+                "quatf_c_se",
+                "_q_e"
+            ],
+            0
+        ],
+        "_R_N2E": [
+            [
+                "c_se_transpose"
+            ],
+            0
+        ]
+    },
+    "reconstruct_sensors_signals": {
+        "earth_spin_rate_B": [
+            [
+                "r_e2b",
+                "vector3f_constants_earth_spin_rate",
+                "vector3f__f"
+            ],
+            0
+        ],
+        "specific_force_B": [
+            [
+                "r_e2b",
+                "_specific_force_e"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "specific_force_b",
+                "accel_noise"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "gyro_noise",
+                "earth_spin_rate_b",
+                "_w_b"
+            ],
+            0
+        ]
+    },
+    "send_airspeed": {
+        "airspeed.timestamp_sample": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "airspeed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "airspeed.true_airspeed_m_s": [
+            [
+                "generate_wgn",
+                "fmaxf__v_e_norm"
+            ],
+            0
+        ],
+        "airspeed.indicated_airspeed_m_s": [
+            [
+                "rho",
+                "sqrtf__wing_l_get_rho",
+                "airspeed_true_airspeed_m_s"
+            ],
+            0
+        ]
+    },
+    "send_dist_snsr": {
+        "distance_sensor.max_distance": [
+            [
+                "_distance_snsr_max"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "distance_sensor.current_distance": [
+            [
+                "_distance_snsr_override",
+                "_f",
+                "_q_dcm_z",
+                "_lpos",
+                "uint16_max"
+            ],
+            0
+        ],
+        "distance_sensor.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "drv_dist_devtype_sim"
+            ],
+            0
+        ],
+        "distance_sensor.type": [
+            [
+                "mav_distance_sensor_laser"
+            ],
+            0
+        ],
+        "distance_sensor.min_distance": [
+            [
+                "_distance_snsr_min"
+            ],
+            0
+        ],
+        "distance_sensor.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "distance_sensor.orientation": [
+            [
+                "rotation_downward_facing"
+            ],
+            0
+        ]
+    },
+    "publish_ground_truth": {
+        "local_position.az": [
+            [
+                "_v_n_dot"
+            ],
+            0
+        ],
+        "local_position.ref_lat": [
+            [
+                "_lpos_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "global_position.lat": [
+            [
+                "_lla_latitude_deg"
+            ],
+            0
+        ],
+        "local_position.ref_lon": [
+            [
+                "_lpos_ref_get_projection_reference_lon"
+            ],
+            0
+        ],
+        "local_position.ay": [
+            [
+                "_v_n_dot"
+            ],
+            0
+        ],
+        "local_position.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "global_position.timestamp_sample": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "local_position.vz": [
+            [
+                "_v_n"
+            ],
+            0
+        ],
+        "local_position.vx": [
+            [
+                "_v_n"
+            ],
+            0
+        ],
+        "local_position.y": [
+            [
+                "_lpos"
+            ],
+            0
+        ],
+        "global_position.terrain_alt": [
+            [
+                "_lpos"
+            ],
+            0
+        ],
+        "local_position.timestamp_sample": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "attitude.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "global_position.lon": [
+            [
+                "_lla_longitude_deg"
+            ],
+            0
+        ],
+        "local_position.heading": [
+            [
+                "eulerf__q_psi"
+            ],
+            0
+        ],
+        "local_position.z": [
+            [
+                "_lpos"
+            ],
+            0
+        ],
+        "attitude.timestamp_sample": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "local_position.z_deriv": [
+            [
+                "_v_n"
+            ],
+            0
+        ],
+        "local_position.vy": [
+            [
+                "_v_n"
+            ],
+            0
+        ],
+        "local_position.unaided_heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "local_position.ref_timestamp": [
+            [
+                "_last_run"
+            ],
+            0
+        ],
+        "global_position.alt": [
+            [
+                "_lla_altitude"
+            ],
+            0
+        ],
+        "angular_velocity.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "local_position.ax": [
+            [
+                "_v_n_dot"
+            ],
+            0
+        ],
+        "local_position.ref_alt": [
+            [
+                "_lpos_ref_alt"
+            ],
+            0
+        ],
+        "angular_velocity.timestamp_sample": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "global_position.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "global_position.alt_ellipsoid": [
+            [
+                "global_position_alt"
+            ],
+            0
+        ],
+        "local_position.x": [
+            [
+                "_lpos"
+            ],
+            0
+        ]
+    },
+    "print_status": {
+        "u": [
+            [
+                "_u",
+                "float",
+                "vector"
+            ],
+            0
+        ]
+    }
+}

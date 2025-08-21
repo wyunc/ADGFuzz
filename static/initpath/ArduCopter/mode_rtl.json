@@ -1,0 +1,213 @@
+{
+    "init": {
+        "_state": [
+            [
+                "starting"
+            ],
+            0
+        ],
+        "terrain_following_allowed": [
+            [
+                "copter_failsafe_terrain"
+            ],
+            0
+        ]
+    },
+    "restart_without_terrain": {
+        "_state": [
+            [
+                "starting"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "_state": [
+            [
+                "initial_climb"
+            ],
+            0
+        ]
+    },
+    "climb_start": {
+        "_state": [
+            [
+                "initial_climb"
+            ],
+            0
+        ]
+    },
+    "return_start": {
+        "_state": [
+            [
+                "return_home"
+            ],
+            0
+        ]
+    },
+    "climb_return_run": {
+        "_state_complete": [
+            [
+                "wp_nav_reached_wp_destination"
+            ],
+            0
+        ]
+    },
+    "loiterathome_start": {
+        "_state": [
+            [
+                "loiter_at_home"
+            ],
+            0
+        ],
+        "_loiter_start_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "descent_start": {
+        "_state": [
+            [
+                "final_descent"
+            ],
+            0
+        ]
+    },
+    "descent_run": {
+        "vel_correction": [
+            [
+                "get_pilot_desired_velocity_wp_nav_get_wp_acceleration"
+            ],
+            0
+        ],
+        "_state_complete": [
+            [
+                "labs_rtl_path_descent_target_alt",
+                "labs_copter_current_loc_alt"
+            ],
+            0
+        ]
+    },
+    "land_start": {
+        "_state": [
+            [
+                "land"
+            ],
+            0
+        ]
+    },
+    "is_landing": {
+        "_state": [
+            [
+                "land"
+            ],
+            0
+        ]
+    },
+    "land_run": {
+        "_state_complete": [
+            [
+                "copter_ap_land_complete"
+            ],
+            0
+        ]
+    },
+    "build_path": {
+        "rtl_path.origin_point": [
+            [
+                "get_stopping_point"
+            ],
+            0
+        ],
+        "rtl_path.land": [
+            [
+                "g_rtl_alt_final"
+            ],
+            0
+        ],
+        "rtl_path.descent_target": [
+            [
+                "location_g_rtl_alt_final",
+                "location_rtl_path_return_target_lng",
+                "location_rtl_path_return_target_lat",
+                "location_above_home"
+            ],
+            0
+        ],
+        "rtl_path.climb_target": [
+            [
+                "location_rtl_path_origin_point_lng",
+                "location_rtl_path_origin_point_lat",
+                "location_rtl_path_return_target_get_alt_frame",
+                "location_rtl_path_return_target_alt"
+            ],
+            0
+        ]
+    },
+    "compute_return_target": {
+        "rtl_path.return_target.alt": [
+            [
+                "curr_terr_alt",
+                "copter_current_loc_alt",
+                "pos_control_get_pos_offset_z_cm",
+                "rtl_path_return_target_alt",
+                "copter_fence_get_safe_alt_max",
+                "max_g_rtl_altitude",
+                "max_min_rtl_alt",
+                "rtl_path_return_target_get_distance_rtl_path_origin_point",
+                "g_rtl_cone_slope",
+                "rtl_path_return_target_alt",
+                "curr_terr_alt",
+                "copter_current_loc_alt",
+                "pos_control_get_pos_offset_z_cm",
+                "max_g_rtl_climb_min",
+                "rtl_alt_min"
+            ],
+            6
+        ],
+        "alt_type": [
+            [
+                "above_home",
+                "above_terrain",
+                "terraindatabase",
+                "rangefinder",
+                "relative"
+            ],
+            0
+        ],
+        "rtl_path.return_target": [
+            [
+                "copter_rally_calc_best_rally_or_home_location_copter_current_loc",
+                "ahrs_get_home",
+                "copter_rally_calc_best_rally_or_home_location_ahrs_get_home_alt"
+            ],
+            0
+        ]
+    },
+    "use_pilot_yaw": {
+        "land_repositioning": [
+            [
+                "final_descent",
+                "_state",
+                "g_land_repositioning"
+            ],
+            0
+        ],
+        "final_landing": [
+            [
+                "land",
+                "_state"
+            ],
+            0
+        ],
+        "allow_yaw_option": [
+            [
+                "uint32_t_ignore_pilot_yaw",
+                "copter_g2_rtl_options_get"
+            ],
+            0
+        ]
+    }
+}

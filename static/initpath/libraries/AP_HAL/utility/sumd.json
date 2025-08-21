@@ -1,0 +1,90 @@
+{
+    "sumd_decode": {
+        "_rxpacket.length": [
+            [
+                "uint8_t",
+                "byte",
+                "max_chan_count"
+            ],
+            0
+        ],
+        "_rxpacket.crc16_low": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.telemetry": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.crc16_high": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.status": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "channel_count": [
+            [
+                "_rxpacket_length",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_rxpacket.crc8": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_crc8": [
+            [
+                "sumd_crc8_byte",
+                "sumd_crc8__crc8",
+                "0x00"
+            ],
+            0
+        ],
+        "_crc16": [
+            [
+                "crc_xmodem_update_byte",
+                "crc_xmodem_update__crc16",
+                "0x0000"
+            ],
+            0
+        ],
+        "_decode_state": [
+            [
+                "sumd_decode_state_got_crc",
+                "sumd_decode_state_got_len",
+                "sumd_decode_state_got_data",
+                "sumd_decode_state_unsynced",
+                "sumd_decode_state_got_crc16_byte_1",
+                "sumd_decode_state_got_state",
+                "sumd_decode_state_got_header",
+                "sumd_decode_state_got_crc16_byte_2"
+            ],
+            0
+        ],
+        "_rxpacket.header": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "rx_count": [
+            [
+                "_cnt"
+            ],
+            0
+        ]
+    }
+}

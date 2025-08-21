@@ -1,0 +1,162 @@
+{
+    "send_sbf": {
+        "PREAMBLE2": [
+            [
+                "0x40"
+            ],
+            0
+        ],
+        "PREAMBLE1": [
+            [
+                "0x24"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "buf",
+                "i",
+                "crc16_look_up",
+                "uint8_t_crc",
+                "hdr"
+            ],
+            0
+        ]
+    },
+    "publish_PVTGeodetic": {
+        "pvtGeod_buf.undulation": [
+            [
+                "dnu_double"
+            ],
+            0
+        ],
+        "pvtGeod_buf.vn": [
+            [
+                "d_speed_n"
+            ],
+            0
+        ],
+        "pvtGeod_buf.cog": [
+            [
+                "degrees_d_ground_track_rad"
+            ],
+            0
+        ],
+        "pvtGeod_buf.height": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "pvtGeod_buf.datum": [
+            [
+                "dnu_uint8"
+            ],
+            0
+        ],
+        "DNU_FLOAT": [
+            [
+                "2e10"
+            ],
+            0
+        ],
+        "pvtGeod_buf.vu": [
+            [
+                "d_speed_d"
+            ],
+            0
+        ],
+        "pvtGeod_buf.time_stamp.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pvtGeod_buf.rxclkdrift": [
+            [
+                "dnu_float"
+            ],
+            0
+        ],
+        "pvtGeod_buf.referenceid": [
+            [
+                "dnu_uint16"
+            ],
+            0
+        ],
+        "pvtGeod_buf.longitude": [
+            [
+                "radians__sitl_state_longitude"
+            ],
+            0
+        ],
+        "pvtGeod_buf.time_stamp.wnc": [
+            [
+                "gps_tow_week"
+            ],
+            0
+        ],
+        "pvtGeod_buf.latitude": [
+            [
+                "radians__sitl_state_latitude"
+            ],
+            0
+        ],
+        "DNU_DOUBLE": [
+            [
+                "2e10"
+            ],
+            0
+        ],
+        "pvtGeod_buf.meancorrage": [
+            [
+                "dnu_uint16"
+            ],
+            0
+        ],
+        "pvtGeod_buf.rxclkbias": [
+            [
+                "dnu_double"
+            ],
+            0
+        ],
+        "PVTGEO_0_MSG_ID": [
+            [
+                "0x0fa7"
+            ],
+            0
+        ],
+        "pvtGeod_buf.timesystem": [
+            [
+                "dnu_uint8"
+            ],
+            0
+        ],
+        "pvtGeod_buf.nrsv": [
+            [
+                "d_num_sats"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "pvtGeod_buf.ve": [
+            [
+                "d_speed_e"
+            ],
+            0
+        ]
+    },
+    "publish_DOP": {
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ]
+    }
+}

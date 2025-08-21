@@ -1,0 +1,188 @@
+{
+    "capacity_remaining_pct": {
+        "percentage": [
+            [
+                "_params__pack_capacity",
+                "_params__pack_capacity",
+                "_state_consumed_mah",
+                "uint8_max"
+            ],
+            1
+        ]
+    },
+    "update_resistance_estimate": {
+        "_state.voltage_resting_estimate": [
+            [
+                "_state_current_amps",
+                "_state_voltage",
+                "_state_resistance"
+            ],
+            0
+        ],
+        "_current_filt_amps": [
+            [
+                "millis",
+                "ap_batt_monitor_res_est_tc_1",
+                "_state_current_amps"
+            ],
+            3
+        ],
+        "_voltage_filt": [
+            [
+                "millis",
+                "ap_batt_monitor_res_est_tc_1",
+                "_state_voltage"
+            ],
+            3
+        ],
+        "_current_max_amps": [
+            [
+                "_state_current_amps"
+            ],
+            0
+        ],
+        "_state.resistance": [
+            [
+                "_state_voltage",
+                "_state_current_amps",
+                "_state_resistance",
+                "_state_current_amps",
+                "_state_voltage",
+                "_state_voltage",
+                "_state_current_amps",
+                "fabsf__state_current_amps",
+                "ap_batt_monitor_res_est_tc_2",
+                "fabsf__current_filt_amps",
+                "fabsf__current_max_amps"
+            ],
+            6
+        ],
+        "_resistance_timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_state_of_health_pct": {
+        "soh_pct": [
+            [
+                "_state_state_of_health_pct"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "result": [
+            [
+                "update_check_low_capacity",
+                "update_check_fs_capacity_inversion",
+                "update_check_below_arming_voltage",
+                "update_check_buflen",
+                "update_check_critical_voltage",
+                "update_check_low_voltage",
+                "update_check__state_healthy",
+                "update_check_fs_voltage_inversion",
+                "update_check_buffer",
+                "update_check_below_arming_capacity",
+                "update_check_critical_capacity"
+            ],
+            0
+        ]
+    },
+    "check_failsafe_types": {
+        "voltage_used": [
+            [
+                "voltage_resting_estimate",
+                "_state_voltage"
+            ],
+            0
+        ]
+    },
+    "update_esc_telem_outbound": {
+        "telem.consumption_mah": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ],
+        "esc_index": [
+            [
+                "_params__esc_telem_outbound_index"
+            ],
+            0
+        ],
+        "telem.current": [
+            [
+                "_state_current_amps"
+            ],
+            0
+        ],
+        "telem.temperature_cdeg": [
+            [
+                "temperature_c"
+            ],
+            0
+        ],
+        "telem.voltage": [
+            [
+                "_state_voltage"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "voltage"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "_state_temperature",
+                "_state_temperature_external"
+            ],
+            0
+        ]
+    },
+    "reset_remaining": {
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah",
+                "_state_voltage"
+            ],
+            0
+        ],
+        "_state.failsafe": [
+            [
+                "update_failsafes"
+            ],
+            0
+        ],
+        "_state.consumed_mah": [
+            [
+                "_params__pack_capacity",
+                "percentage"
+            ],
+            1
+        ]
+    },
+    "update_consumed": {
+        "state.consumed_mah": [
+            [
+                "calculate_mah_dt_us",
+                "calculate_mah_state_current_amps"
+            ],
+            1
+        ],
+        "state.consumed_wh": [
+            [
+                "state_voltage",
+                "calculate_mah_dt_us",
+                "calculate_mah_state_current_amps"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "publishHomePosition": {
+        "home.alt": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "home.lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "home_pub": [
+            [
+                "orb_advertise_orb_id",
+                "home",
+                "orb_advertise_home_position"
+            ],
+            0
+        ]
+    },
+    "publishInvalidHome": {
+        "home_pub": [
+            [
+                "home",
+                "orb_advertise_home_position",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ],
+        "home.alt": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "home.lon": [
+            [
+                "_"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "_"
+            ],
+            0
+        ]
+    },
+    "publishCurrentPosition": {
+        "gpos_pub": [
+            [
+                "gpos",
+                "orb_advertise_orb_id",
+                "orb_advertise_vehicle_global_position"
+            ],
+            0
+        ],
+        "gpos.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "gpos.lon": [
+            [
+                "lon"
+            ],
+            0
+        ]
+    },
+    "publishLanded": {
+        "landed_pub": [
+            [
+                "land_detected",
+                "orb_advertise_orb_id",
+                "orb_advertise_vehicle_land_detected"
+            ],
+            0
+        ]
+    },
+    "publishVehicleType": {
+        "status_pub": [
+            [
+                "orb_advertise_vehicle_status",
+                "orb_advertise_orb_id",
+                "status"
+            ],
+            0
+        ],
+        "status.vehicle_type": [
+            [
+                "vehicle_type"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "i",
+                "addresses",
+                "hal_i2c_mgr_get_device_get_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_dev_transfer_nullptr",
+                "_dev_transfer_sizeof",
+                "_dev_transfer_val"
+            ],
+            0
+        ],
+        "_scale": [
+            [
+                "uint16_t",
+                "val"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "_temp_sum": [
+            [
+                "sdp3x_scale_temperature",
+                "float_temp"
+            ],
+            1
+        ],
+        "_press_sum": [
+            [
+                "float__scale",
+                "float_p"
+            ],
+            1
+        ],
+        "_last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "P": [
+            [
+                "int16_t",
+                "val"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_dev_transfer_nullptr",
+                "_dev_transfer_val",
+                "_dev_transfer_sizeof"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "int16_t",
+                "val"
+            ],
+            0
+        ]
+    },
+    "_correct_pressure": {
+        "flow_SDP3X": [
+            [
+                "powf_press",
+                "float",
+                "c_to_kelvin_temperature",
+                "baro_get_pressure",
+                "ssl_air_pressure",
+                "isa_gas_constant"
+            ],
+            2
+        ],
+        "press_correction": [
+            [
+                "sq_press_uncorrected",
+                "sq_sqrtf",
+                "sq_ratio",
+                "flow_sdp3x",
+                "ssl_air_density",
+                "powf_flow_sdp3x",
+                "float",
+                "press",
+                "get_airspeed_ratio"
+            ],
+            4
+        ],
+        "tube_order": [
+            [
+                "get_tube_order"
+            ],
+            0
+        ],
+        "baro": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "_correct_pressure__press"
+            ],
+            0
+        ],
+        "_press": [
+            [
+                "_press_sum",
+                "_press_count"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "_temp_count",
+                "_temp_sum"
+            ],
+            1
+        ]
+    },
+    "_crc": {
+        "crc_value": [
+            [
+                "0xff",
+                "checksum",
+                "0x31"
+            ],
+            0
+        ]
+    }
+}

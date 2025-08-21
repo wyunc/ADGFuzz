@@ -1,0 +1,105 @@
+{
+    "set_bus_to_floating": {
+        "info": [
+            [
+                "busidx",
+                "i2cd"
+            ],
+            0
+        ],
+        "sda_line": [
+            [
+                "resolve_alt_config_info_instance",
+                "resolve_alt_config_info_sda_line",
+                "resolve_alt_config_i2c_sda"
+            ],
+            0
+        ],
+        "scl_line": [
+            [
+                "resolve_alt_config_i2c_scl",
+                "resolve_alt_config_info_instance",
+                "resolve_alt_config_info_scl_line"
+            ],
+            0
+        ]
+    },
+    "clear_bus": {
+        "scl_line": [
+            [
+                "resolve_alt_config_info_instance",
+                "resolve_alt_config_i2c_scl",
+                "resolve_alt_config_info_scl_line"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "i2cd",
+                "busidx"
+            ],
+            0
+        ],
+        "mode_saved": [
+            [
+                "pal_read_line_mode_scl_line"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "bus.i2ccfg.op_mode": [
+            [
+                "opmode_i2c",
+                "opmode_smbus_host"
+            ],
+            0
+        ]
+    },
+    "_transfer": {
+        "state": [
+            [
+                "i2c_ready",
+                "i2c_stop"
+            ],
+            0
+        ],
+        "pd": [
+            [
+                "hal_util_persistent_data"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "i2c_master_receive_timeout_i2cd",
+                "i2c_master_receive_timeout_recv_len",
+                "i2c_master_receive_timeout_bus_busnum",
+                "i2c_master_receive_timeout_timeout_ms",
+                "i2c_master_receive_timeout_recv",
+                "i2c_master_receive_timeout__address",
+                "i2c_master_receive_timeout_ch_time_ms2i",
+                "i2c_master_receive_timeout__i2c"
+            ],
+            0
+        ],
+        "pd.i2c_isr_count": [
+            [
+                "_i2c_isr_count",
+                "i2cd",
+                "bus_busnum"
+            ],
+            0
+        ],
+        "timeout_ms": [
+            [
+                "1000000ul",
+                "send_len",
+                "bus_busclock",
+                "recv_len",
+                "_timeout_ms"
+            ],
+            0
+        ]
+    }
+}

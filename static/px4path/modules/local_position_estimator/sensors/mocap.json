@@ -1,0 +1,126 @@
+{
+    "mocapInit": {
+        "_is_global_cov_init": [
+            [
+                "_global_local_proj_ref_is_initialized"
+            ],
+            0
+        ],
+        "_altOrigin": [
+            [
+                "_global_local_alt0",
+                "_global_local_proj_ref_is_initialized"
+            ],
+            1
+        ],
+        "_time_origin": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "_ref_lat": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "_ref_lon": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lon"
+            ],
+            0
+        ]
+    },
+    "mocapMeasure": {
+        "_time_last_mocap": [
+            [
+                "_sub_mocap_odom_get_timestamp_sample"
+            ],
+            0
+        ],
+        "_mocap_xy_valid": [
+            [
+                "ep_max_std_dev",
+                "sqrtf__sub_mocap_odom_get_position_variance",
+                "_sub_mocap_odom_get_position_variance",
+                "sqrtf_fmaxf"
+            ],
+            1
+        ],
+        "_mocap_z_valid": [
+            [
+                "ep_max_std_dev",
+                "sqrtf__sub_mocap_odom_get_position_variance"
+            ],
+            1
+        ]
+    },
+    "mocapCorrect": {
+        "K": [
+            [
+                "c_transpose",
+                "s_i",
+                "m_p"
+            ],
+            0
+        ],
+        ".ev_vvel": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_x": [
+            [
+                "c",
+                "y",
+                "k"
+            ],
+            2
+        ],
+        "m_P": [
+            [
+                "c",
+                "m_p",
+                "k"
+            ],
+            0
+        ],
+        ".ev_vpos": [
+            [
+                "c",
+                "y"
+            ],
+            1
+        ],
+        "S": [
+            [
+                "c",
+                "y",
+                "c_transpose",
+                "c",
+                "m_p"
+            ],
+            1
+        ],
+        "beta": [
+            [
+                "c",
+                "y",
+                "r_transpose",
+                "s_i"
+            ],
+            1
+        ],
+        "S_I": [
+            [
+                "float",
+                "s",
+                "inv",
+                "n_y_mocap"
+            ],
+            0
+        ]
+    }
+}

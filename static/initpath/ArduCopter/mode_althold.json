@@ -1,0 +1,24 @@
+{
+    "run": {
+        "target_climb_rate": [
+            [
+                "get_pilot_speed_dn_g_pilot_speed_up",
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in",
+                "get_avoidance_adjusted_climbrate_target_climb_rate"
+            ],
+            0
+        ],
+        "althold_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ]
+    }
+}

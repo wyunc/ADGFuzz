@@ -1,0 +1,236 @@
+{
+    "_ram_clear": {
+        "buf": [
+            [
+                "dm_operations_data_ram_data"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "g_per_item_size_with_hdr",
+                "item",
+                "calculate_offset_item"
+            ],
+            0
+        ]
+    },
+    "_file_clear": {
+        "offset": [
+            [
+                "item",
+                "g_per_item_size_with_hdr",
+                "calculate_offset_item"
+            ],
+            0
+        ]
+    },
+    "_file_initialize": {
+        "compat_state.key": [
+            [
+                "dm_compat_key"
+            ],
+            0
+        ],
+        "mission.geofence_id": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "dm_key_safe_points_0"
+            ],
+            0
+        ],
+        "mission.mission_dataman_id": [
+            [
+                "dm_key_waypoints_offboard_0"
+            ],
+            0
+        ],
+        "file_existed": [
+            [
+                "access_k_data_manager_device_path",
+                "access_f_ok"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "g_dm_ops_write_sizeof",
+                "g_dm_ops_write_compat_state",
+                "g_dm_ops_write_dm_key_compat"
+            ],
+            0
+        ],
+        "mission.mission_id": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "dm_operations_data.file.fd": [
+            [
+                "open_o_binary",
+                "open_o_creat",
+                "open_o_rdwr",
+                "open_k_data_manager_device_path",
+                "open_px4_o_mode_666"
+            ],
+            0
+        ],
+        "mission.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "mission.safe_points_id": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "_ram_initialize": {
+        "dm_operations_data.ram.data": [
+            [
+                "malloc_max_offset",
+                "uint8_t"
+            ],
+            0
+        ],
+        "dm_operations_data.ram.data_end": [
+            [
+                "max_offset",
+                "dm_operations_data_ram_data"
+            ],
+            0
+        ]
+    },
+    "task_main": {
+        "fds.events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "response.client_id": [
+            [
+                "dataman_clients_count",
+                "request_client_id"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_poll_fds",
+                "g_dm_ops_initialize_max_offset"
+            ],
+            0
+        ],
+        "_dm_read_perf": [
+            [
+                "perf_alloc_pc_elapsed",
+                "nullptr",
+                "perf_alloc_module_name"
+            ],
+            0
+        ],
+        "g_dm_ops": [
+            [
+                "dm_ram_operations",
+                "dm_file_operations"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "g_dm_ops_clear_request_item",
+                "g_dm_ops_clear_static_cast",
+                "g_dm_ops_clear_dm_item_t"
+            ],
+            0
+        ],
+        "response.item": [
+            [
+                "request_item"
+            ],
+            0
+        ],
+        "response.request_type": [
+            [
+                "request_request_type"
+            ],
+            0
+        ],
+        "response.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "backend_none"
+            ],
+            0
+        ],
+        "_dm_write_perf": [
+            [
+                "perf_alloc_pc_elapsed",
+                "nullptr",
+                "perf_alloc_module_name"
+            ],
+            0
+        ],
+        "fds.fd": [
+            [
+                "orb_subscribe_dataman_request",
+                "orb_subscribe_orb_id"
+            ],
+            1
+        ],
+        "response.status": [
+            [
+                "status_failure_write_failed",
+                "status_success",
+                "status_failure_clear_failed",
+                "status_failure_read_failed",
+                "status_failure_no_data"
+            ],
+            0
+        ],
+        "response.index": [
+            [
+                "request_index"
+            ],
+            0
+        ]
+    },
+    "dataman_main": {
+        "backend": [
+            [
+                "backend_file",
+                "backend_ram"
+            ],
+            0
+        ],
+        "k_data_manager_device_path": [
+            [
+                "strdup_default_device_path",
+                "strdup_dmoptarg",
+                "nullptr"
+            ],
+            0
+        ],
+        "dmoptarg": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

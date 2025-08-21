@@ -1,0 +1,203 @@
+{
+    "receive_callback": {
+        "msg": [
+            [
+                "qurt_rpc_msg",
+                "const",
+                "struct",
+                "data"
+            ],
+            0
+        ],
+        "bytes_sent": [
+            [
+                "sizeof_gcs_addr",
+                "gcs_addr",
+                "sendto_sockaddr",
+                "sendto_msg_data",
+                "sendto_gcs_socket_fd",
+                "sendto_obd_socket_fd",
+                "sendto_struct",
+                "sendto_msg_data_length",
+                "obd_addr",
+                "sizeof_obd_addr"
+            ],
+            0
+        ]
+    },
+    "obd_recv_thread": {
+        "fromlen": [
+            [
+                "sizeof_from"
+            ],
+            0
+        ],
+        "obd_addr": [
+            [
+                "from"
+            ],
+            0
+        ],
+        "msg.msg_id": [
+            [
+                "qurt_msg_id_mavlink_msg"
+            ],
+            0
+        ],
+        "msg.data_length": [
+            [
+                "bytes_received"
+            ],
+            0
+        ],
+        "msg.seq": [
+            [
+                "next_seq"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "obd_socket_fd": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram"
+            ],
+            0
+        ],
+        "gcs_local.sin_port": [
+            [
+                "htons_mavlink_gcs_udp_port_local"
+            ],
+            0
+        ],
+        "gcs_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "fromlen": [
+            [
+                "sizeof_from"
+            ],
+            0
+        ],
+        "gcs_addr": [
+            [
+                "from"
+            ],
+            0
+        ],
+        "obd_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "msg.seq": [
+            [
+                "next_seq"
+            ],
+            0
+        ],
+        "gcs_addr.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_loopback"
+            ],
+            0
+        ],
+        "obd_addr.sin_port": [
+            [
+                "htons_mavlink_obd_udp_port_remote"
+            ],
+            0
+        ],
+        "any.sin_port": [
+            [
+                "htons"
+            ],
+            0
+        ],
+        "gcs_local.sin_addr.s_addr": [
+            [
+                "inaddr_any"
+            ],
+            0
+        ],
+        "gcs_local.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "msg.msg_id": [
+            [
+                "qurt_msg_id_mavlink_msg"
+            ],
+            0
+        ],
+        "obd_local.sin_addr.s_addr": [
+            [
+                "inaddr_any"
+            ],
+            0
+        ],
+        "bcast_address": [
+            [
+                "get_ipv4_broadcast"
+            ],
+            0
+        ],
+        "obd_addr.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_loopback"
+            ],
+            0
+        ],
+        "msg.data_length": [
+            [
+                "bytes_received"
+            ],
+            0
+        ],
+        "gcs_addr.sin_port": [
+            [
+                "htons_udp_out_port",
+                "htons_mavlink_gcs_udp_port_remote"
+            ],
+            0
+        ],
+        "gcs_socket_fd": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram"
+            ],
+            0
+        ],
+        "action.sa_handler": [
+            [
+                "shutdown_signal_handler"
+            ],
+            0
+        ],
+        "any.sin_addr.s_addr": [
+            [
+                "inaddr_any"
+            ],
+            0
+        ],
+        "obd_local.sin_port": [
+            [
+                "htons_mavlink_obd_udp_port_local"
+            ],
+            0
+        ],
+        "obd_local.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ]
+    }
+}

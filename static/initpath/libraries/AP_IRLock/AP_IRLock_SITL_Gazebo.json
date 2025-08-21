@@ -1,0 +1,37 @@
+{
+    "update": {
+        "_target_info.pos_y": [
+            [
+                "pkt_pos_y"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "pkt_timestamp"
+            ],
+            1
+        ],
+        "s": [
+            [
+                "wait_ms",
+                "sock_recv_irlock_packet",
+                "sock_recv_sizeof",
+                "sock_recv_pkt"
+            ],
+            0
+        ],
+        "_target_info.pos_x": [
+            [
+                "pkt_pos_x"
+            ],
+            0
+        ],
+        "_target_info.timestamp": [
+            [
+                "pkt_timestamp"
+            ],
+            0
+        ]
+    }
+}

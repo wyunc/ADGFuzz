@@ -1,0 +1,18 @@
+{
+    "init": {
+        "enable_mask": [
+            [
+                "init_ports"
+            ],
+            0
+        ]
+    },
+    "hw_set_rgb": {
+        "led": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

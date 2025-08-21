@@ -1,0 +1,178 @@
+{
+    "__ubsan_on_report": {
+        "OutMessage": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ubsan_log_path": [
+            [
+                "getenv"
+            ],
+            0
+        ],
+        "OutMemoryAddr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_wronly",
+                "open_ubsan_log_path",
+                "open_o_creat",
+                "open_o_append"
+            ],
+            0
+        ],
+        "OutFilename": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "OutIssueKind": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_main_ctx": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "delay_microseconds": {
+        "dtime": [
+            [
+                "micros64",
+                "micros64"
+            ],
+            1
+        ]
+    },
+    "delay": {
+        "now": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "register_timer_failsafe": {
+        "_failsafe": [
+            [
+                "failsafe"
+            ],
+            0
+        ]
+    },
+    "set_system_initialized": {
+        "exceptions": [
+            [
+                "fe_overflow",
+                "fe_divbyzero"
+            ],
+            0
+        ]
+    },
+    "stop_clock": {
+        "_last_io_run": [
+            [
+                "time_usec"
+            ],
+            0
+        ],
+        "_stopped_clock_usec": [
+            [
+                "time_usec"
+            ],
+            0
+        ]
+    },
+    "thread_create_trampoline": {
+        "next": [
+            [
+                "p_next_next"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "struct",
+                "ctx",
+                "thread_attr"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "a_next"
+            ],
+            1
+        ],
+        "thread": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "thread_create": {
+        "f": [
+            [
+                "malloc_proc",
+                "member_proc",
+                "malloc_sizeof"
+            ],
+            0
+        ],
+        "stack_min": [
+            [
+                "const",
+                "size_t_stack_size",
+                "size_t_pthread_stack_min",
+                "uint8_t",
+                "a_stack"
+            ],
+            1
+        ],
+        "threads": [
+            [
+                "thread_attr",
+                "new_nothrow",
+                "struct"
+            ],
+            1
+        ]
+    },
+    "check_thread_stacks": {
+        "p": [
+            [
+                "threads"
+            ],
+            0
+        ]
+    },
+    "get_current_thread_name": {
+        "self": [
+            [
+                "pthread_self"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "threads"
+            ],
+            0
+        ]
+    }
+}

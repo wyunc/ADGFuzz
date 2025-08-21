@@ -1,0 +1,88 @@
+{
+    "pulse_input_enable": {
+        "pulse_input_enabled": [
+            [
+                "enable"
+            ],
+            0
+        ]
+    },
+    "new_input": {
+        "_last_read": [
+            [
+                "_rcin_timestamp_last_signal"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "_rcin_timestamp_last_signal"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "_num_channels": [
+            [
+                "rc_input_max_channels",
+                "rcprot_num_channels"
+            ],
+            0
+        ],
+        "_rssi": [
+            [
+                "rcprot_get_rssi",
+                "iomcu_get_rssi"
+            ],
+            0
+        ],
+        "last_source": [
+            [
+                "rcprot_pulses",
+                "rcprot_bytes",
+                "iomcu",
+                "rcprot_using_uart"
+            ],
+            1
+        ],
+        "last_protocol": [
+            [
+                "nullptr",
+                "iomcu_get_rc_protocol",
+                "rcprot_protocol_name"
+            ],
+            1
+        ],
+        "_rx_link_quality": [
+            [
+                "rcprot_get_rx_link_quality"
+            ],
+            0
+        ],
+        "rcprot": [
+            [
+                "rc"
+            ],
+            0
+        ],
+        "have_iocmu_rc": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_rcin_last_iomcu_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_rcin_timestamp_last_signal": [
+            [
+                "last_iomcu_us",
+                "micros"
+            ],
+            0
+        ]
+    }
+}

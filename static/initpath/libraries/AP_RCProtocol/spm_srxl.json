@@ -1,0 +1,687 @@
+{
+    "srxlInitDevice": {
+        "srxlThisDev.uid": [
+            [
+                "uid"
+            ],
+            0
+        ],
+        "srxlFwdPgmDevice.deviceID": [
+            [
+                "device_id"
+            ],
+            0
+        ],
+        "srxlThisDev.devEntry.info": [
+            [
+                "info"
+            ],
+            0
+        ],
+        "srxlThisDev.devEntry.priority": [
+            [
+                "priority"
+            ],
+            0
+        ],
+        "srxlThisDev.devEntry.deviceID": [
+            [
+                "device_id"
+            ],
+            0
+        ]
+    },
+    "srxlInitBus": {
+        "fullID.deviceID": [
+            [
+                "srxl_this_dev_dev_entry_device_id"
+            ],
+            0
+        ],
+        "requestID": [
+            [
+                "0x10",
+                "0x11",
+                "srxl_this_dev_dev_entry_device_id"
+            ],
+            0
+        ],
+        "master": [
+            [
+                "0x10",
+                "srxl_this_dev_dev_entry_device_id"
+            ],
+            0
+        ],
+        "pBus": [
+            [
+                "srxl_bus",
+                "bus_index"
+            ],
+            0
+        ],
+        "baudRate": [
+            [
+                "srxl_baud_115200"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "srxl_state_listen_on_startup"
+            ],
+            0
+        ],
+        "fullID.busIndex": [
+            [
+                "bus_index"
+            ],
+            0
+        ],
+        "pMasterRcvr": [
+            [
+                "0x10",
+                "srxl_rx_rcvr",
+                "srxl_this_dev_dev_entry_device_id"
+            ],
+            0
+        ],
+        "baudSupported": [
+            [
+                "baud_supported"
+            ],
+            0
+        ]
+    },
+    "srxlSend": {
+        "srxlOut.telemetry.destDevID": [
+            [
+                "srxl_rx_p_telem_rcvr_device_id",
+                "0x_ff"
+            ],
+            0
+        ],
+        "srxlOut.bind.data": [
+            [
+                "srxl_bind_info"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "srxl_crc16_p_bus_srxl_out_raw"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.channelData.rssi": [
+            [
+                "srxl_ch_data_rssi"
+            ],
+            0
+        ],
+        "srxlOut.header.srxlID": [
+            [
+                "spektrum_srxl_id"
+            ],
+            0
+        ],
+        "srxlOut.bind.data.type": [
+            [
+                "dsmx_11ms"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.vtxData": [
+            [
+                "srxl_vtx_data"
+            ],
+            0
+        ],
+        "srxlOut.header.packetType": [
+            [
+                "srxl_bind_id",
+                "srxl_rssi_id",
+                "srxl_telem_id",
+                "srxl_ctrl_id",
+                "srxl_handshake_id"
+            ],
+            0
+        ],
+        "channelMask": [
+            [
+                "srxl_failsafe_ch_mask",
+                "srxl_ch_data_mask"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.uid": [
+            [
+                "srxl_this_dev_uid"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.priority": [
+            [
+                "srxl_this_dev_dev_entry_priority"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.info": [
+            [
+                "srxl_this_dev_dev_entry_info"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.baudSupported": [
+            [
+                "p_bus_baud_supported"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.destDevID": [
+            [
+                "reply_id"
+            ],
+            0
+        ],
+        "srxlOut.rssi.request": [
+            [
+                "srxl_rssi_req_request"
+            ],
+            0
+        ],
+        "srxlOut.header.length": [
+            [
+                "sizeof_srxl_vtx_data",
+                "sizeof_srxl_handshake_packet",
+                "sizeof_srxl_bind_packet",
+                "channel_index",
+                "srxl_fwd_pgm_buffer_length",
+                "srxl_ctrl_base_length",
+                "sizeof_srxl_telemetry_packet",
+                "sizeof_srxl_rssi_packet"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.cmd": [
+            [
+                "srxl_ctrl_cmd_channel_fs",
+                "srxl_ctrl_cmd_fwdpgm",
+                "srxl_ctrl_cmd_vtx",
+                "srxl_ctrl_cmd_channel"
+            ],
+            0
+        ],
+        "srxlOut.bind.data.options": [
+            [
+                "0x_ff",
+                "reply_id",
+                "srxl_bind_opt_bind_tx_enable",
+                "srxl_bind_opt_telem_tx_enable"
+            ],
+            0
+        ],
+        "srxlOut.bind.deviceID": [
+            [
+                "reply_id"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.channelData.mask": [
+            [
+                "channel_mask"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.channelData.frameLosses": [
+            [
+                "_fades",
+                "srxl_rx_rcvr",
+                "srxl_rx_frame_losses"
+            ],
+            0
+        ],
+        "srxlOut.control.payload.replyID": [
+            [
+                "reply_id"
+            ],
+            0
+        ],
+        "srxlOut.handshake.payload.srcDevID": [
+            [
+                "srxl_this_dev_dev_entry_device_id"
+            ],
+            0
+        ],
+        "srxlOut.bind.request": [
+            [
+                "srxl_bind_req_enter",
+                "srxl_bind_req_status",
+                "srxl_bind_req_bound_data",
+                "srxl_bind_req_set_bind"
+            ],
+            0
+        ]
+    },
+    "srxlParsePacket": {
+        "srxlBindInfo.options": [
+            [
+                "p_bind_info_data_options"
+            ],
+            0
+        ],
+        "baudRate": [
+            [
+                "p_handshake_baud_supported"
+            ],
+            0
+        ],
+        "srxlChData.frameLosses": [
+            [
+                "p_ctrl_data_channel_data_frame_losses"
+            ],
+            0
+        ],
+        "srxlChData.rssi": [
+            [
+                "p_ctrl_data_channel_data_rssi"
+            ],
+            0
+        ],
+        "pHandshake": [
+            [
+                "p_rx_handshake_payload"
+            ],
+            0
+        ],
+        "srxlBindInfo.uid": [
+            [
+                "p_bind_info_data_uid"
+            ],
+            0
+        ],
+        "baudSupported": [
+            [
+                "srxl_supported_baud_rates"
+            ],
+            0
+        ],
+        "srxlBindInfo.type": [
+            [
+                "p_bind_info_data_type"
+            ],
+            0
+        ],
+        "pRx": [
+            [
+                "p_bus_srxl_in"
+            ],
+            0
+        ],
+        "srxlChDataIsFailsafe": [
+            [
+                "is_failsafe"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "srxl_state_running",
+                "srxl_state_listen_for_handshake",
+                "srxl_state_send_enter_bind",
+                "srxl_state_send_handshake",
+                "srxl_state_send_telemetry",
+                "srxl_state_send_set_bind_info"
+            ],
+            0
+        ],
+        "srxlBindInfo": [
+            [
+                "p_bind_info_data"
+            ],
+            0
+        ],
+        "srxlTelemetryPhase": [
+            [
+                "p_ctrl_data_channel_data_rssi"
+            ],
+            0
+        ],
+        "pCtrlData": [
+            [
+                "p_rx_control_payload"
+            ],
+            0
+        ],
+        "channelMask": [
+            [
+                "p_ctrl_data_channel_data_mask",
+                "is_failsafe"
+            ],
+            0
+        ],
+        "boundID.busIndex": [
+            [
+                "bus_index"
+            ],
+            0
+        ],
+        "newDev": [
+            [
+                "_info",
+                "_priority",
+                "p_handshake_priority",
+                "_device_id",
+                "p_handshake_info",
+                "p_handshake_src_dev_id"
+            ],
+            0
+        ],
+        "pBus": [
+            [
+                "srxl_bus",
+                "bus_index"
+            ],
+            0
+        ],
+        "pMasterRcvr": [
+            [
+                "srxl_add_receiver_entry_new_dev",
+                "srxl_get_receiver_entry_bus_index",
+                "srxl_add_receiver_entry_p_bus",
+                "srxl_get_receiver_entry_new_dev_device_id",
+                "srxl_rx_rcvr"
+            ],
+            0
+        ],
+        "fades": [
+            [
+                "p_ctrl_data_channel_data_frame_losses"
+            ],
+            0
+        ],
+        "pTelem": [
+            [
+                "p_rx_telemetry"
+            ],
+            0
+        ],
+        "rssi_Pct": [
+            [
+                "p_ctrl_data_channel_data_rssi"
+            ],
+            0
+        ],
+        "boundID.deviceID": [
+            [
+                "p_bind_info_device_id"
+            ],
+            0
+        ],
+        "srxlFwdPgmBufferLength": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "pNewTelem": [
+            [
+                "srxl_get_receiver_entry_p_bind_info_device_id",
+                "srxl_get_receiver_entry_bus_index"
+            ],
+            0
+        ],
+        "srxlRx.pTelemRcvr": [
+            [
+                "srxl_this_dev_p_rcvr",
+                "srxl_choose_telem_rcvr",
+                "p_new_telem"
+            ],
+            0
+        ],
+        "isFailsafe": [
+            [
+                "srxl_ctrl_cmd_channel_fs",
+                "p_ctrl_data_cmd"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "srxl_crc16_packet"
+            ],
+            0
+        ],
+        "srxlBindInfo.guid": [
+            [
+                "p_bind_info_data_guid"
+            ],
+            0
+        ],
+        "pBindInfo": [
+            [
+                "p_rx_bind"
+            ],
+            0
+        ],
+        "rssi_dBm": [
+            [
+                "p_ctrl_data_channel_data_rssi"
+            ],
+            0
+        ],
+        "requestID": [
+            [
+                "0x_ff",
+                "p_bus_full_id_device_id",
+                "p_handshake_src_dev_id",
+                "srxl_rx_p_bind_rcvr_device_id",
+                "p_bus_rx_dev_count"
+            ],
+            0
+        ]
+    },
+    "srxlRun": {
+        "state": [
+            [
+                "srxl_state_listen_for_handshake",
+                "srxl_state_running",
+                "srxl_state_send_handshake",
+                "srxl_state_listen_on_startup",
+                "0x0f",
+                "p_bus_full_id_device_id"
+            ],
+            0
+        ],
+        "pBus": [
+            [
+                "bus_index",
+                "srxl_bus"
+            ],
+            0
+        ],
+        "baudRate": [
+            [
+                "srxl_baud_115200"
+            ],
+            0
+        ],
+        "fades": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "timeoutCount_ms": [
+            [
+                "timeout_delta_ms"
+            ],
+            0
+        ]
+    },
+    "srxlEnterBind": {
+        "srxlBindInfo.options": [
+            [
+                "srxl_bind_opt_bind_tx_enable"
+            ],
+            0
+        ],
+        "srxlBindInfo.type": [
+            [
+                "bind_type"
+            ],
+            0
+        ],
+        "srxlRx.pBindRcvr": [
+            [
+                "srxl_this_dev_p_rcvr",
+                "srxl_rx_rcvr_sorted",
+                "srxl_rx_p_telem_rcvr"
+            ],
+            0
+        ]
+    },
+    "srxlSetBindInfo": {
+        "srxlBindInfo.type": [
+            [
+                "bind_type"
+            ],
+            0
+        ],
+        "srxlBindInfo.uid": [
+            [
+                "srxl_this_dev_uid",
+                "uid"
+            ],
+            0
+        ],
+        "srxlBindInfo.options": [
+            [
+                "srxl_bind_opt_us_power"
+            ],
+            0
+        ],
+        "srxlBindInfo.guid": [
+            [
+                "guid"
+            ],
+            0
+        ]
+    },
+    "srxlOnFrameError": {
+        "pBus": [
+            [
+                "srxl_bus",
+                "bus_index"
+            ],
+            0
+        ],
+        "baudRate": [
+            [
+                "srxl_baud_115200",
+                "srxl_baud_400000"
+            ],
+            0
+        ]
+    },
+    "srxlSetVtxData": {
+        "srxlVtxData.channel": [
+            [
+                "p_vtx_data_channel"
+            ],
+            0
+        ],
+        "srxlVtxData.pit": [
+            [
+                "p_vtx_data_pit"
+            ],
+            0
+        ],
+        "srxlVtxData.band": [
+            [
+                "p_vtx_data_band"
+            ],
+            0
+        ],
+        "srxlVtxData.region": [
+            [
+                "p_vtx_data_region"
+            ],
+            0
+        ],
+        "srxlVtxData.power": [
+            [
+                "p_vtx_data_power"
+            ],
+            0
+        ],
+        "srxlVtxData.powerDec": [
+            [
+                "p_vtx_data_power_dec"
+            ],
+            0
+        ]
+    },
+    "srxlSetHoldThreshold": {
+        "srxlRx.lossHoldCount": [
+            [
+                "countdown_reset"
+            ],
+            0
+        ]
+    },
+    "srxlClearCommStats": {
+        "srxlRx.lossCountdown": [
+            [
+                "srxl_rx_loss_hold_count"
+            ],
+            0
+        ]
+    },
+    "srxlUpdateCommStats": {
+        "srxlRx.bestRssi_Pct": [
+            [
+                "_rssi_pct",
+                "i",
+                "srxl_rx_rcvr"
+            ],
+            0
+        ],
+        "srxlRx.frameLosses": [
+            [
+                "srxl_rx_loss_hold_count"
+            ],
+            0
+        ],
+        "srxlRx.lossCountdown": [
+            [
+                "srxl_rx_loss_hold_count"
+            ],
+            0
+        ],
+        "srxlRx.pTelemRcvr": [
+            [
+                "srxl_this_dev_p_rcvr",
+                "srxl_choose_telem_rcvr"
+            ],
+            0
+        ],
+        "srxlRx.bestRssi_dBm": [
+            [
+                "i",
+                "_rssi_d_bm",
+                "srxl_rx_rcvr"
+            ],
+            0
+        ],
+        "srxlChData.rssi": [
+            [
+                "srxl_telemetry_phase",
+                "srxl_ch_data_is_failsafe",
+                "srxl_rx_best_rssi_pct",
+                "srxl_rx_best_rssi_d_bm"
+            ],
+            0
+        ]
+    }
+}

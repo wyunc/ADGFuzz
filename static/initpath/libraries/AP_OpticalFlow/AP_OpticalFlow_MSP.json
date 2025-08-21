@@ -1,0 +1,89 @@
+{
+    "update": {
+        "state.surface_quality": [
+            [
+                "count",
+                "quality_sum"
+            ],
+            0
+        ],
+        "prev_frame_us": [
+            [
+                "latest_frame_us"
+            ],
+            0
+        ],
+        "state.bodyRate": [
+            [
+                "gyro_sum_count",
+                "gyro_sum_y",
+                "gyro_sum_x"
+            ],
+            0
+        ],
+        "gyro_sum.x": [
+            [
+                "gyro_x"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "flow_scale_factor_y": [
+            [
+                "_flow_scaler_y"
+            ],
+            0
+        ],
+        "flow_scale_factor_x": [
+            [
+                "_flow_scaler_x"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_0e",
+                "latest_frame_us"
+            ],
+            0
+        ],
+        "gyro_sum.y": [
+            [
+                "gyro_y"
+            ],
+            0
+        ]
+    },
+    "handle_msp": {
+        "quality_sum": [
+            [
+                "int",
+                "pkt_quality"
+            ],
+            0
+        ],
+        "latest_frame_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "flow_sum.x": [
+            [
+                "pkt_motion_x"
+            ],
+            0
+        ],
+        "flow_sum.y": [
+            [
+                "pkt_motion_y"
+            ],
+            0
+        ]
+    }
+}

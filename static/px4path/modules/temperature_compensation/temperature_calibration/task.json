@@ -1,0 +1,89 @@
+{
+    "task_main": {
+        "led_control.color": [
+            [
+                "color_red",
+                "color_yellow",
+                "color_green"
+            ],
+            0
+        ],
+        "led_control.led_mask": [
+            [
+                "0xff",
+                "leds_completed"
+            ],
+            0
+        ],
+        "led_progress": [
+            [
+                "min_progress",
+                "board_max_leds"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "calibrators",
+                "_finish",
+                "px4_poll_fds",
+                "i",
+                "param_save_default_true",
+                "px4_poll_num_gyro",
+                "_update"
+            ],
+            0
+        ],
+        "next_progress_output": [
+            [
+                "hrt_absolute_time",
+                "hrt_absolute_time",
+                "1e6"
+            ],
+            1
+        ],
+        ".events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "num_gyro": [
+            [
+                "orb_group_count_sensor_gyro",
+                "orb_group_count_orb_id",
+                "sensor_count_max"
+            ],
+            0
+        ],
+        ".fd": [
+            [
+                "i",
+                "gyro_sub"
+            ],
+            0
+        ],
+        "led_control.mode": [
+            [
+                "mode_blink_fast",
+                "mode_blink_normal",
+                "mode_on"
+            ],
+            0
+        ],
+        "led_control.priority": [
+            [
+                "max_priority"
+            ],
+            0
+        ]
+    },
+    "publish_led_control": {
+        "led_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

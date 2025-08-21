@@ -1,0 +1,77 @@
+{
+    "calc_IAS_corrected": {
+        "airspeed_corrected": [
+            [
+                "flow_sdp33",
+                "sqrtf_k_air_density_sea_level_standard_atmos",
+                "sqrtf_dp_tot"
+            ],
+            2
+        ],
+        "flow_SDP33": [
+            [
+                "powf_dp_corr",
+                "get_density_from_pressure_and_temp_pressure_ambient",
+                "get_density_from_pressure_and_temp_temperature_celsius"
+            ],
+            1
+        ],
+        "d_tubePow4": [
+            [
+                "powf_tube_dia_mm",
+                "powf_1e"
+            ],
+            0
+        ],
+        "dp_tot": [
+            [
+                "flow_sdp33",
+                "tube_len",
+                "get_density_from_pressure_and_temp_pressure_ambient",
+                "get_density_from_pressure_and_temp_temperature_celsius",
+                "flow_sdp33",
+                "get_density_from_pressure_and_temp_pressure_ambient",
+                "get_density_from_pressure_and_temp_temperature_celsius",
+                "m_pi_f",
+                "fabsf_differential_pressure",
+                "d_tube_pow4",
+                "get_density_from_pressure_and_temp_pressure_ambient",
+                "get_density_from_pressure_and_temp_temperature_celsius",
+                "1e",
+                "_f",
+                "sqrtf_dp",
+                "1e",
+                "tube_len",
+                "fabsf_differential_pressure",
+                "pressure_ambient",
+                "fabsf_differential_pressure"
+            ],
+            9
+        ]
+    },
+    "calc_TAS_from_CAS": {
+        "temperature_celsius": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "calc_TAS": {
+        "density": [
+            [
+                "k_air_density_sea_level_standard_atmos",
+                "get_density_from_pressure_and_temp_static_pressure",
+                "get_density_from_pressure_and_temp_temperature_celsius"
+            ],
+            0
+        ],
+        "pressure_difference": [
+            [
+                "static_pressure",
+                "total_pressure"
+            ],
+            0
+        ]
+    }
+}

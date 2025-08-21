@@ -1,0 +1,176 @@
+{
+    "init": {
+        "state": [
+            [
+                "_get_state",
+                "i",
+                "header"
+            ],
+            0
+        ],
+        "current_sector": [
+            [
+                "first_sector"
+            ],
+            0
+        ],
+        "sector": [
+            [
+                "i",
+                "first_sector"
+            ],
+            0
+        ],
+        "bad_header": [
+            [
+                "_signature_ok",
+                "i",
+                "header"
+            ],
+            0
+        ]
+    },
+    "switch_full_sector": {
+        "ret": [
+            [
+                "protected_switch_full_sector"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "blk.header.block_num": [
+            [
+                "block_size"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "block_size",
+                "block_size",
+                "blk_header_num_blocks_minus_one"
+            ],
+            2
+        ],
+        "offset": [
+            [
+                "block_size",
+                "block_size",
+                "blk_header_num_blocks_minus_one"
+            ],
+            2
+        ],
+        "blk.header.state": [
+            [
+                "block_state_writing",
+                "block_state_valid"
+            ],
+            0
+        ],
+        "blk.header.num_blocks_minus_one": [
+            [
+                "max_write",
+                "block_size"
+            ],
+            1
+        ],
+        "space_available": [
+            [
+                "flash_sector_size"
+            ],
+            0
+        ],
+        "space_required": [
+            [
+                "reserved_space",
+                "sizeof_struct",
+                "sizeof_block_header",
+                "max_write"
+            ],
+            0
+        ],
+        "block_ofs": [
+            [
+                "blk_header_block_num",
+                "block_size"
+            ],
+            0
+        ],
+        "write_offset": [
+            [
+                "sizeof_blk_header",
+                "block_size",
+                "blk_header_num_blocks_minus_one"
+            ],
+            1
+        ]
+    },
+    "load_sector": {
+        "state": [
+            [
+                "header_state",
+                "enum",
+                "block_state"
+            ],
+            0
+        ],
+        "write_offset": [
+            [
+                "sizeof_header",
+                "sizeof_sector_header",
+                "31u",
+                "block_size",
+                "header_num_blocks_minus_one",
+                "7u"
+            ],
+            2
+        ],
+        "block_ofs": [
+            [
+                "block_size",
+                "header_block_num"
+            ],
+            0
+        ]
+    },
+    "erase_all": {
+        "write_offset": [
+            [
+                "sizeof_sector_header",
+                "sizeof_struct"
+            ],
+            0
+        ]
+    },
+    "write_all": {
+        "n": [
+            [
+                "max_write",
+                "storage_size",
+                "ofs"
+            ],
+            1
+        ]
+    },
+    "switch_sectors": {
+        "write_offset": [
+            [
+                "sizeof_header"
+            ],
+            0
+        ],
+        "current_sector": [
+            [
+                "new_sector"
+            ],
+            0
+        ],
+        "reserved_space": [
+            [
+                "reserve_size"
+            ],
+            0
+        ]
+    }
+}

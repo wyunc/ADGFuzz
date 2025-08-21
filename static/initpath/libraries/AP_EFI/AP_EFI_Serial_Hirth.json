@@ -1,0 +1,275 @@
+{
+    "check_response": {
+        "computed_checksum": [
+            [
+                "port_read",
+                "raw_data",
+                "res_data_quantity",
+                "res_data_code",
+                "i"
+            ],
+            0
+        ],
+        "internal_state.last_updated_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "uptime": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "num_bytes": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "res_data.checksum": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "last_packet_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_request": {
+        "allow_throttle": [
+            [
+                "ice_allow_throttle_while_disarmed",
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "last_req_send_throttle_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_throttle": [
+            [
+                "get_output_scaled_k_throttle",
+                "uint16_t"
+            ],
+            1
+        ],
+        "last_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "request_was_sent": [
+            [
+                "send_target_values_new_throttle",
+                "send_target_values",
+                "send_request_status"
+            ],
+            0
+        ]
+    },
+    "send_target_values": {
+        "computed_checksum": [
+            [
+                "raw_data",
+                "0x_ff",
+                "quantity_set_value",
+                "throttle_position_factor",
+                "linearise_throttle_thr",
+                "idx",
+                "requested_code",
+                "code_set_value"
+            ],
+            2
+        ],
+        "expected_bytes": [
+            [
+                "quantity_ack_set_values"
+            ],
+            0
+        ]
+    },
+    "send_request_status": {
+        "expected_bytes": [
+            [
+                "quantity_response_status_2",
+                "quantity_response_status_1",
+                "quantity_response_status_3"
+            ],
+            0
+        ],
+        "requested_code": [
+            [
+                "code_request_status_3",
+                "code_request_status_2",
+                "code_request_status_1"
+            ],
+            0
+        ],
+        "requested_quantity": [
+            [
+                "quantity_request_status"
+            ],
+            0
+        ],
+        "requested_checksum": [
+            [
+                "checksum_request_status_3",
+                "checksum_request_status_2",
+                "checksum_request_status_1"
+            ],
+            0
+        ]
+    },
+    "decode_data": {
+        "error_excess_temperature": [
+            [
+                "record3_error_excess_temperature_bitfield"
+            ],
+            0
+        ],
+        "internal_state.ignition_voltage": [
+            [
+                "voltage_resolution",
+                "record1_battery_voltage"
+            ],
+            0
+        ],
+        "record2": [
+            [
+                "raw_data"
+            ],
+            0
+        ],
+        "internal_state.engine_speed_rpm": [
+            [
+                "record1_rpm"
+            ],
+            0
+        ],
+        "record1": [
+            [
+                "raw_data"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature": [
+            [
+                "c_to_kelvin_record3_excess_temperature_1"
+            ],
+            0
+        ],
+        "internal_state.throttle_position_percent": [
+            [
+                "record2_throttle_percent_times_10"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.ignition_timing_deg": [
+            [
+                "record1_ignition_angle"
+            ],
+            0
+        ],
+        "record3": [
+            [
+                "raw_data"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_pressure_kpa": [
+            [
+                "record1_voltage_int_air_pressure",
+                "adc_calibration",
+                "hpa_to_kpa",
+                "map_hpa_per_volt_factor"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.injection_time_ms": [
+            [
+                "injection_time_resolution",
+                "record1_injection_time"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.exhaust_gas_temperature2": [
+            [
+                "c_to_kelvin_record3_excess_temperature_4"
+            ],
+            0
+        ],
+        "sensor_status": [
+            [
+                "record1_sensor_ok"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature2": [
+            [
+                "c_to_kelvin_record3_excess_temperature_2"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.exhaust_gas_temperature": [
+            [
+                "c_to_kelvin_record3_excess_temperature_3"
+            ],
+            0
+        ],
+        "last_fuel_integration_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "internal_state.engine_state": [
+            [
+                "record1_engine_status",
+                "engine_state"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_temperature": [
+            [
+                "c_to_kelvin_record1_air_temperature"
+            ],
+            0
+        ],
+        "internal_state.fuel_consumption_rate_cm3pm": [
+            [
+                "get_coef1",
+                "record2_fuel_consumption"
+            ],
+            1
+        ],
+        "internal_state.throttle_out": [
+            [
+                "record1_throttle"
+            ],
+            0
+        ],
+        "internal_state.estimated_consumed_fuel_volume_cm3": [
+            [
+                "internal_state_fuel_consumption_rate_cm3pm",
+                "millis"
+            ],
+            2
+        ]
+    }
+}

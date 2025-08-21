@@ -1,0 +1,164 @@
+{
+    "update": {
+        "_last_auto_enabled": [
+            [
+                "_auto_enabled"
+            ],
+            0
+        ],
+        "_last_enabled": [
+            [
+                "_enabled"
+            ],
+            0
+        ],
+        "_auto_enable_mask": [
+            [
+                "ac_fence_all_fences"
+            ],
+            0
+        ],
+        "_enabled_fences": [
+            [
+                "_configured_fences_get",
+                "ac_fence_type_alt_min"
+            ],
+            0
+        ]
+    },
+    "auto_enable_fence_on_arming": {
+        "fences": [
+            [
+                "enable__auto_enable_mask",
+                "enable_true",
+                "enable_false",
+                "enable_ac_fence_type_alt_min"
+            ],
+            0
+        ]
+    },
+    "auto_disable_fence_on_disarming": {
+        "fences": [
+            [
+                "enable_false",
+                "enable__auto_enable_mask"
+            ],
+            0
+        ]
+    },
+    "auto_enable_fence_after_takeoff": {
+        "fences": [
+            [
+                "enable_true",
+                "enable_false",
+                "enable__auto_enable_mask"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "last_autoenable_warn_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "check_fence_alt_max": {
+        "_alt_max_breach_distance": [
+            [
+                "_alt_max",
+                "alt"
+            ],
+            1
+        ],
+        "_alt_max_backup": [
+            [
+                "alt",
+                "ac_fence_alt_max_backup_distance"
+            ],
+            1
+        ]
+    },
+    "check_fence_alt_min": {
+        "_alt_min_breach_distance": [
+            [
+                "_alt_min",
+                "alt"
+            ],
+            1
+        ],
+        "_alt_min_backup": [
+            [
+                "alt",
+                "ac_fence_alt_min_backup_distance"
+            ],
+            1
+        ]
+    },
+    "auto_enable_fence_floor": {
+        "_curr_alt": [
+            [
+                "alt"
+            ],
+            0
+        ]
+    },
+    "check_fence_polygon": {
+        "was_breached": [
+            [
+                "_breached_fences",
+                "ac_fence_type_polygon"
+            ],
+            0
+        ]
+    },
+    "check_fence_circle": {
+        "_circle_radius_backup": [
+            [
+                "home_length",
+                "ac_fence_circle_radius_backup_distance"
+            ],
+            1
+        ],
+        "_circle_breach_distance": [
+            [
+                "home_length",
+                "_circle_radius"
+            ],
+            1
+        ]
+    },
+    "record_breach": {
+        "_breach_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_breach_notify_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_breach_distance": {
+        "max": [
+            [
+                "_alt_max_breach_distance",
+                "_alt_min_breach_distance",
+                "_circle_breach_distance"
+            ],
+            0
+        ]
+    },
+    "manual_recovery_start": {
+        "_manual_recovery_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

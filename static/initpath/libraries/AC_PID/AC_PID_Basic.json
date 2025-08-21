@@ -1,0 +1,100 @@
+{
+    "update_all": {
+        "_pid_info.D": [
+            [
+                "get_filt_d_alpha_dt",
+                "dt",
+                "error_last",
+                "target",
+                "get_filt_e_alpha_dt",
+                "measurement",
+                "_kd"
+            ],
+            4
+        ],
+        "_pid_info.FF": [
+            [
+                "target",
+                "_kff"
+            ],
+            1
+        ],
+        "_pid_info.P": [
+            [
+                "_kp",
+                "target",
+                "get_filt_e_alpha_dt",
+                "measurement"
+            ],
+            2
+        ],
+        "_pid_info.I": [
+            [
+                "_integrator"
+            ],
+            0
+        ],
+        "_pid_info.error": [
+            [
+                "target",
+                "get_filt_e_alpha_dt",
+                "measurement"
+            ],
+            2
+        ],
+        "D_out": [
+            [
+                "get_filt_d_alpha_dt",
+                "dt",
+                "error_last",
+                "target",
+                "get_filt_e_alpha_dt",
+                "measurement",
+                "_kd"
+            ],
+            4
+        ],
+        "_pid_info.target": [
+            [
+                "target"
+            ],
+            1
+        ],
+        "P_out": [
+            [
+                "_kp",
+                "target",
+                "get_filt_e_alpha_dt",
+                "measurement"
+            ],
+            2
+        ],
+        "_pid_info.actual": [
+            [
+                "measurement"
+            ],
+            0
+        ]
+    },
+    "update_i": {
+        "_integrator": [
+            [
+                "dt",
+                "_error",
+                "_kimax",
+                "float",
+                "_ki"
+            ],
+            0
+        ]
+    },
+    "set_integrator": {
+        "_integrator": [
+            [
+                "i",
+                "_kimax"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "Log_Write_Control_Tuning": {
+        "synthetic_airspeed": [
+            [
+                "logger_quiet_nan"
+            ],
+            0
+        ],
+        "airspeed_estimate_type": [
+            [
+                "no_new_estimate"
+            ],
+            0
+        ]
+    }
+}

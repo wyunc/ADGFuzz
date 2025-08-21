@@ -1,0 +1,104 @@
+{
+    "configure": {
+        "_make_servo_linear": [
+            [
+                "_linear_swash_servo"
+            ],
+            0
+        ],
+        "_swash_type": [
+            [
+                "static_cast",
+                "_swashplate_type_get",
+                "swashplate_type_h3",
+                "swash_plate_type"
+            ],
+            0
+        ],
+        "_collective_direction": [
+            [
+                "_swash_coll_dir_get",
+                "static_cast",
+                "collective_direction"
+            ],
+            0
+        ]
+    },
+    "add_servo_raw": {
+        "function": [
+            [
+                "get_motor_function__motor_num",
+                "get_motor_function_num"
+            ],
+            0
+        ]
+    },
+    "calculate": {
+        "_pitch_input": [
+            [
+                "pitch"
+            ],
+            0
+        ],
+        "_roll_input": [
+            [
+                "roll"
+            ],
+            0
+        ]
+    },
+    "rc_write": {
+        "pwm": [
+            [
+                "uint16_t",
+                "swash_in"
+            ],
+            0
+        ],
+        "function": [
+            [
+                "get_motor_function_chan"
+            ],
+            0
+        ]
+    },
+    "write_log": {
+        "col": [
+            [
+                "col_min",
+                "1e",
+                "col_min",
+                "col_max",
+                "float",
+                "1e",
+                "_collective_input_scaled",
+                "float",
+                "col_ang_max",
+                "col_ang_min"
+            ],
+            2
+        ],
+        "tcyc": [
+            [
+                "norm__pitch_input",
+                "norm__roll_input",
+                "cyclic_scaler"
+            ],
+            0
+        ],
+        "rcyc": [
+            [
+                "_roll_input",
+                "cyclic_scaler"
+            ],
+            0
+        ],
+        "pcyc": [
+            [
+                "_pitch_input",
+                "cyclic_scaler"
+            ],
+            0
+        ]
+    }
+}

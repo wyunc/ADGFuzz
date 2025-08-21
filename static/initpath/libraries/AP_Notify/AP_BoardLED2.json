@@ -1,0 +1,16 @@
+{
+    "update": {
+        "counter2": [
+            [
+                "_counter"
+            ],
+            0
+        ],
+        "sats": [
+            [
+                "flags_gps_num_sats"
+            ],
+            0
+        ]
+    }
+}

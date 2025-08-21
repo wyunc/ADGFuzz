@@ -1,0 +1,38 @@
+{
+    "change": {
+        "always_allow": [
+            [
+                "force",
+                "is_armed"
+            ],
+            0
+        ],
+        "allow_change": [
+            [
+                "_health_and_arming_checks_can_run_navigation_state_altctl",
+                "_health_and_arming_checks_can_run_user_intended_nav_state"
+            ],
+            0
+        ],
+        "_nav_state_after_disarming": [
+            [
+                "_handler_get_replaced_mode_if_any_user_intended_nav_state"
+            ],
+            1
+        ],
+        "_user_intented_nav_state": [
+            [
+                "_handler_get_replaced_mode_if_any_user_intended_nav_state"
+            ],
+            1
+        ]
+    },
+    "onDisarm": {
+        "_user_intented_nav_state": [
+            [
+                "_nav_state_after_disarming"
+            ],
+            0
+        ]
+    }
+}

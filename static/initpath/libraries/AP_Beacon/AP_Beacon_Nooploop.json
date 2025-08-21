@@ -1,0 +1,135 @@
+{
+    "update": {
+        "nbytes": [
+            [
+                "uart_available_1024u"
+            ],
+            0
+        ],
+        "_last_request_setting_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "uart_read"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "parse_byte_uint8_tb"
+            ],
+            0
+        ]
+    },
+    "parse_node_frame2": {
+        "dist": [
+            [
+                "_msgbuf",
+                "i",
+                "nooploop_node_frame2_node_block",
+                "int32_t"
+            ],
+            1
+        ],
+        "pos_y": [
+            [
+                "_msgbuf",
+                "int32_t",
+                "nooploop_node_frame2_posy"
+            ],
+            0
+        ],
+        "precision_x": [
+            [
+                "_msgbuf",
+                "nooploop_node_frame2_precision_x"
+            ],
+            0
+        ],
+        "pos_x": [
+            [
+                "_msgbuf",
+                "int32_t",
+                "nooploop_node_frame2_posx"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "valid_nodes": [
+            [
+                "_msgbuf",
+                "nooploop_node_frame2_valid_nodes"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "_msgbuf",
+                "i",
+                "nooploop_node_frame2_node_block"
+            ],
+            1
+        ],
+        "pos_z": [
+            [
+                "_msgbuf",
+                "nooploop_node_frame2_posz",
+                "int32_t"
+            ],
+            0
+        ],
+        "pos_err": [
+            [
+                "sqrtf_precision_y",
+                "sqrtf_sq",
+                "sqrtf_precision_x"
+            ],
+            0
+        ],
+        "precision_y": [
+            [
+                "_msgbuf",
+                "nooploop_node_frame2_precision_y"
+            ],
+            0
+        ]
+    },
+    "parse_setting_frame0": {
+        "pos_x": [
+            [
+                "_msgbuf",
+                "int32_t",
+                "nooploop_setting_frame0_a0",
+                "i"
+            ],
+            1
+        ],
+        "pos_z": [
+            [
+                "_msgbuf",
+                "int32_t",
+                "nooploop_setting_frame0_a0",
+                "i"
+            ],
+            1
+        ],
+        "pos_y": [
+            [
+                "_msgbuf",
+                "int32_t",
+                "nooploop_setting_frame0_a0",
+                "i"
+            ],
+            1
+        ]
+    }
+}

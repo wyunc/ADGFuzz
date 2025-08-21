@@ -1,0 +1,253 @@
+{
+    "delay_microseconds": {
+        "ticks": [
+            [
+                "time_max_interval",
+                "ch_time_us2i_usec"
+            ],
+            0
+        ]
+    },
+    "delay": {
+        "persistent_data.scheduler_task": [
+            [
+                "hal_util_persistent_data_scheduler_task"
+            ],
+            1
+        ],
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "register_timer_failsafe": {
+        "_failsafe": [
+            [
+                "failsafe"
+            ],
+            0
+        ]
+    },
+    "_run_timers": {
+        "num_procs": [
+            [
+                "_num_timer_procs"
+            ],
+            0
+        ]
+    },
+    "_timer_thread": {
+        "sched": [
+            [
+                "scheduler",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "_rcout_thread": {
+        "sched": [
+            [
+                "scheduler",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "in_expected_delay": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_monitor_thread": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ],
+        "gptr": [
+            [
+                "fptr",
+                "0x_e000ffff",
+                "void",
+                "void"
+            ],
+            1
+        ],
+        "pd": [
+            [
+                "hal_util_persistent_data",
+                "hal_util_last_persistent_data"
+            ],
+            0
+        ],
+        "using_watchdog": [
+            [
+                "watchdog_enabled"
+            ],
+            0
+        ],
+        "loop_delay": [
+            [
+                "sched_last_watchdog_pat_ms",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "_rcin_thread": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "_run_io": {
+        "num_procs": [
+            [
+                "_num_io_procs"
+            ],
+            0
+        ]
+    },
+    "_io_thread": {
+        "last_sd_start_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "last_stack_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "check_low_memory_is_zero": {
+        "addr0": [
+            [
+                "uint8_t",
+                "const"
+            ],
+            0
+        ],
+        "lowmem": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "_storage_thread": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "thread_create_trampoline": {
+        "t": [
+            [
+                "member_proc",
+                "ctx"
+            ],
+            0
+        ]
+    },
+    "thread_create": {
+        "tproc": [
+            [
+                "malloc_proc",
+                "proc",
+                "malloc_sizeof",
+                "member_proc"
+            ],
+            0
+        ],
+        "thread_priority": [
+            [
+                "calculate_thread_priority_base",
+                "calculate_thread_priority_priority"
+            ],
+            0
+        ]
+    },
+    "_expect_delay_ms": {
+        "expect_delay_start": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "expect_delay_length": [
+            [
+                "millis"
+            ],
+            3
+        ]
+    },
+    "watchdog_pat": {
+        "last_watchdog_pat_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "ext_watchdog_pat": {
+        "last_ext_watchdog_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ]
+    },
+    "check_stack_free": {
+        "tp": [
+            [
+                "ch_reg_first_thread"
+            ],
+            0
+        ]
+    },
+    "try_force_mutex": {
+        "sem_line": [
+            [
+                "hal_util_persistent_data_semaphore_line"
+            ],
+            0
+        ],
+        "main_thread": [
+            [
+                "get_main_thread"
+            ],
+            0
+        ],
+        "wtmtx": [
+            [
+                "main_thread_u_wtmtxp"
+            ],
+            0
+        ]
+    }
+}

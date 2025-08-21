@@ -1,0 +1,10 @@
+{
+    "update": {
+        "pin_mask": [
+            [
+                "sitl_pin_mask_get"
+            ],
+            0
+        ]
+    }
+}

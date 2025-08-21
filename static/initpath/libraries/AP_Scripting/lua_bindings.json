@@ -1,0 +1,840 @@
+{
+    "lua_mavlink_init": {
+        "data": [
+            [
+                "scripting_mavlink_data"
+            ],
+            0
+        ],
+        "data.accept_msg_ids": [
+            [
+                "new_nothrow",
+                "uint32_t",
+                "get_uint32_l",
+                "get_uint32_arg_offset"
+            ],
+            1
+        ],
+        "data.accept_msg_ids_size": [
+            [
+                "get_uint32_l",
+                "get_uint32_arg_offset"
+            ],
+            1
+        ],
+        "arg_offset": [
+            [
+                "lua_l_testudata_l",
+                "null"
+            ],
+            0
+        ],
+        "data.rx_buffer": [
+            [
+                "mavlink_msg",
+                "struct",
+                "object_buffer",
+                "get_uint32_l",
+                "get_uint32_arg_offset",
+                "new_nothrow"
+            ],
+            1
+        ]
+    },
+    "lua_mavlink_receive_chan": {
+        "rx_buffer": [
+            [
+                "scripting_mavlink_data_rx_buffer"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ]
+    },
+    "lua_mavlink_register_rx_msgid": {
+        "msgid": [
+            [
+                "get_uint32_l",
+                "get_uint32_arg_offset"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "scripting_mavlink_data"
+            ],
+            0
+        ]
+    },
+    "lua_mavlink_send_chan": {
+        "entry": [
+            [
+                "mavlink_get_msg_entry_msgid"
+            ],
+            0
+        ],
+        "msgid": [
+            [
+                "get_uint32_l",
+                "get_uint32_arg_offset"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "get_uint32_l",
+                "mavlink_channel_t",
+                "get_uint32_arg_offset",
+                "get_uint32_mavlink_comm_num_buffers"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "packet": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ]
+    },
+    "lua_mavlink_block_command": {
+        "id": [
+            [
+                "get_uint16_t_arg_offset",
+                "get_uint16_t_l"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "scripting_mavlink_command_block_list"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "mavlink_command_block_list": [
+            [
+                "command_block_list",
+                "new_nothrow"
+            ],
+            1
+        ]
+    },
+    "lua_mission_receive": {
+        "input": [
+            [
+                "scripting_mission_data"
+            ],
+            0
+        ]
+    },
+    "AP_Logger_Write": {
+        "buffer": [
+            [
+                "lua_m_malloc_l",
+                "lua_m_malloc_msg_len",
+                "char"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "strlen_labels",
+                "strlen_fmt"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "static_cast",
+                "int16_t",
+                "lua_tolstring_slen",
+                "uint32_t",
+                "int8_t",
+                "lua_tolstring_l",
+                "lua_tonumberx_l",
+                "lua_tonumberx_success",
+                "lua_tonumberx_arg_index",
+                "lua_tointegerx_l",
+                "lua_tointegerx_arg_index",
+                "lua_tointegerx_success",
+                "uint16_t",
+                "uint64_t",
+                "lua_l_testudata_arg_index",
+                "lua_l_testudata_l",
+                "lua_tointegerx_l",
+                "lua_tonumberx_l",
+                "lua_tointegerx_arg_index",
+                "lua_toboolean_l",
+                "lua_tonumberx_isnum",
+                "lua_toboolean_arg_index",
+                "lua_tointegerx_isnum",
+                "lua_tonumberx_arg_index",
+                "uint8_t",
+                "lua_tolstring_arg_index"
+            ],
+            4
+        ],
+        "args": [
+            [
+                "lua_l_testudata_l",
+                "null",
+                "lua_gettop_l"
+            ],
+            1
+        ],
+        "fmt": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ],
+        "AP_logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "multipliers": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ],
+        "units": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ],
+        "arg_index": [
+            [
+                "lua_l_testudata_l",
+                "null",
+                "field_start"
+            ],
+            2
+        ],
+        "index": [
+            [
+                "have_units",
+                "field_start"
+            ],
+            1
+        ],
+        "f": [
+            [
+                "ap_logger_msg_fmt_for_name_multipliers_cat",
+                "ap_logger_msg_fmt_for_name_units_cat",
+                "ap_logger_msg_fmt_for_name_nullptr",
+                "ap_logger_msg_fmt_for_name_true",
+                "ap_logger_msg_fmt_for_name_name",
+                "ap_logger_msg_fmt_for_name_fmt_cat",
+                "ap_logger_msg_fmt_for_name_label_cat"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "sizeof_uint8_t",
+                "sizeof_uint64_t",
+                "sizeof_uint16_t",
+                "sizeof_int16_t",
+                "charlen",
+                "sizeof_uint32_t",
+                "sizeof_int8_t",
+                "sizeof_float",
+                "sizeof_int32_t"
+            ],
+            0
+        ],
+        "msg_len": [
+            [
+                "ap_logger_write_calc_msg_len_fmt_cat"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "labels": [
+            [
+                "lua_l_checkstring_arg_offset",
+                "lua_l_checkstring_l"
+            ],
+            0
+        ]
+    },
+    "lua_get_i2c_device": {
+        "address": [
+            [
+                "static_cast",
+                "get_integer_arg_offset",
+                "get_integer_l",
+                "uint8_t"
+            ],
+            1
+        ],
+        "bus_clock": [
+            [
+                "coerce_to_uint32_t_arg_offset",
+                "coerce_to_uint32_t_l"
+            ],
+            0
+        ],
+        "bus": [
+            [
+                "static_cast",
+                "get_integer_arg_offset",
+                "get_integer_l",
+                "uint8_t"
+            ],
+            1
+        ],
+        "use_smbus": [
+            [
+                "lua_toboolean_l",
+                "static_cast",
+                "bool",
+                "lua_toboolean_arg_offset"
+            ],
+            0
+        ],
+        "args": [
+            [
+                "lua_gettop_l",
+                "null",
+                "lua_l_testudata_l"
+            ],
+            1
+        ]
+    },
+    "AP_HAL__I2CDevice_read_registers": {
+        "ud": [
+            [
+                "check_ap_hal__i2c_device_l"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "ud_read_registers_data",
+                "bool",
+                "ud_read_registers_first_reg",
+                "ud_read_registers_recv_length",
+                "static_cast"
+            ],
+            0
+        ],
+        "args": [
+            [
+                "lua_gettop_l"
+            ],
+            0
+        ],
+        "recv_length": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ],
+        "first_reg": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ]
+    },
+    "AP_HAL__I2CDevice_transfer": {
+        "ud": [
+            [
+                "check_ap_hal__i2c_device_l"
+            ],
+            0
+        ],
+        "send_data": [
+            [
+                "lua_tolstring_send_len",
+                "uint8_t",
+                "const",
+                "lua_tolstring_l"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "ud_transfer_send_len",
+                "ud_transfer_rx_len",
+                "ud_transfer_send_data",
+                "ud_transfer_rx_data"
+            ],
+            0
+        ],
+        "rx_len": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ]
+    },
+    "lua_get_CAN_device": {
+        "_CAN_dev": [
+            [
+                "scripting_can_sensor_scripting",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "buffer_len": [
+            [
+                "static_cast",
+                "uint32_t",
+                "get_uint32_arg_offset",
+                "get_uint32_l"
+            ],
+            1
+        ],
+        "arg_offset": [
+            [
+                "lua_l_testudata_l",
+                "null"
+            ],
+            0
+        ]
+    },
+    "lua_get_CAN_device2": {
+        "buffer_len": [
+            [
+                "get_uint32_arg_offset",
+                "get_uint32_l",
+                "static_cast",
+                "uint32_t"
+            ],
+            1
+        ],
+        "_CAN_dev2": [
+            [
+                "new_nothrow",
+                "scripting_can_sensor_scripting2"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "lua_l_testudata_l",
+                "null"
+            ],
+            0
+        ]
+    },
+    "lua_serial_find_serial": {
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "driver_stream"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "new_ap_scripting_serial_access_l"
+            ],
+            0
+        ],
+        "mgr": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "get_uint8_t_l",
+                "get_uint8_t_arg_offset"
+            ],
+            0
+        ]
+    },
+    "lua_serial_find_simulated_device": {
+        "port": [
+            [
+                "new_ap_scripting_serial_access_l"
+            ],
+            0
+        ],
+        "protocol": [
+            [
+                "int8_t",
+                "get_uint32_arg_offset",
+                "get_uint32_l"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "get_uint16_t_arg_offset",
+                "get_uint16_t_l"
+            ],
+            0
+        ],
+        "arg_offset": [
+            [
+                "null",
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "nullptr"
+            ],
+            1
+        ]
+    },
+    "lua_serial_writestring": {
+        "written_bytes": [
+            [
+                "req_bytes",
+                "port_write_const",
+                "port_write_uint8_tdata"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "lua_tolstring_l",
+                "lua_tolstring_req_bytes"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "check_ap_scripting_serial_access_l"
+            ],
+            0
+        ]
+    },
+    "lua_serial_readstring": {
+        "req_bytes": [
+            [
+                "get_uint16_t_l"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "check_ap_scripting_serial_access_l"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "lua_l_buffinitsize_req_bytes",
+                "lua_l_buffinitsize_l",
+                "lua_l_buffinitsize_b",
+                "uint8_t"
+            ],
+            0
+        ],
+        "read_bytes": [
+            [
+                "port_read_req_bytes",
+                "port_read_data"
+            ],
+            0
+        ]
+    },
+    "lua_dirlist": {
+        "path": [
+            [
+                "lua_l_checkstring_l"
+            ],
+            0
+        ],
+        "dir": [
+            [
+                "fs_opendir_path"
+            ],
+            0
+        ]
+    },
+    "lua_removefile": {
+        "filename": [
+            [
+                "lua_l_checkstring_l"
+            ],
+            0
+        ]
+    },
+    "SRV_Channels_get_safety_state": {
+        "data": [
+            [
+                "safety_armed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ]
+    },
+    "lua_get_SocketAPM": {
+        "sock": [
+            [
+                "new_nothrow",
+                "socket_apm_datagram"
+            ],
+            0
+        ],
+        "datagram": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ]
+    },
+    "SocketAPM_close": {
+        "ud": [
+            [
+                "check_socket_apm_l"
+            ],
+            0
+        ]
+    },
+    "SocketAPM_sendfile": {
+        "p": [
+            [
+                "lua_l_checkudata_lua_filehandle",
+                "lua_l_stream",
+                "lua_l_checkudata_l"
+            ],
+            0
+        ],
+        "ud": [
+            [
+                "check_socket_apm_l"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_sendfile_fd",
+                "p_f_fd",
+                "network_sendfile_ud"
+            ],
+            1
+        ]
+    },
+    "SocketAPM_recv": {
+        "ud": [
+            [
+                "check_socket_apm_l"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "uint8_t",
+                "malloc_count"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "get_uint16_t_l"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ud_recv_count",
+                "ud_recv_data"
+            ],
+            0
+        ]
+    },
+    "SocketAPM_accept": {
+        "ud": [
+            [
+                "check_socket_apm_l"
+            ],
+            0
+        ]
+    },
+    "SocketAPM_ipv4_addr_to_string": {
+        "ip_addr": [
+            [
+                "get_uint32_uint32_max",
+                "get_uint32_l"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "inet_addr_to_str_sizeof",
+                "inet_addr_to_str_buf",
+                "inet_addr_to_str_ip_addr"
+            ],
+            0
+        ]
+    },
+    "SocketAPM_string_to_ipv4_addr": {
+        "str": [
+            [
+                "lua_l_checkstring_l"
+            ],
+            0
+        ]
+    },
+    "lua_get_modules_path": {
+        "dir_disable": [
+            [
+                "get_singleton_get_disabled_dir"
+            ],
+            0
+        ]
+    },
+    "lua_range_finder_handle_script_msg": {
+        "state_arg": [
+            [
+                "lua_l_testudata_l"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "ud_handle_script_msg_l",
+                "ud_handle_script_msg_static_cast",
+                "ud_handle_script_msg_const",
+                "ud_handle_script_msg_range_finder_state",
+                "ud_handle_script_msg_state_arg",
+                "ud_handle_script_msg_lua_l_checknumber"
+            ],
+            0
+        ],
+        "ud": [
+            [
+                "check_ap_range_finder_backend_l"
+            ],
+            0
+        ]
+    },
+    "lua_GCS_command_int": {
+        "result": [
+            [
+                "_gcs_lua_command_int_packet_pkt"
+            ],
+            0
+        ],
+        "pkt.frame": [
+            [
+                "lua_tointeger_l"
+            ],
+            0
+        ],
+        "_gcs": [
+            [
+                "check_gcs_l"
+            ],
+            0
+        ],
+        "params": [
+            [
+                "pkt_param1"
+            ],
+            0
+        ],
+        "pkt.z": [
+            [
+                "lua_tonumber_l"
+            ],
+            0
+        ],
+        "pkt.command": [
+            [
+                "get_uint16_t_l"
+            ],
+            1
+        ],
+        "xy": [
+            [
+                "pkt_x"
+            ],
+            0
+        ]
+    },
+    "lua_DroneCAN_get_FlexDebug": {
+        "dc": [
+            [
+                "get_dronecan_bus"
+            ],
+            0
+        ],
+        "node_id": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ],
+        "tstamp_us": [
+            [
+                "get_uint32_uint32_max",
+                "get_uint32_l"
+            ],
+            0
+        ],
+        "bus": [
+            [
+                "get_uint8_t_l"
+            ],
+            0
+        ],
+        "msg_id": [
+            [
+                "get_uint16_t_l"
+            ],
+            0
+        ]
+    }
+}

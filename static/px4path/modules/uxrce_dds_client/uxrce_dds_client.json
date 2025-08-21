@@ -1,0 +1,350 @@
+{
+    "on_time": {
+        "time_offset": [
+            [
+                "transmit_timestamp",
+                "current_time",
+                "originate_timestamp",
+                "current_time",
+                "originate_timestamp",
+                "received_timestamp",
+                "originate_timestamp",
+                "current_time",
+                "timesync_offset"
+            ],
+            3
+        ],
+        "timesync": [
+            [
+                "args",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "on_request": {
+        "client": [
+            [
+                "args",
+                "uxrcedds_client"
+            ],
+            0
+        ],
+        "time_offset_us": [
+            [
+                "session_time_offset"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_transport_serial": [
+            [
+                "nullptr",
+                "new",
+                "uxr_serial_transport"
+            ],
+            0
+        ],
+        "_transport_udp": [
+            [
+                "new",
+                "uxr_udp_transport"
+            ],
+            0
+        ],
+        "_comm": [
+            [
+                "_transport_serial_comm",
+                "_transport_udp_comm"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "_transport_udp_platform_poll_fd_fd",
+                "open__device",
+                "open_o_rdwr",
+                "open_o_nonblock",
+                "open_o_noctty"
+            ],
+            1
+        ]
+    },
+    "deinit": {
+        "_comm": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_transport_serial": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_transport_udp": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "setupSession": {
+        "domain_id": [
+            [
+                "_param_uxrce_dds_dom_id_get"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "uint32_t",
+                "_param_uxrce_key_get"
+            ],
+            0
+        ],
+        "best_effort_in": [
+            [
+                "uxr_create_input_best_effort_stream_session"
+            ],
+            0
+        ],
+        "_synchronize_timestamps": [
+            [
+                "_param_uxrce_dds_synct_get"
+            ],
+            0
+        ],
+        "_participant_id": [
+            [
+                "uxr_object_id_uxr_participant_id",
+                "uxr_object_id_0x01"
+            ],
+            0
+        ],
+        "got_response": [
+            [
+                "uxr_ping_agent_attempts__comm"
+            ],
+            0
+        ],
+        "_participant_config": [
+            [
+                "static_cast",
+                "_param_uxrce_dds_ptcfg_get",
+                "participant_config"
+            ],
+            0
+        ]
+    },
+    "fillMessageFormatResponse": {
+        "message_format_response.message_hash": [
+            [
+                "topic_meta_message_hash"
+            ],
+            0
+        ],
+        "topic_meta": [
+            [
+                "i",
+                "orb_get_topics"
+            ],
+            1
+        ],
+        "message_format_response.protocol_version": [
+            [
+                "latest_protocol_version"
+            ],
+            0
+        ],
+        "message_format_response.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "topic_name": [
+            [
+                "i",
+                "message_format_request_topic_name"
+            ],
+            1
+        ]
+    },
+    "calculateTxRxRate": {
+        "_last_payload_tx_rate": [
+            [
+                "_subs_num_payload_sent",
+                "hrt_absolute_time",
+                "1e6f"
+            ],
+            2
+        ],
+        "_last_payload_rx_rate": [
+            [
+                "_pubs_num_payload_received",
+                "hrt_absolute_time",
+                "1e6f"
+            ],
+            2
+        ],
+        "_last_num_payload_received": [
+            [
+                "_pubs_num_payload_received"
+            ],
+            0
+        ],
+        "_last_num_payload_sent": [
+            [
+                "_subs_num_payload_sent"
+            ],
+            0
+        ],
+        "_last_status_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "checkConnectivity": {
+        "_last_ping": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "tx_timeout": [
+            [
+                "_param_uxrce_dds_tx_to_get"
+            ],
+            0
+        ],
+        "rx_timeout": [
+            [
+                "_param_uxrce_dds_rx_to_get"
+            ],
+            0
+        ]
+    },
+    "resetConnectivityCounters": {
+        "_last_ping": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_last_status_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "syncSystemClock": {
+        "system_utc": [
+            [
+                "int64_t_1000l",
+                "int64_t_ts_tv_sec",
+                "int64_t_ts_tv_nsec",
+                "1000000ll"
+            ],
+            0
+        ],
+        "ts.tv_nsec": [
+            [
+                "1_s",
+                "session_time_offset",
+                "int64_t_hrt_absolute_time",
+                "1000ll"
+            ],
+            1
+        ],
+        "delta": [
+            [
+                "abs_system_utc",
+                "abs_agent_utc"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "1_s",
+                "session_time_offset",
+                "int64_t_hrt_absolute_time",
+                "1000ll"
+            ],
+            1
+        ]
+    },
+    "run": {
+        "_pubs": [
+            [
+                "rcv_topics_pubs",
+                "new"
+            ],
+            0
+        ],
+        "poll": [
+            [
+                "sizeof__subs_fds",
+                "orb_poll_timeout_ms",
+                "px4_poll_sizeof",
+                "px4_poll__subs_fds"
+            ],
+            0
+        ],
+        "_subs": [
+            [
+                "new",
+                "send_topics_subs"
+            ],
+            0
+        ],
+        "_timesync_converged": [
+            [
+                "_timesync_sync_converged"
+            ],
+            0
+        ],
+        "last_sync_session": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "setBaudrate": {
+        "speed": [
+            [
+                "b2500000",
+                "b3500000",
+                "b1500000",
+                "b57600",
+                "b19200",
+                "b3000000",
+                "b115200",
+                "b9600",
+                "b230400",
+                "b1000000",
+                "b2000000",
+                "b38400",
+                "b460800",
+                "b921600",
+                "b4000000"
+            ],
+            0
+        ]
+    },
+    "print_status": {
+        "_participant_config": [
+            [
+                "custom",
+                "local_host_only"
+            ],
+            0
+        ]
+    }
+}

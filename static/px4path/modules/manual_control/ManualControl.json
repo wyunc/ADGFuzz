@@ -1,0 +1,286 @@
+{
+    "processInput": {
+        "dt_s": [
+            [
+                "now",
+                "1e6f"
+            ],
+            0
+        ],
+        "_timestamp_last_loop": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_previous_manual_control_input_instance": [
+            [
+                "_selector_instance"
+            ],
+            1
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "_system_id": [
+            [
+                "vehicle_status_system_id"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_rotary_wing": [
+            [
+                "vehicle_status_vehicle_type",
+                "vehicle_type_rotary_wing"
+            ],
+            0
+        ],
+        "_vtol": [
+            [
+                "vehicle_status_is_vtol"
+            ],
+            0
+        ],
+        "minimum_stick_change": [
+            [
+                "_param_com_rc_stick_ov_get"
+            ],
+            0
+        ]
+    },
+    "processSwitches": {
+        "switches.arm_switch": [
+            [
+                "switch_pos_on",
+                "now"
+            ],
+            0
+        ],
+        "_previous_switches": [
+            [
+                "switches"
+            ],
+            0
+        ],
+        "switches_updated": [
+            [
+                "_manual_control_switches_sub_update_switches"
+            ],
+            0
+        ],
+        "previous_button_arm_hysteresis": [
+            [
+                "_button_arm_hysteresis_get_state"
+            ],
+            0
+        ]
+    },
+    "updateParams": {
+        "param_rc_map_arm_sw": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_mc_airmode": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "mavlink_log_pub": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "processStickArming": {
+        "previous_stick_arm_hysteresis": [
+            [
+                "_stick_arm_hysteresis_get_state"
+            ],
+            0
+        ],
+        "previous_stick_disarm_hysteresis": [
+            [
+                "_stick_disarm_hysteresis_get_state"
+            ],
+            0
+        ],
+        "previous_stick_kill_hysteresis": [
+            [
+                "_stick_kill_hysteresis_get_state"
+            ],
+            0
+        ],
+        "left_stick_lower_left": [
+            [
+                "input_yaw",
+                "input_throttle"
+            ],
+            0
+        ],
+        "right_stick_lower_right": [
+            [
+                "input_pitch",
+                "input_roll"
+            ],
+            0
+        ],
+        "left_stick_lower_right": [
+            [
+                "input_yaw",
+                "input_throttle"
+            ],
+            0
+        ],
+        "right_stick_centered": [
+            [
+                "fabsf_input_roll",
+                "fabsf_input_pitch"
+            ],
+            0
+        ]
+    },
+    "sendActionRequest": {
+        "action_request.mode": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "action_request.action": [
+            [
+                "action"
+            ],
+            0
+        ],
+        "action_request.source": [
+            [
+                "source"
+            ],
+            0
+        ],
+        "action_request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publishLandingGear": {
+        "landing_gear.landing_gear": [
+            [
+                "action"
+            ],
+            0
+        ],
+        "landing_gear.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "send_camera_mode_command": {
+        "command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command.command": [
+            [
+                "vehicle_cmd_set_camera_mode"
+            ],
+            0
+        ],
+        "command.param2": [
+            [
+                "camera_mode",
+                "float",
+                "static_cast"
+            ],
+            0
+        ],
+        "command.target_system": [
+            [
+                "_system_id"
+            ],
+            0
+        ]
+    },
+    "send_photo_command": {
+        "command.param4": [
+            [
+                "_image_sequence"
+            ],
+            0
+        ],
+        "command.command": [
+            [
+                "vehicle_cmd_image_start_capture"
+            ],
+            0
+        ],
+        "command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command.target_system": [
+            [
+                "_system_id"
+            ],
+            0
+        ]
+    },
+    "send_video_command": {
+        "command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command.target_system": [
+            [
+                "_system_id"
+            ],
+            0
+        ],
+        "command.command": [
+            [
+                "vehicle_cmd_video_start_capture",
+                "vehicle_cmd_video_stop_capture"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "manual_control"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

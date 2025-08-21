@@ -1,0 +1,109 @@
+{
+    "_register_modify": {
+        "val": [
+            [
+                "_register_read_reg"
+            ],
+            0
+        ]
+    },
+    "_data_ready": {
+        "_drdy_pin_m": [
+            [
+                "nullptr",
+                "_drdy_pin_m_read"
+            ],
+            0
+        ]
+    },
+    "_read_sample": {
+        "_mag_y": [
+            [
+                "rx_y"
+            ],
+            0
+        ],
+        "_mag_z": [
+            [
+                "rx_z"
+            ],
+            0
+        ],
+        "_mag_x": [
+            [
+                "rx_x"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_drdy_pin_m": [
+            [
+                "hal_gpio_channel_lsm303d_drdy_m_pin"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ]
+    },
+    "_hardware_init": {
+        "_reg7_expected": [
+            [
+                "reg7_cont_mode_m"
+            ],
+            0
+        ],
+        "whoami": [
+            [
+                "_register_read_addr_who_am_i"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "raw_field": [
+            [
+                "vector3f__mag_x",
+                "_mag_range_scale",
+                "vector3f__mag_z",
+                "vector3f__mag_y"
+            ],
+            0
+        ]
+    },
+    "_disable_i2c": {
+        "a": [
+            [
+                "_register_read_0x15",
+                "_register_read_0x02"
+            ],
+            0
+        ]
+    },
+    "_mag_set_range": {
+        "clearbits": [
+            [
+                "reg6_full_scale_bits_m"
+            ],
+            0
+        ],
+        "_mag_range_scale": [
+            [
+                "new_scale_ga_digit"
+            ],
+            0
+        ]
+    },
+    "_mag_set_samplerate": {
+        "clearbits": [
+            [
+                "reg5_rate_bits_m"
+            ],
+            0
+        ]
+    }
+}

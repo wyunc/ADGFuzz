@@ -1,0 +1,88 @@
+{
+    "read_word": {
+        "data": [
+            [
+                "uint16_t",
+                "buf"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "einval",
+                "transfer_buf",
+                "transfer_cmd_code"
+            ],
+            0
+        ],
+        "pec": [
+            [
+                "get_pec_sizeof",
+                "get_pec_buf"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "get_device_address"
+            ],
+            0
+        ]
+    },
+    "write_word": {
+        "result": [
+            [
+                "transfer_buf",
+                "transfer_nullptr"
+            ],
+            0
+        ]
+    },
+    "block_read": {
+        "result": [
+            [
+                "length",
+                "eio",
+                "transfer_cmd_code",
+                "transfer_uint8_t",
+                "rx_data"
+            ],
+            0
+        ],
+        "byte_count": [
+            [
+                "min_max_block_len",
+                "min_rx_data"
+            ],
+            0
+        ],
+        "device_address": [
+            [
+                "get_device_address"
+            ],
+            0
+        ],
+        "pec": [
+            [
+                "get_pec_rx_data",
+                "get_pec_byte_count"
+            ],
+            0
+        ]
+    },
+    "block_write": {
+        "result": [
+            [
+                "einval"
+            ],
+            0
+        ],
+        "pec": [
+            [
+                "get_pec_buf",
+                "get_pec_byte_count"
+            ],
+            0
+        ]
+    }
+}

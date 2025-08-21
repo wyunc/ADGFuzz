@@ -1,0 +1,134 @@
+{
+    "init": {
+        "backend_PPP": [
+            [
+                "nullptr",
+                "ap_networking_ppp_this",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "uid_len": [
+            [
+                "sizeof_uid"
+            ],
+            0
+        ],
+        "crc.value32": [
+            [
+                "crc_crc32_uid_len",
+                "crc_crc32_uid"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "new_nothrow",
+                "nullptr",
+                "ap_networking_sitl_this",
+                "ap_networking_ppp_this",
+                "ap_networking_chibi_os_this"
+            ],
+            0
+        ]
+    },
+    "announce_address_changes": {
+        "announce_ms": [
+            [
+                "as_last_change_ms"
+            ],
+            0
+        ],
+        "as": [
+            [
+                "backend_active_settings"
+            ],
+            0
+        ]
+    },
+    "convert_str_to_macaddr": {
+        "v": [
+            [
+                "strtoul_nullptr",
+                "strtoul_s"
+            ],
+            0
+        ],
+        "ptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "strtok_r_ptr",
+                "strtok_r_s2",
+                "strtok_r_nullptr"
+            ],
+            0
+        ]
+    },
+    "sendfile": {
+        "sendfile_buf": [
+            [
+                "hal_util_malloc_type_mem_filesystem",
+                "hal_util_malloc_type_bufsize",
+                "uint8_t"
+            ],
+            0
+        ],
+        "s.fd": [
+            [
+                "fd"
+            ],
+            0
+        ],
+        "s.sock": [
+            [
+                "sock_duplicate"
+            ],
+            0
+        ],
+        "sendfile_bufsize": [
+            [
+                "ap_networking_sendfile_bufsize"
+            ],
+            1
+        ]
+    },
+    "sendfile_check": {
+        "nread": [
+            [
+                "_read_sendfile_buf",
+                "_read_sendfile_bufsize",
+                "fs_read_s_fd"
+            ],
+            0
+        ],
+        "sendfile_buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "nsent": [
+            [
+                "s_sock_send_sendfile_buf",
+                "s_sock_send_nread"
+            ],
+            0
+        ]
+    },
+    "ap_networking_printf": {
+        "fd": [
+            [
+                "_open_o_trunc",
+                "_open_o_creat",
+                "fs_open_ap_networking_lwip_debug_file",
+                "_open_o_wronly"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "pre_arm_checks": {
+        "trim": [
+            [
+                "plane_channel_throttle_get_radio_trim"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pre_arm_checks_display_failure"
+            ],
+            0
+        ]
+    },
+    "arm_checks": {
+        "arming_rudder": [
+            [
+                "get_rudder_arming_type"
+            ],
+            0
+        ]
+    },
+    "disarm": {
+        "plane.control_mode": [
+            [
+                "plane_mode_qautotune"
+            ],
+            0
+        ],
+        "plane.throttle_suppressed": [
+            [
+                "plane_control_mode_does_auto_throttle"
+            ],
+            0
+        ],
+        "plane.quadplane.air_mode": [
+            [
+                "off"
+            ],
+            0
+        ]
+    },
+    "update_soft_armed": {
+        "last_over_3dspeed_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_armed": [
+            [
+                "is_armed"
+            ],
+            0
+        ],
+        "speed3d": [
+            [
+                "gps_ok_fix_3d",
+                "plane_gps_velocity_length",
+                "plane_gps_status"
+            ],
+            0
+        ]
+    },
+    "mission_checks": {
+        "dist": [
+            [
+                "cmd_content_location_get_distance_prev_cmd_content_location"
+            ],
+            0
+        ],
+        "min_dist": [
+            [
+                "plane_quadplane_stopping_distance_sq",
+                "plane_quadplane_stopping_distance_landing_speed"
+            ],
+            0
+        ],
+        "num_commands": [
+            [
+                "plane_mission_num_commands"
+            ],
+            0
+        ],
+        "landing_speed": [
+            [
+                "plane_tecs_controller_get_land_airspeed",
+                "is_positive_tecs_land_speed",
+                "plane_aparm_airspeed_cruise"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "mission_checks_report"
+            ],
+            0
+        ],
+        "prev_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ]
+    }
+}

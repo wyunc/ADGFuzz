@@ -1,0 +1,46 @@
+init_path: ['height_amsl_cm', 'terrain_difference', 'terrain_altitude']
+RVpath: [['paramset', 'AFS_AMSL_LIMIT', 1], ['paramset', 'AFS_AMSL_ERR_GPS', 1], ['paramset', 'SIM_PLD_HEIGHT', 1], ['paramset', 'SIM_TERRAIN', 1], ['paramset', 'TERRAIN_ENABLE', 1], ['paramset', 'TERRAIN_SPACING', 1], ['paramset', 'TERRAIN_OPTIONS', 1], ['paramset', 'TERRAIN_MARGIN', 1], ['paramset', 'TERRAIN_OFS_MAX', 1], ['paramset', 'TERRAIN_CACHE_SZ', 1], ['mavcmd', 'MAV_CMD_DO_CHANGE_ALTITUDE'], ['paramset', 'OSD1_ALTITUDE_EN', 1], ['paramset', 'OSD1_ALTITUDE_X', 1], ['paramset', 'OSD1_ALTITUDE_Y', 1], ['paramset', 'OSD2_ALTITUDE_EN', 1], ['paramset', 'OSD2_ALTITUDE_X', 1], ['paramset', 'OSD2_ALTITUDE_Y', 1], ['paramset', 'OSD3_ALTITUDE_EN', 1], ['paramset', 'OSD3_ALTITUDE_X', 1], ['paramset', 'OSD3_ALTITUDE_Y', 1], ['paramset', 'OSD4_ALTITUDE_EN', 1], ['paramset', 'OSD4_ALTITUDE_X', 1], ['paramset', 'OSD4_ALTITUDE_Y', 1]]
+mavcmd MAV_CMD_DO_CHANGE_ALTITUDE [322, 1, 0, 0, 0, 0, 0]
+paramset OSD2_ALTITUDE_X 11.47
+paramset OSD1_ALTITUDE_Y 0
+paramset TERRAIN_OPTIONS 0
+paramset OSD4_ALTITUDE_X 59
+paramset OSD2_ALTITUDE_Y 3.51
+paramset TERRAIN_SPACING 9355
+paramset OSD1_ALTITUDE_EN 0
+paramset AFS_AMSL_LIMIT 857.23
+paramset AFS_AMSL_ERR_GPS 1000.0
+paramset OSD4_ALTITUDE_Y 7.28
+mavcmd MAV_CMD_DO_CHANGE_ALTITUDE [241, 1, 0, 0, 0, 0, 0]
+paramset SIM_TERRAIN 0
+paramset OSD3_ALTITUDE_Y 5.39
+paramset TERRAIN_OFS_MAX 14.09
+paramset OSD1_ALTITUDE_EN 0
+paramset AFS_AMSL_ERR_GPS 773.9
+paramset OSD1_ALTITUDE_X 35.5
+paramset OSD3_ALTITUDE_X 7.21
+paramset AFS_AMSL_LIMIT 1000.0
+paramset TERRAIN_ENABLE 1
+paramset OSD4_ALTITUDE_EN 0
+mavcmd MAV_CMD_DO_CHANGE_ALTITUDE [19, 1, 0, 0, 0, 0, 0]
+paramset TERRAIN_MARGIN 4.65
+paramset OSD1_ALTITUDE_Y 14.22
+paramset OSD2_ALTITUDE_Y 10.66
+paramset OSD1_ALTITUDE_EN 1
+paramset OSD1_ALTITUDE_X 2.39
+paramset OSD4_ALTITUDE_X 2.04
+paramset OSD4_ALTITUDE_EN 1
+paramset OSD3_ALTITUDE_X 59
+paramset OSD3_ALTITUDE_Y 0
+paramset TERRAIN_OFS_MAX 0
+paramset TERRAIN_OPTIONS 0
+paramset OSD2_ALTITUDE_X 8.14
+paramset OSD3_ALTITUDE_X 52.0
+paramset TERRAIN_SPACING 0
+paramset SIM_PLD_HEIGHT 9967
+paramset TERRAIN_CACHE_SZ 112.08
+paramset OSD4_ALTITUDE_X 2.93
+paramset OSD2_ALTITUDE_EN 0
+paramset TERRAIN_OFS_MAX 5.01
+paramset OSD4_ALTITUDE_EN 1
+mavcmd MAV_CMD_DO_CHANGE_ALTITUDE [769, 1, 0, 0, 0, 0, 0]

@@ -1,0 +1,61 @@
+{
+    "checkHeightSensorRefFallback": {
+        "_height_sensor_ref": [
+            [
+                "i",
+                "fallback_list"
+            ],
+            0
+        ]
+    },
+    "checkVerticalAccelerationHealth": {
+        "_time_good_vert_accel": [
+            [
+                "imu_delayed_time_us"
+            ],
+            0
+        ],
+        "inertial_nav_falling_likelihood": [
+            [
+                "estimate_inertial_nav_falling_likelihood",
+                "high"
+            ],
+            0
+        ],
+        "is_clipping_frequently": [
+            [
+                "_fault_status_flags_bad_acc_clipping",
+                "acc_clip_warning"
+            ],
+            0
+        ],
+        "kClipCountLimit": [
+            [
+                "_f",
+                "_dt_ekf_avg"
+            ],
+            0
+        ],
+        "_time_bad_vert_accel": [
+            [
+                "imu_delayed_time_us"
+            ],
+            0
+        ],
+        "_fault_status.flags.bad_acc_clipping": [
+            [
+                "acc_clip_critical",
+                "acc_clip_warning"
+            ],
+            2
+        ],
+        "_fault_status.flags.bad_acc_vertical": [
+            [
+                "is_recent__time_bad_vert_accel",
+                "is_recent_badacc_probation",
+                "bad_vert_accel"
+            ],
+            0
+        ]
+    }
+}

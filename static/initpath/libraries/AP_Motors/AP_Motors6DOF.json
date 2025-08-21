@@ -1,0 +1,165 @@
+{
+    "output_armed_stabilizing": {
+        "throttle_thrust": [
+            [
+                "get_throttle_bidirectional",
+                "_throttle_thrust_max"
+            ],
+            0
+        ],
+        "lateral_thrust": [
+            [
+                "_lateral_in"
+            ],
+            0
+        ],
+        "_output_limited": [
+            [
+                "_batt_current_time_constant",
+                "_dt",
+                "_batt_current",
+                "_batt_current_max",
+                "_batt_current_max",
+                "_batt_current",
+                "_dt",
+                "_batt_current",
+                "_dt"
+            ],
+            5
+        ],
+        "roll_thrust": [
+            [
+                "_roll_in",
+                "_roll_in_ff"
+            ],
+            0
+        ],
+        "forward_thrust": [
+            [
+                "_forward_in"
+            ],
+            0
+        ],
+        "_batt_current_last": [
+            [
+                "_batt_current"
+            ],
+            0
+        ],
+        "yaw_thrust": [
+            [
+                "_yaw_in_ff",
+                "_yaw_in"
+            ],
+            0
+        ],
+        "pitch_thrust": [
+            [
+                "_pitch_in",
+                "_pitch_in_ff"
+            ],
+            0
+        ]
+    },
+    "output_armed_stabilizing_vectored": {
+        "roll_thrust": [
+            [
+                "_roll_in",
+                "_roll_in_ff"
+            ],
+            0
+        ],
+        "pitch_thrust": [
+            [
+                "_pitch_in",
+                "_pitch_in_ff"
+            ],
+            0
+        ],
+        "throttle_thrust": [
+            [
+                "_throttle_thrust_max",
+                "get_throttle_bidirectional"
+            ],
+            0
+        ],
+        "lateral_thrust": [
+            [
+                "_lateral_in"
+            ],
+            0
+        ],
+        "forward_thrust_limited": [
+            [
+                "_forward_in",
+                "_forward_vertical_coupling_factor",
+                "float_throttle_thrust",
+                "float_fabsf"
+            ],
+            2
+        ],
+        "yaw_thrust": [
+            [
+                "_yaw_in_ff",
+                "_yaw_in"
+            ],
+            0
+        ]
+    },
+    "output_armed_stabilizing_vectored_6dof": {
+        "rpt_max": [
+            [
+                "fabsf_i",
+                "fabsf_rpt_out"
+            ],
+            0
+        ],
+        "pitch_thrust": [
+            [
+                "_pitch_in_ff",
+                "_pitch_in"
+            ],
+            0
+        ],
+        "throttle_thrust": [
+            [
+                "get_throttle_bidirectional",
+                "_throttle_thrust_max"
+            ],
+            0
+        ],
+        "roll_thrust": [
+            [
+                "_roll_in",
+                "_roll_in_ff"
+            ],
+            0
+        ],
+        "forward_thrust": [
+            [
+                "_forward_in"
+            ],
+            0
+        ],
+        "lateral_thrust": [
+            [
+                "_lateral_in"
+            ],
+            0
+        ],
+        "yaw_thrust": [
+            [
+                "_yaw_in_ff",
+                "_yaw_in"
+            ],
+            0
+        ],
+        "yfl_max": [
+            [
+                "fabsf_yfl_out",
+                "fabsf_i"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,317 @@
+{
+    "Configure": {
+        "heading": [
+            [
+                "gz_dtor_heading_deg"
+            ],
+            0
+        ],
+        "pose_component": [
+            [
+                "pose",
+                "ecm_component",
+                "_model_link_by_name_ecm",
+                "_model_link_by_name_link_name"
+            ],
+            1
+        ],
+        "_platform_mass": [
+            [
+                "inertial_component_data_mass_matrix_mass"
+            ],
+            0
+        ],
+        "_platform_height_setpoint": [
+            [
+                "pose_component_data_z"
+            ],
+            0
+        ],
+        "optional_original_pose": [
+            [
+                "_link_world_pose_ecm"
+            ],
+            0
+        ],
+        "_link": [
+            [
+                "link__link_entity"
+            ],
+            0
+        ],
+        "original_pose": [
+            [
+                "optional_original_pose_value"
+            ],
+            0
+        ],
+        "gravity": [
+            [
+                "_world_gravity_ecm"
+            ],
+            0
+        ],
+        "_world_entity": [
+            [
+                "world_entity_ecm"
+            ],
+            0
+        ],
+        "_world": [
+            [
+                "world__world_entity"
+            ],
+            0
+        ],
+        "_gravity": [
+            [
+                "gravity_value_z"
+            ],
+            0
+        ],
+        "_platform_diag_moments": [
+            [
+                "inertial_component_data_mass_matrix_diagonal_moments"
+            ],
+            0
+        ],
+        "_model": [
+            [
+                "model_entity"
+            ],
+            0
+        ],
+        "_velocity_sp": [
+            [
+                "quaterniond_heading",
+                "quaterniond__",
+                "_body_velocity_sp"
+            ],
+            1
+        ],
+        "_startup_timer": [
+            [
+                "timer"
+            ],
+            0
+        ],
+        "link_name": [
+            [
+                "sdf_get",
+                "string"
+            ],
+            0
+        ],
+        "_entity": [
+            [
+                "entity"
+            ],
+            0
+        ],
+        "inertial_component": [
+            [
+                "inertial",
+                "ecm_component",
+                "_model_link_by_name_ecm",
+                "_model_link_by_name_link_name"
+            ],
+            1
+        ]
+    },
+    "PreUpdate": {
+        "keep_stationary": [
+            [
+                "_world_model_by_name__vehicle_model_name",
+                "_world_model_by_name_ecm",
+                "_wait_for_vehicle_spawned"
+            ],
+            1
+        ],
+        "dt_sec": [
+            [
+                "double",
+                "_info_dt",
+                "_count",
+                "duration"
+            ],
+            0
+        ]
+    },
+    "updateNoise": {
+        "_noise_lowpass_torque": [
+            [
+                "_",
+                "_",
+                "gz_pi",
+                "dt",
+                "_",
+                "noise_torque"
+            ],
+            3
+        ],
+        "_noise_lowpass_force": [
+            [
+                "_",
+                "noise_force",
+                "_",
+                "gz_pi",
+                "_",
+                "dt"
+            ],
+            3
+        ],
+        "max_cutoff_freq": [
+            [
+                "dt"
+            ],
+            0
+        ]
+    },
+    "updateWrenchCommand": {
+        "scaling": [
+            [
+                "_platform_mass",
+                "_force_xy_length",
+                "_"
+            ],
+            2
+        ],
+        "_torque": [
+            [
+                "_noise_lowpass_torque",
+                "_",
+                "_platform_diag_moments",
+                "_",
+                "attitude_err_w",
+                "_",
+                "attitude_err_z",
+                "vector3d_attitude_err_x",
+                "attitude_err_y",
+                "_platform_diag_moments",
+                "_",
+                "_platform_diag_moments",
+                "keep_stationary",
+                "_",
+                "_platform_angular_velocity"
+            ],
+            6
+        ],
+        "attitude_err": [
+            [
+                "orientation_setpoint_inverse",
+                "_platform_orientation"
+            ],
+            0
+        ],
+        "_force": [
+            [
+                "vector3d_scaling",
+                "normal_force",
+                "vector3d__",
+                "_platform_mass",
+                "keep_stationary",
+                "_",
+                "_platform_position",
+                "platform_position_setpoint",
+                "vector3d__",
+                "_platform_mass",
+                "vector3d__",
+                "_platform_mass",
+                "velocity_setpoint",
+                "keep_stationary",
+                "zero",
+                "_platform_velocity",
+                "_noise_lowpass_force"
+            ],
+            8
+        ],
+        "_force_xy": [
+            [
+                "vector2d_feedback_force_x",
+                "feedback_force_y"
+            ],
+            0
+        ]
+    },
+    "getPlatformState": {
+        "_platform_velocity": [
+            [
+                "optional_vel_value"
+            ],
+            0
+        ],
+        "_platform_orientation": [
+            [
+                "optional_pose_value_rot"
+            ],
+            0
+        ],
+        "optional_angular_vel": [
+            [
+                "_link_world_angular_velocity_ecm"
+            ],
+            0
+        ],
+        "_platform_position": [
+            [
+                "optional_pose_value_pos"
+            ],
+            0
+        ],
+        "optional_vel": [
+            [
+                "_link_world_linear_velocity_ecm"
+            ],
+            0
+        ],
+        "optional_pose": [
+            [
+                "_link_world_pose_ecm"
+            ],
+            0
+        ],
+        "_platform_angular_velocity": [
+            [
+                "optional_angular_vel_value"
+            ],
+            0
+        ]
+    },
+    "readEnvVar": {
+        "value": [
+            [
+                "stod_env_var_value"
+            ],
+            0
+        ],
+        "env_var_value": [
+            [
+                "getenv_env_var_name"
+            ],
+            0
+        ]
+    },
+    "getVehicleModelName": {
+        "px4_gz_model_name_cstr": [
+            [
+                "getenv"
+            ],
+            0
+        ],
+        "_vehicle_model_name": [
+            [
+                "getenv",
+                "px4_sim_model_substr_prefix_to_remove_length",
+                "px4_sim_model_substr_pos",
+                "getenv"
+            ],
+            4
+        ],
+        "pos": [
+            [
+                "px4_sim_model_find_prefix_to_remove"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,317 @@
+{
+    "process_packet": {
+        "out_buf_head": [
+            [
+                "reply_buf_ptr"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "reply_buf_ptr",
+                "out_buf"
+            ],
+            0
+        ],
+        "_msp_port.c_state": [
+            [
+                "msp_idle"
+            ],
+            0
+        ]
+    },
+    "get_vspeed_ms": {
+        "_baro": [
+            [
+                "baro"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "update_home_pos": {
+        "home_state.home_bearing_cd": [
+            [
+                "loc_get_bearing_to_home_loc"
+            ],
+            0
+        ],
+        "home_state.rel_altitude_cm": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "home_state.home_is_set": [
+            [
+                "_ahrs_home_is_set"
+            ],
+            0
+        ],
+        "home_loc": [
+            [
+                "_ahrs_get_home"
+            ],
+            0
+        ],
+        "home_state.home_distance_m": [
+            [
+                "home_loc_get_distance_loc"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "update_gps_state": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "gps_state.num_sats": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "gps_state.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "gps_state.alt_m": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "gps_state.lon": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "gps_state.fix_type": [
+            [
+                "gps_ok_fix_3d",
+                "gps_status"
+            ],
+            0
+        ],
+        "gps_state.speed_cms": [
+            [
+                "gps_ground_speed"
+            ],
+            0
+        ],
+        "gps_state.ground_course_dd": [
+            [
+                "gps_ground_course_cd"
+            ],
+            0
+        ]
+    },
+    "update_battery_state": {
+        "battery_state.batt_state": [
+            [
+                "msp_battery_ok",
+                "msp_battery_critical"
+            ],
+            0
+        ],
+        "battery_state.batt_capacity_mah": [
+            [
+                "_battery_pack_capacity_mah"
+            ],
+            0
+        ],
+        "battery_state.batt_cellcount": [
+            [
+                "calc_cell_count_battery_state_batt_voltage_v"
+            ],
+            1
+        ],
+        "battery_state.batt_voltage_v": [
+            [
+                "_battery_voltage"
+            ],
+            0
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ]
+    },
+    "update_airspeed": {
+        "airspeed_state.airspeed_have_estimate": [
+            [
+                "ahrs_airspeed_estimate_airspeed_state_airspeed_estimate_ms"
+            ],
+            0
+        ]
+    },
+    "update_flight_mode_str": {
+        "simple_mode_str": [
+            [
+                "gcs_supersimple_input_active",
+                "gcs_simple_input_active"
+            ],
+            0
+        ],
+        "invert_wind": [
+            [
+                "_check_option_option_inverted_wind",
+                "msp__msp_status_current_screen",
+                "osd_screen"
+            ],
+            0
+        ],
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "v_length": [
+            [
+                "osd_unit_imperial",
+                "units_imperial",
+                "osd_units",
+                "osd_unit_metric",
+                "osd_unit_metric"
+            ],
+            1
+        ],
+        "arrow": [
+            [
+                "arrows",
+                "ahrs_yaw_sensor",
+                "wrap_360_cd_v_x",
+                "wrap_360_cd_atan2f",
+                "wrap_360_cd_degx100",
+                "wrap_360_cd_v_y",
+                "array_size_arrows",
+                "array_size_arrows"
+            ],
+            2
+        ],
+        "unit": [
+            [
+                "osd_unit_imperial",
+                "units_imperial",
+                "osd_units",
+                "osd_unit_metric",
+                "osd_unit_metric"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ]
+    },
+    "process_incoming_data": {
+        "numc": [
+            [
+                "_msp_port_uart_available_1024u"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "_msp_port_uart_read"
+            ],
+            0
+        ]
+    },
+    "msp_process_received_command": {
+        "out_buf_head": [
+            [
+                "reply_buf_ptr"
+            ],
+            0
+        ],
+        "_msp_port.c_state": [
+            [
+                "msp_idle"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "msp_process_command_reply",
+                "msp_process_command_command"
+            ],
+            0
+        ]
+    },
+    "msp_handle_opflow": {
+        "optflow": [
+            [
+                "opticalflow"
+            ],
+            0
+        ]
+    },
+    "hide_osd_items": {
+        "airspeed_en": [
+            [
+                "_aspeed_enabled",
+                "msp__msp_status_current_screen",
+                "osd_screen"
+            ],
+            0
+        ]
+    },
+    "msp_displayport_write_string": {
+        "packet.row": [
+            [
+                "row"
+            ],
+            0
+        ],
+        "packet.sub_cmd": [
+            [
+                "msp_displayport_write_string"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strnlen_string",
+                "strnlen_osd_msp_displayport_max_string_length"
+            ],
+            0
+        ],
+        "packet.col": [
+            [
+                "col"
+            ],
+            0
+        ]
+    },
+    "get_rssi": {
+        "rssi": [
+            [
+                "ap_rssi_read_receiver_rssi"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+{
+    "update": {
+        "velocity_horizontal": [
+            [
+                "fmaxf__param_mc_slow_min_hvel_get",
+                "fmaxf__velocity_limits_horizontal_velocity",
+                "_param_mpc_vel_manual_get",
+                "_param_mc_slow_def_hvel_get"
+            ],
+            0
+        ],
+        "_velocity_constraint_up": [
+            [
+                "_param_mc_slow_def_vvel_get",
+                "_param_mpc_z_vel_max_up_get",
+                "fmaxf__velocity_limits_vertical_velocity",
+                "fmaxf__param_mc_slow_min_vvel_get",
+                "_param_mpc_z_vel_max_dn_get",
+                "interpolate_aux_input",
+                "interpolate_min_down_speed_scale",
+                "interpolate__f",
+                "interpolate_aux_input",
+                "interpolate_min_up_speed_scale",
+                "interpolate__f"
+            ],
+            4
+        ],
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "min_down_speed_scale": [
+            [
+                "_param_mc_slow_min_vvel_get",
+                "fmaxf_velocity_down",
+                "fmaxf_flt_epsilon"
+            ],
+            0
+        ],
+        "min_horizontal_velocity_scale": [
+            [
+                "fmaxf_velocity_horizontal",
+                "_param_mc_slow_min_hvel_get",
+                "fmaxf_flt_epsilon"
+            ],
+            0
+        ],
+        "aux_input": [
+            [
+                "get_input_from_sanitized_aux_parameter_index__param_mc_slow_map_vvel_get",
+                "get_input_from_sanitized_aux_parameter_index__param_mc_slow_map_yawr_get",
+                "get_input_from_sanitized_aux_parameter_index__param_mc_slow_map_hvel_get"
+            ],
+            0
+        ],
+        "pitchrate_setpoint": [
+            [
+                "get_input_from_sanitized_aux_parameter_index__param_mc_slow_map_pitch_get",
+                "fmaxf_radians",
+                "fmaxf__velocity_limits_yaw_rate",
+                "radians__param_mpc_man_y_max_get",
+                "fmaxf__param_mc_slow_min_yawr_get",
+                "radians__param_mc_slow_def_yawr_get",
+                "interpolate_aux_input",
+                "interpolate_min_yaw_rate_scale",
+                "interpolate_min_horizontal_velocity_scale",
+                "interpolate__f"
+            ],
+            2
+        ],
+        "_yaw_setpoint": [
+            [
+                "_gimbal_get_telemetry_yaw"
+            ],
+            0
+        ],
+        "min_yaw_rate_scale": [
+            [
+                "radians__param_mc_slow_min_yawr_get",
+                "fmaxf_yaw_rate",
+                "fmaxf_flt_epsilon"
+            ],
+            0
+        ],
+        "min_up_speed_scale": [
+            [
+                "fmaxf_velocity_up",
+                "_param_mc_slow_min_vvel_get",
+                "fmaxf_flt_epsilon"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_sticks_get_yaw",
+                "fmaxf_radians",
+                "fmaxf__velocity_limits_yaw_rate",
+                "radians__param_mpc_man_y_max_get",
+                "fmaxf__param_mc_slow_min_yawr_get",
+                "radians__param_mc_slow_def_yawr_get",
+                "interpolate_aux_input",
+                "interpolate_min_yaw_rate_scale",
+                "interpolate_min_horizontal_velocity_scale",
+                "interpolate__f"
+            ],
+            2
+        ],
+        "_velocity_constraint_down": [
+            [
+                "_param_mpc_z_vel_max_dn_get",
+                "interpolate_aux_input",
+                "interpolate_min_down_speed_scale",
+                "interpolate__f"
+            ],
+            2
+        ]
+    },
+    "getInputFromSanitizedAuxParameterIndex": {
+        "sanitized_index": [
+            [
+                "constrain_parameter_value"
+            ],
+            0
+        ]
+    },
+    "haveTakenOff": {
+        "takeoff_status.takeoff_state": [
+            [
+                "takeoff_state_flight"
+            ],
+            0
+        ]
+    }
+}

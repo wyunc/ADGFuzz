@@ -1,0 +1,1180 @@
+{
+    "init": {
+        "num_segs": [
+            [
+                "seg_init"
+            ],
+            0
+        ]
+    },
+    "calculate_track": {
+        "jerk_max": [
+            [
+                "jerk_maximum"
+            ],
+            0
+        ],
+        "snap_max": [
+            [
+                "snap_maximum"
+            ],
+            0
+        ],
+        "track": [
+            [
+                "origin",
+                "destination"
+            ],
+            1
+        ],
+        "delta_unit": [
+            [
+                "track_normalized"
+            ],
+            0
+        ]
+    },
+    "set_speed_max": {
+        ".end_vel": [
+            [
+                "seg_speed_change_end",
+                "vt_out",
+                "seg_const",
+                "seg_decel_end",
+                "_end_vel",
+                "segment",
+                "seg_accel_end"
+            ],
+            0
+        ],
+        "Vstart": [
+            [
+                "seg_init",
+                "segment",
+                "_end_vel",
+                "kinematic_limit_fabsf",
+                "kinematic_limit_speed_xy",
+                "kinematic_limit_speed_down",
+                "kinematic_limit_speed_up",
+                "kinematic_limit_delta_unit"
+            ],
+            2
+        ],
+        "Vend": [
+            [
+                "seg_speed_change_end",
+                "vend",
+                "seg_decel_end",
+                "_end_vel",
+                "segment",
+                "kinematic_limit_fabsf",
+                "kinematic_limit_speed_xy",
+                "kinematic_limit_speed_down",
+                "kinematic_limit_speed_up",
+                "kinematic_limit_delta_unit"
+            ],
+            2
+        ],
+        "dP": [
+            [
+                "seg_decel_end",
+                "segment",
+                "pend",
+                "_end_pos"
+            ],
+            0
+        ],
+        ".end_pos": [
+            [
+                "_end_pos",
+                "seg_speed_change_end",
+                "pt_out",
+                "seg_const",
+                "d_p",
+                "segment",
+                "seg_accel_end"
+            ],
+            0
+        ],
+        "Vmin": [
+            [
+                "time",
+                "seg_accel_max",
+                "_end_accel",
+                "_end_vel",
+                "segment",
+                "_end_time",
+                "seg_accel_end"
+            ],
+            0
+        ],
+        "L": [
+            [
+                "_end_pos",
+                "segment",
+                "seg_accel_end",
+                "seg_const"
+            ],
+            0
+        ],
+        "Jm": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "Pend": [
+            [
+                "seg_decel_end",
+                "segment",
+                "_end_pos"
+            ],
+            0
+        ],
+        ".end_time": [
+            [
+                "seg_speed_change_end",
+                "time",
+                "seg_const",
+                "segment",
+                "_end_vel",
+                "seg_const",
+                "d_p",
+                "segment",
+                "_end_time",
+                "seg_accel_end"
+            ],
+            1
+        ],
+        "i": [
+            [
+                "seg_init",
+                "seg_accel_end",
+                "seg_const"
+            ],
+            0
+        ],
+        "seg": [
+            [
+                "seg_init",
+                "seg_accel_end",
+                "seg_const"
+            ],
+            0
+        ],
+        "Vm": [
+            [
+                "powf_seg_accel_end",
+                "powf_vel_max",
+                "powf_segment",
+                "snap_max",
+                "m_pi",
+                "powf_fabsf",
+                "powf_m_pi",
+                "jerk_max",
+                "powf__end_vel",
+                "l",
+                "kinematic_limit_fabsf",
+                "kinematic_limit_speed_xy",
+                "kinematic_limit_speed_down",
+                "kinematic_limit_speed_up",
+                "kinematic_limit_delta_unit"
+            ],
+            3
+        ],
+        ".seg_type": [
+            [
+                "constant_jerk"
+            ],
+            0
+        ],
+        "num_segs": [
+            [
+                "seg_init"
+            ],
+            0
+        ],
+        ".end_accel": [
+            [
+                "segment",
+                "seg_accel_end",
+                "_end_accel"
+            ],
+            0
+        ]
+    },
+    "set_origin_speed_max": {
+        "seg": [
+            [
+                "seg_init",
+                "seg_const"
+            ],
+            0
+        ],
+        "dPstart": [
+            [
+                "track_length",
+                "seg_accel_end",
+                "_end_pos",
+                "segment"
+            ],
+            0
+        ],
+        "dP": [
+            [
+                "track_length",
+                "_end_pos",
+                "seg_decel_end",
+                "segment"
+            ],
+            0
+        ],
+        ".end_pos": [
+            [
+                "seg_accel_end",
+                "d_p",
+                "d_pstart",
+                "segment",
+                "_end_pos"
+            ],
+            0
+        ],
+        ".end_time": [
+            [
+                "_end_vel",
+                "d_p",
+                "seg_const",
+                "segment",
+                "seg_accel_end",
+                "_end_vel",
+                "seg_accel_end",
+                "d_pstart",
+                "segment",
+                "_end_time",
+                "segment"
+            ],
+            2
+        ],
+        ".end_vel": [
+            [
+                "_end_vel",
+                "seg_accel_end",
+                "seg_decel_end",
+                "segment"
+            ],
+            0
+        ],
+        ".seg_type": [
+            [
+                "constant_jerk"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "vm"
+            ],
+            0
+        ],
+        "Vm": [
+            [
+                "_end_vel",
+                "seg_accel_end",
+                "segment"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "seg_init",
+                "seg_const",
+                "seg_accel_end"
+            ],
+            0
+        ]
+    },
+    "set_destination_speed_max": {
+        "Vm": [
+            [
+                "seg_const",
+                "_end_vel",
+                "segment"
+            ],
+            0
+        ],
+        "dP": [
+            [
+                "_end_pos",
+                "seg_decel_end",
+                "segment",
+                "track_length"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "vm"
+            ],
+            0
+        ],
+        ".end_vel": [
+            [
+                "_end_vel",
+                "seg_decel_end",
+                "segment"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "seg_const"
+            ],
+            0
+        ],
+        "seg": [
+            [
+                "seg_const"
+            ],
+            0
+        ],
+        ".end_time": [
+            [
+                "d_p",
+                "seg_const",
+                "_end_vel",
+                "segment"
+            ],
+            1
+        ],
+        ".end_pos": [
+            [
+                "d_p"
+            ],
+            0
+        ]
+    },
+    "advance_target_along_track": {
+        "time_to_destination": [
+            [
+                "get_time_remaining"
+            ],
+            0
+        ],
+        "s_finished": [
+            [
+                "finished"
+            ],
+            0
+        ],
+        "speed_min": [
+            [
+                "get_speed_along_track_next_leg_get_speed_along_track"
+            ],
+            0
+        ],
+        "turn_pos": [
+            [
+                "get_track"
+            ],
+            0
+        ]
+    },
+    "move_from_pos_vel_accel": {
+        "position_sq": [
+            [
+                "sq_scurve_p1"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "scurve_v1",
+                "delta_unit"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "delta_unit",
+                "scurve_a1"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "scurve_p1",
+                "delta_unit"
+            ],
+            0
+        ]
+    },
+    "move_to_pos_vel_accel": {
+        "position_sq": [
+            [
+                "sq_scurve_p1"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "delta_unit",
+                "scurve_v1"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "delta_unit",
+                "scurve_p1",
+                "track"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "delta_unit",
+                "scurve_a1"
+            ],
+            0
+        ]
+    },
+    "move_from_time_pos_vel_accel": {
+        "pos": [
+            [
+                "delta_unit",
+                "scurve_p1"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "delta_unit",
+                "scurve_a1"
+            ],
+            0
+        ],
+        "scurve_V1": [
+            [
+                "scurve_a1",
+                "scurve_j1"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "scurve_v1",
+                "delta_unit"
+            ],
+            0
+        ]
+    },
+    "advance_time": {
+        "time": [
+            [
+                "time_end",
+                "dt"
+            ],
+            0
+        ]
+    },
+    "get_jerk_accel_vel_pos_at_time": {
+        "tj": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_end_time"
+            ],
+            1
+        ],
+        "V0": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_end_vel"
+            ],
+            1
+        ],
+        "Jm": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_jerk_ref"
+            ],
+            1
+        ],
+        "A0": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_end_accel"
+            ],
+            1
+        ],
+        "Jtype": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_seg_type",
+                "constant_jerk"
+            ],
+            1
+        ],
+        "Pt_out": [
+            [
+                "pt_out"
+            ],
+            0
+        ],
+        "P0": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_end_pos"
+            ],
+            1
+        ],
+        "T0": [
+            [
+                "i",
+                "num_segs",
+                "segment",
+                "_end_time"
+            ],
+            1
+        ]
+    },
+    "calc_javp_for_segment_const_jerk": {
+        "At": [
+            [
+                "a0",
+                "j0",
+                "time_now"
+            ],
+            0
+        ],
+        "Pt": [
+            [
+                "a0",
+                "p0",
+                "v0",
+                "time_now",
+                "j0"
+            ],
+            0
+        ],
+        "Jt": [
+            [
+                "j0"
+            ],
+            0
+        ],
+        "Vt": [
+            [
+                "a0",
+                "j0",
+                "v0",
+                "time_now"
+            ],
+            0
+        ]
+    },
+    "calc_javp_for_segment_incr_jerk": {
+        "At": [
+            [
+                "sinf_beta",
+                "a0",
+                "time_now",
+                "alpha",
+                "sinf_time_now",
+                "beta"
+            ],
+            0
+        ],
+        "Pt": [
+            [
+                "sinf_beta",
+                "a0",
+                "time_now",
+                "alpha",
+                "sinf_time_now",
+                "v0",
+                "beta",
+                "p0"
+            ],
+            0
+        ],
+        "Alpha": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "Vt": [
+            [
+                "a0",
+                "time_now",
+                "alpha",
+                "cosf_time_now",
+                "v0",
+                "beta",
+                "cosf_beta"
+            ],
+            0
+        ],
+        "Beta": [
+            [
+                "m_pi",
+                "tj"
+            ],
+            0
+        ],
+        "Jt": [
+            [
+                "alpha",
+                "cosf_beta",
+                "cosf_time_now"
+            ],
+            0
+        ]
+    },
+    "calc_javp_for_segment_decr_jerk": {
+        "AT": [
+            [
+                "tj",
+                "alpha"
+            ],
+            0
+        ],
+        "Alpha": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "At": [
+            [
+                "at",
+                "time_now",
+                "beta",
+                "tj",
+                "alpha",
+                "sinf_tj",
+                "sinf_time_now",
+                "sinf_beta",
+                "a0"
+            ],
+            0
+        ],
+        "Pt": [
+            [
+                "pt",
+                "at",
+                "time_now",
+                "beta",
+                "p0",
+                "tj",
+                "alpha",
+                "v0",
+                "sinf_tj",
+                "sinf_time_now",
+                "sinf_beta",
+                "vt",
+                "a0"
+            ],
+            0
+        ],
+        "Jt": [
+            [
+                "cosf_beta",
+                "cosf_tj",
+                "cosf_time_now",
+                "alpha"
+            ],
+            0
+        ],
+        "Vt": [
+            [
+                "at",
+                "time_now",
+                "beta",
+                "cosf_beta",
+                "tj",
+                "cosf_time_now",
+                "alpha",
+                "v0",
+                "cosf_tj",
+                "vt",
+                "a0"
+            ],
+            0
+        ],
+        "Beta": [
+            [
+                "m_pi",
+                "tj"
+            ],
+            0
+        ],
+        "VT": [
+            [
+                "tj",
+                "beta",
+                "alpha"
+            ],
+            0
+        ],
+        "PT": [
+            [
+                "tj",
+                "beta",
+                "alpha"
+            ],
+            0
+        ]
+    },
+    "add_segments": {
+        "t15": [
+            [
+                "seg_speed_change_end",
+                "_end_vel",
+                "l",
+                "_end_pos",
+                "segment"
+            ],
+            0
+        ]
+    },
+    "calculate_path": {
+        "Jm_out": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "tj_out": [
+            [
+                "m_pi",
+                "jm",
+                "sm"
+            ],
+            1
+        ],
+        "Jm": [
+            [
+                "m_pi",
+                "jm",
+                "sm",
+                "am",
+                "sm",
+                "m_pi"
+            ],
+            1
+        ],
+        "t4_out": [
+            [
+                "v0",
+                "jm",
+                "am",
+                "safe_sqrt_am",
+                "vm",
+                "l",
+                "m_pi",
+                "jm",
+                "sm"
+            ],
+            1
+        ],
+        "t6_out": [
+            [
+                "m_pi",
+                "jm",
+                "sm",
+                "jm",
+                "am"
+            ],
+            2
+        ],
+        "Am": [
+            [
+                "powf_safe_sqrt",
+                "jm",
+                "powf_powf",
+                "powf_jm",
+                "m_pi",
+                "jm",
+                "sm",
+                "_7e1f",
+                "min_tj",
+                "v0",
+                "min_v0",
+                "min_safe_sqrt",
+                "at",
+                "safe_sqrt_vm",
+                "l",
+                "safe_sqrt_jm",
+                "min_am",
+                "min_vm",
+                "min_jm",
+                "safe_sqrt_tj",
+                "safe_sqrt_v0"
+            ],
+            1
+        ]
+    },
+    "add_segment_const_jerk": {
+        "P": [
+            [
+                "tj",
+                "_end_accel",
+                "segment",
+                "sq_tj",
+                "index",
+                "j0",
+                "_end_pos",
+                "powf_tj",
+                "_end_vel"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "tj",
+                "_end_accel",
+                "segment",
+                "index",
+                "j0"
+            ],
+            0
+        ],
+        "V": [
+            [
+                "tj",
+                "_end_accel",
+                "segment",
+                "sq_tj",
+                "index",
+                "j0",
+                "_end_vel"
+            ],
+            0
+        ],
+        "T": [
+            [
+                "segment",
+                "_end_time",
+                "tj",
+                "index"
+            ],
+            0
+        ],
+        "J": [
+            [
+                "j0"
+            ],
+            0
+        ]
+    },
+    "add_segment_incr_jerk": {
+        "P": [
+            [
+                "tj",
+                "_end_accel",
+                "segment",
+                "sq_tj",
+                "index",
+                "pt",
+                "_end_pos",
+                "_end_vel"
+            ],
+            0
+        ],
+        "PT": [
+            [
+                "sq_beta",
+                "alpha",
+                "tj",
+                "powf_tj"
+            ],
+            0
+        ],
+        "V": [
+            [
+                "tj",
+                "_end_accel",
+                "segment",
+                "index",
+                "_end_vel",
+                "vt"
+            ],
+            0
+        ],
+        "T": [
+            [
+                "segment",
+                "_end_time",
+                "tj",
+                "index"
+            ],
+            0
+        ],
+        "AT": [
+            [
+                "tj",
+                "alpha"
+            ],
+            0
+        ],
+        "Alpha": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "VT": [
+            [
+                "sq_beta",
+                "alpha",
+                "sq_tj"
+            ],
+            0
+        ],
+        "J": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "Beta": [
+            [
+                "tj",
+                "m_pi"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "segment",
+                "_end_accel",
+                "at",
+                "index"
+            ],
+            0
+        ]
+    },
+    "add_segment_decr_jerk": {
+        "T": [
+            [
+                "_end_time",
+                "tj",
+                "index",
+                "segment"
+            ],
+            0
+        ],
+        "PT": [
+            [
+                "tj",
+                "sq_beta",
+                "powf_tj",
+                "alpha"
+            ],
+            0
+        ],
+        "V2T": [
+            [
+                "jm",
+                "sq_tj"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "pt",
+                "sq_tj",
+                "_end_vel",
+                "p2t",
+                "vt",
+                "segment",
+                "tj",
+                "index",
+                "_end_accel",
+                "_end_pos",
+                "at"
+            ],
+            0
+        ],
+        "VT": [
+            [
+                "sq_beta",
+                "sq_tj",
+                "alpha"
+            ],
+            0
+        ],
+        "J": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "V": [
+            [
+                "_end_vel",
+                "vt",
+                "segment",
+                "tj",
+                "index",
+                "v2t",
+                "_end_accel",
+                "at"
+            ],
+            0
+        ],
+        "AT": [
+            [
+                "tj",
+                "alpha"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "a2t",
+                "segment",
+                "index",
+                "_end_accel",
+                "at"
+            ],
+            0
+        ],
+        "Alpha": [
+            [
+                "jm"
+            ],
+            0
+        ],
+        "P2T": [
+            [
+                "tj",
+                "sq_beta",
+                "powf_tj",
+                "alpha"
+            ],
+            0
+        ],
+        "Beta": [
+            [
+                "tj",
+                "m_pi"
+            ],
+            0
+        ],
+        "A2T": [
+            [
+                "tj",
+                "jm"
+            ],
+            0
+        ]
+    },
+    "add_segment": {
+        ".end_accel": [
+            [
+                "end_accel"
+            ],
+            0
+        ],
+        ".end_time": [
+            [
+                "end_time"
+            ],
+            0
+        ],
+        ".jerk_ref": [
+            [
+                "jerk_ref"
+            ],
+            0
+        ],
+        ".end_pos": [
+            [
+                "end_pos"
+            ],
+            0
+        ],
+        ".end_vel": [
+            [
+                "end_vel"
+            ],
+            0
+        ],
+        ".seg_type": [
+            [
+                "seg_type"
+            ],
+            0
+        ]
+    },
+    "set_kinematic_limits": {
+        "accel_z": [
+            [
+                "fabsf_accel_z"
+            ],
+            0
+        ],
+        "vel_max": [
+            [
+                "kinematic_limit_direction",
+                "kinematic_limit_speed_up",
+                "kinematic_limit_speed_xy",
+                "kinematic_limit_speed_down"
+            ],
+            1
+        ],
+        "speed_down": [
+            [
+                "fabsf_speed_down"
+            ],
+            0
+        ],
+        "speed_up": [
+            [
+                "fabsf_speed_up"
+            ],
+            0
+        ],
+        "direction": [
+            [
+                "origin",
+                "destination"
+            ],
+            0
+        ],
+        "accel_xy": [
+            [
+                "fabsf_accel_xy"
+            ],
+            0
+        ],
+        "speed_xy": [
+            [
+                "fabsf_speed_xy"
+            ],
+            0
+        ],
+        "accel_max": [
+            [
+                "kinematic_limit_direction",
+                "kinematic_limit_accel_z",
+                "kinematic_limit_accel_xy"
+            ],
+            1
+        ]
+    }
+}

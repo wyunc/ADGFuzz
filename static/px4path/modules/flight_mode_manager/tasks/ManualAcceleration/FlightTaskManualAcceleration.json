@@ -1,0 +1,64 @@
+{
+    "activate": {
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "vehicle_local_pos": [
+            [
+                "_sub_vehicle_local_position_get"
+            ],
+            0
+        ],
+        "vxy_max": [
+            [
+                "min__param_mpc_vel_manual_get",
+                "min_vehicle_local_pos_vxy_max"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "max_hagl_ratio": [
+            [
+                "vehicle_local_pos_hagl_max_xy",
+                "vehicle_local_pos_dist_bottom",
+                "min__f",
+                "min_max_hagl_ratio"
+            ],
+            0
+        ],
+        "min_vel": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_constraints.want_takeoff": [
+            [
+                "_check_takeoff"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_weathervane_get_weathervane_yawrate"
+            ],
+            0
+        ]
+    }
+}

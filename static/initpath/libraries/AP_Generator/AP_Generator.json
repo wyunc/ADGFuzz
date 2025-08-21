@@ -1,0 +1,13 @@
+{
+    "init": {
+        "_driver_ptr": [
+            [
+                "ap_generator_ie_2400_this",
+                "ap_generator_ie_650_800_this",
+                "ap_generator_richen_power_this",
+                "new_nothrow"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "update": {
+        "timed_out": [
+            [
+                "rangefinder_timeout_ms",
+                "millis"
+            ],
+            1
+        ],
+        "glitch_cm": [
+            [
+                "rangefinder_distance_cm_orient_rotation",
+                "ahrs__get_rotation_body_to_ned_c_z"
+            ],
+            2
+        ],
+        "glitch_cleared_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "alt_cm_glitch_protected": [
+            [
+                "rangefinder_distance_cm_orient_rotation",
+                "ahrs__get_rotation_body_to_ned_c_z"
+            ],
+            2
+        ],
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "terrain_offset_cm": [
+            [
+                "inertial_nav_get_position_z_up_cm",
+                "rangefinder_distance_cm_orient_rotation",
+                "ahrs__get_rotation_body_to_ned_c_z"
+            ],
+            3
+        ],
+        "last_healthy_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_rangefinder_height_interpolated_cm": {
+        "ret": [
+            [
+                "alt_cm_filt_get",
+                "inertial_alt_cm",
+                "inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    }
+}

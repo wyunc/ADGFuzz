@@ -1,0 +1,66 @@
+{
+    "layout_size": {
+        "xsize": [
+            [
+                "max_leds"
+            ],
+            0
+        ]
+    },
+    "layout_pos": {
+        "ypos": [
+            [
+                "led",
+                "chan"
+            ],
+            0
+        ],
+        "xpos": [
+            [
+                "led"
+            ],
+            0
+        ]
+    },
+    "update_serial_LEDs": {
+        "w": [
+            [
+                "new_nothrow",
+                "render_window_xsize",
+                "render_window_serial_led_size",
+                "ysize",
+                "render_window_video_mode",
+                "serial_led_size"
+            ],
+            0
+        ],
+        "max_leds": [
+            [
+                "sitl_led_num_leds",
+                "i"
+            ],
+            0
+        ],
+        "layout": [
+            [
+                "led_layout_sitl_led_layout_get"
+            ],
+            0
+        ],
+        "rgb": [
+            [
+                "chan",
+                "sitl_led_rgb",
+                "_rgb",
+                "led"
+            ],
+            0
+        ],
+        "xsize": [
+            [
+                "ysize"
+            ],
+            0
+        ]
+    }
+}

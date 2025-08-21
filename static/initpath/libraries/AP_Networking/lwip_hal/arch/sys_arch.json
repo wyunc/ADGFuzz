@@ -1,0 +1,27 @@
+{
+    "sys_mbox_free": {
+        "mbox": [
+            [
+                "mb"
+            ],
+            0
+        ]
+    },
+    "sys_mbox_post": {
+        "mbox": [
+            [
+                "mb"
+            ],
+            0
+        ]
+    },
+    "sys_sem_signal": {
+        "sem": [
+            [
+                "hal_binary_semaphore",
+                "s"
+            ],
+            0
+        ]
+    }
+}

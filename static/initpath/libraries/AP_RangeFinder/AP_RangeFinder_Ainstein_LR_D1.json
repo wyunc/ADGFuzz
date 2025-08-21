@@ -1,0 +1,64 @@
+{
+    "get_reading": {
+        "malfunction_alert_prev": [
+            [
+                "buffer"
+            ],
+            1
+        ],
+        "state.status": [
+            [
+                "good",
+                "out_of_range_high",
+                "no_data"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "uint16_value_buffer"
+            ],
+            0
+        ],
+        "signal_quality_pct": [
+            [
+                "buffer",
+                "signal_quality_min",
+                "buffer",
+                "signal_quality_max"
+            ],
+            2
+        ],
+        "malfunction_alert_last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rest_of_packet_size": [
+            [
+                "packet_size",
+                "array_size_header"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "array_size_buffer",
+                "buffer"
+            ],
+            0
+        ],
+        "available": [
+            [
+                "uart_available_unsigned",
+                "uart_available_packet_size",
+                "uart_available_int",
+                "uart_read_buffer",
+                "uart_read_array_size",
+                "uart_available_static_cast"
+            ],
+            0
+        ]
+    }
+}

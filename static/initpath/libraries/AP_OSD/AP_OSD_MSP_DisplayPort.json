@@ -1,0 +1,34 @@
+{
+    "init": {
+        "_displayport": [
+            [
+                "msp_find_protocol_serial_protocol_msp_display_port"
+            ],
+            0
+        ]
+    },
+    "clear": {
+        "txt_resolution": [
+            [
+                "_get_txt_resolution",
+                "_osd_get_current_screen",
+                "_osd_screen"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "font_index": [
+            [
+                "_get_font_index",
+                "_osd_get_current_screen",
+                "_osd_screen"
+            ],
+            0
+        ]
+    }
+}

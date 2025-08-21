@@ -1,0 +1,337 @@
+{
+    "hasMovedFromCurrentHomeLocation": {
+        "home_dist_z": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "eph": [
+            [
+                "_gps_eph",
+                "_f",
+                "gpos_eph",
+                "_local_position_sub_get_eph"
+            ],
+            0
+        ],
+        "home_dist_xy": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "epv": [
+            [
+                "gpos_epv",
+                "_f",
+                "_gps_epv",
+                "_local_position_sub_get_epv"
+            ],
+            0
+        ],
+        "gpos": [
+            [
+                "_global_position_sub_get"
+            ],
+            0
+        ]
+    },
+    "setHomePosition": {
+        "home.alt": [
+            [
+                "_local_position_sub_get_ref_alt"
+            ],
+            0
+        ],
+        "_heading_reset_counter": [
+            [
+                "lpos_heading_reset_counter"
+            ],
+            0
+        ],
+        "updated": [
+            [
+                "_home_position_pub_update_home"
+            ],
+            0
+        ],
+        "lpos": [
+            [
+                "_local_position_sub_get"
+            ],
+            0
+        ],
+        "gpos": [
+            [
+                "_global_position_sub_get"
+            ],
+            0
+        ],
+        "home.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "home.update_count": [
+            [
+                "1u",
+                "_home_position_pub_get_update_count"
+            ],
+            0
+        ]
+    },
+    "fillLocalHomePos": {
+        "home.z": [
+            [
+                "z"
+            ],
+            0
+        ],
+        "home.y": [
+            [
+                "y"
+            ],
+            0
+        ],
+        "home.x": [
+            [
+                "x"
+            ],
+            0
+        ],
+        "home.yaw": [
+            [
+                "heading"
+            ],
+            0
+        ]
+    },
+    "fillGlobalHomePos": {
+        "home.lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "home.alt": [
+            [
+                "alt"
+            ],
+            0
+        ]
+    },
+    "setInAirHomePosition": {
+        "home.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "home_z": [
+            [
+                "_gps_alt",
+                "gpos_alt",
+                "double",
+                "lpos_ref_alt"
+            ],
+            1
+        ],
+        "local_home_valid": [
+            [
+                "home_valid_lpos"
+            ],
+            0
+        ],
+        "gpos": [
+            [
+                "_global_position_sub_get"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "_home_position_pub_get"
+            ],
+            0
+        ],
+        "lpos": [
+            [
+                "_local_position_sub_get"
+            ],
+            0
+        ],
+        "global_home_valid": [
+            [
+                "home_valid_hpos",
+                "home_valid_alt"
+            ],
+            0
+        ]
+    },
+    "setManually": {
+        "vehicle_local_position": [
+            [
+                "_local_position_sub_get"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "_home_position_pub_get"
+            ],
+            0
+        ],
+        "home.valid_lpos": [
+            [
+                "vehicle_local_position_xy_valid",
+                "vehicle_local_position_z_valid"
+            ],
+            0
+        ],
+        "home.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "home.yaw": [
+            [
+                "yaw"
+            ],
+            0
+        ],
+        "home.lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        "home.z": [
+            [
+                "vehicle_local_position_ref_alt",
+                "alt"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "home.alt": [
+            [
+                "alt"
+            ],
+            0
+        ]
+    },
+    "updateHomePositionYaw": {
+        "home.yaw": [
+            [
+                "yaw"
+            ],
+            0
+        ],
+        "home.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "_home_position_pub_get"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "can_set_home_alt_first_time": [
+            [
+                "home_valid_alt",
+                "lpos_z_global"
+            ],
+            0
+        ],
+        "can_set_home_lpos_first_time": [
+            [
+                "home_valid_lpos",
+                "_failsafe_flags_local_position_invalid"
+            ],
+            0
+        ],
+        "_gps_eph": [
+            [
+                "vehicle_gps_position_eph"
+            ],
+            0
+        ],
+        "_gps_epv": [
+            [
+                "vehicle_gps_position_epv"
+            ],
+            0
+        ],
+        "lpos": [
+            [
+                "_local_position_sub_get"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "_home_position_pub_get"
+            ],
+            0
+        ],
+        "_gps_alt": [
+            [
+                "vehicle_gps_position_altitude_msl_m"
+            ],
+            0
+        ],
+        "_gps_lon": [
+            [
+                "vehicle_gps_position_longitude_deg"
+            ],
+            0
+        ],
+        "_gps_lat": [
+            [
+                "vehicle_gps_position_latitude_deg"
+            ],
+            0
+        ],
+        "_heading_reset_counter": [
+            [
+                "lpos_heading_reset_counter"
+            ],
+            0
+        ],
+        "_gps_position_for_home_valid": [
+            [
+                "1_s",
+                "hrt_absolute_time",
+                "vehicle_gps_position_timestamp",
+                "vehicle_gps_position_s_variance_m_s",
+                "k_home_position_gps_required_evh",
+                "vehicle_gps_position_eph",
+                "k_home_position_gps_required_eph",
+                "k_home_position_gps_required_epv",
+                "vehicle_gps_position_epv",
+                "k_home_position_gps_required_fix_type",
+                "vehicle_gps_position_fix_type"
+            ],
+            6
+        ]
+    }
+}

@@ -1,0 +1,221 @@
+{
+    "get_target": {
+        "wp": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ]
+    },
+    "suppress_throttle": {
+        "alt": [
+            [
+                "_vario_alt"
+            ],
+            0
+        ],
+        "_cruise_start_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "init_thermalling": {
+        "_thermal_start_pos": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "powf_thermal_r"
+            ],
+            0
+        ],
+        "cov_q1": [
+            [
+                "powf_thermal_q1"
+            ],
+            0
+        ],
+        "_prev_update_time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "cov_q2": [
+            [
+                "powf_thermal_q2"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_thermal_start_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "init_cruising": {
+        "_cruise_start_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "update_thermalling": {
+        "_prev_update_time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "wind_drift": [
+            [
+                "_vario_get_filtered_climb",
+                "_ahrs_wind_estimate",
+                "_ekf_x",
+                "delta_t"
+            ],
+            0
+        ],
+        "_thermalability": [
+            [
+                "expf_powf",
+                "_ekf_x",
+                "_vario_get_exp_thermalling_sink",
+                "expf_get_thermalling_radius"
+            ],
+            0
+        ],
+        "deltaT": [
+            [
+                "micros64",
+                "1e"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "update_cruising": {
+        "wind": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ],
+        "wind_bf": [
+            [
+                "ahrs_earth_to_body_wind"
+            ],
+            0
+        ],
+        "wx": [
+            [
+                "wind_bf_x"
+            ],
+            0
+        ],
+        "wz": [
+            [
+                "_vario_get_stf_value"
+            ],
+            0
+        ],
+        "CLmin": [
+            [
+                "_aparm_airspeed_max",
+                "_polar_params_k"
+            ],
+            0
+        ],
+        "CLmax": [
+            [
+                "_aparm_airspeed_min",
+                "_polar_params_k"
+            ],
+            0
+        ]
+    },
+    "update_active_state": {
+        "state_changed": [
+            [
+                "active_state_override_disable"
+            ],
+            1
+        ],
+        "_last_update_status": [
+            [
+                "active_state_override_disable"
+            ],
+            1
+        ]
+    },
+    "set_throttle_suppressed": {
+        "_throttle_suppressed": [
+            [
+                "suppressed"
+            ],
+            0
+        ]
+    },
+    "check_drift": {
+        "parallel": [
+            [
+                "mission_leg_normalized",
+                "prev_wp",
+                "_projected_mission_leg",
+                "prev_wp",
+                "start_pos",
+                "position"
+            ],
+            3
+        ],
+        "perpendicular": [
+            [
+                "mission_leg_normalized",
+                "_length",
+                "prev_wp",
+                "_projected_mission_leg",
+                "prev_wp",
+                "start_pos",
+                "position"
+            ],
+            3
+        ],
+        "mission_leg": [
+            [
+                "next_wp",
+                "prev_wp"
+            ],
+            0
+        ]
+    },
+    "get_thermalling_radius": {
+        "radius": [
+            [
+                "_tecs_get_target_airspeed",
+                "ahrs_get_eas2tas",
+                "gravity_mss",
+                "tanf_thermal_bank",
+                "tanf_deg_to_rad"
+            ],
+            1
+        ]
+    }
+}

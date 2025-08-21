@@ -1,0 +1,10 @@
+{
+    "handle_external": {
+        "field": [
+            [
+                "pkt_field"
+            ],
+            0
+        ]
+    }
+}

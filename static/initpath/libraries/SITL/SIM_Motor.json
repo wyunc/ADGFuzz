@@ -1,0 +1,294 @@
+{
+    "calculate_forces": {
+        "momentum_drag.x": [
+            [
+                "sqrtf_thrust_z",
+                "sqrtf_fabsf",
+                "motor_vel_x",
+                "sqrtf_thrust_y",
+                "momentum_drag_coefficient",
+                "sqrtf_true_prop_area",
+                "sqrtf_air_density"
+            ],
+            1
+        ],
+        "pwm": [
+            [
+                "input_servos",
+                "servo",
+                "motor_offset"
+            ],
+            0
+        ],
+        "last_change_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "current": [
+            [
+                "power_factor",
+                "fabsf_motor_thrust",
+                "voltage"
+            ],
+            1
+        ],
+        "last_command": [
+            [
+                "pwm_to_command_pwm",
+                "micros64",
+                "_0e",
+                "slew_max"
+            ],
+            4
+        ],
+        "momentum_drag.y": [
+            [
+                "motor_vel_y",
+                "sqrtf_thrust_z",
+                "sqrtf_thrust_x",
+                "sqrtf_fabsf",
+                "momentum_drag_coefficient",
+                "sqrtf_true_prop_area",
+                "sqrtf_air_density"
+            ],
+            1
+        ],
+        "motor_vel": [
+            [
+                "position",
+                "gyro",
+                "velocity_air_bf"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "roll_min",
+                "roll_max"
+            ],
+            0
+        ],
+        "momentum_drag.z": [
+            [
+                "motor_vel_z",
+                "sqrtf_thrust_x",
+                "sqrtf_thrust_z",
+                "sqrtf_fabsf",
+                "sqrtf_thrust_y",
+                "momentum_drag_coefficient",
+                "sqrtf_true_prop_area",
+                "sqrtf_air_density"
+            ],
+            1
+        ],
+        "last_calc_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "torque": [
+            [
+                "position",
+                "rotation",
+                "thrust_vector",
+                "calc_thrust_voltage_scale",
+                "calc_thrust_velocity_in",
+                "calc_thrust_command",
+                "calc_thrust_air_density",
+                "momentum_drag",
+                "yaw_factor",
+                "thrust_vector",
+                "rotation",
+                "calc_thrust_voltage_scale",
+                "calc_thrust_velocity_in",
+                "calc_thrust_command",
+                "calc_thrust_air_density",
+                "diagonal_size",
+                "pwm_to_command_pwm",
+                "micros64",
+                "_0e",
+                "slew_max"
+            ],
+            8
+        ],
+        "velocity_in": [
+            [
+                "motor_vel_projected_thrust_vector_z"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "pitch_max",
+                "pitch_min",
+                "update_servo_last_roll_value",
+                "update_servo_last_pitch_value",
+                "update_servo_now",
+                "update_servo_roll_servo",
+                "update_servo_motor_offset",
+                "update_servo_pitch_servo",
+                "update_servo_input_servos"
+            ],
+            1
+        ],
+        "voltage_scale": [
+            [
+                "voltage_max",
+                "voltage"
+            ],
+            0
+        ]
+    },
+    "setup_params": {
+        "position.x": [
+            [
+                "cosf_radians",
+                "cosf_angle",
+                "_diagonal_size"
+            ],
+            0
+        ],
+        "max_outflow_velocity": [
+            [
+                "_velocity_max"
+            ],
+            0
+        ],
+        "effective_prop_area": [
+            [
+                "_effective_prop_area"
+            ],
+            0
+        ],
+        "mot_spin_min": [
+            [
+                "_spin_min"
+            ],
+            0
+        ],
+        "power_factor": [
+            [
+                "_power_factor"
+            ],
+            0
+        ],
+        "mot_spin_max": [
+            [
+                "_spin_max"
+            ],
+            0
+        ],
+        "momentum_drag_coefficient": [
+            [
+                "_momentum_drag_coefficient"
+            ],
+            0
+        ],
+        "thrust_vector": [
+            [
+                "_thrust_vector"
+            ],
+            0
+        ],
+        "position.y": [
+            [
+                "sinf_radians",
+                "_diagonal_size",
+                "sinf_angle"
+            ],
+            0
+        ],
+        "voltage_max": [
+            [
+                "_voltage_max"
+            ],
+            0
+        ],
+        "mot_pwm_min": [
+            [
+                "_pwm_min"
+            ],
+            0
+        ],
+        "true_prop_area": [
+            [
+                "_true_prop_area"
+            ],
+            0
+        ],
+        "diagonal_size": [
+            [
+                "_diagonal_size"
+            ],
+            0
+        ],
+        "mot_expo": [
+            [
+                "_expo"
+            ],
+            0
+        ],
+        "slew_max": [
+            [
+                "_slew_max"
+            ],
+            0
+        ],
+        "mot_pwm_max": [
+            [
+                "_pwm_max"
+            ],
+            0
+        ],
+        "yaw_factor": [
+            [
+                "_yaw_factor"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "_position"
+            ],
+            0
+        ]
+    },
+    "pwm_to_command": {
+        "pwm_thrust_range": [
+            [
+                "mot_pwm_max",
+                "mot_spin_max",
+                "mot_pwm_min",
+                "mot_pwm_max",
+                "mot_spin_min",
+                "mot_pwm_min"
+            ],
+            2
+        ]
+    },
+    "calc_thrust": {
+        "ret": [
+            [
+                "sq_velocity_out",
+                "effective_prop_area",
+                "sq_velocity_in",
+                "air_density"
+            ],
+            0
+        ],
+        "velocity_out": [
+            [
+                "sqrtf_mot_expo",
+                "voltage_scale",
+                "command",
+                "sq_command",
+                "mot_expo",
+                "max_outflow_velocity"
+            ],
+            0
+        ]
+    }
+}

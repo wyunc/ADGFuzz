@@ -1,0 +1,73 @@
+{
+    "updateParams": {
+        ".angle": [
+            [
+                "radians_angle_deg"
+            ],
+            0
+        ]
+    },
+    "getEffectivenessMatrix": {
+        "_first_swash_plate_servo_index": [
+            [
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ]
+    },
+    "updateSetpoint": {
+        "pitch_coeff": [
+            [
+                "_arm_length",
+                "i",
+                "_geometry_swash_plate_servos",
+                "cosf__geometry_swash_plate_servos",
+                "cosf__angle",
+                "cosf_i"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "control_sp_yaw"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "control_sp_thrust_z",
+                "throttle_spoolup_progress"
+            ],
+            0
+        ],
+        "roll_coeff": [
+            [
+                "_arm_length",
+                "i",
+                "_geometry_swash_plate_servos",
+                "sinf_i",
+                "sinf__angle",
+                "sinf__geometry_swash_plate_servos"
+            ],
+            0
+        ]
+    },
+    "throttleSpoolupProgress": {
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "spoolup_progress": [
+            [
+                "_geometry_spoolup_time",
+                "1e6f",
+                "hrt_absolute_time",
+                "vehicle_status_armed_time"
+            ],
+            2
+        ]
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "check_selector_switch": {
+        "hold_time": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "selchan": [
+            [
+                "rc_channel_selector"
+            ],
+            0
+        ],
+        "selector_in": [
+            [
+                "selchan_get_radio_in"
+            ],
+            0
+        ]
+    },
+    "re_center": {
+        "f": [
+            [
+                "get_param_pointer_current_parm"
+            ],
+            0
+        ],
+        "center_value": [
+            [
+                "f_get"
+            ],
+            0
+        ]
+    },
+    "check_input": {
+        "current_set": [
+            [
+                "parmset"
+            ],
+            0
+        ],
+        "last_flightmode": [
+            [
+                "flightmode"
+            ],
+            0
+        ],
+        "last_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_channel_value": [
+            [
+                "channel_max",
+                "linear_interpolate_chan_get_radio_in",
+                "channel_min"
+            ],
+            1
+        ],
+        "dt_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "new_value": [
+            [
+                "linear_interpolate_chan_value",
+                "linear_interpolate_range",
+                "linear_interpolate_center_value"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "rc_channel_channel"
+            ],
+            0
+        ]
+    },
+    "save_parameters": {
+        "set": [
+            [
+                "uint8_t",
+                "parmset_get"
+            ],
+            0
+        ]
+    },
+    "revert_parameters": {
+        "set": [
+            [
+                "parmset_get",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "next_parameter": {
+        "events.tune_next": [
+            [
+                "tuning_sets",
+                "i",
+                "_num_parms"
+            ],
+            1
+        ],
+        "current_parm": [
+            [
+                "uint8_t",
+                "parmset_get",
+                "_parms",
+                "i",
+                "tuning_sets",
+                "i",
+                "_num_parms",
+                "tuning_sets"
+            ],
+            2
+        ]
+    }
+}

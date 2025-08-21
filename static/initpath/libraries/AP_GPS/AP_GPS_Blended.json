@@ -1,0 +1,297 @@
+{
+    "_calc_weights": {
+        "sum_of_hpos_weights": [
+            [
+                "hpos_blend_weights",
+                "i"
+            ],
+            0
+        ],
+        "max_ms": [
+            [
+                "_last_gps_time_ms",
+                "i",
+                "gps_state"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "_last_gps_time_ms",
+                "i",
+                "gps_state"
+            ],
+            1
+        ],
+        "sum_of_spd_weights": [
+            [
+                "spd_blend_weights",
+                "i"
+            ],
+            0
+        ],
+        "max_rate_ms": [
+            [
+                "gps_get_rate_ms_max_rate_ms",
+                "gps_get_rate_ms_i"
+            ],
+            0
+        ],
+        "can_do_blending": [
+            [
+                "sq_gps_state",
+                "sq_i",
+                "sq__horizontal_accuracy",
+                "sq_gps_state",
+                "sq__speed_accuracy",
+                "sq_i",
+                "sq_gps_state",
+                "sq__vertical_accuracy",
+                "sq_i"
+            ],
+            3
+        ],
+        "sum_of_vpos_weights": [
+            [
+                "vpos_blend_weights",
+                "i"
+            ],
+            0
+        ]
+    },
+    "calc_weights": {
+        "_blend_health_counter": [
+            [
+                "blend_counter_failure_increment"
+            ],
+            0
+        ]
+    },
+    "calc_state": {
+        "state.location.alt": [
+            [
+                "gps_state",
+                "_location_alt",
+                "float",
+                "state_location_alt",
+                "i",
+                "_blend_weights",
+                "int"
+            ],
+            1
+        ],
+        "state.instance": [
+            [
+                "gps_blended_instance"
+            ],
+            0
+        ],
+        "timing.last_message_time_ms": [
+            [
+                "double",
+                "gps_timing",
+                "i",
+                "_last_message_time_ms",
+                "_blend_weights",
+                "uint32_t",
+                "gps_timing",
+                "i",
+                "_last_message_time_ms"
+            ],
+            1
+        ],
+        "best_weight": [
+            [
+                "_blend_weights",
+                "i"
+            ],
+            0
+        ],
+        "state.location": [
+            [
+                "gps_state",
+                "i",
+                "_location"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "no_fix",
+                "gps_state",
+                "i",
+                "_status"
+            ],
+            0
+        ],
+        "last_blended_message_time_ms": [
+            [
+                "timing_last_message_time_ms"
+            ],
+            0
+        ],
+        "timing.last_fix_time_ms": [
+            [
+                "uint32_t",
+                "_last_fix_time_ms",
+                "gps_timing",
+                "i",
+                "double",
+                "_last_fix_time_ms",
+                "gps_timing",
+                "i",
+                "_blend_weights"
+            ],
+            1
+        ],
+        "state.num_sats": [
+            [
+                "gps_state",
+                "i",
+                "_num_sats"
+            ],
+            0
+        ],
+        "state.ground_speed": [
+            [
+                "state_velocity_xy_length"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "gps_unknown_dop",
+                "gps_state",
+                "i",
+                "_hdop"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "gps_state",
+                "_undulation"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "gps_state",
+                "_time_week",
+                "i"
+            ],
+            1
+        ],
+        "state.time_week_ms": [
+            [
+                "uint32_t",
+                "i",
+                "_time_week_ms",
+                "gps_state",
+                "double",
+                "_time_week_ms",
+                "gps_state",
+                "i",
+                "_blend_weights"
+            ],
+            2
+        ],
+        "_blended_antenna_offset": [
+            [
+                "gps_params",
+                "_blend_weights",
+                "_antenna_offset",
+                "i"
+            ],
+            1
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360_state_velocity_y",
+                "wrap_360_degrees",
+                "wrap_360_atan2f",
+                "wrap_360_state_velocity_x"
+            ],
+            0
+        ],
+        "state.velocity": [
+            [
+                "gps_state",
+                "i",
+                "_blend_weights",
+                "_velocity"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "1e6f",
+                "gps_state",
+                "i",
+                "_vertical_accuracy"
+            ],
+            0
+        ],
+        "last_week_instance": [
+            [
+                "gps_state",
+                "i",
+                "_time_week"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "1e6f",
+                "_speed_accuracy",
+                "gps_state",
+                "i"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "1e6f",
+                "gps_state",
+                "i",
+                "_horizontal_accuracy"
+            ],
+            0
+        ],
+        "blended_NE_offset_m": [
+            [
+                "state_location_get_distance_ne_i",
+                "i",
+                "state_location_get_distance_ne__location",
+                "state_location_get_distance_ne_gps_state",
+                "_blend_weights"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "gps_unknown_dop",
+                "gps_state",
+                "i",
+                "_vdop"
+            ],
+            0
+        ],
+        "_blended_lag_sec": [
+            [
+                "_blend_weights",
+                "gps_lag_sec",
+                "i"
+            ],
+            0
+        ]
+    },
+    "get_lag": {
+        "lag_sec": [
+            [
+                "_blended_lag_sec"
+            ],
+            0
+        ]
+    }
+}

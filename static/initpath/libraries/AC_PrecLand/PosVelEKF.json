@@ -1,0 +1,29 @@
+{
+    "fusePos": {
+        "innovation_covariance": [
+            [
+                "_cov",
+                "pos_var"
+            ],
+            0
+        ],
+        "innovation_residual": [
+            [
+                "_state",
+                "pos"
+            ],
+            0
+        ]
+    },
+    "getPosNIS": {
+        "NIS": [
+            [
+                "pos",
+                "_state",
+                "pos_var",
+                "_cov"
+            ],
+            2
+        ]
+    }
+}

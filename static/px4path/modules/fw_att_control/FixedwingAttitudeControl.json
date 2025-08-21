@@ -1,0 +1,163 @@
+{
+    "vehicle_manual_poll": {
+        "roll_body": [
+            [
+                "_manual_control_setpoint_roll",
+                "radians__param_fw_man_r_max_get"
+            ],
+            0
+        ],
+        "_att_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "vehicle_land_detected_poll": {
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ]
+    },
+    "get_airspeed_constrained": {
+        "airspeed": [
+            [
+                "_param_fw_airspd_stall_get",
+                "max__airspeed_validated_sub_get_calibrated_airspeed_m_s",
+                "_param_fw_airspd_trim_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "roll_sp": [
+            [
+                "euler_sp_phi"
+            ],
+            0
+        ],
+        "groundspeed_scale": [
+            [
+                "_f",
+                "_groundspeed",
+                "_param_fw_airspd_stall_get"
+            ],
+            1
+        ],
+        "pitch_sp": [
+            [
+                "euler_sp_theta"
+            ],
+            0
+        ],
+        "_landing_gear_wheel.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "R_adapted": [
+            [
+                "_r"
+            ],
+            0
+        ],
+        "_rates_sp.roll": [
+            [
+                "vector3f_pid_autotune_rate_sp",
+                "vector3f_body_rates_setpoint"
+            ],
+            2
+        ],
+        "dt": [
+            [
+                "dt_min",
+                "_f",
+                "dt_max",
+                "constrain_att_timestamp_sample",
+                "constrain__last_run",
+                "constrain_time_now_us",
+                "1e"
+            ],
+            0
+        ],
+        "_rates_sp.yaw": [
+            [
+                "vector3f_pid_autotune_rate_sp",
+                "vector3f_body_rates_setpoint"
+            ],
+            2
+        ],
+        "_last_run": [
+            [
+                "hrt_absolute_time",
+                "att_timestamp_sample"
+            ],
+            1
+        ],
+        "_R": [
+            [
+                "r_adapted",
+                "quatf_att_q"
+            ],
+            0
+        ],
+        "_landing_gear_wheel.normalized_wheel_setpoint": [
+            [
+                "_f",
+                "_f",
+                "_att_sp_yaw_sp_move_rate",
+                "wheel_control",
+                "_manual_control_setpoint_yaw",
+                "wheel_controller_output",
+                "px4_isfinite_wheel_u"
+            ],
+            1
+        ],
+        "_rates_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_rates_sp.pitch": [
+            [
+                "vector3f_pid_autotune_rate_sp",
+                "vector3f_body_rates_setpoint"
+            ],
+            2
+        ],
+        "_in_fw_or_transition_wo_tailsitter_transition": [
+            [
+                "vehicle_type_fixed_wing",
+                "_vehicle_status_vehicle_type",
+                "is_in_transition_except_tailsitter"
+            ],
+            1
+        ],
+        "params_updated": [
+            [
+                "_parameter_update_sub_updated"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "fixedwing_attitude_control_vtol",
+                "new"
+            ],
+            0
+        ]
+    }
+}

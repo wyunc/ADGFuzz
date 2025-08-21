@@ -1,0 +1,10 @@
+{
+    "update_soaring": {
+        "override_disable": [
+            [
+                "mission_get_in_landing_sequence_flag"
+            ],
+            0
+        ]
+    }
+}

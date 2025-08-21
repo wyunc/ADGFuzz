@@ -1,0 +1,214 @@
+{
+    "_get_rate_out": {
+        "pinfo.actual": [
+            [
+                "degrees_rate_y"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "underspeed": [
+            [
+                "float_aparm_airspeed_min",
+                "aspeed"
+            ],
+            0
+        ],
+        "pinfo.P": [
+            [
+                "degrees"
+            ],
+            1
+        ],
+        "old_I": [
+            [
+                "rate_pid_get_i"
+            ],
+            0
+        ],
+        "pinfo": [
+            [
+                "rate_pid_get_pid_info"
+            ],
+            1
+        ],
+        "pinfo.FF": [
+            [
+                "scaler",
+                "degrees_ff_scale",
+                "degrees_rate_pid_get_ff",
+                "_ahrs_get_eas2tas"
+            ],
+            2
+        ],
+        "pinfo.I": [
+            [
+                "degrees"
+            ],
+            1
+        ],
+        "pinfo.D": [
+            [
+                "degrees"
+            ],
+            1
+        ],
+        "pinfo.DFF": [
+            [
+                "degrees"
+            ],
+            1
+        ],
+        "pinfo.target": [
+            [
+                "desired_rate"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "scheduler_get_loop_period_s"
+            ],
+            0
+        ],
+        "limit_I": [
+            [
+                "fabsf__last_out"
+            ],
+            0
+        ],
+        "_last_out": [
+            [
+                "pinfo_p",
+                "pinfo_d",
+                "pinfo_i",
+                "pinfo_ff",
+                "pinfo_dff"
+            ],
+            1
+        ],
+        "rate_y": [
+            [
+                "_ahrs_get_gyro_y"
+            ],
+            0
+        ]
+    },
+    "get_rate_out": {
+        "aspeed": [
+            [
+                "float_aparm_airspeed_max",
+                "float_aparm_airspeed_min"
+            ],
+            0
+        ]
+    },
+    "_get_coordination_rate_offset": {
+        "rate_offset": [
+            [
+                "aparm_airspeed_min",
+                "cosf__ahrs_get_pitch",
+                "fabsf__ahrs_get_eas2tas",
+                "fabsf_aspeed",
+                "sinf_bank_angle",
+                "fabsf_to_deg",
+                "fabsf_gravity_mss",
+                "_roll_ff",
+                "tanf_bank_angle"
+            ],
+            0
+        ],
+        "bank_angle": [
+            [
+                "ahrs_get_roll",
+                "radians_radians"
+            ],
+            0
+        ],
+        "aspeed": [
+            [
+                "float_aparm_airspeed_max",
+                "float_aparm_airspeed_min"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "get_servo_out": {
+        "desired_rate": [
+            [
+                "labs__ahrs_roll_sensor",
+                "aparm_roll_limit",
+                "float",
+                "gains_rmax_pos",
+                "gains_tau",
+                "gains_rmax_neg",
+                "angle_err",
+                "_get_coordination_rate_offset_aspeed",
+                "_get_coordination_rate_offset_inverted"
+            ],
+            5
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ]
+    },
+    "convert_pid": {
+        "ff": [
+            [
+                "rate_pid_ff"
+            ],
+            0
+        ],
+        "old_ff": [
+            [
+                "old_d",
+                "old_p",
+                "old_i"
+            ],
+            0
+        ],
+        "kp_ff": [
+            [
+                "gains_tau",
+                "old_p",
+                "old_i",
+                "old_d"
+            ],
+            0
+        ],
+        "have_old": [
+            [
+                "get_param_by_index_this",
+                "get_param_by_index_ap_param_float",
+                "get_param_by_index_old_p"
+            ],
+            0
+        ]
+    },
+    "autotune_start": {
+        "autotune": [
+            [
+                "ap_auto_tune_autotune_pitch",
+                "new_nothrow",
+                "ap_auto_tune_aparm",
+                "ap_auto_tune_gains",
+                "ap_auto_tune_rate_pid"
+            ],
+            0
+        ]
+    }
+}

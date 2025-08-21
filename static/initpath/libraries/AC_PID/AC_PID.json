@@ -1,0 +1,213 @@
+{
+    "set_notch_sample_rate": {
+        "_error_notch": [
+            [
+                "notch_filter_float",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ],
+        "_target_notch": [
+            [
+                "notch_filter_float",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ],
+        "filter": [
+            [
+                "filters_get_filter__notch_t_filter",
+                "filters_get_filter__notch_e_filter"
+            ],
+            0
+        ]
+    },
+    "update_all": {
+        "PD_scale": [
+            [
+                "_kpdmax",
+                "pd_sum_abs"
+            ],
+            0
+        ],
+        "_pid_info.P": [
+            [
+                "p_out"
+            ],
+            0
+        ],
+        "_pid_info.FF": [
+            [
+                "_kff",
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target"
+            ],
+            2
+        ],
+        "_pid_info.slew_rate": [
+            [
+                "_slew_limiter_get_slew_rate"
+            ],
+            0
+        ],
+        "D_out": [
+            [
+                "_pid_info_dmod",
+                "pd_scale",
+                "_kd",
+                "get_filt_d_alpha_dt",
+                "dt",
+                "error_last",
+                "_error_notch_apply__error",
+                "get_filt_e_alpha_dt",
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target",
+                "_error_notch_apply_error",
+                "measurement",
+                "measurement",
+                "boost"
+            ],
+            6
+        ],
+        "_pid_info.Dmod": [
+            [
+                "dt",
+                "_slew_limit_scale",
+                "_slew_limiter_modifier__pid_info_p",
+                "_slew_limiter_modifier__pid_info_d"
+            ],
+            0
+        ],
+        "_pid_info.D": [
+            [
+                "d_out"
+            ],
+            0
+        ],
+        "_pid_info.error": [
+            [
+                "_error_notch_apply__error",
+                "get_filt_e_alpha_dt",
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target",
+                "_error_notch_apply_error",
+                "measurement",
+                "measurement"
+            ],
+            4
+        ],
+        "_pid_info.reset": [
+            [
+                "_flags__reset_filter"
+            ],
+            0
+        ],
+        "PD_sum_abs": [
+            [
+                "fabsf_p_out",
+                "fabsf_d_out"
+            ],
+            0
+        ],
+        "_pid_info.target": [
+            [
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target"
+            ],
+            2
+        ],
+        "P_out": [
+            [
+                "_kp",
+                "_pid_info_dmod",
+                "pd_scale",
+                "_error_notch_apply__error",
+                "get_filt_e_alpha_dt",
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target",
+                "_error_notch_apply_error",
+                "measurement",
+                "measurement",
+                "boost"
+            ],
+            4
+        ],
+        "_pid_info.actual": [
+            [
+                "measurement"
+            ],
+            0
+        ],
+        "_pid_info.DFF": [
+            [
+                "dt",
+                "target_last",
+                "_target_notch_apply__target",
+                "get_filt_t_alpha_dt",
+                "_target_notch_apply_target",
+                "_kdff"
+            ],
+            3
+        ]
+    },
+    "update_error": {
+        "output": [
+            [
+                "update_all_error",
+                "update_all_dt",
+                "update_all_limit"
+            ],
+            0
+        ]
+    },
+    "update_i": {
+        "_pid_info.I": [
+            [
+                "_kimax",
+                "float",
+                "_ki",
+                "dt",
+                "_error"
+            ],
+            1
+        ],
+        "_pid_info.I_term_set": [
+            [
+                "_flags__i_set"
+            ],
+            0
+        ],
+        "_pid_info.limit": [
+            [
+                "limit"
+            ],
+            0
+        ]
+    },
+    "set_integrator": {
+        "_integrator": [
+            [
+                "integrator",
+                "_kimax"
+            ],
+            0
+        ]
+    },
+    "relax_integrator": {
+        "_integrator": [
+            [
+                "time_constant",
+                "dt",
+                "_kimax"
+            ],
+            1
+        ]
+    }
+}

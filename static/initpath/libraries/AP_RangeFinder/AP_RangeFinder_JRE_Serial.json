@@ -1,0 +1,55 @@
+{
+    "move_preamble_in_buffer": {
+        "data_buff_ofs": [
+            [
+                "search_start_pos"
+            ],
+            1
+        ]
+    },
+    "get_reading": {
+        "crc": [
+            [
+                "crc16_ccitt_r_0xffff",
+                "crc16_ccitt_r_data_buff",
+                "crc16_ccitt_r_packet_length"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "max_distance_cm_uint16_max",
+                "sum",
+                "valid_count",
+                "max_distance_cm_out_of_range_add_cm",
+                "data_buff",
+                "dist_max_cm"
+            ],
+            0
+        ],
+        "data_buff_ofs": [
+            [
+                "uart_read_num_bytes_to_read",
+                "uart_read_data_buff",
+                "uart_read_data_buff_ofs"
+            ],
+            1
+        ],
+        "num_bytes_to_read": [
+            [
+                "array_size_data_buff_ofs",
+                "array_size_data_buff"
+            ],
+            0
+        ],
+        "bytes_available": [
+            [
+                "uart_read_num_bytes_to_read",
+                "uart_read_data_buff",
+                "uart_read_data_buff_ofs",
+                "uart_available_8192u"
+            ],
+            1
+        ]
+    }
+}

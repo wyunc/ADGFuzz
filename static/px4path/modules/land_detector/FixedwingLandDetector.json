@@ -1,0 +1,29 @@
+{
+    "_get_landed_state": {
+        "_xy_accel_filtered": [
+            [
+                "vector2f__acceleration_norm"
+            ],
+            1
+        ],
+        "airspeed_validated.airspeed_source": [
+            [
+                "sensor_3"
+            ],
+            0
+        ],
+        "_airspeed_filtered": [
+            [
+                "airspeed_validated_true_airspeed_m_s"
+            ],
+            0
+        ],
+        "_velocity_rot_filtered": [
+            [
+                "_angular_velocity_norm",
+                "fabsf__vehicle_local_position_vz"
+            ],
+            2
+        ]
+    }
+}

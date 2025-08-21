@@ -1,0 +1,355 @@
+{
+    "activate": {
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_follow_angle_rad": [
+            [
+                "wrap_pi_radians",
+                "wrap_pi__param_flw_tgt_fa_get"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "_position"
+            ],
+            0
+        ],
+        "_home_position_z": [
+            [
+                "_sub_home_position_get_z"
+            ],
+            0
+        ],
+        "_follow_height": [
+            [
+                "_param_flw_tgt_ht_get"
+            ],
+            0
+        ],
+        "_follow_distance": [
+            [
+                "_param_flw_tgt_dst_get"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "last_setpoint_yaw",
+                "_yaw",
+                "px4_isfinite_last_setpoint_yaw"
+            ],
+            0
+        ]
+    },
+    "updateParams": {
+        "_follow_angle_rad": [
+            [
+                "wrap_pi__param_flw_tgt_fa_get",
+                "wrap_pi_radians"
+            ],
+            0
+        ],
+        "follow_angle_prev": [
+            [
+                "_param_flw_tgt_fa_get"
+            ],
+            0
+        ],
+        "_follow_distance": [
+            [
+                "_param_flw_tgt_dst_get"
+            ],
+            0
+        ],
+        "_follow_height": [
+            [
+                "_param_flw_tgt_ht_get"
+            ],
+            0
+        ],
+        "follow_distance_prev": [
+            [
+                "_param_flw_tgt_dst_get"
+            ],
+            0
+        ],
+        "follow_height_prev": [
+            [
+                "_param_flw_tgt_ht_get"
+            ],
+            0
+        ]
+    },
+    "updateTargetPositionVelocityFilter": {
+        "_last_valid_target_estimator_timestamp": [
+            [
+                "follow_target_estimator_timestamp"
+            ],
+            0
+        ]
+    },
+    "updateRcAdjustedFollowHeight": {
+        "_follow_height": [
+            [
+                "constrain_new_height",
+                "constrain_follow_height_max",
+                "constrain_minimum_safety_altitude"
+            ],
+            0
+        ],
+        "new_height": [
+            [
+                "sticks_get_throttle_zero_centered_expo",
+                "follow_height_user_adjust_speed",
+                "_deltatime"
+            ],
+            1
+        ]
+    },
+    "updateRcAdjustedFollowDistance": {
+        "new_distance": [
+            [
+                "follow_distance_user_adjust_speed",
+                "sticks_get_pitch_expo",
+                "_deltatime"
+            ],
+            1
+        ],
+        "_follow_distance": [
+            [
+                "constrain_minimum_distance_to_target_for_yaw_control",
+                "constrain_new_distance",
+                "constrain_follow_distance_max"
+            ],
+            0
+        ]
+    },
+    "updateRcAdjustedFollowAngle": {
+        "_follow_angle_rad": [
+            [
+                "wrap_pi_new_angle"
+            ],
+            0
+        ],
+        "new_angle": [
+            [
+                "_deltatime",
+                "sticks_get_roll_expo",
+                "angle_adjust_speed_max"
+            ],
+            1
+        ]
+    },
+    "updateOrbitAngleTrajectory": {
+        "unwrapped_orbit_angle_setpoint": [
+            [
+                "_orbit_angle_traj_generator_get_current_position"
+            ],
+            0
+        ],
+        "remaining_angle_sign": [
+            [
+                "sign_remaining_angle"
+            ],
+            0
+        ],
+        "remaining_angle": [
+            [
+                "previous_orbit_angle_setpoint",
+                "unwrapped_raw_orbit_angle"
+            ],
+            0
+        ]
+    },
+    "calculateGimbalHeight": {
+        "gimbal_height": [
+            [
+                "target_pos_z",
+                "_dist_to_ground",
+                "_position",
+                "_home_position_z"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "follow_target_status.in_emergency_ascent": [
+            [
+                "px4_isfinite__dist_to_ground",
+                "_dist_to_ground",
+                "minimum_safety_altitude"
+            ],
+            1
+        ],
+        "target_position_filtered": [
+            [
+                "_target_position_velocity_filter_get_state"
+            ],
+            0
+        ],
+        "follow_target_status.orbit_angle_setpoint": [
+            [
+                "update_orbit_angle_trajectory__orbit_angle_setpoint_rad",
+                "update_orbit_angle_trajectory__target_course_rad"
+            ],
+            1
+        ],
+        "orbit_tangential_velocity": [
+            [
+                "get_orbit_tangential_velocity__orbit_angle_setpoint_rad"
+            ],
+            0
+        ],
+        "orbit_total_accel": [
+            [
+                "orbit_tangential_accel",
+                "orbit_radial_accel"
+            ],
+            0
+        ],
+        "follow_target_status.gimbal_pitch": [
+            [
+                "gimbal_height",
+                "point_gimbal_at_drone_to_target_vector_norm"
+            ],
+            1
+        ],
+        "follow_target_status.tracked_target_course": [
+            [
+                "_target_course_rad"
+            ],
+            0
+        ],
+        "raw_orbit_angle_setpoint": [
+            [
+                "unwrap_pi__follow_angle_rad",
+                "unwrap_pi__target_course_rad",
+                "unwrap_pi__orbit_angle_setpoint_rad"
+            ],
+            0
+        ],
+        "follow_target_status.follow_angle": [
+            [
+                "_follow_angle_rad"
+            ],
+            0
+        ],
+        "target_velocity_filtered": [
+            [
+                "_target_position_velocity_filter_get_rate"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "drone_desired_position",
+                "_position"
+            ],
+            0
+        ],
+        "_constraints.want_takeoff": [
+            [
+                "_check_takeoff"
+            ],
+            0
+        ],
+        "follow_target_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "follow_target_status.angular_rate_setpoint": [
+            [
+                "_orbit_angle_traj_generator_get_current_velocity"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "vector2f_target_position_filtered_xy",
+                "vector2f__position_xy",
+                "atan2f_drone_to_target_vector"
+            ],
+            2
+        ],
+        "measured_orbit_angle": [
+            [
+                "wrap_pi_drone_to_target_heading",
+                "wrap_pi_m_pi_f"
+            ],
+            0
+        ]
+    },
+    "releaseGimbalControl": {
+        "vehicle_command.target_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.target_component": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.source_component": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_configure"
+            ],
+            0
+        ],
+        "vehicle_command.source_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "pointGimbalAt": {
+        "msg.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "q_gimbal": [
+            [
+                "quatf_eulerf",
+                "quatf_pitch_down_angle"
+            ],
+            0
+        ],
+        "pitch_down_angle": [
+            [
+                "atan2f_z_distance",
+                "atan2f_xy_distance"
+            ],
+            0
+        ]
+    }
+}

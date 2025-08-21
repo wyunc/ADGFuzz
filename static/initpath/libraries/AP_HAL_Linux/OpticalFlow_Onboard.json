@@ -1,0 +1,278 @@
+{
+    "init": {
+        "nbufs": [
+            [
+                "hal_optflow_onboard_nbufs"
+            ],
+            0
+        ],
+        "_width": [
+            [
+                "hal_optflow_onboard_output_width"
+            ],
+            0
+        ],
+        "crop_height": [
+            [
+                "hal_optflow_onboard_crop_height"
+            ],
+            0
+        ],
+        "_videoin": [
+            [
+                "new_nothrow",
+                "video_in"
+            ],
+            0
+        ],
+        "_gyro_ring_buffer": [
+            [
+                "nullptr",
+                "object_buffer",
+                "new_nothrow",
+                "optical_flow_gyro_buffer_len",
+                "gyro_sample"
+            ],
+            0
+        ],
+        "_bytesperline": [
+            [
+                "hal_optflow_onboard_output_width"
+            ],
+            0
+        ],
+        "_format": [
+            [
+                "v4l2_pix_fmt_nv12"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pthread_mutex_init_nullptr",
+                "pthread_create_attr",
+                "pthread_mutex_init__mutex",
+                "pthread_create__read_thread",
+                "pthread_create__thread",
+                "pthread_create_this",
+                "pthread_attr_init_attr"
+            ],
+            0
+        ],
+        "_pwm": [
+            [
+                "new_nothrow",
+                "pwm_sysfs_bebop_bebop_camv_pwm"
+            ],
+            0
+        ],
+        "memtype": [
+            [
+                "v4l2_memory_mmap"
+            ],
+            0
+        ],
+        "_height": [
+            [
+                "hal_optflow_onboard_output_height"
+            ],
+            0
+        ],
+        "crop_width": [
+            [
+                "hal_optflow_onboard_crop_width"
+            ],
+            0
+        ],
+        "device_path": [
+            [
+                "hal_optflow_onboard_vdev_path"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "frame.gyro_y_integral": [
+            [
+                "_gyro_y_integral"
+            ],
+            0
+        ],
+        "frame.gyro_x_integral": [
+            [
+                "_gyro_x_integral"
+            ],
+            0
+        ],
+        "frame.delta_time": [
+            [
+                "_integration_timespan"
+            ],
+            0
+        ],
+        "frame.quality": [
+            [
+                "_surface_quality"
+            ],
+            0
+        ],
+        "frame.pixel_flow_x_integral": [
+            [
+                "_pixel_flow_x_integral"
+            ],
+            0
+        ],
+        "frame.pixel_flow_y_integral": [
+            [
+                "_pixel_flow_y_integral"
+            ],
+            0
+        ]
+    },
+    "push_gyro": {
+        "_integrated_gyro.x": [
+            [
+                "gyro_x",
+                "_gyro_bias_x",
+                "dt"
+            ],
+            0
+        ],
+        "sample.gyro": [
+            [
+                "_integrated_gyro"
+            ],
+            0
+        ],
+        "sample.time_us": [
+            [
+                "1000000ull",
+                "ts_tv_nsec",
+                "ts_tv_sec",
+                "1000ull"
+            ],
+            0
+        ],
+        "_integrated_gyro.y": [
+            [
+                "dt",
+                "gyro_y",
+                "_gyro_bias_y"
+            ],
+            0
+        ]
+    },
+    "_get_integrated_gyros": {
+        "gyro": [
+            [
+                "integrated_gyro_at_time"
+            ],
+            0
+        ]
+    },
+    "push_gyro_bias": {
+        "_gyro_bias.x": [
+            [
+                "gyro_bias_x"
+            ],
+            0
+        ],
+        "_gyro_bias.y": [
+            [
+                "gyro_bias_y"
+            ],
+            0
+        ]
+    },
+    "_read_thread": {
+        "optflow_onboard": [
+            [
+                "arg",
+                "optical_flow_onboard"
+            ],
+            0
+        ]
+    },
+    "_run_optflow": {
+        "shrink_height_offset": [
+            [
+                "shrink_scale",
+                "hal_optflow_onboard_output_height",
+                "_camera_output_height"
+            ],
+            1
+        ],
+        "metas": [
+            [
+                "rate_z",
+                "rate_x",
+                "video_frame_timestamp",
+                "rate_y"
+            ],
+            0
+        ],
+        "_last_video_frame": [
+            [
+                "video_frame"
+            ],
+            0
+        ],
+        "_last_integration_time": [
+            [
+                "gyro_sample_time_us"
+            ],
+            0
+        ],
+        "convert_buffer_size": [
+            [
+                "_height",
+                "output_buffer_size",
+                "_width",
+                "_camera_output_height",
+                "_camera_output_width"
+            ],
+            0
+        ],
+        "crop_left": [
+            [
+                "crop_top"
+            ],
+            0
+        ],
+        "shrink_width_offset": [
+            [
+                "shrink_scale",
+                "hal_optflow_onboard_output_width",
+                "_camera_output_width"
+            ],
+            1
+        ],
+        "_last_gyro_rate": [
+            [
+                "gyro_sample_gyro"
+            ],
+            0
+        ],
+        "convert_buffer": [
+            [
+                "nullptr",
+                "calloc_convert_buffer_size",
+                "uint8_t"
+            ],
+            0
+        ],
+        "_surface_quality": [
+            [
+                "qual"
+            ],
+            0
+        ],
+        "output_buffer": [
+            [
+                "calloc_output_buffer_size",
+                "uint8_t"
+            ],
+            0
+        ]
+    }
+}

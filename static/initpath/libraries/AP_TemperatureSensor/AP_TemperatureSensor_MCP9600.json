@@ -1,0 +1,33 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move__params_bus",
+                "move_hal_i2c_mgr_get_device",
+                "move__params_bus_address"
+            ],
+            0
+        ]
+    },
+    "set_config": {
+        "data": [
+            [
+                "0x7",
+                "filter",
+                "uint8_t",
+                "thermo_type"
+            ],
+            0
+        ]
+    },
+    "read_temperature": {
+        "temperature": [
+            [
+                "ap_temperature_sensor_mcp9600_scale_factor",
+                "int16_t_data",
+                "int16_t_uint16_value"
+            ],
+            0
+        ]
+    }
+}

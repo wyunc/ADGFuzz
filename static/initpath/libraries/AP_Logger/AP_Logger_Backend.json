@@ -1,0 +1,211 @@
+{
+    "periodic_tasks": {
+        "_last_periodic_10Hz": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_periodic_1Hz": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "Write": {
+        "msg_len": [
+            [
+                "f_msg_len"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strnlen_charlen",
+                "strnlen_tmp"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "_front_log_write_fmts"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "va_arg_double",
+                "va_arg_int",
+                "va_arg_uint32_t",
+                "va_arg_int16_t",
+                "va_arg_arg_list",
+                "va_arg_uint64_t",
+                "va_arg_char",
+                "va_arg_int64_t"
+            ],
+            0
+        ],
+        "fmt": [
+            [
+                "nullptr",
+                "f_fmt"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "charlen",
+                "sizeof_int32_t",
+                "sizeof_uint64_t",
+                "sizeof_int16_t",
+                "sizeof_int64_t",
+                "sizeof_uint16_t",
+                "sizeof_double",
+                "sizeof_tmp",
+                "sizeof_uint32_t",
+                "bytes",
+                "sizeof_int8_t",
+                "sizeof_float",
+                "sizeof_uint8_t"
+            ],
+            0
+        ]
+    },
+    "message_type_from_block": {
+        "type": [
+            [
+                "log_messages_uint8_tp_buffer"
+            ],
+            0
+        ]
+    },
+    "validate_WritePrioritisedBlock": {
+        "name_src": [
+            [
+                "t_name",
+                "s_name"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "_front_log_write_fmt_for_msg_type_type"
+            ],
+            0
+        ],
+        "type_len": [
+            [
+                "t_msg_len",
+                "s_msg_len"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "_front_structure_for_msg_type_type"
+            ],
+            0
+        ]
+    },
+    "WritePrioritisedBlock": {
+        "msgbuf": [
+            [
+                "uint8_t",
+                "p_buffer",
+                "const"
+            ],
+            0
+        ]
+    },
+    "Write_VER": {
+        "pkt.filter_version": [
+            [
+                "ap_filter_version"
+            ],
+            0
+        ],
+        "pkt._APJ_BOARD_ID": [
+            [
+                "apj_board_id"
+            ],
+            0
+        ],
+        "pkt.build_type": [
+            [
+                "fwver_vehicle_type"
+            ],
+            0
+        ],
+        "fwver": [
+            [
+                "fwversion"
+            ],
+            0
+        ]
+    },
+    "df_stats_gather": {
+        "stats.buf_space_min": [
+            [
+                "space_remaining"
+            ],
+            0
+        ],
+        "stats.buf_space_sigma": [
+            [
+                "space_remaining"
+            ],
+            0
+        ],
+        "stats.bytes": [
+            [
+                "bytes_written"
+            ],
+            0
+        ],
+        "stats.buf_space_max": [
+            [
+                "space_remaining"
+            ],
+            0
+        ]
+    },
+    "should_log_streaming": {
+        "delta_ms": [
+            [
+                "msgid",
+                "millis16",
+                "last_send_ms"
+            ],
+            1
+        ]
+    },
+    "should_log": {
+        "rate_hz": [
+            [
+                "disarm_rate_limit_hz",
+                "rate_limit_hz"
+            ],
+            0
+        ],
+        "sched_ticks": [
+            [
+                "scheduler_ticks"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "should_log_streaming_msgid",
+                "should_log_streaming_rate_hz"
+            ],
+            0
+        ],
+        "mtype": [
+            [
+                "front_structure_for_msg_type_msgid"
+            ],
+            0
+        ]
+    }
+}

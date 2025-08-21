@@ -1,0 +1,49 @@
+{
+    "insert_values_around_mean": {
+        "timestamp_io": [
+            [
+                "timestamp_incr"
+            ],
+            1
+        ],
+        "rms_err": [
+            [
+                "float",
+                "sqrt_doublecount",
+                "sqrt_sum_dev_squares"
+            ],
+            1
+        ],
+        "sum_dev_squares": [
+            [
+                "mean",
+                "mean",
+                "1e",
+                "i"
+            ],
+            4
+        ]
+    },
+    "dump_validator_state": {
+        "state": [
+            [
+                "validator_state"
+            ],
+            0
+        ]
+    },
+    "fill_validator_with_samples": {
+        "value_io": [
+            [
+                "val"
+            ],
+            0
+        ],
+        "timestamp_io": [
+            [
+                "timestamp_incr"
+            ],
+            1
+        ]
+    }
+}

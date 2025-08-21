@@ -1,0 +1,125 @@
+{
+    "check_initialise_state": {
+        "last_init_state": [
+            [
+                "initialised"
+            ],
+            1
+        ]
+    },
+    "build_packet": {
+        "nbytes": [
+            [
+                "uart_available_2048u"
+            ],
+            0
+        ]
+    },
+    "post_imu": {
+        "state.gyro": [
+            [
+                "imu_data_gyro"
+            ],
+            0
+        ],
+        "state.accel": [
+            [
+                "imu_data_accel"
+            ],
+            0
+        ]
+    },
+    "post_filter": {
+        "state.quat": [
+            [
+                "filter_data_attitude_quat"
+            ],
+            0
+        ],
+        "state.velocity": [
+            [
+                "filter_data_ned_velocity_north",
+                "filter_data_ned_velocity_east",
+                "filter_data_ned_velocity_down",
+                "vector3f"
+            ],
+            0
+        ],
+        "state.location": [
+            [
+                "filter_data_lon",
+                "gnss_data",
+                "_msl_altitude",
+                "absolute",
+                "location",
+                "filter_data_lat"
+            ],
+            0
+        ]
+    },
+    "initialised": {
+        "got_packets": [
+            [
+                "last_imu_pkt",
+                "last_gps_pkt",
+                "last_filter_pkt"
+            ],
+            0
+        ]
+    },
+    "get_filter_status": {
+        "filter_state": [
+            [
+                "filter_status_state",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "get_variances": {
+        "velVar": [
+            [
+                "vel_gate_scale",
+                "filter_data_ned_velocity_uncertainty_length"
+            ],
+            0
+        ],
+        "posVar": [
+            [
+                "pos_gate_scale",
+                "filter_data_ned_position_uncertainty_xy_length"
+            ],
+            0
+        ],
+        "hgtVar": [
+            [
+                "hgt_gate_scale",
+                "filter_data_ned_position_uncertainty_z"
+            ],
+            0
+        ]
+    },
+    "times_healthy": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "filter_healthy": {
+        "filter_healthy": [
+            [
+                "filter_state_healthy_filter_state"
+            ],
+            0
+        ],
+        "filter_state": [
+            [
+                "filter_status_state",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

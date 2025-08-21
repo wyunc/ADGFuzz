@@ -1,0 +1,24 @@
+{
+    "update": {
+        "target": [
+            [
+                "_params_neutral_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "handle_gimbal_report": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

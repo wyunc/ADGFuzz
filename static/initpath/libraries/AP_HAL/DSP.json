@@ -1,0 +1,214 @@
+{
+    "step_cmplx_mag": {
+        "._noise_width_hz": [
+            [
+                "find_noise_width_upper_shoulder",
+                "find_noise_width_start_bin",
+                "find_noise_width___bin",
+                "find_noise_width_noise_att_cutoff",
+                "find_noise_width_top",
+                "find_noise_width_bottom",
+                "find_noise_width_fft__bin_resolution",
+                "find_noise_width_center",
+                "find_noise_width_lower_shoulder",
+                "find_noise_width_fft__peak_data",
+                "find_noise_width_freq_data",
+                "find_noise_width_end_bin"
+            ],
+            0
+        ],
+        "bin_range": [
+            [
+                "smoothwidth",
+                "end_bin",
+                "start_bin",
+                "fft__bin_count"
+            ],
+            0
+        ],
+        "freq_data": [
+            [
+                "fft__freq_bins",
+                "fft__avg_freq_bins"
+            ],
+            0
+        ],
+        "numpeaks": [
+            [
+                "find_peaks_bin_range",
+                "find_peaks_start_bin",
+                "find_peaks_freq_data",
+                "find_peaks_peaks",
+                "find_peaks_fft__derivative_freq_bins",
+                "find_peaks_smoothwidth",
+                "find_peaks_max_tracked_peaks"
+            ],
+            0
+        ],
+        "top": [
+            [
+                "bottom"
+            ],
+            0
+        ],
+        "._bin": [
+            [
+                "i",
+                "peaks",
+                "start_bin"
+            ],
+            0
+        ]
+    },
+    "find_noise_width": {
+        "b": [
+            [
+                "max_energy_bin"
+            ],
+            0
+        ],
+        "noise_width_hz": [
+            [
+                "bin_resolution",
+                "max_energy_bin"
+            ],
+            0
+        ],
+        "peak_top": [
+            [
+                "end_bin"
+            ],
+            0
+        ],
+        "peak_bottom": [
+            [
+                "start_bin"
+            ],
+            0
+        ]
+    },
+    "update_average_from_sliding_window": {
+        "slice": [
+            [
+                "fft__num_stored_freqs",
+                "fft__current_slice",
+                "fft__sliding_window"
+            ],
+            1
+        ],
+        "old_slice": [
+            [
+                "fft__sliding_window",
+                "fft__sliding_window_size",
+                "fft__num_stored_freqs",
+                "fft__current_slice"
+            ],
+            1
+        ],
+        "inv_ssize": [
+            [
+                "fft__sliding_window_size"
+            ],
+            0
+        ],
+        "_current_slice": [
+            [
+                "fft__sliding_window_size",
+                "fft__current_slice"
+            ],
+            0
+        ]
+    },
+    "calculate_quinns_second_estimator": {
+        "d": [
+            [
+                "complex_fft",
+                "k_max",
+                "k_max",
+                "complex_fft",
+                "k_max",
+                "tau_dm",
+                "complex_fft",
+                "complex_fft",
+                "k_max",
+                "k_max",
+                "k_max",
+                "tau_dp"
+            ],
+            8
+        ]
+    },
+    "tau": {
+        "part2": [
+            [
+                "x",
+                "sqrt_2_3"
+            ],
+            0
+        ],
+        "part1": [
+            [
+                "x",
+                "sqrt_2_3"
+            ],
+            0
+        ],
+        "p1": [
+            [
+                "logf_x",
+                "x",
+                "logf_sq"
+            ],
+            0
+        ],
+        "p2": [
+            [
+                "logf_part1",
+                "logf_part2"
+            ],
+            0
+        ]
+    },
+    "calculate_jains_estimator": {
+        "d": [
+            [
+                "real_fft",
+                "k_max",
+                "real_fft",
+                "k_max",
+                "real_fft",
+                "k_max"
+            ],
+            4
+        ]
+    },
+    "fft_init_average": {
+        "_avg_freq_bins": [
+            [
+                "dsp_mem_region",
+                "float",
+                "hal_util_malloc_type_float",
+                "fft__num_stored_freqs",
+                "hal_util_malloc_type_sizeof"
+            ],
+            0
+        ]
+    },
+    "fastsmooth": {
+        "sumpoints": [
+            [
+                "input",
+                "smoothwidth"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "smoothwidth",
+                "smoothwidth",
+                "n"
+            ],
+            2
+        ]
+    }
+}

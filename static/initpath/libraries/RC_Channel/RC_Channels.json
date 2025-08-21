@@ -1,0 +1,125 @@
+{
+    "init": {
+        "ch_in": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "read_input": {
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "clear_overrides": {
+        "_rc": [
+            [
+                "rc"
+            ],
+            0
+        ]
+    },
+    "set_override": {
+        "_rc": [
+            [
+                "rc"
+            ],
+            0
+        ]
+    },
+    "has_active_overrides": {
+        "_rc": [
+            [
+                "rc"
+            ],
+            0
+        ]
+    },
+    "read_aux_all": {
+        "c": [
+            [
+                "channel_i"
+            ],
+            0
+        ]
+    },
+    "init_aux_all": {
+        "c": [
+            [
+                "channel_i"
+            ],
+            0
+        ]
+    },
+    "reset_mode_switch": {
+        "c": [
+            [
+                "flight_mode_channel"
+            ],
+            0
+        ]
+    },
+    "read_mode_switch": {
+        "c": [
+            [
+                "flight_mode_channel"
+            ],
+            0
+        ]
+    },
+    "flight_mode_channel_conflicts_with_rc_option": {
+        "chan": [
+            [
+                "flight_mode_channel"
+            ],
+            0
+        ]
+    },
+    "get_pwm": {
+        "chan": [
+            [
+                "rc_channel_c"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "uint16_t",
+                "chan_get_radio_in"
+            ],
+            1
+        ]
+    },
+    "get_aux_cached": {
+        "aux_idx": [
+            [
+                "uint16_t_aux_fn"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "aux_cached_get_aux_idx"
+            ],
+            1
+        ]
+    },
+    "set_aux_cached": {
+        "v": [
+            [
+                "unsigned_pos"
+            ],
+            0
+        ],
+        "aux_idx": [
+            [
+                "uint16_t_aux_fn"
+            ],
+            0
+        ]
+    }
+}

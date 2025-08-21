@@ -1,0 +1,57 @@
+{
+    "init": {
+        "buffer": [
+            [
+                "calloc_size",
+                "calloc_elsize",
+                "calloc__size"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "_size"
+            ],
+            0
+        ]
+    },
+    "recall": {
+        "oldest": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "matches": [
+            [
+                "time_ms_oldest",
+                "sample_time_ms"
+            ],
+            2
+        ]
+    },
+    "push": {
+        "oldest": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "head": [
+            [
+                "count",
+                "size"
+            ],
+            0
+        ]
+    },
+    "push_youngest_element": {
+        "_oldest": [
+            [
+                "_size",
+                "_youngest"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "run_rate_controller": {
+        "last_loop_time_s": [
+            [
+                "scheduler_get_last_loop_time_s"
+            ],
+            0
+        ]
+    },
+    "update_throttle_hover": {
+        "throttle": [
+            [
+                "motors_get_throttle"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_climb_rate": {
+        "desired_rate": [
+            [
+                "g_throttle_deadzone",
+                "get_throttle_mid",
+                "g_pilot_speed_up",
+                "throttle_control",
+                "g_throttle_deadzone",
+                "get_throttle_mid",
+                "get_pilot_speed_dn"
+            ],
+            3
+        ]
+    },
+    "rotate_body_frame_to_NE": {
+        "y": [
+            [
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw"
+            ],
+            1
+        ],
+        "x": [
+            [
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw"
+            ],
+            1
+        ]
+    }
+}

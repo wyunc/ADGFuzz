@@ -1,0 +1,17 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "_uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_gimbal",
+                "serial_manager_find_serial__serial_instance"
+            ],
+            0
+        ]
+    }
+}

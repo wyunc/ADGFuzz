@@ -1,0 +1,11 @@
+{
+    "landinggear_update": {
+        "height_cm": [
+            [
+                "flightmode_get_alt_above_ground_cm",
+                "rangefinder_state_alt_cm_filt_get"
+            ],
+            0
+        ]
+    }
+}

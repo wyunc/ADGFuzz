@@ -1,0 +1,10 @@
+{
+    "checkAndReport": {
+        ".vtol_fixed_wing_system_failure": [
+            [
+                "vtol_vehicle_status_fixed_wing_system_failure"
+            ],
+            0
+        ]
+    }
+}

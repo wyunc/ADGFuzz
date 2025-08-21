@@ -1,0 +1,35 @@
+{
+    "checkAndUpdateStickInputs": {
+        "_input_available": [
+            [
+                "manual_control_setpoint_valid",
+                "_positions_is_all_finite"
+            ],
+            0
+        ]
+    },
+    "limitStickUnitLengthXY": {
+        "v": [
+            [
+                "v_length"
+            ],
+            1
+        ]
+    },
+    "rotateIntoHeadingFrameXY": {
+        "v": [
+            [
+                "dcm2f_yaw_rotate"
+            ],
+            0
+        ],
+        "yaw_rotate": [
+            [
+                "px4_isfinite_yaw_setpoint",
+                "yaw",
+                "yaw_setpoint"
+            ],
+            0
+        ]
+    }
+}

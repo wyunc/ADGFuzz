@@ -1,0 +1,206 @@
+{
+    "simulation_timeval": {
+        "first_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "first_tv.tv_sec": [
+            [
+                "sitl_start_time_utc"
+            ],
+            0
+        ],
+        "tv_sec": [
+            [
+                "1000000ull",
+                "micros64",
+                "micros64",
+                "1000000ull",
+                "tv_tv_usec"
+            ],
+            2
+        ],
+        "tv": [
+            [
+                "first_tv"
+            ],
+            0
+        ],
+        "tv_usec": [
+            [
+                "1000000ull",
+                "micros64",
+                "1000000ull",
+                "tv_tv_usec"
+            ],
+            2
+        ]
+    },
+    "send_imu_packet": {
+        "pressure_Pa": [
+            [
+                "get_pressure_for_alt_amsl_fdm_altitude"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "pkt.temp": [
+            [
+                "get_temperature_c_for_alt_amsl_fdm_altitude"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_sizeof",
+                "crc16_ccitt_uint8_t",
+                "crc16_ccitt_const",
+                "pkt",
+                "crc16_ccitt_header",
+                "sizeof_pkt"
+            ],
+            0
+        ],
+        "pkt.pressure": [
+            [
+                "rand_float",
+                "pressure_pa"
+            ],
+            0
+        ],
+        "pkt.timeStartup": [
+            [
+                "micros",
+                "1e3"
+            ],
+            0
+        ],
+        "sync_byte": [
+            [
+                "0x_fa"
+            ],
+            0
+        ]
+    },
+    "send_ins_ekf_packet": {
+        "crc": [
+            [
+                "crc16_ccitt_const",
+                "sizeof_pkt",
+                "pkt",
+                "crc16_ccitt_uint8_t",
+                "crc16_ccitt_sizeof",
+                "crc16_ccitt_header"
+            ],
+            0
+        ],
+        "sync_byte": [
+            [
+                "0x_fa"
+            ],
+            0
+        ],
+        "pkt.insStatus": [
+            [
+                "0x0306"
+            ],
+            0
+        ],
+        "pkt.timeStartup": [
+            [
+                "1e3",
+                "micros"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "send_ins_gnss_packet": {
+        "pkt.timeStartup": [
+            [
+                "micros",
+                "1e3"
+            ],
+            0
+        ],
+        "pkt.timeGps": [
+            [
+                "tv_tv_usec",
+                "1000ull"
+            ],
+            0
+        ],
+        "sync_byte": [
+            [
+                "0x_fa"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_uint8_t",
+                "pkt",
+                "crc16_ccitt_header",
+                "crc16_ccitt_const",
+                "crc16_ccitt_sizeof",
+                "sizeof_pkt"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "nmea_printf": {
+        "s": [
+            [
+                "nmea_vaprintf_ap",
+                "nmea_vaprintf_fmt"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_ekf_pkt_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_imu_pkt_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_gnss_pkt_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "read_from_autopilot_receive_buf",
+                "read_from_autopilot_array_size",
+                "strlen_ver_query_string"
+            ],
+            0
+        ]
+    }
+}

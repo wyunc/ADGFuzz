@@ -1,0 +1,199 @@
+{
+    "init": {
+        "_current_band": [
+            [
+                "_band"
+            ],
+            0
+        ],
+        "_current_power": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_current_enabled": [
+            [
+                "_enabled"
+            ],
+            0
+        ],
+        "_current_frequency": [
+            [
+                "_frequency_mhz"
+            ],
+            0
+        ],
+        "_current_options": [
+            [
+                "_options"
+            ],
+            0
+        ],
+        "_current_channel": [
+            [
+                "_channel"
+            ],
+            0
+        ]
+    },
+    "get_band_and_channel": {
+        "channel": [
+            [
+                "j"
+            ],
+            0
+        ],
+        "band": [
+            [
+                "video_band_i"
+            ],
+            0
+        ]
+    },
+    "set_power_dbm": {
+        ".level": [
+            [
+                "i",
+                "0x_ff",
+                "0x_f",
+                "_level",
+                "_power_levels"
+            ],
+            0
+        ],
+        "_current_power": [
+            [
+                "update_power_dbm_active",
+                "update_power_dbm_power",
+                "i"
+            ],
+            0
+        ],
+        ".active": [
+            [
+                "active",
+                "inactive"
+            ],
+            0
+        ]
+    },
+    "update_all_power_dbm": {
+        ".active": [
+            [
+                "inactive"
+            ],
+            0
+        ]
+    },
+    "set_power_mw": {
+        "_current_power": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "set_power_level": {
+        "_current_power": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".active": [
+            [
+                "active"
+            ],
+            0
+        ]
+    },
+    "set_power_dac": {
+        "_current_power": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".active": [
+            [
+                "active"
+            ],
+            0
+        ]
+    },
+    "set_enabled": {
+        "_current_enabled": [
+            [
+                "enabled"
+            ],
+            0
+        ]
+    },
+    "set_freq_is_current": {
+        "_current_frequency": [
+            [
+                "_frequency_mhz"
+            ],
+            0
+        ],
+        "_current_channel": [
+            [
+                "_channel"
+            ],
+            0
+        ],
+        "_current_band": [
+            [
+                "_band"
+            ],
+            0
+        ]
+    },
+    "set_defaults": {
+        "_current_frequency": [
+            [
+                "get_frequency_mhz__current_band",
+                "get_frequency_mhz__current_channel"
+            ],
+            1
+        ],
+        "_current_band": [
+            [
+                "band"
+            ],
+            0
+        ],
+        "_current_channel": [
+            [
+                "channel"
+            ],
+            0
+        ]
+    },
+    "change_power": {
+        "i": [
+            [
+                "j"
+            ],
+            0
+        ],
+        "power": [
+            [
+                "j",
+                "_power_levels",
+                "_mw"
+            ],
+            0
+        ],
+        "level": [
+            [
+                "constrain_int16_position",
+                "constrain_int16_num_active_levels",
+                "constrain_int16_roundf",
+                "num_active_levels"
+            ],
+            0
+        ]
+    }
+}

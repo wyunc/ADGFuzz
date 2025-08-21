@@ -1,0 +1,20 @@
+{
+    "control_pitch": {
+        "_body_rate_setpoint": [
+            [
+                "constrain_pitch_body_rate_setpoint_raw",
+                "constrain__max_rate_pos",
+                "constrain__max_rate_neg"
+            ],
+            0
+        ],
+        "_euler_rate_setpoint": [
+            [
+                "pitch",
+                "pitch_setpoint",
+                "_tc"
+            ],
+            1
+        ]
+    }
+}

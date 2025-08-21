@@ -1,0 +1,106 @@
+{
+    "sonarInit": {
+        "_time_init_sonar": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ]
+    },
+    "sonarMeasure": {
+        "d": [
+            [
+                "_sub_sonar_get_current_distance"
+            ],
+            0
+        ],
+        "min_dist": [
+            [
+                "eps",
+                "_sub_sonar_get_min_distance"
+            ],
+            0
+        ],
+        "max_dist": [
+            [
+                "eps",
+                "_sub_sonar_get_max_distance"
+            ],
+            0
+        ],
+        "_time_last_sonar": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ]
+    },
+    "sonarCorrect": {
+        "S": [
+            [
+                "c_transpose",
+                "y",
+                "c",
+                "m_p",
+                "c"
+            ],
+            1
+        ],
+        "beta": [
+            [
+                "r_transpose",
+                "y",
+                "c",
+                "s_i"
+            ],
+            1
+        ],
+        "_x": [
+            [
+                "k",
+                "y",
+                "c"
+            ],
+            2
+        ],
+        "K": [
+            [
+                "c_transpose",
+                "m_p",
+                "s_i"
+            ],
+            0
+        ],
+        "S_I": [
+            [
+                "inv",
+                "s",
+                "n_y_sonar",
+                "float"
+            ],
+            0
+        ],
+        "m_P": [
+            [
+                "k",
+                "m_p",
+                "c"
+            ],
+            0
+        ],
+        ".hagl": [
+            [
+                "y",
+                "c"
+            ],
+            1
+        ],
+        "cov": [
+            [
+                "_sub_sonar_get_variance",
+                "_param_lpe_snr_z_get"
+            ],
+            0
+        ]
+    }
+}

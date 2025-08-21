@@ -1,0 +1,47 @@
+{
+    "verify_abort_landing": {
+        "next_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ]
+    },
+    "restart_landing_sequence": {
+        "prev_cmd_with_wp_index": [
+            [
+                "mission_get_prev_nav_cmd_with_wp_index"
+            ],
+            0
+        ],
+        "current_index": [
+            [
+                "mission_get_current_nav_index"
+            ],
+            0
+        ],
+        "do_land_start_index": [
+            [
+                "mission_get_landing_sequence_start_loc"
+            ],
+            0
+        ]
+    },
+    "request_go_around": {
+        "success": [
+            [
+                "deepstall_request_go_around",
+                "type_slope_request_go_around"
+            ],
+            0
+        ]
+    },
+    "handle_flight_stage_change": {
+        "flags.in_progress": [
+            [
+                "_in_landing_stage"
+            ],
+            0
+        ]
+    }
+}

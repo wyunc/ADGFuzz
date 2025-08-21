@@ -1,0 +1,11 @@
+{
+    "process_pulse": {
+        "width_usec": [
+            [
+                "width_s0",
+                "width_s1"
+            ],
+            0
+        ]
+    }
+}

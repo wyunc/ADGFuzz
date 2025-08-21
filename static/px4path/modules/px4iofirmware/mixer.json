@@ -1,0 +1,40 @@
+{
+    "mixer_tick": {
+        "needs_to_arm": [
+            [
+                "should_always_enable_pwm",
+                "should_arm",
+                "should_arm_nothrottle"
+            ],
+            0
+        ],
+        "source": [
+            [
+                "mix_none",
+                "mix_disarmed",
+                "mix_failsafe"
+            ],
+            0
+        ],
+        "armed_output": [
+            [
+                "should_arm",
+                "should_arm_nothrottle",
+                "mix_failsafe"
+            ],
+            0
+        ],
+        "irq_flags": [
+            [
+                "enter_critical_section"
+            ],
+            0
+        ],
+        "last_fmu_update": [
+            [
+                "system_state_fmu_data_received_time"
+            ],
+            1
+        ]
+    }
+}

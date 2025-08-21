@@ -1,0 +1,18 @@
+{
+    "Write_OABendyRuler": {
+        "got_final_dest": [
+            [
+                "final_dest_get_alt_cm_above_origin",
+                "final_dest_get_alt_cm_final_alt"
+            ],
+            0
+        ],
+        "got_oa_dest": [
+            [
+                "oa_dest_get_alt_cm_above_origin",
+                "oa_dest_get_alt_cm_oa_dest_alt"
+            ],
+            0
+        ]
+    }
+}

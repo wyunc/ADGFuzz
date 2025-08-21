@@ -1,0 +1,105 @@
+{
+    "update_position_servos": {
+        "pitch_rate": [
+            [
+                "pitch_input",
+                "pitch_range",
+                "pitch_current_relative",
+                "pitchrate"
+            ],
+            1
+        ],
+        "yaw_rate": [
+            [
+                "yaw_current_relative",
+                "yaw_range",
+                "yaw_input",
+                "yawrate"
+            ],
+            1
+        ]
+    },
+    "update_onoff_servos": {
+        "pitch_rate": [
+            [
+                "pitchrate"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "yawrate"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "pitch_current_relative": [
+            [
+                "zero_pitch",
+                "degrees_p"
+            ],
+            0
+        ],
+        "roll_rate": [
+            [
+                "degrees_r"
+            ],
+            1
+        ],
+        "pitch_input": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_gravity_mss",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "yaw_rate": [
+            [
+                "pitch_rate"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "radians_yaw_rate",
+                "vector3f_roll_rate",
+                "vector3f_radians",
+                "radians_pitch_rate"
+            ],
+            0
+        ],
+        "last_debug_us": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "delta_time": [
+            [
+                "_0e",
+                "frame_time_us"
+            ],
+            0
+        ],
+        "yaw_input": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "yaw_current_relative": [
+            [
+                "zero_yaw",
+                "degrees_y"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "update": {
+        "in_test_mode": [
+            [
+                "actuator_test_action",
+                "action_do_control"
+            ],
+            0
+        ],
+        "motor_idx": [
+            [
+                "motor1",
+                "actuator_test_function",
+                "int"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "trim_trim",
+                "actuator_test_function",
+                "int",
+                "servo1",
+                "actuator_test_value"
+            ],
+            1
+        ],
+        "_next_timeout": [
+            [
+                "actuator_test_timeout_ms",
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    }
+}

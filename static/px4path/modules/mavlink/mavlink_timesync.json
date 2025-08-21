@@ -1,0 +1,49 @@
+{
+    "handle_message": {
+        "tv.tv_nsec": [
+            [
+                "time_time_unix_usec",
+                "1000ull",
+                "1000000ull"
+            ],
+            0
+        ],
+        "rsync.ts1": [
+            [
+                "tsync_ts1"
+            ],
+            0
+        ],
+        "ofb_unix_valid": [
+            [
+                "time_time_unix_usec",
+                "px4_epoch_secs",
+                "1000000ull"
+            ],
+            0
+        ],
+        "onb_unix_valid": [
+            [
+                "tv_tv_sec",
+                "long",
+                "px4_epoch_secs",
+                "unsigned"
+            ],
+            0
+        ],
+        "rsync.tc1": [
+            [
+                "hrt_absolute_time",
+                "1000ull"
+            ],
+            1
+        ],
+        "tv.tv_sec": [
+            [
+                "time_time_unix_usec",
+                "1000000ull"
+            ],
+            0
+        ]
+    }
+}

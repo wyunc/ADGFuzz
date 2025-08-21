@@ -1,0 +1,50 @@
+{
+    "resetPositionLock": {
+        "_position_setpoint_locked": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "updateTrajectories": {
+        "_state.j": [
+            [
+                "_trajectory_get_current_jerk"
+            ],
+            0
+        ],
+        "_state.v": [
+            [
+                "_trajectory_get_current_velocity"
+            ],
+            0
+        ],
+        "_state.a": [
+            [
+                "_trajectory_get_current_acceleration"
+            ],
+            0
+        ],
+        "_state.x": [
+            [
+                "_trajectory_get_current_position"
+            ],
+            0
+        ]
+    },
+    "checkPositionLock": {
+        "_position_setpoint_locked": [
+            [
+                "_state_x"
+            ],
+            0
+        ],
+        "_state.v": [
+            [
+                "_velocity_setpoint_feedback"
+            ],
+            0
+        ]
+    }
+}

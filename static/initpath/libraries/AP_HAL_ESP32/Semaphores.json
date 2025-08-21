@@ -1,0 +1,36 @@
+{
+    "take": {
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "take_nonblocking": {
+        "ok": [
+            [
+                "x_semaphore_take_recursive_queue_handle_thandle",
+                "pd_true"
+            ],
+            0
+        ]
+    },
+    "wait": {
+        "ticks": [
+            [
+                "pd_ms_to_ticks_1000u",
+                "pd_ms_to_ticks_timeout_us"
+            ],
+            0
+        ]
+    },
+    "signal_ISR": {
+        "xHigherPriorityTaskWoken": [
+            [
+                "pd_false"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "set_distance_min_max": {
+        "_distance_min": [
+            [
+                "min"
+            ],
+            0
+        ],
+        "_distance_max": [
+            [
+                "max"
+            ],
+            0
+        ]
+    },
+    "get_upward_distance": {
+        "distance": [
+            [
+                "_distance_upward"
+            ],
+            0
+        ]
+    },
+    "handle_script_distance_msg": {
+        "database_ready": [
+            [
+                "database_prepare_for_push_current_pos",
+                "database_prepare_for_push_body_to_ned"
+            ],
+            0
+        ],
+        "_distance_upward": [
+            [
+                "dist_m"
+            ],
+            0
+        ],
+        "_last_upward_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_pitch_deg",
+                "frontend_boundary_get_face_yaw_deg"
+            ],
+            0
+        ],
+        "yaw_deg": [
+            [
+                "correct_angle_for_orientation_yaw_deg"
+            ],
+            0
+        ]
+    },
+    "handle_script_3d_msg": {
+        "pitch": [
+            [
+                "wrap_180_atan2f",
+                "wrap_180_degrees",
+                "wrap_180_m_pi_2",
+                "wrap_180_obstacle_xy_length",
+                "obstacle_z"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "wrap_360_atan2f",
+                "wrap_360_obstacle_y",
+                "wrap_360_obstacle_x",
+                "wrap_360_degrees"
+            ],
+            0
+        ]
+    }
+}

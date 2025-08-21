@@ -1,0 +1,36 @@
+{
+    "setup": {
+        "rcprot": [
+            [
+                "rc"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_cloexec",
+                "open_o_rdonly",
+                "open_devicename"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "ret": [
+            [
+                "read_fd",
+                "read_sizeof",
+                "read_buf"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "devicename": [
+            [
+                "argv"
+            ],
+            0
+        ]
+    }
+}

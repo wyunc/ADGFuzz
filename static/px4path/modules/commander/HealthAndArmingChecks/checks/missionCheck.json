@@ -1,0 +1,16 @@
+{
+    "checkAndReport": {
+        ".auto_mission_missing": [
+            [
+                "mission_result_mission_id"
+            ],
+            0
+        ],
+        ".mission_failure": [
+            [
+                "mission_result_failure"
+            ],
+            0
+        ]
+    }
+}

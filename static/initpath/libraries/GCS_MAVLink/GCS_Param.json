@@ -1,0 +1,200 @@
+{
+    "queued_param_send": {
+        "_queued_parameter": [
+            [
+                "next_scalar__queued_parameter_token",
+                "next_scalar__queued_parameter_type"
+            ],
+            0
+        ],
+        "tstart": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "send_parameter_async_replies",
+                "mavlink_msg_id_param_value_len",
+                "packet_overhead",
+                "millis",
+                "txspace",
+                "_port_bw_in_bytes_per_second",
+                "mavlink_msg_id_param_value_len",
+                "packet_overhead"
+            ],
+            5
+        ],
+        "_queued_parameter_send_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_request_data_stream": {
+        "rate": [
+            [
+                "stream_rates",
+                "stream_rc_channels",
+                "stream_extended_status",
+                "stream_position",
+                "num_streams",
+                "stream_extra2",
+                "stream_extra3",
+                "stream_raw_sensors",
+                "stream_raw_controller",
+                "stream_extra1"
+            ],
+            1
+        ],
+        "freq": [
+            [
+                "packet_req_message_rate"
+            ],
+            0
+        ]
+    },
+    "handle_param_request_list": {
+        "_queued_parameter": [
+            [
+                "first__queued_parameter_token",
+                "first__queued_parameter_type"
+            ],
+            0
+        ],
+        "_queued_parameter_count": [
+            [
+                "count_parameters"
+            ],
+            0
+        ],
+        "_queued_parameter_send_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_param_request_read": {
+        "reserve_param_space_start_ms": [
+            [
+                "millis",
+                "saved_reserve_param_space_start_ms"
+            ],
+            0
+        ],
+        "req.chan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "req.param_index": [
+            [
+                "packet_param_index"
+            ],
+            0
+        ]
+    },
+    "handle_param_set": {
+        "vp": [
+            [
+                "find_parameter_flags",
+                "find_var_type",
+                "find_key"
+            ],
+            0
+        ],
+        "old_value": [
+            [
+                "vp_cast_to_float_var_type"
+            ],
+            0
+        ],
+        "force_save": [
+            [
+                "is_equal_old_value",
+                "is_equal_packet_param_value"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "send_parameter_value": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "packet.param_value": [
+            [
+                "param_value"
+            ],
+            0
+        ],
+        "packet.param_count": [
+            [
+                "count_parameters"
+            ],
+            0
+        ],
+        "packet.param_type": [
+            [
+                "mav_param_type_param_type"
+            ],
+            0
+        ],
+        "to_copy": [
+            [
+                "array_size_strlen",
+                "array_size_packet_param_id",
+                "array_size_param_name"
+            ],
+            0
+        ]
+    },
+    "param_io_timer": {
+        "reply.param_index": [
+            [
+                "req_param_index"
+            ],
+            0
+        ],
+        "reply.chan": [
+            [
+                "req_chan"
+            ],
+            0
+        ],
+        "vp": [
+            [
+                "find_reply_p_type",
+                "find_by_index_req_param_index",
+                "find_req_param_name",
+                "find_by_index_token",
+                "find_by_index_reply_p_type"
+            ],
+            0
+        ],
+        "reply.count": [
+            [
+                "count_parameters"
+            ],
+            0
+        ],
+        "reply.value": [
+            [
+                "vp_cast_to_float_reply_p_type"
+            ],
+            0
+        ]
+    }
+}

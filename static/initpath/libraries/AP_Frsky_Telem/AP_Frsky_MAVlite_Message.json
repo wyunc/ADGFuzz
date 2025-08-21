@@ -1,0 +1,18 @@
+{
+    "set_bytes": {
+        "len": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "bit8_pack": {
+        "i": [
+            [
+                "bit_offset"
+            ],
+            0
+        ]
+    }
+}

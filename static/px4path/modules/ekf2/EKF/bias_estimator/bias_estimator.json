@@ -1,0 +1,101 @@
+{
+    "predict": {
+        "_dt": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        "_status.bias_var": [
+            [
+                "_process_psd",
+                "dt",
+                "_process_var_boost_gain"
+            ],
+            2
+        ]
+    },
+    "constrainStateVar": {
+        "_state_var": [
+            [
+                "constrain__state_var",
+                "constrain_1e",
+                "constrain__state_var_max"
+            ],
+            0
+        ]
+    },
+    "fuseBias": {
+        "innov_test_ratio": [
+            [
+                "compute_innov_test_ratio_innov_var",
+                "compute_innov_test_ratio_innov"
+            ],
+            0
+        ],
+        "_status": [
+            [
+                "pack_status_innov_var",
+                "pack_status_innov_test_ratio",
+                "pack_status_innov"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "_state",
+                "measurement"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "max_sq",
+                "measurement_var",
+                "_state_var",
+                "_state_var"
+            ],
+            1
+        ]
+    },
+    "updateState": {
+        "_state": [
+            [
+                "k",
+                "innov"
+            ],
+            0
+        ]
+    },
+    "updateStateCovariance": {
+        "_state_var": [
+            [
+                "k"
+            ],
+            0
+        ]
+    },
+    "updateOffsetDetection": {
+        "_time_since_last_negative_innov": [
+            [
+                "_f",
+                "_dt"
+            ],
+            0
+        ],
+        "signed_innov_test_ratio": [
+            [
+                "innov_test_ratio",
+                "sign_innov"
+            ],
+            0
+        ],
+        "_time_since_last_positive_innov": [
+            [
+                "_f",
+                "_dt"
+            ],
+            0
+        ]
+    }
+}

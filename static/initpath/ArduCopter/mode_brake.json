@@ -1,0 +1,16 @@
+{
+    "timeout_to_loiter_ms": {
+        "_timeout_start": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_timeout_ms": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_rcinput": {
+        "rcin.status": [
+            [
+                "msg_status"
+            ],
+            0
+        ],
+        "rcin.last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "rcin.quality": [
+            [
+                "msg_quality"
+            ],
+            0
+        ],
+        "rcin": [
+            [
+                "driver_rcin"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ],
+        "rcin.num_channels": [
+            [
+                "msg_rcin_len",
+                "array_size_rcin_channels"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_receive_ms": [
+            [
+                "rcin_last_sample_time_ms"
+            ],
+            0
+        ]
+    }
+}

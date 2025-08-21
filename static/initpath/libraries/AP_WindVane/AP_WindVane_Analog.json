@@ -1,0 +1,41 @@
+{
+    "update_direction": {
+        "direction": [
+            [
+                "radians__frontend__dir_analog_deadzone",
+                "radians__frontend__dir_analog_bearing_offset",
+                "linear_interpolate__frontend__dir_analog_volt_max",
+                "linear_interpolate__frontend__dir_analog_volt_min",
+                "linear_interpolate__current_analog_voltage"
+            ],
+            1
+        ],
+        "_current_analog_voltage": [
+            [
+                "_dir_analog_source_voltage_latest"
+            ],
+            0
+        ],
+        "_frontend._direction_apparent_raw": [
+            [
+                "wrap_pi_direction"
+            ],
+            0
+        ]
+    },
+    "calibrate": {
+        "volt_diff": [
+            [
+                "_current_analog_voltage",
+                "_current_analog_voltage"
+            ],
+            2
+        ],
+        "_cal_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

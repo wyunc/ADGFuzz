@@ -1,0 +1,50 @@
+{
+    "BM_Crop8bpp": {
+        "left": [
+            [
+                "state_range_x",
+                "width"
+            ],
+            0
+        ],
+        "top": [
+            [
+                "state_range_y",
+                "height"
+            ],
+            0
+        ],
+        "new_buffer": [
+            [
+                "state_range_y",
+                "uint8_t",
+                "malloc_state_range_x"
+            ],
+            0
+        ],
+        "buffer": [
+            [
+                "malloc_height",
+                "uint8_t",
+                "malloc_width"
+            ],
+            0
+        ]
+    },
+    "BM_YuyvToGrey": {
+        "buffer": [
+            [
+                "uint8_t",
+                "malloc_state_range_x"
+            ],
+            0
+        ],
+        "new_buffer": [
+            [
+                "uint8_t",
+                "malloc_state_range_x"
+            ],
+            0
+        ]
+    }
+}

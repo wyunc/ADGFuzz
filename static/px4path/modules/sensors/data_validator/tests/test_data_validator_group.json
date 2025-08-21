@@ -1,0 +1,281 @@
+{
+    "fill_one_with_valid_data": {
+        "last_best_val": [
+            [
+                "group_get_best_timestamp",
+                "group_get_best_best_idx",
+                "float",
+                "rand_max",
+                "rand"
+            ],
+            2
+        ],
+        "best_idx": [
+            [
+                "val1_idx"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ]
+    },
+    "fill_two_with_valid_data": {
+        "last_best_val": [
+            [
+                "group_get_best_timestamp",
+                "group_get_best_best_idx",
+                "float",
+                "rand",
+                "rand_max"
+            ],
+            2
+        ],
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ],
+        "best_idx": [
+            [
+                "val1_idx"
+            ],
+            0
+        ]
+    },
+    "test_init": {
+        "nullptr": [
+            [
+                "group_get_best_base_timestamp",
+                "group_get_best_best_index"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "setup_base_group_num_siblings"
+            ],
+            0
+        ]
+    },
+    "test_put": {
+        "val2_idx": [
+            [
+                "num_siblings"
+            ],
+            0
+        ],
+        "validator2": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ],
+        "val1_idx": [
+            [
+                "num_siblings"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "setup_group_with_two_validator_handles_validator1",
+                "setup_group_with_two_validator_handles_num_siblings",
+                "setup_group_with_two_validator_handles_validator2"
+            ],
+            0
+        ],
+        "validator1": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "best_val": [
+            [
+                "validator1_value",
+                "group_get_best_best_idx",
+                "group_get_best_timestamp",
+                "validator2_value"
+            ],
+            3
+        ]
+    },
+    "test_priority_switch": {
+        "val1_idx": [
+            [
+                "num_siblings",
+                "int"
+            ],
+            0
+        ],
+        "validator2": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "validator1": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "best_idx": [
+            [
+                "num_siblings",
+                "int"
+            ],
+            1
+        ],
+        "new_best_val": [
+            [
+                "nullptr",
+                "group_get_best_timestamp",
+                "group_get_best_best_idx"
+            ],
+            1
+        ],
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ],
+        "0": [
+            [
+                "group_failover_count"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "setup_group_with_two_validator_handles_num_siblings",
+                "setup_group_with_two_validator_handles_validator1",
+                "setup_group_with_two_validator_handles_validator2"
+            ],
+            0
+        ]
+    },
+    "test_simple_failover": {
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "setup_group_with_two_validator_handles_validator2",
+                "setup_group_with_two_validator_handles_num_siblings",
+                "setup_group_with_two_validator_handles_validator1"
+            ],
+            0
+        ],
+        "ERROR_FLAG_NO_ERROR": [
+            [
+                "validator1_state",
+                "group_failover_state"
+            ],
+            0
+        ],
+        "best_idx": [
+            [
+                "int",
+                "num_siblings"
+            ],
+            1
+        ],
+        "val1_idx": [
+            [
+                "int",
+                "num_siblings"
+            ],
+            0
+        ],
+        "new_best_val": [
+            [
+                "nullptr",
+                "group_get_best_timestamp",
+                "group_get_best_best_idx"
+            ],
+            1
+        ],
+        "1": [
+            [
+                "group_failover_index",
+                "group_failover_count"
+            ],
+            1
+        ],
+        "validator2": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "validator1": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "test_sensor_failure": {
+        "ERROR_FLAG_TIMEOUT": [
+            [
+                "validator_state",
+                "error_flag_timeout"
+            ],
+            0
+        ],
+        "best_data": [
+            [
+                "group_get_best_best_idx",
+                "group_get_best_timestamp"
+            ],
+            0
+        ],
+        "val_idx": [
+            [
+                "num_siblings",
+                "group_failover_index"
+            ],
+            1
+        ],
+        "validator": [
+            [
+                "add_validator_to_group_group"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "base_timestamp"
+            ],
+            0
+        ],
+        "sufficient_incr_value": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "setup_base_group_num_siblings"
+            ],
+            0
+        ]
+    }
+}

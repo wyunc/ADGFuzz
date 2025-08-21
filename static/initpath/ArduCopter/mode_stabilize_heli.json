@@ -1,0 +1,16 @@
+{
+    "run": {
+        "pilot_throttle_scaled": [
+            [
+                "copter_input_manager_get_pilot_desired_collective_channel_throttle_get_control_in"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ]
+    }
+}

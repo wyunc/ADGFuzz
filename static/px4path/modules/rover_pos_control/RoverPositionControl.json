@@ -1,0 +1,279 @@
+{
+    "manual_control_setpoint_poll": {
+        "_att_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_att_sp.yaw_sp_move_rate": [
+            [
+                "_manual_control_setpoint_roll",
+                "radians__param_gnd_man_y_max_get"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "constrain_hrt_elapsed_time",
+                "1e",
+                "constrain__manual_setpoint_last_called"
+            ],
+            0
+        ],
+        "_manual_setpoint_last_called": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_throttle_control": [
+            [
+                "_manual_control_setpoint_throttle"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "wrap_pi__att_sp_yaw_sp_move_rate",
+                "eulerf__vehicle_att_q",
+                "_psi",
+                "eulerf_quatf",
+                "wrap_pi_dt",
+                "wrap_pi__manual_yaw_sp"
+            ],
+            2
+        ],
+        "_yaw_control": [
+            [
+                "_manual_control_setpoint_roll"
+            ],
+            0
+        ]
+    },
+    "control_position": {
+        "_yaw_control": [
+            [
+                "constrain_control_effort"
+            ],
+            1
+        ],
+        "mission_target_speed": [
+            [
+                "_pos_sp_triplet_current_cruising_speed",
+                "_param_gndspeed_trim_get"
+            ],
+            0
+        ],
+        "desired_theta": [
+            [
+                "atan2f_desired_r",
+                "atan2f__param_wheel_base_get",
+                "m_pi_f"
+            ],
+            0
+        ],
+        "_pos_ctrl_state": [
+            [
+                "stopping",
+                "goto_waypoint"
+            ],
+            0
+        ],
+        "prev_wp": [
+            [
+                "curr_wp"
+            ],
+            0
+        ],
+        "_control_mode_current": [
+            [
+                "ugv_posctrl_mode_auto",
+                "ugv_posctrl_mode_other"
+            ],
+            0
+        ],
+        "curr_wp_local": [
+            [
+                "curr_wp",
+                "_global_local_proj_ref_project_curr_wp"
+            ],
+            0
+        ],
+        "_control_position_last_called": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_prev_wp": [
+            [
+                "curr_wp"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "ground_speed",
+                "r_to_body",
+                "vector3f_ground_speed"
+            ],
+            0
+        ],
+        "_throttle_control": [
+            [
+                "constrain_mission_throttle",
+                "_param_throttle_cruise_get",
+                "_pos_sp_triplet_current_cruising_throttle",
+                "hrt_elapsed_time__control_position_last_called",
+                "1e",
+                "_speed_ctrl_update_vel",
+                "_param_throttle_max_get",
+                "constrain__param_throttle_min_get",
+                "_param_throttle_speed_scaler_get"
+            ],
+            2
+        ],
+        "desired_r": [
+            [
+                "abs_t__gnd_control_nav_lateral_acceleration_demand",
+                "ground_speed_2d_norm_squared"
+            ],
+            0
+        ]
+    },
+    "control_velocity": {
+        "mission_throttle": [
+            [
+                "_param_throttle_cruise_get"
+            ],
+            0
+        ],
+        "desired_speed": [
+            [
+                "desired_velocity_norm"
+            ],
+            0
+        ],
+        "control_throttle": [
+            [
+                "_speed_ctrl_update_vel",
+                "dt"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "vector3f_current_velocity",
+                "current_velocity",
+                "r_to_body"
+            ],
+            0
+        ],
+        "_yaw_control": [
+            [
+                "_param_max_turn_angle_get",
+                "r_to_body",
+                "desired_velocity",
+                "atan2f_desired_body_velocity",
+                "constrain_control_effort"
+            ],
+            3
+        ],
+        "_throttle_control": [
+            [
+                "constrain_control_throttle",
+                "constrain_mission_throttle"
+            ],
+            0
+        ]
+    },
+    "control_attitude": {
+        "control_throttle": [
+            [
+                "att_sp_thrust_body"
+            ],
+            0
+        ],
+        "_yaw_control": [
+            [
+                "quatf_att_sp_q_d",
+                "quatf_att_q_inversed",
+                "constrain_control_effort",
+                "_param_max_turn_angle_get"
+            ],
+            3
+        ],
+        "_throttle_control": [
+            [
+                "constrain_control_throttle"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "pos_ctrl_status.target_bearing": [
+            [
+                "_gnd_control_target_bearing"
+            ],
+            0
+        ],
+        "_pos_reset_counter": [
+            [
+                "_global_pos_lat_lon_reset_counter"
+            ],
+            0
+        ],
+        "pos_ctrl_status.acceptance_radius": [
+            [
+                "_param_l1_distance_get"
+            ],
+            1
+        ],
+        "pos_ctrl_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pos_ctrl_status.xtrack_error": [
+            [
+                "_gnd_control_crosstrack_error"
+            ],
+            0
+        ],
+        "v_thrust_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pos_ctrl_status.nav_bearing": [
+            [
+                "_gnd_control_nav_bearing"
+            ],
+            0
+        ],
+        "v_torque_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "rover_position_control",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

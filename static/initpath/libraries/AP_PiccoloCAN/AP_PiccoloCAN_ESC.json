@@ -1,0 +1,60 @@
+{
+    "handle_can_frame": {
+        "telem.motor_temp_cdeg": [
+            [
+                "int16_t_motor_temperature"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "0x_ff",
+                "frame_id"
+            ],
+            0
+        ],
+        "telem.voltage": [
+            [
+                "voltage"
+            ],
+            0
+        ],
+        "telem.current": [
+            [
+                "current"
+            ],
+            0
+        ],
+        "telem.temperature_cdeg": [
+            [
+                "temperature",
+                "int16_t_temperature"
+            ],
+            0
+        ]
+    },
+    "finishESCVelocityPacket": {
+        "dlc": [
+            [
+                "max_data_len"
+            ],
+            1
+        ],
+        "frame": [
+            [
+                "pkt",
+                "can_frame"
+            ],
+            0
+        ]
+    },
+    "getESCVelocityPacketSize": {
+        "frame": [
+            [
+                "can_frame",
+                "pkt"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "read": {
+        "_state.last_time_micros": [
+            [
+                "telem_get_last_telem_data_ms_i"
+            ],
+            1
+        ],
+        "_state.temperature": [
+            [
+                "float_temperature_cdeg",
+                "temperature_escs"
+            ],
+            1
+        ],
+        "_state.voltage": [
+            [
+                "voltage",
+                "voltage_escs"
+            ],
+            1
+        ],
+        "dt_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.current_amps": [
+            [
+                "current"
+            ],
+            1
+        ],
+        "all_enabled": [
+            [
+                "_mask"
+            ],
+            0
+        ],
+        "_state.temperature_time": [
+            [
+                "telem_get_last_telem_data_ms_i"
+            ],
+            1
+        ],
+        "_state.consumed_mah": [
+            [
+                "delta_mah",
+                "consumption_mah"
+            ],
+            1
+        ],
+        "last_read_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "telem": [
+            [
+                "esc_telem"
+            ],
+            0
+        ]
+    },
+    "reset_remaining": {
+        "delta_mah": [
+            [
+                "_state_consumed_mah",
+                "_state_consumed_mah"
+            ],
+            1
+        ]
+    }
+}

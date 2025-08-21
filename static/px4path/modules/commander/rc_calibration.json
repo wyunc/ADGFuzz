@@ -1,0 +1,37 @@
+{
+    "do_trim_calibration": {
+        "p2r": [
+            [
+                "param_set_param_find"
+            ],
+            0
+        ],
+        "p3r": [
+            [
+                "param_set_param_find",
+                "pitch_trim_active",
+                "roll_scale",
+                "yaw_scale",
+                "manual_control_setpoint_yaw",
+                "pitch_scale",
+                "manual_control_setpoint_pitch",
+                "manual_control_setpoint_roll",
+                "roll_trim_active",
+                "yaw_trim_active"
+            ],
+            1
+        ],
+        "p1r": [
+            [
+                "param_set_param_find"
+            ],
+            0
+        ],
+        "changed": [
+            [
+                "manual_control_setpoint_sub_updated"
+            ],
+            0
+        ]
+    }
+}

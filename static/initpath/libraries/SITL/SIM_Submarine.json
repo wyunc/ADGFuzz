@@ -1,0 +1,99 @@
+{
+    "perpendicular_distance_to_rangefinder_surface": {
+        "floor_depth": [
+            [
+                "calculate_sea_floor_depth_position"
+            ],
+            0
+        ]
+    },
+    "calculate_forces": {
+        "body_accel": [
+            [
+                "linear_drag_forces",
+                "frame_property_weight",
+                "t_linear",
+                "vector3f_calculate_buoyancy_acceleration",
+                "frame_property_thrust",
+                "fabs_output",
+                "t_servo",
+                "input_servos",
+                "dcm_transposed"
+            ],
+            3
+        ],
+        "body_accel.z": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "rot_accel": [
+            [
+                "buoyancy_torque",
+                "frame_property_moment_of_inertia",
+                "frame_property_thruster_mount_radius",
+                "angular_drag_torque",
+                "t_rotational",
+                "frame_property_thrust",
+                "fabs_output",
+                "t_servo",
+                "input_servos"
+            ],
+            3
+        ],
+        "t": [
+            [
+                "i",
+                "thrusters"
+            ],
+            0
+        ],
+        "floor_depth": [
+            [
+                "calculate_sea_floor_depth_position"
+            ],
+            0
+        ]
+    },
+    "calculate_buoyancy_torque": {
+        "torque": [
+            [
+                "dcm_transposed",
+                "force_up"
+            ],
+            1
+        ]
+    },
+    "calculate_drag_force": {
+        "force": [
+            [
+                "frame_property_equivalent_sphere_area",
+                "water_density",
+                "drag_coefficient",
+                "velocity_2"
+            ],
+            0
+        ]
+    },
+    "calculate_angular_drag_torque": {
+        "torque": [
+            [
+                "v_2",
+                "drag_coefficient",
+                "frame_property_equivalent_sphere_area",
+                "frame_property_equivalent_sphere_radius"
+            ],
+            1
+        ]
+    },
+    "calculate_buoyancy_acceleration": {
+        "below_water_level": [
+            [
+                "position_z",
+                "frame_property_height"
+            ],
+            0
+        ]
+    }
+}

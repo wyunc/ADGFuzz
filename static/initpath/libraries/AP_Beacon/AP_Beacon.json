@@ -1,0 +1,146 @@
+{
+    "init": {
+        "_driver": [
+            [
+                "ap_beacon_sitl_this",
+                "new_nothrow",
+                "ap_beacon_marvelmind_this",
+                "ap_beacon_nooploop_this",
+                "ap_beacon_pozyx_this"
+            ],
+            0
+        ]
+    },
+    "get_origin": {
+        "origin_loc.lng": [
+            [
+                "_0e7f",
+                "origin_lon"
+            ],
+            0
+        ],
+        "origin_loc.lat": [
+            [
+                "_0e7f",
+                "origin_lat"
+            ],
+            0
+        ],
+        "origin_loc.alt": [
+            [
+                "origin_alt"
+            ],
+            0
+        ]
+    },
+    "get_vehicle_position_ned": {
+        "accuracy_estimate": [
+            [
+                "veh_pos_accuracy"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "veh_pos_ned"
+            ],
+            0
+        ]
+    },
+    "get_beacon_data": {
+        "state": [
+            [
+                "beacon_instance",
+                "beacon_state"
+            ],
+            0
+        ]
+    },
+    "update_boundary_points": {
+        "dup_found": [
+            [
+                "boundary_points",
+                "curr_boundary_idx",
+                "dup_idx"
+            ],
+            0
+        ],
+        "boundary_num_points": [
+            [
+                "curr_boundary_idx",
+                "dup_idx"
+            ],
+            1
+        ],
+        "start_angle": [
+            [
+                "next_angle"
+            ],
+            0
+        ],
+        "curr_beacon_idx": [
+            [
+                "next_idx"
+            ],
+            0
+        ],
+        "boundary_num_beacons": [
+            [
+                "num_beacons"
+            ],
+            0
+        ],
+        ".x": [
+            [
+                "point_3d_x"
+            ],
+            0
+        ],
+        ".y": [
+            [
+                "point_3d_y"
+            ],
+            0
+        ],
+        "point_3d": [
+            [
+                "beacon_position_index"
+            ],
+            0
+        ]
+    },
+    "get_next_boundary_point": {
+        "lowest_angle_relative": [
+            [
+                "m_pi_2",
+                "wrap_2pi_angle",
+                "wrap_2pi_start_angle"
+            ],
+            1
+        ],
+        "vec": [
+            [
+                "i",
+                "boundary_pts",
+                "current_index",
+                "boundary_pts"
+            ],
+            1
+        ],
+        "next_index": [
+            [
+                "i"
+            ],
+            1
+        ],
+        "next_angle": [
+            [
+                "m_pi_2",
+                "wrap_2pi_vec_y",
+                "wrap_2pi_atan2f",
+                "wrap_2pi_vec_x"
+            ],
+            2
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "copy_to_frontend": {
+        "frontend.state": [
+            [
+                "internal_state"
+            ],
+            0
+        ]
+    }
+}

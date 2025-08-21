@@ -1,0 +1,159 @@
+{
+    "predict": {
+        "_state_var": [
+            [
+                "_process_var",
+                "dt"
+            ],
+            0
+        ],
+        "_dt": [
+            [
+                "dt"
+            ],
+            0
+        ]
+    },
+    "fuseAccZ": {
+        "_innov_var": [
+            [
+                "compute_innov_var_h"
+            ],
+            1
+        ],
+        "_innov_test_ratio": [
+            [
+                "compute_innov_test_ratio_innov_var",
+                "compute_innov_test_ratio_innov"
+            ],
+            1
+        ],
+        "_innov": [
+            [
+                "compute_innov_acc_z",
+                "compute_innov_thrust"
+            ],
+            1
+        ],
+        "K": [
+            [
+                "compute_kalman_gain_h",
+                "compute_kalman_gain_innov_var"
+            ],
+            0
+        ],
+        "H": [
+            [
+                "compute_h_thrust"
+            ],
+            0
+        ],
+        "residual": [
+            [
+                "compute_innov_acc_z",
+                "compute_innov_thrust",
+                "compute_innov_acc_z",
+                "compute_innov_thrust"
+            ],
+            1
+        ],
+        "signed_innov_test_ratio": [
+            [
+                "sign_innov",
+                "compute_innov_test_ratio_innov_var",
+                "compute_innov_test_ratio_innov"
+            ],
+            1
+        ]
+    },
+    "computeInnovVar": {
+        "P": [
+            [
+                "_state_var"
+            ],
+            0
+        ],
+        "R": [
+            [
+                "_acc_var_scale",
+                "_acc_var"
+            ],
+            0
+        ]
+    },
+    "computeInnov": {
+        "predicted_acc_z": [
+            [
+                "compute_predicted_acc_z_thrust"
+            ],
+            0
+        ]
+    },
+    "updateState": {
+        "_hover_thr": [
+            [
+                "constrain__hover_thr",
+                "constrain_k",
+                "constrain_innov",
+                "constrain__hover_thr_min",
+                "constrain__hover_thr_max"
+            ],
+            0
+        ]
+    },
+    "updateStateCovariance": {
+        "_state_var": [
+            [
+                "constrain_k",
+                "constrain_h",
+                "_f",
+                "1e",
+                "constrain__f"
+            ],
+            0
+        ]
+    },
+    "bumpStateVariance": {
+        "_state_var": [
+            [
+                "_process_var",
+                "_dt",
+                "1e3f"
+            ],
+            0
+        ]
+    },
+    "updateLpf": {
+        "_residual_lpf": [
+            [
+                "_lpf_time_constant",
+                "_dt",
+                "residual",
+                "_f"
+            ],
+            1
+        ]
+    },
+    "updateMeasurementNoise": {
+        "_acc_var": [
+            [
+                "constrain_alpha",
+                "_noise_learning_time_constant",
+                "_dt",
+                "h",
+                "p",
+                "_residual_lpf",
+                "residual",
+                "_f",
+                "constrain__f"
+            ],
+            2
+        ],
+        "P": [
+            [
+                "_state_var"
+            ],
+            0
+        ]
+    }
+}

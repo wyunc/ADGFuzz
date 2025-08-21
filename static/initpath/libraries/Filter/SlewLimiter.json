@@ -1,0 +1,70 @@
+{
+    "modifier": {
+        "oldest_time_from_window": [
+            [
+                "float",
+                "slewlimiter_n_events",
+                "millis",
+                "_neg_event_ms",
+                "index",
+                "_pos_event_ms",
+                "millis",
+                "window_ms"
+            ],
+            2
+        ],
+        "mod": [
+            [
+                "modifier_gain",
+                "fminf_modifier_input",
+                "fminf__modifier_slew_rate",
+                "fminf_decay_alpha",
+                "expf_slew_rate_tau",
+                "fminf__max_neg_slew_rate",
+                "fminf__max_pos_slew_rate",
+                "fminf_slew_rate_max",
+                "expf_oldest_time_from_window",
+                "slew_rate_max"
+            ],
+            4
+        ],
+        "_max_pos_slew_event_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_max_neg_slew_event_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_output_slew_rate": [
+            [
+                "fminf_raw_slew_rate",
+                "fminf_decay_alpha",
+                "fminf__output_slew_rate",
+                "dt",
+                "slew_filter_apply_last_sample",
+                "slew_filter_apply_sample",
+                "slew_rate_tau",
+                "fminf_slew_rate_tau",
+                "fminf_dt",
+                "dt",
+                "slew_filter_apply_last_sample",
+                "slew_filter_apply_sample",
+                "slew_rate_tau",
+                "fminf_slew_rate_tau",
+                "fminf_dt"
+            ],
+            6
+        ],
+        "last_sample": [
+            [
+                "sample"
+            ],
+            0
+        ]
+    }
+}

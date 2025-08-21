@@ -1,0 +1,103 @@
+{
+    "open_storage_fd": {
+        "filepath": [
+            [
+                "filename"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "o_rdwr",
+                "o_creat"
+            ],
+            0
+        ],
+        "storage_fd": [
+            [
+                "open_filepath",
+                "open_flags"
+            ],
+            0
+        ]
+    },
+    "rdwr": {
+        "xfr_addr": [
+            [
+                "uint8_t",
+                "tfr_tx_buf"
+            ],
+            1
+        ],
+        "RAMTRON_READ": [
+            [
+                "0x03"
+            ],
+            0
+        ],
+        "RAMTRON_WRITE": [
+            [
+                "0x02"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "writing",
+                "reading",
+                "waiting",
+                "reading_rdid"
+            ],
+            0
+        ],
+        "command": [
+            [
+                "uint8_t",
+                "tfr_tx_buf"
+            ],
+            1
+        ],
+        "RAMTRON_RDID": [
+            [
+                "0x9f"
+            ],
+            0
+        ],
+        "read_ret": [
+            [
+                "read_storage_fd",
+                "read_rx_buf",
+                "read_tfr_len"
+            ],
+            0
+        ],
+        "write_ret": [
+            [
+                "write_tx_buf",
+                "write_storage_fd",
+                "write_tfr_len"
+            ],
+            0
+        ],
+        "rx_buf": [
+            [
+                "uint8_t",
+                "tfr_rx_buf"
+            ],
+            0
+        ],
+        "tfr": [
+            [
+                "i",
+                "tfrs"
+            ],
+            0
+        ],
+        "RAMTRON_WREN": [
+            [
+                "0x06"
+            ],
+            0
+        ]
+    }
+}

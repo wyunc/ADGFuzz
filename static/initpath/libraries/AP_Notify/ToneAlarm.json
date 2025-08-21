@@ -1,0 +1,142 @@
+{
+    "init": {
+        "flags.armed": [
+            [
+                "flags_armed"
+            ],
+            0
+        ],
+        "flags.failsafe_battery": [
+            [
+                "flags_failsafe_battery"
+            ],
+            0
+        ]
+    },
+    "play_tone": {
+        "_tone_playing": [
+            [
+                "tone_index"
+            ],
+            0
+        ],
+        "_cont_tone_playing": [
+            [
+                "tone_index"
+            ],
+            0
+        ],
+        "tone_requested": [
+            [
+                "_tones",
+                "tone_index"
+            ],
+            0
+        ],
+        "_tone_beginning_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "check_cont_tone": {
+        "tnow_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "flags.failsafe_ekf": [
+            [
+                "flags_failsafe_ekf"
+            ],
+            0
+        ],
+        "flags.armed": [
+            [
+                "flags_armed"
+            ],
+            0
+        ],
+        "flags.failsafe_radio": [
+            [
+                "flags_failsafe_radio"
+            ],
+            0
+        ],
+        "flags.temp_cal_running": [
+            [
+                "flags_temp_cal_running"
+            ],
+            0
+        ],
+        "flags.pre_arm_check": [
+            [
+                "flags_pre_arm_check"
+            ],
+            0
+        ],
+        "flags.vehicle_lost": [
+            [
+                "flags_vehicle_lost"
+            ],
+            0
+        ],
+        "flags.parachute_release": [
+            [
+                "flags_parachute_release"
+            ],
+            0
+        ],
+        "flags.failsafe_gcs": [
+            [
+                "flags_failsafe_gcs"
+            ],
+            0
+        ],
+        "flags.failsafe_battery": [
+            [
+                "flags_failsafe_battery"
+            ],
+            0
+        ],
+        "flags.waiting_for_throw": [
+            [
+                "flags_waiting_for_throw"
+            ],
+            0
+        ],
+        "flags.compass_cal_running": [
+            [
+                "flags_compass_cal_running"
+            ],
+            0
+        ],
+        "flags.leak_detected": [
+            [
+                "flags_leak_detected"
+            ],
+            0
+        ],
+        "flags.powering_off": [
+            [
+                "flags_powering_off"
+            ],
+            0
+        ]
+    },
+    "handle_play_tune": {
+        "len2": [
+            [
+                "sizeof__tone_buf",
+                "strnlen_packet_tune2",
+                "strlen__tone_buf",
+                "strnlen_sizeof"
+            ],
+            1
+        ]
+    }
+}

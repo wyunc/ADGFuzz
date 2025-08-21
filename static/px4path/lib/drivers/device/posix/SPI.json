@@ -1,0 +1,96 @@
+{
+    "init": {
+        "_fd": [
+            [
+                "open_dev_path",
+                "open_o_rdwr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "init",
+                "probe"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "spi_transfer.speed_hz": [
+            [
+                "_frequency"
+            ],
+            0
+        ],
+        "spi_transfer.rx_buf": [
+            [
+                "recv",
+                "uint64_t"
+            ],
+            0
+        ],
+        "spi_transfer.len": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "spi_transfer.tx_buf": [
+            [
+                "send",
+                "uint64_t"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "ioctl__fd",
+                "ioctl_spi_ioc_message",
+                "spi_transfer",
+                "ioctl_spi_ioc_wr_mode",
+                "ioctl__mode"
+            ],
+            0
+        ]
+    },
+    "transferhword": {
+        "result": [
+            [
+                "ioctl__fd",
+                "ioctl_spi_ioc_wr_mode",
+                "ioctl_spi_ioc_wr_bits_per_word",
+                "ioctl__mode",
+                "spi_transfer",
+                "ioctl_spi_ioc_message",
+                "ioctl_bits"
+            ],
+            0
+        ],
+        ".rx_buf": [
+            [
+                "uint64_t",
+                "recv"
+            ],
+            0
+        ],
+        ".speed_hz": [
+            [
+                "_frequency"
+            ],
+            0
+        ],
+        ".tx_buf": [
+            [
+                "uint64_t",
+                "send"
+            ],
+            0
+        ],
+        ".len": [
+            [
+                "len"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,686 @@
+{
+    "stop": {
+        "_requested_status": [
+            [
+                "not_started"
+            ],
+            0
+        ]
+    },
+    "set_orientation": {
+        "cal_settings.orig_orientation": [
+            [
+                "orientation"
+            ],
+            0
+        ],
+        "cal_settings.always_45_deg": [
+            [
+                "always_45_deg"
+            ],
+            0
+        ],
+        "cal_settings.orientation": [
+            [
+                "orientation"
+            ],
+            0
+        ],
+        "cal_settings.fix_orientation": [
+            [
+                "fix_orientation"
+            ],
+            0
+        ],
+        "cal_settings.is_external": [
+            [
+                "is_external"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "cal_settings.retry": [
+            [
+                "retry"
+            ],
+            0
+        ],
+        "cal_settings.compass_idx": [
+            [
+                "compass_idx"
+            ],
+            0
+        ],
+        "cal_settings.tolerance": [
+            [
+                "tolerance"
+            ],
+            0
+        ],
+        "cal_settings.start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_requested_status": [
+            [
+                "waiting_to_start"
+            ],
+            0
+        ],
+        "cal_settings.offset_max": [
+            [
+                "offset_max"
+            ],
+            0
+        ],
+        "cal_settings.delay_start_sec": [
+            [
+                "delay"
+            ],
+            0
+        ]
+    },
+    "running": {
+        "cal_state.status": [
+            [
+                "running_step_one",
+                "running_step_two",
+                "cal_state_status"
+            ],
+            0
+        ]
+    },
+    "pull_sample": {
+        "mag_sample": [
+            [
+                "_last_sample"
+            ],
+            0
+        ]
+    },
+    "update_cal_settings": {
+        "_check_orientation": [
+            [
+                "cal_settings_check_orientation"
+            ],
+            0
+        ],
+        "_offset_max": [
+            [
+                "cal_settings_offset_max"
+            ],
+            0
+        ],
+        "_attempt": [
+            [
+                "cal_settings_attempt"
+            ],
+            0
+        ],
+        "_orig_orientation": [
+            [
+                "cal_settings_orig_orientation"
+            ],
+            0
+        ],
+        "_delay_start_sec": [
+            [
+                "cal_settings_delay_start_sec"
+            ],
+            0
+        ],
+        "_fix_orientation": [
+            [
+                "cal_settings_fix_orientation"
+            ],
+            0
+        ],
+        "_orientation": [
+            [
+                "cal_settings_orientation"
+            ],
+            0
+        ],
+        "_is_external": [
+            [
+                "cal_settings_is_external"
+            ],
+            0
+        ],
+        "_retry": [
+            [
+                "cal_settings_retry"
+            ],
+            0
+        ],
+        "_start_time_ms": [
+            [
+                "cal_settings_start_time_ms"
+            ],
+            0
+        ],
+        "_compass_idx": [
+            [
+                "cal_settings_compass_idx"
+            ],
+            0
+        ],
+        "_always_45_deg": [
+            [
+                "cal_settings_always_45_deg"
+            ],
+            0
+        ],
+        "_tolerance": [
+            [
+                "cal_settings_tolerance"
+            ],
+            0
+        ]
+    },
+    "update_completion_mask": {
+        "section": [
+            [
+                "section_true",
+                "section_corrected"
+            ],
+            0
+        ],
+        "corrected": [
+            [
+                "_params_offset",
+                "softiron",
+                "v"
+            ],
+            0
+        ]
+    },
+    "update_cal_status": {
+        "cal_state.completion_pct": [
+            [
+                "_samples_thinned",
+                "compass_cal_num_samples",
+                "_samples_collected",
+                "float"
+            ],
+            0
+        ],
+        "cal_state.attempt": [
+            [
+                "_attempt"
+            ],
+            0
+        ],
+        "cal_state.status": [
+            [
+                "_status"
+            ],
+            0
+        ]
+    },
+    "update_cal_report": {
+        "cal_report.scale_factor": [
+            [
+                "_params_scale_factor"
+            ],
+            0
+        ],
+        "cal_report.original_orientation": [
+            [
+                "_orig_orientation"
+            ],
+            0
+        ],
+        "cal_report.orientation_confidence": [
+            [
+                "_orientation_confidence"
+            ],
+            0
+        ],
+        "cal_report.check_orientation": [
+            [
+                "_check_orientation"
+            ],
+            0
+        ],
+        "cal_report.orientation": [
+            [
+                "_orientation_solution"
+            ],
+            0
+        ],
+        "cal_report.offdiag": [
+            [
+                "_params_offdiag"
+            ],
+            0
+        ],
+        "cal_report.fitness": [
+            [
+                "sqrtf__fitness"
+            ],
+            0
+        ],
+        "cal_report.ofs": [
+            [
+                "_params_offset"
+            ],
+            0
+        ],
+        "cal_report.status": [
+            [
+                "_status"
+            ],
+            0
+        ],
+        "cal_report.diag": [
+            [
+                "_params_diag"
+            ],
+            0
+        ]
+    },
+    "_running": {
+        "_status": [
+            [
+                "running_step_two",
+                "running_step_one"
+            ],
+            0
+        ]
+    },
+    "_fitting": {
+        "_samples_collected": [
+            [
+                "compass_cal_num_samples"
+            ],
+            0
+        ]
+    },
+    "initialize_fit": {
+        "_initial_fitness": [
+            [
+                "calc_mean_squared_residuals__params",
+                "_0e30f"
+            ],
+            1
+        ]
+    },
+    "set_status": {
+        "_sample_buffer": [
+            [
+                "nullptr",
+                "calloc_sizeof",
+                "calloc_compass_cal_num_samples",
+                "compass_sample",
+                "calloc_compass_sample"
+            ],
+            0
+        ],
+        "_status": [
+            [
+                "status",
+                "success",
+                "not_started",
+                "waiting_to_start",
+                "running_step_one",
+                "running_step_two"
+            ],
+            0
+        ]
+    },
+    "thin_samples": {
+        "temp": [
+            [
+                "_samples_collected",
+                "_sample_buffer"
+            ],
+            1
+        ],
+        "j": [
+            [
+                "_samples_collected",
+                "get_random16"
+            ],
+            1
+        ]
+    },
+    "accept_sample": {
+        "min_distance": [
+            [
+                "sinf_theta",
+                "_params_radius"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "_get",
+                "i",
+                "_sample_buffer",
+                "_length",
+                "sample"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "acosf_cosf",
+                "cosf_a",
+                "acosf_a"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "m_pi",
+                "compass_cal_num_samples"
+            ],
+            1
+        ]
+    },
+    "calc_mean_squared_residuals": {
+        "resid": [
+            [
+                "calc_residual_params",
+                "calc_residual_sample"
+            ],
+            0
+        ],
+        "sample": [
+            [
+                "_sample_buffer",
+                "_get",
+                "i"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "sq_resid",
+                "_samples_collected"
+            ],
+            0
+        ]
+    },
+    "calc_initial_offset": {
+        "_params.offset": [
+            [
+                "k",
+                "_get",
+                "_samples_collected",
+                "_sample_buffer"
+            ],
+            0
+        ]
+    },
+    "calc_sphere_jacob": {
+        "offdiag": [
+            [
+                "params_offdiag"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "sample_y",
+                "sample_x",
+                "diag_x",
+                "offdiag_x",
+                "sample_z",
+                "offset_z",
+                "offset_y",
+                "offdiag_y",
+                "offset_x"
+            ],
+            0
+        ],
+        "B": [
+            [
+                "sample_y",
+                "sample_x",
+                "offdiag_x",
+                "sample_z",
+                "offset_z",
+                "offset_y",
+                "offdiag_z",
+                "diag_y",
+                "offset_x"
+            ],
+            0
+        ],
+        "diag": [
+            [
+                "params_diag"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "sample",
+                "softiron",
+                "_length",
+                "params_offset"
+            ],
+            1
+        ],
+        "C": [
+            [
+                "sample_y",
+                "sample_x",
+                "sample_z",
+                "diag_z",
+                "offset_z",
+                "offdiag_z",
+                "offset_y",
+                "offdiag_y",
+                "offset_x"
+            ],
+            0
+        ]
+    },
+    "run_sphere_fit": {
+        "_params": [
+            [
+                "fit2_params"
+            ],
+            1
+        ],
+        "_sphere_lambda": [
+            [
+                "lma_damping"
+            ],
+            0
+        ],
+        "sample": [
+            [
+                "_get",
+                "k",
+                "_sample_buffer"
+            ],
+            0
+        ],
+        "_fitness": [
+            [
+                "calc_mean_squared_residuals_fit1_params",
+                "calc_mean_squared_residuals_fit2_params"
+            ],
+            3
+        ]
+    },
+    "calc_ellipsoid_jacob": {
+        "C": [
+            [
+                "offset_z",
+                "sample_z",
+                "offdiag_z",
+                "offdiag_y",
+                "sample_y",
+                "sample_x",
+                "offset_y",
+                "offset_x",
+                "diag_z"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "params_offset",
+                "sample",
+                "_length",
+                "softiron"
+            ],
+            1
+        ],
+        "B": [
+            [
+                "diag_y",
+                "sample_z",
+                "offdiag_x",
+                "offdiag_z",
+                "sample_y",
+                "sample_x",
+                "offset_y",
+                "offset_x",
+                "offset_z"
+            ],
+            0
+        ],
+        "offdiag": [
+            [
+                "params_offdiag"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "sample_z",
+                "offdiag_x",
+                "offdiag_y",
+                "sample_y",
+                "diag_x",
+                "sample_x",
+                "offset_y",
+                "offset_x",
+                "offset_z"
+            ],
+            0
+        ],
+        "diag": [
+            [
+                "params_diag"
+            ],
+            0
+        ]
+    },
+    "run_ellipsoid_fit": {
+        "_params": [
+            [
+                "fit2_params"
+            ],
+            1
+        ],
+        "_fitness": [
+            [
+                "calc_mean_squared_residuals_fit1_params",
+                "calc_mean_squared_residuals_fit2_params"
+            ],
+            3
+        ],
+        "_ellipsoid_lambda": [
+            [
+                "lma_damping"
+            ],
+            0
+        ],
+        "sample": [
+            [
+                "k",
+                "_sample_buffer",
+                "_get"
+            ],
+            0
+        ]
+    },
+    "calculate_orientation": {
+        "_orientation": [
+            [
+                "rotation_none",
+                "rotation_none"
+            ],
+            2
+        ],
+        "s": [
+            [
+                "i",
+                "_sample_buffer",
+                "_get"
+            ],
+            0
+        ],
+        "_params.offset": [
+            [
+                "_params_offset"
+            ],
+            1
+        ],
+        "besti2": [
+            [
+                "rotation_none",
+                "rotation_none",
+                "rotation_none",
+                "auto_rotation_index_n",
+                "rotation_yaw_90",
+                "rotation_yaw_45",
+                "auto_rotation_index_n"
+            ],
+            3
+        ],
+        "pass": [
+            [
+                "rotation_none",
+                "variance",
+                "n",
+                "variance",
+                "n",
+                "rotation_none",
+                "rotation_none",
+                "variance",
+                "n",
+                "variance",
+                "n"
+            ],
+            6
+        ],
+        "err": [
+            [
+                "calculate_earth_field_i",
+                "calculate_earth_field__sample_buffer",
+                "calculate_earth_field_r",
+                "_length_squared",
+                "_samples_collected",
+                "total_ef"
+            ],
+            2
+        ],
+        "_orientation_solution": [
+            [
+                "rotation_none",
+                "rotation_none"
+            ],
+            2
+        ]
+    },
+    "fix_radius": {
+        "_params.scale_factor": [
+            [
+                "_params_radius",
+                "intensity"
+            ],
+            2
+        ]
+    }
+}

@@ -1,0 +1,357 @@
+{
+    "publish": {
+        "semi_minor_axis": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "orientation": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "GSOF_DOP_LEN": [
+            [
+                "0x10"
+            ],
+            0
+        ],
+        "GSOF_POS_LEN": [
+            [
+                "0x18"
+            ],
+            0
+        ],
+        "pdop": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "last_time": [
+            [
+                "last_publish_ms",
+                "uint8_t_position_time",
+                "uint8_t_position_sigma_info",
+                "uint8_t_velocity_data",
+                "uint8_t_pdop_info",
+                "uint8_t_llh"
+            ],
+            0
+        ],
+        "sigma_up": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "dop_payload_size": [
+            [
+                "gsof_dop_len",
+                "sizeof_record_len",
+                "sizeof_output_record_type",
+                "sizeof_gsof_dop"
+            ],
+            3
+        ],
+        "offset": [
+            [
+                "sizeof_vel",
+                "sizeof_dop",
+                "sizeof_pos_time",
+                "sizeof_vel",
+                "sizeof_dop",
+                "sizeof_pos_time",
+                "sizeof_pos_sigma",
+                "sizeof_pos",
+                "sizeof_pos_sigma",
+                "sizeof_pos"
+            ],
+            1
+        ],
+        "n_epocs": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "sigma_n": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "cov_en": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "tdop": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "desired_rate": [
+            [
+                "uint8_t_position_time",
+                "channel_rates",
+                "uint8_t_position_sigma_info",
+                "uint8_t_velocity_data",
+                "uint8_t_pdop_info",
+                "uint8_t_llh"
+            ],
+            0
+        ],
+        "hdop": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "semi_major_axis": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "GSOF_POS_SIGMA_LEN": [
+            [
+                "0x26"
+            ],
+            0
+        ],
+        "sigma_e": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "GSOF_VEL_LEN": [
+            [
+                "0x0d"
+            ],
+            0
+        ],
+        "unit_variance": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "vdop": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "pos_rms": [
+            [
+                "htobe32"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "dcol_parse": {
+        "expected_csum": [
+            [
+                "data_in"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "parse_payload"
+            ],
+            0
+        ],
+        "parse_state": [
+            [
+                "waiting_on_packet_data",
+                "waiting_on_packet_type",
+                "waiting_on_etx",
+                "waiting_on_length",
+                "waiting_on_csum",
+                "waiting_on_status"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "static_cast",
+                "data_in"
+            ],
+            0
+        ],
+        "expected_payload_length": [
+            [
+                "data_in"
+            ],
+            0
+        ],
+        "packet_type": [
+            [
+                "command_appfile"
+            ],
+            0
+        ]
+    },
+    "valid_csum": {
+        "sum": [
+            [
+                "expected_payload_length",
+                "crc_sum_of_bytes_payload",
+                "status",
+                "crc_sum_of_bytes_expected_payload_length",
+                "uint8_t",
+                "packet_type",
+                "expected_csum"
+            ],
+            0
+        ]
+    },
+    "parse_payload": {
+        "success": [
+            [
+                "parse_cmd_appfile"
+            ],
+            0
+        ]
+    },
+    "parse_cmd_appfile": {
+        "appfile_trans_num": [
+            [
+                "payload"
+            ],
+            0
+        ],
+        "expected_app_file_spec_version": [
+            [
+                "0x03"
+            ],
+            0
+        ],
+        "expected_start_flag": [
+            [
+                "0x01"
+            ],
+            0
+        ],
+        "min_cmd_appfile_sz": [
+            [
+                "file_control_info_block_sz",
+                "appfile_header_sz"
+            ],
+            0
+        ],
+        "rate": [
+            [
+                "file_control_info_block_sz",
+                "appfile_header_sz",
+                "payload"
+            ],
+            1
+        ],
+        "expected_factory_settings_flag": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "expected_dev_type": [
+            [
+                "0x00"
+            ],
+            0
+        ],
+        "file_ctrl_idx": [
+            [
+                "appfile_header_sz"
+            ],
+            0
+        ],
+        "gsof_submessage_type": [
+            [
+                "file_control_info_block_sz",
+                "appfile_header_sz",
+                "payload"
+            ],
+            1
+        ],
+        "record_type": [
+            [
+                "file_control_info_block_sz",
+                "appfile_header_sz",
+                "payload"
+            ],
+            1
+        ]
+    },
+    "reset": {
+        "parse_state": [
+            [
+                "waiting_on_stx"
+            ],
+            0
+        ]
+    },
+    "send_gsof": {
+        "csum": [
+            [
+                "packet_type",
+                "sizeof_gsof_header",
+                "size",
+                "gsof_header",
+                "status",
+                "i",
+                "buf"
+            ],
+            1
+        ],
+        "PACKET_TYPE": [
+            [
+                "0x40"
+            ],
+            0
+        ],
+        "STATUS": [
+            [
+                "0xa8"
+            ],
+            0
+        ],
+        "total_size": [
+            [
+                "sizeof_dcol_trailer",
+                "sizeof_gsof_header",
+                "sizeof_dcol_header",
+                "size"
+            ],
+            0
+        ]
+    },
+    "update_read": {
+        "n_read": [
+            [
+                "read_from_autopilot_c",
+                "read_from_autopilot_max_payload_size"
+            ],
+            0
+        ]
+    }
+}

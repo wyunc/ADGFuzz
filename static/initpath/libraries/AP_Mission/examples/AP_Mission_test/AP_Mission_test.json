@@ -1,0 +1,144 @@
+{
+    "init_mission": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_jump",
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_nav_return_to_launch"
+            ],
+            0
+        ]
+    },
+    "init_mission_no_nav_commands": {
+        "cmd.id": [
+            [
+                "mav_cmd_do_change_speed",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_do_jump",
+                "mav_cmd_do_set_servo",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "init_mission_endless_loop": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_jump",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "init_mission_jump_to_nonnav": {
+        "cmd.id": [
+            [
+                "mav_cmd_do_set_roi",
+                "mav_cmd_do_jump",
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_nav_takeoff"
+            ],
+            0
+        ]
+    },
+    "init_mission_starts_with_do_commands": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_change_speed",
+                "mav_cmd_do_set_roi"
+            ],
+            0
+        ]
+    },
+    "init_mission_ends_with_do_commands": {
+        "cmd.id": [
+            [
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_change_speed",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "init_mission_ends_with_jump_command": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_do_jump",
+                "mav_cmd_do_change_speed"
+            ],
+            0
+        ]
+    },
+    "run_resume_test": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_return_to_launch"
+            ],
+            0
+        ],
+        "start_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "run_set_current_cmd_test": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_return_to_launch",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "run_set_current_cmd_while_stopped_test": {
+        "start_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "cmd.id": [
+            [
+                "mav_cmd_nav_return_to_launch",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "run_replace_cmd_test": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_do_set_roi",
+                "mav_cmd_nav_waypoint",
+                "mav_cmd_nav_return_to_launch"
+            ],
+            0
+        ]
+    },
+    "run_max_cmd_test": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    }
+}

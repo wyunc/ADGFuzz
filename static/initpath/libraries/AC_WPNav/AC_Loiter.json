@@ -1,0 +1,158 @@
+{
+    "init_target": {
+        "_predicted_accel": [
+            [
+                "_pos_control_get_accel_target_cmss_xy"
+            ],
+            0
+        ],
+        "_predicted_euler_angle.y": [
+            [
+                "radians__pos_control_get_pitch_cd"
+            ],
+            0
+        ],
+        "_predicted_euler_angle.x": [
+            [
+                "radians__pos_control_get_roll_cd"
+            ],
+            0
+        ]
+    },
+    "set_pilot_desired_acceleration": {
+        "desired_accel": [
+            [
+                "_pos_control_lean_angles_to_accel_desired_euler"
+            ],
+            0
+        ],
+        "euler_roll_angle": [
+            [
+                "radians_euler_roll_angle_cd"
+            ],
+            0
+        ],
+        "_desired_accel.y": [
+            [
+                "desired_accel_y"
+            ],
+            0
+        ],
+        "predicted_accel": [
+            [
+                "_pos_control_lean_angles_to_accel_predicted_euler"
+            ],
+            0
+        ],
+        "_predicted_accel.x": [
+            [
+                "predicted_accel_x"
+            ],
+            0
+        ],
+        "_desired_accel.x": [
+            [
+                "desired_accel_x"
+            ],
+            0
+        ],
+        "_predicted_euler_angle": [
+            [
+                "_attitude_control_get_dt",
+                "_predicted_euler_rate"
+            ],
+            1
+        ],
+        "euler_pitch_angle": [
+            [
+                "radians_euler_pitch_angle_cd"
+            ],
+            0
+        ],
+        "_predicted_accel.y": [
+            [
+                "predicted_accel_y"
+            ],
+            0
+        ]
+    },
+    "get_stopping_point_xy": {
+        "stopping_point": [
+            [
+                "stop_tofloat"
+            ],
+            0
+        ]
+    },
+    "calc_desired_velocity": {
+        "_avoid": [
+            [
+                "ac_avoid"
+            ],
+            0
+        ],
+        "_brake_timer": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_desired_accel": [
+            [
+                "_brake_jerk_max_cmsss",
+                "sqrt_controller__brake_jerk_max_cmsss",
+                "sqrt_controller_dt",
+                "sqrt_controller_brake_gain",
+                "sqrt_controller_desired_speed",
+                "sqrt_controller__brake_accel_cmss",
+                "_pos_control_get_dt",
+                "desired_vel_norm"
+            ],
+            4
+        ],
+        "brake_gain": [
+            [
+                "_pos_control_get_vel_xy_pid_k_p"
+            ],
+            0
+        ],
+        "horizSpdDem": [
+            [
+                "desired_vel_length"
+            ],
+            0
+        ],
+        "desired_pos": [
+            [
+                "_pos_control_get_pos_desired_cm_xy",
+                "horiz_spd_dem",
+                "avoidance_vel_3d_x",
+                "ekf_gnd_spd_limit",
+                "_speed_cms",
+                "loiter_speed_min",
+                "_pos_control_get_dt",
+                "vector2f",
+                "_pos_control_get_vel_desired_cms_xy",
+                "_predicted_accel",
+                "desired_vel_norm",
+                "avoidance_vel_3d_y",
+                "ekf_gnd_spd_limit",
+                "_speed_cms",
+                "loiter_speed_min",
+                "angle_to_accel_get_angle_max_cd",
+                "_brake_jerk_max_cmsss",
+                "sqrt_controller__brake_jerk_max_cmsss",
+                "sqrt_controller_dt",
+                "sqrt_controller_brake_gain",
+                "sqrt_controller_desired_speed",
+                "sqrt_controller__brake_accel_cmss",
+                "_pos_control_get_dt",
+                "desired_vel_length",
+                "_pos_control_get_dt",
+                "_topostype",
+                "_pos_control_get_dt"
+            ],
+            8
+        ]
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "isr_debug": {
+        "msg_next_in": [
+            [
+                "num_msg"
+            ],
+            0
+        ]
+    },
+    "show_debug_messages": {
+        "n": [
+            [
+                "num_msg",
+                "msg_counter"
+            ],
+            0
+        ],
+        "last_msg_counter": [
+            [
+                "msg_counter"
+            ],
+            0
+        ],
+        "msg_next_out": [
+            [
+                "num_msg"
+            ],
+            0
+        ]
+    },
+    "update_mem_usage": {
+        "last_mem_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "minfo": [
+            [
+                "mallinfo"
+            ],
+            0
+        ]
+    },
+    "ring_blink": {
+        "brightness": [
+            [
+                "counter",
+                "max_brightness"
+            ],
+            1
+        ],
+        "on": [
+            [
+                "brightness_counter",
+                "max_brightness",
+                "on_counter"
+            ],
+            0
+        ]
+    },
+    "schedule_reboot": {
+        "reboot_time": [
+            [
+                "hrt_absolute_time",
+                "time_delta_usec"
+            ],
+            0
+        ]
+    },
+    "calculate_fw_crc": {
+        "sum": [
+            [
+                "sizeof_bytes",
+                "p",
+                "uint32_t",
+                "app_load_address",
+                "crc32part_uint8_t"
+            ],
+            1
+        ]
+    },
+    "user_start": {
+        "mixer_perf": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "minfo": [
+            [
+                "mallinfo"
+            ],
+            0
+        ],
+        "last_heartbeat_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "controls_perf": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "loop_perf": [
+            [
+                "perf_alloc_pc_interval"
+            ],
+            0
+        ],
+        "last_debug_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "heartbeat_period_us": [
+            [
+                "1000ul"
+            ],
+            0
+        ]
+    }
+}

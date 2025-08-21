@@ -1,0 +1,25 @@
+{
+    "init_heading": {
+        "_desired_heading_cd": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "_initial_heading_cd": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_desired_heading_cd": [
+            [
+                "wrap_360_cd_desired_heading_cd",
+                "wrap_360_cd__initial_heading_cd"
+            ],
+            1
+        ]
+    }
+}

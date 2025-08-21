@@ -1,0 +1,74 @@
+{
+    "CheckAndUpdateFilters": {
+        "configured_interval_us": [
+            [
+                "1e6f",
+                "_param_imu_integ_rate_get"
+            ],
+            0
+        ],
+        "_filter_sample_rate": [
+            [
+                "imu_status_get_accel_rate_hz"
+            ],
+            1
+        ],
+        "sample_interval_avg": [
+            [
+                "1e6f",
+                "imu_status_get_accel_rate_hz"
+            ],
+            1
+        ]
+    },
+    "SensorBiasUpdate": {
+        "_bias": [
+            [
+                "bias_accel_bias",
+                "vector3f"
+            ],
+            0
+        ]
+    },
+    "SensorSelectionUpdate": {
+        "device_id": [
+            [
+                "sensor_accel_sub_get_device_id"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_acceleration_prev": [
+            [
+                "_bias",
+                "_calibration_correct_accel_raw"
+            ],
+            1
+        ],
+        "accel_filtered": [
+            [
+                "_lp_filter_apply_accel_corrected"
+            ],
+            0
+        ],
+        "selection_updated": [
+            [
+                "sensor_selection_update"
+            ],
+            0
+        ],
+        "v_acceleration.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "v_acceleration.timestamp_sample": [
+            [
+                "sensor_data_timestamp_sample"
+            ],
+            0
+        ]
+    }
+}

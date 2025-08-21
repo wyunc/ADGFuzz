@@ -1,0 +1,1115 @@
+{
+    "mavlink_update_parameters": {
+        "_protocol_version_switch": [
+            [
+                "_param_mav_proto_ver_get"
+            ],
+            1
+        ]
+    },
+    "set_channel": {
+        "_channel": [
+            [
+                "mavlink_comm_2",
+                "mavlink_comm_4",
+                "mavlink_comm_3",
+                "mavlink_comm_5",
+                "mavlink_comm_6",
+                "mavlink_comm_0",
+                "mavlink_comm_1"
+            ],
+            0
+        ]
+    },
+    "set_instance_id": {
+        "_instance_id": [
+            [
+                "instance_id"
+            ],
+            0
+        ]
+    },
+    "destroy_all_instances": {
+        "_event_buffer": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "forward_message": {
+        "target_system_id": [
+            [
+                "uint8_t",
+                "meta_target_system_ofs",
+                "static_cast",
+                "_mav_payload_msg"
+            ],
+            0
+        ],
+        "meta": [
+            [
+                "mavlink_get_msg_entry_msg_msgid"
+            ],
+            0
+        ],
+        "target_component_id": [
+            [
+                "uint8_t",
+                "static_cast",
+                "_mav_payload_msg",
+                "meta_target_component_ofs"
+            ],
+            0
+        ]
+    },
+    "mavlink_open_uart": {
+        "_uart_fd": [
+            [
+                "open_o_noctty",
+                "open_o_rdwr",
+                "open_uart_name"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "b230400",
+                "b0",
+                "b1000000",
+                "b19200",
+                "b200",
+                "b300",
+                "b1800",
+                "b38400",
+                "b150",
+                "b4800",
+                "b134",
+                "b2000000",
+                "b600",
+                "b115200",
+                "b3000000",
+                "b500000",
+                "b110",
+                "b50",
+                "b9600",
+                "b1200",
+                "b57600",
+                "b921600",
+                "b75",
+                "b460800",
+                "b1500000",
+                "b2400"
+            ],
+            0
+        ]
+    },
+    "setup_flow_control": {
+        "ret": [
+            [
+                "tcsetattr_uart_config",
+                "tcgetattr__uart_fd",
+                "tcgetattr_uart_config",
+                "tcsetattr_tcsanow",
+                "tcsetattr__uart_fd"
+            ],
+            0
+        ],
+        "_flow_control_mode": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "set_hil_enabled": {
+        "ret": [
+            [
+                "ok"
+            ],
+            0
+        ]
+    },
+    "get_free_tx_buf": {
+        "buf_free": [
+            [
+                "mavlink_max_packet_len"
+            ],
+            0
+        ]
+    },
+    "send_start": {
+        "_last_write_try_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "send_finish": {
+        "_last_write_success_time": [
+            [
+                "_last_write_try_time"
+            ],
+            0
+        ],
+        "bret": [
+            [
+                "sizeof__bcast_addr",
+                "sendto__buf_fill",
+                "sendto__buf",
+                "sendto_struct",
+                "sendto_sockaddr",
+                "sendto__socket_fd",
+                "_bcast_addr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "write__uart_fd",
+                "write__buf_fill",
+                "_src_addr",
+                "sendto__buf_fill",
+                "sendto__buf",
+                "sendto_struct",
+                "sendto_sockaddr",
+                "sendto__socket_fd",
+                "sizeof__src_addr",
+                "write__buf"
+            ],
+            0
+        ]
+    },
+    "send_bytes": {
+        "_buf_fill": [
+            [
+                "packet_len"
+            ],
+            0
+        ]
+    },
+    "find_broadcast_address": {
+        "netmask_addr": [
+            [
+                "query_netmask_addr__socket_fd",
+                "query_netmask_addr_cur_ifreq"
+            ],
+            0
+        ],
+        "cur_ifreq": [
+            [
+                "offset",
+                "ifconf_ifc_req",
+                "struct",
+                "ifreq",
+                "uint8_t"
+            ],
+            0
+        ],
+        "_bcast_addr.sin_addr": [
+            [
+                "compute_broadcast_addr_netmask_addr",
+                "compute_broadcast_addr_sin_addr"
+            ],
+            1
+        ],
+        "_bcast_addr.sin_port": [
+            [
+                "htons__remote_port"
+            ],
+            0
+        ],
+        "_bcast_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ioctl_ifconf",
+                "ioctl_siocgifconf",
+                "ioctl__socket_fd"
+            ],
+            0
+        ],
+        "first_byte": [
+            [
+                "sin_addr_s_addr",
+                "0x_ff"
+            ],
+            0
+        ],
+        "ifconf.ifc_req": [
+            [
+                "new",
+                "nullptr",
+                "ifconf_ifc_len",
+                "struct",
+                "ifreq",
+                "uint8_t"
+            ],
+            0
+        ],
+        "sin_addr": [
+            [
+                "sockaddr_in",
+                "_sin_addr",
+                "cur_ifreq_ifr_addr",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "init_udp": {
+        "_myaddr.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "_src_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "_src_addr.sin_port": [
+            [
+                "htons__remote_port"
+            ],
+            0
+        ],
+        "_myaddr.sin_port": [
+            [
+                "htons__network_port"
+            ],
+            0
+        ],
+        "_myaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ]
+    },
+    "send_autopilot_capabilities": {
+        "msg.middleware_sw_version": [
+            [
+                "px4_firmware_version"
+            ],
+            0
+        ],
+        "msg.capabilities": [
+            [
+                "mav_protocol_capability_mission_float"
+            ],
+            0
+        ],
+        "msg.vendor_id": [
+            [
+                "config_cdcacm_vendorid"
+            ],
+            0
+        ],
+        "fw_vendor_version": [
+            [
+                "px4_firmware_vendor_version"
+            ],
+            0
+        ],
+        "msg.flight_sw_version": [
+            [
+                "px4_firmware_version"
+            ],
+            0
+        ],
+        "msg.board_version": [
+            [
+                "px4_board_version"
+            ],
+            0
+        ],
+        "fw_git_version_binary": [
+            [
+                "px4_firmware_version_binary",
+                "0x_ffffffffff000000"
+            ],
+            0
+        ],
+        "os_git_version_binary": [
+            [
+                "px4_os_version_binary"
+            ],
+            0
+        ],
+        "param_handle": [
+            [
+                "param_find_no_notification"
+            ],
+            0
+        ],
+        "msg.os_sw_version": [
+            [
+                "px4_os_version"
+            ],
+            0
+        ],
+        "msg.uid": [
+            [
+                "mavlink_system_sysid",
+                "px4_cpu_uuid_word32_unique_h",
+                "px4_cpu_uuid_word32_unique_m",
+                "uint64_t",
+                "uid"
+            ],
+            0
+        ],
+        "msg.product_id": [
+            [
+                "config_cdcacm_productid"
+            ],
+            0
+        ]
+    },
+    "send_protocol_version": {
+        "mavlink_lib_git_version_binary": [
+            [
+                "px4_mavlink_lib_version_binary"
+            ],
+            0
+        ],
+        "msg.version": [
+            [
+                "_protocol_version"
+            ],
+            0
+        ],
+        "curr_proto_ver": [
+            [
+                "_protocol_version"
+            ],
+            0
+        ]
+    },
+    "configure_stream": {
+        "interval": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "create_mavlink_stream_stream_name",
+                "create_mavlink_stream_this"
+            ],
+            0
+        ]
+    },
+    "configure_stream_threadsafe": {
+        "_subscribe_to_stream_rate": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "_subscribe_to_stream": [
+            [
+                "new",
+                "strlen_stream_name",
+                "char"
+            ],
+            2
+        ]
+    },
+    "pass_message": {
+        "size": [
+            [
+                "mavlink_num_non_payload_bytes",
+                "msg_len"
+            ],
+            0
+        ]
+    },
+    "close_shell": {
+        "_mavlink_shell": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "update_rate_mult": {
+        "_rate_mult": [
+            [
+                "fminf_hardware_mult",
+                "fminf_bandwidth_mult",
+                "constrain__rate_mult"
+            ],
+            0
+        ],
+        "bandwidth_mult": [
+            [
+                "_mavlink_ulog_current_data_rate",
+                "stream_get_interval",
+                "stream_get_size_avg",
+                "float",
+                "_datarate",
+                "fminf_bandwidth_mult",
+                "stream_get_interval",
+                "stream_get_size_avg"
+            ],
+            3
+        ],
+        "hardware_mult": [
+            [
+                "_tstatus_tx_error_rate_avg",
+                "_tstatus_tx_rate_avg",
+                "_radio_status_mult"
+            ],
+            0
+        ]
+    },
+    "update_radio_status": {
+        "_radio_status_critical": [
+            [
+                "radio_status_txbuf",
+                "radio_buffer_low_percentage"
+            ],
+            0
+        ],
+        "_rstatus": [
+            [
+                "radio_status"
+            ],
+            0
+        ],
+        "_radio_status_mult": [
+            [
+                "constrain__radio_status_mult"
+            ],
+            0
+        ]
+    },
+    "configure_streams_to_default": {
+        "ret": [
+            [
+                "configure_stream_stream_name",
+                "configure_stream_rate"
+            ],
+            1
+        ]
+    },
+    "task_main": {
+        "msg.device": [
+            [
+                "serial_control_dev_shell"
+            ],
+            0
+        ],
+        "msg.target_component": [
+            [
+                "_mavlink_shell_target_compid"
+            ],
+            0
+        ],
+        "_flow_control": [
+            [
+                "flow_control_on",
+                "flow_control_off",
+                "flow_control_auto"
+            ],
+            0
+        ],
+        "_src_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "e.log_levels": [
+            [
+                "orb_event_log_levels"
+            ],
+            0
+        ],
+        "e.id": [
+            [
+                "orb_event_id"
+            ],
+            0
+        ],
+        "_high_latency_freq": [
+            [
+                "freq"
+            ],
+            0
+        ],
+        "msg.flags": [
+            [
+                "serial_control_flag_reply"
+            ],
+            0
+        ],
+        "_subscribe_to_stream": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_remote_port": [
+            [
+                "temp_int_arg"
+            ],
+            0
+        ],
+        "_mavlink_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_tstatus.tx_error_rate_avg": [
+            [
+                "_bytes_txerr",
+                "1e",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "_mav_broadcast": [
+            [
+                "broadcast_mode_multicast",
+                "broadcast_mode_on"
+            ],
+            0
+        ],
+        "_network_port": [
+            [
+                "temp_int_arg"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_mavlink_ulog_handle_update_get_channel"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "px4_getpid"
+            ],
+            0
+        ],
+        "available_bytes": [
+            [
+                "_message_buffer_pop_front_msg",
+                "_message_buffer_pop_front_reinterpret_cast",
+                "_message_buffer_pop_front_uint8_t",
+                "sizeof_msg"
+            ],
+            0
+        ],
+        "_interface_name": [
+            [
+                "nullptr",
+                "nullptr"
+            ],
+            1
+        ],
+        "_uart_fd": [
+            [
+                "mavlink_open_uart__flow_control",
+                "mavlink_open_uart__device_name",
+                "mavlink_open_uart__baudrate"
+            ],
+            0
+        ],
+        "_device_name": [
+            [
+                "nullptr"
+            ],
+            1
+        ],
+        "_tstatus.tx_rate_avg": [
+            [
+                "_bytes_tx",
+                "1e",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "msg.count": [
+            [
+                "_mavlink_shell_read_sizeof",
+                "_mavlink_shell_read_msg_data"
+            ],
+            0
+        ],
+        "_main_loop_delay": [
+            [
+                "main_loop_delay",
+                "mavlink_min_interval",
+                "mavlink_max_interval",
+                "_baudrate",
+                "max_data_rate"
+            ],
+            1
+        ],
+        "_first_heartbeat_sent": [
+            [
+                "stream_first_message_sent"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "open_o_rdonly",
+                "open_o_wronly"
+            ],
+            0
+        ],
+        "e.timestamp_ms": [
+            [
+                "orb_event_timestamp"
+            ],
+            0
+        ],
+        "_mode": [
+            [
+                "mavlink_mode_magic",
+                "mavlink_mode_extvisionmin",
+                "mode",
+                "mavlink_mode_osd",
+                "mavlink_mode_extvision",
+                "mavlink_mode_normal",
+                "mavlink_mode_onboard",
+                "mavlink_mode_minimal",
+                "mavlink_mode_uavionix",
+                "mavlink_mode_count",
+                "mavlink_mode_custom",
+                "mavlink_mode_iridium",
+                "mavlink_mode_onboard_low_bandwidth",
+                "mavlink_mode",
+                "mavlink_mode_config",
+                "mavlink_mode_gimbal"
+            ],
+            0
+        ],
+        "_bytes_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_tstatus.rx_rate_avg": [
+            [
+                "1e",
+                "hrt_absolute_time",
+                "_bytes_rx"
+            ],
+            2
+        ],
+        "msg.target_system": [
+            [
+                "_mavlink_shell_target_sysid"
+            ],
+            0
+        ],
+        "e.sequence": [
+            [
+                "orb_event_event_sequence",
+                "event_sequence_offset"
+            ],
+            0
+        ],
+        "_mavlink_ulog": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "handleStatus": {
+        "vehicle_status.hil_state": [
+            [
+                "hil_state_on"
+            ],
+            0
+        ]
+    },
+    "handleCommands": {
+        "msg.param4": [
+            [
+                "cmd_param4"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "vehicle_cmd_source_component"
+            ],
+            0
+        ],
+        "msg.target_system": [
+            [
+                "cmd_target_system"
+            ],
+            0
+        ],
+        "msg.param1": [
+            [
+                "cmd_param1"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_accepted"
+            ],
+            0
+        ],
+        "msg.param6": [
+            [
+                "cmd_param6"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_vehicle_command_sub_get_last_generation"
+            ],
+            0
+        ],
+        "msg.param3": [
+            [
+                "cmd_param3"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "vehicle_cmd_source_system"
+            ],
+            0
+        ],
+        "msg.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "vehicle_cmd_timestamp"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "vehicle_cmd_command"
+            ],
+            0
+        ],
+        "msg.param5": [
+            [
+                "cmd_param5"
+            ],
+            0
+        ],
+        "command_ack.from_external": [
+            [
+                "vehicle_cmd_from_external"
+            ],
+            0
+        ],
+        "msg.param2": [
+            [
+                "cmd_param2"
+            ],
+            0
+        ],
+        "msg.param7": [
+            [
+                "cmd_param7"
+            ],
+            0
+        ],
+        "msg.target_component": [
+            [
+                "cmd_target_component"
+            ],
+            0
+        ]
+    },
+    "handleAndGetCurrentCommandAck": {
+        "COMMAND_ACK_TOTAL_LEN": [
+            [
+                "mavlink_msg_id_command_ack_len",
+                "mavlink_num_non_payload_bytes"
+            ],
+            0
+        ],
+        "is_target_known": [
+            [
+                "_receiver_component_was_seen_command_ack_target_component",
+                "_receiver_component_was_seen_command_ack_target_system"
+            ],
+            0
+        ],
+        "msg.target_system": [
+            [
+                "command_ack_target_system"
+            ],
+            0
+        ],
+        "msg.command": [
+            [
+                "command_ack_command"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_vehicle_command_ack_sub_get_last_generation"
+            ],
+            0
+        ],
+        "msg.result_param2": [
+            [
+                "command_ack_result_param2"
+            ],
+            0
+        ],
+        "_mavlink_ulog": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "msg.result": [
+            [
+                "command_ack_result"
+            ],
+            0
+        ],
+        "msg.target_component": [
+            [
+                "command_ack_target_component"
+            ],
+            0
+        ],
+        "msg.progress": [
+            [
+                "command_ack_result_param1"
+            ],
+            0
+        ]
+    },
+    "check_requested_subscriptions": {
+        "_subscribe_to_stream": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "publish_telemetry_status": {
+        "_tstatus.data_rate": [
+            [
+                "_datarate"
+            ],
+            0
+        ],
+        "_tstatus.mavlink_v2": [
+            [
+                "_protocol_version"
+            ],
+            0
+        ],
+        "_tstatus.flow_control": [
+            [
+                "get_flow_control_enabled"
+            ],
+            0
+        ],
+        "_tstatus.mode": [
+            [
+                "_mode"
+            ],
+            0
+        ],
+        "_tstatus.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_tstatus.forwarding": [
+            [
+                "get_forwarding_on"
+            ],
+            0
+        ],
+        "_tstatus.streams": [
+            [
+                "_streams_size"
+            ],
+            0
+        ],
+        "_tstatus.rate_multiplier": [
+            [
+                "_rate_mult"
+            ],
+            0
+        ],
+        "_tstatus.ftp": [
+            [
+                "ftp_enabled"
+            ],
+            0
+        ]
+    },
+    "configure_sik_radio": {
+        "fs": [
+            [
+                "fdopen__uart_fd"
+            ],
+            0
+        ]
+    },
+    "start_helper": {
+        "res": [
+            [
+                "instance_task_main_argv",
+                "instance_task_main_argc",
+                "enomem"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "mavlink",
+                "new"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "limit": [
+            [
+                "sleeptime"
+            ],
+            0
+        ],
+        "_event_buffer": [
+            [
+                "new",
+                "nullptr",
+                "event_buffer"
+            ],
+            0
+        ],
+        "ic": [
+            [
+                "instance_count"
+            ],
+            0
+        ]
+    },
+    "display_status_streams": {
+        "rate_current": [
+            [
+                "_rate_mult",
+                "stream_get_interval",
+                "float",
+                "stream_const_rate"
+            ],
+            3
+        ],
+        "size": [
+            [
+                "stream_get_size"
+            ],
+            0
+        ]
+    },
+    "stop_command": {
+        "device_name": [
+            [
+                "i",
+                "argv",
+                "nullptr"
+            ],
+            0
+        ],
+        "network_port": [
+            [
+                "strtoul_i",
+                "strtoul_argv",
+                "strtoul_eptr"
+            ],
+            1
+        ],
+        "inst": [
+            [
+                "nullptr",
+                "get_instance_for_device_device_name",
+                "get_instance_for_network_port_network_port"
+            ],
+            0
+        ]
+    },
+    "stream_command": {
+        "device_name": [
+            [
+                "default_device_name",
+                "i",
+                "argv"
+            ],
+            0
+        ],
+        "rate": [
+            [
+                "strtod_nullptr",
+                "strtod_i",
+                "strtod_argv"
+            ],
+            0
+        ],
+        "stream_name": [
+            [
+                "nullptr",
+                "i",
+                "argv"
+            ],
+            0
+        ],
+        "inst": [
+            [
+                "get_instance_for_device_device_name",
+                "get_instance_for_network_port_network_port",
+                "nullptr"
+            ],
+            0
+        ],
+        "network_port": [
+            [
+                "temp_int_arg"
+            ],
+            0
+        ]
+    },
+    "mavlink_main": {
+        "show_streams_status": [
+            [
+                "strcmp_argv",
+                "argc"
+            ],
+            0
+        ]
+    }
+}

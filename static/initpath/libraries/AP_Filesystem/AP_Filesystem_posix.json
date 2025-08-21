@@ -1,0 +1,137 @@
+{
+    "map_filename": {
+        "fname2": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "open": {
+        "fname": [
+            [
+                "map_filename_fname"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "open_flags",
+                "open_fname",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "ret": [
+            [
+                "stat_pathname",
+                "stat_stbuf"
+            ],
+            0
+        ],
+        "pathname": [
+            [
+                "map_filename_pathname"
+            ],
+            0
+        ]
+    },
+    "unlink": {
+        "pathname": [
+            [
+                "map_filename_pathname"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "rmdir_pathname",
+                "rmdir_char",
+                "rmdir_const_cast",
+                "unlink_pathname"
+            ],
+            0
+        ]
+    },
+    "mkdir": {
+        "ret": [
+            [
+                "mkdir_const_cast",
+                "mkdir_char",
+                "mkdir_pathname"
+            ],
+            0
+        ],
+        "pathname": [
+            [
+                "map_filename_pathname"
+            ],
+            0
+        ]
+    },
+    "opendir": {
+        "ret": [
+            [
+                "void",
+                "opendir_pathname"
+            ],
+            0
+        ],
+        "pathname": [
+            [
+                "map_filename_pathname"
+            ],
+            0
+        ]
+    },
+    "rename": {
+        "newpath": [
+            [
+                "map_filename_newpath"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "rename_oldpath",
+                "rename_newpath"
+            ],
+            0
+        ],
+        "oldpath": [
+            [
+                "map_filename_oldpath"
+            ],
+            0
+        ]
+    },
+    "set_mtime": {
+        "filename": [
+            [
+                "map_filename_filename"
+            ],
+            0
+        ],
+        "times.actime": [
+            [
+                "mtime_sec"
+            ],
+            0
+        ],
+        "times.modtime": [
+            [
+                "mtime_sec"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "utime_times",
+                "utime_filename"
+            ],
+            0
+        ]
+    }
+}

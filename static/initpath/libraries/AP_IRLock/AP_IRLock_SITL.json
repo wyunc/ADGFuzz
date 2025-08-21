@@ -1,0 +1,66 @@
+{
+    "init": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_target_info.pos_x": [
+            [
+                "real_position_y"
+            ],
+            0
+        ],
+        "_target_info.pos_z": [
+            [
+                "real_position_z"
+            ],
+            0
+        ],
+        "_target_info.timestamp": [
+            [
+                "_sitl_precland_sim_last_update_ms"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "_sitl_precland_sim_get_target_position"
+            ],
+            0
+        ],
+        "_target_info.pos_y": [
+            [
+                "real_position_x"
+            ],
+            0
+        ],
+        "_flags.healthy": [
+            [
+                "_sitl_precland_sim_healthy"
+            ],
+            0
+        ],
+        "body_to_ned": [
+            [
+                "ahrs_get_rotation_body_to_ned_todouble"
+            ],
+            0
+        ],
+        "real_position": [
+            [
+                "body_to_ned_mul_transpose_position"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "_sitl_precland_sim_last_update_ms"
+            ],
+            1
+        ]
+    }
+}

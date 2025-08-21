@@ -1,0 +1,51 @@
+{
+    "init": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_state.healthy": [
+            [
+                "_sitl_precland_sim_healthy"
+            ],
+            0
+        ],
+        "_distance_to_target": [
+            [
+                "_los_meas_body_length",
+                "_sitl_precland_sim_option_enabled_enable_target_distance"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "_sitl_precland_sim_get_target_position"
+            ],
+            0
+        ],
+        "_los_meas_body": [
+            [
+                "body_to_ned_mul_transpose_position_tofloat",
+                "_los_meas_body_length"
+            ],
+            0
+        ],
+        "_have_los_meas": [
+            [
+                "millis",
+                "_sitl_precland_sim_last_update_ms"
+            ],
+            1
+        ],
+        "body_to_ned": [
+            [
+                "ahrs_get_rotation_body_to_ned_todouble"
+            ],
+            0
+        ]
+    }
+}

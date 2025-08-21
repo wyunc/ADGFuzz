@@ -1,0 +1,54 @@
+{
+    "consumer_thread": {
+        "ret": [
+            [
+                "pair_buf_read_pair_reader_buf",
+                "pair_buf_read_sizeof"
+            ],
+            0
+        ]
+    },
+    "producer_thread": {
+        "next": [
+            [
+                "pair_buf_write_writer_buf",
+                "pair_buf_write_sizeof",
+                "pair_buf_write_next"
+            ],
+            0
+        ]
+    },
+    "main": {
+        ".consumer": [
+            [
+                "thread_i",
+                "thread_list",
+                "thread_consumer_thread"
+            ],
+            0
+        ],
+        ".pair_id": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "list": [
+            [
+                "new",
+                "stress_pairs",
+                "pairs",
+                "struct"
+            ],
+            0
+        ],
+        ".producer": [
+            [
+                "thread_i",
+                "thread_list",
+                "thread_producer_thread"
+            ],
+            0
+        ]
+    }
+}

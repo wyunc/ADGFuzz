@@ -1,0 +1,52 @@
+{
+    "error": {
+        "persistent_data.internal_error_last_line": [
+            [
+                "line"
+            ],
+            0
+        ],
+        "persistent_data.internal_error_count": [
+            [
+                "total_error_count"
+            ],
+            0
+        ],
+        "persistent_data.internal_errors": [
+            [
+                "internal_errors"
+            ],
+            0
+        ],
+        "e": [
+            [
+                "imu_reset",
+                "return"
+            ],
+            0
+        ],
+        "last_line": [
+            [
+                "line"
+            ],
+            0
+        ]
+    },
+    "error_to_string": {
+        "temp": [
+            [
+                "log2f_int",
+                "log2f_error_code"
+            ],
+            0
+        ]
+    },
+    "errors_as_string": {
+        "buffer_used": [
+            [
+                "written"
+            ],
+            0
+        ]
+    }
+}

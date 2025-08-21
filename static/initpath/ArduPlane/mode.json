@@ -1,0 +1,73 @@
+{
+    "enter": {
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "plane.guided_state.target_heading_type": [
+            [
+                "guided_heading_none"
+            ],
+            0
+        ],
+        "quadplane.assisted_flight": [
+            [
+                "quadplane_assist_should_assist_aspeed",
+                "quadplane_assist_should_assist_have_airspeed"
+            ],
+            0
+        ],
+        "this": [
+            [
+                "plane_mode_auto"
+            ],
+            0
+        ],
+        "have_airspeed": [
+            [
+                "quadplane_ahrs_airspeed_estimate_aspeed"
+            ],
+            0
+        ],
+        "plane.throttle_suppressed": [
+            [
+                "does_auto_throttle"
+            ],
+            0
+        ],
+        "plane.auto_state.initial_pitch_cd": [
+            [
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "enter_result": [
+            [
+                "_enter"
+            ],
+            0
+        ],
+        "plane.auto_state.vtol_mode": [
+            [
+                "is_vtol_mode"
+            ],
+            0
+        ],
+        "plane.last_mode_change_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "is_taking_off": {
+        "plane.flight_stage": [
+            [
+                "takeoff"
+            ],
+            0
+        ]
+    }
+}

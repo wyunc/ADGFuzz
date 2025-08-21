@@ -1,0 +1,118 @@
+{
+    "update": {
+        "angle_bf_target": [
+            [
+                "_params_neutral_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "get_attitude_quaternion": {
+        "att_quat": [
+            [
+                "_gimbal_device_attitude_status_q"
+            ],
+            0
+        ]
+    },
+    "find_gimbal": {
+        "_last_devinfo_req_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_link": [
+            [
+                "find_by_mavtype_and_compid_compid",
+                "find_by_mavtype_and_compid__sysid",
+                "find_by_mavtype_and_compid_mav_type_gimbal"
+            ],
+            0
+        ],
+        "_compid": [
+            [
+                "mav_comp_id_gimbal",
+                "_instance",
+                "mav_comp_id_gimbal2"
+            ],
+            1
+        ]
+    },
+    "handle_gimbal_device_information": {
+        "fw_ver_major": [
+            [
+                "0x000000ff",
+                "info_firmware_version"
+            ],
+            0
+        ],
+        "fw_ver_revision": [
+            [
+                "0x00ff0000",
+                "info_firmware_version"
+            ],
+            0
+        ],
+        "fw_ver_build": [
+            [
+                "info_firmware_version",
+                "0x_ff000000"
+            ],
+            0
+        ],
+        "fw_ver_minor": [
+            [
+                "0x0000ff00",
+                "info_firmware_version"
+            ],
+            0
+        ]
+    },
+    "handle_gimbal_device_attitude_status": {
+        "_last_attitude_status_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "start_sending_attitude_to_gimbal": {
+        "res": [
+            [
+                "mav_result_accepted",
+                "_link_set_message_interval_ap_mount_gremsy_attitude_interval_us",
+                "_link_set_message_interval_mavlink_msg_id_autopilot_state_for_gimbal_device"
+            ],
+            0
+        ]
+    },
+    "send_gimbal_device_set_rate": {
+        "flags": [
+            [
+                "earth_frame",
+                "gimbal_device_flags_pitch_lock",
+                "gimbal_device_flags_roll_lock",
+                "gimbal_device_flags_yaw_lock"
+            ],
+            0
+        ]
+    },
+    "send_gimbal_device_set_attitude": {
+        "flags": [
+            [
+                "earth_frame",
+                "gimbal_device_flags_roll_lock",
+                "gimbal_device_flags_yaw_lock",
+                "gimbal_device_flags_pitch_lock"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "calc_pwm": {
+        ".output_scaled": [
+            [
+                "_output_scaled",
+                "slew_func",
+                "slew_max_change",
+                "slew_last_scaled_output",
+                "functions"
+            ],
+            0
+        ],
+        "slew": [
+            [
+                "_slew"
+            ],
+            0
+        ],
+        "last_scaled_output": [
+            [
+                "_output_scaled",
+                "slew_func",
+                "functions"
+            ],
+            0
+        ]
+    },
+    "get_output_pwm_chan": {
+        "value": [
+            [
+                "chan",
+                "_get_output_pwm",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "set_output_pwm_chan_timeout": {
+        "loop_count": [
+            [
+                "timeout_ms",
+                "scheduler_get_loop_period_us",
+                "1u",
+                "1000u"
+            ],
+            1
+        ],
+        "had_pwm": [
+            [
+                "have_pwm_mask",
+                "1u",
+                "chan"
+            ],
+            0
+        ]
+    },
+    "push": {
+        "ap_pcan": [
+            [
+                "get_pcan_i"
+            ],
+            0
+        ],
+        "ap_dronecan": [
+            [
+                "get_dronecan_i"
+            ],
+            0
+        ],
+        "can_num_drivers": [
+            [
+                "can_get_num_drivers"
+            ],
+            0
+        ]
+    },
+    "set_emergency_stop": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "emergency_stop": [
+            [
+                "state"
+            ],
+            0
+        ]
+    }
+}

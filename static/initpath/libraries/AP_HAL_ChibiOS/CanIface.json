@@ -1,0 +1,374 @@
+{
+    "handleTxInterrupt": {
+        "TSR": [
+            [
+                "tsr_rqcp0",
+                "tsr_rqcp2",
+                "tsr_rqcp1"
+            ],
+            0
+        ],
+        "precise_time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "iface_index": [
+            [
+                "can_iface_to_idx",
+                "phys_index"
+            ],
+            0
+        ],
+        "txok": [
+            [
+                "tsr_txok1",
+                "tsr_txok2",
+                "tsr_txok0",
+                "can__tsr"
+            ],
+            0
+        ]
+    },
+    "handleRxInterrupt": {
+        "rx_item.frame": [
+            [
+                "isr_rx_frame"
+            ],
+            1
+        ],
+        "frame.dlc": [
+            [
+                "rf_rdtr"
+            ],
+            0
+        ],
+        "iface_index": [
+            [
+                "phys_index",
+                "can_iface_to_idx"
+            ],
+            0
+        ],
+        "frame.id": [
+            [
+                "rf_rir",
+                "mask_ext_id",
+                "mask_std_id"
+            ],
+            0
+        ],
+        "rfr_reg": [
+            [
+                "rfr_rfom",
+                "fifo_index",
+                "can__rf0r",
+                "rfr_full",
+                "can__rf1r",
+                "rfr_fovr"
+            ],
+            0
+        ],
+        "rx_item.timestamp_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "rf": [
+            [
+                "fifo_index",
+                "can__rx_mailbox"
+            ],
+            0
+        ],
+        "precise_time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "rx_item": [
+            [
+                "isr_rx_item"
+            ],
+            0
+        ]
+    },
+    "computeTimings": {
+        "out_timings.bs1": [
+            [
+                "uint8_t_solution_bs1"
+            ],
+            0
+        ],
+        "max_quanta_per_bit": [
+            [
+                "target_bitrate"
+            ],
+            0
+        ],
+        "out_timings.prescaler": [
+            [
+                "uint16_t_prescaler",
+                "uint16_t_1u"
+            ],
+            0
+        ],
+        "out_timings.bs2": [
+            [
+                "uint8_t_solution_bs2"
+            ],
+            0
+        ],
+        "prescaler": [
+            [
+                "uint8_t_max_quanta_per_bit",
+                "target_bitrate",
+                "stm32_pclk1"
+            ],
+            3
+        ],
+        "solution": [
+            [
+                "bs_pair_uint8_t",
+                "bs_pair_bs1_bs2_sum"
+            ],
+            0
+        ]
+    },
+    "configureFilters": {
+        "cfg": [
+            [
+                "filter_configs",
+                "i"
+            ],
+            0
+        ],
+        "FFA1R": [
+            [
+                "0x0aaaaaaa"
+            ],
+            0
+        ],
+        ".FR1": [
+            [
+                "mask_std_id",
+                "mask_ext_id",
+                "cfg_id"
+            ],
+            1
+        ],
+        ".FR2": [
+            [
+                "mask_std_id",
+                "mask_ext_id",
+                "cfg_mask"
+            ],
+            1
+        ],
+        "FA1R": [
+            [
+                "self_index_",
+                "num_filters"
+            ],
+            1
+        ],
+        "FS1R": [
+            [
+                "0x7ffffff"
+            ],
+            0
+        ]
+    },
+    "waitMsrINakBitStateChange": {
+        "state": [
+            [
+                "can__msr",
+                "msr_inak"
+            ],
+            0
+        ]
+    },
+    "handleTxMailboxInterrupt": {
+        "txi": [
+            [
+                "pending_tx_",
+                "mailbox_index"
+            ],
+            0
+        ],
+        "rx_item.frame": [
+            [
+                "txi_frame"
+            ],
+            0
+        ],
+        "rx_item.timestamp_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "stats.last_transmit_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "rx_item.flags": [
+            [
+                "loopback"
+            ],
+            0
+        ],
+        "had_activity_": [
+            [
+                "txok"
+            ],
+            0
+        ]
+    },
+    "pollErrorFlagsFromISR": {
+        "stats.esr": [
+            [
+                "can__esr"
+            ],
+            0
+        ],
+        "TSR": [
+            [
+                "i",
+                "tsr_abr_qx"
+            ],
+            0
+        ],
+        "lec": [
+            [
+                "uint8_t_esr_lec_mask",
+                "esr_lec_shift",
+                "uint8_t_can__esr"
+            ],
+            0
+        ],
+        "txi": [
+            [
+                "i",
+                "pending_tx_"
+            ],
+            0
+        ]
+    },
+    "discardTimedOutTxMailboxes": {
+        "TSR": [
+            [
+                "tsr_abr_qx",
+                "i"
+            ],
+            0
+        ],
+        "txi": [
+            [
+                "i",
+                "pending_tx_"
+            ],
+            0
+        ]
+    },
+    "canAcceptNewTxFrame": {
+        "TME": [
+            [
+                "tsr_tme2",
+                "tsr_tme1",
+                "tsr_tme0"
+            ],
+            0
+        ],
+        "tme": [
+            [
+                "can__tsr"
+            ],
+            0
+        ]
+    },
+    "set_event_handle": {
+        "sem_handle": [
+            [
+                "handle"
+            ],
+            0
+        ]
+    },
+    "checkAvailable": {
+        "write": [
+            [
+                "can_accept_new_tx_frame_pending_tx"
+            ],
+            0
+        ],
+        "read": [
+            [
+                "is_rx_buffer_empty"
+            ],
+            0
+        ]
+    },
+    "select": {
+        "in_read": [
+            [
+                "read"
+            ],
+            0
+        ],
+        "in_write": [
+            [
+                "write"
+            ],
+            0
+        ],
+        "time": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "FA1R": [
+            [
+                "num_filters"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "btr_silm",
+                "silent_mode"
+            ],
+            0
+        ],
+        "MCR": [
+            [
+                "mcr_abom",
+                "mcr_inrq",
+                "mcr_awum",
+                "mcr_reset"
+            ],
+            0
+        ],
+        "FS1R": [
+            [
+                "0x7ffffff",
+                "0x1fff"
+            ],
+            0
+        ],
+        "bitrate_": [
+            [
+                "bitrate"
+            ],
+            0
+        ]
+    }
+}

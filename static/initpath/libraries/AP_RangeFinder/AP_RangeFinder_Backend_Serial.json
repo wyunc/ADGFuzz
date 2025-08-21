@@ -1,0 +1,25 @@
+{
+    "init_serial": {
+        "uart": [
+            [
+                "serialmanager_find_serial_serial_protocol_rangefinder",
+                "_find_serial_serial_instance"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.signal_quality_pct": [
+            [
+                "get_signal_quality_pct"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "blockRandUniformTest": {
+        "mean": [
+            [
+                "block_rand_uniform_update",
+                "block_rand_uniform_update",
+                "i"
+            ],
+            1
+        ]
+    },
+    "blockRandGaussTest": {
+        "newMean": [
+            [
+                "block_rand_gauss_update",
+                "i"
+            ],
+            1
+        ],
+        "sum": [
+            [
+                "block_rand_gauss_update",
+                "new_mean"
+            ],
+            1
+        ],
+        "stdDev": [
+            [
+                "sqrt_sum",
+                "sqrt_n"
+            ],
+            0
+        ],
+        "mean": [
+            [
+                "block_rand_gauss_update",
+                "new_mean"
+            ],
+            0
+        ]
+    },
+    "blockDelayTest": {
+        "y4": [
+            [
+                "delay_update_u4"
+            ],
+            0
+        ],
+        "y2": [
+            [
+                "delay_update_u2"
+            ],
+            0
+        ],
+        "y3": [
+            [
+                "delay_update_u3"
+            ],
+            0
+        ],
+        "y1": [
+            [
+                "delay_update_u1"
+            ],
+            0
+        ]
+    }
+}

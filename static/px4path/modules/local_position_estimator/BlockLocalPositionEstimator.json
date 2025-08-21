@@ -1,0 +1,731 @@
+{
+    "Run": {
+        "tz_stddev_ok": [
+            [
+                "sqrtf_m_p",
+                "sqrtf_x_tz",
+                "_param_lpe_z_pub_get"
+            ],
+            0
+        ],
+        "targetPositionUpdated": [
+            [
+                "_sub_landing_target_pose_update"
+            ],
+            0
+        ],
+        "_time_last_hist": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        ".timestamp_sample": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "vehicle_command_param5"
+            ],
+            0
+        ],
+        "_lidarUpdated": [
+            [
+                "continue",
+                "i",
+                "_dist_subs",
+                "nullptr",
+                "_sub_lidar_update"
+            ],
+            2
+        ],
+        "dt": [
+            [
+                "new_time_stamp",
+                "_time_stamp",
+                "_0e6f"
+            ],
+            0
+        ],
+        "_mocapUpdated": [
+            [
+                "_sub_mocap_odom_update"
+            ],
+            0
+        ],
+        "_timeStamp": [
+            [
+                "new_time_stamp"
+            ],
+            0
+        ],
+        "_visionUpdated": [
+            [
+                "fuse_vis_pos",
+                "_sub_visual_odom_update",
+                "_param_lpe_fusion_get"
+            ],
+            0
+        ],
+        "newTimeStamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "dt_hist": [
+            [
+                "_0e",
+                "_time_stamp"
+            ],
+            0
+        ],
+        "paramsUpdated": [
+            [
+                "_parameter_update_sub_updated"
+            ],
+            0
+        ],
+        "_landUpdated": [
+            [
+                "land_rate",
+                "_time_stamp",
+                "_time_last_land",
+                "_0e6f",
+                "landed"
+            ],
+            0
+        ],
+        "z_stddev_ok": [
+            [
+                "sqrtf_m_p",
+                "sqrtf_x_z",
+                "_param_lpe_z_pub_get"
+            ],
+            0
+        ],
+        "_lastArmedState": [
+            [
+                "armed_state"
+            ],
+            0
+        ],
+        "_sonarUpdated": [
+            [
+                "nullptr",
+                "continue",
+                "i",
+                "_dist_subs",
+                "_sub_sonar_update"
+            ],
+            2
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time",
+                "continue"
+            ],
+            0
+        ],
+        "armedState": [
+            [
+                "_sub_armed_get_armed"
+            ],
+            0
+        ],
+        "_gpsUpdated": [
+            [
+                "fuse_gps",
+                "_sub_gps_update",
+                "_param_lpe_fusion_get"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "vehicle_command_param6"
+            ],
+            0
+        ],
+        "_global_local_alt0": [
+            [
+                "vehicle_command_param7"
+            ],
+            1
+        ],
+        "_time_origin": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "_timeStampLastBaro": [
+            [
+                "_sub_airdata_get_timestamp"
+            ],
+            0
+        ],
+        "_flowUpdated": [
+            [
+                "_sub_flow_update",
+                "fuse_flow",
+                "_param_lpe_fusion_get"
+            ],
+            0
+        ]
+    },
+    "landed": {
+        "disarmed_not_falling": [
+            [
+                "_sub_armed_get_armed",
+                "_sub_land_get_freefall"
+            ],
+            0
+        ]
+    },
+    "publishLocalPos": {
+        ".z_valid": [
+            [
+                "_estimator_initialized",
+                "est_z"
+            ],
+            0
+        ],
+        ".v_xy_valid": [
+            [
+                "est_xy",
+                "_estimator_initialized"
+            ],
+            0
+        ],
+        ".heading": [
+            [
+                "eulerf__sub_att_get_q",
+                "_psi",
+                "eulerf_quatf"
+            ],
+            1
+        ],
+        ".epv": [
+            [
+                "epv_thresh",
+                "sqrtf_m_p",
+                "sqrtf_x_z"
+            ],
+            1
+        ],
+        ".vxy_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        ".y": [
+            [
+                "x_lp_x_y"
+            ],
+            0
+        ],
+        ".vx": [
+            [
+                "x_lp_x_vx"
+            ],
+            0
+        ],
+        ".ref_lat": [
+            [
+                "_map_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        ".ref_timestamp": [
+            [
+                "_time_origin"
+            ],
+            0
+        ],
+        ".eph": [
+            [
+                "sqrtf_x_x",
+                "sqrtf_m_p",
+                "eph_thresh",
+                "m_p_x_y"
+            ],
+            1
+        ],
+        ".vz_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        ".z_global": [
+            [
+                "sensor_baro",
+                "_alt_origin_global",
+                "_sensor_timeout"
+            ],
+            0
+        ],
+        ".hagl_max_xy": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        ".hagl_max_z": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        ".ay": [
+            [
+                "_u_u_ay"
+            ],
+            0
+        ],
+        ".vz": [
+            [
+                "x_lp_x_vz"
+            ],
+            0
+        ],
+        ".ref_lon": [
+            [
+                "_map_ref_get_projection_reference_lon"
+            ],
+            0
+        ],
+        ".unaided_heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        ".hagl_min": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        ".vy": [
+            [
+                "x_lp_x_vy"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".dist_bottom_valid": [
+            [
+                "_estimator_initialized",
+                "est_z"
+            ],
+            0
+        ],
+        ".xy_global": [
+            [
+                "est_xy",
+                "_estimator_initialized"
+            ],
+            0
+        ],
+        ".v_z_valid": [
+            [
+                "_estimator_initialized",
+                "est_z"
+            ],
+            0
+        ],
+        ".evh": [
+            [
+                "sqrtf_m_p",
+                "m_p_x_vy",
+                "sqrtf_x_vx"
+            ],
+            1
+        ],
+        ".x": [
+            [
+                "x_lp_x_x"
+            ],
+            0
+        ],
+        "xLP": [
+            [
+                "_x_low_pass_get_state"
+            ],
+            0
+        ],
+        ".z": [
+            [
+                "_agl_low_pass_get_state",
+                "x_lp_x_z"
+            ],
+            0
+        ],
+        ".ref_alt": [
+            [
+                "_alt_origin"
+            ],
+            0
+        ],
+        ".evv": [
+            [
+                "sqrtf_m_p",
+                "sqrtf_x_vz"
+            ],
+            1
+        ],
+        ".heading_good_for_control": [
+            [
+                "px4_isfinite_heading"
+            ],
+            0
+        ],
+        ".z_deriv": [
+            [
+                "x_lp_x_vz"
+            ],
+            0
+        ],
+        ".timestamp_sample": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        ".dist_bottom": [
+            [
+                "_agl_low_pass_get_state"
+            ],
+            0
+        ],
+        ".az": [
+            [
+                "_u_u_az"
+            ],
+            0
+        ],
+        ".xy_valid": [
+            [
+                "est_xy",
+                "_estimator_initialized"
+            ],
+            0
+        ],
+        ".ax": [
+            [
+                "_u_u_ax"
+            ],
+            0
+        ]
+    },
+    "publishOdom": {
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".pose_frame": [
+            [
+                "pose_frame_ned"
+            ],
+            0
+        ],
+        ".velocity_frame": [
+            [
+                "velocity_frame_frd"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "quatf__sub_att_get_q"
+            ],
+            0
+        ],
+        "POS_URT_SIZE": [
+            [
+                "sizeof__pub_odom_get_position_variance"
+            ],
+            0
+        ],
+        ".timestamp_sample": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "VEL_URT_SIZE": [
+            [
+                "sizeof__pub_odom_get_velocity_variance"
+            ],
+            0
+        ],
+        "xLP": [
+            [
+                "_x_low_pass_get_state"
+            ],
+            0
+        ]
+    },
+    "publishEstimatorStatus": {
+        ".pos_horiz_accuracy": [
+            [
+                "_pub_gpos_get_eph"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".pos_vert_accuracy": [
+            [
+                "_pub_gpos_get_epv"
+            ],
+            0
+        ],
+        ".timeout_flags": [
+            [
+                "_sensor_timeout"
+            ],
+            0
+        ],
+        ".health_flags": [
+            [
+                "_sensor_fault"
+            ],
+            0
+        ],
+        ".n_states": [
+            [
+                "n_x"
+            ],
+            0
+        ],
+        ".timestamp_sample": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ]
+    },
+    "publishGlobalPos": {
+        ".lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        ".eph": [
+            [
+                "sqrtf_x_x",
+                "sqrtf_m_p",
+                "eph_thresh",
+                "m_p_x_y"
+            ],
+            1
+        ],
+        ".alt": [
+            [
+                "x_lp_x_z",
+                "_alt_origin"
+            ],
+            1
+        ],
+        ".lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        ".timestamp_sample": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "xLP": [
+            [
+                "_x_low_pass_get_state"
+            ],
+            0
+        ],
+        ".dead_reckoning": [
+            [
+                "_estimator_initialized",
+                "est_xy"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".epv": [
+            [
+                "sqrtf_m_p",
+                "sqrtf_x_z",
+                "epv_thresh"
+            ],
+            1
+        ],
+        "evh": [
+            [
+                "sqrtf_m_p",
+                "m_p_x_vy",
+                "sqrtf_x_vx"
+            ],
+            0
+        ],
+        ".terrain_alt_valid": [
+            [
+                "_estimator_initialized",
+                "est_tz"
+            ],
+            0
+        ],
+        ".terrain_alt": [
+            [
+                "x_lp_x_tz",
+                "_alt_origin"
+            ],
+            0
+        ]
+    },
+    "updateSSParams": {
+        "pn_v_sq": [
+            [
+                "_param_lpe_pn_v_get"
+            ],
+            0
+        ],
+        "pn_p_sq": [
+            [
+                "_param_lpe_pn_p_get"
+            ],
+            0
+        ],
+        "pn_b_sq": [
+            [
+                "_param_lpe_pn_b_get"
+            ],
+            0
+        ]
+    },
+    "predict": {
+        "bz": [
+            [
+                "dx_x_bz",
+                "abs_bz",
+                "_x_x_bz",
+                "bias_max"
+            ],
+            0
+        ],
+        "bx": [
+            [
+                "abs_bx",
+                "dx_x_bx",
+                "bias_max",
+                "_x_x_bx"
+            ],
+            0
+        ],
+        "_x": [
+            [
+                "dynamics__u",
+                "dynamics_k2",
+                "dynamics__x",
+                "dynamics_h",
+                "dynamics__u",
+                "dynamics__x",
+                "dynamics__u",
+                "dynamics_k1",
+                "dynamics__x",
+                "dynamics_h",
+                "get_dt",
+                "dynamics__u",
+                "dynamics_k3",
+                "dynamics__x",
+                "dynamics_h"
+            ],
+            6
+        ],
+        "_R_att": [
+            [
+                "dcm",
+                "quatf__sub_att_get_q",
+                "float"
+            ],
+            0
+        ],
+        "m_P": [
+            [
+                "d_p"
+            ],
+            0
+        ],
+        "_u": [
+            [
+                "_r_att",
+                "a"
+            ],
+            0
+        ],
+        "by": [
+            [
+                "_x_x_by",
+                "abs_by",
+                "bias_max",
+                "dx_x_by"
+            ],
+            0
+        ]
+    },
+    "getDelayPeriods": {
+        "periods": [
+            [
+                "i_hist"
+            ],
+            0
+        ],
+        "t_delay": [
+            [
+                "_time_stamp",
+                "_0e"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "block_local_position_estimator"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

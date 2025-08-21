@@ -1,0 +1,358 @@
+{
+    "reset": {
+        "_state.j": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_state_init": [
+            [
+                "_state"
+            ],
+            0
+        ],
+        "_state.a": [
+            [
+                "accel"
+            ],
+            0
+        ],
+        "_state.v": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "_state.x": [
+            [
+                "pos"
+            ],
+            0
+        ]
+    },
+    "saturateT1ForAccel": {
+        "T1_new": [
+            [
+                "t1",
+                "a_max",
+                "j_max",
+                "a0"
+            ],
+            0
+        ],
+        "accel_T1": [
+            [
+                "t1",
+                "j_max",
+                "a0"
+            ],
+            0
+        ]
+    },
+    "computeT1": {
+        "T3_minus": [
+            [
+                "j_max",
+                "t1_minus",
+                "a0"
+            ],
+            0
+        ],
+        "T1_plus": [
+            [
+                "sqrtf_delta",
+                "j_max",
+                "max_sqrt_delta",
+                "max_b",
+                "a0",
+                "_f",
+                "_f",
+                "j_max"
+            ],
+            3
+        ],
+        "T1_minus": [
+            [
+                "sqrtf_delta",
+                "j_max",
+                "max_sqrt_delta",
+                "max_b",
+                "a0",
+                "_f",
+                "_f",
+                "j_max"
+            ],
+            3
+        ],
+        "T1": [
+            [
+                "_f",
+                "saturate_t1for_accel_a_max",
+                "saturate_t1for_accel_t1",
+                "saturate_t1for_accel_j_max",
+                "t1_plus",
+                "t1_minus",
+                "saturate_t1for_accel_a0"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "j_max",
+                "t123",
+                "a0"
+            ],
+            0
+        ],
+        "T3_plus": [
+            [
+                "j_max",
+                "t1_plus",
+                "a0"
+            ],
+            0
+        ],
+        "delta": [
+            [
+                "v3",
+                "j_max",
+                "t123",
+                "a0",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "computeT2": {
+        "T2": [
+            [
+                "t123",
+                "_f",
+                "j_max",
+                "t1",
+                "t1",
+                "j_max",
+                "a0",
+                "v3",
+                "a0",
+                "t3"
+            ],
+            1
+        ]
+    },
+    "computeT3": {
+        "T3": [
+            [
+                "a0",
+                "j_max",
+                "t1"
+            ],
+            0
+        ]
+    },
+    "updateDurations": {
+        "_direction": [
+            [
+                "compute_direction"
+            ],
+            0
+        ],
+        "_local_time": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_state_init": [
+            [
+                "_state"
+            ],
+            0
+        ],
+        "_vel_sp": [
+            [
+                "constrain__max_vel",
+                "constrain_vel_setpoint"
+            ],
+            0
+        ]
+    },
+    "computeDirection": {
+        "direction": [
+            [
+                "sign__vel_sp",
+                "sign__state_a",
+                "sign_vel_zero_acc"
+            ],
+            0
+        ],
+        "vel_zero_acc": [
+            [
+                "compute_vel_at_zero_acc"
+            ],
+            0
+        ]
+    },
+    "computeVelAtZeroAcc": {
+        "vel_zero_acc": [
+            [
+                "_state_a",
+                "_max_jerk",
+                "sign__state_a",
+                "_state_a",
+                "_max_jerk",
+                "sign__state_a",
+                "_state_v"
+            ],
+            2
+        ]
+    },
+    "updateDurationsMinimizeTotalTime": {
+        "jerk_max_T1": [
+            [
+                "_direction",
+                "_max_jerk"
+            ],
+            0
+        ],
+        "delta_v": [
+            [
+                "_vel_sp",
+                "_state_v"
+            ],
+            0
+        ],
+        "_T3": [
+            [
+                "compute_t3__state_a",
+                "compute_t3__t1",
+                "compute_t3_jerk_max_t1"
+            ],
+            0
+        ],
+        "_T2": [
+            [
+                "compute_t2__t1",
+                "compute_t2__state_a",
+                "compute_t2_delta_v",
+                "compute_t2__t3",
+                "compute_t2_jerk_max_t1"
+            ],
+            0
+        ],
+        "_T1": [
+            [
+                "_t2",
+                "_f",
+                "compute_t1_delta_v",
+                "_t3",
+                "compute_t1__max_accel",
+                "compute_t1_jerk_max_t1",
+                "compute_t1__state_a"
+            ],
+            0
+        ]
+    },
+    "updateTraj": {
+        "t_remain": [
+            [
+                "min__t1",
+                "min_t_remain",
+                "min__t2",
+                "min_t_remain",
+                "min__t3",
+                "min_t_remain",
+                "time_stretch",
+                "dt"
+            ],
+            4
+        ],
+        "_state": [
+            [
+                "evaluate_poly_t2",
+                "evaluate_poly__direction",
+                "evaluate_poly__state_x",
+                "evaluate_poly__state_a",
+                "evaluate_poly__state_init_x",
+                "evaluate_poly_t3",
+                "evaluate_poly__f",
+                "evaluate_poly__max_jerk",
+                "evaluate_poly__state_init_v",
+                "evaluate_poly_t_remain",
+                "evaluate_poly__state_v",
+                "evaluate_poly_t1",
+                "evaluate_poly__state_init_a"
+            ],
+            0
+        ]
+    },
+    "timeSynchronization": {
+        "T123": [
+            [
+                "traj",
+                "i",
+                "_get_total_time"
+            ],
+            0
+        ],
+        "desired_time": [
+            [
+                "_f",
+                "t123"
+            ],
+            0
+        ],
+        "longest_traj_index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "updateDurationsGivenTotalTime": {
+        "jerk_max_T1": [
+            [
+                "_max_jerk",
+                "_direction"
+            ],
+            0
+        ],
+        "_T3": [
+            [
+                "compute_t3__state_a",
+                "compute_t3__t1",
+                "compute_t3_jerk_max_t1"
+            ],
+            0
+        ],
+        "delta_v": [
+            [
+                "_state_v",
+                "_vel_sp"
+            ],
+            0
+        ],
+        "_T2": [
+            [
+                "compute_t2__t1",
+                "compute_t2_t123",
+                "compute_t2__t3"
+            ],
+            0
+        ],
+        "_T1": [
+            [
+                "compute_t1_t123",
+                "compute_t1__state_a",
+                "_t3",
+                "compute_t1__max_accel",
+                "compute_t1_delta_v",
+                "_f",
+                "compute_t1_jerk_max_t1",
+                "_t2"
+            ],
+            0
+        ]
+    }
+}

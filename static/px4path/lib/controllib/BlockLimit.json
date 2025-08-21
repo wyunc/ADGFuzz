@@ -1,0 +1,11 @@
+{
+    "update": {
+        "input": [
+            [
+                "_max_get",
+                "get_min"
+            ],
+            0
+        ]
+    }
+}

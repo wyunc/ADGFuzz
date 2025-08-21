@@ -1,0 +1,147 @@
+{
+    "parameters_updated": {
+        "rate_k": [
+            [
+                "_param_mc_yawrate_k_get",
+                "_param_mc_pitchrate_k_get",
+                "vector3f__param_mc_rollrate_k_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_battery_status_scale": [
+            [
+                "battery_status_scale"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "constrain__last_run",
+                "1e",
+                "constrain_now"
+            ],
+            0
+        ],
+        "vehicle_thrust_setpoint.timestamp_sample": [
+            [
+                "angular_velocity_timestamp_sample"
+            ],
+            0
+        ],
+        "torque_setpoint": [
+            [
+                "_rate_control_update__maybe_landed",
+                "_rate_control_update__rates_setpoint",
+                "_rate_control_update__landed",
+                "_rate_control_update_dt",
+                "_rate_control_update_angular_accel",
+                "_rate_control_update_rates"
+            ],
+            0
+        ],
+        "vehicle_rates_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_rates_setpoint.yaw": [
+            [
+                "man_rate_sp_emult__acro_rate_max"
+            ],
+            1
+        ],
+        "vehicle_thrust_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "rate_ctrl_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_torque_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_thrust_setpoint": [
+            [
+                "vector3f_vehicle_rates_setpoint_thrust_body"
+            ],
+            0
+        ],
+        "_maybe_landed": [
+            [
+                "vehicle_land_detected_maybe_landed"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "angular_velocity_timestamp_sample"
+            ],
+            1
+        ],
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ],
+        "vehicle_rates_setpoint.roll": [
+            [
+                "man_rate_sp_emult__acro_rate_max"
+            ],
+            1
+        ],
+        "vehicle_rates_setpoint.pitch": [
+            [
+                "man_rate_sp_emult__acro_rate_max"
+            ],
+            1
+        ],
+        "vehicle_torque_setpoint.timestamp_sample": [
+            [
+                "angular_velocity_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "updateActuatorControlsStatus": {
+        "_energy_integration_time": [
+            [
+                "dt",
+                "_f"
+            ],
+            0
+        ],
+        "status.timestamp": [
+            [
+                "vehicle_torque_setpoint_timestamp"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "multicopter_rate_control_vtol",
+                "new"
+            ],
+            0
+        ]
+    }
+}

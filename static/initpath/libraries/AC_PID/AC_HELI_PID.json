@@ -1,0 +1,12 @@
+{
+    "update_leaky_i": {
+        "_integrator": [
+            [
+                "float",
+                "_leak_min",
+                "leak_rate"
+            ],
+            0
+        ]
+    }
+}

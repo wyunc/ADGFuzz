@@ -1,0 +1,549 @@
+{
+    "handleCANInterrupt": {
+        "iface_index": [
+            [
+                "phys_index",
+                "can_iface_to_idx"
+            ],
+            0
+        ],
+        "timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "IR": [
+            [
+                "fdcan_ir_bo",
+                "fdcan_ir_rf1f",
+                "fdcan_ir_tc",
+                "fdcan_ir_rf1n",
+                "fdcan_ir_rf0f",
+                "fdcan_ir_tefn",
+                "fdcan_ir_rf0n"
+            ],
+            0
+        ]
+    },
+    "computeTimings": {
+        "prescaler": [
+            [
+                "uint8_t_max_quanta_per_bit",
+                "stm32_fdcanclk",
+                "target_bitrate"
+            ],
+            3
+        ],
+        "max_quanta_per_bit": [
+            [
+                "target_bitrate"
+            ],
+            0
+        ],
+        "out_timings.bs2": [
+            [
+                "uint8_t_solution_bs2"
+            ],
+            0
+        ],
+        "out_timings.sample_point_permill": [
+            [
+                "solution_sample_point_permill"
+            ],
+            0
+        ],
+        "out_timings.prescaler": [
+            [
+                "uint16_t_prescaler"
+            ],
+            0
+        ],
+        "solution": [
+            [
+                "bs_pair_uint8_t",
+                "bs_pair_bs1_bs2_sum"
+            ],
+            0
+        ],
+        "out_timings.bs1": [
+            [
+                "uint8_t_solution_bs1"
+            ],
+            0
+        ]
+    },
+    "computeFDTimings": {
+        "out_timings.sample_point_permill": [
+            [
+                "t_sample_point_pct"
+            ],
+            0
+        ],
+        "out_timings.sjw": [
+            [
+                "t_sjw"
+            ],
+            0
+        ],
+        "out_timings.bs1": [
+            [
+                "t_bs1"
+            ],
+            0
+        ],
+        "out_timings.prescaler": [
+            [
+                "t_prescaler"
+            ],
+            0
+        ],
+        "out_timings.bs2": [
+            [
+                "t_bs2"
+            ],
+            0
+        ]
+    },
+    "configureFilters": {
+        "cfg": [
+            [
+                "i",
+                "filter_configs"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "mask_ext_id",
+                "cfg_mask",
+                "0x7f"
+            ],
+            0
+        ],
+        "FDCANMessageRAMOffset_": [
+            [
+                "num_stdid",
+                "num_stdid"
+            ],
+            1
+        ],
+        "filter_ptr": [
+            [
+                "message_ram__extended_filter_sa",
+                "message_ram__standard_filter_sa",
+                "uint32_t"
+            ],
+            0
+        ],
+        "total_available_list_size": [
+            [
+                "max_filter_list_size",
+                "num_stdid"
+            ],
+            0
+        ],
+        "while_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "MessageRam_.EndAddress": [
+            [
+                "4u",
+                "fdcan_message_ram_offset_",
+                "sramcan_base"
+            ],
+            0
+        ],
+        "MessageRam_.ExtendedFilterSA": [
+            [
+                "4u",
+                "fdcan_message_ram_offset_",
+                "sramcan_base"
+            ],
+            0
+        ],
+        "XIDFC": [
+            [
+                "num_stdid",
+                "fdcan_message_ram_offset_"
+            ],
+            1
+        ],
+        "MessageRam_.StandardFilterSA": [
+            [
+                "4u",
+                "fdcan_message_ram_offset_",
+                "sramcan_base"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "mask_ext_id",
+                "mask_std_id",
+                "cfg_id"
+            ],
+            0
+        ],
+        "SIDFC": [
+            [
+                "fdcan_message_ram_offset_",
+                "num_stdid"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ILS": [
+            [
+                "fdcan_ils_smsg",
+                "fdcan_ils_tcl",
+                "fdcan_ils_perr",
+                "fdcan_ils_boe"
+            ],
+            0
+        ],
+        "IR": [
+            [
+                "0x3fffffff"
+            ],
+            0
+        ],
+        "TXBTIE": [
+            [
+                "0x7",
+                "0x_ffffffff"
+            ],
+            0
+        ],
+        "TDCR": [
+            [
+                "fdcan_tdcr_tdco_pos"
+            ],
+            0
+        ],
+        "_fdbitrate": [
+            [
+                "fdbitrate"
+            ],
+            0
+        ],
+        "ILE": [
+            [
+                "0x3"
+            ],
+            0
+        ],
+        "mode_": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "_bitrate": [
+            [
+                "bitrate"
+            ],
+            0
+        ],
+        "while_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "bitrate_": [
+            [
+                "bitrate"
+            ],
+            0
+        ]
+    },
+    "setupMessageRam": {
+        "MessageRam_.RxFIFO1SA": [
+            [
+                "can_interfaces",
+                "self_index_",
+                "sramcan_base",
+                "fdcan_messageram_stride",
+                "fdcan_rxfifo1_offset"
+            ],
+            1
+        ],
+        "MessageRam_.EndAddress": [
+            [
+                "sramcan_base",
+                "4u",
+                "fdcan_message_ram_offset_"
+            ],
+            0
+        ],
+        "MessageRam_.TxFIFOQSA": [
+            [
+                "fdcan_txfifo_offset",
+                "can_interfaces",
+                "self_index_",
+                "sramcan_base",
+                "fdcan_messageram_stride",
+                "sramcan_base",
+                "4u",
+                "fdcan_message_ram_offset_"
+            ],
+            1
+        ],
+        "MessageRam_.StandardFilterSA": [
+            [
+                "can_interfaces",
+                "self_index_",
+                "sramcan_base",
+                "fdcan_messageram_stride"
+            ],
+            1
+        ],
+        "FDCANMessageRAMOffset_": [
+            [
+                "fdcan_num_rxfifo0_size",
+                "32u",
+                "fdcan_frame_buffer_size",
+                "fdcan_tx_fifo_buffer_size",
+                "64u",
+                "fdcan_frame_buffer_size"
+            ],
+            1
+        ],
+        "RXF0C": [
+            [
+                "fdcan_message_ram_offset_"
+            ],
+            0
+        ],
+        "TXBC": [
+            [
+                "fdcan_num_rxfifo0_size",
+                "32u",
+                "fdcan_frame_buffer_size",
+                "fdcan_tx_fifo_buffer_size",
+                "64u",
+                "fdcan_message_ram_offset_"
+            ],
+            1
+        ],
+        "RXESC": [
+            [
+                "0x777"
+            ],
+            0
+        ],
+        "MessageRam_.RxFIFO0SA": [
+            [
+                "can_interfaces",
+                "self_index_",
+                "sramcan_base",
+                "fdcan_messageram_stride",
+                "fdcan_message_ram_offset_",
+                "sramcan_base",
+                "4u",
+                "fdcan_rxfifo0_offset"
+            ],
+            1
+        ],
+        "MessageRam_.ExtendedFilterSA": [
+            [
+                "fdcan_exfilter_offset",
+                "can_interfaces",
+                "self_index_",
+                "sramcan_base",
+                "fdcan_messageram_stride"
+            ],
+            1
+        ],
+        "TXESC": [
+            [
+                "0x7"
+            ],
+            0
+        ]
+    },
+    "handleTxCompleteInterrupt": {
+        "stats.last_transmit_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "rx_item.flags": [
+            [
+                "loopback"
+            ],
+            0
+        ],
+        "rx_item.frame": [
+            [
+                "pending_tx_",
+                "i",
+                "_frame"
+            ],
+            0
+        ],
+        "rx_item.timestamp_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ]
+    },
+    "readRxFIFO": {
+        "RXF1A": [
+            [
+                "can__rxf0s",
+                "can__rxf1s",
+                "fdcan_rxf1s_f1gi",
+                "fdcan_rxf0s_f0gi"
+            ],
+            1
+        ],
+        "rx_item.timestamp_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "data": [
+            [
+                "uint8_t",
+                "uint32_t",
+                "message_ram__rx_fifo0sa",
+                "message_ram__rx_fifo1sa",
+                "can__rxf0s",
+                "can__rxf1s",
+                "fdcan_rxf1s_f1gi",
+                "fdcan_rxf0s_f0gi",
+                "fdcan_frame_buffer_size"
+            ],
+            2
+        ],
+        "rx_item.frame": [
+            [
+                "frame"
+            ],
+            0
+        ],
+        "frame.dlc": [
+            [
+                "dlc_mask",
+                "uint32_t",
+                "message_ram__rx_fifo0sa",
+                "message_ram__rx_fifo1sa",
+                "can__rxf0s",
+                "can__rxf1s",
+                "fdcan_rxf1s_f1gi",
+                "fdcan_rxf0s_f0gi",
+                "fdcan_frame_buffer_size"
+            ],
+            2
+        ],
+        "frame.id": [
+            [
+                "mask_std_id",
+                "stid_mask",
+                "mask_ext_id",
+                "exid_mask",
+                "uint32_t",
+                "message_ram__rx_fifo0sa",
+                "message_ram__rx_fifo1sa",
+                "can__rxf0s",
+                "can__rxf1s",
+                "fdcan_rxf1s_f1gi",
+                "fdcan_rxf0s_f0gi",
+                "fdcan_frame_buffer_size"
+            ],
+            3
+        ],
+        "RXF0A": [
+            [
+                "can__rxf0s",
+                "can__rxf1s",
+                "fdcan_rxf1s_f1gi",
+                "fdcan_rxf0s_f0gi"
+            ],
+            1
+        ]
+    },
+    "pollErrorFlagsFromISR": {
+        "stats.ecr": [
+            [
+                "can__ecr"
+            ],
+            0
+        ],
+        "cel": [
+            [
+                "can__ecr"
+            ],
+            0
+        ],
+        "TXBCR": [
+            [
+                "i",
+                "_index",
+                "pending_tx_"
+            ],
+            0
+        ]
+    },
+    "set_event_handle": {
+        "sem_handle": [
+            [
+                "handle"
+            ],
+            0
+        ]
+    },
+    "discardTimedOutTxMailboxes": {
+        "TXBCR": [
+            [
+                "i",
+                "_index",
+                "pending_tx_"
+            ],
+            0
+        ]
+    },
+    "checkAvailable": {
+        "write": [
+            [
+                "can_accept_new_tx_frame"
+            ],
+            0
+        ],
+        "read": [
+            [
+                "is_rx_buffer_empty"
+            ],
+            0
+        ]
+    },
+    "select": {
+        "in_read": [
+            [
+                "read"
+            ],
+            0
+        ],
+        "time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "in_write": [
+            [
+                "write"
+            ],
+            0
+        ]
+    }
+}

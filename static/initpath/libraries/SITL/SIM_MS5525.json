@@ -1,0 +1,240 @@
+{
+    "convert_forward": {
+        "dT": [
+            [
+                "q5",
+                "int64_t_prom",
+                "1l",
+                "float_d2"
+            ],
+            0
+        ],
+        "Q1": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "float_d1",
+                "off",
+                "1l",
+                "sens"
+            ],
+            0
+        ],
+        "Temp_C": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "q3",
+                "q1",
+                "1l",
+                "d_t",
+                "int64_t_prom"
+            ],
+            0
+        ],
+        "Q5": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q2": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "P_Pa": [
+            [
+                "_0e",
+                "psi_to_pa",
+                "p"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "q6",
+                "int64_t_prom",
+                "1l",
+                "d_t"
+            ],
+            0
+        ],
+        "Q3": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "q4",
+                "1l",
+                "d_t",
+                "q2",
+                "int64_t_prom"
+            ],
+            0
+        ],
+        "Q4": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q6": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ]
+    },
+    "convert": {
+        "TEMP": [
+            [
+                "temp_c"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "q2",
+                "d_t",
+                "q4",
+                "1l",
+                "int64_t_prom"
+            ],
+            0
+        ],
+        "Q2": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q4": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "d_t",
+                "q3",
+                "q1",
+                "1l",
+                "int64_t_prom"
+            ],
+            0
+        ],
+        "D1": [
+            [
+                "off",
+                "1l",
+                "p",
+                "sens"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "int64_t_prom",
+                "temp",
+                "1l",
+                "q6"
+            ],
+            0
+        ],
+        "Q1": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "_0e",
+                "p_pa",
+                "psi_to_pa"
+            ],
+            0
+        ],
+        "Q6": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q3": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "D2": [
+            [
+                "q5",
+                "d_t",
+                "int64_t_prom",
+                "1l"
+            ],
+            0
+        ],
+        "Q5": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ]
+    },
+    "check_conversion_accuracy": {
+        "p_error": [
+            [
+                "fabs_p_pa",
+                "fabs_f_p_pa"
+            ],
+            0
+        ],
+        "t_error": [
+            [
+                "fabs_f_temp_c",
+                "fabs_temp_c"
+            ],
+            0
+        ]
+    },
+    "get_pressure_temperature_readings": {
+        "Temp_C": [
+            [
+                "get_temperature_c_for_alt_amsl_sim_alt"
+            ],
+            0
+        ],
+        "P_Pa": [
+            [
+                "instance",
+                "sitl_airspeed",
+                "sitl_state_airspeed_raw_pressure",
+                "_offset"
+            ],
+            0
+        ],
+        "sim_alt": [
+            [
+                "rand_float",
+                "sitl_state_altitude"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "init": {
+        "p.state.idx": [
+            [
+                "i",
+                "ap_serialmanager_can_d2_port_1",
+                "_dronecan_get_driver_index",
+                "ap_serialmanager_can_d1_port_1"
+            ],
+            2
+        ],
+        "dronecan": [
+            [
+                "_dronecan"
+            ],
+            0
+        ],
+        "targetted": [
+            [
+                "dronecan_get_canard_iface",
+                "uavcan_tunnel_targetted",
+                "new_nothrow",
+                "publisher"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "i",
+                "ports"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "ptr": [
+            [
+                "p_writebuffer_readptr_avail"
+            ],
+            0
+        ],
+        "pkt.serial_id": [
+            [
+                "p_idx"
+            ],
+            0
+        ],
+        "pkt.options": [
+            [
+                "uavcan_tunnel_targetted_option_lock_port"
+            ],
+            0
+        ],
+        "pkt.target_node": [
+            [
+                "p_node"
+            ],
+            0
+        ],
+        "send_keepalive": [
+            [
+                "p_last_send_ms",
+                "millis"
+            ],
+            1
+        ],
+        "pkt.buffer.len": [
+            [
+                "sizeof_pkt_buffer_data",
+                "avail"
+            ],
+            1
+        ],
+        "p.last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pkt.baudrate": [
+            [
+                "p_baudrate"
+            ],
+            0
+        ],
+        "pkt.protocol.protocol": [
+            [
+                "uavcan_tunnel_protocol_mavlink",
+                "uavcan_tunnel_protocol_mavlink2",
+                "uavcan_tunnel_protocol_gps_generic",
+                "uavcan_tunnel_protocol_undefined"
+            ],
+            0
+        ]
+    },
+    "handle_tunnel_targetted": {
+        "p.last_recv_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "dronecan_get_driver_index",
+                "serial"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "correct_sensor": {
+        "cal_temp": [
+            [
+                "temp_min",
+                "temp_max"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "polynomial_eval_temp_reference",
+                "polynomial_eval_temperature",
+                "polynomial_eval_coeff",
+                "polynomial_eval_cal_temp"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "temp_min",
+                "temp_max"
+            ],
+            0
+        ]
+    },
+    "sitl_apply_accel": {
+        "tmid": [
+            [
+                "temp_min",
+                "temp_max"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "polynomial_eval_tmid",
+                "polynomial_eval_temperature",
+                "polynomial_eval_accel_coeff"
+            ],
+            0
+        ]
+    },
+    "sitl_apply_gyro": {
+        "tmid": [
+            [
+                "temp_min",
+                "temp_max"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "polynomial_eval_gyro_coeff",
+                "polynomial_eval_tmid",
+                "polynomial_eval_temperature"
+            ],
+            0
+        ]
+    },
+    "update_accel_learning": {
+        "learn": [
+            [
+                "learn_this",
+                "new_nothrow",
+                "learn_temperature"
+            ],
+            0
+        ]
+    },
+    "get_persistent_params": {
+        "acc": [
+            [
+                "accel_coeff",
+                "k",
+                "_get"
+            ],
+            0
+        ],
+        "imu": [
+            [
+                "i",
+                "ins_aux_instances",
+                "ins_max_instances",
+                "instance"
+            ],
+            0
+        ],
+        "aoff": [
+            [
+                "i",
+                "params",
+                "_accel_offset_i_get",
+                "__accel_offset_get"
+            ],
+            0
+        ],
+        "gyr": [
+            [
+                "k",
+                "gyro_coeff",
+                "_get"
+            ],
+            0
+        ],
+        "ascl": [
+            [
+                "i",
+                "params",
+                "_accel_scale_i_get",
+                "__accel_scale_get"
+            ],
+            0
+        ]
+    }
+}

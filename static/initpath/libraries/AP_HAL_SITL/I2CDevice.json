@@ -1,0 +1,78 @@
+{
+    "_timer_tick": {
+        "next_usec": [
+            [
+                "ci_period_usec"
+            ],
+            0
+        ],
+        "ci": [
+            [
+                "callbacks"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "_transfer": {
+        ".addr": [
+            [
+                "_address"
+            ],
+            0
+        ],
+        ".len": [
+            [
+                "send_len",
+                "recv_len"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_retries",
+                "_bus_ioctl_i2c_rdwr",
+                "_bus_ioctl_i2c_data"
+            ],
+            1
+        ],
+        ".buf": [
+            [
+                "send",
+                "recv",
+                "const_cast",
+                "uint8_t"
+            ],
+            0
+        ],
+        ".bus": [
+            [
+                "_bus_bus"
+            ],
+            0
+        ],
+        ".flags": [
+            [
+                "i2c_m_rd"
+            ],
+            0
+        ],
+        "i2c_data.nmsgs": [
+            [
+                "nmsgs"
+            ],
+            0
+        ],
+        "i2c_data.msgs": [
+            [
+                "msgs"
+            ],
+            0
+        ]
+    }
+}

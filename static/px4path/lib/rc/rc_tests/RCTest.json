@@ -1,0 +1,212 @@
+{
+    "crsfTest": {
+        "filepath": [
+            [
+                "test_data_path"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "file_buffer": [
+            [
+                "line",
+                "offset"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "crsf_parse_frame_len",
+                "crsf_parse_max_channels",
+                "crsf_parse_num_values",
+                "crsf_parse_rc_values",
+                "crsf_parse_frame",
+                "crsf_parse_now"
+            ],
+            0
+        ]
+    },
+    "ghstTest": {
+        "file_buffer": [
+            [
+                "line",
+                "offset"
+            ],
+            0
+        ],
+        "filepath": [
+            [
+                "test_data_path"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "ghst_parse_frame",
+                "ghst_parse_link_stats",
+                "ghst_parse_now",
+                "ghst_parse_max_channels",
+                "ghst_parse_rc_values",
+                "ghst_parse_num_values",
+                "ghst_parse_frame_len"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "dsmTest": {
+        "max_channels": [
+            [
+                "sizeof_rc_values"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "eof"
+            ],
+            0
+        ],
+        "last_drop": [
+            [
+                "dsm_frame_drops"
+            ],
+            0
+        ]
+    },
+    "sbus2Test": {
+        "last_drop": [
+            [
+                "sbus_frame_drops",
+                "sbus_frame_resets"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "eof"
+            ],
+            0
+        ],
+        "filepath": [
+            [
+                "test_data_path"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "max_channels": [
+            [
+                "sizeof_rc_values"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ]
+    },
+    "st24Test": {
+        "ret": [
+            [
+                "eof"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "x",
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "filepath": [
+            [
+                "test_data_path"
+            ],
+            0
+        ],
+        "last_time": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ]
+    },
+    "sumdTest": {
+        "last_time": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filepath"
+            ],
+            0
+        ],
+        "filepath": [
+            [
+                "test_data_path"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "eof"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "x",
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

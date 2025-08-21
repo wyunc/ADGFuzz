@@ -1,0 +1,17 @@
+{
+    "checkAndReport": {
+        "_last_flight_time_warning_sec": [
+            [
+                "int_remaining_flight_time_sec"
+            ],
+            1
+        ],
+        "floored_remaining_flight_time_min": [
+            [
+                "int",
+                "remaining_flight_time_sec"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "handle_msp": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "distance_cm": [
+            [
+                "pkt_distance_mm"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "distance_cm"
+            ],
+            0
+        ]
+    }
+}

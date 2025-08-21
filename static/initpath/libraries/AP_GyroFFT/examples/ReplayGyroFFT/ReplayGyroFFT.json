@@ -1,0 +1,17 @@
+{
+    "loop": {
+        "elapsed": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ],
+        "last_output_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

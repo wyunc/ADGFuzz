@@ -1,0 +1,608 @@
+{
+    "SelectRngBcnFusion": {
+        "rngBcn.posOffsetNED.x": [
+            [
+                "state_struct_position_x",
+                "rng_bcn_receiver_pos_x"
+            ],
+            0
+        ],
+        "rngBcn.posOffsetNED.y": [
+            [
+                "rng_bcn_receiver_pos_y",
+                "state_struct_position_y"
+            ],
+            0
+        ]
+    },
+    "FuseRngBcn": {
+        "rngPred": [
+            [
+                "delta_pos_ned_length"
+            ],
+            0
+        ],
+        "deltaPosNED": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned",
+                "state_struct_position"
+            ],
+            0
+        ],
+        "R_BCN": [
+            [
+                "sq_rng_bcn_data_delayed_rng_err"
+            ],
+            0
+        ],
+        "report.innovVar": [
+            [
+                "rng_bcn_var_innov"
+            ],
+            0
+        ],
+        "rngBcn.innov": [
+            [
+                "delta_length",
+                "rng_bcn_data_delayed_rng",
+                "rng_pred"
+            ],
+            0
+        ],
+        "report": [
+            [
+                "rng_bcn_data_delayed_beacon_id",
+                "rng_bcn_fusion_report"
+            ],
+            0
+        ],
+        "report.testRatio": [
+            [
+                "rng_bcn_test_ratio"
+            ],
+            0
+        ],
+        "rngBcn.testRatio": [
+            [
+                "sq_rng_bcn_innov",
+                "rng_bcn_var_innov",
+                "sq_ftypefrontend__rng_bcn_innov_gate"
+            ],
+            0
+        ],
+        "report.rng": [
+            [
+                "rng_bcn_data_delayed_rng"
+            ],
+            0
+        ],
+        "rngBcn.varInnov": [
+            [
+                "sqrt_f_t8",
+                "sqrt_f_t8",
+                "p",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "state_struct_position_x",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_z",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "state_struct_position_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "sqrt_f_t8",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_z",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "sqrt_f_t8",
+                "p",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "state_struct_position_x",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "state_struct_position_z",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "r_bcn",
+                "sqrt_f_t8",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "sqrt_f_t8",
+                "p",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "state_struct_position_x",
+                "sqrt_f_t8",
+                "p",
+                "state_struct_position_z",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "state_struct_position_x"
+            ],
+            25
+        ],
+        "stateIndex": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "delta": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned",
+                "state_struct_position"
+            ],
+            0
+        ],
+        "report.beaconPosNED": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "kh",
+                "i",
+                "j",
+                "p"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "state_struct_position_x",
+                "state_struct_position_z",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "state_struct_position_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y"
+            ],
+            12
+        ],
+        "report.innov": [
+            [
+                "rng_bcn_innov"
+            ],
+            0
+        ],
+        "rngBcn.health": [
+            [
+                "bad_im_udata",
+                "rng_bcn_test_ratio"
+            ],
+            0
+        ],
+        "rngBcn.lastPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "t26": [
+            [
+                "rng_bcn_var_innov"
+            ],
+            0
+        ]
+    },
+    "FuseRngBcnStatic": {
+        "refPosNED.y": [
+            [
+                "rng_bcn_receiver_pos_y"
+            ],
+            0
+        ],
+        "report.innovVar": [
+            [
+                "rng_bcn_var_innov"
+            ],
+            0
+        ],
+        "rngBcn.posSum": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned"
+            ],
+            0
+        ],
+        "rngBcn.health": [
+            [
+                "rng_bcn_test_ratio",
+                "rng_bcn_alignment_completed",
+                "bad_im_udata"
+            ],
+            0
+        ],
+        "rngBcn.lastIndex": [
+            [
+                "rng_bcn_data_delayed_beacon_id"
+            ],
+            0
+        ],
+        "rngBcn.receiverPos.x": [
+            [
+                "rng_bcn_innov",
+                "k_rng",
+                "rng_bcn_pos_sum_x",
+                "temp_var"
+            ],
+            0
+        ],
+        "bcnMidPosD": [
+            [
+                "rng_bcn_min_pos_d",
+                "rng_bcn_max_pos_d"
+            ],
+            0
+        ],
+        "report.innov": [
+            [
+                "rng_bcn_innov"
+            ],
+            0
+        ],
+        "rngBcn.minPosD": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned_z"
+            ],
+            0
+        ],
+        "rngBcn.receiverPos.y": [
+            [
+                "rng_bcn_innov",
+                "k_rng",
+                "temp_var",
+                "rng_bcn_pos_sum_y"
+            ],
+            0
+        ],
+        "R_RNG": [
+            [
+                "sq_rng_bcn_data_delayed_rng_err"
+            ],
+            0
+        ],
+        "rngBcn.testRatio": [
+            [
+                "sq_ftypefrontend__rng_bcn_innov_gate",
+                "sq_rng_bcn_innov",
+                "rng_bcn_var_innov"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "rng_bcn_receiver_pos_cov",
+                "kh",
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "report.testRatio": [
+            [
+                "rng_bcn_test_ratio"
+            ],
+            0
+        ],
+        "rngBcn.innov": [
+            [
+                "rng_bcn_data_delayed_rng",
+                "delta_pos_ned_length"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "rng_bcn_receiver_pos_cov",
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "report.beaconPosNED": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned"
+            ],
+            0
+        ],
+        "rngBcn.posDownOffsetMin": [
+            [
+                "receiver_pos_down_max",
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "refPosNED.z": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "rngBcn.maxPosD": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned_z"
+            ],
+            0
+        ],
+        "refPosNED.x": [
+            [
+                "rng_bcn_receiver_pos_x"
+            ],
+            0
+        ],
+        "rngBcn.receiverPos.z": [
+            [
+                "rng_bcn_innov",
+                "k_rng"
+            ],
+            0
+        ],
+        "deltaPosNED": [
+            [
+                "rng_bcn_receiver_pos",
+                "rng_bcn_data_delayed_beacon_pos_ned"
+            ],
+            0
+        ],
+        "rngBcn.posDownOffsetMax": [
+            [
+                "state_struct_position_z",
+                "receiver_pos_down_min"
+            ],
+            0
+        ],
+        "tempVar": [
+            [
+                "ftype",
+                "rng_bcn_num_meas"
+            ],
+            0
+        ],
+        "t35": [
+            [
+                "rng_bcn_var_innov"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "rng_bcn_receiver_pos_y",
+                "rng_bcn_pos_offset_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_receiver_pos_x",
+                "rng_bcn_data_delayed_beacon_pos_ned_x"
+            ],
+            6
+        ],
+        "deltaPosNED.z": [
+            [
+                "rng_bcn_pos_offset_ned_z"
+            ],
+            0
+        ],
+        "rngBcn.sum": [
+            [
+                "rng_bcn_data_delayed_rng"
+            ],
+            0
+        ],
+        "rngBcn.varInnov": [
+            [
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_receiver_pos_cov",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "rng_bcn_receiver_pos_x",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "rng_bcn_receiver_pos_y",
+                "sqrt_f_t8",
+                "sqrt_f_t8",
+                "r_rng",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "rng_bcn_receiver_pos_x",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "rng_bcn_receiver_pos_x",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "rng_bcn_receiver_pos_y",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_receiver_pos_cov",
+                "sqrt_f_t8",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "rng_bcn_receiver_pos_x",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_receiver_pos_cov",
+                "sqrt_f_t8",
+                "rng_bcn_receiver_pos_cov",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "rng_bcn_receiver_pos_y",
+                "sqrt_f_t8",
+                "rng_bcn_data_delayed_beacon_pos_ned_y",
+                "rng_bcn_receiver_pos_y",
+                "sqrt_f_t8"
+            ],
+            25
+        ],
+        "report": [
+            [
+                "rng_bcn_fusion_report",
+                "rng_bcn_data_delayed_beacon_id"
+            ],
+            0
+        ],
+        "receiverPosDownMin": [
+            [
+                "bcn_mid_pos_d",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_receiver_pos_z"
+            ],
+            1
+        ],
+        "receiverPosDownMax": [
+            [
+                "bcn_mid_pos_d",
+                "rng_bcn_receiver_pos_z",
+                "rng_bcn_receiver_pos_z"
+            ],
+            1
+        ],
+        "report.rng": [
+            [
+                "rng_bcn_data_delayed_rng"
+            ],
+            0
+        ]
+    },
+    "CalcRangeBeaconPosDownOffset": {
+        "rngBcn.dataDelayed.beacon_posNED.z": [
+            [
+                "rng_bcn_pos_offset_ned_z"
+            ],
+            0
+        ],
+        "bcnMidPosD": [
+            [
+                "rng_bcn_min_pos_d",
+                "rng_bcn_max_pos_d"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "rng_bcn_pos_down_offset_min",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_pos_down_offset_max",
+                "vehicle_pos_ned_z",
+                "rng_bcn_data_delayed_beacon_pos_ned_x",
+                "vehicle_pos_ned_x",
+                "vehicle_pos_ned_y",
+                "rng_bcn_data_delayed_beacon_pos_ned_y"
+            ],
+            6
+        ],
+        "rngBcn.posOffsetMinVar": [
+            [
+                "obs_deriv",
+                "obs_deriv",
+                "rng_bcn_pos_offset_max_var",
+                "innov_var",
+                "rng_bcn_pos_offset_min_var",
+                "state_noise_var",
+                "rng_bcn_pos_offset_min_var"
+            ],
+            1
+        ],
+        "stateChange": [
+            [
+                "rng_bcn_data_delayed_rng",
+                "sqrt_f_t8",
+                "obs_deriv",
+                "rng_bcn_pos_offset_max_var",
+                "innov_var",
+                "rng_bcn_pos_offset_min_var"
+            ],
+            2
+        ],
+        "obsDeriv": [
+            [
+                "rng_bcn_pos_down_offset_min",
+                "rng_bcn_data_delayed_beacon_pos_ned_z",
+                "rng_bcn_pos_down_offset_max",
+                "vehicle_pos_ned_z",
+                "sqrt_f_t8"
+            ],
+            2
+        ],
+        "rngBcn.minOffsetStateChangeFilt": [
+            [
+                "fmin_f_filt_alpha",
+                "rng_bcn_min_offset_state_change_filt",
+                "fmin_f_fabs_f",
+                "fmin_f_state_change",
+                "filt_alpha"
+            ],
+            0
+        ],
+        "rngBcn.posOffsetNED.z": [
+            [
+                "rng_bcn_pos_down_offset_min",
+                "rng_bcn_pos_down_offset_max"
+            ],
+            0
+        ],
+        "rngBcn.maxOffsetStateChangeFilt": [
+            [
+                "fmin_f_filt_alpha",
+                "rng_bcn_max_offset_state_change_filt",
+                "fmin_f_fabs_f",
+                "fmin_f_state_change",
+                "filt_alpha"
+            ],
+            0
+        ],
+        "rngBcn.posDownOffsetMax": [
+            [
+                "bcn_mid_pos_d",
+                "rng_bcn_pos_down_offset_max",
+                "state_change",
+                "vehicle_pos_ned_z"
+            ],
+            0
+        ],
+        "rngBcn.posDownOffsetMin": [
+            [
+                "rng_bcn_pos_down_offset_min",
+                "bcn_mid_pos_d",
+                "state_change",
+                "vehicle_pos_ned_z"
+            ],
+            0
+        ],
+        "rngBcn.posOffsetMaxVar": [
+            [
+                "obs_deriv",
+                "rng_bcn_pos_offset_max_var",
+                "state_noise_var"
+            ],
+            0
+        ],
+        "innovVar": [
+            [
+                "obs_deriv",
+                "rng_bcn_pos_offset_max_var",
+                "innov_var",
+                "obs_var",
+                "rng_bcn_pos_offset_min_var"
+            ],
+            0
+        ]
+    }
+}

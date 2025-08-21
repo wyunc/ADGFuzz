@@ -1,0 +1,18 @@
+{
+    "runConvergenceScenario": {
+        "gps_heading": [
+            [
+                "wrap_pi__ekf_wrapper_get_yaw_angle"
+            ],
+            0
+        ]
+    },
+    "checkConvergence": {
+        "yaw_est": [
+            [
+                "_ekf_wrapper_get_yaw_angle"
+            ],
+            0
+        ]
+    }
+}

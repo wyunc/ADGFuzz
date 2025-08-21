@@ -1,0 +1,32 @@
+{
+    "open": {
+        "_last_bind_warning": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "sock": [
+            [
+                "listener_accept"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "set_blocking": {
+        "_blocking": [
+            [
+                "blocking"
+            ],
+            0
+        ]
+    }
+}

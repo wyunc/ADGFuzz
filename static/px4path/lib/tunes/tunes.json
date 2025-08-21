@@ -1,0 +1,88 @@
+{
+    "reset": {
+        "_tempo": [
+            [
+                "_default_tempo"
+            ],
+            0
+        ],
+        "_octave": [
+            [
+                "_default_octave"
+            ],
+            0
+        ],
+        "_note_length": [
+            [
+                "_default_note_length"
+            ],
+            0
+        ],
+        "_next_tune": [
+            [
+                "_tune_start_ptr",
+                "nullptr",
+                "nullptr"
+            ],
+            1
+        ],
+        "_note_mode": [
+            [
+                "_default_note_mode"
+            ],
+            0
+        ]
+    },
+    "set_string": {
+        "_next_tune": [
+            [
+                "string"
+            ],
+            1
+        ],
+        "_tune_start_ptr": [
+            [
+                "string"
+            ],
+            0
+        ],
+        "_volume": [
+            [
+                "volume",
+                "volume_level_max"
+            ],
+            0
+        ]
+    },
+    "note_duration": {
+        "note_period": [
+            [
+                "silence",
+                "dot_extension",
+                "_tempo",
+                "beat_time_conversion",
+                "note_length"
+            ],
+            1
+        ]
+    },
+    "rest_duration": {
+        "rest_period": [
+            [
+                "beat_time_conversion",
+                "_tempo",
+                "dot_extension",
+                "rest_length"
+            ],
+            1
+        ]
+    },
+    "next_number": {
+        "number": [
+            [
+                "next_char"
+            ],
+            1
+        ]
+    }
+}

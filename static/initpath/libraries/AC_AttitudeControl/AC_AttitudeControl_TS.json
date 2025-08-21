@@ -1,0 +1,72 @@
+{
+    "relax_attitude_controllers": {
+        "_attitude_ang_error": [
+            [
+                "current_attitude_inverse",
+                "current_attitude",
+                "pitch_rotation"
+            ],
+            1
+        ],
+        "_ang_vel_target": [
+            [
+                "_ahrs_get_gyro"
+            ],
+            0
+        ],
+        "_ang_vel_body.z": [
+            [
+                "_ahrs_get_gyro_z"
+            ],
+            0
+        ],
+        "_ang_vel_body.x": [
+            [
+                "_ahrs_get_gyro_x"
+            ],
+            0
+        ]
+    },
+    "input_euler_rate_yaw_euler_angle_pitch_bf_roll": {
+        "euler_pitch": [
+            [
+                "radians_euler_pitch_cd"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "fabsf_sinf",
+                "fabsf_euler_pitch",
+                "fabsf_att_error_z",
+                "m_pi_2",
+                "radians_body_roll_cd",
+                "radians_euler_yaw_rate_cds",
+                "cosf_euler_pitch"
+            ],
+            6
+        ],
+        "_ang_vel_body": [
+            [
+                "update_ang_vel_target_from_att_error_att_error"
+            ],
+            0
+        ],
+        "_euler_angle_target.z": [
+            [
+                "wrap_pi__euler_angle_target_z",
+                "wrap_pi_yaw_rate",
+                "wrap_pi__dt"
+            ],
+            0
+        ],
+        "error_quat": [
+            [
+                "attitude_body_inverse",
+                "bf_yaw_q",
+                "bf_roll_q"
+            ],
+            1
+        ]
+    }
+}

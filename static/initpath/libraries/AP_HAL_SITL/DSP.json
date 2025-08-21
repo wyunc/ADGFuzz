@@ -1,0 +1,81 @@
+{
+    "step_hanning": {
+        "read_window": [
+            [
+                "samples_peek_fft__window_size",
+                "samples_peek_fft__freq_bins"
+            ],
+            0
+        ]
+    },
+    "step_fft": {
+        "i": [
+            [
+                "j"
+            ],
+            0
+        ]
+    },
+    "vector_max_float": {
+        "maxIndex": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "maxValue": [
+            [
+                "i",
+                "vin"
+            ],
+            0
+        ]
+    },
+    "vector_mean_float": {
+        "mean_value": [
+            [
+                "vin",
+                "len",
+                "i"
+            ],
+            0
+        ]
+    },
+    "calculate_fft": {
+        "m": [
+            [
+                "fft_log2_fftlen"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "fftlen",
+                "istep",
+                "km"
+            ],
+            1
+        ],
+        "q": [
+            [
+                "k",
+                "kr",
+                "km",
+                "samples"
+            ],
+            2
+        ],
+        "t": [
+            [
+                "k",
+                "kr",
+                "km",
+                "istep",
+                "w",
+                "samples",
+                "kr"
+            ],
+            4
+        ]
+    }
+}

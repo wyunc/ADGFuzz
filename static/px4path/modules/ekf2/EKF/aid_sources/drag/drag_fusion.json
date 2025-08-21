@@ -1,0 +1,98 @@
+{
+    "fuseDrag": {
+        "state_vector_prev": [
+            [
+                "_state_vector"
+            ],
+            0
+        ],
+        "mea_acc": [
+            [
+                "drag_sample_accel_xy_axis_index",
+                "_state_accel_bias_axis_index"
+            ],
+            0
+        ],
+        "using_mcoef": [
+            [
+                "_params_mcoef"
+            ],
+            0
+        ],
+        "using_bcoef_x": [
+            [
+                "_params_bcoef_x"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "innovation_variance_axis_index",
+                "p",
+                "h"
+            ],
+            0
+        ],
+        "rel_wind_speed": [
+            [
+                "rel_wind_body_norm"
+            ],
+            0
+        ],
+        "rho": [
+            [
+                "fmaxf__air_density"
+            ],
+            0
+        ],
+        "innov_gate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "R_ACC": [
+            [
+                "fmaxf__params_drag_noise"
+            ],
+            0
+        ],
+        "using_bcoef_y": [
+            [
+                "_params_bcoef_y"
+            ],
+            0
+        ],
+        "rel_wind_body": [
+            [
+                "_state_quat_nominal_rotate_vector_inverse_rel_wind_earth"
+            ],
+            0
+        ],
+        "_aid_src_drag.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "mcoef_corrrected": [
+            [
+                "fmaxf_rho",
+                "fmaxf__params_mcoef",
+                "_f",
+                "fmaxf_k_air_density_sea_level_standard_atmos",
+                "fmaxf_sqrtf"
+            ],
+            0
+        ],
+        "test_ratio": [
+            [
+                "sq_axis_index",
+                "innovation_variance_axis_index",
+                "sq_innovation",
+                "sq_innov_gate"
+            ],
+            0
+        ]
+    }
+}

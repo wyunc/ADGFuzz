@@ -1,0 +1,24 @@
+{
+    "controlExternalVisionFusion": {
+        "quality_sufficient": [
+            [
+                "ev_sample_quality",
+                "_params_ev_quality_minimum"
+            ],
+            0
+        ],
+        "ev_reset": [
+            [
+                "_ev_sample_prev_reset_counter",
+                "ev_sample_reset_counter"
+            ],
+            0
+        ],
+        "_ev_sample_prev": [
+            [
+                "ev_sample"
+            ],
+            0
+        ]
+    }
+}

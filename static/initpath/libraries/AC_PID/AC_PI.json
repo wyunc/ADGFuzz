@@ -1,0 +1,22 @@
+{
+    "update": {
+        "output_P": [
+            [
+                "k_p",
+                "target",
+                "measurement"
+            ],
+            1
+        ],
+        "integrator": [
+            [
+                "target",
+                "measurement",
+                "dt",
+                "imax",
+                "k_i"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "_init_sensor": {
+        "success": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ],
+        "_spi_sem": [
+            [
+                "_dev_get_semaphore"
+            ],
+            0
+        ],
+        "_drdy_pin_xg": [
+            [
+                "hal_gpio_channel__drdy_pin_num_xg"
+            ],
+            0
+        ]
+    },
+    "_hardware_init": {
+        "samples": [
+            [
+                "_register_read_lsm9ds1xg_fifo_src"
+            ],
+            0
+        ],
+        "whoami": [
+            [
+                "_register_read_lsm9ds1xg_who_am_i"
+            ],
+            0
+        ]
+    },
+    "_fifo_reset": {
+        "reg_9": [
+            [
+                "_register_read_lsm9ds1xg_ctrl_reg9"
+            ],
+            0
+        ]
+    },
+    "_set_gyro_scale": {
+        "_gyro_scale": [
+            [
+                "deg_to_rad"
+            ],
+            0
+        ]
+    },
+    "_set_accel_scale": {
+        "_accel_scale": [
+            [
+                "float",
+                "gravity_mss",
+                "scale"
+            ],
+            0
+        ]
+    },
+    "_poll_data": {
+        "samples": [
+            [
+                "_register_read_lsm9ds1xg_fifo_src",
+                "lsm9ds1xg_fifo_src_unread_samples"
+            ],
+            0
+        ]
+    },
+    "_read_data_transaction_x": {
+        "raw_data.x": [
+            [
+                "_accel_bias",
+                "samples"
+            ],
+            0
+        ],
+        "raw_data.z": [
+            [
+                "_accel_bias",
+                "samples"
+            ],
+            0
+        ],
+        "raw_data.y": [
+            [
+                "_accel_bias",
+                "samples"
+            ],
+            0
+        ],
+        "_reg": [
+            [
+                "lsm9ds1xg_out_x_l_xl",
+                "0x80"
+            ],
+            0
+        ],
+        "accel_data": [
+            [
+                "_accel_scale"
+            ],
+            0
+        ]
+    },
+    "_read_data_transaction_g": {
+        "raw_data.x": [
+            [
+                "_gyro_bias",
+                "samples"
+            ],
+            0
+        ],
+        "raw_data.y": [
+            [
+                "_gyro_bias",
+                "samples"
+            ],
+            0
+        ],
+        "gyro_data": [
+            [
+                "_gyro_scale"
+            ],
+            0
+        ],
+        "_reg": [
+            [
+                "0x80",
+                "lsm9ds1xg_out_x_l_g"
+            ],
+            0
+        ],
+        "raw_data.z": [
+            [
+                "_gyro_bias",
+                "samples"
+            ],
+            0
+        ]
+    },
+    "_dump_registers": {
+        "reg": [
+            [
+                "lsm9ds1xg_act_ths"
+            ],
+            1
+        ],
+        "last": [
+            [
+                "lsm9ds1xg_int_gen_dur_g"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "_register_read_reg"
+            ],
+            0
+        ]
+    }
+}

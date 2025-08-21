@@ -1,0 +1,55 @@
+{
+    "checkAndReport": {
+        "priority": [
+            [
+                "get_calibration_param_int32_calibration_index"
+            ],
+            0
+        ],
+        "exists": [
+            [
+                "_advertised",
+                "instance",
+                "_sensor_mag_sub"
+            ],
+            0
+        ],
+        "is_sensor_ok": [
+            [
+                "find_current_calibration_index_mag_data_device_id",
+                "is_mag_fault",
+                "is_valid"
+            ],
+            2
+        ]
+    },
+    "isMagRequired": {
+        "mag_fault": [
+            [
+                "cs_mag_fault",
+                "estimator_status_control_mode_flags"
+            ],
+            0
+        ],
+        "device_id": [
+            [
+                "sensor_mag_device_id",
+                "static_cast",
+                "uint32_t"
+            ],
+            0
+        ]
+    },
+    "consistencyCheck": {
+        "inconsistency_angle_deg": [
+            [
+                "degrees",
+                "sensors_mag_inconsistency_angle",
+                "static_cast",
+                "float",
+                "int"
+            ],
+            0
+        ]
+    }
+}

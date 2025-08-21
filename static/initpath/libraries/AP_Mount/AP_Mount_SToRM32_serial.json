@@ -1,0 +1,146 @@
+{
+    "update": {
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "_reply_type": [
+            [
+                "reply_type_ack",
+                "reply_type_data",
+                "reply_type_unknown"
+            ],
+            0
+        ],
+        "target": [
+            [
+                "_params_neutral_angles_get",
+                "_params_retract_angles_get"
+            ],
+            0
+        ],
+        "_reply_length": [
+            [
+                "get_reply_size__reply_type"
+            ],
+            0
+        ],
+        "resend_now": [
+            [
+                "millis",
+                "ap_mount_storm32_serial_resend_ms",
+                "_last_send"
+            ],
+            0
+        ]
+    },
+    "can_send": {
+        "_reply_type": [
+            [
+                "reply_type_unknown",
+                "sizeof_cmd_set_angles_struct",
+                "_uart_txspace"
+            ],
+            1
+        ]
+    },
+    "send_target_angles": {
+        "buf": [
+            [
+                "cmd_set_angles_data",
+                "uint8_t"
+            ],
+            0
+        ],
+        "cmd_set_angles_data.crc": [
+            [
+                "crc_calculate_buf",
+                "crc_calculate_sizeof",
+                "crc_calculate_cmd_set_angles_data"
+            ],
+            0
+        ],
+        "cmd_set_angles_data.yaw": [
+            [
+                "degrees_angle_target_rad_get_bf_yaw"
+            ],
+            0
+        ],
+        "cmd_set_angles_data.pitch": [
+            [
+                "degrees_angle_target_rad_pitch"
+            ],
+            0
+        ],
+        "_last_send": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "cmd_set_angles_data.roll": [
+            [
+                "degrees_angle_target_rad_roll"
+            ],
+            0
+        ]
+    },
+    "read_incoming": {
+        "_reply_length": [
+            [
+                "get_reply_size__reply_type"
+            ],
+            0
+        ],
+        "numc": [
+            [
+                "_uart_available"
+            ],
+            0
+        ],
+        "_reply_type": [
+            [
+                "reply_type_unknown",
+                "reply_type_data"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "_uart_read"
+            ],
+            0
+        ]
+    },
+    "parse_reply": {
+        "_current_angle.y": [
+            [
+                "_buffer_data_imu1_pitch"
+            ],
+            0
+        ],
+        "_current_angle.x": [
+            [
+                "_buffer_data_imu1_roll"
+            ],
+            0
+        ],
+        "_current_angle.z": [
+            [
+                "_buffer_data_imu1_yaw"
+            ],
+            0
+        ],
+        "crc_ok": [
+            [
+                "crc_calculate_sizeof",
+                "crc_calculate__buffer_data",
+                "crc_calculate__buffer",
+                "_buffer_data_crc"
+            ],
+            1
+        ]
+    }
+}

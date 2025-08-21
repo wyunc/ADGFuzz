@@ -1,0 +1,29 @@
+{
+    "set_limits": {
+        "_D1_max": [
+            [
+                "d_out_max",
+                "_kp",
+                "_d1_max",
+                "d2_out_max"
+            ],
+            0
+        ],
+        "_error_max": [
+            [
+                "inv_sqrt_controller__kp",
+                "inv_sqrt_controller__d1_max",
+                "inv_sqrt_controller_output_max"
+            ],
+            0
+        ]
+    },
+    "set_error_max": {
+        "_error_max": [
+            [
+                "error_max"
+            ],
+            0
+        ]
+    }
+}

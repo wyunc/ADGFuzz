@@ -1,0 +1,56 @@
+{
+    "check_dynamic_flight": {
+        "moving": [
+            [
+                "rangefinder_distance_cm_orient_rotation_pitch_270",
+                "heli_dynamic_flight_speed_min",
+                "ahrs_pitch_sensor",
+                "inertial_nav_get_speed_xy_cms",
+                "motors_get_throttle"
+            ],
+            1
+        ]
+    },
+    "update_heli_control_dynamics": {
+        "hover_roll_trim_scalar_slew": [
+            [
+                "constrain_int16_scheduler_get_loop_rate_hz",
+                "constrain_int16_hover_roll_trim_scalar_slew"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_rotor_speed": {
+        "rc_ptr": [
+            [
+                "rc_find_channel_for_option_motor_interlock"
+            ],
+            0
+        ]
+    },
+    "heli_update_rotor_speed_targets": {
+        "rsc_control_mode": [
+            [
+                "motors_get_rsc_mode"
+            ],
+            0
+        ]
+    },
+    "heli_update_autorotation": {
+        "in_autorotation_mode": [
+            [
+                "mode_autorotate",
+                "flightmode"
+            ],
+            0
+        ]
+    },
+    "update_collective_low_flag": {
+        "last_nonzero_collective_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

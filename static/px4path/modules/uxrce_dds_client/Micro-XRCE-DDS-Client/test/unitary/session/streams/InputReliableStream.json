@@ -1,0 +1,46 @@
+{
+    "copy": {
+        "last_handled": [
+            [
+                "source_last_handled"
+            ],
+            0
+        ],
+        "base.history": [
+            [
+                "source_base_history"
+            ],
+            0
+        ],
+        "on_get_fragmentation_info": [
+            [
+                "source_on_get_fragmentation_info"
+            ],
+            0
+        ],
+        "cleanup_flag": [
+            [
+                "source_cleanup_flag"
+            ],
+            0
+        ],
+        "base.buffer": [
+            [
+                "source_base_buffer"
+            ],
+            0
+        ],
+        "base.size": [
+            [
+                "source_base_size"
+            ],
+            0
+        ],
+        "last_announced": [
+            [
+                "source_last_announced"
+            ],
+            0
+        ]
+    }
+}

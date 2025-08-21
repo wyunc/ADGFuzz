@@ -1,0 +1,253 @@
+{
+    "init_send_requests": {
+        "timelast_receive_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "_link"
+            ],
+            0
+        ],
+        "dest_compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "timelast_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "dest_sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "request_i": [
+            [
+                "_request_first"
+            ],
+            0
+        ],
+        "request_last": [
+            [
+                "_request_last"
+            ],
+            0
+        ]
+    },
+    "handle_mission_clear_all": {
+        "success": [
+            [
+                "clear_all_items",
+                "cancel_upload_msg",
+                "cancel_upload__link"
+            ],
+            0
+        ]
+    },
+    "cancel_upload": {
+        "link": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "handle_mission_count": {
+        "ret_alloc": [
+            [
+                "allocate_receive_resources_packet_count"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request_int": {
+        "ret_packet.target_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "ret_packet.seq": [
+            [
+                "packet_seq"
+            ],
+            0
+        ],
+        "result_code": [
+            [
+                "get_item_ret_packet",
+                "get_item__link",
+                "get_item_packet",
+                "get_item_msg"
+            ],
+            0
+        ],
+        "ret_packet.mission_type": [
+            [
+                "packet_mission_type"
+            ],
+            0
+        ],
+        "ret_packet.target_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request": {
+        "request_int.target_system": [
+            [
+                "packet_target_system"
+            ],
+            0
+        ],
+        "item_int.seq": [
+            [
+                "packet_seq"
+            ],
+            0
+        ],
+        "item_int.target_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "request_int.target_component": [
+            [
+                "packet_target_component"
+            ],
+            0
+        ],
+        "item_int.target_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "item_int.mission_type": [
+            [
+                "packet_mission_type"
+            ],
+            0
+        ],
+        "request_int.mission_type": [
+            [
+                "packet_mission_type"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "get_item_request_int",
+                "get_item__link",
+                "convert_mission_item_int_to_mission_item_item_int",
+                "convert_mission_item_int_to_mission_item_ret_packet",
+                "get_item_msg",
+                "get_item_item_int"
+            ],
+            0
+        ],
+        "request_int.seq": [
+            [
+                "packet_seq"
+            ],
+            0
+        ]
+    },
+    "handle_mission_write_partial_list": {
+        "ret_alloc": [
+            [
+                "allocate_update_resources"
+            ],
+            0
+        ]
+    },
+    "handle_mission_item": {
+        "timelast_receive_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_item_count": [
+            [
+                "item_count"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "mav_mission_error",
+                "replace_item_cmd",
+                "append_item_cmd"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "transfer_is_complete": {
+        "link": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "complete__link"
+            ],
+            0
+        ]
+    },
+    "queued_request_send": {
+        "timelast_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "timelast_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "link": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "link_get_chan"
+            ],
+            0
+        ],
+        "wp_recv_timeout_ms": [
+            [
+                "1000u",
+                "link_get_stream_slowdown_ms"
+            ],
+            0
+        ]
+    }
+}

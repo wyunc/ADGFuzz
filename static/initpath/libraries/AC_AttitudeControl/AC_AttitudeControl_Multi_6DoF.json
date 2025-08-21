@@ -1,0 +1,52 @@
+{
+    "rate_controller_run": {
+        "pitch_deg": [
+            [
+                "degrees_ahrs_get_pitch",
+                "pitch_offset_deg"
+            ],
+            0
+        ],
+        "roll_deg": [
+            [
+                "degrees_ahrs_get_roll",
+                "roll_offset_deg"
+            ],
+            0
+        ]
+    },
+    "input_thrust_vector_rate_heading": {
+        "angle_target": [
+            [
+                "attitude_from_thrust_vector__ahrs_yaw_to_vector312",
+                "attitude_from_thrust_vector_thrust_vector"
+            ],
+            0
+        ]
+    },
+    "input_thrust_vector_heading": {
+        "angle_target": [
+            [
+                "attitude_from_thrust_vector__ahrs_yaw_to_vector312",
+                "attitude_from_thrust_vector_thrust_vector"
+            ],
+            0
+        ]
+    },
+    "set_forward_lateral": {
+        "euler_roll_angle_cd": [
+            [
+                "wrap_180_cd_euler_roll_angle_cd",
+                "roll_offset_deg"
+            ],
+            0
+        ],
+        "euler_pitch_angle_cd": [
+            [
+                "wrap_180_cd_euler_pitch_angle_cd",
+                "pitch_offset_deg"
+            ],
+            0
+        ]
+    }
+}

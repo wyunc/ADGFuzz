@@ -1,0 +1,33 @@
+{
+    "setup": {
+        "c": [
+            [
+                "i",
+                "line"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "hal_serial"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "to_write": [
+            [
+                "buflen"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "uart_write_to_write",
+                "uart_write_buffer",
+                "uart_write_offset"
+            ],
+            1
+        ]
+    }
+}

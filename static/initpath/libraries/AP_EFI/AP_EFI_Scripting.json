@@ -1,0 +1,10 @@
+{
+    "handle_scripting": {
+        "internal_state": [
+            [
+                "efi_state"
+            ],
+            0
+        ]
+    }
+}

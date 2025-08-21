@@ -1,0 +1,1188 @@
+{
+    "init": {
+        "safety_state": [
+            [
+                "safety_disarmed"
+            ],
+            0
+        ],
+        "group.current_mode": [
+            [
+                "mode_pwm_none",
+                "mode_pwm_normal"
+            ],
+            0
+        ],
+        "num_fmu_channels": [
+            [
+                "group_chan",
+                "j"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "group_chan",
+                "j"
+            ],
+            0
+        ],
+        ".mode": [
+            [
+                "pwm_output_disabled"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "pwm_group_list",
+                "group"
+            ],
+            0
+        ],
+        "group.dshot_event_mask": [
+            [
+                "event_mask_i"
+            ],
+            0
+        ]
+    },
+    "led_thread": {
+        "led_thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ]
+    },
+    "rcout_thread": {
+        "_dshot_cycle": [
+            [
+                "_dshot_rate"
+            ],
+            0
+        ],
+        "rcout_thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "timeout_period_us": [
+            [
+                "_dshot_rate",
+                "_dshot_period_us"
+            ],
+            0
+        ],
+        "cycle_start_us": [
+            [
+                "_dshot_rate",
+                "rcout_micros",
+                "rcout_micros"
+            ],
+            2
+        ],
+        "have_pwm_event": [
+            [
+                "ch_evt_wait_one_evt_pwm_send",
+                "ch_evt_wait_one_evt_pwm_synthetic_send",
+                "evt_pwm_send",
+                "evt_pwm_synthetic_send"
+            ],
+            1
+        ]
+    },
+    "dshot_update_tick": {
+        "rcout": [
+            [
+                "rc_output",
+                "p"
+            ],
+            0
+        ]
+    },
+    "dshot_collect_dma_locks": {
+        "group.dshot_waiter": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "num_groups",
+                "pwm_group_list"
+            ],
+            1
+        ],
+        "group.bdshot.curr_ic_dma_handle": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "ch_evt_wait_one_timeout_wait_ticks",
+                "ch_evt_wait_one_timeout_group_dshot_event_mask"
+            ],
+            0
+        ]
+    },
+    "set_freq_group": {
+        "psc": [
+            [
+                "pwmp_config_frequency",
+                "pwmp_clock"
+            ],
+            0
+        ],
+        "group.pwm_cfg.period": [
+            [
+                "group_pwm_cfg_frequency",
+                "group_rc_frequency"
+            ],
+            1
+        ],
+        ".mode": [
+            [
+                "pwm_output_active_high",
+                "pwm_complementary_output_active_high"
+            ],
+            0
+        ],
+        "old_clock": [
+            [
+                "group_pwm_cfg_frequency"
+            ],
+            0
+        ],
+        "old_period": [
+            [
+                "group_pwm_cfg_period"
+            ],
+            0
+        ],
+        "pwmp": [
+            [
+                "group_pwm_drv"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        "mask": [
+            [
+                "iomcu_ch_masks",
+                "0x_ff",
+                "chmask",
+                "i"
+            ],
+            1
+        ],
+        "group.rc_frequency": [
+            [
+                "freq_hz"
+            ],
+            1
+        ]
+    },
+    "set_default_rate": {
+        "group.pwm_cfg.period": [
+            [
+                "group_pwm_cfg_frequency",
+                "freq_hz"
+            ],
+            0
+        ]
+    },
+    "set_dshot_rate": {
+        "_dshot_period_us": [
+            [
+                "dshot_rate",
+                "dshot_rate",
+                "loop_rate_hz",
+                "loop_rate_hz",
+                "1000ul",
+                "1000000ul"
+            ],
+            2
+        ]
+    },
+    "set_dshot_esc_type": {
+        "_dshot_esc_type": [
+            [
+                "dshot_esc_type"
+            ],
+            0
+        ],
+        "DSHOT_BIT_0_TICKS": [
+            [
+                "dshot_bit_0_ticks_default",
+                "dshot_bit_0_ticks_s"
+            ],
+            0
+        ],
+        "DSHOT_BIT_WIDTH_TICKS": [
+            [
+                "dshot_bit_width_ticks_default",
+                "dshot_bit_width_ticks_s"
+            ],
+            0
+        ],
+        "DSHOT_BIT_1_TICKS": [
+            [
+                "dshot_bit_1_ticks_default",
+                "dshot_bit_1_ticks_s"
+            ],
+            0
+        ]
+    },
+    "enable_ch": {
+        "grp": [
+            [
+                "find_chan_chan",
+                "find_chan_i"
+            ],
+            0
+        ]
+    },
+    "disable_ch": {
+        "grp": [
+            [
+                "find_chan_chan",
+                "find_chan_i"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "active_fmu_channels": [
+            [
+                "chan_offset"
+            ],
+            1
+        ]
+    },
+    "push_local": {
+        "trigger_groupmask": [
+            [
+                "need_trigger"
+            ],
+            0
+        ],
+        "outmask": [
+            [
+                "active_fmu_channels",
+                "1u"
+            ],
+            0
+        ],
+        "trigger_widest_pulse": [
+            [
+                "group_dshot_pulse_time_us",
+                "group_chan",
+                "j",
+                "period",
+                "pwm_fraction_to_width_group_pwm_drv"
+            ],
+            3
+        ],
+        "width": [
+            [
+                "group_pwm_cfg_frequency",
+                "8u",
+                "1000000u"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "pwm_group_list",
+                "group"
+            ],
+            0
+        ],
+        "safety_on": [
+            [
+                "safety_disarmed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "period_us": [
+            [
+                "chan_offset"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "chan_offset",
+                "max_channels"
+            ],
+            0
+        ]
+    },
+    "read_last_sent": {
+        "len": [
+            [
+                "max_channels"
+            ],
+            0
+        ]
+    },
+    "print_group_setup_error": {
+        "max_chan": [
+            [
+                "group_chan",
+                "j",
+                "chan_offset"
+            ],
+            1
+        ],
+        "min_chan": [
+            [
+                "uint8_max",
+                "group_chan",
+                "j",
+                "chan_offset"
+            ],
+            1
+        ]
+    },
+    "setup_group_DMA": {
+        "group.dma": [
+            [
+                "dma_stream_alloc_i_group_dma_up_stream_id",
+                "dma_stream_alloc_i_group",
+                "dma_stream_alloc_i_dma_up_irq_callback"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "_mode",
+                "j",
+                "group_pwm_cfg_channels"
+            ],
+            0
+        ],
+        ".mode": [
+            [
+                "active_high",
+                "pwm_output_active_low",
+                "pwm_output_active_high",
+                "pwm_complementary_output_active_low",
+                "pwm_complementary_output_active_high"
+            ],
+            0
+        ],
+        "group.pwm_cfg.frequency": [
+            [
+                "group_pwm_drv_clock",
+                "calculate_bitrate_prescaler_at_least_freq",
+                "calculate_bitrate_prescaler_target_frequency",
+                "calculate_bitrate_prescaler_group_pwm_drv_clock"
+            ],
+            2
+        ],
+        "group.dma_buffer_len": [
+            [
+                "buffer_length"
+            ],
+            0
+        ],
+        "group.pwm_cfg.dier": [
+            [
+                "tim_dier_ude"
+            ],
+            0
+        ],
+        "group.dshot_pulse_time_us": [
+            [
+                "group_dshot_pulse_send_time_us",
+                "pulse_time_us"
+            ],
+            0
+        ],
+        "group.pwm_cfg.period": [
+            [
+                "bit_width",
+                "group_bit_width_mul"
+            ],
+            0
+        ],
+        "group.dma_buffer": [
+            [
+                "hal_util_malloc_type_buffer_length",
+                "hal_util_malloc_type_mem_dma_safe",
+                "dmar_uint_t"
+            ],
+            0
+        ],
+        "group.bit_width_mul": [
+            [
+                "group_pwm_drv_clock",
+                "calculate_bitrate_prescaler_at_least_freq",
+                "calculate_bitrate_prescaler_target_frequency",
+                "calculate_bitrate_prescaler_group_pwm_drv_clock",
+                "bit_width",
+                "bitrate"
+            ],
+            3
+        ]
+    },
+    "set_group_mode": {
+        "pulse_time_us": [
+            [
+                "pad_end_bits",
+                "group_serial_nleds",
+                "pad_start_bits",
+                "bits_per_pixel",
+                "1000000ul"
+            ],
+            1
+        ],
+        "bit_width": [
+            [
+                "profi_bit_width_ticks",
+                "neop_bit_width_ticks"
+            ],
+            0
+        ],
+        "active_high": [
+            [
+                "is_bidir_dshot_enabled_group"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "group_chan",
+                "chan_offset",
+                "i"
+            ],
+            0
+        ],
+        "buffer_length": [
+            [
+                "pad_end_bits",
+                "group_serial_nleds",
+                "pad_start_bits",
+                "bits_per_pixel",
+                "sizeof_uint32_t",
+                "channels_per_group"
+            ],
+            1
+        ],
+        "group.current_mode": [
+            [
+                "mode_pwm_none",
+                "mode_pwm_normal"
+            ],
+            0
+        ],
+        "group.dshot_pulse_send_time_us": [
+            [
+                "dshot_bit_length",
+                "1000000ul",
+                "protocol_bitrate_group_current_mode"
+            ],
+            2
+        ],
+        "group.dshot_pulse_time_us": [
+            [
+                "dshot_bit_length",
+                "1000000ul",
+                "protocol_bitrate_group_current_mode"
+            ],
+            2
+        ]
+    },
+    "set_output_mode": {
+        "iomcu_mask": [
+            [
+                "mask",
+                "chan_offset",
+                "1u"
+            ],
+            0
+        ],
+        "group.current_mode": [
+            [
+                "mode",
+                "mode_pwm_normal"
+            ],
+            1
+        ]
+    },
+    "set_telem_request_mask": {
+        "telem_request_mask": [
+            [
+                "chan_offset",
+                "mask"
+            ],
+            0
+        ]
+    },
+    "get_output_mode_banner": {
+        "have_nonzero_modes": [
+            [
+                "mode_pwm_none",
+                "iomcu_get_output_mode_iomcu_mask",
+                "chan_offset"
+            ],
+            1
+        ],
+        "final_index": [
+            [
+                "array_size_ch_mode"
+            ],
+            0
+        ],
+        "curr_mode_lowest_ch": [
+            [
+                "k"
+            ],
+            0
+        ],
+        "gpio_mask": [
+            [
+                "iomcu_get_gpio_mask"
+            ],
+            0
+        ],
+        "chan_num": [
+            [
+                "j",
+                "group_chan",
+                "chan_offset"
+            ],
+            0
+        ],
+        "chan_bit": [
+            [
+                "i",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "trigger_groups": {
+        "now": [
+            [
+                "rcout_micros"
+            ],
+            0
+        ],
+        "EGR": [
+            [
+                "stm32_tim_egr_ug"
+            ],
+            0
+        ],
+        "last_pulse_trigger_us": [
+            [
+                "rcout_micros"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "pwm_group_list",
+                "group"
+            ],
+            0
+        ]
+    },
+    "dshot_send_groups": {
+        "command_sent": [
+            [
+                "dshot_send_command__dshot_current_command_chan",
+                "dshot_send_command__dshot_current_command_command",
+                "dshot_send_command_group"
+            ],
+            0
+        ]
+    },
+    "dshot_send_next_group": {
+        "rcout": [
+            [
+                "p",
+                "rc_output"
+            ],
+            0
+        ]
+    },
+    "dma_allocate": {
+        "CR1": [
+            [
+                "stm32_tim_cr1_cen",
+                "stm32_tim_cr1_urs",
+                "stm32_tim_cr1_arpe"
+            ],
+            0
+        ],
+        "DIER": [
+            [
+                "stm32_tim_dier_irq_mask",
+                "group_pwm_drv_config_dier"
+            ],
+            0
+        ],
+        "group.dma": [
+            [
+                "dma_stream_alloc_i_group",
+                "dma_stream_alloc_i_dma_up_irq_callback",
+                "dma_stream_alloc_i_group_dma_up_stream_id"
+            ],
+            0
+        ]
+    },
+    "dma_deallocate": {
+        "group.dma": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "fill_DMA_buffer_dshot": {
+        "DSHOT_MOTOR_BIT_1": [
+            [
+                "clockmul",
+                "dshot_bit_1_ticks"
+            ],
+            0
+        ],
+        "DSHOT_MOTOR_BIT_0": [
+            [
+                "clockmul",
+                "dshot_bit_0_ticks"
+            ],
+            0
+        ]
+    },
+    "dshot_send": {
+        "request_telemetry": [
+            [
+                "group_chan",
+                "i",
+                "1u",
+                "telem_request_mask"
+            ],
+            2
+        ],
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "servo_chan_mask": [
+            [
+                "group_chan",
+                "i",
+                "1u",
+                "chan_offset"
+            ],
+            1
+        ],
+        "value": [
+            [
+                "constrain_int16_pwm",
+                "group_chan",
+                "i",
+                "period",
+                "dshot_zero_throttle"
+            ],
+            2
+        ],
+        "group.dshot_waiter": [
+            [
+                "rcout_thread_ctx"
+            ],
+            0
+        ],
+        "safety_on": [
+            [
+                "safety_disarmed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ]
+    },
+    "serial_led_send": {
+        "group.dshot_waiter": [
+            [
+                "led_thread_ctx"
+            ],
+            0
+        ],
+        "grp": [
+            [
+                "find_chan_i",
+                "find_chan_chan"
+            ],
+            0
+        ]
+    },
+    "send_pulses_DMAR": {
+        "group.dshot_state": [
+            [
+                "send_start"
+            ],
+            0
+        ],
+        "ccr_ofs": [
+            [
+                "offsetof_ccr",
+                "offsetof_stm32_tim_t"
+            ],
+            0
+        ],
+        "group.last_dmar_send_us": [
+            [
+                "rcout_micros"
+            ],
+            0
+        ],
+        "DCR": [
+            [
+                "stm32_tim_dcr_dbl",
+                "stm32_tim_dcr_dba_ccr_ofs"
+            ],
+            0
+        ]
+    },
+    "dma_unlock": {
+        "group": [
+            [
+                "pwm_group",
+                "p"
+            ],
+            0
+        ],
+        "dshot_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "dma_up_irq_callback": {
+        "group": [
+            [
+                "pwm_group",
+                "p"
+            ],
+            0
+        ]
+    },
+    "dma_cancel": {
+        "group.dshot_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "serial_setup_output": {
+        "irq.waiter": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "chan_offset"
+            ],
+            0
+        ],
+        "serial_thread": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "serial.bit_time_us": [
+            [
+                "baudrate",
+                "1000000ul"
+            ],
+            0
+        ],
+        "serial_group": [
+            [
+                "nullptr",
+                "group"
+            ],
+            1
+        ],
+        "serial_priority": [
+            [
+                "ch_thd_get_self_x_realprio"
+            ],
+            0
+        ],
+        "group.serial.chan": [
+            [
+                "j"
+            ],
+            0
+        ]
+    },
+    "fill_DMA_buffer_byte": {
+        "BIT_0": [
+            [
+                "bitval"
+            ],
+            0
+        ]
+    },
+    "serial_write_byte": {
+        "mask": [
+            [
+                "ch_evt_wait_any_timeout_ch_time_ms2i",
+                "ch_evt_wait_any_timeout_serial_event_mask"
+            ],
+            0
+        ]
+    },
+    "serial_bit_irq": {
+        "irq.byteval": [
+            [
+                "0x3ff",
+                "irq_bitmask",
+                "0x200"
+            ],
+            0
+        ],
+        "irq.last_bit": [
+            [
+                "pal_read_line_irq_line"
+            ],
+            1
+        ],
+        "irq.nbits": [
+            [
+                "irq_bit_time_tick",
+                "micros16",
+                "irq_byte_start_tick"
+            ],
+            3
+        ],
+        "irq.byte_start_tick": [
+            [
+                "micros16"
+            ],
+            1
+        ]
+    },
+    "serial_read_byte": {
+        "b": [
+            [
+                "uint8_t_byteval"
+            ],
+            0
+        ],
+        "timed_out": [
+            [
+                "irq_timed_out",
+                "serial_event_mask",
+                "ch_evt_wait_any_serial_event_mask"
+            ],
+            0
+        ],
+        "byteval": [
+            [
+                "irq_byteval",
+                "0x200",
+                "irq_bitmask"
+            ],
+            0
+        ]
+    },
+    "serial_end": {
+        "group": [
+            [
+                "pwm_group_list",
+                "i"
+            ],
+            0
+        ],
+        "serial_group": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "irq.waiter": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "serial_thread": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "force_safety_on": {
+        "safety_state": [
+            [
+                "safety_disarmed"
+            ],
+            0
+        ]
+    },
+    "force_safety_off": {
+        "safety_state": [
+            [
+                "safety_armed"
+            ],
+            0
+        ]
+    },
+    "safety_update": {
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "safety_mask": [
+            [
+                "boardconfig_get_safety_mask"
+            ],
+            0
+        ],
+        "safety_pressed": [
+            [
+                "pal_read_line_hal_gpio_pin_safety_in"
+            ],
+            0
+        ],
+        "safety_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "led_pattern": [
+            [
+                "0x5500",
+                "safety_disarmed",
+                "safety_armed",
+                "_safety_switch_state",
+                "safety_disarmed",
+                "0x_ffff"
+            ],
+            1
+        ],
+        "brdconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "set_serial_led_num_LEDs": {
+        "serial_nleds": [
+            [
+                "grp_serial_nleds",
+                "num_leds"
+            ],
+            0
+        ],
+        "led_mode": [
+            [
+                "mode_profiled",
+                "mode_pwm_none",
+                "mode"
+            ],
+            0
+        ],
+        "grp": [
+            [
+                "find_chan_i",
+                "find_chan_chan"
+            ],
+            0
+        ]
+    },
+    "fill_DMA_buffer_serial_led": {
+        "led": [
+            [
+                "i",
+                "j",
+                "group_serial_led_data"
+            ],
+            0
+        ]
+    },
+    "_set_neopixel_rgb_data": {
+        "BIT_0": [
+            [
+                "grp_bit_width_mul",
+                "neop_bit_0_ticks"
+            ],
+            0
+        ],
+        "BIT_1": [
+            [
+                "grp_bit_width_mul",
+                "neop_bit_1_ticks"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "neopixel_bit_length",
+                "pad_start_bits",
+                "stride",
+                "idx",
+                "grp_dma_buffer",
+                "led"
+            ],
+            0
+        ],
+        "bits": [
+            [
+                "green",
+                "blue",
+                "red"
+            ],
+            0
+        ]
+    },
+    "_set_profiled_rgb_data": {
+        "bits": [
+            [
+                "0x1000000",
+                "green",
+                "red",
+                "blue"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "bit_length",
+                "pad_start_bits",
+                "stride",
+                "idx",
+                "grp_dma_buffer",
+                "led"
+            ],
+            0
+        ],
+        "BIT_1": [
+            [
+                "grp_bit_width_mul",
+                "profi_bit_1_ticks"
+            ],
+            0
+        ]
+    },
+    "_set_profiled_blank_frame": {
+        "buf": [
+            [
+                "bit_length",
+                "pad_start_bits",
+                "stride",
+                "idx",
+                "grp_dma_buffer",
+                "led"
+            ],
+            0
+        ],
+        "BIT_1": [
+            [
+                "grp_bit_width_mul",
+                "profi_bit_1_ticks"
+            ],
+            0
+        ]
+    },
+    "_set_profiled_clock": {
+        "buf": [
+            [
+                "led",
+                "bit_length",
+                "pad_start_bits",
+                "stride",
+                "grp_dma_buffer",
+                "idx"
+            ],
+            0
+        ],
+        "BIT_1": [
+            [
+                "profi_bit_0_ticks",
+                "grp_bit_width_mul"
+            ],
+            0
+        ]
+    },
+    "set_serial_led_rgb_data": {
+        "grp": [
+            [
+                "find_chan_i",
+                "find_chan_chan"
+            ],
+            0
+        ],
+        "led_mode": [
+            [
+                "mode_pwm_none"
+            ],
+            0
+        ]
+    },
+    "serial_led_set_single_rgb_data": {
+        ".blue": [
+            [
+                "blue"
+            ],
+            0
+        ],
+        ".red": [
+            [
+                "red"
+            ],
+            0
+        ],
+        ".green": [
+            [
+                "green"
+            ],
+            0
+        ]
+    },
+    "timer_info": {
+        "target_freq": [
+            [
+                "dshot_bit_width_ticks",
+                "neop_bit_width_ticks",
+                "protocol_bitrate_group_current_mode"
+            ],
+            0
+        ],
+        "prescaler": [
+            [
+                "calculate_bitrate_prescaler_at_least_freq",
+                "calculate_bitrate_prescaler_target_freq",
+                "calculate_bitrate_prescaler_group_pwm_drv_clock"
+            ],
+            0
+        ]
+    }
+}

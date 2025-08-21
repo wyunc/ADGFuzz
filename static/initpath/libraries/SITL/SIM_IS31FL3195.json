@@ -1,0 +1,22 @@
+{
+    "update": {
+        "red": [
+            [
+                "get_register_out1"
+            ],
+            0
+        ],
+        "green": [
+            [
+                "get_register_out2"
+            ],
+            0
+        ],
+        "blue": [
+            [
+                "get_register_out3"
+            ],
+            0
+        ]
+    }
+}

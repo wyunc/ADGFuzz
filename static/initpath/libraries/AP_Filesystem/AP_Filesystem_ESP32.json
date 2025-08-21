@@ -1,0 +1,16 @@
+{
+    "set_mtime": {
+        "times.actime": [
+            [
+                "mtime_sec"
+            ],
+            0
+        ],
+        "times.modtime": [
+            [
+                "mtime_sec"
+            ],
+            0
+        ]
+    }
+}

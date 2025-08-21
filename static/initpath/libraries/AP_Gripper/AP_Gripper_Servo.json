@@ -1,0 +1,55 @@
+{
+    "grab": {
+        "_last_grab_or_release": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "config.state": [
+            [
+                "state_grabbing"
+            ],
+            0
+        ]
+    },
+    "release": {
+        "config.state": [
+            [
+                "state_releasing"
+            ],
+            0
+        ],
+        "_last_grab_or_release": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "released": {
+        "config.state": [
+            [
+                "state_released"
+            ],
+            0
+        ]
+    },
+    "grabbed": {
+        "config.state": [
+            [
+                "state_grabbed"
+            ],
+            0
+        ]
+    },
+    "update_gripper": {
+        "config.state": [
+            [
+                "state_released",
+                "state_grabbed"
+            ],
+            0
+        ]
+    }
+}

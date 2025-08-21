@@ -1,0 +1,566 @@
+{
+    "register_gyro": {
+        "instance": [
+            [
+                "_gyro_count"
+            ],
+            0
+        ],
+        "saved": [
+            [
+                "_gyro_id__gyro_count_load"
+            ],
+            0
+        ]
+    },
+    "get_accel_instance": {
+        "instance": [
+            [
+                "_accel_count"
+            ],
+            0
+        ]
+    },
+    "get_gyro_instance": {
+        "instance": [
+            [
+                "_gyro_count"
+            ],
+            0
+        ]
+    },
+    "register_accel": {
+        "instance": [
+            [
+                "_accel_count"
+            ],
+            0
+        ],
+        "saved": [
+            [
+                "_accel_id__accel_count_load"
+            ],
+            0
+        ]
+    },
+    "_start_backends": {
+        "i": [
+            [
+                "get_accel_count",
+                "get_gyro_count"
+            ],
+            0
+        ]
+    },
+    "set_gyro_window_size": {
+        "_gyro_window_size": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "all_sensors": [
+            [
+                "notch_params_has_option_enable_on_all_im_us"
+            ],
+            0
+        ],
+        "sensors_used": [
+            [
+                "_use_i"
+            ],
+            0
+        ],
+        "_post_filter_fft": [
+            [
+                "fft_using_post_filter_samples"
+            ],
+            0
+        ],
+        "fft_enabled": [
+            [
+                "nullptr",
+                "fft"
+            ],
+            0
+        ],
+        "_loop_delta_t_max": [
+            [
+                "loop_rate"
+            ],
+            1
+        ],
+        "notch.num_dynamic_notches": [
+            [
+                "__builtin_popcount_motors_get_motor_mask",
+                "max_tracked_peaks"
+            ],
+            0
+        ],
+        "_sample_period_usec": [
+            [
+                "loop_rate",
+                "1000ul"
+            ],
+            1
+        ]
+    },
+    "detect_backends": {
+        "instance": [
+            [
+                "_backend_count",
+                "add_backend_x"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "ins_sitl_sensor_b",
+                "ins_sitl_sensor_a"
+            ],
+            0
+        ],
+        "serial_port": [
+            [
+                "external_ahrs_get_port_imu"
+            ],
+            0
+        ]
+    },
+    "_calculate_trim": {
+        "view": [
+            [
+                "ahrs_get_view"
+            ],
+            0
+        ],
+        "rotation": [
+            [
+                "view_get_rotation",
+                "rotation_none"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "newtrim"
+            ],
+            0
+        ],
+        "newtrim.y": [
+            [
+                "atan2f_norm",
+                "atan2f_accel_sample_z",
+                "atan2f_accel_sample_x",
+                "atan2f_accel_sample_y"
+            ],
+            0
+        ],
+        "newtrim.x": [
+            [
+                "atan2f_accel_sample_z",
+                "atan2f_accel_sample_y"
+            ],
+            0
+        ],
+        "newtrim.z": [
+            [
+                "atan2f_accel_sample_x",
+                "atan2f_accel_sample_y"
+            ],
+            0
+        ]
+    },
+    "gyros_consistent": {
+        "gyro_count": [
+            [
+                "get_gyro_count"
+            ],
+            0
+        ],
+        "vec_diff": [
+            [
+                "get_gyro",
+                "get_gyro_i"
+            ],
+            2
+        ]
+    },
+    "gyro_calibrated_ok_all": {
+        "i": [
+            [
+                "get_gyro_count"
+            ],
+            0
+        ]
+    },
+    "accels_consistent": {
+        "vec_diff": [
+            [
+                "get_accel",
+                "get_accel_i"
+            ],
+            2
+        ],
+        "accel_count": [
+            [
+                "get_accel_count"
+            ],
+            0
+        ],
+        "threshold": [
+            [
+                "accel_error_threshold"
+            ],
+            0
+        ]
+    },
+    "accel_calibrated_ok_all": {
+        "scaling": [
+            [
+                "_accel_scale_i_get"
+            ],
+            0
+        ],
+        "have_offsets": [
+            [
+                "_accel_offset_i_get_is_zero"
+            ],
+            0
+        ],
+        "have_scaling": [
+            [
+                "is_equal_scaling_y",
+                "is_zero_scaling_z",
+                "is_zero_scaling_y",
+                "is_equal_scaling_x",
+                "is_zero_scaling_x",
+                "is_equal_scaling_z"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "get_accel_count"
+            ],
+            0
+        ]
+    },
+    "_init_gyro": {
+        "_board_orientation": [
+            [
+                "saved_orientation",
+                "rotation_none"
+            ],
+            0
+        ],
+        "accel_diff": [
+            [
+                "get_accel",
+                "get_accel"
+            ],
+            1
+        ],
+        "num_gyros": [
+            [
+                "get_gyro_count_ins_max_instances"
+            ],
+            0
+        ]
+    },
+    "_save_gyro_calibration": {
+        "i": [
+            [
+                "_gyro_count"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_first_usable_gyro": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_startup_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_first_usable_accel": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_last_update_usec": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "wait_for_sample": {
+        "_last_sample_usec": [
+            [
+                "_sample_period_usec",
+                "micros"
+            ],
+            1
+        ],
+        "now2": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_next_sample_usec": [
+            [
+                "_sample_period_usec"
+            ],
+            0
+        ],
+        "imask": [
+            [
+                "i",
+                "1u"
+            ],
+            0
+        ],
+        "wait_counter_limit": [
+            [
+                "wait_per_loop",
+                "uint32_t__loop_delta_t",
+                "uint32_t__0e6"
+            ],
+            0
+        ],
+        "delta_time_sum": [
+            [
+                "_0e6f",
+                "_sample_period_usec",
+                "_0e",
+                "micros"
+            ],
+            2
+        ]
+    },
+    "get_delta_angle": {
+        "delta_angle": [
+            [
+                "get_delta_time",
+                "i",
+                "get_gyro_i",
+                "_delta_angle"
+            ],
+            0
+        ],
+        "delta_angle_dt": [
+            [
+                "get_delta_time",
+                "_delta_angle_dt",
+                "_loop_delta_t_max",
+                "i"
+            ],
+            0
+        ]
+    },
+    "get_delta_velocity": {
+        "delta_velocity_dt": [
+            [
+                "_delta_velocity_dt",
+                "_loop_delta_t_max",
+                "get_delta_time",
+                "i"
+            ],
+            0
+        ],
+        "delta_velocity": [
+            [
+                "get_accel_i",
+                "_delta_velocity",
+                "get_delta_time",
+                "i"
+            ],
+            0
+        ]
+    },
+    "calc_vibration_and_clipping": {
+        "accel_diff.y": [
+            [
+                "accel_diff_y"
+            ],
+            0
+        ],
+        "accel_diff.z": [
+            [
+                "accel_diff_z"
+            ],
+            0
+        ],
+        "accel_diff": [
+            [
+                "_apply_accel",
+                "instance",
+                "_apply_dt",
+                "_accel_vibe_floor_filter",
+                "accel"
+            ],
+            1
+        ],
+        "accel_diff.x": [
+            [
+                "accel_diff_x"
+            ],
+            0
+        ]
+    },
+    "set_accel_peak_hold": {
+        "_peak_hold_state.accel_peak_hold_neg_x_age": [
+            [
+                "ap_inertial_sensor_accel_peak_detect_timeout_ms",
+                "millis"
+            ],
+            1
+        ],
+        "_peak_hold_state.accel_peak_hold_neg_x": [
+            [
+                "accel_x"
+            ],
+            0
+        ]
+    },
+    "is_still": {
+        "vibe": [
+            [
+                "get_vibration_levels"
+            ],
+            0
+        ]
+    },
+    "acal_init": {
+        "_accel_calibrator": [
+            [
+                "new_nothrow",
+                "ins_max_instances",
+                "accel_calibrator"
+            ],
+            0
+        ],
+        "_acal": [
+            [
+                "new_nothrow",
+                "ap_accel_cal"
+            ],
+            0
+        ]
+    },
+    "_acal_save_calibrations": {
+        "_trim_rad.y": [
+            [
+                "q_get_euler_pitch"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "_accel_count"
+            ],
+            0
+        ],
+        "cross": [
+            [
+                "misaligned_sample",
+                "aligned_sample"
+            ],
+            0
+        ],
+        "dot": [
+            [
+                "misaligned_sample",
+                "aligned_sample"
+            ],
+            0
+        ],
+        "_trim_rad.x": [
+            [
+                "q_get_euler_roll"
+            ],
+            0
+        ]
+    },
+    "get_new_trim": {
+        "trim_rad": [
+            [
+                "_trim_rad"
+            ],
+            0
+        ]
+    },
+    "get_first_usable_accel_cal_sample_avg": {
+        "ret": [
+            [
+                "count",
+                "sample"
+            ],
+            1
+        ]
+    },
+    "kill_imu": {
+        "imu_kill_mask": [
+            [
+                "1u",
+                "imu_idx"
+            ],
+            1
+        ]
+    },
+    "set_imu_out_uart": {
+        "uart.imu_out_uart": [
+            [
+                "_uart"
+            ],
+            0
+        ]
+    },
+    "send_uart_data": {
+        "data.counter": [
+            [
+                "uart_counter"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "0x29c4"
+            ],
+            0
+        ],
+        "data.crc": [
+            [
+                "sizeof_uint16_t",
+                "crc_xmodem_uint8_t",
+                "data",
+                "crc_xmodem_const",
+                "sizeof_data"
+            ],
+            0
+        ],
+        "data.timestamp_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "data.length": [
+            [
+                "sizeof_data"
+            ],
+            0
+        ]
+    }
+}

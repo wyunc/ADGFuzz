@@ -1,0 +1,32 @@
+{
+    "loop": {
+        "rcin.crc": [
+            [
+                "crc_calculate_uint8_t",
+                "rcin_rcin"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "read_wait",
+                "break",
+                "esc_magic"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "0xf6"
+            ],
+            0
+        ],
+        "crc2": [
+            [
+                "crc_calculate_u_bytes",
+                "crc_calculate_num_channels"
+            ],
+            0
+        ]
+    }
+}

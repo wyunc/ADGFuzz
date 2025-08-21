@@ -1,0 +1,35 @@
+{
+    "init": {
+        "i": [
+            [
+                "uint8_t",
+                "b_current"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "move_hal_i2c_mgr_get_device",
+                "move__addr",
+                "move__bus"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "new_colour": [
+            [
+                "i",
+                "bgr"
+            ],
+            0
+        ],
+        "last_sent": [
+            [
+                "last_sent_bgr",
+                "i"
+            ],
+            0
+        ]
+    }
+}

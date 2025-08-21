@@ -1,0 +1,16 @@
+{
+    "update_speed": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_frontend._speed_apparent_raw": [
+            [
+                "airspeed_get_raw_airspeed"
+            ],
+            0
+        ]
+    }
+}

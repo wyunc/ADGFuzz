@@ -1,0 +1,40 @@
+{
+    "init": {
+        "_scaler": [
+            [
+                "gain_cc200",
+                "utesla_to_mgauss"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "magx": [
+            [
+                "uint32_t",
+                "data_magx_1",
+                "data_magx_0",
+                "data_magx_2"
+            ],
+            0
+        ],
+        "magz": [
+            [
+                "uint32_t",
+                "data_magz_0",
+                "data_magz_2",
+                "data_magz_1"
+            ],
+            0
+        ],
+        "magy": [
+            [
+                "uint32_t",
+                "data_magy_1",
+                "data_magy_2",
+                "data_magy_0"
+            ],
+            0
+        ]
+    }
+}

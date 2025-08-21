@@ -1,0 +1,141 @@
+{
+    "init": {
+        "curr_pos": [
+            [
+                "inertial_nav_get_position_neu_cm"
+            ],
+            0
+        ],
+        "att_bf_feedforward": [
+            [
+                "attitude_control_get_bf_feedforward"
+            ],
+            0
+        ],
+        "systemid_state": [
+            [
+                "systemid_state_testing"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "curr_pos_xy"
+            ],
+            0
+        ],
+        "time_const_freq": [
+            [
+                "frequency_start"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "target_roll": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "waveform_freq_rads": [
+            [
+                "chirp_input_get_frequency_rads"
+            ],
+            0
+        ],
+        "target_pitch": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "waveform_time": [
+            [
+                "g_dt"
+            ],
+            0
+        ],
+        "input_vel.y": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "systemid_state": [
+            [
+                "systemid_state_stopped"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "g_dt",
+                "input_vel"
+            ],
+            0
+        ],
+        "disturb_state.x": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "input_vel.x": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate",
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "pilot_throttle_scaled": [
+            [
+                "get_pilot_desired_throttle",
+                "copter_input_manager_get_pilot_desired_collective_channel_throttle_get_control_in",
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "input_vel_last": [
+            [
+                "input_vel"
+            ],
+            0
+        ],
+        "disturb_state.y": [
+            [
+                "chirp_input_update_waveform_time",
+                "chirp_input_update_system_id_delay",
+                "chirp_input_update_waveform_magnitude"
+            ],
+            1
+        ],
+        "accel": [
+            [
+                "g_dt",
+                "input_vel"
+            ],
+            0
+        ]
+    }
+}

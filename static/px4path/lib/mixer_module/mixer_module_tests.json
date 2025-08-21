@@ -1,0 +1,84 @@
+{
+    "sendMotors": {
+        "actuator_motors.reversible_flags": [
+            [
+                "reversible"
+            ],
+            0
+        ],
+        "actuator_motors.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "sendServos": {
+        "actuator_servos.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "sendActuatorMotorTest": {
+        "actuator_test.action": [
+            [
+                "action_do_control",
+                "release_control",
+                "action_release_control"
+            ],
+            0
+        ],
+        "actuator_test.value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "actuator_test.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "actuator_test.function": [
+            [
+                "function"
+            ],
+            0
+        ]
+    },
+    "sendActuatorArmed": {
+        "actuator_armed.prearmed": [
+            [
+                "prearm"
+            ],
+            0
+        ],
+        "actuator_armed.armed": [
+            [
+                "armed"
+            ],
+            0
+        ],
+        "actuator_armed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "actuator_armed.manual_lockdown": [
+            [
+                "manual_lockdown"
+            ],
+            0
+        ],
+        "actuator_armed.force_failsafe": [
+            [
+                "force_failsafe"
+            ],
+            0
+        ]
+    }
+}

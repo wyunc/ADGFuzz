@@ -1,0 +1,10 @@
+{
+    "setup_quad_allocator": {
+        "effectiveness": [
+            [
+                "make_quad_x_effectiveness"
+            ],
+            0
+        ]
+    }
+}

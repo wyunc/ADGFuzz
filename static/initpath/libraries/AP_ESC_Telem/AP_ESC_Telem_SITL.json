@@ -1,0 +1,23 @@
+{
+    "update": {
+        "min_rpm": [
+            [
+                "sitl_esc_rpm_armed",
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "sitl_state_motor_mask"
+            ],
+            0
+        ],
+        "motor": [
+            [
+                "bit"
+            ],
+            0
+        ]
+    }
+}

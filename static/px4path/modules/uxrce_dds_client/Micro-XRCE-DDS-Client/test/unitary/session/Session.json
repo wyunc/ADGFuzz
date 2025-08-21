@@ -1,0 +1,18 @@
+{
+    "recv_msg": {
+        "len": [
+            [
+                "0u",
+                "message_size"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "input_buffer_data",
+                "null"
+            ],
+            0
+        ]
+    }
+}

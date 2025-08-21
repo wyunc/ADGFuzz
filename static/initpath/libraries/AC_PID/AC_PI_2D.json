@@ -1,0 +1,30 @@
+{
+    "set_dt": {
+        "_dt": [
+            [
+                "dt"
+            ],
+            0
+        ]
+    },
+    "set_input": {
+        "_input": [
+            [
+                "_filt_alpha",
+                "input",
+                "input"
+            ],
+            1
+        ]
+    },
+    "calc_filt_alpha": {
+        "_filt_alpha": [
+            [
+                "_dt",
+                "_filt_hz",
+                "m_2pi"
+            ],
+            1
+        ]
+    }
+}

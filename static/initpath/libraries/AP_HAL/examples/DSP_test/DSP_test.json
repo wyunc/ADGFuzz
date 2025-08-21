@@ -1,0 +1,66 @@
+{
+    "setup": {
+        "attenuation_cutoff": [
+            [
+                "powf_attenuation_power_db"
+            ],
+            0
+        ],
+        "sample": [
+            [
+                "to_rad",
+                "sinf_frequency1",
+                "sinf_frequency2",
+                "sinf_i",
+                "sinf_m_pi",
+                "sinf_sample_rate",
+                "sinf_frequency3"
+            ],
+            0
+        ],
+        "fft": [
+            [
+                "hal_dsp_fft_init_window_size",
+                "hal_dsp_fft_init_sample_rate"
+            ],
+            0
+        ]
+    },
+    "do_fft": {
+        "height": [
+            [
+                "uint16_t_i",
+                "uint16_t_fft__freq_bins",
+                "uint16_t_roundf",
+                "uint16_t_max_energy"
+            ],
+            0
+        ],
+        "max_energy": [
+            [
+                "fft__peak_data",
+                "__bin",
+                "center",
+                "fft__freq_bins"
+            ],
+            0
+        ],
+        "max_bin": [
+            [
+                "hal_dsp_fft_analyse_last_bin",
+                "hal_dsp_fft_analyse_attenuation_cutoff",
+                "hal_dsp_fft_analyse_fft"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "run_time": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ]
+    }
+}

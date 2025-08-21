@@ -1,0 +1,116 @@
+{
+    "init": {
+        "dev": [
+            [
+                "move_hal_i2c_mgr_get_device",
+                "move_bus",
+                "move_irlock_i2c_address"
+            ],
+            0
+        ]
+    },
+    "sync_frame_start": {
+        "_last_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "sync_word": [
+            [
+                "uint32_t_sync_byte",
+                "irlock_sync"
+            ],
+            0
+        ]
+    },
+    "read_block": {
+        "crc": [
+            [
+                "irframe_pixel_size_x",
+                "irframe_pixel_x",
+                "irframe_pixel_size_y",
+                "irframe_pixel_y",
+                "irframe_signature"
+            ],
+            0
+        ],
+        "_last_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_frames": {
+        "_target_info.pos_x": [
+            [
+                "corner2_pos_x",
+                "corner1_pos_x"
+            ],
+            0
+        ],
+        "_target_info.timestamp": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "lastt": [
+            [
+                "_target_info_timestamp"
+            ],
+            0
+        ],
+        "corner1_pix_y": [
+            [
+                "irframe_pixel_size_y",
+                "irframe_pixel_y"
+            ],
+            0
+        ],
+        "corner1_pix_x": [
+            [
+                "irframe_pixel_size_x",
+                "irframe_pixel_x"
+            ],
+            0
+        ],
+        "_target_info.pos_y": [
+            [
+                "corner1_pos_y",
+                "corner2_pos_y"
+            ],
+            0
+        ],
+        "corner2_pix_x": [
+            [
+                "irframe_pixel_size_x",
+                "irframe_pixel_x"
+            ],
+            0
+        ],
+        "corner2_pix_y": [
+            [
+                "irframe_pixel_size_y",
+                "irframe_pixel_y"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_flags.healthy": [
+            [
+                "_last_read_ms",
+                "millis"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "_target_info_timestamp"
+            ],
+            0
+        ]
+    }
+}

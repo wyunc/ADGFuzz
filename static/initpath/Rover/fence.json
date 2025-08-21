@@ -1,0 +1,16 @@
+{
+    "fence_check": {
+        "orig_breaches": [
+            [
+                "fence_get_breaches"
+            ],
+            0
+        ],
+        "new_breaches": [
+            [
+                "fence_check"
+            ],
+            0
+        ]
+    }
+}

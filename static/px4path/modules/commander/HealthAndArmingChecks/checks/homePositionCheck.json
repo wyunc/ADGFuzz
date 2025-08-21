@@ -1,0 +1,11 @@
+{
+    "checkAndReport": {
+        ".home_position_invalid": [
+            [
+                "home_position_valid_alt",
+                "home_position_valid_hpos"
+            ],
+            0
+        ]
+    }
+}

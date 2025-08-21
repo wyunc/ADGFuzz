@@ -1,0 +1,57 @@
+{
+    "loop": {
+        "user_input": [
+            [
+                "hal_console_read"
+            ],
+            0
+        ]
+    },
+    "display_offsets_and_scaling": {
+        "accel_offsets": [
+            [
+                "ins_get_accel_offsets"
+            ],
+            0
+        ],
+        "gyro_offsets": [
+            [
+                "ins_get_gyro_offsets"
+            ],
+            0
+        ],
+        "accel_scale": [
+            [
+                "ins_get_accel_scale"
+            ],
+            0
+        ]
+    },
+    "run_test": {
+        "ins_count": [
+            [
+                "ins_get_gyro_count",
+                "ins_get_accel_count"
+            ],
+            2
+        ],
+        "temp": [
+            [
+                "ins_get_temperature_ii"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ins_get_gyro_ii"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "ins_get_accel_ii"
+            ],
+            0
+        ]
+    }
+}

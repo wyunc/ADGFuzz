@@ -1,0 +1,19 @@
+{
+    "update": {
+        "state.rate_rpm": [
+            [
+                "state_instance",
+                "ap_rpm__params",
+                "efi_get_rpm",
+                "_scaling"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

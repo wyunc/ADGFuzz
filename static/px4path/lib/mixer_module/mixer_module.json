@@ -1,0 +1,224 @@
+{
+    "initParamHandles": {
+        ".min": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ],
+        ".max": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ],
+        ".disarmed": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ],
+        ".function": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ],
+        ".failsafe": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ],
+        "_param_handle_rev_range": [
+            [
+                "param_find_param_name"
+            ],
+            0
+        ]
+    },
+    "updateParams": {
+        "tmp": [
+            [
+                "_min_value",
+                "i"
+            ],
+            0
+        ],
+        "_reverse_output_mask": [
+            [
+                "rev_range_param"
+            ],
+            0
+        ]
+    },
+    "cleanupFunctions": {
+        "_subscription_callback": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "updateSubscriptions": {
+        "subscription_callback_provider_index": [
+            [
+                "p",
+                "int_max"
+            ],
+            0
+        ],
+        "_subscription_callback": [
+            [
+                "_functions",
+                "i"
+            ],
+            0
+        ],
+        "found_index": [
+            [
+                "existing"
+            ],
+            0
+        ],
+        "fixed_rate_scheduling_interval": [
+            [
+                "_max_topic_update_interval_us",
+                "4_ms"
+            ],
+            0
+        ]
+    },
+    "setMaxTopicUpdateRate": {
+        "_max_topic_update_interval_us": [
+            [
+                "max_topic_update_interval_us"
+            ],
+            0
+        ]
+    },
+    "setAllMinValues": {
+        ".min": [
+            [
+                "param_invalid"
+            ],
+            0
+        ]
+    },
+    "setAllMaxValues": {
+        ".max": [
+            [
+                "param_invalid"
+            ],
+            0
+        ]
+    },
+    "setAllFailsafeValues": {
+        ".failsafe": [
+            [
+                "param_invalid"
+            ],
+            0
+        ]
+    },
+    "setAllDisarmedValues": {
+        ".disarmed": [
+            [
+                "param_invalid"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "has_updates": [
+            [
+                "_subscription_callback",
+                "_subscription_callback_updated"
+            ],
+            0
+        ],
+        "_was_all_disabled": [
+            [
+                "all_disabled"
+            ],
+            0
+        ],
+        "_throttle_armed": [
+            [
+                "_armed_armed",
+                "_armed_in_esc_calibration_mode",
+                "_armed_lockdown"
+            ],
+            0
+        ]
+    },
+    "limitAndUpdateOutputs": {
+        "stop_motors": [
+            [
+                "_throttle_armed",
+                "_actuator_test_in_test_mode"
+            ],
+            0
+        ]
+    },
+    "output_limit_calc": {
+        "pre_armed": [
+            [
+                "arm_no_throttle"
+            ],
+            0
+        ],
+        "RAMP_TIME_US": [
+            [
+                "500_ms"
+            ],
+            0
+        ],
+        "progress": [
+            [
+                "hrt_elapsed_time__output_time_armed",
+                "float",
+                "_f",
+                "ramp_time_us",
+                "static_cast"
+            ],
+            1
+        ],
+        "desired_output": [
+            [
+                "output_limit_calc_single_output",
+                "output_limit_calc_single_i"
+            ],
+            0
+        ],
+        "_output_time_armed": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "local_limit_state": [
+            [
+                "ramp",
+                "off",
+                "on",
+                "on"
+            ],
+            1
+        ]
+    },
+    "setAndPublishActuatorOutputs": {
+        "actuator_outputs.noutputs": [
+            [
+                "num_outputs"
+            ],
+            0
+        ],
+        "actuator_outputs.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

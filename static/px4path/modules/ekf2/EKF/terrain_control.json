@@ -1,0 +1,31 @@
+{
+    "initTerrain": {
+        "_state.terrain": [
+            [
+                "_gpos_altitude",
+                "_params_rng_gnd_clearance"
+            ],
+            0
+        ]
+    },
+    "controlTerrainFakeFusion": {
+        "_last_on_ground_posD": [
+            [
+                "_gpos_altitude"
+            ],
+            0
+        ]
+    },
+    "updateTerrainValidity": {
+        "_terrain_valid": [
+            [
+                "_f",
+                "get_hagl",
+                "small_relative_hagl_var",
+                "infinity",
+                "_f"
+            ],
+            3
+        ]
+    }
+}

@@ -1,0 +1,291 @@
+{
+    "calc_speed_scaler": {
+        "throttle_out": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ],
+        "auto_state.highest_airspeed": [
+            [
+                "aspeed"
+            ],
+            0
+        ],
+        "threshold": [
+            [
+                "aparm_airspeed_min",
+                "min_airspeed_min"
+            ],
+            1
+        ],
+        "speed_scaler": [
+            [
+                "g_scaling_speed",
+                "sqrtf_throttle_out",
+                "sqrtf_throttle_cruise",
+                "g_scaling_speed",
+                "aparm_airspeed_min",
+                "min_airspeed_min",
+                "linear_interpolate_aspeed",
+                "linear_interpolate_threshold",
+                "linear_interpolate_g_scaling_speed",
+                "aspeed",
+                "g_scaling_speed",
+                "aparm_airspeed_max"
+            ],
+            4
+        ]
+    },
+    "stick_mixing_enabled": {
+        "stickmixing": [
+            [
+                "fence_stickmixing"
+            ],
+            0
+        ]
+    },
+    "stabilize_roll": {
+        "roll_out": [
+            [
+                "stabilize_roll_get_roll_out"
+            ],
+            0
+        ]
+    },
+    "stabilize_roll_get_roll_out": {
+        "roll_out": [
+            [
+                "roll_controller_get_rate_out_degrees",
+                "get_speed_scaler",
+                "roll_controller_get_rate_out_pid_info_target"
+            ],
+            1
+        ],
+        "pid_info": [
+            [
+                "quadplane_attitude_control_get_rate_roll_pid_get_pid_info"
+            ],
+            0
+        ]
+    },
+    "stabilize_pitch": {
+        "force_elevator": [
+            [
+                "takeoff_tail_hold"
+            ],
+            0
+        ],
+        "pitch_out": [
+            [
+                "stabilize_pitch_get_pitch_out"
+            ],
+            0
+        ]
+    },
+    "stabilize_pitch_get_pitch_out": {
+        "pitch_out": [
+            [
+                "pitch_controller_get_rate_out_degrees",
+                "get_speed_scaler",
+                "pitch_controller_get_rate_out_pid_info_target"
+            ],
+            1
+        ],
+        "demanded_pitch": [
+            [
+                "get_output_scaled_k_throttle",
+                "int32_t_g_pitch_trim",
+                "nav_pitch_cd",
+                "landing_get_pitch_cd",
+                "g_kff_throttle_to_pitch"
+            ],
+            0
+        ],
+        "pid_info": [
+            [
+                "quadplane_attitude_control_get_rate_pitch_pid_get_pid_info"
+            ],
+            0
+        ]
+    },
+    "stabilize_stick_mixing_direct": {
+        "aileron": [
+            [
+                "get_output_scaled_k_aileron",
+                "plane_channel_roll_stick_mixing_aileron"
+            ],
+            0
+        ],
+        "elevator": [
+            [
+                "plane_channel_pitch_stick_mixing_elevator",
+                "get_output_scaled_k_elevator"
+            ],
+            0
+        ]
+    },
+    "stabilize_stick_mixing_fbw": {
+        "nav_pitch_cd": [
+            [
+                "channel_pitch_norm_input_dz",
+                "aparm_pitch_limit_max",
+                "constrain_int32_aparm_pitch_limit_max_get",
+                "constrain_int32_nav_pitch_cd",
+                "pitch_limit_min",
+                "constrain_int32_pitch_limit_min"
+            ],
+            1
+        ],
+        "nav_roll_cd": [
+            [
+                "constrain_int32_roll_limit_cd",
+                "roll_limit_cd",
+                "channel_roll_norm_input_dz",
+                "constrain_int32_nav_roll_cd"
+            ],
+            1
+        ]
+    },
+    "stabilize_yaw": {
+        "rudder_output": [
+            [
+                "calc_nav_yaw_coordinated"
+            ],
+            0
+        ],
+        "steering_output": [
+            [
+                "calc_nav_yaw_course",
+                "calc_nav_yaw_ground"
+            ],
+            0
+        ]
+    },
+    "stabilize": {
+        "aileron": [
+            [
+                "roll_controller_get_rate_out_nav_scripting_roll_rate_dps",
+                "roll_controller_get_rate_out_speed_scaler"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "yaw_controller_get_rate_out_false",
+                "yaw_controller_get_rate_out_nav_scripting_yaw_rate_dps",
+                "nav_scripting_rudder_offset_pct",
+                "yaw_controller_get_rate_out_speed_scaler"
+            ],
+            0
+        ],
+        "last_stabilize_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "elevator": [
+            [
+                "pitch_controller_get_rate_out_speed_scaler",
+                "pitch_controller_get_rate_out_nav_scripting_pitch_rate_dps"
+            ],
+            0
+        ],
+        "speed_scaler": [
+            [
+                "get_speed_scaler"
+            ],
+            0
+        ]
+    },
+    "calc_throttle": {
+        "commanded_throttle": [
+            [
+                "tecs_controller_get_throttle_demand"
+            ],
+            0
+        ]
+    },
+    "calc_nav_pitch": {
+        "nav_pitch_cd": [
+            [
+                "constrain_int32_commanded_pitch",
+                "constrain_int32_pitch_limit_min",
+                "constrain_int32_aparm_pitch_limit_max_get"
+            ],
+            0
+        ],
+        "commanded_pitch": [
+            [
+                "tecs_controller_get_pitch_demand"
+            ],
+            0
+        ]
+    },
+    "calc_nav_roll": {
+        "nav_roll_cd": [
+            [
+                "constrain_int32_roll_limit_cd",
+                "constrain_int32_commanded_roll"
+            ],
+            0
+        ],
+        "commanded_roll": [
+            [
+                "nav_controller_nav_roll_cd"
+            ],
+            0
+        ]
+    },
+    "adjust_nav_pitch_throttle": {
+        "nav_pitch_cd": [
+            [
+                "float",
+                "aparm_throttle_cruise",
+                "throttle_percentage",
+                "g_stab_pitch_down"
+            ],
+            2
+        ]
+    },
+    "update_load_factor": {
+        "roll_limit_cd": [
+            [
+                "degrees_acosf",
+                "degrees_sq",
+                "degrees_max_load_factor"
+            ],
+            1
+        ],
+        "max_load_factor": [
+            [
+                "aparm_airspeed_min",
+                "smoothed_airspeed"
+            ],
+            0
+        ],
+        "nav_roll_cd": [
+            [
+                "constrain_int32_roll_limit_cd",
+                "constrain_int32_roll_limit",
+                "constrain_int32_nav_roll_cd"
+            ],
+            0
+        ],
+        "aerodynamic_load_factor": [
+            [
+                "safe_sqrt_cosf",
+                "safe_sqrt_demanded_roll",
+                "safe_sqrt_radians"
+            ],
+            0
+        ],
+        "demanded_roll": [
+            [
+                "fabsf_nav_roll_cd"
+            ],
+            0
+        ]
+    }
+}

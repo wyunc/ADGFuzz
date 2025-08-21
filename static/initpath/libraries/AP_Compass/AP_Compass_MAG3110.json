@@ -1,0 +1,73 @@
+{
+    "init": {
+        "success": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ]
+    },
+    "_hardware_init": {
+        "bus_sem": [
+            [
+                "_dev_get_semaphore"
+            ],
+            0
+        ],
+        "ack": [
+            [
+                "_dev_write_register_0x_a0",
+                "_dev_write_register_0x01",
+                "_dev_write_register_mag3110_mag_reg_ctrl_reg2",
+                "_dev_read_registers_mag3110_mag_reg_who_am_i",
+                "_dev_read_registers_sig",
+                "_dev_write_register_mag3110_mag_reg_ctrl_reg1"
+            ],
+            0
+        ]
+    },
+    "_read_sample": {
+        "ack": [
+            [
+                "_dev_read_registers_status",
+                "_dev_read_registers_mag3110_mag_reg_hxl",
+                "_dev_read_registers_mag3110_mag_reg_status",
+                "_dev_read_registers_buf"
+            ],
+            0
+        ],
+        "_mag_x": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_mag_y": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_mag_z": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "raw_field": [
+            [
+                "mag_scale",
+                "vector3f_float_mag_x",
+                "_mag_y",
+                "_mag_z",
+                "float"
+            ],
+            0
+        ]
+    }
+}

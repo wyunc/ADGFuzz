@@ -1,0 +1,46 @@
+{
+    "failsafe_check": {
+        "pitch": [
+            [
+                "pitch_in_expo_false"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "rudder_in_expo_false"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "get_throttle_input_true"
+            ],
+            0
+        ],
+        "last_timestamp": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "chan": [
+            [
+                "gcs_chan"
+            ],
+            0
+        ],
+        "last_ticks": [
+            [
+                "scheduler_ticks"
+            ],
+            1
+        ],
+        "roll": [
+            [
+                "roll_in_expo_false"
+            ],
+            0
+        ]
+    }
+}

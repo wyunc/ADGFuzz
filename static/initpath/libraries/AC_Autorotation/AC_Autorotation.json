@@ -1,0 +1,106 @@
+{
+    "update_hs_glide_controller": {
+        "_head_speed_error": [
+            [
+                "get_rpm_true",
+                "_param_head_speed_set_point",
+                "_target_head_speed"
+            ],
+            2
+        ],
+        "_collective_out": [
+            [
+                "col_trim_lpf_apply__collective_out",
+                "col_trim_lpf_apply_dt",
+                "_p_hs_get_p__head_speed_error"
+            ],
+            2
+        ]
+    },
+    "get_rpm": {
+        "rpm": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "_param_rpm_instance"
+            ],
+            0
+        ]
+    },
+    "init_fwd_spd_controller": {
+        "_accel_max": [
+            [
+                "_param_accel_max"
+            ],
+            0
+        ],
+        "_accel_out_last": [
+            [
+                "_param_fwd_k_ff",
+                "calc_speed_forward"
+            ],
+            1
+        ]
+    },
+    "set_dt": {
+        "_dt": [
+            [
+                "delta_sec"
+            ],
+            0
+        ]
+    },
+    "update_forward_speed_controller": {
+        "_delta_speed_fwd": [
+            [
+                "calc_speed_forward"
+            ],
+            1
+        ],
+        "_speed_forward_last": [
+            [
+                "calc_speed_forward"
+            ],
+            1
+        ],
+        "_pitch_target": [
+            [
+                "accel_to_angle__accel_out"
+            ],
+            0
+        ],
+        "_accel_out_last": [
+            [
+                "_p_fw_vel_get_p__cmd_vel",
+                "_p_fw_vel_get_p__speed_forward",
+                "_accel_max",
+                "_param_fwd_k_ff",
+                "_dt",
+                "_accel_max",
+                "_vel_target"
+            ],
+            5
+        ]
+    },
+    "calc_speed_forward": {
+        "groundspeed_vector": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "speed_forward": [
+            [
+                "ahrs_cos_yaw",
+                "groundspeed_vector_y",
+                "ahrs_sin_yaw",
+                "groundspeed_vector_x"
+            ],
+            0
+        ]
+    }
+}

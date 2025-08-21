@@ -1,0 +1,13 @@
+{
+    "read": {
+        "state.status": [
+            [
+                "state_instance",
+                "state_status",
+                "source_voltage_average",
+                "leak_detector__default_reading"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "load_font": {
+        "fd": [
+            [
+                "load_font_data_last_font"
+            ],
+            0
+        ],
+        "last_font": [
+            [
+                "get_font_num"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "char_width",
+                "y",
+                "x",
+                "char_width",
+                "uint8",
+                "new_nothrow",
+                "char_height"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "char_width",
+                "y",
+                "x",
+                "char_width",
+                "y",
+                "x",
+                "i",
+                "fd_data"
+            ],
+            4
+        ]
+    },
+    "update_thread": {
+        "c": [
+            [
+                "x",
+                "buffer2",
+                "y"
+            ],
+            0
+        ],
+        "px": [
+            [
+                "x",
+                "char_spacing",
+                "char_width",
+                "char_scale"
+            ],
+            0
+        ],
+        "last_counter": [
+            [
+                "counter"
+            ],
+            0
+        ],
+        "py": [
+            [
+                "char_height",
+                "char_spacing",
+                "char_scale",
+                "y"
+            ],
+            0
+        ]
+    }
+}

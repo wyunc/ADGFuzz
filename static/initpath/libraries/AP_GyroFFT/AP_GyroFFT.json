@@ -1,0 +1,480 @@
+{
+    "init": {
+        "_ref_energy": [
+            [
+                "_window_size",
+                "vector3f",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "_current_sample_mode": [
+            [
+                "_sample_mode"
+            ],
+            0
+        ],
+        "output_rate": [
+            [
+                "lrintf_log2f",
+                "_window_size",
+                "lrintf__samples_per_frame",
+                "fft_min_samples_per_frame",
+                "_window_overlap",
+                "float",
+                "_ins_get_raw_gyro_rate_hz",
+                "loop_rate_hz",
+                "_sample_mode",
+                "static_cast"
+            ],
+            2
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ],
+        "scale_factor": [
+            [
+                "using_post_filter_samples"
+            ],
+            0
+        ],
+        "allocation_count": [
+            [
+                "sizeof_float",
+                "ins_max_instances",
+                "xyz_axis_count",
+                "_num_frames"
+            ],
+            0
+        ],
+        "_frame_time_ms": [
+            [
+                "lrintf_log2f",
+                "_window_size",
+                "lrintf__samples_per_frame",
+                "fft_min_samples_per_frame",
+                "_window_overlap",
+                "_ins_get_raw_gyro_rate_hz",
+                "loop_rate_hz",
+                "_sample_mode"
+            ],
+            2
+        ],
+        "_harmonic_multiplier": [
+            [
+                "i",
+                "float_i"
+            ],
+            1
+        ],
+        "_state": [
+            [
+                "hal_dsp_fft_init__num_frames",
+                "hal_dsp_fft_init__window_size",
+                "hal_dsp_fft_init__fft_sampling_rate_hz"
+            ],
+            0
+        ],
+        "num_notches": [
+            [
+                "notch_num_dynamic_notches"
+            ],
+            0
+        ],
+        "_noise_cycles": [
+            [
+                "_window_size",
+                "lrintf_log2f",
+                "_window_size",
+                "lrintf__samples_per_frame",
+                "fft_min_samples_per_frame",
+                "_window_overlap",
+                "xyz_axis_count"
+            ],
+            1
+        ]
+    },
+    "sample_gyros": {
+        "sample": [
+            [
+                "_current_sample_mode",
+                "_ins_get_gyro_for_fft"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "_global_state": [
+            [
+                "_thread_state"
+            ],
+            0
+        ],
+        "_rpy_health.x": [
+            [
+                "millis",
+                "fft_max_missed_updates",
+                "_frame_time_ms",
+                "_global_state__health_ms_x"
+            ],
+            2
+        ],
+        "_health": [
+            [
+                "_global_state__health"
+            ],
+            0
+        ],
+        "_rpy_health.y": [
+            [
+                "millis",
+                "_global_state__health_ms_y",
+                "fft_max_missed_updates",
+                "_frame_time_ms"
+            ],
+            2
+        ],
+        "_rpy_health.z": [
+            [
+                "millis",
+                "fft_max_missed_updates",
+                "_frame_time_ms",
+                "_global_state__health_ms_z"
+            ],
+            2
+        ],
+        "_config._analysis_enabled": [
+            [
+                "_analysis_enabled"
+            ],
+            0
+        ]
+    },
+    "update_parameters": {
+        "_config._fft_max_hz": [
+            [
+                "_fft_max_hz"
+            ],
+            0
+        ],
+        "_config._snr_threshold_db": [
+            [
+                "_snr_threshold_db"
+            ],
+            0
+        ],
+        "_config._attenuation_cutoff": [
+            [
+                "powf__attenuation_power_db"
+            ],
+            0
+        ],
+        "_config._fft_start_bin": [
+            [
+                "floorf__fft_min_hz_get",
+                "floorf__state__bin_resolution"
+            ],
+            0
+        ],
+        "_config._fft_end_bin": [
+            [
+                "ceilf__state__bin_resolution",
+                "_state__bin_count",
+                "ceilf__fft_max_hz_get"
+            ],
+            0
+        ],
+        "_config._fft_min_hz": [
+            [
+                "_fft_min_hz"
+            ],
+            0
+        ]
+    },
+    "update_thread": {
+        "remaining_samples": [
+            [
+                "run_cycle"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "cycle_time": [
+            [
+                "_config__fft_start_bin",
+                "_config__fft_end_bin",
+                "_window_size"
+            ],
+            0
+        ],
+        "_calibrated": [
+            [
+                "_state__bin_resolution",
+                "self_test_bin_frequencies"
+            ],
+            1
+        ]
+    },
+    "update_freq_hover": {
+        "_avg_throttle_out": [
+            [
+                "dt",
+                "throttle_out"
+            ],
+            0
+        ]
+    },
+    "start_notch_tune": {
+        "_avg_throttle_out": [
+            [
+                "motors_get_throttle_hover"
+            ],
+            0
+        ]
+    },
+    "calculate_notch_frequency": {
+        "harmonic": [
+            [
+                "freqs",
+                "i"
+            ],
+            0
+        ]
+    },
+    "stop_notch_tune": {
+        "harmonic": [
+            [
+                "calculate_notch_frequency__harmonic_fit",
+                "calculate_notch_frequency_freqs",
+                "calculate_notch_frequency_numpeaks",
+                "calculate_notch_frequency_harmonics"
+            ],
+            0
+        ],
+        "numpeaks": [
+            [
+                "hal_dsp_fft_stop_average_freqs",
+                "hal_dsp_fft_stop_average__config__fft_start_bin",
+                "hal_dsp_fft_stop_average__config__fft_end_bin",
+                "hal_dsp_fft_stop_average__state"
+            ],
+            0
+        ]
+    },
+    "get_weighted_freq_hz": {
+        "freq": [
+            [
+                "get_noise_center_freq_hz_peak"
+            ],
+            0
+        ],
+        "energy": [
+            [
+                "get_center_freq_energy_peak"
+            ],
+            0
+        ]
+    },
+    "get_weighted_noise_center_freq_hz": {
+        "peak": [
+            [
+                "get_tracked_noise_peak"
+            ],
+            0
+        ]
+    },
+    "has_noise_at_frequency_hz": {
+        "noise": [
+            [
+                "get_noise_center_freq_hz_frequency_peak",
+                "get_noise_center_freq_hz_i"
+            ],
+            0
+        ],
+        "max_energy": [
+            [
+                "get_noise_signal_to_noise_db_i",
+                "get_noise_signal_to_noise_db_frequency_peak",
+                "j"
+            ],
+            1
+        ]
+    },
+    "write_log_messages": {
+        "_last_output_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_weighted_noise_center_bandwidth_hz": {
+        "peak": [
+            [
+                "get_tracked_noise_peak"
+            ],
+            0
+        ]
+    },
+    "calculate_noise": {
+        "_debug_snr": [
+            [
+                "snr"
+            ],
+            0
+        ],
+        "tracked_peak": [
+            [
+                "center",
+                "upper_shoulder",
+                "lower_shoulder"
+            ],
+            0
+        ],
+        "num_peaks": [
+            [
+                "calculate_tracking_peaks_weighted_center_freq_hz",
+                "calculate_tracking_peaks_config",
+                "calculate_tracking_peaks_calibrating"
+            ],
+            0
+        ],
+        "_debug_max_freq_bin": [
+            [
+                "_state_get_freq_bin_center",
+                "_state_get_freq_bin__state__peak_data",
+                "_state_get_freq_bin___bin"
+            ],
+            0
+        ],
+        "_debug_max_bin": [
+            [
+                "_state__peak_data",
+                "__bin",
+                "center"
+            ],
+            0
+        ],
+        "_debug_state": [
+            [
+                "_thread_state"
+            ],
+            0
+        ],
+        "_debug_max_bin_freq": [
+            [
+                "__freq_hz",
+                "_state__peak_data",
+                "center"
+            ],
+            0
+        ]
+    },
+    "calculate_filtered_noise": {
+        "peak_data": [
+            [
+                "_state__peak_data",
+                "source_peak"
+            ],
+            0
+        ],
+        "nb": [
+            [
+                "peak_data__bin"
+            ],
+            0
+        ]
+    },
+    "get_weighted_frequency": {
+        "max_energy": [
+            [
+                "_state_get_freq_bin_bin"
+            ],
+            0
+        ],
+        "snr": [
+            [
+                "_f",
+                "log10f_max_energy",
+                "log10f_ref_energy"
+            ],
+            0
+        ],
+        "peak_data": [
+            [
+                "peak",
+                "_state__peak_data"
+            ],
+            0
+        ],
+        "ref_energy": [
+            [
+                "peak_data__bin",
+                "_update_axis",
+                "_ref_energy"
+            ],
+            1
+        ],
+        "weighted_peak_freq_hz": [
+            [
+                "config__fft_max_hz",
+                "float",
+                "peak_data__freq_hz",
+                "floatconfig__fft_min_hz",
+                "config__fft_min_hz"
+            ],
+            0
+        ]
+    },
+    "update_ref_energy": {
+        "cycles": [
+            [
+                "float",
+                "_samples_per_frame",
+                "_window_size",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "self_test_bin_frequencies": {
+        "frequency": [
+            [
+                "_state__bin_resolution",
+                "_fft_min_hz",
+                "_fft_max_hz",
+                "_config__fft_start_bin"
+            ],
+            1
+        ],
+        "max_divergence": [
+            [
+                "self_test_frequency",
+                "self_test_test_window"
+            ],
+            0
+        ]
+    },
+    "self_test": {
+        "max_bin": [
+            [
+                "hal_dsp_fft_analyse__config__fft_end_bin",
+                "hal_dsp_fft_analyse__config__fft_start_bin",
+                "hal_dsp_fft_analyse__state",
+                "hal_dsp_fft_analyse__config__attenuation_cutoff"
+            ],
+            0
+        ],
+        "max_divergence": [
+            [
+                "fabsf__thread_state__center_freq_hz",
+                "fabsf_frequency"
+            ],
+            0
+        ]
+    }
+}

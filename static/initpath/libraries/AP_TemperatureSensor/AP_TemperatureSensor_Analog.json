@@ -1,0 +1,17 @@
+{
+    "update": {
+        "temp": [
+            [
+                "_a",
+                "i"
+            ],
+            0
+        ],
+        "poly": [
+            [
+                "_analog_source_voltage_average_ratiometric"
+            ],
+            1
+        ]
+    }
+}

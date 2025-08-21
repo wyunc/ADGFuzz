@@ -1,0 +1,176 @@
+{
+    "set_speed_accel": {
+        "_speed_up": [
+            [
+                "fabsf_speed_up"
+            ],
+            0
+        ],
+        "_accel_xy": [
+            [
+                "fabsf_accel_xy"
+            ],
+            0
+        ],
+        "_speed_down": [
+            [
+                "fabsf_speed_down"
+            ],
+            0
+        ],
+        "_speed_xy": [
+            [
+                "fabsf_speed_xy"
+            ],
+            0
+        ],
+        "_accel_z": [
+            [
+                "fabsf_accel_z"
+            ],
+            0
+        ]
+    },
+    "set_origin_and_destination": {
+        "_destination_vel": [
+            [
+                "destination_vel"
+            ],
+            0
+        ],
+        "_origin_vel": [
+            [
+                "origin_vel"
+            ],
+            0
+        ],
+        "vel_scaling": [
+            [
+                "_origin_vel_length",
+                "_destination_vel_length",
+                "origin",
+                "spline_factor",
+                "destination",
+                "_length"
+            ],
+            4
+        ],
+        "_zero_length": [
+            [
+                "is_zero_destination",
+                "is_zero_origin_length_squared"
+            ],
+            0
+        ]
+    },
+    "advance_target_along_track": {
+        "target_vel": [
+            [
+                "accel_max",
+                "target_vel_length",
+                "dt",
+                "speed_max",
+                "spline_vel_unit"
+            ],
+            1
+        ],
+        "_time": [
+            [
+                "spline_dt"
+            ],
+            0
+        ],
+        "distance_delta": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "_destination"
+            ],
+            0
+        ]
+    },
+    "calc_dt_speed_max": {
+        "spline_dt": [
+            [
+                "spline_vel_length",
+                "safe_sqrt_spline_accel_length",
+                "distance_delta",
+                "safe_sqrt_distance_delta",
+                "powf_spline_jerk_length",
+                "powf_distance_delta"
+            ],
+            0
+        ],
+        "accel_max": [
+            [
+                "kinematic_limit__accel_xy",
+                "tangential_accel_scaler",
+                "kinematic_limit__accel_z",
+                "kinematic_limit_spline_vel_unit"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "_destination",
+                "_length",
+                "target_pos"
+            ],
+            0
+        ],
+        "accel_norm_max": [
+            [
+                "kinematic_limit__accel_xy",
+                "kinematic_limit__accel_z",
+                "kinematic_limit_spline_accel_norm",
+                "lateral_accel_scaler"
+            ],
+            0
+        ],
+        "speed_max": [
+            [
+                "safe_sqrt__destination_speed_max",
+                "spline_vel_length",
+                "safe_sqrt_accel_norm_max",
+                "safe_sqrt_accel_max",
+                "kinematic_limit__speed_up",
+                "kinematic_limit__speed_down",
+                "kinematic_limit_spline_vel_unit",
+                "kinematic_limit__speed_xy",
+                "safe_sqrt_spline_accel_norm_length",
+                "safe_sqrt_dist",
+                "safe_sqrt_sq"
+            ],
+            1
+        ],
+        "spline_accel_norm": [
+            [
+                "spline_jerk_normalized",
+                "spline_vel_normalized",
+                "spline_accel_normalized",
+                "spline_accel",
+                "spline_accel_dot_spline_vel_unit"
+            ],
+            2
+        ]
+    },
+    "calc_target_pos_vel": {
+        "jerk": [
+            [
+                "_hermite_solution"
+            ],
+            0
+        ],
+        "time_cubed": [
+            [
+                "sq_time",
+                "time"
+            ],
+            1
+        ]
+    }
+}

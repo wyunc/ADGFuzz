@@ -1,0 +1,24 @@
+{
+    "update": {
+        "gimbal_controls.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_last_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "_stream_device_attitude_status": {
+        "attitude_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

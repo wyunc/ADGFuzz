@@ -1,0 +1,62 @@
+{
+    "controlFakePosFusion": {
+        "enable_valid_fake_pos": [
+            [
+                "_control_status_flags_vehicle_at_rest",
+                "_control_status_flags_constant_pos"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_fake_pos"
+            ],
+            0
+        ],
+        "_control_status.flags.fake_pos": [
+            [
+                "run_fake_pos_state_machine_aid_src",
+                "run_fake_pos_state_machine_enable_fake_pos",
+                "run_fake_pos_state_machine__control_status_flags_fake_pos"
+            ],
+            0
+        ],
+        "innov_gate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "_last_known_gpos",
+                "_xy",
+                "_gpos"
+            ],
+            0
+        ]
+    },
+    "resetFakePosFusion": {
+        "_aid_src_fake_pos.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "runFakePosStateMachine": {
+        "is_fusion_failing": [
+            [
+                "is_timed_out_aid_src_time_last_fuse",
+                "is_timed_out_uint64_t4e5"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    }
+}

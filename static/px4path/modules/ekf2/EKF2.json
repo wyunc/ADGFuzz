@@ -1,0 +1,2502 @@
+{
+    "multi_init": {
+        "changed_instance": [
+            [
+                "_vehicle_imu_sub_change_instance_imu"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "_estimator_states_pub_get_instance"
+            ],
+            1
+        ]
+    },
+    "Run": {
+        "longitude": [
+            [
+                "vehicle_command_param6"
+            ],
+            0
+        ],
+        "_accel_calibration_count": [
+            [
+                "imu_accel_calibration_count",
+                "sensor_combined_accel_calibration_count"
+            ],
+            0
+        ],
+        "imu_sample_new.time_us": [
+            [
+                "imu_timestamp_sample",
+                "sensor_combined_timestamp"
+            ],
+            0
+        ],
+        "imu_sample_new.delta_ang_dt": [
+            [
+                "_e",
+                "sensor_combined_gyro_integral_dt",
+                "imu_delta_angle_dt"
+            ],
+            0
+        ],
+        "_callback_registered": [
+            [
+                "_vehicle_imu_sub_register_callback",
+                "_sensor_combined_sub_register_callback"
+            ],
+            0
+        ],
+        "accuracy": [
+            [
+                "vehicle_command_param3",
+                "k_default_external_pos_accuracy"
+            ],
+            0
+        ],
+        "imu_updated": [
+            [
+                "_vehicle_imu_sub_update_imu",
+                "_sensor_combined_sub_update_sensor_combined"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_vehicle_imu_sub_get_last_generation",
+                "_sensor_combined_sub_get_last_generation"
+            ],
+            0
+        ],
+        "wind_direction_rad": [
+            [
+                "wrap_pi_radians",
+                "m_pi_f",
+                "wrap_pi_vehicle_command_param3"
+            ],
+            0
+        ],
+        "imu_sample_new.delta_vel_dt": [
+            [
+                "_e",
+                "imu_delta_velocity_dt",
+                "sensor_combined_accelerometer_integral_dt"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "vehicle_command_param7"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_last_time_slip_us": [
+            [
+                "sensor_combined_gyro_integral_dt",
+                "imu_delta_angle_dt",
+                "imu_sample_new_time_us"
+            ],
+            2
+        ],
+        "imu_sample_new.delta_ang": [
+            [
+                "sensor_combined_gyro_rad",
+                "imu_sample_new_delta_ang_dt",
+                "vector3f",
+                "imu_delta_angle"
+            ],
+            0
+        ],
+        "ekf_update_start": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_observation": [
+            [
+                "measurement_delay_seconds",
+                "vehicle_command_timestamp",
+                "1_s"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "vehicle_command_source_system"
+            ],
+            0
+        ],
+        "imu_sample_new.delta_vel": [
+            [
+                "sensor_combined_accelerometer_m_s2",
+                "vector3f",
+                "imu_delta_velocity",
+                "imu_sample_new_delta_vel_dt"
+            ],
+            0
+        ],
+        "param_aspd_scale": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "_gyro_calibration_count": [
+            [
+                "imu_gyro_calibration_count",
+                "sensor_combined_gyro_calibration_count"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "imu_sample_new_time_us"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_failed",
+                "vehicle_cmd_result_unsupported",
+                "vehicle_cmd_result_temporarily_rejected",
+                "vehicle_cmd_result_accepted"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "vehicle_command_command"
+            ],
+            0
+        ],
+        "_device_id_gyro": [
+            [
+                "sensor_selection_gyro_device_id",
+                "imu_gyro_device_id"
+            ],
+            0
+        ],
+        "_device_id_accel": [
+            [
+                "imu_accel_device_id",
+                "sensor_selection_accel_device_id"
+            ],
+            0
+        ],
+        "wind_direction_accuracy_rad": [
+            [
+                "radians_vehicle_command_param4"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "vehicle_command_source_component"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "vehicle_command_param5"
+            ],
+            0
+        ],
+        "_start_time_us": [
+            [
+                "imu_sample_new_time_us"
+            ],
+            0
+        ]
+    },
+    "VerifyParams": {
+        "delay_max": [
+            [
+                "_param_ekf2_of_delay_get",
+                "_param_ekf2_baro_delay_get",
+                "_param_ekf2_rng_delay_get",
+                "_param_ekf2_delay_max_get",
+                "_param_ekf2_asp_delay_get",
+                "_param_ekf2_gps_delay_get",
+                "_param_ekf2_mag_delay_get",
+                "_param_ekf2_avel_delay_get",
+                "_param_ekf2_ev_delay_get"
+            ],
+            0
+        ]
+    },
+    "PublishAttitude": {
+        "att.timestamp_sample": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "att.timestamp": [
+            [
+                "timestamp",
+                "hrt_absolute_time",
+                "_replay_mode"
+            ],
+            0
+        ]
+    },
+    "PublishBaroBias": {
+        "_last_baro_bias_published": [
+            [
+                "status_bias"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "_ekf_get_baro_bias_estimator_status"
+            ],
+            0
+        ]
+    },
+    "PublishGnssHgtBias": {
+        "status": [
+            [
+                "_ekf_get_gps_hgt_bias_estimator_status"
+            ],
+            0
+        ],
+        "_last_gnss_hgt_bias_published": [
+            [
+                "status_bias"
+            ],
+            0
+        ]
+    },
+    "PublishEvPosBias": {
+        "_last_ev_bias_published": [
+            [
+                "vector3f_bias_bias"
+            ],
+            0
+        ],
+        "bias.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "bias.timestamp_sample": [
+            [
+                "_ekf_aid_src_ev_hgt_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "PublishEventFlags": {
+        ".timestamp": [
+            [
+                "hrt_absolute_time",
+                "_replay_mode",
+                "timestamp"
+            ],
+            0
+        ],
+        "event_flags.starting_gps_fusion": [
+            [
+                "_ekf_information_event_flags_starting_gps_fusion"
+            ],
+            0
+        ],
+        "event_flags.reset_hgt_to_rng": [
+            [
+                "_ekf_information_event_flags_reset_hgt_to_rng"
+            ],
+            0
+        ],
+        "event_flags.reset_vel_to_zero": [
+            [
+                "_ekf_information_event_flags_reset_vel_to_zero"
+            ],
+            0
+        ],
+        "event_flags.starting_vision_yaw_fusion": [
+            [
+                "_ekf_information_event_flags_starting_vision_yaw_fusion"
+            ],
+            0
+        ],
+        "event_flags.information_event_changes": [
+            [
+                "_filter_information_event_changes"
+            ],
+            0
+        ],
+        "event_flags.starting_vision_vel_fusion": [
+            [
+                "_ekf_information_event_flags_starting_vision_vel_fusion"
+            ],
+            0
+        ],
+        "event_flags.reset_pos_to_gps": [
+            [
+                "_ekf_information_event_flags_reset_pos_to_gps"
+            ],
+            0
+        ],
+        "event_flags.reset_hgt_to_ev": [
+            [
+                "_ekf_information_event_flags_reset_hgt_to_ev"
+            ],
+            0
+        ],
+        "event_flags.yaw_aligned_to_imu_gps": [
+            [
+                "_ekf_information_event_flags_yaw_aligned_to_imu_gps"
+            ],
+            0
+        ],
+        "event_flags.starting_vision_pos_fusion": [
+            [
+                "_ekf_information_event_flags_starting_vision_pos_fusion"
+            ],
+            0
+        ],
+        "information_events": [
+            [
+                "_ekf_information_event_status_value"
+            ],
+            0
+        ],
+        "event_flags.reset_vel_to_vision": [
+            [
+                "_ekf_information_event_flags_reset_vel_to_vision"
+            ],
+            0
+        ],
+        "event_flags.reset_vel_to_gps": [
+            [
+                "_ekf_information_event_flags_reset_vel_to_gps"
+            ],
+            0
+        ],
+        "event_flags.reset_pos_to_vision": [
+            [
+                "_ekf_information_event_flags_reset_pos_to_vision"
+            ],
+            0
+        ],
+        "_last_event_flags_publish": [
+            [
+                "event_flags_timestamp",
+                "_estimator_event_flags_pub_get_timestamp"
+            ],
+            0
+        ],
+        "event_flags.reset_vel_to_flow": [
+            [
+                "_ekf_information_event_flags_reset_vel_to_flow"
+            ],
+            0
+        ],
+        "event_flags.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "event_flags.gps_checks_passed": [
+            [
+                "_ekf_information_event_flags_gps_checks_passed"
+            ],
+            0
+        ],
+        "event_flags.reset_hgt_to_baro": [
+            [
+                "_ekf_information_event_flags_reset_hgt_to_baro"
+            ],
+            0
+        ],
+        "event_flags.reset_hgt_to_gps": [
+            [
+                "_ekf_information_event_flags_reset_hgt_to_gps"
+            ],
+            0
+        ],
+        "event_flags.reset_pos_to_last_known": [
+            [
+                "_ekf_information_event_flags_reset_pos_to_last_known"
+            ],
+            0
+        ],
+        "event_flags.timestamp": [
+            [
+                "hrt_absolute_time",
+                "_replay_mode",
+                "timestamp"
+            ],
+            0
+        ]
+    },
+    "PublishGlobalPosition": {
+        "global_pos.lat_lon_valid": [
+            [
+                "_ekf_is_global_horizontal_position_valid"
+            ],
+            0
+        ],
+        "global_pos.delta_alt": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "global_pos.alt_valid": [
+            [
+                "_ekf_is_global_vertical_position_valid"
+            ],
+            0
+        ],
+        "global_pos.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "global_pos.lat_lon_reset_counter": [
+            [
+                "xy_reset_counter"
+            ],
+            0
+        ],
+        "global_pos.lat": [
+            [
+                "lla_latitude_deg"
+            ],
+            0
+        ],
+        "global_pos.lon": [
+            [
+                "lla_longitude_deg"
+            ],
+            0
+        ],
+        "global_pos.alt": [
+            [
+                "lla_altitude"
+            ],
+            0
+        ],
+        "global_pos.alt_ellipsoid": [
+            [
+                "alt_amsl_to_ellipsoid_global_pos_alt"
+            ],
+            0
+        ],
+        "global_pos.terrain_alt_valid": [
+            [
+                "_ekf_is_terrain_estimate_valid"
+            ],
+            0
+        ],
+        "lla": [
+            [
+                "_ekf_get_lat_lon_alt"
+            ],
+            0
+        ],
+        "global_pos.terrain_alt": [
+            [
+                "_ekf_get_ekf_global_origin_altitude",
+                "_ekf_get_terrain_vert_pos"
+            ],
+            0
+        ],
+        "global_pos.timestamp_sample": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "global_pos.alt_reset_counter": [
+            [
+                "z_reset_counter"
+            ],
+            0
+        ],
+        "global_pos.delta_terrain": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "delta_hagl": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "PublishGpsStatus": {
+        "estimator_gps_status.check_fail_max_spd_err": [
+            [
+                "_ekf_gps_check_fail_status_flags_sacc"
+            ],
+            0
+        ],
+        "estimator_gps_status.filtered_horizontal_speed_m_s": [
+            [
+                "_ekf_gps_filtered_horizontal_velocity_m_s"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_spoofed_gps": [
+            [
+                "_ekf_gps_check_fail_status_flags_spoofed"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_vert_spd_err": [
+            [
+                "_ekf_gps_check_fail_status_flags_vspeed"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_min_sat_count": [
+            [
+                "_ekf_gps_check_fail_status_flags_nsats"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_vert_err": [
+            [
+                "_ekf_gps_check_fail_status_flags_vacc"
+            ],
+            0
+        ],
+        "_last_gps_status_published": [
+            [
+                "_ekf_get_gps_sample_delayed_time_us"
+            ],
+            1
+        ],
+        "estimator_gps_status.position_drift_rate_horizontal_m_s": [
+            [
+                "_ekf_gps_horizontal_position_drift_rate_m_s"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_vert_drift": [
+            [
+                "_ekf_gps_check_fail_status_flags_vdrift"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_horz_spd_err": [
+            [
+                "_ekf_gps_check_fail_status_flags_hspeed"
+            ],
+            0
+        ],
+        "estimator_gps_status.position_drift_rate_vertical_m_s": [
+            [
+                "_ekf_gps_vertical_position_drift_rate_m_s"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_gps_fix": [
+            [
+                "_ekf_gps_check_fail_status_flags_fix"
+            ],
+            0
+        ],
+        "estimator_gps_status.timestamp": [
+            [
+                "_replay_mode",
+                "timestamp",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_horz_err": [
+            [
+                "_ekf_gps_check_fail_status_flags_hacc"
+            ],
+            0
+        ],
+        "estimator_gps_status.timestamp_sample": [
+            [
+                "_ekf_get_gps_sample_delayed_time_us"
+            ],
+            1
+        ],
+        "estimator_gps_status.checks_passed": [
+            [
+                "_ekf_gps_checks_passed"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_pdop": [
+            [
+                "_ekf_gps_check_fail_status_flags_pdop"
+            ],
+            0
+        ],
+        "estimator_gps_status.check_fail_max_horz_drift": [
+            [
+                "_ekf_gps_check_fail_status_flags_hdrift"
+            ],
+            0
+        ]
+    },
+    "PublishInnovations": {
+        "innovations.airspeed": [
+            [
+                "_ekf_aid_src_airspeed_innovation"
+            ],
+            0
+        ],
+        "innovations.ev_vvel": [
+            [
+                "_ekf_aid_src_ev_vel_innovation"
+            ],
+            0
+        ],
+        "innovations.rng_vpos": [
+            [
+                "_ekf_aid_src_rng_hgt_innovation"
+            ],
+            0
+        ],
+        "innovations.hagl": [
+            [
+                "_ekf_aid_src_rng_hgt_innovation"
+            ],
+            0
+        ],
+        "innovations.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "innovations.baro_vpos": [
+            [
+                "_ekf_aid_src_baro_hgt_innovation"
+            ],
+            0
+        ],
+        "innovations.ev_vpos": [
+            [
+                "_ekf_aid_src_ev_hgt_innovation"
+            ],
+            0
+        ],
+        "innovations.gps_vpos": [
+            [
+                "_ekf_aid_src_gnss_hgt_innovation"
+            ],
+            0
+        ],
+        "innovations.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "innovations.beta": [
+            [
+                "_ekf_aid_src_sideslip_innovation"
+            ],
+            0
+        ],
+        "innovations.gps_vvel": [
+            [
+                "_ekf_aid_src_gnss_vel_innovation"
+            ],
+            0
+        ],
+        "innovations.heading": [
+            [
+                "_ekf_get_heading_innov"
+            ],
+            0
+        ],
+        "innovations.hagl_rate": [
+            [
+                "_ekf_get_hagl_rate_innov"
+            ],
+            0
+        ]
+    },
+    "PublishInnovationTestRatios": {
+        "test_ratios.heading": [
+            [
+                "_ekf_get_heading_innov_ratio"
+            ],
+            0
+        ],
+        "test_ratios.gps_vvel": [
+            [
+                "_ekf_aid_src_gnss_vel_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.hagl_rate": [
+            [
+                "_ekf_get_hagl_rate_innov_ratio"
+            ],
+            0
+        ],
+        "test_ratios.ev_vpos": [
+            [
+                "_ekf_aid_src_ev_hgt_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.beta": [
+            [
+                "_ekf_aid_src_sideslip_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "test_ratios.ev_vvel": [
+            [
+                "_ekf_aid_src_ev_vel_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.baro_vpos": [
+            [
+                "_ekf_aid_src_baro_hgt_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "test_ratios.airspeed": [
+            [
+                "_ekf_aid_src_airspeed_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.gps_vpos": [
+            [
+                "_ekf_aid_src_gnss_hgt_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.rng_vpos": [
+            [
+                "_ekf_aid_src_rng_hgt_test_ratio"
+            ],
+            0
+        ],
+        "test_ratios.hagl": [
+            [
+                "_ekf_aid_src_rng_hgt_test_ratio"
+            ],
+            0
+        ]
+    },
+    "PublishInnovationVariances": {
+        "variances.gps_vpos": [
+            [
+                "_ekf_aid_src_gnss_hgt_innovation_variance"
+            ],
+            0
+        ],
+        "variances.hagl": [
+            [
+                "_ekf_aid_src_rng_hgt_innovation_variance"
+            ],
+            0
+        ],
+        "variances.rng_vpos": [
+            [
+                "_ekf_aid_src_rng_hgt_innovation_variance"
+            ],
+            0
+        ],
+        "variances.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "variances.heading": [
+            [
+                "_ekf_get_heading_innov_var"
+            ],
+            0
+        ],
+        "variances.hagl_rate": [
+            [
+                "_ekf_get_hagl_rate_innov_var"
+            ],
+            0
+        ],
+        "variances.gps_vvel": [
+            [
+                "_ekf_aid_src_gnss_vel_innovation_variance"
+            ],
+            0
+        ],
+        "variances.beta": [
+            [
+                "_ekf_aid_src_sideslip_innovation_variance"
+            ],
+            0
+        ],
+        "variances.ev_vpos": [
+            [
+                "_ekf_aid_src_ev_hgt_innovation_variance"
+            ],
+            0
+        ],
+        "variances.baro_vpos": [
+            [
+                "_ekf_aid_src_baro_hgt_innovation_variance"
+            ],
+            0
+        ],
+        "variances.ev_vvel": [
+            [
+                "_ekf_aid_src_ev_vel_innovation_variance"
+            ],
+            0
+        ],
+        "variances.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "variances.airspeed": [
+            [
+                "_ekf_aid_src_airspeed_innovation_variance"
+            ],
+            0
+        ]
+    },
+    "PublishLocalPosition": {
+        "lpos.vz_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "lpos.az": [
+            [
+                "vel_deriv"
+            ],
+            0
+        ],
+        "lpos.vxy_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "lpos.ay": [
+            [
+                "vel_deriv"
+            ],
+            0
+        ],
+        "lpos.ref_alt": [
+            [
+                "_ekf_get_ekf_global_origin_altitude",
+                "nan"
+            ],
+            0
+        ],
+        "lpos.dist_bottom_sensor_bitfield": [
+            [
+                "dist_bottom_sensor_none"
+            ],
+            0
+        ],
+        "lpos.dist_bottom_var": [
+            [
+                "_ekf_get_terrain_variance"
+            ],
+            0
+        ],
+        "lpos.ax": [
+            [
+                "vel_deriv"
+            ],
+            0
+        ],
+        "lpos.z_deriv": [
+            [
+                "_ekf_get_vertical_position_derivative"
+            ],
+            0
+        ],
+        "lpos.ref_lon": [
+            [
+                "double",
+                "_ekf_global_origin_get_projection_reference_lon",
+                "static_cast",
+                "nan"
+            ],
+            0
+        ],
+        "lpos.dist_bottom": [
+            [
+                "_f",
+                "max__ekf_get_hagl"
+            ],
+            0
+        ],
+        "lpos.vz": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "lpos.ref_lat": [
+            [
+                "_ekf_global_origin_get_projection_reference_lat",
+                "double",
+                "static_cast",
+                "nan"
+            ],
+            0
+        ],
+        "lpos.dist_bottom_valid": [
+            [
+                "_ekf_is_terrain_estimate_valid"
+            ],
+            0
+        ],
+        "lpos.vy": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "lpos.vx": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "lpos.ref_timestamp": [
+            [
+                "_ekf_global_origin_get_projection_reference_timestamp"
+            ],
+            0
+        ],
+        "lpos.tilt_var": [
+            [
+                "_ekf_get_tilt_variance"
+            ],
+            0
+        ],
+        "lpos.z": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "lpos.y": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "lpos.heading_good_for_control": [
+            [
+                "_ekf_is_yaw_final_align_complete"
+            ],
+            0
+        ],
+        "lpos.x": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "lpos.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "lpos.v_z_valid": [
+            [
+                "_ekf_is_local_vertical_velocity_valid",
+                "_ekf_is_local_vertical_position_valid"
+            ],
+            0
+        ],
+        "lpos.delta_heading": [
+            [
+                "eulerf_delta_q_reset_psi"
+            ],
+            0
+        ],
+        "lpos.timestamp_sample": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "lpos.hagl_max_xy": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "lpos.z_valid": [
+            [
+                "_ekf_is_local_vertical_velocity_valid",
+                "_ekf_is_local_vertical_position_valid"
+            ],
+            0
+        ],
+        "lpos.heading_var": [
+            [
+                "_ekf_get_yaw_var"
+            ],
+            0
+        ],
+        "lpos.unaided_heading": [
+            [
+                "_ekf_get_unaided_yaw"
+            ],
+            0
+        ],
+        "lpos.hagl_max_z": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "lpos.v_xy_valid": [
+            [
+                "_ekf_is_local_horizontal_position_valid"
+            ],
+            0
+        ],
+        "lpos.xy_valid": [
+            [
+                "_ekf_is_local_horizontal_position_valid"
+            ],
+            0
+        ],
+        "lpos.heading": [
+            [
+                "_psi",
+                "eulerf__ekf_get_quaternion"
+            ],
+            0
+        ],
+        "lpos.hagl_min": [
+            [
+                "infinity"
+            ],
+            0
+        ]
+    },
+    "PublishOdometry": {
+        "odom.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odom.timestamp_sample": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "odom.velocity_frame": [
+            [
+                "velocity_frame_ned"
+            ],
+            0
+        ],
+        "angular_velocity": [
+            [
+                "_ekf_get_gyro_bias",
+                "rates"
+            ],
+            0
+        ],
+        "odom.pose_frame": [
+            [
+                "pose_frame_ned"
+            ],
+            0
+        ]
+    },
+    "PublishSensorBias": {
+        "bias.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "bias.gyro_bias_stable": [
+            [
+                "_gyro_cal_cal_available"
+            ],
+            0
+        ],
+        "bias.mag_bias_stable": [
+            [
+                "_mag_cal_cal_available"
+            ],
+            0
+        ],
+        "bias.accel_device_id": [
+            [
+                "_device_id_accel"
+            ],
+            0
+        ],
+        "bias.accel_bias_stable": [
+            [
+                "_accel_cal_cal_available"
+            ],
+            0
+        ],
+        "bias.gyro_device_id": [
+            [
+                "_device_id_gyro"
+            ],
+            0
+        ],
+        "bias.gyro_bias_valid": [
+            [
+                "bias_var_longer_than",
+                "bias_var_longer_than__f"
+            ],
+            0
+        ],
+        "bias.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "_last_mag_bias_published": [
+            [
+                "mag_bias"
+            ],
+            0
+        ],
+        "bias.mag_device_id": [
+            [
+                "_device_id_mag"
+            ],
+            0
+        ],
+        "bias.mag_bias_valid": [
+            [
+                "bias_var_longer_than",
+                "bias_var_longer_than__f"
+            ],
+            0
+        ],
+        "_last_gyro_bias_published": [
+            [
+                "gyro_bias"
+            ],
+            0
+        ],
+        "bias.accel_bias_valid": [
+            [
+                "bias_var_longer_than",
+                "bias_var_longer_than__f"
+            ],
+            0
+        ],
+        "bias.gyro_bias_limit": [
+            [
+                "_ekf_get_gyro_bias_limit"
+            ],
+            0
+        ],
+        "_last_accel_bias_published": [
+            [
+                "accel_bias"
+            ],
+            0
+        ],
+        "_last_sensor_bias_published": [
+            [
+                "bias_timestamp"
+            ],
+            0
+        ],
+        "bias.mag_bias_limit": [
+            [
+                "_ekf_get_mag_bias_limit"
+            ],
+            0
+        ],
+        "bias.accel_bias_limit": [
+            [
+                "_ekf_get_accel_bias_limit"
+            ],
+            0
+        ]
+    },
+    "PublishStates": {
+        "states.n_states": [
+            [
+                "state_vector_size"
+            ],
+            0
+        ],
+        "states.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "state_vector": [
+            [
+                "_ekf_state_vector"
+            ],
+            0
+        ],
+        "states.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "PublishStatus": {
+        "status.gyro_device_id": [
+            [
+                "_device_id_gyro"
+            ],
+            0
+        ],
+        "status.pos_test_ratio": [
+            [
+                "_ekf_get_horizontal_position_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status.reset_count_quat": [
+            [
+                "_ekf_state_reset_status_reset_count_quat"
+            ],
+            0
+        ],
+        "status.baro_device_id": [
+            [
+                "_device_id_baro"
+            ],
+            0
+        ],
+        "status.hdg_test_ratio": [
+            [
+                "_ekf_get_heading_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status.reset_count_pod_d": [
+            [
+                "_ekf_state_reset_status_reset_count_pos_d"
+            ],
+            0
+        ],
+        "status.accel_device_id": [
+            [
+                "_device_id_accel"
+            ],
+            0
+        ],
+        "status.vel_test_ratio": [
+            [
+                "_ekf_get_vertical_velocity_innovation_test_ratio",
+                "nan",
+                "max_vel_xy_test_ratio",
+                "_ekf_get_horizontal_velocity_innovation_test_ratio",
+                "max_vel_z_test_ratio"
+            ],
+            2
+        ],
+        "status.reset_count_pos_ne": [
+            [
+                "_ekf_state_reset_status_reset_count_pos_ne"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_mag_field_disturbed": [
+            [
+                "_ekf_control_status_flags_mag_field_disturbed"
+            ],
+            0
+        ],
+        "status.filter_fault_flags": [
+            [
+                "_ekf_fault_status_value"
+            ],
+            0
+        ],
+        "status.reset_count_vel_d": [
+            [
+                "_ekf_state_reset_status_reset_count_vel_d"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_innov_vel_vert": [
+            [
+                "k_min_test_ratio_preflight",
+                "_ekf_get_vertical_velocity_innovation_test_ratio"
+            ],
+            1
+        ],
+        "status.reset_count_vel_ne": [
+            [
+                "_ekf_state_reset_status_reset_count_vel_ne"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_innov_vel_horiz": [
+            [
+                "k_min_test_ratio_preflight",
+                "_ekf_get_horizontal_velocity_innovation_test_ratio"
+            ],
+            1
+        ],
+        "status.solution_status_flags": [
+            [
+                "_ekf_get_ekf_soln_status"
+            ],
+            0
+        ],
+        "status.control_mode_flags": [
+            [
+                "_ekf_control_status_value"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_innov_pos_horiz": [
+            [
+                "k_min_test_ratio_preflight",
+                "status_pos_test_ratio"
+            ],
+            0
+        ],
+        "status.beta_test_ratio": [
+            [
+                "_ekf_get_synthetic_sideslip_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status.gps_check_fail_flags": [
+            [
+                "_params_gps_check_mask",
+                "uint16_t",
+                "_ekf_gps_check_fail_status_value"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_innov_height": [
+            [
+                "k_min_test_ratio_preflight",
+                "status_hgt_test_ratio"
+            ],
+            0
+        ],
+        "status.hagl_test_ratio": [
+            [
+                "_ekf_get_height_above_ground_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "status.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "status.pre_flt_fail_innov_heading": [
+            [
+                "k_min_test_ratio_preflight",
+                "status_hdg_test_ratio"
+            ],
+            0
+        ],
+        "status.mag_device_id": [
+            [
+                "_device_id_mag"
+            ],
+            0
+        ],
+        "status.tas_test_ratio": [
+            [
+                "_ekf_get_airspeed_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status.time_slip": [
+            [
+                "1e",
+                "_last_time_slip_us"
+            ],
+            0
+        ],
+        "status.hgt_test_ratio": [
+            [
+                "_ekf_get_vertical_position_innovation_test_ratio"
+            ],
+            0
+        ]
+    },
+    "PublishStatusFlags": {
+        "status_flags.cs_rng_fault": [
+            [
+                "_ekf_control_status_flags_rng_fault"
+            ],
+            0
+        ],
+        "status_flags.cs_in_air": [
+            [
+                "_ekf_control_status_flags_in_air"
+            ],
+            0
+        ],
+        "status_flags.cs_inertial_dead_reckoning": [
+            [
+                "_ekf_control_status_flags_inertial_dead_reckoning"
+            ],
+            0
+        ],
+        "status_flags.reject_ver_vel": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_ver_vel"
+            ],
+            0
+        ],
+        "status_flags.cs_fixed_wing": [
+            [
+                "_ekf_control_status_flags_fixed_wing"
+            ],
+            0
+        ],
+        "_last_status_flags_publish": [
+            [
+                "status_flags_timestamp"
+            ],
+            0
+        ],
+        "status_flags.cs_rng_terrain": [
+            [
+                "_ekf_control_status_flags_rng_terrain"
+            ],
+            0
+        ],
+        "_filter_fault_status": [
+            [
+                "_ekf_fault_status_value"
+            ],
+            0
+        ],
+        "status_flags.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "status_flags.cs_gnss_yaw_fault": [
+            [
+                "_ekf_control_status_flags_gnss_yaw_fault"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_dec": [
+            [
+                "_ekf_control_status_flags_mag_dec"
+            ],
+            0
+        ],
+        "status_flags.reject_hor_vel": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_hor_vel"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_field_disturbed": [
+            [
+                "_ekf_control_status_flags_mag_field_disturbed"
+            ],
+            0
+        ],
+        "status_flags.cs_ev_yaw_fault": [
+            [
+                "_ekf_control_status_flags_ev_yaw_fault"
+            ],
+            0
+        ],
+        "status_flags.cs_opt_flow_terrain": [
+            [
+                "_ekf_control_status_flags_opt_flow_terrain"
+            ],
+            0
+        ],
+        "_filter_control_status": [
+            [
+                "_ekf_control_status_value"
+            ],
+            0
+        ],
+        "status_flags.cs_baro_fault": [
+            [
+                "_ekf_control_status_flags_baro_fault"
+            ],
+            0
+        ],
+        "status_flags.reject_optflow_y": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_optflow_y"
+            ],
+            0
+        ],
+        "status_flags.cs_aux_gpos": [
+            [
+                "_ekf_control_status_flags_aux_gpos"
+            ],
+            0
+        ],
+        "status_flags.cs_vehicle_at_rest": [
+            [
+                "_ekf_control_status_flags_vehicle_at_rest"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_3d": [
+            [
+                "_ekf_control_status_flags_mag_3d"
+            ],
+            0
+        ],
+        "status_flags.innovation_fault_status_changes": [
+            [
+                "_innov_check_fail_status_changes"
+            ],
+            0
+        ],
+        "status_flags.cs_fuse_beta": [
+            [
+                "_ekf_control_status_flags_fuse_beta"
+            ],
+            0
+        ],
+        "update": [
+            [
+                "timestamp",
+                "1_s"
+            ],
+            0
+        ],
+        "status_flags.cs_fake_pos": [
+            [
+                "_ekf_control_status_flags_fake_pos"
+            ],
+            0
+        ],
+        "status_flags.cs_synthetic_mag_z": [
+            [
+                "_ekf_control_status_flags_synthetic_mag_z"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_hdg": [
+            [
+                "_ekf_control_status_flags_mag_hdg"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_acc_clipping": [
+            [
+                "_ekf_fault_status_flags_bad_acc_clipping"
+            ],
+            0
+        ],
+        "status_flags.cs_ev_hgt": [
+            [
+                "_ekf_control_status_flags_ev_hgt"
+            ],
+            0
+        ],
+        "status_flags.cs_constant_pos": [
+            [
+                "_ekf_control_status_flags_constant_pos"
+            ],
+            0
+        ],
+        "status_flags.reject_optflow_x": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_optflow_x"
+            ],
+            0
+        ],
+        "status_flags.cs_mag": [
+            [
+                "_ekf_control_status_flags_mag"
+            ],
+            0
+        ],
+        "status_flags.cs_ev_vel": [
+            [
+                "_ekf_control_status_flags_ev_vel"
+            ],
+            0
+        ],
+        "status_flags.cs_opt_flow": [
+            [
+                "_ekf_control_status_flags_opt_flow"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_acc_vertical": [
+            [
+                "_ekf_fault_status_flags_bad_acc_vertical"
+            ],
+            0
+        ],
+        "status_flags.cs_ev_yaw": [
+            [
+                "_ekf_control_status_flags_ev_yaw"
+            ],
+            0
+        ],
+        "status_flags.cs_valid_fake_pos": [
+            [
+                "_ekf_control_status_flags_valid_fake_pos"
+            ],
+            0
+        ],
+        "status_flags.reject_hagl": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_hagl"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_hdg": [
+            [
+                "_ekf_fault_status_flags_bad_hdg"
+            ],
+            0
+        ],
+        "status_flags.cs_wind_dead_reckoning": [
+            [
+                "_ekf_control_status_flags_wind_dead_reckoning"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_aligned_in_flight": [
+            [
+                "_ekf_control_status_flags_mag_aligned_in_flight"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_optflow_y": [
+            [
+                "_ekf_fault_status_flags_bad_optflow_y"
+            ],
+            0
+        ],
+        "status_flags.cs_ev_pos": [
+            [
+                "_ekf_control_status_flags_ev_pos"
+            ],
+            0
+        ],
+        "status_flags.cs_gnss_pos": [
+            [
+                "_ekf_control_status_flags_gnss_pos"
+            ],
+            0
+        ],
+        "status_flags.fault_status_changes": [
+            [
+                "_filter_fault_status_changes"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_fault": [
+            [
+                "_ekf_control_status_flags_mag_fault"
+            ],
+            0
+        ],
+        "status_flags.reject_sideslip": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_sideslip"
+            ],
+            0
+        ],
+        "status_flags.cs_fake_hgt": [
+            [
+                "_ekf_control_status_flags_fake_hgt"
+            ],
+            0
+        ],
+        "status_flags.cs_gnss_yaw": [
+            [
+                "_ekf_control_status_flags_gnss_yaw"
+            ],
+            0
+        ],
+        "status_flags.cs_yaw_align": [
+            [
+                "_ekf_control_status_flags_yaw_align"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_optflow_x": [
+            [
+                "_ekf_fault_status_flags_bad_optflow_x"
+            ],
+            0
+        ],
+        "status_flags.cs_gps_hgt": [
+            [
+                "_ekf_control_status_flags_gps_hgt"
+            ],
+            0
+        ],
+        "_innov_check_fail_status": [
+            [
+                "_ekf_innov_check_fail_status_value"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_mag_x": [
+            [
+                "_ekf_fault_status_flags_bad_mag_x"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_mag_z": [
+            [
+                "_ekf_fault_status_flags_bad_mag_z"
+            ],
+            0
+        ],
+        "status_flags.reject_airspeed": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_airspeed"
+            ],
+            0
+        ],
+        "status_flags.cs_mag_heading_consistent": [
+            [
+                "_ekf_control_status_flags_mag_heading_consistent"
+            ],
+            0
+        ],
+        "status_flags.cs_rng_stuck": [
+            [
+                "_ekf_control_status_flags_rng_stuck"
+            ],
+            0
+        ],
+        "status_flags.cs_tilt_align": [
+            [
+                "_ekf_control_status_flags_tilt_align"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_sideslip": [
+            [
+                "_ekf_fault_status_flags_bad_sideslip"
+            ],
+            0
+        ],
+        "status_flags.cs_rng_hgt": [
+            [
+                "_ekf_control_status_flags_rng_hgt"
+            ],
+            0
+        ],
+        "status_flags.reject_yaw": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_yaw"
+            ],
+            0
+        ],
+        "status_flags.cs_rng_kin_consistent": [
+            [
+                "_ekf_control_status_flags_rng_kin_consistent"
+            ],
+            0
+        ],
+        "status_flags.cs_gnd_effect": [
+            [
+                "_ekf_control_status_flags_gnd_effect"
+            ],
+            0
+        ],
+        "status_flags.control_status_changes": [
+            [
+                "_filter_control_status_changes"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_airspeed": [
+            [
+                "_ekf_fault_status_flags_bad_airspeed"
+            ],
+            0
+        ],
+        "status_flags.cs_baro_hgt": [
+            [
+                "_ekf_control_status_flags_baro_hgt"
+            ],
+            0
+        ],
+        "status_flags.cs_gnss_vel": [
+            [
+                "_ekf_control_status_flags_gnss_vel"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_mag_y": [
+            [
+                "_ekf_fault_status_flags_bad_mag_y"
+            ],
+            0
+        ],
+        "status_flags.reject_ver_pos": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_ver_pos"
+            ],
+            0
+        ],
+        "status_flags.cs_gravity_vector": [
+            [
+                "_ekf_control_status_flags_gravity_vector"
+            ],
+            0
+        ],
+        "status_flags.cs_fuse_aspd": [
+            [
+                "_ekf_control_status_flags_fuse_aspd"
+            ],
+            0
+        ],
+        "status_flags.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "status_flags.fs_bad_mag_decl": [
+            [
+                "_ekf_fault_status_flags_bad_mag_decl"
+            ],
+            0
+        ],
+        "status_flags.cs_wind": [
+            [
+                "_ekf_control_status_flags_wind"
+            ],
+            0
+        ],
+        "status_flags.reject_hor_pos": [
+            [
+                "_ekf_innov_check_fail_status_flags_reject_hor_pos"
+            ],
+            0
+        ]
+    },
+    "PublishYawEstimatorStatus": {
+        "yaw_est_test_data.timestamp": [
+            [
+                "_replay_mode",
+                "hrt_absolute_time",
+                "timestamp"
+            ],
+            0
+        ],
+        "yaw_est_test_data.yaw_composite_valid": [
+            [
+                "_ekf_is_yaw_emergency_estimate_available"
+            ],
+            0
+        ],
+        "yaw_est_test_data.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "PublishWindEstimate": {
+        "wind.windspeed_north": [
+            [
+                "_ekf_get_wind_velocity"
+            ],
+            1
+        ],
+        "wind.tas_innov": [
+            [
+                "_ekf_aid_src_airspeed_innovation"
+            ],
+            0
+        ],
+        "wind.timestamp": [
+            [
+                "hrt_absolute_time",
+                "timestamp",
+                "_replay_mode"
+            ],
+            0
+        ],
+        "wind.beta_innov": [
+            [
+                "_ekf_aid_src_sideslip_innovation",
+                "_ekf_aid_src_sideslip_innovation_variance"
+            ],
+            0
+        ],
+        "wind.variance_north": [
+            [
+                "_ekf_get_wind_velocity_variance"
+            ],
+            1
+        ],
+        "wind.timestamp_sample": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "wind.variance_east": [
+            [
+                "_ekf_get_wind_velocity_variance"
+            ],
+            1
+        ],
+        "wind.tas_innov_var": [
+            [
+                "_ekf_aid_src_airspeed_innovation_variance"
+            ],
+            0
+        ],
+        "wind.windspeed_east": [
+            [
+                "_ekf_get_wind_velocity"
+            ],
+            1
+        ]
+    },
+    "PublishOpticalFlowVel": {
+        "flow_vel.timestamp_sample": [
+            [
+                "_ekf_aid_src_optical_flow_timestamp_sample"
+            ],
+            0
+        ],
+        "flow_vel.timestamp": [
+            [
+                "timestamp",
+                "_replay_mode",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_optical_flow_vel_pub_last": [
+            [
+                "_ekf_aid_src_optical_flow_timestamp_sample"
+            ],
+            1
+        ]
+    },
+    "UpdateAirspeedSample": {
+        "airspeed_validated.airspeed_source": [
+            [
+                "synthetic"
+            ],
+            0
+        ],
+        "_airspeed_validated_timestamp_last": [
+            [
+                "airspeed_validated_timestamp"
+            ],
+            0
+        ],
+        "cas2tas": [
+            [
+                "airspeed_validated_calibrated_airspeed_m_s",
+                "airspeed_validated_true_airspeed_m_s",
+                "_f"
+            ],
+            0
+        ],
+        "true_airspeed_m_s": [
+            [
+                "_airspeed_scale_factor",
+                "airspeed_true_airspeed_m_s"
+            ],
+            0
+        ]
+    },
+    "UpdateBaroSample": {
+        "_baro_calibration_count": [
+            [
+                "airdata_calibration_count"
+            ],
+            0
+        ],
+        "_device_id_baro": [
+            [
+                "airdata_baro_device_id"
+            ],
+            0
+        ]
+    },
+    "UpdateExtVisionSample": {
+        "ev_data.pos_frame": [
+            [
+                "local_frame_ned",
+                "local_frame_frd"
+            ],
+            0
+        ],
+        "ev_data.reset_counter": [
+            [
+                "ev_odom_reset_counter"
+            ],
+            0
+        ],
+        "ev_data.quat": [
+            [
+                "ev_odom_q"
+            ],
+            0
+        ],
+        "ev_data.vel_frame": [
+            [
+                "body_frame_frd",
+                "local_frame_ned",
+                "local_frame_frd"
+            ],
+            0
+        ],
+        "evv_noise_var": [
+            [
+                "sq__param_ekf2_evv_noise_get"
+            ],
+            0
+        ],
+        "ev_data.vel": [
+            [
+                "ev_odom_vel"
+            ],
+            0
+        ],
+        "ev_data.time_us": [
+            [
+                "ev_odom_timestamp_sample"
+            ],
+            0
+        ],
+        "orientation_valid": [
+            [
+                "ev_odom_q_is_all_finite",
+                "fabsf__f",
+                "1e",
+                "fabsf_ev_odom_q_norm",
+                "no_element_larger_than_one",
+                "non_zero"
+            ],
+            2
+        ],
+        "ev_data.pos": [
+            [
+                "ev_odom_pos"
+            ],
+            0
+        ],
+        "eva_noise_var": [
+            [
+                "sq__param_ekf2_eva_noise_get"
+            ],
+            0
+        ],
+        "ev_data.quality": [
+            [
+                "ev_odom_quality"
+            ],
+            0
+        ],
+        "evp_noise_var": [
+            [
+                "sq__param_ekf2_evp_noise_get"
+            ],
+            0
+        ]
+    },
+    "UpdateFlowSample": {
+        "gyro_rate": [
+            [
+                "float",
+                "1e",
+                "optical_flow_integration_timespan_us",
+                "vector3f_optical_flow_delta_angle"
+            ],
+            1
+        ],
+        "flow_rate": [
+            [
+                "float",
+                "1e",
+                "optical_flow_integration_timespan_us",
+                "vector2f_optical_flow_pixel_flow"
+            ],
+            1
+        ],
+        "quality": [
+            [
+                "_f",
+                "static_cast",
+                "float",
+                "optical_flow_quality",
+                "uint8_max"
+            ],
+            0
+        ]
+    },
+    "UpdateGpsSample": {
+        "dt": [
+            [
+                "gnss_sample_time_us",
+                "1e"
+            ],
+            0
+        ],
+        "vehicle_gps_position.heading_offset": [
+            [
+                "wrap_pi__param_ekf2_gps_yaw_off_get",
+                "wrap_pi_radians"
+            ],
+            1
+        ],
+        "geoid_height": [
+            [
+                "vehicle_gps_position_altitude_msl_m",
+                "float",
+                "static_cast",
+                "vehicle_gps_position_altitude_ellipsoid_m",
+                "float",
+                "static_cast"
+            ],
+            2
+        ],
+        "vehicle_gps_position.heading": [
+            [
+                "wrap_pi_yaw_offset",
+                "wrap_pi_vehicle_gps_position_heading"
+            ],
+            0
+        ],
+        "_last_geoid_height_update_us": [
+            [
+                "gnss_sample_time_us"
+            ],
+            0
+        ]
+    },
+    "UpdateMagSample": {
+        "_mag_calibration_count": [
+            [
+                "magnetometer_calibration_count"
+            ],
+            0
+        ],
+        "_device_id_mag": [
+            [
+                "magnetometer_device_id"
+            ],
+            0
+        ]
+    },
+    "UpdateRangeSample": {
+        "timestamp_stale": [
+            [
+                "max_100_ms",
+                "max_ekf2_timestamps_timestamp",
+                "100_ms"
+            ],
+            0
+        ],
+        "ndist": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_distance_sensor"
+            ],
+            0
+        ],
+        "_distance_sensor_selected": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_last_range_sensor_update": [
+            [
+                "distance_sensor_timestamp",
+                "ekf2_timestamps_timestamp"
+            ],
+            0
+        ]
+    },
+    "UpdateSystemFlagsSample": {
+        "flags.in_air": [
+            [
+                "vehicle_land_detected_landed",
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "flags.gnd_effect": [
+            [
+                "vehicle_land_detected_in_ground_effect"
+            ],
+            0
+        ],
+        "flags.is_fixed_wing": [
+            [
+                "vehicle_status_vehicle_type",
+                "vehicle_type_fixed_wing"
+            ],
+            0
+        ],
+        "flags.at_rest": [
+            [
+                "vehicle_land_detected_at_rest"
+            ],
+            0
+        ],
+        "flags.time_us": [
+            [
+                "ekf2_timestamps_timestamp"
+            ],
+            0
+        ]
+    },
+    "UpdateCalibration": {
+        "max_var_ratio": [
+            [
+                "1e2f"
+            ],
+            0
+        ],
+        "cal.last_us": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "cal.bias": [
+            [
+                "bias"
+            ],
+            0
+        ],
+        "cal.total_time_us": [
+            [
+                "timestamp",
+                "cal_last_us"
+            ],
+            0
+        ],
+        "bias_change_limit": [
+            [
+                "bias_limit"
+            ],
+            0
+        ],
+        "max_var_allowed": [
+            [
+                "1e"
+            ],
+            0
+        ]
+    },
+    "UpdateAccelCalibration": {
+        "learning_valid": [
+            [
+                "bias_valid",
+                "_ekf_accel_bias_inhibited"
+            ],
+            0
+        ]
+    },
+    "UpdateGyroCalibration": {
+        "learning_valid": [
+            [
+                "_ekf_gyro_bias_inhibited",
+                "bias_valid"
+            ],
+            0
+        ]
+    },
+    "UpdateMagCalibration": {
+        "learning_valid": [
+            [
+                "_ekf_control_status_flags_mag",
+                "bias_valid"
+            ],
+            0
+        ],
+        "mag_bias_var": [
+            [
+                "_ekf_get_mag_bias_variance"
+            ],
+            0
+        ],
+        "mag_bias": [
+            [
+                "_ekf_get_mag_bias"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "mag_instances": [
+            [
+                "mag_instances_limited"
+            ],
+            0
+        ],
+        "imu_instances": [
+            [
+                "imu_instances_limited"
+            ],
+            0
+        ],
+        "param_ekf2_mult_mag": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "ekf2_inst": [
+            [
+                "ekf2_true",
+                "ekf2_false",
+                "ekf2_ins_instance_to_wq",
+                "ekf2_ins0",
+                "ekf2_imu",
+                "ekf2_replay_mode",
+                "new"
+            ],
+            0
+        ],
+        "time_started": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "multi_instances": [
+            [
+                "min_static_cast",
+                "min_int32_t",
+                "min_ekf2_max_instances",
+                "min_imu_instances",
+                "min_mag_instances"
+            ],
+            0
+        ],
+        "actual_instance": [
+            [
+                "ekf2_inst_instance"
+            ],
+            0
+        ],
+        "param_sens_mag_mode": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "inst": [
+            [
+                "ekf2selector",
+                "new"
+            ],
+            0
+        ]
+    },
+    "ekf2_main": {
+        "inst": [
+            [
+                "_load",
+                "atoi_argv",
+                "_objects",
+                "i"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "custom_command_argv",
+                "custom_command_argc",
+                "task_spawn_argv",
+                "task_spawn_argc"
+            ],
+            0
+        ]
+    }
+}

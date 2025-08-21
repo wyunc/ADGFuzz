@@ -1,0 +1,20 @@
+{
+    "_timer_tick": {
+        "_last_timestamp": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "open_channel": {
+        "fd": [
+            [
+                "open_o_rdonly",
+                "open_channel_path",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    }
+}

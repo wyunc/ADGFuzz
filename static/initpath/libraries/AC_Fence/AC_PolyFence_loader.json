@@ -1,0 +1,661 @@
+{
+    "init": {
+        "bc": [
+            [
+                "board_config"
+            ],
+            0
+        ],
+        "size_kb": [
+            [
+                "bc_get_sdcard_fence_kb"
+            ],
+            0
+        ],
+        "_failed_sdcard_storage": [
+            [
+                "fence_storage_attach_file_ac_fence_sdcard_filename",
+                "fence_storage_attach_file_size_kb"
+            ],
+            0
+        ],
+        "_old_total": [
+            [
+                "_total"
+            ],
+            0
+        ]
+    },
+    "find_index_for_seq": {
+        "entry": [
+            [
+                "_index",
+                "j"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "entry_count"
+            ],
+            0
+        ]
+    },
+    "find_storage_offset_for_seq": {
+        "offset": [
+            [
+                "entry_storage_offset",
+                "i",
+                "seq"
+            ],
+            1
+        ],
+        "type": [
+            [
+                "entry_type"
+            ],
+            0
+        ],
+        "entry": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "get_item": {
+        "item.radius": [
+            [
+                "fence_storage_read_float_offset",
+                "fence_storage_read_uint32_offset"
+            ],
+            0
+        ],
+        "item.vertex_count": [
+            [
+                "fence_storage_read_uint8_vertex_count_offset"
+            ],
+            0
+        ],
+        "item.type": [
+            [
+                "type",
+                "circle_exclusion",
+                "circle_inclusion"
+            ],
+            0
+        ]
+    },
+    "read_latlon_from_storage": {
+        "ret.y": [
+            [
+                "fence_storage_read_uint32_read_offset"
+            ],
+            0
+        ],
+        "ret.x": [
+            [
+                "fence_storage_read_uint32_read_offset"
+            ],
+            0
+        ]
+    },
+    "breached": {
+        "circle_center.lat": [
+            [
+                "circle_point_x"
+            ],
+            0
+        ],
+        "diff_cm": [
+            [
+                "loc_get_distance_circle_center"
+            ],
+            0
+        ],
+        "num_inclusion": [
+            [
+                "_num_loaded_inclusion_boundaries",
+                "_num_loaded_circle_inclusion_boundaries"
+            ],
+            0
+        ],
+        "pos.y": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "boundary": [
+            [
+                "_loaded_exclusion_boundary",
+                "_loaded_inclusion_boundary",
+                "i"
+            ],
+            0
+        ],
+        "circle": [
+            [
+                "_loaded_circle_inclusion_boundary",
+                "_loaded_circle_exclusion_boundary",
+                "i"
+            ],
+            0
+        ],
+        "pos.x": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "circle_center.lng": [
+            [
+                "circle_point_y"
+            ],
+            0
+        ]
+    },
+    "scale_latlon_from_origin": {
+        "tmp_loc.lng": [
+            [
+                "point_y"
+            ],
+            0
+        ],
+        "tmp_loc.lat": [
+            [
+                "point_x"
+            ],
+            0
+        ],
+        "pos_cm": [
+            [
+                "origin_get_distance_ne_tmp_loc"
+            ],
+            0
+        ]
+    },
+    "scan_eeprom": {
+        "type": [
+            [
+                "ac_poly_fence_type",
+                "fence_storage_read_uint8_read_offset"
+            ],
+            0
+        ],
+        "read_offset": [
+            [
+                "fence_storage_read_uint8_read_offset"
+            ],
+            1
+        ]
+    },
+    "scan_eeprom_count_fences": {
+        "_eeprom_item_count": [
+            [
+                "fence_storage_read_uint8_read_offset"
+            ],
+            1
+        ]
+    },
+    "count_eeprom_fences": {
+        "ret": [
+            [
+                "scan_eeprom_const",
+                "scan_eeprom_functor_bind_member",
+                "scan_eeprom_ac_poly_fence_type",
+                "scan_eeprom_scan_eeprom_count_fences",
+                "scan_eeprom_void",
+                "scan_eeprom_uint16_t"
+            ],
+            0
+        ]
+    },
+    "scan_eeprom_index_fences": {
+        "index": [
+            [
+                "_index",
+                "_num_fences"
+            ],
+            0
+        ],
+        "index.count": [
+            [
+                "fence_storage_read_uint8_read_offset"
+            ],
+            1
+        ],
+        "index.type": [
+            [
+                "type"
+            ],
+            0
+        ],
+        "index.storage_offset": [
+            [
+                "read_offset"
+            ],
+            0
+        ]
+    },
+    "index_eeprom": {
+        "_index": [
+            [
+                "new_nothrow",
+                "_eeprom_fence_count",
+                "fence_index"
+            ],
+            0
+        ]
+    },
+    "check_indexed": {
+        "_indexed": [
+            [
+                "index_eeprom"
+            ],
+            0
+        ]
+    },
+    "unload": {
+        "_loaded_points_lla": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_inclusion_boundary": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_circle_exclusion_boundary": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_exclusion_boundary": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_circle_inclusion_boundary": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_return_point": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_return_point_lla": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_loaded_offsets_from_origin": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "load_from_eeprom": {
+        "boundary.points_lla": [
+            [
+                "vector2l",
+                "new_nothrow"
+            ],
+            2
+        ],
+        "storage_offset": [
+            [
+                "index_storage_offset"
+            ],
+            0
+        ],
+        "circle.radius": [
+            [
+                "fence_storage_read_uint32_storage_offset",
+                "fence_storage_read_float_storage_offset"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "i",
+                "_index"
+            ],
+            0
+        ],
+        "circle": [
+            [
+                "inclusion_circle",
+                "new_nothrow",
+                "_num_loaded_circle_inclusion_boundaries",
+                "exclusion_circle",
+                "new_nothrow",
+                "index_fence_count_polygon_exclusion",
+                "index_fence_count_circle_exclusion",
+                "sum_of_polygon_point_counts_and_returnpoint",
+                "index_fence_count_circle_inclusion",
+                "index_fence_count_polygon_inclusion",
+                "_num_loaded_circle_exclusion_boundaries"
+            ],
+            3
+        ],
+        "boundary": [
+            [
+                "_num_loaded_exclusion_boundaries",
+                "inclusion_boundary",
+                "new_nothrow",
+                "_num_loaded_inclusion_boundaries",
+                "exclusion_boundary",
+                "new_nothrow"
+            ],
+            2
+        ],
+        "_load_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_loaded_return_point": [
+            [
+                "new_nothrow",
+                "vector2f"
+            ],
+            2
+        ],
+        "_loaded_return_point_lla": [
+            [
+                "vector2l",
+                "new_nothrow"
+            ],
+            2
+        ],
+        "boundary.count": [
+            [
+                "index_count"
+            ],
+            0
+        ],
+        "boundary.points": [
+            [
+                "new_nothrow",
+                "vector2f"
+            ],
+            2
+        ]
+    },
+    "get_exclusion_circle": {
+        "center_pos_cm": [
+            [
+                "index",
+                "_pos_cm",
+                "_loaded_circle_exclusion_boundary"
+            ],
+            0
+        ],
+        "radius": [
+            [
+                "index",
+                "_loaded_circle_exclusion_boundary",
+                "_radius"
+            ],
+            0
+        ]
+    },
+    "get_inclusion_circle": {
+        "radius": [
+            [
+                "_radius",
+                "_loaded_circle_inclusion_boundary",
+                "index"
+            ],
+            0
+        ],
+        "center_pos_cm": [
+            [
+                "_loaded_circle_inclusion_boundary",
+                "_pos_cm",
+                "index"
+            ],
+            0
+        ]
+    },
+    "check_inclusion_circle_margin": {
+        "circle": [
+            [
+                "i",
+                "_loaded_circle_inclusion_boundary"
+            ],
+            0
+        ]
+    },
+    "validate_fence": {
+        "expecting_type": [
+            [
+                "end_of_storage",
+                "i",
+                "_type",
+                "new_items"
+            ],
+            0
+        ],
+        "orig_expected_type_count": [
+            [
+                "i",
+                "new_items",
+                "_vertex_count"
+            ],
+            1
+        ]
+    },
+    "write_fence": {
+        "store_as_int": [
+            [
+                "int_new_item_radius",
+                "new_item_radius"
+            ],
+            0
+        ],
+        "new_total": [
+            [
+                "new_item_vertex_count"
+            ],
+            2
+        ],
+        "store_type": [
+            [
+                "circle_exclusion_int",
+                "new_item_type",
+                "circle_inclusion_int"
+            ],
+            0
+        ],
+        "new_item": [
+            [
+                "i",
+                "new_items"
+            ],
+            0
+        ]
+    },
+    "get_return_point": {
+        "offset": [
+            [
+                "inc_storage_offset"
+            ],
+            0
+        ],
+        "ret.y": [
+            [
+                "min_loc_y",
+                "max_loc_y"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "fence_storage_read_uint8_offset"
+            ],
+            0
+        ],
+        "ret.x": [
+            [
+                "max_loc_x",
+                "min_loc_x"
+            ],
+            0
+        ],
+        "max_loc.y": [
+            [
+                "new_loc_y"
+            ],
+            0
+        ],
+        "read_offset": [
+            [
+                "rp_storage_offset"
+            ],
+            0
+        ],
+        "rp": [
+            [
+                "find_first_fence_return_point"
+            ],
+            0
+        ],
+        "inc": [
+            [
+                "find_first_fence_polygon_inclusion"
+            ],
+            0
+        ],
+        "max_loc.x": [
+            [
+                "new_loc_x"
+            ],
+            0
+        ],
+        "max_loc": [
+            [
+                "min_loc"
+            ],
+            0
+        ],
+        "min_loc.y": [
+            [
+                "new_loc_y"
+            ],
+            0
+        ],
+        "min_loc.x": [
+            [
+                "new_loc_x"
+            ],
+            0
+        ]
+    },
+    "handle_msg_fetch_fence_point": {
+        "storage_offset": [
+            [
+                "packet_idx",
+                "inclusion_fence_storage_offset"
+            ],
+            1
+        ],
+        "ret_packet.target_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "inclusion_fence": [
+            [
+                "find_first_fence_polygon_inclusion"
+            ],
+            0
+        ],
+        "ret_packet.target_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "ret_packet.lat": [
+            [
+                "bob",
+                "ret_x",
+                "_0e"
+            ],
+            0
+        ],
+        "ret_packet.count": [
+            [
+                "_total"
+            ],
+            0
+        ],
+        "ret_packet.idx": [
+            [
+                "packet_idx"
+            ],
+            0
+        ],
+        "ret_packet.lng": [
+            [
+                "bob",
+                "ret_y",
+                "_0e"
+            ],
+            0
+        ]
+    },
+    "handle_msg_fence_point": {
+        "inclusion_fence": [
+            [
+                "get_or_create_include_fence"
+            ],
+            0
+        ],
+        "return_point": [
+            [
+                "get_or_create_return_point"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "return_point_storage_offset",
+                "inclusion_fence_storage_offset",
+                "packet_idx"
+            ],
+            0
+        ]
+    },
+    "write_eos_to_storage": {
+        "_eos_offset": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_old_total": [
+            [
+                "_total"
+            ],
+            0
+        ]
+    }
+}

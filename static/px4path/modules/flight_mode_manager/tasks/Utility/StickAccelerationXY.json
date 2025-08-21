@@ -1,0 +1,116 @@
+{
+    "resetPosition": {
+        "_position_setpoint": [
+            [
+                "position"
+            ],
+            0
+        ]
+    },
+    "resetVelocity": {
+        "_velocity_setpoint": [
+            [
+                "velocity"
+            ],
+            0
+        ]
+    },
+    "generateSetpoints": {
+        "acceleration_sc": [
+            [
+                "_param_mpc_vel_manual_get",
+                "_targeted_velocity_constraint",
+                "fminf__param_mpc_vel_manual_get",
+                "_param_mpc_acc_hor_get"
+            ],
+            2
+        ],
+        "acceleration_scale": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_acceleration_setpoint_prev": [
+            [
+                "stick_xy_emult_acceleration_scale",
+                "calculate_drag_acceleration_scale_edivide",
+                "stick_xy",
+                "dt",
+                "calculate_drag_velocity_scale"
+            ],
+            2
+        ],
+        "_velocity_setpoint": [
+            [
+                "dt",
+                "stick_xy_emult_acceleration_scale",
+                "calculate_drag_acceleration_scale_edivide",
+                "stick_xy",
+                "dt",
+                "calculate_drag_velocity_scale"
+            ],
+            2
+        ]
+    },
+    "applyJerkLimit": {
+        "jerk_max_x": [
+            [
+                "fabsf_dir",
+                "_param_mpc_jerk_max_get"
+            ],
+            0
+        ],
+        "jerk_max_y": [
+            [
+                "fabsf_dir",
+                "_param_mpc_jerk_max_get"
+            ],
+            0
+        ],
+        "dir": [
+            [
+                "vector2f__acceleration_setpoint",
+                "vector2f__acceleration_setpoint_prev_unit_or_zero"
+            ],
+            0
+        ]
+    },
+    "applyTiltLimit": {
+        "acceleration": [
+            [
+                "constants_one_g",
+                "tanf_takeoff_status_tilt_limit",
+                "acceleration_length"
+            ],
+            2
+        ]
+    },
+    "lockPosition": {
+        "_velocity_setpoint": [
+            [
+                "vel_sp_feedback"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "pos_xy"
+            ],
+            0
+        ],
+        "moving": [
+            [
+                "_velocity_setpoint_norm_squared",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "position_locked": [
+            [
+                "vector2f__position_setpoint_is_all_finite"
+            ],
+            0
+        ]
+    }
+}

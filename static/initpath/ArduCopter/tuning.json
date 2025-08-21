@@ -1,0 +1,26 @@
+{
+    "tuning": {
+        "rc_tuning": [
+            [
+                "rc_find_channel_for_option_transmitter_tuning"
+            ],
+            0
+        ],
+        "tuning_value": [
+            [
+                "linear_interpolate_g2_tuning_max",
+                "rc_tuning_get_radio_max",
+                "linear_interpolate_g2_tuning_min",
+                "linear_interpolate_rc_tuning_get_radio_min",
+                "linear_interpolate_radio_in"
+            ],
+            0
+        ],
+        "radio_in": [
+            [
+                "rc_tuning_get_radio_in"
+            ],
+            0
+        ]
+    }
+}

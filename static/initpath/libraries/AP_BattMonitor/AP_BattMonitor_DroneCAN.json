@@ -1,0 +1,386 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "match_battery_id": {
+        "serial_num": [
+            [
+                "battery_get_serial_number_instance",
+                "battery_id",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "handle_battery_info": {
+        "_interim_state.state_of_health_pct": [
+            [
+                "msg_state_of_health_pct"
+            ],
+            0
+        ],
+        "_full_charge_capacity_wh": [
+            [
+                "msg_full_charge_capacity_wh"
+            ],
+            0
+        ],
+        "_remaining_capacity_wh": [
+            [
+                "msg_remaining_capacity_wh"
+            ],
+            0
+        ]
+    },
+    "update_interim_state": {
+        "dt_us": [
+            [
+                "_interim_state_last_time_micros",
+                "micros"
+            ],
+            1
+        ],
+        "_soc": [
+            [
+                "soc"
+            ],
+            0
+        ],
+        "_interim_state.current_amps": [
+            [
+                "current",
+                "_curr_mult"
+            ],
+            0
+        ],
+        "_interim_state.temperature": [
+            [
+                "kelvin_to_c_temperature_k"
+            ],
+            0
+        ],
+        "_interim_state.temperature_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_interim_state.voltage": [
+            [
+                "voltage"
+            ],
+            0
+        ],
+        "_interim_state.state_of_health_pct": [
+            [
+                "soh_pct"
+            ],
+            0
+        ],
+        "_interim_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "handle_battery_info_aux": {
+        "_interim_state.consumed_mah": [
+            [
+                "msg_nominal_voltage",
+                "_full_charge_capacity_wh",
+                "_remaining_capacity_wh",
+                "msg_nominal_voltage"
+            ],
+            2
+        ],
+        "_interim_state.consumed_wh": [
+            [
+                "_remaining_capacity_wh",
+                "_full_charge_capacity_wh"
+            ],
+            0
+        ],
+        "_interim_state.time_remaining": [
+            [
+                "_interim_state_current_amps",
+                "_remaining_capacity_wh",
+                "msg_nominal_voltage",
+                "is_zero__interim_state_current_amps"
+            ],
+            1
+        ],
+        "_cycle_count": [
+            [
+                "msg_cycle_count"
+            ],
+            0
+        ],
+        "_interim_state.is_powering_off": [
+            [
+                "msg_is_powering_off"
+            ],
+            0
+        ],
+        "cell_count": [
+            [
+                "array_size_msg_voltage_cell_len",
+                "array_size__interim_state_cell_voltages_cells"
+            ],
+            0
+        ]
+    },
+    "handle_mppt_stream": {
+        "_mppt.fault_flags": [
+            [
+                "msg_fault_flags"
+            ],
+            0
+        ],
+        "voltage": [
+            [
+                "option_is_set_mppt_use_input_value",
+                "msg_output_voltage",
+                "msg_input_voltage"
+            ],
+            1
+        ],
+        "temperature_K": [
+            [
+                "isnan_msg_temperature",
+                "c_to_kelvin_msg_temperature"
+            ],
+            0
+        ],
+        "current": [
+            [
+                "option_is_set_mppt_use_input_value",
+                "msg_input_current",
+                "msg_output_current"
+            ],
+            1
+        ]
+    },
+    "handle_battery_info_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_msg_battery_id",
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ]
+    },
+    "handle_battery_info_aux_trampoline": {
+        "batt": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "drv": [
+            [
+                "batt_drivers",
+                "i"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "batt_drivers",
+                "nullptr",
+                "ap_batt_monitor_drone_can",
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_msg_battery_id",
+                "i"
+            ],
+            0
+        ]
+    },
+    "handle_mppt_stream_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.voltage": [
+            [
+                "_interim_state_voltage"
+            ],
+            0
+        ],
+        "_state.has_state_of_health_pct": [
+            [
+                "_interim_state_has_state_of_health_pct"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "_interim_state_last_time_micros"
+            ],
+            0
+        ],
+        "_state.is_powering_off": [
+            [
+                "_interim_state_is_powering_off"
+            ],
+            0
+        ],
+        "_state.healthy": [
+            [
+                "_interim_state_healthy"
+            ],
+            0
+        ],
+        "_state.temperature_time": [
+            [
+                "_interim_state_temperature_time"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "_interim_state_current_amps"
+            ],
+            0
+        ],
+        "_has_temperature": [
+            [
+                "millis",
+                "ap_batt_monitor_timeout",
+                "_state_temperature_time"
+            ],
+            0
+        ],
+        "_state.has_time_remaining": [
+            [
+                "_interim_state_has_time_remaining"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "_interim_state_consumed_wh"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "_interim_state_temperature"
+            ],
+            0
+        ],
+        "tnow": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_state.state_of_health_pct": [
+            [
+                "_interim_state_state_of_health_pct"
+            ],
+            0
+        ],
+        "_state.time_remaining": [
+            [
+                "_interim_state_time_remaining"
+            ],
+            0
+        ],
+        "_state.consumed_mah": [
+            [
+                "_interim_state_consumed_mah"
+            ],
+            0
+        ]
+    },
+    "capacity_remaining_pct": {
+        "percentage": [
+            [
+                "_soc"
+            ],
+            0
+        ]
+    },
+    "reset_remaining": {
+        "_interim_state.consumed_wh": [
+            [
+                "_state_consumed_wh"
+            ],
+            0
+        ],
+        "_interim_state.consumed_mah": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ]
+    },
+    "get_cycle_count": {
+        "cycles": [
+            [
+                "_cycle_count"
+            ],
+            0
+        ]
+    },
+    "mppt_check_powered_state": {
+        "_mppt.vehicle_armed_last": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            1
+        ]
+    },
+    "mppt_set_powered_state": {
+        "_mppt.powered_state": [
+            [
+                "power_on"
+            ],
+            0
+        ],
+        "request.disable": [
+            [
+                "request_enable"
+            ],
+            0
+        ],
+        "request.enable": [
+            [
+                "_mppt_powered_state"
+            ],
+            0
+        ],
+        "mppt_outputenable_client": [
+            [
+                "client",
+                "new_nothrow",
+                "mppt_output_enable_response",
+                "_ap_dronecan_get_canard_iface",
+                "mppt_outputenable_res_cb"
+            ],
+            0
+        ]
+    },
+    "mppt_report_faults": {
+        "err": [
+            [
+                "mppt_fault_flags",
+                "0x01"
+            ],
+            1
+        ]
+    }
+}

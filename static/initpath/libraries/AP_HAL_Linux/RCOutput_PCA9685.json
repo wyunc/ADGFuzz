@@ -1,0 +1,61 @@
+{
+    "init": {
+        "_enable_pin": [
+            [
+                "hal_gpio_channel__oe_pin_number"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        "_frequency": [
+            [
+                "_osc_clock",
+                "ceilf__osc_clock",
+                "ceilf_freq_hz"
+            ],
+            1
+        ]
+    },
+    "push": {
+        "pwm_values.reg": [
+            [
+                "pca9685_ra_led0_on_l",
+                "_channel_offset",
+                "__builtin_ctz__pending_write_mask"
+            ],
+            1
+        ],
+        "period_us": [
+            [
+                "_pulses_buffer",
+                "__builtin_ctz__pending_write_mask"
+            ],
+            2
+        ],
+        "d": [
+            [
+                "__builtin_ctz__pending_write_mask",
+                "pwm_values_data",
+                "__builtin_ctz__pending_write_mask"
+            ],
+            2
+        ],
+        "payload_size": [
+            [
+                "__builtin_clz__pending_write_mask",
+                "sizeof_unsigned",
+                "__builtin_ctz__pending_write_mask"
+            ],
+            2
+        ],
+        "length": [
+            [
+                "_f",
+                "round_period_us",
+                "_frequency"
+            ],
+            0
+        ]
+    }
+}

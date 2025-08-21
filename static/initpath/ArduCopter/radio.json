@@ -1,0 +1,69 @@
+{
+    "init_rc_in": {
+        "channel_roll": [
+            [
+                "rc_get_roll_channel"
+            ],
+            0
+        ],
+        "channel_throttle": [
+            [
+                "rc_get_throttle_channel"
+            ],
+            0
+        ],
+        "channel_pitch": [
+            [
+                "rc_get_pitch_channel"
+            ],
+            0
+        ],
+        "channel_yaw": [
+            [
+                "rc_get_yaw_channel"
+            ],
+            0
+        ]
+    },
+    "init_rc_out": {
+        "safety_ignore_mask": [
+            [
+                "0x3fff",
+                "copter_motors_get_motor_mask"
+            ],
+            0
+        ]
+    },
+    "read_radio": {
+        "elapsed_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            2
+        ],
+        "dt": [
+            [
+                "_0e",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_throttle_and_failsafe": {
+        "failsafe.radio_counter": [
+            [
+                "fs_counter"
+            ],
+            0
+        ]
+    },
+    "set_throttle_zero_flag": {
+        "last_nonzero_throttle_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

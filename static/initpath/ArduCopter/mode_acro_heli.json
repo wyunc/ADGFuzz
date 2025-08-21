@@ -1,0 +1,77 @@
+{
+    "run": {
+        "pitch_in": [
+            [
+                "channel_pitch_get_control_in_zero_dz"
+            ],
+            0
+        ],
+        "yaw_in": [
+            [
+                "channel_yaw_get_control_in_zero_dz",
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "target_yaw": [
+            [
+                "channel_yaw_get_control_in_zero_dz"
+            ],
+            0
+        ],
+        "pilot_throttle_scaled": [
+            [
+                "copter_input_manager_get_pilot_desired_collective_channel_throttle_get_control_in"
+            ],
+            0
+        ],
+        "roll_in": [
+            [
+                "channel_roll_get_control_in_zero_dz"
+            ],
+            0
+        ]
+    },
+    "virtual_flybar": {
+        "roll_out": [
+            [
+                "rate_bf_level_x"
+            ],
+            0
+        ],
+        "pitch_out": [
+            [
+                "rate_bf_level_y"
+            ],
+            0
+        ],
+        "yaw_out": [
+            [
+                "rate_bf_level_z"
+            ],
+            0
+        ],
+        "att_target": [
+            [
+                "attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ],
+        "rate_ef_level.y": [
+            [
+                "wrap_180_cd_att_target_y",
+                "pitch_leak",
+                "wrap_180_cd_ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "rate_ef_level.x": [
+            [
+                "wrap_180_cd_ahrs_roll_sensor",
+                "roll_leak",
+                "wrap_180_cd_att_target_x"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,272 @@
+{
+    "init": {
+        "_time_stamp_last_loop": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "parameters_update": {
+        "responsiveness": [
+            [
+                "_param_sys_vehicle_resp_get"
+            ],
+            0
+        ],
+        "sample_freq_hz": [
+            [
+                "_sample_interval_s_mean",
+                "_f"
+            ],
+            0
+        ],
+        "xy_vel": [
+            [
+                "_param_mpc_xy_vel_all_get"
+            ],
+            0
+        ],
+        "z_vel": [
+            [
+                "_param_mpc_z_vel_all_get"
+            ],
+            0
+        ],
+        "num_changed": [
+            [
+                "_param_mpc_vel_man_side_commit_no_notification__f",
+                "_param_mpc_man_y_tau_commit_no_notification__f",
+                "_param_mpc_acc_hor_max_commit_no_notification_responsiveness",
+                "_param_mpc_jerk_auto_commit_no_notification_lerp",
+                "_param_mpc_acc_hor_commit_no_notification__f",
+                "_param_mpc_jerk_max_commit_no_notification__f",
+                "_param_mpc_z_v_auto_up_commit_no_notification_z_vel",
+                "_param_mpc_vel_man_back_commit_no_notification__f",
+                "_param_mpc_xy_vel_max_commit_no_notification_xy_vel",
+                "_param_mpc_man_y_tau_commit_no_notification_lerp",
+                "_param_mpc_acc_hor_max_commit_no_notification_lerp",
+                "_param_mpc_jerk_auto_commit_no_notification_responsiveness",
+                "_param_mpc_vel_manual_commit_no_notification_xy_vel",
+                "_param_mpc_acc_down_max_commit_no_notification_lerp",
+                "_param_mpc_acc_hor_max_commit_no_notification__f",
+                "_param_mpc_jerk_max_commit_no_notification_responsiveness",
+                "_param_mpc_man_y_tau_commit_no_notification_responsiveness",
+                "_param_mpc_tiltmax_air_commit_no_notification__f",
+                "_param_mpc_z_vel_max_up_commit_no_notification_z_vel",
+                "_param_mpc_z_vel_max_dn_commit_no_notification_z_vel",
+                "_param_mpc_z_v_auto_dn_commit_no_notification_z_vel",
+                "_param_mpc_acc_hor_commit_no_notification_lerp",
+                "_param_mpc_xy_cruise_commit_no_notification_xy_vel",
+                "_param_mpc_acc_up_max_commit_no_notification_responsiveness",
+                "_param_mpc_acc_down_max_commit_no_notification_responsiveness",
+                "_param_mpc_acc_hor_commit_no_notification_responsiveness",
+                "_param_mpc_acc_up_max_commit_no_notification__f",
+                "_param_mpc_jerk_auto_commit_no_notification__f",
+                "_param_mpc_jerk_max_commit_no_notification_lerp",
+                "_param_mpc_tko_speed_commit_no_notification_z_vel",
+                "_param_mpc_man_y_max_commit_no_notification_lerp",
+                "_param_mpc_land_speed_commit_no_notification_z_vel",
+                "_param_mpc_man_y_max_commit_no_notification__f",
+                "_param_mpc_acc_up_max_commit_no_notification_lerp",
+                "_param_mpc_man_y_max_commit_no_notification_responsiveness",
+                "_param_mpc_acc_down_max_commit_no_notification__f"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "flying_but_ground_contact": [
+            [
+                "flight",
+                "_takeoff_get_takeoff_state",
+                "_vehicle_land_detected_ground_contact"
+            ],
+            1
+        ],
+        "minimum_thrust": [
+            [
+                "_param_mpc_thr_min_get",
+                "flight",
+                "_takeoff_get_takeoff_state",
+                "_f"
+            ],
+            1
+        ],
+        "weighting": [
+            [
+                "_param_mpc_land_speed_get",
+                "_f",
+                "fminf__setpoint_velocity",
+                "fminf_fabsf"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_setpoint": [
+            [
+                "generate_failsafe_setpoint_vehicle_local_position_timestamp_sample",
+                "generate_failsafe_setpoint_false",
+                "generate_failsafe_setpoint_states",
+                "empty_trajectory_setpoint"
+            ],
+            0
+        ],
+        "attitude_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vehicle_constraints.speed_down": [
+            [
+                "_param_mpc_z_vel_max_dn_get"
+            ],
+            0
+        ],
+        "skip_takeoff": [
+            [
+                "_param_com_throw_en_get"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "1e",
+                "constrain__time_stamp_last_loop",
+                "constrain_vehicle_local_position_timestamp_sample"
+            ],
+            0
+        ],
+        "local_pos_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "not_taken_off": [
+            [
+                "rampup",
+                "_takeoff_get_takeoff_state"
+            ],
+            0
+        ],
+        "previous_position_control_enabled": [
+            [
+                "_vehicle_control_mode_flag_multicopter_position_control_enabled"
+            ],
+            0
+        ],
+        "_time_stamp_last_loop": [
+            [
+                "vehicle_local_position_timestamp_sample"
+            ],
+            0
+        ],
+        "_vehicle_constraints.speed_up": [
+            [
+                "_param_mpc_z_vel_max_up_get"
+            ],
+            0
+        ],
+        ".takeoff_state": [
+            [
+                "uint8_t",
+                "static_cast",
+                "_takeoff_get_takeoff_state"
+            ],
+            1
+        ],
+        "_vehicle_constraints": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_setpoint.timestamp": [
+            [
+                "vehicle_local_position_timestamp_sample"
+            ],
+            0
+        ],
+        ".tilt_limit": [
+            [
+                "_tilt_limit_slew_rate_get_state"
+            ],
+            0
+        ],
+        "max_speed_xy": [
+            [
+                "min_vehicle_local_position_vxy_max",
+                "min_max_speed_xy",
+                "_param_mpc_xy_vel_max_get"
+            ],
+            0
+        ],
+        "_time_position_control_enabled": [
+            [
+                "_vehicle_control_mode_timestamp"
+            ],
+            0
+        ]
+    },
+    "adjustSetpointForEKFResets": {
+        "_z_reset_counter": [
+            [
+                "vehicle_local_position_z_reset_counter"
+            ],
+            0
+        ],
+        "_heading_reset_counter": [
+            [
+                "vehicle_local_position_heading_reset_counter"
+            ],
+            0
+        ],
+        "_vxy_reset_counter": [
+            [
+                "vehicle_local_position_vxy_reset_counter"
+            ],
+            0
+        ],
+        "setpoint.yaw": [
+            [
+                "wrap_pi_setpoint_yaw",
+                "wrap_pi_vehicle_local_position_delta_heading"
+            ],
+            0
+        ],
+        "_xy_reset_counter": [
+            [
+                "vehicle_local_position_xy_reset_counter"
+            ],
+            0
+        ],
+        "_vz_reset_counter": [
+            [
+                "vehicle_local_position_vz_reset_counter"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "multicopter_position_control_vtol",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

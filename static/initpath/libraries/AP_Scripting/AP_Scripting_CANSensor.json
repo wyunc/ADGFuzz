@@ -1,0 +1,33 @@
+{
+    "handle_frame": {
+        "accept": [
+            [
+                "num_filters"
+            ],
+            0
+        ]
+    },
+    "add_buffer": {
+        "next": [
+            [
+                "new_buff"
+            ],
+            0
+        ]
+    },
+    "add_filter": {
+        ".mask": [
+            [
+                "mask"
+            ],
+            0
+        ],
+        ".value": [
+            [
+                "mask",
+                "value"
+            ],
+            0
+        ]
+    }
+}

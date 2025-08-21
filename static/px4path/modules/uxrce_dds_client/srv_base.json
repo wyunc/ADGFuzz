@@ -1,0 +1,77 @@
+{
+    "generate_request_name": {
+        "ret": [
+            [
+                "snprintf_name",
+                "snprintf_client_namespace",
+                "snprintf_topic_name_size",
+                "snprintf_request"
+            ],
+            0
+        ]
+    },
+    "generate_reply_name": {
+        "ret": [
+            [
+                "snprintf_topic_name_size",
+                "snprintf_reply",
+                "snprintf_client_namespace",
+                "snprintf_name"
+            ],
+            0
+        ]
+    },
+    "generate_request_type_name": {
+        "ret": [
+            [
+                "snprintf_request",
+                "snprintf_name",
+                "snprintf_request_type_size"
+            ],
+            0
+        ]
+    },
+    "generate_reply_type_name": {
+        "ret": [
+            [
+                "snprintf_reply",
+                "snprintf_reply_type_size",
+                "snprintf_name"
+            ],
+            0
+        ]
+    },
+    "create_replier": {
+        "read_data_req": [
+            [
+                "uxr_buffer_request_data_input_stream_id",
+                "uxr_buffer_request_data_reliable_out_stream_id_",
+                "uxr_buffer_request_data_replier_id_",
+                "uxr_buffer_request_data_session_",
+                "uxr_buffer_request_data_delivery_control"
+            ],
+            0
+        ],
+        "delivery_control.max_samples": [
+            [
+                "uxr_max_samples_unlimited"
+            ],
+            0
+        ],
+        "replier_id_": [
+            [
+                "uxr_object_id_uxr_replier_id",
+                "uxr_object_id_id"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "65535u",
+                "index",
+                "32u"
+            ],
+            0
+        ]
+    }
+}

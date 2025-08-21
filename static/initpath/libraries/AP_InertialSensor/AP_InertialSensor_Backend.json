@@ -1,0 +1,305 @@
+{
+    "_update_sensor_rate": {
+        "rate_hz": [
+            [
+                "filter_constant",
+                "micros",
+                "count",
+                "_0e6f",
+                "upper_limit",
+                "lower_limit"
+            ],
+            2
+        ],
+        "start_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "_rotate_and_correct_accel": {
+        "accel.y": [
+            [
+                "accel_scale_y"
+            ],
+            0
+        ],
+        "accel.z": [
+            [
+                "accel_scale_z"
+            ],
+            0
+        ],
+        "accel.x": [
+            [
+                "accel_scale_x"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "_imu__accel_offset_instance"
+            ],
+            0
+        ],
+        "accel_scale": [
+            [
+                "_imu__accel_scale_instance_get"
+            ],
+            0
+        ]
+    },
+    "_rotate_and_correct_gyro": {
+        "gyro": [
+            [
+                "_imu__gyro_offset_instance"
+            ],
+            0
+        ]
+    },
+    "save_gyro_window": {
+        "scaled_gyro": [
+            [
+                "_imu__post_filter_gyro_filter",
+                "instance",
+                "gyro",
+                "_imu__gyro_raw_sampling_multiplier",
+                "_apply_scaled_gyro"
+            ],
+            0
+        ]
+    },
+    "apply_gyro_filters": {
+        "inactive": [
+            [
+                "notch_is_inactive"
+            ],
+            0
+        ],
+        "gyro_filtered": [
+            [
+                "gyro",
+                "notch_filter",
+                "_apply_gyro_filtered",
+                "instance",
+                "_imu__gyro_filter"
+            ],
+            0
+        ]
+    },
+    "_notify_new_gyro_raw_sample": {
+        "sample_us": [
+            [
+                "instance",
+                "_imu__gyro_last_sample_us"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "delta_coning": [
+            [
+                "_imu__last_raw_gyro",
+                "instance",
+                "gyro",
+                "_0e",
+                "instance",
+                "_imu__gyro_raw_sample_rates",
+                "_imu__gyro_last_sample_us"
+            ],
+            2
+        ],
+        "last_sample_us": [
+            [
+                "instance",
+                "_imu__gyro_last_sample_us"
+            ],
+            0
+        ]
+    },
+    "_notify_new_delta_angle": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "last_sample_us": [
+            [
+                "instance",
+                "_imu__gyro_last_sample_us"
+            ],
+            0
+        ],
+        "sample_us": [
+            [
+                "instance",
+                "_imu__gyro_last_sample_us"
+            ],
+            0
+        ],
+        "delta_coning": [
+            [
+                "_imu__gyro_raw_sample_rates",
+                "instance",
+                "_imu__gyro_raw_sample_rates",
+                "instance",
+                "dangle"
+            ],
+            3
+        ]
+    },
+    "log_gyro_raw": {
+        "log_because_primary_gyro": [
+            [
+                "_imu_raw_logging_option_set_primary_gyro_only",
+                "ahrs_get_primary_gyro_index",
+                "instance"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "_publish_accel": {
+        "cal_sample": [
+            [
+                "instance",
+                "_imu__delta_velocity"
+            ],
+            0
+        ]
+    },
+    "_notify_new_accel_raw_sample": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_0e",
+                "_imu__accel_last_sample_us",
+                "instance",
+                "_imu__accel_raw_sample_rates"
+            ],
+            0
+        ],
+        "sample_us": [
+            [
+                "_imu__accel_last_sample_us",
+                "instance"
+            ],
+            0
+        ],
+        "last_sample_us": [
+            [
+                "_imu__accel_last_sample_us",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "_notify_new_delta_velocity": {
+        "accel": [
+            [
+                "_imu__accel_raw_sample_rates",
+                "instance",
+                "dvel"
+            ],
+            1
+        ],
+        "last_sample_us": [
+            [
+                "_imu__accel_last_sample_us",
+                "instance"
+            ],
+            0
+        ],
+        "sample_us": [
+            [
+                "_imu__accel_last_sample_us",
+                "instance"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "_notify_new_accel_sensor_rate_sample": {
+        "accel": [
+            [
+                "_accel"
+            ],
+            0
+        ]
+    },
+    "_notify_new_gyro_sensor_rate_sample": {
+        "gyro": [
+            [
+                "_gyro"
+            ],
+            0
+        ]
+    },
+    "log_accel_raw": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "_publish_temperature": {
+        "bc": [
+            [
+                "board_config"
+            ],
+            0
+        ]
+    },
+    "update_gyro_filters": {
+        "gyro_rate": [
+            [
+                "_gyro_raw_sample_rate_instance"
+            ],
+            0
+        ],
+        "_last_gyro_filter_hz": [
+            [
+                "_gyro_filter_cutoff"
+            ],
+            0
+        ]
+    },
+    "update_accel_filters": {
+        "_last_accel_filter_hz": [
+            [
+                "_accel_filter_cutoff"
+            ],
+            0
+        ]
+    },
+    "should_log_imu_raw": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

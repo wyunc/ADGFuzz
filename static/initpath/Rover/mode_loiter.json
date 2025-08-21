@@ -1,0 +1,62 @@
+{
+    "_enter": {
+        "_desired_yaw_cd": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_desired_yaw_cd": [
+            [
+                "degrees_g2_windvane_get_true_wind_direction_rad",
+                "rover_current_loc_get_bearing_to__destination",
+                "g2_sailboat_calc_heading__desired_yaw_cd",
+                "wrap_180_cd__desired_yaw_cd"
+            ],
+            0
+        ],
+        "desired_speed_within_radius": [
+            [
+                "g2_sailboat_tack_enabled"
+            ],
+            0
+        ],
+        "yaw_error_cd": [
+            [
+                "wrap_180_cd_ahrs_yaw_sensor",
+                "wrap_180_cd__desired_yaw_cd"
+            ],
+            0
+        ],
+        "turn_rate": [
+            [
+                "g2_wp_nav_get_pivot_rate"
+            ],
+            0
+        ],
+        "_desired_speed": [
+            [
+                "fabsf_yaw_error_cd",
+                "g2_sailboat_tack_enabled",
+                "g2_sailboat_get_loiter_radius",
+                "g2_loit_radius",
+                "g2_wp_nav_get_default_speed",
+                "g2_loiter_speed_gain",
+                "attitude_control_get_desired_speed_accel_limited_desired_speed_within_radius",
+                "attitude_control_get_desired_speed_accel_limited_rover_g_dt",
+                "rover_current_loc_get_distance__destination"
+            ],
+            3
+        ]
+    },
+    "get_desired_location": {
+        "destination": [
+            [
+                "_destination"
+            ],
+            0
+        ]
+    }
+}

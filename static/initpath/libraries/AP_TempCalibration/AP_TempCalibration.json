@@ -1,0 +1,110 @@
+{
+    "setup_learning": {
+        "learn_temp_start": [
+            [
+                "baro_get_temperature"
+            ],
+            0
+        ],
+        "learn_values": [
+            [
+                "learn_count",
+                "new_nothrow",
+                "float"
+            ],
+            0
+        ]
+    },
+    "calculate_p_range": {
+        "temp": [
+            [
+                "i",
+                "learn_temp_start",
+                "learn_temp_step"
+            ],
+            0
+        ],
+        "P0": [
+            [
+                "calculate_correction_baro_factor",
+                "calculate_correction_learn_temp_start",
+                "learn_values"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "sq_p",
+                "sq_p0"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "i",
+                "calculate_correction_baro_factor",
+                "calculate_correction_temp",
+                "learn_values"
+            ],
+            1
+        ]
+    },
+    "calculate_calibration": {
+        "current_err": [
+            [
+                "calculate_p_range_baro_exponent"
+            ],
+            0
+        ],
+        "test_exponent": [
+            [
+                "baro_exponent",
+                "learn_delta"
+            ],
+            0
+        ],
+        "test_err": [
+            [
+                "calculate_p_range_test_exponent"
+            ],
+            0
+        ]
+    },
+    "learn_calibration": {
+        "P": [
+            [
+                "baro_get_pressure"
+            ],
+            0
+        ],
+        "learn_i": [
+            [
+                "baro_get_temperature",
+                "learn_temp_start",
+                "learn_temp_step"
+            ],
+            2
+        ],
+        "last_learn_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "apply_calibration": {
+        "temp": [
+            [
+                "baro_get_temperature"
+            ],
+            0
+        ],
+        "correction": [
+            [
+                "calculate_correction_temp",
+                "calculate_correction_baro_exponent"
+            ],
+            0
+        ]
+    }
+}

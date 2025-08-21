@@ -1,0 +1,45 @@
+{
+    "Write_ANG": {
+        "targets": [
+            [
+                "rad_to_deg",
+                "get_att_target_euler_rad"
+            ],
+            0
+        ]
+    },
+    "Write_Rate": {
+        "pd_scale": [
+            [
+                "_pd_scale_used"
+            ],
+            0
+        ],
+        "rate_targets": [
+            [
+                "rad_to_deg",
+                "rate_bf_targets"
+            ],
+            0
+        ],
+        "accel_target": [
+            [
+                "pos_control_get_accel_target_cmss"
+            ],
+            0
+        ],
+        "gyro_rate": [
+            [
+                "rad_to_deg",
+                "_rate_gyro"
+            ],
+            0
+        ],
+        "scale": [
+            [
+                "get_last_angle_p_scale"
+            ],
+            0
+        ]
+    }
+}

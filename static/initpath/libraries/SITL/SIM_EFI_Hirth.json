@@ -1,0 +1,98 @@
+{
+    "update_receive": {
+        "expected_checksum": [
+            [
+                "crc_sum_of_bytes_receive_buf",
+                "256u",
+                "crc_sum_of_bytes_expected_bytes_in_message"
+            ],
+            0
+        ],
+        "received_checksum": [
+            [
+                "receive_buf",
+                "receive_buf"
+            ],
+            1
+        ],
+        "requested_data_record.time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "receive_buf_ofs": [
+            [
+                "array_size_receive_buf",
+                "receive_buf",
+                "read_from_autopilot_char",
+                "receive_buf"
+            ],
+            2
+        ],
+        "requested_data_record.code": [
+            [
+                "packet_code_receive_buf"
+            ],
+            1
+        ]
+    },
+    "update_engine_model": {
+        "engine.cht2_temperature": [
+            [
+                "rpm_gain_factor_cht2",
+                "engine_cht2_temperature",
+                "hirth_rpm_index",
+                "sitl_state_rpm",
+                "1e",
+                "millis",
+                "engine_last_update_ms",
+                "env_loss_factor",
+                "baro_get_temperature"
+            ],
+            4
+        ],
+        "engine.last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "engine.cht1_temperature": [
+            [
+                "engine_cht1_temperature",
+                "hirth_rpm_index",
+                "sitl_state_rpm",
+                "1e",
+                "millis",
+                "engine_last_update_ms",
+                "env_loss_factor",
+                "baro_get_temperature",
+                "rpm_gain_factor_cht1"
+            ],
+            4
+        ]
+    },
+    "init": {
+        "engine.cht2_temperature": [
+            [
+                "baro_get_temperature"
+            ],
+            0
+        ],
+        "engine.cht1_temperature": [
+            [
+                "baro_get_temperature"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "throttle": [
+            [
+                "settings_throttle"
+            ],
+            0
+        ]
+    }
+}

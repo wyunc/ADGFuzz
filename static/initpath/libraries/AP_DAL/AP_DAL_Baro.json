@@ -1,0 +1,53 @@
+{
+    "start_frame": {
+        "RBRI": [
+            [
+                "_rbri",
+                "i"
+            ],
+            0
+        ],
+        "old_RBRH": [
+            [
+                "_rbrh"
+            ],
+            0
+        ],
+        "_RBRH.num_instances": [
+            [
+                "baro_num_instances"
+            ],
+            0
+        ],
+        "RBRI.last_update_ms": [
+            [
+                "baro_get_last_update_i"
+            ],
+            0
+        ],
+        "RBRI.altitude": [
+            [
+                "baro_get_altitude_i"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "rbri"
+            ],
+            0
+        ],
+        "_RBRH.primary": [
+            [
+                "baro_get_primary"
+            ],
+            0
+        ],
+        "RBRI.healthy": [
+            [
+                "baro_healthy_i"
+            ],
+            0
+        ]
+    }
+}

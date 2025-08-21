@@ -1,0 +1,62 @@
+{
+    "do_aux_function_crow_mode": {
+        "plane.crow_mode": [
+            [
+                "crow_disabled",
+                "progressive",
+                "normal"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_soaring_3pos": {
+        "desired_state": [
+            [
+                "manual_mode_change",
+                "soaring_disabled",
+                "auto_mode_change"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_flare": {
+        "plane.flare_mode": [
+            [
+                "flare_disabled",
+                "enabled_pitch_target",
+                "enabled_no_pitch_target"
+            ],
+            0
+        ]
+    },
+    "do_aux_function": {
+        "plane.quadplane.vfwd_enable_active": [
+            [
+                "high",
+                "ch_flag"
+            ],
+            1
+        ],
+        "plane.inverted_flight": [
+            [
+                "high",
+                "ch_flag"
+            ],
+            0
+        ],
+        "plane.reversed_throttle": [
+            [
+                "high",
+                "ch_flag"
+            ],
+            0
+        ],
+        "plane.quadplane.air_mode": [
+            [
+                "off",
+                "on"
+            ],
+            0
+        ]
+    }
+}

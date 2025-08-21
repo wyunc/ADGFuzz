@@ -1,0 +1,43 @@
+{
+    "update": {
+        "lateral_distance": [
+            [
+                "safe_sqrt_longitudinal_dist",
+                "safe_sqrt_position_wrt_device_length_squared"
+            ],
+            0
+        ],
+        "lateral_limit": [
+            [
+                "_alt_limit",
+                "projection_on_axis_length",
+                "_dist_limit"
+            ],
+            1
+        ],
+        "_target_pos": [
+            [
+                "device_center_get_distance_ned_double_loc"
+            ],
+            1
+        ],
+        "device_center": [
+            [
+                "shiploc"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "projection_on_axis": [
+            [
+                "position_wrt_device_projected_axis"
+            ],
+            0
+        ]
+    }
+}

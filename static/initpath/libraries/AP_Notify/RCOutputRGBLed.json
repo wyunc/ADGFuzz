@@ -1,0 +1,31 @@
+{
+    "hw_set_rgb": {
+        "usec_duty": [
+            [
+                "get_duty_cycle_for_color_usec_period",
+                "get_duty_cycle_for_color_green",
+                "get_duty_cycle_for_color_red",
+                "get_duty_cycle_for_color_blue"
+            ],
+            0
+        ],
+        "freq": [
+            [
+                "hal_rcout_get_freq__red_channel"
+            ],
+            0
+        ],
+        "usec_period": [
+            [
+                "hz_to_usec_freq"
+            ],
+            0
+        ],
+        "freq_motor": [
+            [
+                "hal_rcout_get_freq"
+            ],
+            0
+        ]
+    }
+}

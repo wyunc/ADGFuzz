@@ -1,0 +1,83 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "send_frames": {
+        "devoPacket.speed": [
+            [
+                "int16_t",
+                "gps_ground_speed",
+                "devo_speed_factor"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "devoPacket.temp": [
+            [
+                "gcs_custom_mode"
+            ],
+            0
+        ],
+        "devoPacket.header": [
+            [
+                "devom_sync_byte"
+            ],
+            0
+        ],
+        "devoPacket.lat": [
+            [
+                "gps_dd_to_dms_format_loc_lat"
+            ],
+            0
+        ],
+        "devoPacket.alt": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "devoPacket.lon": [
+            [
+                "gps_dd_to_dms_format_loc_lng"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "sizeof_devo_packet"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "uint8_t",
+                "devo_packet"
+            ],
+            0
+        ],
+        "devoPacket.volt": [
+            [
+                "roundf_battery_voltage"
+            ],
+            0
+        ]
+    },
+    "tick": {
+        "_last_frame_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "init": {
+        "mount": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "dist_to_target_xy": [
+            [
+                "vector2f_dist_vec_offs_neu_x",
+                "vector2f_dist_vec_offs_neu_y_length"
+            ],
+            0
+        ],
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "desired_velocity_neu_cms.z": [
+            [
+                "pos_control_get_max_speed_up_cms",
+                "desired_velocity_neu_cms_z",
+                "copter_avoid_get_max_speed_pos_control_get_pos_z_p_k_p_get",
+                "pos_control_get_max_accel_z_cmss",
+                "fabsf_dist_vec_offs_neu_z",
+                "copter_g_dt",
+                "vel_of_target_z",
+                "fabsf_pos_control_get_max_speed_down_cms"
+            ],
+            1
+        ],
+        "desired_velocity_neu_cms": [
+            [
+                "g2_follow_get_pos_p_k_p",
+                "dist_vec_offs_neu"
+            ],
+            1
+        ],
+        "yaw_cd": [
+            [
+                "target_hdg",
+                "get_bearing_cd_desired_velocity_neu_cms_xy",
+                "get_bearing_cd_dist_vec_xy",
+                "get_bearing_cd_vector2f"
+            ],
+            0
+        ]
+    },
+    "get_wp": {
+        "dist": [
+            [
+                "g2_follow_get_distance_to_target"
+            ],
+            0
+        ],
+        "bearing": [
+            [
+                "g2_follow_get_bearing_to_target"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "copter_current_loc"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "setBaroHeightRef": {
+        "height_sensor_ref": [
+            [
+                "int32_t",
+                "baro",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "setGpsHeightRef": {
+        "height_sensor_ref": [
+            [
+                "static_cast",
+                "gnss",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "setRangeHeightRef": {
+        "height_sensor_ref": [
+            [
+                "static_cast",
+                "int32_t",
+                "range"
+            ],
+            0
+        ]
+    },
+    "enableRangeHeightFusion": {
+        "rng_ctrl": [
+            [
+                "static_cast",
+                "int32_t",
+                "enabled"
+            ],
+            0
+        ]
+    },
+    "disableRangeHeightFusion": {
+        "rng_ctrl": [
+            [
+                "disabled",
+                "static_cast",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "setExternalVisionHeightRef": {
+        "height_sensor_ref": [
+            [
+                "ev",
+                "static_cast",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "setFlowOffset": {
+        "flow_pos_body": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "setMagFuseTypeNone": {
+        "mag_fusion_type": [
+            [
+                "none"
+            ],
+            0
+        ]
+    }
+}

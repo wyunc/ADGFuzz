@@ -1,0 +1,232 @@
+{
+    "generate_accel": {
+        "accel_accum": [
+            [
+                "vector3f_z_accel",
+                "vector3f_x_accel",
+                "vector3f_y_accel",
+                "enable_fast_sampling_accel_instance"
+            ],
+            2
+        ],
+        "accel_time": [
+            [
+                "accel_sample_hz",
+                "enable_fast_sampling_accel_instance"
+            ],
+            1
+        ],
+        "vibe_freq": [
+            [
+                "vector3f"
+            ],
+            0
+        ],
+        "centripetal_accel": [
+            [
+                "radians",
+                "vector3f_radians",
+                "vector3f"
+            ],
+            2
+        ],
+        "yAccel": [
+            [
+                "calculate_noise_accel_noise",
+                "lever_arm_accel_y",
+                "sinf_vibe_freq_y",
+                "sinf_accel_time",
+                "sinf_m_pi",
+                "centripetal_accel_y",
+                "accel_noise",
+                "sinf_phase",
+                "calculate_noise_noise_variation",
+                "sim_rand_float"
+            ],
+            0
+        ],
+        "xAccel": [
+            [
+                "calculate_noise_accel_noise",
+                "sinf_accel_time",
+                "sinf_m_pi",
+                "accel_noise",
+                "sinf_vibe_freq_x",
+                "centripetal_accel_x",
+                "sinf_phase",
+                "calculate_noise_noise_variation",
+                "sim_rand_float",
+                "lever_arm_accel_x"
+            ],
+            0
+        ],
+        "zAccel": [
+            [
+                "calculate_noise_accel_noise",
+                "sinf_accel_time",
+                "sinf_m_pi",
+                "accel_noise",
+                "sinf_vibe_freq_z",
+                "lever_arm_accel_z",
+                "sinf_phase",
+                "calculate_noise_noise_variation",
+                "sim_rand_float",
+                "centripetal_accel_z"
+            ],
+            0
+        ],
+        "lever_arm_accel": [
+            [
+                "vector3f",
+                "radians",
+                "vector3f_radians"
+            ],
+            2
+        ],
+        "phase": [
+            [
+                "accel_sample_hz",
+                "m_pi",
+                "enable_fast_sampling_accel_instance",
+                "motor_freq",
+                "m_pi",
+                "accel_motor_phase",
+                "i"
+            ],
+            2
+        ]
+    },
+    "generate_gyro": {
+        "r": [
+            [
+                "sinf_vibe_freq_z",
+                "to_rad",
+                "calculate_noise_gyro_noise",
+                "calculate_noise_noise_variation",
+                "sinf_m_pi",
+                "radians",
+                "sinf_gyro_time",
+                "sinf_phase",
+                "sim_rand_float",
+                "gyro_drift"
+            ],
+            1
+        ],
+        "p": [
+            [
+                "to_rad",
+                "calculate_noise_gyro_noise",
+                "calculate_noise_noise_variation",
+                "sinf_m_pi",
+                "radians",
+                "sinf_vibe_freq_x",
+                "sinf_gyro_time",
+                "sinf_phase",
+                "sim_rand_float",
+                "gyro_drift"
+            ],
+            1
+        ],
+        "gyro.y": [
+            [
+                "scale_y"
+            ],
+            0
+        ],
+        "phase": [
+            [
+                "gyro_motor_phase",
+                "calculate_noise_freq_variation",
+                "gyro_sample_hz",
+                "enable_fast_sampling_gyro_instance",
+                "m_pi",
+                "i",
+                "m_pi"
+            ],
+            3
+        ],
+        "gyro.z": [
+            [
+                "scale_z"
+            ],
+            0
+        ],
+        "gyro_accum": [
+            [
+                "vector3f_r",
+                "vector3f_p",
+                "vector3f_q",
+                "enable_fast_sampling_gyro_instance"
+            ],
+            2
+        ],
+        "gyro.x": [
+            [
+                "scale_x"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "to_rad",
+                "calculate_noise_gyro_noise",
+                "calculate_noise_noise_variation",
+                "sinf_m_pi",
+                "radians",
+                "sinf_gyro_time",
+                "sinf_phase",
+                "sim_rand_float",
+                "gyro_drift",
+                "sinf_vibe_freq_y"
+            ],
+            1
+        ],
+        "vibe_freq": [
+            [
+                "vector3f"
+            ],
+            0
+        ],
+        "scale": [
+            [
+                "vector3f"
+            ],
+            0
+        ],
+        "gyro_time": [
+            [
+                "gyro_sample_hz",
+                "enable_fast_sampling_gyro_instance"
+            ],
+            1
+        ]
+    },
+    "timer_update": {
+        "next_accel_sample": [
+            [
+                "accel_sample_hz",
+                "micros64",
+                "1000000ul"
+            ],
+            1
+        ],
+        "next_gyro_sample": [
+            [
+                "micros64",
+                "gyro_sample_hz",
+                "1000000ul"
+            ],
+            1
+        ]
+    },
+    "gyro_drift": {
+        "minutes": [
+            [
+                "fmod_micros64",
+                "period",
+                "_0e6"
+            ],
+            0
+        ]
+    }
+}

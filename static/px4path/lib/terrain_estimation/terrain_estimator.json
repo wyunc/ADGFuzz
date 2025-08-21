@@ -1,0 +1,86 @@
+{
+    "predict": {
+        "_x": [
+            [
+                "dt",
+                "a"
+            ],
+            1
+        ],
+        "R_att": [
+            [
+                "quatf_attitude_q"
+            ],
+            0
+        ],
+        "_u_z": [
+            [
+                "r_att",
+                "a",
+                "constants_one_g"
+            ],
+            1
+        ]
+    },
+    "measurement_update": {
+        "d": [
+            [
+                "distance_current_distance"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "c_transpose",
+                "_p",
+                "s_i"
+            ],
+            0
+        ],
+        "S_I": [
+            [
+                "c_transpose",
+                "float",
+                "_p",
+                "c",
+                "s_i",
+                "inv"
+            ],
+            0
+        ],
+        "_time_last_distance": [
+            [
+                "distance_timestamp"
+            ],
+            0
+        ],
+        "_distance_last": [
+            [
+                "distance_current_distance"
+            ],
+            0
+        ],
+        "_time_last_gps": [
+            [
+                "gps_timestamp"
+            ],
+            0
+        ],
+        "_P": [
+            [
+                "k",
+                "_p",
+                "c"
+            ],
+            0
+        ],
+        "_x": [
+            [
+                "k",
+                "y",
+                "c"
+            ],
+            1
+        ]
+    }
+}

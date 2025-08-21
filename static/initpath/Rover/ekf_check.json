@@ -1,0 +1,22 @@
+{
+    "ekf_check": {
+        "ekf_check_state.last_warn_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "flags.ekf_bad": [
+            [
+                "ekf_check_state_bad_variance"
+            ],
+            0
+        ],
+        "ekf_check_state.fail_count": [
+            [
+                "ekf_check_iterations_max"
+            ],
+            0
+        ]
+    }
+}

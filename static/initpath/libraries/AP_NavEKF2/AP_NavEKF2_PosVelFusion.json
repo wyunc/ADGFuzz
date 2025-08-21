@@ -1,0 +1,1096 @@
+{
+    "ResetVelocity": {
+        "stateStruct.velocity": [
+            [
+                "ext_nav_vel_delayed_vel"
+            ],
+            0
+        ],
+        "outputDataNew.velocity.y": [
+            [
+                "state_struct_velocity_y"
+            ],
+            0
+        ],
+        "outputDataDelayed.velocity.y": [
+            [
+                "state_struct_velocity_y"
+            ],
+            0
+        ],
+        ".velocity.y": [
+            [
+                "state_struct_velocity_y"
+            ],
+            0
+        ],
+        "velResetNE.y": [
+            [
+                "state_struct_velocity_y",
+                "vel_reset_ne_y"
+            ],
+            0
+        ],
+        ".velocity.x": [
+            [
+                "state_struct_velocity_x"
+            ],
+            0
+        ],
+        "stateStruct.velocity.x": [
+            [
+                "gps_corrected_vel_x"
+            ],
+            0
+        ],
+        "velResetNE.x": [
+            [
+                "vel_reset_ne_x",
+                "state_struct_velocity_x"
+            ],
+            0
+        ],
+        "gps_corrected": [
+            [
+                "gps_data_new"
+            ],
+            0
+        ],
+        "outputDataDelayed.velocity.x": [
+            [
+                "state_struct_velocity_x"
+            ],
+            0
+        ],
+        "lastVelPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "stateStruct.velocity.y": [
+            [
+                "gps_corrected_vel_y"
+            ],
+            0
+        ],
+        "lastVelReset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataNew.velocity.x": [
+            [
+                "state_struct_velocity_x"
+            ],
+            0
+        ]
+    },
+    "ResetPosition": {
+        "outputDataNew.position.x": [
+            [
+                "state_struct_position_x"
+            ],
+            0
+        ],
+        "last_gps_idx": [
+            [
+                "gps_corrected_sensor_idx"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.x": [
+            [
+                "state_struct_position_x"
+            ],
+            0
+        ],
+        "lastPosReset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        ".position.x": [
+            [
+                "state_struct_position_x"
+            ],
+            0
+        ],
+        "outputDataNew.position.y": [
+            [
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        "posResetNE.x": [
+            [
+                "state_struct_position_x",
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        "stateStruct.position.y": [
+            [
+                "receiver_pos_y",
+                "gps_corrected_pos_y",
+                "ext_nav_corrected_pos_y",
+                "gps_corrected_vel_y",
+                "float_gps_corrected_time_ms",
+                "float_imu_data_delayed_time_ms",
+                "last_known_position_ne_y"
+            ],
+            0
+        ],
+        "lastPosPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.y": [
+            [
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        "lastRngBcnPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "posResetNE.y": [
+            [
+                "pos_reset_ne_y",
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        ".position.y": [
+            [
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        "gps_corrected": [
+            [
+                "gps_data_new"
+            ],
+            0
+        ],
+        "extNavCorrected": [
+            [
+                "ext_nav_data_delayed"
+            ],
+            0
+        ],
+        "stateStruct.position.x": [
+            [
+                "gps_corrected_vel_x",
+                "ext_nav_corrected_pos_x",
+                "receiver_pos_x",
+                "float_gps_corrected_time_ms",
+                "float_imu_data_delayed_time_ms",
+                "last_known_position_ne_x",
+                "gps_corrected_pos_x"
+            ],
+            0
+        ]
+    },
+    "ResetPositionNE": {
+        "outputDataNew.position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ],
+        "posOrig": [
+            [
+                "state_struct_position"
+            ],
+            0
+        ],
+        ".position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ],
+        "stateStruct.position.y": [
+            [
+                "pos_e"
+            ],
+            0
+        ],
+        "posResetNE.x": [
+            [
+                "state_struct_position_x",
+                "pos_orig_x"
+            ],
+            0
+        ],
+        "posResetNE.y": [
+            [
+                "state_struct_position_y",
+                "pos_orig_y"
+            ],
+            0
+        ],
+        "stateStruct.position.x": [
+            [
+                "pos_n"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        "lastPosReset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataNew.position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        ".position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ]
+    },
+    "ResetHeight": {
+        "vertCompFiltState.pos": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "stateStruct.velocity.z": [
+            [
+                "ext_nav_vel_new_vel_z",
+                "gps_data_new_vel_z"
+            ],
+            0
+        ],
+        "outputDataDelayed.velocity.z": [
+            [
+                "state_struct_velocity_z"
+            ],
+            0
+        ],
+        ".position.z": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "outputDataNew.position.z": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "lastPosResetD_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "terrainState": [
+            [
+                "state_struct_position_z",
+                "rng_on_gnd",
+                "terrain_state"
+            ],
+            0
+        ],
+        "posResetD": [
+            [
+                "pos_reset_d",
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "stateStruct.position.z": [
+            [
+                "hgt_mea"
+            ],
+            0
+        ],
+        "lastHgtPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.z": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        ".velocity.z": [
+            [
+                "state_struct_velocity_z"
+            ],
+            0
+        ],
+        "outputDataNew.velocity.z": [
+            [
+                "state_struct_velocity_z"
+            ],
+            0
+        ],
+        "vertCompFiltState.vel": [
+            [
+                "output_data_new_velocity_z"
+            ],
+            0
+        ]
+    },
+    "ResetPositionD": {
+        ".position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "lastPosResetD_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataNew.position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "stateStruct.position.z": [
+            [
+                "pos_d"
+            ],
+            0
+        ],
+        "posResetD": [
+            [
+                "pos_d_orig",
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "posDOrig": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "vertCompFiltState.pos": [
+            [
+                "output_data_new_position_z"
+            ],
+            0
+        ]
+    },
+    "resetHeightDatum": {
+        "EKF_origin.alt": [
+            [
+                "dal_gps_location_alt",
+                "int32_t",
+                "old_hgt"
+            ],
+            0
+        ],
+        "ekfGpsRefHgt": [
+            [
+                "ekf_origin_alt",
+                "double"
+            ],
+            0
+        ],
+        "oldHgt": [
+            [
+                "state_struct_position_z"
+            ],
+            0
+        ]
+    },
+    "CorrectGPSForAntennaOffset": {
+        "gps_data.vel.y": [
+            [
+                "vel_offset_earth_y"
+            ],
+            0
+        ],
+        "velOffsetBody": [
+            [
+                "ang_rate",
+                "pos_offset_body"
+            ],
+            0
+        ],
+        "gps_data.pos.x": [
+            [
+                "pos_offset_earth_x"
+            ],
+            0
+        ],
+        "gps_data.vel.x": [
+            [
+                "vel_offset_earth_x"
+            ],
+            0
+        ],
+        "gps_data.pos.y": [
+            [
+                "pos_offset_earth_y"
+            ],
+            0
+        ],
+        "posOffsetBody": [
+            [
+                "accel_pos_offset",
+                "dal_gps_get_antenna_offset_gps_data_delayed_sensor_idx_toftype"
+            ],
+            0
+        ],
+        "angRate": [
+            [
+                "imu_data_delayed_del_ang",
+                "imu_data_delayed_del_ang_dt"
+            ],
+            0
+        ],
+        "velOffsetEarth": [
+            [
+                "prev_tnb_mul_transpose_vel_offset_body"
+            ],
+            0
+        ],
+        "gps_data.vel.z": [
+            [
+                "vel_offset_earth_z"
+            ],
+            0
+        ],
+        "gps_data.hgt": [
+            [
+                "pos_offset_earth_z"
+            ],
+            0
+        ],
+        "posOffsetEarth": [
+            [
+                "prev_tnb_mul_transpose_pos_offset_body"
+            ],
+            0
+        ]
+    },
+    "CorrectExtNavForSensorOffset": {
+        "visual_odom": [
+            [
+                "dal_visualodom"
+            ],
+            0
+        ],
+        "posOffsetBody": [
+            [
+                "accel_pos_offset",
+                "visual_odom_get_pos_offset_toftype"
+            ],
+            0
+        ],
+        "ext_position.y": [
+            [
+                "pos_offset_earth_y"
+            ],
+            0
+        ],
+        "posOffsetEarth": [
+            [
+                "prev_tnb_mul_transpose_pos_offset_body"
+            ],
+            0
+        ],
+        "ext_position.z": [
+            [
+                "pos_offset_earth_z"
+            ],
+            0
+        ],
+        "ext_position.x": [
+            [
+                "pos_offset_earth_x"
+            ],
+            0
+        ]
+    },
+    "CorrectExtNavVelForSensorOffset": {
+        "ext_velocity": [
+            [
+                "get_vel_correction_for_sensor_offset_prev_tnb",
+                "get_vel_correction_for_sensor_offset_pos_offset_body",
+                "get_vel_correction_for_sensor_offset_ang_rate"
+            ],
+            0
+        ],
+        "posOffsetBody": [
+            [
+                "accel_pos_offset",
+                "visual_odom_get_pos_offset_toftype"
+            ],
+            0
+        ],
+        "angRate": [
+            [
+                "imu_data_delayed_del_ang",
+                "imu_data_delayed_del_ang_dt"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "dal_visualodom"
+            ],
+            0
+        ]
+    },
+    "SelectVelPosFusion": {
+        "extNavDataToFuse": [
+            [
+                "stored_ext_nav_recall_imu_data_delayed_time_ms",
+                "stored_ext_nav_recall_ext_nav_data_delayed"
+            ],
+            0
+        ],
+        "posResetNE.y": [
+            [
+                "pos_reset_ne_y",
+                "state_struct_position_y"
+            ],
+            0
+        ],
+        "vertCompFiltState.pos": [
+            [
+                "output_data_new_position_z"
+            ],
+            0
+        ],
+        "stateStruct.position.y": [
+            [
+                "gps_data_delayed_pos_y"
+            ],
+            0
+        ],
+        ".position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        "gpsDataToFuse": [
+            [
+                "stored_gps_recall_gps_data_delayed",
+                "stored_gps_recall_imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "posResetNE.x": [
+            [
+                "state_struct_position_x",
+                "pos_reset_ne_x"
+            ],
+            0
+        ],
+        ".position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ],
+        "outputDataNew.position.y": [
+            [
+                "pos_reset_ne_y"
+            ],
+            0
+        ],
+        ".position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "last_gps_idx": [
+            [
+                "gps_data_delayed_sensor_idx"
+            ],
+            0
+        ],
+        "extNavVelToFuse": [
+            [
+                "stored_ext_nav_vel_recall_ext_nav_vel_delayed",
+                "stored_ext_nav_vel_recall_imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "lastPosReset_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "outputDataNew.position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "stateStruct.position.z": [
+            [
+                "hgt_mea"
+            ],
+            0
+        ],
+        "lastPosResetD_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "posResetD": [
+            [
+                "state_struct_position_z",
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "outputDataDelayed.position.z": [
+            [
+                "pos_reset_d"
+            ],
+            0
+        ],
+        "activeHgtSource": [
+            [
+                "hgt_source_extnav"
+            ],
+            0
+        ],
+        "stateStruct.position.x": [
+            [
+                "gps_data_delayed_pos_x"
+            ],
+            0
+        ],
+        "outputDataNew.position.x": [
+            [
+                "pos_reset_ne_x"
+            ],
+            0
+        ]
+    },
+    "FuseVelPosNED": {
+        "varVelSum": [
+            [
+                "var_innov_vel_pos",
+                "i"
+            ],
+            0
+        ],
+        "stateIndex": [
+            [
+                "i",
+                "obs_index"
+            ],
+            0
+        ],
+        "posHealth": [
+            [
+                "pos_test_ratio",
+                "bad_im_udata"
+            ],
+            0
+        ],
+        "tiltErrVec": [
+            [
+                "state_struct_ang_err"
+            ],
+            0
+        ],
+        "hgtErr": [
+            [
+                "vel_pos_obs",
+                "state_struct_position_z"
+            ],
+            0
+        ],
+        "lastPosPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "hgtInnovFiltState": [
+            [
+                "innov_vel_pos",
+                "hgt_innov_filt_state",
+                "constrain_ftype_hgt_innov_filt_tc",
+                "constrain_ftype_dt_baro"
+            ],
+            1
+        ],
+        "posErr": [
+            [
+                "frontend_gps_pos_var_acc_scale",
+                "acc_nav_mag"
+            ],
+            0
+        ],
+        "innovVelSumSq": [
+            [
+                "sq_vel_innov",
+                "sq_i"
+            ],
+            0
+        ],
+        "lastVelPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "velHealth": [
+            [
+                "vel_test_ratio",
+                "bad_im_udata"
+            ],
+            0
+        ],
+        "hgtHealth": [
+            [
+                "bad_im_udata",
+                "hgt_test_ratio",
+                "max_test_ratio"
+            ],
+            0
+        ],
+        "velDErr": [
+            [
+                "state_struct_velocity_z",
+                "vel_pos_obs"
+            ],
+            0
+        ],
+        "lastHgtPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "maxPosInnov2": [
+            [
+                "var_innov_vel_pos",
+                "sq_ftypefrontend__gps_pos_innov_gate"
+            ],
+            0
+        ],
+        "obs_data_chk": [
+            [
+                "sq_ext_nav_vel_delayed_err",
+                "sq_acc_nav_mag",
+                "sq_constrain_ftype",
+                "sq_frontend_gps_ne_vel_var_acc_scale",
+                "sq_frontend_ext_nav_vel_var_acc_scale",
+                "sq_frontend__gps_horiz_vel_noise"
+            ],
+            0
+        ],
+        "dtBaro": [
+            [
+                "last_hgt_pass_time_ms",
+                "_0e",
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "posTestRatio": [
+            [
+                "sq_innov_vel_pos",
+                "max_pos_innov2"
+            ],
+            0
+        ],
+        "velTestRatio": [
+            [
+                "var_vel_sum",
+                "sq_ftypefrontend__gps_vel_innov_gate",
+                "innov_vel_sum_sq"
+            ],
+            0
+        ],
+        "maxTestRatio": [
+            [
+                "pv_aiding_mode",
+                "on_ground",
+                "aid_none"
+            ],
+            0
+        ],
+        "SK": [
+            [
+                "var_innov_vel_pos",
+                "obs_index"
+            ],
+            0
+        ],
+        "hgtTestRatio": [
+            [
+                "var_innov_vel_pos",
+                "sq_ftypefrontend__hgt_innov_gate",
+                "sq_innov_vel_pos"
+            ],
+            0
+        ]
+    },
+    "selectHeightForFusion": {
+        "_rng": [
+            [
+                "dal_rangefinder"
+            ],
+            0
+        ],
+        "hgtMea": [
+            [
+                "mea_hgt_at_take_off",
+                "gps_data_delayed_hgt",
+                "terrain_state",
+                "baro_hgt_offset",
+                "prev_tnb_c_z",
+                "rng_on_gnd",
+                "ext_nav_data_delayed_pos_z",
+                "hgt_mea",
+                "range_data_delayed_rng",
+                "baro_data_delayed_hgt"
+            ],
+            0
+        ],
+        "rangeDataToFuse": [
+            [
+                "stored_range_recall_imu_data_delayed_time_ms",
+                "stored_range_recall_range_data_delayed"
+            ],
+            0
+        ],
+        "horizSpeed": [
+            [
+                "state_struct_velocity_xy_length"
+            ],
+            0
+        ],
+        "rangeMaxUse": [
+            [
+                "ftype",
+                "frontend__use_rng_sw_hgt",
+                "1e",
+                "float",
+                "_rng_max_distance_cm_orient_rotation_pitch_270"
+            ],
+            0
+        ],
+        "dontTrustTerrain": [
+            [
+                "frontend__use_rng_sw_spd",
+                "filter_status_flags_horiz_vel",
+                "terrain_hgt_stable",
+                "horiz_speed"
+            ],
+            0
+        ],
+        "rangeFinderDataIsFresh": [
+            [
+                "imu_sample_time_ms",
+                "rng_valid_mea_time_ms"
+            ],
+            0
+        ],
+        "meaHgtAtTakeOff": [
+            [
+                "constrain_ftype_gnd_hgt_filt_tc",
+                "constrain_ftype_dt_baro",
+                "baro_data_delayed_hgt",
+                "mea_hgt_at_take_off"
+            ],
+            1
+        ],
+        "posDownObsNoise": [
+            [
+                "frontend_gnd_effect_baro_scaler",
+                "sq_range_data_delayed_rng",
+                "sq_frontend__baro_alt_noise",
+                "sq_frontend__terr_grad_max",
+                "sq_ext_nav_data_delayed_pos_err",
+                "sq_prev_tnb_c_z",
+                "sq_frontend__rng_noise",
+                "sq_constrain_ftype",
+                "sq_gps_hgt_accuracy",
+                "sq_frontend__gps_horiz_pos_noise"
+            ],
+            0
+        ],
+        "belowLowerSwHgt": [
+            [
+                "range_max_use",
+                "state_struct_position_z",
+                "terrain_state"
+            ],
+            0
+        ],
+        "trustTerrain": [
+            [
+                "frontend__use_rng_sw_spd",
+                "terrain_hgt_stable",
+                "horiz_speed"
+            ],
+            1
+        ],
+        "aboveUpperSwHgt": [
+            [
+                "range_max_use",
+                "state_struct_position_z",
+                "terrain_state"
+            ],
+            0
+        ],
+        "lostRngBcnHgt": [
+            [
+                "rng_bcn_data_delayed_time_ms",
+                "imu_sample_time_ms",
+                "active_hgt_source",
+                "hgt_source_bcn"
+            ],
+            0
+        ],
+        "baroDataToFuse": [
+            [
+                "stored_baro_recall_imu_data_delayed_time_ms",
+                "stored_baro_recall_baro_data_delayed"
+            ],
+            0
+        ],
+        "dtBaro": [
+            [
+                "frontend_hgt_avg_ms",
+                "_0e"
+            ],
+            0
+        ],
+        "rangeDataDelayed.rng": [
+            [
+                "pos_offset_earth_z",
+                "prev_tnb_c_z"
+            ],
+            0
+        ],
+        "posOffsetEarth": [
+            [
+                "prev_tnb_mul_transpose_pos_offset_body"
+            ],
+            0
+        ],
+        "lostRngHgt": [
+            [
+                "hgt_source_rng",
+                "range_finder_data_is_fresh",
+                "active_hgt_source"
+            ],
+            0
+        ],
+        "posOffsetBody": [
+            [
+                "accel_pos_offset",
+                "sensor_get_pos_offset_toftype"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "_rng_get_backend_range_data_delayed_sensor_idx"
+            ],
+            0
+        ],
+        "lostGpsHgt": [
+            [
+                "hgt_source_gps",
+                "imu_sample_time_ms",
+                "active_hgt_source",
+                "last_time_gps_received_ms"
+            ],
+            0
+        ],
+        "activeHgtSource": [
+            [
+                "hgt_source_rng",
+                "hgt_source_bcn",
+                "hgt_source_extnav",
+                "hgt_source_baro",
+                "hgt_source_gps"
+            ],
+            0
+        ],
+        "hgtRetryTime_ms": [
+            [
+                "frontend_hgt_retry_time_mode12_ms",
+                "frontend_hgt_retry_time_mode0_ms",
+                "use_ext_nav_vel",
+                "vel_timeout",
+                "use_gps_vert_vel"
+            ],
+            0
+        ],
+        "lostExtNavHgt": [
+            [
+                "hgt_source_extnav",
+                "imu_sample_time_ms",
+                "active_hgt_source",
+                "ext_nav_meas_time_ms"
+            ],
+            0
+        ]
+    }
+}

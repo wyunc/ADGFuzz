@@ -1,0 +1,262 @@
+{
+    "is_multirotor": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_tricopter"
+            ],
+            0
+        ]
+    },
+    "is_rotary_wing": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_coaxial"
+            ],
+            0
+        ]
+    },
+    "is_vtol": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_vtol_tailsitter"
+            ],
+            0
+        ]
+    },
+    "is_vtol_tailsitter": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_vtol_tailsitter"
+            ],
+            0
+        ]
+    },
+    "is_fixed_wing": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_fixed_wing"
+            ],
+            0
+        ]
+    },
+    "is_ground_vehicle": {
+        "current_status.system_type": [
+            [
+                "vehicle_type_ground_rover",
+                "current_status_system_type",
+                "vehicle_type_boat"
+            ],
+            0
+        ]
+    },
+    "buzzer_init": {
+        "tune_control_pub": [
+            [
+                "orb_advertise_tune_control",
+                "tune_control",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ]
+    },
+    "set_tune_override": {
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tune_control.tune_id": [
+            [
+                "tune_id"
+            ],
+            0
+        ],
+        "tune_control.volume": [
+            [
+                "volume_level_default"
+            ],
+            0
+        ]
+    },
+    "set_tune": {
+        "tune_control.tune_id": [
+            [
+                "tune_id"
+            ],
+            0
+        ],
+        "new_tune_is_repeating": [
+            [
+                "tune_id",
+                "tune_durations"
+            ],
+            1
+        ],
+        "tune_current": [
+            [
+                "tune_id"
+            ],
+            0
+        ],
+        "tune_control.volume": [
+            [
+                "volume_level_default"
+            ],
+            0
+        ],
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "tune_end": [
+            [
+                "hrt_absolute_time",
+                "tune_id",
+                "tune_durations"
+            ],
+            2
+        ]
+    },
+    "tune_home_set": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_mission_ok": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_mission_warn": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_mission_fail": {
+        "blink_msg_end": [
+            [
+                "hrt_absolute_time",
+                "blink_msg_time"
+            ],
+            0
+        ]
+    },
+    "tune_positive": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_neutral": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_negative": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "tune_failsafe": {
+        "blink_msg_end": [
+            [
+                "blink_msg_time",
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "led_init": {
+        "fd_leds": [
+            [
+                "px4_open_led0_device_path",
+                "px4_open_o_rdwr"
+            ],
+            0
+        ],
+        "led_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "led_control.mode": [
+            [
+                "mode_off"
+            ],
+            0
+        ],
+        "led_control_pub": [
+            [
+                "orb_advertise_orb_id",
+                "orb_advertise_led_control",
+                "led_control"
+            ],
+            0
+        ],
+        "led_control.led_mask": [
+            [
+                "0xff"
+            ],
+            0
+        ]
+    },
+    "rgbled_set_color_and_mode": {
+        "led_control.num_blinks": [
+            [
+                "blinks"
+            ],
+            0
+        ],
+        "led_control.color": [
+            [
+                "color"
+            ],
+            0
+        ],
+        "led_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "led_control.mode": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "led_control.priority": [
+            [
+                "prio"
+            ],
+            0
+        ]
+    }
+}

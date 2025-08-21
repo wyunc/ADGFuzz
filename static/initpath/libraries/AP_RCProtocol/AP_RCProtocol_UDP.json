@@ -1,0 +1,26 @@
+{
+    "update": {
+        "last_input_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_all_socket_input": {
+        "num_channels": [
+            [
+                "rc_in_recv_sizeof",
+                "rc_in_recv_pwm_pkt"
+            ],
+            2
+        ],
+        "pwm": [
+            [
+                "pwm_pkt_pwm",
+                "i"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "write_video_stabilisation": {
+        "accel": [
+            [
+                "get_accel_bias",
+                "get_accel"
+            ],
+            0
+        ]
+    }
+}

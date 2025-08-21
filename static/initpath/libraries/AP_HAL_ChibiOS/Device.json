@@ -1,0 +1,49 @@
+{
+    "bus_thread": {
+        "callback": [
+            [
+                "binfo_callbacks"
+            ],
+            0
+        ],
+        "next_usec": [
+            [
+                "callback_period_usec"
+            ],
+            0
+        ],
+        "delay": [
+            [
+                "callback_next_usec",
+                "micros64",
+                "micros64"
+            ],
+            2
+        ],
+        "binfo": [
+            [
+                "device_bus",
+                "struct",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "adjust_timer": {
+        "callback": [
+            [
+                "callback_info",
+                "h",
+                "static_cast"
+            ],
+            0
+        ],
+        "next_usec": [
+            [
+                "period_usec",
+                "micros64"
+            ],
+            0
+        ]
+    }
+}

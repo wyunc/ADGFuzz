@@ -1,0 +1,68 @@
+{
+    "measurementpredandjacobian": {
+        "w": [
+            [
+                "x",
+                "expf_x",
+                "expf_px",
+                "expf_powf",
+                "powf_py",
+                "powf_x"
+            ],
+            1
+        ]
+    },
+    "reset": {
+        "R": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "x"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "Q": [
+            [
+                "q"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "P": [
+            [
+                "temp_m",
+                "q"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "h",
+                "r",
+                "p12"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "measurementpredandjacobian_h",
+                "measurementpredandjacobian_py",
+                "measurementpredandjacobian_px",
+                "z",
+                "k"
+            ],
+            1
+        ]
+    }
+}

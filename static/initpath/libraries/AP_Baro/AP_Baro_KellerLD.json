@@ -1,0 +1,88 @@
+{
+    "read_measurement_limit": {
+        "cal_data": [
+            [
+                "data",
+                "data"
+            ],
+            2
+        ]
+    },
+    "read_mode_type": {
+        "_p_mode": [
+            [
+                "0b11",
+                "sensor_mode",
+                "data"
+            ],
+            0
+        ],
+        "_p_mode_offset": [
+            [
+                "_frontend_get_pressure"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "cmd_metadata_pmode"
+            ],
+            0
+        ]
+    },
+    "_init": {
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "_read": {
+        "pressure_raw": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "temperature_raw": [
+            [
+                "data"
+            ],
+            0
+        ]
+    },
+    "_update_and_wrap_accumulator": {
+        "_accum.sum_temperature": [
+            [
+                "temperature"
+            ],
+            0
+        ],
+        "_accum.sum_pressure": [
+            [
+                "pressure"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "pressure": [
+            [
+                "_frontend_get_pressure",
+                "_p_max",
+                "_accum_num_samples",
+                "_accum_sum_pressure",
+                "_p_min"
+            ],
+            4
+        ],
+        "temperature": [
+            [
+                "_accum_num_samples",
+                "_accum_sum_temperature"
+            ],
+            3
+        ]
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "send": {
+        "_vio_data.time_us": [
+            [
+                "time"
+            ],
+            0
+        ]
+    },
+    "setData": {
+        "_vio_data": [
+            [
+                "vio_data"
+            ],
+            0
+        ]
+    },
+    "setVelocityVariance": {
+        "_vio_data.velocity_var": [
+            [
+                "vel_var"
+            ],
+            0
+        ]
+    },
+    "setPositionVariance": {
+        "_vio_data.position_var": [
+            [
+                "pos_var"
+            ],
+            0
+        ]
+    },
+    "setVelocity": {
+        "_vio_data.vel": [
+            [
+                "vel"
+            ],
+            0
+        ]
+    },
+    "setPosition": {
+        "_vio_data.pos": [
+            [
+                "pos"
+            ],
+            0
+        ]
+    },
+    "setOrientation": {
+        "_vio_data.quat": [
+            [
+                "quat"
+            ],
+            0
+        ]
+    },
+    "setVelocityFrameToBody": {
+        "_vio_data.vel_frame": [
+            [
+                "body_frame_frd"
+            ],
+            0
+        ]
+    },
+    "setVelocityFrameToLocalFRD": {
+        "_vio_data.vel_frame": [
+            [
+                "local_frame_frd"
+            ],
+            0
+        ]
+    },
+    "setVelocityFrameToLocalNED": {
+        "_vio_data.vel_frame": [
+            [
+                "local_frame_ned"
+            ],
+            0
+        ]
+    },
+    "setPositionFrameToLocalNED": {
+        "_vio_data.pos_frame": [
+            [
+                "local_frame_ned"
+            ],
+            0
+        ]
+    },
+    "setPositionFrameToLocalFRD": {
+        "_vio_data.pos_frame": [
+            [
+                "local_frame_frd"
+            ],
+            0
+        ]
+    }
+}

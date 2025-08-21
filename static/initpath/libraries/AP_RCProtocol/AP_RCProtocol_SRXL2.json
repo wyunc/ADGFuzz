@@ -1,0 +1,148 @@
+{
+    "_bootstrap": {
+        "_device_id": [
+            [
+                "device_id"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "_last_handshake_ms": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "_frame_len_full": [
+            [
+                "_buffer",
+                "0u"
+            ],
+            0
+        ],
+        "_buflen": [
+            [
+                "1u"
+            ],
+            0
+        ],
+        "_last_run_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_decode_state": [
+            [
+                "state_idle",
+                "state_collect",
+                "state_idle",
+                "state_new"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "delay": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_run_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "capture_scaled_input": {
+        "v": [
+            [
+                "le16toh_ptr_i",
+                "le16toh_ptr_values_p"
+            ],
+            0
+        ],
+        "_in_failsafe": [
+            [
+                "in_failsafe"
+            ],
+            0
+        ],
+        "_new_rssi": [
+            [
+                "new_rssi"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "process_handshake": {
+        "_last_handshake_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_handshake_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_on_uart": {
+        "uart": [
+            [
+                "get_available_uart"
+            ],
+            0
+        ],
+        "tdelay": [
+            [
+                "uart_receive_time_constraint_us",
+                "micros64"
+            ],
+            2
+        ]
+    },
+    "change_baud_rate": {
+        "uart": [
+            [
+                "get_available_uart"
+            ],
+            0
+        ]
+    },
+    "srxlChangeBaudRate": {
+        "srxl2": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "srxlSendOnUart": {
+        "srxl2": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "srxlReceivedChannelData": {
+        "srxl2": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

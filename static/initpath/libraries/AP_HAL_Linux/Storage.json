@@ -1,0 +1,101 @@
+{
+    "mkdir_p": {
+        "end": [
+            [
+                "strndupa_len",
+                "strndupa_path",
+                "strlen_end",
+                "len"
+            ],
+            1
+        ],
+        "r": [
+            [
+                "is_dir_start"
+            ],
+            0
+        ]
+    },
+    "_storage_create": {
+        "dfd": [
+            [
+                "open_dpath",
+                "open_o_rdonly",
+                "open_o_cloexec"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "openat_storage_file",
+                "openat_dfd",
+                "openat_o_rdwr",
+                "openat_o_creat",
+                "openat_o_cloexec"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "dpath": [
+            [
+                "hal_util_get_custom_storage_directory",
+                "hal_board_storage_directory"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "read_sizeof",
+                "read__buffer",
+                "read_fd"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "_storage_create_dpath"
+            ],
+            1
+        ]
+    },
+    "_mark_dirty": {
+        "line": [
+            [
+                "linux_storage_line_shift",
+                "loc"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "length",
+                "loc"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "write_mask": [
+            [
+                "1u",
+                "i"
+            ],
+            0
+        ]
+    },
+    "get_storage_ptr": {
+        "ptr": [
+            [
+                "_buffer"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "sizeof__buffer"
+            ],
+            0
+        ]
+    }
+}

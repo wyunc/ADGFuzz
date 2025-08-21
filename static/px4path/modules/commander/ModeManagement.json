@@ -1,0 +1,263 @@
+{
+    "printStatus": {
+        "executor_id": [
+            [
+                "executor_in_charge",
+                "first_external_nav_state",
+                "first_executor_id"
+            ],
+            1
+        ],
+        "cur_mode": [
+            [
+                "mode_i"
+            ],
+            0
+        ]
+    },
+    "checkNewRegistrations": {
+        "replace_nav_state": [
+            [
+                "request_enable_replace_internal_mode",
+                "request_replace_internal_mode"
+            ],
+            0
+        ],
+        "reply.mode_id": [
+            [
+                "_modes_add_external_mode_mode"
+            ],
+            1
+        ],
+        "reply.arming_check_id": [
+            [
+                "_mode_executors_add_executor_executor",
+                "_external_checks_add_registration_replace_nav_state",
+                "_external_checks_add_registration_nav_mode_id"
+            ],
+            1
+        ],
+        ".arming_check_registration_id": [
+            [
+                "_mode_executors_add_executor_executor",
+                "_external_checks_add_registration_replace_nav_state",
+                "_external_checks_add_registration_nav_mode_id"
+            ],
+            1
+        ],
+        "executor.owned_nav_state": [
+            [
+                "_modes_add_external_mode_mode"
+            ],
+            1
+        ],
+        "update_request.user_intended_nav_state": [
+            [
+                "_modes_add_external_mode_mode"
+            ],
+            1
+        ],
+        "i": [
+            [
+                "first_external_nav_state"
+            ],
+            0
+        ],
+        "cur_mode": [
+            [
+                "_modes_mode_i"
+            ],
+            0
+        ],
+        "reply.request_id": [
+            [
+                "request_request_id"
+            ],
+            0
+        ],
+        "mode.replaces_nav_state": [
+            [
+                "request_replace_internal_mode"
+            ],
+            0
+        ],
+        "reply.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "reply.px4_ros2_api_version": [
+            [
+                "latest_px4_ros2_api_version"
+            ],
+            0
+        ]
+    },
+    "checkUnregistrations": {
+        "update_request.user_intended_nav_state": [
+            [
+                "navigation_state_auto_loiter"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "allow_update_while_armed": [
+            [
+                "_external_checks_allow_update_while_armed"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "first_external_nav_state"
+            ],
+            0
+        ],
+        "reply.request_id": [
+            [
+                "request_request_id"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "_modes_mode_i"
+            ],
+            0
+        ],
+        "update_request.control_setpoint_update": [
+            [
+                "check_config_control_setpoint_updates"
+            ],
+            0
+        ],
+        "_failsafe_action_active": [
+            [
+                "failsafe_action_active"
+            ],
+            0
+        ],
+        "reply.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "reply.px4_ros2_api_version": [
+            [
+                "latest_px4_ros2_api_version"
+            ],
+            0
+        ]
+    },
+    "onUserIntendedNavStateChange": {
+        "_mode_executor_in_charge": [
+            [
+                "autopilot_executor_id",
+                "_modes_mode_user_intended_nav_state_mode_executor_registration_id"
+            ],
+            1
+        ]
+    },
+    "removeModeExecutor": {
+        "_mode_executor_in_charge": [
+            [
+                "autopilot_executor_id"
+            ],
+            0
+        ]
+    },
+    "updateControlMode": {
+        "control_mode": [
+            [
+                "_modes_mode_nav_state_config_control_setpoint"
+            ],
+            0
+        ]
+    },
+    "updateActiveConfigOverrides": {
+        "current_overrides.timestamp": [
+            [
+                "hrt_absolute_time",
+                "overrides_in_out_timestamp"
+            ],
+            0
+        ],
+        "current_overrides.defer_failsafes_timeout_s": [
+            [
+                "executor_overrides_defer_failsafes_timeout_s"
+            ],
+            0
+        ],
+        "overrides_in_out": [
+            [
+                "_modes_mode_nav_state_overrides"
+            ],
+            1
+        ],
+        "executor_overrides": [
+            [
+                "_mode_executors_executor_executor_in_charge_overrides"
+            ],
+            0
+        ],
+        "executor_in_charge": [
+            [
+                "mode_executor_in_charge"
+            ],
+            0
+        ]
+    },
+    "checkConfigControlSetpointUpdates": {
+        ".config_control_setpoint": [
+            [
+                "config_control_setpoint"
+            ],
+            0
+        ]
+    },
+    "checkConfigOverrides": {
+        "executor": [
+            [
+                "_mode_executors_executor_override_request_source_id"
+            ],
+            0
+        ],
+        "max_updates": [
+            [
+                "orb_queue_length"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "_modes_mode_override_request_source_id"
+            ],
+            0
+        ]
+    },
+    "getModeStatus": {
+        "can_set_nav_state_mask": [
+            [
+                "navigation_state_termination",
+                "get_valid_nav_states",
+                "1u"
+            ],
+            1
+        ],
+        "i": [
+            [
+                "first_external_nav_state"
+            ],
+            0
+        ],
+        "cur_mode": [
+            [
+                "_modes_mode_i"
+            ],
+            0
+        ]
+    }
+}

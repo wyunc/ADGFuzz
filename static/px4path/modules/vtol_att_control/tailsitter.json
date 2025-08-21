@@ -1,0 +1,163 @@
+{
+    "update_vtol_state": {
+        "pitch": [
+            [
+                "eulerf__v_att_q",
+                "_theta",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "_common_vtol_mode": [
+            [
+                "transition_to_mc",
+                "transition_to_fw",
+                "fixed_wing",
+                "rotary_wing"
+            ],
+            0
+        ],
+        "_transition_start_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_trans_finished_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vtol_mode": [
+            [
+                "transition_back",
+                "mc_mode",
+                "fw_mode",
+                "transition_front_p1"
+            ],
+            0
+        ]
+    },
+    "update_transition_state": {
+        "x": [
+            [
+                "dcmf__v_att_q",
+                "vector3f__f",
+                "dcmf_quatf"
+            ],
+            0
+        ],
+        "trans_pitch_rate": [
+            [
+                "max__param_vt_f_trans_dur_get",
+                "max__param_vt_b_trans_dur_get",
+                "m_pi_2_f"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tilt": [
+            [
+                "acosf_cos_tilt"
+            ],
+            0
+        ],
+        "progress": [
+            [
+                "constrain__time_since_trans_start",
+                "constrain__f",
+                "constrain_b_trans_thrust_blending_duration"
+            ],
+            0
+        ],
+        "_trans_rot_axis": [
+            [
+                "z_cross_vector3f",
+                "z_cross__f",
+                "x_cross__f",
+                "x_cross_vector3f"
+            ],
+            0
+        ],
+        "yaw_sp": [
+            [
+                "_q_trans_start_dcm_z",
+                "atan2f_z"
+            ],
+            1
+        ],
+        "pitch_body": [
+            [
+                "eulerf__fw_virtual_att_sp_q_d",
+                "_theta",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "_q_trans_sp": [
+            [
+                "quatf_m_pi_2_f",
+                "quatf__v_att_q",
+                "eulerf_yaw_sp",
+                "quatf_eulerf",
+                "setpoint_euler_psi",
+                "eulerf_pitch_body",
+                "eulerf__f",
+                "eulerf_setpoint_euler_theta"
+            ],
+            1
+        ]
+    },
+    "fill_actuator_outputs": {
+        "timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_sample": [
+            [
+                "_vehicle_torque_setpoint_virtual_mc_timestamp_sample",
+                "_vehicle_thrust_setpoint_virtual_mc_timestamp_sample",
+                "_vehicle_thrust_setpoint_virtual_fw_timestamp_sample",
+                "_vehicle_torque_setpoint_virtual_fw_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "isFrontTransitionCompletedBase": {
+        "transition_to_fw": [
+            [
+                "_attc_get_calibrated_airspeed",
+                "_param_vt_arsp_trans_get"
+            ],
+            0
+        ],
+        "airspeed_triggers_transition": [
+            [
+                "px4_isfinite__attc_get_calibrated_airspeed"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "eulerf_quatf",
+                "_theta",
+                "eulerf__v_att_q"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,165 @@
+{
+    "param_get_used_index": {
+        "data": [
+            [
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_value_unsaved": {
+        "data": [
+            [
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_get": {
+        "data": [
+            [
+                "px4_error",
+                "param",
+                "val"
+            ],
+            0
+        ]
+    },
+    "param_get_default_value": {
+        "data": [
+            [
+                "param",
+                "default_val",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_control_autosave": {
+        "data": [
+            [
+                "enable"
+            ],
+            0
+        ]
+    },
+    "param_set": {
+        "data": [
+            [
+                "px4_error",
+                "val",
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_set_no_notification": {
+        "data": [
+            [
+                "val",
+                "param",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_used": {
+        "data": [
+            [
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_set_used": {
+        "data": [
+            [
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_set_default_value": {
+        "data": [
+            [
+                "px4_error",
+                "param",
+                "val"
+            ],
+            0
+        ]
+    },
+    "param_reset": {
+        "data": [
+            [
+                "px4_error",
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_reset_no_notification": {
+        "data": [
+            [
+                "px4_error",
+                "param"
+            ],
+            0
+        ]
+    },
+    "param_reset_all": {
+        "data": [
+            [
+                "param_reset_all",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "param_reset_excludes": {
+        "data": [
+            [
+                "excludes",
+                "num_excludes",
+                "param_reset_excludes"
+            ],
+            0
+        ]
+    },
+    "param_reset_specific": {
+        "data": [
+            [
+                "num_resets",
+                "param_reset_specific",
+                "resets"
+            ],
+            0
+        ]
+    },
+    "param_save_default": {
+        "data": [
+            [
+                "blocking",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_load_default": {
+        "data": [
+            [
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_export": {
+        "data": [
+            [
+                "px4_error",
+                "filename"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "update": {
+        "pwm": [
+            [
+                "input_servos",
+                "parachute_pin"
+            ],
+            0
+        ],
+        "last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "deployed_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

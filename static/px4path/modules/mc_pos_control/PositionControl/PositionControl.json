@@ -1,0 +1,336 @@
+{
+    "setVelocityGains": {
+        "_gain_vel_i": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_gain_vel_d": [
+            [
+                "d"
+            ],
+            0
+        ],
+        "_gain_vel_p": [
+            [
+                "p"
+            ],
+            0
+        ]
+    },
+    "setVelocityLimits": {
+        "_lim_vel_horizontal": [
+            [
+                "vel_horizontal"
+            ],
+            0
+        ],
+        "_lim_vel_up": [
+            [
+                "vel_up"
+            ],
+            0
+        ],
+        "_lim_vel_down": [
+            [
+                "vel_down"
+            ],
+            0
+        ]
+    },
+    "setThrustLimits": {
+        "_lim_thr_max": [
+            [
+                "max"
+            ],
+            0
+        ],
+        "_lim_thr_min": [
+            [
+                "max_min",
+                "max_10e"
+            ],
+            0
+        ]
+    },
+    "setHorizontalThrustMargin": {
+        "_lim_thr_xy_margin": [
+            [
+                "margin"
+            ],
+            0
+        ]
+    },
+    "updateHoverThrust": {
+        "previous_hover_thrust": [
+            [
+                "_hover_thrust"
+            ],
+            0
+        ]
+    },
+    "setState": {
+        "_vel": [
+            [
+                "states_velocity"
+            ],
+            0
+        ],
+        "_vel_dot": [
+            [
+                "states_acceleration"
+            ],
+            0
+        ],
+        "_yaw": [
+            [
+                "states_yaw"
+            ],
+            0
+        ],
+        "_pos": [
+            [
+                "states_position"
+            ],
+            0
+        ]
+    },
+    "setInputSetpoint": {
+        "_yawspeed_sp": [
+            [
+                "setpoint_yawspeed"
+            ],
+            0
+        ],
+        "_vel_sp": [
+            [
+                "vector3f_setpoint_velocity"
+            ],
+            0
+        ],
+        "_yaw_sp": [
+            [
+                "setpoint_yaw"
+            ],
+            0
+        ],
+        "_pos_sp": [
+            [
+                "vector3f_setpoint_position"
+            ],
+            0
+        ],
+        "_acc_sp": [
+            [
+                "vector3f_setpoint_acceleration"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_yaw_sp": [
+            [
+                "_yaw",
+                "px4_isfinite__yaw_sp"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "_input_valid"
+            ],
+            0
+        ],
+        "_yawspeed_sp": [
+            [
+                "_f",
+                "px4_isfinite__yawspeed_sp"
+            ],
+            0
+        ]
+    },
+    "_positionControl": {
+        "vel_sp_position": [
+            [
+                "_pos",
+                "_pos_sp",
+                "_emult__gain_pos_p"
+            ],
+            0
+        ]
+    },
+    "_velocityControl": {
+        "thrust_max_xy": [
+            [
+                "_f",
+                "sqrtf_thrust_max_xy_squared"
+            ],
+            0
+        ],
+        "acc_sp_xy": [
+            [
+                "_acc_sp_xy"
+            ],
+            0
+        ],
+        "arw_gain": [
+            [
+                "_f",
+                "_gain_vel_p"
+            ],
+            0
+        ],
+        "thrust_max_xy_squared": [
+            [
+                "sq__lim_thr_max",
+                "sq__thr_sp"
+            ],
+            1
+        ],
+        "_vel_int": [
+            [
+                "dt",
+                "vel_error_emult__gain_vel_i"
+            ],
+            0
+        ],
+        "allocated_horizontal_thrust": [
+            [
+                "min_thrust_sp_xy_norm",
+                "min__lim_thr_xy_margin"
+            ],
+            0
+        ],
+        "vel_error": [
+            [
+                "_vel_sp",
+                "_vel"
+            ],
+            0
+        ],
+        "acc_sp_xy_produced": [
+            [
+                "constants_one_g",
+                "_hover_thrust",
+                "vector2f__thr_sp"
+            ],
+            0
+        ],
+        "thrust_z_max_squared": [
+            [
+                "sq__lim_thr_max",
+                "sq_allocated_horizontal_thrust"
+            ],
+            1
+        ],
+        "acc_sp_velocity": [
+            [
+                "_vel_dot_emult__gain_vel_d",
+                "vel_error_emult__gain_vel_p"
+            ],
+            0
+        ]
+    },
+    "_accelerationControl": {
+        "cos_ned_body": [
+            [
+                "_dot_body_z"
+            ],
+            0
+        ],
+        "_thr_sp": [
+            [
+                "min_cos_ned_body",
+                "min__lim_thr_min",
+                "min_thrust_ned_z",
+                "vector3f__acc_sp",
+                "_acc_sp",
+                "constants_one_g",
+                "_acc_sp",
+                "_normalized"
+            ],
+            3
+        ],
+        "thrust_ned_z": [
+            [
+                "_acc_sp",
+                "_hover_thrust",
+                "constants_one_g"
+            ],
+            0
+        ]
+    },
+    "_inputValid": {
+        "valid": [
+            [
+                "px4_isfinite__vel_sp",
+                "px4_isfinite__pos_sp",
+                "px4_isfinite__vel",
+                "px4_isfinite_i",
+                "px4_isfinite__acc_sp",
+                "px4_isfinite__vel_dot",
+                "px4_isfinite__pos"
+            ],
+            0
+        ]
+    },
+    "getLocalPositionSetpoint": {
+        "local_position_setpoint.y": [
+            [
+                "_pos_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.yaw": [
+            [
+                "_yaw_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.x": [
+            [
+                "_pos_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.yawspeed": [
+            [
+                "_yawspeed_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.vx": [
+            [
+                "_vel_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.vz": [
+            [
+                "_vel_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.z": [
+            [
+                "_pos_sp"
+            ],
+            0
+        ],
+        "local_position_setpoint.vy": [
+            [
+                "_vel_sp"
+            ],
+            0
+        ]
+    },
+    "getAttitudeSetpoint": {
+        "attitude_setpoint.yaw_sp_move_rate": [
+            [
+                "_yawspeed_sp"
+            ],
+            0
+        ]
+    }
+}

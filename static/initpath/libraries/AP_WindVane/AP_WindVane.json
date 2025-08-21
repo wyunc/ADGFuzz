@@ -1,0 +1,182 @@
+{
+    "init": {
+        "_speed_driver": [
+            [
+                "new_nothrow",
+                "ap_wind_vane_analog_this",
+                "ap_wind_vane_nmea_this",
+                "ap_wind_vane_home_this",
+                "ap_wind_vane_sitl_this",
+                "new_nothrow",
+                "ap_wind_vane_modern_device_this",
+                "ap_wind_vane_rpm_this",
+                "ap_wind_vane_nmea_this",
+                "ap_wind_vane_sitl_this",
+                "ap_wind_vane_airspeed_this"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "_direction_tack": [
+            [
+                "atan2f_filtered_cos",
+                "atan2f_filtered_sin"
+            ],
+            0
+        ],
+        "_speed_true": [
+            [
+                "_speed_true_filt_apply__speed_true_raw",
+                "_speed_true_raw"
+            ],
+            0
+        ],
+        "filtered_sin": [
+            [
+                "_direction_apparent_sin_filt_apply__direction_apparent_raw",
+                "_direction_apparent_sin_filt_apply_sinf",
+                "_direction_true_sin_filt_apply__direction_true_raw",
+                "_direction_true_sin_filt_apply_sinf",
+                "_tack_sin_filt_apply_sinf",
+                "_tack_sin_filt_apply__direction_apparent_raw"
+            ],
+            0
+        ],
+        "_direction_apparent": [
+            [
+                "_direction_apparent_raw",
+                "atan2f_filtered_cos",
+                "atan2f_filtered_sin"
+            ],
+            0
+        ],
+        "_direction_true": [
+            [
+                "wrap_pi_ahrs_get_yaw",
+                "wrap_pi__direction_apparent_raw",
+                "atan2f_filtered_cos",
+                "atan2f_filtered_sin"
+            ],
+            1
+        ],
+        "have_direction": [
+            [
+                "_direction_driver",
+                "nullptr"
+            ],
+            0
+        ],
+        "filtered_cos": [
+            [
+                "_direction_apparent_cos_filt_apply__direction_apparent_raw",
+                "_tack_cos_filt_apply_cosf",
+                "_direction_true_cos_filt_apply_cosf",
+                "_tack_cos_filt_apply__direction_apparent_raw",
+                "_direction_apparent_cos_filt_apply_cosf",
+                "_direction_true_cos_filt_apply__direction_true_raw"
+            ],
+            0
+        ],
+        "_current_tack": [
+            [
+                "is_negative__direction_tack",
+                "tack_port",
+                "tack_starboard"
+            ],
+            0
+        ],
+        "_speed_apparent": [
+            [
+                "_speed_apparent_raw",
+                "_speed_apparent_filt_apply__speed_apparent_raw"
+            ],
+            0
+        ],
+        "have_speed": [
+            [
+                "_speed_driver",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "record_home_heading": {
+        "_home_heading": [
+            [
+                "ahrs_get_yaw"
+            ],
+            0
+        ]
+    },
+    "update_true_wind_speed_and_direction": {
+        "wind_dir_180": [
+            [
+                "ahrs_get_yaw",
+                "radians",
+                "_direction_apparent_raw"
+            ],
+            0
+        ],
+        "_direction_true_raw": [
+            [
+                "wrap_pi_wind_true_vec_y",
+                "radians",
+                "_direction_apparent_raw",
+                "wrap_pi_atan2f",
+                "wrap_pi_wind_true_vec_x"
+            ],
+            0
+        ],
+        "_speed_true_raw": [
+            [
+                "_speed_apparent",
+                "wind_true_vec_length"
+            ],
+            0
+        ],
+        "wind_true_vec": [
+            [
+                "vector2f_wind_apparent_vec_x",
+                "vector2f_wind_apparent_vec_y",
+                "vector2f_veh_velocity_x",
+                "vector2f_veh_velocity_y"
+            ],
+            0
+        ]
+    },
+    "update_apparent_wind_dir_from_true": {
+        "wind_dir_180": [
+            [
+                "radians",
+                "_direction_true"
+            ],
+            0
+        ],
+        "_speed_apparent_raw": [
+            [
+                "wind_apparent_vec_length"
+            ],
+            0
+        ],
+        "_direction_apparent_raw": [
+            [
+                "wrap_pi_wind_apparent_vec_x",
+                "wrap_pi_wind_apparent_vec_y",
+                "ahrs_get_yaw",
+                "radians",
+                "wrap_pi_atan2f"
+            ],
+            0
+        ],
+        "wind_apparent_vec": [
+            [
+                "vector2f_wind_true_vec_y",
+                "vector2f_veh_velocity_x",
+                "vector2f_veh_velocity_y",
+                "vector2f_wind_true_vec_x"
+            ],
+            0
+        ]
+    }
+}

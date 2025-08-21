@@ -1,0 +1,45 @@
+{
+    "publishTorqueSetpoint": {
+        "v_torque_sp.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "v_torque_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publishThrustSetpoint": {
+        "v_thrust_sp.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "v_thrust_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "airship_attitude_control",
+                "new"
+            ],
+            0
+        ]
+    }
+}

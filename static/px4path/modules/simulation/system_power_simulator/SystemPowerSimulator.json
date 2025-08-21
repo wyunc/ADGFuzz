@@ -1,0 +1,31 @@
+{
+    "Run": {
+        "sim_system_power.voltage5v_v": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sim_system_power.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "system_power_simulator",
+                "new"
+            ],
+            0
+        ]
+    }
+}

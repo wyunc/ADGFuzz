@@ -1,0 +1,491 @@
+{
+    "init": {
+        "_uart": [
+            [
+                "serialmanager_find_serial_serial_protocol_ais"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "deadline": [
+            [
+                "_time_out",
+                "millis"
+            ],
+            2
+        ],
+        "nbytes": [
+            [
+                "_uart_available_1024u"
+            ],
+            0
+        ],
+        "log_unsupported": [
+            [
+                "ais_options_log_unsupported_raw",
+                "_log_options",
+                "ais_options_log_all_raw",
+                "_log_options"
+            ],
+            1
+        ],
+        "c": [
+            [
+                "_uart_read"
+            ],
+            1
+        ],
+        "decoded": [
+            [
+                "payload_decode_multi"
+            ],
+            0
+        ]
+    },
+    "send": {
+        ".info.tslc": [
+            [
+                "_list",
+                "_last_update_ms",
+                "_send_index",
+                "millis"
+            ],
+            1
+        ],
+        ".last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "list_size": [
+            [
+                "_list_max_items"
+            ],
+            0
+        ]
+    },
+    "buffer_shift": {
+        ".num": [
+            [
+                "_num",
+                "i",
+                "_aivdm_buffer"
+            ],
+            1
+        ],
+        ".total": [
+            [
+                "i",
+                "_total",
+                "_aivdm_buffer"
+            ],
+            1
+        ],
+        ".ID": [
+            [
+                "_id",
+                "i",
+                "_aivdm_buffer"
+            ],
+            1
+        ]
+    },
+    "get_vessel_index": {
+        ".info.MMSI": [
+            [
+                "mmsi"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "i",
+                "i",
+                "_list_max_items"
+            ],
+            2
+        ],
+        "loc.lat": [
+            [
+                "_list",
+                "i",
+                "lat",
+                "_info_lat"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "_list",
+                "i",
+                "_info_lon",
+                "lon"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "loc_get_distance_current_loc"
+            ],
+            0
+        ]
+    },
+    "payload_decode": {
+        "type": [
+            [
+                "payload_char_decode_payload"
+            ],
+            0
+        ]
+    },
+    "decode_position_report": {
+        "mmsi": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "raim": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.velocity": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        ".info.heading": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        "radio": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "repeat": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.lon": [
+            [
+                "get_bits_signed_payload",
+                "1e7"
+            ],
+            1
+        ],
+        ".info.lat": [
+            [
+                "get_bits_signed_payload",
+                "1e7"
+            ],
+            1
+        ],
+        "pos_acc": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.flags": [
+            [
+                "index",
+                "ais_flags_position_accuracy",
+                "ais_flags_valid_turn_rate",
+                "ais_flags_turn_rate_sign_only",
+                "ais_flags_valid_velocity",
+                "ais_flags_valid_cog",
+                "_list",
+                "_info_flags"
+            ],
+            2
+        ],
+        ".info.COG": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        "sec_utc": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "maneuver": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.turn_rate": [
+            [
+                "get_bits_signed_payload",
+                "powf_rot"
+            ],
+            1
+        ],
+        ".info.navigational_status": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ]
+    },
+    "decode_base_station_report": {
+        ".info.lon": [
+            [
+                "1e7",
+                "get_bits_signed_payload"
+            ],
+            1
+        ],
+        "minute": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "year": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "second": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "hour": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "month": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "repeat": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "radio": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "raim": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "mmsi": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.lat": [
+            [
+                "1e7",
+                "get_bits_signed_payload"
+            ],
+            1
+        ],
+        ".last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "fix": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "epfd": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "day": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ]
+    },
+    "decode_static_and_voyage_data": {
+        "ver": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "draught": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.dimension_bow": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        ".info.dimension_port": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        "fix": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "imo": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "repeat": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "mmsi": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        "dte": [
+            [
+                "get_bits_payload"
+            ],
+            0
+        ],
+        ".info.flags": [
+            [
+                "index",
+                "_info_flags",
+                "_list",
+                "ais_flags_large_stern_dimension",
+                "ais_flags_valid_callsign",
+                "ais_flags_valid_dimensions",
+                "ais_flags_large_starboard_dimension",
+                "ais_flags_large_bow_dimension",
+                "ais_flags_valid_name"
+            ],
+            2
+        ],
+        ".info.type": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        ".info.dimension_stern": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ],
+        ".info.dimension_starboard": [
+            [
+                "get_bits_payload"
+            ],
+            1
+        ]
+    },
+    "get_char": {
+        "ascii": [
+            [
+                "get_bits_i",
+                "get_bits_low",
+                "get_bits_payload",
+                "low",
+                "low",
+                "high"
+            ],
+            2
+        ]
+    },
+    "decode": {
+        "valid_sentence": [
+            [
+                "decode_latest_term"
+            ],
+            0
+        ],
+        "_term_is_checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "_incoming.total": [
+            [
+                "strtol__term",
+                "strtol_null"
+            ],
+            0
+        ],
+        "_incoming.ID": [
+            [
+                "strtol__term",
+                "strtol_null"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "_checksum",
+                "_sentence_valid",
+                "char_to_hex__term"
+            ],
+            0
+        ],
+        "_incoming.num": [
+            [
+                "strtol__term",
+                "strtol_null"
+            ],
+            0
+        ]
+    }
+}

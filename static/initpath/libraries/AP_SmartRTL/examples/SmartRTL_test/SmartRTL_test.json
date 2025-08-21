@@ -1,0 +1,38 @@
+{
+    "loop": {
+        "run_time": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ]
+    },
+    "check_path": {
+        "num_points_match": [
+            [
+                "smart_rtl_get_num_points",
+                "correct_path_size"
+            ],
+            0
+        ],
+        "points_to_compare": [
+            [
+                "correct_path_size_smart_rtl_get_num_points"
+            ],
+            0
+        ],
+        "smartrtl_point": [
+            [
+                "smart_rtl_get_point_j"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            1
+        ]
+    }
+}

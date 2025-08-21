@@ -1,0 +1,124 @@
+{
+    "remote_sync_thread": {
+        "_set_value_response.parameter_index": [
+            [
+                "_set_value_request_parameter_index"
+            ],
+            0
+        ],
+        "_set_value_response.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_reset_req_fd": [
+            [
+                "orb_subscribe_parameter_reset_request",
+                "orb_subscribe_orb_id"
+            ],
+            0
+        ],
+        "_set_value_req_fd": [
+            [
+                "orb_subscribe_orb_id",
+                "orb_subscribe_parameter_remote_set_value_request"
+            ],
+            0
+        ],
+        "_set_value_response.request_timestamp": [
+            [
+                "_set_value_request_timestamp"
+            ],
+            0
+        ],
+        "_set_value_rsp_h": [
+            [
+                "orb_advertise_orb_id",
+                "_set_value_response",
+                "nullptr",
+                "orb_advertise_parameter_remote_set_value_response"
+            ],
+            0
+        ]
+    },
+    "param_remote_set_used": {
+        "req.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "req.parameter_index": [
+            [
+                "param"
+            ],
+            0
+        ],
+        "parameter_set_used_h": [
+            [
+                "req",
+                "orb_advertise_orb_id",
+                "orb_advertise_parameter_set_used_request"
+            ],
+            0
+        ]
+    },
+    "param_remote_set_value": {
+        "param_set_rsp_fd": [
+            [
+                "orb_subscribe_parameter_primary_set_value_response",
+                "orb_subscribe_orb_id"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "timeout_count"
+            ],
+            0
+        ],
+        "req.float_value": [
+            [
+                "float",
+                "val"
+            ],
+            0
+        ],
+        "req.parameter_index": [
+            [
+                "param"
+            ],
+            0
+        ],
+        "req.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "req.int_value": [
+            [
+                "int32_t",
+                "val"
+            ],
+            0
+        ],
+        "param_set_value_req_h": [
+            [
+                "orb_advertise_parameter_primary_set_value_request",
+                "nullptr",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ]
+    },
+    "param_remote_get_counters": {
+        "cnt": [
+            [
+                "param_remote_counters"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "init": {
+        "_roll_idx": [
+            [
+                "k_mount2_roll",
+                "k_mount_roll"
+            ],
+            0
+        ],
+        "_tilt_idx": [
+            [
+                "k_mount2_tilt",
+                "k_mount_tilt"
+            ],
+            0
+        ],
+        "_open_idx": [
+            [
+                "k_mount2_open",
+                "k_mount_open"
+            ],
+            0
+        ],
+        "_pan_idx": [
+            [
+                "k_mount2_pan",
+                "k_mount_pan"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_angle_bf_output_rad": [
+            [
+                "_params_retract_angles_get",
+                "deg_to_rad",
+                "_params_neutral_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "mount_open": [
+            [
+                "get_mode",
+                "mav_mount_mode_retract"
+            ],
+            1
+        ]
+    },
+    "get_attitude_quaternion": {
+        "roll_rad": [
+            [
+                "radians__params_roll_angle_min",
+                "radians_radians",
+                "radians__params_roll_angle_max",
+                "_angle_bf_output_rad_x"
+            ],
+            0
+        ],
+        "pitch_rad": [
+            [
+                "radians__params_pitch_angle_max",
+                "radians_radians",
+                "radians__params_pitch_angle_min",
+                "_angle_bf_output_rad_y"
+            ],
+            0
+        ],
+        "yaw_rad": [
+            [
+                "_angle_bf_output_rad_z",
+                "radians__params_yaw_angle_max",
+                "radians_radians",
+                "radians__params_yaw_angle_min"
+            ],
+            0
+        ]
+    },
+    "update_angle_outputs": {
+        "_angle_bf_output_rad.z": [
+            [
+                "radians__params_yaw_angle_max",
+                "angle_rad_get_bf_yaw_radians",
+                "angle_rad_get_bf_yaw__params_yaw_angle_min"
+            ],
+            1
+        ],
+        "_angle_bf_output_rad.x": [
+            [
+                "ahrs_angle_rad_x",
+                "gyro_y",
+                "gyro_x",
+                "ahrs_sin_pitch",
+                "ahrs_cos_pitch",
+                "ahrs_cos_roll",
+                "gyro_z",
+                "ahrs_sin_roll",
+                "_params_roll_stb_lead",
+                "angle_rad_roll"
+            ],
+            1
+        ],
+        "_angle_bf_output_rad.y": [
+            [
+                "angle_rad_pitch",
+                "ahrs_angle_rad_y",
+                "ahrs_cos_pitch",
+                "gyro_z",
+                "gyro_y",
+                "ahrs_sin_roll",
+                "_params_pitch_stb_lead"
+            ],
+            1
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "ahrs_angle_rad": [
+            [
+                "ahrs_get_pitch",
+                "ahrs_get_roll"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,126 @@
+{
+    "update": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "smoothed_climb_rate": [
+            [
+                "_climb_filter_apply_dt",
+                "_climb_filter_apply_raw_climb_rate"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "_expected_thermalling_sink": [
+            [
+                "calculate_aircraft_sinkrate_radians",
+                "calculate_aircraft_sinkrate_thermal_bank"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "_ahrs_get_roll"
+            ],
+            0
+        ],
+        "_prev_update_time": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "reading": [
+            [
+                "_vdot_filter_apply_temp",
+                "_vdotbias_filter_apply_dt",
+                "_vdotbias_filter_apply_temp",
+                "gravity_mss",
+                "calculate_aircraft_sinkrate_roll",
+                "_sp_filter_apply_aspd",
+                "min_v",
+                "velned_z"
+            ],
+            7
+        ],
+        "aspd": [
+            [
+                "_aparm_airspeed_cruise"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "ins_get_accel_x",
+                "rot_mat_c_x",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "micros64",
+                "1e6",
+                "float"
+            ],
+            0
+        ],
+        "filtered_reading": [
+            [
+                "_trigger_filter_apply_reading",
+                "_trigger_filter_apply_dt"
+            ],
+            0
+        ],
+        "minV": [
+            [
+                "sqrtf__polar_params_k"
+            ],
+            0
+        ],
+        "tau": [
+            [
+                "calculate_circling_time_constant_radians",
+                "calculate_circling_time_constant_thermal_bank"
+            ],
+            0
+        ]
+    },
+    "calculate_aircraft_sinkrate": {
+        "C2": [
+            [
+                "cl0",
+                "_polar_params_b"
+            ],
+            0
+        ],
+        "C1": [
+            [
+                "_polar_params_cd0",
+                "cl0"
+            ],
+            0
+        ],
+        "CL0": [
+            [
+                "_polar_params_k",
+                "_aspd_filt_constrained"
+            ],
+            0
+        ],
+        "cosphi": [
+            [
+                "phi"
+            ],
+            0
+        ]
+    }
+}

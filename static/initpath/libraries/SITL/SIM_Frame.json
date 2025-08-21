@@ -1,0 +1,284 @@
+{
+    "load_frame_params": {
+        "obj": [
+            [
+                "load_json_model_json"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "obj_get_i",
+                "obj_get_vars",
+                "obj_get__label",
+                "obj_get_label_name"
+            ],
+            0
+        ],
+        "fname": [
+            [
+                "nullptr",
+                "strdup_model_json"
+            ],
+            0
+        ]
+    },
+    "parse_float": {
+        "param": [
+            [
+                "double",
+                "val_get"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "model.mdrag_coef": [
+            [
+                "cosf_model_ref_angle",
+                "cosf_radians",
+                "sqrtf_ref_air_density",
+                "cosf_model_ref_angle",
+                "cosf_radians",
+                "model_ref_spd",
+                "model_mdrag_coef",
+                "sqrtf_model_disc_area",
+                "sqrtf_ref_thrust",
+                "tanf_radians",
+                "model_mass",
+                "gravity_mss",
+                "tanf_model_ref_angle"
+            ],
+            4
+        ],
+        "true_prop_area": [
+            [
+                "model_disc_area",
+                "num_motors"
+            ],
+            0
+        ],
+        "battery": [
+            [
+                "_battery"
+            ],
+            0
+        ],
+        "model.moment_of_inertia.z": [
+            [
+                "model_mass",
+                "sq_model_diagonal_size"
+            ],
+            0
+        ],
+        "areaCd": [
+            [
+                "cosf_model_ref_angle",
+                "cosf_radians",
+                "sqrtf_ref_air_density",
+                "cosf_model_ref_angle",
+                "cosf_radians",
+                "model_ref_spd",
+                "model_mdrag_coef",
+                "sqrtf_model_disc_area",
+                "sqrtf_ref_thrust",
+                "tanf_radians",
+                "model_mass",
+                "gravity_mss",
+                "tanf_model_ref_angle",
+                "sq_model_ref_spd",
+                "get_air_density_model_ref_alt"
+            ],
+            5
+        ],
+        "slen": [
+            [
+                "strlen_frame_str"
+            ],
+            0
+        ],
+        "model": [
+            [
+                "default_model"
+            ],
+            0
+        ],
+        "velocity_max": [
+            [
+                "sqrtf_model_hover_thr_out",
+                "model_mass",
+                "gravity_mss",
+                "model_ref_voltage",
+                "model_ref_current"
+            ],
+            4
+        ],
+        "ref_thrust": [
+            [
+                "cosf_model_ref_angle",
+                "cosf_radians",
+                "model_mass",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "model.moment_of_inertia.x": [
+            [
+                "model_mass",
+                "sq_model_diagonal_size"
+            ],
+            0
+        ],
+        "model.moment_of_inertia.y": [
+            [
+                "model_moment_of_inertia_x"
+            ],
+            0
+        ],
+        "effective_prop_area": [
+            [
+                "sq_hover_velocity_out",
+                "model_mass",
+                "gravity_mss",
+                "get_air_density_model_ref_alt",
+                "num_motors"
+            ],
+            4
+        ],
+        "power_factor": [
+            [
+                "model_mass",
+                "gravity_mss",
+                "model_ref_voltage",
+                "model_ref_current"
+            ],
+            3
+        ],
+        "terminal_rotation_rate": [
+            [
+                "model_ref_rot_rate"
+            ],
+            0
+        ],
+        "colon": [
+            [
+                "strchr_frame_str"
+            ],
+            0
+        ]
+    },
+    "calculate_forces": {
+        "torque": [
+            [
+                "mtorque"
+            ],
+            0
+        ],
+        "rot_accel.z": [
+            [
+                "terminal_rotation_rate",
+                "torque_z",
+                "radians",
+                "gyro_z",
+                "model_moment_of_inertia_z"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "vel_air_bf": [
+            [
+                "aircraft_get_dcm_transposed",
+                "aircraft_get_velocity_air_ef"
+            ],
+            0
+        ],
+        "drag_bf.x": [
+            [
+                "drag_bf_x",
+                "sq_vel_air_bf_x",
+                "get_air_density_aircraft_get_location_alt",
+                "area_cd"
+            ],
+            1
+        ],
+        "drag_bf.y": [
+            [
+                "drag_bf_y",
+                "area_cd",
+                "get_air_density_aircraft_get_location_alt",
+                "sq_vel_air_bf_y"
+            ],
+            1
+        ],
+        "rot_accel.x": [
+            [
+                "torque_x",
+                "terminal_rotation_rate",
+                "radians",
+                "model_moment_of_inertia_x",
+                "gyro_x"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "aircraft_get_gyro"
+            ],
+            0
+        ],
+        "drag_bf.z": [
+            [
+                "sq_vel_air_bf_z",
+                "area_cd",
+                "drag_bf_z",
+                "get_air_density_aircraft_get_location_alt"
+            ],
+            1
+        ],
+        "body_accel": [
+            [
+                "aircraft_gross_mass",
+                "mthrust",
+                "drag_bf"
+            ],
+            1
+        ],
+        "rot_accel.y": [
+            [
+                "model_moment_of_inertia_y",
+                "terminal_rotation_rate",
+                "gyro_y",
+                "radians",
+                "torque_y"
+            ],
+            0
+        ]
+    },
+    "current_and_voltage": {
+        "current": [
+            [
+                "motors",
+                "_get_current",
+                "i"
+            ],
+            0
+        ],
+        "last_param_voltage": [
+            [
+                "sitl_batt_voltage"
+            ],
+            1
+        ],
+        "voltage": [
+            [
+                "battery_get_voltage"
+            ],
+            0
+        ]
+    }
+}

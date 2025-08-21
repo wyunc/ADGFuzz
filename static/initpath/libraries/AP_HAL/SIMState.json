@@ -1,0 +1,122 @@
+{
+    "update": {
+        "sitl_model": [
+            [
+                "create_ap_sim_frame_string"
+            ],
+            0
+        ]
+    },
+    "_sitl_setup": {
+        "_home_str": [
+            [
+                "home_str"
+            ],
+            0
+        ]
+    },
+    "fdm_input_local": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "_simulator_servos": {
+        "current2_pin_value": [
+            [
+                "_sitl_state_battery_current"
+            ],
+            1
+        ],
+        "input.wind.speed": [
+            [
+                "_sitl_wind_speed",
+                "sqrtf__sitl_wind_type_alt",
+                "_barometer_get_altitude",
+                "get_singleton",
+                "_sitl_wind_type_alt",
+                "sqrtf_altitude",
+                "_sitl_wind_type_coef",
+                "_sitl_wind_speed_active"
+            ],
+            3
+        ],
+        "wind_start_delay_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "current_pin_value": [
+            [
+                "_sitl_state_battery_current"
+            ],
+            1
+        ],
+        "input.wind.direction": [
+            [
+                "_sitl_wind_direction_active",
+                "_sitl_wind_direction"
+            ],
+            1
+        ],
+        "input.wind.turbulence": [
+            [
+                "_sitl",
+                "_sitl_wind_turbulance"
+            ],
+            0
+        ],
+        "voltage2_pin_value": [
+            [
+                "_sitl_state_battery_voltage"
+            ],
+            1
+        ],
+        "input.wind.dir_z": [
+            [
+                "_sitl_wind_dir_z",
+                "_sitl_wind_dir_z_active"
+            ],
+            1
+        ],
+        "voltage_pin_value": [
+            [
+                "_sitl_state_battery_voltage"
+            ],
+            1
+        ]
+    },
+    "set_height_agl": {
+        "state.height_agl": [
+            [
+                "terrain_height_amsl",
+                "_sitl_state_altitude",
+                "_sitl_state_altitude"
+            ],
+            1
+        ],
+        "location.lat": [
+            [
+                "_sitl_state_latitude",
+                "_0e7"
+            ],
+            0
+        ],
+        "_terrain": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "location.lng": [
+            [
+                "_0e7",
+                "_sitl_state_longitude"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "update": {
+        "acceleration_detected_counter_": [
+            [
+                "_f",
+                "dt"
+            ],
+            0
+        ],
+        "state_": [
+            [
+                "state_launch_detected_disabled_motor",
+                "state_flying"
+            ],
+            0
+        ],
+        "motor_delay_counter_": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        "info_delay_counter_s_": [
+            [
+                "_f",
+                "dt",
+                "k_info_delay"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "state_": [
+            [
+                "state_waiting_for_launch"
+            ],
+            0
+        ],
+        "motor_delay_counter_": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "info_delay_counter_s_": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "acceleration_detected_counter_": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    }
+}

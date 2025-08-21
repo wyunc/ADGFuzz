@@ -1,0 +1,246 @@
+{
+    "Run": {
+        "status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_nav_state": [
+            [
+                "vehicle_status_nav_state"
+            ],
+            0
+        ],
+        "_last_publish": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "status.y_filt": [
+            [
+                "_sys_id_get_filtered_output_data"
+            ],
+            0
+        ],
+        "_interval_count": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.dt_model": [
+            [
+                "_sample_interval_avg"
+            ],
+            0
+        ],
+        "coeff": [
+            [
+                "_sys_id_get_coefficients"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "vehicle_status_arming_state",
+                "arming_state_armed"
+            ],
+            0
+        ],
+        "status.kff": [
+            [
+                "_kiff"
+            ],
+            0
+        ],
+        "status.kc": [
+            [
+                "_kiff"
+            ],
+            0
+        ],
+        "_control_power": [
+            [
+                "vector3f_controls_status_control_power"
+            ],
+            0
+        ],
+        "_interval_sum": [
+            [
+                "constrain_timestamp_sample",
+                "1e",
+                "constrain__last_run",
+                "_f"
+            ],
+            1
+        ],
+        "status.kd": [
+            [
+                "compute_pid_gmvc_den",
+                "compute_pid_gmvc__f",
+                "compute_pid_gmvc__sample_interval_avg",
+                "compute_pid_gmvc_num_design"
+            ],
+            1
+        ],
+        "coeff_var": [
+            [
+                "_sys_id_get_variances"
+            ],
+            0
+        ],
+        "_aux_switch_en": [
+            [
+                "is_aux_enable_switch_enabled"
+            ],
+            0
+        ],
+        "num_design": [
+            [
+                "_kiff",
+                "num"
+            ],
+            0
+        ],
+        "status.state": [
+            [
+                "static_cast",
+                "_state",
+                "int"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "vehicle_torque_setpoint_timestamp"
+            ],
+            1
+        ],
+        "status.att_p": [
+            [
+                "_kiff",
+                "_f",
+                "constrain__f",
+                "constrain_radians"
+            ],
+            1
+        ],
+        "status.u_filt": [
+            [
+                "_sys_id_get_filtered_input_data"
+            ],
+            0
+        ],
+        "status.ki": [
+            [
+                "_kiff"
+            ],
+            0
+        ],
+        "status.fitness": [
+            [
+                "_sys_id_get_fitness"
+            ],
+            0
+        ],
+        "status.innov": [
+            [
+                "_sys_id_get_innovation"
+            ],
+            0
+        ]
+    },
+    "checkFilters": {
+        "_filter_sample_rate": [
+            [
+                "_f",
+                "_interval_count",
+                "_interval_sum"
+            ],
+            2
+        ]
+    },
+    "isAuxEnableSwitchEnabled": {
+        "aux_enable_channel": [
+            [
+                "manual_control_setpoint_aux5",
+                "manual_control_setpoint_aux3",
+                "manual_control_setpoint_aux6",
+                "manual_control_setpoint_aux4",
+                "manual_control_setpoint_aux1",
+                "manual_control_setpoint_aux2"
+            ],
+            0
+        ]
+    },
+    "updateStateMachine": {
+        "_state": [
+            [
+                "wait_for_disarm",
+                "yaw",
+                "init",
+                "roll_pause",
+                "verification",
+                "idle",
+                "fail",
+                "roll",
+                "pitch_pause",
+                "pitch",
+                "yaw_pause",
+                "complete",
+                "test"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_input_scale": [
+            [
+                "_param_fw_pr_p_get",
+                "_param_fw_yr_p_get",
+                "_f",
+                "_param_fw_rr_p_get"
+            ],
+            0
+        ],
+        "converged_thr": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "mavlink_log_pub": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_start_flight_mode": [
+            [
+                "_nav_state"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "fw_autotune_attitude_control_is_vtol",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

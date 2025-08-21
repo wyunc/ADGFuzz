@@ -1,0 +1,19 @@
+{
+    "control_roll": {
+        "_body_rate_setpoint": [
+            [
+                "constrain__max_rate",
+                "constrain_roll_body_rate_setpoint_raw"
+            ],
+            0
+        ],
+        "_euler_rate_setpoint": [
+            [
+                "_tc",
+                "roll",
+                "roll_setpoint"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "init": {
+        "_mutex": [
+            [
+                "_bus_mutex",
+                "i",
+                "__mutex"
+            ],
+            0
+        ],
+        "_i2c_fd": [
+            [
+                "_frequency",
+                "get_device_address",
+                "_config_i2c_bus_get_device_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_error",
+                "probe",
+                "init"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "ret": [
+            [
+                "_i2c_transfer__i2c_fd",
+                "px4_error",
+                "_i2c_transfer_recv_len",
+                "_i2c_transfer_send",
+                "_i2c_transfer_send_len",
+                "_i2c_transfer_recv"
+            ],
+            0
+        ]
+    }
+}

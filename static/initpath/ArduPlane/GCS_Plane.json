@@ -1,0 +1,10 @@
+{
+    "update_vehicle_sensor_status_flags": {
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

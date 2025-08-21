@@ -1,0 +1,11 @@
+{
+    "param_get_system_default_value": {
+        "ret": [
+            [
+                "px4_ok",
+                "px4_error"
+            ],
+            0
+        ]
+    }
+}

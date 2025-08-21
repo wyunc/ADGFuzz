@@ -1,0 +1,54 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_i2c_mgr_get_device_get_bus",
+                "address"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "last_sample_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "press_sum": [
+            [
+                "1u",
+                "k",
+                "data"
+            ],
+            2
+        ],
+        "temp_sum": [
+            [
+                "data",
+                "temp_scale"
+            ],
+            1
+        ]
+    },
+    "get_differential_pressure": {
+        "last_pressure": [
+            [
+                "pressure",
+                "press_count",
+                "press_sum"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "last_temperature": [
+            [
+                "temperature",
+                "temp_sum",
+                "temp_count"
+            ],
+            0
+        ]
+    }
+}

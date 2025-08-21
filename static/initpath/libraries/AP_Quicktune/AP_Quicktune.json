@@ -1,0 +1,332 @@
+{
+    "update": {
+        "smax": [
+            [
+                "get_param_value_p"
+            ],
+            0
+        ],
+        "tune_done_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_warning_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "axis": [
+            [
+                "get_axis_slew_parm",
+                "get_current_axis"
+            ],
+            0
+        ],
+        "oscillating": [
+            [
+                "osc_smax",
+                "get_slew_rate_axis"
+            ],
+            1
+        ],
+        "P_TO_D_OFS": [
+            [
+                "uint8_t_rll_d",
+                "uint8_t_rll_p"
+            ],
+            0
+        ],
+        "limited": [
+            [
+                "get_param_value_pname",
+                "gain_limit_pname"
+            ],
+            2
+        ],
+        "P": [
+            [
+                "get_param_value_slew_parm"
+            ],
+            0
+        ],
+        "last_stage_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "att_error": [
+            [
+                "get_singleton_get_att_error_angle_deg"
+            ],
+            0
+        ],
+        "slew_delta": [
+            [
+                "get_param_value_pname",
+                "update_rate_hz",
+                "limit_gain_pname",
+                "limit_gain_new_gain"
+            ],
+            2
+        ],
+        "P_name": [
+            [
+                "param_pname",
+                "p_to_d_ofs",
+                "param_uint8_t"
+            ],
+            0
+        ],
+        "last_pilot_input_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_gain_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "new_pval": [
+            [
+                "get_param_value_p_name",
+                "fmaxf_new_gain",
+                "fmaxf_old_gain"
+            ],
+            2
+        ],
+        "old_gain": [
+            [
+                "param_saved",
+                "uint8_t_pname"
+            ],
+            0
+        ],
+        "sw_pos_tune": [
+            [
+                "high",
+                "mid"
+            ],
+            0
+        ],
+        "sw_pos_save": [
+            [
+                "none",
+                "high"
+            ],
+            0
+        ],
+        "slew_parm": [
+            [
+                "get_pname_axis",
+                "get_pname_current_stage",
+                "end"
+            ],
+            1
+        ],
+        "new_gain": [
+            [
+                "get_param_value_pname",
+                "get_gain_mul",
+                "gain_limit_pname",
+                "gain_margin"
+            ],
+            3
+        ]
+    },
+    "abort_tune": {
+        "sw_pos": [
+            [
+                "low"
+            ],
+            0
+        ]
+    },
+    "update_switch_pos": {
+        "sw_pos": [
+            [
+                "switch_pos_ch_flag"
+            ],
+            0
+        ]
+    },
+    "reset_axes_done": {
+        "current_stage": [
+            [
+                "d"
+            ],
+            0
+        ]
+    },
+    "setup_filters": {
+        "gyro_filter": [
+            [
+                "imu_get_gyro_filter_hz"
+            ],
+            0
+        ],
+        "imu": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "FLTE": [
+            [
+                "get_param_value_yaw_flte"
+            ],
+            0
+        ]
+    },
+    "have_pilot_input": {
+        "RC": [
+            [
+                "rc"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "rc_get_roll_channel_norm_input_dz"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "rc_get_yaw_channel_norm_input_dz"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "rc_get_pitch_channel_norm_input_dz"
+            ],
+            0
+        ]
+    },
+    "get_slew_rate": {
+        "pid": [
+            [
+                "get_axis_pid_axis"
+            ],
+            0
+        ]
+    },
+    "advance_stage": {
+        "current_stage": [
+            [
+                "p",
+                "d"
+            ],
+            0
+        ]
+    },
+    "adjust_gain": {
+        "pi_ratio": [
+            [
+                "y_pi_ratio",
+                "rp_pi_ratio"
+            ],
+            0
+        ],
+        "FF": [
+            [
+                "get_param_value_ffname"
+            ],
+            0
+        ],
+        "P_TO_FF_OFS": [
+            [
+                "uint8_t_rll_ff",
+                "uint8_t_rll_p"
+            ],
+            0
+        ],
+        "P_TO_I_OFS": [
+            [
+                "uint8_t_rll_i",
+                "uint8_t_rll_p"
+            ],
+            0
+        ],
+        "ffname": [
+            [
+                "p_to_ff_ofs",
+                "param_param",
+                "param_uint8_t"
+            ],
+            0
+        ],
+        "iname": [
+            [
+                "param_param",
+                "param_uint8_t",
+                "p_to_i_ofs"
+            ],
+            0
+        ]
+    },
+    "limit_gain": {
+        "value": [
+            [
+                "reduce_max",
+                "param_saved",
+                "uint8_t_param"
+            ],
+            2
+        ],
+        "reduction_pct": [
+            [
+                "param_saved",
+                "uint8_t_param"
+            ],
+            1
+        ]
+    },
+    "restore_all_params": {
+        "param": [
+            [
+                "param_p"
+            ],
+            0
+        ]
+    },
+    "save_all_params": {
+        "param": [
+            [
+                "param_p"
+            ],
+            0
+        ]
+    },
+    "get_param_value": {
+        "ptr": [
+            [
+                "get_param_pointer_param"
+            ],
+            0
+        ]
+    },
+    "set_param_value": {
+        "ptr": [
+            [
+                "get_param_pointer_param"
+            ],
+            0
+        ]
+    },
+    "set_and_save_param_value": {
+        "ptr": [
+            [
+                "get_param_pointer_param"
+            ],
+            0
+        ]
+    }
+}

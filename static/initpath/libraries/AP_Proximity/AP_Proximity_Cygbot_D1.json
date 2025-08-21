@@ -1,0 +1,106 @@
+{
+    "update": {
+        "_last_init_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_sensor_data": {
+        "byte": [
+            [
+                "_uart_read"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "_uart_available"
+            ],
+            0
+        ]
+    },
+    "parse_byte": {
+        "_msg.payload_len_flags_low": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_msg.payload_len_flags_high": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "_msg.payload_len": [
+            [
+                "uint16_value_data",
+                "uint16_value__msg_payload_len_flags_low"
+            ],
+            0
+        ],
+        "checksum_num": [
+            [
+                "calc_checksum__msg_payload",
+                "calc_checksum__msg_payload_len"
+            ],
+            0
+        ],
+        "_parse_state": [
+            [
+                "check_sum",
+                "header2",
+                "payload_data",
+                "header3",
+                "length1",
+                "length2",
+                "payload_header"
+            ],
+            0
+        ]
+    },
+    "parse_payload": {
+        "corrected_angle": [
+            [
+                "correct_angle_for_orientation_sampled_angle"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_corrected_angle"
+            ],
+            0
+        ],
+        "distance_m": [
+            [
+                "uint16_value__msg_payload",
+                "uint16_value_i"
+            ],
+            1
+        ],
+        "sampled_angle": [
+            [
+                "cygbot_2d_start_angle",
+                "cygbot_2d_angle_step"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_parse_state": [
+            [
+                "header1"
+            ],
+            0
+        ]
+    }
+}

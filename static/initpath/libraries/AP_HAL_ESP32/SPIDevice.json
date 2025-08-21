@@ -1,0 +1,36 @@
+{
+    "set_speed": {
+        "speed": [
+            [
+                "_speed"
+            ],
+            0
+        ]
+    },
+    "transfer_fullduplex": {
+        "t.tx_buffer": [
+            [
+                "send"
+            ],
+            0
+        ],
+        "t.rx_buffer": [
+            [
+                "recv"
+            ],
+            0
+        ],
+        "t.length": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "t.rxlength": [
+            [
+                "len"
+            ],
+            0
+        ]
+    }
+}

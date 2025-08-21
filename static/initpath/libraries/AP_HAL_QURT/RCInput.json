@@ -1,0 +1,25 @@
+{
+    "new_input": {
+        "ret": [
+            [
+                "updated"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "num_chan": [
+            [
+                "rc_input_max_channels",
+                "rcprot_num_channels"
+            ],
+            0
+        ],
+        "rcprot": [
+            [
+                "rc"
+            ],
+            0
+        ]
+    }
+}

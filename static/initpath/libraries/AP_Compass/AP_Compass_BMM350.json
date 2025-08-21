@@ -1,0 +1,265 @@
+{
+    "read_otp_data": {
+        "_mag_comp.tco.x": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_tco_x"
+            ],
+            0
+        ],
+        "_mag_comp.t0_reading": [
+            [
+                "float_otp_data",
+                "float_int16_t",
+                "float_bmm350_mag_dut_t_0"
+            ],
+            0
+        ],
+        "_mag_comp.tco.z": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_tco_z"
+            ],
+            0
+        ],
+        "_mag_comp.offset_coef.x": [
+            [
+                "float_otp_data",
+                "float_bmm350_mag_offset_x",
+                "float_0x0fff",
+                "float_int16_t"
+            ],
+            0
+        ],
+        "_mag_comp.sensit_coef.y": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_sens_y",
+                "bmm350_sens_corr_y"
+            ],
+            0
+        ],
+        "_mag_comp.tcs.y": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_0x_ff00",
+                "float_bmm350_mag_tcs_y"
+            ],
+            0
+        ],
+        "_mag_comp.tco.y": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_tco_y"
+            ],
+            0
+        ],
+        "_mag_comp.tcs.x": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_tcs_x",
+                "float_0x_ff00"
+            ],
+            0
+        ],
+        "_mag_comp.cross_axis.cross_z_x": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_cross_z_x"
+            ],
+            0
+        ],
+        "_mag_comp.tcs.z": [
+            [
+                "float_0x_ff00",
+                "float_bmm350_mag_tcs_z",
+                "float_otp_data",
+                "float_int8_t",
+                "bmm350_tcs_corr_z"
+            ],
+            0
+        ],
+        "_mag_comp.offset_coef.temp": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_temp_off_sens"
+            ],
+            0
+        ],
+        "_mag_comp.cross_axis.cross_y_x": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_cross_y_x",
+                "float_0x_ff00"
+            ],
+            0
+        ],
+        "_mag_comp.sensit_coef.z": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_0x_ff00",
+                "float_bmm350_mag_sens_z"
+            ],
+            0
+        ],
+        "_mag_comp.sensit_coef.x": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_mag_sens_x",
+                "float_0x_ff00"
+            ],
+            0
+        ],
+        "_mag_comp.cross_axis.cross_z_y": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_cross_z_y",
+                "float_0x_ff00"
+            ],
+            0
+        ],
+        "_mag_comp.sensit_coef.temp": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_0x_ff00",
+                "float_bmm350_temp_off_sens"
+            ],
+            0
+        ],
+        "_mag_comp.cross_axis.cross_x_y": [
+            [
+                "float_otp_data",
+                "float_int8_t",
+                "float_bmm350_cross_x_y"
+            ],
+            0
+        ]
+    },
+    "wait_pmu_cmd_ready": {
+        "start_tick": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "magz": [
+            [
+                "_mag_comp_tco_z",
+                "bmm350_z_scale",
+                "uint32_t",
+                "int32_t_uint32_tdata_magz",
+                "data_magz",
+                "_mag_comp_offset_coef_temp",
+                "data_temp",
+                "uint32_t",
+                "int32_t_uint32_tdata_temp",
+                "bmm350_temp_scale",
+                "_mag_comp_sensit_coef_temp",
+                "float",
+                "_mag_comp_offset_coef_z",
+                "_mag_comp_tcs_z",
+                "float",
+                "_mag_comp_sensit_coef_z",
+                "_mag_comp_t0_reading"
+            ],
+            3
+        ],
+        "cr_ax_comp_y": [
+            [
+                "bmm350_xy_scale",
+                "_mag_comp_tcs_x",
+                "_mag_comp_offset_coef_temp",
+                "data_temp",
+                "uint32_t",
+                "int32_t_uint32_tdata_temp",
+                "bmm350_temp_scale",
+                "_mag_comp_sensit_coef_temp",
+                "float",
+                "_mag_comp_tco_x",
+                "_mag_comp_offset_coef_x",
+                "data_magx",
+                "uint32_t",
+                "int32_t_uint32_tdata_magx",
+                "float",
+                "_mag_comp_t0_reading",
+                "_mag_comp_sensit_coef_x",
+                "_mag_comp_cross_axis_cross_x_y",
+                "_mag_comp_cross_axis_cross_y_x",
+                "bmm350_xy_scale",
+                "int32_t_uint32_tdata_magy",
+                "uint32_t",
+                "data_magy",
+                "_mag_comp_offset_coef_temp",
+                "data_temp",
+                "uint32_t",
+                "int32_t_uint32_tdata_temp",
+                "bmm350_temp_scale",
+                "_mag_comp_sensit_coef_temp",
+                "float",
+                "_mag_comp_offset_coef_y",
+                "_mag_comp_tcs_y",
+                "_mag_comp_sensit_coef_y",
+                "_mag_comp_tco_y",
+                "_mag_comp_t0_reading",
+                "float"
+            ],
+            6
+        ],
+        "cr_ax_comp_x": [
+            [
+                "bmm350_xy_scale",
+                "_mag_comp_tcs_x",
+                "_mag_comp_offset_coef_temp",
+                "data_temp",
+                "uint32_t",
+                "int32_t_uint32_tdata_temp",
+                "bmm350_temp_scale",
+                "_mag_comp_sensit_coef_temp",
+                "float",
+                "_mag_comp_tco_x",
+                "_mag_comp_offset_coef_x",
+                "data_magx",
+                "uint32_t",
+                "int32_t_uint32_tdata_magx",
+                "float",
+                "_mag_comp_t0_reading",
+                "_mag_comp_sensit_coef_x",
+                "_mag_comp_cross_axis_cross_x_y",
+                "_mag_comp_cross_axis_cross_y_x",
+                "bmm350_xy_scale",
+                "int32_t_uint32_tdata_magy",
+                "uint32_t",
+                "data_magy",
+                "_mag_comp_offset_coef_temp",
+                "data_temp",
+                "uint32_t",
+                "int32_t_uint32_tdata_temp",
+                "bmm350_temp_scale",
+                "_mag_comp_sensit_coef_temp",
+                "float",
+                "_mag_comp_offset_coef_y",
+                "_mag_comp_tcs_y",
+                "_mag_comp_sensit_coef_y",
+                "_mag_comp_tco_y",
+                "_mag_comp_t0_reading",
+                "float"
+            ],
+            6
+        ]
+    }
+}

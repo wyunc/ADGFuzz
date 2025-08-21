@@ -1,0 +1,76 @@
+{
+    "_storage_create": {
+        "fd": [
+            [
+                "open_o_creat",
+                "open_storage_file",
+                "open_o_trunc",
+                "open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_fd": [
+            [
+                "open_storage_file",
+                "open_o_rdwr"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "read_fd",
+                "read__buffer",
+                "read_sizeof"
+            ],
+            0
+        ]
+    },
+    "_mark_dirty": {
+        "line": [
+            [
+                "loc",
+                "qurt_storage_line_shift"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "loc",
+                "length"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "write_mask": [
+            [
+                "i",
+                "1u"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "open_o_rdwr",
+                "open_storage_file"
+            ],
+            0
+        ]
+    },
+    "get_storage_ptr": {
+        "ptr": [
+            [
+                "_buffer"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "sizeof__buffer"
+            ],
+            0
+        ]
+    }
+}

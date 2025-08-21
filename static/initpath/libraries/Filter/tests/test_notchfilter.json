@@ -1,0 +1,102 @@
+{
+    "get_lag_degrees": {
+        "lag_avg": [
+            [
+                "float_lag_count",
+                "total_lag_samples"
+            ],
+            0
+        ]
+    },
+    "test_one_filter": {
+        "phase_lag": [
+            [
+                "integral_get_lag_degrees_test_freq"
+            ],
+            0
+        ],
+        "integral.v_max": [
+            [
+                "integral_v_max",
+                "f_apply_v",
+                "test_amplitude",
+                "sin_test_freq",
+                "sin_m_pi",
+                "sin_t"
+            ],
+            2
+        ],
+        "t": [
+            [
+                "s",
+                "rate_hz"
+            ],
+            1
+        ],
+        "integral.last_in": [
+            [
+                "test_amplitude",
+                "sin_test_freq",
+                "sin_m_pi",
+                "sin_t"
+            ],
+            1
+        ],
+        "f": [
+            [
+                "filter"
+            ],
+            0
+        ],
+        "out_attenuation_dB": [
+            [
+                "ratio_to_d_b_test_amplitude",
+                "ratio_to_d_b_integral_v_max"
+            ],
+            0
+        ],
+        "integral.last_out": [
+            [
+                "f_apply_v",
+                "test_amplitude",
+                "sin_test_freq",
+                "sin_m_pi",
+                "sin_t"
+            ],
+            2
+        ],
+        "integral.total_lag_samples": [
+            [
+                "integral_last_crossing",
+                "double",
+                "s",
+                "integral_last_out",
+                "f_apply_v",
+                "test_amplitude",
+                "sin_test_freq",
+                "sin_m_pi",
+                "sin_t"
+            ],
+            3
+        ],
+        "lag_avg": [
+            [
+                "float_lag_count",
+                "total_lag_samples"
+            ],
+            0
+        ],
+        "integral.last_crossing": [
+            [
+                "double",
+                "test_amplitude",
+                "sin_test_freq",
+                "sin_m_pi",
+                "sin_t",
+                "s",
+                "integral_last_in"
+            ],
+            1
+        ]
+    }
+}

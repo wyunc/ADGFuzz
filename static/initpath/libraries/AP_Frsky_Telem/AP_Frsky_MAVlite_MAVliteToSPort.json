@@ -1,0 +1,29 @@
+{
+    "reset": {
+        "state": [
+            [
+                "want_len"
+            ],
+            0
+        ]
+    },
+    "update_checksum": {
+        "checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "process_byte": {
+        "state": [
+            [
+                "want_payload",
+                "want_checksum",
+                "done",
+                "want_msgid"
+            ],
+            0
+        ]
+    }
+}

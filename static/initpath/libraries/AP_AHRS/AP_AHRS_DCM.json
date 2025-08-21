@@ -1,0 +1,823 @@
+{
+    "update": {
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_sin_yaw": [
+            [
+                "sinf_yaw"
+            ],
+            0
+        ],
+        "_body_dcm_matrix": [
+            [
+                "_dcm_matrix",
+                "ahrs_get_rotation_vehicle_body_to_autopilot_body"
+            ],
+            0
+        ],
+        "_cos_yaw": [
+            [
+                "cosf_yaw"
+            ],
+            0
+        ],
+        "delta_t": [
+            [
+                "_ins_get_delta_time"
+            ],
+            0
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ]
+    },
+    "get_results": {
+        "results.pitch_rad": [
+            [
+                "pitch"
+            ],
+            0
+        ],
+        "results.accel_ef": [
+            [
+                "_accel_ef"
+            ],
+            0
+        ],
+        "results.dcm_matrix": [
+            [
+                "_body_dcm_matrix"
+            ],
+            0
+        ],
+        "results.gyro_drift": [
+            [
+                "_omega_i"
+            ],
+            0
+        ],
+        "results.gyro_estimate": [
+            [
+                "_omega"
+            ],
+            0
+        ],
+        "results.location_valid": [
+            [
+                "get_location_results_location"
+            ],
+            0
+        ],
+        "results.roll_rad": [
+            [
+                "roll"
+            ],
+            0
+        ],
+        "results.yaw_rad": [
+            [
+                "yaw"
+            ],
+            0
+        ]
+    },
+    "backup_attitude": {
+        "pd.yaw_rad": [
+            [
+                "yaw"
+            ],
+            0
+        ],
+        "pd.pitch_rad": [
+            [
+                "pitch"
+            ],
+            0
+        ],
+        "pd.roll_rad": [
+            [
+                "roll"
+            ],
+            0
+        ],
+        "pd": [
+            [
+                "hal_util_persistent_data"
+            ],
+            0
+        ]
+    },
+    "matrix_update": {
+        "_omega": [
+            [
+                "delta_angle",
+                "dangle_dt",
+                "_omega_i",
+                "_ins_get_gyro"
+            ],
+            0
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "pd": [
+            [
+                "hal_util_persistent_data"
+            ],
+            0
+        ],
+        "_cos_yaw": [
+            [
+                "cosf_yaw"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "pd_yaw_rad"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "atan2f_init_acc_vec_z",
+                "pd_pitch_rad",
+                "atan2f_init_acc_vec_y",
+                "atan2f_init_acc_vec_x",
+                "atan2f_norm"
+            ],
+            0
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ],
+        "initAccVec": [
+            [
+                "_ins_get_accel"
+            ],
+            0
+        ],
+        "_last_startup_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "atan2f_init_acc_vec_z",
+                "atan2f_init_acc_vec_y",
+                "pd_roll_rad"
+            ],
+            0
+        ],
+        "_sin_yaw": [
+            [
+                "sinf_yaw"
+            ],
+            0
+        ]
+    },
+    "renorm": {
+        "_renorm_val_sum": [
+            [
+                "a_length"
+            ],
+            1
+        ],
+        "result": [
+            [
+                "a_length",
+                "a"
+            ],
+            1
+        ]
+    },
+    "normalize": {
+        "_last_failure_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "t2": [
+            [
+                "_dcm_matrix_a",
+                "_dcm_matrix_b",
+                "_dcm_matrix_a",
+                "_dcm_matrix_b",
+                "_dcm_matrix_a",
+                "_dcm_matrix_b",
+                "_dcm_matrix_a",
+                "_dcm_matrix_b"
+            ],
+            3
+        ]
+    },
+    "yaw_error_compass": {
+        "_mag_earth.y": [
+            [
+                "sinf__last_declination"
+            ],
+            0
+        ],
+        "rb": [
+            [
+                "_dcm_matrix_mul_xy_mag"
+            ],
+            0
+        ],
+        "_mag_earth.x": [
+            [
+                "cosf__last_declination"
+            ],
+            0
+        ],
+        "mag": [
+            [
+                "compass_get_field"
+            ],
+            0
+        ],
+        "_last_declination": [
+            [
+                "compass_get_declination"
+            ],
+            0
+        ]
+    },
+    "_yaw_gain": {
+        "VdotEFmag": [
+            [
+                "_accel_ef_xy_length"
+            ],
+            0
+        ]
+    },
+    "use_compass": {
+        "error": [
+            [
+                "fabsf_yaw",
+                "fabsf_wrap_180",
+                "fabsf_degrees",
+                "gps_ground_course"
+            ],
+            0
+        ],
+        "_last_consistent_heading": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "drift_correction_yaw": {
+        "_gps_last_update": [
+            [
+                "_gps_last_fix_time_ms"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "compass_calculate_heading__dcm_matrix"
+            ],
+            0
+        ],
+        "_omega_I_sum.z": [
+            [
+                "_ki_yaw",
+                "compass_last_update_usec",
+                "_gps_last_fix_time_ms",
+                "_0e",
+                "_dcm_matrix_c_z",
+                "sinf_yaw_error_rad",
+                "yaw_error_compass_compass"
+            ],
+            3
+        ],
+        "spin_rate": [
+            [
+                "_omega_length"
+            ],
+            0
+        ],
+        "_error_yaw": [
+            [
+                "fabsf_yaw_error"
+            ],
+            0
+        ],
+        "yaw_error_rad": [
+            [
+                "wrap_pi_gps_course_rad",
+                "wrap_pi_yaw"
+            ],
+            0
+        ],
+        "_gps": [
+            [
+                "gps"
+            ],
+            0
+        ],
+        "_compass_last_update": [
+            [
+                "compass_last_update_usec"
+            ],
+            0
+        ],
+        "gps_course_rad": [
+            [
+                "to_rad__gps_ground_course"
+            ],
+            0
+        ],
+        "_omega_yaw_P.z": [
+            [
+                "_kp_yaw",
+                "_yaw_gain",
+                "_p_gain_spin_rate",
+                "_dcm_matrix_c_z",
+                "sinf_yaw_error_rad",
+                "yaw_error_compass_compass"
+            ],
+            2
+        ]
+    },
+    "drift_correction": {
+        "_accel_ef": [
+            [
+                "_dcm_matrix",
+                "_ins_get_accel"
+            ],
+            0
+        ],
+        "spin_rate": [
+            [
+                "_omega_length"
+            ],
+            0
+        ],
+        "_position_offset_east": [
+            [
+                "velocity_y",
+                "deltat"
+            ],
+            1
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ],
+        "_last_failure_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_pos_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_omega_I_sum.y": [
+            [
+                "_omega_i_sum_y",
+                "ins_get_gyro_drift_rate",
+                "_omega_i_sum_time"
+            ],
+            1
+        ],
+        "_last_lat": [
+            [
+                "_gps_location_lat"
+            ],
+            0
+        ],
+        "earth_error_Z": [
+            [
+                "error_z"
+            ],
+            0
+        ],
+        "accel_ef": [
+            [
+                "_dcm_matrix",
+                "delta_velocity",
+                "delta_velocity_dt"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "atan2f__x",
+                "atan2f_ga_b",
+                "atan2f__y",
+                "atan2f_besti"
+            ],
+            0
+        ],
+        "_ra_sum_start": [
+            [
+                "_gps_last_fix_time_ms",
+                "millis"
+            ],
+            1
+        ],
+        "_active_accel_instance": [
+            [
+                "i"
+            ],
+            1
+        ],
+        "_error_rp": [
+            [
+                "i",
+                "_length"
+            ],
+            2
+        ],
+        "_last_airspeed": [
+            [
+                "airspeed_x"
+            ],
+            0
+        ],
+        "_omega_I_sum.z": [
+            [
+                "ins_get_gyro_drift_rate",
+                "_omega_i_sum_time",
+                "_omega_i_sum_z"
+            ],
+            1
+        ],
+        "_omega_I": [
+            [
+                "_omega_i_sum"
+            ],
+            0
+        ],
+        "fly_forward": [
+            [
+                "ahrs_get_fly_forward"
+            ],
+            0
+        ],
+        "_omega_P": [
+            [
+                "_kp",
+                "ga_e2",
+                "ga_b",
+                "i",
+                "i",
+                "_p_gain_spin_rate"
+            ],
+            2
+        ],
+        "_last_lng": [
+            [
+                "_gps_location_lng"
+            ],
+            0
+        ],
+        ".z": [
+            [
+                "sinf_fabsf",
+                "sinf_roll"
+            ],
+            0
+        ],
+        "GA_e": [
+            [
+                "_gps_velocity",
+                "_dcm_matrix_colx",
+                "_wind",
+                "gravity_mss",
+                "deltat",
+                "gps_gain_get"
+            ],
+            5
+        ],
+        "_omega_I_sum.x": [
+            [
+                "_omega_i_sum_x",
+                "ins_get_gyro_drift_rate",
+                "_omega_i_sum_time"
+            ],
+            1
+        ],
+        "airspeed": [
+            [
+                "_wind",
+                "_body_dcm_matrix_mul_transpose_airspeed",
+                "_gps_velocity",
+                "_dcm_matrix_colx",
+                "_wind",
+                "airspeed_get_airspeed"
+            ],
+            1
+        ],
+        "_omega_I_sum_time": [
+            [
+                "deltat"
+            ],
+            1
+        ],
+        "GA_e2": [
+            [
+                "vector3f_theta",
+                "ga_e_xy_length",
+                "vector3f_cosf",
+                "sinf_theta",
+                "ga_e_z"
+            ],
+            1
+        ],
+        "_omega_I_sum": [
+            [
+                "_ki",
+                "ga_e2",
+                "ga_b",
+                "i",
+                "i",
+                "deltat"
+            ],
+            3
+        ],
+        "_gps": [
+            [
+                "gps"
+            ],
+            0
+        ],
+        "_position_offset_north": [
+            [
+                "deltat",
+                "velocity_x"
+            ],
+            1
+        ],
+        "_last_velocity": [
+            [
+                "_gps_velocity",
+                "_dcm_matrix_colx",
+                "_wind"
+            ],
+            1
+        ],
+        "error.z": [
+            [
+                "earth_error_z"
+            ],
+            0
+        ]
+    },
+    "estimate_wind": {
+        "_wind": [
+            [
+                "get_eas2tas",
+                "_last_velocity",
+                "_dcm_matrix_colx",
+                "airspeed_get_airspeed"
+            ],
+            3
+        ],
+        "_last_fuse": [
+            [
+                "fuselage_direction"
+            ],
+            0
+        ],
+        "velocityDiff": [
+            [
+                "_last_velocity"
+            ],
+            1
+        ],
+        "V": [
+            [
+                "fuselage_direction_diff_length",
+                "velocity_diff_length"
+            ],
+            1
+        ],
+        "theta": [
+            [
+                "atan2f_fuselage_direction_diff_x",
+                "atan2f_velocity_diff_x",
+                "atan2f_velocity_diff_y",
+                "atan2f_fuselage_direction_diff_y"
+            ],
+            0
+        ],
+        "_last_vel": [
+            [
+                "_last_velocity"
+            ],
+            1
+        ],
+        "fuselageDirectionSum": [
+            [
+                "fuselage_direction"
+            ],
+            0
+        ],
+        "velocitySum": [
+            [
+                "_last_velocity"
+            ],
+            1
+        ],
+        "fuselageDirectionDiff": [
+            [
+                "fuselage_direction"
+            ],
+            0
+        ],
+        "sintheta": [
+            [
+                "sinf_theta"
+            ],
+            0
+        ],
+        "costheta": [
+            [
+                "cosf_theta"
+            ],
+            0
+        ],
+        "fuselageDirection": [
+            [
+                "_dcm_matrix_colx"
+            ],
+            0
+        ],
+        "_last_wind_time": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_external_wind_estimate": {
+        "_wind.x": [
+            [
+                "speed",
+                "cosf_direction",
+                "cosf_radians"
+            ],
+            0
+        ],
+        "_wind.y": [
+            [
+                "speed",
+                "sinf_direction",
+                "sinf_radians"
+            ],
+            0
+        ]
+    },
+    "get_location": {
+        "loc.lat": [
+            [
+                "_last_lat"
+            ],
+            0
+        ],
+        "dpos": [
+            [
+                "millis",
+                "_last_pos_ms",
+                "_last_velocity_xy"
+            ],
+            2
+        ],
+        "loc.alt": [
+            [
+                "baro_get_altitude",
+                "gps_location_alt",
+                "ahrs_get_home_alt"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "_last_lng"
+            ],
+            0
+        ]
+    },
+    "airspeed_estimate": {
+        "gnd_speed": [
+            [
+                "gps_ground_speed"
+            ],
+            0
+        ],
+        "_wind_max": [
+            [
+                "ahrs_get_max_wind"
+            ],
+            0
+        ],
+        "airspeed_ret": [
+            [
+                "get_eas2tas",
+                "get_eas2tas"
+            ],
+            1
+        ]
+    },
+    "get_unconstrained_airspeed_estimate": {
+        "airspeed_ret": [
+            [
+                "_last_airspeed",
+                "airspeed_get_airspeed_airspeed_index"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "_last_failure_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_velocity_NED": {
+        "vec": [
+            [
+                "_gps_velocity"
+            ],
+            0
+        ],
+        "_gps": [
+            [
+                "gps"
+            ],
+            0
+        ]
+    },
+    "get_vert_pos_rate_D": {
+        "velocity": [
+            [
+                "velned_z",
+                "baro_get_climb_rate"
+            ],
+            0
+        ]
+    },
+    "get_origin": {
+        "ret": [
+            [
+                "last_origin",
+                "ahrs_get_home"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_NED_origin": {
+        "posNED": [
+            [
+                "origin_get_distance_ned_loc"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_NE_origin": {
+        "posNE": [
+            [
+                "pos_ned_xy"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_D_origin": {
+        "posD": [
+            [
+                "pos_ned_z"
+            ],
+            0
+        ]
+    }
+}

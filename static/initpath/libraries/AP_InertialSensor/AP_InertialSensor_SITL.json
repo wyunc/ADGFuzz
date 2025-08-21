@@ -1,0 +1,501 @@
+{
+    "get_temperature": {
+        "tconst": [
+            [
+                "sitl_imu_temp_tconst"
+            ],
+            0
+        ],
+        "tsec": [
+            [
+                "millis",
+                "millis"
+            ],
+            2
+        ],
+        "T1": [
+            [
+                "sitl_imu_temp_end"
+            ],
+            0
+        ],
+        "T0": [
+            [
+                "sitl_imu_temp_start"
+            ],
+            0
+        ]
+    },
+    "generate_accel": {
+        "accel_scale": [
+            [
+                "sitl_accel_scale",
+                "accel_instance",
+                "_get"
+            ],
+            0
+        ],
+        "accel.y": [
+            [
+                "sinf_accel_time",
+                "accel_scale_y",
+                "sinf_m_pi",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "calculate_noise_noise_variation",
+                "sinf_vibe_freq_y",
+                "calculate_noise_accel_noise",
+                "sinf_phase"
+            ],
+            0
+        ],
+        "accel_trim": [
+            [
+                "sitl_accel_trim_get"
+            ],
+            0
+        ],
+        "bit": [
+            [
+                "__builtin_ffs_harmonics"
+            ],
+            0
+        ],
+        "motors_on": [
+            [
+                "sitl_ins_noise_throttle_min",
+                "sitl_throttle"
+            ],
+            0
+        ],
+        "harmonics": [
+            [
+                "uint32_t_sitl_vibe_motor_harmonics"
+            ],
+            0
+        ],
+        "phase_incr": [
+            [
+                "accel_sample_hz",
+                "m_pi",
+                "enable_fast_sampling_accel_instance",
+                "calculate_noise_freq_variation",
+                "calculate_noise_motor",
+                "calculate_noise_sitl_state_rpm"
+            ],
+            2
+        ],
+        "T": [
+            [
+                "get_temperature"
+            ],
+            0
+        ],
+        "accel_noise": [
+            [
+                "sitl_accel_noise",
+                "accel_instance"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "sitl_state_motor_mask"
+            ],
+            0
+        ],
+        "accel_time": [
+            [
+                "enable_fast_sampling_accel_instance",
+                "accel_sample_hz"
+            ],
+            1
+        ],
+        "accel.x": [
+            [
+                "calculate_noise_accel_noise",
+                "accel_y",
+                "accel_scale_x",
+                "sinf_accel_time",
+                "accel_z",
+                "accel_instance",
+                "sinf_m_pi",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "sitl_accel_fail",
+                "calculate_noise_noise_variation",
+                "sinf_vibe_freq_x",
+                "sinf_phase"
+            ],
+            0
+        ],
+        "accel_accum": [
+            [
+                "sitl_imu_pos_offset",
+                "radians_sitl_state_ang_accel_z",
+                "radians_sitl_state_ang_accel_y",
+                "vector3f_sitl_state_ang_accel_x",
+                "vector3f_radians",
+                "vector3f",
+                "sitl_accel_bias",
+                "accel_instance",
+                "_get",
+                "vector3f_sitl_state_roll_rate",
+                "radians_sitl_state_pitch_rate",
+                "vector3f_radians",
+                "radians_sitl_state_yaw_rate",
+                "sitl_imu_pos_offset",
+                "rand_float",
+                "trim_rotation_transposed",
+                "enable_fast_sampling_accel_instance"
+            ],
+            8
+        ],
+        "vibe_freq": [
+            [
+                "sitl_vibe_freq"
+            ],
+            0
+        ],
+        "phase": [
+            [
+                "mbit",
+                "accel_motor_phase",
+                "float_bit"
+            ],
+            1
+        ],
+        "accel.z": [
+            [
+                "sinf_accel_time",
+                "sinf_m_pi",
+                "accel_scale_z",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "calculate_noise_noise_variation",
+                "sinf_vibe_freq_z",
+                "calculate_noise_accel_noise",
+                "sinf_phase"
+            ],
+            0
+        ]
+    },
+    "generate_gyro": {
+        "harmonics": [
+            [
+                "uint32_t_sitl_vibe_motor_harmonics"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "calculate_noise_noise_variation",
+                "sinf_gyro_time",
+                "sinf_m_pi",
+                "to_rad",
+                "sitl_throttle",
+                "to_rad_sitl_gyro_noise",
+                "to_rad_gyro_instance",
+                "gyro_drift",
+                "sinf_phase",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "radians_sitl_state_pitch_rate",
+                "calculate_noise_gyro_noise",
+                "sinf_vibe_freq_y",
+                "rand_float"
+            ],
+            2
+        ],
+        "p": [
+            [
+                "calculate_noise_noise_variation",
+                "sinf_gyro_time",
+                "sinf_m_pi",
+                "to_rad",
+                "sitl_throttle",
+                "to_rad_sitl_gyro_noise",
+                "to_rad_gyro_instance",
+                "sinf_phase",
+                "radians_sitl_state_roll_rate",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "sinf_vibe_freq_x",
+                "calculate_noise_gyro_noise",
+                "gyro_drift",
+                "rand_float"
+            ],
+            2
+        ],
+        "gyro.y": [
+            [
+                "scale_y"
+            ],
+            0
+        ],
+        "scale": [
+            [
+                "sitl_gyro_scale",
+                "gyro_instance"
+            ],
+            0
+        ],
+        "vibe_freq": [
+            [
+                "sitl_vibe_freq"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "scale_x"
+            ],
+            0
+        ],
+        "phase": [
+            [
+                "mbit",
+                "gyro_motor_phase",
+                "float_bit"
+            ],
+            1
+        ],
+        "r": [
+            [
+                "calculate_noise_noise_variation",
+                "sinf_gyro_time",
+                "sinf_m_pi",
+                "radians_sitl_state_yaw_rate",
+                "to_rad",
+                "sitl_throttle",
+                "to_rad_sitl_gyro_noise",
+                "to_rad_gyro_instance",
+                "sinf_phase",
+                "calculate_noise_sitl_vibe_motor_scale",
+                "sinf_vibe_freq_z",
+                "calculate_noise_gyro_noise",
+                "gyro_drift",
+                "rand_float"
+            ],
+            2
+        ],
+        "gyro.z": [
+            [
+                "scale_z"
+            ],
+            0
+        ],
+        "phase_incr": [
+            [
+                "m_pi",
+                "calculate_noise_motor",
+                "calculate_noise_freq_variation",
+                "calculate_noise_sitl_state_rpm",
+                "enable_fast_sampling_gyro_instance",
+                "gyro_sample_hz"
+            ],
+            2
+        ],
+        "mask": [
+            [
+                "sitl_state_motor_mask"
+            ],
+            0
+        ],
+        "bit": [
+            [
+                "__builtin_ffs_harmonics"
+            ],
+            0
+        ],
+        "motors_on": [
+            [
+                "sitl_throttle",
+                "sitl_ins_noise_throttle_min"
+            ],
+            0
+        ],
+        "gyro_accum": [
+            [
+                "sitl_gyro_bias",
+                "_get",
+                "gyro_instance",
+                "enable_fast_sampling_gyro_instance"
+            ],
+            3
+        ],
+        "gyro_time": [
+            [
+                "enable_fast_sampling_gyro_instance",
+                "gyro_sample_hz"
+            ],
+            1
+        ]
+    },
+    "timer_update": {
+        "next_gyro_sample": [
+            [
+                "gyro_sample_hz",
+                "micros64",
+                "1000000ul"
+            ],
+            1
+        ],
+        "next_accel_sample": [
+            [
+                "accel_sample_hz",
+                "micros64",
+                "1000000ul"
+            ],
+            1
+        ]
+    },
+    "gyro_drift": {
+        "minutes": [
+            [
+                "sitl_drift_time",
+                "_0e6",
+                "fmod_micros64"
+            ],
+            1
+        ]
+    },
+    "read_gyro_from_file": {
+        "nsamples": [
+            [
+                "enable_fast_sampling_gyro_instance"
+            ],
+            0
+        ],
+        "gyro_fd": [
+            [
+                "fs_open_namebuf",
+                "_open_o_rdonly"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "read_nsamples",
+                "read_buf",
+                "read_gyro_fd",
+                "read_float",
+                "read_sizeof"
+            ],
+            0
+        ]
+    },
+    "read_gyro": {
+        "gyro_accum": [
+            [
+                "vector3f_q",
+                "vector3f_p",
+                "vector3f_r",
+                "nsamples"
+            ],
+            1
+        ],
+        "q": [
+            [
+                "j",
+                "buf"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "j",
+                "buf"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "j",
+                "buf"
+            ],
+            0
+        ]
+    },
+    "write_gyro_to_file": {
+        "gyro_fd": [
+            [
+                "open_namebuf",
+                "open_o_wronly",
+                "open_s_iroth",
+                "open_o_creat",
+                "open_o_trunc",
+                "open_s_irwxu",
+                "open_s_irgrp"
+            ],
+            0
+        ]
+    },
+    "read_accel_from_file": {
+        "nsamples": [
+            [
+                "enable_fast_sampling_accel_instance"
+            ],
+            0
+        ],
+        "accel_fd": [
+            [
+                "open_o_cloexec",
+                "open_namebuf",
+                "open_o_rdonly"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "read_buf",
+                "read_sizeof",
+                "read_nsamples",
+                "read_accel_fd",
+                "read_float"
+            ],
+            0
+        ]
+    },
+    "read_accel": {
+        "p": [
+            [
+                "buf",
+                "j"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "buf",
+                "j"
+            ],
+            0
+        ],
+        "accel_accum": [
+            [
+                "vector3f_r",
+                "vector3f_q",
+                "vector3f_p",
+                "nsamples"
+            ],
+            1
+        ],
+        "q": [
+            [
+                "buf",
+                "j"
+            ],
+            0
+        ]
+    },
+    "write_accel_to_file": {
+        "accel_fd": [
+            [
+                "open_o_trunc",
+                "open_s_irwxu",
+                "open_o_wronly",
+                "open_s_iroth",
+                "open_o_creat",
+                "open_s_irgrp",
+                "open_namebuf"
+            ],
+            0
+        ]
+    }
+}

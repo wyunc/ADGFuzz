@@ -1,0 +1,68 @@
+{
+    "update_send": {
+        "bat_capacity_mAh": [
+            [
+                "discharge",
+                "millis"
+            ],
+            2
+        ],
+        "last_ver_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "tank_remaining_pct": [
+            [
+                "max_tank_pressure",
+                "float",
+                "linear_interpolate_max_tank_pressure",
+                "linear_interpolate_max_bat_capactiy_m_ah",
+                "linear_interpolate_bat_capacity_m_ah"
+            ],
+            1
+        ],
+        "battery_pwr": [
+            [
+                "discharge",
+                "max_bat_vol",
+                "max_bat_capactiy_m_ah",
+                "min_bat_vol",
+                "bat_capacity_m_ah"
+            ],
+            2
+        ],
+        "checksum": [
+            [
+                "i",
+                "message"
+            ],
+            0
+        ],
+        "pwr_out": [
+            [
+                "float_to_int32_battery_pwr"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "set_state"
+            ],
+            0
+        ],
+        "last_data_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "spm_pwr": [
+            [
+                "float_to_uint32_battery_pwr"
+            ],
+            0
+        ]
+    }
+}

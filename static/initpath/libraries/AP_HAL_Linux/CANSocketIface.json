@@ -1,0 +1,268 @@
+{
+    "_openSocket": {
+        "addr": [
+            [
+                "sockaddr_can"
+            ],
+            0
+        ],
+        "addr.can_family": [
+            [
+                "af_can"
+            ],
+            0
+        ],
+        "ifr": [
+            [
+                "ifreq"
+            ],
+            0
+        ],
+        "addr.can_ifindex": [
+            [
+                "ifr_ifr_ifindex"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "socket_pf_can",
+                "socket_sock_raw",
+                "socket_can_raw"
+            ],
+            1
+        ],
+        "errlen": [
+            [
+                "sizeof_socket_error"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "socket_error",
+                "enametoolong"
+            ],
+            0
+        ]
+    },
+    "configureFilters": {
+        ".can_id": [
+            [
+                "fc_id",
+                "mask_ext_id"
+            ],
+            0
+        ],
+        ".can_mask": [
+            [
+                "fc_mask",
+                "mask_ext_id"
+            ],
+            0
+        ],
+        "fc": [
+            [
+                "i",
+                "filter_configs"
+            ],
+            0
+        ]
+    },
+    "_pollWrite": {
+        "res": [
+            [
+                "_write_tx_frame"
+            ],
+            0
+        ],
+        "stats.last_transmit_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "tx": [
+            [
+                "_tx_queue_top"
+            ],
+            0
+        ]
+    },
+    "_pollRead": {
+        "res": [
+            [
+                "_read_rx_frame",
+                "_read_loopback",
+                "_read_rx_timestamp_us"
+            ],
+            0
+        ],
+        "accept": [
+            [
+                "_was_in_pending_loopback_set_rx_frame"
+            ],
+            0
+        ],
+        "rx.timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "_write": {
+        "res": [
+            [
+                "write_sockcan_frame",
+                "write__fd",
+                "write_sizeof"
+            ],
+            0
+        ],
+        "sockcan_frame": [
+            [
+                "make_socket_can_frame_frame"
+            ],
+            0
+        ]
+    },
+    "_read": {
+        "msg.msg_iov": [
+            [
+                "iovec"
+            ],
+            1
+        ],
+        "errno": [
+            [
+                "recvmsg_msg_dontwait",
+                "recvmsg__fd",
+                "recvmsg_msg",
+                "ewouldblock"
+            ],
+            1
+        ],
+        "iov.iov_len": [
+            [
+                "sizeof_sockcan_frame"
+            ],
+            0
+        ],
+        "iov.iov_base": [
+            [
+                "can_frame"
+            ],
+            1
+        ],
+        "frame": [
+            [
+                "make_uavcan_frame_sockcan_frame"
+            ],
+            0
+        ],
+        "msg.msg_controllen": [
+            [
+                "sizeof_control_data"
+            ],
+            0
+        ],
+        "msg": [
+            [
+                "msghdr"
+            ],
+            0
+        ],
+        "msg.msg_control": [
+            [
+                "control_data"
+            ],
+            0
+        ],
+        "loopback": [
+            [
+                "msg_confirm",
+                "int",
+                "static_cast",
+                "msg_msg_flags"
+            ],
+            0
+        ],
+        "timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "_updateDownStatusFromPollResult": {
+        "_down": [
+            [
+                "enodev",
+                "error",
+                "enetdown"
+            ],
+            0
+        ],
+        "errlen": [
+            [
+                "sizeof_error"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_bitrate": [
+            [
+                "bitrate"
+            ],
+            0
+        ],
+        "_fd": [
+            [
+                "_open_socket_iface_name"
+            ],
+            0
+        ],
+        "bitrate_": [
+            [
+                "bitrate"
+            ],
+            0
+        ],
+        "mode_": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "select": {
+        "_pollfd.fd": [
+            [
+                "_fd"
+            ],
+            0
+        ],
+        "need_block": [
+            [
+                "write_select"
+            ],
+            0
+        ],
+        "now_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "set_event_handle": {
+        "sem_handle": [
+            [
+                "handle"
+            ],
+            0
+        ]
+    }
+}

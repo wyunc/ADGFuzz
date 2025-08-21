@@ -1,0 +1,584 @@
+{
+    "ParametersUpdate": {
+        "accel_calibration_count": [
+            [
+                "_accel_calibration_calibration_count"
+            ],
+            0
+        ],
+        "_notify_clipping": [
+            [
+                "_param_sens_imu_notify_clipping_get"
+            ],
+            0
+        ],
+        "_in_flight_calibration_check_timestamp_last": [
+            [
+                "hrt_absolute_time",
+                "inflight_calibration_quiet_period_us"
+            ],
+            0
+        ],
+        "gyro_calibration_count": [
+            [
+                "_gyro_calibration_calibration_count"
+            ],
+            0
+        ],
+        "_imu_integration_interval_us": [
+            [
+                "constrain__param_imu_integ_rate_get",
+                "int32_t",
+                "1e6f"
+            ],
+            1
+        ],
+        "imu_integ_rate_prev": [
+            [
+                "_param_imu_integ_rate_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_armed": [
+            [
+                "vehicle_control_mode_flag_armed"
+            ],
+            0
+        ],
+        "_in_flight_calibration_check_timestamp_last": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "parameters_updated": [
+            [
+                "parameters_update"
+            ],
+            0
+        ],
+        "consume_all_gyro": [
+            [
+                "_data_gap",
+                "_intervals_configured"
+            ],
+            0
+        ]
+    },
+    "UpdateAccel": {
+        "diff_exceeds_stddev": [
+            [
+                "_accel_mean_interval_us_variance",
+                "sq__accel_interval_us",
+                "sq_interval_mean"
+            ],
+            0
+        ],
+        "_status.accel_error_count": [
+            [
+                "accel_error_count"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "1e",
+                "accel_timestamp_sample"
+            ],
+            0
+        ],
+        "_last_accel_clipping_notify_time": [
+            [
+                "accel_timestamp_sample"
+            ],
+            0
+        ],
+        "interval_mean": [
+            [
+                "_accel_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "clip_x": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ],
+        "interval_us": [
+            [
+                "accel_timestamp_sample"
+            ],
+            0
+        ],
+        "_accel_last_generation": [
+            [
+                "_sensor_accel_sub_get_last_generation"
+            ],
+            0
+        ],
+        "_accel_timestamp_sample_last": [
+            [
+                "accel_timestamp_sample"
+            ],
+            0
+        ],
+        "_accel_temperature_sum": [
+            [
+                "accel_temperature"
+            ],
+            0
+        ],
+        "_last_accel_clipping_notify_total_count": [
+            [
+                "_status_accel_clipping"
+            ],
+            1
+        ],
+        "clip_z": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ],
+        "clip_y": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ]
+    },
+    "UpdateGyro": {
+        "_gyro_temperature_sum": [
+            [
+                "gyro_temperature"
+            ],
+            0
+        ],
+        "clip_y": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ],
+        "clip_z": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ],
+        "_last_gyro_clipping_notify_total_count": [
+            [
+                "_status_gyro_clipping"
+            ],
+            1
+        ],
+        "diff_exceeds_stddev": [
+            [
+                "sq_interval_mean",
+                "_gyro_mean_interval_us_variance",
+                "sq__gyro_interval_us"
+            ],
+            0
+        ],
+        "_last_gyro_clipping_notify_time": [
+            [
+                "gyro_timestamp_sample"
+            ],
+            0
+        ],
+        "_gyro_timestamp_sample_last": [
+            [
+                "gyro_timestamp_sample"
+            ],
+            0
+        ],
+        "_gyro_timestamp_last": [
+            [
+                "gyro_timestamp"
+            ],
+            0
+        ],
+        "interval_mean": [
+            [
+                "_gyro_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "_status.gyro_error_count": [
+            [
+                "gyro_error_count"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "gyro_timestamp_sample",
+                "1e"
+            ],
+            0
+        ],
+        "clip_x": [
+            [
+                "roundf_clipping",
+                "roundf_fabsf"
+            ],
+            0
+        ],
+        "_gyro_last_generation": [
+            [
+                "_sensor_gyro_sub_get_last_generation"
+            ],
+            0
+        ],
+        "interval_us": [
+            [
+                "gyro_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "Publish": {
+        "_status.gyro_rate_hz": [
+            [
+                "1e6f",
+                "_gyro_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "_status.gyro_raw_rate_hz": [
+            [
+                "1e6f",
+                "_gyro_fifo_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "_accel_temperature_sum": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "imu.gyro_device_id": [
+            [
+                "_gyro_calibration_device_id"
+            ],
+            0
+        ],
+        "status_publish_interval_exceeded": [
+            [
+                "k_imu_status_publishing_interval",
+                "hrt_elapsed_time__status_timestamp"
+            ],
+            0
+        ],
+        "_status.temperature_gyro": [
+            [
+                "_gyro_temperature_sum_count",
+                "nan"
+            ],
+            0
+        ],
+        "accumulated_coning_corrections": [
+            [
+                "_gyro_integrator_accumulated_coning_corrections"
+            ],
+            0
+        ],
+        "imu.delta_velocity_clipping": [
+            [
+                "_delta_velocity_clipping"
+            ],
+            0
+        ],
+        "imu.gyro_calibration_count": [
+            [
+                "_gyro_calibration_calibration_count"
+            ],
+            0
+        ],
+        "imu.delta_angle_clipping": [
+            [
+                "_delta_angle_clipping"
+            ],
+            0
+        ],
+        "_status.accel_device_id": [
+            [
+                "_accel_calibration_device_id"
+            ],
+            0
+        ],
+        "_status.delta_angle_coning_metric": [
+            [
+                "imu_delta_angle_dt",
+                "_e",
+                "imu_delta_angle_dt",
+                "_e",
+                "accumulated_coning_corrections_norm"
+            ],
+            3
+        ],
+        "_status.gyro_device_id": [
+            [
+                "_gyro_calibration_device_id"
+            ],
+            0
+        ],
+        "imu.accel_device_id": [
+            [
+                "_accel_calibration_device_id"
+            ],
+            0
+        ],
+        "_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "accel_dt_s": [
+            [
+                "_e",
+                "imu_delta_velocity_dt"
+            ],
+            0
+        ],
+        "imu.accel_calibration_count": [
+            [
+                "_accel_calibration_calibration_count"
+            ],
+            0
+        ],
+        "_status.temperature_accel": [
+            [
+                "nan",
+                "_accel_temperature_sum_count"
+            ],
+            0
+        ],
+        "cov": [
+            [
+                "r_transpose",
+                "_raw_gyro_mean_covariance",
+                "r",
+                "_raw_accel_mean_covariance"
+            ],
+            0
+        ],
+        "_status.accel_raw_rate_hz": [
+            [
+                "1e6f",
+                "_accel_fifo_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "_status.accel_rate_hz": [
+            [
+                "1e6f",
+                "_accel_mean_interval_us_mean"
+            ],
+            0
+        ],
+        "_gyro_temperature_sum": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "imu.timestamp_sample": [
+            [
+                "_gyro_timestamp_sample_last"
+            ],
+            0
+        ],
+        "R": [
+            [
+                "_gyro_calibration_rotation",
+                "_accel_calibration_rotation"
+            ],
+            0
+        ],
+        "imu.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "UpdateIntegratorConfiguration": {
+        "_gyro_interval_us": [
+            [
+                "_gyro_mean_interval_us_mean"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "orb_queue_length"
+            ],
+            0
+        ],
+        "accel_integral_samples": [
+            [
+                "max_introundf_integration_interval_us",
+                "roundf_accel_interval_us"
+            ],
+            0
+        ],
+        "_accel_interval_us": [
+            [
+                "_accel_mean_interval_us_mean"
+            ],
+            1
+        ],
+        "gyro_integral_samples": [
+            [
+                "roundf_gyro_interval_us",
+                "max_introundf__imu_integration_interval_us"
+            ],
+            0
+        ],
+        "integration_interval_us": [
+            [
+                "roundf_gyro_interval_us",
+                "roundf_gyro_integral_samples"
+            ],
+            0
+        ]
+    },
+    "UpdateAccelVibrationMetrics": {
+        "_acceleration_prev": [
+            [
+                "acceleration"
+            ],
+            0
+        ]
+    },
+    "UpdateGyroVibrationMetrics": {
+        "_angular_velocity_prev": [
+            [
+                "angular_velocity"
+            ],
+            0
+        ]
+    },
+    "SensorCalibrationUpdate": {
+        ".offset": [
+            [
+                "_gyro_calibration_bias_corrected_sensor_offset_bias",
+                "_accel_calibration_bias_corrected_sensor_offset_bias"
+            ],
+            0
+        ],
+        ".bias_variance": [
+            [
+                "vector3f",
+                "estimator_sensor_bias_gyro_bias_variance",
+                "estimator_sensor_bias_accel_bias_variance"
+            ],
+            0
+        ]
+    },
+    "SensorCalibrationSaveAccel": {
+        "_in_flight_calibration_check_timestamp_last": [
+            [
+                "inflight_calibration_quiet_period_us",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "k2": [
+            [
+                "_accel_learned_calibration",
+                "bias_variance_axis_index",
+                "i",
+                "_bias_variance_axis_index",
+                "_accel_learned_calibration",
+                "i",
+                "_bias_variance_axis_index"
+            ],
+            1
+        ],
+        "offset_estimate": [
+            [
+                "_offset",
+                "_accel_learned_calibration",
+                "i"
+            ],
+            0
+        ],
+        "k1": [
+            [
+                "_accel_learned_calibration",
+                "bias_variance_axis_index",
+                "i",
+                "_bias_variance_axis_index",
+                "bias_variance_axis_index"
+            ],
+            1
+        ],
+        "bias_variance": [
+            [
+                "_accel_learned_calibration",
+                "i",
+                "_bias_variance"
+            ],
+            0
+        ]
+    },
+    "SensorCalibrationSaveGyro": {
+        "k2": [
+            [
+                "_gyro_learned_calibration",
+                "i",
+                "_gyro_learned_calibration",
+                "i",
+                "bias_variance_axis_index",
+                "_bias_variance_axis_index",
+                "_bias_variance_axis_index"
+            ],
+            1
+        ],
+        "k1": [
+            [
+                "bias_variance_axis_index",
+                "_gyro_learned_calibration",
+                "i",
+                "bias_variance_axis_index",
+                "_bias_variance_axis_index"
+            ],
+            1
+        ],
+        "offset_estimate": [
+            [
+                "_gyro_learned_calibration",
+                "i",
+                "_offset"
+            ],
+            0
+        ],
+        "bias_variance": [
+            [
+                "_gyro_learned_calibration",
+                "i",
+                "_bias_variance"
+            ],
+            0
+        ],
+        "_in_flight_calibration_check_timestamp_last": [
+            [
+                "hrt_absolute_time",
+                "inflight_calibration_quiet_period_us"
+            ],
+            0
+        ]
+    }
+}

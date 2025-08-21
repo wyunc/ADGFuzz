@@ -1,0 +1,225 @@
+{
+    "setup": {
+        "G_Dt": [
+            [
+                "scheduler_get_loop_period_s"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "G_Dt": [
+            [
+                "scheduler_get_loop_period_s"
+            ],
+            0
+        ],
+        "_last_internal_errors": [
+            [
+                "internalerror_errors"
+            ],
+            1
+        ]
+    },
+    "get_common_scheduler_tasks": {
+        "num_tasks": [
+            [
+                "array_size_scheduler_tasks"
+            ],
+            0
+        ],
+        "tasks": [
+            [
+                "scheduler_tasks"
+            ],
+            0
+        ]
+    },
+    "scheduler_delay_callback": {
+        "last_50hz": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_1hz": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_5s": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_watchdog_reset_statustext": {
+        "pd": [
+            [
+                "hal_util_last_persistent_data"
+            ],
+            0
+        ]
+    },
+    "update_throttle_notch": {
+        "throttle_freq": [
+            [
+                "sqrtf_motors_throttle",
+                "notch_params_center_freq_hz",
+                "sqrtf_ref"
+            ],
+            1
+        ],
+        "ref": [
+            [
+                "notch_params_reference"
+            ],
+            0
+        ],
+        "motors_throttle": [
+            [
+                "motors_ugv",
+                "abs_motors_get_throttle",
+                "motors_get_throttle_out",
+                "nullptr"
+            ],
+            1
+        ]
+    },
+    "update_dynamic_notch": {
+        "peaks": [
+            [
+                "gyro_fft_get_weighted_noise_center_frequencies_hz_notch_num_dynamic_notches",
+                "gyro_fft_get_weighted_noise_center_frequencies_hz_notches"
+            ],
+            0
+        ],
+        "num_notches": [
+            [
+                "esc_telem_get_motor_frequencies_hz_ins_max_notches",
+                "_get_motor_frequencies_hz_notches"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "notch_params_tracking_mode",
+                "update_rpm"
+            ],
+            0
+        ],
+        "center_freq": [
+            [
+                "gyro_fft_get_weighted_noise_center_freq_hz"
+            ],
+            0
+        ],
+        "ref_freq": [
+            [
+                "notch_params_center_freq_hz"
+            ],
+            0
+        ],
+        "ref": [
+            [
+                "notch_params_reference"
+            ],
+            0
+        ],
+        "rpm_sensor": [
+            [
+                "rpm"
+            ],
+            0
+        ]
+    },
+    "update_dynamic_notch_at_specified_rate": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "notch",
+                "ins_harmonic_notches"
+            ],
+            0
+        ]
+    },
+    "publish_osd_info": {
+        "nav_info.wp_bearing": [
+            [
+                "wp_bearing_deg",
+                "int32_t"
+            ],
+            0
+        ],
+        "nav_info.wp_number": [
+            [
+                "mission_get_current_nav_index"
+            ],
+            0
+        ]
+    },
+    "get_osd_roll_pitch_rad": {
+        "pitch": [
+            [
+                "ahrs_get_pitch"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "ahrs_get_roll"
+            ],
+            0
+        ]
+    },
+    "check_motor_noise": {
+        "energy": [
+            [
+                "_apply_energy",
+                "gyro_fft_has_noise_at_frequency_hz_esc_data",
+                "esc_noise",
+                "i",
+                "gyro_fft_has_noise_at_frequency_hz_i"
+            ],
+            0
+        ],
+        "last_motor_noise_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "numf": [
+            [
+                "_get_motor_frequencies_hz_esc_data",
+                "esc_telem_get_motor_frequencies_hz_esc_telem_max_escs"
+            ],
+            0
+        ]
+    },
+    "init_dds_client": {
+        "dds_client": [
+            [
+                "new_nothrow",
+                "ap_dds_client"
+            ],
+            0
+        ]
+    },
+    "block_GCS_mode_change": {
+        "mask": [
+            [
+                "i",
+                "1u"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "send": {
+        "imu_sample.delta_ang": [
+            [
+                "imu_sample_delta_ang_dt",
+                "_gyro_data"
+            ],
+            0
+        ],
+        "imu_sample.delta_vel_dt": [
+            [
+                "_e",
+                "float_time",
+                "float__time_last_data_sent"
+            ],
+            1
+        ],
+        "imu_sample.delta_ang_dt": [
+            [
+                "_e",
+                "float_time",
+                "float__time_last_data_sent"
+            ],
+            1
+        ],
+        "imu_sample.time_us": [
+            [
+                "time"
+            ],
+            0
+        ],
+        "imu_sample.delta_vel": [
+            [
+                "imu_sample_delta_vel_dt",
+                "_accel_data"
+            ],
+            0
+        ]
+    },
+    "setAccelData": {
+        "_accel_data": [
+            [
+                "accel"
+            ],
+            0
+        ]
+    },
+    "setGyroData": {
+        "_gyro_data": [
+            [
+                "gyro"
+            ],
+            0
+        ]
+    }
+}

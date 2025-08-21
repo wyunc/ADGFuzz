@@ -1,0 +1,38 @@
+{
+    "append": {
+        "current_total": [
+            [
+                "get_rally_total"
+            ],
+            0
+        ]
+    },
+    "set_rally_point_with_index": {
+        "_last_change_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "find_nearest_rally_point": {
+        "rally_loc": [
+            [
+                "rally_location_to_location_next_rally"
+            ],
+            0
+        ],
+        "min_dis": [
+            [
+                "current_loc_get_distance_rally_loc"
+            ],
+            1
+        ],
+        "return_loc": [
+            [
+                "next_rally"
+            ],
+            0
+        ]
+    }
+}

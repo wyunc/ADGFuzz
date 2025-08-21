@@ -1,0 +1,22 @@
+{
+    "task_spawn": {
+        "obj": [
+            [
+                "rover_land_detector",
+                "airship_land_detector",
+                "multicopter_land_detector",
+                "vtol_land_detector",
+                "nullptr",
+                "new",
+                "fixedwing_land_detector"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

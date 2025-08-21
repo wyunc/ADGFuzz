@@ -1,0 +1,60 @@
+{
+    "expand": {
+        "buf": [
+            [
+                "char",
+                "hal_util_std_realloc_newsize",
+                "hal_util_std_realloc_buf"
+            ],
+            1
+        ],
+        "buflen": [
+            [
+                "min_extra_space_needed",
+                "used",
+                "expand_increment"
+            ],
+            1
+        ]
+    },
+    "printf": {
+        "used": [
+            [
+                "hal_util_vsnprintf_format",
+                "hal_util_vsnprintf_used",
+                "hal_util_vsnprintf_arg",
+                "hal_util_vsnprintf_buf",
+                "hal_util_vsnprintf_buflen"
+            ],
+            1
+        ]
+    },
+    "append": {
+        "used": [
+            [
+                "len"
+            ],
+            0
+        ]
+    },
+    "set_buffer": {
+        "buflen": [
+            [
+                "total_len"
+            ],
+            0
+        ],
+        "used": [
+            [
+                "used_len"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "s"
+            ],
+            0
+        ]
+    }
+}

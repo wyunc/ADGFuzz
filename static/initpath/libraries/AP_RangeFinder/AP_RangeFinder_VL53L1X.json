@@ -1,0 +1,90 @@
+{
+    "setMeasurementTimingBudget": {
+        "range_config_timeout_us": [
+            [
+                "timing_guard",
+                "budget_us"
+            ],
+            0
+        ],
+        "macro_period_us": [
+            [
+                "calc_macro_period_range_config_vcsel_period"
+            ],
+            0
+        ],
+        "phasecal_timeout_mclks": [
+            [
+                "0x_ff",
+                "timeout_microseconds_to_mclks_macro_period_us"
+            ],
+            0
+        ]
+    },
+    "getMeasurementTimingBudget": {
+        "budget": [
+            [
+                "timing_guard",
+                "calc_macro_period_range_config_vcsel_period_a",
+                "timeout_mclks_to_microseconds_timeout_macrop_a",
+                "timeout_mclks_to_microseconds_decode_timeout"
+            ],
+            2
+        ]
+    },
+    "startContinuous": {
+        "adjusted_period_ms": [
+            [
+                "period_ms"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "reading_mm": [
+            [
+                "0x0400",
+                "0x0800",
+                "uint32_t"
+            ],
+            0
+        ],
+        "calibrated": [
+            [
+                "setup_manual_calibration"
+            ],
+            0
+        ]
+    },
+    "read_register16": {
+        "value": [
+            [
+                "be16toh_v"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "sum_mm": [
+            [
+                "range_mm"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "counter",
+                "sum_mm"
+            ],
+            0
+        ]
+    }
+}

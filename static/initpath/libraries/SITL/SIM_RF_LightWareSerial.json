@@ -1,0 +1,11 @@
+{
+    "check_synced": {
+        "n": [
+            [
+                "read_from_autopilot_array_size",
+                "read_from_autopilot_buffer"
+            ],
+            0
+        ]
+    }
+}

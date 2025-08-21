@@ -1,0 +1,106 @@
+{
+    "do_set_servo": {
+        "c": [
+            [
+                "srv_channel__channel"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "c_pwm_from_scaled_value_angle_scaled"
+            ],
+            0
+        ],
+        "angle_scaled": [
+            [
+                "constrain_uint16_pwm"
+            ],
+            0
+        ]
+    },
+    "do_repeat_servo": {
+        "type": [
+            [
+                "event_type_servo"
+            ],
+            0
+        ],
+        "servo_value": [
+            [
+                "c_pwm_from_scaled_value_angle_scaled"
+            ],
+            1
+        ],
+        "repeat": [
+            [
+                "_repeat"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "_channel"
+            ],
+            0
+        ],
+        "delay_ms": [
+            [
+                "_delay_ms"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "srv_channel__channel"
+            ],
+            0
+        ],
+        "angle_scaled": [
+            [
+                "constrain_uint16__servo_value"
+            ],
+            0
+        ]
+    },
+    "do_repeat_relay": {
+        "channel": [
+            [
+                "relay_num"
+            ],
+            0
+        ],
+        "repeat": [
+            [
+                "_repeat"
+            ],
+            0
+        ],
+        "delay_ms": [
+            [
+                "_delay_ms"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "event_type_relay"
+            ],
+            0
+        ]
+    },
+    "update_events": {
+        "c": [
+            [
+                "srv_channel_channel"
+            ],
+            0
+        ],
+        "start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

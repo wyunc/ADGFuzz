@@ -1,0 +1,28 @@
+{
+    "update": {
+        "enable_reg.byte": [
+            [
+                "get_register_enable"
+            ],
+            0
+        ],
+        "reset_reg.byte": [
+            [
+                "get_register_reset"
+            ],
+            0
+        ],
+        "config_reg.byte": [
+            [
+                "get_register_config"
+            ],
+            0
+        ],
+        "led_map_reg.byte": [
+            [
+                "get_register_led_map"
+            ],
+            0
+        ]
+    }
+}

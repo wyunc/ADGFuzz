@@ -1,0 +1,324 @@
+{
+    "init": {
+        "pitch_mode": [
+            [
+                "loiter",
+                "pilot_override"
+            ],
+            0
+        ],
+        "roll_mode": [
+            [
+                "loiter",
+                "pilot_override"
+            ],
+            0
+        ],
+        "brake.gain": [
+            [
+                "g_poshold_brake_rate",
+                "float"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "vel": [
+            [
+                "inertial_nav_get_velocity_neu_cms"
+            ],
+            0
+        ],
+        "controller_to_pilot_pitch_mix": [
+            [
+                "float",
+                "poshold_controller_to_pilot_mix_timer",
+                "controller_to_pilot_timer_pitch"
+            ],
+            0
+        ],
+        "pitch_mode": [
+            [
+                "brake_ready_to_loiter",
+                "brake",
+                "pilot_override",
+                "loiter",
+                "brake_to_loiter"
+            ],
+            0
+        ],
+        "brake.timeout_roll": [
+            [
+                "fabsf_brake_roll",
+                "15l",
+                "int32_t",
+                "g_poshold_brake_rate",
+                "10l",
+                "uint16_t",
+                "loop_rate_factor",
+                "poshold_brake_time_estimate_max"
+            ],
+            0
+        ],
+        "roll_mode": [
+            [
+                "brake_ready_to_loiter",
+                "brake",
+                "pilot_override",
+                "loiter",
+                "brake_to_loiter"
+            ],
+            0
+        ],
+        "controller_to_pilot_roll_mix": [
+            [
+                "float",
+                "poshold_controller_to_pilot_mix_timer",
+                "controller_to_pilot_timer_roll"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "mix_controls_brake_roll",
+                "loiter_nav_get_roll",
+                "brake_roll",
+                "mix_controls_loiter_nav_get_roll",
+                "copter_aparm_angle_max",
+                "mix_controls_wind_comp_roll",
+                "mix_controls_brake_to_loiter_mix",
+                "mix_controls_controller_to_pilot_roll_mix",
+                "pilot_roll",
+                "mix_controls_controller_final_roll",
+                "wind_comp_roll",
+                "mix_controls_pilot_roll"
+            ],
+            1
+        ],
+        "brake.timeout_pitch": [
+            [
+                "15l",
+                "int32_t",
+                "g_poshold_brake_rate",
+                "10l",
+                "fabsf_brake_pitch",
+                "uint16_t",
+                "loop_rate_factor",
+                "poshold_brake_time_estimate_max"
+            ],
+            0
+        ],
+        "target_climb_rate": [
+            [
+                "get_avoidance_adjusted_climbrate_target_climb_rate",
+                "get_pilot_speed_dn_g_pilot_speed_up",
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in"
+            ],
+            0
+        ],
+        "brake.angle_max_roll": [
+            [
+                "fabsf_brake_roll"
+            ],
+            0
+        ],
+        "poshold_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "brake.to_loiter_timer": [
+            [
+                "poshold_brake_to_loiter_timer"
+            ],
+            0
+        ],
+        "brake_to_loiter_mix": [
+            [
+                "float",
+                "brake_to_loiter_timer",
+                "poshold_brake_to_loiter_timer"
+            ],
+            0
+        ],
+        "vel_right": [
+            [
+                "vel_y",
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw",
+                "vel_x"
+            ],
+            0
+        ],
+        "wind_comp_start_timer": [
+            [
+                "poshold_wind_comp_start_timer"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "vel_fw": [
+            [
+                "vel_y",
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw",
+                "vel_x"
+            ],
+            0
+        ],
+        "brake.angle_max_pitch": [
+            [
+                "fabsf_brake_pitch"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "mix_controls_loiter_nav_get_pitch",
+                "mix_controls_pilot_pitch",
+                "copter_aparm_angle_max",
+                "mix_controls_controller_final_pitch",
+                "brake_pitch",
+                "pilot_pitch",
+                "mix_controls_brake_to_loiter_mix",
+                "mix_controls_brake_pitch",
+                "mix_controls_wind_comp_pitch",
+                "wind_comp_pitch",
+                "mix_controls_controller_to_pilot_pitch_mix",
+                "loiter_nav_get_pitch"
+            ],
+            1
+        ]
+    },
+    "update_pilot_lean_angle": {
+        "lean_angle_filtered": [
+            [
+                "lean_angle_raw",
+                "max_float_loop_rate_factor",
+                "max_g_poshold_brake_rate",
+                "poshold_smooth_rate_factor"
+            ],
+            0
+        ]
+    },
+    "update_brake_angle_from_velocity": {
+        "brake_angle": [
+            [
+                "floatg_poshold_brake_angle_max",
+                "float",
+                "g_poshold_brake_angle_max",
+                "velocity",
+                "brake_gain",
+                "fabsf_velocity",
+                "g_poshold_brake_rate",
+                "float",
+                "loop_rate_factor"
+            ],
+            2
+        ]
+    },
+    "update_wind_comp_estimate": {
+        "wind_comp_ef": [
+            [
+                "wind_comp_ef_length",
+                "tanf_copter_aparm_angle_max",
+                "tanf_poshold_wind_comp_lean_pct_max",
+                "tanf_radians",
+                "gravity_mss"
+            ],
+            2
+        ],
+        "wind_comp_ef.y": [
+            [
+                "wind_comp_ef_y",
+                "tc_wind_comp",
+                "accel_target_y"
+            ],
+            0
+        ],
+        "accel_target": [
+            [
+                "pos_control_get_accel_target_cmss"
+            ],
+            0
+        ],
+        "wind_comp_ef.x": [
+            [
+                "accel_target_x",
+                "tc_wind_comp",
+                "wind_comp_ef_x"
+            ],
+            0
+        ]
+    },
+    "get_wind_comp_lean_angles": {
+        "roll_angle": [
+            [
+                "atanf_ahrs_sin_yaw",
+                "wind_comp_ef_y",
+                "ahrs_cos_yaw",
+                "gravity_mss",
+                "m_pi",
+                "atanf_wind_comp_ef_x"
+            ],
+            0
+        ],
+        "pitch_angle": [
+            [
+                "atanf_ahrs_cos_yaw",
+                "wind_comp_ef_y",
+                "ahrs_sin_yaw",
+                "gravity_mss",
+                "m_pi",
+                "atanf_wind_comp_ef_x"
+            ],
+            0
+        ]
+    },
+    "roll_controller_to_pilot_override": {
+        "roll_mode": [
+            [
+                "controller_to_pilot_override"
+            ],
+            0
+        ],
+        "controller_to_pilot_timer_roll": [
+            [
+                "poshold_controller_to_pilot_mix_timer"
+            ],
+            0
+        ],
+        "controller_final_roll": [
+            [
+                "roll"
+            ],
+            0
+        ]
+    },
+    "pitch_controller_to_pilot_override": {
+        "controller_to_pilot_timer_pitch": [
+            [
+                "poshold_controller_to_pilot_mix_timer"
+            ],
+            0
+        ],
+        "pitch_mode": [
+            [
+                "controller_to_pilot_override"
+            ],
+            0
+        ],
+        "controller_final_pitch": [
+            [
+                "pitch"
+            ],
+            0
+        ]
+    }
+}

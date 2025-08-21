@@ -1,0 +1,146 @@
+{
+    "set_run_state": {
+        "_state": [
+            [
+                "newstate"
+            ],
+            0
+        ]
+    },
+    "update_control_pin": {
+        "_runtime_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "control_pwm": [
+            [
+                "input_servos",
+                "_ctrl_pin"
+            ],
+            0
+        ],
+        "generatorengine.current_current": [
+            [
+                "max_current",
+                "sitl_state_battery_current"
+            ],
+            1
+        ],
+        "stop_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_current_rpm": [
+            [
+                "generatorengine_current_rpm"
+            ],
+            0
+        ],
+        "generatorengine.max_current": [
+            [
+                "max_current"
+            ],
+            0
+        ],
+        "newstate": [
+            [
+                "run",
+                "idle",
+                "stop",
+                "stopping"
+            ],
+            0
+        ],
+        "_last_runtime_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update_send": {
+        "u.packet.output_voltage": [
+            [
+                "htobe16_base_supply_voltage",
+                "htobe16_max_current",
+                "htobe16__current_current"
+            ],
+            0
+        ],
+        "u.packet.output_current": [
+            [
+                "htobe16__current_current"
+            ],
+            0
+        ],
+        "seconds_until_maintenance": [
+            [
+                "_runtime_ms",
+                "original_seconds_until_maintenance"
+            ],
+            0
+        ],
+        "u.packet.runtime_minutes": [
+            [
+                "_runtime_ms"
+            ],
+            1
+        ],
+        "u.packet.rpm": [
+            [
+                "htobe16__current_rpm"
+            ],
+            0
+        ],
+        "last_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "u.packet.mode": [
+            [
+                "idle",
+                "off",
+                "uint8_t",
+                "run"
+            ],
+            0
+        ],
+        "errors": [
+            [
+                "htobe16_u_packet_errors"
+            ],
+            0
+        ],
+        "u.packet.runtime_hours": [
+            [
+                "_runtime_ms"
+            ],
+            1
+        ],
+        "u.packet.errors": [
+            [
+                "htobe16_errors"
+            ],
+            0
+        ],
+        "u.packet.runtime_seconds": [
+            [
+                "_runtime_ms"
+            ],
+            1
+        ],
+        "u.packet.seconds_until_maintenance": [
+            [
+                "htobe32_seconds_until_maintenance",
+                "htobe32"
+            ],
+            0
+        ]
+    }
+}

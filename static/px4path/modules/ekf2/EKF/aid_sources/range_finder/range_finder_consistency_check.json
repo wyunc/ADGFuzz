@@ -1,0 +1,50 @@
+{
+    "update": {
+        "_time_last_horizontal_motion": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_time_last_update_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_dist_bottom_prev": [
+            [
+                "dist_bottom"
+            ],
+            0
+        ],
+        "signed_test_ratio": [
+            [
+                "sign__innov",
+                "static_cast",
+                "1e",
+                "time_us",
+                "float",
+                "dist_bottom_var",
+                "_f",
+                "vz_var",
+                "vz",
+                "static_cast",
+                "1e",
+                "time_us",
+                "float",
+                "dist_bottom",
+                "_gate"
+            ],
+            7
+        ]
+    },
+    "updateConsistency": {
+        "_time_last_inconsistent_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    }
+}

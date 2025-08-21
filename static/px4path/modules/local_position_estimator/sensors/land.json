@@ -1,0 +1,68 @@
+{
+    "landMeasure": {
+        "_time_last_land": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ]
+    },
+    "landCorrect": {
+        "_x": [
+            [
+                "k",
+                "y",
+                "c"
+            ],
+            2
+        ],
+        "S_I": [
+            [
+                "m_p",
+                "c",
+                "c_transpose",
+                "n_y_land",
+                "inv",
+                "float"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "m_p",
+                "s_i",
+                "c_transpose"
+            ],
+            0
+        ],
+        "beta_thresh": [
+            [
+                "1e2f"
+            ],
+            0
+        ],
+        "m_P": [
+            [
+                "k",
+                "m_p",
+                "c"
+            ],
+            0
+        ],
+        ".hagl": [
+            [
+                "r_y_land_agl"
+            ],
+            0
+        ],
+        "beta": [
+            [
+                "s_i",
+                "r_transpose",
+                "y",
+                "c"
+            ],
+            1
+        ]
+    }
+}

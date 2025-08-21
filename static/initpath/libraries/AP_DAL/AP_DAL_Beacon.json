@@ -1,0 +1,90 @@
+{
+    "start_frame": {
+        "RBCI.last_update_ms": [
+            [
+                "bcon_beacon_last_update_ms_i"
+            ],
+            0
+        ],
+        "RBCI.distance": [
+            [
+                "bcon_beacon_distance_i"
+            ],
+            0
+        ],
+        "RBCI.position": [
+            [
+                "bcon_beacon_position_i"
+            ],
+            0
+        ],
+        "RBCI": [
+            [
+                "i",
+                "_rbci"
+            ],
+            0
+        ],
+        "RBCI.healthy": [
+            [
+                "bcon_beacon_healthy_i"
+            ],
+            0
+        ],
+        "_RBCH.origin_lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "_RBCH.get_vehicle_position_ned_returncode": [
+            [
+                "bcon_get_vehicle_position_ned__rbch_accuracy_estimate",
+                "bcon_get_vehicle_position_ned__rbch_vehicle_position_ned"
+            ],
+            0
+        ],
+        "_RBCH.origin_alt": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "_RBCH.enabled": [
+            [
+                "bcon_enabled"
+            ],
+            0
+        ],
+        "_RBCH.origin_lng": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "old_RBCI": [
+            [
+                "rbci"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rbch"
+            ],
+            0
+        ],
+        "bcon": [
+            [
+                "beacon"
+            ],
+            0
+        ],
+        "_RBCH.get_origin_returncode": [
+            [
+                "bcon_get_origin_loc"
+            ],
+            0
+        ]
+    }
+}

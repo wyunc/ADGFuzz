@@ -1,0 +1,107 @@
+{
+    "controlBaroHeightFusion": {
+        "measurement_var": [
+            [
+                "sq__params_baro_noise"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "_height_sensor_ref": [
+            [
+                "baro"
+            ],
+            0
+        ],
+        "measurement": [
+            [
+                "baro_sample_hgt",
+                "compensate_baro_for_dynamic_pressure_baro_sample_hgt",
+                "compensate_baro_for_dynamic_pressure_imu_sample"
+            ],
+            0
+        ],
+        "bias_est": [
+            [
+                "_baro_b_est"
+            ],
+            0
+        ],
+        "aid_src.innovation": [
+            [
+                "deadzone_start",
+                "deadzone_start",
+                "_params_gnd_effect_deadzone"
+            ],
+            1
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out_aid_src_time_last_fuse",
+                "is_timed_out__params_hgt_fusion_timeout_max"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_baro_hgt"
+            ],
+            0
+        ],
+        "measurement_valid": [
+            [
+                "px4_isfinite_measurement",
+                "px4_isfinite_measurement_var"
+            ],
+            0
+        ]
+    },
+    "stopBaroHgtFusion": {
+        "_height_sensor_ref": [
+            [
+                "unknown"
+            ],
+            0
+        ]
+    },
+    "compensateBaroForDynamicPressure": {
+        "airspeed_earth": [
+            [
+                "wind_velocity_earth",
+                "_r_to_earth",
+                "_state_gyro_bias",
+                "imu_sample_delta_ang",
+                "imu_sample_delta_ang_dt",
+                "_params_imu_pos_body",
+                "_state_vel"
+            ],
+            3
+        ],
+        "airspeed_body": [
+            [
+                "_state_quat_nominal_rotate_vector_inverse_airspeed_earth"
+            ],
+            0
+        ],
+        "pstatic_err": [
+            [
+                "_air_density",
+                "airspeed_squared_dot_k_pstatic_coef"
+            ],
+            0
+        ],
+        "airspeed_squared": [
+            [
+                "min_airspeed_body",
+                "sq__params_max_correction_airspeed",
+                "min_airspeed_body_emult"
+            ],
+            0
+        ]
+    }
+}

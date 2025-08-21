@@ -1,0 +1,81 @@
+{
+    "start_command_do_aux_function": {
+        "pos": [
+            [
+                "cmd_content_auxfunction_switchpos",
+                "aux_switch_pos"
+            ],
+            0
+        ],
+        "function": [
+            [
+                "aux_func",
+                "cmd_content_auxfunction_function"
+            ],
+            0
+        ]
+    },
+    "start_command_do_servorelayevents": {
+        "sre": [
+            [
+                "servorelayevents"
+            ],
+            0
+        ]
+    },
+    "start_command_camera": {
+        "start_recording": [
+            [
+                "mav_cmd_video_start_capture",
+                "cmd_id"
+            ],
+            0
+        ]
+    },
+    "command_do_set_repeat_dist": {
+        "_repeat_dist": [
+            [
+                "cmd_p1"
+            ],
+            0
+        ]
+    },
+    "start_command_do_scripting": {
+        "scripting": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "start_command_do_gimbal_manager_pitchyaw": {
+        "pitch_angle_valid": [
+            [
+                "abs_cmd_content_gimbal_manager_pitchyaw_pitch_angle_deg"
+            ],
+            0
+        ],
+        "gimbal_instance": [
+            [
+                "cmd_content_gimbal_manager_pitchyaw_gimbal_id",
+                "mount_get_primary_instance"
+            ],
+            0
+        ],
+        "yaw_angle_valid": [
+            [
+                "abs_cmd_content_gimbal_manager_pitchyaw_yaw_angle_deg"
+            ],
+            0
+        ]
+    },
+    "start_command_fence": {
+        "fences": [
+            [
+                "fence_enable_configured_true",
+                "fence_enable_configured_false"
+            ],
+            0
+        ]
+    }
+}

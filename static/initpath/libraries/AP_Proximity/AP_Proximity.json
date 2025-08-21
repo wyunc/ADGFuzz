@@ -1,0 +1,53 @@
+{
+    "init": {
+        ".instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "num_instances": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        ".status": [
+            [
+                "not_connected"
+            ],
+            0
+        ]
+    },
+    "distance_max": {
+        "dist_max": [
+            [
+                "_distance_max",
+                "i",
+                "drivers"
+            ],
+            0
+        ]
+    },
+    "distance_min": {
+        "dist_min": [
+            [
+                "i",
+                "drivers",
+                "_distance_min"
+            ],
+            1
+        ]
+    },
+    "log": {
+        "active": [
+            [
+                "filt_dist_array",
+                "boundary_get_layer_distances_distance_max",
+                "dist_array",
+                "boundary_get_layer_distances_i"
+            ],
+            0
+        ]
+    }
+}

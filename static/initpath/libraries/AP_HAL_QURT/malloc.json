@@ -1,0 +1,50 @@
+{
+    "__wrap_malloc": {
+        "ret": [
+            [
+                "fc_heap_alloc_size",
+                "fc_heap_alloc_sizeof",
+                "heap_header_t",
+                "fc_heap_alloc_heap_header_t"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "heap_header_magic"
+            ],
+            0
+        ]
+    },
+    "__wrap_free": {
+        "h": [
+            [
+                "ptr",
+                "heap_header_t"
+            ],
+            0
+        ]
+    },
+    "__wrap_realloc": {
+        "h": [
+            [
+                "ptr",
+                "heap_header_t"
+            ],
+            0
+        ],
+        "copy_size": [
+            [
+                "h_size",
+                "size"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "__wrap_malloc_size"
+            ],
+            0
+        ]
+    }
+}

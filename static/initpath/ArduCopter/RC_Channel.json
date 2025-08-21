@@ -1,0 +1,85 @@
+{
+    "do_aux_function": {
+        "newmode": [
+            [
+                "simple",
+                "none",
+                "supersimple"
+            ],
+            0
+        ],
+        "ch_flag": [
+            [
+                "simple",
+                "low",
+                "none",
+                "high"
+            ],
+            0
+        ],
+        "copter.ap.motor_interlock_switch": [
+            [
+                "middle",
+                "high"
+            ],
+            0
+        ],
+        "cmd.content.location.alt": [
+            [
+                "copter_current_loc_alt"
+            ],
+            0
+        ],
+        "cmd.id": [
+            [
+                "mav_cmd_nav_land",
+                "mav_cmd_nav_takeoff",
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ],
+        "cmd.content.location": [
+            [
+                "copter_current_loc"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_change_air_mode": {
+        "copter.air_mode": [
+            [
+                "airmode_disabled",
+                "airmode_enabled"
+            ],
+            0
+        ]
+    },
+    "save_trim": {
+        "roll_trim": [
+            [
+                "to_rad_floatchannel_roll_get_control_in"
+            ],
+            0
+        ],
+        "pitch_trim": [
+            [
+                "to_rad_floatchannel_pitch_get_control_in"
+            ],
+            0
+        ]
+    },
+    "auto_trim": {
+        "roll_trim_adjustment": [
+            [
+                "to_rad_floatchannel_roll_get_control_in"
+            ],
+            0
+        ],
+        "pitch_trim_adjustment": [
+            [
+                "to_rad_floatchannel_pitch_get_control_in"
+            ],
+            0
+        ]
+    }
+}

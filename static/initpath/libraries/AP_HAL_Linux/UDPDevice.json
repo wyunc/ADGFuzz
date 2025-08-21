@@ -1,0 +1,11 @@
+{
+    "open": {
+        "_connected": [
+            [
+                "socket_connect__port",
+                "socket_connect__ip"
+            ],
+            0
+        ]
+    }
+}

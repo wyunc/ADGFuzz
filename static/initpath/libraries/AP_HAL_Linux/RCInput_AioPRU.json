@@ -1,0 +1,34 @@
+{
+    "init": {
+        "mem_fd": [
+            [
+                "open_o_sync",
+                "open_o_cloexec",
+                "open_o_rdwr"
+            ],
+            0
+        ],
+        "ring_buffer": [
+            [
+                "mmap_mem_fd",
+                "mmap_prot_write",
+                "mmap_rcin_pruss_ram_base",
+                "mmap_map_shared",
+                "mmap_prot_read",
+                "volatile",
+                "mmap_0x1000",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "ring_head": [
+            [
+                "num_ring_entries",
+                "ring_buffer_ring_head"
+            ],
+            0
+        ]
+    }
+}

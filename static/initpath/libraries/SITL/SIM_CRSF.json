@@ -1,0 +1,55 @@
+{
+    "dataid_string": {
+        "len": [
+            [
+                "sizeof_vtx_frame"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "bytes": [
+            [
+                "dataid_string__id",
+                "dataid_string_data_id"
+            ],
+            0
+        ],
+        "_id": [
+            [
+                "max_data_frames"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "write_to_autopilot_index",
+                "write_to_autopilot_bytes",
+                "write_to_autopilot_len"
+            ],
+            1
+        ],
+        "_buflen": [
+            [
+                "read_from_autopilot__buffer",
+                "read_from_autopilot_array_size",
+                "read_from_autopilot__buflen"
+            ],
+            1
+        ],
+        "index": [
+            [
+                "write_to_autopilot_index",
+                "write_to_autopilot_bytes",
+                "write_to_autopilot_len"
+            ],
+            1
+        ]
+    }
+}

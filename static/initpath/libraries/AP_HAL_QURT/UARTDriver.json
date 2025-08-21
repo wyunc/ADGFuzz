@@ -1,0 +1,87 @@
+{
+    "_begin": {
+        "fd": [
+            [
+                "sl_client_config_uart_b",
+                "sl_client_config_uart_port_id"
+            ],
+            1
+        ]
+    },
+    "_mavlink_data_cb": {
+        "driver": [
+            [
+                "uart_driver_mav_link_udp",
+                "p"
+            ],
+            0
+        ]
+    },
+    "_write_pending_bytes": {
+        "msg.data_length": [
+            [
+                "_writebuf_read_n",
+                "_writebuf_read_msg_data"
+            ],
+            0
+        ],
+        "msg.msg_id": [
+            [
+                "qurt_msg_id_mavlink_msg"
+            ],
+            0
+        ],
+        "msg.seq": [
+            [
+                "tx_seq"
+            ],
+            0
+        ],
+        "msg.inst": [
+            [
+                "inst"
+            ],
+            0
+        ],
+        "ptr": [
+            [
+                "_writebuf_readptr_available"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "mavlink_packetise_n",
+                "mavlink_packetise__writebuf",
+                "_writebuf_available",
+                "sl_client_uart_write_fd",
+                "sl_client_uart_write_const",
+                "available",
+                "sl_client_uart_write_charptr"
+            ],
+            1
+        ]
+    },
+    "_fill_read_buffer": {
+        "nread": [
+            [
+                "sl_client_uart_read_buf",
+                "sl_client_uart_read_sizeof",
+                "sl_client_uart_read_fd"
+            ],
+            0
+        ],
+        "receive_timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "_readbuf_space"
+            ],
+            0
+        ]
+    }
+}

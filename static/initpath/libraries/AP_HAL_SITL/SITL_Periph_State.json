@@ -1,0 +1,107 @@
+{
+    "init": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "sitl_model": [
+            [
+                "new_nothrow",
+                "sim_m_cast"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "defaults_path": [
+            [
+                "strdup_gopt_optarg"
+            ],
+            0
+        ]
+    },
+    "servo_fd_open": {
+        "in_addr": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "servo_send": {
+        "mask": [
+            [
+                "uint32_t__sitl_can_servo_mask_get"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "multicast_read": {
+        "location.alt": [
+            [
+                "_0e2",
+                "state_altitude"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "state_latitude",
+                "_0e7"
+            ],
+            0
+        ],
+        "base_time_us": [
+            [
+                "state_timestamp_us",
+                "_sitl_state_timestamp_us"
+            ],
+            0
+        ],
+        "location.lng": [
+            [
+                "state_longitude",
+                "_0e7"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "location"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "battery_voltage": [
+            [
+                "_sitl_batt_voltage"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    }
+}

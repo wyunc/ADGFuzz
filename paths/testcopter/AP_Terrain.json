@@ -1,0 +1,163 @@
+{
+    "height_amsl": {
+        "grid": [
+            [
+                "find_grid_cache_info_grid"
+            ],
+            0
+        ],
+        "height": [
+            [
+                "grid_height",
+                "info_idx_x",
+                "info_idx_y",
+                "info_frac_x",
+                "grid_height",
+                "info_idx_x",
+                "info_idx_y",
+                "grid_height",
+                "info_idx_x",
+                "info_idx_y",
+                "info_frac_x",
+                "grid_height",
+                "info_idx_x",
+                "info_idx_y",
+                "info_frac_y",
+                "reference_offset"
+            ],
+            7
+        ],
+        "home_loc": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "height_terrain_difference_home": {
+        "terrain_difference": [
+            [
+                "height_home",
+                "last_current_loc_height"
+            ],
+            1
+        ]
+    },
+    "height_above_terrain": {
+        "terrain_altitude": [
+            [
+                "height_amsl_cm",
+                "last_current_loc_height"
+            ],
+            1
+        ]
+    },
+    "height_relative_home_equivalent": {
+        "relative_home_altitude": [
+            [
+                "home_height_amsl_cm",
+                "terrain_difference",
+                "theight_home",
+                "terrain_altitude"
+            ],
+            0
+        ],
+        "home": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ]
+    },
+    "lookahead": {
+        "lookahead_estimate": [
+            [
+                "grid_spacing",
+                "climb_ratio",
+                "height",
+                "base_height"
+            ],
+            2
+        ],
+        "distance": [
+            [
+                "grid_spacing"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "have_surrounding_tiles": [
+            [
+                "update_surrounding_tiles_loc"
+            ],
+            0
+        ],
+        "terrain_valid": [
+            [
+                "ahrs_get_location_loc",
+                "height_amsl_loc",
+                "height_amsl_height"
+            ],
+            1
+        ],
+        "system_status": [
+            [
+                "terrain_status_ok",
+                "terrain_status_unhealthy",
+                "terrain_status_disabled"
+            ],
+            0
+        ],
+        "last_current_loc_height": [
+            [
+                "height"
+            ],
+            0
+        ]
+    },
+    "update_surrounding_tiles": {
+        "loc2": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "allocate": {
+        "cache": [
+            [
+                "grid_cache",
+                "calloc_config_cache_size",
+                "struct",
+                "calloc_sizeof",
+                "calloc_cache"
+            ],
+            0
+        ],
+        "cache_size": [
+            [
+                "config_cache_size"
+            ],
+            0
+        ]
+    },
+    "set_reference_location": {
+        "have_reference_loc": [
+            [
+                "ahrs_get_location_reference_loc"
+            ],
+            0
+        ]
+    },
+    "update_reference_offset": {
+        "reference_offset": [
+            [
+                "offset_max",
+                "alt_cm",
+                "height"
+            ],
+            1
+        ]
+    }
+}

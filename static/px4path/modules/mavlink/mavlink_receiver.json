@@ -1,0 +1,3309 @@
+{
+    "acknowledge": {
+        "command_ack.command": [
+            [
+                "command"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "sysid"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "compid"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "result"
+            ],
+            0
+        ],
+        "command_ack.result_param1": [
+            [
+                "progress"
+            ],
+            0
+        ]
+    },
+    "evaluate_target_ok": {
+        "target_component": [
+            [
+                "mav_comp_id_all"
+            ],
+            0
+        ],
+        "target_ok": [
+            [
+                "mavlink_system_sysid",
+                "target_system"
+            ],
+            0
+        ]
+    },
+    "handle_message_command_long": {
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.param6": [
+            [
+                "double",
+                "cmd_mavlink_param6"
+            ],
+            0
+        ],
+        "vcmd.param1": [
+            [
+                "cmd_mavlink_param1"
+            ],
+            0
+        ],
+        "vcmd.param7": [
+            [
+                "cmd_mavlink_param7"
+            ],
+            0
+        ],
+        "vcmd.source_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "vcmd.param5": [
+            [
+                "double",
+                "cmd_mavlink_param5"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "cmd_mavlink_command"
+            ],
+            0
+        ],
+        "vcmd.source_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "vcmd.target_component": [
+            [
+                "cmd_mavlink_target_component"
+            ],
+            0
+        ],
+        "after_int32_max": [
+            [
+                "nextafterf_float_int32_max",
+                "infinity",
+                "float"
+            ],
+            0
+        ],
+        "vcmd.param4": [
+            [
+                "cmd_mavlink_param4"
+            ],
+            0
+        ],
+        "before_int32_max": [
+            [
+                "nextafterf_float_int32_max"
+            ],
+            0
+        ],
+        "vcmd.param3": [
+            [
+                "cmd_mavlink_param3"
+            ],
+            0
+        ],
+        "vcmd.param2": [
+            [
+                "cmd_mavlink_param2"
+            ],
+            0
+        ],
+        "vcmd.confirmation": [
+            [
+                "cmd_mavlink_confirmation"
+            ],
+            0
+        ],
+        "vcmd.target_system": [
+            [
+                "cmd_mavlink_target_system"
+            ],
+            0
+        ]
+    },
+    "handle_message_command_int": {
+        "vcmd.target_system": [
+            [
+                "cmd_mavlink_target_system"
+            ],
+            0
+        ],
+        "vcmd.target_component": [
+            [
+                "cmd_mavlink_target_component"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.param3": [
+            [
+                "cmd_mavlink_param3"
+            ],
+            0
+        ],
+        "vcmd.source_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "vcmd.param5": [
+            [
+                "double",
+                "cmd_mavlink_x",
+                "1e7",
+                "nan"
+            ],
+            0
+        ],
+        "vcmd.param6": [
+            [
+                "double",
+                "cmd_mavlink_y",
+                "1e7",
+                "nan"
+            ],
+            0
+        ],
+        "vcmd.source_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "vcmd.param4": [
+            [
+                "cmd_mavlink_param4"
+            ],
+            0
+        ],
+        "vcmd.param1": [
+            [
+                "cmd_mavlink_param1"
+            ],
+            0
+        ],
+        "vcmd.param2": [
+            [
+                "cmd_mavlink_param2"
+            ],
+            0
+        ],
+        "vcmd.param7": [
+            [
+                "cmd_mavlink_z"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "cmd_mavlink_command"
+            ],
+            0
+        ]
+    },
+    "handle_message_command_both": {
+        "atune_start": [
+            [
+                "param_find",
+                "param_invalid"
+            ],
+            0
+        ],
+        "message_id": [
+            [
+                "roundf_vehicle_command_param1",
+                "uint16_t"
+            ],
+            0
+        ],
+        "target_ok": [
+            [
+                "evaluate_target_ok_cmd_mavlink_command",
+                "evaluate_target_ok_cmd_mavlink_target_component",
+                "evaluate_target_ok_cmd_mavlink_target_system"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "handle_request_message_command_mavlink_msg_id_flight_information",
+                "handle_request_message_command_mavlink_msg_id_autopilot_version",
+                "handle_request_message_command_mavlink_msg_id_home_position",
+                "vehicle_cmd_result_in_progress",
+                "vehicle_cmd_result_failed",
+                "vehicle_cmd_result_accepted",
+                "vehicle_cmd_result_unsupported",
+                "handle_request_message_command_mavlink_msg_id_protocol_version",
+                "vehicle_cmd_result_denied",
+                "handle_request_message_command_mavlink_msg_id_storage_information"
+            ],
+            0
+        ]
+    },
+    "handle_message_command_ack": {
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "ack_result"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "ack_target_component"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "ack_command"
+            ],
+            0
+        ],
+        "command_ack.result_param2": [
+            [
+                "ack_result_param2"
+            ],
+            0
+        ],
+        "target_ok": [
+            [
+                "evaluate_target_ok_ack_target_component",
+                "evaluate_target_ok_ack_target_system"
+            ],
+            0
+        ],
+        "command_ack.result_param1": [
+            [
+                "ack_progress"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "ack_target_system"
+            ],
+            0
+        ]
+    },
+    "handle_message_optical_flow_rad": {
+        "sensor_optical_flow.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "sensor_optical_flow.integration_timespan_us": [
+            [
+                "flow_integration_time_us"
+            ],
+            0
+        ],
+        "sensor_optical_flow.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "drv_flow_devtype_mavlink"
+            ],
+            0
+        ],
+        "sensor_optical_flow.max_ground_distance": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "device_id.devid_s.address": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "sensor_optical_flow.max_flow_rate": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_optical_flow.quality": [
+            [
+                "flow_quality"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus": [
+            [
+                "_mavlink_get_instance_id"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_mavlink"
+            ],
+            0
+        ],
+        "sensor_optical_flow.min_ground_distance": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_optical_flow.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sensor_optical_flow.distance_m": [
+            [
+                "flow_distance"
+            ],
+            0
+        ]
+    },
+    "handle_message_hil_optical_flow": {
+        "device_id.devid_s.devtype": [
+            [
+                "drv_flow_devtype_sim"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus": [
+            [
+                "_mavlink_get_instance_id"
+            ],
+            0
+        ],
+        "sensor_optical_flow.integration_timespan_us": [
+            [
+                "flow_integration_time_us"
+            ],
+            0
+        ],
+        "sensor_optical_flow.distance_m": [
+            [
+                "flow_distance"
+            ],
+            0
+        ],
+        "sensor_optical_flow.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sensor_optical_flow.max_flow_rate": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_optical_flow.max_ground_distance": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_optical_flow.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "sensor_optical_flow.quality": [
+            [
+                "flow_quality"
+            ],
+            0
+        ],
+        "sensor_optical_flow.min_ground_distance": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "device_id.devid_s.address": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_mavlink"
+            ],
+            0
+        ],
+        "sensor_optical_flow.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_mode": {
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.source_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "custom_mode.data": [
+            [
+                "new_mode_custom_mode"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_do_set_mode"
+            ],
+            0
+        ],
+        "vcmd.param3": [
+            [
+                "custom_mode_sub_mode",
+                "float"
+            ],
+            0
+        ],
+        "vcmd.param1": [
+            [
+                "new_mode_base_mode",
+                "float"
+            ],
+            0
+        ],
+        "vcmd.target_system": [
+            [
+                "new_mode_target_system"
+            ],
+            0
+        ],
+        "vcmd.target_component": [
+            [
+                "mav_comp_id_all"
+            ],
+            0
+        ],
+        "vcmd.param2": [
+            [
+                "float",
+                "custom_mode_main_mode"
+            ],
+            0
+        ],
+        "vcmd.source_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ]
+    },
+    "handle_message_distance_sensor": {
+        "device_id.devid_s.bus": [
+            [
+                "_mavlink_get_instance_id"
+            ],
+            0
+        ],
+        "ds.max_distance": [
+            [
+                "dist_sensor_max_distance",
+                "float",
+                "static_cast",
+                "1e"
+            ],
+            0
+        ],
+        "ds.v_fov": [
+            [
+                "dist_sensor_vertical_fov"
+            ],
+            0
+        ],
+        "device_id.devid_s.address": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_mavlink"
+            ],
+            0
+        ],
+        "ds.h_fov": [
+            [
+                "dist_sensor_horizontal_fov"
+            ],
+            0
+        ],
+        "ds.variance": [
+            [
+                "dist_sensor_covariance",
+                "1e"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "drv_dist_devtype_mavlink"
+            ],
+            0
+        ],
+        "ds.orientation": [
+            [
+                "dist_sensor_orientation"
+            ],
+            0
+        ],
+        "ds.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ds.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "ds.signal_quality": [
+            [
+                "dist_sensor_signal_quality"
+            ],
+            0
+        ],
+        "ds.min_distance": [
+            [
+                "float",
+                "static_cast",
+                "dist_sensor_min_distance",
+                "1e"
+            ],
+            0
+        ],
+        "ds.current_distance": [
+            [
+                "float",
+                "static_cast",
+                "dist_sensor_current_distance",
+                "1e"
+            ],
+            0
+        ],
+        "ds.type": [
+            [
+                "dist_sensor_type"
+            ],
+            0
+        ]
+    },
+    "handle_message_att_pos_mocap": {
+        "odom.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odom.pose_frame": [
+            [
+                "pose_frame_ned"
+            ],
+            0
+        ],
+        "odom.timestamp_sample": [
+            [
+                "_mavlink_timesync_sync_stamp_att_pos_mocap_time_usec"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_position_target_local_ned": {
+        "setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ocm.velocity": [
+            [
+                "vector3f_setpoint_velocity_is_all_nan"
+            ],
+            0
+        ],
+        "ocm.acceleration": [
+            [
+                "vector3f_setpoint_acceleration_is_all_nan"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "r",
+                "eulerf"
+            ],
+            0
+        ],
+        "ocm.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "setpoint.yawspeed": [
+            [
+                "float",
+                "target_local_ned_yaw_rate",
+                "position_target_typemask_yaw_rate_ignore",
+                "target_local_ned_type_mask",
+                "nan"
+            ],
+            1
+        ],
+        "setpoint.yaw": [
+            [
+                "float",
+                "target_local_ned_type_mask",
+                "nan",
+                "target_local_ned_yaw",
+                "position_target_typemask_yaw_ignore"
+            ],
+            1
+        ],
+        "ocm.position": [
+            [
+                "vector3f_setpoint_position_is_all_nan"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_position_target_global_int": {
+        "ocm.position": [
+            [
+                "vector3f_setpoint_position_is_all_nan"
+            ],
+            0
+        ],
+        "ocm.acceleration": [
+            [
+                "vector3f_setpoint_acceleration_is_all_nan"
+            ],
+            0
+        ],
+        "setpoint.yawspeed": [
+            [
+                "position_target_typemask_yaw_rate_ignore",
+                "nan",
+                "float",
+                "target_global_int_type_mask",
+                "target_global_int_yaw_rate"
+            ],
+            1
+        ],
+        "lon": [
+            [
+                "1e7",
+                "target_global_int_lon_int"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "home_position_alt",
+                "target_global_int_alt",
+                "vehicle_global_position_terrain_alt"
+            ],
+            0
+        ],
+        "ocm.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ocm.velocity": [
+            [
+                "vector3f_setpoint_velocity_is_all_nan"
+            ],
+            0
+        ],
+        "setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "setpoint.yaw": [
+            [
+                "target_global_int_yaw",
+                "position_target_typemask_yaw_ignore",
+                "nan",
+                "float",
+                "target_global_int_type_mask"
+            ],
+            1
+        ],
+        "lat": [
+            [
+                "1e7",
+                "target_global_int_lat_int"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_gps_global_origin": {
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vcmd.target_system": [
+            [
+                "_mavlink_get_system_id"
+            ],
+            0
+        ],
+        "vcmd.source_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "vcmd.param5": [
+            [
+                "double",
+                "_e",
+                "gps_global_origin_latitude"
+            ],
+            0
+        ],
+        "vcmd.param7": [
+            [
+                "_e",
+                "gps_global_origin_altitude",
+                "float"
+            ],
+            0
+        ],
+        "vcmd.param6": [
+            [
+                "double",
+                "_e",
+                "gps_global_origin_longitude"
+            ],
+            0
+        ],
+        "vcmd.source_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_set_gps_global_origin"
+            ],
+            0
+        ],
+        "vcmd.target_component": [
+            [
+                "mav_comp_id_all"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_velocity_limits": {
+        "velocity_limits.horizontal_velocity": [
+            [
+                "mavlink_set_velocity_limits_horizontal_speed_limit"
+            ],
+            0
+        ],
+        "velocity_limits.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "velocity_limits.yaw_rate": [
+            [
+                "mavlink_set_velocity_limits_yaw_rate_limit"
+            ],
+            0
+        ],
+        "velocity_limits.vertical_velocity": [
+            [
+                "mavlink_set_velocity_limits_vertical_speed_limit"
+            ],
+            0
+        ]
+    },
+    "handle_message_vision_position_estimate": {
+        "odom.timestamp_sample": [
+            [
+                "_mavlink_timesync_sync_stamp_vpe_usec"
+            ],
+            0
+        ],
+        "odom.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odom.pose_frame": [
+            [
+                "pose_frame_ned"
+            ],
+            0
+        ],
+        "odom.reset_counter": [
+            [
+                "vpe_reset_counter"
+            ],
+            0
+        ]
+    },
+    "handle_message_odometry": {
+        "odom.velocity_frame": [
+            [
+                "velocity_frame_ned",
+                "velocity_frame_frd",
+                "velocity_frame_body_frd"
+            ],
+            0
+        ],
+        "odom.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odom.timestamp_sample": [
+            [
+                "_mavlink_timesync_sync_stamp_odom_in_time_usec"
+            ],
+            0
+        ],
+        "odom.quality": [
+            [
+                "odom_in_quality"
+            ],
+            0
+        ],
+        "odom.pose_frame": [
+            [
+                "pose_frame_ned",
+                "pose_frame_frd"
+            ],
+            0
+        ],
+        "odom.reset_counter": [
+            [
+                "odom_in_reset_counter"
+            ],
+            0
+        ]
+    },
+    "handle_message_set_attitude_target": {
+        "ocm.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ocm.body_rate": [
+            [
+                "body_rates"
+            ],
+            0
+        ],
+        "ocm.attitude": [
+            [
+                "attitude_target_typemask_attitude_ignore",
+                "attitude_target_type_mask"
+            ],
+            2
+        ],
+        "setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "attitude_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "thrust_body": [
+            [
+                "attitude_target_typemask_thrust_body_set",
+                "attitude_target_type_mask"
+            ],
+            1
+        ]
+    },
+    "handle_message_radio_status": {
+        "status.fix": [
+            [
+                "rstatus_fixed"
+            ],
+            0
+        ],
+        "status.noise": [
+            [
+                "rstatus_noise"
+            ],
+            0
+        ],
+        "status.rxerrors": [
+            [
+                "rstatus_rxerrors"
+            ],
+            0
+        ],
+        "status.rssi": [
+            [
+                "rstatus_rssi"
+            ],
+            0
+        ],
+        "status.txbuf": [
+            [
+                "rstatus_txbuf"
+            ],
+            0
+        ],
+        "status.remote_noise": [
+            [
+                "rstatus_remnoise"
+            ],
+            0
+        ],
+        "status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "status.remote_rssi": [
+            [
+                "rstatus_remrssi"
+            ],
+            0
+        ]
+    },
+    "handle_message_ping": {
+        "uorb_ping_msg.ping_time": [
+            [
+                "ping_time_usec"
+            ],
+            0
+        ],
+        "uorb_ping_msg.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "ping.target_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "pstats.min_rtt": [
+            [
+                "pstats_min_rtt",
+                "fminf_pstats_min_rtt",
+                "ping_time_usec",
+                "hrt_absolute_time",
+                "fminf_rtt_ms"
+            ],
+            2
+        ],
+        "pstats.max_rtt": [
+            [
+                "fmaxf_rtt_ms",
+                "fmaxf_pstats_max_rtt"
+            ],
+            0
+        ],
+        "pstats.mean_rtt": [
+            [
+                "pstats_mean_rtt",
+                "ping_time_usec",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "uorb_ping_msg.component_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "pstats.last_rtt": [
+            [
+                "ping_time_usec",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "uorb_ping_msg.system_id": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "pstats.last_ping_seq": [
+            [
+                "ping_seq"
+            ],
+            0
+        ],
+        "uorb_ping_msg.rtt_ms": [
+            [
+                "ping_time_usec",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "pstats.dropped_packets": [
+            [
+                "pstats_last_ping_seq",
+                "ping_seq"
+            ],
+            0
+        ],
+        "pstats.last_ping_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "uorb_ping_msg.dropped_packets": [
+            [
+                "pstats_dropped_packets"
+            ],
+            0
+        ],
+        "pstats": [
+            [
+                "_mavlink_get_ping_statistics"
+            ],
+            0
+        ],
+        "uorb_ping_msg.ping_sequence": [
+            [
+                "ping_seq"
+            ],
+            0
+        ],
+        "ping.target_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ]
+    },
+    "handle_message_battery_status": {
+        "battery_status.temperature": [
+            [
+                "battery_mavlink_temperature",
+                "float"
+            ],
+            0
+        ],
+        "battery_status.current_a": [
+            [
+                "battery_mavlink_current_battery",
+                "float"
+            ],
+            0
+        ],
+        "battery_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "battery_status.discharged_mah": [
+            [
+                "battery_mavlink_current_consumed",
+                "float"
+            ],
+            0
+        ],
+        "battery_status.voltage_v": [
+            [
+                "battery_status_voltage_cell_v",
+                "cell_count"
+            ],
+            1
+        ],
+        "battery_status.remaining": [
+            [
+                "float",
+                "battery_mavlink_battery_remaining"
+            ],
+            0
+        ],
+        "battery_status.cell_count": [
+            [
+                "cell_count"
+            ],
+            0
+        ],
+        "battery_status.warning": [
+            [
+                "warning_emergency",
+                "warning_critical",
+                "warning_low"
+            ],
+            0
+        ]
+    },
+    "handle_message_serial_control": {
+        "shell": [
+            [
+                "_mavlink_get_shell"
+            ],
+            0
+        ]
+    },
+    "handle_message_logging_ack": {
+        "ulog_streaming": [
+            [
+                "_mavlink_get_ulog_streaming"
+            ],
+            0
+        ]
+    },
+    "schedule_tune": {
+        "_tune_publisher": [
+            [
+                "tune_publisher",
+                "new"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_message_obstacle_distance": {
+        "obstacle_distance.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "obstacle_distance.max_distance": [
+            [
+                "mavlink_obstacle_distance_max_distance"
+            ],
+            0
+        ],
+        "obstacle_distance.sensor_type": [
+            [
+                "mavlink_obstacle_distance_sensor_type"
+            ],
+            0
+        ],
+        "obstacle_distance.frame": [
+            [
+                "mavlink_obstacle_distance_frame"
+            ],
+            0
+        ],
+        "obstacle_distance.min_distance": [
+            [
+                "mavlink_obstacle_distance_min_distance"
+            ],
+            0
+        ],
+        "obstacle_distance.angle_offset": [
+            [
+                "mavlink_obstacle_distance_angle_offset"
+            ],
+            0
+        ],
+        "obstacle_distance.increment": [
+            [
+                "mavlink_obstacle_distance_increment",
+                "float",
+                "mavlink_obstacle_distance_increment_f"
+            ],
+            0
+        ]
+    },
+    "handle_message_tunnel": {
+        "tunnel.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tunnel.target_system": [
+            [
+                "mavlink_tunnel_target_system"
+            ],
+            0
+        ],
+        "tunnel.payload_type": [
+            [
+                "mavlink_tunnel_payload_type"
+            ],
+            0
+        ],
+        "tunnel.payload_length": [
+            [
+                "mavlink_tunnel_payload_length"
+            ],
+            0
+        ],
+        "tunnel.target_component": [
+            [
+                "mavlink_tunnel_target_component"
+            ],
+            0
+        ]
+    },
+    "handle_message_rc_channels_override": {
+        "rc.channel_count": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "rc.input_source": [
+            [
+                "rc_input_source_mavlink"
+            ],
+            0
+        ],
+        "ignore_zero": [
+            [
+                "rc_values",
+                "i"
+            ],
+            0
+        ],
+        "rc.rssi": [
+            [
+                "rssi_max"
+            ],
+            0
+        ],
+        "ignore_max": [
+            [
+                "uint16_max",
+                "rc_values",
+                "i"
+            ],
+            0
+        ],
+        "rc.rssi_dbm": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "rc.timestamp": [
+            [
+                "hrt_absolute_time",
+                "rc_timestamp_last_signal"
+            ],
+            0
+        ]
+    },
+    "handle_message_manual_control": {
+        "manual_control_setpoint.aux3": [
+            [
+                "mavlink_manual_control_aux3"
+            ],
+            0
+        ],
+        "manual_control_setpoint.data_source": [
+            [
+                "source_mavlink_0",
+                "_mavlink_get_instance_id"
+            ],
+            0
+        ],
+        "manual_control_setpoint.buttons": [
+            [
+                "mavlink_manual_control_buttons"
+            ],
+            0
+        ],
+        "manual_control_setpoint.pitch": [
+            [
+                "mavlink_manual_control_x",
+                "_f"
+            ],
+            0
+        ],
+        "manual_control_setpoint.aux5": [
+            [
+                "mavlink_manual_control_aux5"
+            ],
+            0
+        ],
+        "manual_control_setpoint.aux2": [
+            [
+                "mavlink_manual_control_aux2"
+            ],
+            0
+        ],
+        "manual_control_setpoint.roll": [
+            [
+                "mavlink_manual_control_y",
+                "_f"
+            ],
+            0
+        ],
+        "manual_control_setpoint.yaw": [
+            [
+                "_f",
+                "mavlink_manual_control_r"
+            ],
+            0
+        ],
+        "manual_control_setpoint.aux4": [
+            [
+                "mavlink_manual_control_aux4"
+            ],
+            0
+        ],
+        "manual_control_setpoint.aux6": [
+            [
+                "mavlink_manual_control_aux6"
+            ],
+            0
+        ],
+        "manual_control_setpoint.aux1": [
+            [
+                "mavlink_manual_control_aux1"
+            ],
+            0
+        ],
+        "manual_control_setpoint.timestamp": [
+            [
+                "hrt_absolute_time",
+                "manual_control_setpoint_timestamp_sample"
+            ],
+            0
+        ],
+        "manual_control_setpoint.throttle": [
+            [
+                "mavlink_manual_control_z",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "handle_message_heartbeat": {
+        ".parachute_system_healthy": [
+            [
+                "mav_state_standby",
+                "hb_system_status",
+                "mav_state_active"
+            ],
+            0
+        ],
+        "_heartbeat_type_parachute": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "camera_status.active_sys_id": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "camera_status.active_comp_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "camera_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_camera": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_uart_bridge": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_adsb": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_udp_bridge": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_gimbal": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_onboard_controller": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_pairing_manager": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_gcs": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_visual_inertial_odometry": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_type_antenna_tracker": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_osd": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "same_system": [
+            [
+                "msg_sysid",
+                "mavlink_system_sysid"
+            ],
+            0
+        ],
+        "_heartbeat_component_log": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_heartbeat_component_telemetry_radio": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        ".open_drone_id_system_healthy": [
+            [
+                "mav_state_standby",
+                "hb_system_status",
+                "mav_state_active"
+            ],
+            0
+        ],
+        "_heartbeat_type_open_drone_id": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "set_message_interval": {
+        "rate": [
+            [
+                "interval",
+                "_f"
+            ],
+            0
+        ],
+        "stream_name": [
+            [
+                "get_stream_name_msg_id"
+            ],
+            0
+        ]
+    },
+    "get_message_interval": {
+        "interval": [
+            [
+                "stream_get_interval"
+            ],
+            0
+        ]
+    },
+    "handle_message_hil_sensor": {
+        "hil_battery_status.time_remaining_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_baro.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_px4_mag": [
+            [
+                "px4magnetometer",
+                "new"
+            ],
+            0
+        ],
+        "hil_battery_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "sensor_baro.temperature": [
+            [
+                "hil_sensor_temperature"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "hil_sensor_temperature",
+                "nan"
+            ],
+            0
+        ],
+        "report.temperature": [
+            [
+                "hil_sensor_temperature"
+            ],
+            0
+        ],
+        "_px4_accel": [
+            [
+                "new",
+                "px4accelerometer"
+            ],
+            0
+        ],
+        "sensor_baro.pressure": [
+            [
+                "hil_sensor_abs_pressure"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sensor_baro.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_px4_gyro": [
+            [
+                "px4gyroscope",
+                "new"
+            ],
+            0
+        ],
+        "report.differential_pressure_pa": [
+            [
+                "hil_sensor_diff_pressure"
+            ],
+            0
+        ]
+    },
+    "handle_message_hil_gps": {
+        "device_id.devid_s.devtype": [
+            [
+                "drv_gps_devtype_sim"
+            ],
+            0
+        ],
+        "gps.vel_n_m_s": [
+            [
+                "float",
+                "hil_gps_vn"
+            ],
+            0
+        ],
+        "device_id.devid_s.address": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "gps.vel_m_s": [
+            [
+                "float",
+                "hil_gps_vel"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus": [
+            [
+                "_mavlink_get_instance_id"
+            ],
+            0
+        ],
+        "gps.epv": [
+            [
+                "float",
+                "1e",
+                "hil_gps_epv"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_mavlink"
+            ],
+            0
+        ],
+        "gps.eph": [
+            [
+                "float",
+                "hil_gps_eph",
+                "1e"
+            ],
+            0
+        ],
+        "gps.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gps.fix_type": [
+            [
+                "hil_gps_fix_type"
+            ],
+            0
+        ],
+        "gps.heading_offset": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "gps.altitude_ellipsoid_m": [
+            [
+                "hil_gps_alt",
+                "1e"
+            ],
+            0
+        ],
+        "gps.heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "gps.altitude_msl_m": [
+            [
+                "hil_gps_alt",
+                "1e"
+            ],
+            0
+        ],
+        "gps.satellites_used": [
+            [
+                "hil_gps_satellites_visible"
+            ],
+            0
+        ],
+        "gps.time_utc_usec": [
+            [
+                "hil_gps_time_usec"
+            ],
+            0
+        ],
+        "gps.longitude_deg": [
+            [
+                "hil_gps_lon",
+                "1e"
+            ],
+            0
+        ],
+        "gps.latitude_deg": [
+            [
+                "1e",
+                "hil_gps_lat"
+            ],
+            0
+        ],
+        "gps.vel_d_m_s": [
+            [
+                "float",
+                "hil_gps_vd"
+            ],
+            0
+        ],
+        "gps.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "gps.vel_e_m_s": [
+            [
+                "float",
+                "hil_gps_ve"
+            ],
+            0
+        ]
+    },
+    "handle_message_follow_target": {
+        "follow_target_topic.vz": [
+            [
+                "follow_target_msg_vel"
+            ],
+            0
+        ],
+        "follow_target_topic.vy": [
+            [
+                "follow_target_msg_vel"
+            ],
+            0
+        ],
+        "follow_target_topic.lat": [
+            [
+                "1e",
+                "follow_target_msg_lat"
+            ],
+            0
+        ],
+        "follow_target_topic.vx": [
+            [
+                "follow_target_msg_vel"
+            ],
+            0
+        ],
+        "follow_target_topic.alt": [
+            [
+                "follow_target_msg_alt"
+            ],
+            0
+        ],
+        "follow_target_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "follow_target_topic.lon": [
+            [
+                "1e",
+                "follow_target_msg_lon"
+            ],
+            0
+        ]
+    },
+    "handle_message_landing_target": {
+        "landing_target_pose.y_abs": [
+            [
+                "landing_target_y"
+            ],
+            0
+        ],
+        "landing_target_pose.timestamp": [
+            [
+                "_mavlink_timesync_sync_stamp_landing_target_time_usec"
+            ],
+            0
+        ],
+        "irlock_report.pos_y": [
+            [
+                "landing_target_angle_y"
+            ],
+            0
+        ],
+        "irlock_report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "landing_target_pose.x_abs": [
+            [
+                "landing_target_x"
+            ],
+            0
+        ],
+        "irlock_report.pos_x": [
+            [
+                "landing_target_angle_x"
+            ],
+            0
+        ],
+        "irlock_report.size_y": [
+            [
+                "landing_target_size_y"
+            ],
+            0
+        ],
+        "landing_target_pose.z_abs": [
+            [
+                "landing_target_z"
+            ],
+            0
+        ],
+        "irlock_report.size_x": [
+            [
+                "landing_target_size_x"
+            ],
+            0
+        ],
+        "irlock_report.signature": [
+            [
+                "landing_target_target_num"
+            ],
+            0
+        ]
+    },
+    "handle_message_cellular_status": {
+        "cellular_status.type": [
+            [
+                "status_type"
+            ],
+            0
+        ],
+        "cellular_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "cellular_status.mcc": [
+            [
+                "status_mcc"
+            ],
+            0
+        ],
+        "cellular_status.failure_reason": [
+            [
+                "status_failure_reason"
+            ],
+            0
+        ],
+        "cellular_status.quality": [
+            [
+                "status_quality"
+            ],
+            0
+        ],
+        "cellular_status.lac": [
+            [
+                "status_lac"
+            ],
+            0
+        ],
+        "cellular_status.status": [
+            [
+                "status_status"
+            ],
+            0
+        ],
+        "cellular_status.mnc": [
+            [
+                "status_mnc"
+            ],
+            0
+        ]
+    },
+    "handle_message_adsb_vehicle": {
+        "t.squawk": [
+            [
+                "adsb_squawk"
+            ],
+            0
+        ],
+        "t.ver_velocity": [
+            [
+                "adsb_ver_velocity"
+            ],
+            0
+        ],
+        "t.lon": [
+            [
+                "1e",
+                "adsb_lon"
+            ],
+            0
+        ],
+        "t.altitude": [
+            [
+                "adsb_altitude"
+            ],
+            0
+        ],
+        "t.icao_address": [
+            [
+                "adsb_icao_address"
+            ],
+            0
+        ],
+        "t.tslc": [
+            [
+                "adsb_tslc"
+            ],
+            0
+        ],
+        "t.hor_velocity": [
+            [
+                "adsb_hor_velocity"
+            ],
+            0
+        ],
+        "t.lat": [
+            [
+                "1e",
+                "adsb_lat"
+            ],
+            0
+        ],
+        "t.emitter_type": [
+            [
+                "adsb_emitter_type"
+            ],
+            0
+        ],
+        "t.altitude_type": [
+            [
+                "adsb_altitude_type"
+            ],
+            0
+        ],
+        "t.flags": [
+            [
+                "px4_adsb_flags_retranslate"
+            ],
+            0
+        ],
+        "t.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "t.heading": [
+            [
+                "m_pi_f",
+                "adsb_heading"
+            ],
+            0
+        ]
+    },
+    "handle_message_gps_rtcm_data": {
+        "gps_inject_data_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gps_inject_data_topic.flags": [
+            [
+                "gps_rtcm_data_msg_flags"
+            ],
+            0
+        ]
+    },
+    "handle_message_hil_state_quaternion": {
+        "hil_global_pos.eph": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "hil_local_pos.z": [
+            [
+                "_f",
+                "hil_state_alt",
+                "_f",
+                "hil_state_alt"
+            ],
+            1
+        ],
+        "hil_battery_status.time_remaining_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "hil_global_pos.alt": [
+            [
+                "hil_state_alt"
+            ],
+            0
+        ],
+        "hil_global_pos.lon": [
+            [
+                "hil_state_lon",
+                "1e7",
+                "double"
+            ],
+            0
+        ],
+        "hil_local_pos.x": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "hil_global_pos.lat": [
+            [
+                "hil_state_lat",
+                "1e7",
+                "double"
+            ],
+            0
+        ],
+        "hil_local_pos.y": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "hil_battery_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "hil_local_pos.ref_alt": [
+            [
+                "_f",
+                "hil_state_alt"
+            ],
+            1
+        ],
+        "hil_global_pos.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "hil_local_pos.ref_lon": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lon"
+            ],
+            0
+        ],
+        "hil_local_pos.vz": [
+            [
+                "hil_state_vz",
+                "_f"
+            ],
+            0
+        ],
+        "hil_local_pos.hagl_min": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "hil_attitude.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "hil_local_pos.ref_lat": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "hil_local_pos.vx": [
+            [
+                "hil_state_vx",
+                "_f"
+            ],
+            0
+        ],
+        "hil_local_pos.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "hil_attitude.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "airspeed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "hil_local_pos.ref_timestamp": [
+            [
+                "_global_local_proj_ref_get_projection_reference_timestamp"
+            ],
+            0
+        ],
+        "hil_local_pos.vy": [
+            [
+                "hil_state_vy",
+                "_f"
+            ],
+            0
+        ],
+        "airspeed.true_airspeed_m_s": [
+            [
+                "1e",
+                "hil_state_true_airspeed"
+            ],
+            0
+        ],
+        "hil_local_pos.hagl_max_z": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "airspeed.indicated_airspeed_m_s": [
+            [
+                "hil_state_ind_airspeed",
+                "1e"
+            ],
+            0
+        ],
+        "hil_local_pos.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "hil_local_pos.unaided_heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "hil_local_pos.vz_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "hil_local_pos.heading_good_for_control": [
+            [
+                "px4_isfinite_euler_psi"
+            ],
+            0
+        ],
+        "airspeed.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "lon": [
+            [
+                "hil_state_lon",
+                "1e"
+            ],
+            0
+        ],
+        "hil_local_pos.heading": [
+            [
+                "euler_psi"
+            ],
+            0
+        ],
+        "hil_local_pos.vxy_max": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "_px4_gyro": [
+            [
+                "px4gyroscope",
+                "new"
+            ],
+            0
+        ],
+        "hil_local_pos.hagl_max_xy": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "hil_state_lat",
+                "1e"
+            ],
+            0
+        ],
+        "_px4_accel": [
+            [
+                "px4accelerometer",
+                "new"
+            ],
+            0
+        ],
+        "hil_global_pos.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "hil_global_pos.epv": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "handle_message_named_value_float": {
+        "debug_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "debug_topic.value": [
+            [
+                "debug_msg_value"
+            ],
+            0
+        ]
+    },
+    "handle_message_named_value_int": {
+        "debug_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "debug_topic.value": [
+            [
+                "debug_msg_value"
+            ],
+            0
+        ]
+    },
+    "handle_message_debug": {
+        "debug_topic.ind": [
+            [
+                "debug_msg_ind"
+            ],
+            0
+        ],
+        "debug_topic.value": [
+            [
+                "debug_msg_value"
+            ],
+            0
+        ],
+        "debug_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_message_debug_vect": {
+        "debug_topic.y": [
+            [
+                "debug_msg_y"
+            ],
+            0
+        ],
+        "debug_topic.z": [
+            [
+                "debug_msg_z"
+            ],
+            0
+        ],
+        "debug_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "debug_topic.x": [
+            [
+                "debug_msg_x"
+            ],
+            0
+        ]
+    },
+    "handle_message_debug_float_array": {
+        "debug_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "debug_topic.id": [
+            [
+                "debug_msg_array_id"
+            ],
+            0
+        ]
+    },
+    "handle_message_onboard_computer_status": {
+        "onboard_computer_status_topic.ram_total": [
+            [
+                "status_msg_ram_total"
+            ],
+            0
+        ],
+        "onboard_computer_status_topic.ram_usage": [
+            [
+                "status_msg_ram_usage"
+            ],
+            0
+        ],
+        "onboard_computer_status_topic.uptime": [
+            [
+                "status_msg_uptime"
+            ],
+            0
+        ],
+        "onboard_computer_status_topic.temperature_board": [
+            [
+                "status_msg_temperature_board"
+            ],
+            0
+        ],
+        "onboard_computer_status_topic.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "onboard_computer_status_topic.type": [
+            [
+                "status_msg_type"
+            ],
+            0
+        ]
+    },
+    "handle_message_generator_status": {
+        "generator_status.power_generated": [
+            [
+                "status_msg_power_generated"
+            ],
+            0
+        ],
+        "generator_status.generator_speed": [
+            [
+                "status_msg_generator_speed"
+            ],
+            0
+        ],
+        "generator_status.status": [
+            [
+                "status_msg_status"
+            ],
+            0
+        ],
+        "generator_status.bat_current_setpoint": [
+            [
+                "status_msg_bat_current_setpoint"
+            ],
+            0
+        ],
+        "generator_status.load_current": [
+            [
+                "status_msg_load_current"
+            ],
+            0
+        ],
+        "generator_status.generator_temperature": [
+            [
+                "status_msg_generator_temperature"
+            ],
+            0
+        ],
+        "generator_status.time_until_maintenance": [
+            [
+                "status_msg_time_until_maintenance"
+            ],
+            0
+        ],
+        "generator_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "generator_status.rectifier_temperature": [
+            [
+                "status_msg_rectifier_temperature"
+            ],
+            0
+        ],
+        "generator_status.bus_voltage": [
+            [
+                "status_msg_bus_voltage"
+            ],
+            0
+        ],
+        "generator_status.battery_current": [
+            [
+                "status_msg_battery_current"
+            ],
+            0
+        ],
+        "generator_status.runtime": [
+            [
+                "status_msg_runtime"
+            ],
+            0
+        ]
+    },
+    "CheckHeartbeats": {
+        "tstatus.heartbeat_component_udp_bridge": [
+            [
+                "timeout",
+                "_heartbeat_component_udp_bridge",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_telemetry_radio": [
+            [
+                "_heartbeat_component_telemetry_radio",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_gimbal": [
+            [
+                "_heartbeat_type_gimbal",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_antenna_tracker": [
+            [
+                "timeout",
+                "_heartbeat_type_antenna_tracker",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_osd": [
+            [
+                "_heartbeat_component_osd",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_camera": [
+            [
+                "_heartbeat_type_camera",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "_last_heartbeat_check": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_open_drone_id": [
+            [
+                "timeout",
+                "_heartbeat_type_open_drone_id",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_onboard_controller": [
+            [
+                "timeout",
+                "_heartbeat_type_onboard_controller",
+                "t"
+            ],
+            0
+        ],
+        "TIMEOUT": [
+            [
+                "heartbeat_timeout_us"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_pairing_manager": [
+            [
+                "_heartbeat_component_pairing_manager",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus": [
+            [
+                "_mavlink_telemetry_status"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_uart_bridge": [
+            [
+                "_heartbeat_component_uart_bridge",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_log": [
+            [
+                "timeout",
+                "_heartbeat_component_log",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_adsb": [
+            [
+                "timeout",
+                "_heartbeat_type_adsb",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_parachute": [
+            [
+                "timeout",
+                "_heartbeat_type_parachute",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_type_gcs": [
+            [
+                "_heartbeat_type_gcs",
+                "timeout",
+                "t"
+            ],
+            0
+        ],
+        "tstatus.heartbeat_component_vio": [
+            [
+                "timeout",
+                "_heartbeat_component_visual_inertial_odometry",
+                "t"
+            ],
+            0
+        ]
+    },
+    "handle_message_gimbal_manager_set_manual_control": {
+        "set_manual_control.pitch_rate": [
+            [
+                "set_manual_control_msg_pitch_rate"
+            ],
+            0
+        ],
+        "set_manual_control.origin_sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "set_manual_control.gimbal_device_id": [
+            [
+                "set_manual_control_msg_gimbal_device_id"
+            ],
+            0
+        ],
+        "set_manual_control.target_system": [
+            [
+                "set_manual_control_msg_target_system"
+            ],
+            0
+        ],
+        "set_manual_control.yaw": [
+            [
+                "set_manual_control_msg_yaw"
+            ],
+            0
+        ],
+        "set_manual_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "set_manual_control.flags": [
+            [
+                "set_manual_control_msg_flags"
+            ],
+            0
+        ],
+        "set_manual_control.origin_compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "set_manual_control.pitch": [
+            [
+                "set_manual_control_msg_pitch"
+            ],
+            0
+        ],
+        "set_manual_control.yaw_rate": [
+            [
+                "set_manual_control_msg_yaw_rate"
+            ],
+            0
+        ],
+        "set_manual_control.target_component": [
+            [
+                "set_manual_control_msg_target_component"
+            ],
+            0
+        ]
+    },
+    "handle_message_gimbal_manager_set_attitude": {
+        "gimbal_attitude.target_component": [
+            [
+                "set_attitude_msg_target_component"
+            ],
+            0
+        ],
+        "gimbal_attitude.origin_sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "gimbal_attitude.gimbal_device_id": [
+            [
+                "set_attitude_msg_gimbal_device_id"
+            ],
+            0
+        ],
+        "gimbal_attitude.angular_velocity_z": [
+            [
+                "set_attitude_msg_angular_velocity_z"
+            ],
+            0
+        ],
+        "gimbal_attitude.target_system": [
+            [
+                "set_attitude_msg_target_system"
+            ],
+            0
+        ],
+        "gimbal_attitude.angular_velocity_y": [
+            [
+                "set_attitude_msg_angular_velocity_y"
+            ],
+            0
+        ],
+        "gimbal_attitude.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gimbal_attitude.flags": [
+            [
+                "set_attitude_msg_flags"
+            ],
+            0
+        ],
+        "gimbal_attitude.origin_compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "gimbal_attitude.angular_velocity_x": [
+            [
+                "set_attitude_msg_angular_velocity_x"
+            ],
+            0
+        ]
+    },
+    "handle_message_gimbal_device_information": {
+        "gimbal_information.hardware_version": [
+            [
+                "gimbal_device_info_msg_hardware_version"
+            ],
+            0
+        ],
+        "gimbal_information.pitch_min": [
+            [
+                "gimbal_device_info_msg_pitch_min"
+            ],
+            0
+        ],
+        "gimbal_information.gimbal_device_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "gimbal_information.custom_cap_flags": [
+            [
+                "gimbal_device_info_msg_custom_cap_flags"
+            ],
+            0
+        ],
+        "gimbal_information.yaw_min": [
+            [
+                "gimbal_device_info_msg_yaw_min"
+            ],
+            0
+        ],
+        "gimbal_information.firmware_version": [
+            [
+                "gimbal_device_info_msg_firmware_version"
+            ],
+            0
+        ],
+        "gimbal_information.pitch_max": [
+            [
+                "gimbal_device_info_msg_pitch_max"
+            ],
+            0
+        ],
+        "gimbal_information.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gimbal_information.cap_flags": [
+            [
+                "gimbal_device_info_msg_cap_flags"
+            ],
+            0
+        ],
+        "gimbal_information.yaw_max": [
+            [
+                "gimbal_device_info_msg_yaw_max"
+            ],
+            0
+        ],
+        "gimbal_information.uid": [
+            [
+                "gimbal_device_info_msg_uid"
+            ],
+            0
+        ]
+    },
+    "handle_message_gimbal_device_attitude_status": {
+        "gimbal_attitude_status.angular_velocity_x": [
+            [
+                "gimbal_device_attitude_status_msg_angular_velocity_x"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.target_system": [
+            [
+                "gimbal_device_attitude_status_msg_target_system"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.angular_velocity_z": [
+            [
+                "gimbal_device_attitude_status_msg_angular_velocity_z"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.device_flags": [
+            [
+                "gimbal_device_attitude_status_msg_flags"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.angular_velocity_y": [
+            [
+                "gimbal_device_attitude_status_msg_angular_velocity_y"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.gimbal_device_id": [
+            [
+                "gimbal_device_attitude_status_msg_gimbal_device_id"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.target_component": [
+            [
+                "gimbal_device_attitude_status_msg_target_component"
+            ],
+            0
+        ],
+        "gimbal_attitude_status.failure_flags": [
+            [
+                "gimbal_device_attitude_status_msg_failure_flags"
+            ],
+            0
+        ]
+    },
+    "handle_message_open_drone_id_operator_id": {
+        "odid_operator_id.operator_id_type": [
+            [
+                "odid_module_operator_id_type"
+            ],
+            0
+        ],
+        "odid_operator_id.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "handle_message_open_drone_id_self_id": {
+        "odid_self_id.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odid_self_id.description_type": [
+            [
+                "odid_module_description_type"
+            ],
+            0
+        ]
+    },
+    "handle_message_open_drone_id_system": {
+        "odid_system.area_floor": [
+            [
+                "odid_module_area_floor"
+            ],
+            0
+        ],
+        "odid_system.operator_latitude": [
+            [
+                "odid_module_operator_latitude"
+            ],
+            0
+        ],
+        "odid_system.operator_altitude_geo": [
+            [
+                "odid_module_operator_altitude_geo"
+            ],
+            0
+        ],
+        "odid_system.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odid_system.class_eu": [
+            [
+                "odid_module_class_eu"
+            ],
+            0
+        ],
+        "odid_system.area_count": [
+            [
+                "odid_module_area_count"
+            ],
+            0
+        ],
+        "odid_system.operator_location_type": [
+            [
+                "odid_module_operator_location_type"
+            ],
+            0
+        ],
+        "odid_system.area_ceiling": [
+            [
+                "odid_module_area_ceiling"
+            ],
+            0
+        ],
+        "odid_system.classification_type": [
+            [
+                "odid_module_classification_type"
+            ],
+            0
+        ],
+        "odid_system.category_eu": [
+            [
+                "odid_module_category_eu"
+            ],
+            0
+        ],
+        "odid_system.operator_longitude": [
+            [
+                "odid_module_operator_longitude"
+            ],
+            0
+        ],
+        "odid_system.area_radius": [
+            [
+                "odid_module_area_radius"
+            ],
+            0
+        ]
+    },
+    "run": {
+        ".fd": [
+            [
+                "_mavlink_get_uart_fd",
+                "_mavlink_get_socket_fd"
+            ],
+            0
+        ],
+        "_mavlink_status_last_buffer_overrun": [
+            [
+                "_status_buffer_overrun"
+            ],
+            0
+        ],
+        "_mavlink_status_last_packet_rx_drop_count": [
+            [
+                "_status_packet_rx_drop_count"
+            ],
+            0
+        ],
+        "tstatus": [
+            [
+                "_mavlink_telemetry_status"
+            ],
+            0
+        ],
+        "srcaddr_last.sin_port": [
+            [
+                "srcaddr_sin_port"
+            ],
+            0
+        ],
+        "srcaddr_last": [
+            [
+                "_mavlink_get_client_source_address"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "poll_timeout",
+                "poll_fds"
+            ],
+            0
+        ],
+        ".events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "tstatus.rx_message_lost_rate": [
+            [
+                "_total_lost_counter",
+                "float",
+                "static_cast",
+                "_total_received_counter"
+            ],
+            0
+        ],
+        "srcaddr_last.sin_addr.s_addr": [
+            [
+                "srcaddr_sin_addr_s_addr"
+            ],
+            0
+        ],
+        "nread": [
+            [
+                "read_sizeof",
+                "srcaddr",
+                "recvfrom__mavlink_get_socket_fd",
+                "sizeof_srcaddr",
+                "buf",
+                "read_fds",
+                "sizeof_buf",
+                "read__fd",
+                "struct",
+                "read_buf",
+                "sockaddr"
+            ],
+            1
+        ],
+        "_mavlink_status_last_parse_error": [
+            [
+                "_status_parse_error"
+            ],
+            0
+        ],
+        "tstatus.rx_message_count": [
+            [
+                "_total_received_counter"
+            ],
+            0
+        ],
+        "tstatus.rx_message_lost_count": [
+            [
+                "_total_lost_counter"
+            ],
+            0
+        ],
+        "stime": [
+            [
+                "_mavlink_get_start_time"
+            ],
+            0
+        ],
+        "last_send_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "update_rx_stats": {
+        ".system_id": [
+            [
+                "message_sysid"
+            ],
+            0
+        ],
+        "_component_states_count": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".last_sequence": [
+            [
+                "message_seq"
+            ],
+            0
+        ],
+        "_total_lost_counter": [
+            [
+                "i",
+                "_component_states",
+                "_last_sequence",
+                "message_seq"
+            ],
+            2
+        ],
+        ".component_id": [
+            [
+                "message_compid"
+            ],
+            0
+        ],
+        ".missed_messages": [
+            [
+                "i",
+                "_component_states",
+                "_last_sequence",
+                "message_seq"
+            ],
+            2
+        ]
+    },
+    "update_message_statistics": {
+        ".component_id": [
+            [
+                "message_compid"
+            ],
+            0
+        ],
+        ".last_time_received_ms": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        ".system_id": [
+            [
+                "message_sysid"
+            ],
+            0
+        ],
+        ".avg_rate_hz": [
+            [
+                "_f",
+                "_last_time_received_ms",
+                "_f",
+                "received_message_stats",
+                "new",
+                "max_msg_stat_slots",
+                "hrt_absolute_time",
+                "stat_slot",
+                "received_message_stats",
+                "new",
+                "max_msg_stat_slots",
+                "stat_slot",
+                "_avg_rate_hz",
+                "nan"
+            ],
+            4
+        ],
+        ".msg_id": [
+            [
+                "message_msgid"
+            ],
+            0
+        ],
+        "oldest_slot_time_ms": [
+            [
+                "stat_slot",
+                "received_message_stats",
+                "new",
+                "max_msg_stat_slots",
+                "_last_time_received_ms"
+            ],
+            1
+        ]
+    },
+    "print_detailed_rx_stats": {
+        "elapsed_s": [
+            [
+                "hrt_absolute_time",
+                "_f",
+                "msg_stat_last_time_received_ms"
+            ],
+            1
+        ],
+        "msg_stat": [
+            [
+                "i",
+                "_received_msg_stats"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "param.sched_priority": [
+            [
+                "sched_priority_max"
+            ],
+            0
+        ]
+    },
+    "start_trampoline": {
+        "self": [
+            [
+                "context",
+                "mavlink_receiver",
+                "reinterpret_cast"
+            ],
+            0
+        ]
+    }
+}

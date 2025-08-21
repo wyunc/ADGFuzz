@@ -1,0 +1,17 @@
+{
+    "handle_frame": {
+        "id": [
+            [
+                "frame_id",
+                "mask_std_id"
+            ],
+            0
+        ],
+        "dist_cm": [
+            [
+                "frame_data"
+            ],
+            0
+        ]
+    }
+}

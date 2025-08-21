@@ -1,0 +1,83 @@
+{
+    "update": {
+        "veh_diff": [
+            [
+                "beacon_origin_get_distance_ne_current_loc"
+            ],
+            0
+        ],
+        "beacon_origin.lat": [
+            [
+                "get_beacon_origin_lat",
+                "_0e7f"
+            ],
+            0
+        ],
+        "next_beacon": [
+            [
+                "num_beacons"
+            ],
+            0
+        ],
+        "beac_veh_offset": [
+            [
+                "beac_pos3d",
+                "veh_pos3d"
+            ],
+            0
+        ],
+        "beacon_origin.lng": [
+            [
+                "_0e7f",
+                "get_beacon_origin_lon"
+            ],
+            0
+        ],
+        "current_loc.lat": [
+            [
+                "_0e7f",
+                "sitl_state_latitude"
+            ],
+            0
+        ],
+        "beacon_origin.alt": [
+            [
+                "_0e2",
+                "get_beacon_origin_alt"
+            ],
+            0
+        ],
+        "current_loc.lng": [
+            [
+                "sitl_state_longitude",
+                "_0e7f"
+            ],
+            0
+        ],
+        "beac_diff": [
+            [
+                "beacon_origin_get_distance_ne_beacon_loc"
+            ],
+            0
+        ],
+        "beacon_loc": [
+            [
+                "beacon_origin"
+            ],
+            0
+        ],
+        "current_loc.alt": [
+            [
+                "_0e2",
+                "sitl_state_altitude"
+            ],
+            0
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

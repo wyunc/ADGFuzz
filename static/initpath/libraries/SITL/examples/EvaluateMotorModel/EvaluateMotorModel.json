@@ -1,0 +1,67 @@
+{
+    "setup": {
+        "power_factor": [
+            [
+                "frame_get_mass",
+                "gravity_mss",
+                "frame_get_ref_current",
+                "frame_get_ref_voltage"
+            ],
+            2
+        ],
+        "effective_prop_area": [
+            [
+                "sq_hover_velocity_out",
+                "frame_public_get_air_density_frame_get_ref_alt",
+                "frame_get_mass",
+                "gravity_mss",
+                "frame_get_num_motors"
+            ],
+            3
+        ],
+        "time": [
+            [
+                "time_step",
+                "1e6"
+            ],
+            0
+        ],
+        "PWM": [
+            [
+                "frame_get_pwm_min"
+            ],
+            0
+        ],
+        "velocity_max": [
+            [
+                "frame_get_mass",
+                "gravity_mss",
+                "frame_get_ref_current",
+                "frame_get_ref_voltage",
+                "sqrtf_frame_get_hover_thr_out"
+            ],
+            3
+        ],
+        "velocity": [
+            [
+                "strtof_argv",
+                "strtof_null"
+            ],
+            0
+        ],
+        "voltage": [
+            [
+                "strtof_argv",
+                "strtof_null"
+            ],
+            0
+        ],
+        "true_prop_area": [
+            [
+                "frame_get_disk_area",
+                "frame_get_num_motors"
+            ],
+            0
+        ]
+    }
+}

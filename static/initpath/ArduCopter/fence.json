@@ -1,0 +1,30 @@
+{
+    "fence_check": {
+        "fence_act": [
+            [
+                "fence_get_action"
+            ],
+            0
+        ],
+        "new_breaches": [
+            [
+                "fence_check_is_landing_or_landed"
+            ],
+            0
+        ],
+        "orig_breaches": [
+            [
+                "fence_get_breaches"
+            ],
+            0
+        ],
+        "is_landing_or_landed": [
+            [
+                "flightmode_is_landing",
+                "motors_armed",
+                "ap_land_complete"
+            ],
+            0
+        ]
+    }
+}

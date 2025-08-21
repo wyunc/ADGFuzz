@@ -1,0 +1,114 @@
+{
+    "pre_arm_checks": {
+        "passed": [
+            [
+                "run_pre_arm_checks_display_failure"
+            ],
+            0
+        ]
+    },
+    "barometer_checks": {
+        "using_baro_ref": [
+            [
+                "filt_status_flags_pred_horiz_pos_rel",
+                "filt_status_flags_pred_horiz_pos_abs"
+            ],
+            0
+        ],
+        "filt_status": [
+            [
+                "copter_inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "ins_checks": {
+        "ret": [
+            [
+                "ins_checks_display_failure"
+            ],
+            0
+        ]
+    },
+    "gps_checks": {
+        "mode_requires_gps": [
+            [
+                "ac_fence_type_circle",
+                "copter_fence_get_enabled_fences",
+                "ac_fence_type_polygon",
+                "copter_flightmode_requires_gps",
+                "supersimple",
+                "copter_simple_mode"
+            ],
+            1
+        ]
+    },
+    "pre_arm_ekf_attitude_check": {
+        "filt_status": [
+            [
+                "copter_inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "mandatory_gps_checks": {
+        "mode_requires_gps": [
+            [
+                "copter_flightmode_requires_gps"
+            ],
+            0
+        ],
+        "fence_requires_gps": [
+            [
+                "ac_fence_type_polygon",
+                "copter_fence_get_enabled_fences",
+                "ac_fence_type_circle"
+            ],
+            0
+        ]
+    },
+    "arm_checks": {
+        "_compass": [
+            [
+                "compass"
+            ],
+            0
+        ]
+    },
+    "mandatory_checks": {
+        "flags.pre_arm_gps_check": [
+            [
+                "mandatory_gps_checks_display_failure"
+            ],
+            1
+        ]
+    },
+    "arm": {
+        "copter.arming_altitude_m": [
+            [
+                "copter_inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ],
+        "copter.initial_armed_bearing": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "copter.arm_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "disarm": {
+        "copter.flightmode": [
+            [
+                "copter_mode_autotune"
+            ],
+            0
+        ]
+    }
+}

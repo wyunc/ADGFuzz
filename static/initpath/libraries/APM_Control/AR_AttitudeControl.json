@@ -1,0 +1,333 @@
+{
+    "get_steering_out_lat_accel": {
+        "desired_rate": [
+            [
+                "get_turn_rate_from_lat_accel_desired_accel",
+                "get_turn_rate_from_lat_accel_speed"
+            ],
+            0
+        ],
+        "_desired_lat_accel": [
+            [
+                "desired_accel"
+            ],
+            0
+        ],
+        "_steer_lat_accel_last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_steering_out_heading": {
+        "desired_rate": [
+            [
+                "get_turn_rate_from_heading_rate_max_rads",
+                "get_turn_rate_from_heading_heading_rad"
+            ],
+            0
+        ]
+    },
+    "get_turn_rate_from_heading": {
+        "desired_rate": [
+            [
+                "_steer_angle_p_get_p_yaw_error",
+                "safe_sqrt_yaw_error",
+                "safe_sqrt_fabsf",
+                "radians__steer_accel_max",
+                "rate_max_rads"
+            ],
+            1
+        ],
+        "yaw_error": [
+            [
+                "wrap_pi_ahrs_get_yaw",
+                "wrap_pi_heading_rad"
+            ],
+            0
+        ]
+    },
+    "get_steering_out_rate": {
+        "_steering_limit_right": [
+            [
+                "motor_limit_right"
+            ],
+            0
+        ],
+        "_steer_turn_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_steering_limit_left": [
+            [
+                "motor_limit_left"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "motor_limit_right",
+                "dt",
+                "_steer_rate_pid_get_ff",
+                "_steer_rate_pid_update_all_ahrs_get_yaw_rate_earth",
+                "_steer_rate_pid_update_all__desired_turn_rate",
+                "motor_limit_left"
+            ],
+            0
+        ],
+        "_desired_turn_rate": [
+            [
+                "ahrs_get_yaw_rate_earth",
+                "get_turn_rate_from_lat_accel_get_turn_lat_accel_max",
+                "radians",
+                "get_turn_rate_from_lat_accel_fabsf",
+                "get_turn_rate_from_lat_accel_speed",
+                "dt",
+                "radians__steer_accel_max",
+                "radians__steer_rate_max"
+            ],
+            4
+        ]
+    },
+    "get_lat_accel": {
+        "lat_accel": [
+            [
+                "speed",
+                "ahrs_get_yaw_rate_earth"
+            ],
+            0
+        ]
+    },
+    "get_turn_rate_from_lat_accel": {
+        "speed": [
+            [
+                "ar_attcontrol_steer_speed_min"
+            ],
+            0
+        ]
+    },
+    "get_throttle_out_speed": {
+        "_speed_last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_throttle_speed_pid_info.FF": [
+            [
+                "cruise_speed",
+                "get_desired_speed_accel_limited_desired_speed",
+                "speed",
+                "get_desired_speed_accel_limited_dt",
+                "cruise_throttle"
+            ],
+            2
+        ],
+        "throttle_out": [
+            [
+                "_throttle_speed_pid_get_ff",
+                "_throttle_speed_pid_update_all_dt",
+                "_throttle_speed_pid_update_all_motor_limit_high",
+                "cruise_speed",
+                "get_desired_speed_accel_limited_desired_speed",
+                "speed",
+                "get_desired_speed_accel_limited_dt",
+                "cruise_throttle",
+                "_throttle_speed_pid_update_all__throttle_limit_low",
+                "_throttle_speed_pid_update_all__throttle_limit_high",
+                "_throttle_speed_pid_update_all_motor_limit_low",
+                "_throttle_speed_pid_update_all_speed",
+                "_throttle_speed_pid_update_all__desired_speed"
+            ],
+            2
+        ],
+        "_throttle_speed_pid_info": [
+            [
+                "_throttle_speed_pid_get_pid_info"
+            ],
+            0
+        ]
+    },
+    "get_throttle_out_stop": {
+        "desired_speed_limited": [
+            [
+                "get_desired_speed_accel_limited_dt"
+            ],
+            0
+        ],
+        "_speed_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_stop_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "stopped": [
+            [
+                "millis"
+            ],
+            2
+        ]
+    },
+    "get_throttle_out_from_pitch": {
+        "_pitch_limit_low": [
+            [
+                "dt",
+                "pitch_max",
+                "_pitch_limit_tc",
+                "dt",
+                "pitch_max",
+                "_pitch_limit_tc",
+                "ar_attcontrol_pitch_relax_ratio",
+                "pitch_max"
+            ],
+            2
+        ],
+        "_balance_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "output": [
+            [
+                "_pitch_to_throttle_pid_update_all_pitch_rad",
+                "_pitch_to_throttle_pid_update_all_dt",
+                "_pitch_to_throttle_ff",
+                "_pitch_to_throttle_pid_update_all_motor_limit",
+                "sinf_pitch_rad",
+                "_pitch_to_throttle_pid_update_all_desired_pitch",
+                "_pitch_to_throttle_pid_get_ff"
+            ],
+            0
+        ],
+        "_pitch_limit_high": [
+            [
+                "dt",
+                "pitch_max",
+                "_pitch_limit_tc",
+                "dt",
+                "pitch_max",
+                "_pitch_limit_tc",
+                "ar_attcontrol_pitch_relax_ratio",
+                "pitch_max"
+            ],
+            2
+        ],
+        "pitch_limit_active": [
+            [
+                "_pitch_limit_throttle_thresh",
+                "_pitch_limit_tc"
+            ],
+            0
+        ],
+        "_pitch_limited": [
+            [
+                "desired_pitch"
+            ],
+            0
+        ],
+        "pitch_rad": [
+            [
+                "ahrs_get_pitch"
+            ],
+            0
+        ]
+    },
+    "get_sail_out_from_heel": {
+        "ff": [
+            [
+                "_sailboat_heel_pid_get_ff"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "_sailboat_heel_pid_get_p"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "_sailboat_heel_pid_get_i"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "_sailboat_heel_pid_get_d"
+            ],
+            0
+        ],
+        "_heel_controller_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_srate": {
+        "steering_srate": [
+            [
+                "get_steering_rate_pid_get_pid_info_slew_rate"
+            ],
+            0
+        ],
+        "speed_srate": [
+            [
+                "_throttle_speed_pid_info_slew_rate"
+            ],
+            0
+        ]
+    },
+    "get_forward_speed": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "gps_ground_speed",
+                "_ahrs_cos_yaw",
+                "velocity_x",
+                "_ahrs_sin_yaw",
+                "velocity_y"
+            ],
+            0
+        ]
+    },
+    "get_desired_speed_accel_limited": {
+        "speed_change_max": [
+            [
+                "dt",
+                "_throttle_accel_max",
+                "_throttle_decel_max"
+            ],
+            0
+        ],
+        "speed_prev": [
+            [
+                "_desired_speed"
+            ],
+            0
+        ]
+    },
+    "get_stopping_distance": {
+        "decel_max": [
+            [
+                "get_decel_max"
+            ],
+            0
+        ]
+    }
+}

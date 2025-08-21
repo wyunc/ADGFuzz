@@ -1,0 +1,63 @@
+{
+    "update_home_pos": {
+        "home_state.home_distance_m": [
+            [
+                "osd_get_stats_info_max_dist_m",
+                "osd_get_stats_info_last_distance_m"
+            ],
+            0
+        ],
+        "home_state.rel_altitude_cm": [
+            [
+                "osd_get_stats_info_max_alt_m"
+            ],
+            0
+        ]
+    },
+    "update_battery_state": {
+        "_battery_state.batt_voltage_v": [
+            [
+                "osd_get_stats_info_min_voltage_v"
+            ],
+            0
+        ],
+        "_battery_state.batt_current_a": [
+            [
+                "osd_get_stats_info_max_current_a"
+            ],
+            0
+        ]
+    },
+    "update_gps_state": {
+        "gps_state.speed_cms": [
+            [
+                "osd_get_stats_info_max_speed_mps"
+            ],
+            0
+        ]
+    },
+    "update_airspeed": {
+        "airspeed_state.airspeed_estimate_ms": [
+            [
+                "osd_get_stats_info_max_airspeed_mps"
+            ],
+            0
+        ]
+    },
+    "update_flight_mode_str": {
+        "t": [
+            [
+                "stats_get_flight_time_s"
+            ],
+            0
+        ]
+    },
+    "get_rssi": {
+        "rssi": [
+            [
+                "osd_get_stats_info_min_rssi"
+            ],
+            0
+        ]
+    }
+}

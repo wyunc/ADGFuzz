@@ -1,0 +1,52 @@
+{
+    "read": {
+        "_state.voltage": [
+            [
+                "_0e",
+                "_voltage_filter_apply_float",
+                "_voltage_filter_apply_dt_us",
+                "_voltage_filter_apply_voltage"
+            ],
+            1
+        ],
+        "_state.consumed_mah": [
+            [
+                "_params__pack_capacity",
+                "voltage",
+                "_fuel_level_filter_frequency",
+                "_0e",
+                "_voltage_filter_apply_float",
+                "_voltage_filter_apply_dt_us",
+                "_voltage_filter_apply_voltage",
+                "_fuel_level_voltage_mult",
+                "_fuel_level_empty_voltage"
+            ],
+            4
+        ],
+        "raw_voltage": [
+            [
+                "_analog_source_voltage_average"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "dt_us": [
+            [
+                "_state_last_time_micros",
+                "micros"
+            ],
+            1
+        ]
+    }
+}

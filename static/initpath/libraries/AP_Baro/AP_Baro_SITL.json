@@ -1,0 +1,156 @@
+{
+    "temperature_adjustment": {
+        "baro_factor": [
+            [
+                "sitl_temp_baro_factor"
+            ],
+            0
+        ],
+        "T0": [
+            [
+                "sitl_temp_start"
+            ],
+            0
+        ],
+        "tconst": [
+            [
+                "sitl_temp_tconst"
+            ],
+            0
+        ],
+        "T_sensor": [
+            [
+                "t",
+                "sitl_temp_board_offset"
+            ],
+            0
+        ],
+        "T": [
+            [
+                "t0",
+                "expf_tsec",
+                "expf_tconst",
+                "t_sensor"
+            ],
+            0
+        ],
+        "tsec": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "powf_tzero",
+                "powf_t",
+                "powf_baro_factor"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "_recent_temp": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "best_time_delta": [
+            [
+                "time_delta"
+            ],
+            0
+        ],
+        "delayed_time": [
+            [
+                "_delay",
+                "millis",
+                "_sitl_baro",
+                "_instance"
+            ],
+            1
+        ],
+        ".time": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "_last_sample_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_drift_delta_t_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "T": [
+            [
+                "kelvin_to_c_theta",
+                "kelvin_to_c_ssl_air_temperature",
+                "kelvin_to_c_t_k"
+            ],
+            0
+        ],
+        "_recent_press": [
+            [
+                "delta",
+                "wind_pressure_correction__instance",
+                "ssl_air_pressure"
+            ],
+            1
+        ],
+        "sim_alt": [
+            [
+                "_sitl_baro",
+                "_instance",
+                "_buffer",
+                "_noise",
+                "_sitl_state_altitude",
+                "_data",
+                "rand_float",
+                "_drift",
+                "_sitl_baro",
+                "_instance",
+                "millis",
+                "_glitch",
+                "i"
+            ],
+            4
+        ]
+    },
+    "wind_pressure_correction": {
+        "bp": [
+            [
+                "sitl_baro",
+                "instance"
+            ],
+            0
+        ],
+        "airspeed_vec_bf": [
+            [
+                "sitl_state_velocity_air_bf"
+            ],
+            0
+        ],
+        "error": [
+            [
+                "bp_wcof_yn",
+                "sq_airspeed_vec_bf_y",
+                "bp_wcof_xn",
+                "bp_wcof_zn",
+                "bp_wcof_xp",
+                "bp_wcof_yp",
+                "sq_airspeed_vec_bf_z",
+                "sq_airspeed_vec_bf_x",
+                "bp_wcof_zp"
+            ],
+            3
+        ]
+    }
+}

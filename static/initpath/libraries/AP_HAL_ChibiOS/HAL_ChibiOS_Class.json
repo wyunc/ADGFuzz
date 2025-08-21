@@ -1,0 +1,38 @@
+{
+    "hal_chibios_set_priority": {
+        "hdr.pqueue.prio": [
+            [
+                "priority"
+            ],
+            0
+        ],
+        "realprio": [
+            [
+                "priority"
+            ],
+            0
+        ]
+    },
+    "main_loop": {
+        "utilInstance.last_persistent_data": [
+            [
+                "util_instance_persistent_data"
+            ],
+            0
+        ],
+        "daemon_task": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "g_callbacks": [
+            [
+                "callbacks"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,239 @@
+{
+    "HardFault_Handler": {
+        "forced": [
+            [
+                "scb_hfsr",
+                "scb_hfsr_forced_msk"
+            ],
+            0
+        ],
+        "isFaultAddressValid": [
+            [
+                "scb_cfsr_busfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isFaultPrecise": [
+            [
+                "scb_cfsr_busfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "faultAddress": [
+            [
+                "scb_bfar"
+            ],
+            0
+        ],
+        "isFaultOnStacking": [
+            [
+                "scb_cfsr_busfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isFaultOnUnstacking": [
+            [
+                "scb_cfsr_busfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isFaultImprecise": [
+            [
+                "scb_cfsr_busfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "faultType": [
+            [
+                "fault_type",
+                "__get_ipsr"
+            ],
+            0
+        ],
+        "cfsr": [
+            [
+                "scb_cfsr"
+            ],
+            0
+        ]
+    },
+    "UsageFault_Handler": {
+        "faultAddress": [
+            [
+                "scb_bfar"
+            ],
+            0
+        ],
+        "isUndefinedInstructionFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ],
+        "isNoCoprocessorFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ],
+        "faultType": [
+            [
+                "fault_type",
+                "__get_ipsr"
+            ],
+            0
+        ],
+        "isInvalidPCFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ],
+        "isUnalignedAccessFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ],
+        "isEPSRUsageFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ],
+        "isDivideByZeroFault": [
+            [
+                "scb_cfsr",
+                "scb_cfsr_usgfaultsr_pos"
+            ],
+            0
+        ]
+    },
+    "MemManage_Handler": {
+        "isInstructionAccessViolation": [
+            [
+                "scb_cfsr_memfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isDataAccessViolation": [
+            [
+                "scb_cfsr_memfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isExceptionStackingFault": [
+            [
+                "scb_cfsr_memfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "isExceptionUnstackingFault": [
+            [
+                "scb_cfsr_memfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "faultAddress": [
+            [
+                "scb_mmfar"
+            ],
+            0
+        ],
+        "isFaultAddressValid": [
+            [
+                "scb_cfsr_memfaultsr_pos",
+                "scb_cfsr"
+            ],
+            0
+        ],
+        "faultType": [
+            [
+                "fault_type",
+                "__get_ipsr"
+            ],
+            0
+        ]
+    },
+    "save_fault_watchdog": {
+        "pd.fault_lr": [
+            [
+                "lr"
+            ],
+            0
+        ],
+        "pd": [
+            [
+                "hal_util_persistent_data"
+            ],
+            0
+        ],
+        "pd.fault_type": [
+            [
+                "fault_type"
+            ],
+            0
+        ],
+        "using_watchdog": [
+            [
+                "watchdog_enabled"
+            ],
+            0
+        ],
+        "pd.fault_addr": [
+            [
+                "fault_addr"
+            ],
+            0
+        ],
+        "pd.fault_thd_prio": [
+            [
+                "tp_hdr_pqueue_prio"
+            ],
+            0
+        ],
+        "tp": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "pd.fault_line": [
+            [
+                "line"
+            ],
+            0
+        ],
+        "pd.fault_icsr": [
+            [
+                "scb_icsr"
+            ],
+            0
+        ]
+    },
+    "__entry_hook": {
+        "app_base": [
+            [
+                "uint32_t",
+                "0x1ff09800",
+                "const",
+                "0x1fff0000"
+            ],
+            0
+        ]
+    }
+}

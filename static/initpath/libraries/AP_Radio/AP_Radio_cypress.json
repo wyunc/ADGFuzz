@@ -1,0 +1,629 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_spi_get_device_cyrf_spi_device"
+            ],
+            0
+        ]
+    },
+    "check_fw_ack": {
+        "ack_to": [
+            [
+                "fwupload_acked",
+                "fwupload_offset"
+            ],
+            0
+        ]
+    },
+    "force_initial_state": {
+        "start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_channel": {
+        "channel": [
+            [
+                "dsm_forced_channel"
+            ],
+            0
+        ]
+    },
+    "radio_init": {
+        "chan": [
+            [
+                "read_register_cyrf_channel"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_recv"
+            ],
+            0
+        ]
+    },
+    "dump_registers": {
+        "v": [
+            [
+                "read_register_i"
+            ],
+            0
+        ]
+    },
+    "map_stick_mode": {
+        "tmp": [
+            [
+                "channels"
+            ],
+            0
+        ]
+    },
+    "parse_dsm_channels": {
+        "dsm.tx_firmware_month": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ],
+        "dsm.last_parse_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "dsm.tx_bl_version": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ],
+        "dsm.tx_firmware_year": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ],
+        "key": [
+            [
+                "0x7",
+                "data"
+            ],
+            1
+        ],
+        "fwupload.acked": [
+            [
+                "fwupload_len"
+            ],
+            0
+        ],
+        "dsm.tx_rssi": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ],
+        "chan": [
+            [
+                "data"
+            ],
+            1
+        ],
+        "dsm.tx_pps": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ],
+        "dsm.num_channels": [
+            [
+                "num_values"
+            ],
+            0
+        ],
+        "dsm.tx_firmware_day": [
+            [
+                "0x_ff",
+                "data"
+            ],
+            2
+        ]
+    },
+    "process_bind": {
+        "ok": [
+            [
+                "len",
+                "pkt"
+            ],
+            0
+        ],
+        "dsm.protocol": [
+            [
+                "enum",
+                "dsm_protocol",
+                "pkt"
+            ],
+            1
+        ],
+        "dsm.last_recv_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_recv"
+            ],
+            0
+        ],
+        "bind_sum": [
+            [
+                "0x10",
+                "i",
+                "pkt"
+            ],
+            0
+        ],
+        "num_chan": [
+            [
+                "pkt"
+            ],
+            0
+        ],
+        "rssi": [
+            [
+                "0x1f",
+                "read_register_cyrf_rssi"
+            ],
+            0
+        ]
+    },
+    "dsm2_start_sync": {
+        "factory_test": [
+            [
+                "get_factory_test"
+            ],
+            0
+        ],
+        "dsm.sync": [
+            [
+                "dsm2_ok",
+                "dsm2_sync_a"
+            ],
+            0
+        ]
+    },
+    "process_packet": {
+        "dsm.last_recv_chan": [
+            [
+                "dsm_current_channel"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_send_telem"
+            ],
+            0
+        ],
+        "dsm.rssi": [
+            [
+                "read_register_cyrf_rssi",
+                "0x1f",
+                "dsm_rssi"
+            ],
+            1
+        ],
+        "dsm.last_recv_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "dsm.pkt_time1": [
+            [
+                "dsm_last_recv_us",
+                "micros"
+            ],
+            2
+        ],
+        "dsm.pkt_time2": [
+            [
+                "dsm_last_recv_us",
+                "micros"
+            ],
+            2
+        ],
+        "ok": [
+            [
+                "pkt",
+                "dsm_mfg_id",
+                "0x_ff",
+                "parse_dsm_channels_pkt"
+            ],
+            1
+        ],
+        "dsm.sync": [
+            [
+                "dsm2_sync_b",
+                "dsm2_ok"
+            ],
+            0
+        ]
+    },
+    "start_receive": {
+        "dsm.receive_start_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "irq_handler_recv": {
+        "state": [
+            [
+                "state_recv"
+            ],
+            0
+        ],
+        "reason": [
+            [
+                "read_register_cyrf_rx_status"
+            ],
+            0
+        ],
+        "rlen": [
+            [
+                "read_register_cyrf_rx_count"
+            ],
+            0
+        ],
+        "dsm.crc_seed": [
+            [
+                "dsm_crc_seed"
+            ],
+            0
+        ]
+    },
+    "irq_handler_send": {
+        "state": [
+            [
+                "state_recv"
+            ],
+            0
+        ]
+    },
+    "irq_handler": {
+        "tx_status": [
+            [
+                "read_status_debounced_cyrf_tx_irq_status"
+            ],
+            0
+        ],
+        "rx_status": [
+            [
+                "read_status_debounced_cyrf_rx_irq_status"
+            ],
+            0
+        ]
+    },
+    "irq_timeout": {
+        "state": [
+            [
+                "state_send_fcc",
+                "state_recv"
+            ],
+            0
+        ]
+    },
+    "irq_handler_thd": {
+        "_irq_handler_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "evt": [
+            [
+                "ch_evt_wait_any_all_events"
+            ],
+            0
+        ]
+    },
+    "dsm_set_channel": {
+        "dsm.last_discrc": [
+            [
+                "get_disable_crc"
+            ],
+            0
+        ],
+        "dsm.last_transmit_power": [
+            [
+                "get_transmit_power"
+            ],
+            0
+        ],
+        "pn_row": [
+            [
+                "channel",
+                "is_dsm2"
+            ],
+            0
+        ]
+    },
+    "dsm_generate_channels_dsmx": {
+        "count_3_27": [
+            [
+                "count_52_76",
+                "count_28_51"
+            ],
+            0
+        ],
+        "next_ch": [
+            [
+                "0x49",
+                "0x0019660d",
+                "0x3c6ef35f",
+                "id"
+            ],
+            1
+        ]
+    },
+    "dsm_setup_transfer_dsmx": {
+        "dsm.sop_col": [
+            [
+                "0x07",
+                "dsm_mfg_id"
+            ],
+            0
+        ],
+        "dsm.crc_seed": [
+            [
+                "dsm_mfg_id"
+            ],
+            0
+        ],
+        "dsm.data_col": [
+            [
+                "dsm_sop_col"
+            ],
+            0
+        ]
+    },
+    "dsm_choose_channel": {
+        "state": [
+            [
+                "state_autobind"
+            ],
+            0
+        ],
+        "dsm.last_autobind_send": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "chan_count": [
+            [
+                "is_dsm2"
+            ],
+            0
+        ],
+        "seed": [
+            [
+                "dsm_crc_seed"
+            ],
+            0
+        ],
+        "dsm.current_rf_channel": [
+            [
+                "dsm_current_channel",
+                "dsm_current_rf_channel",
+                "dsm_channels",
+                "dsm_max_channel"
+            ],
+            0
+        ],
+        "dsm.last_chan_change_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "dsm.crc_seed": [
+            [
+                "dsm_crc_seed"
+            ],
+            0
+        ],
+        "dsm.sync": [
+            [
+                "dsm_crc_seed",
+                "dsm2_sync_b"
+            ],
+            0
+        ],
+        "dsm.current_channel": [
+            [
+                "micros",
+                "dsm_last_recv_us",
+                "dsm_pkt_time2",
+                "dsm_pkt_time1",
+                "dsm_last_recv_chan"
+            ],
+            4
+        ]
+    },
+    "start_recv_bind": {
+        "state": [
+            [
+                "state_bind"
+            ],
+            0
+        ]
+    },
+    "save_bind_info": {
+        "info.magic": [
+            [
+                "bind_magic"
+            ],
+            0
+        ],
+        "info.protocol": [
+            [
+                "dsm_protocol"
+            ],
+            0
+        ]
+    },
+    "load_bind_info": {
+        "factory_test": [
+            [
+                "get_factory_test"
+            ],
+            0
+        ],
+        "dsm.protocol": [
+            [
+                "info_protocol",
+                "dsm_dsm2_2"
+            ],
+            0
+        ]
+    },
+    "is_DSM2": {
+        "dsm.protocol": [
+            [
+                "dsm_dsm2_1",
+                "dsm_protocol",
+                "dsm_dsm2_2"
+            ],
+            0
+        ]
+    },
+    "send_telem_packet": {
+        "fwupload.len": [
+            [
+                "pkt_payload_fw_len"
+            ],
+            0
+        ],
+        "pkt.payload.fw.len": [
+            [
+                "fwupload_acked",
+                "fwupload_length"
+            ],
+            1
+        ],
+        "t_status.tx_max": [
+            [
+                "get_tx_max_power"
+            ],
+            0
+        ],
+        "pkt.payload.status": [
+            [
+                "t_status"
+            ],
+            0
+        ],
+        "pkt.payload.fw.offset": [
+            [
+                "fwupload_acked",
+                "fwupload_offset"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "state_send_telem_wait"
+            ],
+            0
+        ],
+        "pkt.payload.fw.seq": [
+            [
+                "fwupload_sequence"
+            ],
+            0
+        ],
+        "t_status.flight_mode": [
+            [
+                "flags_flight_mode"
+            ],
+            0
+        ],
+        "t_status.note_adjust": [
+            [
+                "get_tx_buzzer_adjust"
+            ],
+            0
+        ],
+        "pkt.type": [
+            [
+                "telem_status",
+                "fwupload_fw_type"
+            ],
+            0
+        ],
+        "pkt.crc": [
+            [
+                "pkt_type",
+                "crc_crc8_const",
+                "crc_crc8_uint8_t"
+            ],
+            0
+        ]
+    },
+    "send_FCC_test_packet": {
+        "state": [
+            [
+                "state_send_fcc"
+            ],
+            0
+        ],
+        "dsm.forced_channel": [
+            [
+                "dsm_scan_max_ch",
+                "dsm_scan_min_ch",
+                "dsm_scan_mid_ch"
+            ],
+            1
+        ]
+    },
+    "handle_data_packet": {
+        "fwupload.offset": [
+            [
+                "ofs"
+            ],
+            0
+        ],
+        "fwupload.fw_type": [
+            [
+                "telem_play",
+                "telem_fw"
+            ],
+            0
+        ],
+        "fwupload.chan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "fwupload.length": [
+            [
+                "m_len"
+            ],
+            0
+        ]
+    }
+}

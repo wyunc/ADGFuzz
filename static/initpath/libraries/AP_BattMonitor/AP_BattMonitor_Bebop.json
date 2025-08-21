@@ -1,0 +1,105 @@
+{
+    "init": {
+        "_prev_vbat_raw": [
+            [
+                "bat_lut",
+                "_voltage",
+                "battery_percent_lut_size"
+            ],
+            0
+        ],
+        "_prev_vbat": [
+            [
+                "bat_lut",
+                "_voltage",
+                "battery_percent_lut_size"
+            ],
+            0
+        ],
+        "_battery_voltage_max": [
+            [
+                "bat_lut",
+                "_voltage",
+                "battery_percent_lut_size"
+            ],
+            0
+        ]
+    },
+    "_filter_voltage": {
+        "_prev_vbat_raw": [
+            [
+                "vbat_raw"
+            ],
+            0
+        ],
+        "vbat": [
+            [
+                "vbat_raw",
+                "vbat_raw"
+            ],
+            1
+        ]
+    },
+    "_compute_compensation": {
+        "vbat": [
+            [
+                "vbat_raw",
+                "i",
+                "bat_comp_polynomial_coeffs",
+                "rpm",
+                "j"
+            ],
+            1
+        ]
+    },
+    "read": {
+        "_state.voltage": [
+            [
+                "data_batt_mv",
+                "float",
+                "_filter_voltage_vbat",
+                "battery_voltage_compensation_landed",
+                "_compute_compensation_vbat_raw",
+                "_compute_compensation_data_rpm"
+            ],
+            2
+        ],
+        "ret": [
+            [
+                "rcout_read_obs_data_data"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.consumed_mah": [
+            [
+                "_params__pack_capacity",
+                "float",
+                "_compute_battery_percentage_vbat"
+            ],
+            2
+        ],
+        "_battery_voltage_max": [
+            [
+                "data_batt_mv",
+                "float",
+                "_filter_voltage_vbat",
+                "battery_voltage_compensation_landed",
+                "_compute_compensation_vbat_raw",
+                "_compute_compensation_data_rpm"
+            ],
+            2
+        ],
+        "rcout": [
+            [
+                "from_hal_rcout"
+            ],
+            0
+        ]
+    }
+}

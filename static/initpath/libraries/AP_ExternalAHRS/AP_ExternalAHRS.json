@@ -1,0 +1,123 @@
+{
+    "init": {
+        "backend": [
+            [
+                "new_nothrow",
+                "ap_external_ahrs_vector_nav_this",
+                "ap_external_ahrs_micro_strain7_this",
+                "ap_external_ahrs_micro_strain5_this",
+                "ap_external_ahrs_micro_strain5_state",
+                "ap_external_ahrs_inertial_labs_this",
+                "ap_external_ahrs_vector_nav_state",
+                "ap_external_ahrs_micro_strain7_state",
+                "ap_external_ahrs_inertial_labs_state"
+            ],
+            0
+        ]
+    },
+    "get_quaternion": {
+        "quat": [
+            [
+                "state_quat"
+            ],
+            0
+        ]
+    },
+    "get_origin": {
+        "loc": [
+            [
+                "state_origin"
+            ],
+            0
+        ]
+    },
+    "set_origin": {
+        "state.origin": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "get_location": {
+        "loc": [
+            [
+                "state_location"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "state_velocity_topostype",
+                "_0e",
+                "state_last_location_update_us",
+                "micros"
+            ],
+            1
+        ]
+    },
+    "get_velocity_NED": {
+        "vel": [
+            [
+                "state_velocity"
+            ],
+            0
+        ]
+    },
+    "get_speed_down": {
+        "speedD": [
+            [
+                "state_velocity_z"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "gps_type": [
+            [
+                "gps_get_type_i"
+            ],
+            0
+        ],
+        "eahrs_gps_sensors": [
+            [
+                "backend_num_gps_sensors"
+            ],
+            0
+        ]
+    },
+    "get_gyro": {
+        "gyro": [
+            [
+                "state_gyro"
+            ],
+            0
+        ]
+    },
+    "get_accel": {
+        "accel": [
+            [
+                "state_accel"
+            ],
+            0
+        ]
+    },
+    "send_status_report": {
+        "mag_var": [
+            [
+                "mag_var_x",
+                "max_mag_var_z",
+                "max_mag_var_y"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

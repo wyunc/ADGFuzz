@@ -1,0 +1,347 @@
+{
+    "wp_and_spline_init": {
+        "_check_wp_speed_change": [
+            [
+                "is_positive_speed_cms"
+            ],
+            0
+        ],
+        "_origin": [
+            [
+                "_destination",
+                "stopping_point"
+            ],
+            0
+        ],
+        "_wp_last_update": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_offset_vel": [
+            [
+                "_wp_speed_cms",
+                "speed_cms",
+                "is_positive_speed_cms",
+                "wpnav_wp_speed_min"
+            ],
+            1
+        ]
+    },
+    "set_speed_xy": {
+        "_wp_desired_speed_xy_cms": [
+            [
+                "speed_cms"
+            ],
+            0
+        ],
+        "_offset_vel": [
+            [
+                "speed_cms"
+            ],
+            0
+        ]
+    },
+    "get_wp_destination_loc": {
+        "destination": [
+            [
+                "above_terrain",
+                "location",
+                "get_wp_destination",
+                "above_origin",
+                "_terrain_alt"
+            ],
+            0
+        ]
+    },
+    "set_wp_destination": {
+        "_destination": [
+            [
+                "destination"
+            ],
+            0
+        ],
+        "curr_target_vel": [
+            [
+                "_pos_control_get_vel_desired_cms"
+            ],
+            0
+        ],
+        "_terrain_alt": [
+            [
+                "terrain_alt"
+            ],
+            0
+        ],
+        "_scurve_this_leg": [
+            [
+                "_scurve_next_leg"
+            ],
+            0
+        ],
+        "curr_target_vel.z": [
+            [
+                "_pos_control_get_vel_offset_z_cms"
+            ],
+            0
+        ],
+        "origin_speed": [
+            [
+                "curr_target_vel_length"
+            ],
+            0
+        ],
+        "_origin.z": [
+            [
+                "origin_terr_offset"
+            ],
+            0
+        ]
+    },
+    "set_wp_destination_next": {
+        "next_leg_origin_speed_max": [
+            [
+                "_scurve_next_leg_set_origin_speed_max_this_leg_dest_speed_max"
+            ],
+            0
+        ],
+        "_next_destination": [
+            [
+                "destination"
+            ],
+            0
+        ],
+        "this_leg_dest_speed_max": [
+            [
+                "_spline_this_leg_get_destination_speed_max"
+            ],
+            0
+        ]
+    },
+    "shift_wp_origin_and_destination_to_current_pos_xy": {
+        "curr_pos": [
+            [
+                "_inav_get_position_xy_cm"
+            ],
+            0
+        ]
+    },
+    "get_wp_stopping_point_xy": {
+        "stopping_point": [
+            [
+                "stop_tofloat"
+            ],
+            0
+        ]
+    },
+    "get_wp_stopping_point": {
+        "stopping_point": [
+            [
+                "stop_tofloat"
+            ],
+            0
+        ]
+    },
+    "advance_wp_target_along_track": {
+        "s_finished": [
+            [
+                "_scurve_this_leg_advance_target_along_track__wp_radius_cm",
+                "_pos_control_get_pos_xy_p__k_p",
+                "_inav_get_velocity_neu_cms_dot_track_direction",
+                "_pos_control_get_pos_error_cm_dot_track_direction",
+                "curr_target_vel_length",
+                "dt",
+                "get_wp_acceleration",
+                "_wp_jerk",
+                "_flags_fast_waypoint",
+                "dt",
+                "_scurve_this_leg_advance_target_along_track__scurve_prev_leg",
+                "_scurve_this_leg_advance_target_along_track_get_corner_acceleration",
+                "_scurve_this_leg_advance_target_along_track__scurve_next_leg",
+                "_wp_desired_speed_xy_cms",
+                "_offset_vel",
+                "_spline_this_leg_reached_destination",
+                "_origin"
+            ],
+            7
+        ],
+        "curr_target_vel.z": [
+            [
+                "_pos_control_get_vel_offset_z_cms"
+            ],
+            0
+        ],
+        "psc_pos_offset": [
+            [
+                "_pos_control_get_pos_offset_cm"
+            ],
+            0
+        ],
+        "target_accel": [
+            [
+                "target_vel_length",
+                "curr_target_vel_normalized",
+                "target_vel_normalized",
+                "_offset_accel",
+                "_wp_desired_speed_xy_cms",
+                "sq_vel_scaler_dt"
+            ],
+            2
+        ],
+        "dist_to_dest": [
+            [
+                "_inav_get_position_neu_cm",
+                "psc_pos_offset_tofloat",
+                "_destination"
+            ],
+            1
+        ],
+        "curr_pos.z": [
+            [
+                "terr_offset"
+            ],
+            0
+        ],
+        "vel_input": [
+            [
+                "_wp_desired_speed_xy_cms",
+                "_paused",
+                "_pos_control_pos_offset_z_scaler_terr_offset",
+                "_pos_control_pos_offset_z_scaler_get_terrain_margin"
+            ],
+            1
+        ],
+        "target_vel": [
+            [
+                "_wp_desired_speed_xy_cms",
+                "_offset_vel",
+                "_pos_control_get_vel_desired_cms"
+            ],
+            2
+        ]
+    },
+    "update_wpnav": {
+        "_last_wp_speed_down_cms": [
+            [
+                "_wp_speed_down_cms"
+            ],
+            0
+        ],
+        "_last_wp_speed_cms": [
+            [
+                "_wp_speed_cms"
+            ],
+            0
+        ],
+        "_wp_last_update": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_wp_speed_up_cms": [
+            [
+                "_wp_speed_up_cms"
+            ],
+            0
+        ]
+    },
+    "get_terrain_offset": {
+        "offset_cm": [
+            [
+                "_inav_get_position_z_up_cm",
+                "_rangefinder_terrain_offset_cm",
+                "terr_alt"
+            ],
+            0
+        ]
+    },
+    "set_spline_destination": {
+        "_flags.fast_waypoint": [
+            [
+                "destination_vector_is_zero"
+            ],
+            0
+        ],
+        "destination_vector": [
+            [
+                "destination",
+                "_origin",
+                "next_destination"
+            ],
+            1
+        ],
+        "_origin.z": [
+            [
+                "origin_terr_offset"
+            ],
+            0
+        ],
+        "origin_vector": [
+            [
+                "_spline_this_leg_get_destination_vel"
+            ],
+            0
+        ],
+        "_terrain_alt": [
+            [
+                "terrain_alt"
+            ],
+            0
+        ]
+    },
+    "set_spline_destination_next": {
+        "origin_vector": [
+            [
+                "_spline_this_leg_get_destination_vel",
+                "_origin",
+                "_destination"
+            ],
+            0
+        ],
+        "destination_vector": [
+            [
+                "_destination",
+                "next_destination",
+                "next_next_destination"
+            ],
+            0
+        ]
+    },
+    "get_vector_NEU": {
+        "vec.z": [
+            [
+                "temp_alt",
+                "terr_alt"
+            ],
+            0
+        ],
+        "vec.x": [
+            [
+                "res_vec_x"
+            ],
+            0
+        ],
+        "vec.y": [
+            [
+                "res_vec_y"
+            ],
+            0
+        ]
+    },
+    "calc_scurve_jerk_and_snap": {
+        "_scurve_snap": [
+            [
+                "_attitude_control_get_ang_vel_roll_max_rads__attitude_control_get_ang_vel_pitch_max_rads",
+                "gravity_mss",
+                "_attitude_control_get_ang_vel_roll_max_rads_gravity_mss",
+                "_wp_jerk",
+                "gravity_mss",
+                "_attitude_control_get_accel_roll_max_radss__attitude_control_get_accel_pitch_max_radss",
+                "m_pi"
+            ],
+            2
+        ]
+    }
+}

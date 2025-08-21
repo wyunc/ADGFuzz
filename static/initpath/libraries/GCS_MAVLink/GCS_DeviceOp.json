@@ -1,0 +1,43 @@
+{
+    "handle_device_op_read": {
+        "regstart": [
+            [
+                "packet_regstart"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "nullptr",
+                "hal_i2c_mgr_get_device_packet_address",
+                "hal_spi_get_device_packet_busname",
+                "hal_i2c_mgr_get_device_packet_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "dev_transfer_bank_data",
+                "dev_read_bank_registers_packet_regstart",
+                "dev_read_bank_registers_data",
+                "dev_read_bank_registers_packet_bank",
+                "dev_transfer_bank_packet_bank",
+                "dev_transfer_bank_packet_count",
+                "dev_transfer_bank_nullptr",
+                "dev_read_bank_registers_packet_count"
+            ],
+            0
+        ]
+    },
+    "handle_device_op_write": {
+        "dev": [
+            [
+                "hal_i2c_mgr_get_device_packet_address",
+                "hal_spi_get_device_packet_busname",
+                "nullptr",
+                "hal_i2c_mgr_get_device_packet_bus"
+            ],
+            0
+        ]
+    }
+}

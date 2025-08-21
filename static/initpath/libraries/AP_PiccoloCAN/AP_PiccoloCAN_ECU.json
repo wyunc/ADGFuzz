@@ -1,0 +1,26 @@
+{
+    "finishECUPacket": {
+        "frame": [
+            [
+                "pkt",
+                "can_frame"
+            ],
+            0
+        ],
+        "dlc": [
+            [
+                "max_data_len"
+            ],
+            1
+        ]
+    },
+    "getECUPacketSize": {
+        "frame": [
+            [
+                "pkt",
+                "can_frame"
+            ],
+            0
+        ]
+    }
+}

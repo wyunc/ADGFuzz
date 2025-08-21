@@ -1,0 +1,105 @@
+{
+    "do_mag_calibration": {
+        "result": [
+            [
+                "px4_ok",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "reject_sample": {
+        "dx": [
+            [
+                "x",
+                "sx",
+                "i"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "sqrtf_dy",
+                "sqrtf_dz",
+                "sqrtf_dx"
+            ],
+            0
+        ],
+        "dy": [
+            [
+                "y",
+                "i",
+                "sy"
+            ],
+            0
+        ],
+        "min_sample_dist": [
+            [
+                "fabsf_mag_sphere_radius",
+                "fabsf_max_count",
+                "fabsf_sqrtf"
+            ],
+            0
+        ],
+        "dz": [
+            [
+                "sz",
+                "z",
+                "i"
+            ],
+            0
+        ]
+    },
+    "do_mag_calibration_quick": {
+        "longitude_deg": [
+            [
+                "float",
+                "gps_longitude_deg"
+            ],
+            0
+        ],
+        "latitude_deg": [
+            [
+                "gps_latitude_deg",
+                "float"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "mag_z",
+                "cal_scale_i",
+                "mag_y",
+                "vector3f",
+                "dcmf_euler_transpose",
+                "mag_earth_pred",
+                "cal_rotation_transpose",
+                "mag_x"
+            ],
+            1
+        ],
+        "inclination_rad": [
+            [
+                "radians_longitude_deg",
+                "radians_latitude_deg",
+                "radians_get_mag_inclination_degrees"
+            ],
+            0
+        ],
+        "field_strength_gauss": [
+            [
+                "get_mag_strength_gauss_latitude_deg",
+                "get_mag_strength_gauss_longitude_deg"
+            ],
+            0
+        ],
+        "declination_rad": [
+            [
+                "radians_longitude_deg",
+                "radians_latitude_deg",
+                "radians_get_mag_declination_degrees"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "run": {
+        "no_nav_alt_cm": [
+            [
+                "g2_wp_navalt_min",
+                "inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ],
+        "complete_pos": [
+            [
+                "_complete_pos_y",
+                "_complete_pos_x",
+                "vector3p",
+                "terr_offset",
+                "complete_alt_cm"
+            ],
+            1
+        ],
+        "pos_control": [
+            [
+                "copter_pos_control"
+            ],
+            0
+        ],
+        "complete": [
+            [
+                "copter_pos_control_get_max_speed_up_cms",
+                "copter_pos_control_get_vel_desired_cms_z",
+                "vel_threshold_fraction",
+                "sq_vel_threshold_fraction",
+                "copter_pos_control_get_max_accel_z_cmss",
+                "sq_copter_pos_control_get_max_speed_up_cms",
+                "copter_pos_control_get_pos_desired_z_cm",
+                "terr_offset",
+                "complete_alt_cm"
+            ],
+            4
+        ],
+        "_complete_pos": [
+            [
+                "copter_pos_control_get_pos_desired_cm"
+            ],
+            0
+        ],
+        "inertial_nav": [
+            [
+                "copter_inertial_nav"
+            ],
+            0
+        ],
+        "motors": [
+            [
+                "copter_motors"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "copter_attitude_control_get_throttle_in_copter_g2_takeoff_throttle_slew_time",
+                "copter_attitude_control_get_throttle_in_copter_g_dt"
+            ],
+            0
+        ],
+        "attitude_control": [
+            [
+                "copter_attitude_control"
+            ],
+            0
+        ],
+        "g2": [
+            [
+                "copter_g2"
+            ],
+            0
+        ],
+        "wp_nav": [
+            [
+                "copter_wp_nav"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "complete_alt_cm": [
+            [
+                "_complete_alt_cm"
+            ],
+            0
+        ],
+        "g2": [
+            [
+                "copter_g2"
+            ],
+            0
+        ],
+        "no_nav_alt_cm": [
+            [
+                "g2_wp_navalt_min",
+                "inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ],
+        "inertial_nav": [
+            [
+                "copter_inertial_nav"
+            ],
+            0
+        ],
+        "terrain_alt": [
+            [
+                "_terrain_alt"
+            ],
+            0
+        ]
+    },
+    "get_completion_pos": {
+        "pos_neu_cm": [
+            [
+                "complete_pos"
+            ],
+            0
+        ]
+    }
+}

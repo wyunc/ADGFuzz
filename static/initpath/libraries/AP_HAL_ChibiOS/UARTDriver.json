@@ -1,0 +1,622 @@
+{
+    "uart_thread": {
+        "last_thread_run_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "mask": [
+            [
+                "ch_evt_wait_any_timeout_evt_transmit_data_ready",
+                "ch_evt_wait_any_timeout_ch_time_ms2i",
+                "ch_evt_wait_any_timeout_evt_transmit_end",
+                "ch_evt_wait_any_timeout_evt_transmit_unbuffered"
+            ],
+            0
+        ]
+    },
+    "uart_thread_trampoline": {
+        "uart": [
+            [
+                "p",
+                "static_cast",
+                "uart_driver"
+            ],
+            0
+        ]
+    },
+    "_begin": {
+        "tx_dma_enabled": [
+            [
+                "uint8_t",
+                "hal_util_malloc_type_tx_bounce_bufsize",
+                "hal_util_malloc_type_mem_dma_safe",
+                "nullptr"
+            ],
+            1
+        ],
+        "vprintf_console_hook": [
+            [
+                "hal_console_vprintf"
+            ],
+            0
+        ],
+        "sercfg.irq_cb": [
+            [
+                "rx_irq_cb"
+            ],
+            0
+        ],
+        "rxdma": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "sercfg.cr2": [
+            [
+                "_cr2_options"
+            ],
+            0
+        ],
+        "sercfg.ctx": [
+            [
+                "void",
+                "this"
+            ],
+            0
+        ],
+        "rxS": [
+            [
+                "hal_uart_min_rx_size"
+            ],
+            1
+        ],
+        "was_initialised": [
+            [
+                "_device_initialised"
+            ],
+            0
+        ],
+        "_uart_owner_thd": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "sercfg.cr1": [
+            [
+                "_cr1_options"
+            ],
+            0
+        ],
+        "txS": [
+            [
+                "hal_uart_min_tx_size"
+            ],
+            1
+        ],
+        "sercfg.speed": [
+            [
+                "_baudrate"
+            ],
+            0
+        ],
+        "rx_dma_enabled": [
+            [
+                "rx_bounce_buf",
+                "nullptr"
+            ],
+            0
+        ],
+        "_rts_threshold": [
+            [
+                "_readbuf_get_size",
+                "16u"
+            ],
+            0
+        ],
+        "sercfg.cr3": [
+            [
+                "_cr3_options"
+            ],
+            0
+        ]
+    },
+    "dma_rx_enable": {
+        "dmamode": [
+            [
+                "stm32_dma_cr_dmeie",
+                "stm32_dma_cr_teie"
+            ],
+            0
+        ]
+    },
+    "dma_tx_deallocate": {
+        "txdma": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "rx_irq_cb": {
+        "sr": [
+            [
+                "_usart_sr",
+                "serial_driver",
+                "uart_drv_sdef_serial"
+            ],
+            0
+        ],
+        "dr": [
+            [
+                "_usart_dr",
+                "serial_driver",
+                "uart_drv_sdef_serial"
+            ],
+            0
+        ],
+        "uart_drv": [
+            [
+                "uart_driver",
+                "self"
+            ],
+            0
+        ]
+    },
+    "rxbuff_full_irq": {
+        "uart_drv": [
+            [
+                "self",
+                "uart_driver"
+            ],
+            0
+        ],
+        "bounce_idx": [
+            [
+                "uart_drv_rx_bounce_idx"
+            ],
+            0
+        ],
+        "_rx_stats_bytes": [
+            [
+                "rx_bounce_bufsize",
+                "dma_stream_get_transaction_size_uart_drv_rxdma"
+            ],
+            1
+        ]
+    },
+    "wait_timeout": {
+        "t0": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_wait.n": [
+            [
+                "n"
+            ],
+            0
+        ],
+        "_wait.thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "tx_complete": {
+        "_last_write_completed_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "uart_drv": [
+            [
+                "uart_driver",
+                "self"
+            ],
+            0
+        ]
+    },
+    "write_pending_bytes_DMA": {
+        "_last_write_completed_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_tx_stats_bytes": [
+            [
+                "_baudrate",
+                "250ul",
+                "1000000ul",
+                "_writebuf_peekbytes_tx_bounce_buf",
+                "_writebuf_peekbytes_n",
+                "dma_stream_get_transaction_size_txdma",
+                "_writebuf_peekbytes_tx_bounce_bufsize"
+            ],
+            3
+        ],
+        "_total_written": [
+            [
+                "_baudrate",
+                "250ul",
+                "1000000ul",
+                "_writebuf_peekbytes_tx_bounce_buf",
+                "_writebuf_peekbytes_n",
+                "dma_stream_get_transaction_size_txdma",
+                "_writebuf_peekbytes_tx_bounce_bufsize"
+            ],
+            3
+        ],
+        "timeout_us": [
+            [
+                "1000000ul",
+                "100000ul",
+                "_baudrate"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "_writebuf_available_n",
+                "_baudrate",
+                "250ul",
+                "1000000ul",
+                "_writebuf_peekbytes_tx_bounce_buf",
+                "_writebuf_peekbytes_n",
+                "dma_stream_get_transaction_size_txdma",
+                "_writebuf_peekbytes_tx_bounce_bufsize"
+            ],
+            3
+        ],
+        "dmamode": [
+            [
+                "stm32_dma_cr_teie",
+                "stm32_dma_cr_dmeie"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "ch_evt_wait_any_timeout_timeout_us",
+                "ch_evt_wait_any_timeout_evt_transmit_dma_complete",
+                "ch_evt_wait_any_timeout_ch_time_us2i"
+            ],
+            0
+        ]
+    },
+    "write_pending_bytes_NODMA": {
+        "_tx_stats_bytes": [
+            [
+                "_len",
+                "vec",
+                "chn_write_timeout_serial_driversdef_serial",
+                "time_immediate",
+                "chn_write_timeout_serial_usb_driversdef_serial",
+                "_data",
+                "i"
+            ],
+            2
+        ],
+        "_last_write_completed_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_total_written": [
+            [
+                "_len",
+                "vec",
+                "chn_write_timeout_serial_driversdef_serial",
+                "time_immediate",
+                "chn_write_timeout_serial_usb_driversdef_serial",
+                "_data",
+                "i"
+            ],
+            2
+        ],
+        "n_vec": [
+            [
+                "_writebuf_peekiovec_vec",
+                "_writebuf_peekiovec_n"
+            ],
+            0
+        ]
+    },
+    "write_pending_bytes": {
+        "_first_write_started_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "used": [
+            [
+                "serial_buffers_size",
+                "_oqueue",
+                "q_space_i_serial_driversdef_serial"
+            ],
+            1
+        ],
+        "_flow_control": [
+            [
+                "flow_control_enable"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "_writebuf_available"
+            ],
+            0
+        ]
+    },
+    "half_duplex_setup_tx": {
+        "sd": [
+            [
+                "sdef_serial",
+                "serial_driver"
+            ],
+            0
+        ],
+        "hd_tx_active": [
+            [
+                "chn_output_empty",
+                "chn_transmission_end"
+            ],
+            0
+        ]
+    },
+    "_rx_timer_tick": {
+        "enabled": [
+            [
+                "rxdma_stream_cr",
+                "rxdma_channel_ccr",
+                "stm32_dma_cr_en"
+            ],
+            0
+        ],
+        "err_flags": [
+            [
+                "ch_evt_get_and_clear_flags_err_listener"
+            ],
+            0
+        ],
+        "_rx_stats_bytes": [
+            [
+                "rx_bounce_bufsize",
+                "dma_stream_get_transaction_size_rxdma"
+            ],
+            1
+        ]
+    },
+    "fwd_otg2_serial": {
+        "ret": [
+            [
+                "chn_write_timeout__data",
+                "chn_read_timeout_time_immediate",
+                "chn_write_timeout_sdu2",
+                "chn_read_timeout_i",
+                "chn_read_timeout_sdu2",
+                "chn_write_timeout__len",
+                "chn_read_timeout__len",
+                "chn_write_timeout_time_immediate",
+                "chn_read_timeout_vec",
+                "chn_write_timeout_i",
+                "chn_write_timeout_vec",
+                "chn_read_timeout__data"
+            ],
+            0
+        ],
+        "n_vec": [
+            [
+                "_readbuf_peekiovec_vec",
+                "_writebuf_reserve__writebuf_space",
+                "_writebuf_reserve_vec",
+                "_readbuf_peekiovec__readbuf_available"
+            ],
+            0
+        ]
+    },
+    "read_bytes_NODMA": {
+        "n_vec": [
+            [
+                "_readbuf_reserve_vec",
+                "_readbuf_reserve__readbuf_space"
+            ],
+            0
+        ],
+        "_rx_stats_bytes": [
+            [
+                "i",
+                "chn_read_timeout_serial_driversdef_serial",
+                "vec",
+                "_data",
+                "chn_read_timeout_serial_usb_driversdef_serial",
+                "_len",
+                "time_immediate"
+            ],
+            1
+        ]
+    },
+    "_tx_timer_tick": {
+        "sd": [
+            [
+                "serial_driver",
+                "sdef_serial"
+            ],
+            0
+        ]
+    },
+    "set_flow_control": {
+        "_flow_control": [
+            [
+                "flowcontrol",
+                "flow_control_disable",
+                "arts_line"
+            ],
+            0
+        ],
+        "sd": [
+            [
+                "sdef_serial",
+                "serial_driver"
+            ],
+            0
+        ]
+    },
+    "update_rts_line": {
+        "space": [
+            [
+                "_readbuf_space"
+            ],
+            0
+        ]
+    },
+    "set_unbuffered_writes": {
+        "unbuffered_writes": [
+            [
+                "on"
+            ],
+            0
+        ]
+    },
+    "configure_parity": {
+        "cr1_m0": [
+            [
+                "usart_cr1_m0",
+                "usart_cr1_m"
+            ],
+            0
+        ],
+        "parity_enabled": [
+            [
+                "v"
+            ],
+            0
+        ],
+        "parity": [
+            [
+                "v"
+            ],
+            0
+        ]
+    },
+    "set_stop_bits": {
+        "sercfg.cr2": [
+            [
+                "_cr2_options"
+            ],
+            0
+        ]
+    },
+    "set_options": {
+        "CR2": [
+            [
+                "sd_usart_cr2"
+            ],
+            1
+        ],
+        "acts_line": [
+            [
+                "resolve_alt_config_other",
+                "resolve_alt_config_sdef_cts_line",
+                "resolve_alt_config_sdef_instance"
+            ],
+            0
+        ],
+        "rx_line": [
+            [
+                "resolve_alt_config_uart_tx",
+                "resolve_alt_config_sdef_tx_line",
+                "resolve_alt_config_sdef_instance",
+                "resolve_alt_config_sdef_rx_line",
+                "resolve_alt_config_sdef_instance",
+                "resolve_alt_config_uart_rx",
+                "option_swap",
+                "options"
+            ],
+            2
+        ],
+        "was_enabled": [
+            [
+                "usart_cr1_ue",
+                "sd_usart_cr1"
+            ],
+            0
+        ],
+        "_last_options": [
+            [
+                "options"
+            ],
+            0
+        ],
+        "arts_line": [
+            [
+                "resolve_alt_config_other",
+                "resolve_alt_config_sdef_instance",
+                "resolve_alt_config_sdef_rts_line"
+            ],
+            0
+        ],
+        "sd": [
+            [
+                "serial_driver",
+                "sdef_serial"
+            ],
+            0
+        ],
+        "rx_dma_enabled": [
+            [
+                "tx_dma_enabled"
+            ],
+            0
+        ],
+        "tx_line": [
+            [
+                "resolve_alt_config_uart_tx",
+                "resolve_alt_config_sdef_tx_line",
+                "resolve_alt_config_sdef_instance",
+                "resolve_alt_config_sdef_rx_line",
+                "resolve_alt_config_sdef_instance",
+                "resolve_alt_config_uart_rx",
+                "option_swap",
+                "options"
+            ],
+            2
+        ],
+        "CR3": [
+            [
+                "sd_usart_cr3"
+            ],
+            1
+        ]
+    },
+    "uart_info": {
+        "tx_bytes": [
+            [
+                "stats_tx_update__tx_stats_bytes"
+            ],
+            0
+        ],
+        "rx_bytes": [
+            [
+                "stats_rx_update__rx_stats_bytes"
+            ],
+            0
+        ]
+    }
+}

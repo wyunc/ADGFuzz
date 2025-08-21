@@ -1,0 +1,293 @@
+{
+    "do_land": {
+        "stage": [
+            [
+                "deepstall_stage_fly_to_landing"
+            ],
+            0
+        ],
+        "landing_point.alt": [
+            [
+                "cmd_p1"
+            ],
+            1
+        ]
+    },
+    "verify_land": {
+        "last_target_bearing": [
+            [
+                "landing_nav_controller_target_bearing_cd"
+            ],
+            1
+        ],
+        "loiter_sum_cd": [
+            [
+                "wrap_180_cd_last_target_bearing",
+                "landing_point_loiter_ccw",
+                "wrap_180_cd_target_bearing"
+            ],
+            1
+        ],
+        "elevator": [
+            [
+                "get_channel_for_k_elevator"
+            ],
+            0
+        ],
+        "groundspeed": [
+            [
+                "landing_ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "stall_entry_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "stage": [
+            [
+                "deepstall_stage_approach",
+                "deepstall_stage_fly_to_landing",
+                "deepstall_stage_fly_to_arc",
+                "deepstall_stage_arc",
+                "deepstall_stage_land",
+                "deepstall_stage_estimate_wind",
+                "deepstall_stage_wait_for_breakout"
+            ],
+            0
+        ],
+        "initial_elevator_pwm": [
+            [
+                "elevator_get_output_pwm"
+            ],
+            0
+        ],
+        "travel_distance": [
+            [
+                "predict_travel_distance_landing_ahrs_wind_estimate",
+                "position_alt",
+                "landing_point_alt",
+                "1e",
+                "approach_alt_offset"
+            ],
+            1
+        ]
+    },
+    "override_servos": {
+        "slew_progress": [
+            [
+                "slew_speed",
+                "millis",
+                "stall_entry_time"
+            ],
+            0
+        ],
+        "elevator": [
+            [
+                "get_channel_for_k_elevator"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "update_steering",
+                "travel_limit"
+            ],
+            1
+        ]
+    },
+    "is_throttle_suppressed": {
+        "stage": [
+            [
+                "deepstall_stage_land"
+            ],
+            0
+        ]
+    },
+    "is_on_approach": {
+        "stage": [
+            [
+                "deepstall_stage_land"
+            ],
+            0
+        ]
+    },
+    "Log": {
+        "pid_info": [
+            [
+                "ds_pid_get_pid_info"
+            ],
+            0
+        ]
+    },
+    "terminate": {
+        "stage": [
+            [
+                "deepstall_stage_land"
+            ],
+            0
+        ],
+        "stall_entry_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "build_approach_path": {
+        "wind": [
+            [
+                "landing_ahrs_wind_estimate"
+            ],
+            0
+        ],
+        "arc_heading_deg": [
+            [
+                "landing_point_loiter_ccw",
+                "degrees_wind_y",
+                "landing_ahrs_yaw_sensor",
+                "degrees_atan2f",
+                "degrees_wind_x",
+                "use_current_heading",
+                "1e"
+            ],
+            1
+        ],
+        "approach_extension_m": [
+            [
+                "fabsf_loiter_radius",
+                "expected_travel_distance",
+                "approach_extension"
+            ],
+            1
+        ],
+        "loiter_radius": [
+            [
+                "landing_nav_controller_loiter_radius_landing_aparm_loiter_radius"
+            ],
+            0
+        ]
+    },
+    "predict_travel_distance": {
+        "theta": [
+            [
+                "acosf_wind_length",
+                "acosf_wind_vec",
+                "acosf_course_vec"
+            ],
+            0
+        ],
+        "estimated_crab_angle": [
+            [
+                "asinf_cross_component",
+                "asinf_forward_speed_ms"
+            ],
+            0
+        ],
+        "predicted_travel_distance": [
+            [
+                "height",
+                "down_speed",
+                "slope_a",
+                "slope_b",
+                "cosf_offset",
+                "wind_length",
+                "cosf_estimated_crab_angle",
+                "wind_length",
+                "forward_speed",
+                "cosf_theta"
+            ],
+            3
+        ],
+        "offset": [
+            [
+                "radians_target_heading_deg",
+                "atan2f_wind_y",
+                "atan2f_wind_x"
+            ],
+            1
+        ],
+        "cross_component": [
+            [
+                "wind_length",
+                "sinf_theta"
+            ],
+            0
+        ]
+    },
+    "verify_breakout": {
+        "heading_error": [
+            [
+                "degrees_landing_ahrs_groundspeed_vector_angle_location_delta"
+            ],
+            0
+        ],
+        "location_delta": [
+            [
+                "current_loc_get_distance_ne_target_loc"
+            ],
+            0
+        ]
+    },
+    "update_steering": {
+        "last_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "yaw_rate": [
+            [
+                "landing_ahrs_get_gyro_z"
+            ],
+            0
+        ],
+        "error": [
+            [
+                "wrap_pi_desired_change",
+                "wrap_pi_yaw_rate",
+                "wrap_pi_yaw_rate_limit_rps"
+            ],
+            0
+        ],
+        "sine_nu1": [
+            [
+                "arc_exit_get_distance_ne_extended_approach",
+                "arc_exit_get_distance_ne_current_loc",
+                "l1_period"
+            ],
+            3
+        ],
+        "yaw_rate_limit_rps": [
+            [
+                "radians_yaw_rate_limit"
+            ],
+            0
+        ],
+        "L1_xtrack_i": [
+            [
+                "uint32_t",
+                "uint32_t10ul",
+                "1e",
+                "200ul",
+                "millis",
+                "l1_xtrack_i",
+                "l1_i"
+            ],
+            2
+        ],
+        "desired_change": [
+            [
+                "landing_ahrs_get_yaw",
+                "time_constant",
+                "wrap_pi_target_heading_deg",
+                "l1_xtrack_i",
+                "asinf_sine_nu1",
+                "wrap_pi_radians"
+            ],
+            1
+        ]
+    }
+}

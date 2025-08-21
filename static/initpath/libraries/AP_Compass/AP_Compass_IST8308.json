@@ -1,0 +1,27 @@
+{
+    "init": {
+        "cntl3": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "field": [
+            [
+                "vector3f",
+                "le16toh_buffer_rz",
+                "static_cast",
+                "int16_t",
+                "static_cast",
+                "le16toh_buffer_rx",
+                "int16_t",
+                "static_cast",
+                "le16toh_buffer_ry",
+                "int16_t"
+            ],
+            3
+        ]
+    }
+}

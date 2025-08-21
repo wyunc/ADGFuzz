@@ -1,0 +1,320 @@
+{
+    "update": {
+        "keep_navigating": [
+            [
+                "start_loiter"
+            ],
+            0
+        ],
+        "_reached_heading": [
+            [
+                "fabsf__desired_yaw_cd",
+                "fabsf_ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "get_desired_location": {
+        "destination": [
+            [
+                "g2_wp_nav_get_oa_destination"
+            ],
+            0
+        ]
+    },
+    "set_desired_location": {
+        "_submode": [
+            [
+                "wp"
+            ],
+            0
+        ]
+    },
+    "set_desired_speed": {
+        "_desired_speed": [
+            [
+                "speed"
+            ],
+            0
+        ]
+    },
+    "start_RTL": {
+        "_submode": [
+            [
+                "rtl"
+            ],
+            0
+        ]
+    },
+    "nav_script_time": {
+        "cmd": [
+            [
+                "nav_scripting_command"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "nav_scripting_id"
+            ],
+            0
+        ],
+        "arg1": [
+            [
+                "nav_scripting_arg1"
+            ],
+            0
+        ],
+        "arg4": [
+            [
+                "nav_scripting_arg4"
+            ],
+            0
+        ],
+        "arg3": [
+            [
+                "nav_scripting_arg3"
+            ],
+            0
+        ],
+        "arg2": [
+            [
+                "nav_scripting_arg2"
+            ],
+            0
+        ]
+    },
+    "check_trigger": {
+        "xaccel": [
+            [
+                "rover_ins_get_accel_x"
+            ],
+            0
+        ]
+    },
+    "start_loiter": {
+        "_submode": [
+            [
+                "loiter"
+            ],
+            0
+        ]
+    },
+    "start_guided": {
+        "_submode": [
+            [
+                "guided"
+            ],
+            0
+        ],
+        "guided_target.loc": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "start_stop": {
+        "_submode": [
+            [
+                "stop"
+            ],
+            0
+        ]
+    },
+    "send_guided_position_target": {
+        "guided_target.last_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "verify_command_callback": {
+        "cmd_complete": [
+            [
+                "verify_command_cmd"
+            ],
+            0
+        ]
+    },
+    "do_nav_wp": {
+        "next_cmdloc": [
+            [
+                "next_cmd_content_location"
+            ],
+            0
+        ],
+        "loiter_duration": [
+            [
+                "cmd_p1",
+                "int16_t"
+            ],
+            0
+        ],
+        "cmdloc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_nav_delay": {
+        "nav_delay_time_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "nav_delay_time_max_ms": [
+            [
+                "_get_time_utc_cmd_content_nav_delay_min_utc",
+                "_get_time_utc_cmd_content_nav_delay_sec_utc",
+                "rtc_get_time_utc_cmd_content_nav_delay_hour_utc",
+                "cmd_content_nav_delay_seconds"
+            ],
+            0
+        ]
+    },
+    "do_nav_set_yaw_speed": {
+        "_desired_yaw_cd": [
+            [
+                "wrap_180_cd_cmd_content_set_yaw_speed_angle_deg",
+                "cmd_content_set_yaw_speed_angle_deg",
+                "wrap_180_cd_ahrs_yaw_sensor"
+            ],
+            1
+        ],
+        "_desired_speed": [
+            [
+                "cmd_content_set_yaw_speed_speed",
+                "g2_wp_nav_get_default_speed"
+            ],
+            1
+        ],
+        "_submode": [
+            [
+                "heading_and_speed"
+            ],
+            0
+        ]
+    },
+    "verify_nav_wp": {
+        "loiter_start_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "verify_loiter_time": {
+        "result": [
+            [
+                "verify_nav_wp_cmd"
+            ],
+            0
+        ]
+    },
+    "do_circle": {
+        "_submode": [
+            [
+                "circle"
+            ],
+            0
+        ],
+        "circle_radius_m": [
+            [
+                "highbyte_cmd_p1"
+            ],
+            0
+        ],
+        "circle_center": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "verify_circle": {
+        "turns": [
+            [
+                "cmd_get_loiter_turns"
+            ],
+            0
+        ]
+    },
+    "do_wait_delay": {
+        "condition_start": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "condition_value": [
+            [
+                "cmd_content_delay_seconds",
+                "int32_t",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "do_within_distance": {
+        "condition_value": [
+            [
+                "cmd_content_distance_meters"
+            ],
+            0
+        ]
+    },
+    "do_nav_script_time": {
+        "nav_scripting.timeout_s": [
+            [
+                "cmd_content_nav_script_time_timeout_s"
+            ],
+            0
+        ],
+        "nav_scripting.arg2": [
+            [
+                "cmd_content_nav_script_time_arg2_get"
+            ],
+            0
+        ],
+        "nav_scripting.arg4": [
+            [
+                "cmd_content_nav_script_time_arg4"
+            ],
+            0
+        ],
+        "nav_scripting.start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_submode": [
+            [
+                "nav_script_time"
+            ],
+            0
+        ],
+        "nav_scripting.arg3": [
+            [
+                "cmd_content_nav_script_time_arg3"
+            ],
+            0
+        ],
+        "nav_scripting.command": [
+            [
+                "cmd_content_nav_script_time_command"
+            ],
+            0
+        ],
+        "nav_scripting.arg1": [
+            [
+                "cmd_content_nav_script_time_arg1_get"
+            ],
+            0
+        ]
+    }
+}

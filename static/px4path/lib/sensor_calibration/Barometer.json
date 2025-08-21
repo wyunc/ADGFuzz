@@ -1,0 +1,84 @@
+{
+    "set_device_id": {
+        "_device_id": [
+            [
+                "device_id"
+            ],
+            0
+        ],
+        "_external": [
+            [
+                "device_external_device_id"
+            ],
+            1
+        ]
+    },
+    "SensorCorrectionsUpdate": {
+        "_thermal_offset": [
+            [
+                "corrections_baro_offset_0",
+                "corrections_baro_offset_1",
+                "corrections_baro_offset_2",
+                "corrections_baro_offset_3"
+            ],
+            0
+        ]
+    },
+    "set_offset": {
+        "_offset": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "set_calibration_index": {
+        "_calibration_index": [
+            [
+                "calibration_index"
+            ],
+            0
+        ]
+    },
+    "ParametersUpdate": {
+        "_calibration_index": [
+            [
+                "find_current_calibration_index_sensor_string",
+                "_device_id"
+            ],
+            0
+        ]
+    },
+    "ParametersLoad": {
+        "_priority": [
+            [
+                "_external",
+                "get_calibration_param_int32_sensor_string",
+                "_calibration_index",
+                "default_priority",
+                "default_external_priority"
+            ],
+            0
+        ]
+    },
+    "Reset": {
+        "_priority": [
+            [
+                "_external",
+                "default_external_priority",
+                "default_priority"
+            ],
+            0
+        ]
+    },
+    "ParametersSave": {
+        "_calibration_index": [
+            [
+                "_device_id",
+                "find_available_calibration_index_sensor_string",
+                "desired_calibration_index"
+            ],
+            0
+        ]
+    }
+}

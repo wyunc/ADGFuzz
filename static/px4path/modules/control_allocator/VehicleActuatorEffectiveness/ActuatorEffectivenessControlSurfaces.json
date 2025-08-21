@@ -1,0 +1,24 @@
+{
+    "updateParams": {
+        "torque": [
+            [
+                "i",
+                "_torque",
+                "_params"
+            ],
+            0
+        ]
+    },
+    "addActuators": {
+        "actuator_idx": [
+            [
+                "configuration_add_actuator_vector3f",
+                "configuration_add_actuator_i",
+                "configuration_add_actuator__torque",
+                "configuration_add_actuator_servos",
+                "configuration_add_actuator__params"
+            ],
+            0
+        ]
+    }
+}

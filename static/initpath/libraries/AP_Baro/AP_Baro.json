@@ -1,0 +1,226 @@
+{
+    "calibrate": {
+        "p0_sealevel": [
+            [
+                "get_sealevel_pressure_sum_pressure",
+                "get_sealevel_pressure__field_elevation_active",
+                "get_sealevel_pressure_count",
+                "get_sealevel_pressure_i"
+            ],
+            0
+        ],
+        "_guessed_ground_temperature": [
+            [
+                "get_external_temperature"
+            ],
+            0
+        ],
+        "tstart": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_calibration": {
+        "do_notify": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_guessed_ground_temperature": [
+            [
+                "get_external_temperature"
+            ],
+            0
+        ],
+        "_last_notify_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "corrected_pressure": [
+            [
+                "_p_correction",
+                "_field_elevation_active",
+                "i",
+                "get_sealevel_pressure_i",
+                "get_sealevel_pressure_get_pressure",
+                "sensors"
+            ],
+            0
+        ]
+    },
+    "_get_air_density_ratio": {
+        "eas2tas": [
+            [
+                "_get_eas2tas"
+            ],
+            0
+        ]
+    },
+    "set_external_temperature": {
+        "_last_external_temperature_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_external_temperature": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    },
+    "get_external_temperature": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "serial_port": [
+            [
+                "external_ahrs_get_port_baro"
+            ],
+            0
+        ]
+    },
+    "_probe_i2c_barometers": {
+        "mask": [
+            [
+                "1u",
+                "hal_i2c_mgr_get_bus_mask_external",
+                "_ext_bus",
+                "uint8_t"
+            ],
+            1
+        ],
+        "probe": [
+            [
+                "_baro_probe_ext_get"
+            ],
+            0
+        ]
+    },
+    "should_log": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "code": [
+            [
+                "sensors",
+                "i",
+                "_primary_baro",
+                "error_resolved",
+                "unhealthy",
+                "_healthy"
+            ],
+            1
+        ],
+        ".alt_ok": [
+            [
+                "isinf_altitude",
+                "isnan_altitude"
+            ],
+            0
+        ],
+        "old_primary_healthy": [
+            [
+                "sensors",
+                "_healthy"
+            ],
+            0
+        ],
+        ".altitude": [
+            [
+                "get_altitude_difference_i",
+                "sensors",
+                "_specific_gravity",
+                "_field_elevation_active",
+                "get_altitude_difference__ground_pressure",
+                "get_altitude_difference_sensors",
+                "i",
+                "_altitude",
+                "_ground_pressure",
+                "get_altitude_difference_corrected_pressure",
+                "sensors",
+                "i",
+                "_p_correction",
+                "_pressure",
+                "wind_pressure_correction_i",
+                "_alt_offset"
+            ],
+            3
+        ],
+        "ground_pressure": [
+            [
+                "i",
+                "sensors",
+                "_ground_pressure"
+            ],
+            0
+        ]
+    },
+    "update_field_elevation": {
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "_field_elevation_active": [
+            [
+                "_field_elevation",
+                "origin_alt"
+            ],
+            0
+        ],
+        "_field_elevation_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_pressure_correction": {
+        ".p_correction": [
+            [
+                "p_correction"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "alt_amsl": [
+            [
+                "gps_location_alt"
+            ],
+            0
+        ],
+        "alt_pressure": [
+            [
+                "get_altitude_difference_get_pressure",
+                "get_altitude_difference_ssl_air_pressure"
+            ],
+            0
+        ],
+        "error": [
+            [
+                "fabsf_alt_amsl",
+                "fabsf_alt_pressure"
+            ],
+            0
+        ]
+    }
+}

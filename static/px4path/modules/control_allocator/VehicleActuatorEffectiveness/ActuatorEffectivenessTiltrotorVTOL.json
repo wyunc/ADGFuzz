@@ -1,0 +1,88 @@
+{
+    "getEffectivenessMatrix": {
+        "surfaces_added_successfully": [
+            [
+                "_control_surfaces_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_first_tilt_idx": [
+            [
+                "configuration_selected_matrix",
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ],
+        "tilts_added_successfully": [
+            [
+                "_tilts_add_actuators_configuration"
+            ],
+            0
+        ],
+        "mc_rotors_added_successfully": [
+            [
+                "_mc_rotors_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_motors": [
+            [
+                "_mc_rotors_get_motors"
+            ],
+            0
+        ],
+        "_first_control_surface_idx": [
+            [
+                "configuration_selected_matrix",
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ],
+        "_collective_tilt_updated": [
+            [
+                "configuration_update",
+                "external_update"
+            ],
+            0
+        ]
+    },
+    "updateSetpoint": {
+        "_yaw_tilt_saturation_flags.tilt_yaw_pos": [
+            [
+                "yaw_saturated_positive"
+            ],
+            0
+        ],
+        "_last_collective_tilt_control": [
+            [
+                "_f",
+                "tiltrotor_extra_controls_collective_tilt_normalized_setpoint",
+                "constrain__last_collective_tilt_control",
+                "_f",
+                "constrain__f"
+            ],
+            1
+        ],
+        "_yaw_tilt_saturation_flags.tilt_yaw_neg": [
+            [
+                "yaw_saturated_negative"
+            ],
+            0
+        ]
+    },
+    "throttleSpoolupFinished": {
+        "_armed_time": [
+            [
+                "vehicle_status_armed_time"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ]
+    }
+}

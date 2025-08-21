@@ -1,0 +1,34 @@
+{
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "sum_pressure",
+                "press_count"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "temp_count",
+                "sum_temp"
+            ],
+            0
+        ]
+    },
+    "handle_msp": {
+        "sum_temp": [
+            [
+                "pkt_temp"
+            ],
+            0
+        ],
+        "sum_pressure": [
+            [
+                "pkt_pressure"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "update": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "_total_count": [
+            [
+                "abs_ticks"
+            ],
+            0
+        ],
+        "_distance_count": [
+            [
+                "_frontend_get_counts_per_revolution__state_instance",
+                "static_cast",
+                "_state_last_reading_ms",
+                "millis",
+                "norm_vf_velocity_x",
+                "norm_vf_velocity_y",
+                "fabsf__frontend_get_pos_offset_y",
+                "radians__sitl_state_yaw_rate",
+                "_frontend_get_wheel_radius__state_instance",
+                "int",
+                "m_pi"
+            ],
+            8
+        ],
+        "current_heading": [
+            [
+                "_sitl_state_yaw_deg"
+            ],
+            0
+        ]
+    }
+}

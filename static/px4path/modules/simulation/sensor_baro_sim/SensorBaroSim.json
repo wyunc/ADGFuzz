@@ -1,0 +1,132 @@
+{
+    "generate_wgn": {
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ],
+        "U1": [
+            [
+                "rand_max",
+                "rand",
+                "float"
+            ],
+            0
+        ],
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "float_float",
+                "v2",
+                "v1",
+                "s",
+                "float_s",
+                "float_logf",
+                "float_sqrtf"
+            ],
+            0
+        ],
+        "U2": [
+            [
+                "rand_max",
+                "rand",
+                "float"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "v1",
+                "v2"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_last_update_time": [
+            [
+                "gpos_timestamp"
+            ],
+            0
+        ],
+        "sensor_baro.timestamp_sample": [
+            [
+                "gpos_timestamp"
+            ],
+            0
+        ],
+        "sensor_baro.temperature": [
+            [
+                "_sim_baro_off_t_get",
+                "lapse_rate",
+                "temperature_msl",
+                "gpos_alt"
+            ],
+            3
+        ],
+        "sensor_baro.pressure": [
+            [
+                "_sim_baro_off_p_get",
+                "pressure_msl",
+                "powf_temperature_msl",
+                "powf_temperature_local",
+                "constrain_gpos_timestamp",
+                "1e",
+                "constrain__last_update_time",
+                "_baro_drift_pa_per_sec",
+                "float",
+                "_f",
+                "double",
+                "_",
+                "generate_wgn",
+                "sqrt_w",
+                "double",
+                "_",
+                "generate_wgn",
+                "double",
+                "_",
+                "generate_wgn",
+                "sqrt_log",
+                "sqrt_w",
+                "double",
+                "_",
+                "generate_wgn",
+                "double",
+                "_",
+                "generate_wgn",
+                "sqrt_log",
+                "double",
+                "_",
+                "generate_wgn"
+            ],
+            12
+        ],
+        "sensor_baro.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "sensor_baro_sim"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_measurement": {
+        "integral_time": [
+            [
+                "msg_integration_interval"
+            ],
+            0
+        ],
+        "_ap_dronecan": [
+            [
+                "ap_dronecan"
+            ],
+            0
+        ],
+        "surface_quality": [
+            [
+                "msg_quality"
+            ],
+            0
+        ],
+        "_node_id": [
+            [
+                "transfer_source_node_id"
+            ],
+            0
+        ],
+        "rate_gyro_integral": [
+            [
+                "vector2f_msg_rate_gyro_integral"
+            ],
+            0
+        ],
+        "flow_integral": [
+            [
+                "vector2f_msg_flow_integral"
+            ],
+            0
+        ]
+    },
+    "_push_state": {
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "state.bodyRate": [
+            [
+                "rate_gyro_integral",
+                "integral_to_rate"
+            ],
+            0
+        ],
+        "integralToRate": [
+            [
+                "integral_time"
+            ],
+            0
+        ],
+        "state.surface_quality": [
+            [
+                "surface_quality"
+            ],
+            0
+        ],
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ]
+    }
+}

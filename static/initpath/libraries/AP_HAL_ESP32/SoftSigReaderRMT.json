@@ -1,0 +1,67 @@
+{
+    "init": {
+        "config.rx_config.idle_threshold": [
+            [
+                "ppm_imeout_us",
+                "rmt_tick_us"
+            ],
+            0
+        ],
+        "config.gpio_num": [
+            [
+                "gpio_num_t",
+                "hal_esp32_rmt_rx_pin_number"
+            ],
+            0
+        ],
+        "config.clk_div": [
+            [
+                "rmt_clk_div"
+            ],
+            0
+        ],
+        "config.channel": [
+            [
+                "rmt_channel_0"
+            ],
+            0
+        ],
+        "config.rmt_mode": [
+            [
+                "rmt_mode_rx"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "widths1": [
+            [
+                "uint16_t_channelpointer",
+                "uint16_t_channeldata1"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "x_ringbuffer_receive_rb",
+                "x_ringbuffer_receive_rx_size",
+                "rmt_item32_t",
+                "nullptr"
+            ],
+            0
+        ],
+        "widths0": [
+            [
+                "uint16_t_channelpointer",
+                "uint16_t_channeldata0"
+            ],
+            0
+        ],
+        "channels": [
+            [
+                "rx_size"
+            ],
+            0
+        ]
+    }
+}

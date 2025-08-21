@@ -1,0 +1,98 @@
+{
+    "writer_main": {
+        "ret": [
+            [
+                "px4_write_fd",
+                "px4_sleep",
+                "px4_write_buf"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "px4_open_testdev",
+                "px4_open_px4_f_wronly"
+            ],
+            0
+        ]
+    },
+    "open": {
+        "errno": [
+            [
+                "ebusy"
+            ],
+            0
+        ],
+        "f_priv": [
+            [
+                "priv_data",
+                "new"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "open_handlep"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "f_priv": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "do_poll": {
+        ".fd": [
+            [
+                "fd"
+            ],
+            0
+        ],
+        ".events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "mustblock": [
+            [
+                "timeout"
+            ],
+            0
+        ],
+        "readret": [
+            [
+                "px4_read_fd",
+                "px4_read_readbuf"
+            ],
+            0
+        ],
+        "pollret": [
+            [
+                "px4_poll_timeout",
+                "px4_poll_fds"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "_node": [
+            [
+                "new",
+                "c_dev_node"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "px4_open_px4_f_rdonly",
+                "px4_open_testdev"
+            ],
+            0
+        ]
+    }
+}

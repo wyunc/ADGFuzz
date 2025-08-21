@@ -1,0 +1,90 @@
+{
+    "handle_command_long": {
+        "mav_command_long.param4": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "mav_command_long.param1": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "param_count": [
+            [
+                "bit8_unpack_cmd_options"
+            ],
+            0
+        ],
+        "mav_command_long.param3": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "mav_command_long.param5": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "mav_result": [
+            [
+                "handle_command_mav_command_long"
+            ],
+            0
+        ],
+        "mav_command_long.param6": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "mav_command_long.param7": [
+            [
+                "params"
+            ],
+            0
+        ],
+        "mav_command_long.param2": [
+            [
+                "params"
+            ],
+            0
+        ]
+    },
+    "send_command_ack": {
+        "txmsg.msgid": [
+            [
+                "mavlink_msg_id_command_ack"
+            ],
+            0
+        ]
+    },
+    "handle_param_request_read": {
+        "txmsg.msgid": [
+            [
+                "mavlink_msg_id_param_value"
+            ],
+            0
+        ]
+    },
+    "handle_param_set": {
+        "txmsg.msgid": [
+            [
+                "mavlink_msg_id_param_value"
+            ],
+            0
+        ],
+        "vp": [
+            [
+                "find_parameter_flags",
+                "find_var_type",
+                "find_param_name"
+            ],
+            0
+        ]
+    }
+}

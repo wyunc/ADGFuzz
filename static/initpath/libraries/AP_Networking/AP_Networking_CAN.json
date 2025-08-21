@@ -1,0 +1,83 @@
+{
+    "mcast_trampoline": {
+        "mcast": [
+            [
+                "ap_networking_can",
+                "ctx"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "bus_mask": [
+            [
+                "_bus_mask"
+            ],
+            0
+        ]
+    },
+    "mcast_server": {
+        "is_canfd": [
+            [
+                "mcast_flag_canfd",
+                "pkt_flags"
+            ],
+            0
+        ],
+        "cbus": [
+            [
+                "get_caniface_bus"
+            ],
+            0
+        ],
+        "data_len": [
+            [
+                "bus",
+                "pkt",
+                "sizeof_pkt",
+                "_recv_void",
+                "mcast_sockets",
+                "mcast_hdr_length"
+            ],
+            1
+        ],
+        "crc": [
+            [
+                "offsetof_flags",
+                "pkt_flags",
+                "offsetof_mcast_pkt",
+                "0x_ffffu",
+                "bus",
+                "pkt",
+                "sizeof_pkt",
+                "_recv_void",
+                "mcast_sockets",
+                "crc16_ccitt_uint8_t"
+            ],
+            1
+        ]
+    },
+    "can_frame_callback": {
+        "pkt.magic": [
+            [
+                "mcast_magic"
+            ],
+            0
+        ],
+        "pkt.message_id": [
+            [
+                "frame_id"
+            ],
+            0
+        ],
+        "pkt.crc": [
+            [
+                "crc16_ccitt_uint8_t",
+                "dlc_to_data_length_frame_dlc",
+                "pkt_flags",
+                "0x_ffffu"
+            ],
+            1
+        ]
+    }
+}

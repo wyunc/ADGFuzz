@@ -1,0 +1,178 @@
+{
+    "set_interface_ports": {
+        "control_port": [
+            [
+                "port_out"
+            ],
+            0
+        ],
+        "target_ip": [
+            [
+                "address"
+            ],
+            0
+        ]
+    },
+    "output_servos": {
+        "pkt.frame_count": [
+            [
+                "frame_counter"
+            ],
+            0
+        ],
+        "pkt.frame_rate": [
+            [
+                "rate_hz"
+            ],
+            0
+        ],
+        "send_ret": [
+            [
+                "sock_sendto_target_ip",
+                "sock_sendto_pkt_size",
+                "sock_sendto_pkt",
+                "sock_sendto_control_port"
+            ],
+            0
+        ],
+        "pkt_size": [
+            [
+                "sizeof_pkt"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "wait_ms": [
+            [
+                "udp_timeout_ms"
+            ],
+            0
+        ],
+        "sensor_buffer_len": [
+            [
+                "uint8_t",
+                "memrchr_sensor_buffer_len",
+                "memrchr_sensor_buffer",
+                "const",
+                "sensor_buffer",
+                "sock_recv_sensor_buffer",
+                "udp_timeout_ms",
+                "sock_recv_sensor_buffer_len",
+                "sock_recv_sizeof"
+            ],
+            2
+        ],
+        "position": [
+            [
+                "state_position"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "state_airspeed"
+            ],
+            0
+        ],
+        "accel_ef": [
+            [
+                "dcm_transposed",
+                "state_imu_accel_body"
+            ],
+            1
+        ],
+        "p1": [
+            [
+                "uint8_t",
+                "memrchr_p2",
+                "memrchr_sensor_buffer",
+                "const"
+            ],
+            0
+        ],
+        "velocity_air_bf": [
+            [
+                "dcm_transposed",
+                "wind_ef",
+                "state_velocity"
+            ],
+            2
+        ],
+        "last_timestamp_s": [
+            [
+                "state_timestamp_s"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "state_attitude"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "_0e6",
+                "state_timestamp_s"
+            ],
+            1
+        ],
+        "use_time_sync": [
+            [
+                "state_no_time_sync"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "i",
+                "keytable"
+            ],
+            0
+        ],
+        "wind_vane_apparent.direction": [
+            [
+                "state_wind_vane_apparent_direction"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "state_attitude"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "state_attitude"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "state_airspeed"
+            ],
+            0
+        ],
+        "last_received_bitmask": [
+            [
+                "parse_sensors_const",
+                "parse_sensors_char_p1"
+            ],
+            1
+        ],
+        "gyro": [
+            [
+                "state_imu_gyro"
+            ],
+            0
+        ],
+        "wind_vane_apparent.speed": [
+            [
+                "state_wind_vane_apparent_speed"
+            ],
+            0
+        ]
+    }
+}

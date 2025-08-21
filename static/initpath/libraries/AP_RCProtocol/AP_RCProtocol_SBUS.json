@@ -1,0 +1,47 @@
+{
+    "sbus_decode": {
+        "num_values": [
+            [
+                "sbus_input_channels"
+            ],
+            1
+        ]
+    },
+    "process_pulse": {
+        "saved_width": [
+            [
+                "width_s1"
+            ],
+            0
+        ],
+        "w1": [
+            [
+                "width_s0",
+                "width_s1"
+            ],
+            0
+        ],
+        "w0": [
+            [
+                "width_s0"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "byte_input.last_byte_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "have_frame_gap": [
+            [
+                "timestamp_us",
+                "hal_sbus_frame_gap",
+                "byte_input_last_byte_us"
+            ],
+            0
+        ]
+    }
+}

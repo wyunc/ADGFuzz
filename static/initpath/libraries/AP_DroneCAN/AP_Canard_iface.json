@@ -1,0 +1,176 @@
+{
+    "canard_allocate_sem_take": {
+        "semaphore": [
+            [
+                "new_nothrow",
+                "hal_semaphore"
+            ],
+            0
+        ]
+    },
+    "broadcast": {
+        "protocol_stats.tx_frames": [
+            [
+                "canard_broadcast_obj_tx_transfer",
+                "canard_broadcast_obj_canard"
+            ],
+            1
+        ]
+    },
+    "request": {
+        "protocol_stats.tx_frames": [
+            [
+                "canard_request_or_respond_obj_tx_transfer",
+                "canard_request_or_respond_obj_destination_node_id",
+                "canard_request_or_respond_obj_canard"
+            ],
+            1
+        ]
+    },
+    "respond": {
+        "protocol_stats.tx_frames": [
+            [
+                "canard_request_or_respond_obj_destination_node_id",
+                "canard_request_or_respond_obj_canard",
+                "canard_request_or_respond_obj_tx_transfer"
+            ],
+            1
+        ]
+    },
+    "onTransferReception": {
+        "iface": [
+            [
+                "ins_user_reference",
+                "canard_interface"
+            ],
+            0
+        ]
+    },
+    "shouldAcceptTransfer": {
+        "iface": [
+            [
+                "ins_user_reference",
+                "canard_interface"
+            ],
+            0
+        ]
+    },
+    "processTestRx": {
+        "txf": [
+            [
+                "canard_peek_tx_queue_test_iface_canard"
+            ],
+            0
+        ]
+    },
+    "processTx": {
+        "txmsg.canfd": [
+            [
+                "txf_canfd"
+            ],
+            0
+        ],
+        "txq": [
+            [
+                "txq_next",
+                "canard_tx_queue"
+            ],
+            0
+        ],
+        "txmsg.id": [
+            [
+                "flag_eff",
+                "txf_id"
+            ],
+            0
+        ],
+        "last_transmit_us": [
+            [
+                "stats_last_transmit_us",
+                "iface",
+                "ifaces",
+                "_get_statistics",
+                "nullptr"
+            ],
+            1
+        ],
+        "txmsg.dlc": [
+            [
+                "data_length_to_dlc_txf_data_len"
+            ],
+            0
+        ],
+        "txf": [
+            [
+                "txq_frame"
+            ],
+            0
+        ]
+    },
+    "processRx": {
+        "rx_frame.id": [
+            [
+                "rxmsg_id"
+            ],
+            0
+        ],
+        "rx_frame.data_len": [
+            [
+                "dlc_to_data_length_rxmsg_dlc"
+            ],
+            0
+        ],
+        "rx_frame.canfd": [
+            [
+                "rxmsg_canfd"
+            ],
+            0
+        ],
+        "rx_frame.iface_id": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "canard_handle_rx_frame_rx_frame",
+                "canard_handle_rx_frame_canard",
+                "canard_handle_rx_frame_timestamp"
+            ],
+            0
+        ]
+    },
+    "process": {
+        "deadline": [
+            [
+                "micros64",
+                "duration_ms"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "add_11bit_driver": {
+        "aux_11bit_driver": [
+            [
+                "sensor"
+            ],
+            0
+        ]
+    },
+    "write_aux_frame": {
+        "tx_deadline_us": [
+            [
+                "timeout_us",
+                "micros64"
+            ],
+            0
+        ]
+    }
+}

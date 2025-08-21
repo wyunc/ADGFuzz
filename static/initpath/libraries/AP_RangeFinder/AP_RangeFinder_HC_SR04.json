@@ -1,0 +1,36 @@
+{
+    "check_trigger_pin": {
+        "trigger_pin": [
+            [
+                "params_stop_pin"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "pwm_source_get_pwm_us"
+            ],
+            1
+        ],
+        "last_ping_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_reading_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_distance_m": [
+            [
+                "state_distance_m"
+            ],
+            0
+        ]
+    }
+}

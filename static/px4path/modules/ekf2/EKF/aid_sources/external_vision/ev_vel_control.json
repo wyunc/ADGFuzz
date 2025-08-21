@@ -1,0 +1,64 @@
+{
+    "controlEvVelFusion": {
+        "is_fusion_failing": [
+            [
+                "is_timed_out_aid_src_time_last_fuse",
+                "is_timed_out__params_no_aid_timeout_max"
+            ],
+            0
+        ],
+        "gate": [
+            [
+                "sqrt__f",
+                "max__params_ev_vel_innov_gate",
+                "max__f",
+                "float",
+                "is_horizontal_aiding_active"
+            ],
+            0
+        ]
+    },
+    "fuseBodyFrameVelocity": {
+        "_time_last_ver_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "Kfusion": [
+            [
+                "aid_src_innovation_variance",
+                "p",
+                "index",
+                "h"
+            ],
+            0
+        ],
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "state_vector": [
+            [
+                "_state_vector"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "_r_to_earth_transpose",
+                "_state_vel",
+                "measurement"
+            ],
+            0
+        ]
+    }
+}

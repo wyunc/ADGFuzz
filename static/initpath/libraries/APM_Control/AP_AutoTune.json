@@ -1,0 +1,315 @@
+{
+    "start": {
+        "dt": [
+            [
+                "scheduler_get_loop_period_s"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "idle"
+            ],
+            0
+        ],
+        "current": [
+            [
+                "restore",
+                "get_gains",
+                "last_save"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "max_SRate_P": [
+            [
+                "slew_limiter_p_get_slew_rate",
+                "max_s_rate_p"
+            ],
+            0
+        ],
+        "max_target": [
+            [
+                "target_filter_apply_pinfo_target"
+            ],
+            1
+        ],
+        "D_limit": [
+            [
+                "current_d",
+                "d",
+                "d_limit"
+            ],
+            0
+        ],
+        "min_Dmod": [
+            [
+                "pinfo_dmod",
+                "min_dmod"
+            ],
+            0
+        ],
+        "slew_limit_scale": [
+            [
+                "degrees"
+            ],
+            0
+        ],
+        "slew_sum": [
+            [
+                "max_s_rate_d",
+                "max_s_rate_p"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "idle",
+                "demand_neg",
+                "demand_pos"
+            ],
+            1
+        ],
+        "FF_single": [
+            [
+                "actuator_filter_apply_clipped_actuator",
+                "rate_filter_apply_pinfo_actual",
+                "actuator_filter_apply_clipped_actuator",
+                "actuator_filter_apply_clipped_actuator",
+                "rate_filter_apply_pinfo_actual",
+                "rate_filter_apply_pinfo_actual",
+                "scaler",
+                "rate_filter_apply_pinfo_actual"
+            ],
+            6
+        ],
+        "clipped_actuator": [
+            [
+                "pinfo_d",
+                "pinfo_dff",
+                "pinfo_ff",
+                "pinfo_p",
+                "pinfo_i"
+            ],
+            0
+        ],
+        "rate_threshold2": [
+            [
+                "current_tau_get_current_rmax_pos",
+                "abs_aparm_pitch_limit_min",
+                "abs_aparm_pitch_limit_max",
+                "abs_abs",
+                "aparm_roll_limit"
+            ],
+            2
+        ],
+        "P_set_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "D": [
+            [
+                "rpid_k_d",
+                "d"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "rpid_k_p",
+                "p"
+            ],
+            0
+        ],
+        "slew_limit_max": [
+            [
+                "rpid_slew_limit"
+            ],
+            0
+        ],
+        "min_target": [
+            [
+                "target_filter_apply_pinfo_target"
+            ],
+            1
+        ],
+        "current.I": [
+            [
+                "rpid_k_i_get"
+            ],
+            0
+        ],
+        "FF": [
+            [
+                "ff_filter_apply_ff_single"
+            ],
+            0
+        ],
+        "max_D": [
+            [
+                "fabsf_pinfo_d",
+                "max_d"
+            ],
+            0
+        ],
+        "D_set_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state_enter_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "old_FF": [
+            [
+                "rpid_ff"
+            ],
+            0
+        ],
+        "max_P": [
+            [
+                "max_p",
+                "fabsf_pinfo_p"
+            ],
+            0
+        ],
+        "in_att_demand": [
+            [
+                "fabsf_angle_err_deg",
+                "abs_aparm_pitch_limit_min",
+                "abs_aparm_pitch_limit_max",
+                "abs_abs",
+                "aparm_roll_limit"
+            ],
+            1
+        ],
+        "current.P": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "max_SRate_D": [
+            [
+                "max_s_rate_d",
+                "slew_limiter_d_get_slew_rate"
+            ],
+            0
+        ],
+        "current.FF": [
+            [
+                "ff"
+            ],
+            0
+        ],
+        "P_limit": [
+            [
+                "p_limit",
+                "current_p",
+                "p"
+            ],
+            0
+        ],
+        "max_Dmod": [
+            [
+                "pinfo_dmod",
+                "max_dmod"
+            ],
+            0
+        ],
+        "action": [
+            [
+                "lower_p",
+                "low_rate",
+                "short",
+                "lower_d",
+                "raise_d",
+                "idle_lower_pd",
+                "lower_pd",
+                "raise_pd"
+            ],
+            0
+        ],
+        "current.D": [
+            [
+                "d"
+            ],
+            0
+        ]
+    },
+    "state_change": {
+        "state": [
+            [
+                "new_state"
+            ],
+            0
+        ],
+        "state_enter_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "max_P": [
+            [
+                "max_d"
+            ],
+            0
+        ]
+    },
+    "save_gains": {
+        "last_save": [
+            [
+                "get_gains"
+            ],
+            0
+        ]
+    },
+    "restore_gains": {
+        "current": [
+            [
+                "restore"
+            ],
+            0
+        ]
+    },
+    "update_rmax": {
+        "target_tau": [
+            [
+                "tuning_table",
+                "_tau",
+                "current_tau",
+                "current_i",
+                "current_ff",
+                "constrain_int32_tuning_table",
+                "constrain_int32_aparm_autotune_level",
+                "constrain_int32_array_size"
+            ],
+            2
+        ],
+        "target_rmax": [
+            [
+                "tuning_table",
+                "constrain_int32_tuning_table",
+                "constrain_int32_aparm_autotune_level",
+                "constrain_int32_array_size",
+                "_rmax",
+                "current_rmax_pos"
+            ],
+            1
+        ]
+    }
+}

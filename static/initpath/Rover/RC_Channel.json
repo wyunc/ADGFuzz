@@ -1,0 +1,16 @@
+{
+    "add_waypoint_for_current_loc": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ],
+        "cmd.content.location": [
+            [
+                "rover_current_loc"
+            ],
+            0
+        ]
+    }
+}

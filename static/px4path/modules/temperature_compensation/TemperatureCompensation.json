@@ -1,0 +1,191 @@
+{
+    "initialize_parameter_handles": {
+        ".x0": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".ref_temp": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        "parameter_handles.mag_tc_enable": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "parameter_handles.accel_tc_enable": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        ".x1": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".min_temp": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".ID": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        "parameter_handles.baro_tc_enable": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        ".x4": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".x3": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".max_temp": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        "parameter_handles.gyro_tc_enable": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        ".x5": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        ".x2": [
+            [
+                "param_find_nbuf"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "param_get_accel_tc_enabled",
+                "param_get_baro_tc_enabled",
+                "param_get_parameter_handles_accel_tc_enable",
+                "param_get_mag_tc_enabled",
+                "param_get_parameter_handles_baro_tc_enable",
+                "param_get_gyro_tc_enabled",
+                "px4_error",
+                "param_get_parameter_handles_gyro_tc_enable",
+                "param_get_parameter_handles_mag_tc_enable"
+            ],
+            0
+        ]
+    },
+    "parameters_update": {
+        "ret": [
+            [
+                "initialize_parameter_handles_parameter_handles",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "calc_thermal_offsets_1D": {
+        "offset": [
+            [
+                "coef_x0",
+                "coef_x1",
+                "measured_temp",
+                "coef_ref_temp",
+                "coef_min_temp",
+                "coef_max_temp",
+                "coef_x3",
+                "coef_x5",
+                "coef_x4",
+                "coef_x2"
+            ],
+            2
+        ]
+    },
+    "calc_thermal_offsets_3D": {
+        "delta_temp_3": [
+            [
+                "measured_temp",
+                "coef_min_temp",
+                "coef_ref_temp",
+                "coef_max_temp",
+                "measured_temp",
+                "coef_min_temp",
+                "coef_ref_temp",
+                "coef_max_temp"
+            ],
+            2
+        ]
+    },
+    "update_offsets_accel": {
+        "mapping": [
+            [
+                "topic_instance",
+                "_accel_data_device_mapping"
+            ],
+            0
+        ]
+    },
+    "update_offsets_gyro": {
+        "mapping": [
+            [
+                "topic_instance",
+                "_gyro_data_device_mapping"
+            ],
+            0
+        ]
+    },
+    "update_offsets_mag": {
+        "mapping": [
+            [
+                "_mag_data_device_mapping",
+                "topic_instance"
+            ],
+            0
+        ]
+    },
+    "update_offsets_baro": {
+        "mapping": [
+            [
+                "topic_instance",
+                "_baro_data_device_mapping"
+            ],
+            0
+        ]
+    },
+    "print_status": {
+        "mapping": [
+            [
+                "_baro_data_device_mapping",
+                "i",
+                "_accel_data_device_mapping",
+                "_mag_data_device_mapping",
+                "_gyro_data_device_mapping"
+            ],
+            0
+        ]
+    }
+}

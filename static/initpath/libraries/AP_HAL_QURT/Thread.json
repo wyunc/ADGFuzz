@@ -1,0 +1,68 @@
+{
+    "_run_trampoline": {
+        "thread": [
+            [
+                "arg",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "_run": {
+        "dt": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "next_run_usec": [
+            [
+                "_period_usec",
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "r": [
+            [
+                "pthread_create__run_trampoline",
+                "pthread_create__ctx",
+                "pthread_create_attr",
+                "pthread_create_this"
+            ],
+            0
+        ],
+        "param": [
+            [
+                "prio",
+                "_sched_priority"
+            ],
+            0
+        ],
+        "_stack_size": [
+            [
+                "2048u"
+            ],
+            1
+        ]
+    },
+    "set_rate": {
+        "_period_usec": [
+            [
+                "hz_to_usec_rate_hz"
+            ],
+            0
+        ]
+    },
+    "set_stack_size": {
+        "_stack_size": [
+            [
+                "size_t",
+                "stack_size",
+                "pthread_stack_min"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,354 @@
+{
+    "ftp_init": {
+        "ftp.requests": [
+            [
+                "new_nothrow",
+                "object_buffer",
+                "nullptr",
+                "pending_ftp"
+            ],
+            0
+        ]
+    },
+    "handle_file_transfer_protocol": {
+        "request.compid": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "request.size": [
+            [
+                "packet_payload"
+            ],
+            0
+        ],
+        "request.sysid": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "request.session": [
+            [
+                "packet_payload"
+            ],
+            0
+        ],
+        "request.opcode": [
+            [
+                "packet_payload",
+                "ftp_op",
+                "static_cast"
+            ],
+            0
+        ],
+        "request.offset": [
+            [
+                "le32toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "request.seq_number": [
+            [
+                "le16toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "request.req_opcode": [
+            [
+                "packet_payload",
+                "ftp_op",
+                "static_cast"
+            ],
+            0
+        ],
+        "request.burst_complete": [
+            [
+                "packet_payload"
+            ],
+            0
+        ],
+        "request.chan": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    },
+    "ftp_error": {
+        "response.opcode": [
+            [
+                "nack"
+            ],
+            0
+        ]
+    },
+    "ftp_push_replies": {
+        "ftp.last_send_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "ftp_worker": {
+        "file_size": [
+            [
+                "st_st_size"
+            ],
+            0
+        ],
+        "len2": [
+            [
+                "strnlen_sizeof",
+                "strnlen_request_data",
+                "strnlen_filename2",
+                "strnlen_sizeof",
+                "strnlen_request_data",
+                "strnlen_filename1"
+            ],
+            1
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "ftp.mode": [
+            [
+                "read",
+                "write"
+            ],
+            0
+        ],
+        "reply.size": [
+            [
+                "_read_reply_data",
+                "_read_request_size",
+                "fs_read_ftp_fd",
+                "_read_sizeof",
+                "_read_max_read",
+                "sizeof_uint32_t",
+                "uint8_t"
+            ],
+            1
+        ],
+        "reply.compid": [
+            [
+                "request_compid"
+            ],
+            0
+        ],
+        "reply.sysid": [
+            [
+                "request_sysid"
+            ],
+            0
+        ],
+        "reply.chan": [
+            [
+                "request_chan"
+            ],
+            0
+        ],
+        "reply.req_opcode": [
+            [
+                "request_opcode"
+            ],
+            0
+        ],
+        "burst_delay_ms": [
+            [
+                "port_bw_in_bytes_per_second",
+                "payload_size_file_transfer_protocol",
+                "sizeof_reply_data",
+                "request_size",
+                "sizeof_reply_data",
+                "payload_size_request_chan"
+            ],
+            3
+        ],
+        "file_name_len": [
+            [
+                "sizeof_request_data",
+                "strnlen_charrequest_data"
+            ],
+            0
+        ],
+        "write_bytes": [
+            [
+                "_write_request_data",
+                "_write_request_size",
+                "fs_write_ftp_fd"
+            ],
+            0
+        ],
+        "ftp.current_session": [
+            [
+                "request_session"
+            ],
+            0
+        ],
+        "reply.seq_number": [
+            [
+                "request_seq_number"
+            ],
+            0
+        ],
+        "filename1": [
+            [
+                "request_data",
+                "char"
+            ],
+            0
+        ],
+        "request.opcode": [
+            [
+                "create_file",
+                "o_creat",
+                "o_wronly",
+                "o_trunc"
+            ],
+            0
+        ],
+        "reply.session": [
+            [
+                "request_session"
+            ],
+            0
+        ],
+        "reply.offset": [
+            [
+                "i",
+                "request_offset",
+                "_read_reply_data",
+                "_read_request_size",
+                "fs_read_ftp_fd",
+                "_read_sizeof",
+                "_read_max_read",
+                "sizeof_reply_data",
+                "request_size"
+            ],
+            2
+        ],
+        "reply.opcode": [
+            [
+                "ack"
+            ],
+            0
+        ],
+        "reply.burst_complete": [
+            [
+                "i",
+                "transfer_size"
+            ],
+            0
+        ],
+        "ftp.fd": [
+            [
+                "o_rdonly",
+                "fs_open_charrequest_data"
+            ],
+            0
+        ],
+        "filename2": [
+            [
+                "request_data",
+                "char",
+                "strnlen_sizeof",
+                "strnlen_request_data",
+                "strnlen_filename1"
+            ],
+            1
+        ],
+        "port": [
+            [
+                "request_chan",
+                "mavlink_comm_port"
+            ],
+            0
+        ]
+    },
+    "gen_dir_entry": {
+        "max_name_len": [
+            [
+                "255u",
+                "unsigned_max_name_len",
+                "unsigned_255u"
+            ],
+            0
+        ],
+        "full_path_len": [
+            [
+                "strlen_path",
+                "strnlen_entry_d_name",
+                "strnlen_max_name_len"
+            ],
+            0
+        ],
+        "is_file": [
+            [
+                "dt_lnk",
+                "entry_d_type",
+                "dt_reg"
+            ],
+            0
+        ]
+    },
+    "ftp_list_dir": {
+        "dir": [
+            [
+                "fs_opendir_charrequest_data"
+            ],
+            0
+        ],
+        "response.opcode": [
+            [
+                "ack"
+            ],
+            0
+        ],
+        "response.offset": [
+            [
+                "request_offset"
+            ],
+            0
+        ],
+        "directory_name_size": [
+            [
+                "sizeof_request_data",
+                "strnlen_charrequest_data"
+            ],
+            0
+        ],
+        "dir_len": [
+            [
+                "strlen_charrequest_data"
+            ],
+            0
+        ],
+        "needed_space": [
+            [
+                "request_data",
+                "char",
+                "gen_dir_entry_charresponse_data",
+                "fs_readdir_dir",
+                "sizeof_request_data"
+            ],
+            1
+        ],
+        "response.size": [
+            [
+                "request_data",
+                "gen_dir_entry_char_response_data",
+                "char",
+                "fs_readdir_dir",
+                "sizeof_response_data",
+                "gen_dir_entry_char_index"
+            ],
+            3
+        ]
+    }
+}

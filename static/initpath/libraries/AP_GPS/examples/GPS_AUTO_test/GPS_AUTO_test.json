@@ -1,0 +1,27 @@
+{
+    "print_latlon": {
+        "frac_portion": [
+            [
+                "10000000ul",
+                "labs_lat_or_lon",
+                "10000000ul",
+                "labs_lat_or_lon"
+            ],
+            2
+        ]
+    },
+    "loop": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "last_msg_ms": [
+            [
+                "gps_last_message_time_ms"
+            ],
+            0
+        ]
+    }
+}

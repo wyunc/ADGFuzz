@@ -1,0 +1,30 @@
+{
+    "setup": {
+        "throttle": [
+            [
+                "throttle_step"
+            ],
+            0
+        ],
+        "throttle_out": [
+            [
+                "motors_thr_lin_actuator_to_thrust_throttle",
+                "motors_thr_lin_actuator_to_thrust_motors_thr_lin_thrust_to_actuator"
+            ],
+            0
+        ],
+        "expo": [
+            [
+                "expo_step"
+            ],
+            0
+        ],
+        "max_diff": [
+            [
+                "fabsf_throttle",
+                "fabsf_throttle_out"
+            ],
+            1
+        ]
+    }
+}

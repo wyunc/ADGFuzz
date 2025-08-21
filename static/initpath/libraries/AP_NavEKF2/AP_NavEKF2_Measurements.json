@@ -1,0 +1,1089 @@
+{
+    "readRangeFinder": {
+        "rangeDataNew.sensor_idx": [
+            [
+                "sensor_index"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "_rng_get_backend_sensor_index"
+            ],
+            0
+        ],
+        "lastRngMeasTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "rangeDataNew.rng": [
+            [
+                "mid_index",
+                "stored_rng_meas",
+                "sensor_index",
+                "rng_on_gnd"
+            ],
+            0
+        ],
+        "rangeDataNew.time_ms": [
+            [
+                "imu_sample_time_ms",
+                "mid_index",
+                "sensor_index",
+                "stored_rng_meas_time_ms"
+            ],
+            0
+        ],
+        "_rng": [
+            [
+                "dal_rangefinder"
+            ],
+            0
+        ],
+        "midIndex": [
+            [
+                "max_index",
+                "min_index"
+            ],
+            0
+        ],
+        "rngValidMeaTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "rngOnGnd": [
+            [
+                "_rng_ground_clearance_cm_orient_rotation_pitch_270"
+            ],
+            0
+        ]
+    },
+    "writeOptFlowMeas": {
+        "ofDataNew.heightOverride": [
+            [
+                "height_override"
+            ],
+            0
+        ],
+        "flowGyroBias.x": [
+            [
+                "flow_gyro_bias_x",
+                "constrain_ftype_del_ang_body_of_x",
+                "constrain_ftype_raw_gyro_rates_x",
+                "constrain_ftype_del_time_of"
+            ],
+            0
+        ],
+        "ofDataNew.flowRadXYcomp.y": [
+            [
+                "of_data_new_flow_rad_xy_y",
+                "of_data_new_body_rad_xyz_y"
+            ],
+            0
+        ],
+        "ofDataNew.flowRadXYcomp.x": [
+            [
+                "of_data_new_body_rad_xyz_x",
+                "of_data_new_flow_rad_xy_x"
+            ],
+            0
+        ],
+        "ofDataNew.bodyRadXYZ.z": [
+            [
+                "del_ang_body_of_z",
+                "del_time_of",
+                "imu_data_new_del_ang_dt",
+                "imu_data_new_del_ang_z"
+            ],
+            0
+        ],
+        "flowGyroBias.y": [
+            [
+                "constrain_ftype_del_ang_body_of_y",
+                "constrain_ftype_del_time_of",
+                "flow_gyro_bias_y",
+                "constrain_ftype_raw_gyro_rates_y"
+            ],
+            0
+        ],
+        "ofDataNew.time_ms": [
+            [
+                "imu_data_delayed_time_ms",
+                "imu_sample_time_ms",
+                "frontend_flow_time_delta_avg_ms",
+                "of_data_new_time_ms",
+                "frontend__flow_delay_ms",
+                "local_filter_time_step_ms"
+            ],
+            0
+        ],
+        "ofDataNew.bodyRadXYZ.x": [
+            [
+                "raw_gyro_rates_x",
+                "flow_gyro_bias_x"
+            ],
+            0
+        ],
+        "flowDataToFuse": [
+            [
+                "stored_of_recall_of_data_delayed",
+                "stored_of_recall_imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "flowValidMeaTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "flowMeaTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "ofDataNew.body_offset": [
+            [
+                "pos_offset_toftype"
+            ],
+            0
+        ],
+        "ofDataNew.bodyRadXYZ.y": [
+            [
+                "flow_gyro_bias_y",
+                "raw_gyro_rates_y"
+            ],
+            0
+        ],
+        "ofDataNew.flowRadXY": [
+            [
+                "_toftype",
+                "raw_flow_rates"
+            ],
+            0
+        ]
+    },
+    "tryChangeCompass": {
+        "maxCount": [
+            [
+                "compass_get_count"
+            ],
+            0
+        ],
+        "tempIndex": [
+            [
+                "max_count",
+                "i",
+                "mag_select_index"
+            ],
+            0
+        ],
+        "lastHealthyMagTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "magSelectIndex": [
+            [
+                "temp_index"
+            ],
+            0
+        ],
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ]
+    },
+    "readMagData": {
+        "wasLearningCompass_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "fusionTimeout": [
+            [
+                "ekf_start_time_ms",
+                "on_ground",
+                "imu_sample_time_ms",
+                "mag_timeout"
+            ],
+            0
+        ],
+        "consistentMagData": [
+            [
+                "compass_consistent"
+            ],
+            0
+        ],
+        "lastMagRead_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "changeDetected": [
+            [
+                "last_mag_offsets_valid",
+                "now_mag_offsets",
+                "last_mag_offsets"
+            ],
+            0
+        ],
+        "maxCount": [
+            [
+                "compass_get_count"
+            ],
+            0
+        ],
+        "magDataNew.mag": [
+            [
+                "compass_get_field_mag_select_index_toftype"
+            ],
+            0
+        ],
+        "sensorTimeout": [
+            [
+                "compass_healthy_mag_select_index",
+                "imu_sample_time_ms",
+                "frontend_mag_fail_time_limit_ms",
+                "last_mag_read_ms"
+            ],
+            0
+        ],
+        "lastMagUpdate_us": [
+            [
+                "compass_last_update_usec_mag_select_index"
+            ],
+            0
+        ],
+        "magDataNew.time_ms": [
+            [
+                "local_filter_time_step_ms",
+                "imu_sample_time_ms",
+                "frontend_mag_delay_ms"
+            ],
+            0
+        ],
+        "nowMagOffsets": [
+            [
+                "compass_get_offsets_mag_select_index_toftype"
+            ],
+            0
+        ],
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ],
+        "lastMagOffsets": [
+            [
+                "now_mag_offsets"
+            ],
+            0
+        ]
+    },
+    "readIMUData": {
+        "dtIMUavg": [
+            [
+                "ins_get_loop_delta_t"
+            ],
+            0
+        ],
+        "minDT": [
+            [
+                "dt_ekf_avg"
+            ],
+            0
+        ],
+        "imuDataDownSampledNew.gyro_index": [
+            [
+                "imu_data_new_gyro_index",
+                "imu_index",
+                "ins_get_first_usable_gyro"
+            ],
+            2
+        ],
+        "stateStruct.accel_zbias": [
+            [
+                "_accel_zbias",
+                "inactive_bias",
+                "ins_get_first_usable_accel",
+                "imu_index"
+            ],
+            1
+        ],
+        "imuDataDownSampledNew.delAngDT": [
+            [
+                "imu_data_new_del_ang_dt"
+            ],
+            0
+        ],
+        "imuDataDownSampledNew.delVel": [
+            [
+                "imu_data_new_del_vel",
+                "delta_rot_mat"
+            ],
+            0
+        ],
+        "dtNow": [
+            [
+                "constrain_ftype_imu_data_down_sampled_new_del_vel_dt",
+                "ekf_target_dt",
+                "constrain_ftype_imu_data_down_sampled_new_del_ang_dt"
+            ],
+            0
+        ],
+        "imuDataNew.time_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "imuDataDelayed.delVelDT": [
+            [
+                "min_dt",
+                "imu_data_delayed_del_vel_dt"
+            ],
+            0
+        ],
+        "imuDataDelayed": [
+            [
+                "stored_imu_get_oldest_element"
+            ],
+            0
+        ],
+        "accelPosOffset": [
+            [
+                "ins_get_imu_pos_offset_accel_index_active_toftype"
+            ],
+            0
+        ],
+        "imuDataNew.accel_index": [
+            [
+                "ins_get_first_usable_accel",
+                "imu_index"
+            ],
+            2
+        ],
+        "imuDataDownSampledNew.accel_index": [
+            [
+                "ins_get_first_usable_accel",
+                "imu_index",
+                "imu_data_new_accel_index"
+            ],
+            2
+        ],
+        "imuDataDownSampledNew.time_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "dtEkfAvg": [
+            [
+                "dt_ekf_avg",
+                "dt_now"
+            ],
+            0
+        ],
+        "delAngCorrected": [
+            [
+                "imu_data_delayed_del_ang"
+            ],
+            0
+        ],
+        "imuDataDelayed.delAngDT": [
+            [
+                "min_dt",
+                "imu_data_delayed_del_ang_dt"
+            ],
+            0
+        ],
+        "delVelCorrected": [
+            [
+                "imu_data_delayed_del_vel"
+            ],
+            0
+        ],
+        "stateStruct.gyro_scale": [
+            [
+                "imu_index",
+                "ins_get_first_usable_gyro",
+                "inactive_bias",
+                "_gyro_scale"
+            ],
+            1
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ],
+        "stateStruct.gyro_bias": [
+            [
+                "imu_index",
+                "ins_get_first_usable_gyro",
+                "inactive_bias",
+                "_gyro_bias"
+            ],
+            1
+        ],
+        "imuDataNew.gyro_index": [
+            [
+                "imu_index",
+                "ins_get_first_usable_gyro"
+            ],
+            2
+        ],
+        "imuDataDownSampledNew.delVelDT": [
+            [
+                "imu_data_new_del_vel_dt"
+            ],
+            0
+        ]
+    },
+    "readDeltaVelocity": {
+        "dVel_dt": [
+            [
+                "_0e",
+                "d_vel_dt_f",
+                "d_vel_dt"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ],
+        "dVel": [
+            [
+                "d_vel_f_toftype"
+            ],
+            0
+        ]
+    },
+    "readGpsData": {
+        "lastTimeGpsReceived_ms": [
+            [
+                "gps_last_message_time_ms_gps_primary_sensor"
+            ],
+            0
+        ],
+        "gpsDataNew.time_ms": [
+            [
+                "1e3f",
+                "gps_data_new_time_ms",
+                "uint32_t",
+                "last_time_gps_received_ms",
+                "gps_delay",
+                "local_filter_time_step_ms",
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "ekfOriginHgtVar": [
+            [
+                "sq_gps_hgt_accuracy"
+            ],
+            0
+        ],
+        "gpsSpdAccuracy": [
+            [
+                "gps_spd_acc_raw",
+                "constrain_ftype_second_last_gps_time_ms",
+                "constrain_ftype_last_time_gps_received_ms",
+                "gps_spd_accuracy",
+                "frontend__gps_horiz_vel_noise"
+            ],
+            1
+        ],
+        "gpsloc_fieldelevation": [
+            [
+                "gps_location"
+            ],
+            1
+        ],
+        "gpsDataNew.hgt": [
+            [
+                "ekf_gps_ref_hgt",
+                "gpsloc_alt",
+                "ekf_origin_alt",
+                "float",
+                "double"
+            ],
+            0
+        ],
+        "gpsDataNew.sensor_idx": [
+            [
+                "gps_primary_sensor"
+            ],
+            0
+        ],
+        "gps": [
+            [
+                "dal_gps"
+            ],
+            0
+        ],
+        "secondLastGpsTime_ms": [
+            [
+                "last_time_gps_received_ms"
+            ],
+            0
+        ],
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ],
+        "gpsDataNew.vel": [
+            [
+                "gps_velocity_toftype"
+            ],
+            0
+        ],
+        "gpsPosAccuracy": [
+            [
+                "frontend__gps_horiz_pos_noise",
+                "constrain_ftype_second_last_gps_time_ms",
+                "constrain_ftype_last_time_gps_received_ms",
+                "gps_pos_accuracy",
+                "gps_pos_acc_raw"
+            ],
+            1
+        ],
+        "gpsDataNew.pos": [
+            [
+                "ekf_origin_get_distance_ne_ftype_gpsloc"
+            ],
+            0
+        ],
+        "ekfGpsRefHgt": [
+            [
+                "gpsloc_alt",
+                "output_data_new_position_z",
+                "double"
+            ],
+            0
+        ],
+        "gpsHgtAccuracy": [
+            [
+                "frontend__gps_horiz_pos_noise",
+                "gps_hgt_accuracy",
+                "constrain_ftype_second_last_gps_time_ms",
+                "constrain_ftype_last_time_gps_received_ms",
+                "gps_hgt_acc_raw"
+            ],
+            1
+        ],
+        "stateStruct.earth_magfield": [
+            [
+                "get_earth_field_ga_gpsloc_toftype"
+            ],
+            1
+        ],
+        "gpsloc_fieldelevation.alt": [
+            [
+                "state_struct_position_z",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "readDeltaAngle": {
+        "dAng": [
+            [
+                "d_ang_f_toftype"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ],
+        "dAng_dt": [
+            [
+                "d_ang_dt_f",
+                "d_ang_dt",
+                "_0e"
+            ],
+            0
+        ]
+    },
+    "readBaroData": {
+        "baro": [
+            [
+                "dal_baro"
+            ],
+            0
+        ],
+        "lastBaroReceived_ms": [
+            [
+                "baro_get_last_update"
+            ],
+            0
+        ],
+        "baroDataNew.hgt": [
+            [
+                "mea_hgt_at_take_off",
+                "baro_data_new_hgt",
+                "baro_get_altitude"
+            ],
+            0
+        ],
+        "baroDataNew.time_ms": [
+            [
+                "frontend__hgt_delay_ms",
+                "baro_data_new_time_ms",
+                "last_baro_received_ms",
+                "imu_data_delayed_time_ms",
+                "local_filter_time_step_ms"
+            ],
+            0
+        ]
+    },
+    "calcFiltBaroOffset": {
+        "baroHgtOffset": [
+            [
+                "constrain_ftype_state_struct_position_z",
+                "constrain_ftype_baro_data_delayed_hgt",
+                "constrain_ftype_baro_hgt_offset"
+            ],
+            0
+        ]
+    },
+    "correctEkfOriginHeight": {
+        "ekfOriginHgtVar": [
+            [
+                "delta_time",
+                "origin_hgt_obs_var",
+                "ekf_origin_hgt_var",
+                "sq_baro_drift_rate",
+                "sq_delta_time",
+                "sq_max_terr_grad",
+                "ekf_origin_hgt_var",
+                "sq_state_struct_velocity_xy_length"
+            ],
+            1
+        ],
+        "ekfGpsRefHgt": [
+            [
+                "origin_hgt_obs_var",
+                "ekf_origin_hgt_var",
+                "double",
+                "state_struct_position_z",
+                "gps_data_delayed_hgt"
+            ],
+            2
+        ],
+        "originHgtObsVar": [
+            [
+                "sq_gps_hgt_accuracy",
+                "p"
+            ],
+            0
+        ],
+        "lastOriginHgtTime_ms": [
+            [
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "ratio": [
+            [
+                "sq_innovation",
+                "origin_hgt_obs_var",
+                "ekf_origin_hgt_var"
+            ],
+            0
+        ],
+        "deltaTime": [
+            [
+                "constrain_ftype_last_origin_hgt_time_ms",
+                "constrain_ftype_imu_data_delayed_time_ms"
+            ],
+            0
+        ]
+    },
+    "readAirSpdData": {
+        "timeTasReceived_ms": [
+            [
+                "aspeed_last_update_ms"
+            ],
+            0
+        ],
+        "aspeed": [
+            [
+                "dal_airspeed"
+            ],
+            0
+        ],
+        "tasDataToFuse": [
+            [
+                "stored_tas_recall_imu_data_delayed_time_ms",
+                "stored_tas_recall_tas_data_delayed"
+            ],
+            0
+        ],
+        "tasDataNew.time_ms": [
+            [
+                "frontend_tas_delay_ms",
+                "time_tas_received_ms",
+                "local_filter_time_step_ms"
+            ],
+            0
+        ],
+        "tasDataNew.tas": [
+            [
+                "dal_get_eas2tas",
+                "aspeed_get_airspeed"
+            ],
+            0
+        ]
+    },
+    "readRngBcnData": {
+        "rngBcnLast3DmeasTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "rngBcnDataToFuse": [
+            [
+                "stored_range_beacon_recall_imu_data_delayed_time_ms",
+                "stored_range_beacon_recall_rng_bcn_data_delayed"
+            ],
+            0
+        ],
+        "rngBcnDataNew.time_ms": [
+            [
+                "local_filter_time_step_ms",
+                "frontend__rng_bcn_delay_ms",
+                "last_time_rng_bcn_ms",
+                "last_rng_bcn_checked"
+            ],
+            1
+        ],
+        "rngBcnDataNew.beacon_posNED": [
+            [
+                "beacon_beacon_position_index_toftype"
+            ],
+            0
+        ],
+        "posDiffSq": [
+            [
+                "sq_receiver_pos_x",
+                "sq_beacon_vehicle_pos_ned_y",
+                "sq_receiver_pos_y",
+                "sq_beacon_vehicle_pos_ned_x"
+            ],
+            0
+        ],
+        "ekfOriginHgtVar": [
+            [
+                "sq_beacon_vehicle_pos_err"
+            ],
+            0
+        ],
+        "rngBcnDataNew.rng": [
+            [
+                "beacon_beacon_distance_index"
+            ],
+            0
+        ],
+        "lastRngBcnChecked": [
+            [
+                "last_rng_bcn_checked"
+            ],
+            1
+        ],
+        "beacon": [
+            [
+                "dal_beacon"
+            ],
+            0
+        ],
+        "N_beacons": [
+            [
+                "beacon_count"
+            ],
+            0
+        ],
+        "beaconVehiclePosNED": [
+            [
+                "beacon_vehicle_pos_nedf_toftype"
+            ],
+            0
+        ],
+        "beaconVehiclePosErr": [
+            [
+                "beacon_vehicle_pos_err_f"
+            ],
+            0
+        ],
+        "rngBcnDataNew.rngErr": [
+            [
+                "frontend__rng_bcn_noise"
+            ],
+            0
+        ],
+        "rngBcnDataNew.beacon_ID": [
+            [
+                "last_rng_bcn_checked"
+            ],
+            1
+        ],
+        "posDiffVar": [
+            [
+                "sq_beacon_vehicle_pos_err",
+                "receiver_pos_cov"
+            ],
+            0
+        ]
+    },
+    "updateTimingStatistics": {
+        "timing.delAngDT_min": [
+            [
+                "imu_data_delayed_del_ang_dt",
+                "timing_del_ang_dt_min"
+            ],
+            0
+        ],
+        "timing.delVelDT_min": [
+            [
+                "timing_del_vel_dt_min",
+                "imu_data_delayed_del_vel_dt"
+            ],
+            0
+        ],
+        "timing.dtIMUavg_max": [
+            [
+                "dt_im_uavg",
+                "timing_dt_im_uavg_max"
+            ],
+            0
+        ],
+        "timing.dtEKFavg_max": [
+            [
+                "dt_ekf_avg",
+                "timing_dt_ek_favg_max"
+            ],
+            0
+        ],
+        "timing.delAngDT_max": [
+            [
+                "timing_del_ang_dt_max",
+                "imu_data_delayed_del_ang_dt"
+            ],
+            0
+        ],
+        "timing.delVelDT_max": [
+            [
+                "timing_del_vel_dt_max",
+                "imu_data_delayed_del_vel_dt"
+            ],
+            0
+        ],
+        "timing.dtIMUavg_min": [
+            [
+                "dt_im_uavg",
+                "timing_dt_im_uavg_min"
+            ],
+            0
+        ],
+        "timing.dtEKFavg_min": [
+            [
+                "dt_ekf_avg",
+                "timing_dt_ek_favg_min"
+            ],
+            0
+        ]
+    },
+    "writeExtNavData": {
+        "extNavDataNew.quat": [
+            [
+                "quat_toftype"
+            ],
+            0
+        ],
+        "extNavMeasTime_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "extNavDataNew.time_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "extNavDataNew.pos": [
+            [
+                "pos_toftype"
+            ],
+            0
+        ],
+        "timeStamp_ms": [
+            [
+                "delay_ms",
+                "time_stamp_ms",
+                "local_filter_time_step_ms",
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ],
+        "extNavDataNew.posErr": [
+            [
+                "pos_err"
+            ],
+            0
+        ],
+        "extNavLastPosResetTime_ms": [
+            [
+                "reset_time_ms"
+            ],
+            0
+        ],
+        "extNavDataNew.angErr": [
+            [
+                "ang_err"
+            ],
+            0
+        ]
+    },
+    "learnInactiveBiases": {
+        "error.x": [
+            [
+                "constrain_ftype_error_x",
+                "constrain_ftype_bias_limit"
+            ],
+            0
+        ],
+        "bias_limit": [
+            [
+                "radians"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ],
+        "error.z": [
+            [
+                "constrain_ftype_error_z",
+                "constrain_ftype_bias_limit"
+            ],
+            0
+        ],
+        ".accel_zbias": [
+            [
+                "state_struct_accel_zbias",
+                "dt_ekf_avg",
+                "_0e",
+                "ins_get_accel_i_z",
+                "dt_ekf_avg",
+                "inactive_bias",
+                "i",
+                "_accel_zbias",
+                "dt_ekf_avg",
+                "state_struct_gyro_bias",
+                "ins_get_gyro_gyro_index_active_toftype",
+                "dt_ekf_avg",
+                "inactive_bias",
+                "ins_get_gyro_i_toftype",
+                "i",
+                "_gyro_bias",
+                "constrain_ftype_error",
+                "constrain_ftype_bias_limit",
+                "ins_get_accel_accel_index_active_z",
+                "dt_ekf_avg",
+                "state_struct_accel_zbias"
+            ],
+            5
+        ],
+        "error.y": [
+            [
+                "constrain_ftype_error_y",
+                "constrain_ftype_bias_limit"
+            ],
+            0
+        ],
+        ".gyro_scale": [
+            [
+                "state_struct_gyro_scale"
+            ],
+            0
+        ],
+        ".gyro_bias": [
+            [
+                "dt_ekf_avg",
+                "_0e",
+                "state_struct_gyro_bias"
+            ],
+            0
+        ]
+    },
+    "writeDefaultAirSpeed": {
+        "defaultAirSpeed": [
+            [
+                "airspeed"
+            ],
+            0
+        ]
+    },
+    "writeExtNavVelData": {
+        "extNavVelNew.vel": [
+            [
+                "vel_toftype"
+            ],
+            0
+        ],
+        "extNavVelNew.err": [
+            [
+                "err"
+            ],
+            0
+        ],
+        "extNavVelMeasTime_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "extNavVelNew.time_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "timeStamp_ms": [
+            [
+                "time_stamp_ms",
+                "local_filter_time_step_ms",
+                "delay_ms",
+                "imu_data_delayed_time_ms"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "timer": {
+        "_state.current_amps": [
+            [
+                "1e",
+                "int16_t",
+                "float",
+                "data"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_cell_count": [
+            [
+                "max_cell_count",
+                "data"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "1e",
+                "i",
+                "_state_cell_voltages_cells",
+                "float",
+                "data"
+            ],
+            1
+        ]
+    }
+}

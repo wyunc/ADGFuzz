@@ -1,0 +1,25 @@
+{
+    "update": {
+        "ap_relay": [
+            [
+                "relay"
+            ],
+            0
+        ]
+    },
+    "trigger_pic": {
+        "trigger_counter": [
+            [
+                "uint16_max",
+                "_params_trigger_duration"
+            ],
+            0
+        ],
+        "ap_relay": [
+            [
+                "relay"
+            ],
+            0
+        ]
+    }
+}

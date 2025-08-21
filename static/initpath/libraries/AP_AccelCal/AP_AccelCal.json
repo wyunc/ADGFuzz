@@ -1,0 +1,109 @@
+{
+    "update": {
+        "_step": [
+            [
+                "cal_get_num_samples_collected"
+            ],
+            1
+        ],
+        "cal": [
+            [
+                "get_calibrator_i"
+            ],
+            0
+        ],
+        "_last_position_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "start": {
+        "cal": [
+            [
+                "get_calibrator_i"
+            ],
+            0
+        ],
+        "_last_result": [
+            [
+                "accel_cal_not_started"
+            ],
+            0
+        ],
+        "_gcs": [
+            [
+                "gcs"
+            ],
+            0
+        ]
+    },
+    "success": {
+        "_last_result": [
+            [
+                "accel_cal_success"
+            ],
+            0
+        ]
+    },
+    "cancel": {
+        "_last_result": [
+            [
+                "accel_cal_not_started"
+            ],
+            0
+        ]
+    },
+    "fail": {
+        "_last_result": [
+            [
+                "accel_cal_failed"
+            ],
+            0
+        ]
+    },
+    "clear": {
+        "cal": [
+            [
+                "get_calibrator_i"
+            ],
+            0
+        ]
+    },
+    "collect_sample": {
+        "cal": [
+            [
+                "get_calibrator_i"
+            ],
+            0
+        ]
+    },
+    "update_status": {
+        "cal": [
+            [
+                "get_calibrator_i"
+            ],
+            0
+        ],
+        "_status": [
+            [
+                "accel_cal_collecting_sample",
+                "accel_cal_not_started",
+                "accel_cal_waiting_for_orientation",
+                "accel_cal_success",
+                "accel_cal_failed"
+            ],
+            0
+        ]
+    },
+    "running": {
+        "_status": [
+            [
+                "accel_cal_waiting_for_orientation",
+                "accel_cal_collecting_sample"
+            ],
+            0
+        ]
+    }
+}

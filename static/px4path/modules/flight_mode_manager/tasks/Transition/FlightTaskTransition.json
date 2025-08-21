@@ -1,0 +1,85 @@
+{
+    "activate": {
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_gear.landing_gear": [
+            [
+                "gear_up",
+                "gear_down"
+            ],
+            0
+        ]
+    },
+    "updateInitialize": {
+        "ret": [
+            [
+                "update_initialize"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_yaw_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "pitch_setpoint": [
+            [
+                "compute_back_transtion_pitch_setpoint",
+                "radians__param_fw_psp_off"
+            ],
+            0
+        ],
+        "horizontal_acceleration_direction": [
+            [
+                "dcm2f__yaw"
+            ],
+            0
+        ]
+    },
+    "computeBackTranstionPitchSetpoint": {
+        "_decel_error_bt_int": [
+            [
+                "_param_vt_b_dec_i",
+                "constrain_deceleration_integrator_limit",
+                "constrain__decel_error_bt_int",
+                "constrain__f",
+                "acceleration_xy_dot_velocity_xy_direction",
+                "min__f",
+                "_f",
+                "velocity_xy_norm_squared",
+                "_param_vt_b_dec_mss",
+                "pos_to_target_dot_velocity_xy_direction",
+                "min_deceleration_setpoint",
+                "min__param_vt_b_dec_mss",
+                "_deltatime"
+            ],
+            4
+        ],
+        "velocity_xy_direction": [
+            [
+                "velocity_xy_unit_or_zero"
+            ],
+            0
+        ],
+        "pos_to_target": [
+            [
+                "position_setpoint_local",
+                "position_xy"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "init": {
+        "state.start_time_ns": [
+            [
+                "ts_to_nsec_ts"
+            ],
+            0
+        ]
+    },
+    "run_command_on_ownpid": {
+        "ret": [
+            [
+                "read_fd",
+                "read_array_size",
+                "read_buf"
+            ],
+            0
+        ],
+        "command_filepath": [
+            [
+                "commandname"
+            ],
+            0
+        ]
+    }
+}

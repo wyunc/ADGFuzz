@@ -1,0 +1,37 @@
+{
+    "PreUpdate": {
+        "parentName": [
+            [
+                "_parent_data",
+                "_data",
+                "_ecm_component",
+                "name"
+            ],
+            0
+        ],
+        "topic": [
+            [
+                "scoped_name__entity",
+                "scoped_name__ecm"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "_custom_data",
+                "optical_flow_sensor",
+                "sensor_factory_create_sensor"
+            ],
+            1
+        ],
+        "sensorScopedName": [
+            [
+                "remove_parent_scope_false",
+                "remove_parent_scope_scoped_name",
+                "remove_parent_scope__ecm",
+                "remove_parent_scope__entity"
+            ],
+            0
+        ]
+    }
+}

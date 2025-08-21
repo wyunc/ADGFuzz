@@ -1,0 +1,268 @@
+{
+    "start": {
+        "_conf_sample_time": [
+            [
+                "sample_time"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "acosf_a",
+                "acosf_cosf",
+                "cosf_a"
+            ],
+            0
+        ],
+        "_min_sample_dist": [
+            [
+                "sinf_theta",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_param.s.diag": [
+            [
+                "diag"
+            ],
+            0
+        ],
+        "_conf_fit_type": [
+            [
+                "fit_type"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "num_samples",
+                "m_pi"
+            ],
+            2
+        ],
+        "_param.s.offset": [
+            [
+                "offset"
+            ],
+            0
+        ],
+        "_param.s.offdiag": [
+            [
+                "offdiag"
+            ],
+            0
+        ]
+    },
+    "running": {
+        "_status": [
+            [
+                "accel_cal_waiting_for_orientation",
+                "accel_cal_collecting_sample"
+            ],
+            0
+        ]
+    },
+    "new_sample": {
+        "sample": [
+            [
+                "_delta_velocity",
+                "_samples_collected",
+                "_delta_time",
+                "_sample_buffer"
+            ],
+            0
+        ],
+        ".delta_time": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        ".delta_velocity": [
+            [
+                "delta_velocity"
+            ],
+            0
+        ],
+        "_last_samp_frag_collected_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_sample": {
+        "s": [
+            [
+                "_sample_buffer",
+                "i",
+                "_delta_time",
+                "_delta_velocity"
+            ],
+            0
+        ]
+    },
+    "get_sample_corrected": {
+        "s": [
+            [
+                "_param_s_offset",
+                "m"
+            ],
+            0
+        ]
+    },
+    "check_for_timeout": {
+        "timeout": [
+            [
+                "_conf_sample_time"
+            ],
+            0
+        ]
+    },
+    "get_calibration": {
+        "offset": [
+            [
+                "_param_s_offset"
+            ],
+            0
+        ],
+        "diag": [
+            [
+                "_param_s_diag"
+            ],
+            0
+        ],
+        "offdiag": [
+            [
+                "_param_s_offdiag"
+            ],
+            0
+        ]
+    },
+    "set_status": {
+        "_last_samp_frag_collected_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_sample_buffer": [
+            [
+                "calloc_accel_sample",
+                "nullptr",
+                "calloc_struct",
+                "calloc_sizeof",
+                "accel_sample",
+                "calloc__conf_num_samples",
+                "struct"
+            ],
+            0
+        ],
+        "_status": [
+            [
+                "accel_cal_waiting_for_orientation",
+                "accel_cal_collecting_sample",
+                "accel_cal_not_started",
+                "accel_cal_success",
+                "accel_cal_failed"
+            ],
+            0
+        ]
+    },
+    "run_fit": {
+        "_param": [
+            [
+                "fit_param"
+            ],
+            0
+        ],
+        "min_fitness": [
+            [
+                "calc_mean_squared_residuals_fit_param_s",
+                "calc_mean_squared_residuals__param_s"
+            ],
+            1
+        ]
+    },
+    "calc_mean_squared_residuals": {
+        "resid": [
+            [
+                "calc_residual_params",
+                "calc_residual_sample"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "_samples_collected",
+                "sq_resid"
+            ],
+            0
+        ]
+    },
+    "calc_jacob": {
+        "A": [
+            [
+                "sample_x",
+                "sample_y",
+                "offset_y",
+                "sample_z",
+                "offset_z",
+                "offdiag_x",
+                "offset_x",
+                "diag_x",
+                "offdiag_y"
+            ],
+            0
+        ],
+        "offdiag": [
+            [
+                "params_offdiag"
+            ],
+            0
+        ],
+        "diag": [
+            [
+                "params_diag"
+            ],
+            0
+        ],
+        "C": [
+            [
+                "sample_x",
+                "sample_y",
+                "offset_y",
+                "diag_z",
+                "sample_z",
+                "offset_z",
+                "offdiag_z",
+                "offset_x",
+                "offdiag_y"
+            ],
+            0
+        ],
+        "B": [
+            [
+                "sample_x",
+                "sample_y",
+                "offset_y",
+                "sample_z",
+                "diag_y",
+                "offset_z",
+                "offdiag_x",
+                "offdiag_z",
+                "offset_x"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "_length",
+                "params_offset",
+                "m",
+                "sample"
+            ],
+            1
+        ]
+    }
+}

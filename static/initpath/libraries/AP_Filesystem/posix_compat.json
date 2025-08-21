@@ -1,0 +1,81 @@
+{
+    "posix_fopen_modes_to_open": {
+        "flag": [
+            [
+                "o_rdonly",
+                "o_trunc",
+                "o_rdwr",
+                "o_wronly",
+                "o_append",
+                "o_creat"
+            ],
+            0
+        ]
+    },
+    "apfs_fprintf": {
+        "buf": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "vasprintf_fmt",
+                "_write_buf",
+                "_write_len",
+                "vasprintf_buf",
+                "vasprintf_va",
+                "fs_write_stream_fd"
+            ],
+            0
+        ]
+    },
+    "apfs_fputs": {
+        "ret": [
+            [
+                "fs_write_stream_fd",
+                "_write_strlen",
+                "_write_s"
+            ],
+            0
+        ]
+    },
+    "apfs_fclose": {
+        "tmpfile_name": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "fs_close_stream_fd"
+            ],
+            0
+        ]
+    },
+    "apfs_getc": {
+        "ret": [
+            [
+                "_read_c",
+                "fs_read_stream_fd"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "stream_unget"
+            ],
+            0
+        ]
+    },
+    "apfs_ungetc": {
+        "unget": [
+            [
+                "c"
+            ],
+            0
+        ]
+    }
+}

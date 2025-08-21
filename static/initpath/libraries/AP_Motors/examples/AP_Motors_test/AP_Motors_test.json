@@ -1,0 +1,208 @@
+{
+    "setup": {
+        "motors_tri": [
+            [
+                "ap_motors_tri",
+                "new"
+            ],
+            0
+        ],
+        "swash_type2": [
+            [
+                "_offset",
+                "ap_int8",
+                "_offset",
+                "char",
+                "var_info",
+                "var_info"
+            ],
+            1
+        ],
+        "arg": [
+            [
+                "i",
+                "argv"
+            ],
+            0
+        ],
+        "dual_mode": [
+            [
+                "_offset",
+                "ap_int8",
+                "var_info"
+            ],
+            0
+        ],
+        "tail_type.char_ptr": [
+            [
+                "_offset",
+                "char",
+                "var_info"
+            ],
+            0
+        ],
+        "collective_yaw_scale.char_ptr": [
+            [
+                "_offset",
+                "char",
+                "var_info"
+            ],
+            0
+        ],
+        "frame_class": [
+            [
+                "atof_eq",
+                "motor_frame_quad",
+                "motor_frame_class"
+            ],
+            1
+        ],
+        "eq": [
+            [
+                "strchr_arg"
+            ],
+            0
+        ],
+        "swash_type1": [
+            [
+                "_offset",
+                "ap_int8",
+                "var_info",
+                "_offset",
+                "char",
+                "var_info"
+            ],
+            1
+        ],
+        "swash_type": [
+            [
+                "_offset",
+                "ap_int8",
+                "var_info",
+                "_offset",
+                "char",
+                "var_info"
+            ],
+            1
+        ],
+        "motors": [
+            [
+                "ap_motors_matrix",
+                "new",
+                "ap_motors_heli_dual",
+                "ap_motors_heli_single",
+                "new",
+                "ap_motors_heli_quad"
+            ],
+            2
+        ],
+        "thrust_boost": [
+            [
+                "atof_eq"
+            ],
+            1
+        ],
+        "num_outputs": [
+            [
+                "__builtin_popcount_motors_get_motor_mask"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "value": [
+            [
+                "hal_console_read"
+            ],
+            0
+        ]
+    },
+    "print_motor_tri": {
+        "roll": [
+            [
+                "motors_tri_get_roll_factor_i"
+            ],
+            0
+        ],
+        "frame_string": [
+            [
+                "strchr_frame_and_type_string"
+            ],
+            0
+        ],
+        "type_string": [
+            [
+                "strchr_frame_and_type_string"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "motors_tri_get_pitch_factor_json_i"
+            ],
+            0
+        ],
+        "testing_order": [
+            [
+                "motors_tri_get_motor_test_order_i"
+            ],
+            0
+        ]
+    },
+    "print_motor_matrix": {
+        "frame_string": [
+            [
+                "strchr_frame_and_type_string"
+            ],
+            0
+        ],
+        "type_string": [
+            [
+                "strchr_frame_and_type_string"
+            ],
+            0
+        ]
+    },
+    "stability_test": {
+        "throttle_tests_num": [
+            [
+                "array_size_throttle_tests"
+            ],
+            0
+        ],
+        "rpy_tests_num": [
+            [
+                "array_size_rpy_tests"
+            ],
+            0
+        ],
+        "roll_in": [
+            [
+                "rpy_tests",
+                "r"
+            ],
+            0
+        ],
+        "throttle_in": [
+            [
+                "t",
+                "throttle_tests"
+            ],
+            0
+        ],
+        "pitch_in": [
+            [
+                "p",
+                "rpy_tests"
+            ],
+            0
+        ],
+        "yaw_in": [
+            [
+                "rpy_tests",
+                "y"
+            ],
+            0
+        ]
+    }
+}

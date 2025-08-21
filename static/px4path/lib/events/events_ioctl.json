@@ -1,0 +1,18 @@
+{
+    "events_ioctl": {
+        "ret": [
+            [
+                "enotty",
+                "ok"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "arg",
+                "eventiocsend_t"
+            ],
+            0
+        ]
+    }
+}

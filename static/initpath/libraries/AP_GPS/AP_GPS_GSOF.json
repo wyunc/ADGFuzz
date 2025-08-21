@@ -1,0 +1,164 @@
+{
+    "read": {
+        "com_port": [
+            [
+                "params_com_port_get"
+            ],
+            0
+        ],
+        "gsofmsg_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.status": [
+            [
+                "no_fix"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "got_expected_packets": [
+            [
+                "array_size_gsofmsgreq",
+                "parse_temp",
+                "parse_array_size",
+                "parse_gsofmsgreq"
+            ],
+            1
+        ]
+    },
+    "requestBaud": {
+        "checksum": [
+            [
+                "a",
+                "buffer"
+            ],
+            0
+        ]
+    },
+    "requestGSOF": {
+        "checksum": [
+            [
+                "a",
+                "buffer"
+            ],
+            0
+        ]
+    },
+    "pack_state_data": {
+        "state.vdop": [
+            [
+                "dop_vdop",
+                "uint16_t"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "uint16_t",
+                "dop_hdop"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "vel_vertical_velocity"
+            ],
+            0
+        ],
+        "state.location.alt": [
+            [
+                "int32_t",
+                "position_altitude"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "int32_t",
+                "position_latitude_rad",
+                "double",
+                "1e7",
+                "rad_to_deg_double"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_vel_heading"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "pos_time_time_week"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "pos_time_time_week_ms"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps",
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d_rtk_float",
+                "no_fix"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "pos_time_num_sats"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "pos_sigma_sigma_up"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "position_longitude_rad",
+                "int32_t",
+                "double",
+                "1e7",
+                "rad_to_deg_double"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "pos_sigma_sigma_north",
+                "pos_sigma_sigma_east"
+            ],
+            0
+        ],
+        "state.ground_speed": [
+            [
+                "vel_horizontal_velocity"
+            ],
+            0
+        ]
+    }
+}

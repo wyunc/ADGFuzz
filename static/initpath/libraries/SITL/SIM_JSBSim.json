@@ -1,0 +1,190 @@
+{
+    "create_templates": {
+        "f": [
+            [
+                "fopen_jsbsim_script",
+                "fopen_jsbsim_fgout",
+                "fopen_jsbsim_reset"
+            ],
+            0
+        ]
+    },
+    "start_JSBSim": {
+        "child_pid": [
+            [
+                "fork"
+            ],
+            0
+        ],
+        "jsbsim_stdout": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "devnull": [
+            [
+                "open_o_cloexec",
+                "open_o_rdwr"
+            ],
+            0
+        ]
+    },
+    "check_stdout": {
+        "ret": [
+            [
+                "read_sizeof",
+                "read_line",
+                "read_jsbsim_stdout"
+            ],
+            0
+        ]
+    },
+    "expect": {
+        "str": [
+            [
+                "basestr"
+            ],
+            0
+        ]
+    },
+    "send_servos": {
+        "elevator": [
+            [
+                "ch2",
+                "filtered_servo_angle_input",
+                "ch1"
+            ],
+            0
+        ],
+        "aileron": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "ch2",
+                "filtered_servo_angle_input",
+                "ch1"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "wind_speed_fps": [
+            [
+                "input_wind_speed",
+                "feet_to_meters"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "sock_control_send_buflen",
+                "sock_control_send_buf"
+            ],
+            0
+        ],
+        "buflen": [
+            [
+                "strlen_buf"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ]
+    },
+    "ByteSwap": {
+        "tmp": [
+            [
+                "longitude",
+                "this",
+                "uint32_t"
+            ],
+            1
+        ]
+    },
+    "recv_fdm": {
+        "time_now_us": [
+            [
+                "fdm_cur_time"
+            ],
+            0
+        ],
+        "location.alt": [
+            [
+                "fdm_agl",
+                "home_alt"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "rad_to_deg_double",
+                "_0e7",
+                "fdm_latitude"
+            ],
+            0
+        ],
+        "location.lng": [
+            [
+                "_0e7",
+                "rad_to_deg_double",
+                "fdm_longitude"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "fdm_vcas",
+                "knots_to_meters_per_second"
+            ],
+            1
+        ],
+        "gyro": [
+            [
+                "vector3f_r",
+                "vector3f_p",
+                "vector3f_q"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_fdm_a_z_pilot",
+                "feet_to_meters",
+                "vector3f_fdm_a_x_pilot",
+                "vector3f_fdm_a_y_pilot"
+            ],
+            0
+        ],
+        "velocity_ef": [
+            [
+                "vector3f_fdm_v_east",
+                "vector3f_fdm_v_down",
+                "vector3f_fdm_v_north",
+                "feet_to_meters"
+            ],
+            0
+        ]
+    },
+    "drain_control_socket": {
+        "received": [
+            [
+                "sock_control_recv_buflen",
+                "sock_control_recv_buf"
+            ],
+            0
+        ]
+    }
+}

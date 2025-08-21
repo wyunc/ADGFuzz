@@ -1,0 +1,30 @@
+{
+    "setup": {
+        "log": [
+            [
+                "i",
+                "log_structure"
+            ],
+            0
+        ],
+        "log_num": [
+            [
+                "logger_find_last_log"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "total_micros": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ]
+    }
+}

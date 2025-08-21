@@ -1,0 +1,64 @@
+{
+    "set_next_WP": {
+        "next_WP_loc": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "next_WP_loc.lat": [
+            [
+                "current_loc_lat"
+            ],
+            0
+        ],
+        "prev_WP_loc": [
+            [
+                "next_wp_loc",
+                "current_loc"
+            ],
+            0
+        ],
+        "next_WP_loc.lng": [
+            [
+                "current_loc_lng"
+            ],
+            0
+        ],
+        "next_WP_loc.alt": [
+            [
+                "home_alt",
+                "current_loc_alt"
+            ],
+            0
+        ]
+    },
+    "set_guided_WP": {
+        "prev_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "next_WP_loc": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "update_home": {
+        "loc.alt": [
+            [
+                "gps_location_alt"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ahrs_set_home_loc"
+            ],
+            0
+        ]
+    }
+}

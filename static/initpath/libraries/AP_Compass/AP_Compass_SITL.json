@@ -1,0 +1,73 @@
+{
+    "_setup_eliptical_correcion": {
+        "_last_dia": [
+            [
+                "_get",
+                "_sitl_mag_diag",
+                "i"
+            ],
+            1
+        ],
+        "_last_odi": [
+            [
+                "_sitl_mag_offdiag",
+                "i"
+            ],
+            1
+        ],
+        "diagonals": [
+            [
+                "_get",
+                "_sitl_mag_diag",
+                "i"
+            ],
+            1
+        ]
+    },
+    "_timer": {
+        "_last_sample_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "best_time_delta": [
+            [
+                "abs_int32_t_delayed_time",
+                "abs_int32_t__time",
+                "abs_int32_t_buffer",
+                "abs_int32_t_i"
+            ],
+            1
+        ],
+        ".time": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "f": [
+            [
+                "i",
+                "_get",
+                "_sitl_state_body_mag_field",
+                "rand_vec3f",
+                "_sitl_mag_noise",
+                "_data",
+                "buffer",
+                "i",
+                "_eliptical_corr",
+                "_sitl_mag_scaling",
+                "_sitl_mag_ofs"
+            ],
+            3
+        ],
+        "delayed_time": [
+            [
+                "millis",
+                "_sitl_mag_delay"
+            ],
+            1
+        ]
+    }
+}

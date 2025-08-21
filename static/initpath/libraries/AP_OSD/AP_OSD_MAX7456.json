@@ -1,0 +1,167 @@
+{
+    "init": {
+        "status": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "update_font": {
+        "font_size": [
+            [
+                "fd_length"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "load_font_data_last_font"
+            ],
+            0
+        ],
+        "last_font": [
+            [
+                "get_font_num"
+            ],
+            0
+        ],
+        "chr_font_data": [
+            [
+                "chr",
+                "nvm_ram_size",
+                "fd_data"
+            ],
+            1
+        ]
+    },
+    "update_font_char": {
+        "status": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "check_reinit": {
+        "check": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "last_signal_check": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "video_detect_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "reinit": {
+        "last_v_offset": [
+            [
+                "_osd_v_offset"
+            ],
+            0
+        ],
+        "last_h_offset": [
+            [
+                "_osd_h_offset"
+            ],
+            0
+        ],
+        "vos": [
+            [
+                "constrain_int16__osd_v_offset"
+            ],
+            0
+        ],
+        "video_lines": [
+            [
+                "video_lines_pal",
+                "video_lines_ntsc"
+            ],
+            0
+        ],
+        "hos": [
+            [
+                "constrain_int16__osd_h_offset"
+            ],
+            0
+        ],
+        "video_signal_reg": [
+            [
+                "video_mode_pal",
+                "video_mode_ntsc",
+                "osd_enable"
+            ],
+            0
+        ],
+        "_format": [
+            [
+                "format_ntsc",
+                "format_pal"
+            ],
+            0
+        ]
+    },
+    "flush": {
+        "vos": [
+            [
+                "constrain_int16__osd_v_offset"
+            ],
+            0
+        ],
+        "last_h_offset": [
+            [
+                "_osd_h_offset"
+            ],
+            0
+        ],
+        "hos": [
+            [
+                "constrain_int16__osd_h_offset"
+            ],
+            0
+        ],
+        "last_v_offset": [
+            [
+                "_osd_v_offset"
+            ],
+            0
+        ]
+    },
+    "transfer_frame": {
+        "position_changed": [
+            [
+                "video_columns",
+                "x",
+                "y"
+            ],
+            1
+        ],
+        "previous_pos": [
+            [
+                "uint16_max",
+                "video_columns",
+                "x",
+                "y"
+            ],
+            1
+        ],
+        "chr": [
+            [
+                "x",
+                "frame",
+                "y"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,1000 @@
+{
+    "setup_custom_telemetry": {
+        "_telem_rf_mode": [
+            [
+                "get_rf_mode"
+            ],
+            0
+        ],
+        "frsky_port": [
+            [
+                "serialmanager_find_portnum_serial_protocol_fr_sky_s_port_passthrough"
+            ],
+            0
+        ],
+        "passthrough": [
+            [
+                "frsky_passthrough_telem"
+            ],
+            0
+        ]
+    },
+    "process_rf_mode_changes": {
+        "uart": [
+            [
+                "nullptr",
+                "crsf_get_uart"
+            ],
+            0
+        ],
+        "_noted_lq_as_rssi_active": [
+            [
+                "rc_option_is_enabled_use_crsf_lq_as_rssi"
+            ],
+            1
+        ],
+        "_telem_last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_telem_is_high_speed": [
+            [
+                "is_high_speed_telemetry_current_rf_mode"
+            ],
+            1
+        ],
+        "_telem_last_avg_rate": [
+            [
+                "_scheduler_avg_packet_rate"
+            ],
+            0
+        ],
+        "_telem_rf_mode": [
+            [
+                "get_rf_mode"
+            ],
+            1
+        ]
+    },
+    "is_high_speed_telemetry": {
+        "rf_mode": [
+            [
+                "crsf_rf_mode_150hz",
+                "crsf_rf_mode_250hz"
+            ],
+            0
+        ]
+    },
+    "adjust_packet_weight": {
+        "expired": [
+            [
+                "_custom_telem_params_mode_start_ms",
+                "millis"
+            ],
+            1
+        ],
+        "_custom_telem.params_mode_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "process_packet": {
+        "_crsf_version.last_request_info_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "size": [
+            [
+                "is_elrs",
+                "passthrough_multi_packet_frame_max_size"
+            ],
+            0
+        ]
+    },
+    "process_vtx_frame": {
+        "_vtx_power_change_pending": [
+            [
+                "_vtx_freq_change_pending",
+                "_vtx_options_change_pending"
+            ],
+            0
+        ],
+        "apvtx": [
+            [
+                "vtx"
+            ],
+            0
+        ],
+        "user_frequency": [
+            [
+                "be16toh_vtx_user_frequency"
+            ],
+            0
+        ]
+    },
+    "process_vtx_telem_frame": {
+        "apvtx": [
+            [
+                "vtx"
+            ],
+            0
+        ],
+        "_vtx_power_change_pending": [
+            [
+                "_vtx_options_change_pending",
+                "_vtx_freq_change_pending"
+            ],
+            0
+        ],
+        "frequency": [
+            [
+                "be16toh_vtx_frequency"
+            ],
+            0
+        ]
+    },
+    "process_ping_frame": {
+        "_pending_request.destination": [
+            [
+                "ping_origin"
+            ],
+            0
+        ],
+        "_param_request.origin": [
+            [
+                "ping_origin"
+            ],
+            0
+        ],
+        "_pending_request.frame_type": [
+            [
+                "crsf_frametype_param_device_info"
+            ],
+            0
+        ]
+    },
+    "process_device_info_frame": {
+        "_crsf_version.major": [
+            [
+                "info_payload",
+                "strnlen_charinfo_payload",
+                "42u"
+            ],
+            1
+        ],
+        "_crsf_version.minor": [
+            [
+                "info_payload",
+                "strnlen_charinfo_payload",
+                "42u"
+            ],
+            1
+        ],
+        "_crsf_version.protocol": [
+            [
+                "protocol_elrs",
+                "protocol_tracer"
+            ],
+            0
+        ]
+    },
+    "process_command_frame": {
+        "_baud_rate_request.port_id": [
+            [
+                "command_payload"
+            ],
+            0
+        ],
+        "_baud_rate_request.valid": [
+            [
+                "crsf_change_baud_rate_baud_rate"
+            ],
+            0
+        ]
+    },
+    "process_param_read_frame": {
+        "_pending_request.frame_type": [
+            [
+                "crsf_frametype_parameter_read"
+            ],
+            0
+        ],
+        "_param_request": [
+            [
+                "read_frame"
+            ],
+            0
+        ]
+    },
+    "process_pending_requests": {
+        "_custom_telem.params_mode_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_vtx_params": {
+        "_telem.ext.command.command_id": [
+            [
+                "crsf_command_vtx"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc8_dvb_crsf_frametype_command",
+                "crc8_dvb_0x_ba",
+                "crc8_dvb_crcptr",
+                "crc8_dvb_i",
+                "crc8_dvb_crc"
+            ],
+            0
+        ],
+        "_vtx_options_change_pending": [
+            [
+                "vtx_update_options"
+            ],
+            0
+        ],
+        "_vtx_freq_change_pending": [
+            [
+                "vtx_update_frequency",
+                "vtx_update_channel",
+                "vtx_update_band"
+            ],
+            0
+        ],
+        "crcptr": [
+            [
+                "_telem_ext_command_destination"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_command"
+            ],
+            0
+        ],
+        "_vtx_power_change_pending": [
+            [
+                "vtx_update_power",
+                "vtx_get_configured_options",
+                "uint8_t_vtx_pitmode"
+            ],
+            1
+        ],
+        "_telem.ext.command.destination": [
+            [
+                "crsf_address_vtx"
+            ],
+            0
+        ],
+        "_telem.ext.command.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ]
+    },
+    "calc_parameter_ping": {
+        "_telem.ext.ping.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem.ext.ping.destination": [
+            [
+                "crsf_address_vtx"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_parameter_ping_frame"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_param_device_ping"
+            ],
+            0
+        ]
+    },
+    "calc_heartbeat": {
+        "_telem_type": [
+            [
+                "crsf_frametype_heartbeat"
+            ],
+            0
+        ],
+        "_telem.bcast.heartbeat.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_heartbeat_frame"
+            ],
+            0
+        ]
+    },
+    "calc_battery": {
+        "_telem_size": [
+            [
+                "sizeof_battery_frame"
+            ],
+            0
+        ],
+        "_telem.bcast.battery.remaining": [
+            [
+                "percentage"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_battery_sensor"
+            ],
+            0
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "_telem.bcast.battery.current": [
+            [
+                "htobe16_roundf",
+                "htobe16_int16_t",
+                "htobe16_current"
+            ],
+            0
+        ],
+        "capacity": [
+            [
+                "used_mah"
+            ],
+            0
+        ],
+        "_telem.bcast.battery.voltage": [
+            [
+                "htobe16_roundf",
+                "htobe16_uint16_t",
+                "htobe16__battery_voltage"
+            ],
+            0
+        ]
+    },
+    "calc_baro_vario": {
+        "_telem_type": [
+            [
+                "crsf_frametype_baro_vario"
+            ],
+            0
+        ],
+        "_telem.bcast.baro_vario.vertical_speed_packed": [
+            [
+                "get_vertical_speed_packed"
+            ],
+            0
+        ],
+        "_telem.bcast.baro_vario.altitude_packed": [
+            [
+                "htobe16_get_altitude_packed"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_baro_vario_frame"
+            ],
+            0
+        ]
+    },
+    "calc_vario": {
+        "_telem_type": [
+            [
+                "crsf_frametype_vario"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_vario_frame"
+            ],
+            0
+        ],
+        "_telem.bcast.vario.v_speed": [
+            [
+                "htobe16_get_vspeed_ms",
+                "htobe16_int16_t"
+            ],
+            0
+        ]
+    },
+    "calc_gps": {
+        "_telem.bcast.gps.groundspeed": [
+            [
+                "htobe16_roundf",
+                "htobe16_gps_ground_speed"
+            ],
+            0
+        ],
+        "_telem.bcast.gps.longitude": [
+            [
+                "htobe32_loc_lng"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_gps"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_gps_frame"
+            ],
+            0
+        ],
+        "_telem.bcast.gps.altitude": [
+            [
+                "htobe16_loc_alt",
+                "htobe16_constrain_int16"
+            ],
+            0
+        ],
+        "_telem.bcast.gps.gps_heading": [
+            [
+                "htobe16_gps_ground_course",
+                "htobe16_roundf"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "_telem.bcast.gps.latitude": [
+            [
+                "htobe32_loc_lat"
+            ],
+            0
+        ],
+        "_telem.bcast.gps.satellites": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ]
+    },
+    "calc_attitude": {
+        "_telem.bcast.attitude.pitch_angle": [
+            [
+                "htobe16_roundf",
+                "htobe16_constrain_int16",
+                "htobe16__ahrs_get_pitch",
+                "int_pi",
+                "htobe16_wrap_pi"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_attitude"
+            ],
+            0
+        ],
+        "_telem.bcast.attitude.yaw_angle": [
+            [
+                "htobe16_roundf",
+                "htobe16_constrain_int16",
+                "int_pi",
+                "htobe16_wrap_pi",
+                "htobe16__ahrs_get_yaw"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_telem.bcast.attitude.roll_angle": [
+            [
+                "htobe16_roundf",
+                "htobe16_constrain_int16",
+                "htobe16__ahrs_get_roll",
+                "int_pi",
+                "htobe16_wrap_pi"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_attitude_frame"
+            ],
+            0
+        ]
+    },
+    "calc_flight_mode": {
+        "_telem_size": [
+            [
+                "strlen__telem_bcast_flightmode_flight_mode"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_flight_mode"
+            ],
+            0
+        ],
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "calc_device_info": {
+        "_telem.ext.info.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "strlen_fwver_fw_short_string"
+            ],
+            1
+        ],
+        "_telem.ext.info.destination": [
+            [
+                "_param_request_origin"
+            ],
+            0
+        ],
+        "fwver": [
+            [
+                "fwversion"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_param_device_info"
+            ],
+            0
+        ]
+    },
+    "calc_device_ping": {
+        "_telem.ext.ping.destination": [
+            [
+                "destination"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_param_device_ping"
+            ],
+            0
+        ],
+        "_telem.ext.ping.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ]
+    },
+    "calc_command_response": {
+        "crcptr": [
+            [
+                "_telem_ext_command_destination"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "_telem.ext.command.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_command"
+            ],
+            0
+        ],
+        "_telem.ext.command.command_id": [
+            [
+                "crsf_command_general"
+            ],
+            0
+        ],
+        "_telem.ext.command.destination": [
+            [
+                "crsf_address_crsf_receiver"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc8_dvb_crcptr",
+                "crc8_dvb_0x_ba",
+                "crc8_dvb_i",
+                "crc8_dvb_crc",
+                "crc8_dvb_crsf_frametype_command"
+            ],
+            0
+        ]
+    },
+    "calc_bind": {
+        "crc": [
+            [
+                "crc8_dvb_crsf_frametype_command",
+                "crc8_dvb_0x_ba",
+                "crc8_dvb_crc",
+                "crc8_dvb_crcptr",
+                "crc8_dvb_i"
+            ],
+            0
+        ],
+        "_telem.ext.command.destination": [
+            [
+                "crsf_address_crsf_receiver"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "_telem.ext.command.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem.ext.command.command_id": [
+            [
+                "crsf_command_rx"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_command"
+            ],
+            0
+        ],
+        "crcptr": [
+            [
+                "_telem_ext_command_destination"
+            ],
+            0
+        ]
+    },
+    "calc_parameter": {
+        "_telem.ext.param_entry.header.origin": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ],
+        "_telem.ext.param_entry.header.destination": [
+            [
+                "_param_request_origin"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "ap_int32",
+                "ap_int8",
+                "ap_float",
+                "ap_int16",
+                "param__param"
+            ],
+            0
+        ],
+        "_telem.ext.param_entry.header.param_num": [
+            [
+                "_param_request_param_num"
+            ],
+            0
+        ],
+        "floatp": [
+            [
+                "param__param_incr"
+            ],
+            1
+        ],
+        "mult": [
+            [
+                "powf_digits"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_parameter_settings_entry"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_parameter_settings_entry_header",
+                "strnlen_char",
+                "_telem_ext_param_entry_payload"
+            ],
+            1
+        ]
+    },
+    "put_string": {
+        "_idx": [
+            [
+                "str_len"
+            ],
+            0
+        ],
+        "_bytes": [
+            [
+                "str_len",
+                "remaining"
+            ],
+            1
+        ]
+    },
+    "skip_bytes": {
+        "_idx": [
+            [
+                "len"
+            ],
+            0
+        ]
+    },
+    "calc_text_selection": {
+        "len": [
+            [
+                "strnlen_metadata_values",
+                "strnlen_i"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "crsf_frametype_parameter_settings_entry"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_parameter_settings_entry_header",
+                "chunker_bytes_written"
+            ],
+            0
+        ],
+        "metadata": [
+            [
+                "param_get_custom_metadata"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "ap_int16",
+                "constrain_int16_val",
+                "ap_int8",
+                "param__param",
+                "ap_int32",
+                "_get",
+                "constrain_int16_metadata_values_max"
+            ],
+            0
+        ],
+        "_telem.ext.param_entry.header.chunks_left": [
+            [
+                "chunker_chunks_remaining"
+            ],
+            0
+        ]
+    },
+    "process_param_write_frame": {
+        "val": [
+            [
+                "be32toh_ptr_write_frame_payload"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "ap_int32",
+                "ap_int8",
+                "param__param",
+                "ap_float",
+                "ap_int16"
+            ],
+            0
+        ],
+        "text_selection": [
+            [
+                "param_get_custom_metadata",
+                "nullptr"
+            ],
+            0
+        ],
+        "floatp": [
+            [
+                "param__param_incr"
+            ],
+            1
+        ]
+    },
+    "calc_status_text": {
+        "_telem_size": [
+            [
+                "strlen__telem_bcast_custom_telem_status_text_text"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.status_text.severity": [
+            [
+                "_statustext_next_severity"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "get_custom_telem_frame_id"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.status_text.sub_type": [
+            [
+                "crsf_ap_custom_telem_status_text"
+            ],
+            0
+        ]
+    },
+    "get_single_packet_passthrough_telem_data": {
+        "_telem.bcast.custom_telem.single_packet_passthrough.appid": [
+            [
+                "packet_appid"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "get_custom_telem_frame_id"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_passthrough_single_packet_frame"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.single_packet_passthrough.sub_type": [
+            [
+                "crsf_ap_custom_telem_single_packet_passthrough"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.single_packet_passthrough.data": [
+            [
+                "packet_data"
+            ],
+            0
+        ]
+    },
+    "get_multi_packet_passthrough_telem_data": {
+        "_telem_type": [
+            [
+                "get_custom_telem_frame_id"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.multi_packet_passthrough.sub_type": [
+            [
+                "crsf_ap_custom_telem_multi_packet_passthrough"
+            ],
+            0
+        ],
+        ".data": [
+            [
+                "idx",
+                "buffer",
+                "_data"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "count",
+                "sizeof_passthrough_telemetry_packet"
+            ],
+            0
+        ],
+        ".appid": [
+            [
+                "idx",
+                "buffer",
+                "_appid"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "passthrough_multi_packet_frame_max_size"
+            ],
+            0
+        ],
+        "_telem.bcast.custom_telem.multi_packet_passthrough.size": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "_get_telem_data": {
+        "_is_tx_active": [
+            [
+                "is_tx_active"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "_telem_size"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "_telem_type"
+            ],
+            0
+        ],
+        "device_address": [
+            [
+                "crsf_address_flight_controller"
+            ],
+            0
+        ]
+    }
+}

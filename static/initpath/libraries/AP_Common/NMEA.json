@@ -1,0 +1,36 @@
+{
+    "nmea_vaprintf": {
+        "b": [
+            [
+                "uint8_t",
+                "malloc_len",
+                "char",
+                "const"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "hal_util_vsnprintf_ap_copy",
+                "hal_util_vsnprintf_fmt",
+                "hal_util_vsnprintf_nullptr"
+            ],
+            0
+        ]
+    },
+    "nmea_printf": {
+        "len": [
+            [
+                "strlen_s"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "nmea_vaprintf_ap",
+                "nmea_vaprintf_fmt"
+            ],
+            0
+        ]
+    }
+}

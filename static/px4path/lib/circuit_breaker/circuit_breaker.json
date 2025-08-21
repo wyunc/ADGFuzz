@@ -1,0 +1,10 @@
+{
+    "circuit_breaker_enabled": {
+        "val": [
+            [
+                "magic"
+            ],
+            0
+        ]
+    }
+}

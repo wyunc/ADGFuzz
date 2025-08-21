@@ -1,0 +1,281 @@
+{
+    "assign_measurements": {
+        "_sub_err_code": [
+            [
+                "_parsed_sub_err_code"
+            ],
+            0
+        ],
+        "_last_version": [
+            [
+                "v2",
+                "detecting",
+                "legacy"
+            ],
+            1
+        ],
+        "_voltage": [
+            [
+                "_parsed_battery_volt"
+            ],
+            0
+        ],
+        "_pwr_out": [
+            [
+                "_parsed_pwr_out"
+            ],
+            0
+        ],
+        "_v2_state": [
+            [
+                "_parsed_state",
+                "v2_state"
+            ],
+            0
+        ],
+        "_spm_pwr": [
+            [
+                "_parsed_spm_pwr"
+            ],
+            0
+        ],
+        "_err_code": [
+            [
+                "_parsed_err_code"
+            ],
+            0
+        ],
+        "_version": [
+            [
+                "v2",
+                "v2",
+                "detecting",
+                "legacy",
+                "unknown"
+            ],
+            1
+        ],
+        "_consumed_mah": [
+            [
+                "ams_to_mah",
+                "now",
+                "_parsed_battery_pwr",
+                "_parsed_battery_volt"
+            ],
+            2
+        ],
+        "_last_time_ms": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_fuel_remaining": [
+            [
+                "_fuel_rem"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "_parsed_state",
+                "state"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "_type": [
+            [
+                "none"
+            ],
+            0
+        ]
+    },
+    "decode_legacy_data": {
+        "_parsed.pwr_out": [
+            [
+                "strtol__term",
+                "strtol_nullptr"
+            ],
+            0
+        ],
+        "_fuel_rem": [
+            [
+                "press_grad",
+                "_parsed_tank_bar"
+            ],
+            0
+        ],
+        "_parsed.state": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_parsed.battery_pwr": [
+            [
+                "strtol__term",
+                "strtol_nullptr"
+            ],
+            0
+        ],
+        "_parsed.tank_bar": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "_parsed.spm_pwr": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_parsed.err_code": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_parsed.battery_volt": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "_type": [
+            [
+                "legacy_data"
+            ],
+            0
+        ]
+    },
+    "decode_v2_data": {
+        "_type": [
+            [
+                "v2_data"
+            ],
+            0
+        ],
+        "_parsed.sub_err_code": [
+            [
+                "strtoul__term",
+                "strtoul_nullptr"
+            ],
+            0
+        ],
+        "_parsed.battery_volt": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "_parsed.battery_pwr": [
+            [
+                "strtol__term",
+                "strtol_nullptr"
+            ],
+            0
+        ],
+        "_parsed.err_code": [
+            [
+                "strtoul__term",
+                "strtoul_nullptr"
+            ],
+            0
+        ],
+        "_parsed.pwr_out": [
+            [
+                "strtol__term",
+                "strtol_nullptr"
+            ],
+            0
+        ],
+        "_parsed.state": [
+            [
+                "strtoul__term",
+                "strtoul_nullptr"
+            ],
+            0
+        ],
+        "_sentence_valid": [
+            [
+                "strtoul__term",
+                "i",
+                "strtoul_nullptr",
+                "_term",
+                "_checksum"
+            ],
+            1
+        ],
+        "_parsed.spm_pwr": [
+            [
+                "strtoul__term",
+                "strtoul_nullptr"
+            ],
+            0
+        ],
+        "_parsed_V2.unit_fault": [
+            [
+                "strtoul__term",
+                "strtoul_nullptr"
+            ],
+            0
+        ],
+        "_fuel_rem": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "_parsed_V2.inlet_press": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ]
+    },
+    "decode_info_packet": {
+        "_sentence_valid": [
+            [
+                "i",
+                "_term",
+                "strtoul_nullptr",
+                "strtoul__term",
+                "_checksum"
+            ],
+            1
+        ],
+        "_type": [
+            [
+                "v2_info"
+            ],
+            0
+        ]
+    },
+    "is_running": {
+        "_v2_state": [
+            [
+                "running"
+            ],
+            0
+        ]
+    },
+    "update_state_msg": {
+        "_last_v2_state": [
+            [
+                "_v2_state"
+            ],
+            0
+        ]
+    }
+}

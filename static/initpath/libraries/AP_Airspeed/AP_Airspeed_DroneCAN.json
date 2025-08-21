@@ -1,0 +1,100 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_airspeed": {
+        "_temperature": [
+            [
+                "kelvin_to_c_msg_static_air_temperature"
+            ],
+            0
+        ],
+        "_last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ],
+        "_pressure": [
+            [
+                "msg_differential_pressure"
+            ],
+            0
+        ]
+    },
+    "handle_hygrometer": {
+        "_hygrometer.temperature": [
+            [
+                "kelvin_to_c_msg_temperature"
+            ],
+            0
+        ],
+        "_hygrometer.last_sample_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ],
+        "_hygrometer.humidity": [
+            [
+                "msg_humidity"
+            ],
+            0
+        ]
+    },
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "_pressure"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "_temperature"
+            ],
+            0
+        ]
+    },
+    "get_hygrometer": {
+        "humidity": [
+            [
+                "_hygrometer_humidity"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "_hygrometer_temperature"
+            ],
+            0
+        ],
+        "last_sample_ms": [
+            [
+                "_hygrometer_last_sample_ms"
+            ],
+            0
+        ]
+    }
+}

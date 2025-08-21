@@ -1,0 +1,130 @@
+{
+    "visionInit": {
+        "_time_origin": [
+            [
+                "_time_stamp"
+            ],
+            0
+        ],
+        "_ref_lat": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "_ref_lon": [
+            [
+                "_global_local_proj_ref_get_projection_reference_lon"
+            ],
+            0
+        ],
+        "_is_global_cov_init": [
+            [
+                "_global_local_proj_ref_is_initialized"
+            ],
+            0
+        ],
+        "_altOrigin": [
+            [
+                "_global_local_proj_ref_is_initialized",
+                "_global_local_alt0"
+            ],
+            1
+        ]
+    },
+    "visionMeasure": {
+        "_vision_xy_valid": [
+            [
+                "_sub_visual_odom_get_position_variance",
+                "sqrtf_fmaxf",
+                "sqrtf__sub_visual_odom_get_position_variance",
+                "ep_max_std_dev"
+            ],
+            1
+        ],
+        "_time_last_vision_p": [
+            [
+                "_sub_visual_odom_get_timestamp_sample"
+            ],
+            0
+        ],
+        "_vision_z_valid": [
+            [
+                "ep_max_std_dev",
+                "sqrtf__sub_visual_odom_get_position_variance"
+            ],
+            1
+        ]
+    },
+    "visionCorrect": {
+        "S_I": [
+            [
+                "n_y_vision",
+                "s",
+                "float",
+                "inv"
+            ],
+            0
+        ],
+        "vision_delay": [
+            [
+                "_time_stamp",
+                "_sub_visual_odom_get_timestamp_sample",
+                "1e"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "c_transpose",
+                "m_p",
+                "c",
+                "y",
+                "_x_delay_get_i_hist",
+                "c"
+            ],
+            2
+        ],
+        "_x": [
+            [
+                "k",
+                "y",
+                "_x_delay_get_i_hist",
+                "c"
+            ],
+            3
+        ],
+        "K": [
+            [
+                "c_transpose",
+                "m_p",
+                "s_i"
+            ],
+            0
+        ],
+        "m_P": [
+            [
+                "k",
+                "c",
+                "m_p"
+            ],
+            0
+        ],
+        ".ev_vvel": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "beta": [
+            [
+                "r_transpose",
+                "s_i",
+                "y",
+                "_x_delay_get_i_hist",
+                "c"
+            ],
+            2
+        ]
+    }
+}

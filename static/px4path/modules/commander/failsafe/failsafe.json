@@ -1,0 +1,50 @@
+{
+    "checkStateAndMode": {
+        "mode_fallback_action": [
+            [
+                "check_mode_fallback_status_flags",
+                "check_mode_fallback_state_user_intended_mode"
+            ],
+            0
+        ],
+        "state.user_intended_mode": [
+            [
+                "navigation_state_auto_precland"
+            ],
+            0
+        ],
+        "warning_worse_than_at_arming": [
+            [
+                "status_flags_battery_warning",
+                "_battery_warning_at_arming"
+            ],
+            0
+        ]
+    },
+    "updateArmingState": {
+        "_was_armed": [
+            [
+                "armed"
+            ],
+            0
+        ],
+        "_manual_control_lost_at_arming": [
+            [
+                "status_flags_manual_control_signal_lost"
+            ],
+            0
+        ],
+        "_battery_warning_at_arming": [
+            [
+                "status_flags_battery_warning"
+            ],
+            0
+        ],
+        "_armed_time": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    }
+}

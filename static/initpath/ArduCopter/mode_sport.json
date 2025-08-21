@@ -1,0 +1,82 @@
+{
+    "run": {
+        "target_climb_rate": [
+            [
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in",
+                "get_avoidance_adjusted_climbrate_target_climb_rate",
+                "get_pilot_speed_dn_g_pilot_speed_up"
+            ],
+            0
+        ],
+        "angle_max": [
+            [
+                "copter_aparm_angle_max"
+            ],
+            0
+        ],
+        "target_roll_rate": [
+            [
+                "acro_level_max_overshoot",
+                "g2_command_model_acro_rp_get_rate",
+                "sqrt_controller_roll_angle",
+                "roll_pitch_yaw_input_max",
+                "sqrt_controller_angle_max",
+                "constrain_int32_acro_level_max_angle",
+                "constrain_int32_roll_angle",
+                "channel_roll_get_control_in",
+                "g_acro_balance_roll",
+                "attitude_control_get_accel_roll_max_cdss",
+                "sqrt_controller_g2_command_model_acro_rp_get_rate",
+                "g_dt"
+            ],
+            0
+        ],
+        "att_target": [
+            [
+                "attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ],
+        "target_pitch_rate": [
+            [
+                "constrain_int32_pitch_angle",
+                "channel_pitch_get_control_in",
+                "g_acro_balance_pitch",
+                "attitude_control_get_accel_pitch_max_cdss",
+                "acro_level_max_overshoot",
+                "g2_command_model_acro_rp_get_rate",
+                "roll_pitch_yaw_input_max",
+                "sqrt_controller_angle_max",
+                "constrain_int32_acro_level_max_angle",
+                "sqrt_controller_pitch_angle",
+                "sqrt_controller_g2_command_model_acro_rp_get_rate",
+                "g_dt"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "pitch_angle": [
+            [
+                "wrap_180_cd_att_target_y"
+            ],
+            0
+        ],
+        "sport_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "roll_angle": [
+            [
+                "wrap_180_cd_att_target_x"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "setCurrentPosition": {
+        "_current_alt_amsl": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "_current_pos_lat_lon": [
+            [
+                "vector2d_lon",
+                "vector2d_lat"
+            ],
+            0
+        ]
+    },
+    "computeBrakingDistanceMultirotor": {
+        "accel_delay_max": [
+            [
+                "max__params_param_mpc_acc_hor_max",
+                "max__params_param_mpc_acc_hor"
+            ],
+            0
+        ]
+    },
+    "computeVerticalBrakingDistanceMultirotor": {
+        "_multirotor_vertical_braking_distance": [
+            [
+                "sign__climbrate"
+            ],
+            0
+        ],
+        "vertical_vel_abs": [
+            [
+                "fabsf__climbrate"
+            ],
+            0
+        ],
+        "accel_delay_max": [
+            [
+                "max__params_param_mpc_acc_up_max",
+                "max__params_param_mpc_acc_down_max"
+            ],
+            0
+        ]
+    },
+    "updateMinHorDistToFenceMultirotor": {
+        "accel_delay_max": [
+            [
+                "max__params_param_mpc_acc_hor_max",
+                "max__params_param_mpc_acc_hor"
+            ],
+            0
+        ],
+        "_min_hor_dist_to_fence_mc": [
+            [
+                "predictor_get_current_position"
+            ],
+            0
+        ]
+    },
+    "updateMinVertDistToFenceMultirotor": {
+        "_min_vert_dist_to_fence_mc": [
+            [
+                "predictor_get_current_position"
+            ],
+            0
+        ],
+        "accel_delay_max": [
+            [
+                "max__params_param_mpc_acc_up_max",
+                "max__params_param_mpc_acc_down_max"
+            ],
+            0
+        ]
+    }
+}

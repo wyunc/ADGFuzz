@@ -1,0 +1,191 @@
+{
+    "updateInitialize": {
+        "ret": [
+            [
+                "update_initialize",
+                "_sticks_is_available"
+            ],
+            0
+        ]
+    },
+    "activate": {
+        "_acceleration_setpoint": [
+            [
+                "vector3f__f",
+                "vector3f_nan"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "_updateConstraintsFromEstimator": {
+        "_max_distance_to_ground": [
+            [
+                "_sub_vehicle_local_position_get_hagl_max_z"
+            ],
+            0
+        ],
+        "_min_distance_to_ground": [
+            [
+                "infinity",
+                "_sub_vehicle_local_position_get_hagl_min"
+            ],
+            0
+        ]
+    },
+    "_scaleSticks": {
+        "vel_max_z": [
+            [
+                "fminf__param_mpc_z_vel_max_up_get",
+                "_velocity_constraint_up",
+                "_sticks_get_position",
+                "_velocity_constraint_down",
+                "fminf__param_mpc_z_vel_max_dn_get"
+            ],
+            2
+        ]
+    },
+    "_updateAltitudeLock": {
+        "too_fast": [
+            [
+                "vector2f__velocity_length",
+                "_param_mpc_hold_max_xy_get"
+            ],
+            1
+        ],
+        "_dist_to_ground_lock": [
+            [
+                "nan",
+                "_position_setpoint",
+                "_position",
+                "_dist_to_bottom"
+            ],
+            0
+        ],
+        "stick_input": [
+            [
+                "vector2f__sticks_get_pitch_roll_expo",
+                "_length"
+            ],
+            1
+        ],
+        "not_moving": [
+            [
+                "vector2f__velocity_length",
+                "_param_mpc_hold_max_xy_get",
+                "_param_mpc_hold_max_z_get",
+                "fabsf__velocity",
+                "flt_epsilon"
+            ],
+            2
+        ],
+        "_reset_counter": [
+            [
+                "_sub_vehicle_local_position_get_z_reset_counter"
+            ],
+            0
+        ],
+        "apply_brake": [
+            [
+                "fabsf__sticks_get_position_expo",
+                "flt_epsilon"
+            ],
+            0
+        ]
+    },
+    "_terrainFollowing": {
+        "delta_distance_to_ground": [
+            [
+                "_dist_to_bottom"
+            ],
+            0
+        ],
+        "_dist_to_ground_lock": [
+            [
+                "nan",
+                "_position_setpoint",
+                "_dist_to_bottom",
+                "_position"
+            ],
+            0
+        ]
+    },
+    "_respectMaxAltitude": {
+        "vel_constrained": [
+            [
+                "_param_mpc_z_p_get",
+                "_max_distance_to_ground",
+                "_dist_to_bottom"
+            ],
+            0
+        ],
+        "_constraints.speed_up": [
+            [
+                "_param_mpc_z_vel_max_up_get",
+                "constrain_vel_constrained",
+                "constrain__param_mpc_z_vel_max_dn_get"
+            ],
+            0
+        ],
+        "_constraints.speed_down": [
+            [
+                "_param_mpc_z_vel_max_dn_get"
+            ],
+            0
+        ]
+    },
+    "_ekfResetHandlerHeading": {
+        "_yaw_setpoint": [
+            [
+                "wrap_pi_delta_psi",
+                "wrap_pi__yaw_setpoint"
+            ],
+            0
+        ]
+    },
+    "_ekfResetHandlerHagl": {
+        "_dist_to_ground_lock": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_constraints.want_takeoff": [
+            [
+                "_check_takeoff"
+            ],
+            0
+        ],
+        "_max_distance_to_ground": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ]
+    }
+}

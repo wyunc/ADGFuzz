@@ -1,0 +1,64 @@
+{
+    "handle_serial_control": {
+        "flags": [
+            [
+                "packet_flags"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "nullptr",
+                "link_get_uart",
+                "hal_serial",
+                "serialmanager_get_serial_by_id_packet_device",
+                "_get_serial_by_id_serial_control_serial0",
+                "nullptr"
+            ],
+            1
+        ],
+        "exclusive": [
+            [
+                "serial_control_flag_exclusive",
+                "packet_flags"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "gcs_chan_i",
+                "gcs_chan"
+            ],
+            0
+        ],
+        "packet.flags": [
+            [
+                "serial_control_flag_reply"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "packet_count",
+                "packet_count",
+                "stream_txspace"
+            ],
+            1
+        ],
+        "available": [
+            [
+                "stream_available",
+                "sizeof_packet_data"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "packet_data",
+                "packet_count",
+                "stream_txspace"
+            ],
+            1
+        ]
+    }
+}

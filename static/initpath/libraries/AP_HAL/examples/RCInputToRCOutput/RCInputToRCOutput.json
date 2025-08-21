@@ -1,0 +1,22 @@
+{
+    "loop": {
+        "v": [
+            [
+                "hal_rcin_read_i"
+            ],
+            0
+        ],
+        "max_channels": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "nchannels": [
+            [
+                "hal_rcin_num_channels"
+            ],
+            0
+        ]
+    }
+}

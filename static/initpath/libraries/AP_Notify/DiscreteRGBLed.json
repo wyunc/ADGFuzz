@@ -1,0 +1,22 @@
+{
+    "init": {
+        "blue_pin": [
+            [
+                "hal_gpio_channel_blue_pin_number"
+            ],
+            0
+        ],
+        "green_pin": [
+            [
+                "hal_gpio_channel_green_pin_number"
+            ],
+            0
+        ],
+        "red_pin": [
+            [
+                "hal_gpio_channel_red_pin_number"
+            ],
+            0
+        ]
+    }
+}

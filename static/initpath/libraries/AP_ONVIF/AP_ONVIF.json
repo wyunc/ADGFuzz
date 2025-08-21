@@ -1,0 +1,335 @@
+{
+    "start": {
+        "soap_endpoint": [
+            [
+                "char",
+                "malloc_device_endpoint_loc",
+                "malloc_strlen",
+                "nullptr",
+                "malloc_hostname_len"
+            ],
+            1
+        ],
+        "soap": [
+            [
+                "soap_new1_soap_c_utfstring",
+                "soap_new1_soap_xml_canonical"
+            ],
+            0
+        ],
+        "proxy_media": [
+            [
+                "new_nothrow",
+                "media_binding_proxy_soap"
+            ],
+            0
+        ],
+        "proxy_device": [
+            [
+                "device_binding_proxy_soap",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "proxy_ptz": [
+            [
+                "new_nothrow",
+                "ptz_binding_proxy_soap"
+            ],
+            0
+        ],
+        "hostname_len": [
+            [
+                "strlen_hostname"
+            ],
+            0
+        ],
+        "connect_timeout": [
+            [
+                "soap_recv_timeout",
+                "soap_send_timeout"
+            ],
+            0
+        ],
+        "username": [
+            [
+                "char",
+                "nullptr",
+                "malloc_username_len"
+            ],
+            0
+        ],
+        "ptz_endpoint": [
+            [
+                "char",
+                "malloc_ptz_endpoint_loc",
+                "malloc_strlen",
+                "nullptr",
+                "malloc_hostname_len"
+            ],
+            0
+        ],
+        "password_len": [
+            [
+                "strlen_pass"
+            ],
+            0
+        ],
+        "username_len": [
+            [
+                "strlen_user"
+            ],
+            0
+        ],
+        "media_endpoint": [
+            [
+                "char",
+                "malloc_strlen",
+                "nullptr",
+                "malloc_hostname_len",
+                "malloc_media_endpoint_loc"
+            ],
+            0
+        ],
+        "password": [
+            [
+                "char",
+                "malloc_password_len",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "report_error": {
+        "c": [
+            [
+                "soap_faultcode_soap"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "soap_fault_detail_soap"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "null",
+                "soap_fault_subcode_soap"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "soap_fault_string_soap"
+            ],
+            0
+        ]
+    },
+    "probe_onvif_server": {
+        "zoom_max": [
+            [
+                "get_configurations_response_ptz_configuration",
+                "_zoom_limits_range_x_range_max"
+            ],
+            0
+        ],
+        "GetStatus.ProfileToken": [
+            [
+                "char",
+                "malloc__token",
+                "malloc_get_profiles_response_profiles",
+                "malloc_strlen"
+            ],
+            1
+        ],
+        "profile_token_size": [
+            [
+                "strlen__token",
+                "strlen_get_profiles_response_profiles"
+            ],
+            0
+        ],
+        "zoom_min": [
+            [
+                "_zoom_limits_range_x_range_min",
+                "get_configurations_response_ptz_configuration"
+            ],
+            0
+        ],
+        "soap_endpoint": [
+            [
+                "ptz_endpoint",
+                "media_endpoint"
+            ],
+            0
+        ]
+    },
+    "rand_nonce": {
+        "r": [
+            [
+                "uint32_t",
+                "1000000ull",
+                "hal_util_get_hw_rtc"
+            ],
+            0
+        ]
+    },
+    "set_credentials": {
+        "Salt": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "EncodingType": [
+            [
+                "wsse_base64binary_uri",
+                "char"
+            ],
+            0
+        ],
+        "nonceBase64enc": [
+            [
+                "noncelen",
+                "nullptr",
+                "char",
+                "base64_encode_unsigned",
+                "base64_encode_chartest_nonce",
+                "base64_encode_charnonce"
+            ],
+            0
+        ],
+        "Nonce": [
+            [
+                "struct",
+                "soap_malloc_soap",
+                "soap_malloc_sizeof",
+                "soap_malloc_wsse__encoded_string",
+                "soap_malloc_struct",
+                "wsse__encoded_string"
+            ],
+            0
+        ],
+        "HABase64enc": [
+            [
+                "base64_encode_char_ha",
+                "nullptr",
+                "sha1_digest_size",
+                "char",
+                "ha_base64len",
+                "base64_encode_unsigned"
+            ],
+            0
+        ],
+        "wsu__Created": [
+            [
+                "soap_strdup_soap",
+                "soap_strdup_created"
+            ],
+            0
+        ],
+        "nonceBase64fin": [
+            [
+                "soap_malloc_noncelen",
+                "char",
+                "soap_malloc_soap"
+            ],
+            0
+        ],
+        "security": [
+            [
+                "soap_wsse_add_security_soap"
+            ],
+            0
+        ],
+        "Iteration": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "__item": [
+            [
+                "nonce_base64fin"
+            ],
+            0
+        ],
+        "Type": [
+            [
+                "wsse_password_digest_uri",
+                "char"
+            ],
+            0
+        ],
+        "created": [
+            [
+                "soap_date_time2s_time_t_1000000ull",
+                "soap_date_time2s_time_t_hal_util_get_hw_rtc",
+                "soap_date_time2s_soap"
+            ],
+            0
+        ],
+        "test_nonce": [
+            [
+                "noncelen",
+                "base64_decode_unsigned",
+                "char",
+                "strlen_test_nonce",
+                "base64_decode_char_test_nonce",
+                "base64_decode_const"
+            ],
+            0
+        ]
+    },
+    "set_absolutemove": {
+        "y": [
+            [
+                "pan_tilt_limit_max_y",
+                "pan_tilt_limit_min_y"
+            ],
+            0
+        ],
+        "AbsoluteMove.ProfileToken": [
+            [
+                "profile_token"
+            ],
+            0
+        ],
+        "PanTilt": [
+            [
+                "soap_new_tt__vector2d_soap"
+            ],
+            0
+        ],
+        "Zoom": [
+            [
+                "soap_new_tt__vector1d_soap"
+            ],
+            0
+        ],
+        "AbsoluteMove.Position": [
+            [
+                "soap_new_tt__ptz_vector_soap"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "pan_tilt_limit_max_x",
+                "z",
+                "zoom_min",
+                "zoom_max",
+                "pan_tilt_limit_min_x"
+            ],
+            0
+        ],
+        "AbsoluteMove.Speed": [
+            [
+                "null"
+            ],
+            0
+        ]
+    }
+}

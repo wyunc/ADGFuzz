@@ -1,0 +1,34 @@
+{
+    "_begin": {
+        "_buffer": [
+            [
+                "new_nothrow",
+                "uint8_t",
+                "rx_s"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "hal_spi_get_device"
+            ],
+            0
+        ]
+    },
+    "_write_fd": {
+        "ret": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "_last_update_timestamp": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    }
+}

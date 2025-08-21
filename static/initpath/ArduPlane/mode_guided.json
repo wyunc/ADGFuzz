@@ -1,0 +1,133 @@
+{
+    "update": {
+        "plane.nav_roll_cd": [
+            [
+                "constrain_int32_plane_roll_limit_cd",
+                "constrain_int32_desired",
+                "constrain_int32_plane_guided_state_forced_rpy_cd_x",
+                "constrain_int32_bank_limit"
+            ],
+            0
+        ],
+        "delta": [
+            [
+                "plane_guided_state_target_heading_time_ms",
+                "1e",
+                "millis"
+            ],
+            1
+        ],
+        "error": [
+            [
+                "wrap_pi_plane_guided_state_target_heading",
+                "wrap_pi_groundspeed_y",
+                "m_pi",
+                "wrap_pi_atan2f",
+                "wrap_pi_ahrs_get_yaw",
+                "wrap_pi_groundspeed_x"
+            ],
+            0
+        ],
+        "desired": [
+            [
+                "plane_g2_guided_heading_update_error_plane_guided_state_target_heading_limit",
+                "plane_g2_guided_heading_update_error_error",
+                "plane_g2_guided_heading_update_error_delta"
+            ],
+            0
+        ],
+        "plane.guided_state.target_heading_limit": [
+            [
+                "fabsf_desired",
+                "degrees_plane_guided_state_target_heading_accel_limit",
+                "1e2f",
+                "plane_roll_limit_cd",
+                "degrees_gravity_mss",
+                "degrees_atanf"
+            ],
+            1
+        ],
+        "groundspeed": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "plane.guided_state.target_heading_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "constrain_int32_plane_aparm_pitch_limit_max_get",
+                "constrain_int32_plane_guided_state_forced_rpy_cd_y",
+                "constrain_int32_plane_pitch_limit_min"
+            ],
+            0
+        ]
+    },
+    "handle_guided_request": {
+        "target_loc.alt": [
+            [
+                "plane_home_alt"
+            ],
+            0
+        ]
+    },
+    "set_radius_and_direction": {
+        "plane.loiter.direction": [
+            [
+                "direction_is_ccw"
+            ],
+            0
+        ],
+        "active_radius_m": [
+            [
+                "constrain_int32_radius",
+                "uint16_max",
+                "constrain_int32_fabsf"
+            ],
+            0
+        ]
+    },
+    "update_target_altitude": {
+        "temp_location": [
+            [
+                "plane_guided_state_target_location"
+            ],
+            0
+        ],
+        "temp_alt_cm": [
+            [
+                "constrain_int32_plane_guided_state_target_location_alt",
+                "constrain_int32_target_alt_previous_cm",
+                "constrain_int32_delta_amt_i"
+            ],
+            0
+        ],
+        "delta_amt_i": [
+            [
+                "plane_guided_state_target_alt_time_ms",
+                "1e",
+                "millis",
+                "plane_guided_state_target_alt_rate",
+                "int32_t"
+            ],
+            3
+        ],
+        "plane.guided_state.target_alt_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "target_frame": [
+            [
+                "plane_guided_state_target_location_get_alt_frame"
+            ],
+            0
+        ]
+    }
+}

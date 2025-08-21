@@ -1,0 +1,123 @@
+{
+    "failsafe_radio_on_event": {
+        "desired_action": [
+            [
+                "rtl",
+                "auto_do_land_start",
+                "none",
+                "smartrtl",
+                "smartrtl_land",
+                "land",
+                "brake_land"
+            ],
+            0
+        ]
+    },
+    "handle_battery_failsafe": {
+        "desired_action": [
+            [
+                "action",
+                "failsafe_action",
+                "none",
+                "land"
+            ],
+            0
+        ]
+    },
+    "failsafe_gcs_check": {
+        "gcs_timeout_ms": [
+            [
+                "uint32_t_uint32_max",
+                "uint32_t_g2_fs_gcs_timeout"
+            ],
+            0
+        ],
+        "last_gcs_update_ms": [
+            [
+                "gcs_sysid_myggcs_last_seen_time_ms",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "failsafe_gcs_on_event": {
+        "desired_action": [
+            [
+                "auto_do_land_start",
+                "smartrtl_land",
+                "none",
+                "smartrtl",
+                "land",
+                "rtl",
+                "brake_land"
+            ],
+            0
+        ]
+    },
+    "failsafe_terrain_check": {
+        "trigger_event": [
+            [
+                "flightmode_requires_terrain_failsafe",
+                "fs_terrain_timeout_ms",
+                "failsafe_terrain_first_failure_ms",
+                "failsafe_terrain_last_failure_ms"
+            ],
+            1
+        ]
+    },
+    "failsafe_terrain_set_status": {
+        "failsafe.terrain_last_failure_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "failsafe.terrain_first_failure_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "gpsglitch_check": {
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ],
+        "ap.gps_glitching": [
+            [
+                "filt_status_flags_gps_glitching"
+            ],
+            1
+        ]
+    },
+    "failsafe_deadreckon_check": {
+        "dead_reckoning.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "failsafe.deadreckon": [
+            [
+                "inertial_nav_get_filter_status_flags_dead_reckoning"
+            ],
+            1
+        ],
+        "dead_reckoning.active": [
+            [
+                "inertial_nav_get_filter_status_flags_dead_reckoning"
+            ],
+            1
+        ],
+        "dr_timeout_ms": [
+            [
+                "uint32_t_g2_failsafe_dr_timeout",
+                "uint32_t_uint32_max"
+            ],
+            0
+        ]
+    }
+}

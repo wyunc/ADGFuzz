@@ -1,0 +1,22 @@
+{
+    "checkAndReport": {
+        "power_module_count": [
+            [
+                "count_set_bits_system_power_brick_valid"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "avionics_power_rail_voltage": [
+            [
+                "system_power_voltage5v_v"
+            ],
+            0
+        ]
+    }
+}

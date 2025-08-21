@@ -1,0 +1,54 @@
+{
+    "setSpoolupProgress": {
+        "_spoolup_progress": [
+            [
+                "spoolup_progress"
+            ],
+            0
+        ]
+    },
+    "getActuatorCorrection": {
+        "_actuator_correction": [
+            [
+                "_pid_update_rpm_rpm_estimate",
+                "_f",
+                "_pid_update_true",
+                "_pid_update_dt"
+            ],
+            0
+        ],
+        "timeout": [
+            [
+                "1_s",
+                "hrt_absolute_time",
+                "rpm_timestamp"
+            ],
+            2
+        ],
+        "gain_scale": [
+            [
+                "interpolate_1e",
+                "interpolate__f",
+                "interpolate__",
+                "interpolate__spoolup_progress"
+            ],
+            0
+        ],
+        "_rpm_invalid": [
+            [
+                "rpm_rpm_estimate",
+                "_f"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_f",
+                "1e",
+                "min__timestamp_last_measurement",
+                "min_now"
+            ],
+            0
+        ]
+    }
+}

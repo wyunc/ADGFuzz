@@ -1,0 +1,22 @@
+{
+    "get_rgb": {
+        "blue": [
+            [
+                "_blue_curr"
+            ],
+            0
+        ],
+        "red": [
+            [
+                "_red_curr"
+            ],
+            0
+        ],
+        "green": [
+            [
+                "_green_curr"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "updateSensorAtRate": {
+        "new_sample.rng": [
+            [
+                "_min_range"
+            ],
+            0
+        ],
+        "new_sample.time_us": [
+            [
+                "sample_time_us",
+                "dt_update_us"
+            ],
+            1
+        ],
+        "new_sample": [
+            [
+                "sample"
+            ],
+            0
+        ]
+    }
+}

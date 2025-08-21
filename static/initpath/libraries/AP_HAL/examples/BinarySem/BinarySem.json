@@ -1,0 +1,42 @@
+{
+    "setup": {
+        "ct": [
+            [
+                "new",
+                "binary_sem_test"
+            ],
+            0
+        ]
+    },
+    "thread2": {
+        "ok": [
+            [
+                "sem2_wait"
+            ],
+            0
+        ]
+    },
+    "thread1": {
+        "ok": [
+            [
+                "sem1_wait"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_print_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "micros",
+                "_0e"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "failsafe_check": {
+        "last_ticks": [
+            [
+                "scheduler_ticks"
+            ],
+            1
+        ],
+        "last_timestamp": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "failsafe_trigger": {
+        "old_bits": [
+            [
+                "failsafe_bits"
+            ],
+            0
+        ],
+        "failsafe.start_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "failsafe.triggered": [
+            [
+                "failsafe_bits"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "update": {
+        "_relpos_cm.y": [
+            [
+                "pos_ne_y"
+            ],
+            0
+        ],
+        "_velocity_cm": [
+            [
+                "vel_ned"
+            ],
+            0
+        ],
+        "_relpos_cm.x": [
+            [
+                "pos_ne_x"
+            ],
+            0
+        ],
+        "velned_ok": [
+            [
+                "_ahrs_ekf_get_velocity_ned_vel_ned"
+            ],
+            0
+        ],
+        "_velocity_cm.z": [
+            [
+                "_velocity_cm_z",
+                "rate_z"
+            ],
+            0
+        ],
+        "_relpos_cm.z": [
+            [
+                "pos_d"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "set_mode": {
+        "previous_mode": [
+            [
+                "old_previous_mode"
+            ],
+            0
+        ],
+        "control_mode_reason": [
+            [
+                "reason"
+            ],
+            0
+        ],
+        "previous_mode_reason": [
+            [
+                "old_previous_mode_reason"
+            ],
+            0
+        ],
+        "control_mode": [
+            [
+                "new_mode",
+                "old_mode"
+            ],
+            0
+        ]
+    },
+    "set_mode_by_number": {
+        "new_mode": [
+            [
+                "plane_mode_from_mode_num_new_mode_number"
+            ],
+            0
+        ]
+    },
+    "check_long_failsafe": {
+        "radio_timeout_ms": [
+            [
+                "failsafe_last_valid_rc_ms",
+                "failsafe_short_timer_ms"
+            ],
+            0
+        ],
+        "tnow": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "gcs_last_seen_ms": [
+            [
+                "gcs_sysid_myggcs_last_seen_time_ms"
+            ],
+            0
+        ],
+        "timeout_seconds": [
+            [
+                "g_fs_timeout_long",
+                "g_fs_timeout_short"
+            ],
+            0
+        ]
+    },
+    "notify_mode": {
+        "notify.flags.flight_mode": [
+            [
+                "mode_mode_number"
+            ],
+            0
+        ]
+    }
+}

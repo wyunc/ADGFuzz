@@ -1,0 +1,17 @@
+{
+    "loop": {
+        "filtered_value": [
+            [
+                "low_pass_filter_apply_new_value"
+            ],
+            0
+        ],
+        "new_value": [
+            [
+                "m_pi",
+                "sinf_floati"
+            ],
+            0
+        ]
+    }
+}

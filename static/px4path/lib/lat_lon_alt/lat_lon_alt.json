@@ -1,0 +1,21 @@
+{
+    "computeRadiiOfCurvature": {
+        "meridian_radius_of_curvature": [
+            [
+                "pow_latitude",
+                "pow_eccentricity",
+                "pow_sin",
+                "sqrt_tmp",
+                "meridian_radius_of_curvature_numerator"
+            ],
+            1
+        ],
+        "transverse_radius_of_curvature": [
+            [
+                "sqrt_tmp",
+                "equatorial_radius"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,673 @@
+{
+    "start_command": {
+        "next_index": [
+            [
+                "mission_get_current_nav_index"
+            ],
+            0
+        ],
+        "auto_state.wp_is_land_approach": [
+            [
+                "mav_cmd_nav_land",
+                "mission_get_next_nav_cmd_next_nav_cmd",
+                "mission_get_next_nav_cmd_next_index",
+                "next_nav_cmd_id"
+            ],
+            1
+        ],
+        "auto_state.inverted_flight": [
+            [
+                "cmd_p1",
+                "bool"
+            ],
+            0
+        ]
+    },
+    "do_RTL": {
+        "prev_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "next_WP_loc": [
+            [
+                "calc_best_rally_or_home_location_current_loc",
+                "calc_best_rally_or_home_location_rtl_altitude_amsl_cm"
+            ],
+            0
+        ]
+    },
+    "do_takeoff": {
+        "auto_state.takeoff_altitude_rel_cm": [
+            [
+                "next_wp_loc_alt",
+                "home_alt"
+            ],
+            0
+        ],
+        "auto_state.baro_takeoff_alt": [
+            [
+                "barometer_get_altitude"
+            ],
+            0
+        ],
+        "next_WP_loc.lat": [
+            [
+                "home_lat"
+            ],
+            0
+        ],
+        "prev_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "auto_state.takeoff_pitch_cd": [
+            [
+                "int16_t",
+                "cmd_p1"
+            ],
+            0
+        ],
+        "next_WP_loc.lng": [
+            [
+                "home_lng"
+            ],
+            0
+        ]
+    },
+    "do_land": {
+        "auto_state.takeoff_altitude_rel_cm": [
+            [
+                "cmd_p1",
+                "int16_t"
+            ],
+            0
+        ]
+    },
+    "do_landing_vtol_approach": {
+        "vtol_approach_s.approach_stage": [
+            [
+                "loiter_to_alt"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_loiter_unlimited": {
+        "cmdloc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_loiter_turns": {
+        "loiter.total_cd": [
+            [
+                "36000ul",
+                "cmd_get_loiter_turns",
+                "uint32_t"
+            ],
+            1
+        ],
+        "cmdloc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_loiter_time": {
+        "loiter.time_max_ms": [
+            [
+                "uint32_t",
+                "cmd_p1"
+            ],
+            0
+        ],
+        "cmdloc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_continue_and_change_alt": {
+        "next_WP_loc.alt": [
+            [
+                "home_alt",
+                "cmd_content_location_alt"
+            ],
+            0
+        ],
+        "steer_state.hold_course_cd": [
+            [
+                "wrap_360_cd_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "bearing": [
+            [
+                "gps_ground_course",
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "condition_value": [
+            [
+                "cmd_p1"
+            ],
+            0
+        ]
+    },
+    "do_loiter_to_alt": {
+        "loc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_nav_delay": {
+        "nav_delay.time_max_ms": [
+            [
+                "_get_time_utc_cmd_content_nav_delay_sec_utc",
+                "_get_time_utc_cmd_content_nav_delay_min_utc",
+                "cmd_content_nav_delay_seconds",
+                "rtc_get_time_utc_cmd_content_nav_delay_hour_utc"
+            ],
+            0
+        ],
+        "nav_delay.time_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "verify_takeoff": {
+        "relative_alt_cm": [
+            [
+                "adjusted_relative_altitude_cm"
+            ],
+            0
+        ],
+        "takeoff_course": [
+            [
+                "wrap_pi_gps_ground_course",
+                "wrap_pi_radians",
+                "wrap_pi_takeoff_course",
+                "steer_state_locked_course_err"
+            ],
+            0
+        ],
+        "steer_state.hold_course_cd": [
+            [
+                "wrap_360_cd_degrees",
+                "wrap_360_cd_takeoff_course"
+            ],
+            0
+        ],
+        "next_WP_loc": [
+            [
+                "prev_wp_loc",
+                "current_loc"
+            ],
+            0
+        ],
+        "auto_state.takeoff_speed_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "trust_ahrs_yaw": [
+            [
+                "ahrs_initialised"
+            ],
+            0
+        ]
+    },
+    "verify_nav_wp": {
+        "flex_next_WP_loc": [
+            [
+                "next_wp_loc"
+            ],
+            0
+        ],
+        "cmd_passby": [
+            [
+                "highbyte_cmd_p1"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "prev_wp_loc_get_distance_flex_next_wp_loc"
+            ],
+            0
+        ],
+        "wp_dist": [
+            [
+                "current_loc_get_distance_flex_next_wp_loc"
+            ],
+            0
+        ],
+        "prev_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "bearing_deg": [
+            [
+                "degrees_prev_wp_loc_get_bearing",
+                "degrees_flex_next_wp_loc"
+            ],
+            0
+        ],
+        "acceptance_distance_m": [
+            [
+                "auto_state_next_turn_angle",
+                "nav_controller_turn_distance_get_wp_radius",
+                "lowbyte_cmd_p1"
+            ],
+            1
+        ]
+    },
+    "verify_loiter_time": {
+        "loiter.start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "verify_loiter_heading_false",
+                "verify_loiter_heading_true"
+            ],
+            0
+        ]
+    },
+    "verify_loiter_turns": {
+        "radius": [
+            [
+                "highbyte_cmd_p1"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "verify_loiter_heading_true",
+                "verify_loiter_heading_false"
+            ],
+            0
+        ]
+    },
+    "verify_loiter_to_alt": {
+        "result": [
+            [
+                "verify_loiter_heading_false",
+                "verify_loiter_heading_true"
+            ],
+            0
+        ]
+    },
+    "verify_continue_and_change_alt": {
+        "next_wp_bearing_cd": [
+            [
+                "prev_wp_loc_get_bearing_to_next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "verify_altitude_wait": {
+        "time_to_alt": [
+            [
+                "cmd_content_altitude_wait_altitude",
+                "plane_current_loc_alt",
+                "plane_auto_state_sink_rate"
+            ],
+            1
+        ],
+        "wiggle.last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "do_wait_delay": {
+        "condition_start": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "condition_value": [
+            [
+                "cmd_content_delay_seconds"
+            ],
+            0
+        ]
+    },
+    "do_within_distance": {
+        "condition_value": [
+            [
+                "cmd_content_distance_meters"
+            ],
+            0
+        ]
+    },
+    "do_loiter_at_location": {
+        "next_WP_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ]
+    },
+    "do_change_speed": {
+        "new_airspeed_cm": [
+            [
+                "speed_target_ms"
+            ],
+            0
+        ]
+    },
+    "verify_command_callback": {
+        "cmd_complete": [
+            [
+                "verify_command_cmd"
+            ],
+            0
+        ]
+    },
+    "verify_landing_vtol_approach": {
+        "breakout_loc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ],
+        "vtol_approach_s.approach_direction_deg": [
+            [
+                "degrees_atan2f",
+                "degrees_wind_x",
+                "degrees_wind_y"
+            ],
+            0
+        ],
+        "breakout_stopping_loc": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ],
+        "breakout_direction_rad": [
+            [
+                "radians_direction",
+                "radians_vtol_approach_s_approach_direction_deg"
+            ],
+            0
+        ],
+        "radius": [
+            [
+                "quadplane_fw_land_approach_radius",
+                "aparm_loiter_radius",
+                "is_zero_quadplane_fw_land_approach_radius"
+            ],
+            0
+        ],
+        "loiter.direction": [
+            [
+                "is_negative_radius"
+            ],
+            1
+        ],
+        "abs_radius": [
+            [
+                "fabsf_radius"
+            ],
+            0
+        ],
+        "lined_up": [
+            [
+                "fabsf_degrees",
+                "fabsf_vel_ned_xy_angle_target_vec",
+                "fabsf_wrap_180"
+            ],
+            1
+        ],
+        "target_vec": [
+            [
+                "current_loc_get_distance_ne_cmd_content_location"
+            ],
+            0
+        ],
+        "vtol_approach_s.approach_stage": [
+            [
+                "wait_for_breakout",
+                "ensure_radius",
+                "approach_line",
+                "loiter_to_alt",
+                "vtol_landing"
+            ],
+            0
+        ],
+        "past_finish_line": [
+            [
+                "current_loc_past_interval_finish_line_breakout_stopping_loc",
+                "current_loc_past_interval_finish_line_start"
+            ],
+            0
+        ],
+        "half_radius": [
+            [
+                "current_loc_line_path_proportion_cmd_content_location",
+                "current_loc_line_path_proportion_breakout_loc"
+            ],
+            0
+        ],
+        "wind": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "cmd_content_location"
+            ],
+            0
+        ]
+    },
+    "do_nav_script_time": {
+        "nav_scripting.roll_rate_dps": [
+            [
+                "plane_roll_controller_get_pid_info_target"
+            ],
+            0
+        ],
+        "nav_scripting.throttle_pct": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ],
+        "nav_scripting.yaw_rate_dps": [
+            [
+                "degrees_ahrs_get_gyro_z"
+            ],
+            0
+        ],
+        "nav_scripting.current_ms": [
+            [
+                "nav_scripting_start_ms"
+            ],
+            0
+        ],
+        "nav_scripting.pitch_rate_dps": [
+            [
+                "plane_pitch_controller_get_pid_info_target"
+            ],
+            0
+        ],
+        "nav_scripting.start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "verify_nav_script_time": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "nav_script_time": {
+        "id": [
+            [
+                "nav_scripting_id"
+            ],
+            0
+        ],
+        "arg1": [
+            [
+                "c_arg1_get"
+            ],
+            0
+        ],
+        "arg4": [
+            [
+                "c_arg4"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "mission_get_current_nav_cmd_content_nav_script_time"
+            ],
+            0
+        ],
+        "arg3": [
+            [
+                "c_arg3"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "c_command"
+            ],
+            0
+        ],
+        "arg2": [
+            [
+                "c_arg2_get"
+            ],
+            0
+        ]
+    },
+    "set_target_throttle_rate_rpy": {
+        "nav_scripting.current_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "nav_scripting.roll_rate_dps": [
+            [
+                "roll_rate_dps",
+                "g_acro_roll_rate"
+            ],
+            0
+        ],
+        "nav_scripting.throttle_pct": [
+            [
+                "aparm_throttle_max",
+                "aparm_throttle_min",
+                "throttle_pct"
+            ],
+            0
+        ],
+        "nav_scripting.pitch_rate_dps": [
+            [
+                "g_acro_pitch_rate",
+                "pitch_rate_dps"
+            ],
+            0
+        ],
+        "nav_scripting.yaw_rate_dps": [
+            [
+                "g_acro_yaw_rate",
+                "yaw_rate_dps"
+            ],
+            0
+        ]
+    },
+    "set_rudder_offset": {
+        "nav_scripting.rudder_offset_pct": [
+            [
+                "rudder_pct"
+            ],
+            0
+        ],
+        "nav_scripting.run_yaw_rate_controller": [
+            [
+                "run_yaw_rate_controller"
+            ],
+            0
+        ]
+    },
+    "nav_scripting_enable": {
+        "current_control_mode": [
+            [
+                "control_mode_mode_number"
+            ],
+            0
+        ],
+        "nav_scripting.current_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "is_land_command": {
+        "command": [
+            [
+                "mav_cmd_nav_payload_place"
+            ],
+            0
+        ]
+    },
+    "in_auto_mission_id": {
+        "control_mode": [
+            [
+                "command",
+                "mission_get_current_nav_id",
+                "mode_auto"
+            ],
+            0
+        ]
+    }
+}

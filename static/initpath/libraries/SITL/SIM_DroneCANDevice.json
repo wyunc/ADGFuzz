@@ -1,0 +1,173 @@
+{
+    "update_baro": {
+        "delayed_time": [
+            [
+                "millis",
+                "_delay",
+                "sitl_baro"
+            ],
+            1
+        ],
+        "temp_msg.static_temperature": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "sim_alt": [
+            [
+                "_noise",
+                "_buffer",
+                "sitl_baro",
+                "rand_float",
+                "sitl_state_altitude",
+                "_data",
+                "millis",
+                "i",
+                "_glitch",
+                "_drift"
+            ],
+            2
+        ],
+        "best_time_delta": [
+            [
+                "time_delta"
+            ],
+            0
+        ],
+        "_baro_last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        ".time": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "T": [
+            [
+                "c_to_kelvin_t",
+                "theta",
+                "ssl_air_temperature",
+                "kelvin_to_c_t_k"
+            ],
+            0
+        ],
+        "press_msg.static_pressure": [
+            [
+                "wind_pressure_correction",
+                "delta",
+                "ssl_air_pressure"
+            ],
+            1
+        ]
+    },
+    "update_airspeed": {
+        "msg.static_air_temperature": [
+            [
+                "c_to_kelvin_get_temperature_c_for_alt_amsl",
+                "c_to_kelvin_sim_alt"
+            ],
+            0
+        ],
+        "_airspeed_last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "sim_alt": [
+            [
+                "sitl_state_altitude"
+            ],
+            0
+        ],
+        "msg.differential_pressure": [
+            [
+                "sitl_state_airspeed_raw_pressure"
+            ],
+            0
+        ]
+    },
+    "_setup_eliptical_correcion": {
+        "diagonals": [
+            [
+                "i",
+                "_get",
+                "sitl_mag_diag"
+            ],
+            1
+        ],
+        "_last_dia": [
+            [
+                "i",
+                "_get",
+                "sitl_mag_diag"
+            ],
+            1
+        ],
+        "_last_odi": [
+            [
+                "i",
+                "sitl_mag_offdiag"
+            ],
+            1
+        ]
+    },
+    "update_compass": {
+        "f": [
+            [
+                "sitl_mag_ofs",
+                "_eliptical_corr",
+                "_get",
+                "sitl_mag_scaling",
+                "sitl_mag_noise",
+                "rand_vec3f",
+                "sitl_state_body_mag_field"
+            ],
+            2
+        ],
+        "_compass_last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ]
+    },
+    "update_rangefinder": {
+        "_rangefinder_last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "msg.sensor_type": [
+            [
+                "uavcan_equipment_range_sensor_measurement_sensor_type_lidar"
+            ],
+            0
+        ],
+        "msg.range": [
+            [
+                "sitl_get_rangefinder"
+            ],
+            1
+        ],
+        "msg.timestamp.usec": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "msg.reading_type": [
+            [
+                "uavcan_equipment_range_sensor_measurement_reading_type_valid_range",
+                "uavcan_equipment_range_sensor_measurement_reading_type_too_far"
+            ],
+            0
+        ]
+    }
+}

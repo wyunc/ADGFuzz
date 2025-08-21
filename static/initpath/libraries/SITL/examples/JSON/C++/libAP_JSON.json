@@ -1,0 +1,71 @@
+{
+    "ReceiveServoPacket": {
+        "pkt": [
+            [
+                "last_pkt"
+            ],
+            0
+        ],
+        "fcu_frame_count": [
+            [
+                "pkt_frame_count"
+            ],
+            0
+        ],
+        "fcu_frame_rate": [
+            [
+                "pkt_frame_rate"
+            ],
+            0
+        ],
+        "recvSize_last": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_servo_packet",
+                "0ul",
+                "sock_recv_last_pkt"
+            ],
+            0
+        ],
+        "recvSize": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_pkt",
+                "recv_size_last",
+                "sock_recv_servo_packet",
+                "wait_ms"
+            ],
+            0
+        ]
+    },
+    "setAirspeed": {
+        "airspeed": [
+            [
+                "airspeed_in"
+            ],
+            0
+        ]
+    },
+    "setWindvane": {
+        "windvane_direction": [
+            [
+                "direction"
+            ],
+            0
+        ],
+        "windvane_speed": [
+            [
+                "speed"
+            ],
+            0
+        ]
+    },
+    "setRangefinder": {
+        "rangefinder_count": [
+            [
+                "n"
+            ],
+            0
+        ]
+    }
+}

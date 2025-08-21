@@ -1,0 +1,278 @@
+{
+    "send_position_target_global_int": {
+        "POSITION_TARGET_TYPEMASK_LAST_BYTE": [
+            [
+                "0x_f000"
+            ],
+            0
+        ]
+    },
+    "send_nav_controller_output": {
+        "control_mode": [
+            [
+                "rover_control_mode"
+            ],
+            0
+        ]
+    },
+    "send_servo_out": {
+        "motor3": [
+            [
+                "get_output_scaled_k_throttle",
+                "get_output_scaled_k_throttle_right"
+            ],
+            0
+        ],
+        "motor1": [
+            [
+                "get_output_scaled_k_throttle_left",
+                "get_output_scaled_k_steering"
+            ],
+            0
+        ]
+    },
+    "send_rangefinder": {
+        "s": [
+            [
+                "rover_rangefinder_get_backend_i"
+            ],
+            0
+        ],
+        "voltage": [
+            [
+                "s_voltage_mv"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "s_distance"
+            ],
+            0
+        ]
+    },
+    "send_pid_tuning": {
+        "pid_info": [
+            [
+                "g2_attitude_control_get_throttle_speed_pid_info",
+                "g2_attitude_control_get_pitch_to_throttle_pid_get_pid_info",
+                "g2_pos_control_get_vel_pid_get_pid_info_x",
+                "g2_attitude_control_get_sailboat_heel_pid_get_pid_info",
+                "g2_pos_control_get_vel_pid_get_pid_info_y",
+                "g2_attitude_control_get_steering_rate_pid_get_pid_info",
+                "g2_wheel_rate_control_get_pid_get_pid_info"
+            ],
+            0
+        ],
+        "g": [
+            [
+                "rover_g"
+            ],
+            0
+        ],
+        "g2": [
+            [
+                "rover_g2"
+            ],
+            0
+        ]
+    },
+    "try_send_message": {
+        "oadb": [
+            [
+                "oadatabase"
+            ],
+            0
+        ]
+    },
+    "handle_set_attitude_target": {
+        "packet.thrust": [
+            [
+                "packet_thrust"
+            ],
+            0
+        ],
+        "target_heading_cd": [
+            [
+                "degrees_packet_q",
+                "degrees_packet_q_get_euler_yaw",
+                "degrees_quaternion"
+            ],
+            0
+        ],
+        "target_speed": [
+            [
+                "rover_control_mode_get_speed_default",
+                "packet_thrust"
+            ],
+            0
+        ]
+    },
+    "handle_set_position_target_local_ned": {
+        "yaw_rate_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_yaw_rate_ignore"
+            ],
+            0
+        ],
+        "target_speed": [
+            [
+                "safe_sqrt_packet_vx",
+                "rover_control_mode_get_speed_default",
+                "safe_sqrt_packet_vy",
+                "safe_sqrt_sq"
+            ],
+            1
+        ],
+        "yaw_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_yaw_ignore"
+            ],
+            0
+        ],
+        "target_loc": [
+            [
+                "ekf_origin",
+                "rover_current_loc"
+            ],
+            0
+        ],
+        "target_turn_rate_cds": [
+            [
+                "to_deg_packet_yaw_rate"
+            ],
+            0
+        ],
+        "target_yaw_cd": [
+            [
+                "to_deg_packet_yaw",
+                "wrap_180_cd_target_yaw_cd",
+                "degrees_packet_vy",
+                "degrees_packet_vx",
+                "wrap_180_cd_rover_ahrs_yaw_sensor",
+                "degrees_atan2f"
+            ],
+            0
+        ],
+        "vel_ignore": [
+            [
+                "mavlink_set_pos_type_mask_vel_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "pos_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_pos_ignore"
+            ],
+            0
+        ],
+        "ne_x": [
+            [
+                "packet_x",
+                "rover_ahrs_cos_yaw",
+                "rover_ahrs_sin_yaw",
+                "packet_y"
+            ],
+            0
+        ],
+        "acc_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_acc_ignore"
+            ],
+            0
+        ],
+        "ne_y": [
+            [
+                "packet_x",
+                "rover_ahrs_cos_yaw",
+                "rover_ahrs_sin_yaw",
+                "packet_y"
+            ],
+            0
+        ]
+    },
+    "handle_set_position_target_global_int": {
+        "target_turn_rate_cds": [
+            [
+                "to_deg_packet_yaw_rate"
+            ],
+            0
+        ],
+        "vel_ignore": [
+            [
+                "mavlink_set_pos_type_mask_vel_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "target_loc.lat": [
+            [
+                "packet_lat_int"
+            ],
+            0
+        ],
+        "target_yaw_cd": [
+            [
+                "degrees_atan2f",
+                "to_deg_packet_yaw",
+                "degrees_packet_vx",
+                "degrees_packet_vy"
+            ],
+            0
+        ],
+        "yaw_rate_ignore": [
+            [
+                "mavlink_set_pos_type_mask_yaw_rate_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "target_loc": [
+            [
+                "rover_current_loc"
+            ],
+            0
+        ],
+        "acc_ignore": [
+            [
+                "mavlink_set_pos_type_mask_acc_ignore",
+                "packet_type_mask"
+            ],
+            0
+        ],
+        "pos_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_pos_ignore"
+            ],
+            0
+        ],
+        "target_speed": [
+            [
+                "safe_sqrt_packet_vy",
+                "rover_control_mode_get_speed_default",
+                "safe_sqrt_packet_vx",
+                "safe_sqrt_sq"
+            ],
+            1
+        ],
+        "target_loc.lng": [
+            [
+                "packet_lon_int"
+            ],
+            0
+        ],
+        "yaw_ignore": [
+            [
+                "packet_type_mask",
+                "mavlink_set_pos_type_mask_yaw_ignore"
+            ],
+            0
+        ]
+    }
+}

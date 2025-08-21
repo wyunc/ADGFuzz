@@ -1,0 +1,106 @@
+{
+    "handle_EFI_message": {
+        "internal_state.estimated_consumed_fuel_volume_cm3": [
+            [
+                "state_fuel_consumed"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.ignition_timing_deg": [
+            [
+                "state_ignition_timing"
+            ],
+            0
+        ],
+        "internal_state.ecu_index": [
+            [
+                "state_ecu_index"
+            ],
+            0
+        ],
+        "internal_state.ignition_voltage": [
+            [
+                "state_ignition_voltage"
+            ],
+            0
+        ],
+        "internal_state.throttle_out": [
+            [
+                "state_throttle_out"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.injection_time_ms": [
+            [
+                "state_injection_time"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.exhaust_gas_temperature": [
+            [
+                "c_to_kelvin_state_exhaust_gas_temperature"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_temperature": [
+            [
+                "c_to_kelvin_state_intake_manifold_temperature"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature": [
+            [
+                "c_to_kelvin_state_cylinder_head_temperature"
+            ],
+            0
+        ],
+        "internal_state.pt_compensation": [
+            [
+                "state_pt_compensation"
+            ],
+            0
+        ],
+        "internal_state.fuel_consumption_rate_cm3pm": [
+            [
+                "state_fuel_flow"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_pressure_kpa": [
+            [
+                "state_intake_manifold_pressure"
+            ],
+            0
+        ],
+        "internal_state.engine_speed_rpm": [
+            [
+                "state_rpm"
+            ],
+            0
+        ],
+        "internal_state.spark_dwell_time_ms": [
+            [
+                "state_spark_dwell_time"
+            ],
+            0
+        ],
+        "internal_state.throttle_position_percent": [
+            [
+                "state_throttle_position"
+            ],
+            0
+        ],
+        "internal_state.engine_load_percent": [
+            [
+                "state_engine_load"
+            ],
+            0
+        ],
+        "internal_state.atmospheric_pressure_kpa": [
+            [
+                "state_barometric_pressure"
+            ],
+            0
+        ]
+    }
+}

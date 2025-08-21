@@ -1,0 +1,30 @@
+{
+    "resetWindToExternalObservation": {
+        "wind_direction_var": [
+            [
+                "sq_wind_direction_accuracy"
+            ],
+            0
+        ],
+        "wind_speed_var": [
+            [
+                "sq_wind_speed_accuracy"
+            ],
+            0
+        ],
+        "wind_speed_constrained": [
+            [
+                "max_wind_speed"
+            ],
+            0
+        ]
+    },
+    "resetWindTo": {
+        "_state.wind_vel": [
+            [
+                "wind"
+            ],
+            0
+        ]
+    }
+}

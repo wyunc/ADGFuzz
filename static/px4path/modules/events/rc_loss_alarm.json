@@ -1,0 +1,30 @@
+{
+    "play_tune": {
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tune_control.tune_id": [
+            [
+                "tune_id_error"
+            ],
+            0
+        ],
+        "tune_control.volume": [
+            [
+                "volume_level_max"
+            ],
+            0
+        ]
+    },
+    "stop_tune": {
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

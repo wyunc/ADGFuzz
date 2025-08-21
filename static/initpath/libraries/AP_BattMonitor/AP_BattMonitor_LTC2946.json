@@ -1,0 +1,73 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_i2c_mgr_get_device_hal_battmon_ltc2946_bus",
+                "hal_i2c_mgr_get_device_hal_battmon_ltc2946_addr",
+                "hal_i2c_mgr_get_device_false"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.healthy": [
+            [
+                "accumulate_count"
+            ],
+            0
+        ],
+        "dt_us": [
+            [
+                "_state_last_time_micros",
+                "micros"
+            ],
+            1
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.voltage": [
+            [
+                "accumulate_count",
+                "accumulate_volt_sum"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "accumulate_count",
+                "accumulate_current_sum"
+            ],
+            0
+        ]
+    },
+    "read_word": {
+        "data": [
+            [
+                "uint16_t_uint16_t",
+                "uint16_t_data",
+                "uint16_t_be16toh"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "accumulate.volt_sum": [
+            [
+                "volts",
+                "voltage_lsb"
+            ],
+            0
+        ],
+        "accumulate.current_sum": [
+            [
+                "amps",
+                "current_lsb"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "setFilePath": {
+        "_file_path": [
+            [
+                "file_path"
+            ],
+            0
+        ]
+    },
+    "writeState": {
+        "state": [
+            [
+                "_ekf_state_vector"
+            ],
+            0
+        ],
+        "time": [
+            [
+                "_ekf_time_delayed_us"
+            ],
+            0
+        ],
+        "variance": [
+            [
+                "_ekf_covariances_diagonal"
+            ],
+            0
+        ]
+    }
+}

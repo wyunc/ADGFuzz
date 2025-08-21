@@ -1,0 +1,28 @@
+{
+    "timer": {
+        "field": [
+            [
+                "vector3f",
+                "int16_t",
+                "le16toh_buffer_ry",
+                "static_cast",
+                "range_scale",
+                "int16_t",
+                "le16toh_buffer_rx",
+                "static_cast",
+                "le16toh_buffer_rz",
+                "int16_t",
+                "static_cast"
+            ],
+            3
+        ]
+    },
+    "_dump_registers": {
+        "reg": [
+            [
+                "qmc5883l_reg_data_output_x"
+            ],
+            0
+        ]
+    }
+}

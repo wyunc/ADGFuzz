@@ -1,0 +1,151 @@
+{
+    "setActiveMissionItems": {
+        "num_found_items": [
+            [
+                "0u"
+            ],
+            1
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint"
+            ],
+            0
+        ],
+        "current.alt_acceptance_radius": [
+            [
+                "flt_max"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            1
+        ],
+        "mission_dataman_id": [
+            [
+                "_mission_mission_dataman_id",
+                "static_cast",
+                "dm_item_t"
+            ],
+            0
+        ],
+        "_work_item_type": [
+            [
+                "work_item_type_default",
+                "work_item_type_move_to_land"
+            ],
+            1
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ]
+    },
+    "handleTakeoff": {
+        "new_work_item_type": [
+            [
+                "work_item_type_default",
+                "work_item_type_align_heading",
+                "work_item_type_climb",
+                "work_item_type_transition_after_takeoff"
+            ],
+            0
+        ],
+        ".nav_cmd": [
+            [
+                "nav_cmd_waypoint"
+            ],
+            0
+        ],
+        "num_found_items": [
+            [
+                "1u"
+            ],
+            0
+        ],
+        "_mission_item.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint",
+                "nav_cmd_takeoff",
+                "nav_cmd_loiter_to_alt"
+            ],
+            0
+        ],
+        "_mission_item.lon": [
+            [
+                "_global_pos_sub_get_lon"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_mission_item.lat": [
+            [
+                "_global_pos_sub_get_lat"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ],
+        "_mission_init_climb_altitude_amsl": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "handleVtolTransition": {
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ],
+        "new_work_item_type": [
+            [
+                "work_item_type_default",
+                "work_item_type_align_heading"
+            ],
+            0
+        ]
+    },
+    "save_mission_state": {
+        "mission_state": [
+            [
+                "_mission"
+            ],
+            0
+        ]
+    }
+}

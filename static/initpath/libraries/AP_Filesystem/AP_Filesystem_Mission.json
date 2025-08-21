@@ -1,0 +1,199 @@
+{
+    "open": {
+        "r.mtype": [
+            [
+                "mtype"
+            ],
+            0
+        ],
+        "r.writebuf": [
+            [
+                "expanding_string",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ],
+        "r.num_items": [
+            [
+                "get_num_items_r_mtype"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "enfile",
+                "enoent"
+            ],
+            0
+        ],
+        "r.last_op_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "readonly": [
+            [
+                "o_rdonly",
+                "o_accmode",
+                "flags"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "idx",
+                "file"
+            ],
+            0
+        ],
+        ".writebuf": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "r.writebuf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "fd",
+                "file"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "finish_upload_r"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "einval",
+                "ebadf"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "errno": [
+            [
+                "enoent"
+            ],
+            0
+        ]
+    },
+    "check_file_name": {
+        "mtype": [
+            [
+                "mav_mission_type_mission",
+                "mav_mission_type_rally",
+                "mav_mission_type_fence"
+            ],
+            0
+        ]
+    },
+    "finish_upload": {
+        "nitems": [
+            [
+                "sizeof_hdr",
+                "r_writebuf_get_length",
+                "mavlink_msg_id_mission_item_int_len"
+            ],
+            2
+        ],
+        "b2": [
+            [
+                "sizeof_hdr",
+                "mavlink_msg_id_mission_item_int_len",
+                "i"
+            ],
+            1
+        ],
+        "b": [
+            [
+                "const",
+                "uint8_t",
+                "r_writebuf_get_string"
+            ],
+            0
+        ]
+    },
+    "finish_upload_mission": {
+        "item_size": [
+            [
+                "mavlink_msg_id_mission_item_int_len"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "mavlink_int_to_mission_cmd_cmd",
+                "mavlink_int_to_mission_cmd_m"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "hdr_start",
+                "i"
+            ],
+            0
+        ]
+    },
+    "finish_upload_fence": {
+        "new_items": [
+            [
+                "hdr_num_items",
+                "nullptr",
+                "ac_poly_fence_item",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "item_size": [
+            [
+                "mavlink_msg_id_mission_item_int_len"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "fence_polyfence_write_fence_new_items",
+                "_write_fence_hdr_num_items"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "convert_mission_item_int_to_ac_poly_fence_item_new_items",
+                "convert_mission_item_int_to_ac_poly_fence_item_m",
+                "convert_mission_item_int_to_ac_poly_fence_item_i"
+            ],
+            0
+        ]
+    },
+    "finish_upload_rally": {
+        "item_size": [
+            [
+                "mavlink_msg_id_mission_item_int_len"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "convert_mission_item_int_to_rally_location_m",
+                "convert_mission_item_int_to_rally_location_cmd"
+            ],
+            0
+        ]
+    }
+}

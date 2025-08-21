@@ -1,0 +1,77 @@
+{
+    "arm_auth_param_update": {
+        "_param_com_arm_auth_timout": [
+            [
+                "timeout",
+                "1_s"
+            ],
+            0
+        ],
+        "_param_com_arm_auth_method": [
+            [
+                "arm_auth_methods",
+                "arm_auth_method_arm_req",
+                "arm_auth_method_arm_req"
+            ],
+            1
+        ]
+    },
+    "arm_auth_request_msg_send": {
+        "vcmd.target_system": [
+            [
+                "_param_com_arm_auth_id"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_arm_authorization_request"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "arm_auth_update": {
+        "state": [
+            [
+                "arm_auth_idle",
+                "arm_auth_mission_approved",
+                "arm_auth_waiting_auth_with_ack"
+            ],
+            0
+        ],
+        "auth_timeout": [
+            [
+                "command_ack_result_param2",
+                "command_ack_timestamp"
+            ],
+            0
+        ]
+    },
+    "arm_auth_init": {
+        "system_id": [
+            [
+                "sys_id"
+            ],
+            0
+        ],
+        "mavlink_log_pub": [
+            [
+                "mav_log_pub"
+            ],
+            0
+        ],
+        "command_ack_sub": [
+            [
+                "orb_subscribe_vehicle_command_ack",
+                "orb_subscribe_orb_id"
+            ],
+            0
+        ]
+    }
+}

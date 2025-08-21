@@ -1,0 +1,18 @@
+{
+    "setup": {
+        "chan": [
+            [
+                "hal_analogin_channel"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "v": [
+            [
+                "chan_voltage_average"
+            ],
+            0
+        ]
+    }
+}

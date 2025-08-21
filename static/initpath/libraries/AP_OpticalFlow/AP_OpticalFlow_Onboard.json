@@ -1,0 +1,34 @@
+{
+    "update": {
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "_last_read_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ],
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ],
+        "state.surface_quality": [
+            [
+                "data_frame_quality"
+            ],
+            0
+        ]
+    }
+}

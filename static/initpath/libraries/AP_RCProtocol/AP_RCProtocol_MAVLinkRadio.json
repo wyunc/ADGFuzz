@@ -1,0 +1,18 @@
+{
+    "update_radio_rc_channels": {
+        "failsafe": [
+            [
+                "packet_flags",
+                "radio_rc_channels_flags_failsafe"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "packet_count",
+                "max_rcin_channels"
+            ],
+            0
+        ]
+    }
+}

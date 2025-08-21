@@ -1,0 +1,31 @@
+{
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "get_instance",
+                "sitl_state_airspeed_raw_pressure"
+            ],
+            1
+        ]
+    },
+    "get_temperature": {
+        "sim_alt": [
+            [
+                "sitl_state_altitude"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "get_temperature_c_for_alt_amsl_sim_alt"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "_update_airspeed": {
+        "airspeed_raw": [
+            [
+                "arspd_offset",
+                "arspd_ratio",
+                "sqrtf_arspd_noise",
+                "sqrtf_diff_pressure",
+                "sqrt_tube_pressure",
+                "sqrt_ssl_air_pressure",
+                "sqrtf_arspd_ratio",
+                "sqrtf_rand_float",
+                "sqrtf_fabsf",
+                "true_airspeed",
+                "arspd_fail",
+                "sqrt_pow",
+                "get_eas2tas_for_alt_amsl__sitl_state_altitude"
+            ],
+            2
+        ],
+        "tube_pressure": [
+            [
+                "arspd_fail_pitot_pressure",
+                "fabsf_baro_get_pressure",
+                "fabsf_arspd_fail_pressure"
+            ],
+            0
+        ],
+        "arspd": [
+            [
+                "_sitl_airspeed",
+                "i"
+            ],
+            0
+        ],
+        "diff_pressure": [
+            [
+                "sq_airspeed",
+                "arspd_ratio"
+            ],
+            0
+        ]
+    }
+}

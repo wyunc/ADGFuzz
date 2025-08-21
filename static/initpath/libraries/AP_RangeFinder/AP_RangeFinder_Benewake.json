@@ -1,0 +1,21 @@
+{
+    "get_reading": {
+        "checksum": [
+            [
+                "linebuf",
+                "i"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "model_dist_max_cm_max_distance_cm",
+                "benewake_out_of_range_add_cm",
+                "count",
+                "linebuf",
+                "uint16_t"
+            ],
+            2
+        ]
+    }
+}

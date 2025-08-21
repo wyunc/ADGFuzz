@@ -1,0 +1,39 @@
+{
+    "controlEvYawFusion": {
+        "obs_var": [
+            [
+                "_params_ev_att_noise",
+                "sq",
+                "max_ev_sample_orientation_var"
+            ],
+            0
+        ],
+        "innov_var": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "wrap_pi_get_euler_yaw",
+                "wrap_pi__r_to_earth",
+                "get_euler_yaw_ev_sample_quat"
+            ],
+            1
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out__params_no_aid_timeout_max",
+                "is_timed_out_aid_src_time_last_fuse"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "get_reading": {
+        "checksum": [
+            [
+                "crc8_rds02uf_u_parse_buffer",
+                "crc8_rds02uf_rds02uf_pre_data_len",
+                "crc8_rds02uf_rds02uf_data_len"
+            ],
+            0
+        ],
+        "body_length": [
+            [
+                "nbytes"
+            ],
+            0
+        ],
+        "distance_m": [
+            [
+                "u_packet_data"
+            ],
+            0
+        ],
+        "read_len": [
+            [
+                "u_packet_length_h",
+                "u_packet_length_l"
+            ],
+            0
+        ],
+        "read_info_fc": [
+            [
+                "u_packet_data"
+            ],
+            0
+        ],
+        "fc_code": [
+            [
+                "u_packet_fc_low",
+                "u_packet_fc_high"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "move_header_in_buffer": {
+        "body_length": [
+            [
+                "u_parse_buffer",
+                "uint8_t",
+                "memchr_u_parse_buffer",
+                "memchr_body_length",
+                "memchr_initial_offset",
+                "memchr_rds02_head"
+            ],
+            2
+        ]
+    }
+}

@@ -1,0 +1,269 @@
+{
+    "init": {
+        "response": [
+            [
+                "response_type"
+            ],
+            0
+        ],
+        "excitation": [
+            [
+                "input_type"
+            ],
+            0
+        ],
+        "dwell_cycles": [
+            [
+                "cycles"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "prev_meas": [
+            [
+                "dt",
+                "meas_resp"
+            ],
+            1
+        ],
+        "sweep_meas.count_m1": [
+            [
+                "min_meas_cnt"
+            ],
+            0
+        ],
+        "min_meas": [
+            [
+                "meas_resp"
+            ],
+            0
+        ],
+        "max_target": [
+            [
+                "tgt_resp"
+            ],
+            0
+        ],
+        "new_meas_time_ms": [
+            [
+                "m_2pi",
+                "tgt_freq",
+                "uint32_t",
+                "millis"
+            ],
+            2
+        ],
+        "max_meas_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "input_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "max_meas_rate": [
+            [
+                "dt",
+                "meas_resp"
+            ],
+            1
+        ],
+        "temp_meas_ampl": [
+            [
+                "temp_min_meas"
+            ],
+            0
+        ],
+        "sweep_tgt.count_m1": [
+            [
+                "min_target_cnt"
+            ],
+            0
+        ],
+        "prev_tgt_resp": [
+            [
+                "tgt_resp"
+            ],
+            0
+        ],
+        "curr_test_phase": [
+            [
+                "tgt_freq",
+                "sweep_meas_max_time_m1",
+                "sweep_tgt_max_time_m1",
+                "cnt",
+                "meas_time",
+                "tgt_time",
+                "float",
+                "m_2pi",
+                "tgt_freq",
+                "sweep_tgt_max_time_m1",
+                "temp_max_tgt_time",
+                "float",
+                "m_2pi"
+            ],
+            4
+        ],
+        "max_command": [
+            [
+                "command"
+            ],
+            0
+        ],
+        "cycle_time_ms": [
+            [
+                "m_2pi",
+                "tgt_freq",
+                "uint32_t"
+            ],
+            0
+        ],
+        "curr_test_gain": [
+            [
+                "sweep_tgt_amplitude_m1",
+                "meas_ampl",
+                "tgt_ampl",
+                "gcnt",
+                "sweep_meas_amplitude_m1"
+            ],
+            1
+        ],
+        "max_meas": [
+            [
+                "meas_resp"
+            ],
+            0
+        ],
+        "new_tgt_time_ms": [
+            [
+                "m_2pi",
+                "tgt_freq",
+                "uint32_t",
+                "millis"
+            ],
+            2
+        ],
+        "max_accel": [
+            [
+                "tgt_freq"
+            ],
+            1
+        ],
+        "temp_tgt_ampl": [
+            [
+                "temp_min_target"
+            ],
+            0
+        ],
+        "prev_target": [
+            [
+                "tgt_resp",
+                "dt"
+            ],
+            1
+        ],
+        "max_tgt_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "prev_meas_resp": [
+            [
+                "meas_resp"
+            ],
+            0
+        ],
+        "min_target": [
+            [
+                "tgt_resp"
+            ],
+            0
+        ]
+    },
+    "push_to_meas_buffer": {
+        "sample.time_ms": [
+            [
+                "time_ms"
+            ],
+            0
+        ],
+        "sample.amplitude": [
+            [
+                "amplitude"
+            ],
+            0
+        ],
+        "sample.curr_count": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "pull_from_meas_buffer": {
+        "time_ms": [
+            [
+                "sample_time_ms"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "sample_curr_count"
+            ],
+            0
+        ],
+        "amplitude": [
+            [
+                "sample_amplitude"
+            ],
+            0
+        ]
+    },
+    "push_to_tgt_buffer": {
+        "sample.amplitude": [
+            [
+                "amplitude"
+            ],
+            0
+        ],
+        "sample.time_ms": [
+            [
+                "time_ms"
+            ],
+            0
+        ],
+        "sample.curr_count": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "pull_from_tgt_buffer": {
+        "amplitude": [
+            [
+                "sample_amplitude"
+            ],
+            0
+        ],
+        "time_ms": [
+            [
+                "sample_time_ms"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "sample_curr_count"
+            ],
+            0
+        ]
+    }
+}

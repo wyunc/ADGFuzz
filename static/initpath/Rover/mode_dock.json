@@ -1,0 +1,127 @@
+{
+    "_enter": {
+        "_desired_heading_NE": [
+            [
+                "sinf_radians",
+                "sinf_desired_dir",
+                "vector2f",
+                "cosf_radians",
+                "cosf_desired_dir"
+            ],
+            0
+        ],
+        "jerk_max": [
+            [
+                "g2_wp_nav_get_default_jerk",
+                "is_positive_g2_wp_nav_get_default_jerk",
+                "g2_attitude_control_get_accel_max_g2_attitude_control_get_decel_max",
+                "ar_dock_accel_max",
+                "g2_wp_nav_get_default_accel_atc_accel_max",
+                "is_positive_g2_wp_nav_get_default_accel"
+            ],
+            2
+        ],
+        "speed_max": [
+            [
+                "is_positive_speed",
+                "g2_wp_nav_get_default_speed",
+                "speed"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_loitering": [
+            [
+                "rover_mode_loiter_enter"
+            ],
+            0
+        ],
+        "desired_turn_rate": [
+            [
+                "g2_pos_control_get_desired_turn_rate_rads"
+            ],
+            0
+        ],
+        "force_real_target": [
+            [
+                "dock_pos_rel_vehicle_cm_length",
+                "_force_real_target_limit_cm"
+            ],
+            1
+        ],
+        "target_cm": [
+            [
+                "_dock_pos_rel_origin_cm",
+                "dock_pos_rel_vehicle_cm_projected__desired_heading_ne_length",
+                "hdg_corr_weight",
+                "_desired_heading_ne"
+            ],
+            1
+        ],
+        "real_dock_in_sight": [
+            [
+                "rover_precland_get_target_position_cm__dock_pos_rel_origin_cm"
+            ],
+            0
+        ],
+        "desired_speed": [
+            [
+                "apply_slowdown_desired_speed",
+                "g2_pos_control_get_desired_speed"
+            ],
+            0
+        ]
+    },
+    "apply_slowdown": {
+        "body_to_ned": [
+            [
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "target_vec_body": [
+            [
+                "body_to_ned_mul_transpose_target_vec_rel_vehicle_ned"
+            ],
+            0
+        ],
+        "error_ratio": [
+            [
+                "fabsf_target_vec_body_y",
+                "_acceptable_pos_error_cm"
+            ],
+            1
+        ],
+        "desired_speed": [
+            [
+                "fabsf_desired_speed",
+                "safe_sqrt_fabsf",
+                "fabsf_error_ratio",
+                "safe_sqrt__distance_to_destination",
+                "fabsf_slowdown_weight",
+                "safe_sqrt_stopping_dist",
+                "safe_sqrt_g2_pos_control_get_accel_max",
+                "dock_speed_slowdown_lmt"
+            ],
+            0
+        ],
+        "slowdown_weight": [
+            [
+                "target_vec_body_x",
+                "dock_slow_dist_max_m",
+                "dock_slow_dist_min_m"
+            ],
+            0
+        ]
+    },
+    "calc_dock_pos_rel_vehicle_NE": {
+        "dock_pos_rel_vehicle": [
+            [
+                "current_pos_m",
+                "_dock_pos_rel_origin_cm"
+            ],
+            0
+        ]
+    }
+}

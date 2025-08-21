@@ -1,0 +1,85 @@
+{
+    "updateWithNewInputSample": {
+        "_setpoint.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_setpoint": [
+            [
+                "input"
+            ],
+            0
+        ],
+        "start_using_new_input": [
+            [
+                "_setpoint_valid"
+            ],
+            0
+        ],
+        "update_existing_input": [
+            [
+                "_setpoint_valid",
+                "_setpoint_data_source",
+                "input_data_source"
+            ],
+            0
+        ],
+        "_first_valid_source": [
+            [
+                "_setpoint_data_source"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "instance"
+            ],
+            0
+        ]
+    },
+    "isInputValid": {
+        "_first_valid_source": [
+            [
+                "source_unknown"
+            ],
+            0
+        ],
+        "sample_newer_than_timeout": [
+            [
+                "now",
+                "input_timestamp_sample",
+                "_timeout"
+            ],
+            0
+        ],
+        "input.data_source": [
+            [
+                "source_mavlink_5"
+            ],
+            0
+        ],
+        "sample_from_the_past": [
+            [
+                "now",
+                "input_timestamp_sample"
+            ],
+            0
+        ],
+        "source_any_matched": [
+            [
+                "_rc_in_mode"
+            ],
+            0
+        ],
+        "source_rc_matched": [
+            [
+                "source_rc",
+                "input_data_source",
+                "_rc_in_mode"
+            ],
+            0
+        ]
+    }
+}

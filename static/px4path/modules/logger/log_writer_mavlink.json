@@ -1,0 +1,99 @@
+{
+    "start_log": {
+        "_ulog_stream_ack_sub": [
+            [
+                "orb_subscribe_orb_id",
+                "orb_subscribe_ulog_stream_ack"
+            ],
+            0
+        ]
+    },
+    "write_message": {
+        "ptr_data": [
+            [
+                "ptr",
+                "_ulog_stream_data_length",
+                "min_size_tdata_len",
+                "uint8_t"
+            ],
+            1
+        ],
+        "_ulog_stream_data.length": [
+            [
+                "_ulog_stream_data_length",
+                "min_size_tdata_len"
+            ],
+            1
+        ],
+        "size": [
+            [
+                "_ulog_stream_data_length",
+                "min_size_tdata_len"
+            ],
+            1
+        ],
+        "data_len": [
+            [
+                "sizeof__ulog_stream_data_data",
+                "uint8_t"
+            ],
+            0
+        ],
+        "_ulog_stream_data.first_message_offset": [
+            [
+                "_ulog_stream_data_length"
+            ],
+            0
+        ]
+    },
+    "set_need_reliable_transfer": {
+        "_need_reliable_transfer": [
+            [
+                "need_reliable"
+            ],
+            0
+        ]
+    },
+    "publish_message": {
+        ".events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "_ulog_stream_data.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_ulog_stream_data.flags": [
+            [
+                "_ulog_stream_data_flags_need_ack"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_poll_fds",
+                "px4_poll_sizeof",
+                "ack_timeout",
+                "ack_max_tries",
+                "sizeof_fds"
+            ],
+            1
+        ],
+        ".fd": [
+            [
+                "_ulog_stream_ack_sub"
+            ],
+            0
+        ],
+        "started": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

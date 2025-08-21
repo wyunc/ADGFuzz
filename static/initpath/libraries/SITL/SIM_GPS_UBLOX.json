@@ -1,0 +1,463 @@
+{
+    "send_ubx": {
+        "PREAMBLE2": [
+            [
+                "0x62"
+            ],
+            0
+        ],
+        "PREAMBLE1": [
+            [
+                "0xb5"
+            ],
+            0
+        ],
+        "CLASS_NAV": [
+            [
+                "0x1"
+            ],
+            0
+        ]
+    },
+    "update_relposned": {
+        "relposned.relPosHeading": [
+            [
+                "degrees_rel_antenna_pos_x",
+                "degrees_vector2f",
+                "degrees_rel_antenna_pos_y_angle",
+                "_0e5"
+            ],
+            0
+        ],
+        "relposned.relPosD": [
+            [
+                "rel_antenna_pos_z"
+            ],
+            0
+        ],
+        "relposned.flags": [
+            [
+                "gnss_fix_ok",
+                "rel_pos_heading_valid",
+                "is_moving",
+                "rel_pos_valid",
+                "carr_soln_fixed",
+                "diff_soln"
+            ],
+            0
+        ],
+        "lag": [
+            [
+                "_sitl_gps",
+                "instance",
+                "_delay_ms"
+            ],
+            0
+        ],
+        "relposned.relPosE": [
+            [
+                "rel_antenna_pos_y"
+            ],
+            0
+        ],
+        "relposned.relPosLength": [
+            [
+                "rel_antenna_pos_length"
+            ],
+            0
+        ],
+        "rel_antenna_pos": [
+            [
+                "_sitl_gps",
+                "instance",
+                "_pos_offset_get",
+                "_sitl_gps",
+                "_pos_offset_get",
+                "i",
+                "rot"
+            ],
+            2
+        ],
+        "relposned.relPosN": [
+            [
+                "rel_antenna_pos_x"
+            ],
+            0
+        ],
+        "relposned.iTOW": [
+            [
+                "tow_ms"
+            ],
+            0
+        ]
+    },
+    "publish": {
+        "pvt.v_acc": [
+            [
+                "d_vertical_acc"
+            ],
+            0
+        ],
+        "velned.ned_north": [
+            [
+                "d_speed_n"
+            ],
+            0
+        ],
+        "pos.latitude": [
+            [
+                "_0e7",
+                "d_latitude"
+            ],
+            0
+        ],
+        ".cno": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "pvt.h_msl": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "MSG_SOL": [
+            [
+                "0x6"
+            ],
+            0
+        ],
+        "sol.time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "status.time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pvt.velD": [
+            [
+                "d_speed_d"
+            ],
+            0
+        ],
+        "pos.altitude_msl": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        ".azim": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "pvt.velE": [
+            [
+                "d_speed_e"
+            ],
+            0
+        ],
+        "pos.horizontal_accuracy": [
+            [
+                "d_horizontal_acc"
+            ],
+            0
+        ],
+        "MSG_DOP": [
+            [
+                "0x4"
+            ],
+            0
+        ],
+        "dop.time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pos.altitude_ellipsoid": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "pvt.lat": [
+            [
+                "_0e7",
+                "d_latitude"
+            ],
+            0
+        ],
+        "velned.speed_accuracy": [
+            [
+                "d_speed_acc"
+            ],
+            0
+        ],
+        "MSG_SVINFO": [
+            [
+                "0x30"
+            ],
+            0
+        ],
+        ".chn": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "pvt.gspeed": [
+            [
+                "norm_d_speed_e",
+                "norm_d_speed_n"
+            ],
+            0
+        ],
+        "MSG_RELPOSNED": [
+            [
+                "0x3c"
+            ],
+            0
+        ],
+        ".elev": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "velned.speed_2d": [
+            [
+                "norm_d_speed_e",
+                "norm_d_speed_n"
+            ],
+            0
+        ],
+        "pos.vertical_accuracy": [
+            [
+                "d_vertical_acc"
+            ],
+            0
+        ],
+        "velned.time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pvt.num_sv": [
+            [
+                "d_have_lock",
+                "d_num_sats"
+            ],
+            0
+        ],
+        "velned.heading_2d": [
+            [
+                "to_deg_d_speed_n",
+                "to_deg_atan2f",
+                "to_deg_d_speed_e"
+            ],
+            0
+        ],
+        "MSG_STATUS": [
+            [
+                "0x3"
+            ],
+            0
+        ],
+        "pvt.head_mot": [
+            [
+                "to_deg_d_speed_n",
+                "to_deg_atan2f",
+                "to_deg_d_speed_e",
+                "_0e5"
+            ],
+            0
+        ],
+        "MSG_PVT": [
+            [
+                "0x7"
+            ],
+            0
+        ],
+        "sol.fix_type": [
+            [
+                "d_have_lock"
+            ],
+            0
+        ],
+        "status.uptime": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pos.time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pvt.itow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "MSG_VELNED": [
+            [
+                "0x12"
+            ],
+            0
+        ],
+        "pvt.height": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "pvt.flags": [
+            [
+                "0b10000011"
+            ],
+            0
+        ],
+        "sol.satellites": [
+            [
+                "d_have_lock",
+                "d_num_sats"
+            ],
+            0
+        ],
+        "status.fix_type": [
+            [
+                "d_have_lock"
+            ],
+            0
+        ],
+        "velned.speed_3d": [
+            [
+                "norm_d_speed_d",
+                "norm_d_speed_e",
+                "norm_d_speed_n"
+            ],
+            0
+        ],
+        "_next_nav_sv_info_time": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        ".svid": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "svinfo.itow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pvt.lon": [
+            [
+                "_0e7",
+                "d_longitude"
+            ],
+            0
+        ],
+        ".flags": [
+            [
+                "0x7",
+                "d_num_sats",
+                "i",
+                "0x6"
+            ],
+            0
+        ],
+        "pvt.h_acc": [
+            [
+                "d_horizontal_acc"
+            ],
+            0
+        ],
+        "velned.ned_east": [
+            [
+                "d_speed_e"
+            ],
+            0
+        ],
+        "pvt.s_acc": [
+            [
+                "velned_speed_accuracy"
+            ],
+            0
+        ],
+        "pos.longitude": [
+            [
+                "_0e7",
+                "d_longitude"
+            ],
+            0
+        ],
+        "sol.week": [
+            [
+                "gps_tow_week"
+            ],
+            0
+        ],
+        "status.fix_status": [
+            [
+                "d_have_lock"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "MSG_POSLLH": [
+            [
+                "0x2"
+            ],
+            0
+        ],
+        "pvt.velN": [
+            [
+                "d_speed_n"
+            ],
+            0
+        ],
+        "pvt.fix_type": [
+            [
+                "d_have_lock",
+                "0x3"
+            ],
+            0
+        ],
+        "pvt.head_acc": [
+            [
+                "_0e5"
+            ],
+            0
+        ],
+        "velned.ned_down": [
+            [
+                "d_speed_d"
+            ],
+            0
+        ]
+    }
+}

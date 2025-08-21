@@ -1,0 +1,122 @@
+{
+    "open": {
+        "ptr": [
+            [
+                "nullptr",
+                "0x08000000",
+                "void"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "board_flash_size"
+            ],
+            0
+        ],
+        "r.str": [
+            [
+                "nullptr",
+                "new_nothrow",
+                "expanding_string"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "idx",
+                "file"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "file_in_sysfs_fname"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "enfile",
+                "enomem",
+                "enoent",
+                "r_str_has_failed_allocation",
+                "erofs"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "errno": [
+            [
+                "ebadf"
+            ],
+            0
+        ],
+        "r.str": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "fd",
+                "file"
+            ],
+            0
+        ]
+    },
+    "opendir": {
+        "dtracker": [
+            [
+                "dir_read_tracker",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "enoent",
+                "enomem"
+            ],
+            0
+        ]
+    },
+    "closedir": {
+        "errno": [
+            [
+                "einval"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "st_size": [
+            [
+                "hal_util_last_crash_dump_size",
+                "hal_storage_size"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "file_in_sysfs_pathname_noslash"
+            ],
+            0
+        ],
+        "pathname_noslash": [
+            [
+                "pathname"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "einval",
+                "enoent"
+            ],
+            0
+        ]
+    }
+}

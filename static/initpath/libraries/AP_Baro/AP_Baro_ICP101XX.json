@@ -1,0 +1,114 @@
+{
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ],
+        "whoami": [
+            [
+                "0x3f",
+                "id"
+            ],
+            0
+        ]
+    },
+    "read_calibration_data": {
+        "crc": [
+            [
+                "cal_crc_j",
+                "cal_crc_d",
+                "uint8_t",
+                "cal_crc_crc",
+                "0xff"
+            ],
+            0
+        ]
+    },
+    "calculate_conversion_constants": {
+        "B": [
+            [
+                "a",
+                "p_pa",
+                "p_lut",
+                "c"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "p_lut",
+                "p_pa",
+                "c"
+            ],
+            0
+        ]
+    },
+    "get_pressure": {
+        "t": [
+            [
+                "t_lsb"
+            ],
+            0
+        ]
+    },
+    "convert_data": {
+        "accum.tsum": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "T": [
+            [
+                "traw",
+                "1u"
+            ],
+            0
+        ],
+        "accum.psum": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "get_pressure_praw",
+                "get_pressure_traw"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "Praw": [
+            [
+                "d",
+                "uint32_t_d"
+            ],
+            0
+        ],
+        "Traw": [
+            [
+                "d",
+                "uint32_t_d"
+            ],
+            0
+        ],
+        "last_measure_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "accum.psum": [
+            [
+                "accum_tsum"
+            ],
+            0
+        ]
+    }
+}

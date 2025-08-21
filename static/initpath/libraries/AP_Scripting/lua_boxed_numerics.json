@@ -1,0 +1,83 @@
+{
+    "lua_new_uint32_t": {
+        "args": [
+            [
+                "lua_gettop_l",
+                "coerce_to_uint32_t_l"
+            ],
+            0
+        ]
+    },
+    "lua_new_uint64_t": {
+        "value": [
+            [
+                "coerce_to_uint32_t_l",
+                "coerce_to_uint64_t_l",
+                "coerce_to_uint32_t_l"
+            ],
+            2
+        ],
+        "args": [
+            [
+                "lua_gettop_l"
+            ],
+            0
+        ]
+    },
+    "uint32_t_toint": {
+        "v": [
+            [
+                "check_uint32_t_l"
+            ],
+            0
+        ]
+    },
+    "uint64_t_toint": {
+        "v": [
+            [
+                "check_uint64_t_l"
+            ],
+            0
+        ]
+    },
+    "uint32_t_tofloat": {
+        "v": [
+            [
+                "check_uint32_t_l"
+            ],
+            0
+        ]
+    },
+    "uint64_t_tofloat": {
+        "v": [
+            [
+                "check_uint64_t_l"
+            ],
+            0
+        ]
+    },
+    "uint32_t___tostring": {
+        "v": [
+            [
+                "check_uint32_t_l"
+            ],
+            0
+        ]
+    },
+    "uint64_t___tostring": {
+        "v": [
+            [
+                "check_uint64_t_l"
+            ],
+            0
+        ]
+    },
+    "uint64_t_split": {
+        "v": [
+            [
+                "check_uint64_t_l"
+            ],
+            0
+        ]
+    }
+}

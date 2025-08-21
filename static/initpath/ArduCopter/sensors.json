@@ -1,0 +1,46 @@
+{
+    "read_barometer": {
+        "baro_alt": [
+            [
+                "barometer_get_altitude"
+            ],
+            0
+        ]
+    },
+    "init_rangefinder": {
+        "rangefinder_up_state.enabled": [
+            [
+                "rangefinder_has_orientation_rotation_pitch_90"
+            ],
+            0
+        ],
+        "rangefinder_state.enabled": [
+            [
+                "rangefinder_has_orientation_rotation_pitch_270"
+            ],
+            0
+        ]
+    },
+    "update_rangefinder_terrain_offset": {
+        "rangefinder_up_state.terrain_offset_cm": [
+            [
+                "copter_g2_surftrak_tc",
+                "rangefinder_up_state_alt_cm_glitch_protected",
+                "rangefinder_state_alt_cm_glitch_protected",
+                "rangefinder_state_inertial_alt_cm",
+                "rangefinder_up_state_inertial_alt_cm",
+                "copter_g_dt",
+                "rangefinder_up_state_terrain_offset_cm"
+            ],
+            1
+        ],
+        "rangefinder_state.terrain_offset_cm": [
+            [
+                "copter_g2_surftrak_tc",
+                "rangefinder_state_terrain_offset_cm",
+                "copter_g_dt"
+            ],
+            0
+        ]
+    }
+}

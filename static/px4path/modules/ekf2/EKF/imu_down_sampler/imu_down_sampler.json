@@ -1,0 +1,76 @@
+{
+    "update": {
+        "_imu_down_sampled.delta_ang": [
+            [
+                "axis_anglef__delta_angle_accumulated"
+            ],
+            0
+        ],
+        "_imu_down_sampled.delta_vel": [
+            [
+                "delta_r",
+                "imu_sample_new_delta_vel",
+                "_imu_down_sampled_delta_vel"
+            ],
+            0
+        ],
+        "_imu_down_sampled.delta_vel_dt": [
+            [
+                "imu_sample_new_delta_vel_dt"
+            ],
+            0
+        ],
+        "_imu_down_sampled.time_us": [
+            [
+                "imu_sample_new_time_us"
+            ],
+            0
+        ],
+        "_delta_ang_dt_avg": [
+            [
+                "imu_sample_new_delta_ang_dt"
+            ],
+            0
+        ],
+        "_delta_angle_accumulated": [
+            [
+                "delta_q"
+            ],
+            0
+        ],
+        "_imu_down_sampled.delta_ang_dt": [
+            [
+                "imu_sample_new_delta_ang_dt"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_min_dt_s": [
+            [
+                "max__f",
+                "max__required_samples",
+                "max__delta_ang_dt_avg",
+                "_delta_ang_dt_avg"
+            ],
+            0
+        ],
+        "_target_dt_s": [
+            [
+                "_delta_ang_dt_avg",
+                "max_introundf_target_dt_s",
+                "roundf__delta_ang_dt_avg"
+            ],
+            1
+        ],
+        "target_dt_s": [
+            [
+                "constrain_int32_t",
+                "constrain__target_dt_us",
+                "int32_t",
+                "1e"
+            ],
+            0
+        ]
+    }
+}

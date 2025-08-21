@@ -1,0 +1,31 @@
+{
+    "update": {
+        "axis": [
+            [
+                "axis__get",
+                "axis_ch",
+                "axis__sitl_sfml_joystick_axis"
+            ],
+            0
+        ],
+        "stick_id": [
+            [
+                "_sitl_sfml_joystick_id"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "get_axis_position_stick_id",
+                "get_axis_position_axis"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "loop": {
+        "param_set.target_component": [
+            [
+                "mavlink_system_compid"
+            ],
+            0
+        ],
+        "param_set.target_system": [
+            [
+                "mavlink_system_sysid"
+            ],
+            0
+        ],
+        "dummy_link": [
+            [
+                "gcs_chan"
+            ],
+            0
+        ]
+    }
+}

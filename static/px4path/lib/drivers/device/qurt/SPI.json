@@ -1,0 +1,30 @@
+{
+    "init": {
+        "_fd": [
+            [
+                "_config_spi_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "probe",
+                "init",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "ret": [
+            [
+                "px4_error",
+                "_spi_transfer_send",
+                "_spi_transfer__fd",
+                "_spi_transfer_recv",
+                "_spi_transfer_len"
+            ],
+            0
+        ]
+    }
+}

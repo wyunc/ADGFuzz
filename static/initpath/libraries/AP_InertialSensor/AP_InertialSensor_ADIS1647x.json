@@ -1,0 +1,202 @@
+{
+    "check_product_id": {
+        "dangle_scale": [
+            [
+                "radians_float0x7fffffff"
+            ],
+            0
+        ],
+        "accel_scale": [
+            [
+                "0x10000",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_clip_limit": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "rang_mdl": [
+            [
+                "read_reg16_reg_rang_mdl"
+            ],
+            0
+        ],
+        "gyro_scale": [
+            [
+                "0x10000",
+                "0x4e200000",
+                "radians"
+            ],
+            0
+        ],
+        "prod_id": [
+            [
+                "read_reg16_reg_prod_id"
+            ],
+            0
+        ],
+        "opmode": [
+            [
+                "basic",
+                "delta32"
+            ],
+            0
+        ],
+        "dvel_scale": [
+            [
+                "float",
+                "0x7fffffff"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "msc_ctrl": [
+            [
+                "reg_msc_ctrl_pcomp",
+                "reg_msc_ctrl_drpol",
+                "reg_msc_ctrl_gcomp"
+            ],
+            0
+        ]
+    },
+    "read_sensor16": {
+        "temp_sum": [
+            [
+                "float_data_temp",
+                "float_be16toh",
+                "float_int16_t"
+            ],
+            0
+        ],
+        "last_counter": [
+            [
+                "be16toh_data_counter"
+            ],
+            1
+        ],
+        "gyro": [
+            [
+                "gyro_scale"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "accel_scale"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "uint8_t",
+                "data_diag_stat",
+                "const"
+            ],
+            0
+        ]
+    },
+    "read_sensor32": {
+        "temp_sum": [
+            [
+                "float_int16_t",
+                "float_be16toh",
+                "float_data_temp"
+            ],
+            0
+        ],
+        "last_counter": [
+            [
+                "be16toh_data_counter"
+            ],
+            1
+        ],
+        "sum": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "const",
+                "data_diag_stat",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "read_sensor32_delta": {
+        "sum": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "uint8_t",
+                "data_diag_stat",
+                "const"
+            ],
+            0
+        ],
+        "dangle": [
+            [
+                "expected_sample_rate_hz",
+                "_gyro_raw_sample_rate_gyro_instance"
+            ],
+            0
+        ],
+        "dvel": [
+            [
+                "expected_sample_rate_hz",
+                "_accel_raw_sample_rate_gyro_instance"
+            ],
+            0
+        ],
+        "last_counter": [
+            [
+                "be16toh_data_counter"
+            ],
+            1
+        ],
+        "temp_sum": [
+            [
+                "float_int16_t",
+                "float_data_temp",
+                "float_be16toh"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "wait_us": [
+            [
+                "1000000ul",
+                "20u",
+                "expected_sample_rate_hz",
+                "micros",
+                "micros"
+            ],
+            3
+        ],
+        "wait_ok": [
+            [
+                "hal_gpio_wait_pin_drdy_pin",
+                "hal_gpio_wait_pin_interrupt_rising"
+            ],
+            0
+        ]
+    }
+}

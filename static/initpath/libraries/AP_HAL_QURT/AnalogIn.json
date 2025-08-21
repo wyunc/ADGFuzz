@@ -1,0 +1,19 @@
+{
+    "read_latest": {
+        "rcout": [
+            [
+                "rc_output",
+                "hal_rcout"
+            ],
+            0
+        ]
+    },
+    "set_pin": {
+        "pin": [
+            [
+                "p"
+            ],
+            0
+        ]
+    }
+}

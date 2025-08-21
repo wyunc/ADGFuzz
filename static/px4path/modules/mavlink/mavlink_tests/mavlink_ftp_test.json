@@ -1,0 +1,476 @@
+{
+    "_init": {
+        "_ftp_server": [
+            [
+                "new",
+                "mavlink_ftp__mavlink"
+            ],
+            0
+        ]
+    },
+    "_create_test_files": {
+        "len": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "mkdir_px4_mavlink_test_data_dir",
+                "errno",
+                "write_fd",
+                "mkdir_s_irwxu",
+                "eexist",
+                "mkdir_s_irwxo",
+                "mkdir_s_irwxg",
+                "write_c"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_wronly",
+                "open_o_creat",
+                "open_o_excl",
+                "open_s_irwxu",
+                "open_i",
+                "open_s_irwxo",
+                "open__test_files",
+                "open_s_irwxg"
+            ],
+            0
+        ]
+    },
+    "_ack_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_none"
+            ],
+            0
+        ]
+    },
+    "_bad_opcode_test": {
+        "payload.opcode": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "_bad_datasize_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_list_directory"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "mavlink_msg_file_transfer_protocol_field_payload_len"
+            ],
+            0
+        ]
+    },
+    "_list_test": {
+        "test": [
+            [
+                "i",
+                "rg_test_cases"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_list_directory"
+            ],
+            0
+        ],
+        "dir": [
+            [
+                "strtok_list_entry",
+                "strtok_nullptr"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_dir"
+            ],
+            0
+        ]
+    },
+    "_list_eof_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_list_directory"
+            ],
+            0
+        ],
+        "dir": [
+            [
+                "px4_mavlink_test_data_dir"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_dir"
+            ],
+            0
+        ]
+    },
+    "_open_badfile_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_open_file_ro"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_dir"
+            ],
+            0
+        ]
+    },
+    "_open_terminate_test": {
+        "test": [
+            [
+                "i",
+                "_rg_download_test_cases"
+            ],
+            0
+        ],
+        "payload.session": [
+            [
+                "reply_session"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_open_file_ro",
+                "k_cmd_terminate_session"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_file"
+            ],
+            0
+        ]
+    },
+    "_terminate_badsession_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_terminate_session",
+                "k_cmd_open_file_ro"
+            ],
+            0
+        ],
+        "file": [
+            [
+                "_rg_download_test_cases",
+                "_file"
+            ],
+            0
+        ],
+        "payload.session": [
+            [
+                "reply_session"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_file"
+            ],
+            0
+        ]
+    },
+    "_read_test": {
+        "fd": [
+            [
+                "open_o_rdonly",
+                "open_test_file"
+            ],
+            0
+        ],
+        "test": [
+            [
+                "_rg_download_test_cases",
+                "i"
+            ],
+            0
+        ],
+        "payload.session": [
+            [
+                "reply_session"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_open_file_ro",
+                "k_cmd_read_file",
+                "k_cmd_terminate_session"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_file",
+                "reinterpret_cast",
+                "uint32_t",
+                "reply_data",
+                "const",
+                "payload_offset",
+                "max_data_len"
+            ],
+            1
+        ],
+        "bytes_read": [
+            [
+                "read_fd",
+                "read_bytes",
+                "read_st_st_size"
+            ],
+            0
+        ],
+        "payload.offset": [
+            [
+                "reply_size"
+            ],
+            0
+        ],
+        "bytes": [
+            [
+                "nullptr",
+                "uint8_t",
+                "new",
+                "st_st_size"
+            ],
+            0
+        ]
+    },
+    "_burst_test": {
+        "burst_info.single_packet_file": [
+            [
+                "test_single_packet_read"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_burst_read_file",
+                "k_cmd_open_file_ro",
+                "k_cmd_terminate_session"
+            ],
+            0
+        ],
+        "payload.session": [
+            [
+                "reply_session"
+            ],
+            0
+        ],
+        "burst_info.file_size": [
+            [
+                "st_st_size"
+            ],
+            0
+        ],
+        "test": [
+            [
+                "i",
+                "_rg_download_test_cases"
+            ],
+            0
+        ],
+        "bytes_read": [
+            [
+                "read_st_st_size",
+                "read_fd",
+                "read_bytes"
+            ],
+            0
+        ],
+        "bytes": [
+            [
+                "uint8_t",
+                "new",
+                "nullptr",
+                "st_st_size"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_file",
+                "max_data_len"
+            ],
+            0
+        ],
+        "burst_info.ftp_test_class": [
+            [
+                "this"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_rdonly",
+                "open_test_file"
+            ],
+            0
+        ],
+        "burst_info.burst_state": [
+            [
+                "burst_state_first_ack"
+            ],
+            0
+        ]
+    },
+    "_read_badsession_test": {
+        "payload.session": [
+            [
+                "reply_session"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_file"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_open_file_ro",
+                "k_cmd_read_file"
+            ],
+            0
+        ],
+        "file": [
+            [
+                "_file",
+                "_rg_download_test_cases"
+            ],
+            0
+        ]
+    },
+    "_removedirectory_test": {
+        "test": [
+            [
+                "i",
+                "rg_test_cases"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_s_irwxg",
+                "open_o_excl",
+                "open_s_irwxu",
+                "open_s_irwxo",
+                "open_o_creat",
+                "open__unittest_microsd_file"
+            ],
+            0
+        ],
+        "payload.opcode": [
+            [
+                "k_cmd_remove_directory"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_dir"
+            ],
+            0
+        ]
+    },
+    "_createdirectory_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_create_directory"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_dir"
+            ],
+            0
+        ],
+        "test": [
+            [
+                "i",
+                "rg_test_cases"
+            ],
+            0
+        ]
+    },
+    "_removefile_test": {
+        "payload.opcode": [
+            [
+                "k_cmd_remove_file"
+            ],
+            0
+        ],
+        "payload.size": [
+            [
+                "strlen_test_file"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_s_irwxu",
+                "open_o_creat",
+                "open__unittest_microsd_file",
+                "open_s_irwxg",
+                "open_s_irwxo",
+                "open_o_excl"
+            ],
+            0
+        ],
+        "test": [
+            [
+                "rg_test_cases",
+                "i"
+            ],
+            0
+        ]
+    },
+    "receive_message_handler_burst": {
+        "burst_info": [
+            [
+                "worker_data"
+            ],
+            0
+        ]
+    },
+    "_receive_message_handler_burst": {
+        "burst_state": [
+            [
+                "burst_state_nak_eof",
+                "burst_info_single_packet_file",
+                "burst_state_last_ack",
+                "burst_state_complete"
+            ],
+            0
+        ],
+        "expected_bytes": [
+            [
+                "burst_info_file_size",
+                "burst_info_single_packet_file",
+                "max_data_len"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "checkMissionFeasible": {
+        "home_valid": [
+            [
+                "_navigator_home_global_position_valid"
+            ],
+            0
+        ],
+        "warning": [
+            [
+                "failed"
+            ],
+            0
+        ],
+        "home_alt_valid": [
+            [
+                "_navigator_home_alt_valid"
+            ],
+            0
+        ]
+    },
+    "checkMissionAgainstGeofence": {
+        "missionitem.altitude": [
+            [
+                "missionitem_altitude_is_relative",
+                "missionitem_altitude",
+                "home_alt"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "update": {
+        "plane.nav_roll_cd": [
+            [
+                "plane_channel_roll_norm_input",
+                "plane_roll_limit_cd"
+            ],
+            0
+        ]
+    },
+    "navigate": {
+        "plane.next_WP_loc": [
+            [
+                "plane_prev_wp_loc"
+            ],
+            0
+        ],
+        "moving_forwards": [
+            [
+                "fabsf_ground_course_cd",
+                "plane_ahrs_get_yaw",
+                "m_pi_2",
+                "fabsf_wrap_pi",
+                "fabsf_radians"
+            ],
+            0
+        ],
+        "locked_heading_cd": [
+            [
+                "plane_gps_ground_course_cd"
+            ],
+            1
+        ],
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "lock_timer_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_target_heading_cd": {
+        "target_heading": [
+            [
+                "locked_heading_cd"
+            ],
+            0
+        ]
+    }
+}

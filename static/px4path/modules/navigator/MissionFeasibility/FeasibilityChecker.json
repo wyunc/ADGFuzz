@@ -1,0 +1,241 @@
+{
+    "reset": {
+        "_last_lon": [
+            [
+                "nan",
+                "double"
+            ],
+            0
+        ],
+        "_last_lat": [
+            [
+                "nan",
+                "double"
+            ],
+            0
+        ]
+    },
+    "updateData": {
+        "_home_lat_lon": [
+            [
+                "vector2d_home_lon",
+                "double",
+                "vector2d_home_lat",
+                "nan",
+                "vector2d_double_nan"
+            ],
+            0
+        ],
+        "_is_landed": [
+            [
+                "land_detected_landed"
+            ],
+            0
+        ],
+        "_vehicle_type": [
+            [
+                "rotary_wing",
+                "fixed_wing",
+                "vtol",
+                "other"
+            ],
+            0
+        ],
+        "_home_alt_msl": [
+            [
+                "home_alt",
+                "nan"
+            ],
+            0
+        ],
+        "handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "_has_vtol_approach": [
+            [
+                "rtl_status_has_vtol_approach"
+            ],
+            0
+        ]
+    },
+    "processNextItem": {
+        "_checks_failed.flags.takeoff_land_available_failed": [
+            [
+                "check_takeoff_land_available"
+            ],
+            0
+        ],
+        "_mission_item_previous": [
+            [
+                "mission_item"
+            ],
+            0
+        ],
+        "_checks_failed.flags.mission_validity_failed": [
+            [
+                "check_mission_item_validity_current_index",
+                "check_mission_item_validity_mission_item"
+            ],
+            0
+        ]
+    },
+    "doCommonChecks": {
+        "_checks_failed.flags.distance_between_waypoints_failed": [
+            [
+                "check_distances_between_waypoints_mission_item"
+            ],
+            0
+        ],
+        "_checks_failed.flags.takeoff_failed": [
+            [
+                "check_takeoff_mission_item"
+            ],
+            0
+        ],
+        "_checks_failed.flags.items_fit_to_vehicle_type_failed": [
+            [
+                "check_items_fit_to_vehicle_type_mission_item"
+            ],
+            0
+        ]
+    },
+    "doVtolChecks": {
+        "_checks_failed.flags.land_pattern_validity_failed": [
+            [
+                "check_land_pattern_validity_mission_item",
+                "check_land_pattern_validity_last_index",
+                "check_land_pattern_validity_current_index"
+            ],
+            0
+        ]
+    },
+    "doFixedWingChecks": {
+        "_checks_failed.flags.land_pattern_validity_failed": [
+            [
+                "check_land_pattern_validity_last_index",
+                "check_land_pattern_validity_mission_item",
+                "check_land_pattern_validity_current_index"
+            ],
+            0
+        ],
+        "_checks_failed.flags.fixed_wing_land_approach_failed": [
+            [
+                "check_fixed_wind_land_approach_mission_item",
+                "check_fixed_wind_land_approach_current_index"
+            ],
+            0
+        ]
+    },
+    "doMulticopterChecks": {
+        "mission_item.nav_cmd": [
+            [
+                "nav_cmd_land"
+            ],
+            0
+        ]
+    },
+    "checkTakeoff": {
+        "_has_vtol_takeoff": [
+            [
+                "nav_cmd_vtol_takeoff",
+                "mission_item_nav_cmd"
+            ],
+            0
+        ]
+    },
+    "checkFixedWindLandApproach": {
+        "glide_slope": [
+            [
+                "entrance_alt_amsl",
+                "land_alt_amsl",
+                "waypoint_distance"
+            ],
+            2
+        ],
+        "acceptable_entrance_alt": [
+            [
+                "uint32_t",
+                "waypoint_distance",
+                "tanf__param_fw_lnd_ang",
+                "tanf_radians"
+            ],
+            2
+        ],
+        "acceptable_landing_dist": [
+            [
+                "uint32_t",
+                "ceilf_max_glide_slope",
+                "ceilf_relative_approach_altitude"
+            ],
+            0
+        ],
+        "orbit_radius": [
+            [
+                "fabsf__mission_item_previous_loiter_radius"
+            ],
+            0
+        ],
+        "land_angle_left_of_decimal": [
+            [
+                "uint8_t",
+                "_param_fw_lnd_ang"
+            ],
+            0
+        ]
+    },
+    "checkLandPatternValidity": {
+        "land_start_found": [
+            [
+                "current_index"
+            ],
+            1
+        ],
+        "_landing_valid": [
+            [
+                "current_index"
+            ],
+            1
+        ]
+    },
+    "checkTakeoffLandAvailable": {
+        "result": [
+            [
+                "has_mission_both_or_neither_takeoff_and_landing",
+                "_has_takeoff",
+                "_landing_valid"
+            ],
+            0
+        ]
+    },
+    "hasMissionBothOrNeitherTakeoffAndLanding": {
+        "_has_takeoff": [
+            [
+                "_landing_valid"
+            ],
+            0
+        ]
+    },
+    "checkDistancesBetweenWaypoints": {
+        "_last_lon": [
+            [
+                "mission_item_lon"
+            ],
+            0
+        ],
+        "_last_cmd": [
+            [
+                "mission_item_nav_cmd"
+            ],
+            0
+        ],
+        "_last_lat": [
+            [
+                "mission_item_lat"
+            ],
+            0
+        ]
+    }
+}

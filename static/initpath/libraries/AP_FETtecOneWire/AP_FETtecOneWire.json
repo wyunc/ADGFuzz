@@ -1,0 +1,292 @@
+{
+    "init_uart": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "_uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_fe_ttec_one_wire"
+            ],
+            0
+        ],
+        "uart_baud": [
+            [
+                "half_duplex_baudrate"
+            ],
+            0
+        ]
+    },
+    "transmit": {
+        "_last_transmit_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_ignore_own_bytes": [
+            [
+                "length"
+            ],
+            0
+        ]
+    },
+    "move_frame_source_in_receive_buffer": {
+        "i": [
+            [
+                "search_start_pos"
+            ],
+            0
+        ]
+    },
+    "consume_bytes": {
+        "_receive_buf_used": [
+            [
+                "n"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "esc.type": [
+            [
+                "u_packed_esc_type_msg_type"
+            ],
+            0
+        ],
+        "esc.firmware_subversion": [
+            [
+                "u_packed_sw_ver_msg_subversion"
+            ],
+            0
+        ],
+        "frame_source": [
+            [
+                "u_packed_ok_frame_source"
+            ],
+            0
+        ],
+        "esc.firmware_version": [
+            [
+                "u_packed_sw_ver_msg_version"
+            ],
+            0
+        ]
+    },
+    "handle_message_telem": {
+        "t.voltage": [
+            [
+                "tlm_voltage"
+            ],
+            0
+        ],
+        "t.consumption_mah": [
+            [
+                "tlm_consumption_mah"
+            ],
+            0
+        ],
+        "error_rate_pct": [
+            [
+                "float",
+                "esc_error_count_at_throttle_count_overflow",
+                "_fast_throttle_cmd_count",
+                "tlm_tx_err_count"
+            ],
+            0
+        ],
+        "esc.error_count_at_throttle_count_overflow": [
+            [
+                "tlm_tx_err_count"
+            ],
+            0
+        ],
+        "esc.last_telem_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "tlm": [
+            [
+                "u_packed_tlm_msg"
+            ],
+            0
+        ],
+        "t.temperature_cdeg": [
+            [
+                "tlm_temp"
+            ],
+            0
+        ],
+        "t.current": [
+            [
+                "tlm_current"
+            ],
+            0
+        ]
+    },
+    "read_data_from_uart": {
+        "bytes_to_read": [
+            [
+                "_uart_read_u_receive_buf",
+                "_uart_read__receive_buf_used",
+                "_uart_read_space",
+                "_uart_available_128u"
+            ],
+            1
+        ],
+        "esc_id": [
+            [
+                "u_packed_ok_esc_id"
+            ],
+            0
+        ],
+        "esc": [
+            [
+                "i",
+                "_escs"
+            ],
+            0
+        ],
+        "frame_source": [
+            [
+                "u_packed_ok_frame_source"
+            ],
+            0
+        ],
+        "space": [
+            [
+                "array_size_u_receive_buf"
+            ],
+            0
+        ],
+        "_receive_buf_used": [
+            [
+                "_uart_read_u_receive_buf",
+                "_uart_read__receive_buf_used",
+                "_uart_read_space"
+            ],
+            1
+        ],
+        "frame_length": [
+            [
+                "u_packed_ok_frame_length"
+            ],
+            0
+        ]
+    },
+    "pack_fast_throttle_command": {
+        "mask": [
+            [
+                "1u"
+            ],
+            0
+        ],
+        "bits_remaining_in_this_pwm": [
+            [
+                "bits_to_copy_from_second_pwm"
+            ],
+            0
+        ]
+    },
+    "escs_set_values": {
+        "esc_to_req_telem_from": [
+            [
+                "_esc_ofs_to_request_telem_from",
+                "_escs"
+            ],
+            0
+        ],
+        "_last_crc": [
+            [
+                "_fast_throttle_byte_count",
+                "fast_throttle_command"
+            ],
+            0
+        ],
+        "esc_id_to_request_telem_from": [
+            [
+                "esc_to_req_telem_from_id"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "esc": [
+            [
+                "i",
+                "_escs"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "configure_escs": {
+        "esc.state": [
+            [
+                "want_send_ok_to_get_running_sw_type"
+            ],
+            0
+        ],
+        "esc": [
+            [
+                "_escs",
+                "i"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_reverse_mask": [
+            [
+                "_reverse_mask_parameter"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "srv_channel_esc_servo_ofs"
+            ],
+            0
+        ],
+        "esc": [
+            [
+                "_escs",
+                "i"
+            ],
+            0
+        ]
+    },
+    "beep": {
+        "esc": [
+            [
+                "_escs",
+                "i"
+            ],
+            0
+        ]
+    },
+    "led_color": {
+        "esc": [
+            [
+                "i",
+                "_escs"
+            ],
+            0
+        ]
+    }
+}

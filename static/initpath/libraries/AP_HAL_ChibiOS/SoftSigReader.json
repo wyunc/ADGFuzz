@@ -1,0 +1,94 @@
+{
+    "attach_capture_timer": {
+        "_icu_drv": [
+            [
+                "icu_drv"
+            ],
+            0
+        ],
+        "dmamode": [
+            [
+                "stm32_dma_cr_teie",
+                "stm32_dma_cr_dmeie"
+            ],
+            0
+        ],
+        "dma": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "icucfg.dier": [
+            [
+                "stm32_tim_dier_cc1de",
+                "stm32_tim_dier_cc2de"
+            ],
+            0
+        ],
+        "icucfg.mode": [
+            [
+                "icucfg_mode",
+                "icu_input_active_high",
+                "icu_input_active_low"
+            ],
+            0
+        ],
+        "signal": [
+            [
+                "uint32_t",
+                "mem_dma_safe",
+                "softsig_bounce_buf_size",
+                "hal_util_malloc_type_sizeof",
+                "hal_util_malloc_type_uint32_t"
+            ],
+            0
+        ],
+        "DCR": [
+            [
+                "stm32_tim_dcr_dba_0x0d",
+                "stm32_tim_dcr_dbl"
+            ],
+            0
+        ],
+        "icucfg.channel": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "icucfg.overflow_cb": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "icucfg.period_cb": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "icucfg.width_cb": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "icucfg.frequency": [
+            [
+                "input_capture_frequency"
+            ],
+            0
+        ]
+    },
+    "_irq_handler": {
+        "sig_reader": [
+            [
+                "soft_sig_reader",
+                "self"
+            ],
+            0
+        ]
+    }
+}

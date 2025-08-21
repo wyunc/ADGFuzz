@@ -1,0 +1,294 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_winch"
+            ],
+            0
+        ]
+    },
+    "send_status": {
+        "speed_ms": [
+            [
+                "float",
+                "latest_speed_pct",
+                "fabsf_config_rate_max"
+            ],
+            0
+        ]
+    },
+    "read_data_from_winch": {
+        "intermediate.speed_pct": [
+            [
+                "constrain_int32_uint8_max",
+                "constrain_int32_value"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "intermediate.tension_uncorrected": [
+            [
+                "uint16_t",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.voltage": [
+            [
+                "float",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.line_length": [
+            [
+                "int32_t",
+                "line_length_correction_factor",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.thread_end": [
+            [
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.time_ms": [
+            [
+                "uint32_t",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.tension_corrected": [
+            [
+                "uint16_t",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "data_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "intermediate.motor_temp": [
+            [
+                "float",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "intermediate.current": [
+            [
+                "float",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "latest": [
+            [
+                "intermediate"
+            ],
+            0
+        ],
+        "intermediate.clutch": [
+            [
+                "constrain_int32_uint8_max",
+                "constrain_int32_value"
+            ],
+            0
+        ],
+        "parse_state": [
+            [
+                "waiting_for_tension1",
+                "waiting_for_tension2",
+                "waiting_for_clutch",
+                "waiting_for_time",
+                "waiting_for_moving",
+                "waiting_for_voltage",
+                "waiting_for_pcb_temp",
+                "waiting_for_thread_end",
+                "waiting_for_spool",
+                "waiting_for_motor_temp",
+                "waiting_for_speed",
+                "waiting_for_current"
+            ],
+            0
+        ],
+        "intermediate.moving": [
+            [
+                "constrain_int32_uint8_max",
+                "constrain_int32_value"
+            ],
+            0
+        ],
+        "intermediate.pcb_temp": [
+            [
+                "float",
+                "int32_t",
+                "strtol_nullptr",
+                "strtol_buff"
+            ],
+            1
+        ],
+        "b": [
+            [
+                "uart_read"
+            ],
+            0
+        ]
+    },
+    "control_winch": {
+        "rate_limited": [
+            [
+                "get_rate_limited_by_accel_dt",
+                "get_stuck_protected_rate_rate_limited",
+                "get_stuck_protected_rate_now_ms",
+                "get_rate_limited_by_accel_config_rate_desired"
+            ],
+            0
+        ],
+        "config.rate_desired": [
+            [
+                "config_length_desired",
+                "latest_line_length",
+                "config_pos_p",
+                "config_rate_max"
+            ],
+            1
+        ],
+        "control_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "scaled_output": [
+            [
+                "linear_interpolate_output_dz",
+                "is_positive_rate_limited",
+                "config_rate_max",
+                "linear_interpolate_rate_limited",
+                "linear_interpolate_fabsf"
+            ],
+            0
+        ]
+    },
+    "get_stuck_protected_rate": {
+        "stuck_protection.last_update_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "stuck_time_ms": [
+            [
+                "now_ms",
+                "stuck_protection_stuck_start_ms"
+            ],
+            0
+        ],
+        "timeout": [
+            [
+                "now_ms",
+                "stuck_protection_last_update_ms"
+            ],
+            0
+        ],
+        "near_thread_start": [
+            [
+                "ap_winch_daiwa_stuck_length_min",
+                "is_negative_rate",
+                "latest_line_length"
+            ],
+            0
+        ],
+        "stuck_protection.stuck_start_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "rate_near_zero": [
+            [
+                "fabsf_rate",
+                "ap_winch_daiwa_stuck_rate_min"
+            ],
+            0
+        ]
+    },
+    "update_user": {
+        "user_update.healthy": [
+            [
+                "healthy"
+            ],
+            1
+        ],
+        "user_update.last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "user_update.line_length": [
+            [
+                "roundf_latest_line_length"
+            ],
+            1
+        ],
+        "user_update.moving": [
+            [
+                "latest_moving"
+            ],
+            0
+        ],
+        "user_update.thread_end": [
+            [
+                "latest_thread_end"
+            ],
+            0
+        ],
+        "user_update.clutch": [
+            [
+                "latest_clutch"
+            ],
+            0
+        ]
+    }
+}

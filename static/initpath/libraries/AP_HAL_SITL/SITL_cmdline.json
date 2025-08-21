@@ -1,0 +1,333 @@
+{
+    "_set_signal_handlers": {
+        "sa_fpe.sa_handler": [
+            [
+                "_sig_fpe"
+            ],
+            0
+        ],
+        "sa_segv.sa_handler": [
+            [
+                "_sig_segv"
+            ],
+            0
+        ],
+        "sa_pipe.sa_handler": [
+            [
+                "sig_ign"
+            ],
+            0
+        ]
+    },
+    "_parse_command_line": {
+        "is_example": [
+            [
+                "apm_build_type_apm_build_unknown",
+                "apm_build_type_apm_build_replay"
+            ],
+            0
+        ],
+        "defaults_path": [
+            [
+                "strdup_gopt_optarg"
+            ],
+            0
+        ],
+        "_fg_view_port": [
+            [
+                "fg_view_port",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "model_str": [
+            [
+                "nullptr",
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "autotest_dir": [
+            [
+                "strdup_gopt_optarg",
+                "nullptr"
+            ],
+            0
+        ],
+        "simulator_port_in": [
+            [
+                "sim_in_port",
+                "atoi_gopt_optarg",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "config": [
+            [
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "serial_idx": [
+            [
+                "cmdline_uarta",
+                "opt",
+                "mapping"
+            ],
+            1
+        ],
+        "simulator_address": [
+            [
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "temp_cmdline_param": [
+            [
+                "float",
+                "atoi_gopt_optarg",
+                "static_cast",
+                "strtof_gopt_optarg",
+                "strtof_nullptr",
+                "strtof_gopt_optarg",
+                "strtof_nullptr"
+            ],
+            3
+        ],
+        "storage_flash_enabled": [
+            [
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "vehicle_str": [
+            [
+                "ap_build_target_name",
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "slaves": [
+            [
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "sitl_model": [
+            [
+                "i",
+                "_constructor_model_str",
+                "model_constructors"
+            ],
+            0
+        ],
+        "start_time_UTC": [
+            [
+                "start_time_utc",
+                "first_tv_tv_sec",
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "uart_letter": [
+            [
+                "cmdline_uarta",
+                "opt",
+                "char"
+            ],
+            1
+        ],
+        "storage_posix_enabled": [
+            [
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "simulator_port_out": [
+            [
+                "sim_out_port",
+                "atoi_gopt_optarg",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "storage_fram_enabled": [
+            [
+                "atoi_gopt_optarg"
+            ],
+            0
+        ],
+        "_vehicle": [
+            [
+                "ardu_plane",
+                "blimp",
+                "rover",
+                "ardu_sub",
+                "ardu_copter"
+            ],
+            0
+        ],
+        "home_str": [
+            [
+                "nullptr",
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "_base_port": [
+            [
+                "base_port",
+                "atoi_gopt_optarg",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "_irlock_port": [
+            [
+                "atoi_gopt_optarg",
+                "irlock_port",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "_rcin_port": [
+            [
+                "rcin_port",
+                "atoi_gopt_optarg",
+                "atoi_gopt_optarg"
+            ],
+            1
+        ],
+        "_fg_address": [
+            [
+                "gopt_optarg"
+            ],
+            0
+        ]
+    },
+    "parse_home": {
+        "yaw_degrees": [
+            [
+                "strtof_nullptr",
+                "strtof_yaw_s"
+            ],
+            0
+        ],
+        "alt_s": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "strtod_nullptr",
+                "_0e7",
+                "static_cast",
+                "strtod_lon_s",
+                "int32_t",
+                "1e7"
+            ],
+            0
+        ],
+        "lon_s": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "strtod_nullptr",
+                "_0e7",
+                "strtod_lat_s",
+                "static_cast",
+                "int32_t",
+                "1e7"
+            ],
+            0
+        ],
+        "yaw_s": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_nullptr"
+            ],
+            0
+        ],
+        "lat_s": [
+            [
+                "strtok_r_s",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "strdup_home_str"
+            ],
+            0
+        ],
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "strtod_nullptr",
+                "strtod_alt_s",
+                "static_cast",
+                "_0e2",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "lookup_location": {
+        "str": [
+            [
+                "strndup_charfd_data",
+                "strndup_const",
+                "fd_length"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "parse_home_yaw_degrees",
+                "parse_home_len",
+                "parse_home_loc",
+                "parse_home_s"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "strtok_r_str",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "fs_load_file_locations"
+            ],
+            0
+        ],
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strlen_home_str"
+            ],
+            0
+        ]
+    }
+}

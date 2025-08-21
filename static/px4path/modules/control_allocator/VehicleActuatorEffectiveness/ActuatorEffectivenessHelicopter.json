@@ -1,0 +1,126 @@
+{
+    "updateParams": {
+        ".angle": [
+            [
+                "radians_angle_deg"
+            ],
+            0
+        ],
+        "_geometry.max_servo_height": [
+            [
+                "sinf_max_servo_throw",
+                "_geometry_inverse_max_servo_throw",
+                "_f"
+            ],
+            0
+        ],
+        "max_servo_throw_deg": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_geometry.yaw_sign": [
+            [
+                "yaw_ccw",
+                "_f"
+            ],
+            0
+        ],
+        "_geometry.inverse_max_servo_throw": [
+            [
+                "radians_max_servo_throw_deg",
+                "_f"
+            ],
+            1
+        ]
+    },
+    "getEffectivenessMatrix": {
+        "_first_swash_plate_servo_index": [
+            [
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ]
+    },
+    "updateSetpoint": {
+        "spoolup_progress": [
+            [
+                "throttle_spoolup_progress"
+            ],
+            0
+        ],
+        "pitch_coeff": [
+            [
+                "cosf__angle",
+                "_geometry_swash_plate_servos",
+                "cosf__geometry_swash_plate_servos",
+                "i",
+                "cosf_i",
+                "_arm_length"
+            ],
+            0
+        ],
+        "roll_coeff": [
+            [
+                "sinf_i",
+                "_geometry_swash_plate_servos",
+                "sinf__geometry_swash_plate_servos",
+                "sinf__angle",
+                "i",
+                "_arm_length"
+            ],
+            0
+        ],
+        "collective_pitch": [
+            [
+                "interpolate_n_thrust_z",
+                "interpolate_n_control_sp",
+                "_geometry_pitch_curve"
+            ],
+            0
+        ],
+        "rpm_control_output": [
+            [
+                "_rpm_control_get_actuator_correction"
+            ],
+            0
+        ]
+    },
+    "getLinearServoOutput": {
+        "servo_height": [
+            [
+                "constrain__f",
+                "constrain_input",
+                "_geometry_max_servo_height"
+            ],
+            1
+        ]
+    },
+    "mainMotorEnaged": {
+        "manual_control_switches.engage_main_motor_switch": [
+            [
+                "switch_pos_on"
+            ],
+            0
+        ]
+    },
+    "throttleSpoolupProgress": {
+        "spoolup_progress": [
+            [
+                "hrt_absolute_time",
+                "1e6f",
+                "vehicle_status_armed_time",
+                "_geometry_spoolup_time"
+            ],
+            2
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ]
+    }
+}

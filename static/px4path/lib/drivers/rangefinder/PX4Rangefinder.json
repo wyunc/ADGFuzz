@@ -1,0 +1,56 @@
+{
+    "set_device_type": {
+        "device_id.devid_s.devtype": [
+            [
+                "device_type"
+            ],
+            0
+        ],
+        "device_id.devid": [
+            [
+                "_distance_sensor_pub_get_device_id"
+            ],
+            0
+        ],
+        ".device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ]
+    },
+    "set_orientation": {
+        ".orientation": [
+            [
+                "device_orientation"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "report.timestamp": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "report.signal_quality": [
+            [
+                "quality"
+            ],
+            0
+        ],
+        "report": [
+            [
+                "_distance_sensor_pub_get"
+            ],
+            0
+        ],
+        "report.current_distance": [
+            [
+                "distance"
+            ],
+            0
+        ]
+    }
+}

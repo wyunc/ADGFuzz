@@ -1,0 +1,409 @@
+{
+    "print_status": {
+        "euler": [
+            [
+                "_output_buffer_get_newest_quat_nominal"
+            ],
+            1
+        ]
+    },
+    "alignOutputFilter": {
+        "_output_new": [
+            [
+                "_output_buffer_get_newest"
+            ],
+            0
+        ],
+        ".pos": [
+            [
+                "output_delayed_pos"
+            ],
+            1
+        ],
+        "output_delayed": [
+            [
+                "_output_buffer_get_oldest"
+            ],
+            0
+        ],
+        "_global_ref": [
+            [
+                "gpos_state"
+            ],
+            0
+        ],
+        ".vel": [
+            [
+                "output_delayed_vel",
+                "vel_state"
+            ],
+            1
+        ],
+        ".quat_nominal": [
+            [
+                "_output_buffer",
+                "q_delta",
+                "_quat_nominal",
+                "i"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_delta_vel_dt": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "resetQuaternion": {
+        "_output_new.quat_nominal": [
+            [
+                "_output_new_quat_nominal",
+                "quat_change"
+            ],
+            0
+        ],
+        ".quat_nominal": [
+            [
+                "quat_change",
+                "_output_buffer",
+                "i",
+                "_quat_nominal"
+            ],
+            0
+        ]
+    },
+    "resetVerticalVelocityTo": {
+        "_output_vert_new.vert_vel": [
+            [
+                "delta_vert_vel"
+            ],
+            0
+        ],
+        ".vert_vel": [
+            [
+                "delta_vert_vel"
+            ],
+            0
+        ]
+    },
+    "calculateOutputStates": {
+        "_vel_imu_rel_body_ned": [
+            [
+                "delta_angle_corrected",
+                "delta_angle_dt",
+                "_imu_pos_body",
+                "_r_to_earth_now"
+            ],
+            2
+        ],
+        "delta_vel_bias_scaled": [
+            [
+                "delta_velocity_dt",
+                "_accel_bias"
+            ],
+            0
+        ],
+        "delta_angle_unaided": [
+            [
+                "delta_angle_dt",
+                "_gyro_bias",
+                "delta_angle"
+            ],
+            1
+        ],
+        "_output_new.vel": [
+            [
+                "delta_vel_earth"
+            ],
+            0
+        ],
+        "unaided_delta_yaw": [
+            [
+                "eulerf_quat_unaided_psi",
+                "eulerf_quat_nominal_before_update_psi"
+            ],
+            2
+        ],
+        "_output_vert_new.vert_vel": [
+            [
+                "delta_vel_earth"
+            ],
+            0
+        ],
+        "_output_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_output_vert_new.vert_vel_integ": [
+            [
+                "delta_pos_ned"
+            ],
+            0
+        ],
+        "_output_new.quat_nominal": [
+            [
+                "dq",
+                "_output_new_quat_nominal"
+            ],
+            0
+        ],
+        "_R_to_earth_now": [
+            [
+                "dcmf__output_new_quat_nominal"
+            ],
+            0
+        ],
+        "_output_new.pos": [
+            [
+                "delta_pos_ned"
+            ],
+            0
+        ],
+        "_delta_vel_sum": [
+            [
+                "delta_vel_earth"
+            ],
+            0
+        ],
+        "_output_vert_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "delta_pos_NED": [
+            [
+                "vel_last",
+                "delta_velocity_dt",
+                "_output_new_vel"
+            ],
+            0
+        ],
+        "_delta_vel_dt": [
+            [
+                "delta_velocity_dt"
+            ],
+            0
+        ],
+        "_time_last_update_states_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "quat_unaided": [
+            [
+                "_output_new_quat_nominal",
+                "quatf_axis_anglef",
+                "quatf_delta_angle_unaided"
+            ],
+            1
+        ],
+        "_unaided_yaw": [
+            [
+                "wrap_pi_unaided_delta_yaw",
+                "wrap_pi__unaided_yaw"
+            ],
+            0
+        ],
+        "_dt_update_states_avg": [
+            [
+                "constrain_time_us",
+                "1e",
+                "constrain__time_last_update_states_us"
+            ],
+            1
+        ],
+        "_output_vert_new.dt": [
+            [
+                "delta_velocity_dt"
+            ],
+            0
+        ]
+    },
+    "correctOutputStates": {
+        "scalar": [
+            [
+                "q_error",
+                "_f"
+            ],
+            0
+        ],
+        "output_delayed": [
+            [
+                "_output_buffer_get_oldest"
+            ],
+            0
+        ],
+        "_time_last_correct_states_us": [
+            [
+                "time_delayed_us"
+            ],
+            0
+        ],
+        "vert_vel_correction": [
+            [
+                "constrain__pos_tau",
+                "constrain__dt_correct_states_avg",
+                "constrain__f",
+                "1e",
+                "constrain_time_delayed_us",
+                "constrain__time_last_correct_states_us",
+                "constrain__dt_correct_states_avg",
+                "constrain__vel_tau",
+                "constrain__f",
+                "1e",
+                "constrain_time_delayed_us",
+                "constrain__time_last_correct_states_us",
+                "gpos_state",
+                "output_vert_delayed_vert_vel_integ",
+                "output_vert_delayed_vert_vel",
+                "vel_state"
+            ],
+            7
+        ],
+        "time_latest_us": [
+            [
+                "_time_last_update_states_us"
+            ],
+            0
+        ],
+        "_gyro_bias": [
+            [
+                "gyro_bias"
+            ],
+            0
+        ],
+        "output_vert_delayed": [
+            [
+                "_output_vert_buffer_get_oldest"
+            ],
+            0
+        ],
+        "_accel_bias": [
+            [
+                "accel_bias"
+            ],
+            0
+        ],
+        "vel_correction": [
+            [
+                "constrain__dt_correct_states_avg",
+                "constrain__vel_tau",
+                "constrain__f",
+                "1e",
+                "constrain_time_delayed_us",
+                "constrain__time_last_correct_states_us",
+                "vel_err",
+                "sq_vel_gain",
+                "vel_err"
+            ],
+            4
+        ],
+        "_global_ref": [
+            [
+                "gpos_state"
+            ],
+            0
+        ],
+        "pos_correction_with_ref_change": [
+            [
+                "gpos_state",
+                "constrain__pos_tau",
+                "constrain__dt_correct_states_avg",
+                "constrain__f",
+                "1e",
+                "constrain_time_delayed_us",
+                "constrain__time_last_correct_states_us",
+                "pos_err",
+                "sq_pos_gain",
+                "pos_err"
+            ],
+            6
+        ],
+        "_delta_angle_corr": [
+            [
+                "fmaxf_time_delayed_us",
+                "fmaxf_time_latest_us",
+                "1e",
+                "_dt_update_states_avg",
+                "_dt_update_states_avg",
+                "delta_ang_error"
+            ],
+            2
+        ]
+    },
+    "applyCorrectionToVerticalOutputBuffer": {
+        "current_state": [
+            [
+                "_output_vert_buffer"
+            ],
+            0
+        ],
+        "current_state.vert_vel": [
+            [
+                "vert_vel_correction"
+            ],
+            0
+        ],
+        "next_state.vert_vel": [
+            [
+                "vert_vel_correction"
+            ],
+            0
+        ],
+        "_output_vert_new": [
+            [
+                "_output_vert_buffer_get_newest"
+            ],
+            0
+        ],
+        "next_state": [
+            [
+                "_output_vert_buffer_get_length",
+                "_output_vert_buffer"
+            ],
+            2
+        ],
+        "index": [
+            [
+                "_output_vert_buffer_get_oldest_index",
+                "_output_vert_buffer_get_length"
+            ],
+            1
+        ]
+    },
+    "applyCorrectionToOutputBuffer": {
+        ".pos": [
+            [
+                "pos_correction"
+            ],
+            0
+        ],
+        ".vel": [
+            [
+                "vel_correction"
+            ],
+            0
+        ],
+        "_output_new": [
+            [
+                "_output_buffer_get_newest"
+            ],
+            0
+        ]
+    },
+    "resetVelocityDerivativeAccumulation": {
+        "_delta_vel_dt": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    }
+}

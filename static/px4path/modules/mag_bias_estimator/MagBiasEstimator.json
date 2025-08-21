@@ -1,0 +1,104 @@
+{
+    "task_spawn": {
+        "obj": [
+            [
+                "mag_bias_estimator",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "bias_rate": [
+            [
+                "_get_bias",
+                "_bias_estimator",
+                "mag_index",
+                "_get_bias",
+                "_bias_estimator",
+                "mag_index",
+                "mag_index",
+                "1e",
+                "sensor_mag_timestamp_sample",
+                "_timestamp_last_update"
+            ],
+            3
+        ],
+        "has_converged": [
+            [
+                "_f",
+                "fitness"
+            ],
+            0
+        ],
+        "mag_calibrated": [
+            [
+                "_calibration",
+                "_correct_vector3f",
+                "_correct_sensor_mag_z",
+                "_correct_sensor_mag_x",
+                "_correct_sensor_mag_y",
+                "mag_index"
+            ],
+            0
+        ],
+        "calibration_count": [
+            [
+                "_calibration",
+                "_calibration_count",
+                "mag_index"
+            ],
+            0
+        ],
+        "bias_significant": [
+            [
+                "bias_longer_than"
+            ],
+            0
+        ],
+        "_arming_state": [
+            [
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "_system_calibrating": [
+            [
+                "vehicle_status_calibration_enabled"
+            ],
+            1
+        ]
+    },
+    "publishMagBiasEstimate": {
+        "mag_bias_est.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "bias": [
+            [
+                "mag_index",
+                "_bias_estimator",
+                "_get_bias"
+            ],
+            0
+        ]
+    },
+    "print_status": {
+        "bias": [
+            [
+                "_get_bias",
+                "mag_index",
+                "_bias_estimator"
+            ],
+            0
+        ]
+    }
+}

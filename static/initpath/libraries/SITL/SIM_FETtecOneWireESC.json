@@ -1,0 +1,184 @@
+{
+    "update_escs": {
+        "esc.temperature": [
+            [
+                "esc_pwm"
+            ],
+            0
+        ],
+        "should_be_on": [
+            [
+                "1u",
+                "_powered_mask",
+                "esc_id"
+            ],
+            0
+        ],
+        "esc.state": [
+            [
+                "in_bootloader",
+                "powered_off"
+            ],
+            0
+        ]
+    },
+    "handle_config_message": {
+        "esc": [
+            [
+                "u_config_message_header_target_id",
+                "escs"
+            ],
+            0
+        ]
+    },
+    "bootloader_handle_config_message": {
+        "msg.header": [
+            [
+                "bootloader",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "running_handle_config_message": {
+        "esc.fast_com.length": [
+            [
+                "u_packed_set_fast_com_length_msg_length"
+            ],
+            0
+        ],
+        "esc.fast_com.byte_count": [
+            [
+                "u_packed_set_fast_com_length_msg_byte_count"
+            ],
+            0
+        ],
+        "esc.fast_com.min_esc_id": [
+            [
+                "u_packed_set_fast_com_length_msg_min_esc_id"
+            ],
+            0
+        ],
+        "esc.fast_com.id_count": [
+            [
+                "u_packed_set_fast_com_length_msg_id_count"
+            ],
+            0
+        ]
+    },
+    "handle_config_message_set_tlm_type": {
+        "esc.telem_type": [
+            [
+                "tlm_type",
+                "u_packed_set_tlm_type_msg_type"
+            ],
+            1
+        ]
+    },
+    "handle_fast_esc_data": {
+        "i": [
+            [
+                "fast_com_min_esc_id"
+            ],
+            1
+        ],
+        "esc.pwm": [
+            [
+                "0x1",
+                "u_buffer",
+                "byte_ofs",
+                "u_buffer"
+            ],
+            2
+        ],
+        "telem_request": [
+            [
+                "u_buffer"
+            ],
+            0
+        ]
+    },
+    "consume_bytes": {
+        "buflen": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "update_input": {
+        "fast_com.min_esc_id": [
+            [
+                "i",
+                "_fast_com_min_esc_id",
+                "escs"
+            ],
+            0
+        ],
+        "calculated_checksum": [
+            [
+                "crc8_dvb_update_u_config_message_header_frame_len",
+                "crc8_dvb_update_u_buffer",
+                "crc8_dvb_update_buflen"
+            ],
+            0
+        ],
+        "received_checksum": [
+            [
+                "u_config_message_header_frame_len",
+                "u_buffer"
+            ],
+            0
+        ],
+        "fast_com.id_count": [
+            [
+                "i",
+                "_fast_com_id_count",
+                "escs"
+            ],
+            0
+        ],
+        "buflen": [
+            [
+                "read_from_autopilot_char",
+                "array_size_u_buffer",
+                "u_buffer"
+            ],
+            1
+        ],
+        "bytes_required": [
+            [
+                "fast_com_id_count"
+            ],
+            1
+        ]
+    },
+    "send_esc_telemetry": {
+        "rpm": [
+            [
+                "aircraft_get_battery_voltage",
+                "kv",
+                "esc_pwm"
+            ],
+            1
+        ],
+        "current": [
+            [
+                "esc_id"
+            ],
+            0
+        ],
+        "temp_cdeg": [
+            [
+                "esc_temperature"
+            ],
+            0
+        ],
+        "voltage": [
+            [
+                "aircraft_get_battery_voltage"
+            ],
+            0
+        ]
+    }
+}

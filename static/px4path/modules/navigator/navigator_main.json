@@ -1,0 +1,1000 @@
+{
+    "run": {
+        "_vroi.lat": [
+            [
+                "cmd_param5"
+            ],
+            0
+        ],
+        ".fd": [
+            [
+                "_local_pos_sub",
+                "_vehicle_status_sub",
+                "_mission_sub"
+            ],
+            0
+        ],
+        "current.yaw": [
+            [
+                "cmd_param4",
+                "nan"
+            ],
+            0
+        ],
+        "_vroi.lon": [
+            [
+                "cmd_param6"
+            ],
+            0
+        ],
+        "current.cruising_speed": [
+            [
+                "_f",
+                "get_cruising_speed",
+                "cmd_param1"
+            ],
+            0
+        ],
+        "current.acceptance_radius": [
+            [
+                "get_acceptance_radius"
+            ],
+            0
+        ],
+        "did_not_switch_to_loiter_with_valid_loiter_setpoint": [
+            [
+                "valid_loiter_setpoint",
+                "_loiter",
+                "_loiter",
+                "_vtol_takeoff",
+                "_precland",
+                "_rtl",
+                "_takeoff",
+                "nullptr",
+                "_land",
+                "_mission"
+            ],
+            2
+        ],
+        "current.loiter_pattern": [
+            [
+                "loiter_type_orbit",
+                "loiter_type_figureeight",
+                "curr_current_loiter_pattern"
+            ],
+            0
+        ],
+        "position_setpoint.lon": [
+            [
+                "get_global_position_lon",
+                "px4_isfinite_cmd_param6",
+                "cmd_param6"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.type": [
+            [
+                "setpoint_type_loiter"
+            ],
+            0
+        ],
+        "current.loiter_direction_counter_clockwise": [
+            [
+                "get_loiter_radius",
+                "curr_current_loiter_direction_counter_clockwise",
+                "cmd_param1"
+            ],
+            0
+        ],
+        "current.loiter_radius": [
+            [
+                "curr_current_loiter_radius",
+                "max_rep_current_loiter_minor_radius",
+                "get_loiter_radius",
+                "fabsf_cmd_param1",
+                "max_rep_current_loiter_radius",
+                "rep_current_loiter_minor_radius"
+            ],
+            0
+        ],
+        "position_setpoint.lat": [
+            [
+                "get_global_position_lat",
+                "px4_isfinite_cmd_param5",
+                "cmd_param5"
+            ],
+            0
+        ],
+        "_vroi.mode": [
+            [
+                "vehicle_roi_none",
+                "vehicle_roi_wpnext",
+                "cmd_param1",
+                "vehicle_roi_location"
+            ],
+            0
+        ],
+        "geofence_id": [
+            [
+                "mission_geofence_id"
+            ],
+            0
+        ],
+        "previous.lon": [
+            [
+                "get_global_position_lon"
+            ],
+            0
+        ],
+        "position_setpoint.alt": [
+            [
+                "px4_isfinite_cmd_param1",
+                "get_global_position_alt",
+                "cmd_param1",
+                "px4_isfinite_cmd_param7",
+                "cmd_param7"
+            ],
+            0
+        ],
+        "rep": [
+            [
+                "get_reposition_triplet",
+                "get_takeoff_triplet"
+            ],
+            0
+        ],
+        "safe_points_id": [
+            [
+                "mission_safe_points_id"
+            ],
+            0
+        ],
+        "_vroi.alt": [
+            [
+                "cmd_param7"
+            ],
+            0
+        ],
+        "current.cruising_throttle": [
+            [
+                "get_cruising_throttle"
+            ],
+            0
+        ],
+        ".events": [
+            [
+                "pollin"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "px4_isfinite_cmd_param1",
+                "get_global_position_alt",
+                "cmd_param1",
+                "position_setpoint_alt",
+                "cmd_param7"
+            ],
+            0
+        ],
+        "current.loiter_minor_radius": [
+            [
+                "curr_current_loiter_minor_radius",
+                "fabsf_cmd_param2",
+                "fabsf_get_loiter_radius",
+                "nan"
+            ],
+            0
+        ],
+        "current.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_loiter",
+                "setpoint_type_takeoff"
+            ],
+            0
+        ],
+        "last_generation": [
+            [
+                "_vehicle_command_sub_get_last_generation"
+            ],
+            0
+        ],
+        "previous.yaw": [
+            [
+                "get_local_position_heading"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "vehicle_vtol_state_mc",
+                "_mission_get_land_start_index"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "position_setpoint_lat",
+                "cmd_param5",
+                "get_global_position_lat",
+                "curr_current_lat",
+                "px4_isfinite_curr_current_lat"
+            ],
+            0
+        ],
+        "previous.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vroi.pitch_offset": [
+            [
+                "float",
+                "m_deg_to_rad_f",
+                "cmd_param5"
+            ],
+            0
+        ],
+        "curr": [
+            [
+                "get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "pret": [
+            [
+                "px4_poll_sizeof",
+                "sizeof_fds",
+                "px4_poll_fds"
+            ],
+            0
+        ],
+        "_navigation_mode": [
+            [
+                "i",
+                "_loiter",
+                "_vtol_takeoff",
+                "_precland",
+                "_rtl",
+                "_takeoff",
+                "nullptr",
+                "_land",
+                "_mission",
+                "_navigation_mode_array"
+            ],
+            1
+        ],
+        "_vroi.yaw_offset": [
+            [
+                "float",
+                "m_deg_to_rad_f",
+                "cmd_param7"
+            ],
+            0
+        ],
+        "previous.alt": [
+            [
+                "get_global_position_alt"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "nav_cmd_do_vtol_transition",
+                "vehicle_cmd_mission_start"
+            ],
+            0
+        ],
+        "_wait_for_vehicle_status_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vroi.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "vehicle_cmd_result_cancelled"
+            ],
+            0
+        ],
+        "_vroi.roll_offset": [
+            [
+                "float",
+                "m_deg_to_rad_f",
+                "cmd_param6"
+            ],
+            0
+        ],
+        "did_not_switch_takeoff_to_loiter": [
+            [
+                "_loiter",
+                "_loiter",
+                "_vtol_takeoff",
+                "_precland",
+                "_rtl",
+                "_takeoff",
+                "nullptr",
+                "_land",
+                "_mission",
+                "_takeoff"
+            ],
+            3
+        ],
+        "current.lon": [
+            [
+                "curr_current_lon",
+                "get_global_position_lon",
+                "cmd_param6",
+                "position_setpoint_lon",
+                "px4_isfinite_curr_current_lon"
+            ],
+            0
+        ],
+        "previous.lat": [
+            [
+                "get_global_position_lat"
+            ],
+            0
+        ],
+        "current.loiter_orientation": [
+            [
+                "curr_current_loiter_orientation",
+                "cmd_param4"
+            ],
+            0
+        ]
+    },
+    "geofence_breach_check": {
+        "current.type": [
+            [
+                "setpoint_type_loiter"
+            ],
+            0
+        ],
+        "current.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_last_geofence_check": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "test_point_distance": [
+            [
+                "get_loiter_radius",
+                "_gf_breach_avoidance_compute_braking_distance_multirotor"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_gps_pos_longitude_deg",
+                "_global_pos_lon",
+                "_gf_breach_avoidance_generate_loiter_point_for_fixed_wing_gf_violation_type",
+                "_gf_breach_avoidance_generate_loiter_point_for_fixed_wing__geofence"
+            ],
+            3
+        ],
+        "position_valid": [
+            [
+                "_global_pos_timestamp"
+            ],
+            0
+        ],
+        "current.loiter_radius": [
+            [
+                "get_loiter_radius"
+            ],
+            0
+        ],
+        "_geofence_result.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_gf_breach_avoidance_generate_loiter_altitude_for_multicopter_gf_violation_type",
+                "_gf_breach_avoidance_generate_loiter_altitude_for_fixed_wing_gf_violation_type",
+                "_global_pos_alt",
+                "_gps_pos_altitude_msl_m"
+            ],
+            2
+        ],
+        "test_point_bearing": [
+            [
+                "atan2f__local_pos_vx",
+                "pos_ctrl_status_nav_bearing",
+                "atan2f__local_pos_vy"
+            ],
+            0
+        ],
+        "current.cruising_throttle": [
+            [
+                "get_cruising_throttle"
+            ],
+            0
+        ],
+        "pos_ctrl_status": [
+            [
+                "_position_controller_status_sub_get"
+            ],
+            0
+        ],
+        "_geofence_result.geofence_action": [
+            [
+                "_geofence_get_geofence_action"
+            ],
+            0
+        ],
+        "_geofence_result.geofence_max_alt_triggered": [
+            [
+                "_geofence_is_below_max_altitude_test_point_altitude"
+            ],
+            0
+        ],
+        "rep": [
+            [
+                "get_reposition_triplet"
+            ],
+            0
+        ],
+        "test_point_latitude": [
+            [
+                "_global_pos_lat",
+                "_gps_pos_latitude_deg",
+                "_gf_breach_avoidance_get_fence_violation_test_point"
+            ],
+            2
+        ],
+        "velocity_hor_abs": [
+            [
+                "sqrtf__local_pos_vx",
+                "sqrtf__local_pos_vy"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_gf_breach_avoidance_generate_loiter_point_for_fixed_wing_gf_violation_type",
+                "_gf_breach_avoidance_generate_loiter_point_for_fixed_wing__geofence",
+                "_global_pos_lat",
+                "_gps_pos_latitude_deg"
+            ],
+            3
+        ],
+        "test_point_altitude": [
+            [
+                "_gf_breach_avoidance_compute_vertical_braking_distance_multirotor",
+                "_global_pos_alt",
+                "_gps_pos_altitude_msl_m"
+            ],
+            2
+        ],
+        "current.acceptance_radius": [
+            [
+                "get_acceptance_radius"
+            ],
+            0
+        ],
+        "test_point_longitude": [
+            [
+                "_gps_pos_longitude_deg",
+                "_global_pos_lon",
+                "_gf_breach_avoidance_get_fence_violation_test_point"
+            ],
+            2
+        ],
+        "current.cruising_speed": [
+            [
+                "get_cruising_speed"
+            ],
+            0
+        ],
+        "_time_loitering_after_gf_breach": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publish_position_setpoint_triplet": {
+        "_pos_sp_triplet.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "get_altitude_acceptance_radius": {
+        "alt_acceptance_radius": [
+            [
+                "curr_sp_alt_acceptance_radius",
+                "_param_nav_mc_alt_rad_get"
+            ],
+            0
+        ],
+        "next_sp": [
+            [
+                "get_position_setpoint_triplet_next"
+            ],
+            0
+        ],
+        "curr_sp": [
+            [
+                "get_position_setpoint_triplet_current"
+            ],
+            0
+        ]
+    },
+    "reset_position_setpoint": {
+        "sp.type": [
+            [
+                "setpoint_type_idle"
+            ],
+            0
+        ],
+        "sp.cruising_speed": [
+            [
+                "get_cruising_speed"
+            ],
+            0
+        ],
+        "sp.lat": [
+            [
+                "double",
+                "nan",
+                "static_cast"
+            ],
+            0
+        ],
+        "sp": [
+            [
+                "position_setpoint_s"
+            ],
+            0
+        ],
+        "sp.acceptance_radius": [
+            [
+                "get_default_acceptance_radius"
+            ],
+            0
+        ],
+        "sp.lon": [
+            [
+                "double",
+                "nan",
+                "static_cast"
+            ],
+            0
+        ],
+        "sp.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sp.cruising_throttle": [
+            [
+                "get_cruising_throttle"
+            ],
+            0
+        ],
+        "sp.loiter_radius": [
+            [
+                "get_loiter_radius"
+            ],
+            0
+        ]
+    },
+    "get_acceptance_radius": {
+        "acceptance_radius": [
+            [
+                "get_default_acceptance_radius",
+                "max_pos_ctrl_status_acceptance_radius",
+                "max_acceptance_radius"
+            ],
+            0
+        ],
+        "pos_ctrl_status": [
+            [
+                "_position_controller_status_sub_get"
+            ],
+            0
+        ]
+    },
+    "get_yaw_to_be_accepted": {
+        "yaw": [
+            [
+                "mission_item_yaw"
+            ],
+            0
+        ]
+    },
+    "take_traffic_conflict_action": {
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_nav_loiter_unlim",
+                "vehicle_cmd_nav_land",
+                "vehicle_cmd_nav_return_to_launch"
+            ],
+            0
+        ]
+    },
+    "abort_landing": {
+        "should_abort": [
+            [
+                "landing_status_abort_status"
+            ],
+            0
+        ]
+    },
+    "publish_mission_result": {
+        "_mission_result.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "trigger_hagl_failsafe": {
+        "_navigator_status.failure": [
+            [
+                "failure_hagl"
+            ],
+            0
+        ],
+        "_navigator_status.nav_state": [
+            [
+                "nav_state"
+            ],
+            0
+        ]
+    },
+    "publish_navigator_status": {
+        "_navigator_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_last_navigator_status_publication": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_navigator_status.failure": [
+            [
+                "failure_none"
+            ],
+            0
+        ],
+        "_navigator_status.nav_state": [
+            [
+                "_vstatus_nav_state",
+                "_navigation_mode_get_navigator_state_id"
+            ],
+            1
+        ]
+    },
+    "publish_vehicle_command": {
+        "vehicle_command.target_component": [
+            [
+                "vehicle_command_param1",
+                "static_cast",
+                "int"
+            ],
+            1
+        ],
+        "vehicle_command.param3": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.param7": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_digicam_control"
+            ],
+            0
+        ],
+        "vehicle_command.param2": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.param6": [
+            [
+                "_"
+            ],
+            0
+        ],
+        "vehicle_command.target_system": [
+            [
+                "_vstatus_system_id"
+            ],
+            0
+        ],
+        "vehicle_command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_command.param4": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.source_system": [
+            [
+                "_vstatus_system_id"
+            ],
+            0
+        ],
+        "vehicle_command.source_component": [
+            [
+                "_vstatus_component_id"
+            ],
+            0
+        ],
+        "vehicle_command.param5": [
+            [
+                "_"
+            ],
+            0
+        ]
+    },
+    "publish_distance_sensor_mode_request": {
+        ".request_on_off": [
+            [
+                "request_off",
+                "request_on"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publish_vehicle_command_ack": {
+        "command_ack.result": [
+            [
+                "result"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ]
+    },
+    "acquire_gimbal_control": {
+        "vehicle_command.param2": [
+            [
+                "_vstatus_component_id"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_vstatus_system_id"
+            ],
+            0
+        ],
+        "vehicle_command.param4": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_configure"
+            ],
+            0
+        ],
+        "vehicle_command.param3": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "release_gimbal_control": {
+        "vehicle_command.param2": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_configure"
+            ],
+            0
+        ],
+        "vehicle_command.param4": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.param3": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "stop_capturing_images": {
+        "vehicle_command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "nav_cmd_image_stop_capture"
+            ],
+            0
+        ]
+    },
+    "preproject_stop_point": {
+        "course_over_ground": [
+            [
+                "atan2f__local_pos_vx",
+                "atan2f__local_pos_vy"
+            ],
+            0
+        ],
+        "velocity_hor_abs": [
+            [
+                "sqrtf__local_pos_vy",
+                "sqrtf__local_pos_vx"
+            ],
+            0
+        ]
+    },
+    "mode_completed": {
+        "mode_completed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "mode_completed.result": [
+            [
+                "result"
+            ],
+            0
+        ],
+        "mode_completed.nav_state": [
+            [
+                "nav_state"
+            ],
+            0
+        ]
+    },
+    "disable_camera_trigger": {
+        "vehicle_command.param3": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_trigger_control"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "set_gimbal_neutral": {
+        "vehicle_command.param4": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "vehicle_command.param5": [
+            [
+                "gimbal_manager_flags_neutral"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_pitchyaw"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

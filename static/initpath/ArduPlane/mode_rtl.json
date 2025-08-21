@@ -1,0 +1,84 @@
+{
+    "_enter": {
+        "vtol_landing": [
+            [
+                "vtol_approach_qrtl",
+                "plane_quadplane_rtl_mode",
+                "switch_qrtl"
+            ],
+            0
+        ],
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "plane.vtol_approach_s.approach_stage": [
+            [
+                "rtl"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "plane.roll_limit_cd": [
+            [
+                "plane_g_level_roll_limit",
+                "plane_roll_limit_cd"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "constrain_int32_plane_roll_limit_cd",
+                "constrain_int32_plane_nav_roll_cd"
+            ],
+            0
+        ],
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "alt_threshold_reached": [
+            [
+                "plane_current_loc_alt",
+                "plane_next_wp_loc_alt",
+                "plane_g2_rtl_climb_min",
+                "plane_prev_wp_loc_alt"
+            ],
+            0
+        ]
+    },
+    "navigate": {
+        "radius": [
+            [
+                "abs_plane_g_rtl_radius"
+            ],
+            0
+        ],
+        "plane.loiter.direction": [
+            [
+                "plane_g_rtl_radius"
+            ],
+            0
+        ],
+        "cmd.content.location": [
+            [
+                "plane_next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "switch_QRTL": {
+        "qrtl_radius": [
+            [
+                "abs_plane_g_rtl_radius",
+                "abs_plane_aparm_loiter_radius"
+            ],
+            0
+        ]
+    }
+}

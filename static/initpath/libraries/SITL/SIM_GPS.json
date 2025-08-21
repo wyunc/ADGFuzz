@@ -1,0 +1,452 @@
+{
+    "simulation_timeval": {
+        "first_tv.tv_sec": [
+            [
+                "sitl_start_time_utc"
+            ],
+            0
+        ],
+        "tv": [
+            [
+                "first_tv"
+            ],
+            0
+        ],
+        "tv_sec": [
+            [
+                "micros64",
+                "1000000ull",
+                "micros64",
+                "tv_tv_usec",
+                "1000000ull"
+            ],
+            2
+        ],
+        "first_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "tv_usec": [
+            [
+                "1000000ull",
+                "micros64",
+                "tv_tv_usec",
+                "1000000ull"
+            ],
+            2
+        ]
+    },
+    "simulate_jamming": {
+        "jam.last_jam_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "jam.longitude": [
+            [
+                "latlon_to_m_inv",
+                "1e",
+                "rand_float",
+                "d_longitude"
+            ],
+            0
+        ],
+        "d.vertical_acc": [
+            [
+                "fabsf_rand_float"
+            ],
+            0
+        ],
+        "d.num_sats": [
+            [
+                "get_random16"
+            ],
+            0
+        ],
+        "jam.latitude": [
+            [
+                "latlon_to_m_inv",
+                "d_latitude",
+                "1e",
+                "rand_float"
+            ],
+            0
+        ],
+        "d.horizontal_acc": [
+            [
+                "fabsf_rand_float"
+            ],
+            0
+        ],
+        "jam.last_pos_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "jam.jam_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "d.speedN": [
+            [
+                "rand_float"
+            ],
+            0
+        ],
+        "d.speedD": [
+            [
+                "rand_float"
+            ],
+            0
+        ],
+        "jam.last_vz_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "d.speedE": [
+            [
+                "rand_float"
+            ],
+            0
+        ],
+        "jam": [
+            [
+                "jamming",
+                "instance"
+            ],
+            0
+        ],
+        "jam.last_sats_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "jam.last_acc_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "jam.last_vel_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "d.speed_acc": [
+            [
+                "fabsf_rand_float"
+            ],
+            0
+        ],
+        "d.longitude": [
+            [
+                "jam_longitude"
+            ],
+            0
+        ],
+        "d.latitude": [
+            [
+                "jam_latitude"
+            ],
+            0
+        ]
+    },
+    "check_backend_allocation": {
+        "allocated_type": [
+            [
+                "type_instance",
+                "type__sitl_gps",
+                "type__type_get"
+            ],
+            1
+        ],
+        "backend": [
+            [
+                "gps_sbp_this",
+                "gps_msp_this",
+                "gps_nova_this",
+                "gps_nmea_this",
+                "gps_sbp2_instance",
+                "gps_msp_instance",
+                "gps_sbf_this",
+                "gps_file_instance",
+                "new_nothrow",
+                "nullptr",
+                "gps_nmea_instance",
+                "gps_file_this",
+                "gps_nova_instance",
+                "gps_sbp_instance",
+                "gps_sbp2_this",
+                "gps_u_blox_this",
+                "gps_trimble_instance",
+                "gps_sbf_instance",
+                "gps_trimble_this",
+                "gps_u_blox_instance"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "d.speedE": [
+            [
+                "vel_error_ned_y",
+                "vel_rel_offset_ef_y",
+                "speed_e",
+                "rand_float"
+            ],
+            0
+        ],
+        "posRelOffsetBF": [
+            [
+                "params_pos_offset"
+            ],
+            0
+        ],
+        "_gps_basestation_data.latitude": [
+            [
+                "_sitl_gps_init_lat_ofs",
+                "_sitl_state_latitude"
+            ],
+            1
+        ],
+        "d.timestamp_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "d.num_sats": [
+            [
+                "params_numsats"
+            ],
+            0
+        ],
+        "_gps_basestation_data.altitude": [
+            [
+                "_sitl_state_altitude",
+                "_sitl_gps_init_alt_ofs"
+            ],
+            1
+        ],
+        "speedN": [
+            [
+                "_sitl_state_speed_n"
+            ],
+            0
+        ],
+        "velErrorNED": [
+            [
+                "params_vel_err"
+            ],
+            0
+        ],
+        "d.pitch_deg": [
+            [
+                "_sitl_state_pitch_deg"
+            ],
+            0
+        ],
+        "_gps_basestation_data.speedN": [
+            [
+                "speed_n"
+            ],
+            0
+        ],
+        "d.vertical_acc": [
+            [
+                "params_accuracy"
+            ],
+            0
+        ],
+        "velRelOffsetBF": [
+            [
+                "gyro",
+                "pos_rel_offset_bf"
+            ],
+            0
+        ],
+        "_gps_basestation_data.longitude": [
+            [
+                "_sitl_state_longitude",
+                "_sitl_gps_init_lon_ofs"
+            ],
+            1
+        ],
+        "d.yaw_deg": [
+            [
+                "_sitl_state_yaw_deg"
+            ],
+            0
+        ],
+        "speedE": [
+            [
+                "_sitl_state_speed_e"
+            ],
+            0
+        ],
+        "d.have_lock": [
+            [
+                "millis",
+                "params_enabled",
+                "1000ul",
+                "params_lock_time"
+            ],
+            2
+        ],
+        "last_write_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "d.speedN": [
+            [
+                "vel_error_ned_x",
+                "speed_n",
+                "vel_rel_offset_ef_x",
+                "rand_float"
+            ],
+            0
+        ],
+        "d.horizontal_acc": [
+            [
+                "params_accuracy"
+            ],
+            0
+        ],
+        "_gps_basestation_data.speedD": [
+            [
+                "speed_d"
+            ],
+            0
+        ],
+        "d.speed_acc": [
+            [
+                "params_vel_err_get_xy_length"
+            ],
+            0
+        ],
+        "posRelOffsetEF": [
+            [
+                "rotmat",
+                "pos_rel_offset_bf"
+            ],
+            0
+        ],
+        "velRelOffsetEF": [
+            [
+                "vel_rel_offset_bf",
+                "rotmat"
+            ],
+            0
+        ],
+        "lng_scale_factor": [
+            [
+                "cos_radians",
+                "cos_d_latitude",
+                "_569612305760477e"
+            ],
+            1
+        ],
+        "_gps_basestation_data.speedE": [
+            [
+                "speed_e"
+            ],
+            0
+        ],
+        "speedD": [
+            [
+                "_sitl_state_speed_d"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "interpolate_data_d",
+                "interpolate_data_params_delay_ms"
+            ],
+            0
+        ],
+        "glitch_offsets": [
+            [
+                "params_glitch"
+            ],
+            0
+        ],
+        "params": [
+            [
+                "instance",
+                "_sitl_gps"
+            ],
+            0
+        ],
+        "d.altitude": [
+            [
+                "glitch_offsets_z",
+                "_sitl_state_altitude",
+                "_sitl_gps_init_alt_ofs",
+                "sinf_now_ms",
+                "params_noise",
+                "params_alt_offset",
+                "pos_rel_offset_ef_z",
+                "params_drift_alt"
+            ],
+            1
+        ],
+        "d.speedD": [
+            [
+                "vel_rel_offset_ef_z",
+                "speed_d",
+                "vel_error_ned_z",
+                "rand_float"
+            ],
+            0
+        ],
+        "d.latitude": [
+            [
+                "glitch_offsets_x",
+                "degrees_earth_rad_inv",
+                "_sitl_gps_init_lat_ofs",
+                "_sitl_state_latitude",
+                "degrees_pos_rel_offset_ef_x"
+            ],
+            1
+        ],
+        "d.roll_deg": [
+            [
+                "_sitl_state_roll_deg"
+            ],
+            0
+        ],
+        "d.longitude": [
+            [
+                "degrees_pos_rel_offset_ef_y",
+                "glitch_offsets_y",
+                "_sitl_state_longitude",
+                "_sitl_gps_init_lon_ofs",
+                "degrees_lng_scale_factor"
+            ],
+            1
+        ]
+    },
+    "speed_2d": {
+        "velocity": [
+            [
+                "speed_e",
+                "vector2d",
+                "speed_n"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "update": {
+        "last_temperature_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

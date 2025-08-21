@@ -1,0 +1,519 @@
+{
+    "init": {
+        "_set_param_int32_queue": [
+            [
+                "object_array",
+                "new_nothrow",
+                "set_param_queue_item",
+                "xacti_set_param_queue_size"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "angle_bf_target": [
+            [
+                "_params_retract_angles_get",
+                "_params_neutral_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_zoom": {
+        "zoom_param_value": [
+            [
+                "uint16_t_zoom_value",
+                "uint16_t_linear_interpolate"
+            ],
+            0
+        ],
+        "zoom_times": [
+            [
+                "linear_interpolate_zoom_value"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "set_param_int32_optical_zoom_magnification",
+                "set_param_int32_optical_zoom_param"
+            ],
+            0
+        ],
+        "digital_zoom_param": [
+            [
+                "constrain_uint16_zoom_times",
+                "constrain_uint16_uint16_t"
+            ],
+            0
+        ],
+        "_zoom_rate_control.dir": [
+            [
+                "zoom_value"
+            ],
+            0
+        ],
+        "optical_zoom_param": [
+            [
+                "constrain_uint16_zoom_times",
+                "constrain_uint16_uint16_t"
+            ],
+            0
+        ]
+    },
+    "set_camera_source": {
+        "new_sensor_mode": [
+            [
+                "rgb",
+                "pip",
+                "ndvi",
+                "ir"
+            ],
+            0
+        ]
+    },
+    "get_attitude_quaternion": {
+        "att_quat": [
+            [
+                "_current_attitude_quat"
+            ],
+            0
+        ]
+    },
+    "send_target_angles": {
+        "yaw_bf_rad": [
+            [
+                "wrap_pi_yaw_rad",
+                "yaw_rad",
+                "wrap_pi_ahrs_get_yaw",
+                "yaw_is_ef"
+            ],
+            0
+        ]
+    },
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "register_backend": {
+        ".node_id": [
+            [
+                "devid_get_address_devid"
+            ],
+            0
+        ],
+        ".driver": [
+            [
+                "this"
+            ],
+            0
+        ],
+        "devid": [
+            [
+                "_params_dev_id_get",
+                "uint32_t"
+            ],
+            0
+        ],
+        ".ap_dronecan": [
+            [
+                "get_dronecan_i"
+            ],
+            1
+        ],
+        "can_driver_index": [
+            [
+                "devid_get_bus_devid"
+            ],
+            0
+        ],
+        "can_num_drivers": [
+            [
+                "can_get_num_drivers"
+            ],
+            0
+        ]
+    },
+    "handle_gimbal_attitude_status": {
+        "_last_current_attitude_quat_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_gnss_status_req": {
+        "xacti_gnss_status_msg.utc_hour": [
+            [
+                "hour"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.longitude": [
+            [
+                "1e",
+                "loc_lng"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.altitude": [
+            [
+                "loc_alt",
+                "1e"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.gps_status": [
+            [
+                "gps_status"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.latitude": [
+            [
+                "loc_lat",
+                "1e"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.utc_minute": [
+            [
+                "min"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.order": [
+            [
+                "msg_requirement"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.utc_seconds": [
+            [
+                "sec"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.utc_year": [
+            [
+                "hour",
+                "sec",
+                "day",
+                "min",
+                "month"
+            ],
+            1
+        ],
+        "xacti_gnss_status_msg.utc_month": [
+            [
+                "month"
+            ],
+            0
+        ],
+        "xacti_gnss_status_msg.utc_day": [
+            [
+                "day"
+            ],
+            0
+        ]
+    },
+    "handle_param_get_set_response_int": {
+        "_recording_video": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "_last_digital_zoom_param_value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "capabilities.optical_zoom": [
+            [
+                "true"
+            ],
+            0
+        ],
+        "_last_optical_zoom_param_value": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "handle_param_get_set_response_string": {
+        "_camera_error": [
+            [
+                "media_error",
+                "_status_error_status",
+                "lens_error",
+                "uint32_t"
+            ],
+            0
+        ],
+        "patch_ver_num": [
+            [
+                "atoi_patch_str",
+                "0x_ff"
+            ],
+            0
+        ],
+        "_motor_error": [
+            [
+                "gimbal_control_error",
+                "motor_operation_error",
+                "uint32_t",
+                "_status_error_status",
+                "motor_init_error"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "value_len",
+                "array_size__firmware_version_str"
+            ],
+            0
+        ],
+        "dev_ver_num": [
+            [
+                "0x_ff",
+                "atoi_dev_str"
+            ],
+            0
+        ],
+        "minor_ver_num": [
+            [
+                "0x_ff",
+                "atoi_minor_str"
+            ],
+            0
+        ],
+        "_firmware_version.mav_ver": [
+            [
+                "uint32_value_dev_ver_num",
+                "uint32_value_minor_ver_num",
+                "uint32_value_patch_ver_num",
+                "uint32_value_major_ver_num"
+            ],
+            0
+        ],
+        "major_ver_num": [
+            [
+                "atoi_major_str",
+                "0x_ff"
+            ],
+            0
+        ],
+        "changed_bits": [
+            [
+                "_status_error_status",
+                "_status_error_status"
+            ],
+            1
+        ]
+    },
+    "set_param_string": {
+        "param_name_str": [
+            [
+                "get_param_name_str_param"
+            ],
+            0
+        ],
+        "last_send_getset_param_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_param_string": {
+        "param_name_str": [
+            [
+                "get_param_name_str_param"
+            ],
+            0
+        ],
+        "last_send_getset_param_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "process_set_param_int32_queue": {
+        "param_name_str": [
+            [
+                "get_param_name_str_param_to_set_param"
+            ],
+            0
+        ],
+        "last_send_getset_param_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_gimbal_control": {
+        "last_send_gimbal_control_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "gimbal_control_data_msg.pitch_cmd_value": [
+            [
+                "pitch_cd"
+            ],
+            0
+        ],
+        "gimbal_control_data_msg.yaw_cmd_value": [
+            [
+                "yaw_cd"
+            ],
+            0
+        ],
+        "gimbal_control_data_msg.pitch_cmd_type": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "gimbal_control_data_msg.yaw_cmd_type": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "send_copter_att_status": {
+        "last_send_copter_att_status_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ]
+    },
+    "update_zoom_rate_control": {
+        "update_interval_ms": [
+            [
+                "xacti_optical_zoom_rate_update_interval_ms",
+                "optical_zoom_control",
+                "xacti_digital_zoom_rate_update_interval_ms"
+            ],
+            0
+        ],
+        "_zoom_rate_control.last_update_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "optical_zoom_value": [
+            [
+                "_zoom_rate_control_dir",
+                "_last_digital_zoom_param_value",
+                "_zoom_rate_control_dir"
+            ],
+            1
+        ],
+        "digital_zoom_value": [
+            [
+                "_zoom_rate_control_dir",
+                "_last_digital_zoom_param_value"
+            ],
+            0
+        ]
+    },
+    "request_firmware_version": {
+        "_firmware_version.last_request_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ]
+    },
+    "request_capabilities": {
+        "capabilities.first_request_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "capabilities.last_request_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "capabilities.optical_zoom": [
+            [
+                "false"
+            ],
+            0
+        ]
+    },
+    "set_datetime": {
+        "datetime_string.len": [
+            [
+                "num_bytes"
+            ],
+            0
+        ],
+        "_datetime.last_request_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ],
+        "_datetime.set": [
+            [
+                "set_param_string_date_time",
+                "set_param_string_datetime_string"
+            ],
+            0
+        ]
+    },
+    "request_status": {
+        "_status_report.last_request_ms": [
+            [
+                "now_ms"
+            ],
+            0
+        ]
+    }
+}

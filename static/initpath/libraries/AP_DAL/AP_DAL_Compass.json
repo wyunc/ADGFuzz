@@ -1,0 +1,107 @@
+{
+    "start_frame": {
+        "RMGI.field": [
+            [
+                "compass_get_field_i"
+            ],
+            0
+        ],
+        "RMGI.use_for_yaw": [
+            [
+                "compass_use_for_yaw_i"
+            ],
+            0
+        ],
+        "_RMGH.auto_declination_enabled": [
+            [
+                "compass_auto_declination_enabled"
+            ],
+            0
+        ],
+        "_RMGH.consistent": [
+            [
+                "compass_consistent"
+            ],
+            0
+        ],
+        "RMGI.healthy": [
+            [
+                "compass_healthy_i"
+            ],
+            0
+        ],
+        "_RMGH.declination": [
+            [
+                "compass_get_declination"
+            ],
+            0
+        ],
+        "RMGI.offsets": [
+            [
+                "compass_get_offsets_i"
+            ],
+            0
+        ],
+        "RMGI.last_update_usec": [
+            [
+                "compass_last_update_usec_i"
+            ],
+            0
+        ],
+        "_RMGH.first_usable": [
+            [
+                "compass_get_first_usable"
+            ],
+            0
+        ],
+        "old_RMGI": [
+            [
+                "rmgi"
+            ],
+            0
+        ],
+        "RMGI.have_scale_factor": [
+            [
+                "compass_have_scale_factor_i"
+            ],
+            0
+        ],
+        "_RMGH.count": [
+            [
+                "compass_get_count"
+            ],
+            0
+        ],
+        "RMGI": [
+            [
+                "_rmgi",
+                "i"
+            ],
+            0
+        ],
+        "_RMGH.learn_offsets_enabled": [
+            [
+                "compass_learn_offsets_enabled"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rmgh"
+            ],
+            0
+        ],
+        "_RMGH.num_enabled": [
+            [
+                "compass_get_num_enabled"
+            ],
+            0
+        ],
+        "_RMGH.available": [
+            [
+                "compass_available"
+            ],
+            0
+        ]
+    }
+}

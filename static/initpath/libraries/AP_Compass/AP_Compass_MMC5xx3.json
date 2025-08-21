@@ -1,0 +1,41 @@
+{
+    "timer": {
+        "measure_count_limit": [
+            [
+                "1000u"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "new_offset",
+                "counts_to_milli_gauss"
+            ],
+            1
+        ],
+        "zero_offset": [
+            [
+                "32768u"
+            ],
+            0
+        ],
+        "counts_to_milliGauss": [
+            [
+                "4096u",
+                "_0e3f"
+            ],
+            1
+        ],
+        "state": [
+            [
+                "state_set_measure",
+                "state_reset_measure",
+                "state_set",
+                "state_reset_wait",
+                "state_set_wait",
+                "state_measure"
+            ],
+            0
+        ]
+    }
+}

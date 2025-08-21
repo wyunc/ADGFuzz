@@ -1,0 +1,205 @@
+{
+    "navigate_waypoints": {
+        "_L1_distance": [
+            [
+                "max_ground_speed_vector_length",
+                "_l1_ratio"
+            ],
+            1
+        ],
+        "vector_AB": [
+            [
+                "vector_b",
+                "vector_curr_position",
+                "vector_a"
+            ],
+            0
+        ],
+        "xtrack_vel": [
+            [
+                "vector_ab",
+                "vector_a_to_airplane_unit",
+                "ground_speed_vector",
+                "vector_b_to_p_unit"
+            ],
+            0
+        ],
+        "ltrack_vel": [
+            [
+                "vector_ab",
+                "vector_a_to_airplane_unit",
+                "ground_speed_vector",
+                "vector_b_to_p_unit"
+            ],
+            0
+        ],
+        "vector_B_to_P": [
+            [
+                "vector_b",
+                "vector_curr_position"
+            ],
+            0
+        ],
+        "vector_A_to_airplane": [
+            [
+                "vector_curr_position",
+                "vector_a"
+            ],
+            0
+        ],
+        "AB_to_BP_bearing": [
+            [
+                "atan2f_vector_b_to_p_unit",
+                "atan2f_vector_ab"
+            ],
+            0
+        ],
+        "_nav_bearing": [
+            [
+                "vector_ab",
+                "asinf_sine_eta1",
+                "vector_b_to_p_unit",
+                "vector_a_to_airplane_unit",
+                "atan2f_vector_ab",
+                "atan2f_vector_a_to_airplane_unit",
+                "atan2f_vector_b_to_p_unit"
+            ],
+            1
+        ],
+        "vector_B_to_P_unit": [
+            [
+                "vector_b_to_p_normalized"
+            ],
+            0
+        ],
+        "vector_P_to_B_unit": [
+            [
+                "vector_p_to_b_normalized"
+            ],
+            0
+        ],
+        "_target_bearing": [
+            [
+                "atan2f_vector_p_to_b_unit",
+                "vector_p_to_b_unit"
+            ],
+            0
+        ],
+        "sine_eta1": [
+            [
+                "max__l1_distance",
+                "xtrack_err",
+                "constrain_sine_eta1"
+            ],
+            0
+        ],
+        "distance_A_to_airplane": [
+            [
+                "vector_a_to_airplane_length"
+            ],
+            0
+        ],
+        "vector_P_to_B": [
+            [
+                "vector_b",
+                "vector_curr_position"
+            ],
+            0
+        ],
+        "_crosstrack_error": [
+            [
+                "vector_ab",
+                "vector_a_to_airplane"
+            ],
+            0
+        ],
+        "alongTrackDist": [
+            [
+                "vector_ab",
+                "vector_a_to_airplane"
+            ],
+            0
+        ],
+        "vector_A_to_airplane_unit": [
+            [
+                "vector_a_to_airplane_normalized"
+            ],
+            0
+        ],
+        "_lateral_accel": [
+            [
+                "_l1_distance",
+                "max_ground_speed_vector_length",
+                "sinf_eta",
+                "_k_l1"
+            ],
+            1
+        ],
+        "eta": [
+            [
+                "constrain_m_pi_f",
+                "atan2f_ltrack_vel",
+                "asinf_sine_eta1",
+                "m_pi_f",
+                "constrain_eta",
+                "atan2f_ltrack_vel",
+                "atan2f_xtrack_vel",
+                "atan2f_xtrack_vel"
+            ],
+            2
+        ],
+        "xtrackErr": [
+            [
+                "vector_ab",
+                "vector_a_to_airplane"
+            ],
+            0
+        ]
+    },
+    "set_l1_period": {
+        "_L1_ratio": [
+            [
+                "_l1_period",
+                "_l1_damping",
+                "m_pi_f"
+            ],
+            0
+        ],
+        "_L1_period": [
+            [
+                "period"
+            ],
+            0
+        ],
+        "_heading_omega": [
+            [
+                "_l1_period",
+                "m_pi_f",
+                "sqrtf"
+            ],
+            0
+        ]
+    },
+    "set_l1_damping": {
+        "_L1_damping": [
+            [
+                "damping"
+            ],
+            0
+        ],
+        "_L1_ratio": [
+            [
+                "_l1_damping",
+                "_l1_period",
+                "m_pi_f"
+            ],
+            0
+        ],
+        "_K_L1": [
+            [
+                "_l1_damping"
+            ],
+            0
+        ]
+    }
+}

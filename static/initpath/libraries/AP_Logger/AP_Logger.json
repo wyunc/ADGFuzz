@@ -1,0 +1,414 @@
+{
+    "init": {
+        "_log_bitmask": [
+            [
+                "log_bitmask"
+            ],
+            0
+        ],
+        "_structures": [
+            [
+                "structures"
+            ],
+            0
+        ],
+        "message_writer": [
+            [
+                "new_nothrow",
+                "logger_message_writer_df_log_start"
+            ],
+            0
+        ],
+        "_num_types": [
+            [
+                "num_types"
+            ],
+            0
+        ]
+    },
+    "dump_structures": {
+        "logstructure": [
+            [
+                "logstructures",
+                "i"
+            ],
+            0
+        ],
+        "labelchar": [
+            [
+                "j",
+                "logstructure_labels"
+            ],
+            0
+        ]
+    },
+    "labels_string_is_good": {
+        "len": [
+            [
+                "strnlen_ls_labels_size",
+                "strnlen_labels_copy"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "validate_structure": {
+        "fieldcount": [
+            [
+                "strlen_logstructure_format"
+            ],
+            0
+        ],
+        "msg_len": [
+            [
+                "write_calc_msg_len_logstructure_format"
+            ],
+            0
+        ],
+        "logunit": [
+            [
+                "logstructure_units",
+                "j"
+            ],
+            0
+        ],
+        "logmultiplier": [
+            [
+                "logstructure_multipliers",
+                "j"
+            ],
+            0
+        ],
+        "fmt": [
+            [
+                "j",
+                "logstructure_format"
+            ],
+            0
+        ],
+        "labelcount": [
+            [
+                "count_commas_logstructure_labels"
+            ],
+            0
+        ]
+    },
+    "validate_structures": {
+        "logstructure": [
+            [
+                "logstructures",
+                "i"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "log_units",
+                "log_multipliers",
+                "i"
+            ],
+            1
+        ],
+        "passed": [
+            [
+                "validate_structure_logstructure",
+                "validate_structure_i"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "log_units",
+                "log_multipliers",
+                "i"
+            ],
+            0
+        ]
+    },
+    "should_log": {
+        "armed": [
+            [
+                "vehicle_is_armed"
+            ],
+            0
+        ]
+    },
+    "in_log_download": {
+        "transfer_activity": [
+            [
+                "sending"
+            ],
+            0
+        ]
+    },
+    "setVehicle_Startup_Writer": {
+        "_vehicle_messages": [
+            [
+                "writer"
+            ],
+            0
+        ]
+    },
+    "set_vehicle_armed": {
+        "_armed": [
+            [
+                "armed_state"
+            ],
+            0
+        ]
+    },
+    "save_format_Replay": {
+        "labels": [
+            [
+                "strndup_sizeof",
+                "strndup_fmt_labels"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "strndup_fmt_name",
+                "strndup_sizeof"
+            ],
+            0
+        ],
+        "fmt": [
+            [
+                "struct",
+                "log_format",
+                "p_buffer",
+                "strndup_fmt_format",
+                "strndup_sizeof"
+            ],
+            0
+        ],
+        "log_write_fmts": [
+            [
+                "log_write_fmt",
+                "new_nothrow"
+            ],
+            1
+        ],
+        "msg_type": [
+            [
+                "fmt_type"
+            ],
+            0
+        ],
+        "msg_len": [
+            [
+                "fmt_length"
+            ],
+            0
+        ]
+    },
+    "WriteV": {
+        "direct_comp": [
+            [
+                "apm_build_type_apm_build_replay"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "msg_fmt_for_name_name",
+                "msg_fmt_for_name_units",
+                "msg_fmt_for_name_direct_comp",
+                "msg_fmt_for_name_fmt",
+                "msg_fmt_for_name_mults",
+                "msg_fmt_for_name_labels"
+            ],
+            0
+        ]
+    },
+    "msg_type_in_use": {
+        "f": [
+            [
+                "log_write_fmts"
+            ],
+            0
+        ]
+    },
+    "fill_logstructure": {
+        "logstruct.msg_type": [
+            [
+                "msg_type"
+            ],
+            0
+        ],
+        "logstruct.msg_len": [
+            [
+                "f_msg_len"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "log_write_fmts"
+            ],
+            0
+        ],
+        "logstruct": [
+            [
+                "structure_for_msg_type_msg_type"
+            ],
+            1
+        ]
+    },
+    "check_crash_dump_save": {
+        "fd2": [
+            [
+                "fs_open_o_wronly",
+                "_open_o_trunc",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "fs_open_o_rdonly"
+            ],
+            0
+        ]
+    },
+    "io_thread": {
+        "last_crash_check_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "done_crash_dump_save": [
+            [
+                "check_crash_dump_save"
+            ],
+            0
+        ],
+        "delay": [
+            [
+                "250u",
+                "micros"
+            ],
+            1
+        ],
+        "last_run_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "last_stack_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "in_log_persistance": {
+        "persist_ms": [
+            [
+                "10u",
+                "hal_logger_arm_persist",
+                "1000u"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "arm_change_ms": [
+            [
+                "hal_util_get_last_armed_change"
+            ],
+            0
+        ]
+    },
+    "log_file_content": {
+        "name": [
+            [
+                "strrchr_file_filename"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "file_list",
+                "new_nothrow"
+            ],
+            1
+        ],
+        "file_content.tail": [
+            [
+                "file_list",
+                "new_nothrow",
+                "file_content_head"
+            ],
+            1
+        ],
+        "filename": [
+            [
+                "new_nothrow",
+                "strlen_filename",
+                "char"
+            ],
+            2
+        ]
+    },
+    "file_content_update": {
+        "pkt.length": [
+            [
+                "fs_read_file_content_fd",
+                "_read_pkt_data",
+                "_read_sizeof"
+            ],
+            1
+        ],
+        "file_content.offset": [
+            [
+                "fs_read_file_content_fd",
+                "_read_pkt_data",
+                "_read_sizeof"
+            ],
+            1
+        ],
+        "frequency": [
+            [
+                "file_content_fast"
+            ],
+            0
+        ],
+        "file": [
+            [
+                "file_content_head"
+            ],
+            0
+        ],
+        "file_content.fd": [
+            [
+                "_open_o_rdonly",
+                "fs_open_file_filename"
+            ],
+            0
+        ],
+        "file_content.fast": [
+            [
+                "strncmp_file_filename"
+            ],
+            0
+        ],
+        "pkt.offset": [
+            [
+                "file_content_offset"
+            ],
+            0
+        ]
+    }
+}

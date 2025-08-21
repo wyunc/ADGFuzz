@@ -1,0 +1,44 @@
+{
+    "reset": {
+        "_result": [
+            [
+                "flt_min",
+                "flt_max"
+            ],
+            0
+        ]
+    },
+    "add_value": {
+        "_result": [
+            [
+                "_n",
+                "1u",
+                "val"
+            ],
+            0
+        ]
+    },
+    "check_limits": {
+        "x": [
+            [
+                "max",
+                "min"
+            ],
+            0
+        ]
+    },
+    "convert_limit_safe": {
+        "out": [
+            [
+                "uint16_t",
+                "in",
+                "uint16_max",
+                "int16_t",
+                "int16_min",
+                "static_cast",
+                "int16_max"
+            ],
+            0
+        ]
+    }
+}

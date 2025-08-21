@@ -1,0 +1,42 @@
+{
+    "init": {
+        "backend": [
+            [
+                "ap_winch_pwm_config",
+                "new_nothrow",
+                "ap_winch_daiwa_config"
+            ],
+            0
+        ]
+    },
+    "release_length": {
+        "config.control_mode": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "config.length_desired": [
+            [
+                "backend_get_current_length",
+                "length"
+            ],
+            0
+        ]
+    },
+    "set_desired_rate": {
+        "config.control_mode": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "config.rate_desired": [
+            [
+                "rate",
+                "get_rate_max_get_rate_max"
+            ],
+            0
+        ]
+    }
+}

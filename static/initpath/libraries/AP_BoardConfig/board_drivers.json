@@ -1,0 +1,106 @@
+{
+    "board_init_safety": {
+        "force_safety_off": [
+            [
+                "state_safety_enable_get"
+            ],
+            0
+        ]
+    },
+    "board_setup_drivers": {
+        "px4_configured_board": [
+            [
+                "enum",
+                "state_board_type_get",
+                "px4_board_type"
+            ],
+            0
+        ]
+    },
+    "spi_check_register": {
+        "dev": [
+            [
+                "hal_spi_get_device_devname"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "spi_check_register_inv2": {
+        "dev": [
+            [
+                "hal_spi_get_device_devname"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "check_ms5611": {
+        "dev_sem": [
+            [
+                "dev_get_semaphore"
+            ],
+            0
+        ],
+        "CMD_MS56XX_PROM": [
+            [
+                "0x_a0"
+            ],
+            0
+        ],
+        "crc_read": [
+            [
+                "0xf",
+                "prom"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "hal_spi_get_device_devname"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "i",
+                "cmd_ms56xx_prom"
+            ],
+            0
+        ],
+        "CMD_MS56XX_RESET": [
+            [
+                "0x1e"
+            ],
+            0
+        ]
+    },
+    "board_autodetect": {
+        "errored_check": [
+            [
+                "hal_validate_board"
+            ],
+            0
+        ]
+    },
+    "board_setup_sbus": {
+        "rate": [
+            [
+                "_rate",
+                "i",
+                "rates"
+            ],
+            0
+        ]
+    }
+}

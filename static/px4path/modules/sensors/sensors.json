@@ -1,0 +1,260 @@
+{
+    "parameters_update": {
+        "device_id_mag": [
+            [
+                "get_calibration_param_int32_i"
+            ],
+            0
+        ],
+        "device_id_gyro": [
+            [
+                "get_calibration_param_int32_i"
+            ],
+            0
+        ],
+        "device_id_accel": [
+            [
+                "get_calibration_param_int32_i"
+            ],
+            0
+        ]
+    },
+    "diff_pres_poll": {
+        "differential_pressure_pa": [
+            [
+                "_parameters_diff_pres_offset_pa",
+                "_diff_pres_count",
+                "diff_pres_differential_pressure_pa"
+            ],
+            1
+        ],
+        "airspeed.timestamp_sample": [
+            [
+                "diff_pres_timestamp_sample",
+                "_diff_pres_count"
+            ],
+            2
+        ],
+        "smodel": [
+            [
+                "airspeed_sensor_model_membrane",
+                "airspeed_sensor_model_sdp3x"
+            ],
+            0
+        ],
+        "airspeed.confidence": [
+            [
+                "_airspeed_validator_confidence_hrt_absolute_time"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "air_data_ambient_temperature"
+            ],
+            0
+        ],
+        "airspeed.true_airspeed_m_s": [
+            [
+                "calc_tas_from_cas_indicated_airspeed_m_s",
+                "calc_tas_from_cas_baro_pressure_pa",
+                "calc_tas_from_cas_temperature"
+            ],
+            1
+        ],
+        "airspeed.indicated_airspeed_m_s": [
+            [
+                "indicated_airspeed_m_s"
+            ],
+            0
+        ],
+        "_airspeed_last_publish": [
+            [
+                "airspeed_timestamp"
+            ],
+            0
+        ],
+        "baro_pressure_pa": [
+            [
+                "_diff_pres_count",
+                "air_data_baro_pressure_pa"
+            ],
+            1
+        ],
+        "airspeed.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "adc_poll": {
+        "diff_pres.differential_pressure_pa": [
+            [
+                "_parameters_diff_pres_analog_scale",
+                "adc_raw_data",
+                "adc_dp_v_div",
+                "adc_v_ref",
+                "float",
+                "i",
+                "adc_resolution"
+            ],
+            2
+        ],
+        "diff_pres.temperature": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "diff_pres.timestamp_sample": [
+            [
+                "adc_timestamp"
+            ],
+            0
+        ],
+        "diff_pres.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "InitializeVehicleAirData": {
+        "_vehicle_air_data": [
+            [
+                "new",
+                "vehicle_air_data"
+            ],
+            0
+        ]
+    },
+    "InitializeVehicleGPSPosition": {
+        "_vehicle_gps_position": [
+            [
+                "vehicle_gps_position",
+                "new"
+            ],
+            0
+        ]
+    },
+    "InitializeVehicleIMU": {
+        "wq_config": [
+            [
+                "ins0",
+                "ins_instance_to_wq_i",
+                "_param_sens_imu_mode_get"
+            ],
+            1
+        ],
+        "imu": [
+            [
+                "vehicle_imu_i",
+                "new",
+                "vehicle_imu_wq_config"
+            ],
+            0
+        ]
+    },
+    "InitializeVehicleMagnetometer": {
+        "_vehicle_magnetometer": [
+            [
+                "new",
+                "vehicle_magnetometer"
+            ],
+            0
+        ]
+    },
+    "InitializeVehicleOpticalFlow": {
+        "_vehicle_optical_flow": [
+            [
+                "new",
+                "vehicle_optical_flow"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_n_mag": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_sensor_mag"
+            ],
+            1
+        ],
+        "_sensor_combined_prev_timestamp": [
+            [
+                "_sensor_combined_timestamp"
+            ],
+            0
+        ],
+        "_n_gyro": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_sensor_gyro"
+            ],
+            1
+        ],
+        "_n_baro": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_sensor_baro"
+            ],
+            1
+        ],
+        "_n_accel": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_sensor_accel"
+            ],
+            1
+        ],
+        "_armed": [
+            [
+                "vcontrol_mode_flag_armed"
+            ],
+            0
+        ],
+        "_last_config_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_n_gps": [
+            [
+                "orb_group_count_sensor_gps",
+                "orb_group_count_orb_id"
+            ],
+            1
+        ],
+        "_n_optical_flow": [
+            [
+                "orb_group_count_orb_id",
+                "orb_group_count_sensor_optical_flow"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "sensors_hil_enabled",
+                "new"
+            ],
+            0
+        ],
+        "myoptarg": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

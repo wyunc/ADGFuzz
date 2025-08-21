@@ -1,0 +1,23 @@
+{
+    "update": {
+        "last_input_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "array_size_pwm_input",
+                "array_size_fdm_rcin_chan_count"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "sitl_state"
+            ],
+            0
+        ]
+    }
+}

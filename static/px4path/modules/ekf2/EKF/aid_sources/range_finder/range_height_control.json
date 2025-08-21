@@ -1,0 +1,160 @@
+{
+    "controlRangeHaglFusion": {
+        "measurement_valid": [
+            [
+                "px4_isfinite_aid_src_observation",
+                "px4_isfinite_aid_src_observation_variance"
+            ],
+            0
+        ],
+        "_params.rng_ctrl": [
+            [
+                "enabled",
+                "int32_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "_state.terrain": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_control_status.flags.rng_kin_consistent": [
+            [
+                "_rng_consistency_check_is_kinematically_consistent"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_rng_hgt"
+            ],
+            0
+        ],
+        "var": [
+            [
+                "sq__params_range_noise",
+                "sq__range_sensor_get_dist_bottom",
+                "sq__params_range_noise_scaler"
+            ],
+            1
+        ],
+        "_height_sensor_ref": [
+            [
+                "range"
+            ],
+            0
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out__params_hgt_fusion_timeout_max",
+                "is_timed_out_aid_src_time_last_fuse"
+            ],
+            0
+        ],
+        "pos_offset_earth": [
+            [
+                "_r_to_earth",
+                "_params_imu_pos_body",
+                "_params_rng_pos_body"
+            ],
+            1
+        ],
+        "rng_data_ready": [
+            [
+                "_range_buffer_pop_first_older_than_imu_sample_time_us",
+                "_range_buffer_pop_first_older_than__range_sensor_get_sample_address"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ]
+    },
+    "updateRangeHagl": {
+        "measurement_variance": [
+            [
+                "get_rng_var"
+            ],
+            0
+        ],
+        "innov_limit": [
+            [
+                "max__f",
+                "max__params_range_innov_gate",
+                "sqrtf_aid_src_innovation_variance"
+            ],
+            1
+        ],
+        "aid_src.innovation": [
+            [
+                "constrain_aid_src_innovation",
+                "constrain_innov_limit"
+            ],
+            0
+        ],
+        "measurement": [
+            [
+                "max__range_sensor_get_dist_bottom",
+                "_params_rng_gnd_clearance"
+            ],
+            0
+        ]
+    },
+    "resetTerrainToRng": {
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_state_reset_status.hagl_change": [
+            [
+                "_state_terrain",
+                "_state_terrain"
+            ],
+            2
+        ]
+    },
+    "isConditionalRangeAidSuitable": {
+        "is_below_max_speed": [
+            [
+                "_state_vel_xy_longer_than_max_vel_xy"
+            ],
+            0
+        ],
+        "is_hagl_stable": [
+            [
+                "_aid_src_rng_hgt_test_ratio",
+                "_f"
+            ],
+            1
+        ],
+        "max_vel_xy": [
+            [
+                "_params_max_vel_for_range_aid"
+            ],
+            0
+        ],
+        "is_in_range": [
+            [
+                "get_hagl",
+                "_params_max_hagl_for_range_aid"
+            ],
+            1
+        ]
+    },
+    "stopRngHgtFusion": {
+        "_height_sensor_ref": [
+            [
+                "unknown"
+            ],
+            0
+        ]
+    }
+}

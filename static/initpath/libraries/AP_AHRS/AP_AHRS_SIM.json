@@ -1,0 +1,214 @@
+{
+    "get_location": {
+        "loc.lng": [
+            [
+                "1e7",
+                "fdm_longitude"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "fdm_latitude",
+                "1e7"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "fdm_altitude"
+            ],
+            0
+        ]
+    },
+    "get_velocity_NED": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "vec": [
+            [
+                "vector3f_fdm_speed_d",
+                "vector3f_fdm_speed_n",
+                "vector3f_fdm_speed_e"
+            ],
+            0
+        ]
+    },
+    "wind_estimate": {
+        "wind": [
+            [
+                "_sitl_state_wind_ef"
+            ],
+            0
+        ]
+    },
+    "airspeed_estimate": {
+        "airspeed_ret": [
+            [
+                "_sitl_state_airspeed"
+            ],
+            0
+        ]
+    },
+    "get_quaternion": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "quat": [
+            [
+                "fdm_quaternion"
+            ],
+            0
+        ]
+    },
+    "get_vert_pos_rate_D": {
+        "velocity": [
+            [
+                "_sitl_state_speed_d"
+            ],
+            0
+        ]
+    },
+    "get_hagl": {
+        "height": [
+            [
+                "_sitl_state_altitude",
+                "ahrs_get_home_alt"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_NED_origin": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "diff2d": [
+            [
+                "orgn_get_distance_ne_loc"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_NE_origin": {
+        "posNE": [
+            [
+                "orgn_get_distance_ne_loc"
+            ],
+            0
+        ]
+    },
+    "get_relative_position_D_origin": {
+        "posD": [
+            [
+                "orgn_alt",
+                "fdm_altitude"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "get_origin": {
+        "ret": [
+            [
+                "_sitl_state_home"
+            ],
+            0
+        ]
+    },
+    "get_results": {
+        "delAng": [
+            [
+                "del_time",
+                "_ins_get_gyro"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "results.gyro_estimate": [
+            [
+                "_ins_get_gyro"
+            ],
+            0
+        ],
+        "results.dcm_matrix": [
+            [
+                "ahrs_get_rotation_vehicle_body_to_autopilot_body",
+                "results_dcm_matrix"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "timeStamp_ms": [
+            [
+                "millis",
+                "time_stamp_ms",
+                "time_stamp_ms"
+            ],
+            1
+        ],
+        "delPos": [
+            [
+                "tbn_transposed",
+                "del_time",
+                "earth_vel"
+            ],
+            0
+        ],
+        "results.location_valid": [
+            [
+                "get_location_results_location"
+            ],
+            0
+        ],
+        "delTime": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "results.accel_ef": [
+            [
+                "results_dcm_matrix",
+                "ahrs_get_rotation_autopilot_body_to_vehicle_body",
+                "_ins_get_accel"
+            ],
+            1
+        ],
+        "_ins": [
+            [
+                "ins"
+            ],
+            0
+        ]
+    }
+}

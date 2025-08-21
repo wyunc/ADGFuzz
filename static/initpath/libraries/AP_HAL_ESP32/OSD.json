@@ -1,0 +1,24 @@
+{
+    "config_mcpwm": {
+        ".mode": [
+            [
+                "mcpwm_neg_edge"
+            ],
+            0
+        ]
+    },
+    "osd_setup": {
+        "osd_buffer_levl": [
+            [
+                "d_frame_levl"
+            ],
+            0
+        ],
+        "osd_buffer_mask": [
+            [
+                "d_frame_mask"
+            ],
+            0
+        ]
+    }
+}

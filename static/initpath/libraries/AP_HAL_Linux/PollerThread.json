@@ -1,0 +1,54 @@
+{
+    "on_can_read": {
+        "r": [
+            [
+                "read_nevents",
+                "read_sizeof",
+                "read__fd"
+            ],
+            0
+        ]
+    },
+    "setup_timer": {
+        "_fd": [
+            [
+                "timerfd_create_clock_monotonic",
+                "timerfd_create_tfd_nonblock",
+                "timerfd_create_tfd_cloexec"
+            ],
+            0
+        ]
+    },
+    "adjust_timer": {
+        "spec.it_value.tv_nsec": [
+            [
+                "timeout_usec",
+                "ap_nsec_per_usec"
+            ],
+            0
+        ],
+        "spec.it_interval.tv_nsec": [
+            [
+                "timeout_usec",
+                "ap_nsec_per_usec"
+            ],
+            0
+        ],
+        "it": [
+            [
+                "find__timers_begin",
+                "_timers_end",
+                "p"
+            ],
+            0
+        ]
+    },
+    "_cleanup_timers": {
+        "p": [
+            [
+                "_timers_begin"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,290 @@
+{
+    "module_scan": {
+        "h": [
+            [
+                "hook_list",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "m": [
+            [
+                "dlopen_path",
+                "dlopen_rtld_now"
+            ],
+            0
+        ],
+        "symbol": [
+            [
+                "dlsym_m",
+                "dlsym_i",
+                "dlsym_hook_names"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "hooks",
+                "i"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "extension": [
+            [
+                "strrchr_de_d_name"
+            ],
+            0
+        ],
+        "path": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "opendir_module_path"
+            ],
+            0
+        ]
+    },
+    "call_hook_setup_start": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "h": [
+            [
+                "hook_setup_start",
+                "hooks"
+            ],
+            0
+        ],
+        "fn": [
+            [
+                "h_symbol",
+                "ap_hook_setup_start_fn_t",
+                "reinterpret_cast"
+            ],
+            0
+        ]
+    },
+    "call_hook_setup_complete": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "h": [
+            [
+                "hook_setup_complete",
+                "hooks"
+            ],
+            0
+        ],
+        "fn": [
+            [
+                "h_symbol",
+                "ap_hook_setup_complete_fn_t",
+                "reinterpret_cast"
+            ],
+            0
+        ]
+    },
+    "call_hook_AHRS_update": {
+        "gyro_bias": [
+            [
+                "ahrs_get_gyro_drift"
+            ],
+            0
+        ],
+        "fn": [
+            [
+                "ap_hook_ahrs_update_fn_t",
+                "h_symbol",
+                "reinterpret_cast"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "ahrs_status_unhealthy",
+                "ahrs_status_initialising",
+                "ahrs_status_healthy"
+            ],
+            0
+        ],
+        "state.primary_accel": [
+            [
+                "ahrs_get_primary_accel_index"
+            ],
+            0
+        ],
+        "state.origin.altitude": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "h": [
+            [
+                "hooks",
+                "hook_ahrs_update"
+            ],
+            0
+        ],
+        "accel_ef": [
+            [
+                "ahrs_get_accel_ef"
+            ],
+            0
+        ],
+        "state.time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "state.origin.latitude": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "state.position.longitude": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "state.position.latitude": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "state.structure_version": [
+            [
+                "ahrs_state_version"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "state.origin.longitude": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "state.primary_gyro": [
+            [
+                "ahrs_get_primary_gyro_index"
+            ],
+            0
+        ],
+        "state.position.altitude": [
+            [
+                "loc_alt"
+            ],
+            0
+        ]
+    },
+    "call_hook_gyro_sample": {
+        "state.time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "state.structure_version": [
+            [
+                "gyro_sample_version"
+            ],
+            0
+        ],
+        "state.instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "state.delta_time": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        "fn": [
+            [
+                "h_symbol",
+                "reinterpret_cast",
+                "ap_hook_gyro_sample_fn_t"
+            ],
+            0
+        ],
+        "h": [
+            [
+                "hooks",
+                "hook_gyro_sample"
+            ],
+            0
+        ]
+    },
+    "call_hook_accel_sample": {
+        "h": [
+            [
+                "hooks",
+                "hook_accel_sample"
+            ],
+            0
+        ],
+        "state.delta_time": [
+            [
+                "dt"
+            ],
+            0
+        ],
+        "state.fsync_set": [
+            [
+                "fsync_set"
+            ],
+            0
+        ],
+        "state.structure_version": [
+            [
+                "accel_sample_version"
+            ],
+            0
+        ],
+        "state.instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "state.time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "fn": [
+            [
+                "ap_hook_accel_sample_fn_t",
+                "h_symbol",
+                "reinterpret_cast"
+            ],
+            0
+        ]
+    }
+}

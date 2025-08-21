@@ -1,0 +1,80 @@
+{
+    "copy_variables_from_parameters": {
+        "reset": [
+            [
+                "params_reset"
+            ],
+            0
+        ],
+        "flttime_boot": [
+            [
+                "params_flttime"
+            ],
+            1
+        ],
+        "runtime": [
+            [
+                "params_runtime"
+            ],
+            0
+        ]
+    },
+    "flush": {
+        "last_flush_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_flighttime": {
+        "_flying_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "flttime": [
+            [
+                "millis"
+            ],
+            2
+        ]
+    },
+    "update_runtime": {
+        "runtime": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "_last_runtime_ms": [
+            [
+                "millis"
+            ],
+            2
+        ]
+    },
+    "update": {
+        "system_clock": [
+            [
+                "rtc_clock_us"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_flying": {
+        "_flying_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

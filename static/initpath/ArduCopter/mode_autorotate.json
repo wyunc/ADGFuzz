@@ -1,0 +1,74 @@
+{
+    "init": {
+        "_entry_time_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_hs_decay": [
+            [
+                "autorotate_entry_time",
+                "g2_arot_get_rpm_true",
+                "g2_arot_get_hs_set_point",
+                "head_speed_target_ratio"
+            ],
+            1
+        ],
+        "phase_switch": [
+            [
+                "entry"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "nav_pos_switch": [
+            [
+                "user_control_stabilised"
+            ],
+            0
+        ],
+        "_pitch_target": [
+            [
+                "g2_arot_get_pitch"
+            ],
+            0
+        ],
+        "phase_switch": [
+            [
+                "ss_glide",
+                "landed"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_flags.bad_rpm": [
+            [
+                "g2_arot_update_hs_glide_controller_g_dt"
+            ],
+            0
+        ],
+        "pilot_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "_target_head_speed": [
+            [
+                "g2_arot_get_hs_set_point",
+                "head_speed_target_ratio",
+                "_hs_decay",
+                "g_dt",
+                "_initial_rpm"
+            ],
+            0
+        ]
+    }
+}

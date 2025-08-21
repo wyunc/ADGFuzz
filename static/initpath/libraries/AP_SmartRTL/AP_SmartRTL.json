@@ -1,0 +1,408 @@
+{
+    "init": {
+        "_path": [
+            [
+                "calloc__points_max",
+                "calloc_vector3f",
+                "vector3f",
+                "calloc_sizeof"
+            ],
+            0
+        ],
+        "_prune.loops_max": [
+            [
+                "smartrtl_pruning_loop_buffer_len_mult",
+                "_points_max"
+            ],
+            0
+        ],
+        "_path_points_max": [
+            [
+                "_points_max"
+            ],
+            0
+        ],
+        "_simplify.stack_max": [
+            [
+                "_points_max",
+                "smartrtl_simplify_stack_len_mult"
+            ],
+            0
+        ],
+        "_simplify.stack": [
+            [
+                "calloc_simplify_start_finish_t",
+                "simplify_start_finish_t",
+                "calloc__simplify_stack_max",
+                "calloc_sizeof"
+            ],
+            0
+        ],
+        "_prune.loops": [
+            [
+                "calloc__prune_loops_max",
+                "calloc_prune_loop_t",
+                "prune_loop_t",
+                "calloc_sizeof"
+            ],
+            0
+        ]
+    },
+    "pop_point": {
+        "point": [
+            [
+                "_path_points_count",
+                "_path"
+            ],
+            0
+        ],
+        "_path_points_completed_limit": [
+            [
+                "_path_points_count"
+            ],
+            0
+        ]
+    },
+    "peek_point": {
+        "point": [
+            [
+                "_path_points_count",
+                "_path"
+            ],
+            0
+        ]
+    },
+    "set_home": {
+        "_last_good_position_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_position_save_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "_last_position_save_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_good_position_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "request_thorough_cleanup": {
+        "_thorough_clean_type": [
+            [
+                "clean_type"
+            ],
+            0
+        ],
+        "_thorough_clean_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "add_point": {
+        "last_pos": [
+            [
+                "_path_points_count",
+                "_path"
+            ],
+            0
+        ]
+    },
+    "run_background_cleanup": {
+        "_thorough_clean_complete_ms": [
+            [
+                "_thorough_clean_request_ms"
+            ],
+            0
+        ],
+        "_path_points_completed_limit": [
+            [
+                "smartrtl_points_max"
+            ],
+            0
+        ],
+        "path_points_count": [
+            [
+                "_path_points_count"
+            ],
+            0
+        ],
+        "_last_low_space_notify_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "routine_cleanup": {
+        "_prune.path_points_completed": [
+            [
+                "path_points_completed_limit"
+            ],
+            0
+        ],
+        "low_on_space": [
+            [
+                "path_points_count",
+                "_path_points_max",
+                "smartrtl_cleanup_start_margin"
+            ],
+            0
+        ],
+        "_simplify.path_points_completed": [
+            [
+                "path_points_completed_limit"
+            ],
+            0
+        ],
+        "points_to_simplify": [
+            [
+                "_simplify_path_points_completed",
+                "path_points_count"
+            ],
+            0
+        ]
+    },
+    "detect_simplifications": {
+        ".start": [
+            [
+                "_simplify_path_points_completed"
+            ],
+            0
+        ],
+        "max_dist": [
+            [
+                "_distance_to_segment__path",
+                "_distance_to_segment_start_index",
+                "_distance_to_segment_end_index",
+                "_path"
+            ],
+            1
+        ],
+        "_simplify.path_points_completed": [
+            [
+                "_simplify_path_points_count"
+            ],
+            0
+        ],
+        ".finish": [
+            [
+                "_simplify_path_points_count"
+            ],
+            0
+        ],
+        "farthest_point_index": [
+            [
+                "tmp_start"
+            ],
+            1
+        ],
+        "end_index": [
+            [
+                "tmp_finish"
+            ],
+            0
+        ],
+        "start_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "_simplify_stack",
+                "_simplify_stack_count"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "tmp_start"
+            ],
+            1
+        ]
+    },
+    "detect_loops": {
+        "_prune.path_points_completed": [
+            [
+                "_prune_path_points_count"
+            ],
+            0
+        ],
+        "start_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_prune.j": [
+            [
+                "_prune_i"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "segment_segment_dist__prune_j",
+                "segment_segment_dist__path",
+                "segment_segment_dist__prune_i"
+            ],
+            0
+        ]
+    },
+    "restart_simplification": {
+        "_simplify.path_points_count": [
+            [
+                "path_points_count"
+            ],
+            0
+        ]
+    },
+    "restart_pruning": {
+        "_prune.i": [
+            [
+                "path_points_count"
+            ],
+            0
+        ],
+        "_prune.path_points_count": [
+            [
+                "path_points_count"
+            ],
+            0
+        ]
+    },
+    "remove_points_by_simplify_bitmask": {
+        "_path_points_count": [
+            [
+                "removed"
+            ],
+            0
+        ],
+        "_simplify.path_points_completed": [
+            [
+                "_simplify_path_points_count"
+            ],
+            0
+        ],
+        "_simplify.path_points_count": [
+            [
+                "removed"
+            ],
+            0
+        ]
+    },
+    "remove_points_by_loops": {
+        "removed_points": [
+            [
+                "loop_end_index",
+                "loop_start_index"
+            ],
+            1
+        ],
+        ".start_index": [
+            [
+                "loop_end_index",
+                "loop_start_index"
+            ],
+            1
+        ],
+        ".end_index": [
+            [
+                "loop_end_index",
+                "loop_start_index"
+            ],
+            1
+        ],
+        "loop": [
+            [
+                "_prune_loops",
+                "_prune_loops_count"
+            ],
+            1
+        ],
+        "_path_points_count": [
+            [
+                "loop_end_index",
+                "loop_start_index"
+            ],
+            1
+        ],
+        "dest": [
+            [
+                "loop_start_index"
+            ],
+            0
+        ]
+    },
+    "add_loop": {
+        "new_loop": [
+            [
+                "start_index",
+                "midpoint",
+                "end_index"
+            ],
+            0
+        ],
+        "overlapping_loop_length": [
+            [
+                "_prune_loops",
+                "_length_squared",
+                "loop_idx"
+            ],
+            0
+        ],
+        "_prune.loops_count": [
+            [
+                "removed"
+            ],
+            0
+        ],
+        "new_loop.length_squared": [
+            [
+                "_distance_squared__path",
+                "_path",
+                "midpoint_distance_squared_end_index",
+                "_distance_squared_i",
+                "midpoint_distance_squared_start_index",
+                "start_index",
+                "midpoint_distance_squared__path"
+            ],
+            1
+        ]
+    },
+    "loops_overlap": {
+        "loop1_start_in_loop2": [
+            [
+                "loop2_start_index",
+                "loop1_start_index",
+                "loop2_end_index"
+            ],
+            0
+        ],
+        "loop1_end_in_loop2": [
+            [
+                "loop1_end_index",
+                "loop2_start_index",
+                "loop2_end_index"
+            ],
+            0
+        ]
+    }
+}

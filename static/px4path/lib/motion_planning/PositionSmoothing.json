@@ -1,0 +1,35 @@
+{
+    "_isTurning": {
+        "cos_align": [
+            [
+                "vel_traj_unit_or_zero",
+                "pos_to_target_unit_or_zero"
+            ],
+            1
+        ],
+        "pos_to_target": [
+            [
+                "vector2f_pos_traj",
+                "vector2f_target_xy"
+            ],
+            0
+        ]
+    },
+    "_generateTrajectory": {
+        "position_error": [
+            [
+                "drone_to_trajectory_xy_length"
+            ],
+            0
+        ],
+        "time_stretch": [
+            [
+                "constrain_position_error",
+                "_f",
+                "constrain__max_allowed_horizontal_error",
+                "constrain__f"
+            ],
+            0
+        ]
+    }
+}

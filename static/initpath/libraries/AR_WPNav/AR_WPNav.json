@@ -1,0 +1,340 @@
+{
+    "init": {
+        "jerk_max": [
+            [
+                "_accel_max",
+                "ar_wpnav_accel_max",
+                "_atc_get_accel_max__atc_get_decel_max",
+                "is_positive__accel_max",
+                "_jerk_max",
+                "is_positive__jerk_max"
+            ],
+            2
+        ],
+        "_base_speed_max": [
+            [
+                "speed_max",
+                "ar_wpnav_speed_min",
+                "_speed_max"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_desired_speed_limited": [
+            [
+                "_atc_get_desired_speed_accel_limited_dt",
+                "speed"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_speed_max": {
+        "_base_speed_max": [
+            [
+                "speed_max"
+            ],
+            0
+        ]
+    },
+    "set_nudge_speed_max": {
+        "_nudge_speed_max": [
+            [
+                "nudge_speed_max"
+            ],
+            0
+        ]
+    },
+    "set_desired_location": {
+        "_nav_control_type": [
+            [
+                "nav_scurve"
+            ],
+            0
+        ],
+        "_destination": [
+            [
+                "destination"
+            ],
+            0
+        ],
+        "_pivot_at_next_wp": [
+            [
+                "_pivot_would_activate_next_wp_yaw_change"
+            ],
+            0
+        ],
+        "_scurve_this_leg": [
+            [
+                "_scurve_next_leg"
+            ],
+            0
+        ],
+        "next_wp_yaw_change": [
+            [
+                "get_corner_angle__origin",
+                "get_corner_angle_next_destination",
+                "get_corner_angle_destination"
+            ],
+            0
+        ]
+    },
+    "set_desired_location_NED": {
+        "next_dest_loc": [
+            [
+                "dest_loc"
+            ],
+            0
+        ]
+    },
+    "set_desired_location_expect_fast_update": {
+        "_destination": [
+            [
+                "destination"
+            ],
+            0
+        ],
+        "_nav_control_type": [
+            [
+                "nav_psc_input_shaping"
+            ],
+            0
+        ]
+    },
+    "get_stopping_location": {
+        "stopping_offset": [
+            [
+                "_atc_get_stopping_distance_speed",
+                "velocity_normalized"
+            ],
+            1
+        ],
+        "stopping_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "velocity_length"
+            ],
+            0
+        ],
+        "velocity": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ]
+    },
+    "advance_wp_target_along_track": {
+        "_reached_destination": [
+            [
+                "_radius",
+                "current_loc_get_distance__destination",
+                "current_loc_past_interval_finish_line__destination",
+                "current_loc_past_interval_finish_line__origin"
+            ],
+            2
+        ],
+        "track_direction": [
+            [
+                "curr_target_vel_normalized"
+            ],
+            0
+        ],
+        "s_finished": [
+            [
+                "target_vel",
+                "target_pos_3d_ftype",
+                "_scurve_this_leg_advance_target_along_track__scurve_prev_leg",
+                "_scurve_this_leg_advance_target_along_track__scurve_next_leg",
+                "_fast_waypoint",
+                "_scurve_this_leg_advance_target_along_track__pos_control_get_lat_accel_max",
+                "dt",
+                "_scurve_this_leg_advance_target_along_track_wp_radius",
+                "target_accel",
+                "_pos_control_get_jerk_max",
+                "_pos_control_get_accel_max",
+                "_pos_control_get_pos_p__k_p",
+                "_pos_control_get_pos_error_tofloat_dot_track_direction",
+                "curr_vel_ned_xy_dot_track_direction",
+                "curr_target_vel_length",
+                "_overspeed_enabled",
+                "ar_wpnav_overspeed_ratio_max",
+                "dt"
+            ],
+            6
+        ],
+        "curr_target_vel": [
+            [
+                "_pos_control_get_desired_velocity"
+            ],
+            0
+        ],
+        "wp_radius": [
+            [
+                "_turn_radius",
+                "_radius"
+            ],
+            0
+        ]
+    },
+    "update_psc_input_shaping": {
+        "_reached_destination": [
+            [
+                "pos_target_diff_length_squared",
+                "sq",
+                "_pos_control_get_pos_error_length_squared",
+                "sq__radius"
+            ],
+            0
+        ],
+        "pos_target_diff": [
+            [
+                "pos_target_cm_topostype",
+                "_pos_control_get_pos_target"
+            ],
+            1
+        ]
+    },
+    "update_distance_and_bearing_to_destination": {
+        "_distance_to_destination": [
+            [
+                "current_loc_get_distance__destination"
+            ],
+            0
+        ],
+        "_wp_bearing_cd": [
+            [
+                "current_loc_get_bearing_to__destination"
+            ],
+            0
+        ]
+    },
+    "update_steering_and_speed": {
+        "_desired_turn_rate_rads": [
+            [
+                "_pivot_get_turn_rate_rads__desired_heading_cd",
+                "_pivot_get_turn_rate_rads_dt",
+                "_pos_control_get_desired_turn_rate_rads",
+                "is_zero__desired_speed_limited"
+            ],
+            0
+        ],
+        "_desired_speed_limited": [
+            [
+                "_pos_control_get_desired_speed",
+                "_atc_get_desired_speed_accel_limited_dt"
+            ],
+            0
+        ],
+        "_desired_heading_cd": [
+            [
+                "wrap_360_cd_oa_wp_bearing_cd",
+                "_reversed",
+                "oa_wp_bearing_cd"
+            ],
+            0
+        ],
+        "_cross_track_error": [
+            [
+                "calc_crosstrack_error_current_loc"
+            ],
+            0
+        ],
+        "_desired_lat_accel": [
+            [
+                "_pos_control_get_desired_lat_accel"
+            ],
+            0
+        ]
+    },
+    "set_turn_params": {
+        "_turn_radius": [
+            [
+                "pivot_possible",
+                "turn_radius"
+            ],
+            0
+        ]
+    },
+    "calc_crosstrack_error": {
+        "dest": [
+            [
+                "get_oa_destination"
+            ],
+            0
+        ],
+        "veh_from_origin": [
+            [
+                "orig_get_distance_ne_current_loc"
+            ],
+            0
+        ],
+        "orig": [
+            [
+                "get_oa_origin"
+            ],
+            0
+        ],
+        "dest_from_origin": [
+            [
+                "orig_get_distance_ne_dest"
+            ],
+            0
+        ]
+    },
+    "get_corner_angle": {
+        "loc2_to_loc3_deg": [
+            [
+                "loc2_get_bearing_to_loc3"
+            ],
+            0
+        ],
+        "diff_yaw_deg": [
+            [
+                "wrap_180_loc2_to_loc3_deg",
+                "wrap_180_loc1_to_loc2_deg"
+            ],
+            0
+        ],
+        "loc1_to_loc2_deg": [
+            [
+                "loc1_get_bearing_to_loc2"
+            ],
+            0
+        ]
+    },
+    "set_origin_and_destination_to_stopping_point": {
+        "_origin": [
+            [
+                "stopping_loc",
+                "_destination"
+            ],
+            0
+        ]
+    },
+    "update_speed_max": {
+        "_last_speed_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "speed_max": [
+            [
+                "_nudge_speed_max",
+                "_base_speed_max"
+            ],
+            0
+        ]
+    }
+}

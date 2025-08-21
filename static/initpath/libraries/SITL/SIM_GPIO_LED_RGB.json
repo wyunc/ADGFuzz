@@ -1,0 +1,28 @@
+{
+    "update": {
+        "blue": [
+            [
+                "uint16_t_led_blue_pin",
+                "uint16_t_1u",
+                "sitl_pin_mask_get"
+            ],
+            1
+        ],
+        "red": [
+            [
+                "uint16_t_1u",
+                "uint16_t_led_red_pin",
+                "sitl_pin_mask_get"
+            ],
+            1
+        ],
+        "green": [
+            [
+                "uint16_t_1u",
+                "uint16_t_led_green_pin",
+                "sitl_pin_mask_get"
+            ],
+            1
+        ]
+    }
+}

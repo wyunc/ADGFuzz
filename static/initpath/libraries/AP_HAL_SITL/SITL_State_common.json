@@ -1,0 +1,30 @@
+{
+    "update_voltage_current": {
+        "current2_pin_voltage": [
+            [
+                "_sitl_state_battery_current",
+                "fabsf_pwm",
+                "throttle",
+                "_"
+            ],
+            4
+        ],
+        "voltage2_pin_voltage": [
+            [
+                "throttle",
+                "_sitl_batt_voltage",
+                "fabsf_pwm",
+                "_sitl_state_battery_voltage",
+                "_"
+            ],
+            3
+        ],
+        "pwm": [
+            [
+                "input_servos",
+                "i"
+            ],
+            0
+        ]
+    }
+}

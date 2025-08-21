@@ -1,0 +1,213 @@
+{
+    "set_fixedwing_parameters": {
+        "fixed_wing_parameters": [
+            [
+                "_fixed_wing_parameters"
+            ],
+            0
+        ]
+    },
+    "add_backend": {
+        "i": [
+            [
+                "num_sensors"
+            ],
+            0
+        ]
+    },
+    "convert_per_instance": {
+        "info.type": [
+            [
+                "elem_type"
+            ],
+            0
+        ],
+        "info.new_name": [
+            [
+                "param_name"
+            ],
+            0
+        ],
+        "info.old_group_element": [
+            [
+                "i",
+                "elem_element"
+            ],
+            0
+        ]
+    },
+    "allocate": {
+        "num_sensors": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".last_saved_ratio": [
+            [
+                "_ratio",
+                "i",
+                "param"
+            ],
+            0
+        ]
+    },
+    "get_pressure": {
+        ".healthy": [
+            [
+                "sensor",
+                "i",
+                "_get_differential_pressure_pressure"
+            ],
+            0
+        ]
+    },
+    "calibrate": {
+        ".cal.start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_calibration": {
+        "max_change": [
+            [
+                "sq_max_speed_pcnt",
+                "fixed_wing_parameters_airspeed_min_get",
+                "sq_airspeed_min"
+            ],
+            1
+        ],
+        ".cal.sum": [
+            [
+                "raw_pressure"
+            ],
+            0
+        ],
+        "calibrated_offset": [
+            [
+                "_cal_sum",
+                "i",
+                "state",
+                "_cal_count"
+            ],
+            0
+        ]
+    },
+    "read": {
+        ".corrected_pressure": [
+            [
+                "get_offset_i",
+                "get_pressure_i"
+            ],
+            2
+        ],
+        ".raw_airspeed": [
+            [
+                "_airspeed",
+                "i",
+                "state",
+                "_ratio",
+                "sqrtf_param",
+                "sqrtf_airspeed_pressure",
+                "param",
+                "sqrtf_i",
+                "sqrtf__ratio",
+                "sqrtf_fabsf"
+            ],
+            0
+        ],
+        ".filtered_pressure": [
+            [
+                "state",
+                "get_offset_i",
+                "get_pressure_i",
+                "i",
+                "_filtered_pressure"
+            ],
+            2
+        ],
+        ".airspeed": [
+            [
+                "sqrtf__filtered_pressure",
+                "i",
+                "_ratio",
+                "sqrtf_param",
+                "param",
+                "sqrtf_i",
+                "sqrtf__ratio",
+                "sqrtf_state",
+                "sqrtf_fabsf"
+            ],
+            0
+        ],
+        ".last_pressure": [
+            [
+                "get_offset_i",
+                "get_pressure_i",
+                "fabsf_airspeed_pressure"
+            ],
+            2
+        ],
+        ".healthy": [
+            [
+                "i",
+                "_get_airspeed__airspeed",
+                "_get_airspeed_state",
+                "_get_airspeed_i",
+                "sensor"
+            ],
+            0
+        ],
+        ".last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "prev_healthy": [
+            [
+                "state",
+                "i",
+                "_healthy"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "primary": [
+            [
+                "primary_sensor_get",
+                "i"
+            ],
+            0
+        ]
+    },
+    "Log_Airspeed": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        ".last_hygrometer_log_ms": [
+            [
+                "hygrometer_sample_ms"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "ok": [
+            [
+                "sensor",
+                "i",
+                "_healthy",
+                "state",
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

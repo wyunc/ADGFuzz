@@ -1,0 +1,109 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "hal_i2c_mgr_get_device__address",
+                "hal_i2c_mgr_get_device__bus",
+                "hal_i2c_mgr_get_device_true"
+            ],
+            0
+        ],
+        "timer_handle": [
+            [
+                "_dev_register_periodic_callback_timer",
+                "_dev_register_periodic_callback_functor_bind_member",
+                "_dev_register_periodic_callback_void"
+            ],
+            0
+        ]
+    },
+    "get_cycle_count": {
+        "cycles": [
+            [
+                "_cycle_count"
+            ],
+            0
+        ]
+    },
+    "read_full_charge_capacity": {
+        "_full_charge_capacity": [
+            [
+                "get_capacity_scaler"
+            ],
+            0
+        ]
+    },
+    "read_remaining_capacity": {
+        "_state.consumed_mah": [
+            [
+                "_params__pack_capacity",
+                "get_capacity_scaler",
+                "data"
+            ],
+            1
+        ]
+    },
+    "read_temp": {
+        "_state.temperature_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "kelvin_to_c_data"
+            ],
+            0
+        ],
+        "_has_temperature": [
+            [
+                "_state_temperature_time",
+                "millis",
+                "ap_batt_monitor_timeout"
+            ],
+            0
+        ]
+    },
+    "read_serial_number": {
+        "_serial_number": [
+            [
+                "data"
+            ],
+            0
+        ]
+    },
+    "read_cycle_count": {
+        "_has_cycle_count": [
+            [
+                "read_word__cycle_count",
+                "read_word_battmonitor_smbus_cycle_count"
+            ],
+            0
+        ]
+    },
+    "read_word": {
+        "data": [
+            [
+                "uint16_t",
+                "buff"
+            ],
+            0
+        ],
+        "pec": [
+            [
+                "get_pec__address",
+                "get_pec_true",
+                "get_pec_buff",
+                "get_pec_reg"
+            ],
+            0
+        ],
+        "read_size": [
+            [
+                "_pec_supported"
+            ],
+            0
+        ]
+    }
+}

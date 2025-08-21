@@ -1,0 +1,51 @@
+{
+    "timer": {
+        "_state.current_amps": [
+            [
+                "current_ma"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "read_cell_voltages": {
+        "_state.voltage": [
+            [
+                "sui_max_cell_read",
+                "cell_count",
+                "sui_max_cell_read",
+                "total_mv",
+                "voltbuff",
+                "total_mv",
+                "cell_count",
+                "float"
+            ],
+            3
+        ],
+        "i": [
+            [
+                "sui_max_cell_read"
+            ],
+            0
+        ],
+        "last_volt_read_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "update_health": {
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    }
+}

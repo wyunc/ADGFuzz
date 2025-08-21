@@ -1,0 +1,189 @@
+{
+    "updateParams": {
+        "ht_err_init_prev": [
+            [
+                "_param_hte_ht_err_init_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_valid": [
+            [
+                "_valid_hysteresis_get_state"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "_f",
+                "_hover_thrust_ekf_get_innovation_test_ratio",
+                "_hover_thrust_ekf_get_hover_thrust_estimate_var"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "meas_noise_coeff_z": [
+            [
+                "_param_hte_vz_thr_get",
+                "_f",
+                "fmaxf_fabsf",
+                "fmaxf_local_pos_vz"
+            ],
+            0
+        ],
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ],
+        "_timestamp_last": [
+            [
+                "local_pos_timestamp"
+            ],
+            0
+        ],
+        "thrust_body_allocated": [
+            [
+                "thrust_body_unallocated",
+                "thrust_body_sp"
+            ],
+            0
+        ],
+        "thrust_allocated": [
+            [
+                "q_att_rotate_vector_thrust_body_allocated"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "local_pos_timestamp",
+                "1e"
+            ],
+            0
+        ]
+    },
+    "publishStatus": {
+        "status_msg.accel_innov_test_ratio": [
+            [
+                "_hover_thrust_ekf_get_innovation_test_ratio"
+            ],
+            0
+        ],
+        "status_msg.accel_noise_var": [
+            [
+                "_hover_thrust_ekf_get_accel_noise_var"
+            ],
+            0
+        ],
+        "status_msg.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "status_msg.hover_thrust_var": [
+            [
+                "_hover_thrust_ekf_get_hover_thrust_estimate_var"
+            ],
+            0
+        ],
+        "status_msg.accel_innov": [
+            [
+                "_hover_thrust_ekf_get_innovation"
+            ],
+            0
+        ],
+        "status_msg.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "status_msg.hover_thrust": [
+            [
+                "_hover_thrust_ekf_get_hover_thrust_estimate"
+            ],
+            0
+        ],
+        "status_msg.valid": [
+            [
+                "_valid"
+            ],
+            0
+        ],
+        "status_msg.accel_innov_var": [
+            [
+                "_hover_thrust_ekf_get_innovation_var"
+            ],
+            0
+        ]
+    },
+    "publishInvalidStatus": {
+        "status_msg.accel_noise_var": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "status_msg.hover_thrust_var": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "status_msg.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "status_msg.accel_innov": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "status_msg.accel_innov_var": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "status_msg.hover_thrust": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "status_msg.accel_innov_test_ratio": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "multicopter_hover_thrust_estimator"
+            ],
+            0
+        ]
+    }
+}

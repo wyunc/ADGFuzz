@@ -1,0 +1,81 @@
+{
+    "register_class_devname": {
+        "ret": [
+            [
+                "enospc",
+                "register_driver_name",
+                "register_driver_fops",
+                "register_driver_voidthis"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ret": [
+            [
+                "enodev",
+                "register_driver__devname",
+                "register_driver_voidthis",
+                "register_driver_fops",
+                "px4_ok"
+            ],
+            0
+        ]
+    },
+    "open": {
+        "ret": [
+            [
+                "open_first_filep",
+                "px4_ok"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "ret": [
+            [
+                "close_last_filep",
+                "px4_ok",
+                "ebadf"
+            ],
+            0
+        ]
+    },
+    "poll": {
+        "ret": [
+            [
+                "enomem",
+                "remove_poll_waiter_fds",
+                "px4_ok"
+            ],
+            0
+        ],
+        "_max_pollwaiters": [
+            [
+                "new_count"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "px4_enter_critical_section"
+            ],
+            0
+        ],
+        "priv": [
+            [
+                "void",
+                "filep"
+            ],
+            0
+        ],
+        "_pollset": [
+            [
+                "new_count",
+                "new",
+                "px4_pollfd_struct_t"
+            ],
+            1
+        ]
+    }
+}

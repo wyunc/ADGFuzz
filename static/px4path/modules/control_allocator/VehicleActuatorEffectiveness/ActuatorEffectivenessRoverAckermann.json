@@ -1,0 +1,10 @@
+{
+    "getEffectivenessMatrix": {
+        "_motors_mask": [
+            [
+                "1u"
+            ],
+            0
+        ]
+    }
+}

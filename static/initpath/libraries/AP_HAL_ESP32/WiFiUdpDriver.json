@@ -1,0 +1,165 @@
+{
+    "_begin": {
+        "_state": [
+            [
+                "initialized"
+            ],
+            0
+        ]
+    },
+    "start_listen": {
+        "err": [
+            [
+                "bind_sockaddr",
+                "bind_accept_socket",
+                "bind_struct",
+                "dest_addr",
+                "sizeof_dest_addr"
+            ],
+            0
+        ],
+        "accept_socket": [
+            [
+                "socket_af_inet",
+                "socket_sock_dgram",
+                "socket_ipproto_ip"
+            ],
+            0
+        ],
+        "destAddr.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "destAddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "destAddr.sin_port": [
+            [
+                "htons_udp_port"
+            ],
+            0
+        ]
+    },
+    "read_all": {
+        "count": [
+            [
+                "recvfrom__buffer",
+                "recvfrom_accept_socket",
+                "struct",
+                "sizeof_client_addr",
+                "client_addr",
+                "recvfrom_sizeof",
+                "sockaddr"
+            ],
+            1
+        ]
+    },
+    "write_data": {
+        "dest_addr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "dest_addr.sin_addr.s_addr": [
+            [
+                "inet_addr"
+            ],
+            0
+        ],
+        "count": [
+            [
+                "_writebuf_peekbytes_sizeof",
+                "sendto_accept_socket",
+                "sendto_count",
+                "sendto_sockaddr",
+                "sendto_struct",
+                "_writebuf_peekbytes__buffer",
+                "sizeof_dest_addr",
+                "sendto__buffer",
+                "dest_addr"
+            ],
+            0
+        ],
+        "dest_addr.sin_port": [
+            [
+                "htons_udp_port"
+            ],
+            0
+        ]
+    },
+    "initialize_wifi": {
+        "wifi_config.sta.sae_pwe_h2e": [
+            [
+                "wpa3_sae_pwe_both"
+            ],
+            0
+        ],
+        "wifi_config.ap.authmode": [
+            [
+                "wifi_auth_wpa2_psk",
+                "wifi_auth_open"
+            ],
+            0
+        ],
+        "wifi_config.ap.channel": [
+            [
+                "wifi_channel"
+            ],
+            0
+        ],
+        "wifi_config.sta.threshold.authmode": [
+            [
+                "wifi_auth_open"
+            ],
+            0
+        ],
+        "cfg": [
+            [
+                "wifi_init_config_default"
+            ],
+            0
+        ],
+        "s_wifi_event_group": [
+            [
+                "x_event_group_create"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "nvs_flash_init"
+            ],
+            0
+        ],
+        "netif": [
+            [
+                "esp_netif_create_default_wifi_sta"
+            ],
+            0
+        ]
+    },
+    "_wifi_thread2": {
+        "s": [
+            [
+                "select_rfds",
+                "select_tv",
+                "select_null",
+                "select_self_accept_socket"
+            ],
+            0
+        ],
+        "self": [
+            [
+                "arg",
+                "wi_fi_udp_driver"
+            ],
+            0
+        ]
+    }
+}

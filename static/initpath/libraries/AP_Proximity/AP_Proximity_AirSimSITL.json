@@ -1,0 +1,58 @@
+{
+    "update": {
+        "point": [
+            [
+                "points_data",
+                "i"
+            ],
+            0
+        ],
+        "accuracy_sq": [
+            [
+                "sq_proximity_accuracy"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_yaw_angle_deg"
+            ],
+            0
+        ],
+        "distance_min_sq": [
+            [
+                "sq_distance_min"
+            ],
+            0
+        ],
+        "prev_pos": [
+            [
+                "point_x",
+                "point_y",
+                "vector2f"
+            ],
+            1
+        ],
+        "points": [
+            [
+                "sitl_state_scanner_points"
+            ],
+            0
+        ],
+        "yaw_angle_deg": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_atan2f",
+                "wrap_360_point_y",
+                "wrap_360_point_x"
+            ],
+            0
+        ],
+        "distance_sq": [
+            [
+                "new_pos_length_squared"
+            ],
+            0
+        ]
+    }
+}

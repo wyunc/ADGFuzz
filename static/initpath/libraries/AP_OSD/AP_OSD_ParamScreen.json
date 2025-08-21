@@ -1,0 +1,211 @@
+{
+    "draw_parameter": {
+        "setting": [
+            [
+                "params",
+                "number"
+            ],
+            0
+        ],
+        "metadata": [
+            [
+                "setting_get_custom_metadata"
+            ],
+            0
+        ],
+        "param_blink": [
+            [
+                "_selected_param",
+                "number",
+                "_selected_param",
+                "number"
+            ],
+            2
+        ],
+        "type": [
+            [
+                "setting__param_type"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "_get",
+                "ap_int8",
+                "setting__param",
+                "ap_int16",
+                "ap_float"
+            ],
+            1
+        ]
+    },
+    "modify_parameter": {
+        "incr": [
+            [
+                "setting__param_incr",
+                "menu_down",
+                "ev"
+            ],
+            0
+        ],
+        "max_int": [
+            [
+                "int32_t_roundf",
+                "int32_t_setting__param_max"
+            ],
+            0
+        ],
+        "setting": [
+            [
+                "number",
+                "params"
+            ],
+            0
+        ],
+        "incr_int": [
+            [
+                "int32_t_roundf",
+                "int32_t_incr"
+            ],
+            0
+        ],
+        "min_int": [
+            [
+                "int32_t_roundf",
+                "int32_t_setting__param_min"
+            ],
+            0
+        ],
+        "param": [
+            [
+                "ap_int8",
+                "ap_int16",
+                "ap_int32",
+                "ap_float",
+                "setting__param"
+            ],
+            1
+        ]
+    },
+    "modify_configured_parameter": {
+        "prev_token": [
+            [
+                "token"
+            ],
+            0
+        ],
+        "setting._current_token": [
+            [
+                "prev_prev_token"
+            ],
+            0
+        ],
+        "setting._param_type": [
+            [
+                "prev_prev_type"
+            ],
+            0
+        ],
+        "setting": [
+            [
+                "number",
+                "params"
+            ],
+            0
+        ],
+        "prev_type": [
+            [
+                "ap_param_none"
+            ],
+            1
+        ],
+        "setting._param": [
+            [
+                "next_scalar_setting__param_type",
+                "next_scalar_prev_prev_token",
+                "next_scalar_prev_prev_type",
+                "first_type",
+                "first_token",
+                "next_scalar_setting__current_token"
+            ],
+            1
+        ]
+    },
+    "update_state_machine": {
+        "_last_rc_event": [
+            [
+                "map_rc_input_to_event"
+            ],
+            1
+        ],
+        "_transition_timeout_ms": [
+            [
+                "osd_button_delay_ms",
+                "osd_hold_button_press_delay"
+            ],
+            0
+        ],
+        "_transition_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_selected_param": [
+            [
+                "save_param"
+            ],
+            0
+        ],
+        "_menu_state": [
+            [
+                "param_select",
+                "param_value_modify",
+                "param_param_modify"
+            ],
+            0
+        ]
+    },
+    "draw": {
+        "n": [
+            [
+                "i",
+                "params"
+            ],
+            0
+        ]
+    },
+    "save_parameters": {
+        "p": [
+            [
+                "__param",
+                "i",
+                "params"
+            ],
+            0
+        ]
+    },
+    "handle_write_msg": {
+        "ret": [
+            [
+                "packet_osd_index",
+                "_set_by_name_packet_min_value",
+                "_set_by_name_packet_param_id",
+                "_set_by_name_packet_max_value",
+                "_set_by_name_packet_increment",
+                "params",
+                "_set_by_name_packet_config_type"
+            ],
+            0
+        ]
+    },
+    "handle_read_msg": {
+        "param": [
+            [
+                "packet_osd_index",
+                "params"
+            ],
+            0
+        ]
+    }
+}

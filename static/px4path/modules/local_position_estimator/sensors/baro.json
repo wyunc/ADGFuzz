@@ -1,0 +1,70 @@
+{
+    "baroInit": {
+        "_baroAltOrigin": [
+            [
+                "_baro_stats_get_mean"
+            ],
+            0
+        ],
+        "_altOrigin": [
+            [
+                "_baro_alt_origin"
+            ],
+            0
+        ]
+    },
+    "baroMeasure": {
+        "_time_last_baro": [
+            [
+                "_sub_airdata_get_timestamp"
+            ],
+            0
+        ]
+    },
+    "baroCorrect": {
+        "beta": [
+            [
+                "r_transpose",
+                "_baro_alt_origin",
+                "c",
+                "s_i"
+            ],
+            2
+        ],
+        "K": [
+            [
+                "m_p",
+                "c_transpose",
+                "s_i"
+            ],
+            0
+        ],
+        "m_P": [
+            [
+                "k",
+                "m_p",
+                "c"
+            ],
+            0
+        ],
+        "_x": [
+            [
+                "k",
+                "_baro_alt_origin",
+                "c"
+            ],
+            3
+        ],
+        "S_I": [
+            [
+                "m_p",
+                "c",
+                "inv",
+                "float",
+                "c_transpose",
+                "n_y_baro"
+            ],
+            0
+        ]
+    }
+}

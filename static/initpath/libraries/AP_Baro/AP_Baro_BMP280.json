@@ -1,0 +1,139 @@
+{
+    "_init": {
+        "_p7": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p4": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ],
+        "_p1": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p3": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p5": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p2": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_t3": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_t2": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p6": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "0x_ff",
+                "0x7f"
+            ],
+            0
+        ],
+        "_p8": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_t1": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ],
+        "_p9": [
+            [
+                "int16_t",
+                "buf"
+            ],
+            0
+        ]
+    },
+    "_update_temperature": {
+        "_temperature": [
+            [
+                "float",
+                "int32_t",
+                "temp_raw",
+                "_t2",
+                "_t1",
+                "_t3",
+                "int32_t",
+                "temp_raw",
+                "_t1"
+            ],
+            5
+        ]
+    },
+    "_update_pressure": {
+        "_pressure_sum": [
+            [
+                "_p4",
+                "int64_t",
+                "_p8",
+                "_p6",
+                "_p5",
+                "_p3",
+                "int64_t",
+                "_p1",
+                "_t_fine",
+                "_p9",
+                "_p2",
+                "int64_t",
+                "press_raw",
+                "_p7",
+                "float"
+            ],
+            4
+        ]
+    }
+}

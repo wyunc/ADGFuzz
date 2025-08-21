@@ -1,0 +1,301 @@
+{
+    "guideToPath": {
+        "wind_cross_bearing": [
+            [
+                "wind_vel_cross_bearing_vec_"
+            ],
+            0
+        ],
+        "wind_dot_bearing": [
+            [
+                "wind_vel_dot_bearing_vec_"
+            ],
+            0
+        ],
+        "wind_dot_upt": [
+            [
+                "wind_vel_dot_unit_path_tangent"
+            ],
+            0
+        ],
+        "bearing_vec_": [
+            [
+                "bearing_vec_signed_track_error_",
+                "bearing_vec_look_ahead_ang",
+                "bearing_vec_unit_path_tangent"
+            ],
+            0
+        ],
+        "look_ahead_ang": [
+            [
+                "look_ahead_angle_normalized_track_error"
+            ],
+            0
+        ],
+        "lateral_accel_": [
+            [
+                "lateral_accel_ff_",
+                "track_proximity_look_ahead_ang",
+                "lateral_accel_air_vel",
+                "lateral_accel_air_vel_ref_",
+                "lateral_accel_airspeed",
+                "bearing_feasibility_wind_dot_bearing",
+                "bearing_feasibility_airspeed",
+                "bearing_feasibility_wind_cross_bearing",
+                "bearing_feasibility_wind_speed",
+                "bearing_feasibility_wind_speed",
+                "bearing_feasibility_airspeed",
+                "bearing_feasibility_wind_dot_upt",
+                "bearing_feasibility_wind_cross_upt"
+            ],
+            5
+        ],
+        "wind_cross_upt": [
+            [
+                "wind_vel_cross_unit_path_tangent"
+            ],
+            0
+        ],
+        "signed_track_error_": [
+            [
+                "unit_path_tangent_cross_path_pos_to_vehicle"
+            ],
+            0
+        ],
+        "normalized_track_error": [
+            [
+                "normalized_track_error_track_error",
+                "normalized_track_error_track_error_bound_"
+            ],
+            0
+        ],
+        "wind_speed": [
+            [
+                "wind_vel_norm"
+            ],
+            0
+        ],
+        "track_error_bound_": [
+            [
+                "track_error_bound_time_const_",
+                "track_error_bound_ground_speed"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "air_vel_norm"
+            ],
+            0
+        ],
+        "min_ground_speed_ref_": [
+            [
+                "min_ground_speed_normalized_track_error",
+                "min_ground_speed_feas_combined"
+            ],
+            0
+        ],
+        "air_vel": [
+            [
+                "wind_vel",
+                "ground_vel"
+            ],
+            0
+        ],
+        "time_const_": [
+            [
+                "time_const_damping_",
+                "time_const_adapted_period_"
+            ],
+            0
+        ],
+        "ground_speed": [
+            [
+                "ground_vel_norm"
+            ],
+            0
+        ],
+        "p_gain_": [
+            [
+                "p_gain_damping_",
+                "p_gain_adapted_period_"
+            ],
+            0
+        ],
+        "airspeed_ref_": [
+            [
+                "air_vel_ref__norm"
+            ],
+            0
+        ],
+        "track_error": [
+            [
+                "fabsf_signed_track_error_"
+            ],
+            0
+        ]
+    },
+    "adaptPeriod": {
+        "period": [
+            [
+                "max_period_lb",
+                "max_period_ub",
+                "track_proximity_look_ahead_ang",
+                "period_",
+                "max_period_lb",
+                "max_period"
+            ],
+            2
+        ],
+        "track_error_bound": [
+            [
+                "track_error_bound_ground_speed",
+                "track_error_bound_time_const"
+            ],
+            0
+        ],
+        "look_ahead_ang": [
+            [
+                "look_ahead_angle_normalized_track_error"
+            ],
+            0
+        ],
+        "period_lb": [
+            [
+                "period_lower_bound_feas_on_track",
+                "period_safety_factor_",
+                "period_lower_bound_feas_on_track",
+                "period_lower_bound_wind_factor",
+                "period_safety_factor_",
+                "track_proximity_look_ahead_ang",
+                "period_lower_bound_air_turn_rate",
+                "period_lower_bound_wind_factor"
+            ],
+            2
+        ],
+        "period_ub": [
+            [
+                "period_upper_bound_wind_factor",
+                "period_upper_bound_air_turn_rate",
+                "period_upper_bound_feas_on_track"
+            ],
+            0
+        ],
+        "wind_factor": [
+            [
+                "wind_factor_wind_speed",
+                "wind_factor_airspeed"
+            ],
+            0
+        ],
+        "air_turn_rate": [
+            [
+                "fabsf_airspeed",
+                "fabsf_path_curvature"
+            ],
+            0
+        ],
+        "time_const": [
+            [
+                "time_const_damping_",
+                "time_const_period_lb_zero_curvature"
+            ],
+            0
+        ],
+        "normalized_track_error": [
+            [
+                "normalized_track_error_track_error_bound",
+                "normalized_track_error_track_error"
+            ],
+            0
+        ]
+    },
+    "periodLowerBound": {
+        "period_lb": [
+            [
+                "damping_",
+                "roll_time_const_",
+                "m_pi_f"
+            ],
+            0
+        ],
+        "period_windy_curved_damped": [
+            [
+                "damping_",
+                "roll_time_const_",
+                "m_pi_f"
+            ],
+            0
+        ]
+    },
+    "trackProximity": {
+        "sin_look_ahead_ang": [
+            [
+                "sinf_look_ahead_ang"
+            ],
+            0
+        ]
+    },
+    "minGroundSpeed": {
+        "min_gsp_desired": [
+            [
+                "min_gsp_desired_"
+            ],
+            0
+        ]
+    },
+    "bearingFeasibility": {
+        "wind_cross_bearing": [
+            [
+                "wind_speed",
+                "fabsf_wind_cross_bearing"
+            ],
+            0
+        ],
+        "sin_arg": [
+            [
+                "sinf_m_pi_f",
+                "sinf_constrain",
+                "sinf_airspeed",
+                "sinf_wind_cross_bearing",
+                "airspeed_buffer"
+            ],
+            0
+        ]
+    },
+    "lateralAccelFF": {
+        "path_frame_rate": [
+            [
+                "max_unit_path_tangent",
+                "max_ground_vel_dot",
+                "path_frame_curvature"
+            ],
+            1
+        ]
+    },
+    "lateralAccel": {
+        "dot_air_vel_err": [
+            [
+                "air_vel_dot_air_vel_ref"
+            ],
+            0
+        ],
+        "cross_air_vel_err": [
+            [
+                "air_vel_cross_air_vel_ref"
+            ],
+            0
+        ]
+    },
+    "updateRollSetpoint": {
+        "roll_setpoint_": [
+            [
+                "constrain_roll_new",
+                "atanf_constants_one_g",
+                "atanf_lateral_accel_",
+                "constrain_roll_lim_rad_"
+            ],
+            1
+        ]
+    }
+}

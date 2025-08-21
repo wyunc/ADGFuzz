@@ -1,0 +1,24 @@
+{
+    "checkAndReport": {
+        "airspeed_calibrated_from_sensor": [
+            [
+                "airspeed_validated_calibrated_airspeed_m_s",
+                "airspeed_from_sensor",
+                "nan"
+            ],
+            0
+        ],
+        "arming_max_airspeed_allowed": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "airspeed_validated.airspeed_source": [
+            [
+                "sensor_3"
+            ],
+            0
+        ]
+    }
+}

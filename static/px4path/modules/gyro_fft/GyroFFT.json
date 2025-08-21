@@ -1,0 +1,346 @@
+{
+    "init": {
+        "_rfft_q15.pTwiddleAReal": [
+            [
+                "real_coef_aq15",
+                "q15_t"
+            ],
+            0
+        ],
+        "hanning_value": [
+            [
+                "cosf__f",
+                "_f",
+                "cosf_m_pi_f",
+                "cosf_n",
+                "cosf__imu_gyro_fft_len"
+            ],
+            0
+        ],
+        "_rfft_q15.twidCoefRModifier": [
+            [
+                "32u",
+                "8u",
+                "16u"
+            ],
+            0
+        ],
+        "_imu_gyro_fft_len": [
+            [
+                "_param_imu_gyro_fft_len_get"
+            ],
+            0
+        ],
+        "_rfft_q15.pTwiddleBReal": [
+            [
+                "real_coef_bq15",
+                "q15_t"
+            ],
+            0
+        ],
+        "_rfft_q15.pCfft": [
+            [
+                "arm_cfft_s_r_q15_len256",
+                "arm_cfft_s_r_q15_len128",
+                "arm_cfft_s_r_q15_len512"
+            ],
+            0
+        ],
+        "buffers_allocated": [
+            [
+                "allocate_buffers"
+            ],
+            0
+        ]
+    },
+    "SensorSelectionUpdate": {
+        "_gyro_fifo_generation_gap_perf": [
+            [
+                "perf_alloc_module_name",
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "_gyro_generation_gap_perf": [
+            [
+                "perf_alloc_module_name",
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "_selected_sensor_device_id": [
+            [
+                "sensor_selection_gyro_device_id"
+            ],
+            0
+        ]
+    },
+    "VehicleIMUStatusUpdate": {
+        "_gyro_sample_rate_hz": [
+            [
+                "vehicle_imu_status_gyro_rate_hz",
+                "vehicle_imu_status_gyro_raw_rate_hz"
+            ],
+            0
+        ]
+    },
+    "tau": {
+        "part1": [
+            [
+                "x",
+                "_f",
+                "sqrtf__f"
+            ],
+            0
+        ],
+        "part2": [
+            [
+                "x",
+                "_f",
+                "sqrtf__f"
+            ],
+            0
+        ],
+        "p2": [
+            [
+                "logf_part2",
+                "logf_part1"
+            ],
+            0
+        ],
+        "p1": [
+            [
+                "_f",
+                "logf_powf",
+                "logf_x",
+                "logf__f",
+                "x"
+            ],
+            0
+        ]
+    },
+    "EstimatePeakFrequencyBin": {
+        "d": [
+            [
+                "tau_dp",
+                "_f",
+                "k",
+                "real",
+                "k",
+                "real",
+                "imag",
+                "imag",
+                "tau_dm",
+                "k",
+                "real",
+                "k",
+                "real",
+                "imag",
+                "imag",
+                "_f",
+                "_f"
+            ],
+            5
+        ]
+    },
+    "Run": {
+        "gyro_scale": [
+            [
+                "radians__f"
+            ],
+            0
+        ],
+        "selection_updated": [
+            [
+                "sensor_selection_update"
+            ],
+            0
+        ],
+        "_fifo_last_scale": [
+            [
+                "sensor_gyro_fifo_scale"
+            ],
+            0
+        ],
+        "_gyro_last_generation": [
+            [
+                "_sensor_gyro_fifo_sub_get_last_generation",
+                "_sensor_gyro_sub_get_last_generation"
+            ],
+            0
+        ]
+    },
+    "Update": {
+        "buffer_index": [
+            [
+                "_fft_buffer_index",
+                "axis",
+                "_imu_gyro_fft_len"
+            ],
+            1
+        ]
+    },
+    "FindPeaks": {
+        "bin_mag_sum": [
+            [
+                "sqrtf_real",
+                "sqrtf_imag"
+            ],
+            1
+        ],
+        "MIN_SNR": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "freq_hz": [
+            [
+                "fft_index",
+                "_gyro_sample_rate_hz",
+                "_imu_gyro_fft_len"
+            ],
+            2
+        ],
+        "imag": [
+            [
+                "fft_index",
+                "fft_outupt_buffer"
+            ],
+            0
+        ],
+        "largest_peak_index": [
+            [
+                "fft_index"
+            ],
+            1
+        ],
+        "snr_acceptable": [
+            [
+                "snr",
+                "_param_imu_gyro_fft_snr_get"
+            ],
+            0
+        ],
+        "freq_adjusted": [
+            [
+                "estimate_peak_frequency_bin_fft_outupt_buffer",
+                "estimate_peak_frequency_bin_raw_peak_index",
+                "estimate_peak_frequency_bin_peak_new",
+                "_gyro_sample_rate_hz",
+                "_imu_gyro_fft_len"
+            ],
+            2
+        ],
+        "real": [
+            [
+                "fft_index",
+                "fft_outupt_buffer"
+            ],
+            0
+        ],
+        "largest_peak": [
+            [
+                "fft_index",
+                "_peak_magnitudes_all"
+            ],
+            1
+        ],
+        "peak_close": [
+            [
+                "fabsf_freq_adjusted",
+                "fabsf_peak_frequencies_prev",
+                "fabsf_peak_prev",
+                "_gyro_sample_rate_hz",
+                "_imu_gyro_fft_len"
+            ],
+            1
+        ]
+    },
+    "UpdateOutput": {
+        "oldest": [
+            [
+                "axis",
+                "timestamp_sample",
+                "_last_update",
+                "peak_prev"
+            ],
+            0
+        ],
+        "_sensor_gyro_fft.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "smallest_diff": [
+            [
+                "peak_new",
+                "peak_frequencies_diff",
+                "peak_prev",
+                "infinity"
+            ],
+            0
+        ],
+        "closest_new_peak": [
+            [
+                "peak_new"
+            ],
+            0
+        ],
+        "peak_frequency": [
+            [
+                "_apply_peak_frequencies",
+                "axis",
+                "peak_prev",
+                "_apply_peak_new",
+                "_median_filter",
+                "_apply_closest_new_peak",
+                "peak_prev"
+            ],
+            2
+        ]
+    },
+    "Publish": {
+        "_sensor_gyro_fft.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_sensor_gyro_fft.sensor_sample_rate_hz": [
+            [
+                "_gyro_sample_rate_hz"
+            ],
+            0
+        ],
+        "_sensor_gyro_fft.device_id": [
+            [
+                "_selected_sensor_device_id"
+            ],
+            0
+        ],
+        "_sensor_gyro_fft.resolution_hz": [
+            [
+                "_gyro_sample_rate_hz",
+                "_imu_gyro_fft_len"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "gyro_fft"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

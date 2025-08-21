@@ -1,0 +1,129 @@
+{
+    "generate_wgn": {
+        "U1": [
+            [
+                "rand",
+                "float",
+                "rand_max"
+            ],
+            0
+        ],
+        "U2": [
+            [
+                "rand",
+                "float",
+                "rand_max"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "v2",
+                "v1"
+            ],
+            0
+        ],
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "float_s",
+                "float_logf",
+                "v1",
+                "s",
+                "float_sqrtf",
+                "float_float",
+                "v2"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "drv_diff_press_devtype_sim"
+            ],
+            0
+        ],
+        "diff_pressure_noise": [
+            [
+                "float",
+                "generate_wgn"
+            ],
+            0
+        ],
+        "body_velocity": [
+            [
+                "_transpose",
+                "lpos_vy",
+                "lpos_vx",
+                "lpos_vz",
+                "vector3f",
+                "quatf",
+                "dcmf",
+                "attitude_q"
+            ],
+            1
+        ],
+        "differential_pressure.differential_pressure_pa": [
+            [
+                "diff_pressure",
+                "double"
+            ],
+            0
+        ],
+        "differential_pressure.temperature": [
+            [
+                "temperature_msl",
+                "lapse_rate",
+                "gpos_alt"
+            ],
+            2
+        ],
+        "differential_pressure.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "air_density": [
+            [
+                "powf_temperature_local",
+                "powf_temperature_msl",
+                "air_density_msl"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "sensor_airspeed_sim",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

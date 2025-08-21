@@ -1,0 +1,165 @@
+{
+    "set_device_id": {
+        "_device_id": [
+            [
+                "device_id"
+            ],
+            0
+        ],
+        "_external": [
+            [
+                "device_external_device_id"
+            ],
+            1
+        ]
+    },
+    "SensorCorrectionsUpdate": {
+        "_thermal_offset": [
+            [
+                "corrections_mag_offset_3",
+                "vector3f",
+                "corrections_mag_offset_1",
+                "corrections_mag_offset_2",
+                "corrections_mag_offset_0"
+            ],
+            0
+        ]
+    },
+    "set_offset": {
+        "_offset": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "set_rotation": {
+        "_rotation_enum": [
+            [
+                "rotation_none",
+                "rotation"
+            ],
+            0
+        ],
+        "_rotation": [
+            [
+                "get_rot_matrix__rotation_enum",
+                "dcmf_get_sensor_level_adjustment"
+            ],
+            0
+        ]
+    },
+    "set_custom_rotation": {
+        "_rotation_enum": [
+            [
+                "rotation_custom"
+            ],
+            0
+        ],
+        "_rotation_custom_euler": [
+            [
+                "rotation"
+            ],
+            0
+        ],
+        "_rotation": [
+            [
+                "dcmf_get_sensor_level_adjustment",
+                "dcmf__rotation_custom_euler"
+            ],
+            0
+        ]
+    },
+    "set_calibration_index": {
+        "_calibration_index": [
+            [
+                "calibration_index"
+            ],
+            0
+        ]
+    },
+    "ParametersUpdate": {
+        "_calibration_index": [
+            [
+                "_device_id",
+                "find_current_calibration_index_sensor_string"
+            ],
+            0
+        ]
+    },
+    "ParametersLoad": {
+        "euler_pitch_deg": [
+            [
+                "_calibration_index",
+                "get_calibration_param_float_sensor_string"
+            ],
+            0
+        ],
+        "_priority": [
+            [
+                "get_calibration_param_int32_sensor_string",
+                "_external",
+                "_calibration_index",
+                "default_external_priority",
+                "default_priority"
+            ],
+            0
+        ],
+        "_power_compensation": [
+            [
+                "get_calibration_params_vector3f_sensor_string",
+                "_calibration_index"
+            ],
+            0
+        ],
+        "rotation_value": [
+            [
+                "rotation_custom",
+                "_calibration_index",
+                "get_calibration_param_int32_sensor_string",
+                "rotation_none"
+            ],
+            0
+        ],
+        "euler_roll_deg": [
+            [
+                "_calibration_index",
+                "get_calibration_param_float_sensor_string"
+            ],
+            0
+        ],
+        "euler_yaw_deg": [
+            [
+                "_calibration_index",
+                "get_calibration_param_float_sensor_string"
+            ],
+            0
+        ]
+    },
+    "Reset": {
+        "_power": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_priority": [
+            [
+                "default_external_priority",
+                "default_priority",
+                "_external"
+            ],
+            0
+        ]
+    },
+    "ParametersSave": {
+        "_calibration_index": [
+            [
+                "find_available_calibration_index_sensor_string",
+                "desired_calibration_index",
+                "_device_id"
+            ],
+            0
+        ]
+    }
+}

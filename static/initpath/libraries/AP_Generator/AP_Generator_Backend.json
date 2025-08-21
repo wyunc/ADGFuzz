@@ -1,0 +1,40 @@
+{
+    "update_frontend": {
+        "_frontend._rpm": [
+            [
+                "_rpm"
+            ],
+            0
+        ],
+        "_frontend._voltage": [
+            [
+                "_voltage"
+            ],
+            0
+        ],
+        "_frontend._healthy": [
+            [
+                "healthy"
+            ],
+            0
+        ],
+        "_frontend._fuel_remaining": [
+            [
+                "_fuel_remaining"
+            ],
+            0
+        ],
+        "_frontend._consumed_mah": [
+            [
+                "_consumed_mah"
+            ],
+            0
+        ],
+        "_frontend._current": [
+            [
+                "_current"
+            ],
+            0
+        ]
+    }
+}

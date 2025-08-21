@@ -1,0 +1,82 @@
+{
+    "init": {
+        "_timeout_us": [
+            [
+                "config_timeout_us"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "deinit": {
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "grab": {
+        "_state": [
+            [
+                "grabbing"
+            ],
+            0
+        ],
+        "_last_command_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "release": {
+        "_state": [
+            [
+                "releasing"
+            ],
+            0
+        ],
+        "_last_command_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "command_timed_out": [
+            [
+                "_timeout_us",
+                "hrt_elapsed_time__last_command_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "released",
+                "grabbed"
+            ],
+            0
+        ]
+    },
+    "publish_gripper_command": {
+        "gripper.command": [
+            [
+                "gripper_command"
+            ],
+            0
+        ],
+        "gripper.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

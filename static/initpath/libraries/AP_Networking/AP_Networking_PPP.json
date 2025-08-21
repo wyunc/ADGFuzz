@@ -1,0 +1,139 @@
+{
+    "ppp_status_callback": {
+        "driver": [
+            [
+                "ap_networking_ppp",
+                "ctx"
+            ],
+            0
+        ],
+        "driver.activeSettings.gw": [
+            [
+                "ntohl_netif_ip4_gw",
+                "ntohl_pppif_addr"
+            ],
+            0
+        ],
+        "driver.activeSettings.last_change_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pppif": [
+            [
+                "ppp_netif_pcb"
+            ],
+            0
+        ],
+        "driver.activeSettings.nm": [
+            [
+                "ntohl_netif_ip4_netmask",
+                "ntohl_pppif_addr"
+            ],
+            0
+        ],
+        "driver.activeSettings.ip": [
+            [
+                "ntohl_netif_ip4_addr",
+                "ntohl_pppif_addr"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ppp": [
+            [
+                "pppos_create_ppp_output_cb",
+                "pppos_create_this",
+                "pppos_create_ppp_status_callback",
+                "pppos_create_pppif"
+            ],
+            0
+        ],
+        "ethernet_gateway": [
+            [
+                "frontend_option_is_set_ppp_ethernet_gateway"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "sm_find_serial_serial_protocol_ppp"
+            ],
+            0
+        ],
+        "sm": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "pppif": [
+            [
+                "new_nothrow",
+                "netif"
+            ],
+            0
+        ]
+    },
+    "ppp_loop": {
+        "pppos": [
+            [
+                "pppos_pcb",
+                "ppp_link_ctx_cb"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ppp_gateway": [
+            [
+                "frontend_option_is_set_ppp_ethernet_gateway"
+            ],
+            0
+        ],
+        "rem_ip": [
+            [
+                "frontend_get_ip_active",
+                "frontend_param_remote_ppp_ip_get_uint32"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "uart_read_sizeof",
+                "uart_read_buf"
+            ],
+            0
+        ],
+        "nmask": [
+            [
+                "frontend_get_netmask_param"
+            ],
+            0
+        ],
+        "his_ip.addr": [
+            [
+                "htonl_rem_ip"
+            ],
+            0
+        ],
+        "netif_list": [
+            [
+                "pppif"
+            ],
+            0
+        ],
+        "our_ip.addr": [
+            [
+                "htonl_ip"
+            ],
+            0
+        ]
+    }
+}

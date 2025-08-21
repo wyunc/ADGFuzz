@@ -1,0 +1,59 @@
+{
+    "run_mixer": {
+        "throttle": [
+            [
+                "rcin"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "rcin"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "rcin"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "i",
+                "mixing_rc_channel"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "mix_output_angle_true",
+                "reg_direct_pwm_pwm",
+                "k_rcin1",
+                "mix_output_angle_rudder",
+                "i",
+                "mix_output_range_throttle",
+                "mix_output_angle_roll",
+                "uint8_t",
+                "mix_output_angle_pitch",
+                "mix_output_range_i",
+                "mix_output_angle_i",
+                "mix_output_angle_false",
+                "rc_input_pwm",
+                "aux_servo_function_t",
+                "k_manual",
+                "i",
+                "mixing_servo_function",
+                "mix_output_angle_throttle",
+                "mix_output_angle_mix_elevon_vtail"
+            ],
+            1
+        ],
+        "pitch": [
+            [
+                "rcin"
+            ],
+            0
+        ]
+    }
+}

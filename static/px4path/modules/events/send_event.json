@@ -1,0 +1,49 @@
+{
+    "task_spawn": {
+        "send_event": [
+            [
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    },
+    "answer_command": {
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "result",
+                "uint8_t"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

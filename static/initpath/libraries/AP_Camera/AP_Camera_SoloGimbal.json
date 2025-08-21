@@ -1,0 +1,30 @@
+{
+    "handle_message": {
+        "gopro_is_recording": [
+            [
+                "gopro_flag_recording",
+                "report_msg_flags"
+            ],
+            0
+        ],
+        "gopro_capture_mode": [
+            [
+                "report_msg_capture_mode"
+            ],
+            0
+        ],
+        "gopro_status": [
+            [
+                "report_msg_status",
+                "gopro_heartbeat_status"
+            ],
+            0
+        ],
+        "heartbeat_channel": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "update": {
+        "last_input_us": [
+            [
+                "radio_last_recv_us"
+            ],
+            1
+        ],
+        "num_channels": [
+            [
+                "radio_num_channels"
+            ],
+            0
+        ],
+        "radio": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "start_bind": {
+        "radio": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "autotune_start": {
+        "tune_pitch": [
+            [
+                "int8_t_pitch",
+                "g2_axis_bitmask_get"
+            ],
+            0
+        ],
+        "tune_roll": [
+            [
+                "int8_t_roll",
+                "g2_axis_bitmask_get"
+            ],
+            0
+        ],
+        "tune_yaw": [
+            [
+                "int8_t_yaw",
+                "g2_axis_bitmask_get"
+            ],
+            0
+        ]
+    }
+}

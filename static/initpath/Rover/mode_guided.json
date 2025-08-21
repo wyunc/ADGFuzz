@@ -1,0 +1,162 @@
+{
+    "update": {
+        "_distance_to_destination": [
+            [
+                "rover_current_loc_get_distance_g2_wp_nav_get_destination"
+            ],
+            0
+        ]
+    },
+    "get_desired_location": {
+        "destination": [
+            [
+                "g2_wp_nav_get_oa_destination"
+            ],
+            0
+        ]
+    },
+    "set_desired_location": {
+        "_guided_mode": [
+            [
+                "wp"
+            ],
+            0
+        ]
+    },
+    "set_desired_heading_and_speed": {
+        "_guided_mode": [
+            [
+                "heading_and_speed"
+            ],
+            0
+        ],
+        "_desired_speed": [
+            [
+                "target_speed"
+            ],
+            0
+        ],
+        "_desired_yaw_cd": [
+            [
+                "yaw_angle_cd"
+            ],
+            0
+        ],
+        "_des_att_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_desired_heading_delta_and_speed": {
+        "_guided_mode": [
+            [
+                "heading_and_speed"
+            ],
+            0
+        ],
+        "_desired_yaw_cd": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "set_desired_turn_rate_and_speed": {
+        "_guided_mode": [
+            [
+                "turn_rate_and_speed"
+            ],
+            0
+        ],
+        "_des_att_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_desired_speed": [
+            [
+                "target_speed"
+            ],
+            0
+        ],
+        "_desired_yaw_rate_cds": [
+            [
+                "turn_rate_cds"
+            ],
+            0
+        ]
+    },
+    "set_steering_and_throttle": {
+        "_strthr_throttle": [
+            [
+                "throttle"
+            ],
+            0
+        ],
+        "_strthr_steering": [
+            [
+                "steering"
+            ],
+            0
+        ],
+        "_guided_mode": [
+            [
+                "steering_and_throttle"
+            ],
+            0
+        ],
+        "_strthr_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "start_loiter": {
+        "_guided_mode": [
+            [
+                "loiter"
+            ],
+            0
+        ]
+    },
+    "start_stop": {
+        "_guided_mode": [
+            [
+                "stop"
+            ],
+            0
+        ]
+    },
+    "limit_set": {
+        "limit.timeout_ms": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ],
+        "limit.horiz_max": [
+            [
+                "horiz_max"
+            ],
+            0
+        ]
+    },
+    "limit_init_time_and_location": {
+        "limit.start_loc": [
+            [
+                "rover_current_loc"
+            ],
+            0
+        ],
+        "limit.start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

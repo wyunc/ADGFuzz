@@ -1,0 +1,116 @@
+{
+    "new_input": {
+        "ret": [
+            [
+                "rc_input_count",
+                "last_rc_input_count"
+            ],
+            0
+        ]
+    },
+    "set_num_channels": {
+        "_num_channels": [
+            [
+                "num"
+            ],
+            0
+        ]
+    },
+    "_process_ppmsum_pulse": {
+        "_num_channels": [
+            [
+                "ppm_state__channel_counter"
+            ],
+            0
+        ]
+    },
+    "_process_sbus_pulse": {
+        "v": [
+            [
+                "sbus_state_bytes",
+                "i"
+            ],
+            0
+        ],
+        "byte_ofs": [
+            [
+                "sbus_state_bit_ofs"
+            ],
+            0
+        ],
+        "_num_channels": [
+            [
+                "num_values"
+            ],
+            0
+        ],
+        "sbus_state.bit_ofs": [
+            [
+                "sbus_state_bit_ofs",
+                "width_s0",
+                "width_s0"
+            ],
+            3
+        ],
+        "bits_s1": [
+            [
+                "width_s1",
+                "sbus_state_bit_ofs",
+                "width_s0"
+            ],
+            3
+        ],
+        "parity": [
+            [
+                "j"
+            ],
+            0
+        ]
+    },
+    "_process_dsm_pulse": {
+        "dsm_state.bit_ofs": [
+            [
+                "uint32_t",
+                "width_s0",
+                "uint32_t",
+                "width_s1"
+            ],
+            3
+        ],
+        "bit_ofs": [
+            [
+                "uint32_t",
+                "width_s0",
+                "dsm_state_bit_ofs"
+            ],
+            2
+        ],
+        "byte_ofs": [
+            [
+                "dsm_state_bit_ofs"
+            ],
+            0
+        ],
+        "_num_channels": [
+            [
+                "num_values"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "dsm_state_bytes",
+                "i"
+            ],
+            0
+        ]
+    },
+    "_update_periods": {
+        "_num_channels": [
+            [
+                "linux_rc_input_num_channels"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "simple_input_active": {
+        "copter.simple_mode": [
+            [
+                "simple"
+            ],
+            0
+        ]
+    },
+    "supersimple_input_active": {
+        "copter.simple_mode": [
+            [
+                "supersimple"
+            ],
+            0
+        ]
+    },
+    "update_vehicle_sensor_status_flags": {
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

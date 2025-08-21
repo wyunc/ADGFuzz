@@ -1,0 +1,676 @@
+{
+    "PrintInstanceChange": {
+        "old_reason": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "new_reason": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "SelectInstance": {
+        "_selected_instance": [
+            [
+                "ekf_instance"
+            ],
+            0
+        ],
+        "sensor_selection.accel_device_id": [
+            [
+                "ekf_instance",
+                "_instance",
+                "_accel_device_id"
+            ],
+            0
+        ],
+        "sensor_selection.gyro_device_id": [
+            [
+                "ekf_instance",
+                "_instance",
+                "_gyro_device_id"
+            ],
+            0
+        ],
+        "sensor_selection.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".time_last_selected": [
+            [
+                "sensor_selection_timestamp"
+            ],
+            1
+        ]
+    },
+    "UpdateErrorScores": {
+        ".time_last_no_warning": [
+            [
+                "status_timestamp"
+            ],
+            0
+        ],
+        "_last_update_us": [
+            [
+                "sensors_status_imu_timestamp"
+            ],
+            0
+        ],
+        "healthy": [
+            [
+                "_f",
+                "fmaxf_status_vel_test_ratio",
+                "status_hgt_test_ratio",
+                "fmaxf_status_pos_test_ratio",
+                "status_filter_fault_flags"
+            ],
+            1
+        ],
+        ".warning": [
+            [
+                "_f",
+                "fmaxf_status_vel_test_ratio",
+                "status_hgt_test_ratio",
+                "fmaxf_status_pos_test_ratio"
+            ],
+            1
+        ],
+        "threshold": [
+            [
+                "fmaxf__param_ekf2_sel_err_red_get",
+                "_gyro_fault_detected"
+            ],
+            0
+        ],
+        ".timestamp_last": [
+            [
+                "status_timestamp"
+            ],
+            0
+        ],
+        ".gyro_device_id": [
+            [
+                "status_gyro_device_id"
+            ],
+            0
+        ],
+        ".baro_device_id": [
+            [
+                "status_baro_device_id"
+            ],
+            0
+        ],
+        "status.pos_test_ratio": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.hgt_test_ratio": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "faulty_gyro_id": [
+            [
+                "sensors_status_imu_gyro_device_ids",
+                "i"
+            ],
+            1
+        ],
+        ".relative_test_ratio": [
+            [
+                "constrain_i",
+                "_instance",
+                "_selected_instance",
+                "i",
+                "_combined_test_ratio",
+                "constrain__relative_test_ratio",
+                "constrain__rel_err_score_lim",
+                "constrain__instance"
+            ],
+            1
+        ],
+        "_available_instances": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "velocity_threshold": [
+            [
+                "_param_ekf2_sel_imu_velocity_get"
+            ],
+            0
+        ],
+        "faulty_accel_id": [
+            [
+                "sensors_status_imu_accel_device_ids",
+                "i"
+            ],
+            1
+        ],
+        "angle_threshold": [
+            [
+                "radians__param_ekf2_sel_imu_angle_get"
+            ],
+            0
+        ],
+        "status.vel_test_ratio": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "prev_healthy": [
+            [
+                "_healthy_get_state",
+                "_instance",
+                "i"
+            ],
+            0
+        ],
+        "angle_rate_threshold": [
+            [
+                "radians__param_ekf2_sel_imu_angle_rate_get"
+            ],
+            0
+        ],
+        "status_timeout": [
+            [
+                "50_ms"
+            ],
+            0
+        ],
+        ".accel_device_id": [
+            [
+                "status_accel_device_id"
+            ],
+            0
+        ],
+        "accel_threshold": [
+            [
+                "_param_ekf2_sel_imu_accel_get"
+            ],
+            0
+        ],
+        "largest_accumulated_gyro_error": [
+            [
+                "i",
+                "_accumulated_gyro_error"
+            ],
+            0
+        ],
+        ".combined_test_ratio": [
+            [
+                "fmaxf_status_vel_test_ratio",
+                "status_hgt_test_ratio",
+                "fmaxf_status_pos_test_ratio"
+            ],
+            1
+        ],
+        "time_step_s": [
+            [
+                "constrain__last_update_us",
+                "_f",
+                "constrain_sensors_status_imu_timestamp",
+                "1e"
+            ],
+            0
+        ],
+        ".mag_device_id": [
+            [
+                "status_mag_device_id"
+            ],
+            0
+        ],
+        ".filter_fault": [
+            [
+                "status_filter_fault_flags"
+            ],
+            0
+        ],
+        "largest_accumulated_accel_error": [
+            [
+                "i",
+                "_accumulated_accel_error"
+            ],
+            0
+        ]
+    },
+    "PublishVehicleAttitude": {
+        "_attitude_instance_prev": [
+            [
+                "_selected_instance",
+                "_estimator_attitude_sub_get_instance",
+                "_instance"
+            ],
+            0
+        ],
+        "_attitude_last": [
+            [
+                "attitude"
+            ],
+            0
+        ],
+        "_delta_q_reset": [
+            [
+                "quatf__attitude_last_q_inversed",
+                "quatf",
+                "attitude_delta_q_reset",
+                "_normalized",
+                "quatf_attitude_q"
+            ],
+            0
+        ],
+        "attitude.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "attitude.quat_reset_counter": [
+            [
+                "attitude_quat_reset_counter"
+            ],
+            1
+        ]
+    },
+    "PublishVehicleLocalPosition": {
+        "local_position.z_reset_counter": [
+            [
+                "local_position_z_reset_counter"
+            ],
+            1
+        ],
+        "local_position.vz_reset_counter": [
+            [
+                "local_position_vz_reset_counter"
+            ],
+            1
+        ],
+        "_local_position_instance_prev": [
+            [
+                "_selected_instance",
+                "_instance",
+                "_estimator_local_position_sub_get_instance"
+            ],
+            0
+        ],
+        "local_position.dist_bottom_reset_counter": [
+            [
+                "local_position_dist_bottom_reset_counter"
+            ],
+            1
+        ],
+        "local_position.xy_reset_counter": [
+            [
+                "local_position_xy_reset_counter"
+            ],
+            1
+        ],
+        "local_position.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "local_position.delta_z": [
+            [
+                "local_position_z",
+                "local_position_delta_z",
+                "_local_position_last_z"
+            ],
+            1
+        ],
+        "_delta_hagl_reset": [
+            [
+                "_local_position_last_dist_bottom",
+                "local_position_dist_bottom",
+                "local_position_delta_dist_bottom"
+            ],
+            0
+        ],
+        "_delta_xy_reset": [
+            [
+                "_local_position_last_x",
+                "local_position_x",
+                "local_position_y",
+                "_local_position_last_y",
+                "vector2f",
+                "local_position_delta_xy"
+            ],
+            0
+        ],
+        "_local_position_last": [
+            [
+                "local_position"
+            ],
+            0
+        ],
+        "local_position.delta_heading": [
+            [
+                "wrap_pi_local_position_heading",
+                "wrap_pi__local_position_last_heading",
+                "local_position_delta_heading"
+            ],
+            1
+        ],
+        "_delta_vxy_reset": [
+            [
+                "local_position_delta_vxy",
+                "_local_position_last_vy",
+                "local_position_vy",
+                "_local_position_last_vx",
+                "local_position_vx",
+                "vector2f"
+            ],
+            0
+        ],
+        "local_position.heading_reset_counter": [
+            [
+                "local_position_heading_reset_counter"
+            ],
+            1
+        ],
+        "local_position.delta_vz": [
+            [
+                "local_position_delta_vz",
+                "_local_position_last_vz",
+                "local_position_vz"
+            ],
+            1
+        ],
+        "local_position.vxy_reset_counter": [
+            [
+                "local_position_vxy_reset_counter"
+            ],
+            1
+        ]
+    },
+    "PublishVehicleOdometry": {
+        "odometry.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "odometry.reset_counter": [
+            [
+                "odometry_reset_counter"
+            ],
+            1
+        ],
+        "_odometry_last": [
+            [
+                "odometry"
+            ],
+            0
+        ],
+        "_odometry_instance_prev": [
+            [
+                "_selected_instance",
+                "_estimator_odometry_sub_get_instance",
+                "_instance"
+            ],
+            0
+        ]
+    },
+    "PublishVehicleGlobalPosition": {
+        "global_position.delta_alt": [
+            [
+                "global_position_delta_alt",
+                "_global_position_last_delta_alt"
+            ],
+            1
+        ],
+        "_delta_lat_reset": [
+            [
+                "_global_position_last_lat",
+                "global_position_lat"
+            ],
+            0
+        ],
+        "_delta_lon_reset": [
+            [
+                "global_position_lon",
+                "_global_position_last_lon"
+            ],
+            0
+        ],
+        "_global_position_instance_prev": [
+            [
+                "_instance",
+                "_estimator_global_position_sub_get_instance",
+                "_selected_instance"
+            ],
+            0
+        ],
+        "_delta_terrain_reset": [
+            [
+                "global_position_delta_terrain",
+                "_global_position_last_delta_terrain"
+            ],
+            0
+        ],
+        "global_position.lat_lon_reset_counter": [
+            [
+                "global_position_lat_lon_reset_counter"
+            ],
+            1
+        ],
+        "_global_position_last": [
+            [
+                "global_position"
+            ],
+            0
+        ],
+        "global_position.alt_reset_counter": [
+            [
+                "global_position_alt_reset_counter"
+            ],
+            1
+        ],
+        "global_position.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "PublishWindEstimate": {
+        "wind.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_wind_last": [
+            [
+                "wind"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "last_instance_change_prev": [
+            [
+                "_last_instance_change"
+            ],
+            0
+        ],
+        "available_instances_prev": [
+            [
+                "_available_instances"
+            ],
+            0
+        ],
+        "best_test_ratio": [
+            [
+                "flt_max",
+                "_combined_test_ratio",
+                "_instance",
+                "i"
+            ],
+            1
+        ],
+        "alternative_error": [
+            [
+                "_relative_test_ratio",
+                "_instance",
+                "i",
+                "_f"
+            ],
+            1
+        ],
+        "best_ekf": [
+            [
+                "_selected_instance",
+                "i"
+            ],
+            0
+        ],
+        "new_instance": [
+            [
+                "_request_instance_load"
+            ],
+            0
+        ],
+        "best_ekf_alternate": [
+            [
+                "invalid_instance",
+                "i"
+            ],
+            0
+        ],
+        "best_ekf_different_imu": [
+            [
+                "invalid_instance",
+                "i"
+            ],
+            0
+        ],
+        "instance_changed_count_prev": [
+            [
+                "_instance_changed_count"
+            ],
+            0
+        ],
+        "selected_instance_prev": [
+            [
+                "_selected_instance"
+            ],
+            0
+        ],
+        "updated": [
+            [
+                "update_error_scores"
+            ],
+            0
+        ]
+    },
+    "PublishEstimatorSelectorStatus": {
+        "selector_status.baro_device_id": [
+            [
+                "_instance",
+                "_selected_instance",
+                "_baro_device_id"
+            ],
+            0
+        ],
+        "selector_status.instances_available": [
+            [
+                "_available_instances"
+            ],
+            0
+        ],
+        "selector_status.mag_device_id": [
+            [
+                "_mag_device_id",
+                "_instance",
+                "_selected_instance"
+            ],
+            0
+        ],
+        "selector_status.gyro_fault_detected": [
+            [
+                "_gyro_fault_detected"
+            ],
+            0
+        ],
+        "selector_status.instance_changed_count": [
+            [
+                "_instance_changed_count"
+            ],
+            0
+        ],
+        "_last_status_publish": [
+            [
+                "selector_status_timestamp"
+            ],
+            0
+        ],
+        "selector_status.gyro_device_id": [
+            [
+                "_instance",
+                "_gyro_device_id",
+                "_selected_instance"
+            ],
+            0
+        ],
+        "selector_status.last_instance_change": [
+            [
+                "_last_instance_change"
+            ],
+            0
+        ],
+        "selector_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "selector_status.primary_instance": [
+            [
+                "_selected_instance"
+            ],
+            0
+        ],
+        "selector_status.accel_fault_detected": [
+            [
+                "_accel_fault_detected"
+            ],
+            0
+        ],
+        "selector_status.accel_device_id": [
+            [
+                "_accel_device_id",
+                "_instance",
+                "_selected_instance"
+            ],
+            0
+        ]
+    },
+    "PrintStatus": {
+        "_selected_instance": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "inst": [
+            [
+                "_instance",
+                "i"
+            ],
+            0
+        ]
+    }
+}

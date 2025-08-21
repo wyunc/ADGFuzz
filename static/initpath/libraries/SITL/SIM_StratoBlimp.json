@@ -1,0 +1,205 @@
+{
+    "calculate_coefficients": {
+        "drag_yaw": [
+            [
+                "drag_rotaccel_z",
+                "rot_accel_z"
+            ],
+            0
+        ],
+        "g.z": [
+            [
+                "radians_yaw_rate_max"
+            ],
+            0
+        ]
+    },
+    "handle_motor": {
+        "body_acc": [
+            [
+                "thrust",
+                "helium_mass",
+                "mass"
+            ],
+            2
+        ],
+        "rot_accel.z": [
+            [
+                "moi_yaw",
+                "torque_z"
+            ],
+            0
+        ],
+        "thrust_x": [
+            [
+                "motor_thrust",
+                "throttle"
+            ],
+            0
+        ],
+        "torque": [
+            [
+                "thrust",
+                "pos"
+            ],
+            0
+        ],
+        "angle_rad": [
+            [
+                "radians_motor_angle",
+                "tilt"
+            ],
+            0
+        ]
+    },
+    "get_drag": {
+        "drag_linear.y": [
+            [
+                "sq_vel_air_bf_y",
+                "drag_fwd",
+                "vel_air_bf_y",
+                "air_density"
+            ],
+            1
+        ],
+        "drag_linear.z": [
+            [
+                "vel_air_bf_z",
+                "sq_vel_air_bf_z",
+                "air_density",
+                "drag_up"
+            ],
+            1
+        ],
+        "vel_air_bf": [
+            [
+                "velocity_linear"
+            ],
+            0
+        ],
+        "drag_rotaccel": [
+            [
+                "drag_yaw",
+                "velocity_rot",
+                "moi_pitch",
+                "drag_linear",
+                "mass",
+                "drag_pos"
+            ],
+            2
+        ],
+        "drag_linear.x": [
+            [
+                "drag_fwd",
+                "sq_vel_air_bf_x",
+                "vel_air_bf_x",
+                "air_density"
+            ],
+            1
+        ]
+    },
+    "get_lift": {
+        "lift_accel": [
+            [
+                "gravity_mss",
+                "free_lift_rate"
+            ],
+            0
+        ]
+    },
+    "calculate_forces": {
+        "rot_accel": [
+            [
+                "dcm_transposed",
+                "lift_thrust_ef",
+                "lift_pos",
+                "drag_rotaccel",
+                "moi_roll"
+            ],
+            2
+        ],
+        "right_throttle": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ],
+        "left_throttle": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ],
+        "left_tilt": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "body_acc": [
+            [
+                "drag_linear",
+                "dcm_transposed",
+                "lift_thrust_ef",
+                "mass"
+            ],
+            1
+        ],
+        "right_tilt": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "ground_release": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "gyro": [
+            [
+                "rot_accel",
+                "frame_time_us",
+                "_0e"
+            ],
+            1
+        ],
+        "gyro.z": [
+            [
+                "gyro_z",
+                "radians_radians"
+            ],
+            0
+        ],
+        "EAS2TAS": [
+            [
+                "sqrtf_ssl_air_density",
+                "sqrtf_air_density"
+            ],
+            0
+        ],
+        "air_density": [
+            [
+                "get_air_density_location_alt"
+            ],
+            0
+        ],
+        "gyro.y": [
+            [
+                "gyro_y",
+                "radians_radians"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "gyro_x",
+                "radians_radians"
+            ],
+            0
+        ]
+    }
+}

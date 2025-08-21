@@ -1,0 +1,45 @@
+{
+    "update_output": {
+        "distance": [
+            [
+                "measure_distance_at_angle_bf_bf_angle",
+                "measure_distance_at_angle_bf_location"
+            ],
+            0
+        ],
+        "last_output_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "bf_angle": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "time_delta": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "sizeof_send_buffer",
+                "write_to_autopilot_char",
+                "write_to_autopilot_const",
+                "send_buffer"
+            ],
+            0
+        ],
+        "send_buffer.checksum": [
+            [
+                "crc_crc8_uint8_t",
+                "send_buffer"
+            ],
+            0
+        ]
+    }
+}

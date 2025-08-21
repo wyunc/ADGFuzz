@@ -1,0 +1,37 @@
+{
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_frame": {
+        "id": [
+            [
+                "frame_id"
+            ],
+            0
+        ],
+        "snr": [
+            [
+                "frame_data"
+            ],
+            0
+        ],
+        "dist_m": [
+            [
+                "0x100u",
+                "frame_data"
+            ],
+            0
+        ],
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

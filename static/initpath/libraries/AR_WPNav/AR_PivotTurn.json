@@ -1,0 +1,36 @@
+{
+    "enable": {
+        "_enabled": [
+            [
+                "enable_pivot"
+            ],
+            0
+        ]
+    },
+    "check_activation": {
+        "yaw_error": [
+            [
+                "fabsf_ahrs_yaw_sensor",
+                "fabsf_desired_heading_deg",
+                "fabsf_wrap_180"
+            ],
+            0
+        ],
+        "_delay_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_turn_rate_rads": {
+        "desired_turn_rate_rads": [
+            [
+                "_atc_get_turn_rate_from_heading_radians",
+                "_atc_get_turn_rate_from_heading_desired_heading_deg",
+                "radians__rate_max"
+            ],
+            0
+        ]
+    }
+}

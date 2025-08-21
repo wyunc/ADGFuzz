@@ -1,0 +1,252 @@
+{
+    "update_airspeed_validator": {
+        "_IAS": [
+            [
+                "input_data_airspeed_indicated_raw"
+            ],
+            0
+        ]
+    },
+    "reset_airspeed_to_invalid": {
+        "_time_checks_failed": [
+            [
+                "timestamp"
+            ],
+            0
+        ]
+    },
+    "update_wind_estimator": {
+        "hor_vel_variance": [
+            [
+                "lpos_evh"
+            ],
+            0
+        ]
+    },
+    "update_CAS_scale_validated": {
+        "course_over_ground_rad": [
+            [
+                "v_i",
+                "wrap_2pi_v_i",
+                "wrap_2pi_atan2f"
+            ],
+            0
+        ],
+        "segment_index": [
+            [
+                "int_course_over_ground_rad",
+                "int_scale_check_samples",
+                "int_m_pi_f",
+                "int__f"
+            ],
+            0
+        ],
+        "_CAS_scale_validated": [
+            [
+                "new_scale_constrained"
+            ],
+            0
+        ],
+        "TAS_to_groundspeed_error_new": [
+            [
+                "_wind_estimator_get_tas_scale",
+                "_f",
+                "_scale_check_groundspeed_i",
+                "tas_sum"
+            ],
+            1
+        ],
+        "TAS_sum": [
+            [
+                "_f",
+                "_scale_check_tas_i"
+            ],
+            0
+        ],
+        "TAS_to_groundspeed_error_current": [
+            [
+                "_f",
+                "_scale_check_groundspeed_i",
+                "tas_sum",
+                "_cas_scale_validated"
+            ],
+            1
+        ]
+    },
+    "reset_CAS_scale_check": {
+        "_begin_current_scale_check": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "update_CAS_scale_applied": {
+        "_CAS_scale_applied": [
+            [
+                "_cas_scale_validated",
+                "_tas_scale_init"
+            ],
+            0
+        ]
+    },
+    "update_CAS_TAS": {
+        "_CAS": [
+            [
+                "calc_cas_from_ias__ias",
+                "calc_cas_from_ias__cas_scale_applied"
+            ],
+            0
+        ],
+        "_TAS": [
+            [
+                "calc_tas_from_cas__cas",
+                "calc_tas_from_cas_air_pressure_pa",
+                "calc_tas_from_cas_air_temperature_celsius"
+            ],
+            0
+        ]
+    },
+    "check_airspeed_data_stuck": {
+        "_data_stuck_test_failed": [
+            [
+                "data_stuck_timeout",
+                "hrt_elapsed_time__time_last_unequal_data",
+                "_in_fixed_wing_flight"
+            ],
+            0
+        ],
+        "_time_last_unequal_data": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "_IAS_prev": [
+            [
+                "_ias"
+            ],
+            0
+        ]
+    },
+    "check_airspeed_innovation": {
+        "air_vel": [
+            [
+                "wind_2d",
+                "_f",
+                "v_i",
+                "vector3f"
+            ],
+            0
+        ],
+        "_time_wind_estimator_initialized": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "_time_last_aspd_innov_check": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "_innovations_check_failed": [
+            [
+                "_tas_innov_integ_threshold",
+                "fabsf_air_vel_norm",
+                "fabsf__tas",
+                "_tas_innov_threshold",
+                "_f",
+                "1e6f",
+                "constrain__time_last_aspd_innov_check",
+                "constrain_time_now"
+            ],
+            3
+        ]
+    },
+    "check_load_factor": {
+        "_load_factor_check_failed": [
+            [
+                "constrain__load_factor_ratio",
+                "fmaxf__airspeed_stall",
+                "fmaxf__cas",
+                "fabsf_accel_z"
+            ],
+            2
+        ]
+    },
+    "check_first_principle": {
+        "dt": [
+            [
+                "timestamp",
+                "static_cast",
+                "1e",
+                "float"
+            ],
+            0
+        ],
+        "_first_principle_check_failed": [
+            [
+                "k_ias_derivate_threshold",
+                "_param_psp_off",
+                "_pitch_filtered_get_state",
+                "throttle_fw",
+                "min__param_throttle_max",
+                "min_k_high_throttle_delta",
+                "min_throttle_trim",
+                "_ias_derivative_get_state"
+            ],
+            4
+        ],
+        "tecs_dt": [
+            [
+                "tecs_timestamp",
+                "timestamp"
+            ],
+            0
+        ],
+        "_time_last_first_principle_check_passing": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_time_last_first_principle_check": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "eulerf_att_q_theta"
+            ],
+            0
+        ]
+    },
+    "update_airspeed_valid_status": {
+        "_time_checks_failed": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "both_checks_failed": [
+            [
+                "_innovations_check_failed",
+                "_load_factor_check_failed"
+            ],
+            0
+        ],
+        "single_check_fail_timeout": [
+            [
+                "timestamp",
+                "_checks_fail_delay",
+                "timestamp",
+                "1_s"
+            ],
+            1
+        ]
+    }
+}

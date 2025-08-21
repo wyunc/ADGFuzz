@@ -1,0 +1,54 @@
+{
+    "accel_init": {
+        "_accel_devtype": [
+            [
+                "devtype_ins_bmi088",
+                "devtype_ins_bmi085"
+            ],
+            0
+        ]
+    },
+    "read_fifo_accel": {
+        "fifo_length": [
+            [
+                "len",
+                "frame_len"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "frame_len",
+                "data"
+            ],
+            0
+        ],
+        "temp_degc": [
+            [
+                "tbuf"
+            ],
+            2
+        ],
+        "accel": [
+            [
+                "accel_range",
+                "gravity_mss"
+            ],
+            1
+        ]
+    },
+    "read_fifo_gyro": {
+        "num_frames": [
+            [
+                "max_frames"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "radians"
+            ],
+            1
+        ]
+    }
+}

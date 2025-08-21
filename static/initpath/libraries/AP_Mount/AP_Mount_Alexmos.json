@@ -1,0 +1,164 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "target": [
+            [
+                "_params_neutral_angles_get",
+                "_params_retract_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "control_axis": {
+        "outgoing_buffer.angle_speed.speed_pitch": [
+            [
+                "degree_per_sec_to_value_ap_mount_alexmos_speed"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.speed_roll": [
+            [
+                "degree_per_sec_to_value_ap_mount_alexmos_speed"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.angle_roll": [
+            [
+                "degree_to_value_degrees",
+                "degree_to_value_angle_target_rad_roll"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.angle_yaw": [
+            [
+                "degree_to_value_angle_target_rad_get_bf_yaw"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.angle_pitch": [
+            [
+                "degree_to_value_angle_target_rad_pitch",
+                "degree_to_value_degrees"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.speed_yaw": [
+            [
+                "degree_per_sec_to_value_ap_mount_alexmos_speed"
+            ],
+            0
+        ],
+        "outgoing_buffer.angle_speed.mode": [
+            [
+                "ap_mount_alexmos_mode_angle"
+            ],
+            0
+        ]
+    },
+    "send_command": {
+        "checksum": [
+            [
+                "data",
+                "i"
+            ],
+            0
+        ]
+    },
+    "parse_body": {
+        "_gimbal_3axis": [
+            [
+                "_buffer_version__board_features",
+                "0x1"
+            ],
+            0
+        ],
+        "_current_angle.z": [
+            [
+                "value_to_degree__buffer_angles_angle_yaw"
+            ],
+            0
+        ],
+        "_firmware_beta_version": [
+            [
+                "_buffer_version__firmware_version"
+            ],
+            0
+        ],
+        "_current_angle.x": [
+            [
+                "value_to_degree__buffer_angles_angle_roll"
+            ],
+            0
+        ],
+        "_board_version": [
+            [
+                "_buffer_version__board_version"
+            ],
+            0
+        ],
+        "_current_angle.y": [
+            [
+                "value_to_degree__buffer_angles_angle_pitch"
+            ],
+            0
+        ],
+        "_current_parameters.params": [
+            [
+                "_buffer_params"
+            ],
+            0
+        ],
+        "_gimbal_bat_monitoring": [
+            [
+                "0x2",
+                "_buffer_version__board_features"
+            ],
+            0
+        ],
+        "_current_firmware_version": [
+            [
+                "_buffer_version__firmware_version"
+            ],
+            0
+        ]
+    },
+    "read_incoming": {
+        "_command_id": [
+            [
+                "_port_read"
+            ],
+            1
+        ],
+        "_checksum": [
+            [
+                "_port_read"
+            ],
+            1
+        ],
+        "numc": [
+            [
+                "_port_available"
+            ],
+            0
+        ],
+        "_payload_length": [
+            [
+                "_port_read"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "init": {
+        "dir_name": [
+            [
+                "scripting_directory"
+            ],
+            0
+        ],
+        "priority": [
+            [
+                "p_hal_priority",
+                "priority_scripting"
+            ],
+            0
+        ]
+    },
+    "thread": {
+        "lua": [
+            [
+                "lua_scripts__script_vm_exec_count",
+                "new_nothrow",
+                "nullptr",
+                "lua_scripts__debug_options",
+                "lua_scripts__script_heap_size"
+            ],
+            0
+        ],
+        "mavlink_command_block_list": [
+            [
+                "mavlink_command_block_list_next"
+            ],
+            1
+        ]
+    },
+    "handle_mission_command": {
+        "mission_data": [
+            [
+                "nullptr",
+                "struct",
+                "mission_cmd_queue_size",
+                "object_buffer",
+                "new_nothrow",
+                "scripting_mission_cmd"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "loaded": [
+            [
+                "get_loaded_checksum",
+                "checksum_param_mask"
+            ],
+            0
+        ],
+        "expected_loaded": [
+            [
+                "_required_loaded_checksum_get",
+                "uint32_t",
+                "checksum_param_mask"
+            ],
+            0
+        ],
+        "expected_running": [
+            [
+                "_required_running_checksum_get",
+                "uint32_t",
+                "checksum_param_mask"
+            ],
+            0
+        ],
+        "running": [
+            [
+                "get_running_checksum",
+                "checksum_param_mask"
+            ],
+            0
+        ],
+        "error_buf": [
+            [
+                "get_last_error_message"
+            ],
+            0
+        ]
+    },
+    "is_handling_command": {
+        "item": [
+            [
+                "mavlink_command_block_list"
+            ],
+            0
+        ]
+    }
+}

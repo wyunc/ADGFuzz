@@ -1,0 +1,253 @@
+{
+    "getHealthReport": {
+        "report.arming_check_warning_flags": [
+            [
+                "uint64_t",
+                "current_results_arming_checks_warning"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "get_mode_group_i"
+            ],
+            0
+        ],
+        "current_results": [
+            [
+                "_results",
+                "_current_result"
+            ],
+            0
+        ],
+        "report.health_warning_flags": [
+            [
+                "uint64_t",
+                "current_results_health_warning"
+            ],
+            0
+        ],
+        "report.health_is_present_flags": [
+            [
+                "current_results_health_is_present",
+                "uint64_t"
+            ],
+            0
+        ],
+        "report.health_error_flags": [
+            [
+                "uint64_t",
+                "current_results_health_error"
+            ],
+            0
+        ],
+        "report.arming_check_error_flags": [
+            [
+                "uint64_t",
+                "current_results_arming_checks_error"
+            ],
+            0
+        ]
+    },
+    "healthFailure": {
+        "health.error": [
+            [
+                "component_index",
+                "health_component_t",
+                "health_error"
+            ],
+            0
+        ],
+        "health": [
+            [
+                "_health",
+                "_results",
+                "_current_result"
+            ],
+            0
+        ],
+        "health.warning": [
+            [
+                "health_warning",
+                "component_index",
+                "health_component_t"
+            ],
+            0
+        ]
+    },
+    "armingCheckFailure": {
+        "arming_checks.warning": [
+            [
+                "component_index",
+                "health_component_t",
+                "arming_checks_warning"
+            ],
+            0
+        ],
+        "arming_checks": [
+            [
+                "_arming_checks",
+                "_current_result",
+                "_results"
+            ],
+            0
+        ],
+        "arming_checks.error": [
+            [
+                "component_index",
+                "health_component_t",
+                "arming_checks_error"
+            ],
+            0
+        ]
+    },
+    "addExternalEvent": {
+        "total_size": [
+            [
+                "sizeof_event_arguments",
+                "sizeof_event_buffer_header"
+            ],
+            1
+        ]
+    },
+    "setIsPresent": {
+        "health.is_present": [
+            [
+                "health_is_present",
+                "component"
+            ],
+            0
+        ],
+        "health": [
+            [
+                "_current_result",
+                "_health",
+                "_results"
+            ],
+            0
+        ]
+    },
+    "setHealth": {
+        "health.is_present": [
+            [
+                "health_is_present",
+                "component"
+            ],
+            0
+        ],
+        "health.warning": [
+            [
+                "health_warning",
+                "component"
+            ],
+            0
+        ],
+        "health.error": [
+            [
+                "component",
+                "health_error"
+            ],
+            0
+        ],
+        "health": [
+            [
+                "_health",
+                "_results",
+                "_current_result"
+            ],
+            0
+        ]
+    },
+    "clearArmingBits": {
+        "can_arm": [
+            [
+                "modes",
+                "arming_checks_can_arm"
+            ],
+            0
+        ],
+        "arming_checks": [
+            [
+                "_results",
+                "_current_result",
+                "_arming_checks"
+            ],
+            0
+        ]
+    },
+    "clearCanRunBits": {
+        "arming_checks": [
+            [
+                "_results",
+                "_current_result",
+                "_arming_checks"
+            ],
+            0
+        ],
+        "can_run": [
+            [
+                "arming_checks_can_run",
+                "modes"
+            ],
+            0
+        ]
+    },
+    "finalize": {
+        "_results_changed": [
+            [
+                "_results"
+            ],
+            0
+        ]
+    },
+    "report": {
+        "current_results": [
+            [
+                "_current_result",
+                "_results"
+            ],
+            0
+        ],
+        "max_num_events": [
+            [
+                "orb_queue_length"
+            ],
+            0
+        ],
+        "need_to_report": [
+            [
+                "_had_unreported_difference",
+                "_results_changed",
+                "force",
+                "_already_reported"
+            ],
+            1
+        ],
+        "_last_report": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "header": [
+            [
+                "_event_buffer",
+                "event_buffer_header"
+            ],
+            0
+        ],
+        "event.log_levels": [
+            [
+                "header_log_levels"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "sizeof_event_buffer_header",
+                "header_size"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "initialize": {
+        "_manual_control_setpoint_sub": [
+            [
+                "orb_subscribe_manual_control_setpoint",
+                "orb_subscribe_orb_id"
+            ],
+            0
+        ]
+    }
+}

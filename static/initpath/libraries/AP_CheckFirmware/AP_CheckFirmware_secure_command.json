@@ -1,0 +1,161 @@
+{
+    "make_session_key": {
+        "data.time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "data.rand2": [
+            [
+                "get_random16"
+            ],
+            0
+        ],
+        "data.rand1": [
+            [
+                "get_random16"
+            ],
+            0
+        ],
+        "c64": [
+            [
+                "sizeof_data",
+                "data",
+                "crc_crc64_const",
+                "sizeof_uint32_t",
+                "crc_crc64_uint32_t"
+            ],
+            0
+        ]
+    },
+    "write_bootloader": {
+        "flash_addr": [
+            [
+                "hal_flash_getpageaddr"
+            ],
+            0
+        ]
+    },
+    "check_signature": {
+        "sec_data": [
+            [
+                "find_public_keys"
+            ],
+            0
+        ],
+        "actx": [
+            [
+                "crypto_check_ctx_abstract",
+                "ctx"
+            ],
+            0
+        ]
+    },
+    "set_public_keys": {
+        "ret": [
+            [
+                "write_bootloader_bld"
+            ],
+            0
+        ],
+        "bld": [
+            [
+                "read_bootloader"
+            ],
+            0
+        ],
+        "sec_data": [
+            [
+                "memmem_bld_length1",
+                "memmem_sizeof",
+                "memmem_key",
+                "struct",
+                "memmem_bld_data1",
+                "ap_secure_data"
+            ],
+            0
+        ],
+        "max_keys": [
+            [
+                "ap_public_key_max_keys"
+            ],
+            0
+        ]
+    },
+    "handle_secure_command": {
+        "key_idx": [
+            [
+                "pkt_data"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "pkt_data",
+                "pkt_data_length",
+                "ap_public_key_len",
+                "uint8_t",
+                "ap_public_key_len",
+                "new_nothrow"
+            ],
+            1
+        ],
+        "reply.operation": [
+            [
+                "pkt_operation"
+            ],
+            0
+        ],
+        "reply.result": [
+            [
+                "mav_result_accepted",
+                "mav_result_unsupported",
+                "mav_result_failed",
+                "mav_result_denied"
+            ],
+            0
+        ],
+        "max_fetch": [
+            [
+                "sizeof_reply_data",
+                "ap_public_key_len"
+            ],
+            0
+        ],
+        "reply.sequence": [
+            [
+                "pkt_sequence"
+            ],
+            0
+        ],
+        "sec_data": [
+            [
+                "find_public_keys"
+            ],
+            0
+        ],
+        "reply.data_length": [
+            [
+                "ap_public_key_len",
+                "sizeof_session_key"
+            ],
+            0
+        ]
+    },
+    "check_signed_bootloader": {
+        "sec_data": [
+            [
+                "memmem_fw_size",
+                "memmem_sizeof",
+                "const",
+                "memmem_key",
+                "memmem_fw",
+                "find_public_keys",
+                "ap_secure_data",
+                "struct"
+            ],
+            0
+        ]
+    }
+}

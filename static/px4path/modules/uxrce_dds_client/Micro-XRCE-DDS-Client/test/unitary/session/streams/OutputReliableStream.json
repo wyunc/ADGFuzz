@@ -1,0 +1,64 @@
+{
+    "copy": {
+        "last_written": [
+            [
+                "source_last_written"
+            ],
+            0
+        ],
+        "base.history": [
+            [
+                "source_base_history"
+            ],
+            0
+        ],
+        "base.size": [
+            [
+                "source_base_size"
+            ],
+            0
+        ],
+        "next_heartbeat_tries": [
+            [
+                "source_next_heartbeat_tries"
+            ],
+            0
+        ],
+        "send_lost": [
+            [
+                "source_send_lost"
+            ],
+            0
+        ],
+        "last_acknown": [
+            [
+                "source_last_acknown"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "source_offset"
+            ],
+            0
+        ],
+        "base.buffer": [
+            [
+                "source_base_buffer"
+            ],
+            0
+        ],
+        "last_sent": [
+            [
+                "source_last_sent"
+            ],
+            0
+        ],
+        "next_heartbeat_timestamp": [
+            [
+                "source_next_heartbeat_timestamp"
+            ],
+            0
+        ]
+    }
+}

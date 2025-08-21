@@ -1,0 +1,35 @@
+{
+    "getEffectivenessMatrix": {
+        "_first_control_surface_idx": [
+            [
+                "configuration_selected_matrix",
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ],
+        "surfaces_added_successfully": [
+            [
+                "_control_surfaces_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_upwards_motors_mask": [
+            [
+                "_rotors_get_upwards_motors"
+            ],
+            0
+        ],
+        "_forwards_motors_mask": [
+            [
+                "_rotors_get_forwards_motors"
+            ],
+            0
+        ],
+        "mc_rotors_added_successfully": [
+            [
+                "_rotors_add_actuators_configuration"
+            ],
+            0
+        ]
+    }
+}

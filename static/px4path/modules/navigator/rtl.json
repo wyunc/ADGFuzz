@@ -1,0 +1,354 @@
+{
+    "updateDatamanCache": {
+        "_error_state": [
+            [
+                "read_wait",
+                "read"
+            ],
+            0
+        ],
+        "dm_item": [
+            [
+                "static_cast",
+                "dm_item_t",
+                "_mission_sub_get_mission_dataman_id"
+            ],
+            0
+        ],
+        "_mission_id": [
+            [
+                "_mission_sub_get_mission_id"
+            ],
+            0
+        ],
+        "_opaque_id": [
+            [
+                "_stats_opaque_id"
+            ],
+            0
+        ],
+        "_dataman_state": [
+            [
+                "read_wait",
+                "update_request_wait",
+                "load",
+                "error",
+                "read"
+            ],
+            0
+        ]
+    },
+    "on_inactive": {
+        "_destination_check_time": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "publishRemainingTimeEstimate": {
+        "estimated_time": [
+            [
+                "_rtl_direct_calc_rtl_time_estimate",
+                "_rtl_mission_type_handle_calc_rtl_time_estimate"
+            ],
+            0
+        ]
+    },
+    "on_active": {
+        "_destination_check_time": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "isLanding": {
+        "is_landing": [
+            [
+                "_rtl_direct_is_landing",
+                "_rtl_mission_type_handle_is_landing"
+            ],
+            0
+        ]
+    },
+    "setRtlTypeAndDestination": {
+        "landing_loiter.height_m": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "landing_loiter.lat": [
+            [
+                "rtl_position_lat"
+            ],
+            0
+        ],
+        ".rtl_type": [
+            [
+                "rtl_direct_mission_land",
+                "rtl_direct",
+                "uint8_t",
+                "static_cast"
+            ],
+            1
+        ],
+        ".has_vtol_approach": [
+            [
+                "_one_rally_point_has_land_approach",
+                "_home_has_land_approach"
+            ],
+            0
+        ],
+        ".is_evaluation_pending": [
+            [
+                "update_request_wait",
+                "_dataman_state"
+            ],
+            0
+        ],
+        "landing_loiter.lon": [
+            [
+                "rtl_position_lon"
+            ],
+            0
+        ],
+        ".safe_point_index": [
+            [
+                "safe_point_index"
+            ],
+            0
+        ],
+        "landing_loiter": [
+            [
+                "choose_best_landing_approach_rtl_land_approaches"
+            ],
+            0
+        ],
+        ".safe_points_id": [
+            [
+                "_safe_points_id"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "findRtlDestination": {
+        "rtl_position.lon": [
+            [
+                "_home_pos_sub_get_lon"
+            ],
+            0
+        ],
+        "rtl_position.lat": [
+            [
+                "_home_pos_sub_get_lat"
+            ],
+            0
+        ],
+        "safe_point_index": [
+            [
+                "current_seq"
+            ],
+            0
+        ],
+        "rtl_position.alt": [
+            [
+                "_home_pos_sub_get_alt"
+            ],
+            0
+        ],
+        ".vehicle_type": [
+            [
+                "vehicle_type_fixed_wing",
+                "vehicle_type_rotary_wing"
+            ],
+            0
+        ],
+        "rtl_position.yaw": [
+            [
+                "_home_pos_sub_get_yaw"
+            ],
+            0
+        ],
+        "_home_has_land_approach": [
+            [
+                "has_vtol_land_approach_rtl_position"
+            ],
+            0
+        ],
+        "rtl_alt": [
+            [
+                "calculate_return_alt_from_cone_half_angle_rtl_position",
+                "calculate_return_alt_from_cone_half_angle_float_param_rtl_cone_half_angle_deg_get",
+                "_param_rtl_return_alt_get",
+                "max__global_pos_sub_get_alt",
+                "rtl_position_alt"
+            ],
+            0
+        ],
+        "rtl_position": [
+            [
+                "safepoint_position"
+            ],
+            0
+        ],
+        "min_dist": [
+            [
+                "dist",
+                "home_dist",
+                "flt_max"
+            ],
+            0
+        ],
+        "destination_type": [
+            [
+                "destination_type_home",
+                "destination_type_mission_land",
+                "destination_type_safe_point"
+            ],
+            0
+        ],
+        "dm_item": [
+            [
+                "_mission_sub_get_mission_dataman_id",
+                "dm_item_t",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "setLandPosAsDestination": {
+        "rtl_position.lat": [
+            [
+                "land_mission_item_lat"
+            ],
+            0
+        ],
+        "rtl_position.lon": [
+            [
+                "land_mission_item_lon"
+            ],
+            0
+        ],
+        "rtl_position.yaw": [
+            [
+                "_home_pos_sub_get_yaw"
+            ],
+            0
+        ]
+    },
+    "setSafepointAsDestination": {
+        "rtl_position.lon": [
+            [
+                "mission_safe_point_lon"
+            ],
+            0
+        ],
+        "rtl_position.alt": [
+            [
+                "_home_pos_sub_get_alt",
+                "mission_safe_point_altitude"
+            ],
+            0
+        ],
+        "rtl_position.yaw": [
+            [
+                "_home_pos_sub_get_yaw"
+            ],
+            0
+        ],
+        "rtl_position.lat": [
+            [
+                "mission_safe_point_lat"
+            ],
+            0
+        ]
+    },
+    "calculate_return_alt_from_cone_half_angle": {
+        "return_altitude_min_outside_acceptance_rad_amsl": [
+            [
+                "_param_nav_acc_rad_get",
+                "rtl_position_alt"
+            ],
+            0
+        ],
+        "cone_half_angle_rad": [
+            [
+                "radians_cone_half_angle_deg",
+                "radians_constrain"
+            ],
+            0
+        ],
+        "return_altitude_amsl": [
+            [
+                "min_return_altitude_amsl",
+                "max_return_altitude_min_outside_acceptance_rad_amsl",
+                "rtl_position_alt",
+                "max_return_altitude_amsl",
+                "destination_dist",
+                "min_cone_intersection_altitude_amsl",
+                "rtl_position_alt",
+                "_param_rtl_return_alt_get"
+            ],
+            1
+        ],
+        "cone_intersection_altitude_amsl": [
+            [
+                "rtl_position_alt",
+                "destination_dist",
+                "tanf_cone_half_angle_rad"
+            ],
+            0
+        ]
+    },
+    "init_rtl_mission_type": {
+        "_rtl_mission_type_handle": [
+            [
+                "rtl_mission_fast__navigator",
+                "nullptr",
+                "rtl_direct_mission_land__navigator",
+                "rtl_mission_fast_reverse_new_mission",
+                "rtl_mission_fast_new_mission",
+                "new",
+                "rtl_mission_fast_reverse__navigator"
+            ],
+            0
+        ],
+        "new_rtl_mission_type": [
+            [
+                "rtl_mission_fast_reverse",
+                "rtl_mission_fast"
+            ],
+            0
+        ],
+        "_rtl_type": [
+            [
+                "rtl_mission_fast_reverse",
+                "rtl_mission_fast"
+            ],
+            0
+        ],
+        "new_mission": [
+            [
+                "_mission_sub_get"
+            ],
+            0
+        ],
+        "_set_rtl_mission_type": [
+            [
+                "rtl_mission_fast_reverse",
+                "none",
+                "rtl_direct_mission_land",
+                "rtl_mission_fast"
+            ],
+            0
+        ]
+    }
+}

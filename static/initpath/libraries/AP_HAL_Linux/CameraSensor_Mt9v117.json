@@ -1,0 +1,59 @@
+{
+    "_write_var16": {
+        "reg": [
+            [
+                "_var2reg_offset",
+                "_var2reg_var"
+            ],
+            0
+        ]
+    },
+    "_write_var8": {
+        "reg": [
+            [
+                "_var2reg_var",
+                "_var2reg_offset"
+            ],
+            0
+        ]
+    },
+    "_write_var32": {
+        "reg": [
+            [
+                "_var2reg_var",
+                "_var2reg_offset"
+            ],
+            0
+        ]
+    },
+    "_config_change": {
+        "cmd_status": [
+            [
+                "_read_reg16_command_register"
+            ],
+            0
+        ]
+    },
+    "_apply_patch": {
+        "cmd_status": [
+            [
+                "_read_reg16_command_register"
+            ],
+            0
+        ]
+    },
+    "_init_sensor": {
+        "gpio_source": [
+            [
+                "hal_gpio_channel__nrst_gpio"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "_read_reg16_chip_id"
+            ],
+            0
+        ]
+    }
+}

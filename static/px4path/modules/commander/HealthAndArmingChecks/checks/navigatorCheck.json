@@ -1,0 +1,11 @@
+{
+    "checkAndReport": {
+        ".navigator_failure": [
+            [
+                "status_failure",
+                "failure_none"
+            ],
+            0
+        ]
+    }
+}

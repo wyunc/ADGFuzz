@@ -1,0 +1,22 @@
+{
+    "update": {
+        "_throw_launch_state": [
+            [
+                "idle",
+                "armed",
+                "unsafe",
+                "flying",
+                "disabled"
+            ],
+            0
+        ],
+        "_last_velocity": [
+            [
+                "vector3f_vehicle_local_position_vx",
+                "vector3f_vehicle_local_position_vz",
+                "vector3f_vehicle_local_position_vy"
+            ],
+            0
+        ]
+    }
+}

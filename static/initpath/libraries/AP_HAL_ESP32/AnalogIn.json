@@ -1,0 +1,107 @@
+{
+    "adc_calibration_init": {
+        "ret": [
+            [
+                "adc_cali_create_scheme_line_fitting_handle",
+                "adc_cali_create_scheme_curve_fitting_cali_config",
+                "esp_fail",
+                "adc_cali_create_scheme_line_fitting_cali_config",
+                "adc_cali_create_scheme_curve_fitting_handle"
+            ],
+            0
+        ],
+        "out_handle": [
+            [
+                "null"
+            ],
+            1
+        ]
+    },
+    "read_average": {
+        "adc_reading": [
+            [
+                "no_of_samples",
+                "adc_read"
+            ],
+            0
+        ],
+        "_value": [
+            [
+                "_sum_count",
+                "_sum_value"
+            ],
+            0
+        ]
+    },
+    "set_pin": {
+        "newChannel": [
+            [
+                "adc_channel_t",
+                "uint8_t",
+                "find_pinconfig_ardupin",
+                "pin_config",
+                "_channel"
+            ],
+            1
+        ],
+        "_ardupin": [
+            [
+                "ardupin"
+            ],
+            0
+        ],
+        "_adc_channel": [
+            [
+                "new_channel"
+            ],
+            0
+        ],
+        "_scaler": [
+            [
+                "uint8_t",
+                "_scaling",
+                "find_pinconfig_ardupin",
+                "pin_config"
+            ],
+            2
+        ]
+    },
+    "adc_read": {
+        "value": [
+            [
+                "raw",
+                "voltage_scaling"
+            ],
+            0
+        ]
+    },
+    "_add_value": {
+        "_latest_value": [
+            [
+                "adc_read"
+            ],
+            1
+        ],
+        "_sum_value": [
+            [
+                "adc_read"
+            ],
+            1
+        ]
+    },
+    "_timer_tick": {
+        "c": [
+            [
+                "j",
+                "_channels"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "adc_grp1_num_channels"
+            ],
+            0
+        ]
+    }
+}

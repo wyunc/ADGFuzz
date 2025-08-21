@@ -1,0 +1,839 @@
+{
+    "set_backend": {
+        "osd": [
+            [
+                "_backend_get_osd"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "_backend"
+            ],
+            0
+        ]
+    },
+    "u_scale": {
+        "units": [
+            [
+                "constrain_int16_units_last",
+                "constrain_int16_osd_units"
+            ],
+            0
+        ]
+    },
+    "get_arrow_font_index": {
+        "interval": [
+            [
+                "symbol_sym_arrow_count"
+            ],
+            0
+        ],
+        "angle_cd": [
+            [
+                "wrap_360_cd_angle_cd"
+            ],
+            0
+        ]
+    },
+    "draw_bat_volt": {
+        "v": [
+            [
+                "osd_cell_count",
+                "battery_voltage_resting_estimate_instance",
+                "osd_max_battery_voltage",
+                "battery_voltage_instance",
+                "uint8_t"
+            ],
+            0
+        ],
+        "blinkvolt": [
+            [
+                "osd_warn_avgcellrestvolt",
+                "osd_warn_restvolt",
+                "osd_warn_batvolt",
+                "osd_warn_avgcellvolt"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "pct"
+            ],
+            0
+        ],
+        "show_remaining_pct": [
+            [
+                "battery_capacity_remaining_pct_pct"
+            ],
+            0
+        ]
+    },
+    "draw_rssi": {
+        "rssiv": [
+            [
+                "ap_rssi_read_receiver_rssi"
+            ],
+            0
+        ],
+        "ap_rssi": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "draw_link_quality": {
+        "ap_rssi": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "lqv": [
+            [
+                "ap_rssi_read_receiver_link_quality"
+            ],
+            0
+        ]
+    },
+    "draw_current": {
+        "_stats.avg_current_a": [
+            [
+                "osd__stats_avg_current_a",
+                "amps"
+            ],
+            0
+        ]
+    },
+    "draw_fltmode": {
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "arm": [
+            [
+                "symbol_sym_disarmed",
+                "symbol_sym_armed"
+            ],
+            0
+        ]
+    },
+    "draw_sats": {
+        "flash": [
+            [
+                "gps_num_sats",
+                "osd_warn_nsat",
+                "gps_status",
+                "gps_ok_fix_3d"
+            ],
+            1
+        ]
+    },
+    "draw_batused": {
+        "ah": [
+            [
+                "mah",
+                "1e"
+            ],
+            0
+        ]
+    },
+    "draw_message": {
+        "end_position": [
+            [
+                "int_sizeof",
+                "int_buffer",
+                "message_visible_width"
+            ],
+            0
+        ],
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "start_position": [
+            [
+                "message_scroll_delay",
+                "int_sizeof",
+                "constrain_int16_start_position",
+                "int_buffer",
+                "notify_get_text_updated_millis",
+                "millis",
+                "message_scroll_delay",
+                "message_visible_width",
+                "strnlen_sizeof",
+                "strnlen_buffer",
+                "message_scroll_time_ms",
+                "message_scroll_delay",
+                "message_visible_width",
+                "strnlen_sizeof",
+                "strnlen_buffer",
+                "constrain_int16_chars_to_scroll"
+            ],
+            5
+        ]
+    },
+    "draw_speed": {
+        "angle_cd": [
+            [
+                "angle_rad",
+                "degx100"
+            ],
+            0
+        ],
+        "arrow": [
+            [
+                "get_arrow_font_index_angle_cd"
+            ],
+            0
+        ]
+    },
+    "draw_gspeed": {
+        "angle": [
+            [
+                "ahrs_get_yaw",
+                "atan2f_v_y",
+                "atan2f_v_x"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "v_length"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ]
+    },
+    "draw_horizon": {
+        "c": [
+            [
+                "ah_max_pitch",
+                "backend_get_aspect_ratio_correction",
+                "cosf_roll",
+                "ah_pitch_rad_to_char",
+                "sinf_roll",
+                "floorf_fy",
+                "symbol_sym_ah_h_count",
+                "ah_max_pitch",
+                "backend_get_aspect_ratio_correction",
+                "floorf_fy",
+                "cosf_roll",
+                "ah_pitch_rad_to_char",
+                "sinf_roll",
+                "symbol_sym_ah_v_count",
+                "symbol_sym_ah_h_start",
+                "floorf_fx",
+                "symbol_sym_ah_v_start"
+            ],
+            8
+        ]
+    },
+    "draw_distance": {
+        "unit_icon": [
+            [
+                "u_icon_distance_long",
+                "u_icon_distance"
+            ],
+            0
+        ],
+        "distance_scaled": [
+            [
+                "u_scale_distance_long",
+                "u_scale_distance"
+            ],
+            0
+        ]
+    },
+    "draw_home": {
+        "arrow": [
+            [
+                "get_arrow_font_index_angle_cd"
+            ],
+            0
+        ],
+        "home_loc": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "angle_cd": [
+            [
+                "ahrs_yaw_sensor",
+                "loc_get_bearing_to_home_loc"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "home_loc_get_distance_loc"
+            ],
+            0
+        ]
+    },
+    "draw_heading": {
+        "yaw": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ]
+    },
+    "draw_rrpm": {
+        "rpm": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "r_rpm": [
+            [
+                "_rrpm",
+                "static_cast",
+                "int"
+            ],
+            0
+        ]
+    },
+    "draw_sidebars": {
+        "bar_middle": [
+            [
+                "osd_sidebar_v_ext"
+            ],
+            1
+        ],
+        "scaled_aspd": [
+            [
+                "u_scale_aspd",
+                "u_scale_speed"
+            ],
+            0
+        ],
+        "aspd_symbol_index": [
+            [
+                "total_sectors",
+                "aspd_interval",
+                "fmodf_scaled_aspd",
+                "fmodf_aspd_interval"
+            ],
+            0
+        ],
+        "alt_symbol_index": [
+            [
+                "osd_units",
+                "units_imperial",
+                "units_aviation",
+                "total_sectors",
+                "fmodf_scaled_alt",
+                "fmodf_fmodf",
+                "fmodf_alt_interval"
+            ],
+            1
+        ],
+        "scaled_alt": [
+            [
+                "u_scale_alt",
+                "u_scale_altitude"
+            ],
+            0
+        ],
+        "have_speed_estimate": [
+            [
+                "ahrs_airspeed_estimate_aspd"
+            ],
+            0
+        ]
+    },
+    "draw_compass": {
+        "sector": [
+            [
+                "total_sectors",
+                "ahrs_yaw_sensor",
+                "total_sectors",
+                "total_sectors",
+                "i"
+            ],
+            3
+        ]
+    },
+    "draw_wind": {
+        "v": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "v_length"
+            ],
+            0
+        ],
+        "angle": [
+            [
+                "atan2f_v_x",
+                "ahrs_get_yaw",
+                "m_pi",
+                "atan2f_v_y"
+            ],
+            0
+        ],
+        "windvane": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "draw_aspeed": {
+        "have_estimate": [
+            [
+                "ahrs_airspeed_estimate_aspd"
+            ],
+            0
+        ]
+    },
+    "draw_vspeed": {
+        "sym": [
+            [
+                "symbol_sym_down_down",
+                "symbol_sym_up_up",
+                "symbol_sym_down",
+                "symbol_sym_up"
+            ],
+            0
+        ],
+        "vspd": [
+            [
+                "v_z",
+                "baro_get_climb_rate"
+            ],
+            0
+        ],
+        "vs_scaled": [
+            [
+                "u_scale_vspd",
+                "u_scale_fabsf",
+                "u_scale_vspeed"
+            ],
+            0
+        ],
+        "fmt": [
+            [
+                "units_aviation",
+                "osd_units"
+            ],
+            0
+        ]
+    },
+    "draw_esc_rpm": {
+        "esc": [
+            [
+                "esc_telem_get_max_rpm_esc"
+            ],
+            0
+        ],
+        "format": [
+            [
+                "rpm"
+            ],
+            1
+        ]
+    },
+    "draw_esc_amps": {
+        "esc": [
+            [
+                "esc_telem_get_max_rpm_esc"
+            ],
+            0
+        ]
+    },
+    "is_btfl_fonts": {
+        "p_msp": [
+            [
+                "msp"
+            ],
+            0
+        ]
+    },
+    "draw_rc_tx_power": {
+        "tx_power": [
+            [
+                "crsf_get_link_status_tx_power"
+            ],
+            0
+        ],
+        "btfl": [
+            [
+                "is_btfl_fonts"
+            ],
+            0
+        ],
+        "value_w": [
+            [
+                "float_tx_power"
+            ],
+            0
+        ]
+    },
+    "draw_rc_rssi_dbm": {
+        "btfl": [
+            [
+                "is_btfl_fonts"
+            ],
+            0
+        ],
+        "new_x": [
+            [
+                "x"
+            ],
+            0
+        ],
+        "blink": [
+            [
+                "osd_warn_rssi",
+                "crsf_get_link_status_rssi_dbm"
+            ],
+            1
+        ]
+    },
+    "draw_rc_snr": {
+        "btfl": [
+            [
+                "is_btfl_fonts"
+            ],
+            0
+        ],
+        "blink": [
+            [
+                "osd_warn_snr",
+                "crsf_get_link_status_snr"
+            ],
+            1
+        ]
+    },
+    "draw_rc_active_antenna": {
+        "btfl": [
+            [
+                "is_btfl_fonts"
+            ],
+            0
+        ],
+        "active_antenna": [
+            [
+                "crsf_get_link_status_active_antenna"
+            ],
+            0
+        ]
+    },
+    "draw_rc_lq": {
+        "btfl": [
+            [
+                "is_btfl_fonts"
+            ],
+            0
+        ],
+        "blink": [
+            [
+                "osd_warn_lq",
+                "crsf_get_link_status_link_quality"
+            ],
+            1
+        ],
+        "prefix_rf": [
+            [
+                "check_option_option_rf_mode_along_with_lq"
+            ],
+            0
+        ],
+        "rf_mode": [
+            [
+                "crsf_get_link_status_rf_mode"
+            ],
+            0
+        ]
+    },
+    "draw_gps_latitude": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "frac_portion": [
+            [
+                "10000000ul",
+                "labs_dec_portion",
+                "labs_loc_lat"
+            ],
+            1
+        ],
+        "dec_portion": [
+            [
+                "10000000l",
+                "loc_lat"
+            ],
+            0
+        ]
+    },
+    "draw_gps_longitude": {
+        "dec_portion": [
+            [
+                "10000000l",
+                "loc_lng"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "frac_portion": [
+            [
+                "10000000ul",
+                "labs_dec_portion",
+                "labs_loc_lng"
+            ],
+            1
+        ]
+    },
+    "draw_roll_angle": {
+        "roll": [
+            [
+                "abs_ahrs_roll_sensor"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "symbol_sym_rollr",
+                "symbol_sym_rolll",
+                "symbol_sym_roll0"
+            ],
+            0
+        ]
+    },
+    "draw_pitch_angle": {
+        "pitch": [
+            [
+                "abs_ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "symbol_sym_ptchup",
+                "symbol_sym_ptchdwn",
+                "symbol_sym_ptch0"
+            ],
+            0
+        ]
+    },
+    "draw_temp": {
+        "barometer": [
+            [
+                "baro"
+            ],
+            0
+        ],
+        "tmp": [
+            [
+                "barometer_get_temperature"
+            ],
+            0
+        ]
+    },
+    "draw_hdop": {
+        "hdp": [
+            [
+                "gps_get_hdop"
+            ],
+            0
+        ]
+    },
+    "draw_waypoint": {
+        "arrow": [
+            [
+                "get_arrow_font_index_angle_cd"
+            ],
+            0
+        ],
+        "angle_cd": [
+            [
+                "ahrs_yaw_sensor",
+                "osd_nav_info_wp_bearing"
+            ],
+            0
+        ]
+    },
+    "draw_flightime": {
+        "t": [
+            [
+                "stats_get_flight_time_s"
+            ],
+            0
+        ]
+    },
+    "draw_eff": {
+        "v": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "u_scale_v_length",
+                "u_scale_speed"
+            ],
+            0
+        ]
+    },
+    "draw_climbeff": {
+        "unit_icon": [
+            [
+                "u_icon_distance"
+            ],
+            0
+        ],
+        "vspd": [
+            [
+                "baro_get_climb_rate",
+                "v_z"
+            ],
+            0
+        ]
+    },
+    "draw_btemp": {
+        "btmp": [
+            [
+                "barometer_get_temperature"
+            ],
+            0
+        ],
+        "barometer": [
+            [
+                "baro"
+            ],
+            0
+        ]
+    },
+    "draw_atemp": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "draw_aspd1": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "asp1": [
+            [
+                "airspeed_get_airspeed"
+            ],
+            0
+        ]
+    },
+    "draw_aspd2": {
+        "asp2": [
+            [
+                "airspeed_get_airspeed"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "draw_pluscode": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ]
+    },
+    "draw_callsign": {
+        "fd": [
+            [
+                "fs_load_file"
+            ],
+            0
+        ],
+        "callsign_data.str": [
+            [
+                "strndup_charfd_data",
+                "strndup_const",
+                "fd_length"
+            ],
+            1
+        ]
+    },
+    "draw_vtx_power": {
+        "powr": [
+            [
+                "vtx_get_power_mw"
+            ],
+            0
+        ],
+        "vtx": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "draw_hgt_abvterr": {
+        "blink": [
+            [
+                "terrain_altitude",
+                "osd_warn_terr"
+            ],
+            0
+        ]
+    },
+    "draw_fence": {
+        "fenceptr": [
+            [
+                "fence"
+            ],
+            0
+        ]
+    },
+    "draw_rngf": {
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "rangefinder_distance_orient_rotation_pitch_270"
+            ],
+            0
+        ]
+    }
+}

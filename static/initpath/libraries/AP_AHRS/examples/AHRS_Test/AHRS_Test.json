@@ -1,0 +1,34 @@
+{
+    "loop": {
+        "last_compass": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "heading": [
+            [
+                "compass_calculate_heading_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "drift": [
+            [
+                "ahrs_get_gyro_drift"
+            ],
+            0
+        ],
+        "last_print": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_t": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

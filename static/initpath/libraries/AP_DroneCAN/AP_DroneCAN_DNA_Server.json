@@ -1,0 +1,92 @@
+{
+    "init": {
+        "self_node_id": [
+            [
+                "node_id"
+            ],
+            0
+        ],
+        "server_state": [
+            [
+                "healthy"
+            ],
+            0
+        ]
+    },
+    "verify_nodes": {
+        "last_logging_count": [
+            [
+                "logger_get_log_start_count"
+            ],
+            1
+        ],
+        "last_verification_request": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "curr_verifying_node": [
+            [
+                "max_node_id"
+            ],
+            0
+        ]
+    },
+    "handleNodeStatus": {
+        "server_state": [
+            [
+                "node_status_unhealthy",
+                "healthy"
+            ],
+            0
+        ],
+        "fault_node_id": [
+            [
+                "transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handleNodeInfo": {
+        "server_state": [
+            [
+                "duplicate_nodes"
+            ],
+            0
+        ],
+        "fault_node_id": [
+            [
+                "transfer_source_node_id"
+            ],
+            0
+        ],
+        "duplicate": [
+            [
+                "db_handle_node_info_rsp_hardware_version_unique_id",
+                "db_handle_node_info_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_allocation": {
+        "rsp.unique_id.len": [
+            [
+                "msg_unique_id_len"
+            ],
+            1
+        ],
+        "last_alloc_msg_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rsp.node_id": [
+            [
+                "db_handle_allocation_rcvd_unique_id"
+            ],
+            0
+        ]
+    }
+}

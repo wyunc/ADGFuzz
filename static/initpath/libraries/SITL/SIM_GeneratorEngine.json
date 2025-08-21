@@ -1,0 +1,30 @@
+{
+    "update": {
+        "last_rpm_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "temperature": [
+            [
+                "max_current",
+                "current_current",
+                "abs_rpm_delta",
+                "millis",
+                "max_slew_rpm_per_second",
+                "heat_environment_loss_factor",
+                "millis",
+                "millis",
+                "factor"
+            ],
+            7
+        ],
+        "last_heat_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

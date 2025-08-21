@@ -1,0 +1,495 @@
+{
+    "update": {
+        "ground_course_deg": [
+            [
+                "ahrs_yaw_sensor",
+                "degrees_ground_speed_vec_angle"
+            ],
+            0
+        ],
+        "lookahead_step2_dist": [
+            [
+                "oa_bendyruler_lookahead_step2_ratio",
+                "_lookahead"
+            ],
+            1
+        ],
+        "bendy_type": [
+            [
+                "oa_bendy_disabled",
+                "oa_bendy_horizontal",
+                "oa_bendy_vertical"
+            ],
+            0
+        ],
+        "lookahead_step1_dist": [
+            [
+                "_lookahead",
+                "oa_bendyruler_lookahead_past_dest",
+                "current_loc_get_distance_destination"
+            ],
+            2
+        ],
+        "origin_new": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "search_xy_path_lookahead_step2_dist",
+                "search_xy_path_ground_course_deg",
+                "search_vertical_path_destination_new",
+                "search_vertical_path_proximity_only",
+                "search_xy_path_bearing_to_dest",
+                "search_xy_path_destination_new",
+                "search_xy_path_distance_to_dest",
+                "search_vertical_path_lookahead_step1_dist",
+                "search_vertical_path_lookahead_step2_dist",
+                "search_vertical_path_bearing_to_dest",
+                "search_xy_path_proximity_only",
+                "search_xy_path_lookahead_step1_dist",
+                "search_vertical_path_current_loc",
+                "search_xy_path_current_loc",
+                "search_xy_path_destination",
+                "search_vertical_path_destination",
+                "search_vertical_path_distance_to_dest"
+            ],
+            0
+        ],
+        "bearing_to_dest": [
+            [
+                "current_loc_get_bearing_to_destination"
+            ],
+            0
+        ]
+    },
+    "search_xy_path": {
+        "final_margin": [
+            [
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_current_loc"
+            ],
+            1
+        ],
+        "chosen_distance": [
+            [
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_current_loc",
+                "flt_max",
+                "lookahead_step1_dist",
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_current_loc",
+                "flt_max"
+            ],
+            3
+        ],
+        "ignore_bearing_change": [
+            [
+                "resist_bearing_change_final_margin",
+                "resist_bearing_change_active",
+                "resist_bearing_change_final_bearing",
+                "resist_bearing_change__destination_prev",
+                "resist_bearing_change_lookahead_step1_dist",
+                "resist_bearing_change__bearing_prev",
+                "resist_bearing_change_current_loc",
+                "resist_bearing_change_proximity_only",
+                "resist_bearing_change_margin",
+                "resist_bearing_change_destination",
+                "resist_bearing_change_bearing_test"
+            ],
+            0
+        ],
+        "active": [
+            [
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "distance2": [
+            [
+                "oa_bendyruler_lookahead_step2_min",
+                "lookahead_step2_dist",
+                "test_loc_get_distance_destination"
+            ],
+            0
+        ],
+        "chosen_bearing": [
+            [
+                "wrap_180_bearing_to_dest",
+                "wrap_180_bearing_delta",
+                "bearing_to_dest",
+                "wrap_180_bearing_to_dest",
+                "wrap_180_bearing_delta"
+            ],
+            3
+        ],
+        "bearing_test2": [
+            [
+                "wrap_180_test_bearings",
+                "wrap_180_j",
+                "wrap_180_bearing_to_dest2"
+            ],
+            0
+        ],
+        "destination_new": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "bearing_delta": [
+            [
+                "oa_bendyruler_bearing_inc_xy",
+                "i",
+                "bdir"
+            ],
+            0
+        ],
+        "final_bearing": [
+            [
+                "wrap_180_bearing_to_dest",
+                "wrap_180_bearing_delta"
+            ],
+            1
+        ],
+        "margin2": [
+            [
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_test_loc2"
+            ],
+            0
+        ],
+        "_current_lookahead": [
+            [
+                "_lookahead"
+            ],
+            0
+        ],
+        "bearing_to_dest2": [
+            [
+                "test_loc_get_bearing_to_destination"
+            ],
+            0
+        ],
+        "test_loc2": [
+            [
+                "current_loc"
+            ],
+            1
+        ]
+    },
+    "search_vertical_path": {
+        "test_loc_sub_test": [
+            [
+                "current_loc"
+            ],
+            1
+        ],
+        "active": [
+            [
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "margin_sub_test": [
+            [
+                "calc_avoidance_margin_true",
+                "calc_avoidance_margin_test_loc_sub_test",
+                "calc_avoidance_margin_test_loc"
+            ],
+            0
+        ],
+        "distance2": [
+            [
+                "test_loc_get_distance_destination",
+                "oa_bendyruler_lookahead_step2_min",
+                "lookahead_step2_dist"
+            ],
+            0
+        ],
+        "best_margin": [
+            [
+                "flt_max",
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_current_loc"
+            ],
+            1
+        ],
+        "angular_limit": [
+            [
+                "oa_bendyruler_bearing_inc_vertical"
+            ],
+            0
+        ],
+        "test_loc2": [
+            [
+                "current_loc"
+            ],
+            1
+        ],
+        "chosen_pitch": [
+            [
+                "oa_bendyruler_bearing_inc_vertical",
+                "i",
+                "bdir",
+                "oa_bendyruler_bearing_inc_vertical",
+                "i",
+                "bdir"
+            ],
+            3
+        ],
+        "_current_lookahead": [
+            [
+                "_lookahead"
+            ],
+            0
+        ],
+        "destination_new": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "bearing_to_dest2": [
+            [
+                "bearing_to_dest",
+                "test_loc_get_bearing_to_destination"
+            ],
+            0
+        ],
+        "bearing_test2": [
+            [
+                "wrap_180_test_pitch_step2",
+                "wrap_180_j"
+            ],
+            0
+        ],
+        "margin2": [
+            [
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_test_loc",
+                "calc_avoidance_margin_test_loc2"
+            ],
+            0
+        ]
+    },
+    "resist_bearing_change": {
+        "test_loc_previous_bearing": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "prev_bearing": [
+            [
+                "bearing_test",
+                "flt_max"
+            ],
+            0
+        ],
+        "final_margin": [
+            [
+                "calc_avoidance_margin_test_loc_previous_bearing",
+                "calc_avoidance_margin_proximity_only",
+                "calc_avoidance_margin_current_loc"
+            ],
+            1
+        ],
+        "prev_dest": [
+            [
+                "destination"
+            ],
+            0
+        ]
+    },
+    "calc_avoidance_margin": {
+        "margin_min": [
+            [
+                "latest_margin",
+                "flt_max"
+            ],
+            0
+        ]
+    },
+    "calc_margin_from_circular_fence": {
+        "ahrs_home": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "end_dist_sq": [
+            [
+                "ahrs_home_get_distance_ne_end_length_squared"
+            ],
+            0
+        ],
+        "margin": [
+            [
+                "sqrtf_start_dist_sq",
+                "sqrtf_end_dist_sq",
+                "fence_get_radius",
+                "fence_get_margin"
+            ],
+            1
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "start_dist_sq": [
+            [
+                "ahrs_home_get_distance_ne_start_length_squared"
+            ],
+            0
+        ]
+    },
+    "calc_margin_from_alt_fence": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "margin": [
+            [
+                "alt_above_home_cm_end",
+                "fence_get_safe_alt_max",
+                "alt_above_home_cm_start",
+                "fence_get_safe_alt_max"
+            ],
+            3
+        ]
+    },
+    "calc_margin_from_inclusion_and_exclusion_polygons": {
+        "margin": [
+            [
+                "polygon_closest_distance_line_boundary",
+                "polygon_closest_distance_line_num_points",
+                "polygon_closest_distance_line_start_ne",
+                "fence_get_margin",
+                "polygon_outside_boundary",
+                "polygon_outside_start_ne",
+                "polygon_outside_num_points",
+                "polygon_closest_distance_line_end_ne"
+            ],
+            3
+        ],
+        "num_inclusion_polygons": [
+            [
+                "fence_polyfence_get_inclusion_polygon_count"
+            ],
+            0
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "num_exclusion_polygons": [
+            [
+                "fence_polyfence_get_exclusion_polygon_count"
+            ],
+            0
+        ],
+        "boundary": [
+            [
+                "fence_polyfence_get_inclusion_polygon_i",
+                "_get_exclusion_polygon_num_points",
+                "fence_polyfence_get_exclusion_polygon_i",
+                "_get_inclusion_polygon_num_points"
+            ],
+            0
+        ]
+    },
+    "calc_margin_from_inclusion_and_exclusion_circles": {
+        "num_inclusion_circles": [
+            [
+                "fence_polyfence_get_inclusion_circle_count"
+            ],
+            0
+        ],
+        "margin": [
+            [
+                "sqrtf_start_dist_sq",
+                "fence_get_margin",
+                "closest_distance_between_line_and_point_center_pos_cm",
+                "closest_distance_between_line_and_point_start_ne",
+                "closest_distance_between_line_and_point_end_ne",
+                "sqrtf_end_dist_sq",
+                "radius"
+            ],
+            3
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "num_exclusion_circles": [
+            [
+                "fence_polyfence_get_exclusion_circle_count"
+            ],
+            0
+        ],
+        "end_dist_sq": [
+            [
+                "_length_squared",
+                "center_pos_cm",
+                "end_ne"
+            ],
+            0
+        ],
+        "start_dist_sq": [
+            [
+                "_length_squared",
+                "center_pos_cm",
+                "start_ne"
+            ],
+            0
+        ]
+    },
+    "calc_margin_from_object_database": {
+        "point_cm": [
+            [
+                "item_pos"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "oa_db_get_item_i"
+            ],
+            0
+        ],
+        "margin": [
+            [
+                "flt_max",
+                "closest_distance_between_line_and_point_point_cm",
+                "closest_distance_between_line_and_point_end_neu",
+                "item_radius",
+                "closest_distance_between_line_and_point_start_neu"
+            ],
+            2
+        ],
+        "oaDb": [
+            [
+                "oadatabase"
+            ],
+            0
+        ]
+    }
+}

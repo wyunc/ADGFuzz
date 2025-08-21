@@ -1,0 +1,16 @@
+{
+    "safetyButtonHandler": {
+        "_previous_safety_off": [
+            [
+                "_safety_off"
+            ],
+            0
+        ],
+        "safety_changed": [
+            [
+                "_safety_off"
+            ],
+            0
+        ]
+    }
+}

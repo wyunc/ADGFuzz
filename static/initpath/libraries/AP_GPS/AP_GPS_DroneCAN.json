@@ -1,0 +1,423 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "inter_instance_pre_arm_checks": {
+        "params_j": [
+            [
+                "gps_params",
+                "j"
+            ],
+            0
+        ],
+        "params_i": [
+            [
+                "gps_params",
+                "i"
+            ],
+            0
+        ]
+    },
+    "handle_velocity": {
+        "interim_state.have_vertical_velocity": [
+            [
+                "state_have_vertical_velocity"
+            ],
+            0
+        ],
+        "interim_state.velocity": [
+            [
+                "vel"
+            ],
+            0
+        ]
+    },
+    "handle_fix2_msg": {
+        "alt_amsl_cm": [
+            [
+                "msg_height_msl_mm"
+            ],
+            0
+        ],
+        "interim_state.hdop": [
+            [
+                "msg_pdop",
+                "interim_state_vdop"
+            ],
+            0
+        ],
+        "interim_state.vertical_accuracy": [
+            [
+                "sqrtf_msg_covariance_data"
+            ],
+            0
+        ],
+        "interim_state.status": [
+            [
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_2d",
+                "no_fix",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps",
+                "gps_ok_fix_3d_rtk_float"
+            ],
+            0
+        ],
+        "interim_state.undulation": [
+            [
+                "msg_height_ellipsoid_mm",
+                "msg_height_msl_mm"
+            ],
+            0
+        ],
+        "interim_state.horizontal_accuracy": [
+            [
+                "sqrtf_msg_covariance_data"
+            ],
+            0
+        ],
+        "interim_state.speed_accuracy": [
+            [
+                "sqrtf_msg_covariance_data"
+            ],
+            0
+        ],
+        "interim_state.last_corrected_gps_time_us": [
+            [
+                "jitter_correction_correct_offboard_timestamp_usec_timestamp_usec",
+                "jitter_correction_correct_offboard_timestamp_usec_native_time_offset",
+                "msg_timestamp_usec",
+                "msg_gnss_timestamp_usec",
+                "jitter_correction_correct_offboard_timestamp_usec_msg_timestamp_usec"
+            ],
+            0
+        ],
+        "interim_state.num_sats": [
+            [
+                "msg_sats_used"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "msg_latitude_deg_1e8"
+            ],
+            0
+        ],
+        "interim_state.time_week": [
+            [
+                "ap_msec_per_week",
+                "uint16_t",
+                "msg_gnss_timestamp_usec",
+                "unix_offset_msec"
+            ],
+            2
+        ],
+        "interim_state.last_gps_time_ms": [
+            [
+                "jitter_correction_correct_offboard_timestamp_usec_timestamp_usec",
+                "jitter_correction_correct_offboard_timestamp_usec_native_time_offset",
+                "1000u",
+                "jitter_correction_correct_offboard_timestamp_usec_msg_timestamp_usec",
+                "interim_state_last_corrected_gps_time_us"
+            ],
+            0
+        ],
+        "interim_state.time_week_ms": [
+            [
+                "interim_state_time_week",
+                "ap_msec_per_week",
+                "uint32_t",
+                "msg_gnss_timestamp_usec",
+                "unix_offset_msec"
+            ],
+            2
+        ],
+        "last_toggle": [
+            [
+                "1000000ull",
+                "jitter_correction_get_link_offset_usec",
+                "msg_timestamp_usec"
+            ],
+            1
+        ],
+        "interim_state.location": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "msg_longitude_deg_1e8"
+            ],
+            0
+        ]
+    },
+    "handle_aux_msg": {
+        "interim_state.hdop": [
+            [
+                "msg_hdop"
+            ],
+            0
+        ],
+        "interim_state.vdop": [
+            [
+                "msg_vdop"
+            ],
+            0
+        ]
+    },
+    "handle_heading_msg": {
+        "interim_state.gps_yaw_accuracy": [
+            [
+                "degrees_msg_heading_accuracy_rad"
+            ],
+            0
+        ],
+        "interim_state.gps_yaw_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "interim_state.have_gps_yaw": [
+            [
+                "msg_heading_valid"
+            ],
+            0
+        ],
+        "interim_state.gps_yaw_configured": [
+            [
+                "msg_heading_valid"
+            ],
+            0
+        ],
+        "interim_state.have_gps_yaw_accuracy": [
+            [
+                "msg_heading_accuracy_valid"
+            ],
+            0
+        ],
+        "interim_state.gps_yaw": [
+            [
+                "degrees_msg_heading_rad"
+            ],
+            0
+        ]
+    },
+    "handle_status_msg": {
+        "status_flags": [
+            [
+                "msg_status"
+            ],
+            0
+        ],
+        "error_code": [
+            [
+                "msg_error_codes"
+            ],
+            0
+        ],
+        "healthy": [
+            [
+                "msg_healthy"
+            ],
+            0
+        ]
+    },
+    "handle_relposheading_msg": {
+        "interim_state.gps_yaw_accuracy": [
+            [
+                "msg_reported_heading_acc_deg"
+            ],
+            0
+        ],
+        "interim_state.have_gps_yaw_accuracy": [
+            [
+                "msg_reported_heading_acc_available"
+            ],
+            0
+        ]
+    },
+    "get_RTCMV3": {
+        "len": [
+            [
+                "rtcm3_parser_get_len_bytes"
+            ],
+            0
+        ]
+    },
+    "handle_fix2_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ]
+    },
+    "handle_aux_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_heading_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_status_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_moving_baseline_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ]
+    },
+    "handle_relposheading_msg_trampoline": {
+        "driver": [
+            [
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_ap_dronecan"
+            ],
+            0
+        ]
+    },
+    "do_config": {
+        "ap_dronecan": [
+            [
+                "_detected_module",
+                "_detected_modules",
+                "_ap_dronecan"
+            ],
+            0
+        ],
+        "node_id": [
+            [
+                "_detected_module",
+                "_node_id",
+                "_detected_modules"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "state": [
+            [
+                "interim_state"
+            ],
+            0
+        ],
+        "_last_itow_ms": [
+            [
+                "interim_state_time_week_ms"
+            ],
+            0
+        ],
+        "interim_state.vertical_accuracy": [
+            [
+                "interim_state_vertical_accuracy"
+            ],
+            0
+        ],
+        "interim_state.horizontal_accuracy": [
+            [
+                "interim_state_horizontal_accuracy"
+            ],
+            0
+        ],
+        "interim_state.speed_accuracy": [
+            [
+                "interim_state_speed_accuracy"
+            ],
+            0
+        ],
+        "interim_state.announced_detection": [
+            [
+                "state_announced_detection"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "no_gps"
+            ],
+            0
+        ]
+    },
+    "send_rtcm": {
+        "_rtcm_stream.last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "ptr": [
+            [
+                "_rtcm_stream_buf_readptr_outlen"
+            ],
+            0
+        ],
+        "msg.data.len": [
+            [
+                "sizeof_msg_data_data"
+            ],
+            1
+        ],
+        "msg.protocol_id": [
+            [
+                "uavcan_equipment_gnss_rtcmstream_protocol_id_rtcm3"
+            ],
+            0
+        ]
+    },
+    "inject_data": {
+        "_rtcm_stream.buf": [
+            [
+                "new_nothrow",
+                "byte_buffer"
+            ],
+            0
+        ],
+        ".last_inject_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_param_get_set_response_int": {
+        "value": [
+            [
+                "int32_t",
+                "gps_type_ublox_rtk_base",
+                "gps_type_ublox_rtk_rover"
+            ],
+            0
+        ]
+    }
+}

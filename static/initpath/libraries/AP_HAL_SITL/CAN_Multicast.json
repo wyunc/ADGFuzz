@@ -1,0 +1,35 @@
+{
+    "send": {
+        "pkt.magic": [
+            [
+                "mcast_magic"
+            ],
+            0
+        ],
+        "pkt.message_id": [
+            [
+                "frame_id"
+            ],
+            0
+        ],
+        "pkt.crc": [
+            [
+                "pkt_flags",
+                "0x_ffffu",
+                "crc16_ccitt_uint8_t",
+                "dlc_to_data_length_frame_dlc"
+            ],
+            1
+        ]
+    },
+    "receive": {
+        "ret": [
+            [
+                "pkt",
+                "sock_recv_void",
+                "sizeof_pkt"
+            ],
+            0
+        ]
+    }
+}

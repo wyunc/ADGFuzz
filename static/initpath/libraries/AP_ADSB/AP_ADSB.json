@@ -1,0 +1,363 @@
+{
+    "init": {
+        "in_state.list_size_allocated": [
+            [
+                "in_state_list_size_param"
+            ],
+            0
+        ],
+        "detected_num_instances": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "in_state.vehicle_list": [
+            [
+                "adsb_vehicle_t",
+                "in_state_list_size_param",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "loc.horizontal_pos_accuracy_is_valid": [
+            [
+                "gps_horizontal_accuracy_loc_horizontal_pos_accuracy"
+            ],
+            0
+        ],
+        "loc.vertical_pos_accuracy_is_valid": [
+            [
+                "gps_vertical_accuracy_loc_vertical_pos_accuracy"
+            ],
+            0
+        ],
+        "out_state.cfg.ICAO_id": [
+            [
+                "gen_icao__my_loc",
+                "out_state_cfg_icao_id_param"
+            ],
+            0
+        ],
+        "loc.horizontal_vel_accuracy_is_valid": [
+            [
+                "gps_speed_accuracy_loc_horizontal_vel_accuracy"
+            ],
+            0
+        ],
+        "_my_loc": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "loc.epoch_us": [
+            [
+                "gps_time_epoch_usec"
+            ],
+            0
+        ],
+        "loc.satellites": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "out_state.last_config_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "loc.have_epoch_from_rtc_us": [
+            [
+                "rtc_get_utc_usec_loc_epoch_from_rtc_us"
+            ],
+            0
+        ],
+        "loc.baro_is_healthy": [
+            [
+                "baro_healthy"
+            ],
+            0
+        ],
+        "out_state.cfg.squawk_octal": [
+            [
+                "out_state_cfg_squawk_octal_param",
+                "uint16_t"
+            ],
+            0
+        ],
+        "loc.vertRateD_is_valid": [
+            [
+                "ahrs_get_vert_pos_rate_d_loc_vert_rate_d"
+            ],
+            0
+        ],
+        "loc.fix_type": [
+            [
+                "gps_status",
+                "ap_gps_fix_type"
+            ],
+            0
+        ],
+        "out_state.cfg.ICAO_id_param_prev": [
+            [
+                "out_state_cfg_icao_id_param"
+            ],
+            0
+        ],
+        "loc.vel_ned": [
+            [
+                "gps_velocity"
+            ],
+            0
+        ],
+        "loc.baro_alt_press_diff_sea_level": [
+            [
+                "baro_get_altitude_difference_baro_get_pressure",
+                "baro_get_altitude_difference_ssl_air_pressure"
+            ],
+            0
+        ]
+    },
+    "determine_furthest_aircraft": {
+        "in_state.furthest_vehicle_index": [
+            [
+                "index"
+            ],
+            1
+        ],
+        "in_state.furthest_vehicle_distance": [
+            [
+                "_my_loc_get_distance_get_location",
+                "_my_loc_get_distance_index",
+                "_my_loc_get_distance_in_state_vehicle_list"
+            ],
+            2
+        ]
+    },
+    "find_index": {
+        "index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "handle_adsb_vehicle": {
+        "is_tracked_in_list": [
+            [
+                "find_index_vehicle",
+                "find_index_index"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "in_state_list_size_allocated"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "detected_ourself": [
+            [
+                "vehicle_info_icao_address",
+                "out_state_cfg_icao_id",
+                "uint32_t"
+            ],
+            0
+        ],
+        "out_of_range_alt": [
+            [
+                "abs_vehicle_loc_alt",
+                "is_special_vehicle_vehicle_info_icao_address",
+                "in_state_list_altitude",
+                "abs__my_loc_alt",
+                "_my_loc_is_zero"
+            ],
+            2
+        ],
+        "required_flags_position": [
+            [
+                "adsb_flags_valid_coords",
+                "adsb_flags_valid_altitude"
+            ],
+            0
+        ],
+        "out_of_range": [
+            [
+                "in_state_list_radius",
+                "_my_loc_is_zero",
+                "is_special_vehicle_vehicle_info_icao_address",
+                "_my_loc_get_distance_vehicle_loc"
+            ],
+            3
+        ],
+        "vehicle_loc": [
+            [
+                "get_location_vehicle"
+            ],
+            0
+        ]
+    },
+    "send_adsb_vehicle": {
+        "vehicle": [
+            [
+                "in_state_send_index",
+                "in_state_vehicle_list",
+                "chan",
+                "_info"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_out_cfg": {
+        "out_state.cfg.ICAO_id": [
+            [
+                "packet_icao"
+            ],
+            0
+        ],
+        "out_state.cfg.ICAO_id_param_prev": [
+            [
+                "packet_icao",
+                "0x00ffffffff"
+            ],
+            0
+        ],
+        "out_state.cfg.stall_speed_cm": [
+            [
+                "packet_stall_speed"
+            ],
+            0
+        ]
+    },
+    "handle_out_control": {
+        "out_state.ctrl.baroCrossChecked": [
+            [
+                "packet_state",
+                "uavionix_adsb_out_control_state_external_baro_crosschecked"
+            ],
+            0
+        ],
+        "out_state.ctrl.identActive": [
+            [
+                "uavionix_adsb_out_control_state_ident_button_active",
+                "packet_state"
+            ],
+            0
+        ],
+        "out_state.ctrl.x_bit": [
+            [
+                "packet_x_bit"
+            ],
+            0
+        ],
+        "out_state.ctrl.squawkCode": [
+            [
+                "packet_squawk"
+            ],
+            0
+        ],
+        "out_state.ctrl.externalBaroAltitude_mm": [
+            [
+                "packet_baro_alt_msl"
+            ],
+            0
+        ],
+        "out_state.ctrl.modeSEnabled": [
+            [
+                "packet_state",
+                "uavionix_adsb_out_control_state_mode_s_enabled"
+            ],
+            0
+        ],
+        "out_state.ctrl.airGroundState": [
+            [
+                "uavionix_adsb_out_control_state_on_ground",
+                "packet_state"
+            ],
+            0
+        ],
+        "out_state.ctrl.es1090TxEnabled": [
+            [
+                "packet_state",
+                "uavionix_adsb_out_control_state_1090es_tx_enabled"
+            ],
+            0
+        ],
+        "out_state.ctrl.modeAEnabled": [
+            [
+                "packet_state",
+                "uavionix_adsb_out_control_state_mode_a_enabled"
+            ],
+            0
+        ],
+        "out_state.ctrl.emergencyState": [
+            [
+                "packet_emergency_status"
+            ],
+            0
+        ],
+        "out_state.ctrl.modeCEnabled": [
+            [
+                "packet_state",
+                "uavionix_adsb_out_control_state_mode_c_enabled"
+            ],
+            0
+        ]
+    },
+    "handle_transceiver_report": {
+        "out_state.chan_last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "out_state.status": [
+            [
+                "packet_rf_health",
+                "uavionix_adsb_rf_health"
+            ],
+            0
+        ],
+        "out_state.chan": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "vehicle.last_update_ms": [
+            [
+                "uint32_t_1000u",
+                "uint32_t_vehicle_info_tslc",
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_vehicle_by_ICAO": {
+        "temp_vehicle.info.ICAO_address": [
+            [
+                "icao"
+            ],
+            0
+        ]
+    }
+}

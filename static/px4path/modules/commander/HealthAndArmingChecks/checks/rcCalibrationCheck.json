@@ -1,0 +1,44 @@
+{
+    "checkAndReport": {
+        "param_dz": [
+            [
+                "_param_values",
+                "_dz",
+                "i"
+            ],
+            0
+        ],
+        "param_max": [
+            [
+                "_max",
+                "_param_values",
+                "i"
+            ],
+            0
+        ],
+        "param_min": [
+            [
+                "_param_values",
+                "_min",
+                "i"
+            ],
+            0
+        ],
+        "param_trim": [
+            [
+                "_trim",
+                "_param_values",
+                "i"
+            ],
+            0
+        ]
+    },
+    "updateParams": {
+        ".dz": [
+            [
+                "rc_input_max_deadzone_us"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "update": {
+        "_state": [
+            [
+                "want_byte1",
+                "want_id",
+                "want_byte2",
+                "want_start_stop_d"
+            ],
+            0
+        ],
+        "_id": [
+            [
+                "_buffer"
+            ],
+            0
+        ],
+        "_buflen": [
+            [
+                "read_from_autopilot__buffer",
+                "read_from_autopilot_array_size",
+                "read_from_autopilot__buflen",
+                "consume"
+            ],
+            1
+        ],
+        "_data": [
+            [
+                "start_stop_d",
+                "bytestuff_d",
+                "_buffer"
+            ],
+            1
+        ]
+    }
+}

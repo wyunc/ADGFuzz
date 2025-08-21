@@ -1,0 +1,75 @@
+{
+    "reset": {
+        "_u_prev": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_y_prev": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_u_hpf": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_y_hpf": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "updateFilters": {
+        "_u_prev": [
+            [
+                "u",
+                "_u_lpf_apply_u"
+            ],
+            1
+        ],
+        "_y_prev": [
+            [
+                "y",
+                "_y_lpf_apply_y"
+            ],
+            1
+        ],
+        "_u_hpf": [
+            [
+                "_f",
+                "_u_lpf_apply_u",
+                "_alpha_hpf"
+            ],
+            1
+        ],
+        "_y_hpf": [
+            [
+                "_y_lpf_apply_y",
+                "_f",
+                "_alpha_hpf"
+            ],
+            1
+        ]
+    },
+    "updateFitness": {
+        "sum": [
+            [
+                "diff_i",
+                "_f"
+            ],
+            0
+        ],
+        "diff": [
+            [
+                "_rls_get_diff_estimate"
+            ],
+            0
+        ]
+    }
+}

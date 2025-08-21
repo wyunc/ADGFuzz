@@ -1,0 +1,929 @@
+{
+    "adjust_velocity_fence": {
+        "desired_backup_vel_xy": [
+            [
+                "quad_4_back_vel",
+                "quad_2_back_vel",
+                "quad_3_back_vel",
+                "quad_1_back_vel"
+            ],
+            0
+        ],
+        "backup_vel": [
+            [
+                "desired_backup_vel_xy_x",
+                "vector3f",
+                "desired_backup_vel_z",
+                "desired_backup_vel_xy_y"
+            ],
+            0
+        ],
+        "accel_cmss_limited": [
+            [
+                "ac_avoid_accel_cmss_max",
+                "accel_cmss"
+            ],
+            0
+        ],
+        "desired_vel_cms": [
+            [
+                "desired_vel_cms_z",
+                "desired_velocity_xy_cms_x",
+                "vector3f",
+                "desired_velocity_xy_cms_y"
+            ],
+            1
+        ]
+    },
+    "adjust_velocity": {
+        "max_back_spd_xy_cms": [
+            [
+                "_backup_speed_xy_max"
+            ],
+            0
+        ],
+        "desired_backup_vel_xy": [
+            [
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel",
+                "quad_2_back_vel"
+            ],
+            0
+        ],
+        "desired_vel_cms_original": [
+            [
+                "desired_vel_cms"
+            ],
+            0
+        ],
+        "desired_backup_vel.z": [
+            [
+                "back_vel_up",
+                "back_vel_down",
+                "_backup_speed_z_max"
+            ],
+            2
+        ],
+        "_last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "desired_vel_cms.y": [
+            [
+                "desired_vel_cms_y",
+                "desired_backup_vel_y"
+            ],
+            0
+        ],
+        "desired_vel_cms.x": [
+            [
+                "desired_backup_vel_x",
+                "desired_vel_cms_x"
+            ],
+            0
+        ],
+        "accel_cmss_limited": [
+            [
+                "accel_cmss",
+                "ac_avoid_accel_cmss_max"
+            ],
+            0
+        ],
+        "desired_vel_cms.z": [
+            [
+                "back_vel_up",
+                "back_vel_down",
+                "desired_vel_cms_z"
+            ],
+            1
+        ],
+        "_last_limit_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "limit_accel": {
+        "_prev_avoid_vel": [
+            [
+                "original_vel",
+                "_accel_max",
+                "dt",
+                "accel_normalized"
+            ],
+            3
+        ],
+        "accel": [
+            [
+                "dt"
+            ],
+            0
+        ]
+    },
+    "adjust_speed": {
+        "speed": [
+            [
+                "vel_xy_length"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_z": {
+        "min_alt_diff": [
+            [
+                "veh_alt",
+                "fence_get_safe_alt_min"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "max_alt_diff": [
+            [
+                "_margin",
+                "curr_alt",
+                "alt_limit",
+                "fence_get_safe_alt_max",
+                "veh_alt"
+            ],
+            2
+        ],
+        "accel_cmss_limited": [
+            [
+                "ac_avoid_accel_cmss_max",
+                "accel_cmss"
+            ],
+            0
+        ],
+        "climb_rate_cms": [
+            [
+                "get_max_speed_k_p",
+                "get_max_speed_dt",
+                "get_max_speed_max_alt_diff",
+                "get_max_speed_accel_cmss_limited",
+                "get_max_speed_k_p",
+                "get_max_speed_dt",
+                "get_max_speed_min_alt_diff",
+                "get_max_speed_accel_cmss_limited",
+                "get_max_speed_dt",
+                "get_max_speed_min_alt_diff",
+                "get_max_speed_max_alt_diff",
+                "_backup_speed_z_max",
+                "get_max_speed_k_p",
+                "get_max_speed_accel_cmss_limited"
+            ],
+            4
+        ]
+    },
+    "adjust_roll_pitch": {
+        "rp_out": [
+            [
+                "ac_avoid_angle_max_percent",
+                "_angle_max",
+                "veh_angle_max",
+                "rp_out_length",
+                "veh_angle_max"
+            ],
+            2
+        ],
+        "pitch": [
+            [
+                "rp_out_y"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "rp_out_x"
+            ],
+            0
+        ]
+    },
+    "limit_velocity_2D": {
+        "desired_vel_cms": [
+            [
+                "limit_direction",
+                "limit_direction",
+                "get_max_speed_dt",
+                "get_max_speed_limit_distance_cm",
+                "get_max_speed_accel_cmss",
+                "get_max_speed_k_p"
+            ],
+            2
+        ]
+    },
+    "limit_velocity_3D": {
+        "margin_vector": [
+            [
+                "desired_vel_cms_normalized",
+                "margin_cm"
+            ],
+            0
+        ],
+        "distance_from_fence_xy": [
+            [
+                "limit_direction_xy_length_margin_vector_x",
+                "limit_direction_xy_length_vector2f",
+                "limit_direction_xy_length_margin_vector_y",
+                "limit_direction_xy_length__length"
+            ],
+            0
+        ],
+        "desired_vel_cms.y": [
+            [
+                "velocity_xy_y"
+            ],
+            0
+        ],
+        "desired_vel_cms.x": [
+            [
+                "velocity_xy_x"
+            ],
+            0
+        ],
+        "velocity_z_original": [
+            [
+                "desired_vel_cms_z"
+            ],
+            0
+        ],
+        "dist_z": [
+            [
+                "fabsf_obstacle_vector_z",
+                "fabsf_fabsf",
+                "fabsf_margin_vector_z"
+            ],
+            0
+        ],
+        "desired_vel_cms.z": [
+            [
+                "fabsf_desired_vel_cms_z",
+                "desired_vel_cms_z",
+                "get_max_speed_dt",
+                "get_max_speed_k_p_z",
+                "get_max_speed_dist_z",
+                "get_max_speed_accel_cmss_z"
+            ],
+            2
+        ]
+    },
+    "calc_backup_velocity_2D": {
+        "back_direction_vel": [
+            [
+                "limit_direction",
+                "dt",
+                "get_max_speed_fabsf",
+                "get_max_speed_k_p",
+                "get_max_speed_back_distance_cm",
+                "get_max_speed_accel_cmss"
+            ],
+            1
+        ]
+    },
+    "calc_backup_velocity_3D": {
+        "min_z_vel": [
+            [
+                "get_max_speed_accel_cmss_z",
+                "get_max_speed_kp_z",
+                "get_max_speed_back_distance_z",
+                "dt",
+                "get_max_speed_fabsf"
+            ],
+            1
+        ],
+        "max_z_vel": [
+            [
+                "get_max_speed_accel_cmss_z",
+                "get_max_speed_kp_z",
+                "get_max_speed_back_distance_z",
+                "dt",
+                "get_max_speed_fabsf"
+            ],
+            1
+        ]
+    },
+    "find_max_quadrant_velocity": {
+        "quad3_vel": [
+            [
+                "desired_vel_x",
+                "desired_vel_y",
+                "quad3_vel_y",
+                "quad3_vel_x",
+                "vector2f"
+            ],
+            0
+        ],
+        "quad2_vel": [
+            [
+                "quad2_vel_x",
+                "desired_vel_x",
+                "quad2_vel_y",
+                "desired_vel_y",
+                "vector2f"
+            ],
+            0
+        ],
+        "quad4_vel": [
+            [
+                "desired_vel_x",
+                "quad4_vel_x",
+                "desired_vel_y",
+                "vector2f",
+                "quad4_vel_y"
+            ],
+            0
+        ],
+        "quad1_vel": [
+            [
+                "desired_vel_x",
+                "quad1_vel_x",
+                "quad1_vel_y",
+                "desired_vel_y",
+                "vector2f"
+            ],
+            0
+        ]
+    },
+    "find_max_quadrant_velocity_3D": {
+        "max_z_vel": [
+            [
+                "desired_vel_z"
+            ],
+            0
+        ],
+        "min_z_vel": [
+            [
+                "desired_vel_z"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_circle_fence": {
+        "_fence": [
+            [
+                "fence"
+            ],
+            0
+        ],
+        "backup_vel": [
+            [
+                "quad_1_back_vel",
+                "quad_2_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            0
+        ],
+        "distance_to_target": [
+            [
+                "position_xy",
+                "intersection",
+                "_length",
+                "target_direction_length"
+            ],
+            0
+        ],
+        "stopping_point_plus_margin": [
+            [
+                "desired_vel_cms_length",
+                "get_stopping_distance_desired_speed",
+                "position_xy",
+                "_fence_get_margin",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss"
+            ],
+            2
+        ],
+        "stopping_point_plus_margin_dist_from_home": [
+            [
+                "stopping_point_plus_margin_length"
+            ],
+            0
+        ],
+        "desired_vel_cms": [
+            [
+                "position_xy",
+                "desired_vel_cms_length",
+                "get_stopping_distance_desired_speed",
+                "position_xy",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss",
+                "_fence_get_radius",
+                "_fence_get_margin",
+                "stopping_point_length",
+                "desired_vel_cms_length",
+                "get_max_speed_accel_cmss",
+                "get_max_speed_k_p",
+                "get_max_speed_distance_to_target",
+                "get_max_speed_dt"
+            ],
+            8
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "distance_to_boundary": [
+            [
+                "_fence_get_radius",
+                "position_xy_length"
+            ],
+            2
+        ]
+    },
+    "adjust_velocity_inclusion_and_exclusion_polygons": {
+        "backup_vel": [
+            [
+                "quad_2_back_vel",
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            0
+        ],
+        "boundary": [
+            [
+                "fence_polyfence_get_exclusion_polygon_i",
+                "_get_inclusion_polygon_num_points",
+                "fence_polyfence_get_inclusion_polygon_i",
+                "_get_exclusion_polygon_num_points"
+            ],
+            0
+        ],
+        "num_exclusion_polygons": [
+            [
+                "fence_polyfence_get_exclusion_polygon_count"
+            ],
+            0
+        ],
+        "num_inclusion_polygons": [
+            [
+                "fence_polyfence_get_inclusion_polygon_count"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_inclusion_circles": {
+        "stopping_point_plus_margin": [
+            [
+                "fence_get_margin",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss",
+                "get_stopping_distance_desired_speed",
+                "desired_vel_cms_length",
+                "position_ne_rel"
+            ],
+            3
+        ],
+        "margin_breach": [
+            [
+                "radius",
+                "fence_get_margin",
+                "safe_sqrt_dist_sq_cm"
+            ],
+            3
+        ],
+        "backup_vel": [
+            [
+                "quad_2_back_vel",
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            0
+        ],
+        "num_circles": [
+            [
+                "fence_polyfence_get_inclusion_circle_count"
+            ],
+            0
+        ],
+        "desired_vel_cms": [
+            [
+                "get_max_speed_distance_to_target",
+                "get_max_speed_accel_cmss",
+                "get_max_speed_k_p",
+                "get_max_speed_dt",
+                "radius",
+                "fence_get_margin",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss",
+                "get_stopping_distance_desired_speed",
+                "desired_vel_cms_length",
+                "position_ne_rel",
+                "stopping_point_length",
+                "fence_get_margin",
+                "position_ne_rel",
+                "desired_vel_cms_length"
+            ],
+            9
+        ],
+        "distance_to_target": [
+            [
+                "intersection",
+                "_length",
+                "position_ne_rel",
+                "target_direction_length"
+            ],
+            0
+        ],
+        "dist_sq_cm": [
+            [
+                "position_ne_rel_length_squared"
+            ],
+            0
+        ],
+        "position_NE_rel": [
+            [
+                "center_pos_cm",
+                "position_ne"
+            ],
+            0
+        ],
+        "dist_cm": [
+            [
+                "safe_sqrt_dist_sq_cm"
+            ],
+            0
+        ],
+        "position_NE": [
+            [
+                "position_ne"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_exclusion_circles": {
+        "position_NE": [
+            [
+                "position_ne"
+            ],
+            0
+        ],
+        "dist_cm": [
+            [
+                "safe_sqrt_dist_sq_cm"
+            ],
+            0
+        ],
+        "stopping_point_plus_margin": [
+            [
+                "get_stopping_distance_desired_speed",
+                "desired_vel_cms_length",
+                "fence_get_margin",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss",
+                "position_ne_rel"
+            ],
+            3
+        ],
+        "num_circles": [
+            [
+                "fence_polyfence_get_exclusion_circle_count"
+            ],
+            0
+        ],
+        "limit_distance_cm": [
+            [
+                "radius",
+                "limit_direction_length"
+            ],
+            1
+        ],
+        "backup_vel": [
+            [
+                "quad_2_back_vel",
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            0
+        ],
+        "limit_direction": [
+            [
+                "position_ne",
+                "center_pos_cm"
+            ],
+            1
+        ],
+        "desired_vel_cms": [
+            [
+                "get_max_speed_accel_cmss",
+                "get_max_speed_dt",
+                "get_max_speed_k_p",
+                "get_max_speed_distance_to_target",
+                "desired_vel_cms_length"
+            ],
+            2
+        ],
+        "dist_to_boundary": [
+            [
+                "vector_to_center_length",
+                "radius"
+            ],
+            1
+        ],
+        "dist_sq_cm": [
+            [
+                "position_ne_rel_length_squared"
+            ],
+            0
+        ],
+        "distance_to_target": [
+            [
+                "_length",
+                "position_ne_rel",
+                "intersection"
+            ],
+            0
+        ],
+        "position_NE_rel": [
+            [
+                "position_ne",
+                "center_pos_cm"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_beacon_fence": {
+        "boundary": [
+            [
+                "_beacon_get_boundary_points_num_points"
+            ],
+            0
+        ],
+        "margin": [
+            [
+                "fence_get_margin"
+            ],
+            0
+        ],
+        "_beacon": [
+            [
+                "beacon"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_proximity": {
+        "intersect": [
+            [
+                "_proximity_closest_point_from_segment_to_obstacle_stopping_point_plus_margin",
+                "_proximity_closest_point_from_segment_to_obstacle_vector3f",
+                "_proximity_closest_point_from_segment_to_obstacle_i",
+                "_proximity_closest_point_from_segment_to_obstacle_limit_direction"
+            ],
+            0
+        ],
+        "z_back_dist": [
+            [
+                "margin_vector_z"
+            ],
+            0
+        ],
+        "desired_vel_cms": [
+            [
+                "safe_vel_z",
+                "vector3f",
+                "safe_vel_2d_x",
+                "safe_vel_2d_y"
+            ],
+            0
+        ],
+        "backup_vel": [
+            [
+                "backup_vel_xy_y",
+                "backup_vel_xy_x",
+                "vector3f",
+                "max_back_vel_z",
+                "min_back_vel_z"
+            ],
+            1
+        ],
+        "safe_vel_2d": [
+            [
+                "_ahrs_body_to_earth2d_safe_vel_y",
+                "_ahrs_body_to_earth2d_safe_vel_x",
+                "_ahrs_body_to_earth2d_vector2f"
+            ],
+            0
+        ],
+        "desired_vel_body_cms": [
+            [
+                "_ahrs_earth_to_body2d_desired_vel_cms_y",
+                "_ahrs_earth_to_body2d_desired_vel_cms_x",
+                "_ahrs_earth_to_body2d_vector2f"
+            ],
+            0
+        ],
+        "xy_back_dist": [
+            [
+                "margin_vector_xy_length"
+            ],
+            0
+        ],
+        "margin_vector": [
+            [
+                "vector_to_obstacle_length",
+                "_margin",
+                "vector_to_obstacle_normalized"
+            ],
+            3
+        ],
+        "desired_back_vel_cms_xy": [
+            [
+                "quad_2_back_vel",
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "deadzone": [
+            [
+                "_backup_deadzone"
+            ],
+            0
+        ],
+        "stopping_point_plus_margin": [
+            [
+                "_margin",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss",
+                "get_stopping_distance_speed",
+                "safe_vel_length",
+                "desired_vel_body_cms_y",
+                "desired_vel_cms_z",
+                "vector3f",
+                "desired_vel_body_cms_x"
+            ],
+            3
+        ],
+        "obstacle_num": [
+            [
+                "_proximity_get_obstacle_count"
+            ],
+            0
+        ],
+        "limit_distance_cm": [
+            [
+                "limit_direction_length"
+            ],
+            0
+        ],
+        "_proximity": [
+            [
+                "proximity"
+            ],
+            0
+        ],
+        "safe_vel_orig": [
+            [
+                "desired_vel_body_cms_y",
+                "desired_vel_cms_z",
+                "vector3f",
+                "desired_vel_body_cms_x"
+            ],
+            1
+        ],
+        "backup_vel_xy": [
+            [
+                "_ahrs_body_to_earth2d_desired_back_vel_cms_xy"
+            ],
+            0
+        ]
+    },
+    "adjust_velocity_polygon": {
+        "desired_vel_cms": [
+            [
+                "safe_vel"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "i",
+                "boundary"
+            ],
+            1
+        ],
+        "inside_polygon": [
+            [
+                "polygon_outside_position_xy",
+                "polygon_outside_num_points",
+                "polygon_outside_boundary"
+            ],
+            0
+        ],
+        "limit_direction": [
+            [
+                "limit_direction_length",
+                "position_xy",
+                "intersection",
+                "position_xy",
+                "closest_point_end",
+                "closest_point_start",
+                "closest_point_position_xy"
+            ],
+            2
+        ],
+        "end": [
+            [
+                "i",
+                "boundary"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "stopping_point_plus_margin": [
+            [
+                "get_stopping_distance_speed",
+                "safe_vel_length",
+                "position_xy",
+                "margin",
+                "safe_vel",
+                "get_stopping_distance_k_p",
+                "get_stopping_distance_accel_cmss"
+            ],
+            2
+        ],
+        "backup_vel": [
+            [
+                "quad_2_back_vel",
+                "quad_1_back_vel",
+                "quad_4_back_vel",
+                "quad_3_back_vel"
+            ],
+            1
+        ]
+    },
+    "get_proximity_roll_pitch_pct": {
+        "roll_positive": [
+            [
+                "sinf_angle_rad",
+                "distance_to_lean_pct_dist_m"
+            ],
+            2
+        ],
+        "obj_count": [
+            [
+                "_proximity_get_object_count"
+            ],
+            0
+        ],
+        "pitch_negative": [
+            [
+                "distance_to_lean_pct_dist_m",
+                "cosf_angle_rad"
+            ],
+            2
+        ],
+        "angle_rad": [
+            [
+                "radians_ang_deg"
+            ],
+            0
+        ],
+        "pitch_positive": [
+            [
+                "distance_to_lean_pct_dist_m",
+                "cosf_angle_rad"
+            ],
+            2
+        ],
+        "_proximity": [
+            [
+                "proximity"
+            ],
+            0
+        ],
+        "roll_negative": [
+            [
+                "sinf_angle_rad",
+                "distance_to_lean_pct_dist_m"
+            ],
+            2
+        ]
+    }
+}

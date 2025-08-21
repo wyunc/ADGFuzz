@@ -1,0 +1,117 @@
+{
+    "output": {
+        "_last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "_fast_idle_timer": [
+            [
+                "micros64",
+                "_0e",
+                "_cooldown_time_get"
+            ],
+            2
+        ],
+        "_control_output": [
+            [
+                "_power_slewrate",
+                "micros64",
+                "_0e",
+                "_desired_speed",
+                "calculate_throttlecurve__collective_in",
+                "get_idle_output",
+                "_rotor_ramp_output",
+                "last_control_output"
+            ],
+            5
+        ],
+        "_rsc_state": [
+            [
+                "state"
+            ],
+            0
+        ],
+        "rpm": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "update_rotor_ramp": {
+        "_rotor_ramp_output": [
+            [
+                "rotor_ramp_input",
+                "float__ramp_time_get",
+                "autorotation_get_bailout_ramp",
+                "dt"
+            ],
+            1
+        ]
+    },
+    "update_rotor_runup": {
+        "_rotor_runup_output": [
+            [
+                "_rotor_ramp_output",
+                "_ramp_time",
+                "autorotation_get_runup_time",
+                "_runup_time",
+                "dt",
+                "get_critical_speed"
+            ],
+            2
+        ]
+    },
+    "calculate_throttlecurve": {
+        "throttle": [
+            [
+                "powf_b",
+                "constrain_int16_int8_t",
+                "constrain_int16_collective_in",
+                "collective_in",
+                "constrain_int16_int8_t",
+                "constrain_int16_collective_in",
+                "_thrcrv_poly",
+                "powf_a"
+            ],
+            3
+        ],
+        "b": [
+            [
+                "collective_in",
+                "constrain_int16_int8_t",
+                "constrain_int16_collective_in"
+            ],
+            2
+        ]
+    },
+    "autothrottle_run": {
+        "_governor_torque_reference": [
+            [
+                "get_governor_compensator"
+            ],
+            0
+        ],
+        "_control_output": [
+            [
+                "_idle_throttle",
+                "_rotor_rpm",
+                "_governor_droop_response",
+                "_rotor_rpm",
+                "float",
+                "_governor_rpm",
+                "get_governor_torque",
+                "calculate_throttlecurve__collective_in",
+                "_governor_ff",
+                "float",
+                "_governor_rpm",
+                "calculate_throttlecurve__collective_in",
+                "_rotor_ramp_output",
+                "get_idle_output"
+            ],
+            4
+        ]
+    }
+}

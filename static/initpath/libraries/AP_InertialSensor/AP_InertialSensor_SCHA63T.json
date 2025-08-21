@@ -1,0 +1,134 @@
+{
+    "start": {
+        "backend_period_us": [
+            [
+                "1000000ul",
+                "constrain_int16_fast_sampling_rate",
+                "constrain_int16_backend_rate_hz",
+                "backend_sample_rate",
+                "constrain_int16_backend_sample_rate_max"
+            ],
+            1
+        ],
+        "fast_sampling": [
+            [
+                "bus_type_spi",
+                "dev_uno_bus_type"
+            ],
+            0
+        ],
+        "fast_sampling_rate": [
+            [
+                "constrain_int16_get_fast_sampling_rate"
+            ],
+            0
+        ]
+    },
+    "read_accel": {
+        "uno_temp": [
+            [
+                "combine_rsp_temper"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "_f",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "accel_y": [
+            [
+                "combine_rsp_accl_y"
+            ],
+            0
+        ],
+        "accel_z": [
+            [
+                "int16_max",
+                "combine_rsp_accl_z",
+                "int16_min"
+            ],
+            0
+        ],
+        "accel_x": [
+            [
+                "combine_rsp_accl_x"
+            ],
+            0
+        ]
+    },
+    "read_gyro": {
+        "gyro_z": [
+            [
+                "int16_max",
+                "combine_rsp_rate_z",
+                "int16_min"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "radians__f"
+            ],
+            0
+        ],
+        "due_temp": [
+            [
+                "combine_rsp_due_temper"
+            ],
+            0
+        ],
+        "gyro_x": [
+            [
+                "combine_rsp_rate_x"
+            ],
+            0
+        ],
+        "gyro_y": [
+            [
+                "combine_rsp_rate_y"
+            ],
+            0
+        ],
+        "uno_temp": [
+            [
+                "combine_rsp_uno_temper"
+            ],
+            0
+        ]
+    },
+    "set_temperature": {
+        "temp_degc": [
+            [
+                "temper"
+            ],
+            1
+        ]
+    },
+    "read_register": {
+        "ret": [
+            [
+                "dev_uno_transfer_buf",
+                "dev_due_transfer_buf"
+            ],
+            0
+        ],
+        "bCrc": [
+            [
+                "crc8_sae_val"
+            ],
+            0
+        ]
+    },
+    "write_register": {
+        "ret": [
+            [
+                "dev_due_transfer_buf",
+                "dev_uno_transfer_buf"
+            ],
+            0
+        ]
+    }
+}

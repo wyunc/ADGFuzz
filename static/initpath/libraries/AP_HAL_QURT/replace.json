@@ -1,0 +1,67 @@
+{
+    "vasprintf": {
+        "ret": [
+            [
+                "vsnprintf_ap2",
+                "vsnprintf_ptr",
+                "vsnprintf_nullptr",
+                "vsnprintf_format",
+                "vsnprintf_ret"
+            ],
+            0
+        ]
+    },
+    "asprintf": {
+        "ptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "vasprintf_ptr",
+                "vasprintf_ap",
+                "vasprintf_format"
+            ],
+            0
+        ]
+    },
+    "memmem": {
+        "haystacklen": [
+            [
+                "p",
+                "p",
+                "const",
+                "char"
+            ],
+            1
+        ]
+    },
+    "strndup": {
+        "n": [
+            [
+                "strnlen_n",
+                "strnlen_s"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "char",
+                "malloc_n"
+            ],
+            0
+        ]
+    },
+    "slpi_link_client_receive": {
+        "msg": [
+            [
+                "struct",
+                "qurt_rpc_msg",
+                "data"
+            ],
+            0
+        ]
+    }
+}

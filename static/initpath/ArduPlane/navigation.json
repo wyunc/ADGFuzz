@@ -1,0 +1,274 @@
+{
+    "loiter_angle_update": {
+        "loiter.old_target_bearing_cd": [
+            [
+                "nav_controller_target_bearing_cd"
+            ],
+            1
+        ],
+        "loiter.unable_to_acheive_target_alt": [
+            [
+                "labs_loiter_start_lap_alt_cm",
+                "labs_current_loc_alt"
+            ],
+            0
+        ],
+        "loiter.start_lap_alt_cm": [
+            [
+                "current_loc_alt"
+            ],
+            0
+        ],
+        "reached_target": [
+            [
+                "reached_loiter_target"
+            ],
+            0
+        ],
+        "loiter.sum_cd": [
+            [
+                "loiter_direction",
+                "nav_controller_target_bearing_cd",
+                "wrap_180_cd_loiter_delta_cd",
+                "loiter_old_target_bearing_cd"
+            ],
+            2
+        ],
+        "loiter.next_sum_lap_cd": [
+            [
+                "lap_check_interval_cd",
+                "loiter_sum_cd"
+            ],
+            0
+        ]
+    },
+    "navigate": {
+        "auto_state.wp_proportion": [
+            [
+                "current_loc_line_path_proportion_next_wp_loc",
+                "current_loc_line_path_proportion_prev_wp_loc"
+            ],
+            0
+        ],
+        "auto_state.wp_distance": [
+            [
+                "current_loc_get_distance_next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "mode_auto_target_airspeed_cm": {
+        "land_airspeed": [
+            [
+                "tecs_controller_get_land_airspeed"
+            ],
+            0
+        ]
+    },
+    "calc_airspeed_errors": {
+        "control_min": [
+            [
+                "channel_throttle_get_range"
+            ],
+            1
+        ],
+        "surface_speed_scaler": [
+            [
+                "calc_lowpass_alpha_dt_cutoff_hz",
+                "calc_lowpass_alpha_dt_dt",
+                "calc_speed_scaler"
+            ],
+            1
+        ],
+        "control_in": [
+            [
+                "get_throttle_input"
+            ],
+            0
+        ],
+        "control_mid": [
+            [
+                "channel_throttle_get_control_mid"
+            ],
+            0
+        ],
+        "EAS_undershoot": [
+            [
+                "float",
+                "groundspeed_undershoot",
+                "ahrs_get_eas2tas",
+                "int32_t"
+            ],
+            0
+        ],
+        "smoothed_airspeed": [
+            [
+                "airspeed_measured"
+            ],
+            0
+        ],
+        "guided_state.target_airspeed_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "airspeed_error": [
+            [
+                "airspeed_measured",
+                "tecs_controller_get_target_airspeed"
+            ],
+            0
+        ],
+        "target_airspeed_cm": [
+            [
+                "guided_state_target_airspeed_cm",
+                "aparm_airspeed_cruise",
+                "g2_soaring_controller_get_thermalling_target_airspeed",
+                "g2_soaring_controller_get_cruising_target_airspeed",
+                "aparm_airspeed_max",
+                "guided_state_target_airspeed_accel",
+                "guided_state_target_airspeed_time_ms",
+                "1e",
+                "millis",
+                "new_airspeed_cm",
+                "landing_get_target_airspeed_cm",
+                "quadplane_get_land_airspeed",
+                "airspeed_nudge_cm",
+                "airspeed_measured",
+                "eas_undershoot",
+                "mode_auto_target_airspeed_cm",
+                "constrain_int32_aparm_airspeed_max",
+                "constrain_int32_aparm_airspeed_min",
+                "constrain_int32_target_airspeed_cm",
+                "aparm_airspeed_min"
+            ],
+            5
+        ]
+    },
+    "calc_gndspeed_undershoot": {
+        "groundspeed_undershoot": [
+            [
+                "gnd_spd_fwd",
+                "aparm_min_groundspeed",
+                "aparm_min_groundspeed"
+            ],
+            1
+        ],
+        "gndSpdFwd": [
+            [
+                "yaw_vect",
+                "vel_ned_xy"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "yawVect": [
+            [
+                "vector2f_rot_mat_b_x",
+                "vector2f_rot_mat_a_x"
+            ],
+            0
+        ]
+    },
+    "update_loiter_update_nav": {
+        "quadplane_qrtl_switch": [
+            [
+                "mode_rtl",
+                "control_mode",
+                "quadplane_rtl_mode",
+                "quadplane_available",
+                "switch_qrtl"
+            ],
+            0
+        ]
+    },
+    "update_loiter": {
+        "loiter.direction": [
+            [
+                "aparm_loiter_radius"
+            ],
+            0
+        ],
+        "loiter.start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "loiter.radius": [
+            [
+                "loiter_radius_default",
+                "abs_aparm_loiter_radius",
+                "float"
+            ],
+            1
+        ]
+    },
+    "update_fbwb_speed_height": {
+        "target_altitude.amsl_cm": [
+            [
+                "ahrs_get_home_alt",
+                "plane_g2_soaring_controller_get_alt_cutoff"
+            ],
+            0
+        ],
+        "alt_change_cm": [
+            [
+                "g_flybywire_climb_rate",
+                "channel_pitch_get_control_in",
+                "tecs_controller_get_max_sinkrate_tecs_controller_get_max_climbrate",
+                "_0e",
+                "target_altitude_last_elev_check_us",
+                "micros"
+            ],
+            4
+        ],
+        "target_altitude.last_elevator_input": [
+            [
+                "channel_pitch_get_control_in"
+            ],
+            1
+        ],
+        "input_stop_climb": [
+            [
+                "is_positive_target_altitude_last_elevator_input",
+                "is_positive_elevator_input"
+            ],
+            0
+        ],
+        "target_altitude.last_elev_check_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "input_stop_descent": [
+            [
+                "is_negative_elevator_input",
+                "is_negative_target_altitude_last_elevator_input"
+            ],
+            0
+        ]
+    },
+    "setup_turn_angle": {
+        "auto_state.next_turn_angle": [
+            [
+                "wrap_180_cd_next_ground_course_cd",
+                "wrap_180_cd_ground_course_cd"
+            ],
+            0
+        ],
+        "ground_course_cd": [
+            [
+                "prev_wp_loc_get_bearing_to_next_wp_loc"
+            ],
+            0
+        ]
+    }
+}

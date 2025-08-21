@@ -1,0 +1,122 @@
+{
+    "updateParams": {
+        "_max_yaw_rate": [
+            [
+                "_param_ro_yaw_rate_limit_get",
+                "m_deg_to_rad_f"
+            ],
+            0
+        ],
+        "_max_yaw_accel": [
+            [
+                "m_deg_to_rad_f",
+                "_param_ro_yaw_accel_limit_get"
+            ],
+            0
+        ],
+        "_max_yaw_decel": [
+            [
+                "_param_ro_yaw_decel_limit_get",
+                "m_deg_to_rad_f"
+            ],
+            0
+        ]
+    },
+    "updateRateControl": {
+        "rover_rate_status.pid_yaw_rate_integral": [
+            [
+                "_pid_yaw_rate_get_integral"
+            ],
+            0
+        ],
+        "rover_rate_status.measured_yaw_rate": [
+            [
+                "_vehicle_yaw_rate"
+            ],
+            0
+        ],
+        "rover_rate_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_dt": [
+            [
+                "constrain_timestamp_prev",
+                "1e",
+                "constrain__timestamp",
+                "constrain_1_ms",
+                "constrain_5000_ms"
+            ],
+            0
+        ],
+        "rover_rate_status.adjusted_yaw_rate_setpoint": [
+            [
+                "_adjusted_yaw_rate_setpoint_get_state"
+            ],
+            0
+        ]
+    },
+    "generateRateAndThrottleSetpoint": {
+        "rover_rate_setpoint.yaw_rate_setpoint": [
+            [
+                "trajectory_setpoint_yawspeed"
+            ],
+            0
+        ],
+        "rover_rate_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "offboard_rate_control": [
+            [
+                "_offboard_control_mode_body_rate",
+                "_offboard_control_mode_attitude"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_y": [
+            [
+                "manual_control_setpoint_roll"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_x": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ]
+    },
+    "generateSteeringSetpoint": {
+        "rover_steering_setpoint.normalized_speed_diff": [
+            [
+                "speed_diff_normalized"
+            ],
+            0
+        ],
+        "rover_steering_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

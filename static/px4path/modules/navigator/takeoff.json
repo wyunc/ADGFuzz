@@ -1,0 +1,63 @@
+{
+    "on_active": {
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "rep": [
+            [
+                "_navigator_get_takeoff_triplet"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_idle"
+            ],
+            0
+        ]
+    },
+    "set_takeoff_position": {
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.yaw": [
+            [
+                "rep_current_yaw"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "rep_current_lat"
+            ],
+            0
+        ],
+        "rep": [
+            [
+                "_navigator_get_takeoff_triplet"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "rep_current_lon"
+            ],
+            0
+        ],
+        "takeoff_altitude_amsl": [
+            [
+                "rep_current_alt",
+                "_f",
+                "_navigator_get_global_position_alt",
+                "_navigator_get_param_mis_takeoff_alt"
+            ],
+            0
+        ]
+    }
+}

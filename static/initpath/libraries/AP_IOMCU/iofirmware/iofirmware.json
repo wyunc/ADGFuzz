@@ -1,0 +1,640 @@
+{
+    "dma_rx_end_cb": {
+        "mask": [
+            [
+                "ch_evt_get_and_clear_events_i_ioevent_tx_begin"
+            ],
+            0
+        ]
+    },
+    "idle_rx_handler": {
+        "CR1": [
+            [
+                "usart_cr1_tcie",
+                "uart_usart_cr1",
+                "usart_cr1_sbk"
+            ],
+            1
+        ],
+        "SR": [
+            [
+                "usart_sr_lbd"
+            ],
+            0
+        ],
+        "sr": [
+            [
+                "uart_usart_sr"
+            ],
+            0
+        ]
+    },
+    "tx_dma_allocate": {
+        "uart": [
+            [
+                "uartd2"
+            ],
+            0
+        ]
+    },
+    "tx_dma_deallocate": {
+        "dmatx": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "uartd2"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "reg_status.freemem": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ],
+        "thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "config.protocol_version2": [
+            [
+                "iomcu_protocol_version2"
+            ],
+            0
+        ],
+        "config.cpuid": [
+            [
+                "scb_cpuid"
+            ],
+            0
+        ],
+        "config.protocol_version": [
+            [
+                "iomcu_protocol_version"
+            ],
+            0
+        ],
+        "config.mcuid": [
+            [
+                "dbgmcu_base",
+                "uint32_t",
+                "0x20036410"
+            ],
+            0
+        ]
+    },
+    "stackCheck": {
+        "pstack": [
+            [
+                "uint32_t",
+                "__main_thread_stack_base__",
+                "__main_stack_base__",
+                "uint32_t",
+                "uint32_t",
+                "__main_thread_stack_base__",
+                "__main_stack_base__",
+                "uint32_t",
+                "uint16_t"
+            ],
+            3
+        ],
+        "stklimit": [
+            [
+                "__main_thread_stack_end__",
+                "uint32_t",
+                "__main_stack_end__"
+            ],
+            0
+        ],
+        "mstack": [
+            [
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_telem_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "last_slow_loop_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "sbus_last_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "last_fast_loop_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_status_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "mask": [
+            [
+                "ch_evt_wait_any_timeout_ioevent_pwm",
+                "ch_evt_wait_any_timeout_time_us2i",
+                "ch_evt_wait_any_timeout_ioevent_tx_begin",
+                "ch_evt_get_and_clear_events_ioevent_tx_end",
+                "ch_evt_wait_any_timeout_ioevent_tx_end"
+            ],
+            0
+        ],
+        "last_failsafe_ms": [
+            [
+                "millis"
+            ],
+            2
+        ],
+        "reg_status.timestamp_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_safety_off": [
+            [
+                "reg_status_flag_safety_off"
+            ],
+            0
+        ]
+    },
+    "heater_update": {
+        "heater_on": [
+            [
+                "get_random16",
+                "100u",
+                "0x_ffffu",
+                "uint32_t_reg_setup_heater_duty_cycle"
+            ],
+            0
+        ],
+        "last_blue_led_ms": [
+            [
+                "last_ms"
+            ],
+            1
+        ]
+    },
+    "rcin_update": {
+        "rc_input.count": [
+            [
+                "hal_rcin_num_channels"
+            ],
+            0
+        ],
+        "rc_input.rc_protocol": [
+            [
+                "rc_protocol_detected",
+                "uint16_t"
+            ],
+            0
+        ],
+        "rc_input.flags_failsafe": [
+            [
+                "rc_failsafe_active"
+            ],
+            0
+        ],
+        "rc_input.rssi": [
+            [
+                "rc_get_rssi"
+            ],
+            0
+        ],
+        "rc_last_input_ms": [
+            [
+                "last_ms"
+            ],
+            0
+        ],
+        "override_active": [
+            [
+                "mixing_rc_chan_override",
+                "rc_input_pwm"
+            ],
+            0
+        ]
+    },
+    "erpm_update": {
+        "last_erpm_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "telem_update": {
+        "telem": [
+            [
+                "esc_telem_get_telem_data_esc_id"
+            ],
+            0
+        ],
+        "esc_id": [
+            [
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "dshot_i": [
+            [
+                "dshot_telem",
+                "i"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "process_io_packet": {
+        "rx_crc": [
+            [
+                "rx_io_packet_crc"
+            ],
+            0
+        ],
+        "calc_crc": [
+            [
+                "crc_crc8_const",
+                "rx_io_packet",
+                "crc_crc8_uint8_t",
+                "rx_io_packet_get_size"
+            ],
+            1
+        ],
+        "rx_io_packet.code": [
+            [
+                "code_noop"
+            ],
+            0
+        ],
+        "tx_io_packet.code": [
+            [
+                "code_corrupt",
+                "code_error"
+            ],
+            0
+        ],
+        "tx_io_packet.crc": [
+            [
+                "crc_crc8_const",
+                "tx_io_packet_get_size",
+                "crc_crc8_uint8_t",
+                "tx_io_packet"
+            ],
+            0
+        ]
+    },
+    "page_status_update": {
+        "reg_status.vservo": [
+            [
+                "adc_vservo"
+            ],
+            0
+        ],
+        "reg_status.vrssi": [
+            [
+                "adc_vrssi"
+            ],
+            0
+        ]
+    },
+    "handle_code_read": {
+        "tx_io_packet.crc": [
+            [
+                "crc_crc8_uint8_t",
+                "tx_io_packet",
+                "crc_crc8_const",
+                "tx_io_packet_get_size"
+            ],
+            0
+        ],
+        "tx_io_packet.count": [
+            [
+                "pkt_max_regs",
+                "tx_io_packet_count",
+                "rx_io_packet_offset",
+                "rx_io_packet_count",
+                "sizeof_uint16_t",
+                "sizeof__page_name"
+            ],
+            0
+        ],
+        "values": [
+            [
+                "_page_name",
+                "nullptr",
+                "rx_io_packet_offset",
+                "uint16_t"
+            ],
+            0
+        ],
+        "tx_io_packet.offset": [
+            [
+                "rx_io_packet_offset"
+            ],
+            0
+        ],
+        "tx_io_packet.code": [
+            [
+                "code_success"
+            ],
+            0
+        ],
+        "tx_io_packet.page": [
+            [
+                "rx_io_packet_page"
+            ],
+            0
+        ]
+    },
+    "handle_code_write": {
+        "mode_out.bdmask": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.pwm_altrate": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.dshot_rate": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "last_heater_ms": [
+            [
+                "last_ms"
+            ],
+            0
+        ],
+        "reg_setup.arming": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "tx_io_packet.code": [
+            [
+                "code_success"
+            ],
+            0
+        ],
+        "mode_out.mask": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "mode_out.esc_type": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.heater_duty_cycle": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "fmu_data_received_time": [
+            [
+                "last_ms"
+            ],
+            0
+        ],
+        "reg_setup.pwm_rates": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.features": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.dshot_period_us": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "rx_io_packet_count",
+                "num_values"
+            ],
+            0
+        ],
+        "mode_out.reversible_mask": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.ignore_safety": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.pwm_defaultrate": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "reg_setup.channel_mask": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "sbus_interval_ms": [
+            [
+                "reg_setup_sbus_rate",
+                "1000u"
+            ],
+            0
+        ],
+        "MAPR": [
+            [
+                "afio_mapr_swj_cfg_nojntrst"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "rx_io_packet_count",
+                "rx_io_packet_offset",
+                "num_values"
+            ],
+            0
+        ],
+        "tx_io_packet.crc": [
+            [
+                "crc_crc8_uint8_t",
+                "tx_io_packet_get_size",
+                "tx_io_packet",
+                "crc_crc8_const"
+            ],
+            0
+        ],
+        "reg_setup.sbus_rate": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ],
+        "mode_out.mode": [
+            [
+                "rx_io_packet_regs"
+            ],
+            0
+        ]
+    },
+    "schedule_reboot": {
+        "reboot_time": [
+            [
+                "time_ms",
+                "last_ms"
+            ],
+            0
+        ]
+    },
+    "calculate_fw_crc": {
+        "sum": [
+            [
+                "sizeof_bytes",
+                "crc32_small_uint8_t",
+                "crc32_small_sum",
+                "uint32_t",
+                "app_load_address",
+                "p",
+                "crc32_small_const"
+            ],
+            1
+        ]
+    },
+    "profiled_update": {
+        "byte_val": [
+            [
+                "profiled_byte_index",
+                "profiled_brg"
+            ],
+            0
+        ]
+    },
+    "safety_update": {
+        "gptr": [
+            [
+                "void",
+                "fptr",
+                "void",
+                "0x_e000ed38"
+            ],
+            1
+        ],
+        "safety_update_ms": [
+            [
+                "last_ms"
+            ],
+            1
+        ],
+        "led_pattern": [
+            [
+                "0x5500",
+                "0x_ffff",
+                "reg_status_flag_safety_off"
+            ],
+            0
+        ],
+        "safety_pressed": [
+            [
+                "pal_read_line_hal_gpio_pin_safety_input"
+            ],
+            0
+        ],
+        "reg_status.flag_safety_off": [
+            [
+                "reg_status_flag_safety_off"
+            ],
+            0
+        ]
+    },
+    "rcout_config_update": {
+        "last_GPIO_channel_mask": [
+            [
+                "gpio_channel_mask"
+            ],
+            0
+        ],
+        "last_output_esc_type": [
+            [
+                "mode_out_esc_type"
+            ],
+            0
+        ],
+        "reg_status.rcout_mask": [
+            [
+                "uint8_t_output_mask",
+                "uint8_t_0x_ff"
+            ],
+            0
+        ],
+        "last_channel_mask": [
+            [
+                "reg_setup_channel_mask"
+            ],
+            0
+        ],
+        "reg_status.rcout_mode": [
+            [
+                "hal_rcout_get_output_mode_output_mask"
+            ],
+            0
+        ],
+        "reg_status.freemem": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ]
+    }
+}

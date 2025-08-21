@@ -1,0 +1,260 @@
+{
+    "gimbal_thread_main": {
+        "thread_data.test_input": [
+            [
+                "new",
+                "input_test_params"
+            ],
+            0
+        ],
+        "updated": [
+            [
+                "parameter_update_sub_updated"
+            ],
+            0
+        ],
+        "thread_data.output_obj": [
+            [
+                "output_rc_params",
+                "nullptr",
+                "output_mavlink_v1_params",
+                "output_mavlink_v2_params",
+                "new"
+            ],
+            0
+        ],
+        "thread_data.last_input_active": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "update_result": [
+            [
+                "thread_data_input_objs",
+                "_update_already_active",
+                "_update_poll_timeout",
+                "_update_thread_data_control_data",
+                "i",
+                "updated_active",
+                "no_update"
+            ],
+            0
+        ],
+        "poll_timeout": [
+            [
+                "i",
+                "thread_data_last_input_active",
+                "thread_data_last_input_active"
+            ],
+            1
+        ],
+        "g_thread_data": [
+            [
+                "thread_data",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "gimbal_main": {
+        "yawrate_deg_s": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ],
+        "control_data.compid_primary_control": [
+            [
+                "strtol_nullptr",
+                "uint8_t",
+                "strtol_argv"
+            ],
+            0
+        ],
+        "pitch_deg": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ],
+        "rollrate_deg_s": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ],
+        "yaw_deg": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ],
+        "roll_deg": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ],
+        "control_data.sysid_primary_control": [
+            [
+                "strtol_nullptr",
+                "uint8_t",
+                "strtol_argv"
+            ],
+            0
+        ],
+        "pitchrate_deg_s": [
+            [
+                "int",
+                "strtof_argv",
+                "strtof_nullptr",
+                "strtof_arg_i"
+            ],
+            0
+        ]
+    },
+    "initialize_params": {
+        "param_handles.mnt_off_roll": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_off_pitch": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_mode_out": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_man_roll": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_rc_in_mode": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_range_yaw": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_mode_in": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mav_compid": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mav_sysid": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_off_yaw": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_range_roll": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_mav_sysid_v1": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_do_stab": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_man_yaw": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_mav_compid_v1": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_lnd_p_max": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_rate_yaw": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_man_pitch": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_rate_pitch": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_lnd_p_min": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "param_handles.mnt_range_pitch": [
+            [
+                "param_find"
+            ],
+            0
+        ]
+    }
+}

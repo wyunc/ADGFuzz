@@ -1,0 +1,58 @@
+{
+    "set_rangefinder_alt": {
+        "_rangefinder_state.use": [
+            [
+                "use"
+            ],
+            0
+        ],
+        "_rangefinder_state.last_downward_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_rangefinder_state.alt_cm": [
+            [
+                "alt_cm"
+            ],
+            0
+        ],
+        "_rangefinder_state.healthy": [
+            [
+                "healthy"
+            ],
+            0
+        ]
+    },
+    "get_rangefinder_alt": {
+        "dt": [
+            [
+                "millis",
+                "_rangefinder_state_last_downward_update_ms"
+            ],
+            0
+        ],
+        "alt_m": [
+            [
+                "_rangefinder_state_alt_cm"
+            ],
+            0
+        ]
+    },
+    "check_obstacle_near_ground": {
+        "alt": [
+            [
+                "flt_max"
+            ],
+            0
+        ],
+        "rotated_object_3D": [
+            [
+                "ahrs_get_rotation_body_to_ned",
+                "object_3d"
+            ],
+            1
+        ]
+    }
+}

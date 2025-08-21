@@ -1,0 +1,10 @@
+{
+    "init_sitl_pointer": {
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    }
+}

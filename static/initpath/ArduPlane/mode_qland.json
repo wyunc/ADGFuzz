@@ -1,0 +1,10 @@
+{
+    "_enter": {
+        "quadplane.last_land_final_agl": [
+            [
+                "plane_relative_ground_altitude_plane_g_rangefinder_landing"
+            ],
+            0
+        ]
+    }
+}

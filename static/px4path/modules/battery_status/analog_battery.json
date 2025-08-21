@@ -1,0 +1,44 @@
+{
+    "updateBatteryStatusADC": {
+        "_last_timestamp": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "voltage_v": [
+            [
+                "_analog_params_v_div",
+                "1e6f",
+                "timestamp",
+                "_voltage_filter_update_fmaxf",
+                "voltage_raw",
+                "_voltage_filter_update_voltage_v",
+                "_voltage_filter_update__f"
+            ],
+            1
+        ],
+        "current_a": [
+            [
+                "current_raw",
+                "1e6f",
+                "timestamp",
+                "_current_filter_update__f",
+                "_current_filter_update_current_a",
+                "_current_filter_update_fmaxf",
+                "_analog_params_v_offs_cur",
+                "_analog_params_a_per_v",
+                "_analog_params_i_overwrite"
+            ],
+            1
+        ]
+    },
+    "updateTopics": {
+        "_arming_state": [
+            [
+                "vehicle_status_arming_state"
+            ],
+            0
+        ]
+    }
+}

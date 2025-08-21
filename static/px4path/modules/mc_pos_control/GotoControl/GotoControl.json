@@ -1,0 +1,98 @@
+{
+    "checkForSetpoint": {
+        "need_to_run": [
+            [
+                "now",
+                "500_ms",
+                "_goto_setpoint_sub_get_timestamp",
+                "enabled",
+                "_goto_setpoint_sub_get_timestamp"
+            ],
+            2
+        ]
+    },
+    "update": {
+        "trajectory_setpoint.yaw": [
+            [
+                "nan",
+                "_heading_smoothing_get_smoothed_heading"
+            ],
+            0
+        ],
+        "trajectory_setpoint.yawspeed": [
+            [
+                "_heading_smoothing_get_smoothed_heading_rate",
+                "nan"
+            ],
+            0
+        ],
+        "goto_setpoint": [
+            [
+                "_goto_setpoint_sub_get"
+            ],
+            0
+        ],
+        "trajectory_setpoint.timestamp": [
+            [
+                "goto_setpoint_timestamp"
+            ],
+            0
+        ]
+    },
+    "setPositionSmootherLimits": {
+        "speed_scale": [
+            [
+                "_param_mpc_z_v_auto_up",
+                "_param_mpc_z_v_auto_dn",
+                "constrain_vehicle_max_vertical_speed",
+                "constrain_goto_setpoint_max_vertical_speed",
+                "constrain__f",
+                "_param_mpc_xy_cruise",
+                "_param_mpc_xy_cruise",
+                "_param_mpc_z_v_auto_up",
+                "_param_mpc_z_v_auto_dn"
+            ],
+            3
+        ],
+        "max_vertical_accel": [
+            [
+                "_param_mpc_acc_up_max",
+                "_param_mpc_acc_down_max",
+                "constrain_speed_scale",
+                "constrain__f",
+                "constrain_vehicle_max_vertical_accel"
+            ],
+            1
+        ],
+        "max_horizontal_accel": [
+            [
+                "constrain_speed_scale",
+                "_param_mpc_acc_hor",
+                "constrain__f",
+                "constrain__param_mpc_acc_hor"
+            ],
+            0
+        ]
+    },
+    "setHeadingSmootherLimits": {
+        "max_heading_accel": [
+            [
+                "_param_mpc_yawrauto_acc",
+                "constrain__param_mpc_yawrauto_acc",
+                "constrain__f",
+                "constrain_rate_scale"
+            ],
+            0
+        ],
+        "rate_scale": [
+            [
+                "_param_mpc_yawrauto_max",
+                "constrain__f",
+                "constrain__param_mpc_yawrauto_max",
+                "constrain_goto_setpoint_max_heading_rate",
+                "_param_mpc_yawrauto_max"
+            ],
+            1
+        ]
+    }
+}

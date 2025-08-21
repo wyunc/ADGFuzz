@@ -1,0 +1,91 @@
+{
+    "get_reading": {
+        "reading_m": [
+            [
+                "_distance_m",
+                "count"
+            ],
+            1
+        ]
+    },
+    "get_temp": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "_temp"
+            ],
+            0
+        ]
+    },
+    "decode": {
+        "_term_is_checksum": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "valid_sentence": [
+            [
+                "decode_latest_term"
+            ],
+            0
+        ],
+        "_sentence_type": [
+            [
+                "sonar_unknown"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "checksum": [
+            [
+                "nibble_high",
+                "nibble_low",
+                "4u"
+            ],
+            0
+        ],
+        "_temp_readtime_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_sentence_type": [
+            [
+                "sonar_mtw",
+                "sonar_dbt",
+                "sonar_unknown",
+                "sonar_dpt",
+                "sonar_hded"
+            ],
+            0
+        ],
+        "_temp_unvalidated": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "term_type": [
+            [
+                "_term"
+            ],
+            0
+        ],
+        "_distance_m": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "_mcount": {
+        "address": [
+            [
+                "__builtin_extract_return_addr_a",
+                "__builtin_return_address",
+                "uint32_t"
+            ],
+            1
+        ],
+        "current": [
+            [
+                "0x45d9f3b",
+                "array_size_ht",
+                "fi",
+                "nullptr",
+                "calloc_fi",
+                "calloc_sizeof",
+                "ht",
+                "_next"
+            ],
+            3
+        ]
+    },
+    "print_profile": {
+        "current": [
+            [
+                "ht",
+                "i"
+            ],
+            0
+        ],
+        "last_run": [
+            [
+                "millis64"
+            ],
+            0
+        ]
+    }
+}

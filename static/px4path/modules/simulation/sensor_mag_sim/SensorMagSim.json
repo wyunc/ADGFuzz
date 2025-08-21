@@ -1,0 +1,104 @@
+{
+    "generate_wgn": {
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "v2",
+                "v1"
+            ],
+            0
+        ],
+        "U1": [
+            [
+                "rand_max",
+                "rand",
+                "float"
+            ],
+            0
+        ],
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "U2": [
+            [
+                "rand_max",
+                "rand",
+                "float"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "float_sqrtf",
+                "v2",
+                "v1",
+                "float_s",
+                "float_logf",
+                "float_float",
+                "s"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "inclination_rad": [
+            [
+                "radians_gpos_lat",
+                "radians_gpos_lon",
+                "radians_get_mag_inclination_degrees"
+            ],
+            0
+        ],
+        "field_strength_gauss": [
+            [
+                "get_mag_strength_gauss_gpos_lon",
+                "get_mag_strength_gauss_gpos_lat"
+            ],
+            0
+        ],
+        "declination_rad": [
+            [
+                "radians_gpos_lat",
+                "radians_get_mag_declination_degrees",
+                "radians_gpos_lon"
+            ],
+            0
+        ],
+        "expected_field": [
+            [
+                "dcmf_inclination_rad",
+                "vector3f_field_strength_gauss",
+                "dcmf_declination_rad",
+                "dcmf_eulerf",
+                "quatf",
+                "_transpose",
+                "dcmf",
+                "attitude_q"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "sensor_mag_sim",
+                "new"
+            ],
+            0
+        ]
+    }
+}

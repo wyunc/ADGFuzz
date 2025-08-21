@@ -1,0 +1,70 @@
+{
+    "isHeadingLinedUp": {
+        "a": [
+            [
+                "plane_nav_controller_loiter_radius_fabsf",
+                "plane_nav_controller_loiter_radius_plane_loiter_radius",
+                "target_pos_length"
+            ],
+            2
+        ],
+        "pos_to_target": [
+            [
+                "plane_nav_controller_loiter_radius_fabsf",
+                "plane_nav_controller_loiter_radius_plane_loiter_radius",
+                "loiter_center_loc_get_distance_ne_plane_current_loc_normalized",
+                "loiter_center_loc_get_distance_ne_target_loc"
+            ],
+            3
+        ],
+        "current_heading_cd": [
+            [
+                "plane_loiter_direction",
+                "m_pi_2",
+                "degrees_projected_pos_angle",
+                "degrees_wrap_pi"
+            ],
+            0
+        ],
+        "target_bearing_cd": [
+            [
+                "asinf_loiter_radius",
+                "asinf_a",
+                "m_pi_2",
+                "degrees_wrap_pi",
+                "degrees_target_pos_angle",
+                "plane_loiter_direction",
+                "degrees_pos_to_target_angle"
+            ],
+            1
+        ]
+    },
+    "isHeadingLinedUp_cd": {
+        "heading_cd": [
+            [
+                "wrap_360_ahrs_groundspeed_vector_angle",
+                "wrap_360_degrees"
+            ],
+            0
+        ],
+        "expanded_acceptance": [
+            [
+                "labs_plane_loiter_sum_cd"
+            ],
+            0
+        ],
+        "plane.next_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "heading_err_cd": [
+            [
+                "wrap_180_cd_bearing_cd",
+                "wrap_180_cd_heading_cd"
+            ],
+            0
+        ]
+    }
+}

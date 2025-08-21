@@ -1,0 +1,390 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "nullptr",
+                "serial_manager_find_serial_serial_protocol_run_cam"
+            ],
+            0
+        ],
+        "_transition_timeout_ms": [
+            [
+                "_boot_delay_ms"
+            ],
+            0
+        ],
+        "_transition_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "simulate_camera_button": {
+        "_transition_timeout_ms": [
+            [
+                "transition_timeout"
+            ],
+            0
+        ]
+    },
+    "start_recording": {
+        "_video_recording": [
+            [
+                "recording"
+            ],
+            0
+        ],
+        "_osd_option": [
+            [
+                "no_option"
+            ],
+            0
+        ]
+    },
+    "stop_recording": {
+        "_video_recording": [
+            [
+                "not_recording"
+            ],
+            0
+        ],
+        "_osd_option": [
+            [
+                "no_option"
+            ],
+            0
+        ]
+    },
+    "enter_osd": {
+        "_osd_option": [
+            [
+                "enter"
+            ],
+            0
+        ]
+    },
+    "exit_osd": {
+        "_osd_option": [
+            [
+                "exit"
+            ],
+            0
+        ]
+    },
+    "osd_option": {
+        "_osd_option": [
+            [
+                "option"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_last_osd_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update_osd": {
+        "use_armed_state_machine": [
+            [
+                "hal_util_get_soft_armed",
+                "osd_is_readonly_screen"
+            ],
+            0
+        ]
+    },
+    "update_state_machine_armed": {
+        "_transition_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_video_recording": [
+            [
+                "recording",
+                "has_feature_rcdevice_protocol_feature_start_recording",
+                "stop_recording",
+                "start_recording",
+                "none",
+                "not_recording"
+            ],
+            0
+        ]
+    },
+    "update_state_machine_disarmed": {
+        "_last_video_recording": [
+            [
+                "_video_recording"
+            ],
+            0
+        ],
+        "_transition_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_state": [
+            [
+                "_state"
+            ],
+            0
+        ],
+        "_last_osd_option": [
+            [
+                "_osd_option"
+            ],
+            0
+        ],
+        "_last_in_menu": [
+            [
+                "_in_menu"
+            ],
+            0
+        ],
+        "_last_rc_event": [
+            [
+                "map_rc_input_to_event",
+                "none"
+            ],
+            1
+        ]
+    },
+    "handle_initialized": {
+        "_state": [
+            [
+                "video_recording",
+                "ready"
+            ],
+            0
+        ]
+    },
+    "handle_ready": {
+        "_state": [
+            [
+                "video_recording",
+                "entering_menu"
+            ],
+            0
+        ]
+    },
+    "handle_recording": {
+        "_state": [
+            [
+                "ready",
+                "entering_menu"
+            ],
+            0
+        ]
+    },
+    "handle_2_key_simulation_process": {
+        "_in_menu": [
+            [
+                "runcam_osd_menu_depth",
+                "_menu_enter_level"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "entering_menu",
+                "in_menu",
+                "exiting_menu"
+            ],
+            0
+        ],
+        "_sub_menu_pos": [
+            [
+                "get_sub_menu_length__top_menu_pos"
+            ],
+            0
+        ],
+        "_top_menu_pos": [
+            [
+                "get_top_menu_length"
+            ],
+            0
+        ]
+    },
+    "exit_2_key_osd_menu": {
+        "_in_menu": [
+            [
+                "_menu_enter_level"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "video_recording",
+                "ready"
+            ],
+            0
+        ]
+    },
+    "handle_5_key_simulation_response": {
+        "operationID": [
+            [
+                "connection_operation_request__param"
+            ],
+            0
+        ],
+        "_button_pressed": [
+            [
+                "none"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "in_menu",
+                "ready"
+            ],
+            0
+        ],
+        "errorCode": [
+            [
+                "0x0f",
+                "request__recv_buf"
+            ],
+            0
+        ]
+    },
+    "receive": {
+        "avail": [
+            [
+                "uart_available_uint32_t_runcam_max_packet_size"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "uart_read"
+            ],
+            0
+        ],
+        "_pending_request._result": [
+            [
+                "incorrect_crc",
+                "success",
+                "_pending_request_get_crc",
+                "none"
+            ],
+            1
+        ]
+    },
+    "send_5_key_OSD_cable_simulation_event": {
+        "_transition_timeout_ms": [
+            [
+                "transition_timeout"
+            ],
+            0
+        ]
+    },
+    "simulate_5_key_OSD_cable_button_press": {
+        "_button_pressed": [
+            [
+                "pressed"
+            ],
+            0
+        ]
+    },
+    "simulate_5_key_OSD_cable_button_release": {
+        "_button_pressed": [
+            [
+                "released"
+            ],
+            0
+        ]
+    },
+    "send_request_and_waiting_response": {
+        "_pending_request": [
+            [
+                "request_param",
+                "request_timeout",
+                "request_max_retry_times",
+                "request_parser_func",
+                "request_this",
+                "request_command_id"
+            ],
+            0
+        ]
+    },
+    "send_packet": {
+        "buffer_len": [
+            [
+                "rcdevice_protocol_command_camera_control",
+                "command",
+                "param"
+            ],
+            1
+        ],
+        "crc": [
+            [
+                "crc8_dvb_s2_i",
+                "crc8_dvb_s2_buffer",
+                "crc8_dvb_s2_crc"
+            ],
+            0
+        ]
+    },
+    "parse_device_info": {
+        "featureHighBits": [
+            [
+                "request__recv_buf"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "initialized"
+            ],
+            0
+        ],
+        "_protocol_version": [
+            [
+                "protocol_version_request__recv_buf"
+            ],
+            0
+        ],
+        "featureLowBits": [
+            [
+                "request__recv_buf"
+            ],
+            0
+        ]
+    },
+    "simulation_OSD_cable_failed": {
+        "operationID": [
+            [
+                "request__param"
+            ],
+            0
+        ]
+    },
+    "request_pending": {
+        "_pending_request._request_timestamp_ms": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_pending_request._result": [
+            [
+                "timeout",
+                "none"
+            ],
+            0
+        ]
+    }
+}

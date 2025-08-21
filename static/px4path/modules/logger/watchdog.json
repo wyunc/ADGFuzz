@@ -1,0 +1,99 @@
+{
+    "watchdog_update": {
+        "param.sched_priority": [
+            [
+                "sched_priority_log_watchdog",
+                "watchdog_data_logger_main_priority",
+                "watchdog_data_log_writer_priority"
+            ],
+            0
+        ],
+        "watchdog_data.triggered_by_cycle_delay": [
+            [
+                "hrt_absolute_time",
+                "watchdog_data_sem_counter_saturated_start",
+                "5_s"
+            ],
+            2
+        ],
+        "watchdog_data.sem_counter_saturated_start": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "watchdog_data.triggered_by_ready_delay": [
+            [
+                "hrt_absolute_time",
+                "1_s",
+                "watchdog_data_ready_to_run_timestamp"
+            ],
+            2
+        ],
+        "watchdog_data.ready_to_run_timestamp": [
+            [
+                "hrt_absolute_time",
+                "log_writer_task_curr_start_time"
+            ],
+            1
+        ],
+        "log_writer_task": [
+            [
+                "watchdog_data_logger_writer_task_index",
+                "system_load_tasks"
+            ],
+            0
+        ],
+        "max_time": [
+            [
+                "hrt_absolute_time",
+                "watchdog_data_ready_to_run_timestamp"
+            ],
+            1
+        ],
+        "watchdog_data.trigger_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "watchdog_data.logger_main_priority": [
+            [
+                "param_sched_priority"
+            ],
+            0
+        ],
+        "watchdog_data.last_state": [
+            [
+                "log_writer_task_tcb_task_state"
+            ],
+            1
+        ],
+        "watchdog_data.log_writer_priority": [
+            [
+                "param_sched_priority"
+            ],
+            0
+        ]
+    },
+    "watchdog_initialize": {
+        "watchdog_data.logger_writer_task_index": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "watchdog_data.logger_main_task_index": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "pid_logger_writer": [
+            [
+                "writer_thread"
+            ],
+            0
+        ]
+    }
+}

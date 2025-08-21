@@ -1,0 +1,22 @@
+{
+    "runSeconds": {
+        "_time_now_us": [
+            [
+                "1e6f",
+                "dt",
+                "uint64_t",
+                "static_cast"
+            ],
+            1
+        ],
+        "gps_data.timestamp": [
+            [
+                "1e6f",
+                "dt",
+                "uint64_t",
+                "static_cast"
+            ],
+            1
+        ]
+    }
+}

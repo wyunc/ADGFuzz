@@ -1,0 +1,27 @@
+{
+    "set_desired_location": {
+        "ret": [
+            [
+                "set_desired_location_destination",
+                "set_desired_location_next_destination"
+            ],
+            0
+        ]
+    },
+    "update_oa_distance_and_bearing_to_destination": {
+        "_oa_wp_bearing_cd": [
+            [
+                "wp_bearing_cd",
+                "current_loc_get_bearing_to__oa_destination"
+            ],
+            0
+        ],
+        "_oa_distance_to_destination": [
+            [
+                "get_distance_to_destination",
+                "current_loc_get_distance__oa_destination"
+            ],
+            0
+        ]
+    }
+}

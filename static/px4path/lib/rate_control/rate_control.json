@@ -1,0 +1,71 @@
+{
+    "setPidGains": {
+        "_gain_p": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "_gain_i": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_gain_d": [
+            [
+                "d"
+            ],
+            0
+        ]
+    },
+    "setSaturationStatus": {
+        "_control_allocator_saturation_negative": [
+            [
+                "saturation_negative"
+            ],
+            0
+        ],
+        "_control_allocator_saturation_positive": [
+            [
+                "saturation_positive"
+            ],
+            0
+        ]
+    },
+    "updateIntegral": {
+        "rate_i": [
+            [
+                "_rate_int_i",
+                "max__f",
+                "max_i_factor",
+                "radians__f",
+                "rate_error_i",
+                "_gain_i_i",
+                "dt",
+                "rate_error_i"
+            ],
+            1
+        ]
+    },
+    "getRateControlStatus": {
+        "rate_ctrl_status.yawspeed_integ": [
+            [
+                "_rate_int"
+            ],
+            0
+        ],
+        "rate_ctrl_status.rollspeed_integ": [
+            [
+                "_rate_int"
+            ],
+            0
+        ],
+        "rate_ctrl_status.pitchspeed_integ": [
+            [
+                "_rate_int"
+            ],
+            0
+        ]
+    }
+}

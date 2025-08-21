@@ -1,0 +1,86 @@
+{
+    "init": {
+        "_flags.armed": [
+            [
+                "flags_armed"
+            ],
+            0
+        ],
+        "_pin": [
+            [
+                "p_notify_get_buzz_pin"
+            ],
+            0
+        ],
+        "_flags.failsafe_battery": [
+            [
+                "flags_failsafe_battery"
+            ],
+            0
+        ]
+    },
+    "update_pattern_to_play": {
+        "_flags.armed": [
+            [
+                "flags_armed"
+            ],
+            0
+        ],
+        "_flags.ekf_bad": [
+            [
+                "flags_ekf_bad"
+            ],
+            0
+        ],
+        "_flags.gyro_calibrated": [
+            [
+                "flags_gyro_calibrated"
+            ],
+            0
+        ]
+    },
+    "update_playing_pattern": {
+        "_pattern": [
+            [
+                "0ul"
+            ],
+            0
+        ],
+        "bit": [
+            [
+                "_pattern_start_time",
+                "millis",
+                "100ul"
+            ],
+            1
+        ]
+    },
+    "on": {
+        "buzz_on": [
+            [
+                "p_notify_get_buzz_level"
+            ],
+            0
+        ],
+        "_flags.on": [
+            [
+                "turn_on"
+            ],
+            0
+        ]
+    },
+    "play_pattern": {
+        "_pattern": [
+            [
+                "pattern"
+            ],
+            0
+        ],
+        "_pattern_start_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

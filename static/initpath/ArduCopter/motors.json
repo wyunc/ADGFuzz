@@ -1,0 +1,64 @@
+{
+    "arm_motors_check": {
+        "yaw_in": [
+            [
+                "channel_yaw_get_control_in"
+            ],
+            0
+        ],
+        "arming_rudder": [
+            [
+                "arming_get_rudder_arming_type"
+            ],
+            0
+        ],
+        "auto_disarm_begin": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "auto_disarm_check": {
+        "sprung_throttle_stick": [
+            [
+                "thr_behave_feedback_from_mid_stick",
+                "g_throttle_behavior"
+            ],
+            0
+        ],
+        "disarm_delay_ms": [
+            [
+                "constrain_int16_g_disarm_delay"
+            ],
+            0
+        ],
+        "thr_low": [
+            [
+                "channel_throttle_get_control_in",
+                "ap_throttle_zero",
+                "g_throttle_deadzone",
+                "get_throttle_mid"
+            ],
+            1
+        ],
+        "auto_disarm_begin": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "motors_output": {
+        "interlock": [
+            [
+                "motors_armed",
+                "ap_using_interlock",
+                "ap_in_arming_delay",
+                "ap_motor_interlock_switch",
+                "get_emergency_stop"
+            ],
+            0
+        ]
+    }
+}

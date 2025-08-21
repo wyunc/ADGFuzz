@@ -1,0 +1,504 @@
+{
+    "setup": {
+        "quadplane.air_mode": [
+            [
+                "assisted_flight_only"
+            ],
+            0
+        ],
+        "_have_elevon": [
+            [
+                "function_assigned_k_elevon_left",
+                "function_assigned_k_elevon_right"
+            ],
+            0
+        ],
+        "quadplane.thrust_type": [
+            [
+                "tailsitter"
+            ],
+            0
+        ],
+        "_have_elevator": [
+            [
+                "function_assigned_k_elevator"
+            ],
+            0
+        ],
+        "_have_v_tail": [
+            [
+                "function_assigned_k_vtail_right",
+                "function_assigned_k_vtail_left"
+            ],
+            0
+        ],
+        "_have_aileron": [
+            [
+                "function_assigned_k_aileron"
+            ],
+            0
+        ],
+        "_have_rudder": [
+            [
+                "function_assigned_k_rudder"
+            ],
+            0
+        ],
+        "quadplane.transition": [
+            [
+                "tailsitter_transition_this",
+                "tailsitter_transition_quadplane",
+                "new_nothrow",
+                "tailsitter_transition_motors"
+            ],
+            1
+        ]
+    },
+    "output": {
+        "tilt_right": [
+            [
+                "get_output_scaled_k_tilt_motor_right",
+                "servo_max",
+                "vectored_hover_power",
+                "powf_fabsf",
+                "powf_extra_pitch",
+                "quadplane_attitude_control_get_att_target_euler_cd_y",
+                "quadplane_ahrs_view_pitch_sensor",
+                "servo_max",
+                "get_output_scaled_k_aileron",
+                "vectored_hover_gain",
+                "vectored_forward_gain",
+                "throttle_scale_max",
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle",
+                "plane_get_speed_scaler",
+                "plane_control_mode",
+                "quadplane_fw_vector_throttle_scaling",
+                "plane_mode_manual",
+                "get_output_scaled_k_elevator"
+            ],
+            11
+        ],
+        "rudder_mix": [
+            [
+                "plane_g_mixing_gain",
+                "plane_g_mixing_offset",
+                "get_output_scaled_k_rudder",
+                "fabsf_elevator_mix",
+                "servo_max",
+                "fabsf_rudder_mix"
+            ],
+            1
+        ],
+        "throttle_pwm": [
+            [
+                "motors_get_pwm_output_max",
+                "motors_get_pwm_output_min",
+                "motors_thr_lin_actuator_to_thrust_transition_throttle_vtol",
+                "motors_thr_lin_actuator_to_thrust_plane_aparm_throttle_cruise_get",
+                "motors_thr_lin_thrust_to_actuator_throttle",
+                "get_output_scaled_k_throttle",
+                "motors_get_throttle_hover"
+            ],
+            1
+        ],
+        "pitch_lim": [
+            [
+                "servo_max",
+                "fabsf_k_elevator",
+                "fabsf_get_output_scaled",
+                "_have_elevator"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "quadplane_attitude_control_get_dt"
+            ],
+            0
+        ],
+        "yaw_lim": [
+            [
+                "servo_max",
+                "_have_aileron",
+                "fabsf_get_output_scaled",
+                "fabsf_k_aileron"
+            ],
+            0
+        ],
+        "tilt_left": [
+            [
+                "get_output_scaled_k_tilt_motor_left",
+                "servo_max",
+                "vectored_hover_power",
+                "powf_fabsf",
+                "powf_extra_pitch",
+                "quadplane_attitude_control_get_att_target_euler_cd_y",
+                "quadplane_ahrs_view_pitch_sensor",
+                "servo_max",
+                "get_output_scaled_k_aileron",
+                "vectored_hover_gain",
+                "vectored_forward_gain",
+                "throttle_scale_max",
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle",
+                "plane_get_speed_scaler",
+                "plane_control_mode",
+                "quadplane_fw_vector_throttle_scaling",
+                "plane_mode_manual",
+                "get_output_scaled_k_elevator"
+            ],
+            11
+        ],
+        "aileron_mix": [
+            [
+                "plane_g_mixing_gain",
+                "plane_g_mixing_offset",
+                "fabsf_aileron_mix",
+                "get_output_scaled_k_aileron",
+                "fabsf_elevator_mix",
+                "servo_max"
+            ],
+            1
+        ],
+        "tilt_lim": [
+            [
+                "_is_vectored",
+                "fabsf_get_output_scaled",
+                "servo_max",
+                "fabsf_k_tilt_motor_left",
+                "fabsf_k_tilt_motor_right"
+            ],
+            0
+        ],
+        "elevator_mix": [
+            [
+                "plane_g_mixing_gain",
+                "plane_g_mixing_offset",
+                "get_output_scaled_k_elevator"
+            ],
+            0
+        ],
+        "roll_lim": [
+            [
+                "fabsf_k_rudder",
+                "servo_max",
+                "_have_rudder",
+                "fabsf_get_output_scaled"
+            ],
+            0
+        ]
+    },
+    "transition_vtol_complete": {
+        "roll_cd": [
+            [
+                "labs_plane_ahrs_roll_sensor"
+            ],
+            0
+        ],
+        "trans_angle": [
+            [
+                "get_transition_angle_vtol"
+            ],
+            0
+        ]
+    },
+    "check_input": {
+        "yaw_in": [
+            [
+                "plane_channel_rudder_get_control_in"
+            ],
+            0
+        ],
+        "roll_in": [
+            [
+                "plane_channel_roll_get_control_in"
+            ],
+            0
+        ]
+    },
+    "is_in_fw_flight": {
+        "transition_state": [
+            [
+                "transition_done"
+            ],
+            0
+        ]
+    },
+    "speed_scaling": {
+        "reverse_airspeed": [
+            [
+                "quadplane_ahrs_earth_to_body_vel",
+                "quadplane_ahrs_earth_to_body_quadplane_ahrs_wind_estimate",
+                "_x"
+            ],
+            0
+        ],
+        "log_data.throttle_scaler": [
+            [
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "throttle_scale_max"
+            ],
+            3
+        ],
+        "v": [
+            [
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "throttle_scale_max",
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "throttle_scale_max",
+                "motors_get_throttle_out",
+                "ssl_air_density",
+                "quadplane_ahrs_get_air_density_ratio",
+                "motors_get_throttle_hover",
+                "gravity_mss",
+                "sq_airspeed",
+                "disk_loading_get",
+                "gravity_mss",
+                "disk_loading_get",
+                "ssl_air_density",
+                "ssl_air_density",
+                "quadplane_ahrs_get_air_density_ratio",
+                "c_trans_angle",
+                "c_trans_angle",
+                "gain_scaling_min",
+                "plane_g_dt",
+                "neg_tc",
+                "gain_scaling_min",
+                "gain_scaling_min_get_throttle_scale_max_get",
+                "pos_tc",
+                "plane_g_dt",
+                "quadplane_ahrs_get_air_density_ratio",
+                "throttle_scale_max",
+                "c_trans_angle",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "motors_get_throttle_hover",
+                "quadplane_ahrs_view_get_rotation_body_to_ned_c_z",
+                "get_output_scaled_functions",
+                "get_output_scaled_i"
+            ],
+            16
+        ],
+        "log_data.speed_scaler": [
+            [
+                "motors_get_throttle_hover",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "throttle_scale_max",
+                "motors_get_throttle_out",
+                "ssl_air_density",
+                "quadplane_ahrs_get_air_density_ratio",
+                "motors_get_throttle_hover",
+                "gravity_mss",
+                "sq_airspeed",
+                "disk_loading_get",
+                "gravity_mss",
+                "disk_loading_get",
+                "ssl_air_density",
+                "ssl_air_density",
+                "quadplane_ahrs_get_air_density_ratio",
+                "c_trans_angle",
+                "c_trans_angle",
+                "gain_scaling_min",
+                "plane_g_dt",
+                "neg_tc",
+                "gain_scaling_min",
+                "gain_scaling_min_get_throttle_scale_max_get",
+                "pos_tc",
+                "plane_g_dt",
+                "quadplane_ahrs_get_air_density_ratio",
+                "throttle_scale_max",
+                "c_trans_angle",
+                "gain_scaling_min",
+                "motors_get_throttle_out",
+                "motors_get_throttle_hover",
+                "quadplane_ahrs_view_get_rotation_body_to_ned_c_z"
+            ],
+            16
+        ],
+        "log_data.min_throttle": [
+            [
+                "sq_disk_loading_min_outflow",
+                "sq_reverse_airspeed",
+                "ssl_air_density",
+                "quadplane_ahrs_get_air_density_ratio",
+                "motors_get_throttle_hover",
+                "gravity_mss",
+                "sq_airspeed",
+                "disk_loading_get"
+            ],
+            3
+        ]
+    },
+    "update": {
+        "fw_limit_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "transition_state": [
+            [
+                "transition_done"
+            ],
+            0
+        ],
+        "have_airspeed": [
+            [
+                "quadplane_ahrs_airspeed_estimate_aspeed"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "fw_transition_initial_pitch",
+                "quadplane_ahrs_pitch_sensor",
+                "millis",
+                "fw_transition_start_ms",
+                "quadplane_tailsitter_transition_rate_fw",
+                "plane_fly_inverted"
+            ],
+            3
+        ],
+        "quadplane.assisted_flight": [
+            [
+                "quadplane_assist_should_assist_aspeed",
+                "quadplane_assist_should_assist_have_airspeed"
+            ],
+            0
+        ]
+    },
+    "VTOL_update": {
+        "transition_state": [
+            [
+                "transition_angle_wait_vtol"
+            ],
+            0
+        ],
+        "quadplane.assisted_flight": [
+            [
+                "quadplane_assist_should_assist_have_airspeed",
+                "quadplane_assist_should_assist_aspeed"
+            ],
+            0
+        ],
+        "have_airspeed": [
+            [
+                "quadplane_ahrs_airspeed_estimate_aspeed"
+            ],
+            0
+        ],
+        "last_vtol_mode_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "vtol_limit_initial_pitch": [
+            [
+                "quadplane_ahrs_view_pitch_sensor"
+            ],
+            0
+        ],
+        "vtol_limit_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "show_vtol_view": {
+        "show_vtol": [
+            [
+                "quadplane_in_vtol_mode"
+            ],
+            0
+        ]
+    },
+    "set_FW_roll_pitch": {
+        "nav_pitch_cd": [
+            [
+                "tailsitter_transition_rate_vtol",
+                "millis",
+                "tailsitter_transition_rate_fw",
+                "millis",
+                "fw_limit_initial_pitch",
+                "fw_limit_start_ms"
+            ],
+            3
+        ],
+        "vtol_transition_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "vtol_transition_initial_pitch": [
+            [
+                "plane_nav_pitch_cd"
+            ],
+            0
+        ]
+    },
+    "set_VTOL_roll_pitch_limit": {
+        "nav_pitch_cd": [
+            [
+                "vtol_limit_initial_pitch",
+                "millis",
+                "tailsitter_transition_rate_vtol",
+                "vtol_limit_start_ms"
+            ],
+            2
+        ]
+    },
+    "restart": {
+        "transition_state": [
+            [
+                "transition_angle_wait_fw"
+            ],
+            0
+        ],
+        "fw_transition_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "fw_transition_initial_pitch": [
+            [
+                "degrees",
+                "quadplane_attitude_control_get_attitude_target_quat__get_euler_pitch"
+            ],
+            0
+        ]
+    },
+    "force_transition_complete": {
+        "vtol_transition_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "vtol_transition_initial_pitch": [
+            [
+                "plane_nav_pitch_cd"
+            ],
+            0
+        ],
+        "transition_state": [
+            [
+                "transition_done"
+            ],
+            0
+        ]
+    }
+}

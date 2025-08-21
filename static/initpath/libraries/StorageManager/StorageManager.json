@@ -1,0 +1,167 @@
+{
+    "read_block": {
+        "offset": [
+            [
+                "area_offset"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "area_length",
+                "area_length",
+                "uint8_t",
+                "data"
+            ],
+            3
+        ],
+        "n": [
+            [
+                "area_length",
+                "area_length",
+                "file_bufsize"
+            ],
+            4
+        ],
+        "area": [
+            [
+                "layout",
+                "i"
+            ],
+            0
+        ]
+    },
+    "write_block": {
+        "area": [
+            [
+                "1024u",
+                "layout"
+            ],
+            1
+        ],
+        "offset": [
+            [
+                "area_offset"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "file_bufsize",
+                "area_length",
+                "area_length"
+            ],
+            4
+        ],
+        "b": [
+            [
+                "const",
+                "data",
+                "uint8_t",
+                "area_length",
+                "area_length"
+            ],
+            3
+        ]
+    },
+    "copy_area": {
+        "total": [
+            [
+                "sizeof_block",
+                "sizeof_total",
+                "source_size_size"
+            ],
+            1
+        ],
+        "ofs": [
+            [
+                "sizeof_block",
+                "sizeof_total"
+            ],
+            1
+        ]
+    },
+    "attach_file": {
+        "bufsize": [
+            [
+                "0x_ffffu",
+                "size_kbyte",
+                "1024u"
+            ],
+            1
+        ],
+        "buffer": [
+            [
+                "new_nothrow",
+                "0x_ffffu",
+                "size_kbyte",
+                "1024u",
+                "uint8_t"
+            ],
+            1
+        ],
+        "fd": [
+            [
+                "fs_open_filename",
+                "_open_o_rdwr",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "nread": [
+            [
+                "fs_read_newfile_fd",
+                "_read_newfile_buffer",
+                "_read_size"
+            ],
+            0
+        ],
+        "total_size": [
+            [
+                "newfile_bufsize"
+            ],
+            0
+        ],
+        "file": [
+            [
+                "new_nothrow",
+                "file_storage"
+            ],
+            1
+        ]
+    },
+    "flush_file": {
+        "last_io_failed": [
+            [
+                "io_fail"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "__builtin_ffsll_file_dirty_mask"
+            ],
+            0
+        ],
+        "last_io_fail_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "ofs",
+                "1024u",
+                "file_bufsize"
+            ],
+            0
+        ],
+        "last_clean_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

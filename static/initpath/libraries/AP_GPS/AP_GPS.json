@@ -1,0 +1,691 @@
+{
+    "init": {
+        ".instance": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "rate_ms": [
+            [
+                "i",
+                "params",
+                "_rate_ms"
+            ],
+            0
+        ],
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "convert_parameters": {
+        "old_index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "speed_accuracy": {
+        "sacc": [
+            [
+                "_speed_accuracy",
+                "instance",
+                "state"
+            ],
+            0
+        ]
+    },
+    "horizontal_accuracy": {
+        "hacc": [
+            [
+                "state",
+                "_horizontal_accuracy",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "vertical_accuracy": {
+        "vacc": [
+            [
+                "state",
+                "_vertical_accuracy",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "send_blob_start": {
+        "type": [
+            [
+                "instance",
+                "_type",
+                "params"
+            ],
+            0
+        ],
+        "blob": [
+            [
+                "_initialisation_blob",
+                "nullptr"
+            ],
+            0
+        ],
+        "blob_size": [
+            [
+                "sizeof__initialisation_blob"
+            ],
+            0
+        ],
+        ".blob": [
+            [
+                "_blob"
+            ],
+            0
+        ],
+        ".remaining": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "send_blob_update": {
+        ".blob": [
+            [
+                "_blob",
+                "_port",
+                "_write_const",
+                "n",
+                "_write_uint8_tinitblob_state",
+                "instance"
+            ],
+            1
+        ],
+        ".remaining": [
+            [
+                "_blob",
+                "_port",
+                "_write_const",
+                "n",
+                "_write_uint8_tinitblob_state",
+                "instance"
+            ],
+            1
+        ]
+    },
+    "detect_instance": {
+        ".hdop": [
+            [
+                "gps_unknown_dop"
+            ],
+            0
+        ],
+        "new_gps": [
+            [
+                "_detect_instance_instance"
+            ],
+            0
+        ],
+        ".last_message_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        ".vdop": [
+            [
+                "gps_unknown_dop"
+            ],
+            0
+        ],
+        ".delta_time_ms": [
+            [
+                "gps_timeout_ms"
+            ],
+            0
+        ],
+        ".status": [
+            [
+                "no_gps",
+                "no_fix"
+            ],
+            0
+        ]
+    },
+    "should_log": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "update_instance": {
+        ".delta_time_ms": [
+            [
+                "instance",
+                "_last_message_time_ms",
+                "timing",
+                "gps_timeout_ms",
+                "millis",
+                "_last_corrected_gps_time_us",
+                "instance",
+                "1000u",
+                "state"
+            ],
+            1
+        ],
+        "result": [
+            [
+                "drivers",
+                "instance",
+                "_read"
+            ],
+            0
+        ],
+        ".instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        ".status": [
+            [
+                "no_gps",
+                "no_fix"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "instance",
+                "timing"
+            ],
+            0
+        ],
+        "t.average_delta_ms": [
+            [
+                "t_delta_time_ms",
+                "t_average_delta_ms"
+            ],
+            0
+        ],
+        ".vdop": [
+            [
+                "gps_unknown_dop"
+            ],
+            0
+        ],
+        ".last_fix_time_ms": [
+            [
+                "millis",
+                "_last_corrected_gps_time_us",
+                "instance",
+                "1000u",
+                "state"
+            ],
+            1
+        ],
+        ".last_message_time_ms": [
+            [
+                "millis",
+                "_last_corrected_gps_time_us",
+                "instance",
+                "1000u",
+                "state"
+            ],
+            1
+        ],
+        ".hdop": [
+            [
+                "gps_unknown_dop"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "time_epoch_usec_instance"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "instance",
+                "params",
+                "_type"
+            ],
+            0
+        ]
+    },
+    "get_RelPosHeading": {
+        "relPosD": [
+            [
+                "state",
+                "i",
+                "_rel_pos_d"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "state",
+                "i",
+                "_relposheading_ts"
+            ],
+            0
+        ],
+        "relPosLength": [
+            [
+                "_rel_pos_length",
+                "state",
+                "i"
+            ],
+            0
+        ],
+        "relPosHeading": [
+            [
+                "state",
+                "i",
+                "_rel_pos_heading"
+            ],
+            0
+        ],
+        "accHeading": [
+            [
+                "state",
+                "i",
+                "_acc_heading"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "old_primary": [
+            [
+                "primary_instance"
+            ],
+            0
+        ],
+        "flags.gps_num_sats": [
+            [
+                "state",
+                "primary_instance",
+                "_num_sats"
+            ],
+            0
+        ],
+        "flags.gps_status": [
+            [
+                "state",
+                "primary_instance",
+                "_status"
+            ],
+            0
+        ],
+        "num_instances": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_primary": {
+        "old_data_primary": [
+            [
+                "state",
+                "_last_gps_time_ms",
+                "millis",
+                "delay_threshold"
+            ],
+            1
+        ],
+        "primary_instance": [
+            [
+                "_primary_get",
+                "i",
+                "gps_blended_instance"
+            ],
+            1
+        ],
+        "using_moving_base": [
+            [
+                "is_rtk_base"
+            ],
+            0
+        ],
+        "old_data": [
+            [
+                "i",
+                "delay_threshold",
+                "state",
+                "millis",
+                "_last_gps_time_ms"
+            ],
+            1
+        ],
+        "higher_status": [
+            [
+                "state",
+                "_status",
+                "i"
+            ],
+            0
+        ],
+        "more_sats": [
+            [
+                "state",
+                "i",
+                "_num_sats"
+            ],
+            0
+        ],
+        "_last_instance_swap_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_output_is_blended": [
+            [
+                "_calc_weights",
+                "ap_gps_blended",
+                "gps_blended_instance",
+                "drivers"
+            ],
+            0
+        ],
+        "another_gps_has_2_or_more_sats": [
+            [
+                "state",
+                "i",
+                "_num_sats"
+            ],
+            0
+        ],
+        "equal_status": [
+            [
+                "state",
+                "_status",
+                "i"
+            ],
+            0
+        ],
+        "another_gps_has_1_or_more_sats": [
+            [
+                "state",
+                "i",
+                "_num_sats"
+            ],
+            0
+        ]
+    },
+    "get_first_external_instance": {
+        "instance": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "send_mavlink_gps_raw": {
+        "height_elipsoid_mm": [
+            [
+                "undulation",
+                "loc_alt"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "location"
+            ],
+            0
+        ]
+    },
+    "send_mavlink_gps2_raw": {
+        "loc": [
+            [
+                "location"
+            ],
+            0
+        ],
+        "height_elipsoid_mm": [
+            [
+                "undulation",
+                "loc_alt"
+            ],
+            0
+        ]
+    },
+    "first_unconfigured_gps": {
+        "instance": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "all_consistent": {
+        "distance": [
+            [
+                "_location_get_distance_ned_state",
+                "state",
+                "_location_get_distance_ned__location_length"
+            ],
+            0
+        ]
+    },
+    "handle_gps_rtcm_fragment": {
+        "rtcm_stats.fragments_used": [
+            [
+                "__builtin_popcount_rtcm_buffer_fragments_received"
+            ],
+            0
+        ],
+        "should_clear_previous_fragments": [
+            [
+                "rtcm_buffer_sequence",
+                "flags",
+                "1u",
+                "0x03",
+                "1u",
+                "rtcm_buffer_fragments_received"
+            ],
+            3
+        ],
+        "rtcm_buffer": [
+            [
+                "calloc_sizeof",
+                "calloc_rtcm_buffer",
+                "struct"
+            ],
+            0
+        ],
+        "total_length": [
+            [
+                "flags",
+                "1u",
+                "0x03",
+                "len",
+                "mavlink_msg_gps_rtcm_data_field_data_len"
+            ],
+            1
+        ],
+        "sequence": [
+            [
+                "0x1f",
+                "flags",
+                "3u"
+            ],
+            0
+        ],
+        "start_of_fragment_in_buffer": [
+            [
+                "flags",
+                "1u",
+                "0x03",
+                "rtcm_buffer_buffer",
+                "uint16_t",
+                "mavlink_msg_gps_rtcm_data_field_data_len"
+            ],
+            1
+        ],
+        "fragment_count": [
+            [
+                "flags",
+                "1u",
+                "0x03"
+            ],
+            1
+        ],
+        "rtcm_stats.fragments_discarded": [
+            [
+                "__builtin_popcount_rtcm_buffer_fragments_received"
+            ],
+            0
+        ]
+    },
+    "handle_gps_rtcm_data": {
+        "mask": [
+            [
+                "unsigned_chan",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "parse_rtcm_injection": {
+        "rtcm.sent_idx": [
+            [
+                "rtcm_sent_idx",
+                "array_size_rtcm_sent_crc"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "chan",
+                "rtcm_parsers",
+                "_get_len_buf"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc_crc32_buf",
+                "crc_crc32_len"
+            ],
+            0
+        ]
+    },
+    "get_lag": {
+        "lag_sec": [
+            [
+                "_delay_ms",
+                "params",
+                "instance",
+                "float"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "gps_type_auto",
+                "params",
+                "instance",
+                "_type"
+            ],
+            0
+        ]
+    },
+    "is_healthy": {
+        "delay_avg_max": [
+            [
+                "is_rtk_rover_instance"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "timing",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "get_undulation": {
+        "undulation": [
+            [
+                "instance",
+                "_undulation",
+                "state"
+            ],
+            0
+        ]
+    },
+    "Write_GPS": {
+        "yaw_deg": [
+            [
+                "yaw_accuracy_deg"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "location_i"
+            ],
+            0
+        ],
+        "hacc": [
+            [
+                "sacc",
+                "vacc"
+            ],
+            0
+        ],
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "gps_yaw_deg": {
+        "time_ms": [
+            [
+                "instance",
+                "lag_s",
+                "state",
+                "_gps_yaw_time_ms"
+            ],
+            1
+        ],
+        "yaw_deg": [
+            [
+                "instance",
+                "state",
+                "_gps_yaw"
+            ],
+            0
+        ],
+        "accuracy_deg": [
+            [
+                "instance",
+                "state",
+                "_gps_yaw_accuracy"
+            ],
+            0
+        ]
+    }
+}

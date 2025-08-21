@@ -1,0 +1,64 @@
+{
+    "dshot_send_command": {
+        "group.dshot_waiter": [
+            [
+                "rcout_thread_ctx"
+            ],
+            0
+        ],
+        "packet": [
+            [
+                "create_dshot_packet_command",
+                "create_dshot_packet_bdshot_telem",
+                "create_dshot_packet_true"
+            ],
+            0
+        ],
+        "zero_packet": [
+            [
+                "create_dshot_packet_bdshot_telem",
+                "create_dshot_packet_false"
+            ],
+            0
+        ],
+        "bdshot_telem": [
+            [
+                "group_bdshot_enabled"
+            ],
+            0
+        ]
+    },
+    "send_dshot_command": {
+        "pkt.cycle": [
+            [
+                "command_timeout_ms",
+                "repeat_count",
+                "_dshot_period_us"
+            ],
+            0
+        ],
+        "pkt.chan": [
+            [
+                "chan",
+                "all_channels",
+                "chan_offset"
+            ],
+            0
+        ],
+        "pkt.command": [
+            [
+                "command"
+            ],
+            0
+        ]
+    },
+    "set_reversible_mask": {
+        "iomcu_mask": [
+            [
+                "chan_offset",
+                "1u"
+            ],
+            0
+        ]
+    }
+}

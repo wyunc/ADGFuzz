@@ -1,0 +1,711 @@
+{
+    "update": {
+        "angle_bf_target": [
+            [
+                "_params_neutral_angles_get",
+                "_params_retract_angles_get"
+            ],
+            0
+        ],
+        "_last_attitude_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_req_current_angle_rad_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_rangefinder_req_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_incoming_packets": {
+        "_parsed_msg.state": [
+            [
+                "waiting_for_header_low",
+                "waiting_for_header_high",
+                "waiting_for_data",
+                "waiting_for_seq_low",
+                "waiting_for_ctrl",
+                "waiting_for_datalen_low",
+                "waiting_for_crc_low",
+                "waiting_for_datalen_high",
+                "waiting_for_crc_high",
+                "waiting_for_seq_high",
+                "waiting_for_cmdid"
+            ],
+            0
+        ],
+        "expected_crc": [
+            [
+                "crc16_ccitt__msg_buff",
+                "crc16_ccitt__msg_buff_len"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "_uart_available_1024u"
+            ],
+            0
+        ]
+    },
+    "process_packet": {
+        "_fw_version.gimbal.minor": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_current_angle_rad.x": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_last_rangefinder_dist_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_thermal.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_fw_version.zoom.minor": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_fw_version.camera.patch": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "config_sz": [
+            [
+                "sizeof__config_info",
+                "_parsed_msg_data_bytes_received"
+            ],
+            0
+        ],
+        "_fw_version.gimbal.patch": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_thermal.min_pos.x": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_thermal.min_pos.y": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_current_rates_rads.y": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_thermal.max_C": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff",
+                "int16_t"
+            ],
+            0
+        ],
+        "_current_rates_rads.x": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_current_angle_rad.z": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_current_rates_rads.z": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_fw_version.camera.minor": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_thermal.max_pos.x": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_hardware_model": [
+            [
+                "i",
+                "hardware_model"
+            ],
+            0
+        ],
+        "_thermal.min_C": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff",
+                "int16_t"
+            ],
+            0
+        ],
+        "_last_current_angle_rad_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "func_feedback_info": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "hwid0": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_fw_version.camera.major": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_rangefinder_dist_m": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "sev": [
+            [
+                "mav_severity_info",
+                "mav_severity_warning"
+            ],
+            0
+        ],
+        "_fw_version.gimbal.major": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "hwid1": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_fw_version.zoom.major": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_fw_version.zoom.patch": [
+            [
+                "_msg_buff",
+                "_msg_buff_data_start"
+            ],
+            0
+        ],
+        "_zoom_mult": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "prev_record_status": [
+            [
+                "_config_info_record_status"
+            ],
+            0
+        ],
+        "_current_angle_rad.y": [
+            [
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ],
+        "_thermal.max_pos.y": [
+            [
+                "uint16_value__msg_buff_data_start",
+                "uint16_value__msg_buff"
+            ],
+            0
+        ]
+    },
+    "send_packet": {
+        "crc": [
+            [
+                "crc16_ccitt_send_buff_ofs",
+                "crc16_ccitt_send_buff"
+            ],
+            0
+        ],
+        "send_buff_ofs": [
+            [
+                "databuff_len"
+            ],
+            0
+        ],
+        "packet_size": [
+            [
+                "databuff_len",
+                "ap_mount_siyi_packetlen_min"
+            ],
+            0
+        ]
+    },
+    "rotate_gimbal": {
+        "mode": [
+            [
+                "follow",
+                "lock",
+                "yaw_is_ef"
+            ],
+            0
+        ]
+    },
+    "set_motion_mode": {
+        "data": [
+            [
+                "follow_mode",
+                "fpv_mode",
+                "lock_mode"
+            ],
+            0
+        ],
+        "_config_info.motion_mode": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "send_1byte_packet_uint8_tdata",
+                "send_1byte_packet_photo"
+            ],
+            0
+        ]
+    },
+    "send_target_rates": {
+        "pitch_rate_scalar": [
+            [
+                "pitch_rads",
+                "ap_mount_siyi_rate_max_rads"
+            ],
+            0
+        ],
+        "yaw_rate_scalar": [
+            [
+                "yaw_rads",
+                "ap_mount_siyi_rate_max_rads"
+            ],
+            0
+        ]
+    },
+    "send_target_angles": {
+        "pitch_rate_scalar": [
+            [
+                "ap_mount_siyi_rate_max_rads",
+                "ap_mount_siyi_pitch_p",
+                "pitch_rad",
+                "current_angle_transformed_y"
+            ],
+            1
+        ],
+        "current_angle_transformed": [
+            [
+                "_current_angle_rad"
+            ],
+            0
+        ],
+        "current_angle_transformed.z": [
+            [
+                "_current_angle_rad_z"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "yaw_rate_scalar": [
+            [
+                "ap_mount_siyi_rate_max_rads",
+                "current_angle_transformed_z",
+                "wrap_pi_yaw_rad",
+                "yaw_is_ef",
+                "radians__params_yaw_angle_max",
+                "radians__params_yaw_angle_min",
+                "wrap_pi_ahrs_get_yaw",
+                "yaw_rad",
+                "ap_mount_siyi_yaw_p"
+            ],
+            4
+        ],
+        "current_angle_transformed.y": [
+            [
+                "wrap_pi__current_angle_rad_y",
+                "wrap_pi_m_pi"
+            ],
+            0
+        ]
+    },
+    "record_video": {
+        "success": [
+            [
+                "send_1byte_packet_uint8_t_record_video_toggle",
+                "send_1byte_packet_photo"
+            ],
+            0
+        ]
+    },
+    "send_zoom_rate": {
+        "zoom_step": [
+            [
+                "uint8_max"
+            ],
+            0
+        ]
+    },
+    "send_zoom_mult": {
+        "fracpart": [
+            [
+                "constrain_int16_zoom_mult",
+                "constrain_int16_intpart",
+                "uint8_max",
+                "constrain_int16_modf",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "set_zoom": {
+        "_zoom_rate_target": [
+            [
+                "zoom_value"
+            ],
+            0
+        ],
+        "_zoom_type": [
+            [
+                "zoom_type"
+            ],
+            0
+        ],
+        "zoom_mult_max": [
+            [
+                "get_zoom_mult_max"
+            ],
+            0
+        ],
+        "zoom_mult": [
+            [
+                "linear_interpolate_zoom_value",
+                "linear_interpolate_zoom_mult_max"
+            ],
+            0
+        ]
+    },
+    "update_zoom_control": {
+        "_last_zoom_control_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_lens": {
+        "selected_lens": [
+            [
+                "lens",
+                "cam_image_type_table"
+            ],
+            0
+        ]
+    },
+    "set_camera_source": {
+        "cam_image_type": [
+            [
+                "main_pip_wideangle_thermal_sub_zoom",
+                "main_pip_zoom_wideangle_sub_thermal",
+                "main_wideangle_sub_thermal",
+                "main_pip_zoom_thermal_sub_wideangle",
+                "main_zoom_sub_thermal",
+                "main_thermal_sub_zoom"
+            ],
+            0
+        ]
+    },
+    "send_camera_information": {
+        "fw_version": [
+            [
+                "_fw_version_camera_minor",
+                "_fw_version_camera_major",
+                "_fw_version_camera_patch"
+            ],
+            0
+        ]
+    },
+    "send_camera_settings": {
+        "zoom_mult_max": [
+            [
+                "get_zoom_mult_max"
+            ],
+            0
+        ],
+        "mode_id": [
+            [
+                "camera_mode_video",
+                "on",
+                "_config_info_record_status",
+                "camera_mode_image"
+            ],
+            0
+        ],
+        "zoom_pct": [
+            [
+                "linear_interpolate__zoom_mult",
+                "linear_interpolate_zoom_mult_max"
+            ],
+            0
+        ]
+    },
+    "send_camera_thermal_range": {
+        "timeout": [
+            [
+                "_thermal_last_update_ms",
+                "millis",
+                "ap_mount_siyi_therm_timeout_ms"
+            ],
+            1
+        ]
+    },
+    "get_model_name": {
+        "model_idx": [
+            [
+                "uint8_t",
+                "_hardware_model"
+            ],
+            0
+        ]
+    },
+    "get_rangefinder_distance": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "distance_m": [
+            [
+                "_rangefinder_dist_m"
+            ],
+            0
+        ]
+    },
+    "check_firmware_version": {
+        "is_camera_supported": [
+            [
+                "_fw_version_camera_major",
+                "_fw_version_camera_minor",
+                "_fw_version_camera_patch",
+                "minimum_ver_camera_minor",
+                "minimum_ver_camera_major",
+                "minimum_ver_camera_patch"
+            ],
+            2
+        ]
+    },
+    "request_thermal_minmax": {
+        "_thermal.last_req_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_attitude_position": {
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "position.alt_msl": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "position.velocity_ned_int32.x": [
+            [
+                "velocity_ned_x"
+            ],
+            0
+        ],
+        "position.lon": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "attitude.rollspeed": [
+            [
+                "gyro_x"
+            ],
+            0
+        ],
+        "position.alt_ellipsoid": [
+            [
+                "position_alt_msl",
+                "undulation"
+            ],
+            0
+        ],
+        "attitude.yawspeed": [
+            [
+                "gyro_z"
+            ],
+            0
+        ],
+        "attitude.roll": [
+            [
+                "ahrs_get_roll"
+            ],
+            0
+        ],
+        "attitude.yaw": [
+            [
+                "ahrs_get_yaw"
+            ],
+            0
+        ],
+        "position.velocity_ned_int32.y": [
+            [
+                "velocity_ned_y"
+            ],
+            0
+        ],
+        "attitude.pitchspeed": [
+            [
+                "gyro_y"
+            ],
+            0
+        ],
+        "attitude.time_boot_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "position.velocity_ned_int32.z": [
+            [
+                "velocity_ned_z"
+            ],
+            0
+        ],
+        "position.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "position.time_boot_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "attitude.pitch": [
+            [
+                "ahrs_get_pitch"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,414 @@
+{
+    "setup": {
+        "quadplane.thrust_type": [
+            [
+                "tiltrotor"
+            ],
+            0
+        ],
+        "_is_vectored": [
+            [
+                "tilt_mask",
+                "tilt_type_vectored_yaw",
+                "type"
+            ],
+            0
+        ],
+        "quadplane.transition": [
+            [
+                "tiltrotor_transition_quadplane",
+                "tiltrotor_transition_motors",
+                "new_nothrow",
+                "tiltrotor_transition_this"
+            ],
+            1
+        ]
+    },
+    "tilt_max_change": {
+        "rate": [
+            [
+                "max_rate_up_dps",
+                "max_rate_down_dps"
+            ],
+            0
+        ]
+    },
+    "slew": {
+        "current_tilt": [
+            [
+                "tilt_max_change_newtilt",
+                "tilt_max_change_get_fully_forward_tilt",
+                "tilt_max_change_current_tilt",
+                "newtilt"
+            ],
+            1
+        ],
+        "angle_achieved": [
+            [
+                "is_equal_current_tilt",
+                "is_equal_newtilt"
+            ],
+            0
+        ]
+    },
+    "continuous_update": {
+        "settilt": [
+            [
+                "get_output_scaled_plane_aparm_throttle_min_get",
+                "get_output_scaled_k_throttle",
+                "quadplane_forward_throttle_pct",
+                "_"
+            ],
+            0
+        ],
+        "fwd_g_demand": [
+            [
+                "quadplane_forward_throttle_pct"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "0u",
+                "is_zero_current_throttle",
+                "tilt_mask_get"
+            ],
+            0
+        ],
+        "fwd_tilt_deg": [
+            [
+                "float",
+                "max_angle_deg",
+                "degrees_fwd_g_demand",
+                "degrees_atanf"
+            ],
+            0
+        ],
+        "motors_throttle": [
+            [
+                "motors_get_throttle"
+            ],
+            0
+        ],
+        "current_throttle": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            1
+        ],
+        "max_change": [
+            [
+                "tilt_max_change_false",
+                "tilt_max_change_current_throttle",
+                "tilt_max_change_motors_throttle"
+            ],
+            0
+        ],
+        "disarmed_tilt_up": [
+            [
+                "quadplane_option_is_set_disarmed_tilt_up",
+                "plane_control_mode",
+                "plane_arming_is_armed_and_safety_off",
+                "plane_mode_manual"
+            ],
+            0
+        ]
+    },
+    "binary_slew": {
+        "current_tilt": [
+            [
+                "tilt_max_change_forward"
+            ],
+            1
+        ]
+    },
+    "binary_update": {
+        "new_throttle": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "is_zero_new_throttle",
+                "tilt_mask_get",
+                "0u"
+            ],
+            0
+        ]
+    },
+    "write_log": {
+        "pkt.front_left_tilt": [
+            [
+                "get_output_scaled_k_tilt_motor_left",
+                "plane_logger_quiet_nanf",
+                "fixed_angle",
+                "tilt_yaw_angle",
+                "tilt_yaw_angle"
+            ],
+            2
+        ],
+        "pkt.front_right_tilt": [
+            [
+                "plane_logger_quiet_nanf",
+                "fixed_angle",
+                "tilt_yaw_angle",
+                "get_output_scaled_k_tilt_motor_right",
+                "tilt_yaw_angle"
+            ],
+            2
+        ]
+    },
+    "tilt_compensate_angle": {
+        "diff_thrust": [
+            [
+                "motors_get_yaw",
+                "motors_get_yaw_ff",
+                "sinf_current_tilt",
+                "sinf_radians",
+                "sinf_tilt_yaw_angle",
+                "sinf_radians",
+                "motors_get_roll_factor_i"
+            ],
+            2
+        ],
+        "avg_tilt_thrust": [
+            [
+                "i",
+                "thrust",
+                "tilt_count"
+            ],
+            1
+        ],
+        "scale": [
+            [
+                "i",
+                "thrust"
+            ],
+            1
+        ]
+    },
+    "tilt_compensate": {
+        "tilt_factor": [
+            [
+                "cosf_current_tilt",
+                "cosf_radians"
+            ],
+            0
+        ],
+        "inv_tilt_factor": [
+            [
+                "cosf_current_tilt",
+                "cosf_radians"
+            ],
+            0
+        ]
+    },
+    "vectoring": {
+        "right": [
+            [
+                "get_output_scaled_k_elevon_right",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "fixed_angle",
+                "plane_control_mode",
+                "quadplane_fw_vector_throttle_scaling",
+                "plane_mode_manual",
+                "plane_get_speed_scaler",
+                "fixed_gain"
+            ],
+            4
+        ],
+        "left": [
+            [
+                "get_output_scaled_k_elevon_left",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "fixed_angle",
+                "plane_control_mode",
+                "quadplane_fw_vector_throttle_scaling",
+                "plane_mode_manual",
+                "plane_get_speed_scaler",
+                "fixed_gain"
+            ],
+            4
+        ],
+        "throttle": [
+            [
+                "motors_get_throttle_out"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "right_tilt": [
+            [
+                "tilt_yaw_angle",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "avg_roll_factor",
+                "motors_get_roll_ff",
+                "motors_get_roll",
+                "sinf_tilt_rad",
+                "motors_get_throttle_hover_scale_min",
+                "motors_get_throttle_hover_throttle",
+                "scale_max",
+                "motors_get_throttle_hover_scale_max",
+                "motors_get_yaw_ff",
+                "plane_channel_rudder_get_range",
+                "plane_channel_rudder_get_control_in",
+                "motors_get_yaw",
+                "cosf_tilt_rad",
+                "current_tilt",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "fixed_angle",
+                "tilt_yaw_angle",
+                "tilt_yaw_angle",
+                "fixed_angle"
+            ],
+            13
+        ],
+        "left_tilt": [
+            [
+                "tilt_yaw_angle",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "avg_roll_factor",
+                "motors_get_roll_ff",
+                "motors_get_roll",
+                "sinf_tilt_rad",
+                "motors_get_throttle_hover_scale_min",
+                "motors_get_throttle_hover_throttle",
+                "scale_max",
+                "motors_get_throttle_hover_scale_max",
+                "motors_get_yaw_ff",
+                "plane_channel_rudder_get_range",
+                "plane_channel_rudder_get_control_in",
+                "motors_get_yaw",
+                "cosf_tilt_rad",
+                "current_tilt",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "fixed_angle",
+                "tilt_yaw_angle",
+                "tilt_yaw_angle",
+                "fixed_angle"
+            ],
+            13
+        ],
+        "no_yaw": [
+            [
+                "tilt_over_max_angle"
+            ],
+            0
+        ],
+        "tilt_rad": [
+            [
+                "radians_current_tilt"
+            ],
+            0
+        ],
+        "mid": [
+            [
+                "get_output_scaled_k_elevator",
+                "tilt_yaw_angle",
+                "fixed_angle",
+                "fixed_angle",
+                "plane_control_mode",
+                "quadplane_fw_vector_throttle_scaling",
+                "plane_mode_manual",
+                "plane_get_speed_scaler",
+                "fixed_gain"
+            ],
+            4
+        ]
+    },
+    "bicopter_output": {
+        "tilt_right": [
+            [
+                "cosf_m_pi_2",
+                "cosf_current_tilt",
+                "get_output_scaled_k_tilt_motor_right",
+                "servo_max",
+                "current_tilt",
+                "tilt_yaw_angle"
+            ],
+            1
+        ],
+        "tilt_left": [
+            [
+                "cosf_m_pi_2",
+                "cosf_current_tilt",
+                "get_output_scaled_k_tilt_motor_left",
+                "servo_max",
+                "current_tilt",
+                "tilt_yaw_angle"
+            ],
+            1
+        ],
+        "throttle": [
+            [
+                "get_output_scaled_k_throttle"
+            ],
+            0
+        ]
+    },
+    "update_yaw_target": {
+        "airspeed_min": [
+            [
+                "plane_aparm_airspeed_min"
+            ],
+            0
+        ],
+        "have_airspeed": [
+            [
+                "quadplane_ahrs_airspeed_estimate_aspeed"
+            ],
+            0
+        ],
+        "transition_yaw_set_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "transition_yaw_cd": [
+            [
+                "millis",
+                "quadplane_ahrs_yaw_sensor",
+                "fixedwing_turn_rate_airspeed_min",
+                "fixedwing_turn_rate_plane_nav_roll_cd",
+                "fixedwing_turn_rate_aspeed"
+            ],
+            3
+        ],
+        "yaw_target_cd": [
+            [
+                "tiltrotor_transition_yaw_cd"
+            ],
+            0
+        ]
+    },
+    "show_vtol_view": {
+        "show_vtol": [
+            [
+                "quadplane_in_vtol_mode"
+            ],
+            0
+        ]
+    },
+    "tilt_over_max_angle": {
+        "tilt_threshold": [
+            [
+                "max_angle_deg"
+            ],
+            0
+        ]
+    }
+}

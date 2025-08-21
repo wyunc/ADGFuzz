@@ -1,0 +1,26 @@
+{
+    "update": {
+        "last_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "range_cm": [
+            [
+                "uint16_t_range"
+            ],
+            0
+        ]
+    },
+    "send_temperature": {
+        "temperature": [
+            [
+                "rand_normal_kelvin_to_c",
+                "rand_normal_theta",
+                "rand_normal_ssl_air_temperature"
+            ],
+            0
+        ]
+    }
+}

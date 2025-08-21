@@ -1,0 +1,619 @@
+{
+    "init": {
+        "_port": [
+            [
+                "serialmanager_find_serial_serial_protocol_adsb"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last.packet_GPS_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "_port_available_payload_mxs_max_size"
+            ],
+            0
+        ],
+        "last.operating_squawk": [
+            [
+                "_frontend_out_state_ctrl_squawk_code",
+                "_frontend_out_state_cfg_squawk_octal"
+            ],
+            0
+        ],
+        "last.packet_PreFlight_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last.packet_Operating_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last.operating_alt": [
+            [
+                "_frontend__my_loc_alt"
+            ],
+            0
+        ],
+        "last.operating_rf_select": [
+            [
+                "_frontend_out_state_cfg_rf_select"
+            ],
+            0
+        ],
+        "last.modeAEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_a_enabled"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.squawkCode": [
+            [
+                "last_operating_squawk"
+            ],
+            0
+        ],
+        "last.modeSEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_s_enabled"
+            ],
+            0
+        ],
+        "last.packet_initialize_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last.modeCEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_c_enabled"
+            ],
+            0
+        ]
+    },
+    "parse_byte": {
+        "message_in.packet.type": [
+            [
+                "static_cast",
+                "msg_type",
+                "data"
+            ],
+            0
+        ],
+        "message_in.state": [
+            [
+                "waiting_for_checksum",
+                "waiting_for_msg_id",
+                "waiting_for_msg_type",
+                "waiting_for_payload_contents",
+                "data",
+                "waiting_for_start",
+                "waiting_for_payload_len"
+            ],
+            0
+        ],
+        "message_in.packet.id": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.packet.payload_length": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.checksum": [
+            [
+                "data"
+            ],
+            0
+        ]
+    },
+    "auto_config_operating": {
+        "mxs_state.op.emergcType": [
+            [
+                "_frontend_out_state_ctrl_emergency_state",
+                "sg_emergc_t"
+            ],
+            0
+        ],
+        "mxs_state.op.squawk": [
+            [
+                "convert_base_to_decimal__frontend_out_state_cfg_squawk_octal"
+            ],
+            0
+        ],
+        "mxs_state.op.opMode": [
+            [
+                "mode_off"
+            ],
+            0
+        ],
+        "mxs_state.op.altRes25": [
+            [
+                "mxs_state_inst_alt_res100"
+            ],
+            0
+        ],
+        "my_loc": [
+            [
+                "_frontend__my_loc"
+            ],
+            0
+        ],
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_opmsg"
+            ],
+            0
+        ]
+    },
+    "auto_config_installation": {
+        "mxs_state.inst.com0": [
+            [
+                "baud230400"
+            ],
+            0
+        ],
+        "mxs_state.inst.com1": [
+            [
+                "baud57600"
+            ],
+            0
+        ],
+        "mxs_state.inst.sda": [
+            [
+                "sda_unknown"
+            ],
+            0
+        ],
+        "mxs_state.inst.emitter": [
+            [
+                "convert_emitter_type_to_sg__frontend_out_state_cfg_emitter_type_get"
+            ],
+            0
+        ],
+        "mxs_state.inst.sil": [
+            [
+                "sil_unknown"
+            ],
+            0
+        ],
+        "mxs_state.inst.antenna": [
+            [
+                "ant_bottom"
+            ],
+            0
+        ],
+        "mxs_state.inst.icao": [
+            [
+                "_frontend_out_state_cfg_icao_id_param",
+                "uint32_t"
+            ],
+            0
+        ],
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_install"
+            ],
+            0
+        ],
+        "mxs_state.inst.size": [
+            [
+                "sg_size_t",
+                "_frontend_out_state_cfg_length_width_get"
+            ],
+            0
+        ],
+        "mxs_state.inst.maxSpeed": [
+            [
+                "convert_airspeed_knots_to_sg__frontend_out_state_cfg_max_aircraft_speed_knots"
+            ],
+            0
+        ]
+    },
+    "auto_config_flightid": {
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_flight"
+            ],
+            0
+        ]
+    },
+    "handle_ack": {
+        "last.failSystem": [
+            [
+                "ack_fail_system"
+            ],
+            0
+        ],
+        "last.failXpdr": [
+            [
+                "ack_fail_xpdr"
+            ],
+            0
+        ]
+    },
+    "handle_svr": {
+        "vehicle.info.altitude": [
+            [
+                "svr_airborne_geo_alt",
+                "svr_airborne_baro_alt",
+                "sagetech_scale_feet_to_mm"
+            ],
+            0
+        ],
+        "vehicle.info.heading": [
+            [
+                "svr_airborne_heading",
+                "svr_surface_heading"
+            ],
+            0
+        ],
+        "vehicle.info.ver_velocity": [
+            [
+                "svr_airborne_vrate",
+                "sagetech_scale_ft_per_min_to_cm_per_sec"
+            ],
+            0
+        ],
+        "vehicle.info.lon": [
+            [
+                "1e7",
+                "int32_t",
+                "svr_lon"
+            ],
+            0
+        ],
+        "vehicle.info.lat": [
+            [
+                "int32_t",
+                "1e7",
+                "svr_lat"
+            ],
+            0
+        ],
+        "vehicle.info.ICAO_address": [
+            [
+                "svr_addr"
+            ],
+            0
+        ],
+        "vehicle.info.hor_velocity": [
+            [
+                "sagetech_scale_knots_to_cm_per_sec",
+                "svr_airborne_speed",
+                "svr_surface_speed"
+            ],
+            0
+        ],
+        "vehicle.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "vehicle.info.altitude_type": [
+            [
+                "adsb_altitude_type_geometric",
+                "adsb_altitude_type_pressure_qnh"
+            ],
+            0
+        ]
+    },
+    "handle_msr": {
+        "vehicle.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_data_req": {
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_datareq"
+            ],
+            0
+        ],
+        "dataReq.reqType": [
+            [
+                "data_req_type"
+            ],
+            0
+        ]
+    },
+    "send_install_msg": {
+        "mxs_state.inst.maxSpeed": [
+            [
+                "convert_airspeed_knots_to_sg__frontend_out_state_cfg_max_aircraft_speed_knots"
+            ],
+            0
+        ],
+        "mxs_state.inst.icao": [
+            [
+                "uint32_t",
+                "_frontend_out_state_cfg_icao_id_param_get"
+            ],
+            0
+        ],
+        "mxs_state.inst.antenna": [
+            [
+                "ant_bottom"
+            ],
+            0
+        ],
+        "mxs_state.inst.size": [
+            [
+                "sg_size_t",
+                "_frontend_out_state_cfg_length_width_get"
+            ],
+            0
+        ],
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_install"
+            ],
+            0
+        ],
+        "mxs_state.inst.emitter": [
+            [
+                "convert_emitter_type_to_sg__frontend_out_state_cfg_emitter_type_get"
+            ],
+            0
+        ]
+    },
+    "send_flight_id_msg": {
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_flight"
+            ],
+            0
+        ]
+    },
+    "send_operating_msg": {
+        "mxs_state.op.identOn": [
+            [
+                "_frontend_out_state_ctrl_ident_active"
+            ],
+            0
+        ],
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_opmsg"
+            ],
+            0
+        ],
+        "mxs_state.op.opMode": [
+            [
+                "mode_alt",
+                "mode_off",
+                "mode_stby",
+                "mode_on"
+            ],
+            0
+        ],
+        "my_loc": [
+            [
+                "_frontend__my_loc"
+            ],
+            0
+        ],
+        "mxs_state.op.squawk": [
+            [
+                "convert_base_to_decimal_last_operating_squawk"
+            ],
+            0
+        ],
+        "mxs_state.op.emergcType": [
+            [
+                "_frontend_out_state_ctrl_emergency_state",
+                "sg_emergc_t"
+            ],
+            0
+        ]
+    },
+    "send_gps_msg": {
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_gps"
+            ],
+            0
+        ],
+        "gps.height": [
+            [
+                "height"
+            ],
+            0
+        ],
+        "gps.latNorth": [
+            [
+                "_frontend__my_loc_lat"
+            ],
+            1
+        ],
+        "lat_minutes": [
+            [
+                "double",
+                "_frontend__my_loc_lat",
+                "_0e",
+                "int_lat_deg"
+            ],
+            2
+        ],
+        "speed": [
+            [
+                "_frontend__my_loc_groundspeed_vector"
+            ],
+            0
+        ],
+        "lon_minutes": [
+            [
+                "_frontend__my_loc_lng",
+                "double",
+                "_0e",
+                "int_lon_deg"
+            ],
+            2
+        ],
+        "gps.hpl": [
+            [
+                "sagetech_hpl_unknown"
+            ],
+            0
+        ],
+        "gps.gpsValid": [
+            [
+                "fix_2d",
+                "ap_gps_status"
+            ],
+            0
+        ],
+        "cog": [
+            [
+                "wrap_360_speed_angle",
+                "wrap_360_degrees"
+            ],
+            0
+        ],
+        "gps.hfom": [
+            [
+                "sagetech_hfom_unknown",
+                "h_acc",
+                "ap_gps_horizontal_accuracy_h_acc"
+            ],
+            0
+        ],
+        "speed_knots": [
+            [
+                "m_per_sec_to_knots",
+                "speed_length"
+            ],
+            0
+        ],
+        "gps.nacv": [
+            [
+                "nacv1dot0",
+                "nacv3dot0",
+                "nacv_unknown",
+                "nacv0dot3",
+                "nacv10dot0"
+            ],
+            0
+        ],
+        "gps.lngEast": [
+            [
+                "_frontend__my_loc_lng"
+            ],
+            1
+        ],
+        "gps.vfom": [
+            [
+                "v_acc",
+                "sagetech_vfom_unknown",
+                "ap_gps_vertical_accuracy_v_acc"
+            ],
+            0
+        ],
+        "time_sec": [
+            [
+                "1e",
+                "ap_gps_epoch_from_rtc_us"
+            ],
+            1
+        ],
+        "tm": [
+            [
+                "gmtime_r_time_sec",
+                "gmtime_r_tmd"
+            ],
+            0
+        ]
+    },
+    "send_targetreq_msg": {
+        "mxs_state.treq.maxTargets": [
+            [
+                "_frontend_in_state_list_size_param"
+            ],
+            0
+        ],
+        "mxs_state.treq.icao": [
+            [
+                "_frontend__special_icao_target_get"
+            ],
+            0
+        ],
+        "mxs_state.treq.reqType": [
+            [
+                "report_auto"
+            ],
+            0
+        ],
+        "last.msg.type": [
+            [
+                "sg_msg_type_host_targetreq"
+            ],
+            0
+        ],
+        "mxs_state.treq.transmitPort": [
+            [
+                "transmit_com1"
+            ],
+            0
+        ]
+    },
+    "populate_op_altitude": {
+        "mxs_state.op.altitude": [
+            [
+                "height",
+                "sagetech_scale_cm_to_feet"
+            ],
+            0
+        ]
+    },
+    "populate_op_climbrate": {
+        "mxs_state.op.climbRate": [
+            [
+                "climb_rate_limit",
+                "sagetech_scale_m_per_sec_to_ft_per_min",
+                "vert_rate_d"
+            ],
+            0
+        ]
+    },
+    "populate_op_airspeed_and_heading": {
+        "mxs_state.op.heading": [
+            [
+                "wrap_360_speed_angle",
+                "wrap_360_degrees"
+            ],
+            1
+        ],
+        "speed": [
+            [
+                "my_loc_groundspeed_vector"
+            ],
+            0
+        ],
+        "mxs_state.op.airspd": [
+            [
+                "speed_length",
+                "m_per_sec_to_knots"
+            ],
+            1
+        ]
+    }
+}

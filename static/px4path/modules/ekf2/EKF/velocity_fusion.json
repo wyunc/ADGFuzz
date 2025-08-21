@@ -1,0 +1,66 @@
+{
+    "fuseHorizontalVelocity": {
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "fuseVelocity": {
+        "_time_last_ver_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "resetHorizontalVelocityTo": {
+        "_state_reset_status.velNE_change": [
+            [
+                "vector2f__state_vel",
+                "new_horz_vel"
+            ],
+            1
+        ],
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "resetVerticalVelocityTo": {
+        "_time_last_ver_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_state_reset_status.velD_change": [
+            [
+                "_state_vel",
+                "new_vert_vel"
+            ],
+            1
+        ]
+    }
+}

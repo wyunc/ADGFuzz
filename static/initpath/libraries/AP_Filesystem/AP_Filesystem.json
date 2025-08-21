@@ -1,0 +1,171 @@
+{
+    "open": {
+        "errno": [
+            [
+                "erange"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "backend_fs_open_fname",
+                "max_fd_per_backend",
+                "backend_fs_open_flags",
+                "backends",
+                "backend_by_path_fname",
+                "backend_fs_open_allow_absolute_paths"
+            ],
+            2
+        ]
+    },
+    "close": {
+        "backend": [
+            [
+                "backend_by_fd_fd"
+            ],
+            0
+        ]
+    },
+    "fsync": {
+        "backend": [
+            [
+                "backend_by_fd_fd"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "stbuf.ctime": [
+            [
+                "st_st_ctime"
+            ],
+            0
+        ],
+        "stbuf.mode": [
+            [
+                "st_st_mode"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "backend_by_path_pathname"
+            ],
+            0
+        ],
+        "stbuf.atime": [
+            [
+                "st_st_atime"
+            ],
+            0
+        ],
+        "stbuf.mtime": [
+            [
+                "st_st_mtime"
+            ],
+            0
+        ],
+        "stbuf.size": [
+            [
+                "st_st_size"
+            ],
+            0
+        ]
+    },
+    "unlink": {
+        "backend": [
+            [
+                "backend_by_path_pathname"
+            ],
+            0
+        ]
+    },
+    "mkdir": {
+        "backend": [
+            [
+                "backend_by_path_pathname"
+            ],
+            0
+        ]
+    },
+    "rename": {
+        "backend": [
+            [
+                "backend_by_path_oldpath"
+            ],
+            0
+        ]
+    },
+    "closedir": {
+        "ret": [
+            [
+                "backend_fs_closedir_dirp_dir"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "dirp_fs_index",
+                "backends"
+            ],
+            0
+        ]
+    },
+    "set_mtime": {
+        "backend": [
+            [
+                "backend_by_path_filename"
+            ],
+            0
+        ]
+    },
+    "fgets": {
+        "backend": [
+            [
+                "backend_by_fd_fd"
+            ],
+            0
+        ],
+        "offset_start": [
+            [
+                "backend_fs_lseek_seek_cur",
+                "backend_fs_lseek_fd"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "backend_fs_read_buf",
+                "backend_fs_read_buflen",
+                "backend_fs_read_fd"
+            ],
+            0
+        ]
+    },
+    "crc32": {
+        "read_size": [
+            [
+                "read_buf",
+                "read_buff_len",
+                "read_fd"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_rdonly",
+                "open_fname"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "crc_crc32_checksum",
+                "crc_crc32_read_size",
+                "crc_crc32_buff_len",
+                "crc_crc32_buf"
+            ],
+            0
+        ]
+    }
+}

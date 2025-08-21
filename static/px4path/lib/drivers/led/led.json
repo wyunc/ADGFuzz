@@ -1,0 +1,22 @@
+{
+    "ioctl": {
+        "result": [
+            [
+                "ioctl_cmd",
+                "ioctl_filp",
+                "ok",
+                "ioctl_arg"
+            ],
+            0
+        ]
+    },
+    "drv_led_start": {
+        "gLED": [
+            [
+                "new",
+                "led"
+            ],
+            0
+        ]
+    }
+}

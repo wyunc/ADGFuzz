@@ -1,0 +1,558 @@
+{
+    "start_frame": {
+        "_micros": [
+            [
+                "_rfrh_time_us"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rfrn"
+            ],
+            0
+        ],
+        "_RFRN.armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "_RFRN.wheelencoder_enabled": [
+            [
+                "wheelencoder_num_sensors",
+                "wheelencoder"
+            ],
+            0
+        ],
+        "_RFRN.opticalflow_enabled": [
+            [
+                "opticalflow",
+                "opticalflow_enabled"
+            ],
+            0
+        ],
+        "_RFRH.time_flying_ms": [
+            [
+                "vehicle_get_time_flying_ms"
+            ],
+            0
+        ],
+        "_RFRN.takeoff_expected": [
+            [
+                "ahrs_get_takeoff_expected"
+            ],
+            0
+        ],
+        "_RFRH.time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "_RFRN.ahrs_trim": [
+            [
+                "ahrs_get_trim"
+            ],
+            0
+        ],
+        "_RFRN.ahrs_airspeed_sensor_enabled": [
+            [
+                "ahrs_airspeed_sensor_enabled_ahrs_get_active_airspeed_index"
+            ],
+            0
+        ],
+        "_millis": [
+            [
+                "_rfrh_time_us",
+                "1000ul"
+            ],
+            0
+        ],
+        "_RFRN.lng": [
+            [
+                "_home_lng"
+            ],
+            0
+        ],
+        "_RFRF.frame_types": [
+            [
+                "uint8_t_frametype"
+            ],
+            0
+        ],
+        "_RFRN.touchdown_expected": [
+            [
+                "ahrs_get_touchdown_expected"
+            ],
+            0
+        ],
+        "_RFRN.alt": [
+            [
+                "_home_alt"
+            ],
+            0
+        ],
+        "logging_started": [
+            [
+                "logger_allow_start_ekf",
+                "logger_logging_started"
+            ],
+            1
+        ],
+        "_home": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "_RFRN.ekf_type": [
+            [
+                "ahrs_get_ekf_type"
+            ],
+            0
+        ],
+        "_RFRN.EAS2TAS": [
+            [
+                "ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "_rotation_vehicle_body_to_autopilot_body": [
+            [
+                "ahrs_get_rotation_vehicle_body_to_autopilot_body"
+            ],
+            0
+        ],
+        "_RFRN.vehicle_class": [
+            [
+                "uint8_t",
+                "ahrs_get_vehicle_class"
+            ],
+            0
+        ],
+        "_RFRN.fly_forward": [
+            [
+                "ahrs_get_fly_forward"
+            ],
+            0
+        ],
+        "_last_imu_time_us": [
+            [
+                "ins_get_last_update_usec"
+            ],
+            1
+        ],
+        "_RFRN.lat": [
+            [
+                "_home_lat"
+            ],
+            0
+        ],
+        "_RFRN.available_memory": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ]
+    },
+    "init_sensors": {
+        "_visualodom": [
+            [
+                "ap_dal_visual_odom",
+                "nullptr",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "_rangefinder": [
+            [
+                "nullptr",
+                "ap_dal_range_finder",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "vodom": [
+            [
+                "visualodom"
+            ],
+            0
+        ],
+        "aspeed": [
+            [
+                "airspeed"
+            ],
+            0
+        ],
+        "bcn": [
+            [
+                "beacon"
+            ],
+            0
+        ],
+        "_airspeed": [
+            [
+                "ap_dal_airspeed",
+                "nullptr",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "rng": [
+            [
+                "rangefinder"
+            ],
+            0
+        ],
+        "_beacon": [
+            [
+                "ap_dal_beacon",
+                "nullptr",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "snprintf": {
+        "res": [
+            [
+                "hal_util_vsnprintf_size",
+                "hal_util_vsnprintf_str",
+                "hal_util_vsnprintf_format",
+                "hal_util_vsnprintf_ap"
+            ],
+            0
+        ]
+    },
+    "WriteLogMessage": {
+        "_end": [
+            [
+                "msg_size",
+                "msg",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "ekf_low_time_remaining": {
+        "imu": [
+            [
+                "ins"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "core",
+                "uint8_t_etype",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "writeOptFlowMeas": {
+        "old": [
+            [
+                "_rofh"
+            ],
+            0
+        ],
+        "_ROFH.rawFlowRates": [
+            [
+                "raw_flow_rates"
+            ],
+            0
+        ],
+        "_ROFH.rawFlowQuality": [
+            [
+                "raw_flow_quality"
+            ],
+            0
+        ],
+        "_ROFH.heightOverride": [
+            [
+                "height_override"
+            ],
+            0
+        ],
+        "_ROFH.rawGyroRates": [
+            [
+                "raw_gyro_rates"
+            ],
+            0
+        ],
+        "_ROFH.msecFlowMeas": [
+            [
+                "msec_flow_meas"
+            ],
+            0
+        ],
+        "_ROFH.posOffset": [
+            [
+                "pos_offset"
+            ],
+            0
+        ]
+    },
+    "writeExtNavData": {
+        "_REPH.resetTime_ms": [
+            [
+                "reset_time_ms"
+            ],
+            0
+        ],
+        "_REPH.pos": [
+            [
+                "pos"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_reph"
+            ],
+            0
+        ],
+        "_REPH.posErr": [
+            [
+                "pos_err"
+            ],
+            0
+        ],
+        "_REPH.quat": [
+            [
+                "quat"
+            ],
+            0
+        ],
+        "_REPH.timeStamp_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "_REPH.angErr": [
+            [
+                "ang_err"
+            ],
+            0
+        ],
+        "_REPH.delay_ms": [
+            [
+                "delay_ms"
+            ],
+            0
+        ]
+    },
+    "log_SetLatLng": {
+        "_RSLL.posAccSD": [
+            [
+                "pos_accuracy"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rsll"
+            ],
+            0
+        ],
+        "_RSLL.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "_RSLL.lng": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "_RSLL.timestamp_ms": [
+            [
+                "timestamp_ms"
+            ],
+            0
+        ]
+    },
+    "writeExtNavVelData": {
+        "old": [
+            [
+                "_revh"
+            ],
+            0
+        ],
+        "_REVH.err": [
+            [
+                "err"
+            ],
+            0
+        ],
+        "_REVH.vel": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "_REVH.delay_ms": [
+            [
+                "delay_ms"
+            ],
+            0
+        ],
+        "_REVH.timeStamp_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ]
+    },
+    "writeWheelOdom": {
+        "_RWOH.timeStamp_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "_RWOH.posOffset": [
+            [
+                "pos_offset"
+            ],
+            0
+        ],
+        "_RWOH.delTime": [
+            [
+                "del_time"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rwoh"
+            ],
+            0
+        ],
+        "_RWOH.radius": [
+            [
+                "radius"
+            ],
+            0
+        ],
+        "_RWOH.delAng": [
+            [
+                "del_ang"
+            ],
+            0
+        ]
+    },
+    "writeBodyFrameOdom": {
+        "_RBOH.quality": [
+            [
+                "quality"
+            ],
+            0
+        ],
+        "_RBOH.delAng": [
+            [
+                "del_ang"
+            ],
+            0
+        ],
+        "_RBOH.delPos": [
+            [
+                "del_pos"
+            ],
+            0
+        ],
+        "_RBOH.delTime": [
+            [
+                "del_time"
+            ],
+            0
+        ],
+        "_RBOH.timeStamp_ms": [
+            [
+                "time_stamp_ms"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rboh"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "ekf2_init_done": [
+            [
+                "ekf2_initialise_filter"
+            ],
+            0
+        ],
+        "frame_types": [
+            [
+                "msg_frame_types"
+            ],
+            0
+        ],
+        "_REVH": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "ekf3_init_done": [
+            [
+                "ekf3_initialise_filter"
+            ],
+            0
+        ],
+        "_REPH": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "_RBOH": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "_RSLL": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "_RFRF.core_slow": [
+            [
+                "msg_core_slow"
+            ],
+            0
+        ],
+        "_RWOH": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "_ROFH": [
+            [
+                "msg"
+            ],
+            0
+        ]
+    },
+    "rprintf": {
+        "f": [
+            [
+                "fopen_fname"
+            ],
+            0
+        ]
+    }
+}

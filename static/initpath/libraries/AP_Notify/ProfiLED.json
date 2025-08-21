@@ -1,0 +1,43 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move_hal_spi_get_device"
+            ],
+            0
+        ],
+        "rgb": [
+            [
+                "new_nothrow",
+                "p_notify_get_led_len"
+            ],
+            1
+        ]
+    },
+    "update_led_strip": {
+        "curr_led_color.struct_val": [
+            [
+                "num_leds",
+                "i",
+                "bit",
+                "rgb"
+            ],
+            6
+        ],
+        "bit_val": [
+            [
+                "num_leds",
+                "i",
+                "bit",
+                "curr_led_color_bytes_val"
+            ],
+            4
+        ],
+        "output_stream_byte_length": [
+            [
+                "num_leds"
+            ],
+            1
+        ]
+    }
+}

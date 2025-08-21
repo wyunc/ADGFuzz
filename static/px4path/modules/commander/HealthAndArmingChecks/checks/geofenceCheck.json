@@ -1,0 +1,10 @@
+{
+    "checkAndReport": {
+        ".geofence_breached": [
+            [
+                "any_geofence_triggered"
+            ],
+            0
+        ]
+    }
+}

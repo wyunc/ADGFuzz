@@ -1,0 +1,28 @@
+{
+    "read": {
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "efi_state_fuel_consumption_rate_cm3pm"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ],
+        "_state.consumed_mah": [
+            [
+                "efi_state_estimated_consumed_fuel_volume_cm3"
+            ],
+            0
+        ]
+    }
+}

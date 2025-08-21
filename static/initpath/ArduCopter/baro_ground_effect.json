@@ -1,0 +1,64 @@
+{
+    "update_ground_effect_detector": {
+        "angle_target_rad": [
+            [
+                "attitude_control_get_att_target_euler_cd",
+                "radians"
+            ],
+            0
+        ],
+        "vel_target": [
+            [
+                "pos_control_get_vel_target_cms"
+            ],
+            0
+        ],
+        "throttle_up": [
+            [
+                "channel_throttle_get_control_in",
+                "flightmode_has_manual_throttle"
+            ],
+            0
+        ],
+        "gndeffect_state.touchdown_expected": [
+            [
+                "fabsf_inertial_nav_get_velocity_z_up_cms",
+                "pos_control_is_active_z",
+                "pos_control_get_vel_desired_cms_z",
+                "pos_control_get_vel_desired_cms_z",
+                "pos_control_is_active_z",
+                "pos_control_get_vel_desired_cms_z",
+                "ekf_has_relative_position",
+                "position_ok",
+                "vel_length",
+                "flightmode_mode_number",
+                "pos_control_is_active_xy",
+                "cosf_angle_target_rad_y",
+                "cosf_angle_target_rad_x",
+                "cosf_radians",
+                "pos_control_is_active_xy",
+                "vel_target_length",
+                "alt_hold"
+            ],
+            11
+        ],
+        "gndeffect_state.takeoff_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "vel": [
+            [
+                "inertial_nav_get_velocity_neu_cms"
+            ],
+            0
+        ],
+        "gndeffect_state.takeoff_alt_cm": [
+            [
+                "inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    }
+}

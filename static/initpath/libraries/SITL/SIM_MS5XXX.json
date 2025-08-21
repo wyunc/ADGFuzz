@@ -1,0 +1,53 @@
+{
+    "update": {
+        "state": [
+            [
+                "reset_wait",
+                "conversion_d1_wait",
+                "uninitialised",
+                "running",
+                "conversion_d2_wait",
+                "cold_wait"
+            ],
+            0
+        ],
+        "command_start_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "rdwr": {
+        "msg": [
+            [
+                "data_msgs"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "conversion_d1_start",
+                "conversion_d2_start",
+                "reset_start"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "htobe16_loaded_prom",
+                "htobe16_addr"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "command",
+                "msg_buf",
+                "unsigned",
+                "read_c0"
+            ],
+            1
+        ]
+    }
+}

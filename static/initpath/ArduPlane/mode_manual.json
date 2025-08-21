@@ -1,0 +1,22 @@
+{
+    "update": {
+        "plane.nav_pitch_cd": [
+            [
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "plane_get_throttle_input_true"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "ahrs_roll_sensor"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "update": {
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "target": [
+            [
+                "_params_retract_angles_get",
+                "_params_neutral_angles_get"
+            ],
+            0
+        ]
+    },
+    "find_gimbal": {
+        "_compid": [
+            [
+                "mav_comp_id_gimbal",
+                "_instance",
+                "mav_comp_id_gimbal2"
+            ],
+            1
+        ]
+    },
+    "send_do_mount_control": {
+        "_last_send": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

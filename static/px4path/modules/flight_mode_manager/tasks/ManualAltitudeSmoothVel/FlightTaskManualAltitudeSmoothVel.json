@@ -1,0 +1,42 @@
+{
+    "activate": {
+        "az_sp_last": [
+            [
+                "_f",
+                "px4_isfinite_last_setpoint_acceleration",
+                "last_setpoint_acceleration"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "z_sp_last": [
+            [
+                "last_setpoint_position",
+                "_position",
+                "px4_isfinite_last_setpoint_position"
+            ],
+            0
+        ],
+        "vz_sp_last": [
+            [
+                "last_setpoint_velocity",
+                "px4_isfinite_last_setpoint_velocity",
+                "_velocity"
+            ],
+            0
+        ]
+    },
+    "_setOutputState": {
+        "_terrain_hold_previous": [
+            [
+                "_terrain_hold"
+            ],
+            0
+        ]
+    }
+}

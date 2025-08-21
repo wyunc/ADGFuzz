@@ -1,0 +1,80 @@
+{
+    "sdcard_init": {
+        "mmcconfig.lscfg": [
+            [
+                "lowspeed"
+            ],
+            0
+        ],
+        "MMCD1.buffer": [
+            [
+                "uint8_t",
+                "malloc_axi_sram_mmc_buffer_size"
+            ],
+            0
+        ],
+        "mmcconfig.hscfg": [
+            [
+                "highspeed"
+            ],
+            0
+        ],
+        "sdcd": [
+            [
+                "sdcd2",
+                "sdcd1"
+            ],
+            0
+        ],
+        "mmcconfig.spip": [
+            [
+                "_get_driver",
+                "device_get",
+                "spi_device",
+                "static_cast"
+            ],
+            0
+        ],
+        "sdcconfig.slowdown": [
+            [
+                "get_sdcard_slowdown"
+            ],
+            1
+        ],
+        "device": [
+            [
+                "get_hal_spi_get_device"
+            ],
+            0
+        ]
+    },
+    "sdcard_stop": {
+        "sdcd": [
+            [
+                "sdcd1",
+                "sdcd2"
+            ],
+            0
+        ]
+    },
+    "spiAcquireBusHook": {
+        "devptr": [
+            [
+                "spi_device",
+                "static_cast",
+                "device_get"
+            ],
+            0
+        ]
+    },
+    "spiReleaseBusHook": {
+        "devptr": [
+            [
+                "device_get",
+                "spi_device",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

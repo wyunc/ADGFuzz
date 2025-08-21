@@ -1,0 +1,585 @@
+{
+    "is_packet_ready": {
+        "packet_ready": [
+            [
+                "queue_empty"
+            ],
+            0
+        ]
+    },
+    "get_next_msg_chunk": {
+        "character": [
+            [
+                "_statustext_next_text",
+                "_msg_chunk_char_index"
+            ],
+            0
+        ],
+        "message_len": [
+            [
+                "sizeof__statustext_next_text"
+            ],
+            0
+        ],
+        "_msg_chunk.char_index": [
+            [
+                "_msg_chunk_char_index"
+            ],
+            1
+        ],
+        "begin_idx": [
+            [
+                "_msg_chunk_char_index"
+            ],
+            0
+        ],
+        "_msg_chunk.linenumber": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "calc_qos": {
+        "_telem.qos.A": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.identifier": [
+            [
+                "tele_device_qos"
+            ],
+            0
+        ],
+        "_telem.qos.H": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.rxVoltage": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.L": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.B": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.F": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "_telem.qos.R": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ]
+    },
+    "calc_rpm": {
+        "_telem.rpm.volts": [
+            [
+                "htobe16_uint16_troundf__battery_voltage"
+            ],
+            0
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "_telem.rpm.dBm_B": [
+            [
+                "0x7f"
+            ],
+            0
+        ],
+        "_telem.rpm.temperature": [
+            [
+                "htobe16_baro_get_temperature",
+                "htobe16_int16_t",
+                "htobe16_roundf"
+            ],
+            0
+        ],
+        "_telem.rpm.microseconds": [
+            [
+                "htobe16_roundf",
+                "htobe16_uint16_t",
+                "htobe16_rpm_value",
+                "htobe16_microsec_per_minute"
+            ],
+            0
+        ],
+        "_telem.rpm.dBm_A": [
+            [
+                "0x7f"
+            ],
+            0
+        ],
+        "_telem.rpm.identifier": [
+            [
+                "tele_device_rpm"
+            ],
+            0
+        ]
+    },
+    "send_msg_chunk": {
+        "_telem.textgen.identifier": [
+            [
+                "tele_device_textgen"
+            ],
+            0
+        ],
+        "_telem.textgen.lineNumber": [
+            [
+                "chunk_linenumber"
+            ],
+            0
+        ]
+    },
+    "calc_batt_volts": {
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "_telem.hv.volts": [
+            [
+                "htobe16__battery_voltage",
+                "htobe16_uint16_t",
+                "htobe16_roundf",
+                "htobe16_instance"
+            ],
+            0
+        ],
+        "_telem.hv.identifier": [
+            [
+                "tele_device_voltage"
+            ],
+            0
+        ]
+    },
+    "calc_batt_amps": {
+        "_telem.amps.current": [
+            [
+                "htobe16_roundf",
+                "htobe16_current",
+                "htobe16_int16_t"
+            ],
+            0
+        ],
+        "_telem.amps.identifier": [
+            [
+                "tele_device_amps"
+            ],
+            0
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ]
+    },
+    "calc_batt_mah": {
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "_telem.fpMAH.temp_B": [
+            [
+                "uint16_t_temp",
+                "0x7fff",
+                "uint16_t_roundf"
+            ],
+            0
+        ],
+        "_telem.fpMAH.temp_A": [
+            [
+                "uint16_t_temp",
+                "0x7fff",
+                "uint16_t_roundf"
+            ],
+            0
+        ],
+        "_telem.fpMAH.chargeUsed_B": [
+            [
+                "int16_t_roundf",
+                "int16_t_used_mah"
+            ],
+            0
+        ],
+        "_telem.fpMAH.current_B": [
+            [
+                "int16_t_current",
+                "int16_t_roundf"
+            ],
+            0
+        ],
+        "_telem.fpMAH.current_A": [
+            [
+                "int16_t_current",
+                "int16_t_roundf"
+            ],
+            0
+        ],
+        "_telem.fpMAH.identifier": [
+            [
+                "tele_device_fp_mah"
+            ],
+            0
+        ],
+        "_telem.fpMAH.chargeUsed_A": [
+            [
+                "int16_t_roundf",
+                "int16_t_used_mah"
+            ],
+            0
+        ]
+    },
+    "calc_temperature": {
+        "_telem.temp.temperature": [
+            [
+                "htobe16_int16_t",
+                "htobe16_baro_get_temperature_instance",
+                "htobe16_roundf"
+            ],
+            0
+        ],
+        "_telem.temp.identifier": [
+            [
+                "tele_device_temperature"
+            ],
+            0
+        ]
+    },
+    "calc_altitude": {
+        "_max_alt": [
+            [
+                "roundf_alt"
+            ],
+            1
+        ],
+        "_telem.alt.maxAltitude": [
+            [
+                "htobe16__max_alt",
+                "htobe16_uint16_t"
+            ],
+            0
+        ],
+        "_telem.alt.identifier": [
+            [
+                "tele_device_altitude"
+            ],
+            0
+        ],
+        "_telem.alt.altitude": [
+            [
+                "htobe16_uint16_t",
+                "htobe16_alt"
+            ],
+            0
+        ]
+    },
+    "calc_airspeed": {
+        "_max_speed": [
+            [
+                "roundf_ahrs_groundspeed",
+                "roundf_airspeed_get_airspeed"
+            ],
+            1
+        ],
+        "_telem.speed.airspeed": [
+            [
+                "htobe16_uint16_t",
+                "htobe16_speed"
+            ],
+            0
+        ],
+        "_telem.speed.identifier": [
+            [
+                "tele_device_airspeed"
+            ],
+            0
+        ],
+        "_telem.speed.maxAirspeed": [
+            [
+                "htobe16_uint16_t",
+                "htobe16__max_speed"
+            ],
+            0
+        ]
+    },
+    "calc_attandmag": {
+        "_telem.attMag.attYaw": [
+            [
+                "_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_telem.attMag.identifier": [
+            [
+                "tele_device_attmag"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "compass_get_field"
+            ],
+            0
+        ],
+        "_telem.attMag.magX": [
+            [
+                "int16_t_roundf",
+                "int16_t_field_x"
+            ],
+            0
+        ],
+        "_telem.attMag.magY": [
+            [
+                "int16_t_roundf",
+                "int16_t_field_y"
+            ],
+            0
+        ],
+        "_telem.attMag.heading": [
+            [
+                "_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "_telem.attMag.attRoll": [
+            [
+                "_ahrs_roll_sensor"
+            ],
+            0
+        ],
+        "_telem.attMag.magZ": [
+            [
+                "int16_t_roundf",
+                "int16_t_field_z"
+            ],
+            0
+        ],
+        "_telem.attMag.attPitch": [
+            [
+                "_ahrs_pitch_sensor"
+            ],
+            0
+        ]
+    },
+    "calc_gps_location": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "abs_loc_alt",
+                "u1e6"
+            ],
+            0
+        ],
+        "ulng": [
+            [
+                "int32_t_lng",
+                "fabsf__0e7f",
+                "fabsf_loc_lng",
+                "roundf_lng",
+                "roundf_int32_t"
+            ],
+            1
+        ],
+        "_telem.gpsloc.course": [
+            [
+                "uint16_t_gps_ground_course",
+                "uint16_t_roundf",
+                "u1e4",
+                "u1e5"
+            ],
+            1
+        ],
+        "_telem.gpsloc.identifier": [
+            [
+                "tele_device_gps_loc"
+            ],
+            0
+        ],
+        "_telem.gpsloc.HDOP": [
+            [
+                "gps_get_hdop"
+            ],
+            1
+        ],
+        "ulat": [
+            [
+                "fabsf_loc_lat",
+                "fabsf__0e7f",
+                "int32_t_lat",
+                "roundf_lat",
+                "roundf_int32_t"
+            ],
+            1
+        ],
+        "u1e8": [
+            [
+                "u1e5",
+                "u1e7",
+                "u1e4",
+                "u1e6"
+            ],
+            0
+        ]
+    },
+    "calc_gps_status": {
+        "_telem.gpsstat.altitudeHigh": [
+            [
+                "abs_loc_alt"
+            ],
+            1
+        ],
+        "_telem.gpsstat.UTC": [
+            [
+                "m",
+                "s",
+                "ms",
+                "h"
+            ],
+            0
+        ],
+        "_telem.gpsstat.numSats": [
+            [
+                "gps_num_sats"
+            ],
+            1
+        ],
+        "_telem.gpsstat.speed": [
+            [
+                "roundf_gps_ground_speed"
+            ],
+            1
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "_telem.gpsstat.identifier": [
+            [
+                "tele_device_gps_stats"
+            ],
+            0
+        ]
+    },
+    "calc_esc": {
+        "_telem.esc.voltsInput": [
+            [
+                "htobe16_td_voltage"
+            ],
+            0
+        ],
+        "esc": [
+            [
+                "esc_telem_get_max_rpm_esc"
+            ],
+            0
+        ],
+        "_telem.esc.throttle": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "_telem.esc.RPM": [
+            [
+                "htobe16_rpmdata"
+            ],
+            0
+        ],
+        "td": [
+            [
+                "esc_telem_get_telem_data_esc"
+            ],
+            0
+        ],
+        "_telem.esc.tempFET": [
+            [
+                "htobe16_td_temperature_cdeg"
+            ],
+            0
+        ],
+        "_telem.esc.currentMotor": [
+            [
+                "htobe16_td_current"
+            ],
+            0
+        ],
+        "_telem.esc.currentBEC": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "_telem.esc.voltsBEC": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "rpmdata": [
+            [
+                "0x_ffffu",
+                "uint16_t_roundf",
+                "uint16_t_rpm"
+            ],
+            0
+        ],
+        "_telem.esc.identifier": [
+            [
+                "tele_device_esc"
+            ],
+            0
+        ],
+        "_telem.esc.powerOut": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "_telem.esc.tempBEC": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ]
+    }
+}

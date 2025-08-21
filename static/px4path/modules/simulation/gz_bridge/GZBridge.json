@@ -1,0 +1,1041 @@
+{
+    "subscribeClock": {
+        "clock_topic": [
+            [
+                "_world_name"
+            ],
+            0
+        ]
+    },
+    "subscribePoseInfo": {
+        "world_pose_topic": [
+            [
+                "_world_name"
+            ],
+            0
+        ]
+    },
+    "subscribeImu": {
+        "imu_topic": [
+            [
+                "_world_name",
+                "_model_name"
+            ],
+            0
+        ]
+    },
+    "subscribeOdometry": {
+        "odometry_topic": [
+            [
+                "_model_name"
+            ],
+            0
+        ]
+    },
+    "subscribeLaserScan": {
+        "laser_scan_topic": [
+            [
+                "_world_name",
+                "_model_name"
+            ],
+            0
+        ]
+    },
+    "clockCallback": {
+        "ts.tv_nsec": [
+            [
+                "msg_sim_nsec"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "msg_sim_sec"
+            ],
+            0
+        ]
+    },
+    "opticalFlowCallback": {
+        "report.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "report.max_ground_distance": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "report.integration_timespan_us": [
+            [
+                "msg_integration_time_us"
+            ],
+            0
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_flow_devtype_sim"
+            ],
+            0
+        ],
+        "report.min_ground_distance": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.timestamp_sample": [
+            [
+                "msg_time_usec"
+            ],
+            0
+        ],
+        "report.mode": [
+            [
+                "mode_lowlight"
+            ],
+            0
+        ],
+        "report.quality": [
+            [
+                "msg_quality"
+            ],
+            0
+        ]
+    },
+    "magnetometerCallback": {
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.temperature": [
+            [
+                "this__temperature"
+            ],
+            0
+        ],
+        "report.z": [
+            [
+                "msg_field_tesla_z"
+            ],
+            0
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_mag_devtype_magsim"
+            ],
+            0
+        ],
+        "report.x": [
+            [
+                "msg_field_tesla_y"
+            ],
+            0
+        ],
+        "report.y": [
+            [
+                "msg_field_tesla_x"
+            ],
+            0
+        ],
+        "report.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ]
+    },
+    "airPressureCallback": {
+        "report.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_baro_devtype_barosim"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "report.pressure": [
+            [
+                "msg_pressure"
+            ],
+            0
+        ],
+        "report.temperature": [
+            [
+                "this__temperature"
+            ],
+            0
+        ]
+    },
+    "airspeedCallback": {
+        "id.devid_s.devtype": [
+            [
+                "drv_diff_press_devtype_sim"
+            ],
+            0
+        ],
+        "report.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "report.differential_pressure_pa": [
+            [
+                "msg_diff_pressure"
+            ],
+            0
+        ],
+        "report.temperature": [
+            [
+                "k_absolute_null_celsius",
+                "msg_temperature",
+                "float",
+                "static_cast"
+            ],
+            0
+        ],
+        "_temperature": [
+            [
+                "report_temperature"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "imuCallback": {
+        "gyro.temperature": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "accel.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "accel.z": [
+            [
+                "accel_b_z"
+            ],
+            0
+        ],
+        "gyro.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "gyro.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "gyro.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "accel.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "accel.temperature": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "gyro.z": [
+            [
+                "gyro_b_z"
+            ],
+            0
+        ],
+        "accel.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "accel.y": [
+            [
+                "accel_b_y"
+            ],
+            0
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_imu_devtype_sim"
+            ],
+            0
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "gyro.y": [
+            [
+                "gyro_b_y"
+            ],
+            0
+        ],
+        "accel.x": [
+            [
+                "accel_b_x"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "gyro_b_x"
+            ],
+            0
+        ]
+    },
+    "poseInfoCallback": {
+        "_position_prev": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "local_position_groundtruth.vy": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "local_position_groundtruth.z": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "local_position_groundtruth.vx": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "local_position_groundtruth.heading": [
+            [
+                "euler_psi"
+            ],
+            0
+        ],
+        "local_position_groundtruth.az": [
+            [
+                "acceleration"
+            ],
+            0
+        ],
+        "local_position_groundtruth.ref_alt": [
+            [
+                "nan",
+                "_alt_ref"
+            ],
+            0
+        ],
+        "_euler_prev": [
+            [
+                "euler"
+            ],
+            0
+        ],
+        "angular_velocity": [
+            [
+                "euler",
+                "constrain_timestamp",
+                "1e",
+                "constrain__timestamp_prev"
+            ],
+            1
+        ],
+        "pose_orientation": [
+            [
+                "msg_pose_p_orientation"
+            ],
+            0
+        ],
+        "local_position_groundtruth.x": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "local_position_groundtruth.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "local_position_groundtruth.vz": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "vehicle_angular_velocity_groundtruth.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "local_position_groundtruth.ref_timestamp": [
+            [
+                "_pos_ref_get_projection_reference_timestamp"
+            ],
+            0
+        ],
+        "local_position_groundtruth.y": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "pose_position": [
+            [
+                "msg_pose_p_position"
+            ],
+            0
+        ],
+        "vehicle_attitude_groundtruth.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "local_position_groundtruth.ax": [
+            [
+                "acceleration"
+            ],
+            0
+        ],
+        "local_position_groundtruth.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_timestamp_prev": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "local_position_groundtruth.ref_lat": [
+            [
+                "double",
+                "static_cast",
+                "nan",
+                "_pos_ref_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "vehicle_angular_velocity_groundtruth.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_velocity_prev": [
+            [
+                "velocity"
+            ],
+            0
+        ],
+        "local_position_groundtruth.ref_lon": [
+            [
+                "double",
+                "static_cast",
+                "nan",
+                "_pos_ref_get_projection_reference_lon"
+            ],
+            0
+        ],
+        "local_position_groundtruth.ay": [
+            [
+                "acceleration"
+            ],
+            0
+        ],
+        "vehicle_attitude_groundtruth.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "odometryCallback": {
+        "report.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.velocity_frame": [
+            [
+                "velocity_frame_body_frd"
+            ],
+            0
+        ],
+        "pose_orientation": [
+            [
+                "msg_pose_with_covariance_pose_orientation"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "report.pose_frame": [
+            [
+                "pose_frame_ned"
+            ],
+            0
+        ]
+    },
+    "generate_wgn": {
+        "U2": [
+            [
+                "float",
+                "rand",
+                "rand_max"
+            ],
+            0
+        ],
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ],
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "U1": [
+            [
+                "float",
+                "rand",
+                "rand_max"
+            ],
+            0
+        ],
+        "S": [
+            [
+                "v2",
+                "v1"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "s",
+                "v2",
+                "float_float",
+                "v1",
+                "float_logf",
+                "float_s",
+                "float_sqrtf"
+            ],
+            0
+        ]
+    },
+    "addGpsNoise": {
+        "altitude": [
+            [
+                "_gps_pos_noise_d",
+                "double"
+            ],
+            0
+        ],
+        "vel_down": [
+            [
+                "_gps_vel_noise_d"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "degrees_double_gps_pos_noise_n",
+                "constants_radius_of_earth"
+            ],
+            0
+        ],
+        "vel_north": [
+            [
+                "_gps_vel_noise_n"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "constants_radius_of_earth",
+                "degrees_double_gps_pos_noise_e"
+            ],
+            0
+        ],
+        "vel_east": [
+            [
+                "_gps_vel_noise_e"
+            ],
+            0
+        ]
+    },
+    "navSatCallback": {
+        "gps_truth.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "gps_truth.lat": [
+            [
+                "msg_latitude_deg"
+            ],
+            1
+        ],
+        "sensor_gps.heading_offset": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_gps.latitude_deg": [
+            [
+                "msg_latitude_deg"
+            ],
+            1
+        ],
+        "sensor_gps.timestamp_sample": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "sensor_gps.vel_m_s": [
+            [
+                "sqrtf_vel_north",
+                "sqrtf_vel_east"
+            ],
+            0
+        ],
+        "sensor_gps.longitude_deg": [
+            [
+                "msg_longitude_deg"
+            ],
+            1
+        ],
+        "sensor_gps.vel_n_m_s": [
+            [
+                "msg_velocity_north"
+            ],
+            1
+        ],
+        "sensor_gps.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "gps_truth.alt": [
+            [
+                "msg_altitude"
+            ],
+            1
+        ],
+        "sensor_gps.vel_d_m_s": [
+            [
+                "msg_velocity_up"
+            ],
+            1
+        ],
+        "gps_truth.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "sensor_gps.hdop": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.cog_rad": [
+            [
+                "atan2_vel_north",
+                "atan2_vel_east"
+            ],
+            0
+        ],
+        "sensor_gps.heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "sensor_gps.s_variance_m_s": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.c_variance_rad": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.satellites_used": [
+            [
+                "_sim_gps_used_get"
+            ],
+            0
+        ],
+        "sensor_gps.altitude_msl_m": [
+            [
+                "msg_altitude"
+            ],
+            1
+        ],
+        "_alt_ref": [
+            [
+                "msg_altitude"
+            ],
+            0
+        ],
+        "sensor_gps.eph": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "gps_truth.lon": [
+            [
+                "msg_longitude_deg"
+            ],
+            1
+        ],
+        "sensor_gps.altitude_ellipsoid_m": [
+            [
+                "msg_altitude"
+            ],
+            1
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_gps_devtype_sim"
+            ],
+            0
+        ],
+        "sensor_gps.epv": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.vel_e_m_s": [
+            [
+                "msg_velocity_east"
+            ],
+            1
+        ],
+        "sensor_gps.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "sensor_gps.vdop": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "laserScantoLidarSensorCallback": {
+        "pose_orientation": [
+            [
+                "msg_world_pose_orientation"
+            ],
+            0
+        ],
+        "report.max_distance": [
+            [
+                "msg_range_max",
+                "static_cast",
+                "float"
+            ],
+            0
+        ],
+        "report.device_id": [
+            [
+                "id_devid"
+            ],
+            0
+        ],
+        "id.devid_s.devtype": [
+            [
+                "drv_dist_devtype_sim"
+            ],
+            0
+        ],
+        "report.current_distance": [
+            [
+                "msg_ranges",
+                "static_cast",
+                "float"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.orientation": [
+            [
+                "rotation_left_facing",
+                "rotation_custom",
+                "rotation_downward_facing",
+                "rotation_forward_facing"
+            ],
+            0
+        ],
+        "report.type": [
+            [
+                "mav_distance_sensor_laser"
+            ],
+            0
+        ],
+        "id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ],
+        "report.min_distance": [
+            [
+                "msg_range_min",
+                "static_cast",
+                "float"
+            ],
+            0
+        ]
+    },
+    "laserScanCallback": {
+        "report.increment": [
+            [
+                "sector_size_deg",
+                "static_cast",
+                "float"
+            ],
+            0
+        ],
+        "report.frame": [
+            [
+                "mav_frame_body_frd"
+            ],
+            0
+        ],
+        "report.min_distance": [
+            [
+                "uint16_t",
+                "static_cast",
+                "msg_range_min",
+                "_"
+            ],
+            0
+        ],
+        "report.angle_offset": [
+            [
+                "static_cast",
+                "msg_angle_min",
+                "m_pi",
+                "float"
+            ],
+            1
+        ],
+        "distance_cm": [
+            [
+                "ds_array_rbegin",
+                "uint16_max",
+                "_"
+            ],
+            1
+        ],
+        "angle_step_deg": [
+            [
+                "msg_angle_step",
+                "m_pi"
+            ],
+            0
+        ],
+        "number_of_sectors": [
+            [
+                "msg_ranges_size",
+                "round_angle_step_deg",
+                "round_sector_size_deg"
+            ],
+            1
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.max_distance": [
+            [
+                "msg_range_max",
+                "uint16_t",
+                "static_cast",
+                "_"
+            ],
+            0
+        ],
+        "report.sensor_type": [
+            [
+                "mav_distance_sensor_laser"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "msg_ranges",
+                "j",
+                "round_angle_step_deg",
+                "round_sector_size_deg"
+            ],
+            2
+        ]
+    },
+    "rotateQuaternion": {
+        "q_FRD_to_NED": [
+            [
+                "q_flu_to_frd_inverse",
+                "q_flu_to_enu",
+                "q_enu_to_ned"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "gz_bridge_model_name",
+                "gz_bridge_world_name"
+            ],
+            0
+        ],
+        "world_name": [
+            [
+                "nullptr"
+            ],
+            1
+        ],
+        "model_name": [
+            [
+                "nullptr"
+            ],
+            1
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

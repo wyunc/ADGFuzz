@@ -1,0 +1,262 @@
+{
+    "on_inactivation": {
+        "_rtl_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "on_activation": {
+        "_rtl_state": [
+            [
+                "get_activation_state"
+            ],
+            0
+        ]
+    },
+    "setRtlPosition": {
+        "_destination.lon": [
+            [
+                "_home_pos_sub_get_lon"
+            ],
+            0
+        ],
+        "_destination": [
+            [
+                "rtl_position"
+            ],
+            0
+        ],
+        "_destination.yaw": [
+            [
+                "_home_pos_sub_get_yaw"
+            ],
+            0
+        ],
+        "_destination.alt": [
+            [
+                "_home_pos_sub_get_alt"
+            ],
+            0
+        ],
+        "_land_approach": [
+            [
+                "sanitize_land_approach_loiter_pos"
+            ],
+            0
+        ],
+        "_destination.lat": [
+            [
+                "_home_pos_sub_get_lat"
+            ],
+            0
+        ]
+    },
+    "_updateRtlState": {
+        "is_multicopter": [
+            [
+                "_vehicle_status_sub_get_vehicle_type",
+                "vehicle_type_rotary_wing"
+            ],
+            0
+        ],
+        "_rtl_state": [
+            [
+                "loiter_hold",
+                "loiter_down",
+                "move_to_land_hover",
+                "land",
+                "idle",
+                "move_to_loiter",
+                "move_to_land",
+                "transition_to_mc"
+            ],
+            1
+        ],
+        "wait_at_rtl_descend_alt": [
+            [
+                "fabsf__param_rtl_land_delay_get",
+                "flt_epsilon"
+            ],
+            0
+        ]
+    },
+    "set_rtl_item": {
+        "previous.alt": [
+            [
+                "get_absolute_altitude_for_item__mission_item"
+            ],
+            0
+        ],
+        "pos_yaw_sp.yaw": [
+            [
+                "_param_wv_en_get",
+                "_param_rtl_min_dist_get",
+                "destination_dist",
+                "_destination_yaw",
+                "nan"
+            ],
+            1
+        ],
+        "previous.lat": [
+            [
+                "_land_approach_lat"
+            ],
+            0
+        ],
+        "previous.lon": [
+            [
+                "_land_approach_lon"
+            ],
+            0
+        ],
+        "next.lat": [
+            [
+                "_destination_lat"
+            ],
+            0
+        ],
+        "pos_yaw_sp.alt": [
+            [
+                "min__land_approach_height_m",
+                "min__rtl_alt"
+            ],
+            1
+        ],
+        "_mission_item.land_precision": [
+            [
+                "_param_rtl_pld_md_get"
+            ],
+            0
+        ],
+        "current.alt_acceptance_radius": [
+            [
+                "float",
+                "nan",
+                "flt_max",
+                "static_cast"
+            ],
+            1
+        ],
+        "next.type": [
+            [
+                "setpoint_type_land"
+            ],
+            0
+        ],
+        "next.lon": [
+            [
+                "_destination_lon"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ]
+    },
+    "publish_rtl_direct_navigator_mission_item": {
+        "navigator_mission_item.loiter_exit_xtrack": [
+            [
+                "_mission_item_loiter_exit_xtrack"
+            ],
+            0
+        ],
+        "navigator_mission_item.latitude": [
+            [
+                "_mission_item_lat"
+            ],
+            0
+        ],
+        "navigator_mission_item.altitude_is_relative": [
+            [
+                "_mission_item_altitude_is_relative"
+            ],
+            0
+        ],
+        "navigator_mission_item.yaw": [
+            [
+                "_mission_item_yaw"
+            ],
+            0
+        ],
+        "navigator_mission_item.acceptance_radius": [
+            [
+                "_mission_item_acceptance_radius"
+            ],
+            0
+        ],
+        "navigator_mission_item.vtol_back_transition": [
+            [
+                "_mission_item_vtol_back_transition"
+            ],
+            0
+        ],
+        "navigator_mission_item.autocontinue": [
+            [
+                "_mission_item_autocontinue"
+            ],
+            0
+        ],
+        "navigator_mission_item.altitude": [
+            [
+                "_mission_item_altitude"
+            ],
+            0
+        ],
+        "navigator_mission_item.longitude": [
+            [
+                "_mission_item_lon"
+            ],
+            0
+        ],
+        "navigator_mission_item.frame": [
+            [
+                "_mission_item_frame",
+                "_mission_item_origin"
+            ],
+            0
+        ],
+        "navigator_mission_item.sequence_current": [
+            [
+                "_rtl_state",
+                "uint16_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "navigator_mission_item.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "navigator_mission_item.time_inside": [
+            [
+                "get_time_inside__mission_item"
+            ],
+            0
+        ],
+        "navigator_mission_item.force_heading": [
+            [
+                "_mission_item_force_heading"
+            ],
+            0
+        ],
+        "navigator_mission_item.loiter_radius": [
+            [
+                "_mission_item_loiter_radius"
+            ],
+            0
+        ],
+        "navigator_mission_item.nav_cmd": [
+            [
+                "_mission_item_nav_cmd"
+            ],
+            0
+        ]
+    }
+}

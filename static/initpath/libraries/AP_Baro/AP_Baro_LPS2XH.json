@@ -1,0 +1,69 @@
+{
+    "_imu_i2c_init": {
+        "old_address": [
+            [
+                "_dev_get_bus_address"
+            ],
+            0
+        ]
+    },
+    "_init": {
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ],
+        "CallTime": [
+            [
+                "ap_usec_per_msec"
+            ],
+            0
+        ]
+    },
+    "_check_whoami": {
+        "_lps2xh_type": [
+            [
+                "baro_lps22h",
+                "baro_lps25h"
+            ],
+            0
+        ]
+    },
+    "_update_temperature": {
+        "_temperature": [
+            [
+                "temp_reg_s16"
+            ],
+            0
+        ],
+        "Temp_Reg_s16": [
+            [
+                "uint16_t",
+                "pu8"
+            ],
+            0
+        ]
+    },
+    "_update_pressure": {
+        "Pressure_mb": [
+            [
+                "pressure_reg_s32"
+            ],
+            0
+        ],
+        "Pressure_Reg_s32": [
+            [
+                "uint32_t",
+                "pressure"
+            ],
+            0
+        ],
+        "_pressure_sum": [
+            [
+                "pressure_mb"
+            ],
+            0
+        ]
+    }
+}

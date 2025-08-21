@@ -1,0 +1,194 @@
+{
+    "init": {
+        "MCPWM_CNT": [
+            [
+                "soc_mcpwm_generators_per_operator",
+                "soc_mcpwm_operators_per_group"
+            ],
+            0
+        ],
+        "out": [
+            [
+                "pwm_group_list",
+                "i"
+            ],
+            0
+        ],
+        "out.chan": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "out.gpio_num": [
+            [
+                "i",
+                "outputs_pins"
+            ],
+            0
+        ],
+        "out.group_id": [
+            [
+                "i",
+                "mcpwm_cnt"
+            ],
+            0
+        ],
+        "out.h_timer": [
+            [
+                "h_timer"
+            ],
+            0
+        ],
+        "out.freq": [
+            [
+                "timer_config_resolution_hz",
+                "timer_config_period_ticks"
+            ],
+            0
+        ],
+        "out.h_oper": [
+            [
+                "h_oper"
+            ],
+            0
+        ],
+        "_max_channels": [
+            [
+                "max_channels"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        "out": [
+            [
+                "i",
+                "pwm_group_list"
+            ],
+            0
+        ],
+        "out.freq": [
+            [
+                "freq_hz"
+            ],
+            0
+        ]
+    },
+    "enable_ch": {
+        "out": [
+            [
+                "pwm_group_list",
+                "chan"
+            ],
+            0
+        ]
+    },
+    "disable_ch": {
+        "out": [
+            [
+                "chan",
+                "pwm_group_list"
+            ],
+            0
+        ]
+    },
+    "push": {
+        "safety_on": [
+            [
+                "safety_disarmed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ],
+        "period_us": [
+            [
+                "i",
+                "_pending",
+                "safe_pwm"
+            ],
+            0
+        ]
+    },
+    "write_int": {
+        "safety_on": [
+            [
+                "safety_disarmed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ],
+        "out": [
+            [
+                "chan",
+                "pwm_group_list"
+            ],
+            0
+        ],
+        "out.value": [
+            [
+                "chan",
+                "safe_pwm"
+            ],
+            1
+        ]
+    },
+    "force_safety_on": {
+        "safety_state": [
+            [
+                "safety_disarmed"
+            ],
+            0
+        ]
+    },
+    "force_safety_off": {
+        "safety_state": [
+            [
+                "safety_armed"
+            ],
+            0
+        ]
+    },
+    "safety_update": {
+        "brdconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "safety_pressed": [
+            [
+                "gpio_get_level_gpio_num_t_hal_gpio_pin_safety_in"
+            ],
+            0
+        ],
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "safety_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "safety_mask": [
+            [
+                "boardconfig_get_safety_mask"
+            ],
+            0
+        ],
+        "led_pattern": [
+            [
+                "0x5500",
+                "safety_disarmed",
+                "safety_disarmed",
+                "safety_armed",
+                "0x_ffff"
+            ],
+            1
+        ]
+    }
+}

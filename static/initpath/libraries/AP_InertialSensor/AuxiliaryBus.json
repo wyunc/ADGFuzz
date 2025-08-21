@@ -1,0 +1,24 @@
+{
+    "register_periodic_read": {
+        "_sample_size": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_configure_periodic_read_reg",
+                "_configure_periodic_read_slave",
+                "_configure_periodic_read_size"
+            ],
+            0
+        ],
+        "_sample_reg_start": [
+            [
+                "reg"
+            ],
+            0
+        ]
+    }
+}

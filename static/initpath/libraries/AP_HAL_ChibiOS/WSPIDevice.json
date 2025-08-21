@@ -1,0 +1,71 @@
+{
+    "transfer": {
+        "ret": [
+            [
+                "wspi_send_wspi_devices",
+                "wspi_send_device_desc_bus",
+                "wspi_receive__driver",
+                "wspi_send_send",
+                "wspi_command_wspi_devices",
+                "wspi_receive_device_desc_bus",
+                "wspi_receive_mode",
+                "wspi_receive_recv",
+                "wspi_command__driver",
+                "wspi_command_mode",
+                "wspi_send__driver",
+                "wspi_receive_recv_len",
+                "wspi_send_send_len",
+                "wspi_receive_wspi_devices",
+                "wspi_command_device_desc_bus",
+                "wspi_send_mode"
+            ],
+            0
+        ]
+    },
+    "set_cmd_header": {
+        "mode.dummy": [
+            [
+                "cmd_hdr_dummy"
+            ],
+            0
+        ],
+        "mode.cmd": [
+            [
+                "cmd_hdr_cmd"
+            ],
+            0
+        ],
+        "mode.addr": [
+            [
+                "cmd_hdr_addr"
+            ],
+            0
+        ],
+        "mode.cfg": [
+            [
+                "cmd_hdr_cfg"
+            ],
+            0
+        ],
+        "mode.alt": [
+            [
+                "cmd_hdr_alt"
+            ],
+            0
+        ]
+    },
+    "acquire_bus": {
+        "bus.wspicfg.end_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "bus.wspicfg.error_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

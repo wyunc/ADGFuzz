@@ -1,0 +1,361 @@
+{
+    "update": {
+        "last_prearm_display_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "check_failed": {
+        "severity": [
+            [
+                "mav_severity_critical",
+                "mav_severity_debug"
+            ],
+            0
+        ]
+    },
+    "airspeed_checks": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "ins_accels_consistent": {
+        "last_accel_pass_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "ins_gyros_consistent": {
+        "last_gyro_pass_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "compass_checks": {
+        "_compass": [
+            [
+                "compass"
+            ],
+            0
+        ],
+        "offsets": [
+            [
+                "_compass_get_offsets"
+            ],
+            0
+        ],
+        "mag_field": [
+            [
+                "_compass_get_field_length"
+            ],
+            0
+        ],
+        "diff_mgauss": [
+            [
+                "get_earth_field_ga_ahrs_loc",
+                "ahrs_get_rotation_body_to_ned",
+                "_compass_get_field"
+            ],
+            2
+        ]
+    },
+    "gps_checks": {
+        "gps_loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "gps_loc_get_distance_ahrs_loc"
+            ],
+            0
+        ]
+    },
+    "rc_arm_checks": {
+        "fwd_thr": [
+            [
+                "c_percent_input"
+            ],
+            0
+        ],
+        "last_input_ms": [
+            [
+                "rc_last_input_ms"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "rc_find_channel_for_option_fwd_thr",
+                "channel_to_check_channel",
+                "rc_get_throttle_channel"
+            ],
+            0
+        ]
+    },
+    "rc_calibration_checks": {
+        "num_channels": [
+            [
+                "get_valid_channel_count"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "rc_channel_i"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "c_get_radio_trim"
+            ],
+            0
+        ]
+    },
+    "rangefinder_checks": {
+        "range": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "servo_checks": {
+        "trim": [
+            [
+                "c_get_trim"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "srv_channel_i"
+            ],
+            0
+        ],
+        "ch_function": [
+            [
+                "c_get_function"
+            ],
+            0
+        ]
+    },
+    "board_voltage_checks": {
+        "vbus_min": [
+            [
+                "get_minimum_board_voltage"
+            ],
+            0
+        ],
+        "vservo_min": [
+            [
+                "get_minimum_servo_voltage"
+            ],
+            0
+        ],
+        "bus_voltage": [
+            [
+                "hal_analogin_board_voltage"
+            ],
+            0
+        ],
+        "servo_voltage": [
+            [
+                "hal_analogin_servorail_voltage"
+            ],
+            0
+        ]
+    },
+    "heater_min_temperature_checks": {
+        "board": [
+            [
+                "board_config"
+            ],
+            0
+        ]
+    },
+    "system_checks": {
+        "loop_rate_pct": [
+            [
+                "scheduler_get_filtered_loop_rate_hz",
+                "scheduler_get_loop_rate_hz"
+            ],
+            2
+        ],
+        "scripting": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "terrain": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "chute": [
+            [
+                "parachute"
+            ],
+            0
+        ]
+    },
+    "terrain_checks": {
+        "terrain": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "can_checks": {
+        "num_drivers": [
+            [
+                "can_get_num_drivers"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "ap_dronecan": [
+            [
+                "get_dronecan_i"
+            ],
+            0
+        ],
+        "ap_pcan": [
+            [
+                "get_pcan_i"
+            ],
+            0
+        ]
+    },
+    "fettec_checks": {
+        "f": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "get_aux_auth_id": {
+        "auth_id": [
+            [
+                "aux_auth_count"
+            ],
+            0
+        ],
+        "aux_auth_fail_msg": [
+            [
+                "char",
+                "calloc_sizeof",
+                "calloc_char",
+                "calloc_aux_auth_str_len"
+            ],
+            0
+        ]
+    },
+    "set_aux_auth_failed": {
+        "aux_auth_fail_msg_source": [
+            [
+                "auth_id"
+            ],
+            0
+        ]
+    },
+    "estop_checks": {
+        "chan": [
+            [
+                "rc_find_channel_for_option_arm_emergency_stop"
+            ],
+            0
+        ]
+    },
+    "pre_arm_checks": {
+        "last_prearm_checks_result": [
+            [
+                "checks_result"
+            ],
+            0
+        ]
+    },
+    "arm_checks": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "arm": {
+        "_last_arm_method": [
+            [
+                "method"
+            ],
+            0
+        ]
+    },
+    "disarm": {
+        "board_cfg": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_last_disarm_method": [
+            [
+                "method"
+            ],
+            0
+        ]
+    },
+    "rc_checks_copter_sub": {
+        "channel": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ],
+        "channel_name": [
+            [
+                "i",
+                "channel_names"
+            ],
+            0
+        ]
+    },
+    "visodom_checks": {
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "disarm_switch_checks": {
+        "chan": [
+            [
+                "rc_find_channel_for_option_disarm"
+            ],
+            0
+        ]
+    }
+}

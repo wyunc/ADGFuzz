@@ -1,0 +1,251 @@
+{
+    "init": {
+        "_rate": [
+            [
+                "_rate_parm",
+                "rate_deg_per_sec"
+            ],
+            0
+        ],
+        "_center.y": [
+            [
+                "_radius_parm",
+                "_ahrs_sin_yaw"
+            ],
+            1
+        ],
+        "_center": [
+            [
+                "center",
+                "_pos_control_get_pos_desired_cm"
+            ],
+            1
+        ],
+        "_center.x": [
+            [
+                "_radius_parm",
+                "_ahrs_cos_yaw"
+            ],
+            1
+        ],
+        "_terrain_alt": [
+            [
+                "terrain_alt"
+            ],
+            0
+        ],
+        "_last_radius_param": [
+            [
+                "_radius_parm"
+            ],
+            0
+        ]
+    },
+    "set_center": {
+        "circle_center_neu": [
+            [
+                "_inav_get_position_neu_cm"
+            ],
+            0
+        ]
+    },
+    "set_rate": {
+        "_rate": [
+            [
+                "deg_per_sec"
+            ],
+            0
+        ]
+    },
+    "set_radius_cm": {
+        "_radius": [
+            [
+                "ac_circle_radius_max",
+                "radius_cm"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "target.x": [
+            [
+                "cosf__angle",
+                "_radius"
+            ],
+            0
+        ],
+        "_angle_total": [
+            [
+                "_pos_control_get_dt",
+                "fabsf__angular_accel",
+                "_pos_control_get_dt",
+                "_angular_vel_max"
+            ],
+            3
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_yaw": [
+            [
+                "is_positive__rate",
+                "degx100",
+                "_center_tofloat_xy",
+                "wrap_360_cd__yaw",
+                "_pos_control_get_dt",
+                "fabsf__angular_accel",
+                "_pos_control_get_dt",
+                "_angular_vel_max",
+                "wrap_pi__angle",
+                "get_bearing_cd__pos_control_get_pos_desired_cm_xy_tofloat"
+            ],
+            4
+        ],
+        "target_zf": [
+            [
+                "target_z"
+            ],
+            0
+        ],
+        "target.y": [
+            [
+                "sinf__angle",
+                "_radius"
+            ],
+            0
+        ],
+        "target_z_cm": [
+            [
+                "terr_offset",
+                "_center_z",
+                "_pos_control_get_pos_desired_z_cm"
+            ],
+            0
+        ]
+    },
+    "get_closest_point_on_circle": {
+        "result.x": [
+            [
+                "_center_x",
+                "_ahrs_cos_yaw",
+                "vec_length",
+                "_radius",
+                "vec_x"
+            ],
+            1
+        ],
+        "result.y": [
+            [
+                "_center_y",
+                "vec_y",
+                "_radius",
+                "vec_length",
+                "_ahrs_sin_yaw"
+            ],
+            1
+        ],
+        "vec": [
+            [
+                "stopping_point",
+                "_tofloat",
+                "_center"
+            ],
+            0
+        ],
+        "result.z": [
+            [
+                "_center_z"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "_center_tofloat"
+            ],
+            0
+        ]
+    },
+    "calc_velocities": {
+        "_angular_vel_max": [
+            [
+                "to_rad__rate",
+                "_radius",
+                "_radius",
+                "_pos_control_get_max_speed_xy_cms__pos_control_get_max_accel_xy_cmss",
+                "_pos_control_get_max_speed_xy_cms_safe_sqrt",
+                "to_rad__angular_vel_max"
+            ],
+            1
+        ],
+        "_angular_accel": [
+            [
+                "_pos_control_get_max_accel_xy_cmss__radius",
+                "fabsf_to_rad",
+                "fabsf__angular_vel_max",
+                "_pos_control_get_max_accel_xy_cmss_ac_circle_angular_accel_min",
+                "fabsf_ac_circle_angular_accel_min",
+                "_pos_control_get_max_accel_xy_cmss_to_rad"
+            ],
+            0
+        ]
+    },
+    "init_start_angle": {
+        "_angle": [
+            [
+                "wrap_pi_m_pi",
+                "wrap_pi_bearing_rad",
+                "wrap_pi__ahrs_yaw",
+                "_ahrs_yaw"
+            ],
+            0
+        ],
+        "bearing_rad": [
+            [
+                "atan2f__center_y",
+                "atan2f_curr_pos_desired_x",
+                "atan2f_curr_pos_desired_y",
+                "atan2f__center_x"
+            ],
+            0
+        ],
+        "curr_pos_desired": [
+            [
+                "_pos_control_get_pos_desired_cm_tofloat"
+            ],
+            0
+        ]
+    },
+    "get_terrain_offset": {
+        "terrain": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "offset_cm": [
+            [
+                "_rangefinder_terrain_offset_cm",
+                "terr_alt",
+                "_inav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    },
+    "check_param_change": {
+        "_radius": [
+            [
+                "_radius_parm"
+            ],
+            0
+        ],
+        "_last_radius_param": [
+            [
+                "_radius_parm"
+            ],
+            0
+        ]
+    }
+}

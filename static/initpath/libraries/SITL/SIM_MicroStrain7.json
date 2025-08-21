@@ -1,0 +1,18 @@
+{
+    "send_gnss_packet": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "send_filter_packet": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    }
+}

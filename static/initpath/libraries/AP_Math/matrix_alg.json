@@ -1,0 +1,139 @@
+{
+    "swap": {
+        "b": [
+            [
+                "a"
+            ],
+            1
+        ]
+    },
+    "mat_pivot": {
+        "max_j": [
+            [
+                "i",
+                "i"
+            ],
+            1
+        ]
+    },
+    "mat_forward_sub": {
+        "k": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "mat_back_sub": {
+        "j": [
+            [
+                "n"
+            ],
+            1
+        ],
+        "k": [
+            [
+                "n"
+            ],
+            1
+        ]
+    },
+    "mat_LU_decompose": {
+        "APrime": [
+            [
+                "matrix_multiply_n",
+                "matrix_multiply_p",
+                "matrix_multiply_a"
+            ],
+            0
+        ]
+    },
+    "mat_inverseN": {
+        "inv_unpivoted": [
+            [
+                "matrix_multiply_n",
+                "matrix_multiply_u_inv",
+                "matrix_multiply_l_inv"
+            ],
+            0
+        ],
+        "L_inv": [
+            [
+                "new_nothrow",
+                "t",
+                "n"
+            ],
+            0
+        ],
+        "inv_pivoted": [
+            [
+                "matrix_multiply_n",
+                "matrix_multiply_p",
+                "matrix_multiply_inv_unpivoted"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "new_nothrow",
+                "t",
+                "n"
+            ],
+            0
+        ],
+        "U": [
+            [
+                "new_nothrow",
+                "t",
+                "n"
+            ],
+            0
+        ],
+        "U_inv": [
+            [
+                "new_nothrow",
+                "t",
+                "n"
+            ],
+            0
+        ],
+        "L": [
+            [
+                "new_nothrow",
+                "t",
+                "n"
+            ],
+            0
+        ]
+    },
+    "inverse3x3": {
+        "invdet": [
+            [
+                "det"
+            ],
+            0
+        ]
+    },
+    "inverse4x4": {
+        "det": [
+            [
+                "inv",
+                "m"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "fedisableexcept_fe_overflow",
+                "fedisableexcept_fe_inexact"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,221 @@
+{
+    "make_sockaddr": {
+        "sockaddr.sin_port": [
+            [
+                "htons_port"
+            ],
+            0
+        ],
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "htonl_inet_str_to_addr",
+                "htonl_address"
+            ],
+            0
+        ]
+    },
+    "connect": {
+        "fd_in": [
+            [
+                "call_prefix_socket_sock_dgram",
+                "call_prefix_socket_af_inet"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "call_prefix_setsockopt_mreq",
+                "call_prefix_setsockopt_ipproto_ip",
+                "sizeof_sockaddr",
+                "call_prefix_connect_fd",
+                "call_prefix_connect_struct",
+                "call_prefix_getsockname_struct",
+                "call_prefix_getsockname_fd",
+                "sizeof_send_addr",
+                "call_prefix_connect_sockaddr",
+                "call_prefix_bind_fd_in",
+                "sockaddr",
+                "sockaddr",
+                "send_addr",
+                "sizeof_send_addr",
+                "call_prefix_setsockopt_ip_add_membership",
+                "call_prefix_bind_sockaddr",
+                "call_prefix_setsockopt_sizeof_mreq",
+                "call_prefix_getsockname_sockaddr",
+                "call_prefix_bind_struct",
+                "call_prefix_setsockopt_fd_in"
+            ],
+            2
+        ],
+        "sockaddr_mc.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "send_addr.sin_addr.s_addr": [
+            [
+                "inaddr_any"
+            ],
+            0
+        ],
+        "mreq.imr_interface.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "mreq.imr_multiaddr.s_addr": [
+            [
+                "sockaddr_sin_addr_s_addr"
+            ],
+            0
+        ]
+    },
+    "connect_timeout": {
+        "pollret": [
+            [
+                "pollout_timeout_ms"
+            ],
+            0
+        ],
+        "connected": [
+            [
+                "sock_error"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "sizeof_sock_error"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "call_prefix_connect_struct",
+                "call_prefix_connect_fd",
+                "sizeof_sockaddr",
+                "sockaddr",
+                "call_prefix_connect_sockaddr"
+            ],
+            0
+        ]
+    },
+    "set_blocking": {
+        "fcntl_ret": [
+            [
+                "call_prefix_fcntl_call_prefix_fcntl",
+                "o_nonblock",
+                "call_prefix_fcntl_f_setfl",
+                "call_prefix_fcntl_fd",
+                "call_prefix_fcntl_f_getfl"
+            ],
+            0
+        ]
+    },
+    "last_recv_address": {
+        "ip_addr": [
+            [
+                "last_recv_address_buf",
+                "ntohs_sin_sin_port",
+                "last_recv_address_sizeof",
+                "ntohl_sin_sin_addr_s_addr"
+            ],
+            2
+        ],
+        "ret": [
+            [
+                "buflen",
+                "inet_addr_to_str_sin_sin_addr_s_addr",
+                "inet_addr_to_str_ntohl",
+                "ip_addr_buf"
+            ],
+            0
+        ],
+        "sin": [
+            [
+                "sockaddr_in",
+                "last_in_addr",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "pollin": {
+        "tv.tv_usec": [
+            [
+                "timeout_ms",
+                "1000ul"
+            ],
+            0
+        ],
+        "fin": [
+            [
+                "get_read_fd"
+            ],
+            0
+        ],
+        "tv.tv_sec": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ]
+    },
+    "pollout": {
+        "tv.tv_sec": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ],
+        "tv.tv_usec": [
+            [
+                "timeout_ms",
+                "1000ul"
+            ],
+            0
+        ]
+    },
+    "is_multicast_address": {
+        "mc_lower": [
+            [
+                "0x_e0000000"
+            ],
+            0
+        ],
+        "mc_upper": [
+            [
+                "0x_efffffff"
+            ],
+            0
+        ],
+        "haddr": [
+            [
+                "ntohl_addr_sin_addr_s_addr"
+            ],
+            0
+        ]
+    },
+    "inet_addr_to_str": {
+        "addr": [
+            [
+                "htonl_addr"
+            ],
+            0
+        ]
+    }
+}

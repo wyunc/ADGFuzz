@@ -1,0 +1,32 @@
+{
+    "handle_external": {
+        "accel": [
+            [
+                "pkt_accel"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "pkt_gyro"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "rate": [
+            [
+                "external_ahrs_get_imu_rate"
+            ],
+            0
+        ]
+    },
+    "get_output_banner": {
+        "name": [
+            [
+                "external_ahrs_get_name"
+            ],
+            0
+        ]
+    }
+}

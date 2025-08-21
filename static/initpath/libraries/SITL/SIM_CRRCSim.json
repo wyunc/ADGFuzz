@@ -1,0 +1,136 @@
+{
+    "send_servos_heli": {
+        "pkt.yaw_rate": [
+            [
+                "input_servos"
+            ],
+            2
+        ],
+        "pkt.throttle": [
+            [
+                "input_servos"
+            ],
+            1
+        ],
+        "pkt.col_pitch": [
+            [
+                "input_servos",
+                "input_servos",
+                "input_servos"
+            ],
+            4
+        ],
+        "pkt.roll_rate": [
+            [
+                "input_servos",
+                "input_servos"
+            ],
+            3
+        ],
+        "pkt.pitch_rate": [
+            [
+                "input_servos",
+                "input_servos",
+                "input_servos"
+            ],
+            4
+        ]
+    },
+    "send_servos_fixed_wing": {
+        "pkt.throttle": [
+            [
+                "input_servos"
+            ],
+            1
+        ],
+        "pkt.yaw_rate": [
+            [
+                "input_servos"
+            ],
+            1
+        ],
+        "pkt.roll_rate": [
+            [
+                "input_servos"
+            ],
+            1
+        ],
+        "pkt.pitch_rate": [
+            [
+                "input_servos"
+            ],
+            1
+        ]
+    },
+    "recv_fdm": {
+        "origin.lng": [
+            [
+                "_0e7",
+                "pkt_longitude"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_pkt_yaw_rate",
+                "vector3f_pkt_pitch_rate",
+                "vector3f_pkt_roll_rate"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_pkt_z_accel",
+                "vector3f_pkt_x_accel",
+                "vector3f_pkt_y_accel"
+            ],
+            0
+        ],
+        "last_timestamp": [
+            [
+                "pkt_timestamp"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "pkt_timestamp",
+                "_0e6"
+            ],
+            1
+        ],
+        "origin.lat": [
+            [
+                "_0e7",
+                "pkt_latitude"
+            ],
+            0
+        ],
+        "velocity_ef": [
+            [
+                "vector3f_pkt_speed_n",
+                "vector3f_pkt_speed_d",
+                "vector3f_pkt_speed_e"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "position.z": [
+            [
+                "pkt_altitude"
+            ],
+            0
+        ]
+    }
+}

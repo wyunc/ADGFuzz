@@ -1,0 +1,123 @@
+{
+    "move_preamble_in_buffer": {
+        "_buflen": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_input": {
+        "ret": [
+            [
+                "write_to_autopilot_char",
+                "write_to_autopilot_const",
+                "device_info",
+                "array_size_health",
+                "write_to_autopilot_charhealth",
+                "sizeof_device_info"
+            ],
+            0
+        ],
+        "_buflen": [
+            [
+                "read_from_autopilot_array_size",
+                "read_from_autopilot__buflen",
+                "read_from_autopilot__buffer"
+            ],
+            1
+        ],
+        "_firmware_info_offset": [
+            [
+                "write_to_autopilot_strlen",
+                "write_to_autopilot__firmware_info_offset",
+                "write_to_autopilot_firmware_info"
+            ],
+            1
+        ],
+        "device_info.model": [
+            [
+                "device_info_model"
+            ],
+            0
+        ]
+    },
+    "update_output_scan": {
+        "last_degrees_bf": [
+            [
+                "fmod_degrees_per_sample",
+                "fmod_last_degrees_bf"
+            ],
+            1
+        ],
+        "send_buffer.startbit": [
+            [
+                "fmod_degrees_per_sample",
+                "fmod_last_degrees_bf"
+            ],
+            2
+        ],
+        "send_buffer.angle_q6": [
+            [
+                "fmod_degrees_per_sample",
+                "fmod_last_degrees_bf"
+            ],
+            2
+        ],
+        "send_buffer.not_startbit": [
+            [
+                "fmod_degrees_per_sample",
+                "fmod_last_degrees_bf"
+            ],
+            2
+        ],
+        "send_buffer.quality": [
+            [
+                "quality"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "send_buffer",
+                "write_to_autopilot_const",
+                "write_to_autopilot_char",
+                "sizeof_send_buffer"
+            ],
+            0
+        ],
+        "degrees_per_sample": [
+            [
+                "samples_per_second",
+                "degrees_per_ms"
+            ],
+            1
+        ],
+        "send_buffer.distance_q2": [
+            [
+                "measure_distance_at_angle_bf_location",
+                "measure_distance_at_angle_bf_current_degrees_bf"
+            ],
+            2
+        ],
+        "last_scan_output_time_ms": [
+            [
+                "millis",
+                "samples_per_second",
+                "millis",
+                "samples_per_second"
+            ],
+            4
+        ]
+    },
+    "send_response_descriptor": {
+        "ret": [
+            [
+                "array_size_send_buffer",
+                "write_to_autopilot_charsend_buffer",
+                "write_to_autopilot_const"
+            ],
+            0
+        ]
+    }
+}

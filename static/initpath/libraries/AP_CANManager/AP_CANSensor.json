@@ -1,0 +1,82 @@
+{
+    "register_driver": {
+        "_can_driver": [
+            [
+                "can_get_driver__driver_index"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_driver_index": [
+            [
+                "driver_index"
+            ],
+            0
+        ],
+        "_can_driver": [
+            [
+                "can_get_driver_driver_index"
+            ],
+            0
+        ]
+    },
+    "add_interface": {
+        "_can_iface": [
+            [
+                "can_iface"
+            ],
+            0
+        ]
+    },
+    "write_frame": {
+        "deadline": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "timeout_us",
+                "_can_iface_select_micros64",
+                "_can_iface_select_read_select",
+                "_can_iface_select_write_select",
+                "_can_iface_select_out_frame"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "deadline_us": [
+            [
+                "micros64",
+                "loop_interval_us"
+            ],
+            0
+        ],
+        "LOOP_INTERVAL_US": [
+            [
+                "scheduler_get_loop_period_us"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "_can_iface_receive_frame",
+                "_can_iface_receive_time",
+                "_can_iface_receive_flags"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_can_iface_select_write_select",
+                "_can_iface_select_deadline_us",
+                "_can_iface_select_nullptr",
+                "_can_iface_select_read_select"
+            ],
+            0
+        ]
+    }
+}

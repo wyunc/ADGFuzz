@@ -1,0 +1,49 @@
+{
+    "publish_attitude_setpoint": {
+        "vehicle_attitude_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "pose_controller_6dof": {
+        "rotated_input": [
+            [
+                "q_att_rotate_vector_inverse_p_control_output"
+            ],
+            0
+        ]
+    },
+    "stabilization_controller_6dof": {
+        "rotated_input": [
+            [
+                "q_att_rotate_vector_inverse_p_control_output"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "yaw_des": [
+            [
+                "_trajectory_setpoint_yaw"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "uuvpos_control",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

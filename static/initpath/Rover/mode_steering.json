@@ -1,0 +1,26 @@
+{
+    "update": {
+        "reversed": [
+            [
+                "is_negative_desired_speed"
+            ],
+            0
+        ],
+        "target_turn_rate": [
+            [
+                "radians_g2_acro_turn_rate",
+                "desired_steering"
+            ],
+            0
+        ],
+        "_desired_lat_accel": [
+            [
+                "attitude_control_get_turn_lat_accel_max",
+                "g2_turn_radius",
+                "speed",
+                "desired_steering"
+            ],
+            1
+        ]
+    }
+}

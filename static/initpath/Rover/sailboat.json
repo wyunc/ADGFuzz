@@ -1,0 +1,185 @@
+{
+    "init_rc_in": {
+        "channel_mainsail": [
+            [
+                "rc_find_channel_for_option_mainsail",
+                "rover_channel_throttle"
+            ],
+            1
+        ]
+    },
+    "set_auto_mainsail": {
+        "mainsail_out": [
+            [
+                "rover_g2_attitude_control_get_sail_out_from_heel_sail_heel_angle_max",
+                "rover_g2_attitude_control_get_sail_out_from_heel_radians",
+                "rover_g_dt",
+                "linear_interpolate_mainsail_angle",
+                "linear_interpolate_sail_angle_min",
+                "linear_interpolate_sail_angle_max"
+            ],
+            2
+        ],
+        "mainsail_angle": [
+            [
+                "fabsf_wind_dir_apparent",
+                "sail_angle_min",
+                "sail_angle_max",
+                "sail_angle_ideal"
+            ],
+            1
+        ],
+        "mast_rotation_out": [
+            [
+                "linear_interpolate_mast_rotation_angle",
+                "linear_interpolate_sail_angle_max"
+            ],
+            0
+        ],
+        "wind_dir_apparent": [
+            [
+                "degrees_rover_g2_windvane_get_apparent_wind_direction_rad"
+            ],
+            0
+        ],
+        "wingsail_out": [
+            [
+                "is_negative_desired_speed",
+                "rover_g2_attitude_control_get_sail_out_from_heel_sail_heel_angle_max",
+                "rover_g2_attitude_control_get_sail_out_from_heel_radians",
+                "rover_g_dt",
+                "is_negative_wind_dir_apparent"
+            ],
+            3
+        ],
+        "mast_rotation_angle": [
+            [
+                "fabsf_wind_dir_apparent",
+                "is_negative_wind_dir_apparent",
+                "rover_g2_attitude_control_get_sail_out_from_heel_sail_heel_angle_max",
+                "rover_g2_attitude_control_get_sail_out_from_heel_radians",
+                "rover_g_dt",
+                "sail_angle_ideal"
+            ],
+            3
+        ]
+    },
+    "handle_tack_request_acro": {
+        "tack_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "tack_heading_rad": [
+            [
+                "rover_ahrs_get_yaw",
+                "wrap_2pi_rover_ahrs_get_yaw",
+                "wrap_pi_rover_g2_windvane_get_true_wind_direction_rad"
+            ],
+            0
+        ]
+    },
+    "handle_tack_request_auto": {
+        "tack_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "clear_tack": {
+        "tack_clear_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "use_indirect_route": {
+        "desired_heading_rad": [
+            [
+                "radians_desired_heading_cd"
+            ],
+            0
+        ]
+    },
+    "calc_heading": {
+        "cross_track_error": [
+            [
+                "rover_g2_wp_nav_crosstrack_error"
+            ],
+            0
+        ],
+        "current_tack": [
+            [
+                "rover_g2_windvane_get_current_tack"
+            ],
+            0
+        ],
+        "true_wind_rad": [
+            [
+                "rover_g2_windvane_get_true_wind_direction_rad"
+            ],
+            0
+        ],
+        "new_tack": [
+            [
+                "tack_port",
+                "tack_starboard"
+            ],
+            0
+        ],
+        "should_tack": [
+            [
+                "tack_request_ms",
+                "millis"
+            ],
+            1
+        ],
+        "tack_heading_rad": [
+            [
+                "wrap_2pi_sail_no_go",
+                "wrap_2pi_true_wind_rad",
+                "wrap_2pi_radians",
+                "wrap_2pi_sail_no_go",
+                "wrap_2pi_true_wind_rad",
+                "wrap_2pi_radians"
+            ],
+            2
+        ],
+        "new_heading_apparent_angle": [
+            [
+                "wrap_pi_true_wind_rad",
+                "wrap_pi_desired_heading_rad"
+            ],
+            0
+        ],
+        "app_wind_rad": [
+            [
+                "rover_g2_windvane_get_apparent_wind_direction_rad"
+            ],
+            0
+        ],
+        "desired_heading_rad": [
+            [
+                "radians_desired_heading_cd"
+            ],
+            0
+        ],
+        "auto_tack_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_motor_state": {
+        "motor_state": [
+            [
+                "state"
+            ],
+            0
+        ]
+    }
+}

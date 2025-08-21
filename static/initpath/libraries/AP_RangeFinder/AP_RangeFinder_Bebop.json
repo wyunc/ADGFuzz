@@ -1,0 +1,189 @@
+{
+    "get_threshold_at": {
+        "threshold_value": [
+            [
+                "waveform_mode1",
+                "i_capture",
+                "waveform_mode0"
+            ],
+            0
+        ]
+    },
+    "_apply_averaging_filter": {
+        "filtered_value": [
+            [
+                "current_value"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "iio_buffer_first__adc_channel",
+                "unsigned",
+                "iio_buffer_first__adc_buffer",
+                "char"
+            ],
+            1
+        ],
+        "step": [
+            [
+                "iio_buffer_step__adc_buffer"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "iio_buffer_end__adc_buffer",
+                "unsigned",
+                "char"
+            ],
+            0
+        ]
+    },
+    "_search_local_maxima": {
+        "_nb_echoes": [
+            [
+                "i_echo"
+            ],
+            0
+        ],
+        "curr": [
+            [
+                "i_capture",
+                "_filtered_capture"
+            ],
+            0
+        ],
+        ".max_index": [
+            [
+                "i_capture"
+            ],
+            0
+        ],
+        "prev": [
+            [
+                "i_capture",
+                "_filtered_capture"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "i_capture",
+                "_filtered_capture"
+            ],
+            0
+        ]
+    },
+    "_search_maximum_with_max_amplitude": {
+        "max": [
+            [
+                "i_echo",
+                "_filtered_capture",
+                "_echoes",
+                "_max_index"
+            ],
+            1
+        ],
+        "max_idx": [
+            [
+                "i_echo"
+            ],
+            0
+        ]
+    },
+    "_loop": {
+        "_mode": [
+            [
+                "_update_mode__altitude"
+            ],
+            0
+        ],
+        "max_index": [
+            [
+                "_search_maximum_with_max_amplitude"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "_altitude"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_reconfigure_wave": {
+        "_tx_buf": [
+            [
+                "_tx",
+                "_mode"
+            ],
+            0
+        ]
+    },
+    "_configure_capture": {
+        "_iio": [
+            [
+                "nullptr",
+                "iio_create_local_context"
+            ],
+            0
+        ],
+        "_adc.buffer_size": [
+            [
+                "rnfd_bebop_p7_count"
+            ],
+            0
+        ],
+        "_adc.freq": [
+            [
+                "rnfd_bebop_default_adc_freq",
+                "rnfd_bebop_filter_power"
+            ],
+            0
+        ],
+        "_adc.device": [
+            [
+                "iio_context_find_device__iio",
+                "iio_context_find_device_adcname"
+            ],
+            0
+        ],
+        "_adc.buffer": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "_init": {
+        "_gpio": [
+            [
+                "get_hal_gpio"
+            ],
+            0
+        ],
+        "_spi": [
+            [
+                "move_hal_spi_get_device"
+            ],
+            0
+        ]
+    },
+    "_capture": {
+        "ret": [
+            [
+                "iio_buffer_refill__adc_buffer"
+            ],
+            0
+        ]
+    }
+}

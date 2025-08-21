@@ -1,0 +1,49 @@
+{
+    "update": {
+        "last_report_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "spinner_demand": [
+            [
+                "input_servos",
+                "sprayer_spin_pin"
+            ],
+            1
+        ],
+        "capacity": [
+            [
+                "pump_max_rate",
+                "micros64",
+                "_0e"
+            ],
+            3
+        ],
+        "spinner_max_change": [
+            [
+                "spinner_slew_rate",
+                "micros64",
+                "_0e"
+            ],
+            2
+        ],
+        "last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "last_pump_output": [
+            [
+                "sprayer_pump_pin",
+                "input_servos",
+                "micros64",
+                "_0e",
+                "pump_slew_rate"
+            ],
+            5
+        ]
+    }
+}

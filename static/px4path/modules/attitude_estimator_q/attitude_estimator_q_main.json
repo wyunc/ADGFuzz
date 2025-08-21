@@ -1,0 +1,249 @@
+{
+    "update_gps_position": {
+        "mag_decl_deg": [
+            [
+                "get_mag_declination_degrees_gps_latitude_deg",
+                "get_mag_declination_degrees_gps_longitude_deg"
+            ],
+            0
+        ]
+    },
+    "update_motion_capture_odometry": {
+        "_mocap_hdg": [
+            [
+                "v",
+                "rmoc_transpose"
+            ],
+            0
+        ],
+        "_ext_hdg_good": [
+            [
+                "hrt_elapsed_time_mocap_timestamp_sample",
+                "mocap_timestamp_sample"
+            ],
+            0
+        ],
+        "Rmoc": [
+            [
+                "quatf_mocap_q"
+            ],
+            0
+        ]
+    },
+    "update_sensors": {
+        "_imu_timestamp": [
+            [
+                "sensors_timestamp"
+            ],
+            0
+        ]
+    },
+    "update_vehicle_attitude": {
+        "_imu_prev_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "vehicle_attitude.timestamp_sample": [
+            [
+                "_imu_timestamp"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "1e6f",
+                "_dt_min",
+                "_dt_max",
+                "constrain__imu_prev_timestamp",
+                "constrain_now"
+            ],
+            0
+        ],
+        "vehicle_attitude.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "update_vehicle_local_position": {
+        "_pos_acc": [
+            [
+                "_q_rotate_vector_inverse_vel",
+                "_q_rotate_vector_inverse__vel_prev",
+                "1e6f",
+                "lpos_timestamp"
+            ],
+            1
+        ],
+        "_vel_prev_timestamp": [
+            [
+                "lpos_timestamp"
+            ],
+            0
+        ],
+        "_vel_prev": [
+            [
+                "vel"
+            ],
+            0
+        ]
+    },
+    "update_visual_odometry": {
+        "Rvis": [
+            [
+                "quatf_vision_q"
+            ],
+            0
+        ],
+        "_ext_hdg_good": [
+            [
+                "hrt_elapsed_time_vision_timestamp_sample",
+                "vision_timestamp_sample"
+            ],
+            0
+        ],
+        "_vision_hdg": [
+            [
+                "v",
+                "rvis_transpose"
+            ],
+            0
+        ]
+    },
+    "init_attitude_q": {
+        "j": [
+            [
+                "_accel",
+                "_mag",
+                "_accel"
+            ],
+            2
+        ],
+        "_q": [
+            [
+                "eulerf__mag_decl",
+                "r"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "mag_err": [
+            [
+                "wrap_pi_mag_earth",
+                "_q_rotate_vector__mag",
+                "_mag_decl",
+                "wrap_pi_atan2f"
+            ],
+            1
+        ],
+        "vision_hdg_err": [
+            [
+                "_q_rotate_vector__vision_hdg",
+                "wrap_pi_vision_hdg_earth",
+                "wrap_pi_atan2f"
+            ],
+            1
+        ],
+        "gainMult": [
+            [
+                "min_fifty_dps",
+                "min_spin_rate"
+            ],
+            0
+        ],
+        "upper_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "spinRate": [
+            [
+                "_gyro_length"
+            ],
+            0
+        ],
+        "mocap_hdg_err": [
+            [
+                "wrap_pi_mocap_hdg_earth",
+                "_q_rotate_vector__mocap_hdg",
+                "wrap_pi_atan2f"
+            ],
+            1
+        ],
+        "lower_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "accel_norm_sq": [
+            [
+                "_accel_norm_squared"
+            ],
+            0
+        ],
+        "_q": [
+            [
+                "q_last",
+                "dt",
+                "_q_derivative1_corr"
+            ],
+            0
+        ],
+        "corr": [
+            [
+                "_param_att_w_mag_get",
+                "_q_rotate_vector_inverse_mag_err",
+                "_q_rotate_vector_inverse_vector3f",
+                "_q_rotate_vector_inverse_mocap_hdg_err",
+                "_param_att_w_acc_get",
+                "_q_rotate_vector_inverse_vision_hdg_err",
+                "_pos_acc",
+                "_param_att_w_gyro_bias_get",
+                "dt",
+                "_gyro",
+                "_param_att_w_ext_hdg_get",
+                "gain_mult",
+                "k",
+                "_normalized",
+                "_accel"
+            ],
+            2
+        ]
+    },
+    "update_mag_declination": {
+        "_mag_decl": [
+            [
+                "new_declination"
+            ],
+            0
+        ],
+        "_q": [
+            [
+                "eulerf__mag_decl",
+                "eulerf_new_declination"
+            ],
+            1
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "attitude_estimator_q"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

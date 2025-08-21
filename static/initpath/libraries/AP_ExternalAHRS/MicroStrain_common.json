@@ -1,0 +1,339 @@
+{
+    "handle_byte": {
+        "message_in.state": [
+            [
+                "waiting_for_descriptor",
+                "waiting_for_sync_two",
+                "waiting_for_data",
+                "waiting_for_payload_length",
+                "waiting_for_sync_one",
+                "waiting_for_checksum"
+            ],
+            0
+        ],
+        "descriptor": [
+            [
+                "handle_packet_message_in_packet"
+            ],
+            0
+        ]
+    },
+    "valid_packet": {
+        "checksum_two": [
+            [
+                "packet_payload",
+                "packet_header",
+                "i"
+            ],
+            1
+        ]
+    },
+    "handle_imu": {
+        "imu_data.accel": [
+            [
+                "gravity_mss",
+                "populate_vector3f_packet_payload",
+                "populate_vector3f_i"
+            ],
+            0
+        ],
+        "imu_data.pressure": [
+            [
+                "be32tofloat_ptr_packet_payload",
+                "be32tofloat_ptr_i"
+            ],
+            0
+        ],
+        "imu_data.quat": [
+            [
+                "populate_quaternion_i",
+                "populate_quaternion_packet_payload"
+            ],
+            0
+        ],
+        "imu_data.gyro": [
+            [
+                "populate_vector3f_packet_payload",
+                "populate_vector3f_i"
+            ],
+            0
+        ],
+        "last_imu_pkt": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "imu_data.mag": [
+            [
+                "populate_vector3f_packet_payload",
+                "populate_vector3f_i"
+            ],
+            0
+        ]
+    },
+    "handle_gnss": {
+        ".ned_velocity_north": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".ned_velocity_down": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".fix_type": [
+            [
+                "gps_fix_type_2d_fix",
+                "gps_fix_type_no_fix",
+                "gps_fix_type_rtk_float",
+                "gps_fix_type_rtk_fixed",
+                "gps_fix_type_3d_fix",
+                "gps_fix_type_no_gps"
+            ],
+            0
+        ],
+        "descriptor": [
+            [
+                "descriptor_set_packet_descriptor_set"
+            ],
+            0
+        ],
+        ".msl_altitude": [
+            [
+                "be64todouble_ptr_packet_payload",
+                "_0e2",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        ".week": [
+            [
+                "be16toh_ptr_packet_payload",
+                "be16toh_ptr_i"
+            ],
+            0
+        ],
+        "last_gps_pkt": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        ".horizontal_position_accuracy": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".lon": [
+            [
+                "be64todouble_ptr_packet_payload",
+                "_0e7",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        ".vertical_position_accuracy": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".lat": [
+            [
+                "be64todouble_ptr_packet_payload",
+                "_0e7",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        ".ned_velocity_east": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".vdop": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".satellites": [
+            [
+                "packet_payload",
+                "i"
+            ],
+            0
+        ],
+        ".hdop": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        ".tow_ms": [
+            [
+                "double_to_uint32_i",
+                "double_to_uint32_be64todouble_ptr",
+                "double_to_uint32_packet_payload"
+            ],
+            0
+        ],
+        ".speed_accuracy": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ]
+    },
+    "handle_filter": {
+        "filter_status.flags": [
+            [
+                "be16toh_ptr_i",
+                "be16toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_status.state": [
+            [
+                "be16toh_ptr_i",
+                "be16toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "north_pos_acc": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_status.mode": [
+            [
+                "be16toh_ptr_i",
+                "be16toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.tow_ms": [
+            [
+                "be64todouble_ptr_packet_payload",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        "filter_data.ned_velocity_north": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "down_vel_uncertainty": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.lon": [
+            [
+                "_0e7",
+                "be64todouble_ptr_packet_payload",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        "down_pos_acc": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "east_pos_acc": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "east_vel_uncertainty": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.hae_altitude": [
+            [
+                "_0e2",
+                "be64todouble_ptr_packet_payload",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ],
+        "last_filter_pkt": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "filter_data.ned_velocity_east": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.attitude_quat": [
+            [
+                "populate_quaternion_i",
+                "populate_quaternion_packet_payload"
+            ],
+            0
+        ],
+        "north_vel_uncertainty": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.ned_velocity_down": [
+            [
+                "be32tofloat_ptr_i",
+                "be32tofloat_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.week": [
+            [
+                "be16toh_ptr_i",
+                "be16toh_ptr_packet_payload"
+            ],
+            0
+        ],
+        "filter_data.lat": [
+            [
+                "_0e7",
+                "be64todouble_ptr_packet_payload",
+                "be64todouble_ptr_i"
+            ],
+            0
+        ]
+    }
+}

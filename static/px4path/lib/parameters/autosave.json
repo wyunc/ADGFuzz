@@ -1,0 +1,40 @@
+{
+    "request": {
+        "delay": [
+            [
+                "2_s",
+                "hrt_elapsed_time__last_timestamp",
+                "300_ms"
+            ],
+            2
+        ]
+    },
+    "enable": {
+        "_disabled": [
+            [
+                "enable"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "disabled": [
+            [
+                "_disabled"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "param_save_default_false"
+            ],
+            0
+        ],
+        "_last_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "give": {
+        "owner": [
+            [
+                "pthread_t"
+            ],
+            0
+        ]
+    },
+    "take": {
+        "owner": [
+            [
+                "pthread_self"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "take_nonblocking": {
+        "owner": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "wait": {
+        "ts.tv_nsec": [
+            [
+                "timeout_us",
+                "1000000000l",
+                "1000000u",
+                "1000ul"
+            ],
+            0
+        ],
+        "end_us": [
+            [
+                "micros64",
+                "timeout_us"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "timeout_us",
+                "1000000ul"
+            ],
+            0
+        ]
+    }
+}

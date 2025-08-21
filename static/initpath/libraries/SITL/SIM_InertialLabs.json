@@ -1,0 +1,274 @@
+{
+    "send_packet": {
+        "pkt.orientation_angles.yaw": [
+            [
+                "fmodf_yaw_rad",
+                "fmodf_degrees"
+            ],
+            1
+        ],
+        "pkt.gnss_vel_track.track_over_ground": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_track_angle"
+            ],
+            0
+        ],
+        "pkt.gnss_position.lon": [
+            [
+                "fdm_longitude",
+                "1e7"
+            ],
+            0
+        ],
+        "pkt.gyro_data_hr.y": [
+            [
+                "fdm_roll_rate",
+                "_0e5"
+            ],
+            0
+        ],
+        "buffer": [
+            [
+                "const",
+                "uint8_t",
+                "pkt"
+            ],
+            0
+        ],
+        "pkt.position.lon": [
+            [
+                "fdm_longitude",
+                "1e7"
+            ],
+            0
+        ],
+        "pkt.msg_len": [
+            [
+                "sizeof_pkt"
+            ],
+            0
+        ],
+        "pkt.gnss_position.lat": [
+            [
+                "1e7",
+                "fdm_latitude"
+            ],
+            0
+        ],
+        "pkt.differential_pressure": [
+            [
+                "_0e4",
+                "fdm_airspeed_raw_pressure"
+            ],
+            0
+        ],
+        "pkt.velocity.x": [
+            [
+                "fdm_speed_e"
+            ],
+            0
+        ],
+        "pkt.mag_data.x": [
+            [
+                "ntesla_to_mgauss",
+                "fdm_body_mag_field_y"
+            ],
+            0
+        ],
+        "pkt.gyro_data_hr.z": [
+            [
+                "_0e5",
+                "fdm_yaw_rate"
+            ],
+            0
+        ],
+        "pkt.accel_data_hr.z": [
+            [
+                "gravity_mss",
+                "_0e6",
+                "fdm_z_accel"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ],
+        "pkt.orientation_angles.pitch": [
+            [
+                "pitch_rad",
+                "rad_to_deg"
+            ],
+            0
+        ],
+        "pkt.velocity.y": [
+            [
+                "fdm_speed_n"
+            ],
+            0
+        ],
+        "pkt.position.alt": [
+            [
+                "fdm_altitude",
+                "1e2"
+            ],
+            0
+        ],
+        "pkt.gnss_vel_track.hor_speed": [
+            [
+                "norm_fdm_speed_n",
+                "norm_fdm_speed_e"
+            ],
+            0
+        ],
+        "pkt.orientation_angles.roll": [
+            [
+                "roll_rad",
+                "rad_to_deg"
+            ],
+            0
+        ],
+        "pkt.gnss_ins_time_ms": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pkt.accel_data_hr.y": [
+            [
+                "gravity_mss",
+                "_0e6",
+                "fdm_x_accel"
+            ],
+            0
+        ],
+        "pkt.gnss_vel_track.ver_speed": [
+            [
+                "fdm_speed_d"
+            ],
+            0
+        ],
+        "pkt.true_airspeed": [
+            [
+                "fdm_airspeed"
+            ],
+            0
+        ],
+        "pkt.accel_data_hr.x": [
+            [
+                "gravity_mss",
+                "_0e6",
+                "fdm_y_accel"
+            ],
+            0
+        ],
+        "pkt.baro_data.baro_alt": [
+            [
+                "fdm_altitude"
+            ],
+            0
+        ],
+        "pkt.gnss_week": [
+            [
+                "gps_tow_week"
+            ],
+            0
+        ],
+        "pkt.baro_data.pressure_pa2": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "pkt.wind_speed.y": [
+            [
+                "fdm_wind_ef_x"
+            ],
+            0
+        ],
+        "pkt.temperature": [
+            [
+                "kelvin_to_c_t_k"
+            ],
+            0
+        ],
+        "pkt.position.lat": [
+            [
+                "1e7",
+                "fdm_latitude"
+            ],
+            0
+        ],
+        "pkt.wind_speed.x": [
+            [
+                "fdm_wind_ef_y"
+            ],
+            0
+        ],
+        "pkt.gyro_data_hr.x": [
+            [
+                "fdm_pitch_rate",
+                "_0e5"
+            ],
+            0
+        ],
+        "pkt.gnss_position.alt": [
+            [
+                "fdm_altitude",
+                "1e2"
+            ],
+            0
+        ],
+        "pkt.gnss_pos_timestamp": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pkt.mag_data.z": [
+            [
+                "ntesla_to_mgauss",
+                "fdm_body_mag_field_z"
+            ],
+            0
+        ],
+        "pkt.mag_data.y": [
+            [
+                "fdm_body_mag_field_x",
+                "ntesla_to_mgauss"
+            ],
+            0
+        ],
+        "pkt.velocity.z": [
+            [
+                "fdm_speed_d"
+            ],
+            0
+        ],
+        "pkt.crc": [
+            [
+                "crc_sum_of_bytes_16_buffer",
+                "crc_sum_of_bytes_16_sizeof",
+                "crc_sum_of_bytes_16_pkt"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_pkt_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "irq_handler": {
+        "irq_state.last_pulse_us": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "irq_state.total_us": [
+            [
+                "irq_state_last_pulse_us",
+                "timestamp"
+            ],
+            1
+        ]
+    },
+    "read": {
+        "_state.consumed_mah": [
+            [
+                "state_pulse_count",
+                "_curr_amp_per_volt"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "_state_last_time_micros",
+                "_0e",
+                "micros"
+            ],
+            1
+        ],
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "irq_state"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_pin": [
+            [
+                "_curr_pin"
+            ],
+            1
+        ],
+        "irqstate": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "state_total_us",
+                "_0e",
+                "state_pulse_count",
+                "_curr_amp_per_volt"
+            ],
+            3
+        ]
+    }
+}

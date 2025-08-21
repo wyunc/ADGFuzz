@@ -1,0 +1,1829 @@
+{
+    "init": {
+        "uartstate": [
+            [
+                "serialmanager_find_protocol_instance_serial_protocol_mav_link",
+                "_find_protocol_instance_instance"
+            ],
+            0
+        ],
+        "mavlink_protocol": [
+            [
+                "uartstate_get_protocol"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "instance",
+                "mavlink_comm_0",
+                "mavlink_channel_t"
+            ],
+            0
+        ],
+        "old_flow_control": [
+            [
+                "_port_get_flow_control"
+            ],
+            0
+        ]
+    },
+    "send_meminfo": {
+        "memory": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ]
+    },
+    "send_battery_status": {
+        "max_cell_mV": [
+            [
+                "0x_fffeu"
+            ],
+            0
+        ],
+        "voltage_mV": [
+            [
+                "battery_gcs_voltage_instance",
+                "1e3f",
+                "max_cell_m_v"
+            ],
+            0
+        ],
+        "got_temperature": [
+            [
+                "battery_get_temperature_instance",
+                "battery_get_temperature_temp"
+            ],
+            0
+        ],
+        "percentage": [
+            [
+                "battery_remaining_pct_instance"
+            ],
+            0
+        ],
+        "extra_mV": [
+            [
+                "voltage_m_v",
+                "voltage_m_v_sum",
+                "non_zero_cell_count"
+            ],
+            0
+        ],
+        "invalid_cell_mV": [
+            [
+                "0x_ffffu"
+            ],
+            0
+        ],
+        "voltage_mV_sum": [
+            [
+                "i",
+                "cell_mvolts",
+                "cell_mvolts_ext"
+            ],
+            0
+        ],
+        "current": [
+            [
+                "int16_max"
+            ],
+            0
+        ],
+        "configured_type": [
+            [
+                "battery_configured_type_battery_id"
+            ],
+            0
+        ],
+        "last_battery_status_idx": [
+            [
+                "ap_batt_monitor_max_instances"
+            ],
+            1
+        ],
+        "batt_cells": [
+            [
+                "battery_get_cell_voltages_instance"
+            ],
+            0
+        ]
+    },
+    "send_distance_sensor": {
+        "proximity": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "rangefinder_get_backend_i"
+            ],
+            0
+        ],
+        "orient": [
+            [
+                "sensor_orientation"
+            ],
+            0
+        ],
+        "quality": [
+            [
+                "sensor_signal_quality_pct"
+            ],
+            1
+        ],
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "send_rangefinder": {
+        "s": [
+            [
+                "rangefinder_find_instance_rotation_pitch_270"
+            ],
+            0
+        ],
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "send_proximity": {
+        "dist_min": [
+            [
+                "proximity_distance_min",
+                "uint16_t"
+            ],
+            0
+        ],
+        "dist_max": [
+            [
+                "uint16_t",
+                "proximity_distance_max"
+            ],
+            0
+        ],
+        "proximity": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request_list": {
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_mav_mission_typ_epacket_mission_type"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request_int": {
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_mav_mission_typ_epacket_mission_type"
+            ],
+            0
+        ]
+    },
+    "handle_mission_request": {
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_mav_mission_typ_epacket_mission_type"
+            ],
+            0
+        ]
+    },
+    "send_mission_current": {
+        "num_commands": [
+            [
+                "mission_num_commands"
+            ],
+            0
+        ],
+        "mission_mode": [
+            [
+                "vehicle_current_mode_requires_mission"
+            ],
+            0
+        ]
+    },
+    "handle_mission_count": {
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_mav_mission_typ_epacket_mission_type"
+            ],
+            0
+        ]
+    },
+    "handle_mission_clear_all": {
+        "mission_type": [
+            [
+                "packet_mission_type",
+                "mav_mission_type"
+            ],
+            0
+        ],
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_mission_type"
+            ],
+            0
+        ]
+    },
+    "handle_mission_write_partial_list": {
+        "use_prot": [
+            [
+                "gcs_get_prot_for_mission_type_mav_mission_typ_epacket_mission_type"
+            ],
+            0
+        ]
+    },
+    "handle_radio_status": {
+        "max_slowdown_ms": [
+            [
+                "stream_slowdown_ms"
+            ],
+            0
+        ],
+        "last_radio_status.rssi": [
+            [
+                "packet_rssi"
+            ],
+            0
+        ],
+        "last_radio_status.received_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_radio_status.remrssi_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_radio_status.txbuf": [
+            [
+                "packet_txbuf"
+            ],
+            0
+        ]
+    },
+    "handle_mission_item": {
+        "current": [
+            [
+                "mission_item_int_current"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "mavlink_int_to_mission_cmd_mission_item_int",
+                "mav_mission_accepted",
+                "mavlink_int_to_mission_cmd_cmd"
+            ],
+            0
+        ],
+        "prot": [
+            [
+                "gcs_get_prot_for_mission_type_type"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "mission_item_int_mission_type",
+                "mission_item_mission_type",
+                "mav_mission_type"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "convert_mission_item_to_mission_item_int_mission_item",
+                "convert_mission_item_to_mission_item_int_mission_item_int"
+            ],
+            0
+        ]
+    },
+    "set_mavlink_message_id_interval": {
+        "id": [
+            [
+                "mavlink_id_to_ap_message_id_mavlink_id"
+            ],
+            0
+        ]
+    },
+    "find_next_bucket_to_send": {
+        "try_send_message_stats.fnbts_maxtime": [
+            [
+                "micros",
+                "micros"
+            ],
+            2
+        ],
+        "ms_before_send_next_bucket_to_send": [
+            [
+                "now16_ms",
+                "_last_sent_ms",
+                "i",
+                "deferred_message_bucket",
+                "get_reschedule_interval_ms_deferred_message_bucket",
+                "get_reschedule_interval_ms_i",
+                "uint16_max"
+            ],
+            3
+        ],
+        "data": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ],
+        "bucket_message_ids_to_send": [
+            [
+                "no_bucket_to_send",
+                "i",
+                "deferred_message_bucket",
+                "_ap_message_ids"
+            ],
+            1
+        ]
+    },
+    "do_try_send_message": {
+        "in_delay_callback": [
+            [
+                "hal_scheduler_in_delay_callback"
+            ],
+            0
+        ],
+        "try_send_message_stats.longest_id": [
+            [
+                "id"
+            ],
+            0
+        ],
+        "try_send_message_stats.longest_time_us": [
+            [
+                "micros",
+                "micros"
+            ],
+            2
+        ],
+        "data": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ]
+    },
+    "conclude": {
+        "task": [
+            [
+                "none"
+            ],
+            0
+        ]
+    },
+    "check_tasks": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "last_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update_send": {
+        "try_send_message_stats.max_retry_deferred_body_us": [
+            [
+                "micros",
+                "micros"
+            ],
+            3
+        ],
+        ".last_sent_ms": [
+            [
+                "_interval_ms",
+                "deferred_message",
+                "get_reschedule_interval_ms_deferred_message_bucket",
+                "get_reschedule_interval_ms_sending_bucket_id",
+                "0x_ffff",
+                "millis"
+            ],
+            3
+        ],
+        "next": [
+            [
+                "pushed_ap_message_ids_first_set",
+                "next_deferred_bucket_message_to_send_start16",
+                "ap_message",
+                "deferred_message_to_send_index_start16"
+            ],
+            1
+        ],
+        "send_packet_count": [
+            [
+                "uint8_t__channel_status_current_tx_seq",
+                "uint8_t_last_tx_seq"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "first_backend_to_send"
+            ],
+            0
+        ],
+        "last_tx_seq": [
+            [
+                "_channel_status_current_tx_seq"
+            ],
+            0
+        ]
+    },
+    "set_ap_message_interval": {
+        ".interval_ms": [
+            [
+                "cap_message_interval_interval_ms"
+            ],
+            1
+        ],
+        "closest_bucket_interval_delta": [
+            [
+                "abs_bucket_interval_ms",
+                "abs_interval_ms",
+                "uint16_max"
+            ],
+            1
+        ],
+        ".last_sent_ms": [
+            [
+                "millis16"
+            ],
+            0
+        ],
+        "bucket_message_ids_to_send": [
+            [
+                "_ap_message_ids",
+                "deferred_message_bucket",
+                "i",
+                "i",
+                "i"
+            ],
+            3
+        ],
+        "bucket": [
+            [
+                "deferred_message_bucket",
+                "i"
+            ],
+            0
+        ],
+        "deferred_offset": [
+            [
+                "get_deferred_message_index_id"
+            ],
+            0
+        ],
+        "sending_bucket_id": [
+            [
+                "i",
+                "i",
+                "i"
+            ],
+            3
+        ]
+    },
+    "packetReceived": {
+        "scripting": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "mavlink_protocol": [
+            [
+                "uartstate_get_protocol"
+            ],
+            0
+        ]
+    },
+    "send_raw_imu": {
+        "mag": [
+            [
+                "compass_get_field"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ins_get_gyro"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "ins_get_accel"
+            ],
+            0
+        ]
+    },
+    "send_highres_imu": {
+        "HIGHRES_IMU_UPDATED_YGYRO": [
+            [
+                "0x10"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "ins_get_accel"
+            ],
+            0
+        ],
+        "reply.zmag": [
+            [
+                "field_z"
+            ],
+            0
+        ],
+        "barometer": [
+            [
+                "baro"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_XGYRO": [
+            [
+                "0x08"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_ZACC": [
+            [
+                "0x04"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_ALL": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_TEMPERATURE": [
+            [
+                "0x1000"
+            ],
+            0
+        ],
+        "reply.ymag": [
+            [
+                "field_y"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_YACC": [
+            [
+                "0x02"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_PRESSURE_ALT": [
+            [
+                "0x800"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_XACC": [
+            [
+                "0x01"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_DIFF_PRESSURE": [
+            [
+                "0x400"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ins_get_gyro"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "compass_get_field"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_ABS_PRESSURE": [
+            [
+                "0x200"
+            ],
+            0
+        ],
+        "reply.diff_pressure": [
+            [
+                "reply_abs_pressure",
+                "barometer_get_ground_pressure"
+            ],
+            0
+        ],
+        "reply.pressure_alt": [
+            [
+                "barometer_get_altitude_amsl"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_ZMAG": [
+            [
+                "0x100"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_YMAG": [
+            [
+                "0x80"
+            ],
+            0
+        ],
+        "reply.xmag": [
+            [
+                "field_x"
+            ],
+            0
+        ],
+        "reply.abs_pressure": [
+            [
+                "barometer_get_pressure"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_XMAG": [
+            [
+                "0x40"
+            ],
+            0
+        ],
+        "reply.temperature": [
+            [
+                "barometer_get_temperature"
+            ],
+            0
+        ],
+        "HIGHRES_IMU_UPDATED_ZGYRO": [
+            [
+                "0x20"
+            ],
+            0
+        ]
+    },
+    "send_airspeed": {
+        "temperature": [
+            [
+                "int16_max",
+                "int16_t_temperature_float"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "last_airspeed_idx": [
+            [
+                "airspeed_max_sensors",
+                "i"
+            ],
+            1
+        ]
+    },
+    "send_ahrs": {
+        "omega_I": [
+            [
+                "ahrs_get_gyro_drift"
+            ],
+            0
+        ]
+    },
+    "send_textv": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "remainder_len": [
+            [
+                "strlen_remainder"
+            ],
+            0
+        ],
+        "crsf": [
+            [
+                "crsf_telem"
+            ],
+            0
+        ],
+        "frsky": [
+            [
+                "frsky_telem"
+            ],
+            0
+        ],
+        "statustext.msg.id": [
+            [
+                "msgid"
+            ],
+            0
+        ],
+        "statustext.msg.severity": [
+            [
+                "severity"
+            ],
+            0
+        ],
+        "notify": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "statustext.bitmask": [
+            [
+                "_num_gcs",
+                "statustext_send_channel_mask"
+            ],
+            0
+        ],
+        "remainder": [
+            [
+                "statustext_printf_buffer",
+                "sizeof_statustext_msg_text",
+                "sizeof_remainder_len"
+            ],
+            1
+        ],
+        "statustext.entry_created_ms": [
+            [
+                "millis16"
+            ],
+            0
+        ],
+        "spektrum": [
+            [
+                "spektrum_telem"
+            ],
+            0
+        ],
+        "statustext.msg.chunk_seq": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "service_statustext": {
+        "i": [
+            [
+                "first_backend_to_send"
+            ],
+            0
+        ],
+        "payload_size": [
+            [
+                "payload_size_statustext",
+                "payload_size_chan"
+            ],
+            0
+        ],
+        "chan_bit": [
+            [
+                "chan",
+                "1u"
+            ],
+            0
+        ],
+        "statustext": [
+            [
+                "gcs_statustext_queue",
+                "idx"
+            ],
+            1
+        ]
+    },
+    "send_mission_item_reached_message": {
+        "mission_item_reached_index": [
+            [
+                "mission_index"
+            ],
+            0
+        ]
+    },
+    "setup_console": {
+        "uart": [
+            [
+                "serialmanager_find_serial_serial_protocol_mav_link"
+            ],
+            0
+        ]
+    },
+    "setup_uarts": {
+        "uart": [
+            [
+                "_find_serial_i",
+                "serialmanager_find_serial_serial_protocol_mav_link"
+            ],
+            0
+        ],
+        "frsky": [
+            [
+                "ap_frsky_telem",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "send_battery2": {
+        "current": [
+            [
+                "int16_max"
+            ],
+            0
+        ]
+    },
+    "handle_set_mode": {
+        "_base_mode": [
+            [
+                "mav_mode",
+                "packet_base_mode"
+            ],
+            0
+        ],
+        "_custom_mode": [
+            [
+                "packet_custom_mode"
+            ],
+            0
+        ]
+    },
+    "send_opticalflow": {
+        "bodyRate": [
+            [
+                "optflow_body_rate"
+            ],
+            0
+        ],
+        "optflow": [
+            [
+                "opticalflow"
+            ],
+            0
+        ],
+        "flowRate": [
+            [
+                "optflow_flow_rate"
+            ],
+            0
+        ]
+    },
+    "send_autopilot_version": {
+        "version": [
+            [
+                "fwversion"
+            ],
+            0
+        ],
+        "uid_len": [
+            [
+                "sizeof_uid2"
+            ],
+            0
+        ]
+    },
+    "send_vibration": {
+        "vibration": [
+            [
+                "ins_get_vibration_levels"
+            ],
+            0
+        ]
+    },
+    "send_home_position": {
+        "home": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "home_pos_ned": [
+            [
+                "nan",
+                "vector3f"
+            ],
+            0
+        ]
+    },
+    "get_ap_message_interval": {
+        "bucket": [
+            [
+                "i",
+                "deferred_message_bucket"
+            ],
+            0
+        ],
+        "interval_ms": [
+            [
+                "deferred_message",
+                "_interval_ms",
+                "get_deferred_message_index_id",
+                "bucket_interval_ms"
+            ],
+            1
+        ]
+    },
+    "telemetry_delayed": {
+        "tnow": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_servo_output_raw": {
+        "enabled_mask": [
+            [
+                "get_output_channel_mask_k_gpio"
+            ],
+            0
+        ]
+    },
+    "vfr_hud_airspeed": {
+        "airspeed": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "handle_timesync": {
+        "rsync.ts1": [
+            [
+                "tsync_ts1"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "round_trip_time_us": [
+            [
+                "_timesync_request_sent_ts1",
+                "timesync_receive_timestamp_ns"
+            ],
+            0
+        ],
+        "rsync.tc1": [
+            [
+                "timesync_receive_timestamp_ns"
+            ],
+            0
+        ]
+    },
+    "send_timesync": {
+        "_timesync_request.sent_ts1": [
+            [
+                "timesync_timestamp_ns"
+            ],
+            0
+        ]
+    },
+    "handle_statustext": {
+        "offset": [
+            [
+                "max_prefix_len",
+                "strlen_text"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "text_len": [
+            [
+                "max_prefix_len",
+                "mavlink_msg_statustext_field_text_len"
+            ],
+            0
+        ]
+    },
+    "handle_named_value": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "handle_set_gps_global_origin": {
+        "ekf_origin.lng": [
+            [
+                "packet_longitude"
+            ],
+            0
+        ],
+        "ekf_origin.alt": [
+            [
+                "packet_altitude"
+            ],
+            0
+        ],
+        "ekf_origin.lat": [
+            [
+                "packet_latitude"
+            ],
+            0
+        ]
+    },
+    "handle_data_packet": {
+        "radio": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "handle_vision_position_delta": {
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "handle_odometry": {
+        "posErr": [
+            [
+                "cbrtf_m_pose_covariance",
+                "cbrtf_sq",
+                "sq_m_pose_covariance"
+            ],
+            0
+        ],
+        "angErr": [
+            [
+                "cbrtf_m_pose_covariance",
+                "cbrtf_sq",
+                "sq_m_pose_covariance"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "q"
+            ],
+            0
+        ],
+        "timestamp_ms": [
+            [
+                "correct_offboard_timestamp_usec_to_ms_chan",
+                "correct_offboard_timestamp_usec_to_ms_payload_size",
+                "correct_offboard_timestamp_usec_to_ms_m_time_usec",
+                "correct_offboard_timestamp_usec_to_ms_odometry"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "handle_common_vision_position_estimate_data": {
+        "posErr": [
+            [
+                "cbrtf_covariance",
+                "cbrtf_sq",
+                "sq_covariance"
+            ],
+            0
+        ],
+        "angErr": [
+            [
+                "cbrtf_covariance",
+                "cbrtf_sq",
+                "sq_covariance"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ],
+        "timestamp_ms": [
+            [
+                "correct_offboard_timestamp_usec_to_ms_payload_size",
+                "correct_offboard_timestamp_usec_to_ms_usec"
+            ],
+            0
+        ]
+    },
+    "handle_att_pos_mocap": {
+        "timestamp_ms": [
+            [
+                "correct_offboard_timestamp_usec_to_ms_m_time_usec",
+                "correct_offboard_timestamp_usec_to_ms_att_pos_mocap",
+                "correct_offboard_timestamp_usec_to_ms_chan",
+                "correct_offboard_timestamp_usec_to_ms_payload_size"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "handle_vision_speed_estimate": {
+        "vel": [
+            [
+                "m_z",
+                "m_y",
+                "m_x"
+            ],
+            0
+        ],
+        "timestamp_ms": [
+            [
+                "correct_offboard_timestamp_usec_to_ms_chan",
+                "correct_offboard_timestamp_usec_to_ms_payload_size",
+                "correct_offboard_timestamp_usec_to_ms_m_usec",
+                "correct_offboard_timestamp_usec_to_ms_vision_speed_estimate"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "handle_command_ack": {
+        "accelcal": [
+            [
+                "ins_get_acal"
+            ],
+            0
+        ]
+    },
+    "handle_rc_channels_override": {
+        "tnow": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "i",
+                "override_data",
+                "uint16_max"
+            ],
+            0
+        ]
+    },
+    "handle_optical_flow": {
+        "optflow": [
+            [
+                "opticalflow"
+            ],
+            0
+        ]
+    },
+    "handle_common_mission_message": {
+        "_mission": [
+            [
+                "mission"
+            ],
+            0
+        ]
+    },
+    "send_banner": {
+        "fwver": [
+            [
+                "fwversion"
+            ],
+            0
+        ],
+        "mcuid": [
+            [
+                "iomcu_get_mcu_id"
+            ],
+            0
+        ]
+    },
+    "location_from_command_t": {
+        "out.lng": [
+            [
+                "in_y"
+            ],
+            0
+        ],
+        "out.lat": [
+            [
+                "in_x"
+            ],
+            0
+        ]
+    },
+    "mav_frame_for_command_long": {
+        "frame": [
+            [
+                "map_frame"
+            ],
+            0
+        ]
+    },
+    "convert_COMMAND_LONG_to_COMMAND_INT": {
+        "stores_location": [
+            [
+                "command_long_stores_location_mav_cm_din_command"
+            ],
+            0
+        ],
+        "out.target_system": [
+            [
+                "in_target_system"
+            ],
+            0
+        ],
+        "out.y": [
+            [
+                "convert_command_long_loc_param_stores_location",
+                "convert_command_long_loc_param_in_param6"
+            ],
+            0
+        ],
+        "out.param2": [
+            [
+                "in_param2"
+            ],
+            0
+        ],
+        "out.frame": [
+            [
+                "frame"
+            ],
+            0
+        ],
+        "out.param4": [
+            [
+                "in_param4"
+            ],
+            0
+        ],
+        "out.x": [
+            [
+                "convert_command_long_loc_param_stores_location",
+                "convert_command_long_loc_param_in_param5"
+            ],
+            0
+        ],
+        "out.param1": [
+            [
+                "in_param1"
+            ],
+            0
+        ],
+        "out.target_component": [
+            [
+                "in_target_component"
+            ],
+            0
+        ],
+        "out.param3": [
+            [
+                "in_param3"
+            ],
+            0
+        ],
+        "out.command": [
+            [
+                "in_command"
+            ],
+            0
+        ],
+        "out.z": [
+            [
+                "in_param7"
+            ],
+            0
+        ]
+    },
+    "handle_command_long": {
+        "result": [
+            [
+                "try_command_long_as_command_int_msg",
+                "try_command_long_as_command_int_packet"
+            ],
+            0
+        ],
+        "persistent_data.last_mavlink_cmd": [
+            [
+                "packet_command"
+            ],
+            0
+        ],
+        "scripting": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "handle_landing_target": {
+        "corrected_ms": [
+            [
+                "correct_offboard_timestamp_usec_to_ms_landing_target",
+                "correct_offboard_timestamp_usec_to_ms_chan",
+                "correct_offboard_timestamp_usec_to_ms_payload_size",
+                "correct_offboard_timestamp_usec_to_ms_m_time_usec"
+            ],
+            0
+        ]
+    },
+    "handle_command_int": {
+        "scripting": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "persistent_data.last_mavlink_cmd": [
+            [
+                "packet_command"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "handle_command_int_packet_msg",
+                "handle_command_int_packet_packet"
+            ],
+            0
+        ]
+    },
+    "try_send_queued_message_for_type": {
+        "prot": [
+            [
+                "get_prot_for_mission_type_type"
+            ],
+            0
+        ]
+    },
+    "send_rpm": {
+        "rpm1": [
+            [
+                "rpm2"
+            ],
+            0
+        ]
+    },
+    "send_sys_status": {
+        "errors1": [
+            [
+                "0xffff",
+                "internalerror_errors"
+            ],
+            1
+        ],
+        "errors4": [
+            [
+                "0xffff",
+                "internalerror_count"
+            ],
+            0
+        ],
+        "battery_current": [
+            [
+                "int16_max"
+            ],
+            0
+        ],
+        "errors2": [
+            [
+                "0xffff",
+                "internalerror_errors"
+            ],
+            1
+        ],
+        "battery_remaining": [
+            [
+                "battery_remaining_pct_ap_batt_primary_instance"
+            ],
+            0
+        ]
+    },
+    "send_attitude": {
+        "omega": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ]
+    },
+    "send_attitude_quaternion": {
+        "omega": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ]
+    },
+    "send_water_depth": {
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "rangefinder_get_backend_i"
+            ],
+            0
+        ],
+        "sensor_healthy": [
+            [
+                "good",
+                "s_status"
+            ],
+            0
+        ]
+    },
+    "send_autopilot_state_for_gimbal_device": {
+        "est_status_flags": [
+            [
+                "nav_filt_status_value",
+                "uint16_t",
+                "0x_ffff"
+            ],
+            0
+        ]
+    },
+    "send_received_message_deprecation_warning": {
+        "last_deprecation_message": [
+            [
+                "message"
+            ],
+            0
+        ],
+        "last_deprecation_warning_send_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_available_modes": {
+        "request_index": [
+            [
+                "available_modes_next_index",
+                "available_modes_requested_index"
+            ],
+            0
+        ],
+        "mode_count": [
+            [
+                "send_available_mode_request_index"
+            ],
+            0
+        ],
+        "send_all": [
+            [
+                "available_modes_requested_index"
+            ],
+            0
+        ]
+    },
+    "try_send_message": {
+        "ret": [
+            [
+                "try_send_mission_message_id",
+                "send_available_mode_monitor",
+                "send_available_modes",
+                "compass_send_mag_cal_report_this",
+                "send_relay_status",
+                "compass_send_mag_cal_progress_this"
+            ],
+            0
+        ],
+        "ais": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "last_heartbeat_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "initialise_message_intervals_for_stream": {
+        "interval_ms": [
+            [
+                "get_interval_for_stream_id"
+            ],
+            0
+        ],
+        "entries": [
+            [
+                "i",
+                "all_stream_entries"
+            ],
+            0
+        ]
+    },
+    "set": {
+        ".id": [
+            [
+                "id"
+            ],
+            0
+        ],
+        ".interval": [
+            [
+                "interval"
+            ],
+            0
+        ]
+    },
+    "get_interval_for_ap_message_id": {
+        "interval": [
+            [
+                "_interval",
+                "i",
+                "_intervals"
+            ],
+            0
+        ]
+    },
+    "get_intervals_from_filepath": {
+        "mavlink_id": [
+            [
+                "atoi_mavlink_id_str"
+            ],
+            0
+        ],
+        "interval_str": [
+            [
+                "strtok_r_nullptr",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "_open_o_rdonly",
+                "fs_open_path"
+            ],
+            0
+        ],
+        "mavlink_id_str": [
+            [
+                "strtok_r_line",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "msg_id": [
+            [
+                "mavlink_id_to_ap_message_id_mavlink_id"
+            ],
+            0
+        ],
+        "saveptr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "interval": [
+            [
+                "atoi_interval_str"
+            ],
+            0
+        ]
+    },
+    "initialise_message_intervals_from_config_files": {
+        "overallocated": [
+            [
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ],
+        "interval": [
+            [
+                "default_intervals_from_files_interval_at_i"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "default_intervals_from_files_id_at_i"
+            ],
+            0
+        ],
+        "num_required": [
+            [
+                "overallocated_num_intervals"
+            ],
+            0
+        ],
+        "default_intervals_from_files": [
+            [
+                "default_intervals_from_files_num_required",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "get_default_interval_for_ap_message": {
+        "interval": [
+            [
+                "get_interval_for_stream_all_stream_entries",
+                "get_interval_for_stream__stream_id",
+                "get_interval_for_stream_i"
+            ],
+            0
+        ],
+        "entries": [
+            [
+                "all_stream_entries",
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_passthru": {
+        "_passthru.last_port1_data_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_passthru.baud2": [
+            [
+                "baud2"
+            ],
+            0
+        ],
+        "_passthru.parity2": [
+            [
+                "_passthru_port2_get_parity",
+                "parity2"
+            ],
+            0
+        ],
+        "_passthru.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_passthru.parity1": [
+            [
+                "_passthru_port1_get_parity",
+                "parity2"
+            ],
+            1
+        ],
+        "_passthru.baud1": [
+            [
+                "baud1"
+            ],
+            0
+        ]
+    },
+    "passthru_timer": {
+        "nbytes": [
+            [
+                "_passthru_port2_read_locked_buf",
+                "_passthru_port1_read_locked_buf",
+                "_passthru_port2_read_locked_sizeof",
+                "_passthru_port1_read_locked_sizeof",
+                "_passthru_port2_read_locked__passthru_port1_txspace",
+                "_passthru_port1_read_locked__passthru_port2_txspace",
+                "0x3256ab9f"
+            ],
+            1
+        ],
+        "_passthru.baud1": [
+            [
+                "_passthru_port2_get_usb_baud",
+                "_passthru_port1_get_usb_baud"
+            ],
+            1
+        ],
+        "_passthru.parity1": [
+            [
+                "_passthru_port2_get_usb_parity",
+                "_passthru_port1_get_usb_parity"
+            ],
+            1
+        ],
+        "_passthru.last_port1_data_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "mavlink_coordinate_frame_to_location_alt_frame": {
+        "frame": [
+            [
+                "above_home",
+                "above_terrain",
+                "absolute"
+            ],
+            0
+        ]
+    },
+    "manual_override": {
+        "override_value": [
+            [
+                "value_in",
+                "offset",
+                "scaler",
+                "c_get_radio_min",
+                "c_get_radio_max"
+            ],
+            2
+        ]
+    },
+    "handle_manual_control": {
+        "tnow": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_high_latency2": {
+        "current_waypoint": [
+            [
+                "mission_get_current_nav_index"
+            ],
+            0
+        ],
+        "battery_remaining": [
+            [
+                "battery_remaining_pct_ap_batt_primary_instance"
+            ],
+            0
+        ]
+    }
+}

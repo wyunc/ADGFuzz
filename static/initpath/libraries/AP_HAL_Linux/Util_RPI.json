@@ -1,0 +1,30 @@
+{
+    "_get_board_type_using_peripheral_base": {
+        "_linux_board_version": [
+            [
+                "rpi_4",
+                "rpi_zero_1",
+                "rpi_2_3_zero2",
+                "rpi_5",
+                "allwinnwer_h616",
+                "unknown_board"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "fread_sizeof",
+                "fread_buf",
+                "fp"
+            ],
+            0
+        ],
+        "base": [
+            [
+                "0x00",
+                "buf"
+            ],
+            0
+        ]
+    }
+}

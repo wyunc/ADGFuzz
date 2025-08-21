@@ -1,0 +1,294 @@
+{
+    "ParametersUpdate": {
+        "_last_calibration_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "priority_change": [
+            [
+                "_priority",
+                "_calibration",
+                "mag",
+                "_priority",
+                "_calibration",
+                "mag"
+            ],
+            2
+        ],
+        "_mag_comp_type": [
+            [
+                "mag_compensation_type",
+                "_param_mag_comp_typ_get",
+                "static_cast"
+            ],
+            1
+        ],
+        "calibration_count": [
+            [
+                "_calibration_count",
+                "_calibration",
+                "mag"
+            ],
+            0
+        ]
+    },
+    "UpdateMagBiasEstimate": {
+        "old_offset": [
+            [
+                "_offset",
+                "mag_index",
+                "_calibration"
+            ],
+            0
+        ],
+        "_last_calibration_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "_bias_corrected_sensor_offset__calibration_estimator_bias",
+                "mag_index",
+                "_bias_corrected_sensor_offset_mag_index",
+                "_calibration"
+            ],
+            0
+        ]
+    },
+    "UpdateMagCalibration": {
+        "max_var_allowed": [
+            [
+                "_5e",
+                "_f"
+            ],
+            1
+        ],
+        ".device_id": [
+            [
+                "estimator_sensor_bias_mag_device_id"
+            ],
+            0
+        ],
+        ".variance": [
+            [
+                "bias_variance"
+            ],
+            0
+        ],
+        "_last_calibration_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "min_var_allowed": [
+            [
+                "_5e"
+            ],
+            1
+        ],
+        "mag_cal_size": [
+            [
+                "sizeof__mag_cal"
+            ],
+            0
+        ],
+        ".offset": [
+            [
+                "mag_cal_offset"
+            ],
+            0
+        ]
+    },
+    "UpdatePowerCompensation": {
+        "power": [
+            [
+                "bat_stat_current_a"
+            ],
+            0
+        ],
+        "thrust_setpoint": [
+            [
+                "vector3f_vehicle_thrust_setpoint_xyz"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "out.calibration_count": [
+            [
+                "_calibration_count",
+                "_calibration",
+                "instance"
+            ],
+            0
+        ],
+        "was_advertised": [
+            [
+                "uorb_index",
+                "_advertised"
+            ],
+            0
+        ],
+        "out.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "out.timestamp_sample": [
+            [
+                "_data_sum_count",
+                "_timestamp_sample_sum",
+                "instance"
+            ],
+            1
+        ],
+        "interval_us": [
+            [
+                "_param_sens_mag_rate_get",
+                "1e6f"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "vehicle_control_mode_flag_armed"
+            ],
+            0
+        ],
+        "publish": [
+            [
+                "_data_sum_count",
+                "_timestamp_sample_sum",
+                "instance",
+                "1_s",
+                "hrt_absolute_time"
+            ],
+            2
+        ],
+        "_selected_sensor_sub_index": [
+            [
+                "best_index"
+            ],
+            0
+        ],
+        "magnetometer_data": [
+            [
+                "_data_sum",
+                "_data_sum_count",
+                "instance"
+            ],
+            0
+        ],
+        "multi_mode": [
+            [
+                "_param_sens_mag_mode_get"
+            ],
+            0
+        ],
+        "out.device_id": [
+            [
+                "_device_id",
+                "_calibration",
+                "instance"
+            ],
+            0
+        ],
+        "parameter_update": [
+            [
+                "parameters_update"
+            ],
+            0
+        ]
+    },
+    "CheckFailover": {
+        "_last_failover_count": [
+            [
+                "_voter_failover_count"
+            ],
+            0
+        ],
+        "failover_index": [
+            [
+                "_voter_failover_index"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "_voter_failover_state"
+            ],
+            0
+        ],
+        "_last_error_message": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "failover_reason": [
+            [
+                "stale_data",
+                "no_data",
+                "high_error_density",
+                "timeout",
+                "high_error_count"
+            ],
+            0
+        ]
+    },
+    "calcMagInconsistency": {
+        "preflt.mag_inconsistency_angle": [
+            [
+                "max_mag_angle_diff_max",
+                "max_check_index",
+                "max__mag_angle_diff"
+            ],
+            1
+        ],
+        "preflt.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "angle_error": [
+            [
+                "_angle",
+                "axis_anglef_current_mag",
+                "axis_anglef_primary_mag",
+                "axis_anglef_quatf"
+            ],
+            0
+        ]
+    },
+    "UpdateStatus": {
+        "sensors_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sensors_status.device_id_primary": [
+            [
+                "_selected_sensor_sub_index",
+                "_device_id",
+                "_calibration"
+            ],
+            0
+        ],
+        "mean": [
+            [
+                "_last_data",
+                "sensor_count",
+                "sensor_index"
+            ],
+            0
+        ]
+    }
+}

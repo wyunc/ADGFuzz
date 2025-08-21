@@ -1,0 +1,98 @@
+{
+    "AddPubSub": {
+        "meta": [
+            [
+                "get_orb_meta_orb_i_di"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_filename"
+            ],
+            0
+        ]
+    },
+    "SetNetworkConfig": {
+        "fp": [
+            [
+                "fopen_zenoh_net_config_path"
+            ],
+            0
+        ]
+    },
+    "get_csv_field": {
+        "tok": [
+            [
+                "strtok_line"
+            ],
+            0
+        ]
+    },
+    "getNetworkConfig": {
+        "config_mode": [
+            [
+                "char",
+                "get_csv_field_buffer"
+            ],
+            0
+        ],
+        "config_locator": [
+            [
+                "get_csv_field_buffer"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_zenoh_net_config_path"
+            ],
+            0
+        ]
+    },
+    "getLineCount": {
+        "fp": [
+            [
+                "fopen_filename"
+            ],
+            0
+        ]
+    },
+    "getPubSubMapping": {
+        "config_topic": [
+            [
+                "get_csv_field_buffer"
+            ],
+            0
+        ],
+        "fp_mapping": [
+            [
+                "null",
+                "fopen_filename"
+            ],
+            0
+        ],
+        "config_type": [
+            [
+                "get_csv_field_buffer"
+            ],
+            0
+        ]
+    },
+    "generate_clean_config": {
+        "fp": [
+            [
+                "fopen_zenoh_pub_config_path",
+                "fopen_zenoh_sub_config_path",
+                "fopen_zenoh_net_config_path"
+            ],
+            0
+        ],
+        "dir": [
+            [
+                "opendir_zenoh_root_path"
+            ],
+            0
+        ]
+    }
+}

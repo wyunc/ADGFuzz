@@ -1,0 +1,57 @@
+{
+    "init": {
+        "dev": [
+            [
+                "hal_i2c_mgr_get_device_get_bus",
+                "dlvr_i2c_addr"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "temperature_sum": [
+            [
+                "data",
+                "temperature_mask",
+                "temperature_shift"
+            ],
+            2
+        ],
+        "pressure_sum": [
+            [
+                "pressure_mask",
+                "data",
+                "pressure_shift",
+                "dlvr_scale",
+                "range_in_h2o",
+                "dlvr_offset",
+                "inch_of_h2o_to_pascal"
+            ],
+            2
+        ],
+        "last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_differential_pressure": {
+        "_pressure": [
+            [
+                "press_count",
+                "pressure_sum"
+            ],
+            1
+        ]
+    },
+    "get_temperature": {
+        "_temperature": [
+            [
+                "temperature_sum",
+                "temp_count"
+            ],
+            1
+        ]
+    }
+}

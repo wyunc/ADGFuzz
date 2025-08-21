@@ -1,0 +1,1216 @@
+{
+    "update_50hz": {
+        "_height_filter.dd_height": [
+            [
+                "_height_filter_height",
+                "baro_get_altitude",
+                "_hgt_comp_filt_omega",
+                "_hgt_comp_filt_omega",
+                "dt"
+            ],
+            4
+        ],
+        "_height_filter.height": [
+            [
+                "_height",
+                "dt",
+                "_height_filter_height",
+                "baro_get_altitude",
+                "_height_filter_height",
+                "baro_get_altitude",
+                "_ahrs_get_accel_ef_z",
+                "gravity_mss",
+                "_hgt_comp_filt_omega",
+                "_height_filter_dd_height",
+                "velned_z",
+                "dt",
+                "_hgt_comp_filt_omega"
+            ],
+            7
+        ],
+        "DT": [
+            [
+                "micros64",
+                "_0e"
+            ],
+            1
+        ],
+        "_update_50hz_last_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "_flags.reset": [
+            [
+                "dt"
+            ],
+            0
+        ]
+    },
+    "_update_speed": {
+        "velRateMax": [
+            [
+                "_st_edot_max",
+                "_tas_state",
+                "eas2tas",
+                "aparm_airspeed_min"
+            ],
+            0
+        ],
+        "velRateMin": [
+            [
+                "_st_edot_min",
+                "_tas_state",
+                "eas2tas",
+                "aparm_airspeed_min"
+            ],
+            0
+        ],
+        "_TAS_state": [
+            [
+                "min_airspeed",
+                "_tas_state",
+                "tas_input",
+                "dt",
+                "_eas",
+                "eas2tas"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "_TASmax": [
+            [
+                "_ta_smax",
+                "aparm_airspeed_max",
+                "aparm_airspeed_cruise",
+                "_dt",
+                "vel_rate_max",
+                "eas2tas",
+                "vel_rate_min",
+                "_ta_smin"
+            ],
+            0
+        ],
+        "aspdErr": [
+            [
+                "eas2tas",
+                "_tas_state",
+                "_eas"
+            ],
+            0
+        ],
+        "integDTAS_input": [
+            [
+                "aspd_err",
+                "integ_dtas_input",
+                "_spd_comp_filt_omega"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "gravity_mss",
+                "ins_get_accel_x",
+                "rot_mat_c_x"
+            ],
+            0
+        ],
+        "TAS_input": [
+            [
+                "aspd_err",
+                "_integ_dtas_state",
+                "_vdot_filter_apply_temp",
+                "_spd_comp_filt_omega"
+            ],
+            1
+        ],
+        "_vel_dot_lpf": [
+            [
+                "dt",
+                "time_constant",
+                "_vdot_filter_apply_temp"
+            ],
+            2
+        ],
+        "_TAS_dem": [
+            [
+                "_eas_dem",
+                "eas2tas"
+            ],
+            0
+        ],
+        "use_airspeed": [
+            [
+                "_use_synthetic_airspeed_once",
+                "_use_synthetic_airspeed_get",
+                "_ahrs_using_airspeed_sensor"
+            ],
+            0
+        ],
+        "_integDTAS_state": [
+            [
+                "integ_dtas_input",
+                "_integ_dtas_state",
+                "dt"
+            ],
+            0
+        ],
+        "EAS2TAS": [
+            [
+                "_ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "_TASmin": [
+            [
+                "_load_factor",
+                "aparm_airspeed_stall",
+                "eas2tas",
+                "_ta_smin",
+                "aparm_airspeed_min"
+            ],
+            0
+        ],
+        "_EAS": [
+            [
+                "aparm_airspeed_max_get",
+                "aparm_airspeed_cruise_get_floataparm_airspeed_min_get",
+                "float"
+            ],
+            0
+        ]
+    },
+    "_update_speed_demand": {
+        "_TAS_dem": [
+            [
+                "_sink_fraction",
+                "_ta_smax",
+                "_ta_smin",
+                "_tas_dem"
+            ],
+            0
+        ],
+        "_TAS_rate_dem_lpf": [
+            [
+                "_tas_rate_dem_lpf",
+                "_tas_rate_dem",
+                "time_constant",
+                "_dt"
+            ],
+            1
+        ],
+        "velRateMin": [
+            [
+                "linear_interpolate__ta_smax",
+                "linear_interpolate__tas_state",
+                "linear_interpolate_ta_scruise",
+                "linear_interpolate_vel_rate_neg_cruise",
+                "linear_interpolate_vel_rate_neg_max"
+            ],
+            0
+        ],
+        "velRateMax": [
+            [
+                "_st_edot_max",
+                "_tas_state"
+            ],
+            0
+        ],
+        "_TAS_rate_dem": [
+            [
+                "tas_dem_previous",
+                "vel_rate_max",
+                "_dt",
+                "_tas_dem",
+                "vel_rate_min"
+            ],
+            0
+        ],
+        "TAScruise": [
+            [
+                "aparm_airspeed_cruise",
+                "_ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "velRateNegMax": [
+            [
+                "_ta_smax",
+                "_st_edot_neg_max"
+            ],
+            0
+        ],
+        "TAS_dem_previous": [
+            [
+                "_tas_dem_adj"
+            ],
+            0
+        ],
+        "velRateNegCruise": [
+            [
+                "ta_scruise",
+                "_st_edot_min"
+            ],
+            0
+        ],
+        "_TAS_dem_adj": [
+            [
+                "_tas_state",
+                "_ta_smax",
+                "_tas_dem_adj",
+                "tas_dem_previous",
+                "vel_rate_max",
+                "_ta_smin",
+                "_dt",
+                "_tas_dem",
+                "vel_rate_min"
+            ],
+            0
+        ]
+    },
+    "_update_height_demand": {
+        "_post_TO_hgt_offset": [
+            [
+                "_dt",
+                "_hgt_dem_tconst"
+            ],
+            1
+        ],
+        "_sink_fraction": [
+            [
+                "_hgt_dem_in",
+                "_dt",
+                "_max_sink_rate",
+                "_max_sink_rate_approach"
+            ],
+            4
+        ],
+        "_hgt_dem_rate_ltd": [
+            [
+                "_height",
+                "_dt",
+                "_hgt_dem_in",
+                "_max_sink_rate",
+                "_max_sink_rate_approach",
+                "_max_climb_rate"
+            ],
+            3
+        ],
+        "_hgt_dem_in_prev": [
+            [
+                "_height",
+                "_hgt_dem_in"
+            ],
+            0
+        ],
+        "_max_sink_scaler": [
+            [
+                "_dt",
+                "_hgt_dem_tconst"
+            ],
+            1
+        ],
+        "_hgt_dem": [
+            [
+                "_height",
+                "_hgt_dem_tconst",
+                "_post_to_hgt_offset",
+                "_hgt_afe",
+                "_hgt_afe",
+                "_dt",
+                "_hgt_dem_tconst",
+                "_land_sink_rate_change",
+                "_distance_beyond_land_wp",
+                "_land_sink",
+                "_hgt_afe",
+                "_flare_holdoff_hgt",
+                "_hgt_afe",
+                "_climb_rate",
+                "_hgt_afe",
+                "_flare_holdoff_hgt",
+                "_hgt_afe",
+                "_dt",
+                "_hgt_dem_tconst",
+                "_land_sink_rate_change",
+                "_distance_beyond_land_wp",
+                "_land_sink",
+                "_hgt_afe",
+                "_flare_holdoff_hgt",
+                "_hgt_afe",
+                "_climb_rate"
+            ],
+            7
+        ],
+        "_flight_stage": [
+            [
+                "takeoff",
+                "abort_landing"
+            ],
+            0
+        ],
+        "_hgt_dem_lpf": [
+            [
+                "_height",
+                "_dt",
+                "_hgt_dem_tconst"
+            ],
+            1
+        ],
+        "_thr_clip_status": [
+            [
+                "min",
+                "_landing_is_flaring"
+            ],
+            0
+        ],
+        "_SEBdot_dem_clip": [
+            [
+                "max",
+                "min"
+            ],
+            0
+        ],
+        "_max_climb_scaler": [
+            [
+                "_dt",
+                "_hgt_dem_tconst"
+            ],
+            1
+        ]
+    },
+    "_detect_underspeed": {
+        "_underspeed_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_update_energies": {
+        "_SKE_dem": [
+            [
+                "_tas_dem_adj"
+            ],
+            0
+        ],
+        "_SPE_est": [
+            [
+                "_height",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_SKE_est": [
+            [
+                "_tas_state"
+            ],
+            0
+        ],
+        "_SKEdot": [
+            [
+                "_vel_dot_lpf",
+                "_vel_dot",
+                "_tas_state"
+            ],
+            0
+        ],
+        "_SKEdot_dem": [
+            [
+                "_tas_rate_dem",
+                "_tas_rate_dem_lpf",
+                "_tas_state"
+            ],
+            0
+        ],
+        "_SPEdot": [
+            [
+                "gravity_mss",
+                "_climb_rate"
+            ],
+            0
+        ],
+        "_SPE_dem": [
+            [
+                "_hgt_dem",
+                "gravity_mss"
+            ],
+            0
+        ]
+    },
+    "_update_throttle_with_airspeed": {
+        "SPE_err_max": [
+            [
+                "_ta_smin",
+                "_ske_est",
+                "spe_err_min"
+            ],
+            0
+        ],
+        "_throttle_dem": [
+            [
+                "_integ_thr_state",
+                "_ste_error",
+                "k_ste2thr",
+                "_land_throttle_damp",
+                "_thr_damp",
+                "_th_rmaxf",
+                "st_edot_error",
+                "k_thr2ste",
+                "nom_thr",
+                "st_edot_dem"
+            ],
+            2
+        ],
+        "_integTHR_state": [
+            [
+                "_integ_thr_state",
+                "_dt",
+                "_ste_error",
+                "max_amp",
+                "_th_rminf",
+                "k_ste2thr",
+                "_th_rmaxf",
+                "max_amp",
+                "_get_i_gain"
+            ],
+            2
+        ],
+        "K_STE2Thr": [
+            [
+                "time_constant",
+                "k_thr2ste"
+            ],
+            0
+        ],
+        "nomThr": [
+            [
+                "aparm_throttle_cruise"
+            ],
+            0
+        ],
+        "_STE_error": [
+            [
+                "_spe_est",
+                "_spe_dem",
+                "_ske_est",
+                "spe_err_min",
+                "spe_err_max",
+                "_ske_dem"
+            ],
+            0
+        ],
+        "thrRateIncr": [
+            [
+                "_th_rmaxf",
+                "aparm_throttle_slewrate",
+                "_landing_get_throttle_slewrate",
+                "th_rminf_clipped_to_zero",
+                "_dt"
+            ],
+            2
+        ],
+        "_STEdotErrLast": [
+            [
+                "st_edot_error"
+            ],
+            0
+        ],
+        "K_thr2STE": [
+            [
+                "_st_edot_min",
+                "_st_edot_max",
+                "_th_rminf",
+                "_th_rmaxf"
+            ],
+            0
+        ],
+        "SPE_err_min": [
+            [
+                "_ta_smax",
+                "_ske_est"
+            ],
+            0
+        ],
+        "maxAmp": [
+            [
+                "_th_rmaxf",
+                "th_rminf_clipped_to_zero"
+            ],
+            0
+        ],
+        "cosPhi": [
+            [
+                "sqrtf_rot_mat_a_y",
+                "rot_mat_b_y"
+            ],
+            0
+        ],
+        "_SPEdot_dem": [
+            [
+                "time_constant",
+                "_spe_est",
+                "_spe_dem"
+            ],
+            0
+        ],
+        "STEdot_error": [
+            [
+                "_dt",
+                "_st_edot_err_last",
+                "_sk_edot",
+                "_sp_edot",
+                "st_edot_dem",
+                "st_edot_error"
+            ],
+            1
+        ],
+        "STEdot_dem": [
+            [
+                "_sk_edot_dem",
+                "_st_edot_min",
+                "_roll_comp",
+                "st_edot_dem",
+                "cos_phi",
+                "_sp_edot_dem",
+                "_st_edot_max"
+            ],
+            0
+        ],
+        "THRminf_clipped_to_zero": [
+            [
+                "_th_rmaxf",
+                "_th_rminf"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ]
+    },
+    "constrain_throttle": {
+        "_throttle_dem": [
+            [
+                "_th_rmaxf",
+                "_th_rminf"
+            ],
+            0
+        ],
+        "_thr_clip_status": [
+            [
+                "max",
+                "none",
+                "min"
+            ],
+            0
+        ]
+    },
+    "_get_i_gain": {
+        "i_gain": [
+            [
+                "_integ_gain_land",
+                "_integ_gain_takeoff",
+                "_integ_gain"
+            ],
+            0
+        ]
+    },
+    "_update_throttle_without_airspeed": {
+        "cosPhi": [
+            [
+                "rot_mat_b_y",
+                "sqrtf_rot_mat_a_y"
+            ],
+            0
+        ],
+        "_thr_clip_status": [
+            [
+                "none"
+            ],
+            0
+        ],
+        "STEdot_dem": [
+            [
+                "cos_phi",
+                "_roll_comp"
+            ],
+            0
+        ],
+        "_throttle_dem": [
+            [
+                "_pitc_hminf",
+                "_st_edot_max",
+                "nom_thr",
+                "_st_edot_min",
+                "_th_rmaxf",
+                "_pitch_measured_lpf_get",
+                "radians_pitch_trim_deg",
+                "_pitch_dem",
+                "_pitch_demand_lpf_get",
+                "_pitc_hmaxf",
+                "_th_rminf",
+                "st_edot_dem"
+            ],
+            3
+        ],
+        "nomThr": [
+            [
+                "throttle_nudge",
+                "aparm_throttle_cruise",
+                "_land_throttle"
+            ],
+            0
+        ],
+        "rotMat": [
+            [
+                "_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ]
+    },
+    "_detect_bad_descent": {
+        "STEdot": [
+            [
+                "_sk_edot",
+                "_sp_edot"
+            ],
+            0
+        ]
+    },
+    "_update_pitch": {
+        "SEBdot_dem_total": [
+            [
+                "_pitc_hminf",
+                "se_bdot_dem",
+                "se_bdot_error",
+                "_ptch_damp",
+                "_land_damp",
+                "_land_pitch_damp",
+                "gain_inv"
+            ],
+            1
+        ],
+        "SPE_weighting": [
+            [
+                "spe_weighting",
+                "_ske_weighting"
+            ],
+            0
+        ],
+        "SEB_est": [
+            [
+                "_ske_est",
+                "_spe_est",
+                "spe_weighting",
+                "_ske_weighting"
+            ],
+            0
+        ],
+        "SEB_error": [
+            [
+                "seb_est",
+                "seb_dem"
+            ],
+            0
+        ],
+        "KE_integ_limit": [
+            [
+                "gain_inv",
+                "_pitc_hmaxf",
+                "_pitc_hminf"
+            ],
+            0
+        ],
+        "integSEBdot_min": [
+            [
+                "_pitc_hminf",
+                "se_bdot_dem_total",
+                "gain_inv",
+                "radians"
+            ],
+            0
+        ],
+        "_integSEBdot": [
+            [
+                "_integ_se_bdot",
+                "integ_se_bdot_min",
+                "integ_se_bdot_max",
+                "integ_seb_delta",
+                "time_constant",
+                "_dt"
+            ],
+            1
+        ],
+        "_SKE_weighting": [
+            [
+                "_spd_weight",
+                "_spd_weight",
+                "_path_proportion",
+                "_spd_weight_land",
+                "_ske_weighting"
+            ],
+            1
+        ],
+        "integSEB_delta": [
+            [
+                "se_bdot_error",
+                "_get_i_gain_integ_seb_range",
+                "_get_i_gain__dt"
+            ],
+            0
+        ],
+        "_last_pitch_dem": [
+            [
+                "ptch_rate_incr",
+                "_pitc_hmaxf",
+                "_pitc_hminf",
+                "se_bdot_dem_total",
+                "_integ_se_bdot",
+                "_integ_ke",
+                "_tas_dem_adj",
+                "gain_inv",
+                "_pitch_ff_v0",
+                "integ_seb_delta",
+                "_pitch_ff_k"
+            ],
+            2
+        ],
+        "SEB_dem": [
+            [
+                "_ske_dem",
+                "_spe_dem",
+                "spe_weighting",
+                "_ske_weighting"
+            ],
+            0
+        ],
+        "ptchRateIncr": [
+            [
+                "_tas_state",
+                "_vert_acc_lim",
+                "_dt"
+            ],
+            0
+        ],
+        "SEBdot_dem_max": [
+            [
+                "_max_climb_rate",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_integKE": [
+            [
+                "ke_integ_limit",
+                "time_constant",
+                "_ske_est",
+                "_dt",
+                "_integ_ke",
+                "_ske_dem",
+                "_ske_weighting",
+                "time_constant",
+                "_dt"
+            ],
+            1
+        ],
+        "SEBdot_dem_min": [
+            [
+                "gravity_mss",
+                "_max_sink_rate"
+            ],
+            0
+        ],
+        "SEBdot_est": [
+            [
+                "_sk_edot",
+                "spe_weighting",
+                "_ske_weighting",
+                "_sp_edot"
+            ],
+            0
+        ],
+        "_SEBdot_dem_clip": [
+            [
+                "min",
+                "max",
+                "none"
+            ],
+            0
+        ],
+        "integSEB_range": [
+            [
+                "integ_se_bdot_max",
+                "integ_se_bdot_min"
+            ],
+            0
+        ],
+        "SEBdot_error": [
+            [
+                "se_bdot_est",
+                "se_bdot_dem"
+            ],
+            0
+        ],
+        "SEBdot_dem": [
+            [
+                "time_constant",
+                "se_bdot_dem_min",
+                "seb_error",
+                "gravity_mss",
+                "_hgt_rate_dem",
+                "spe_weighting",
+                "se_bdot_dem_max"
+            ],
+            0
+        ],
+        "gainInv": [
+            [
+                "_tas_state",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "integSEBdot_max": [
+            [
+                "_pitc_hmaxf",
+                "gain_inv",
+                "radians",
+                "se_bdot_dem_total"
+            ],
+            0
+        ]
+    },
+    "_initialise_states": {
+        "_hgt_dem": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_last_throttle_dem": [
+            [
+                "aparm_throttle_cruise"
+            ],
+            0
+        ],
+        "_hgt_dem_lpf": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_hgt_dem_in_raw": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_hgt_afe": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_TAS_dem_adj": [
+            [
+                "_tas_dem"
+            ],
+            0
+        ],
+        "fc": [
+            [
+                "m_2pi",
+                "_time_const"
+            ],
+            0
+        ],
+        "_hgt_dem_prev": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_last_pitch_dem": [
+            [
+                "_ahrs_get_pitch"
+            ],
+            0
+        ],
+        "_post_TO_hgt_offset": [
+            [
+                "hgt_afe",
+                "_hgt_dem_tconst",
+                "_climb_rate_limit"
+            ],
+            0
+        ],
+        "_hgt_dem_rate_ltd": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_hgt_dem_in_prev": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ]
+    },
+    "_update_STE_rate_lim": {
+        "_STEdot_neg_max": [
+            [
+                "_max_sink_rate",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_STEdot_min": [
+            [
+                "_min_sink_rate",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_STEdot_max": [
+            [
+                "_climb_rate_limit",
+                "gravity_mss"
+            ],
+            0
+        ]
+    },
+    "update_pitch_throttle": {
+        "_flags.is_gliding": [
+            [
+                "_flags_propulsion_failed",
+                "_flags_gliding_requested",
+                "aparm_throttle_max"
+            ],
+            0
+        ],
+        "max_descent_condition": [
+            [
+                "_thr_clip_status",
+                "min",
+                "_pitch_dem_unc",
+                "_pitc_hminf"
+            ],
+            0
+        ],
+        "_hgt_afe": [
+            [
+                "hgt_afe"
+            ],
+            0
+        ],
+        "_DT": [
+            [
+                "micros64",
+                "_0e",
+                "_dt"
+            ],
+            1
+        ],
+        "_flight_stage": [
+            [
+                "abort_landing",
+                "flight_stage",
+                "takeoff"
+            ],
+            0
+        ],
+        "_update_pitch_throttle_last_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "_EAS_dem": [
+            [
+                "eas_dem_cm"
+            ],
+            0
+        ],
+        "_load_factor": [
+            [
+                "load_factor"
+            ],
+            0
+        ],
+        "_DT_for_update_50hz": [
+            [
+                "_update_50hz_last_usec",
+                "micros64",
+                "_0e"
+            ],
+            1
+        ],
+        "_flags.is_doing_auto_land": [
+            [
+                "land",
+                "flight_stage"
+            ],
+            0
+        ],
+        "_hgt_dem_in": [
+            [
+                "hgt_dem_cm",
+                "_hgt_dem_in_prev"
+            ],
+            1
+        ],
+        "_distance_beyond_land_wp": [
+            [
+                "distance_beyond_land_wp"
+            ],
+            0
+        ]
+    },
+    "set_throttle_min": {
+        "_THRminf_ext": [
+            [
+                "thr_min"
+            ],
+            0
+        ]
+    },
+    "set_throttle_max": {
+        "_THRmaxf_ext": [
+            [
+                "thr_max"
+            ],
+            0
+        ]
+    },
+    "_update_throttle_limits": {
+        "_THRmaxf": [
+            [
+                "_th_rmaxf",
+                "_th_rmaxf_ext",
+                "_th_rminf"
+            ],
+            0
+        ],
+        "_THRminf": [
+            [
+                "_th_rmaxf",
+                "_th_rminf",
+                "_th_rminf_ext"
+            ],
+            0
+        ]
+    },
+    "set_pitch_min": {
+        "_PITCHminf_ext": [
+            [
+                "pitch_min"
+            ],
+            0
+        ]
+    },
+    "set_pitch_max": {
+        "_PITCHmaxf_ext": [
+            [
+                "pitch_max"
+            ],
+            0
+        ]
+    },
+    "_update_pitch_limits": {
+        "_pitch_min_at_flare_entry": [
+            [
+                "_pitc_hminf"
+            ],
+            0
+        ],
+        "_PITCHmaxf": [
+            [
+                "_pitc_hmaxf_ext",
+                "_pitch_max",
+                "_pitc_hminf",
+                "aparm_pitch_limit_max",
+                "radians__pitc_hmaxf",
+                "_land_pitch_max",
+                "_pitc_hmaxf"
+            ],
+            0
+        ],
+        "_PITCHminf": [
+            [
+                "_pitc_hminf",
+                "centi_degrees_to_radians_ptch_min_co_cd",
+                "_pitc_hminf",
+                "radians__pitc_hminf",
+                "aparm_pitch_limit_min",
+                "_land_time_const",
+                "flare_pitch_range",
+                "_dt",
+                "_pitch_min",
+                "_pitc_hminf_ext",
+                "_landing_get_pitch_cd",
+                "_hgt_at_start_of_flare",
+                "_hgt_afe"
+            ],
+            4
+        ]
+    },
+    "offset_altitude": {
+        "_flare_hgt_dem_ideal": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_hgt_dem_rate_ltd": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_hgt_dem_lpf": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_hgt_dem_in_prev": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_height_filter.height": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_hgt_at_start_of_flare": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_hgt_dem_prev": [
+            [
+                "alt_offset"
+            ],
+            0
+        ],
+        "_flare_hgt_dem_adj": [
+            [
+                "alt_offset"
+            ],
+            0
+        ]
+    }
+}

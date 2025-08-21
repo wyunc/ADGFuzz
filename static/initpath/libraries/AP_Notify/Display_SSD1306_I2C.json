@@ -1,0 +1,29 @@
+{
+    "hw_init": {
+        "success": [
+            [
+                "_dev_transfer_uint8_t",
+                "sizeof_init_seq",
+                "nullptr",
+                "init_seq"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "display_buffer": [
+            [
+                "0x40"
+            ],
+            0
+        ],
+        "command": [
+            [
+                "0x22",
+                "0x21",
+                "0x0"
+            ],
+            0
+        ]
+    }
+}

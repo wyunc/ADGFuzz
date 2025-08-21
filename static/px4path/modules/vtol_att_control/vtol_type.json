@@ -1,0 +1,277 @@
+{
+    "update_fw_state": {
+        "_tecs_running_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "progress": [
+            [
+                "throttle_blending_dur_s",
+                "1e",
+                "hrt_absolute_time",
+                "float",
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_last_thr_in_fw_mode": [
+            [
+                "_vehicle_thrust_setpoint_virtual_fw_xyz"
+            ],
+            0
+        ]
+    },
+    "update_transition_state": {
+        "_last_thr_in_mc": [
+            [
+                "_vehicle_thrust_setpoint_virtual_mc_xyz"
+            ],
+            0
+        ],
+        "_throttle_blend_start_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_last_loop_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_transition_dt": [
+            [
+                "hrt_absolute_time",
+                "float",
+                "1e6f",
+                "constrain__transition_dt"
+            ],
+            1
+        ],
+        "_time_since_trans_start": [
+            [
+                "hrt_absolute_time",
+                "float",
+                "_transition_start_timestamp",
+                "1e"
+            ],
+            1
+        ]
+    },
+    "isFrontTransitionCompleted": {
+        "ret": [
+            [
+                "is_front_transition_completed_base"
+            ],
+            0
+        ]
+    },
+    "isFrontTransitionCompletedBase": {
+        "airspeed_triggers_transition": [
+            [
+                "px4_isfinite__attc_get_calibrated_airspeed"
+            ],
+            0
+        ],
+        "transition_to_fw": [
+            [
+                "get_open_loop_front_transition_time",
+                "_time_since_trans_start"
+            ],
+            1
+        ],
+        "minimum_trans_time_elapsed": [
+            [
+                "get_minimum_front_transition_time",
+                "_time_since_trans_start"
+            ],
+            0
+        ]
+    },
+    "resetTransitionStates": {
+        "_time_since_trans_start": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_transition_start_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_local_position_z_start_of_transition": [
+            [
+                "_local_pos_z"
+            ],
+            0
+        ]
+    },
+    "isQuadchuteEnabled": {
+        "dist_to_ground": [
+            [
+                "_local_pos_z",
+                "_attc_get_home_position_z",
+                "_f",
+                "_local_pos_dist_bottom"
+            ],
+            1
+        ]
+    },
+    "isUncommandedDescent": {
+        "_quadchute_ref_alt": [
+            [
+                "_local_pos_ref_alt",
+                "_local_pos_z",
+                "nan"
+            ],
+            1
+        ]
+    },
+    "isFrontTransitionAltitudeLoss": {
+        "result": [
+            [
+                "_local_pos_z",
+                "_local_position_z_start_of_transition",
+                "_param_vt_qc_t_alt_loss_get"
+            ],
+            0
+        ]
+    },
+    "handleEkfResets": {
+        "_quadchute_ref_alt": [
+            [
+                "_local_pos_delta_z"
+            ],
+            0
+        ],
+        "_altitude_reset_counter": [
+            [
+                "_local_pos_z_reset_counter"
+            ],
+            0
+        ],
+        "_local_position_z_start_of_transition": [
+            [
+                "_local_pos_delta_z"
+            ],
+            0
+        ]
+    },
+    "isPitchExceeded": {
+        "euler": [
+            [
+                "quatf__v_att_q"
+            ],
+            0
+        ]
+    },
+    "isRollExceeded": {
+        "euler": [
+            [
+                "quatf__v_att_q"
+            ],
+            0
+        ]
+    },
+    "check_quadchute_condition": {
+        "reason": [
+            [
+                "get_quadchute_reason"
+            ],
+            0
+        ]
+    },
+    "pusher_assist": {
+        "R_yaw": [
+            [
+                "eulerf_euler"
+            ],
+            0
+        ],
+        "roll_new": [
+            [
+                "asinf_body_z_sp"
+            ],
+            0
+        ],
+        "yaw_error": [
+            [
+                "wrap_pi_euler_sp",
+                "euler"
+            ],
+            0
+        ],
+        "pitch_new": [
+            [
+                "radians__param_vt_pitch_min_get",
+                "_f"
+            ],
+            1
+        ],
+        "pitch_body": [
+            [
+                "atan2f_tilt_new",
+                "r_yaw_correction"
+            ],
+            1
+        ],
+        "roll_body": [
+            [
+                "asinf_tilt_new"
+            ],
+            0
+        ],
+        "R_yaw_correction": [
+            [
+                "eulerf_yaw_error"
+            ],
+            0
+        ],
+        "forward_thrust": [
+            [
+                "sinf_pitch_setpoint_min",
+                "constrain_forward_thrust",
+                "sinf_pitch_setpoint",
+                "_param_vt_fwd_thrust_sc_get"
+            ],
+            0
+        ],
+        "R_tmp": [
+            [
+                "eulerf_pitch_new",
+                "eulerf_roll_new"
+            ],
+            0
+        ],
+        "pitch_setpoint": [
+            [
+                "r_yaw",
+                "atan2f_body_z_sp"
+            ],
+            1
+        ],
+        "dist_to_ground": [
+            [
+                "_f",
+                "_local_pos_z",
+                "_local_pos_dist_bottom",
+                "_attc_get_home_position_z"
+            ],
+            1
+        ]
+    },
+    "getFrontTransitionTimeFactor": {
+        "rho0_over_rho": [
+            [
+                "constrain__attc_get_air_density",
+                "k_air_density_sea_level_standard_atmos"
+            ],
+            1
+        ]
+    }
+}

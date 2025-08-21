@@ -1,0 +1,131 @@
+{
+    "prepare_to_play_string": {
+        "_string": [
+            [
+                "string"
+            ],
+            0
+        ],
+        "_note_mode": [
+            [
+                "mode_normal"
+            ],
+            0
+        ]
+    },
+    "start_silence": {
+        "_note_start_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_note_duration_us": [
+            [
+                "1e6",
+                "duration"
+            ],
+            0
+        ]
+    },
+    "start_note": {
+        "msg.frequency": [
+            [
+                "frequency"
+            ],
+            0
+        ],
+        "_note_start_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "msg.duration": [
+            [
+                "duration",
+                "1e6",
+                "_0e"
+            ],
+            1
+        ],
+        "can_num_drivers": [
+            [
+                "can_get_num_drivers"
+            ],
+            0
+        ],
+        "uavcan": [
+            [
+                "get_dronecan_i"
+            ],
+            0
+        ]
+    },
+    "rest_duration": {
+        "rest_period": [
+            [
+                "dot_extension",
+                "rest_length",
+                "_tempo"
+            ],
+            1
+        ]
+    },
+    "next_action": {
+        "note_period": [
+            [
+                "next_number",
+                "float",
+                "dot_extension",
+                "next_number",
+                "next_number",
+                "_silence_duration"
+            ],
+            3
+        ],
+        "dots": [
+            [
+                "next_dots"
+            ],
+            0
+        ],
+        "num": [
+            [
+                "next_number"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "next_char"
+            ],
+            0
+        ],
+        "_note_mode": [
+            [
+                "mode_staccato",
+                "mode_normal",
+                "mode_legato"
+            ],
+            0
+        ],
+        "note_frequency": [
+            [
+                "next_number",
+                "note_tab",
+                "next_number",
+                "expf_logf",
+                "int"
+            ],
+            2
+        ],
+        "note_volume": [
+            [
+                "notify_get_buzz_volume",
+                "next_number"
+            ],
+            1
+        ]
+    }
+}

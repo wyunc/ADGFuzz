@@ -1,0 +1,91 @@
+{
+    "crsf_parse": {
+        "frame": [
+            [
+                "sizeof_crsf_frame_t",
+                "sizeof_current_frame_position"
+            ],
+            1
+        ],
+        "crsf_frame_ptr": [
+            [
+                "uint8_t",
+                "crsf_frame"
+            ],
+            0
+        ],
+        "parser_state": [
+            [
+                "unsynced"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "sizeof_crsf_frame_t",
+                "sizeof_current_frame_position"
+            ],
+            1
+        ],
+        "current_frame_position": [
+            [
+                "sizeof_crsf_frame_t",
+                "sizeof_current_frame_position"
+            ],
+            1
+        ]
+    },
+    "crsf_parse_buffer": {
+        "parser_state": [
+            [
+                "synced",
+                "unsynced"
+            ],
+            0
+        ],
+        "crsf_frame_ptr": [
+            [
+                "crsf_frame",
+                "uint8_t"
+            ],
+            0
+        ],
+        "rc_channels": [
+            [
+                "crsf_frame_payload",
+                "crsf_payload_rc_channels_packed_t"
+            ],
+            0
+        ],
+        "current_frame_position": [
+            [
+                "crsf_frame_header_length",
+                "sizeof_crsf_frame_header_t",
+                "i"
+            ],
+            2
+        ],
+        "crc": [
+            [
+                "crsf_frame_header_length",
+                "crsf_frame_payload"
+            ],
+            0
+        ],
+        "num_values": [
+            [
+                "max_channels"
+            ],
+            0
+        ]
+    },
+    "crsf_send_telemetry_flight_mode": {
+        "offset": [
+            [
+                "max_length",
+                "strlen_flight_mode"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "update": {
+        "state.distance_m": [
+            [
+                "sitl_get_rangefinder__instance"
+            ],
+            1
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "no_data"
+            ],
+            0
+        ]
+    }
+}

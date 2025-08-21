@@ -1,0 +1,326 @@
+{
+    "init": {
+        "_frame_type": [
+            [
+                "frame_type_frtype"
+            ],
+            0
+        ]
+    },
+    "setup_servo_output": {
+        "function": [
+            [
+                "get_motor_function_i"
+            ],
+            0
+        ]
+    },
+    "set_steering": {
+        "_steering": [
+            [
+                "steering"
+            ],
+            0
+        ],
+        "_scale_steering": [
+            [
+                "apply_scaling"
+            ],
+            0
+        ]
+    },
+    "set_throttle": {
+        "_throttle": [
+            [
+                "throttle",
+                "_throttle_max"
+            ],
+            0
+        ]
+    },
+    "set_lateral": {
+        "_lateral": [
+            [
+                "lateral"
+            ],
+            0
+        ]
+    },
+    "set_roll": {
+        "_roll": [
+            [
+                "roll"
+            ],
+            0
+        ]
+    },
+    "set_pitch": {
+        "_pitch": [
+            [
+                "pitch"
+            ],
+            0
+        ]
+    },
+    "set_walking_height": {
+        "_walking_height": [
+            [
+                "walking_height"
+            ],
+            0
+        ]
+    },
+    "set_mainsail": {
+        "_mainsail": [
+            [
+                "mainsail"
+            ],
+            0
+        ]
+    },
+    "set_wingsail": {
+        "_wingsail": [
+            [
+                "wingsail"
+            ],
+            0
+        ]
+    },
+    "set_mast_rotation": {
+        "_mast_rotation": [
+            [
+                "mast_rotation"
+            ],
+            0
+        ]
+    },
+    "get_slew_limited_throttle": {
+        "throttle_change_max": [
+            [
+                "float",
+                "static_cast",
+                "dt",
+                "_slew_rate"
+            ],
+            0
+        ]
+    },
+    "output": {
+        "limit.steer_left": [
+            [
+                "limit_throttle_upper",
+                "limit_steer_right",
+                "limit_throttle_lower"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "have_throttle": [
+            [
+                "function_assigned_k_throttle"
+            ],
+            0
+        ],
+        "have_throttle_right": [
+            [
+                "function_assigned_k_throttle_right"
+            ],
+            0
+        ],
+        "have_throttle_left": [
+            [
+                "function_assigned_k_throttle_left"
+            ],
+            0
+        ],
+        "function": [
+            [
+                "get_motor_function_i"
+            ],
+            0
+        ]
+    },
+    "add_omni_motor_num": {
+        "function": [
+            [
+                "get_motor_function_motor_num"
+            ],
+            0
+        ]
+    },
+    "output_regular": {
+        "throttle": [
+            [
+                "cosf_steering_angle_rad"
+            ],
+            1
+        ],
+        "steering": [
+            [
+                "_speed_scale_base",
+                "radians__vector_angle_max",
+                "fabsf_ground_speed",
+                "radians__vector_angle_max",
+                "atanf_steering_norm",
+                "atanf_throttle_norm"
+            ],
+            2
+        ],
+        "steering_norm": [
+            [
+                "fabsf_throttle_norm",
+                "fabsf_vector_angle_max_rad",
+                "fabsf_tanf"
+            ],
+            1
+        ]
+    },
+    "output_skid_steering": {
+        "motor_left": [
+            [
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_fair_scaler",
+                "_thrust_asymmetry",
+                "fabsf_steering_scaled",
+                "throttle",
+                "steering",
+                "linear_interpolate_fair_scaler",
+                "is_positive_steering_scaled",
+                "_thrust_asymmetry",
+                "_thrust_asymmetry",
+                "_thrust_asymmetry",
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_fair_scaler",
+                "_thrust_asymmetry",
+                "fabsf_steering_scaled",
+                "throttle",
+                "_thrust_asymmetry"
+            ],
+            7
+        ],
+        "fair_scaler": [
+            [
+                "fabsf_steering_scaled",
+                "fabsf_steering_scaled",
+                "_thrust_asymmetry"
+            ],
+            5
+        ],
+        "motor_right": [
+            [
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_fair_scaler",
+                "_thrust_asymmetry",
+                "fabsf_steering_scaled",
+                "throttle",
+                "steering",
+                "linear_interpolate_fair_scaler",
+                "is_positive_steering_scaled",
+                "_thrust_asymmetry",
+                "_thrust_asymmetry",
+                "_thrust_asymmetry",
+                "linear_interpolate_str_thr_mix",
+                "linear_interpolate_fair_scaler",
+                "_thrust_asymmetry",
+                "fabsf_steering_scaled",
+                "throttle",
+                "_thrust_asymmetry"
+            ],
+            7
+        ],
+        "str_thr_mix": [
+            [
+                "_steering_throttle_mix"
+            ],
+            0
+        ]
+    },
+    "output_omni": {
+        "scaled_throttle": [
+            [
+                "throttle"
+            ],
+            0
+        ],
+        "scaled_lateral": [
+            [
+                "lateral"
+            ],
+            0
+        ],
+        "output_scale": [
+            [
+                "fabsf_i",
+                "fabsf_thr_str_ltr_out"
+            ],
+            1
+        ],
+        "scaled_steering": [
+            [
+                "steering"
+            ],
+            0
+        ]
+    },
+    "output_throttle": {
+        "relay_high": [
+            [
+                "is_negative_reverse_multiplier",
+                "is_negative_throttle"
+            ],
+            0
+        ],
+        "relay_function": [
+            [
+                "brushed_reverse_2",
+                "brushed_reverse_4",
+                "brushed_reverse_3",
+                "brushed_reverse_1"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "get_rate_controlled_throttle_function",
+                "fabsf_throttle",
+                "get_rate_controlled_throttle_dt",
+                "get_rate_controlled_throttle_throttle",
+                "out_chan_get_reversed",
+                "get_scaled_throttle_throttle"
+            ],
+            1
+        ],
+        "out_chan": [
+            [
+                "get_channel_for_function"
+            ],
+            0
+        ]
+    },
+    "slew_limit_throttle": {
+        "_throttle_prev": [
+            [
+                "get_slew_limited_throttle_dt",
+                "get_slew_limited_throttle__throttle"
+            ],
+            1
+        ]
+    },
+    "get_scaled_throttle": {
+        "sign": [
+            [
+                "_throttle_min"
+            ],
+            1
+        ],
+        "throttle_pct": [
+            [
+                "_throttle_min"
+            ],
+            1
+        ]
+    }
+}

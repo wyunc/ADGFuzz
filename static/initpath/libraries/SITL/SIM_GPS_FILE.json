@@ -1,0 +1,25 @@
+{
+    "publish": {
+        "buf": [
+            [
+                "new_nothrow",
+                "nullptr",
+                "header_n",
+                "uint8_t"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "0x7fe53b04"
+            ],
+            0
+        ],
+        "lognum": [
+            [
+                "uint16_t__sitl_gps_log_num_get"
+            ],
+            0
+        ]
+    }
+}

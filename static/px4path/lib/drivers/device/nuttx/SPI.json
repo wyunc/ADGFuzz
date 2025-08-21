@@ -1,0 +1,71 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "px4_spibus_initialize_bus"
+            ],
+            0
+        ],
+        "bus": [
+            [
+                "get_device_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "init",
+                "probe"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "state": [
+            [
+                "px4_enter_critical_section"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "_transfer_len",
+                "_transfer_recv",
+                "_transfer_send"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "up_interrupt_context",
+                "lock_none",
+                "_locking_mode"
+            ],
+            0
+        ]
+    },
+    "transferhword": {
+        "result": [
+            [
+                "_transferhword_recv",
+                "_transferhword_send",
+                "_transferhword_len"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "px4_enter_critical_section"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "_locking_mode",
+                "up_interrupt_context",
+                "lock_none"
+            ],
+            0
+        ]
+    }
+}

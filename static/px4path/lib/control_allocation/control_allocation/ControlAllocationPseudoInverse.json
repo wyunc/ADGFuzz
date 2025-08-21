@@ -1,0 +1,48 @@
+{
+    "setEffectivenessMatrix": {
+        "_normalization_needs_update": [
+            [
+                "update_normalization_scale"
+            ],
+            0
+        ]
+    },
+    "updateControlAllocationMatrixScale": {
+        "pitch_norm_scale": [
+            [
+                "sqrtf__mix_col_norm_squared",
+                "_f",
+                "num_non_zero_pitch_torque"
+            ],
+            0
+        ],
+        "norm_sum": [
+            [
+                "_f",
+                "fabsf_axis_idx",
+                "fabsf_i",
+                "fabsf__mix"
+            ],
+            1
+        ],
+        "roll_norm_scale": [
+            [
+                "num_non_zero_roll_torque",
+                "sqrtf__mix_col_norm_squared",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "allocate": {
+        "_actuator_sp": [
+            [
+                "_control_trim",
+                "_actuator_trim",
+                "_control_sp",
+                "_mix"
+            ],
+            0
+        ]
+    }
+}

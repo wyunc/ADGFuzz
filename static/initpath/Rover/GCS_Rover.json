@@ -1,0 +1,38 @@
+{
+    "simple_input_active": {
+        "rover.g2.simple_type": [
+            [
+                "simple_initial_heading"
+            ],
+            0
+        ]
+    },
+    "supersimple_input_active": {
+        "rover.g2.simple_type": [
+            [
+                "simple_cardinal_directions"
+            ],
+            0
+        ]
+    },
+    "update_vehicle_sensor_status_flags": {
+        "s": [
+            [
+                "rangefinder_get_backend"
+            ],
+            0
+        ],
+        "proximity": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "rangefinder": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

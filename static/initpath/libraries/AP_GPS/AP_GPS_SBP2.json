@@ -1,0 +1,221 @@
+{
+    "inject_data": {
+        "last_injected_data_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_sbp_process": {
+        "parser_state.state": [
+            [
+                "waiting",
+                "get_len",
+                "get_sender",
+                "get_msg",
+                "get_type",
+                "get_crc"
+            ],
+            0
+        ],
+        "parser_state.msg_len": [
+            [
+                "port_read"
+            ],
+            1
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_parser_state_msg_buff",
+                "crc16_ccitt_parser_state_msg_len",
+                "parser_state_msg_type",
+                "crc16_ccitt_crc",
+                "crc16_ccitt_uint8_t",
+                "parser_state_sender_id"
+            ],
+            0
+        ],
+        "nleft": [
+            [
+                "port_available"
+            ],
+            0
+        ]
+    },
+    "_sbp_process_message": {
+        "last_heartbeat_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_attempt_state_update": {
+        "state.have_horizontal_accuracy": [
+            [
+                "is_zero_state_horizontal_accuracy"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "_0e",
+                "last_pos_llh_v_accuracy",
+                "float"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "last_pos_llh_h_accuracy",
+                "_0e",
+                "float"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.time_week": [
+            [
+                "last_gps_time_wn"
+            ],
+            0
+        ],
+        "state.location.alt": [
+            [
+                "int32_t",
+                "last_pos_llh_height"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "1e7",
+                "double",
+                "last_pos_llh_lon",
+                "int32_t"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "last_dops_hdop"
+            ],
+            0
+        ],
+        "last_full_update_tow": [
+            [
+                "last_vel_ned_tow"
+            ],
+            0
+        ],
+        "state.have_vertical_accuracy": [
+            [
+                "is_zero_state_vertical_accuracy"
+            ],
+            0
+        ],
+        "last_full_update_wn": [
+            [
+                "last_gps_time_wn"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d",
+                "no_fix",
+                "gps_ok_fix_3d_dgps",
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d_rtk_float"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "last_pos_llh_n_sats"
+            ],
+            0
+        ],
+        "state.have_speed_accuracy": [
+            [
+                "is_zero_state_speed_accuracy"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "last_dops_vdop"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "1e7",
+                "double",
+                "int32_t",
+                "last_pos_llh_lat"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "last_vel_ned_tow"
+            ],
+            0
+        ]
+    },
+    "_detect": {
+        "heartbeat": [
+            [
+                "sbp_heartbeat_t",
+                "struct",
+                "state_heartbeat_buff"
+            ],
+            0
+        ],
+        "state.msg_len": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "state.crc_so_far": [
+            [
+                "crc16_ccitt_data",
+                "crc16_ccitt_state_crc_so_far"
+            ],
+            0
+        ],
+        "state.state": [
+            [
+                "get_crc",
+                "waiting",
+                "get_sender",
+                "get_msg",
+                "get_type",
+                "get_len"
+            ],
+            0
+        ]
+    },
+    "logging_log_raw_sbp": {
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "pages": [
+            [
+                "msg_len"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,543 @@
+{
+    "turn_distance": {
+        "turn_angle": [
+            [
+                "fabsf_turn_angle"
+            ],
+            0
+        ],
+        "wp_radius": [
+            [
+                "sq__ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "distance_90": [
+            [
+                "turn_distance_wp_radius"
+            ],
+            0
+        ]
+    },
+    "loiter_radius": {
+        "sea_level_radius": [
+            [
+                "sq_nominal_velocity_sea_level",
+                "gravity_mss",
+                "tanf_radians",
+                "tanf_sanitized_bank_limit"
+            ],
+            1
+        ],
+        "eas2tas_sq": [
+            [
+                "sq__ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "sanitized_bank_limit": [
+            [
+                "_loiter_bank_limit"
+            ],
+            0
+        ],
+        "nominal_velocity_sea_level": [
+            [
+                "_tecs_get_target_airspeed"
+            ],
+            0
+        ]
+    },
+    "_prevent_indecision": {
+        "Nu": [
+            [
+                "_last_nu"
+            ],
+            0
+        ],
+        "Nu_limit": [
+            [
+                "m_pi"
+            ],
+            0
+        ]
+    },
+    "update_waypoint": {
+        "xtrackVel": [
+            [
+                "a_air_unit",
+                "b_air_unit",
+                "ab",
+                "sinf_get_yaw",
+                "vector2f_cosf",
+                "vector2f_get_yaw",
+                "ground_speed",
+                "_ahrs_groundspeed_vector"
+            ],
+            1
+        ],
+        "_latAccDem": [
+            [
+                "k_l1",
+                "sinf_nu",
+                "ground_speed",
+                "_l1_dist"
+            ],
+            0
+        ],
+        "ltrackVel": [
+            [
+                "a_air_unit",
+                "b_air_unit",
+                "ab",
+                "sinf_get_yaw",
+                "vector2f_cosf",
+                "vector2f_get_yaw",
+                "ground_speed",
+                "_ahrs_groundspeed_vector"
+            ],
+            1
+        ],
+        "Nu": [
+            [
+                "nu1",
+                "atan2f_xtrack_vel",
+                "nu2",
+                "nu",
+                "atan2f_ltrack_vel"
+            ],
+            0
+        ],
+        "Nu2": [
+            [
+                "atan2f_ltrack_vel",
+                "atan2f_xtrack_vel"
+            ],
+            0
+        ],
+        "_bearing_error": [
+            [
+                "nu"
+            ],
+            0
+        ],
+        "A_air": [
+            [
+                "prev_wp_get_distance_ne__current_loc"
+            ],
+            0
+        ],
+        "_target_bearing_cd": [
+            [
+                "_current_loc_get_bearing_to_next_wp"
+            ],
+            0
+        ],
+        "_nav_bearing": [
+            [
+                "nu1",
+                "atan2f_b_air_unit_y",
+                "wrap_pi_ab_y",
+                "atan2f_b_air_unit_x",
+                "atan2f_a_air_unit_x",
+                "wrap_pi_atan2f",
+                "atan2f_a_air_unit_y",
+                "wrap_pi_ab_x"
+            ],
+            0
+        ],
+        "_L1_xtrack_i_gain_prev": [
+            [
+                "_l1_xtrack_i_gain"
+            ],
+            0
+        ],
+        "A_air_unit": [
+            [
+                "a_air",
+                "_normalized"
+            ],
+            0
+        ],
+        "_last_Nu": [
+            [
+                "nu"
+            ],
+            0
+        ],
+        "moving_forwards": [
+            [
+                "m_pi_2",
+                "fabsf__groundspeed_vector_angle",
+                "get_yaw",
+                "fabsf_wrap_pi"
+            ],
+            0
+        ],
+        "B_air": [
+            [
+                "next_wp_get_distance_ne__current_loc"
+            ],
+            0
+        ],
+        "Nu1": [
+            [
+                "asinf_sine_nu1",
+                "_l1_xtrack_i"
+            ],
+            0
+        ],
+        "_last_update_waypoint_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "AB": [
+            [
+                "sinf_get_yaw",
+                "vector2f_cosf",
+                "_current_loc_get_distance_ne_next_wp",
+                "vector2f_get_yaw",
+                "prev_wp_get_distance_ne_next_wp"
+            ],
+            0
+        ],
+        "_L1_xtrack_i": [
+            [
+                "nu1",
+                "_l1_xtrack_i_gain",
+                "micros",
+                "_0e",
+                "_l1_xtrack_i"
+            ],
+            2
+        ],
+        "B_air_unit": [
+            [
+                "_normalized",
+                "b_air"
+            ],
+            0
+        ],
+        "WP_A_dist": [
+            [
+                "a_air_length"
+            ],
+            0
+        ],
+        "K_L1": [
+            [
+                "_l1_damping"
+            ],
+            0
+        ],
+        "sine_Nu1": [
+            [
+                "a_air",
+                "ab",
+                "_l1_dist",
+                "sine_nu1"
+            ],
+            1
+        ],
+        "_L1_dist": [
+            [
+                "_l1_damping",
+                "dist_min",
+                "_l1_period",
+                "ground_speed"
+            ],
+            0
+        ],
+        "groundSpeed": [
+            [
+                "_groundspeed_vector_length"
+            ],
+            0
+        ],
+        "alongTrackDist": [
+            [
+                "a_air",
+                "ab"
+            ],
+            0
+        ],
+        "AB_length": [
+            [
+                "ab_length"
+            ],
+            0
+        ]
+    },
+    "update_loiter": {
+        "xtrackVelCirc": [
+            [
+                "ltrack_vel_cap"
+            ],
+            0
+        ],
+        "latAccDemCap": [
+            [
+                "k_l1",
+                "ground_speed",
+                "sinf_nu",
+                "_l1_dist"
+            ],
+            0
+        ],
+        "_target_bearing_cd": [
+            [
+                "_current_loc_get_bearing_to_center_wp"
+            ],
+            0
+        ],
+        "_nav_bearing": [
+            [
+                "atan2f_a_air_unit_x",
+                "atan2f_a_air_unit_y"
+            ],
+            0
+        ],
+        "xtrackVelCap": [
+            [
+                "a_air_unit",
+                "_ahrs_groundspeed_vector"
+            ],
+            1
+        ],
+        "_last_loiter.reached_loiter_target_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "Kv": [
+            [
+                "_l1_period",
+                "_l1_damping"
+            ],
+            1
+        ],
+        "A_air": [
+            [
+                "center_wp_get_distance_ne__current_loc"
+            ],
+            0
+        ],
+        "latAccDemCircPD": [
+            [
+                "xtrack_vel_circ",
+                "kv",
+                "lat_acc_dem_circ_pd",
+                "kx",
+                "xtrack_err_circ"
+            ],
+            0
+        ],
+        "A_air_unit": [
+            [
+                "sinf__ahrs_get_yaw",
+                "vector2f_cosf",
+                "vector2f__ahrs_get_yaw",
+                "_groundspeed_vector_normalized",
+                "a_air_normalized"
+            ],
+            0
+        ],
+        "_crosstrack_error": [
+            [
+                "xtrack_err_circ"
+            ],
+            0
+        ],
+        "xtrackErrCirc": [
+            [
+                "loiter_radius_radius",
+                "loiter_radius_fabsf",
+                "a_air_length"
+            ],
+            1
+        ],
+        "K_L1": [
+            [
+                "_l1_damping"
+            ],
+            0
+        ],
+        "velTangent": [
+            [
+                "float_loiter_direction",
+                "xtrack_vel_cap"
+            ],
+            0
+        ],
+        "latAccDemCircCtr": [
+            [
+                "xtrack_err_circ",
+                "loiter_radius_radius",
+                "loiter_radius_fabsf",
+                "vel_tangent"
+            ],
+            1
+        ],
+        "_last_Nu": [
+            [
+                "nu"
+            ],
+            0
+        ],
+        "_bearing_error": [
+            [
+                "nu"
+            ],
+            0
+        ],
+        "_L1_dist": [
+            [
+                "_l1_period",
+                "ground_speed",
+                "_l1_damping"
+            ],
+            0
+        ],
+        "Kx": [
+            [
+                "_l1_period"
+            ],
+            1
+        ],
+        "ltrackVelCap": [
+            [
+                "a_air_unit",
+                "_ahrs_groundspeed_vector"
+            ],
+            1
+        ],
+        "_last_loiter.direction": [
+            [
+                "loiter_direction"
+            ],
+            0
+        ],
+        "latAccDemCirc": [
+            [
+                "lat_acc_dem_circ_ctr",
+                "lat_acc_dem_circ_pd",
+                "loiter_direction"
+            ],
+            0
+        ],
+        "_last_loiter.center_WP": [
+            [
+                "center_wp"
+            ],
+            0
+        ],
+        "_last_loiter.radius": [
+            [
+                "radius_unscaled"
+            ],
+            0
+        ],
+        "_latAccDem": [
+            [
+                "lat_acc_dem_circ",
+                "lat_acc_dem_cap"
+            ],
+            0
+        ],
+        "Nu": [
+            [
+                "atan2f_ltrack_vel_cap",
+                "nu",
+                "atan2f_xtrack_vel_cap",
+                "m_pi_2"
+            ],
+            0
+        ]
+    },
+    "update_heading_hold": {
+        "_nav_bearing": [
+            [
+                "radians_navigation_heading_cd"
+            ],
+            0
+        ],
+        "_latAccDem": [
+            [
+                "sinf_nu",
+                "vomega_a"
+            ],
+            0
+        ],
+        "Nu_cd": [
+            [
+                "wrap_180_cd_nu_cd",
+                "wrap_180_cd__ahrs_yaw_sensor",
+                "wrap_180_cd_navigation_heading_cd"
+            ],
+            1
+        ],
+        "_L1_dist": [
+            [
+                "ground_speed",
+                "omega_a"
+            ],
+            0
+        ],
+        "_bearing_error": [
+            [
+                "nu"
+            ],
+            0
+        ],
+        "Nu": [
+            [
+                "radians_nu_cd",
+                "m_pi_2",
+                "nu"
+            ],
+            0
+        ],
+        "VomegaA": [
+            [
+                "ground_speed",
+                "omega_a"
+            ],
+            0
+        ],
+        "groundSpeed": [
+            [
+                "_groundspeed_vector_length"
+            ],
+            0
+        ],
+        "_groundspeed_vector": [
+            [
+                "_ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "omegaA": [
+            [
+                "_l1_period"
+            ],
+            0
+        ]
+    },
+    "update_level_flight": {
+        "_target_bearing_cd": [
+            [
+                "_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "_nav_bearing": [
+            [
+                "_ahrs_get_yaw"
+            ],
+            0
+        ]
+    }
+}

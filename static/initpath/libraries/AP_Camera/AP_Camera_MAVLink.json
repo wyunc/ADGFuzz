@@ -1,0 +1,104 @@
+{
+    "trigger_pic": {
+        "cmd_msg.command": [
+            [
+                "mav_cmd_do_digicam_control"
+            ],
+            0
+        ]
+    },
+    "configure": {
+        "mav_cmd_long.param7": [
+            [
+                "engine_cutoff_time"
+            ],
+            0
+        ],
+        "mav_cmd_long.param2": [
+            [
+                "shutter_speed"
+            ],
+            0
+        ],
+        "mav_cmd_long.param1": [
+            [
+                "shooting_mode"
+            ],
+            0
+        ],
+        "mav_cmd_long.param3": [
+            [
+                "aperture"
+            ],
+            0
+        ],
+        "mav_cmd_long.param4": [
+            [
+                "iso"
+            ],
+            0
+        ],
+        "mav_cmd_long.param6": [
+            [
+                "float_cmd_id"
+            ],
+            0
+        ],
+        "mav_cmd_long.param5": [
+            [
+                "float_exposure_type"
+            ],
+            0
+        ],
+        "mav_cmd_long.command": [
+            [
+                "mav_cmd_do_digicam_configure"
+            ],
+            0
+        ]
+    },
+    "control": {
+        "mav_cmd_long.param6": [
+            [
+                "float_cmd_id"
+            ],
+            0
+        ],
+        "mav_cmd_long.param5": [
+            [
+                "float_shooting_cmd"
+            ],
+            0
+        ],
+        "mav_cmd_long.param1": [
+            [
+                "session"
+            ],
+            0
+        ],
+        "mav_cmd_long.param4": [
+            [
+                "focus_lock"
+            ],
+            0
+        ],
+        "mav_cmd_long.command": [
+            [
+                "mav_cmd_do_digicam_control"
+            ],
+            0
+        ],
+        "mav_cmd_long.param2": [
+            [
+                "zoom_pos"
+            ],
+            0
+        ],
+        "mav_cmd_long.param3": [
+            [
+                "zoom_step"
+            ],
+            0
+        ]
+    }
+}

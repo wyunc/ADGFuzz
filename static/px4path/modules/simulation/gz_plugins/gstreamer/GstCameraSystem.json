@@ -1,0 +1,189 @@
+{
+    "Configure": {
+        "worldNameComp": [
+            [
+                "_ecm_component",
+                "_entity",
+                "name"
+            ],
+            0
+        ],
+        "_rtmpLocation": [
+            [
+                "string",
+                "_sdf_get"
+            ],
+            0
+        ],
+        "_udpPort": [
+            [
+                "_sdf_get",
+                "int"
+            ],
+            0
+        ],
+        "_udpHost": [
+            [
+                "string",
+                "_sdf_get"
+            ],
+            0
+        ],
+        "_useCuda": [
+            [
+                "_sdf_get",
+                "bool"
+            ],
+            0
+        ],
+        "_worldName": [
+            [
+                "world_name_comp_data"
+            ],
+            0
+        ]
+    },
+    "findCameraTopic": {
+        "worldName": [
+            [
+                "_str",
+                "matches"
+            ],
+            0
+        ],
+        "_cameraTopic": [
+            [
+                "topic"
+            ],
+            0
+        ]
+    },
+    "onCameraInfo": {
+        "_width": [
+            [
+                "msg_width"
+            ],
+            0
+        ],
+        "_height": [
+            [
+                "msg_height"
+            ],
+            0
+        ],
+        "_gstThread": [
+            [
+                "thread_this",
+                "thread_gst_thread_func"
+            ],
+            0
+        ]
+    },
+    "onImage": {
+        "_currentFrame": [
+            [
+                "msg"
+            ],
+            0
+        ]
+    },
+    "gstThreadFunc": {
+        "clock": [
+            [
+                "gst_system_clock_obtain"
+            ],
+            0
+        ],
+        "videoRate": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "_source": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "gst_clock_get_time_clock"
+            ],
+            0
+        ],
+        "converter": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "_gstLoop": [
+            [
+                "g_main_loop_new_nullptr",
+                "g_main_loop_new_false",
+                "nullptr"
+            ],
+            0
+        ],
+        "_pipeline": [
+            [
+                "nullptr",
+                "gst_pipeline_new_nullptr"
+            ],
+            0
+        ],
+        "encoder": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "queue2": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "gst_buffer_new_allocate_size",
+                "gst_buffer_new_allocate_nullptr",
+                "gst_app_src_push_buffer__source",
+                "gst_app_src_push_buffer_gst_app_src"
+            ],
+            1
+        ],
+        "payloader": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "capsFilter": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "sink": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "queue1": [
+            [
+                "gst_element_factory_make_nullptr"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "_width",
+                "_height"
+            ],
+            0
+        ]
+    }
+}

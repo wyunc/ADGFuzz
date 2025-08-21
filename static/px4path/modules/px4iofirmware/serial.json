@@ -1,0 +1,159 @@
+{
+    "interface_init": {
+        "pc_fe": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "rDR": [
+            [
+                "0xa0",
+                "0xfa"
+            ],
+            0
+        ],
+        "rBRR": [
+            [
+                "px4fmu_serial_bitrate",
+                "px4fmu_serial_clock",
+                "px4fmu_serial_bitrate",
+                "px4fmu_serial_clock",
+                "usart_brr_mant_shift",
+                "usart_brr_frac_shift",
+                "px4fmu_serial_bitrate",
+                "px4fmu_serial_clock"
+            ],
+            3
+        ],
+        "pc_regerr": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "rCR3": [
+            [
+                "usart_cr3_eie"
+            ],
+            0
+        ],
+        "pc_crcerr": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "pc_errors": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "pc_badidle": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "pc_txns": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "tx_dma": [
+            [
+                "stm32_dmachannel_px4fmu_serial_tx_dma"
+            ],
+            0
+        ],
+        "rCR1": [
+            [
+                "usart_cr1_idleie",
+                "usart_cr1_re",
+                "usart_cr1_te",
+                "usart_cr1_ue"
+            ],
+            0
+        ],
+        "pc_ne": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "rx_dma": [
+            [
+                "stm32_dmachannel_px4fmu_serial_rx_dma"
+            ],
+            0
+        ],
+        "pc_idle": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "pc_ore": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ]
+    },
+    "rx_handle_packet": {
+        "crc": [
+            [
+                "dma_packet_crc"
+            ],
+            0
+        ],
+        "dma_packet.offset": [
+            [
+                "0xff",
+                "0xfe"
+            ],
+            0
+        ],
+        "dma_packet.page": [
+            [
+                "0xff"
+            ],
+            0
+        ],
+        "dma_packet.count_code": [
+            [
+                "pkt_code_success",
+                "pkt_code_error",
+                "pkt_code_corrupt",
+                "pkt_count_dma_packet",
+                "pkt_max_regs"
+            ],
+            1
+        ]
+    },
+    "rx_dma_callback": {
+        "dma_packet.crc": [
+            [
+                "crc_packet_dma_packet"
+            ],
+            0
+        ]
+    },
+    "serial_interrupt": {
+        "length": [
+            [
+                "stm32_dmaresidual_rx_dma",
+                "sizeof_dma_packet"
+            ],
+            0
+        ],
+        "sr": [
+            [
+                "r_sr"
+            ],
+            0
+        ]
+    }
+}

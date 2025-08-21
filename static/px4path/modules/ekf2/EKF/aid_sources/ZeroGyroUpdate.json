@@ -1,0 +1,47 @@
+{
+    "reset": {
+        "_zgup_delta_ang_dt": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_zgup_delta_ang_dt": [
+            [
+                "imu_delayed_delta_ang_dt",
+                "_f"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "gyro_bias_i",
+                "ekf_state_gyro_bias_i"
+            ],
+            0
+        ],
+        "innov_var": [
+            [
+                "ekf_get_gyro_bias_variance_i",
+                "sq_constrain",
+                "sq_ekf_get_gyro_noise",
+                "_f"
+            ],
+            1
+        ],
+        "gyro_bias": [
+            [
+                "imu_delayed_delta_ang"
+            ],
+            1
+        ],
+        "zero_gyro_update_data_ready": [
+            [
+                "zgup_dt"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "getEffectivenessMatrix": {
+        "tilts_added_successfully": [
+            [
+                "_tilts_add_actuators_configuration"
+            ],
+            0
+        ],
+        "rotors_added_successfully": [
+            [
+                "_mc_rotors_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_first_tilt_idx": [
+            [
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "_tilts_config_i_min_angle",
+                "_f",
+                "_tilts_config_i_min_angle",
+                "_tilts_config_i_max_angle"
+            ],
+            1
+        ]
+    },
+    "updateSetpoint": {
+        "_yaw_tilt_saturation_flags.tilt_yaw_neg": [
+            [
+                "yaw_saturated_negative"
+            ],
+            0
+        ],
+        "actuator_sp": [
+            [
+                "_tilt_offsets"
+            ],
+            0
+        ],
+        "_yaw_tilt_saturation_flags.tilt_yaw_pos": [
+            [
+                "yaw_saturated_positive"
+            ],
+            0
+        ]
+    }
+}

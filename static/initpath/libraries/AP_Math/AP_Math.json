@@ -1,0 +1,119 @@
+{
+    "safe_asin": {
+        "f": [
+            [
+                "const",
+                "v",
+                "static_cast",
+                "float"
+            ],
+            0
+        ]
+    },
+    "safe_sqrt": {
+        "ret": [
+            [
+                "sqrtf_v",
+                "sqrtf_static_cast",
+                "sqrtf_float"
+            ],
+            0
+        ]
+    },
+    "swap_float": {
+        "f2": [
+            [
+                "tmp"
+            ],
+            0
+        ]
+    },
+    "linear_interpolate": {
+        "p": [
+            [
+                "var_value",
+                "var_high",
+                "var_low"
+            ],
+            0
+        ]
+    },
+    "throttle_curve": {
+        "alpha2": [
+            [
+                "alpha",
+                "thr_mid"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "linear_interpolate_thr_in"
+            ],
+            0
+        ],
+        "thr_out": [
+            [
+                "linear_interpolate_t",
+                "linear_interpolate_expo_curve",
+                "linear_interpolate_thr_mid",
+                "linear_interpolate_alpha2",
+                "linear_interpolate_alpha"
+            ],
+            0
+        ]
+    },
+    "wrap_360": {
+        "res": [
+            [
+                "fmod_angle",
+                "fmodf_angle",
+                "angle"
+            ],
+            0
+        ]
+    },
+    "wrap_360_cd": {
+        "res": [
+            [
+                "fmodf_angle",
+                "angle",
+                "fmod_angle"
+            ],
+            0
+        ]
+    },
+    "rotation_equal": {
+        "v1": [
+            [
+                "v"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "v"
+            ],
+            0
+        ]
+    },
+    "calc_lowpass_alpha_dt": {
+        "rc": [
+            [
+                "m_2pi",
+                "cutoff_freq"
+            ],
+            0
+        ]
+    },
+    "fill_nanf": {
+        "n": [
+            [
+                "signaling_na_n",
+                "float",
+                "numeric_limits"
+            ],
+            0
+        ]
+    }
+}

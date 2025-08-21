@@ -1,0 +1,28 @@
+{
+    "Log_Write_Control_Tuning": {
+        "desired_rangefinder_alt": [
+            [
+                "logger_quiet_nan"
+            ],
+            0
+        ],
+        "target_climb_rate_cms": [
+            [
+                "pos_control_get_vel_target_z_cms"
+            ],
+            0
+        ],
+        "des_alt_m": [
+            [
+                "pos_control_get_pos_target_z_cm"
+            ],
+            0
+        ],
+        "terr_alt": [
+            [
+                "logger_quiet_nan"
+            ],
+            0
+        ]
+    }
+}

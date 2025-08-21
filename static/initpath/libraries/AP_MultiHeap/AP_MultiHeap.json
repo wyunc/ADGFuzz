@@ -1,0 +1,114 @@
+{
+    "create": {
+        ".hp": [
+            [
+                "heap_create_alloc_size"
+            ],
+            0
+        ],
+        "num_heaps": [
+            [
+                "max_heaps"
+            ],
+            0
+        ],
+        "total_size": [
+            [
+                "alloc_size"
+            ],
+            0
+        ],
+        "sum_size": [
+            [
+                "alloc_size"
+            ],
+            0
+        ],
+        "allow_expansion": [
+            [
+                "_allow_expansion"
+            ],
+            0
+        ],
+        "heaps": [
+            [
+                "new_nothrow",
+                "max_heaps",
+                "heap"
+            ],
+            0
+        ],
+        "reserve_size": [
+            [
+                "_reserve_size"
+            ],
+            0
+        ]
+    },
+    "destroy": {
+        ".hp": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "heaps": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "allocate": {
+        "min_size": [
+            [
+                "heap_overhead",
+                "size"
+            ],
+            0
+        ],
+        "expanded_to": [
+            [
+                "1024u",
+                "hal_util_available_memory",
+                "reserve_size",
+                "size",
+                "heap_overhead"
+            ],
+            4
+        ],
+        "newptr": [
+            [
+                "heap_allocate__hp",
+                "heap_allocate_size",
+                "heap_allocate_heaps",
+                "heap_allocate_i"
+            ],
+            0
+        ],
+        ".hp": [
+            [
+                "heap_create_alloc_size"
+            ],
+            0
+        ],
+        "last_failed": [
+            [
+                "nullptr",
+                "heap_allocate__hp",
+                "heap_allocate_size",
+                "heap_allocate_heaps",
+                "heap_allocate_i"
+            ],
+            1
+        ]
+    },
+    "change_size": {
+        "newp": [
+            [
+                "allocate_new_size"
+            ],
+            0
+        ]
+    }
+}

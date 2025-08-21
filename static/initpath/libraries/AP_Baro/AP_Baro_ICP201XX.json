@@ -1,0 +1,136 @@
+{
+    "init": {
+        "id": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "ver": [
+            [
+                "0x_ff"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "dummy_reg": {
+        "reg": [
+            [
+                "reg_empty"
+            ],
+            0
+        ]
+    },
+    "read_reg": {
+        "ret": [
+            [
+                "dev_transfer_len",
+                "dev_transfer_buf",
+                "dev_transfer_reg"
+            ],
+            0
+        ]
+    },
+    "write_reg": {
+        "ret": [
+            [
+                "dev_transfer_sizeof",
+                "dev_transfer_data",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "read_otp_data": {
+        "otp_status": [
+            [
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "get_sensor_data": {
+        "pressure": [
+            [
+                "offset",
+                "fifo_data",
+                "int32_t",
+                "0x0f",
+                "float",
+                "uint8_t",
+                "0x1f"
+            ],
+            2
+        ],
+        "temperature": [
+            [
+                "offset",
+                "fifo_data",
+                "int32_t",
+                "0x0f",
+                "float",
+                "uint8_t",
+                "0x1f"
+            ],
+            2
+        ]
+    },
+    "boot_sequence": {
+        "reg_value": [
+            [
+                "hfosc",
+                "0x3f",
+                "gain",
+                "hfosc",
+                "gain",
+                "0x7f",
+                "0x70",
+                "0x07"
+            ],
+            1
+        ]
+    },
+    "wait_read": {
+        "fifo_packets": [
+            [
+                "uint8_t",
+                "0x1f"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "last_measure_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "accum.psum": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "accum.tsum": [
+            [
+                "t"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "accum.psum": [
+            [
+                "accum_tsum"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,234 @@
+{
+    "init": {
+        ".type": [
+            [
+                "configured_type_instance"
+            ],
+            1
+        ],
+        "_num_instances": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "_highest_failsafe_priority": [
+            [
+                "int8_max"
+            ],
+            0
+        ],
+        ".instance": [
+            [
+                "instance"
+            ],
+            0
+        ]
+    },
+    "convert_dynamic_param_groups": {
+        "info.old_group_element": [
+            [
+                "token_group_element",
+                "battmonitor_index",
+                "elem_old_group_element"
+            ],
+            0
+        ],
+        "info.type": [
+            [
+                "elem_type"
+            ],
+            0
+        ],
+        "param_instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "param": [
+            [
+                "find_by_name_token",
+                "find_by_name_param_name",
+                "find_by_name_type"
+            ],
+            0
+        ],
+        "token": [
+            [
+                "param_token"
+            ],
+            0
+        ],
+        "info.new_name": [
+            [
+                "param_name"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        ".last_healthy_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "current_amps": {
+        "current": [
+            [
+                "instance",
+                "state",
+                "_current_amps"
+            ],
+            0
+        ]
+    },
+    "consumed_mah": {
+        "mah": [
+            [
+                "instance",
+                "state",
+                "_consumed_mah"
+            ],
+            1
+        ]
+    },
+    "consumed_wh": {
+        "wh": [
+            [
+                "_consumed_wh",
+                "state",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "time_remaining": {
+        "seconds": [
+            [
+                "_time_remaining",
+                "state",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "check_failsafes": {
+        "_highest_failsafe_priority": [
+            [
+                "priority"
+            ],
+            0
+        ],
+        "action": [
+            [
+                "__failsafe_low_action",
+                "__failsafe_critical_action",
+                "i",
+                "_params"
+            ],
+            0
+        ],
+        ".failsafe": [
+            [
+                "_update_failsafes",
+                "i",
+                "drivers"
+            ],
+            1
+        ],
+        "type_str": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "overpower_detected": {
+        "power": [
+            [
+                "instance",
+                "state",
+                "_voltage",
+                "_current_amps"
+            ],
+            0
+        ]
+    },
+    "get_cell_voltage": {
+        "cell_voltages": [
+            [
+                "get_cell_voltages_instance"
+            ],
+            0
+        ],
+        "voltage": [
+            [
+                "cell_voltages_cells",
+                "cell"
+            ],
+            1
+        ]
+    },
+    "set_temperature": {
+        ".temperature_external": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "expected_type": [
+            [
+                "configured_type_i"
+            ],
+            0
+        ]
+    },
+    "checkPoweringOff": {
+        "cmd_msg.command": [
+            [
+                "mav_cmd_power_off_initiated"
+            ],
+            0
+        ],
+        "cmd_msg.param1": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "reset_remaining_mask": {
+        "highest_failsafe": [
+            [
+                "i",
+                "state",
+                "_failsafe",
+                "none"
+            ],
+            0
+        ],
+        "_highest_failsafe_priority": [
+            [
+                "int8_max"
+            ],
+            0
+        ]
+    }
+}

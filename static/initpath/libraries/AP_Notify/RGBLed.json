@@ -1,0 +1,110 @@
+{
+    "_set_rgb": {
+        "_red_curr": [
+            [
+                "red"
+            ],
+            0
+        ],
+        "_green_curr": [
+            [
+                "green"
+            ],
+            0
+        ],
+        "_blue_curr": [
+            [
+                "blue"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "blue_des": [
+            [
+                "get_colour_sequence",
+                "get_colour_sequence_obc",
+                "get_colour_sequence_traffic_light",
+                "millis",
+                "_led_off",
+                "get_brightness",
+                "blue"
+            ],
+            4
+        ],
+        "last_step": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "red_des": [
+            [
+                "get_colour_sequence",
+                "get_colour_sequence_obc",
+                "get_colour_sequence_traffic_light",
+                "millis",
+                "red",
+                "_led_off",
+                "get_brightness"
+            ],
+            4
+        ],
+        "green_des": [
+            [
+                "get_colour_sequence",
+                "get_colour_sequence_obc",
+                "get_colour_sequence_traffic_light",
+                "millis",
+                "_led_off",
+                "green",
+                "get_brightness"
+            ],
+            4
+        ]
+    },
+    "handle_led_control": {
+        "_led_override.start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "rate_hz": [
+            [
+                "packet_custom_bytes"
+            ],
+            0
+        ]
+    },
+    "update_override": {
+        "cycle": [
+            [
+                "_led_override_rate_hz",
+                "_led_override_start_ms",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "rgb_control": {
+        "_led_override.g": [
+            [
+                "g"
+            ],
+            0
+        ],
+        "_led_override.rate_hz": [
+            [
+                "rate_hz"
+            ],
+            0
+        ],
+        "_led_override.r": [
+            [
+                "r"
+            ],
+            0
+        ]
+    }
+}

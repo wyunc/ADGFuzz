@@ -1,0 +1,54 @@
+{
+    "start": {
+        "periodic_handle": [
+            [
+                "_dev_register_periodic_callback_backend_period_us",
+                "_dev_register_periodic_callback_functor_bind_member",
+                "_dev_register_periodic_callback_void",
+                "_dev_register_periodic_callback_read_fifo"
+            ],
+            0
+        ]
+    },
+    "read_fifo": {
+        "p": [
+            [
+                "frame_len",
+                "data"
+            ],
+            0
+        ],
+        "fifo_length": [
+            [
+                "frame_len",
+                "bmi270_max_fifo_samples",
+                "len"
+            ],
+            0
+        ],
+        "temp_degc": [
+            [
+                "int16_t",
+                "static_cast",
+                "tbuf"
+            ],
+            2
+        ]
+    },
+    "parse_accel_frame": {
+        "accel": [
+            [
+                "gravity_mss"
+            ],
+            1
+        ]
+    },
+    "parse_gyro_frame": {
+        "gyro": [
+            [
+                "radians"
+            ],
+            1
+        ]
+    }
+}

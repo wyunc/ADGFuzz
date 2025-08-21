@@ -1,0 +1,42 @@
+{
+    "runSimulatedFilter": {
+        "n_steps": [
+            [
+                "roundf_dt",
+                "roundf__f"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "_f",
+                "_lpf_get_sample_freq",
+                "_f",
+                "i"
+            ],
+            1
+        ],
+        "phase_delay": [
+            [
+                "phase_delay_deg",
+                "m_pi_f",
+                "_f"
+            ],
+            0
+        ],
+        "out": [
+            [
+                "_lpf_apply_input"
+            ],
+            0
+        ],
+        "omega": [
+            [
+                "signal_freq_hz",
+                "m_pi_f",
+                "_f"
+            ],
+            0
+        ]
+    }
+}

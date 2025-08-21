@@ -1,0 +1,123 @@
+{
+    "output_armed_stabilizing": {
+        "roll_thrust": [
+            [
+                "_roll_in_ff",
+                "_roll_in",
+                "thr_lin_get_compensation_gain"
+            ],
+            1
+        ],
+        "thrust_vec.x": [
+            [
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "get_forward"
+            ],
+            3
+        ],
+        "thrust_vec.y": [
+            [
+                "get_lateral",
+                "thr_lin_get_compensation_gain",
+                "get_throttle"
+            ],
+            3
+        ],
+        "pitch_thrust": [
+            [
+                "thr_lin_get_compensation_gain",
+                "_pitch_in_ff",
+                "_pitch_in"
+            ],
+            1
+        ],
+        "total_thrust": [
+            [
+                "thrust",
+                "i",
+                "_thrust_rpyt_out"
+            ],
+            0
+        ],
+        "thrust_vec.z": [
+            [
+                "thr_lin_get_compensation_gain",
+                "get_throttle"
+            ],
+            2
+        ],
+        "rpy_ratio": [
+            [
+                "thrust",
+                "i",
+                "_thrust_rpyt_out"
+            ],
+            0
+        ],
+        "horz_ratio": [
+            [
+                "thrust",
+                "i",
+                "_thrust_rpyt_out"
+            ],
+            0
+        ],
+        "yaw_thrust": [
+            [
+                "thr_lin_get_compensation_gain",
+                "_yaw_in_ff",
+                "_yaw_in"
+            ],
+            1
+        ],
+        "thrust_vec": [
+            [
+                "rot"
+            ],
+            0
+        ]
+    },
+    "set_roll_pitch": {
+        "_roll_offset": [
+            [
+                "radians_roll_deg"
+            ],
+            0
+        ],
+        "_pitch_offset": [
+            [
+                "radians_pitch_deg"
+            ],
+            0
+        ]
+    },
+    "add_motor": {
+        "function": [
+            [
+                "get_motor_function_motor_num"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "expected_num_motors": [
+            [
+                "num_motors"
+            ],
+            0
+        ],
+        "_mav_type": [
+            [
+                "mav_type_dodecarotor",
+                "mav_type_tricopter",
+                "mav_type_quadrotor",
+                "mav_type_generic",
+                "mav_type_decarotor",
+                "mav_type_octorotor",
+                "mav_type_hexarotor"
+            ],
+            0
+        ]
+    }
+}

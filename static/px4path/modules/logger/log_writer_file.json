@@ -1,0 +1,204 @@
+{
+    "init_logfile_encryption": {
+        "_min_blocksize": [
+            [
+                "_crypto_get_min_blocksize__key_idx"
+            ],
+            0
+        ],
+        "written": [
+            [
+                "write_key_fd",
+                "write_key",
+                "keyfile_header",
+                "write_key_size",
+                "write_uint8_t",
+                "write_nonce_size",
+                "sizeof_keyfile_header"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "malloc_key_size",
+                "malloc_nonce_size",
+                "uint8_t"
+            ],
+            0
+        ],
+        "key_fd": [
+            [
+                "type",
+                "int",
+                "_fd",
+                "_buffers"
+            ],
+            0
+        ]
+    },
+    "start_log": {
+        "ret": [
+            [
+                "hardfault_store_filename_filename"
+            ],
+            0
+        ],
+        "enc_init": [
+            [
+                "init_logfile_encryption_type"
+            ],
+            0
+        ]
+    },
+    "hardfault_store_filename": {
+        "n": [
+            [
+                "strlen_log_file"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "close_fd"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_o_wronly",
+                "open_hardfault_ulog_path",
+                "open_o_trunc",
+                "open_o_creat"
+            ],
+            0
+        ]
+    },
+    "thread_start": {
+        "ret": [
+            [
+                "pthread_create_run_helper",
+                "pthread_create_this",
+                "pthread_create_thr_attr",
+                "pthread_create__thread"
+            ],
+            0
+        ],
+        "param.sched_priority": [
+            [
+                "sched_priority_default"
+            ],
+            0
+        ]
+    },
+    "thread_stop": {
+        "._should_run": [
+            [
+                "_buffers",
+                "__should_run"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pthread_join_nullptr",
+                "pthread_join__thread"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "start": [
+            [
+                "_buffers",
+                "__should_run"
+            ],
+            0
+        ],
+        "buffer": [
+            [
+                "_buffers",
+                "count",
+                "int"
+            ],
+            1
+        ],
+        "call_fsync": [
+            [
+                "1_s",
+                "hrt_absolute_time",
+                "_want_fsync_load",
+                "poll_count"
+            ],
+            1
+        ],
+        "written": [
+            [
+                "buffer_write_to_file_call_fsync",
+                "buffer_write_to_file_read_ptr",
+                "buffer_write_to_file_available"
+            ],
+            0
+        ],
+        "last_fsync": [
+            [
+                "hrt_absolute_time",
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "out": [
+            [
+                "buffer_get_read_ptr_is_part",
+                "_min_blocksize",
+                "buffer_get_read_ptr_read_ptr"
+            ],
+            1
+        ]
+    },
+    "write_message": {
+        "uptr": [
+            [
+                "ptr",
+                "min_inttype",
+                "min_size",
+                "min__buffers",
+                "_buffer_size",
+                "uint8_t"
+            ],
+            1
+        ],
+        "size": [
+            [
+                "min_inttype",
+                "min_size",
+                "min__buffers",
+                "_buffer_size"
+            ],
+            1
+        ]
+    },
+    "write": {
+        "available": [
+            [
+                "_available",
+                "type",
+                "_buffers",
+                "int"
+            ],
+            0
+        ],
+        "dropout_msg.duration": [
+            [
+                "uint16_t",
+                "hrt_elapsed_time_dropout_start"
+            ],
+            0
+        ],
+        "dropout_size": [
+            [
+                "sizeof_ulog_message_dropout_s"
+            ],
+            0
+        ]
+    }
+}

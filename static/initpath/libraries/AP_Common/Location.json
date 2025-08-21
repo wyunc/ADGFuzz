@@ -1,0 +1,229 @@
+{
+    "set_alt_cm": {
+        "alt": [
+            [
+                "alt_cm"
+            ],
+            0
+        ]
+    },
+    "get_alt_cm": {
+        "ret_alt_cm": [
+            [
+                "alt_terr_cm",
+                "ahrs_get_home_alt",
+                "alt",
+                "alt",
+                "alt_terr_cm",
+                "ekf_origin_alt",
+                "ahrs_get_home_alt",
+                "ekf_origin_alt"
+            ],
+            1
+        ],
+        "frame": [
+            [
+                "get_alt_frame"
+            ],
+            0
+        ]
+    },
+    "get_alt_m": {
+        "ret_alt": [
+            [
+                "ret_alt_cm"
+            ],
+            0
+        ]
+    },
+    "get_vector_xy_from_origin_NE": {
+        "vec_ne.y": [
+            [
+                "latlon_to_cm",
+                "longitude_scale_lat",
+                "diff_longitude_lng",
+                "longitude_scale_ekf_origin_lat",
+                "diff_longitude_ekf_origin_lng"
+            ],
+            0
+        ],
+        "vec_ne.x": [
+            [
+                "lat",
+                "ekf_origin_lat",
+                "latlon_to_cm"
+            ],
+            0
+        ]
+    },
+    "get_vector_from_origin_NEU": {
+        "vec_neu.z": [
+            [
+                "alt_above_origin_cm"
+            ],
+            0
+        ]
+    },
+    "get_alt_distance": {
+        "distance": [
+            [
+                "alt2",
+                "alt1"
+            ],
+            0
+        ]
+    },
+    "offset_latlng": {
+        "dlng": [
+            [
+                "location_scaling_factor_inv",
+                "longitude_scale_lat",
+                "ofs_east",
+                "longitude_scale_dlat"
+            ],
+            0
+        ],
+        "lng": [
+            [
+                "wrap_longitude_lng",
+                "wrap_longitude_dlng"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "location_scaling_factor_inv",
+                "ofs_north",
+                "limit_lattitude_lat"
+            ],
+            1
+        ]
+    },
+    "offset": {
+        "alt": [
+            [
+                "ofs_ned_z"
+            ],
+            0
+        ]
+    },
+    "offset_bearing": {
+        "ofs_north": [
+            [
+                "distance",
+                "cos_f_radians",
+                "cos_f_bearing_deg"
+            ],
+            0
+        ],
+        "ofs_east": [
+            [
+                "distance",
+                "sin_f_bearing_deg",
+                "sin_f_radians"
+            ],
+            0
+        ]
+    },
+    "offset_bearing_and_pitch": {
+        "ofs_east": [
+            [
+                "cos_f_radians",
+                "distance",
+                "cos_f_pitch_deg",
+                "sin_f_bearing_deg",
+                "sin_f_radians"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "distance",
+                "sin_f_pitch_deg",
+                "sin_f_radians"
+            ],
+            1
+        ],
+        "ofs_north": [
+            [
+                "cos_f_radians",
+                "distance",
+                "cos_f_bearing_deg",
+                "cos_f_pitch_deg"
+            ],
+            0
+        ]
+    },
+    "sanitize": {
+        "alt": [
+            [
+                "default_loc_alt"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "default_loc_lat"
+            ],
+            0
+        ],
+        "lng": [
+            [
+                "default_loc_lng"
+            ],
+            0
+        ]
+    },
+    "same_latlon_as": {
+        "lat": [
+            [
+                "loc2_lat",
+                "loc2_lng",
+                "lng"
+            ],
+            0
+        ]
+    },
+    "same_alt_as": {
+        "tolerance": [
+            [
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "have_diff": [
+            [
+                "this_get_alt_distance_alt_diff",
+                "this_get_alt_distance_loc2"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "loc2_alt"
+            ],
+            0
+        ]
+    },
+    "line_path_proportion": {
+        "vec1": [
+            [
+                "point1_get_distance_ne_point2"
+            ],
+            0
+        ],
+        "vec2": [
+            [
+                "point1_get_distance_ne_this"
+            ],
+            0
+        ],
+        "dsquared": [
+            [
+                "sq_vec1_x",
+                "sq_vec1_y"
+            ],
+            0
+        ]
+    }
+}

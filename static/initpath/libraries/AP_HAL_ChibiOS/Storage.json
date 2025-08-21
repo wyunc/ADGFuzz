@@ -1,0 +1,175 @@
+{
+    "_storage_open": {
+        "ret": [
+            [
+                "_read_ch_storage_size",
+                "fs_read_log_fd",
+                "_read__buffer"
+            ],
+            0
+        ],
+        "log_fd": [
+            [
+                "fs_open_hal_storage_file",
+                "_open_o_creat",
+                "_open_o_rdwr"
+            ],
+            0
+        ],
+        "_initialisedType": [
+            [
+                "flash",
+                "fram",
+                "sd_card"
+            ],
+            0
+        ]
+    },
+    "_save_backup": {
+        "to_write": [
+            [
+                "strlen_buf"
+            ],
+            0
+        ],
+        "start_millis": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "curr_bak": [
+            [
+                "hal_storage_backup_count",
+                "strtol_null",
+                "strtol_buf"
+            ],
+            0
+        ],
+        "written": [
+            [
+                "fs_write_fd",
+                "_write_buf",
+                "_write_to_write"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "_open_o_trunc",
+                "_open_o_wronly",
+                "_open_o_creat",
+                "_open_o_rdonly",
+                "fs_open_fname"
+            ],
+            0
+        ],
+        "_storage_bak_directory": [
+            [
+                "hal_storage_backup_folder"
+            ],
+            0
+        ],
+        "fname": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "asprintf__storage_bak_directory",
+                "asprintf_curr_bak",
+                "asprintf_fname",
+                "fs_mkdir__storage_bak_directory"
+            ],
+            0
+        ]
+    },
+    "_mark_dirty": {
+        "line": [
+            [
+                "ch_storage_line_shift",
+                "loc"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "length",
+                "loc"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "offset": [
+            [
+                "i",
+                "ch_storage_line_size"
+            ],
+            0
+        ],
+        "_last_empty_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_flash_load": {
+        "_flash_page": [
+            [
+                "storage_flash_page"
+            ],
+            0
+        ]
+    },
+    "_flash_write_data": {
+        "base_address": [
+            [
+                "hal_flash_getpageaddr_sector",
+                "hal_flash_getpageaddr__flash_page"
+            ],
+            0
+        ],
+        "_last_re_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "ok": [
+            [
+                "_flash_re_initialise"
+            ],
+            0
+        ]
+    },
+    "_flash_read_data": {
+        "b": [
+            [
+                "const",
+                "hal_flash_getpageaddr_sector",
+                "hal_flash_getpageaddr__flash_page",
+                "offset",
+                "uint8_t"
+            ],
+            1
+        ]
+    },
+    "get_storage_ptr": {
+        "ptr": [
+            [
+                "_buffer"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "sizeof__buffer"
+            ],
+            0
+        ]
+    }
+}

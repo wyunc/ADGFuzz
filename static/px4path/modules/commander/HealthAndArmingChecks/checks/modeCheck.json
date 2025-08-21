@@ -1,0 +1,35 @@
+{
+    "checkAndReport": {
+        "mission_required_modes": [
+            [
+                "all",
+                "reporter_failsafe_flags_mode_req_mission"
+            ],
+            0
+        ],
+        "log_level": [
+            [
+                "warning",
+                "_param_com_rc_in_mode_get",
+                "error"
+            ],
+            1
+        ],
+        "nav_modes": [
+            [
+                "none",
+                "reporter_failsafe_flags_mode_req_manual_control",
+                "_param_com_rc_in_mode_get"
+            ],
+            1
+        ],
+        "local_position_modes": [
+            [
+                "reporter_failsafe_flags_mode_req_local_position",
+                "reporter_failsafe_flags_mode_req_local_position_relaxed",
+                "none"
+            ],
+            0
+        ]
+    }
+}

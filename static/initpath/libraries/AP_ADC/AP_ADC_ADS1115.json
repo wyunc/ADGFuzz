@@ -1,0 +1,55 @@
+{
+    "init": {
+        "_gain": [
+            [
+                "ads1115_pga_4p096"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "hal_i2c_mgr_get_device_ads1115_i2c_bus",
+                "hal_i2c_mgr_get_device_ads1115_i2c_addr"
+            ],
+            0
+        ]
+    },
+    "_start_conversion": {
+        "config.reg": [
+            [
+                "ads1115_ra_config"
+            ],
+            0
+        ]
+    },
+    "_convert_register_data_to_mv": {
+        "pga": [
+            [
+                "ads1115_mv_1p024",
+                "ads1115_mv_2p048",
+                "ads1115_mv_0p256b",
+                "ads1115_mv_0p512",
+                "ads1115_mv_0p256c",
+                "ads1115_mv_6p144",
+                "ads1115_mv_0p256",
+                "ads1115_mv_4p096"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        ".data": [
+            [
+                "_convert_register_data_to_mv_val",
+                "_convert_register_data_to_mv_be16toh"
+            ],
+            1
+        ],
+        "_channel_to_read": [
+            [
+                "_channels_number"
+            ],
+            0
+        ]
+    }
+}

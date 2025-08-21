@@ -1,0 +1,158 @@
+{
+    "srxl_channels_get_v1v2": {
+        "num_values": [
+            [
+                "frame_len_full",
+                "uint8_t",
+                "max_values",
+                "3u",
+                "2u"
+            ],
+            0
+        ],
+        "channel_raw_value": [
+            [
+                "buffer",
+                "uint32_t",
+                "0x0000000fu",
+                "8u",
+                "0u",
+                "1u",
+                "2u"
+            ],
+            1
+        ],
+        "failsafe_state": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "srxl_channels_get_v5": {
+        "num_values": [
+            [
+                "max_values",
+                "0x7"
+            ],
+            2
+        ],
+        "failsafe_state": [
+            [
+                "buffer"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "i",
+                "buffer"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "0x1ff",
+                "0x400",
+                "0x7ff"
+            ],
+            0
+        ]
+    },
+    "srxl_decode": {
+        "crc_fmu": [
+            [
+                "crc_xmodem_update_crc_fmu",
+                "crc_xmodem_update_0u",
+                "crc_xmodem_update_byte"
+            ],
+            0
+        ],
+        "decode_state": [
+            [
+                "state_new",
+                "state_idle",
+                "state_idle",
+                "state_collect"
+            ],
+            1
+        ],
+        "last_data_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "crc_receiver": [
+            [
+                "uint16_t",
+                "1u",
+                "buffer",
+                "8u"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "srxl_channels_get_v1v2_values",
+                "srxl_channels_get_v5_failsafe_state",
+                "srxl_channels_get_v5_values",
+                "srxl_channels_get_v1v2_max_values",
+                "srxl_channels_get_v5_num_values",
+                "srxl_channels_get_v1v2_num_values",
+                "srxl_channels_get_v1v2_failsafe_state",
+                "srxl_channels_get_v5_max_values"
+            ],
+            0
+        ],
+        "frame_len_full": [
+            [
+                "srxl_framelen_v2",
+                "0u",
+                "srxl_framelen_v1",
+                "srxl_framelen_v5"
+            ],
+            0
+        ],
+        "frame_header": [
+            [
+                "srxl_header_v2",
+                "srxl_header_v1",
+                "srxl_header_v5",
+                "srxl_header_not_impl"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "f": [
+            [
+                "fopen_argv"
+            ],
+            0
+        ],
+        "frame_size": [
+            [
+                "srxl_framelen_v2",
+                "srxl_framelen_v5",
+                "srxl_framelen_v1"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "i",
+                "u"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_argv",
+                "open_o_rdonly",
+                "open_o_cloexec"
+            ],
+            0
+        ]
+    }
+}

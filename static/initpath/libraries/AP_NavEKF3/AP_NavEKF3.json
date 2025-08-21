@@ -1,0 +1,353 @@
+{
+    "InitialiseFilter": {
+        "imuSampleTime_us": [
+            [
+                "dal_micros64"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "1u",
+                "ins_get_accel_count"
+            ],
+            0
+        ],
+        "_frameTimeUsec": [
+            [
+                "1e6",
+                "ins_get_loop_rate_hz"
+            ],
+            1
+        ],
+        "primary": [
+            [
+                "uint8_t__primary_core",
+                "_primary_core",
+                "num_cores"
+            ],
+            0
+        ],
+        "_framesPerPrediction": [
+            [
+                "uint8_t__0e",
+                "uint8_t_ekf_target_dt",
+                "uint8_t__frame_time_usec"
+            ],
+            0
+        ],
+        "core": [
+            [
+                "nav_ekf3_core",
+                "dal_malloc_type_nav_ekf3_core",
+                "fast",
+                "dal_malloc_type_sizeof",
+                "num_cores"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "dal_ins"
+            ],
+            0
+        ]
+    },
+    "coreBetterScore": {
+        "oldCore": [
+            [
+                "core",
+                "current_core"
+            ],
+            0
+        ],
+        "newCore": [
+            [
+                "core",
+                "new_core"
+            ],
+            0
+        ]
+    },
+    "UpdateFilter": {
+        "armed": [
+            [
+                "dal_get_armed"
+            ],
+            0
+        ],
+        "runCoreSelection": [
+            [
+                "imu_sample_time_us",
+                "last_unhealthy_time_us",
+                "1e7"
+            ],
+            0
+        ],
+        "primaryErrorScore": [
+            [
+                "update_core_error_scores"
+            ],
+            0
+        ],
+        "altCoreAvailable": [
+            [
+                "new_primary_index"
+            ],
+            0
+        ],
+        "betterCore": [
+            [
+                "alt_core_error",
+                "better_thresh"
+            ],
+            0
+        ],
+        "altCoreError": [
+            [
+                "core_index",
+                "core_relative_errors"
+            ],
+            0
+        ],
+        "lastLaneSwitch_ms": [
+            [
+                "dal_millis"
+            ],
+            0
+        ],
+        "lastUnhealthyTime_us": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "newCore": [
+            [
+                "core_index",
+                "core"
+            ],
+            0
+        ],
+        "oldCore": [
+            [
+                "core"
+            ],
+            0
+        ],
+        "imuSampleTime_us": [
+            [
+                "dal_micros64"
+            ],
+            0
+        ],
+        "primary": [
+            [
+                "new_primary_index",
+                "_primary_core",
+                "uint8_t__primary_core",
+                "num_cores"
+            ],
+            1
+        ],
+        "newPrimaryIndex": [
+            [
+                "core_index"
+            ],
+            0
+        ]
+    },
+    "checkLaneSwitch": {
+        "newCore": [
+            [
+                "core",
+                "core_index"
+            ],
+            0
+        ],
+        "lowestErrorScore": [
+            [
+                "primary_error_score",
+                "alt_error_score"
+            ],
+            0
+        ],
+        "lastLaneSwitch_ms": [
+            [
+                "dal_millis"
+            ],
+            1
+        ],
+        "newPrimaryIndex": [
+            [
+                "core_index"
+            ],
+            0
+        ],
+        "primaryErrorScore": [
+            [
+                "core",
+                "_error_score"
+            ],
+            0
+        ],
+        "altErrorScore": [
+            [
+                "new_core_error_score"
+            ],
+            0
+        ],
+        "altCoreAvailable": [
+            [
+                "new_core_have_aligned_yaw",
+                "new_core_healthy",
+                "new_core_have_aligned_tilt"
+            ],
+            0
+        ],
+        "primary": [
+            [
+                "new_primary_index"
+            ],
+            0
+        ]
+    },
+    "updateCoreRelativeErrors": {
+        "error": [
+            [
+                "primary",
+                "i",
+                "core_error_scores"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "failure": [
+            [
+                "_prearm_failure_reason",
+                "i",
+                "core"
+            ],
+            0
+        ],
+        "magCalParamVal": [
+            [
+                "_mag_cal_get"
+            ],
+            0
+        ],
+        "yaw_source": [
+            [
+                "sources_get_yaw_source"
+            ],
+            0
+        ]
+    },
+    "getGyroBias": {
+        "instance": [
+            [
+                "primary"
+            ],
+            0
+        ]
+    },
+    "getAccelBias": {
+        "instance": [
+            [
+                "primary"
+            ],
+            0
+        ]
+    },
+    "getOriginLLH": {
+        "loc": [
+            [
+                "common_ekf_origin"
+            ],
+            0
+        ]
+    },
+    "getQuaternionBodyToNED": {
+        "instance": [
+            [
+                "primary"
+            ],
+            0
+        ]
+    },
+    "convert_parameters": {
+        "gps_type_info": [
+            [
+                "k_param_ekf3",
+                "ap_param_int8"
+            ],
+            0
+        ],
+        "found_gps_type": [
+            [
+                "find_old_parameter_gps_type_info",
+                "find_old_parameter_gps_type_old"
+            ],
+            0
+        ],
+        "alt_source_info": [
+            [
+                "k_param_ekf3",
+                "ap_param_int8"
+            ],
+            0
+        ]
+    },
+    "updateLaneSwitchYawResetData": {
+        "yaw_reset_data.last_primary_change": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "yaw_reset_data.core_delta": [
+            [
+                "wrap_pi_eulers_new_primary_z",
+                "wrap_pi_eulers_old_primary_z",
+                "old_yaw_delta",
+                "wrap_pi_yaw_reset_data_core_delta"
+            ],
+            0
+        ]
+    },
+    "updateLaneSwitchPosResetData": {
+        "pos_reset_data.last_primary_change": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "pos_reset_data.core_delta": [
+            [
+                "pos_new_primary",
+                "pos_old_primary",
+                "old_pos_delta",
+                "pos_reset_data_core_delta"
+            ],
+            0
+        ]
+    },
+    "updateLaneSwitchPosDownResetData": {
+        "pos_down_reset_data.core_delta": [
+            [
+                "old_pos_down_delta",
+                "pos_down_new_primary",
+                "pos_down_reset_data_core_delta",
+                "pos_down_old_primary"
+            ],
+            0
+        ],
+        "pos_down_reset_data.last_primary_change": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "update": {
+        "plane.nav_pitch_cd": [
+            [
+                "att_target_y"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "att_target_x"
+            ],
+            0
+        ],
+        "att_target": [
+            [
+                "plane_quadplane_attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "throttle_out": [
+            [
+                "quadplane_get_pilot_throttle"
+            ],
+            0
+        ],
+        "target_pitch": [
+            [
+                "quadplane_acro_pitch_rate",
+                "plane_channel_pitch_norm_input"
+            ],
+            0
+        ],
+        "target_roll": [
+            [
+                "quadplane_acro_roll_rate",
+                "plane_channel_rudder_norm_input",
+                "quadplane_acro_yaw_rate",
+                "plane_channel_roll_norm_input"
+            ],
+            0
+        ],
+        "target_yaw": [
+            [
+                "plane_channel_rudder_norm_input",
+                "quadplane_acro_roll_rate",
+                "plane_channel_roll_norm_input",
+                "quadplane_acro_yaw_rate"
+            ],
+            0
+        ]
+    }
+}

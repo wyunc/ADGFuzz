@@ -1,0 +1,203 @@
+{
+    "handle_response": {
+        "device_limits.rf_freq_max": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "device_limits.rf_freq_min": [
+            [
+                "response_buffer"
+            ],
+            1
+        ],
+        "respCode": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "update_pending": [
+            [
+                "vtx_have_params_changed"
+            ],
+            0
+        ],
+        "pit_mode": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "device_limits.rf_power_max": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "power": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "freq": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "cur_temp": [
+            [
+                "response_buffer",
+                "int16_t"
+            ],
+            1
+        ],
+        "_packets_sent": [
+            [
+                "_packets_rcvd"
+            ],
+            0
+        ],
+        "cur_control_mode": [
+            [
+                "response_buffer"
+            ],
+            0
+        ],
+        "cur_act_power": [
+            [
+                "response_buffer"
+            ],
+            0
+        ]
+    },
+    "reset_receiver": {
+        "receive_state": [
+            [
+                "s_wait_len"
+            ],
+            0
+        ]
+    },
+    "receive_response": {
+        "b": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "uint8_t_b"
+            ],
+            0
+        ],
+        "receive_state": [
+            [
+                "s_data",
+                "s_wait_code"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "handle_response"
+            ],
+            0
+        ],
+        "cksum": [
+            [
+                "checksum_response_buffer"
+            ],
+            0
+        ],
+        "bytesNeeded": [
+            [
+                "receive_pos",
+                "tramp_buf_size"
+            ],
+            0
+        ]
+    },
+    "set_status": {
+        "status": [
+            [
+                "_status"
+            ],
+            0
+        ]
+    },
+    "process_requests": {
+        "last_time_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "replyCode": [
+            [
+                "receive_response"
+            ],
+            0
+        ]
+    },
+    "set_frequency": {
+        "freqValid": [
+            [
+                "vtx_tramp_min_frequency_mhz",
+                "freq",
+                "device_limits_rf_freq_max",
+                "vtx_tramp_max_frequency_mhz",
+                "device_limits_rf_freq_min"
+            ],
+            0
+        ],
+        "retry_count": [
+            [
+                "vtx_tramp_max_retries"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "retry_count": [
+            [
+                "vtx_tramp_max_retries"
+            ],
+            0
+        ]
+    },
+    "update_baud_rate": {
+        "_packets_sent": [
+            [
+                "_packets_rcvd"
+            ],
+            0
+        ],
+        "_smartbaud_direction": [
+            [
+                "down",
+                "up"
+            ],
+            0
+        ],
+        "_smartbaud": [
+            [
+                "int32_t__smartbaud_direction",
+                "vtx_tramp_smartbaud_step"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "port": [
+            [
+                "serialmanager_find_serial_serial_protocol_tramp"
+            ],
+            0
+        ]
+    }
+}

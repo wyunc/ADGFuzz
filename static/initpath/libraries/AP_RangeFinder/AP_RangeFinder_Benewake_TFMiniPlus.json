@@ -1,0 +1,76 @@
+{
+    "init": {
+        "ret": [
+            [
+                "_dev_transfer_i",
+                "_dev_transfer_cmds",
+                "_dev_transfer_sizeof",
+                "_dev_transfer_nullptr",
+                "nullptr",
+                "_dev_transfer_cmd_fw_version",
+                "_dev_transfer_val"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "accum_sum",
+                "accum_count"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "process_raw_measure": {
+        "output_distance_cm": [
+            [
+                "constrain_int16_max_dist_cm",
+                "constrain_int16_output_distance_cm",
+                "constrain_int16_min_dist_cm",
+                "le16toh_distance_raw",
+                "max_dist_cm",
+                "max_distance_cm_benewake_out_of_range_add_cm"
+            ],
+            0
+        ],
+        "strength": [
+            [
+                "le16toh_strength_raw"
+            ],
+            0
+        ]
+    },
+    "check_checksum": {
+        "checksum": [
+            [
+                "pkt_len",
+                "i",
+                "arr"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "ret": [
+            [
+                "nullptr",
+                "_dev_transfer_cmd_read_measurement",
+                "_dev_transfer_sizeof"
+            ],
+            0
+        ],
+        "accum.sum": [
+            [
+                "distance"
+            ],
+            0
+        ]
+    }
+}

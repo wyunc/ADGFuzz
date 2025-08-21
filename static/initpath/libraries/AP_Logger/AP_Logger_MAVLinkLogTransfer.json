@@ -1,0 +1,143 @@
+{
+    "handle_log_message": {
+        "_last_mavlink_log_transfer_message_handled_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_log_request_list": {
+        "_log_next_list_entry": [
+            [
+                "packet_start"
+            ],
+            0
+        ],
+        "transfer_activity": [
+            [
+                "listing"
+            ],
+            0
+        ],
+        "_log_last_list_entry": [
+            [
+                "packet_end",
+                "get_num_logs"
+            ],
+            1
+        ],
+        "_log_sending_link": [
+            [
+                "link"
+            ],
+            0
+        ]
+    },
+    "handle_log_request_data": {
+        "num_logs": [
+            [
+                "get_num_logs"
+            ],
+            0
+        ],
+        "_log_sending_link": [
+            [
+                "link"
+            ],
+            0
+        ],
+        "transfer_activity": [
+            [
+                "sending"
+            ],
+            0
+        ],
+        "_log_data_remaining": [
+            [
+                "packet_ofs",
+                "packet_count",
+                "size"
+            ],
+            2
+        ],
+        "_log_num_data": [
+            [
+                "packet_id"
+            ],
+            0
+        ]
+    },
+    "end_log_transfer": {
+        "_log_sending_link": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "transfer_activity": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "handle_log_send_listing": {
+        "_log_sending_link": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "transfer_activity": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "handle_log_send_data": {
+        "_log_data_offset": [
+            [
+                "get_log_data_len",
+                "get_log_data_packet_data",
+                "get_log_data__log_num_data",
+                "get_log_data__log_data_offset",
+                "get_log_data__log_data_page"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "mavlink_msg_log_data_field_data_len"
+            ],
+            0
+        ],
+        "packet.id": [
+            [
+                "_log_num_data"
+            ],
+            0
+        ],
+        "_log_data_remaining": [
+            [
+                "get_log_data_len",
+                "get_log_data_packet_data",
+                "get_log_data__log_num_data",
+                "get_log_data__log_data_offset",
+                "get_log_data__log_data_page"
+            ],
+            1
+        ],
+        "packet.count": [
+            [
+                "get_log_data_len",
+                "get_log_data_packet_data",
+                "get_log_data__log_num_data",
+                "get_log_data__log_data_offset",
+                "get_log_data__log_data_page"
+            ],
+            1
+        ]
+    }
+}

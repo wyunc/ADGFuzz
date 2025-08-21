@@ -1,0 +1,98 @@
+{
+    "get_oa_wp_destination": {
+        "destination": [
+            [
+                "_oa_destination"
+            ],
+            0
+        ]
+    },
+    "set_wp_destination": {
+        "ret": [
+            [
+                "set_wp_destination_destination",
+                "set_wp_destination_terrain_alt"
+            ],
+            0
+        ],
+        "_oa_state": [
+            [
+                "oa_not_required"
+            ],
+            0
+        ]
+    },
+    "reached_wp_destination": {
+        "_oa_state": [
+            [
+                "reached_wp_destination",
+                "oa_not_required"
+            ],
+            0
+        ]
+    },
+    "update_wpnav": {
+        "path_planner_used": [
+            [
+                "none"
+            ],
+            0
+        ],
+        "_origin_oabak": [
+            [
+                "_origin"
+            ],
+            0
+        ],
+        "_oa_state": [
+            [
+                "oa_retstate"
+            ],
+            0
+        ],
+        "_destination_oabak": [
+            [
+                "_destination"
+            ],
+            0
+        ],
+        "target_alt_loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ],
+        "_next_destination_oabak": [
+            [
+                "_next_destination"
+            ],
+            0
+        ],
+        "_oa_next_destination": [
+            [
+                "oa_next_destination_new"
+            ],
+            0
+        ],
+        "_oa_destination": [
+            [
+                "oa_destination_new",
+                "location_above_origin",
+                "location_stopping_point"
+            ],
+            0
+        ],
+        "_terrain_alt_oabak": [
+            [
+                "_terrain_alt"
+            ],
+            0
+        ],
+        "oa_ptr": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

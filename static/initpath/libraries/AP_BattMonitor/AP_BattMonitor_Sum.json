@@ -1,0 +1,67 @@
+{
+    "read": {
+        "_state.temperature_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_has_current": [
+            [
+                "current_count"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "consumed_wh"
+            ],
+            1
+        ],
+        "_state.temperature": [
+            [
+                "temperature",
+                "temperature_count"
+            ],
+            1
+        ],
+        "_state.consumed_mah": [
+            [
+                "consumed_mah"
+            ],
+            1
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.current_amps": [
+            [
+                "current"
+            ],
+            1
+        ],
+        "_state.healthy": [
+            [
+                "voltage_count"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "_mon_voltage_i",
+                "voltage_count",
+                "_mon_voltage_i"
+            ],
+            3
+        ],
+        "_has_temperature": [
+            [
+                "temperature_count"
+            ],
+            0
+        ]
+    }
+}

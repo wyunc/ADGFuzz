@@ -1,0 +1,40 @@
+{
+    "transfer": {
+        ".rx_buf": [
+            [
+                "uint64_t",
+                "recv"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "bus_ioctl_device_desc_cs_pin",
+                "bus_ioctl_ioctl_number",
+                "bus_ioctl_msgs"
+            ],
+            0
+        ],
+        ".len": [
+            [
+                "recv_len",
+                "send_len"
+            ],
+            0
+        ],
+        ".tx_buf": [
+            [
+                "send",
+                "uint64_t"
+            ],
+            0
+        ],
+        "ioctl_number": [
+            [
+                "spi_transaction_2long",
+                "spi_transaction_1long"
+            ],
+            0
+        ]
+    }
+}

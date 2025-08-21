@@ -1,0 +1,205 @@
+{
+    "parameters_updated": {
+        "_man_tilt_max": [
+            [
+                "radians__param_mpc_man_tilt_max_get"
+            ],
+            0
+        ]
+    },
+    "throttle_curve": {
+        "thrust": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "generate_attitude_setpoint": {
+        "arming_gesture": [
+            [
+                "_param_mc_airmode_get",
+                "_manual_control_setpoint_throttle",
+                "_"
+            ],
+            0
+        ],
+        "q_sp": [
+            [
+                "q_sp_yaw",
+                "_man_tilt_max",
+                "v_norm",
+                "axis_anglef_v",
+                "_f"
+            ],
+            2
+        ],
+        "yaw_setpoint": [
+            [
+                "nan",
+                "eulerf_q_psi",
+                "px4_isfinite__yaw_setpoint_stabilized"
+            ],
+            2
+        ],
+        "attitude_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ],
+        "is_hovering": [
+            [
+                "vehicle_status_in_transition_mode",
+                "vehicle_status_vehicle_type",
+                "vehicle_type_rotary_wing"
+            ],
+            2
+        ],
+        "_thrust_setpoint_body": [
+            [
+                "vector3f_vehicle_attitude_setpoint_thrust_body"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "constrain_v_att_timestamp_sample",
+                "1e",
+                "constrain__last_run"
+            ],
+            0
+        ],
+        "rates_setpoint.yaw": [
+            [
+                "_attitude_control_update_q",
+                "vector3f_pid_autotune_rate_sp"
+            ],
+            1
+        ],
+        "_heading_good_for_control": [
+            [
+                "vehicle_local_position_heading_good_for_control"
+            ],
+            0
+        ],
+        "rates_setpoint.roll": [
+            [
+                "_attitude_control_update_q",
+                "vector3f_pid_autotune_rate_sp"
+            ],
+            1
+        ],
+        "_hover_thrust_estimate": [
+            [
+                "constrain_hover_thrust_estimate_hover_thrust",
+                "_param_mpc_thr_hover_get",
+                "constrain__"
+            ],
+            0
+        ],
+        "is_tailsitter_transition": [
+            [
+                "vehicle_status_is_vtol_tailsitter",
+                "vehicle_status_in_transition_mode"
+            ],
+            2
+        ],
+        "_last_run": [
+            [
+                "v_att_timestamp_sample"
+            ],
+            0
+        ],
+        "_yaw_setpoint_stabilized": [
+            [
+                "nan",
+                "wrap_pi_delta_psi",
+                "wrap_pi__yaw_setpoint_stabilized"
+            ],
+            0
+        ],
+        "delta_psi": [
+            [
+                "eulerf_delta_q_reset_psi"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "rates_setpoint.pitch": [
+            [
+                "_attitude_control_update_q",
+                "vector3f_pid_autotune_rate_sp"
+            ],
+            1
+        ],
+        "rates_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_vtol": [
+            [
+                "vehicle_status_is_vtol"
+            ],
+            0
+        ],
+        "_quat_reset_counter": [
+            [
+                "v_att_quat_reset_counter"
+            ],
+            0
+        ],
+        "_unaided_heading": [
+            [
+                "vehicle_local_position_unaided_heading"
+            ],
+            0
+        ],
+        "_spooled_up": [
+            [
+                "vehicle_status_arming_state",
+                "arming_state_armed",
+                "_param_com_spoolup_time_get",
+                "hrt_elapsed_time_vehicle_status_armed_time",
+                "1_s"
+            ],
+            1
+        ],
+        "_last_attitude_setpoint": [
+            [
+                "vehicle_attitude_setpoint_timestamp"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "new",
+                "multicopter_attitude_control_vtol"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

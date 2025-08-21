@@ -1,0 +1,66 @@
+{
+    "update_pin": {
+        "pin": [
+            [
+                "new_pin"
+            ],
+            0
+        ],
+        "pin_value": [
+            [
+                "hal_gpio_read_pin"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "irqstate": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ]
+    },
+    "update_phase_and_error_count": {
+        "step_forward": [
+            [
+                "irq_state_phase"
+            ],
+            0
+        ],
+        "step_back": [
+            [
+                "irq_state_phase"
+            ],
+            0
+        ],
+        "irq_state.phase": [
+            [
+                "pin_ab_to_phase_last_pin_b_value",
+                "pin_ab_to_phase_last_pin_a_value"
+            ],
+            1
+        ]
+    },
+    "irq_handler": {
+        "last_pin_b_value": [
+            [
+                "pin_value"
+            ],
+            0
+        ],
+        "last_pin_a_value": [
+            [
+                "pin_value"
+            ],
+            0
+        ],
+        "irq_state.last_reading_ms": [
+            [
+                "1e",
+                "timestamp"
+            ],
+            0
+        ]
+    }
+}

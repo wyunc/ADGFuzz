@@ -1,0 +1,83 @@
+{
+    "ekfResetHandler": {
+        "_yaw_error_ref": [
+            [
+                "wrap_pi_delta_yaw",
+                "wrap_pi__yaw_error_ref"
+            ],
+            0
+        ]
+    },
+    "generateYawSetpoint": {
+        "yawspeed_setpoint": [
+            [
+                "_yawspeed_filter_update_yawspeed_scale",
+                "_yawspeed_filter_update_stick_yaw"
+            ],
+            0
+        ],
+        "reset_setpoint": [
+            [
+                "update_yaw_correction_yaw",
+                "update_yaw_correction_unaided_yaw",
+                "update_yaw_correction_deltatime"
+            ],
+            0
+        ],
+        "yawspeed_scale": [
+            [
+                "min__param_mpc_man_y_max_get",
+                "_yawspeed_constraint",
+                "min_radians"
+            ],
+            0
+        ],
+        "yaw_correction_prev": [
+            [
+                "_yaw_correction"
+            ],
+            0
+        ],
+        "yaw_setpoint": [
+            [
+                "update_yaw_lock_yaw_correction_prev",
+                "update_yaw_lock_yaw_setpoint",
+                "nan",
+                "update_yaw_lock_yawspeed_setpoint",
+                "update_yaw_lock_yaw"
+            ],
+            0
+        ]
+    },
+    "updateYawCorrection": {
+        "_yaw_estimate_converging": [
+            [
+                "fabsf_yaw_error_hpf",
+                "_k_yaw_error_change_threshold"
+            ],
+            0
+        ],
+        "_yaw_correction": [
+            [
+                "_f",
+                "wrap_pi_yaw_error",
+                "wrap_pi__yaw_error_ref"
+            ],
+            0
+        ],
+        "_yaw_error_ref": [
+            [
+                "wrap_pi_unaided_yaw",
+                "wrap_pi_yaw"
+            ],
+            1
+        ],
+        "yaw_error_hpf": [
+            [
+                "wrap_pi_yaw_error",
+                "wrap_pi__yaw_error_lpf_get_state"
+            ],
+            0
+        ]
+    }
+}

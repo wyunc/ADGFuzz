@@ -1,0 +1,172 @@
+{
+    "init": {
+        "dev": [
+            [
+                "i",
+                "addresses",
+                "hal_i2c_mgr_get_device_get_bus"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "reg_convert_temperature"
+            ],
+            0
+        ],
+        "command_send_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "found": [
+            [
+                "read_prom"
+            ],
+            0
+        ]
+    },
+    "read_prom": {
+        "reg": [
+            [
+                "reg_reset"
+            ],
+            0
+        ],
+        "crc_read": [
+            [
+                "prom",
+                "0xf",
+                "crc4_prom"
+            ],
+            1
+        ]
+    },
+    "calculate": {
+        "SENS": [
+            [
+                "q1",
+                "d_t",
+                "int64_t_prom",
+                "q3",
+                "1l"
+            ],
+            0
+        ],
+        "P_Pa": [
+            [
+                "psi_to_pa",
+                "p",
+                "_0e"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "d_t",
+                "int64_t_prom",
+                "q2",
+                "q4",
+                "1l"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "1l",
+                "d_t",
+                "int64_t_prom",
+                "q6"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "1l",
+                "float_d1",
+                "sens",
+                "off"
+            ],
+            0
+        ],
+        "Temp_C": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "pressure_sum": [
+            [
+                "p_pa"
+            ],
+            0
+        ],
+        "last_sample_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "1l",
+                "float_d2",
+                "q5",
+                "int64_t_prom"
+            ],
+            0
+        ],
+        "temperature_sum": [
+            [
+                "temp_c"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "cmd_sent": [
+            [
+                "reg_convert_temperature",
+                "reg_convert_pressure"
+            ],
+            0
+        ],
+        "D2": [
+            [
+                "read_adc"
+            ],
+            1
+        ],
+        "D1": [
+            [
+                "read_adc"
+            ],
+            1
+        ],
+        "command_send_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "get_differential_pressure": {
+        "_pressure": [
+            [
+                "press_count",
+                "pressure_sum"
+            ],
+            1
+        ]
+    },
+    "get_temperature": {
+        "_temperature": [
+            [
+                "temp_count",
+                "temperature_sum"
+            ],
+            1
+        ]
+    }
+}

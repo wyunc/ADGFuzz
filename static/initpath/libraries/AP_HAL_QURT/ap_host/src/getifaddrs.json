@@ -1,0 +1,135 @@
+{
+    "getifaddrs": {
+        "ifa_addr": [
+            [
+                "sockaddr_dup_i",
+                "sockaddr_dup__ifr_addr",
+                "nullptr",
+                "sockaddr_dup_ifr"
+            ],
+            0
+        ],
+        "ifc.ifc_len": [
+            [
+                "sizeof_buff"
+            ],
+            0
+        ],
+        "ifa_next": [
+            [
+                "struct",
+                "calloc_struct",
+                "calloc_ifaddrs",
+                "ifaddrs",
+                "calloc_sizeof",
+                "nullptr"
+            ],
+            1
+        ],
+        "lastif": [
+            [
+                "struct",
+                "calloc_struct",
+                "calloc_ifaddrs",
+                "ifaddrs",
+                "calloc_sizeof",
+                "nullptr"
+            ],
+            1
+        ],
+        "ifa_dstaddr": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ifa_flags": [
+            [
+                "_ifr_flags",
+                "sizeof_ifreq",
+                "ifc_ifc_len",
+                "sizeof_struct",
+                "nullptr",
+                "ifc_ifc_req"
+            ],
+            3
+        ],
+        "ifa_name": [
+            [
+                "strdup__ifr_name",
+                "strdup_i",
+                "strdup_ifr"
+            ],
+            0
+        ],
+        "ifa_netmask": [
+            [
+                "sockaddr_dup_i",
+                "sockaddr_dup__ifr_addr",
+                "nullptr",
+                "sockaddr_dup_ifr"
+            ],
+            0
+        ],
+        "ifa_data": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ifap": [
+            [
+                "struct",
+                "calloc_struct",
+                "calloc_ifaddrs",
+                "ifaddrs",
+                "calloc_sizeof",
+                "nullptr"
+            ],
+            1
+        ],
+        "ifc.ifc_buf": [
+            [
+                "buff"
+            ],
+            0
+        ]
+    },
+    "get_ipv4_broadcast": {
+        "ret": [
+            [
+                "inet_ntoa_bcast"
+            ],
+            0
+        ],
+        "bcast.s_addr": [
+            [
+                "nmask_sin_addr_s_addr",
+                "sin_sin_addr_s_addr"
+            ],
+            0
+        ],
+        "nmask": [
+            [
+                "sockaddr_in",
+                "struct",
+                "ia_ifa_netmask"
+            ],
+            0
+        ],
+        "sin": [
+            [
+                "sockaddr_in",
+                "struct",
+                "ia_ifa_addr"
+            ],
+            0
+        ],
+        "ia": [
+            [
+                "nullptr"
+            ],
+            1
+        ]
+    }
+}

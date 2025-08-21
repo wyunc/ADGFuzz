@@ -1,0 +1,161 @@
+{
+    "set_trigger_distance": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "cam_mode_toggle": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "take_picture": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "take_multiple_pictures": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "stop_capture": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "record_video": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "primary": [
+            [
+                "_backends",
+                "instance"
+            ],
+            0
+        ]
+    },
+    "send_mavlink_message": {
+        "chan": [
+            [
+                "link_get_chan"
+            ],
+            0
+        ]
+    },
+    "configure": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "control": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_zoom": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_tracking": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_lens": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_camera_source": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "get_state": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "change_setting": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_camera_information": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "set_stream_information": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "convert_params": {
+        "cam1_type": [
+            [
+                "cam_trigg_type"
+            ],
+            0
+        ],
+        "table_size": [
+            [
+                "array_size_camera_param_conversion_info"
+            ],
+            0
+        ]
+    }
+}

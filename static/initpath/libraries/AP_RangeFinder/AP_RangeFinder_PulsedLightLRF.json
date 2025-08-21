@@ -1,0 +1,62 @@
+{
+    "timer": {
+        "state.distance_m": [
+            [
+                "be16toh_val"
+            ],
+            1
+        ],
+        "phase": [
+            [
+                "phase_measure",
+                "phase_collect"
+            ],
+            0
+        ],
+        "last_distance_cm": [
+            [
+                "be16toh_val"
+            ],
+            1
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "phase": [
+            [
+                "phase_measure",
+                "phase_collect"
+            ],
+            0
+        ],
+        "table": [
+            [
+                "settings_v1",
+                "settings_v3hp",
+                "settings_v2"
+            ],
+            0
+        ],
+        "v2_hardware": [
+            [
+                "hw_version",
+                "0x15"
+            ],
+            0
+        ],
+        "num_settings": [
+            [
+                "sizeof_settings_v2",
+                "sizeof_settings_table",
+                "sizeof_settings_v3hp",
+                "sizeof_settings_v1"
+            ],
+            0
+        ]
+    }
+}

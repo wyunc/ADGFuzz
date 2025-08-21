@@ -1,0 +1,242 @@
+{
+    "SetPower": {
+        "setup": [
+            [
+                "read_reg_bk_rf_setup"
+            ],
+            0
+        ],
+        "bkReady": [
+            [
+                "bk_ready"
+            ],
+            1
+        ],
+        "idx": [
+            [
+                "bank1_reg_table",
+                "itx_carrier",
+                "g_tx_speed",
+                "ireg1_4",
+                "fcc_cw_mode"
+            ],
+            1
+        ],
+        "fcc.power": [
+            [
+                "power"
+            ],
+            0
+        ]
+    },
+    "SetChannel": {
+        "lastTxChannel": [
+            [
+                "freq"
+            ],
+            0
+        ]
+    },
+    "SetCwMode": {
+        "idx": [
+            [
+                "itx_carrier",
+                "cw",
+                "g_tx_speed",
+                "bank1_reg_table",
+                "ireg1_4"
+            ],
+            1
+        ],
+        "fcc.CW_mode": [
+            [
+                "cw"
+            ],
+            0
+        ],
+        "setup": [
+            [
+                "read_reg_bk_rf_setup"
+            ],
+            0
+        ],
+        "bkReady": [
+            [
+                "bk_ready"
+            ],
+            1
+        ]
+    },
+    "SetCrcMode": {
+        "fcc.disable_crc": [
+            [
+                "disable_crc"
+            ],
+            0
+        ],
+        "config": [
+            [
+                "read_reg_bk_config"
+            ],
+            0
+        ],
+        "bkReady": [
+            [
+                "bk_ready"
+            ],
+            1
+        ]
+    },
+    "EnableCarrierDetect": {
+        "fcc.enable_cd": [
+            [
+                "b_enable"
+            ],
+            0
+        ],
+        "bkReady": [
+            [
+                "bk_ready"
+            ],
+            1
+        ],
+        "idx": [
+            [
+                "g_tx_speed",
+                "ireg1_5",
+                "bank1_reg_table"
+            ],
+            1
+        ]
+    },
+    "SetFactoryMode": {
+        "fcc.factory_mode": [
+            [
+                "factory"
+            ],
+            0
+        ],
+        "bkReady": [
+            [
+                "bk_ready"
+            ],
+            1
+        ]
+    },
+    "WasTxMode": {
+        "bkMode": [
+            [
+                "bkradio_tx"
+            ],
+            0
+        ]
+    },
+    "WasRxMode": {
+        "bkMode": [
+            [
+                "bkradio_rx"
+            ],
+            0
+        ]
+    },
+    "SwitchToRxMode": {
+        "value": [
+            [
+                "read_status"
+            ],
+            0
+        ],
+        "bkMode": [
+            [
+                "bkradio_rx"
+            ],
+            0
+        ]
+    },
+    "SwitchToTxMode": {
+        "value": [
+            [
+                "read_reg_bk_config"
+            ],
+            0
+        ],
+        "bkMode": [
+            [
+                "bkradio_tx"
+            ],
+            0
+        ]
+    },
+    "SwitchToIdleMode": {
+        "bkMode": [
+            [
+                "bkradio_idle"
+            ],
+            0
+        ]
+    },
+    "SwitchToSleepMode": {
+        "bkMode": [
+            [
+                "bkradio_sleep"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "read_status"
+            ],
+            0
+        ]
+    },
+    "InitBank0Registers": {
+        "value": [
+            [
+                "bank0_reg",
+                "bank0_reg6",
+                "spd"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "bank0_reg"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "read_reg_bk_feature"
+            ],
+            0
+        ]
+    },
+    "InitBank1Registers": {
+        "idx": [
+            [
+                "bank1_reg_table",
+                "ireg1_4",
+                "ireg1_4",
+                "spd",
+                "ireg1_4a"
+            ],
+            2
+        ]
+    },
+    "ClearAckOverflow": {
+        "status": [
+            [
+                "read_status"
+            ],
+            0
+        ]
+    },
+    "DumpRegisters": {
+        "i": [
+            [
+                "ireg1_4"
+            ],
+            0
+        ]
+    }
+}

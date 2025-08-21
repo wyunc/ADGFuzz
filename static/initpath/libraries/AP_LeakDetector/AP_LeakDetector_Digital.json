@@ -1,0 +1,13 @@
+{
+    "read": {
+        "state.status": [
+            [
+                "hal_gpio_read_state_instance",
+                "hal_gpio_read_leak_detector__pin",
+                "state_instance",
+                "leak_detector__default_reading"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "balancebot_pitch_control": {
+        "demanded_pitch": [
+            [
+                "radians_throttle",
+                "radians_g2_bal_pitch_trim",
+                "radians_g2_bal_pitch_max"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "g2_attitude_control_get_throttle_out_from_pitch_g2_bal_pitch_max",
+                "g2_motors_limit_throttle_lower",
+                "g2_attitude_control_get_throttle_out_from_pitch_demanded_pitch",
+                "g2_attitude_control_get_throttle_out_from_pitch_radians",
+                "g2_motors_limit_throttle_upper",
+                "g_dt"
+            ],
+            0
+        ]
+    }
+}

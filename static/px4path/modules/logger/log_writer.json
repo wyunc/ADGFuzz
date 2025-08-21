@@ -1,0 +1,53 @@
+{
+    "init": {
+        "ret": [
+            [
+                "_log_writer_file_thread_start"
+            ],
+            0
+        ]
+    },
+    "is_started": {
+        "ret": [
+            [
+                "_log_writer_mavlink_is_started",
+                "_log_writer_file_is_started_type"
+            ],
+            0
+        ]
+    },
+    "write_message": {
+        "ret_mavlink": [
+            [
+                "_log_writer_mavlink_for_write_write_message_size",
+                "_log_writer_mavlink_for_write_write_message_ptr"
+            ],
+            0
+        ],
+        "ret_file": [
+            [
+                "_log_writer_file_for_write_write_message_size",
+                "_log_writer_file_for_write_write_message_ptr",
+                "_log_writer_file_for_write_write_message_type",
+                "_log_writer_file_for_write_write_message_dropout_start"
+            ],
+            0
+        ]
+    },
+    "select_write_backend": {
+        "_log_writer_file_for_write": [
+            [
+                "nullptr",
+                "_log_writer_file"
+            ],
+            0
+        ],
+        "_log_writer_mavlink_for_write": [
+            [
+                "_log_writer_mavlink",
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,187 @@
+{
+    "get_upward_distance": {
+        "distance": [
+            [
+                "_distance_upward"
+            ],
+            0
+        ]
+    },
+    "handle_distance_sensor_msg": {
+        "_distance_upward": [
+            [
+                "packet_current_distance"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_yaw_angle_deg"
+            ],
+            0
+        ],
+        "time_diff": [
+            [
+                "previous_sys_time",
+                "millis"
+            ],
+            1
+        ],
+        "in_range": [
+            [
+                "packet_current_distance",
+                "packet_min_distance",
+                "packet_max_distance"
+            ],
+            3
+        ],
+        "_last_upward_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_msg_update_timestamp_ms": [
+            [
+                "packet_time_boot_ms"
+            ],
+            0
+        ],
+        "yaw_angle_deg": [
+            [
+                "packet_orientation"
+            ],
+            1
+        ]
+    },
+    "handle_obstacle_distance_msg": {
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "total_distances": [
+            [
+                "mavlink_msg_obstacle_distance_field_distances_len",
+                "fabsf_increment"
+            ],
+            0
+        ],
+        "_distance_min": [
+            [
+                "packet_min_distance"
+            ],
+            0
+        ],
+        "face_yaw_deg": [
+            [
+                "wrap_360_param_yaw_offset",
+                "wrap_360_packet_angle_offset",
+                "wrap_360_floatj",
+                "packet_increment",
+                "packet_increment_f"
+            ],
+            3
+        ],
+        "face_distance": [
+            [
+                "flt_max",
+                "packet_distances",
+                "j"
+            ],
+            2
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_mid_angle"
+            ],
+            1
+        ],
+        "_distance_max": [
+            [
+                "packet_max_distance"
+            ],
+            0
+        ],
+        "param_yaw_offset": [
+            [
+                "params_yaw_correction"
+            ],
+            0
+        ],
+        "database_ready": [
+            [
+                "database_prepare_for_push_current_pos",
+                "database_prepare_for_push_body_to_ned"
+            ],
+            0
+        ]
+    },
+    "handle_obstacle_distance_3d_msg": {
+        "time_diff": [
+            [
+                "previous_sys_time",
+                "millis"
+            ],
+            1
+        ],
+        "_distance_max": [
+            [
+                "packet_max_distance"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_pitch",
+                "frontend_boundary_get_face_yaw"
+            ],
+            0
+        ],
+        "obstacle_distance": [
+            [
+                "obstacle_frd_length"
+            ],
+            0
+        ],
+        "_distance_min": [
+            [
+                "packet_min_distance"
+            ],
+            0
+        ],
+        "database_ready": [
+            [
+                "database_prepare_for_push_current_pos",
+                "database_prepare_for_push_body_to_ned"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "obstacle_z",
+                "wrap_180_atan2f",
+                "wrap_180_degrees",
+                "wrap_180_obstacle_xy_length",
+                "wrap_180_m_pi_2"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "wrap_360_obstacle_y",
+                "wrap_360_obstacle_x",
+                "wrap_360_atan2f",
+                "wrap_360_degrees"
+            ],
+            0
+        ],
+        "_last_msg_update_timestamp_ms": [
+            [
+                "packet_time_boot_ms"
+            ],
+            0
+        ]
+    }
+}

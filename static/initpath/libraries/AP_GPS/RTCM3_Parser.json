@@ -1,0 +1,76 @@
+{
+    "clear_packet": {
+        "pkt_bytes": [
+            [
+                "found_len"
+            ],
+            0
+        ]
+    },
+    "resync": {
+        "pkt_len": [
+            [
+                "0x3ff",
+                "pkt"
+            ],
+            0
+        ],
+        "pkt_bytes": [
+            [
+                "memchr_pkt_bytes",
+                "memchr_pkt",
+                "const",
+                "uint8_t",
+                "memchr_rtc_mv3_preamble",
+                "pkt"
+            ],
+            2
+        ]
+    },
+    "parse": {
+        "crc1": [
+            [
+                "pkt",
+                "pkt_len"
+            ],
+            1
+        ],
+        "crc2": [
+            [
+                "crc_crc24_pkt",
+                "crc_crc24_pkt_len"
+            ],
+            0
+        ],
+        "found_len": [
+            [
+                "pkt_len"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "pkt_len": [
+            [
+                "pkt",
+                "0x3ff"
+            ],
+            0
+        ]
+    },
+    "main": {
+        "fname": [
+            [
+                "argv"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_fname",
+                "open_o_rdonly"
+            ],
+            0
+        ]
+    }
+}

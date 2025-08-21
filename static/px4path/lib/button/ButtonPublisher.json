@@ -1,0 +1,72 @@
+{
+    "safetyButtonTriggerEvent": {
+        "safety_button.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "pairingButtonTriggerEvent": {
+        "vcmd.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "vcmd.command": [
+            [
+                "vehicle_cmd_start_rx_pair"
+            ],
+            0
+        ],
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tune_control.volume": [
+            [
+                "volume_level_default"
+            ],
+            0
+        ],
+        "led_control.mode": [
+            [
+                "mode_blink_fast"
+            ],
+            0
+        ],
+        "led_control.color": [
+            [
+                "color_white"
+            ],
+            0
+        ],
+        "vcmd.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "led_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "led_control.led_mask": [
+            [
+                "0xff"
+            ],
+            0
+        ],
+        "tune_control.tune_id": [
+            [
+                "tune_id_notify_positive"
+            ],
+            0
+        ]
+    }
+}

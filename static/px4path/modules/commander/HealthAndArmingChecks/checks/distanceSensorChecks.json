@@ -1,0 +1,25 @@
+{
+    "checkAndReport": {
+        "exists": [
+            [
+                "_distance_sensor_sub",
+                "_advertised",
+                "instance"
+            ],
+            0
+        ],
+        "is_mandatory": [
+            [
+                "_param_sys_has_num_dist_get",
+                "instance"
+            ],
+            0
+        ],
+        "dist_sens.mode": [
+            [
+                "mode_disabled"
+            ],
+            0
+        ]
+    }
+}

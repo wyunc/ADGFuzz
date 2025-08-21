@@ -1,0 +1,24 @@
+{
+    "update": {
+        "sum_pressure": [
+            [
+                "sum_temp"
+            ],
+            0
+        ]
+    },
+    "handle_msp": {
+        "sum_pressure": [
+            [
+                "pkt_pressure_pa"
+            ],
+            0
+        ],
+        "sum_temp": [
+            [
+                "pkt_temp"
+            ],
+            0
+        ]
+    }
+}

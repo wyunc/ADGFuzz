@@ -1,0 +1,40 @@
+{
+    "adc_init": {
+        "SMPR2": [
+            [
+                "adc_smpr2_smp_an4_adc_sample_28p5",
+                "adc_smpr2_smp_an5_adc_sample_28p5"
+            ],
+            0
+        ],
+        "CR2": [
+            [
+                "adc_cr2_cal",
+                "adc_cr2_adon",
+                "adc_cr2_rstcal"
+            ],
+            0
+        ]
+    },
+    "adc_read_sample": {
+        "SQR3": [
+            [
+                "vrssi_channel",
+                "vservo_channel"
+            ],
+            0
+        ],
+        "vservo_val": [
+            [
+                "adc1_dr"
+            ],
+            0
+        ],
+        "vrssi_val": [
+            [
+                "adc1_dr"
+            ],
+            0
+        ]
+    }
+}

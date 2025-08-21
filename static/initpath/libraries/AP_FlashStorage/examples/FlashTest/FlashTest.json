@@ -1,0 +1,56 @@
+{
+    "flash_write": {
+        "v": [
+            [
+                "le16toh_ptr_data",
+                "le16toh_ptr_i"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "le16toh_ptr_b",
+                "le16toh_ptr_i"
+            ],
+            0
+        ],
+        "len16": [
+            [
+                "length"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "offset",
+                "sector",
+                "flash"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "length": [
+            [
+                "sizeof_mem_buffer",
+                "sizeof_ofs",
+                "get_random16",
+                "0x1f"
+            ],
+            0
+        ],
+        "ofs": [
+            [
+                "sizeof_mem_buffer",
+                "get_random16"
+            ],
+            0
+        ],
+        "erase_ok": [
+            [
+                "i"
+            ],
+            0
+        ]
+    }
+}

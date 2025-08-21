@@ -1,0 +1,10 @@
+{
+    "publish": {
+        "_led_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

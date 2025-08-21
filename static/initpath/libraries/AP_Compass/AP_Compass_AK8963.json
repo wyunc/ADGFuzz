@@ -1,0 +1,75 @@
+{
+    "init": {
+        "bus_sem": [
+            [
+                "_bus_get_semaphore"
+            ],
+            0
+        ]
+    },
+    "_make_adc_sensitivity_adjustment": {
+        "field": [
+            [
+                "adc_16bit_resolution"
+            ],
+            0
+        ]
+    },
+    "_make_factory_sensitivity_adjustment": {
+        "field.z": [
+            [
+                "_magnetometer_asa"
+            ],
+            0
+        ],
+        "field.x": [
+            [
+                "_magnetometer_asa"
+            ],
+            0
+        ],
+        "field.y": [
+            [
+                "_magnetometer_asa"
+            ],
+            0
+        ]
+    },
+    "_update": {
+        "raw_field": [
+            [
+                "vector3f_regs_val",
+                "ak8963_milligauss_scale"
+            ],
+            0
+        ]
+    },
+    "_calibrate": {
+        "data": [
+            [
+                "response",
+                "i"
+            ],
+            0
+        ]
+    },
+    "block_read": {
+        "n": [
+            [
+                "size",
+                "_slave_read_buf",
+                "int",
+                "static_cast"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_slave_passthrough_read_size",
+                "_slave_passthrough_read_buf",
+                "_slave_passthrough_read_reg"
+            ],
+            0
+        ]
+    }
+}

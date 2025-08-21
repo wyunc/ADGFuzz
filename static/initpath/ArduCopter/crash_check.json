@@ -1,0 +1,80 @@
+{
+    "crash_check": {
+        "angle_error": [
+            [
+                "attitude_control_get_att_error_angle_deg"
+            ],
+            0
+        ],
+        "filtered_acc": [
+            [
+                "land_accel_ef_filter_get_length"
+            ],
+            0
+        ],
+        "lean_angle_deg": [
+            [
+                "degrees_ahrs_cos_roll",
+                "degrees_acosf",
+                "ahrs_cos_pitch"
+            ],
+            0
+        ]
+    },
+    "thrust_loss_check": {
+        "angle_target": [
+            [
+                "attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ],
+        "angle_error": [
+            [
+                "attitude_control_get_att_error_angle_deg"
+            ],
+            0
+        ]
+    },
+    "yaw_imbalance_check": {
+        "I_term": [
+            [
+                "attitude_control_get_rate_yaw_pid_get_pid_info_i"
+            ],
+            0
+        ],
+        "I": [
+            [
+                "fabsf_attitude_control_get_rate_yaw_pid_get_pid_info_i",
+                "g_dt",
+                "fabsf_yaw_i_filt_apply"
+            ],
+            0
+        ],
+        "I_max": [
+            [
+                "attitude_control_get_rate_yaw_pid_imax"
+            ],
+            0
+        ],
+        "last_yaw_warn_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "parachute_check": {
+        "angle_error": [
+            [
+                "attitude_control_get_att_error_angle_deg"
+            ],
+            0
+        ],
+        "baro_alt_start": [
+            [
+                "baro_alt"
+            ],
+            0
+        ]
+    }
+}

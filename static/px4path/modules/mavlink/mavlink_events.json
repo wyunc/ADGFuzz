@@ -1,0 +1,139 @@
+{
+    "init": {
+        "_events": [
+            [
+                "_capacity",
+                "event",
+                "new"
+            ],
+            0
+        ]
+    },
+    "insert_event": {
+        "_next": [
+            [
+                "_capacity"
+            ],
+            0
+        ]
+    },
+    "get_event": {
+        "event": [
+            [
+                "_next",
+                "count",
+                "_size",
+                "_events"
+            ],
+            1
+        ]
+    },
+    "size": {
+        "size": [
+            [
+                "_size"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_latest_sequence": [
+            [
+                "_buffer_get_latest_sequence"
+            ],
+            1
+        ]
+    },
+    "handle_request_event": {
+        "event_error.target_system": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "event_error.sequence_oldest_available": [
+            [
+                "_buffer_get_oldest_sequence_after_sequence"
+            ],
+            0
+        ],
+        "event_error.reason": [
+            [
+                "mav_event_error_reason_unavailable"
+            ],
+            0
+        ],
+        "event_error.target_component": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "event_error.sequence": [
+            [
+                "request_event_first_sequence"
+            ],
+            1
+        ],
+        "end_sequence": [
+            [
+                "request_event_last_sequence"
+            ],
+            0
+        ]
+    },
+    "send_event": {
+        "event_msg.sequence": [
+            [
+                "event_sequence"
+            ],
+            0
+        ],
+        "event_msg.log_levels": [
+            [
+                "event_log_levels"
+            ],
+            0
+        ],
+        "event_msg.event_time_boot_ms": [
+            [
+                "event_timestamp_ms"
+            ],
+            0
+        ],
+        "event_msg.destination_component": [
+            [
+                "mav_comp_id_all"
+            ],
+            0
+        ],
+        "event_msg.id": [
+            [
+                "event_id"
+            ],
+            0
+        ]
+    },
+    "send_current_sequence": {
+        "_last_current_sequence_sent": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "current_event_seq.flags": [
+            [
+                "mav_event_current_sequence_flags_reset",
+                "_buffer_size",
+                "force_reset"
+            ],
+            0
+        ],
+        "current_event_seq.sequence": [
+            [
+                "_buffer_get_latest_sequence"
+            ],
+            0
+        ]
+    }
+}

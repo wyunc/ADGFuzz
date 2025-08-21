@@ -1,0 +1,193 @@
+{
+    "test_init": {
+        "sibling_validator": [
+            [
+                "data_validator",
+                "new",
+                "validator_sibling"
+            ],
+            0
+        ],
+        "0.0f": [
+            [
+                "validator_confidence_fake_timestamp"
+            ],
+            0
+        ],
+        "ERROR_FLAG_NO_DATA": [
+            [
+                "validator_state",
+                "error_flag_no_data"
+            ],
+            1
+        ],
+        "nullptr": [
+            [
+                "validator_sibling"
+            ],
+            0
+        ],
+        "validator": [
+            [
+                "data_validator",
+                "new"
+            ],
+            0
+        ],
+        "0": [
+            [
+                "validator_error_count",
+                "validator_priority"
+            ],
+            0
+        ]
+    },
+    "test_put": {
+        "last_val": [
+            [
+                "1e",
+                "val"
+            ],
+            1
+        ],
+        "0": [
+            [
+                "validator_state"
+            ],
+            0
+        ],
+        "0.0f": [
+            [
+                "validator_confidence_timestamp",
+                "validator_confidence_timeout_usec"
+            ],
+            1
+        ],
+        "ERROR_FLAG_TIMEOUT": [
+            [
+                "error_flag_timeout",
+                "validator_state"
+            ],
+            0
+        ],
+        "validator": [
+            [
+                "data_validator",
+                "new"
+            ],
+            0
+        ]
+    },
+    "test_stale_detector": {
+        "0.0f": [
+            [
+                "validator_confidence_timestamp"
+            ],
+            0
+        ],
+        "validator": [
+            [
+                "data_validator",
+                "new"
+            ],
+            0
+        ],
+        "insufficient_incr_value": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "ERROR_FLAG_STALE_DATA": [
+            [
+                "validator_state",
+                "error_flag_stale_data"
+            ],
+            1
+        ]
+    },
+    "test_rms_calculation": {
+        "diff_frac": [
+            [
+                "fabsf_expected_rms_err",
+                "fabsf_calc_rms_err",
+                "expected_rms_err"
+            ],
+            1
+        ],
+        "validator": [
+            [
+                "new",
+                "data_validator"
+            ],
+            0
+        ],
+        "calc_rms_err": [
+            [
+                "validator_rms"
+            ],
+            1
+        ]
+    },
+    "test_error_tracking": {
+        "diff": [
+            [
+                "fabs_conf",
+                "fabs_reduced_conf"
+            ],
+            0
+        ],
+        "reduced_conf": [
+            [
+                "expected_error_density",
+                "float"
+            ],
+            0
+        ],
+        "validator": [
+            [
+                "data_validator",
+                "new"
+            ],
+            0
+        ],
+        "0.0f": [
+            [
+                "validator_confidence_timestamp"
+            ],
+            1
+        ],
+        "ERROR_FLAG_HIGH_ERRDENSITY": [
+            [
+                "validator_state",
+                "error_flag_high_errdensity"
+            ],
+            0
+        ],
+        "ERROR_FLAG_HIGH_ERRCOUNT": [
+            [
+                "error_flag_high_errcount",
+                "validator_state"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "timestamp_incr"
+            ],
+            0
+        ],
+        "0": [
+            [
+                "validator_state"
+            ],
+            0
+        ],
+        "sufficient_incr_value": [
+            [
+                "1e"
+            ],
+            0
+        ]
+    }
+}

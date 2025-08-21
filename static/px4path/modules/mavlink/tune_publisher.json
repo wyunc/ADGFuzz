@@ -1,0 +1,64 @@
+{
+    "set_tune_string": {
+        "_next_publish_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "tune_len": [
+            [
+                "strlen_tune"
+            ],
+            0
+        ]
+    },
+    "publish_next_tune": {
+        "tune_control.duration": [
+            [
+                "static_cast",
+                "uint32_t",
+                "duration"
+            ],
+            0
+        ],
+        "tune_control.volume": [
+            [
+                "static_cast",
+                "uint8_t",
+                "volume"
+            ],
+            0
+        ],
+        "_next_publish_time": [
+            [
+                "now",
+                "silence",
+                "duration"
+            ],
+            0
+        ],
+        "tune_control.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tune_control.silence": [
+            [
+                "static_cast",
+                "silence",
+                "uint32_t"
+            ],
+            0
+        ],
+        "tune_control.frequency": [
+            [
+                "static_cast",
+                "uint16_t",
+                "frequency"
+            ],
+            0
+        ]
+    }
+}

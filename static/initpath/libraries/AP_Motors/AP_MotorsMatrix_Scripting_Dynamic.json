@@ -1,0 +1,22 @@
+{
+    "init": {
+        "_mav_type": [
+            [
+                "mav_type_quadrotor",
+                "mav_type_decarotor",
+                "mav_type_generic",
+                "mav_type_hexarotor",
+                "mav_type_dodecarotor",
+                "mav_type_tricopter",
+                "mav_type_octorotor"
+            ],
+            0
+        ],
+        "expected_num_motors": [
+            [
+                "num_motors"
+            ],
+            0
+        ]
+    }
+}

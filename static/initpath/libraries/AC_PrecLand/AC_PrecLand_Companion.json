@@ -1,0 +1,32 @@
+{
+    "update": {
+        "_have_los_meas": [
+            [
+                "millis",
+                "_los_meas_time_ms"
+            ],
+            0
+        ]
+    },
+    "handle_msg": {
+        "_los_meas_body": [
+            [
+                "vector3f_packet_z",
+                "packet_distance",
+                "vector3f_tanf",
+                "tanf_packet_angle_x",
+                "_los_meas_body_length",
+                "vector3f_packet_y",
+                "vector3f_packet_x",
+                "vector3f_packet_angle_y"
+            ],
+            1
+        ],
+        "_los_meas_time_ms": [
+            [
+                "timestamp_ms"
+            ],
+            0
+        ]
+    }
+}

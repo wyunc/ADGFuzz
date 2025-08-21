@@ -1,0 +1,19 @@
+{
+    "write": {
+        "value": [
+            [
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "new_mask": [
+            [
+                "uint16_t",
+                "static_cast",
+                "_sitl_state__sitl_pin_mask_get"
+            ],
+            1
+        ]
+    }
+}

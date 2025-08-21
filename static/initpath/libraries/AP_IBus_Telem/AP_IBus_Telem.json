@@ -1,0 +1,59 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "tick": {
+        "available": [
+            [
+                "port_available_1024u"
+            ],
+            0
+        ],
+        "last_received_message_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "calculated_checksum": [
+            [
+                "i",
+                "u_buffer",
+                "0x_ffff"
+            ],
+            0
+        ]
+    },
+    "handle_incoming_message": {
+        "sensor_definition": [
+            [
+                "incoming_sensor_id",
+                "sensors"
+            ],
+            0
+        ]
+    },
+    "handle_value_command": {
+        "value": [
+            [
+                "get_sensor_value_sensor_sensor_type"
+            ],
+            0
+        ]
+    },
+    "populate_checksum": {
+        "checksum": [
+            [
+                "packet",
+                "i",
+                "0x_ffff"
+            ],
+            0
+        ]
+    }
+}

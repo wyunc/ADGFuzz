@@ -1,0 +1,115 @@
+{
+    "update": {
+        "tentative_pwm_state": [
+            [
+                "new_pwm_state",
+                "new_pwm_state"
+            ],
+            1
+        ],
+        "debounce_mask": [
+            [
+                "get_mask"
+            ],
+            1
+        ],
+        "last_action_time_ms": [
+            [
+                "millis64",
+                "last_debounced_change_ms"
+            ],
+            2
+        ],
+        "pwm_start_debounce_ms": [
+            [
+                "millis64"
+            ],
+            1
+        ],
+        "mask": [
+            [
+                "1u",
+                "i"
+            ],
+            0
+        ],
+        "last_report_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pwm_us": [
+            [
+                "pwm_pin_source",
+                "_get_pwm_us",
+                "i"
+            ],
+            0
+        ]
+    },
+    "run_aux_functions": {
+        "str": [
+            [
+                "rc_channel_string_for_aux_function_func"
+            ],
+            0
+        ],
+        "func": [
+            [
+                "aux_func_i",
+                "aux_func__get",
+                "aux_func_pin_func"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "low",
+                "high",
+                "pwm_state",
+                "debounce_mask",
+                "i",
+                "1u"
+            ],
+            2
+        ],
+        "actioned": [
+            [
+                "state_actioned_mask",
+                "i",
+                "1u"
+            ],
+            1
+        ]
+    },
+    "timer_update": {
+        "debounce_mask": [
+            [
+                "get_mask"
+            ],
+            2
+        ],
+        "last_change_time_ms": [
+            [
+                "millis64"
+            ],
+            1
+        ],
+        "last_debounced_change_ms": [
+            [
+                "millis64"
+            ],
+            1
+        ]
+    },
+    "send_report": {
+        "mask": [
+            [
+                "pwm_state",
+                "last_mask"
+            ],
+            0
+        ]
+    }
+}

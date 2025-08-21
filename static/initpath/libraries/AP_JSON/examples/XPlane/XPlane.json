@@ -1,0 +1,41 @@
+{
+    "test_xplane": {
+        "i": [
+            [
+                "o_begin"
+            ],
+            0
+        ],
+        "label": [
+            [
+                "i_first_c_str"
+            ],
+            0
+        ],
+        "m1": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ],
+        "obj": [
+            [
+                "load_json"
+            ],
+            0
+        ],
+        "m2": [
+            [
+                "hal_util_available_memory"
+            ],
+            0
+        ],
+        "o": [
+            [
+                "obj_get",
+                "object"
+            ],
+            0
+        ]
+    }
+}

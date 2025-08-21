@@ -1,0 +1,119 @@
+{
+    "set_timeout": {
+        "next": [
+            [
+                "_first",
+                "next_sibling"
+            ],
+            0
+        ],
+        "_timeout_interval_us": [
+            [
+                "timeout_interval_us"
+            ],
+            0
+        ]
+    },
+    "set_equal_value_threshold": {
+        "next": [
+            [
+                "next_sibling",
+                "_first"
+            ],
+            0
+        ]
+    },
+    "put": {
+        "next": [
+            [
+                "_first",
+                "next_sibling"
+            ],
+            0
+        ]
+    },
+    "get_best": {
+        "best": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "pre_check_prio": [
+            [
+                "next_priority"
+            ],
+            1
+        ],
+        "_first_failover_time": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_curr_best": [
+            [
+                "i"
+            ],
+            1
+        ],
+        "index": [
+            [
+                "i"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "next_sibling",
+                "_first"
+            ],
+            0
+        ],
+        "_prev_best": [
+            [
+                "pre_check_best",
+                "i"
+            ],
+            1
+        ],
+        "max_priority": [
+            [
+                "next_priority",
+                "next_priority"
+            ],
+            1
+        ],
+        "max_confidence": [
+            [
+                "next_confidence_timestamp"
+            ],
+            1
+        ]
+    },
+    "print": {
+        "flags": [
+            [
+                "error_flag_no_error",
+                "next_state"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "next_sibling",
+                "_first"
+            ],
+            0
+        ]
+    },
+    "failover_index": {
+        "next": [
+            [
+                "next_sibling",
+                "_first"
+            ],
+            0
+        ]
+    }
+}

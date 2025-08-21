@@ -1,0 +1,24 @@
+{
+    "bus_thread": {
+        "callback": [
+            [
+                "callbacks"
+            ],
+            0
+        ],
+        "delay": [
+            [
+                "callback_next_usec",
+                "micros64",
+                "micros64"
+            ],
+            2
+        ],
+        "next_usec": [
+            [
+                "callback_period_usec"
+            ],
+            0
+        ]
+    }
+}

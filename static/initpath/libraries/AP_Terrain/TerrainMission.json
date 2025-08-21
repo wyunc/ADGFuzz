@@ -1,0 +1,42 @@
+{
+    "update_mission_data": {
+        "last_mission_change_ms": [
+            [
+                "mission_last_change_time_ms"
+            ],
+            0
+        ],
+        "last_mission_spacing": [
+            [
+                "grid_spacing"
+            ],
+            0
+        ]
+    },
+    "update_rally_data": {
+        "loc.lng": [
+            [
+                "rp_lng"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "rp_lat"
+            ],
+            0
+        ],
+        "last_rally_change_ms": [
+            [
+                "rally_last_change_time_ms"
+            ],
+            0
+        ],
+        "last_rally_spacing": [
+            [
+                "grid_spacing"
+            ],
+            0
+        ]
+    }
+}

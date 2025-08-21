@@ -1,0 +1,42 @@
+{
+    "set_pattern": {
+        "_pattern": [
+            [
+                "pattern_id"
+            ],
+            0
+        ]
+    },
+    "armed_led": {
+        "_flags.armedled_on": [
+            [
+                "on_off"
+            ],
+            0
+        ]
+    },
+    "gps_led": {
+        "_flags.gpsled_on": [
+            [
+                "on_off"
+            ],
+            0
+        ]
+    },
+    "motor_led1": {
+        "_flags.motorled1_on": [
+            [
+                "on_off"
+            ],
+            0
+        ]
+    },
+    "motor_led2": {
+        "_flags.motorled2_on": [
+            [
+                "on_off"
+            ],
+            0
+        ]
+    }
+}

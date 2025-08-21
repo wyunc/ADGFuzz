@@ -1,0 +1,33 @@
+{
+    "init": {
+        "s": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "radius_current": [
+            [
+                "copter_circle_nav_get_radius"
+            ],
+            0
+        ],
+        "rate_new": [
+            [
+                "roll_stick",
+                "g_dt",
+                "copter_circle_nav_get_rate_current"
+            ],
+            2
+        ],
+        "target_climb_rate": [
+            [
+                "get_avoidance_adjusted_climbrate_target_climb_rate",
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in"
+            ],
+            0
+        ]
+    }
+}

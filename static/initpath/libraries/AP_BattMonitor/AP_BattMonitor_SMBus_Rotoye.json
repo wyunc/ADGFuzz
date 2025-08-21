@@ -1,0 +1,40 @@
+{
+    "read_temp": {
+        "_state.temperature_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "have_temp_external": [
+            [
+                "read_word_t_ext",
+                "read_word_battmonitor_smbus_temp_ext"
+            ],
+            0
+        ],
+        "_has_temperature": [
+            [
+                "ap_batt_monitor_timeout",
+                "millis",
+                "_state_temperature_time"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "kelvin_to_c_t_ext",
+                "kelvin_to_c_float",
+                "kelvin_to_c_t_int"
+            ],
+            0
+        ],
+        "have_temp_internal": [
+            [
+                "read_word_battmonitor_smbus_temp",
+                "read_word_t_int"
+            ],
+            0
+        ]
+    }
+}

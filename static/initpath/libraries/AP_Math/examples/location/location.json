@@ -1,0 +1,200 @@
+{
+    "test_passed_waypoint": {
+        "wp1": [
+            [
+                "location_from_point_test_points",
+                "location_from_point__wp1",
+                "location_from_point_i"
+            ],
+            0
+        ],
+        "wp2": [
+            [
+                "location_from_point_test_points",
+                "location_from_point__wp2",
+                "location_from_point_i"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "location_from_point__location",
+                "location_from_point_test_points",
+                "location_from_point_i"
+            ],
+            0
+        ]
+    },
+    "test_one_offset": {
+        "t1": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "brg_error": [
+            [
+                "bearing",
+                "loc_get_bearing_to_loc2"
+            ],
+            1
+        ],
+        "dist2": [
+            [
+                "loc_get_distance_loc2"
+            ],
+            0
+        ],
+        "loc2": [
+            [
+                "loc"
+            ],
+            0
+        ]
+    },
+    "test_offset": {
+        "loc.lat": [
+            [
+                "_0e7f"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "_0e7f"
+            ],
+            0
+        ]
+    },
+    "test_accuracy": {
+        "loc.lat": [
+            [
+                "_0e7f"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "vector2f_i",
+                "vector2f_loc2_lng",
+                "vector2f_loc2_lat",
+                "loc_lng",
+                "_0e",
+                "vector2f__0e",
+                "vector2f_loc_lng",
+                "vector2f_loc_lat"
+            ],
+            0
+        ],
+        "loc2.lat": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "_0e7f"
+            ],
+            0
+        ],
+        "loc2": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "loc2.lng": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "test_wrap_cd": {
+        "r": [
+            [
+                "wrap_360_cd__v",
+                "wrap_360_cd_wrap_360_tests",
+                "wrap_360_cd_i",
+                "wrap_pi_i",
+                "wrap_180_cd_wrap_180_tests",
+                "wrap_pi__v",
+                "wrap_180_cd_i",
+                "wrap_pi_wrap_pi_tests",
+                "wrap_180_cd__v"
+            ],
+            0
+        ]
+    },
+    "test_wgs_conversion_functions": {
+        "z_err": [
+            [
+                "fabs_i",
+                "fabs_ecef",
+                "fabs_ecefs"
+            ],
+            0
+        ],
+        "hgt_err": [
+            [
+                "fabs_i",
+                "fabs_llhs",
+                "fabs_llh"
+            ],
+            0
+        ],
+        "MAX_DIST_ERROR_M": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "lat_err": [
+            [
+                "fabs_i",
+                "fabs_llhs",
+                "fabs_llh"
+            ],
+            0
+        ],
+        "MAX_ANGLE_ERROR_RAD": [
+            [
+                "max_angle_error_sec",
+                "double",
+                "d2r"
+            ],
+            0
+        ],
+        "lon_err": [
+            [
+                "fabs_i",
+                "fabs_llhs",
+                "fabs_llh"
+            ],
+            0
+        ],
+        "x_err": [
+            [
+                "fabs_i",
+                "fabs_ecef",
+                "fabs_ecefs"
+            ],
+            0
+        ],
+        "MAX_ANGLE_ERROR_SEC": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "y_err": [
+            [
+                "fabs_i",
+                "fabs_ecef",
+                "fabs_ecefs"
+            ],
+            0
+        ]
+    }
+}

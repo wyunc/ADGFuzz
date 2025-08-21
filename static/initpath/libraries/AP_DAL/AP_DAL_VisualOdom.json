@@ -1,0 +1,48 @@
+{
+    "align_position_to_ahrs": {
+        "vo": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    },
+    "start_frame": {
+        "RVOH.healthy": [
+            [
+                "vo_healthy"
+            ],
+            0
+        ],
+        "RVOH.delay_ms": [
+            [
+                "vo_get_delay_ms"
+            ],
+            0
+        ],
+        "RVOH.enabled": [
+            [
+                "vo_enabled"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "rvoh"
+            ],
+            0
+        ],
+        "RVOH.pos_offset": [
+            [
+                "vo_get_pos_offset"
+            ],
+            0
+        ],
+        "vo": [
+            [
+                "visualodom"
+            ],
+            0
+        ]
+    }
+}

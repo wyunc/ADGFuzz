@@ -1,0 +1,290 @@
+{
+    "set_physical_addresses": {
+        "dma_base": [
+            [
+                "rcin_rpi_rpi2_dma_base",
+                "rcin_rpi_rpi4_dma_base",
+                "rcin_rpi_rpi1_dma_base"
+            ],
+            0
+        ],
+        "pcm_base": [
+            [
+                "rcin_rpi_rpi2_pcm_base",
+                "rcin_rpi_rpi1_pcm_base",
+                "rcin_rpi_rpi4_pcm_base"
+            ],
+            0
+        ],
+        "clk_base": [
+            [
+                "rcin_rpi_rpi4_clk_base",
+                "rcin_rpi_rpi1_clk_base",
+                "rcin_rpi_rpi2_clk_base"
+            ],
+            0
+        ]
+    },
+    "map_peripheral": {
+        "fd": [
+            [
+                "open_o_rdwr",
+                "open_o_cloexec"
+            ],
+            0
+        ],
+        "vaddr": [
+            [
+                "mmap_len",
+                "mmap_base",
+                "mmap_nullptr",
+                "mmap_map_shared",
+                "mmap_prot_write",
+                "mmap_prot_read",
+                "mmap_fd"
+            ],
+            0
+        ]
+    },
+    "init_dma_cb": {
+        "src": [
+            [
+                "source"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "next_cb"
+            ],
+            0
+        ],
+        "info": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "dst": [
+            [
+                "dest"
+            ],
+            0
+        ]
+    },
+    "init_ctrl_data": {
+        "phys_fifo_addr": [
+            [
+                "pcm_base",
+                "0x7e000000",
+                "0x04",
+                "0x00ffffff"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "uintptr_t",
+                "con_blocks_get_page_con_blocks__phys_pages"
+            ],
+            0
+        ],
+        "cbp_curr": [
+            [
+                "dma_cb_t",
+                "con_blocks_get_page_con_blocks__virt_pages",
+                "con_blocks_get_page_cbp"
+            ],
+            0
+        ],
+        "cbp": [
+            [
+                "sizeof_dma_cb_t"
+            ],
+            0
+        ]
+    },
+    "set_sigaction": {
+        "sa.sa_handler": [
+            [
+                "termination_handler",
+                "sig_ign"
+            ],
+            0
+        ]
+    },
+    "init_registers": {
+        "dma_reg": [
+            [
+                "uint32_t",
+                "map_peripheral_dma_base",
+                "map_peripheral_rcin_rpi_dma_len"
+            ],
+            0
+        ],
+        "clk_reg": [
+            [
+                "uint32_t",
+                "map_peripheral_rcin_rpi_clk_len",
+                "map_peripheral_clk_base"
+            ],
+            0
+        ],
+        "pcm_reg": [
+            [
+                "uint32_t",
+                "map_peripheral_pcm_base",
+                "map_peripheral_rcin_rpi_pcm_len"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "signal_states": [
+            [
+                "circle_buffer_get_page_curr_pointer",
+                "uint64_t",
+                "circle_buffer_get_page_circle_buffer__virt_pages"
+            ],
+            0
+        ],
+        "con_blocks": [
+            [
+                "memory_table__version",
+                "memory_table_rcin_rpi_buffer_length",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "circle_buffer": [
+            [
+                "memory_table__version",
+                "memory_table_rcin_rpi_buffer_length",
+                "new_nothrow"
+            ],
+            0
+        ],
+        ".last_signal": [
+            [
+                "i",
+                "rc_channels",
+                "_curr_signal"
+            ],
+            0
+        ],
+        ".prev_tick": [
+            [
+                "circle_buffer_get_page_curr_pointer",
+                "uint64_t",
+                "circle_buffer_get_page_circle_buffer__virt_pages"
+            ],
+            1
+        ],
+        "_version": [
+            [
+                "from_hal_util_detect_linux_board_type",
+                "rpi_2_3_zero2"
+            ],
+            0
+        ],
+        ".enable_pin": [
+            [
+                "hal_gpio_channel_i",
+                "hal_gpio_channel_rc_chn_gpio_tbl"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        ".last_signal": [
+            [
+                "_curr_signal",
+                "rc_channels",
+                "i"
+            ],
+            0
+        ],
+        "ad": [
+            [
+                "con_blocks_get_page_uint32_t_j",
+                "con_blocks_get_page_uint32_t_sizeof_dma_cb_t",
+                "con_blocks_get_page_con_blocks__virt_pages",
+                "con_blocks_get_virt_addr_rcin_rpi_dma_channel",
+                "con_blocks_get_page_offset",
+                "con_blocks_get_virt_addr_rcin_rpi_dma_conblk_ad",
+                "dma_cb_t",
+                "con_blocks_get_virt_addr_dma_reg"
+            ],
+            0
+        ],
+        ".state": [
+            [
+                "rcin_rpi_zero_state",
+                "rcin_rpi_one_state"
+            ],
+            0
+        ],
+        ".width_s0": [
+            [
+                "uint16_t",
+                "_delta_time",
+                "rc_channels",
+                "i"
+            ],
+            0
+        ],
+        "curr_tick": [
+            [
+                "curr_tick_inc",
+                "circle_buffer_get_page_curr_pointer",
+                "circle_buffer_get_page_circle_buffer__virt_pages",
+                "uint64_t"
+            ],
+            0
+        ],
+        "counter": [
+            [
+                "rcin_rpi_max_counter"
+            ],
+            0
+        ],
+        ".width_s1": [
+            [
+                "uint16_t",
+                "_delta_time",
+                "rc_channels",
+                "i"
+            ],
+            0
+        ],
+        "signal_states": [
+            [
+                "circle_buffer_get_page_curr_pointer",
+                "circle_buffer_get_page_circle_buffer__virt_pages",
+                "uint64_t"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "circle_buffer_get_virt_addr_ad_dst"
+            ],
+            0
+        ],
+        ".delta_time": [
+            [
+                "_prev_tick",
+                "rc_channels",
+                "i"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "con_blocks_get_offset_uintptr_tad",
+                "con_blocks_get_offset_con_blocks__virt_pages"
+            ],
+            0
+        ]
+    }
+}

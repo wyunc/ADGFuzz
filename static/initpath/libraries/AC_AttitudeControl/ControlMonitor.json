@@ -1,0 +1,31 @@
+{
+    "control_monitor_filter_pid": {
+        "rms": [
+            [
+                "sq_value",
+                "filter_constant"
+            ],
+            0
+        ]
+    },
+    "control_monitor_update": {
+        "ipitch": [
+            [
+                "get_rate_pitch_pid_get_pid_info"
+            ],
+            0
+        ],
+        "iyaw": [
+            [
+                "get_rate_yaw_pid_get_pid_info"
+            ],
+            0
+        ],
+        "iroll": [
+            [
+                "get_rate_roll_pid_get_pid_info"
+            ],
+            0
+        ]
+    }
+}

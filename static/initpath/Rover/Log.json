@@ -1,0 +1,61 @@
+{
+    "Log_Write_Attitude": {
+        "desired_pitch": [
+            [
+                "degrees_g2_attitude_control_get_desired_pitch"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Depth": {
+        "reading_ms": [
+            [
+                "s_last_reading_ms"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "rangefinder_get_backend_i"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Sail": {
+        "wind_dir_tack": [
+            [
+                "degrees_g2_windvane_get_tack_threshold_wind_dir_rad",
+                "logger_quiet_nanf"
+            ],
+            0
+        ],
+        "current_tack": [
+            [
+                "uint8_t_g2_windvane_get_current_tack"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Steering": {
+        "lat_accel": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Throttle": {
+        "accel": [
+            [
+                "ins_get_accel"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ]
+    }
+}

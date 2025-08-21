@@ -1,0 +1,211 @@
+{
+    "_enter": {
+        "dist_to_climb": [
+            [
+                "plane_relative_ground_altitude_use_terrain",
+                "plane_relative_ground_altitude_plane_g_rangefinder_landing",
+                "max_dist",
+                "max_radius",
+                "quadplane_qrtl_alt",
+                "quadplane_land_final_alt",
+                "quadplane_qrtl_alt_min",
+                "quadplane_qrtl_alt",
+                "plane_current_loc_get_distance_destination"
+            ],
+            3
+        ],
+        "RTL_alt_abs_cm": [
+            [
+                "plane_home_alt",
+                "rtl_alt_abs_cm",
+                "quadplane_qrtl_alt",
+                "current_alt_abs_cm",
+                "100ul"
+            ],
+            0
+        ],
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "radius": [
+            [
+                "get_vtol_return_radius"
+            ],
+            0
+        ],
+        "destination": [
+            [
+                "plane_calc_best_rally_or_home_location_rtl_alt_abs_cm",
+                "plane_calc_best_rally_or_home_location_plane_current_loc"
+            ],
+            0
+        ],
+        "submode": [
+            [
+                "rtl",
+                "climb"
+            ],
+            0
+        ],
+        "poscontrol.slow_descent": [
+            [
+                "from_alt",
+                "plane_current_loc_alt",
+                "plane_next_wp_loc_alt",
+                "to_alt"
+            ],
+            0
+        ],
+        "plane.next_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "use_terrain": [
+            [
+                "plane_terrain_enabled_in_mode_mode_number"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "plane.prev_WP_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "RTL_alt_abs_cm": [
+            [
+                "100ul",
+                "target_alt_abs_cm",
+                "plane_home_alt",
+                "rtl_alt_abs_cm",
+                "quadplane_qrtl_alt"
+            ],
+            0
+        ],
+        "stopping_loc": [
+            [
+                "location_stopping_point_tofloat",
+                "above_origin"
+            ],
+            0
+        ],
+        "radius": [
+            [
+                "get_vtol_return_radius"
+            ],
+            0
+        ],
+        "submode": [
+            [
+                "rtl"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "pos_control_get_pitch_cd"
+            ],
+            0
+        ],
+        "plane.next_WP_loc.alt": [
+            [
+                "plane_home_alt"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "pos_control_get_roll_cd"
+            ],
+            0
+        ],
+        "dist": [
+            [
+                "plane_current_loc_get_distance_destination"
+            ],
+            0
+        ],
+        "destination": [
+            [
+                "plane_calc_best_rally_or_home_location_plane_current_loc",
+                "plane_calc_best_rally_or_home_location_rtl_alt_abs_cm"
+            ],
+            0
+        ],
+        "poscontrol.slow_descent": [
+            [
+                "plane_current_loc_alt",
+                "plane_next_wp_loc_alt",
+                "is_positive_alt_diff"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_target_altitude": {
+        "dist": [
+            [
+                "plane_auto_state_wp_distance"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "alt"
+            ],
+            0
+        ],
+        "rad_min": [
+            [
+                "fabsf_plane_g_rtl_radius",
+                "fabsf_float",
+                "fabsf_plane_aparm_loiter_radius"
+            ],
+            1
+        ],
+        "sink_dist": [
+            [
+                "plane_g_rtl_altitude",
+                "plane_quadplane_qrtl_alt",
+                "plane_aparm_airspeed_cruise"
+            ],
+            2
+        ],
+        "loc": [
+            [
+                "plane_next_wp_loc"
+            ],
+            0
+        ],
+        "rad_max": [
+            [
+                "fabsf_plane_g_rtl_radius",
+                "fabsf_float",
+                "fabsf_plane_aparm_loiter_radius"
+            ],
+            1
+        ]
+    },
+    "allows_throttle_nudging": {
+        "submode": [
+            [
+                "rtl",
+                "plane_quadplane_poscontrol_get_state",
+                "qpos_approach"
+            ],
+            0
+        ]
+    }
+}

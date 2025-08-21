@@ -1,0 +1,177 @@
+{
+    "init": {
+        "_heat": [
+            [
+                "heat",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "saved_argv": [
+            [
+                "argv"
+            ],
+            0
+        ],
+        "saved_argc": [
+            [
+                "argc"
+            ],
+            0
+        ]
+    },
+    "commandline_arguments": {
+        "argc": [
+            [
+                "saved_argc"
+            ],
+            0
+        ],
+        "argv": [
+            [
+                "saved_argv"
+            ],
+            0
+        ]
+    },
+    "set_hw_rtc": {
+        "ts.tv_nsec": [
+            [
+                "time_utc_usec",
+                "1000ull",
+                "1000000ull"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "time_utc_usec",
+                "1000000ull"
+            ],
+            0
+        ]
+    },
+    "get_system_id_unformatted": {
+        "fd": [
+            [
+                "open_i",
+                "open_o_rdonly",
+                "open_paths"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strnlen_len",
+                "read_buf",
+                "read_len",
+                "read_fd",
+                "strnlen_cbuf"
+            ],
+            1
+        ],
+        "cbuf": [
+            [
+                "buf",
+                "char"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strchr_cbuf"
+            ],
+            0
+        ]
+    },
+    "write_file": {
+        "ret": [
+            [
+                "vdprintf_args",
+                "vdprintf_fd",
+                "vdprintf_fmt"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_path",
+                "open_o_cloexec",
+                "open_o_wronly"
+            ],
+            0
+        ],
+        "errno_bkp": [
+            [
+                "errno"
+            ],
+            0
+        ]
+    },
+    "read_file": {
+        "file": [
+            [
+                "fopen_path"
+            ],
+            0
+        ],
+        "errno_bkp": [
+            [
+                "errno"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "vfscanf_args",
+                "vfscanf_fmt",
+                "vfscanf_file"
+            ],
+            0
+        ]
+    },
+    "get_random_vals": {
+        "dev_random": [
+            [
+                "open_o_rdonly"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "read_data",
+                "read_size",
+                "read_dev_random"
+            ],
+            0
+        ]
+    },
+    "parse_cpu_set": {
+        "cpu1": [
+            [
+                "strtoul_str",
+                "strtoul_endptr"
+            ],
+            0
+        ],
+        "cpu2": [
+            [
+                "strtoul_str",
+                "strtoul_endptr"
+            ],
+            0
+        ],
+        "sep": [
+            [
+                "endptr"
+            ],
+            0
+        ],
+        "str": [
+            [
+                "endptr"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "init": {
+        "stage": [
+            [
+                "throw_disarmed"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "throw_detect": [
+            [
+                "throw_detecting",
+                "throw_wait_throttle_unlimited",
+                "throw_pos_hold",
+                "throw_disarmed",
+                "throw_detecting",
+                "throw_hgt_stabilise",
+                "throw_uprighting",
+                "throw_detected"
+            ],
+            1
+        ],
+        "velocity": [
+            [
+                "inertial_nav_get_velocity_neu_cms_length"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "copter_ins_get_accel_length"
+            ],
+            0
+        ],
+        "height_ok": [
+            [
+                "throw_height_good",
+                "throw_wait_throttle_unlimited",
+                "throw_pos_hold",
+                "throw_disarmed",
+                "throw_detecting",
+                "throw_hgt_stabilise",
+                "throw_uprighting",
+                "throw_hgt_stabilise"
+            ],
+            1
+        ],
+        "attitude_ok": [
+            [
+                "throw_wait_throttle_unlimited",
+                "throw_pos_hold",
+                "throw_disarmed",
+                "throw_detecting",
+                "throw_hgt_stabilise",
+                "throw_uprighting",
+                "throw_attitude_good",
+                "throw_uprighting"
+            ],
+            1
+        ],
+        "prev_stage": [
+            [
+                "throw_wait_throttle_unlimited",
+                "throw_pos_hold",
+                "throw_disarmed",
+                "throw_detecting",
+                "throw_hgt_stabilise",
+                "throw_uprighting"
+            ],
+            1
+        ],
+        "pos_ok": [
+            [
+                "throw_wait_throttle_unlimited",
+                "throw_pos_hold",
+                "throw_disarmed",
+                "throw_detecting",
+                "throw_hgt_stabilise",
+                "throw_uprighting",
+                "throw_pos_hold",
+                "throw_position_good"
+            ],
+            1
+        ],
+        "ef_accel_z": [
+            [
+                "ahrs_get_accel_ef_z"
+            ],
+            0
+        ],
+        "velocity_z": [
+            [
+                "inertial_nav_get_velocity_z_up_cms"
+            ],
+            0
+        ],
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "throw_detected": {
+        "possible_throw_detected": [
+            [
+                "inertial_nav_get_position_z_up_cm",
+                "g_throw_altitude_max",
+                "g_throw_altitude_min",
+                "inertial_nav_get_velocity_neu_cms_length_squared",
+                "throw_high_speed",
+                "gravity_mss",
+                "copter_ins_get_accel_length",
+                "throw_vertical_speed",
+                "inertial_nav_get_velocity_z_up_cms",
+                "gravity_mss",
+                "ahrs_get_accel_ef_z"
+            ],
+            6
+        ],
+        "throw_condition_confirmed": [
+            [
+                "millis",
+                "inertial_nav_get_velocity_z_up_cms",
+                "millis",
+                "inertial_nav_get_velocity_z_up_cms"
+            ],
+            2
+        ],
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "throw_attitude_good": {
+        "rotMat": [
+            [
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ]
+    }
+}

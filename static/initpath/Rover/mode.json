@@ -1,0 +1,289 @@
+{
+    "enter": {
+        "position_ok": [
+            [
+                "rover_failsafe_ekf",
+                "rover_ekf_position_ok"
+            ],
+            0
+        ],
+        "ignore_checks": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_enter"
+            ],
+            0
+        ]
+    },
+    "get_pilot_input": {
+        "steering_out": [
+            [
+                "is_negative_throttle_out",
+                "rover_channel_throttle_norm_input_dz",
+                "rover_channel_steer_norm_input_dz",
+                "rover_channel_steer_get_control_in"
+            ],
+            3
+        ],
+        "throttle_out": [
+            [
+                "rover_channel_throttle_norm_input_dz",
+                "rover_channel_steer_norm_input_dz",
+                "rover_channel_throttle_get_control_in"
+            ],
+            2
+        ]
+    },
+    "get_pilot_desired_steering_and_throttle": {
+        "steering_out": [
+            [
+                "fabsf_steer_normalised",
+                "fabsf_throttle_normalised"
+            ],
+            1
+        ],
+        "throttle_out": [
+            [
+                "fabsf_steer_normalised",
+                "fabsf_throttle_normalised",
+                "g2_motors_get_slew_limited_throttle_rover_g_dt",
+                "g2_motors_get_slew_limited_throttle_throttle_out"
+            ],
+            2
+        ]
+    },
+    "get_pilot_desired_steering_and_speed": {
+        "speed_out": [
+            [
+                "g2_attitude_control_get_desired_speed_accel_limited_rover_g_dt",
+                "g2_attitude_control_get_desired_speed_accel_limited_speed_out",
+                "desired_throttle",
+                "calc_speed_max_g_throttle_cruise",
+                "calc_speed_max_g_speed_cruise"
+            ],
+            1
+        ]
+    },
+    "get_pilot_desired_lateral": {
+        "lateral_out": [
+            [
+                "rover_channel_lateral_get_control_in"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_heading_and_speed": {
+        "speed_out": [
+            [
+                "calc_speed_max_g_throttle_cruise",
+                "safe_sqrt_sq",
+                "safe_sqrt_desired_steering",
+                "safe_sqrt_desired_throttle",
+                "calc_speed_max_g_speed_cruise"
+            ],
+            1
+        ],
+        "desired_steering": [
+            [
+                "left_paddle",
+                "right_paddle"
+            ],
+            0
+        ],
+        "heading_out": [
+            [
+                "wrap_360_cd_desired_steering",
+                "wrap_360_cd_atan2f",
+                "wrap_360_cd_desired_throttle",
+                "degx100"
+            ],
+            0
+        ],
+        "desired_throttle": [
+            [
+                "left_paddle",
+                "right_paddle"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_roll_and_pitch": {
+        "pitch_out": [
+            [
+                "channel_pitch_norm_input"
+            ],
+            0
+        ],
+        "roll_out": [
+            [
+                "channel_roll_norm_input"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_walking_height": {
+        "walking_height_out": [
+            [
+                "channel_walking_height_norm_input"
+            ],
+            0
+        ]
+    },
+    "set_desired_location": {
+        "_distance_to_destination": [
+            [
+                "g2_wp_nav_get_distance_to_destination"
+            ],
+            0
+        ]
+    },
+    "calc_throttle": {
+        "motor_lim_low": [
+            [
+                "attitude_control_pitch_limited",
+                "g2_motors_limit_throttle_lower"
+            ],
+            0
+        ],
+        "motor_lim_high": [
+            [
+                "attitude_control_pitch_limited",
+                "g2_motors_limit_throttle_upper"
+            ],
+            0
+        ],
+        "throttle_out": [
+            [
+                "attitude_control_get_throttle_out_stop_stopped",
+                "attitude_control_get_throttle_out_speed_motor_lim_high",
+                "attitude_control_get_throttle_out_speed_motor_lim_low",
+                "attitude_control_get_throttle_out_stop_g_speed_cruise",
+                "attitude_control_get_throttle_out_speed_g_speed_cruise",
+                "attitude_control_get_throttle_out_stop_g2_motors_limit_throttle_lower",
+                "attitude_control_get_throttle_out_stop_g2_motors_limit_throttle_upper",
+                "attitude_control_get_throttle_out_stop_g_throttle_cruise",
+                "attitude_control_get_throttle_out_speed_target_speed",
+                "attitude_control_get_throttle_out_speed_rover_g_dt",
+                "attitude_control_get_throttle_out_speed_g_throttle_cruise",
+                "attitude_control_get_throttle_out_stop_rover_g_dt"
+            ],
+            0
+        ],
+        "target_speed": [
+            [
+                "attitude_control_get_desired_speed_accel_limited_rover_g_dt",
+                "attitude_control_get_desired_speed_accel_limited_target_speed"
+            ],
+            0
+        ]
+    },
+    "stop_vehicle": {
+        "throttle_out": [
+            [
+                "attitude_control_get_throttle_out_speed_g2_motors_limit_throttle_lower",
+                "attitude_control_get_throttle_out_stop_stopped",
+                "attitude_control_get_throttle_out_stop_rover_g_dt",
+                "attitude_control_get_throttle_out_stop_g_throttle_cruise",
+                "attitude_control_get_throttle_out_speed_g2_motors_limit_throttle_upper",
+                "attitude_control_get_throttle_out_stop_g2_motors_limit_throttle_upper",
+                "attitude_control_get_throttle_out_speed_g_speed_cruise",
+                "attitude_control_get_throttle_out_stop_g_speed_cruise",
+                "attitude_control_get_throttle_out_stop_g2_motors_limit_throttle_lower",
+                "attitude_control_get_throttle_out_speed_rover_g_dt",
+                "attitude_control_get_throttle_out_speed_g_throttle_cruise"
+            ],
+            0
+        ],
+        "steering_out": [
+            [
+                "attitude_control_get_steering_out_rate_rover_g_dt",
+                "attitude_control_get_steering_out_rate_g2_motors_limit_steer_left",
+                "attitude_control_get_steering_out_rate_g2_motors_limit_steer_right"
+            ],
+            0
+        ]
+    },
+    "calc_speed_max": {
+        "speed_max": [
+            [
+                "cruise_speed",
+                "cruise_throttle",
+                "g2_speed_max"
+            ],
+            0
+        ]
+    },
+    "calc_speed_nudge": {
+        "pilot_speed": [
+            [
+                "calc_speed_max_g_speed_cruise",
+                "calc_speed_max_g_throttle_cruise",
+                "pilot_throttle"
+            ],
+            0
+        ]
+    },
+    "navigate_to_waypoint": {
+        "_distance_to_destination": [
+            [
+                "g2_wp_nav_get_distance_to_destination"
+            ],
+            0
+        ],
+        "calc_nudge_input_speed": [
+            [
+                "g2_wp_nav_get_speed_max",
+                "g2_wp_nav_get_reversed"
+            ],
+            0
+        ],
+        "desired_turn_rate_rads": [
+            [
+                "g2_wp_nav_get_turn_rate_rads"
+            ],
+            0
+        ],
+        "desired_heading_cd": [
+            [
+                "g2_wp_nav_oa_wp_bearing_cd",
+                "g2_sailboat_calc_heading_desired_heading_cd"
+            ],
+            0
+        ],
+        "turn_rate": [
+            [
+                "g2_sailboat_tacking",
+                "g2_wp_nav_get_pivot_rate"
+            ],
+            0
+        ],
+        "nudge_speed_max": [
+            [
+                "calc_speed_nudge_g2_wp_nav_get_reversed",
+                "calc_speed_nudge_calc_nudge_input_speed"
+            ],
+            0
+        ]
+    },
+    "calc_steering_from_lateral_acceleration": {
+        "lat_accel": [
+            [
+                "attitude_control_get_turn_lat_accel_max_attitude_control_get_turn_lat_accel_max"
+            ],
+            0
+        ]
+    },
+    "set_steering": {
+        "steering_value": [
+            [
+                "channel_steer_stick_mixing_int16_tsteering_value"
+            ],
+            0
+        ]
+    }
+}

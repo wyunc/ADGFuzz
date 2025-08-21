@@ -1,0 +1,99 @@
+{
+    "controlOpticalFlowFusion": {
+        "epsilon": [
+            [
+                "1e"
+            ],
+            0
+        ],
+        "_control_status.flags.opt_flow_terrain": [
+            [
+                "_control_status_flags_opt_flow",
+                "predict_flow_range",
+                "_height_sensor_ref"
+            ],
+            1
+        ],
+        "_flow_sample_delayed.gyro_rate": [
+            [
+                "imu_delayed_delta_ang_dt",
+                "imu_delayed_delta_ang",
+                "get_gyro_bias"
+            ],
+            1
+        ],
+        "flow_sample": [
+            [
+                "_flow_sample_delayed"
+            ],
+            0
+        ],
+        "is_quality_good": [
+            [
+                "flow_sample_quality",
+                "min_quality"
+            ],
+            0
+        ],
+        "R_LOS": [
+            [
+                "calc_opt_flow_meas_var_flow_sample"
+            ],
+            0
+        ],
+        "flow_gyro_corrected": [
+            [
+                "_flow_gyro_bias",
+                "flow_sample_gyro_rate"
+            ],
+            0
+        ],
+        "is_within_sensor_dist": [
+            [
+                "get_hagl",
+                "_flow_max_distance",
+                "_flow_min_distance"
+            ],
+            0
+        ],
+        "_flow_rate_compensated": [
+            [
+                "flow_gyro_corrected_xy",
+                "flow_sample_flow_rate"
+            ],
+            1
+        ],
+        "is_tilt_good": [
+            [
+                "_params_range_cos_max_tilt"
+            ],
+            0
+        ]
+    },
+    "resetFlowFusion": {
+        "flow_vel_var": [
+            [
+                "sq_predict_flow_range",
+                "calc_opt_flow_meas_var_flow_sample"
+            ],
+            0
+        ]
+    },
+    "resetTerrainToFlow": {
+        "_state.terrain": [
+            [
+                "_gpos_altitude",
+                "_params_rng_gnd_clearance"
+            ],
+            1
+        ],
+        "_state_reset_status.hagl_change": [
+            [
+                "_gpos_altitude",
+                "_params_rng_gnd_clearance",
+                "_state_terrain"
+            ],
+            2
+        ]
+    }
+}

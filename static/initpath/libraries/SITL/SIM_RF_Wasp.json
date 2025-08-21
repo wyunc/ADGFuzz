@@ -1,0 +1,27 @@
+{
+    "check_configuration": {
+        "cr": [
+            [
+                "strchr__buffer"
+            ],
+            0
+        ],
+        "_buflen": [
+            [
+                "read_from_autopilot__buflen",
+                "read_from_autopilot_array_size",
+                "read_from_autopilot__buffer"
+            ],
+            1
+        ],
+        "offs": [
+            [
+                "strlen_integer_configs",
+                "strlen__name",
+                "strlen_string_configs",
+                "strlen_i"
+            ],
+            0
+        ]
+    }
+}

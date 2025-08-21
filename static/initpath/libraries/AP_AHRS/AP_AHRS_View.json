@@ -1,0 +1,58 @@
+{
+    "set_pitch_trim": {
+        "_pitch_trim_deg": [
+            [
+                "trim_deg"
+            ],
+            0
+        ],
+        "rot_view_T": [
+            [
+                "rot_view"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "gyro": [
+            [
+                "rot_view",
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "rot_body_to_ned": [
+            [
+                "ahrs_get_rotation_body_to_ned",
+                "rot_view_t"
+            ],
+            0
+        ],
+        "yaw_sensor": [
+            [
+                "degrees_yaw"
+            ],
+            0
+        ],
+        "pitch_sensor": [
+            [
+                "degrees_pitch"
+            ],
+            0
+        ],
+        "roll_sensor": [
+            [
+                "degrees_roll"
+            ],
+            0
+        ]
+    },
+    "rotate": {
+        "vec": [
+            [
+                "rot_view"
+            ],
+            0
+        ]
+    }
+}

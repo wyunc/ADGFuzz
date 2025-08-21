@@ -1,0 +1,38 @@
+{
+    "setup": {
+        "timer": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "compass_count": [
+            [
+                "compass_get_count"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "compass_calculate_heading_dcm_matrix",
+                "compass_calculate_heading_i"
+            ],
+            0
+        ],
+        "read_time": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ],
+        "mag": [
+            [
+                "compass_get_field_i"
+            ],
+            0
+        ]
+    }
+}

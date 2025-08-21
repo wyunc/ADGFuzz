@@ -1,0 +1,137 @@
+{
+    "simulation_timeval": {
+        "tv_usec": [
+            [
+                "tv_tv_usec",
+                "micros64",
+                "1000000ull",
+                "1000000ull"
+            ],
+            2
+        ],
+        "tv": [
+            [
+                "first_tv"
+            ],
+            0
+        ],
+        "first_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "tv_sec": [
+            [
+                "tv_tv_usec",
+                "micros64",
+                "1000000ull",
+                "micros64",
+                "1000000ull"
+            ],
+            2
+        ],
+        "first_tv.tv_sec": [
+            [
+                "sitl_start_time_utc"
+            ],
+            0
+        ]
+    },
+    "generate_checksum": {
+        "checksumByte2": [
+            [
+                "checksum_byte1"
+            ],
+            0
+        ],
+        "checksumByte1": [
+            [
+                "packet_header",
+                "i",
+                "packet_payload"
+            ],
+            0
+        ]
+    },
+    "send_imu_packet": {
+        "start_us": [
+            [
+                "tv_tv_usec"
+            ],
+            0
+        ],
+        "pressure_Pa": [
+            [
+                "get_pressure_for_alt_amsl_fdm_altitude"
+            ],
+            0
+        ],
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "send_gnss_packet": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "send_filter_packet": {
+        "fdm": [
+            [
+                "_sitl_state"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_imu_pkt_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_gnss_pkt_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_filter_pkt_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "put_float": {
+        "packet.payload_size": [
+            [
+                "sizeof_float"
+            ],
+            0
+        ]
+    },
+    "put_double": {
+        "packet.payload_size": [
+            [
+                "sizeof_double"
+            ],
+            0
+        ]
+    },
+    "put_int": {
+        "packet.payload_size": [
+            [
+                "sizeof_uint16_t"
+            ],
+            0
+        ]
+    }
+}

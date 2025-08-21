@@ -1,0 +1,724 @@
+{
+    "init": {
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "use_safety_as_led": [
+            [
+                "boardconfig_use_safety_as_led"
+            ],
+            0
+        ]
+    },
+    "thread_main": {
+        "pwm_out.failsafe_pwm_sent": [
+            [
+                "pwm_out_failsafe_pwm_set"
+            ],
+            1
+        ],
+        "thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "last_telem_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_erpm_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_status_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "erpm_period_ms": [
+            [
+                "constrain_int16_blh_get_telemetry_rate"
+            ],
+            0
+        ],
+        "last_safety_option_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "config.protocol_version2": [
+            [
+                "iomcu_protocol_version2"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "ch_evt_wait_any_timeout_ch_time_ms2i"
+            ],
+            0
+        ],
+        "last_rc_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "blh": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "last_servo_read_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_servo_out": {
+        "n": [
+            [
+                "pwm_out_num_channels",
+                "iomcu_max_rc_channels"
+            ],
+            0
+        ],
+        "last_servo_out_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "read_rc_input": {
+        "r": [
+            [
+                "uint16_t",
+                "rc_input"
+            ],
+            0
+        ],
+        "rc_last_input_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_erpm": {
+        "motor_poles": [
+            [
+                "blh_get_motor_poles"
+            ],
+            0
+        ],
+        "esc_id": [
+            [
+                "i",
+                "j"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "uint16_t",
+                "dshot_erpm"
+            ],
+            0
+        ],
+        "blh": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "read_telem": {
+        "esc_group": [
+            [
+                "iomcu_max_telem_channels"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "uint16_t",
+                "dshot_telem"
+            ],
+            1
+        ],
+        "page": [
+            [
+                "page_raw_dshot_telem_1_4",
+                "page_raw_dshot_telem_5_8"
+            ],
+            0
+        ]
+    },
+    "read_status": {
+        "r": [
+            [
+                "uint16_t",
+                "reg_status"
+            ],
+            0
+        ],
+        "last_safety_options": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "options": [
+            [
+                "boardconfig_get_safety_button_options"
+            ],
+            0
+        ],
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "write_log": {
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_io_print": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "read_registers": {
+        "expected_crc": [
+            [
+                "pkt_get_size",
+                "crc_crc8_uint8_t",
+                "pkt",
+                "crc_crc8_const"
+            ],
+            0
+        ],
+        "pkt.count": [
+            [
+                "pkt_max_regs"
+            ],
+            1
+        ],
+        "pkt.offset": [
+            [
+                "pkt_max_regs"
+            ],
+            1
+        ],
+        "regs": [
+            [
+                "pkt_max_regs"
+            ],
+            0
+        ],
+        "pkt.page": [
+            [
+                "page"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "pkt",
+                "uint8_t"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pkt_get_size",
+                "pkt",
+                "write_wait_uint8_t"
+            ],
+            1
+        ],
+        "pkt.crc": [
+            [
+                "pkt_get_size",
+                "crc_crc8_uint8_t",
+                "pkt",
+                "crc_crc8_const"
+            ],
+            1
+        ],
+        "last_reg_access_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pkt.code": [
+            [
+                "code_read"
+            ],
+            0
+        ],
+        "total_errors": [
+            [
+                "protocol_fail_count"
+            ],
+            0
+        ],
+        "got_crc": [
+            [
+                "pkt_crc"
+            ],
+            0
+        ]
+    },
+    "write_registers": {
+        "total_errors": [
+            [
+                "protocol_fail_count"
+            ],
+            0
+        ],
+        "regs": [
+            [
+                "pkt_max_regs"
+            ],
+            0
+        ],
+        "pkt.offset": [
+            [
+                "pkt_max_regs"
+            ],
+            1
+        ],
+        "last_reg_access_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pkt.page": [
+            [
+                "page"
+            ],
+            0
+        ],
+        "pkt.count": [
+            [
+                "pkt_max_regs"
+            ],
+            1
+        ],
+        "pkt.code": [
+            [
+                "code_write"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "uint8_t",
+                "pkt"
+            ],
+            0
+        ],
+        "got_crc": [
+            [
+                "pkt_crc"
+            ],
+            0
+        ],
+        "expected_crc": [
+            [
+                "pkt",
+                "pkt_get_size",
+                "crc_crc8_const",
+                "crc_crc8_uint8_t"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "pkt",
+                "pkt_get_size",
+                "write_wait_uint8_t"
+            ],
+            1
+        ],
+        "pkt.crc": [
+            [
+                "pkt",
+                "pkt_get_size",
+                "crc_crc8_const",
+                "crc_crc8_uint8_t"
+            ],
+            0
+        ]
+    },
+    "modify_register": {
+        "v2": [
+            [
+                "clearbits",
+                "v",
+                "setbits"
+            ],
+            0
+        ]
+    },
+    "write_channel": {
+        "pwm_out.num_channels": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        "rate.freq": [
+            [
+                "freq"
+            ],
+            0
+        ]
+    },
+    "enable_sbus_out": {
+        "rate.sbus_rate_hz": [
+            [
+                "rate_hz"
+            ],
+            0
+        ]
+    },
+    "check_rcinput": {
+        "last_frame_us": [
+            [
+                "uint32_t_1000u",
+                "uint32_t_rc_last_input_ms"
+            ],
+            0
+        ],
+        "num_channels": [
+            [
+                "min_rc_input_count",
+                "min_max_chan",
+                "min_iomcu_max_rc_channels"
+            ],
+            0
+        ]
+    },
+    "set_heater_duty_cycle": {
+        "heater_duty_cycle": [
+            [
+                "duty_cycle"
+            ],
+            0
+        ]
+    },
+    "set_default_rate": {
+        "rate.default_freq": [
+            [
+                "rate_hz"
+            ],
+            0
+        ]
+    },
+    "set_dshot_period": {
+        "dshot_rate.period_us": [
+            [
+                "period_us"
+            ],
+            0
+        ],
+        "dshot_rate.rate": [
+            [
+                "drate"
+            ],
+            0
+        ]
+    },
+    "set_dshot_esc_type": {
+        "mode_out.esc_type": [
+            [
+                "uint16_t_dshot_esc_type"
+            ],
+            0
+        ]
+    },
+    "set_output_mode": {
+        "mode_out.mode": [
+            [
+                "mode"
+            ],
+            0
+        ],
+        "mode_out.mask": [
+            [
+                "mask"
+            ],
+            0
+        ]
+    },
+    "set_bidir_dshot_mask": {
+        "mode_out.bdmask": [
+            [
+                "mask"
+            ],
+            0
+        ]
+    },
+    "set_reversible_mask": {
+        "mode_out.reversible_mask": [
+            [
+                "mask"
+            ],
+            0
+        ]
+    },
+    "update_safety_options": {
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "bits_to_set": [
+            [
+                "desired_options",
+                "p_setup_arming_safety_disable_off",
+                "p_setup_arming_fmu_armed",
+                "p_setup_arming_safety_disable_on"
+            ],
+            1
+        ],
+        "bits_to_clear": [
+            [
+                "desired_options",
+                "p_setup_arming_safety_disable_off",
+                "p_setup_arming_fmu_armed",
+                "p_setup_arming_safety_disable_on"
+            ],
+            1
+        ],
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "last_safety_options": [
+            [
+                "desired_options"
+            ],
+            0
+        ],
+        "options": [
+            [
+                "boardconfig_get_safety_button_options"
+            ],
+            0
+        ]
+    },
+    "send_rc_protocols": {
+        "last_rc_protocols": [
+            [
+                "rc_enabled_protocols"
+            ],
+            1
+        ]
+    },
+    "check_crc": {
+        "crc": [
+            [
+                "crc32_small_fw_size",
+                "crc32_small_crc",
+                "crc32_small_fw",
+                "crc32_small_b"
+            ],
+            0
+        ],
+        "flash_size": [
+            [
+                "0x1000",
+                "0x10000"
+            ],
+            0
+        ],
+        "fw": [
+            [
+                "find_decompress_path",
+                "nullptr",
+                "find_decompress_fw_size"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "reboot_bl_magic"
+            ],
+            0
+        ],
+        "path": [
+            [
+                "dshot_fw_name",
+                "io_dshot",
+                "fw_name"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "0xff"
+            ],
+            0
+        ]
+    },
+    "set_safety_mask": {
+        "pwm_out.safety_mask": [
+            [
+                "chmask"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "protocol_fail_count": [
+            [
+                "read_status_ok",
+                "read_status_errors",
+                "detected_io_reset",
+                "128u"
+            ],
+            0
+        ]
+    },
+    "soft_reboot": {
+        "magic": [
+            [
+                "reboot_bl_magic"
+            ],
+            0
+        ]
+    },
+    "bind_dsm": {
+        "reg": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "setup_mixing": {
+        "xrc": [
+            [
+                "rc"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "channels",
+                "srv_channel_i",
+                "i"
+            ],
+            0
+        ]
+    },
+    "check_iomcu_reset": {
+        "dt_ms": [
+            [
+                "reg_status_timestamp_ms"
+            ],
+            0
+        ],
+        "last_safety_off": [
+            [
+                "reg_status_flag_safety_off"
+            ],
+            0
+        ],
+        "max_delay": [
+            [
+                "hal_scheduler_in_expected_delay"
+            ],
+            0
+        ],
+        "options": [
+            [
+                "get_singleton",
+                "boardconfig_get_safety_button_options"
+            ],
+            1
+        ],
+        "last_iocmu_timestamp_ms": [
+            [
+                "reg_status_timestamp_ms"
+            ],
+            0
+        ]
+    },
+    "set_GPIO_mask": {
+        "GPIO.channel_mask": [
+            [
+                "mask"
+            ],
+            0
+        ]
+    },
+    "set_profiled": {
+        "profiled.green": [
+            [
+                "g"
+            ],
+            0
+        ],
+        "profiled.red": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "profiled.magic": [
+            [
+                "profiled_enable_magic"
+            ],
+            0
+        ]
+    }
+}

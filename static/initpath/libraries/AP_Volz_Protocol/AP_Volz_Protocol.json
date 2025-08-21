@@ -1,0 +1,244 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "serial_manager_find_serial_serial_protocol_volz"
+            ],
+            0
+        ]
+    },
+    "request_telem": {
+        "cmd.actuator_id": [
+            [
+                "telem_actuator_id"
+            ],
+            0
+        ],
+        "telem.actuator_id": [
+            [
+                "telem_actuator_id",
+                "i",
+                "array_size_telem_data"
+            ],
+            1
+        ],
+        "cmd.ID": [
+            [
+                "telem_types",
+                "telem_request_type"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "num_servos": [
+            [
+                "__builtin_popcount_bitmask_get"
+            ],
+            0
+        ],
+        "receive_us": [
+            [
+                "sizeof_cmd",
+                "baudrate"
+            ],
+            1
+        ]
+    },
+    "send_position_cmd": {
+        "last_sent_index": [
+            [
+                "array_size_servo_pwm",
+                "i"
+            ],
+            1
+        ],
+        "value": [
+            [
+                "linear_interpolate_angle_position_max",
+                "linear_interpolate_angle_position_min",
+                "linear_interpolate_angle",
+                "linear_interpolate_extended_position_max",
+                "linear_interpolate_extended_position_min"
+            ],
+            0
+        ],
+        "cmd.arg1": [
+            [
+                "highbyte_value"
+            ],
+            0
+        ],
+        "cmd.actuator_id": [
+            [
+                "array_size_servo_pwm",
+                "i"
+            ],
+            1
+        ],
+        "cmd.arg2": [
+            [
+                "lowbyte_value"
+            ],
+            0
+        ],
+        ".desired_angle": [
+            [
+                "float_pwm",
+                "pwm_position_min",
+                "pwm_position_max",
+                "range"
+            ],
+            2
+        ],
+        "cmd.ID": [
+            [
+                "set_extended_position"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "servo_pwm",
+                "array_size_servo_pwm",
+                "i"
+            ],
+            1
+        ]
+    },
+    "process_response": {
+        ".motor_temp_deg": [
+            [
+                "cmd_arg1"
+            ],
+            0
+        ],
+        ".angle": [
+            [
+                "extended_position_max",
+                "linear_interpolate_angle_position_min",
+                "linear_interpolate_cmd_arg1",
+                "linear_interpolate_cmd_arg2",
+                "extended_position_min",
+                "linear_interpolate_uint16_value",
+                "linear_interpolate_angle_position_max"
+            ],
+            0
+        ],
+        ".secondary_voltage": [
+            [
+                "cmd_arg2"
+            ],
+            0
+        ],
+        ".secondary_current": [
+            [
+                "cmd_arg2"
+            ],
+            0
+        ],
+        ".primary_voltage": [
+            [
+                "cmd_arg1"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "cmd_actuator_id"
+            ],
+            0
+        ],
+        ".pcb_temp_deg": [
+            [
+                "cmd_arg2"
+            ],
+            0
+        ],
+        ".last_response_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        ".primary_current": [
+            [
+                "cmd_arg1"
+            ],
+            0
+        ]
+    },
+    "read_telem": {
+        "telem.buffer_offset": [
+            [
+                "port_read_n",
+                "port_read_sizeof",
+                "port_read_telem_buffer_offset",
+                "port_read_unsigned",
+                "port_read_telem_cmd_buffer_data",
+                "port_read_telem_cmd_buffer"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "n_move": [
+            [
+                "telem_buffer_offset",
+                "cmd_start"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "pwm": [
+            [
+                "c_get_trim",
+                "c_get_output_pwm"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "srv_channel_i"
+            ],
+            0
+        ],
+        "telem.last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_command": {
+        "cmd.crc2": [
+            [
+                "lowbyte_crc"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "calculate_crc_cmd"
+            ],
+            0
+        ],
+        "cmd.crc1": [
+            [
+                "highbyte_crc"
+            ],
+            0
+        ]
+    }
+}

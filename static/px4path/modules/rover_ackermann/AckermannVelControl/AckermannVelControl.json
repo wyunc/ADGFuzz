@@ -1,0 +1,144 @@
+{
+    "updateVelControl": {
+        "rover_velocity_status.adjusted_speed_body_y_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "rover_velocity_status.adjusted_speed_body_x_setpoint": [
+            [
+                "_speed_setpoint_get_state"
+            ],
+            0
+        ],
+        "rover_velocity_status.pid_throttle_body_y_integral": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "rover_velocity_status.pid_throttle_body_x_integral": [
+            [
+                "_pid_speed_get_integral"
+            ],
+            0
+        ],
+        "rover_velocity_status.measured_speed_body_x": [
+            [
+                "_vehicle_speed_body_x"
+            ],
+            0
+        ],
+        "rover_velocity_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_dt": [
+            [
+                "constrain_5000_ms",
+                "constrain__timestamp",
+                "constrain_timestamp_prev",
+                "1e",
+                "constrain_1_ms"
+            ],
+            0
+        ],
+        "rover_velocity_status.measured_speed_body_y": [
+            [
+                "_vehicle_speed_body_y"
+            ],
+            0
+        ]
+    },
+    "updateSubscriptions": {
+        "_vehicle_speed_body_x": [
+            [
+                "_param_ro_speed_th_get",
+                "_f",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame",
+                "fabsf_velocity_in_body_frame"
+            ],
+            1
+        ],
+        "_vehicle_yaw": [
+            [
+                "eulerf__vehicle_attitude_quaternion_psi"
+            ],
+            0
+        ],
+        "_vehicle_attitude_quaternion": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "_vehicle_speed_body_y": [
+            [
+                "_param_ro_speed_th_get",
+                "_f",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame",
+                "fabsf_velocity_in_body_frame"
+            ],
+            1
+        ]
+    },
+    "generateVelocitySetpoint": {
+        "offboard_vel_control": [
+            [
+                "_offboard_control_mode_position",
+                "_offboard_control_mode_velocity"
+            ],
+            0
+        ],
+        "ackermann_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "generateAttitudeAndThrottleSetpoint": {
+        "rover_attitude_setpoint.yaw_setpoint": [
+            [
+                "_vehicle_yaw"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_y": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "speed_body_x_setpoint": [
+            [
+                "speed_magnitude",
+                "_ackermann_velocity_setpoint_backwards"
+            ],
+            0
+        ],
+        "rover_attitude_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

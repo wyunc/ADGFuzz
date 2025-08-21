@@ -1,0 +1,67 @@
+{
+    "update_sensor_instance": {
+        "relative_temperature": [
+            [
+                "double",
+                "data_ref_temp",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.ref_temp": [
+            [
+                "_min_temperature_rise",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.device_id": [
+            [
+                "accel_data_device_id"
+            ],
+            0
+        ],
+        "data.high_temp": [
+            [
+                "data_low_temp",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "finished": [
+            [
+                "data_hot_soaked"
+            ],
+            0
+        ],
+        "data.low_temp": [
+            [
+                "data_sensor_sample_filt"
+            ],
+            0
+        ]
+    },
+    "finish": {
+        "result": [
+            [
+                "enabled",
+                "param_set_no_notification_param_find"
+            ],
+            0
+        ]
+    },
+    "finish_sensor_instance": {
+        "result": [
+            [
+                "coef_index",
+                "float",
+                "axis_index",
+                "res",
+                "param_set_no_notification_str",
+                "px4_ok",
+                "param_set_no_notification_param_find"
+            ],
+            1
+        ]
+    }
+}

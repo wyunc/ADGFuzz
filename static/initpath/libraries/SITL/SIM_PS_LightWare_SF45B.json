@@ -1,0 +1,98 @@
+{
+    "move_preamble_in_buffer": {
+        "_buflen": [
+            [
+                "search_start_pos"
+            ],
+            1
+        ]
+    },
+    "send": {
+        "ret": [
+            [
+                "write_to_autopilot_data",
+                "write_to_autopilot_len"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "desired_fields": [
+            [
+                "_msg_packed_distance_output_msg_desired_fields"
+            ],
+            0
+        ],
+        "stream": [
+            [
+                "_msg_packed_msgstream_msg_stream"
+            ],
+            0
+        ],
+        "update_rate": [
+            [
+                "_msg_packed_update_rate_msg_rate"
+            ],
+            0
+        ]
+    },
+    "update_input": {
+        "got_checksum": [
+            [
+                "uint16_value_want_len",
+                "uint16_value_uint8_t",
+                "uint8_t__msg_buffer",
+                "uint16_value__msg_buffer",
+                "uint8_t_want_len"
+            ],
+            0
+        ],
+        "calc_checksum": [
+            [
+                "msg_checksum"
+            ],
+            0
+        ],
+        "want_len": [
+            [
+                "payload_length"
+            ],
+            0
+        ],
+        "_buflen": [
+            [
+                "read_from_autopilot_array_size",
+                "read_from_autopilot__msg_buffer",
+                "read_from_autopilot__buflen"
+            ],
+            1
+        ]
+    },
+    "update_output_scan": {
+        "last_scan_output_time_ms": [
+            [
+                "samples_per_second",
+                "samples_per_second",
+                "millis",
+                "millis"
+            ],
+            4
+        ],
+        "last_degrees_bf": [
+            [
+                "angle_min_deg",
+                "angle_max_deg",
+                "samples_per_second",
+                "degrees_per_ms"
+            ],
+            3
+        ],
+        "distance": [
+            [
+                "measure_distance_at_angle_bf_location",
+                "measure_distance_at_angle_bf_current_degrees_bf"
+            ],
+            0
+        ]
+    }
+}

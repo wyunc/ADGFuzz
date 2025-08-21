@@ -1,0 +1,257 @@
+{
+    "resetPattern": {
+        "_current_segment": [
+            [
+                "segment_undefined"
+            ],
+            0
+        ]
+    },
+    "initializePattern": {
+        "ground_speed_rotated": [
+            [
+                "ground_speed",
+                "dcm2f_calculate_rotation_angle",
+                "dcm2f_parameters"
+            ],
+            0
+        ],
+        "_current_segment": [
+            [
+                "segment_circle_south",
+                "segment_circle_north",
+                "segment_point_northwest",
+                "segment_point_southwest"
+            ],
+            0
+        ],
+        "north_is_closer": [
+            [
+                "north_center_to_pos_local_norm",
+                "south_center_to_pos_local_norm"
+            ],
+            0
+        ],
+        "_active_parameters": [
+            [
+                "parameters"
+            ],
+            0
+        ],
+        "switch_distance_normalized": [
+            [
+                "_npfg_switch_distance_flt_max",
+                "normalized_major_radius",
+                "parameters_loiter_radius"
+            ],
+            0
+        ]
+    },
+    "calculateFigureEightPoints": {
+        "sin_transition_angle": [
+            [
+                "sqrtf_cos_transition_angle"
+            ],
+            0
+        ],
+        "pattern_points.normalized_south_circle_offset": [
+            [
+                "normalized_major_radius",
+                "vector2f",
+                "normalized_minor_radius"
+            ],
+            0
+        ],
+        "pattern_points.normalized_north_circle_offset": [
+            [
+                "normalized_major_radius",
+                "vector2f",
+                "normalized_minor_radius"
+            ],
+            0
+        ]
+    },
+    "updateSegment": {
+        "vector_to_exit_normalized": [
+            [
+                "pattern_points_normalized_south_exit_offset",
+                "pattern_points_normalized_north_entry_offset",
+                "pattern_points_normalized_north_exit_offset",
+                "center_to_pos_local",
+                "pattern_points_normalized_south_entry_offset"
+            ],
+            0
+        ],
+        "switch_distance_normalized": [
+            [
+                "parameters_loiter_radius",
+                "normalized_major_radius",
+                "_npfg_switch_distance_flt_max"
+            ],
+            0
+        ],
+        "_current_segment": [
+            [
+                "segment_circle_north",
+                "segment_northeast_southwest",
+                "segment_southeast_northwest",
+                "segment_circle_south"
+            ],
+            0
+        ]
+    },
+    "calculatePositionToCenterNormalizedRotated": {
+        "center_to_pos_local_normalized_rotated": [
+            [
+                "dcm2f_calculate_rotation_angle",
+                "center_to_pos_local_normalized",
+                "dcm2f_parameters"
+            ],
+            0
+        ],
+        "center_to_pos_local": [
+            [
+                "parameters_center_pos_local",
+                "curr_pos_local"
+            ],
+            0
+        ]
+    },
+    "calculateRotationAngle": {
+        "yaw_rotation": [
+            [
+                "m_pi_f",
+                "parameters_loiter_orientation"
+            ],
+            0
+        ]
+    },
+    "applyCircle": {
+        "_closest_point_on_path": [
+            [
+                "ground_speed_normalized",
+                "vector_center_to_vehicle_normalized",
+                "vector2f",
+                "normalized_major_radius",
+                "normalized_circle_offset",
+                "parameters_loiter_radius",
+                "dcm2f_parameters",
+                "dcm2f_calculate_rotation_angle",
+                "parameters_center_pos_local",
+                "parameters_loiter_minor_radius"
+            ],
+            4
+        ],
+        "vector_center_to_vehicle": [
+            [
+                "curr_pos_local",
+                "normalized_major_radius",
+                "normalized_circle_offset",
+                "parameters_loiter_radius",
+                "dcm2f_parameters",
+                "dcm2f_calculate_rotation_angle",
+                "parameters_center_pos_local"
+            ],
+            3
+        ],
+        "dist_to_center": [
+            [
+                "vector_center_to_vehicle_norm"
+            ],
+            0
+        ],
+        "_target_bearing": [
+            [
+                "atan2f_unit_path_tangent",
+                "ground_speed_normalized",
+                "vector_center_to_vehicle_normalized",
+                "vector2f",
+                "_f",
+                "loiter_direction_counter_clockwise",
+                "vector2f"
+            ],
+            3
+        ],
+        "path_curvature": [
+            [
+                "parameters_loiter_minor_radius",
+                "_f",
+                "loiter_direction_counter_clockwise"
+            ],
+            1
+        ],
+        "_roll_setpoint": [
+            [
+                "_npfg_get_roll_setpoint"
+            ],
+            0
+        ],
+        "_indicated_airspeed_setpoint": [
+            [
+                "_npfg_get_airspeed_ref",
+                "_eas2tas"
+            ],
+            0
+        ]
+    },
+    "applyLine": {
+        "_indicated_airspeed_setpoint": [
+            [
+                "_npfg_get_airspeed_ref",
+                "_eas2tas"
+            ],
+            0
+        ],
+        "_roll_setpoint": [
+            [
+                "_npfg_get_roll_setpoint"
+            ],
+            0
+        ],
+        "vector_A_to_vehicle": [
+            [
+                "parameters_center_pos_local",
+                "normalized_line_start_offset",
+                "parameters_loiter_radius",
+                "normalized_major_radius",
+                "rotation_matrix",
+                "curr_pos_local"
+            ],
+            3
+        ],
+        "_closest_point_on_path": [
+            [
+                "path_tangent_normalized",
+                "parameters_center_pos_local",
+                "normalized_line_start_offset",
+                "parameters_loiter_radius",
+                "normalized_major_radius",
+                "rotation_matrix",
+                "vector_a_to_vehicle_dot_unit_path_tangent"
+            ],
+            4
+        ],
+        "path_tangent": [
+            [
+                "parameters_loiter_radius",
+                "normalized_major_radius",
+                "normalized_line_end_offset",
+                "rotation_matrix",
+                "parameters_center_pos_local",
+                "parameters_center_pos_local",
+                "normalized_line_start_offset",
+                "parameters_loiter_radius",
+                "normalized_major_radius",
+                "rotation_matrix"
+            ],
+            6
+        ],
+        "_target_bearing": [
+            [
+                "path_tangent_normalized",
+                "atan2f_unit_path_tangent"
+            ],
+            1
+        ]
+    }
+}

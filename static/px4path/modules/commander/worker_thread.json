@@ -1,0 +1,75 @@
+{
+    "startTask": {
+        "_ret_value": [
+            [
+                "pthread_create_thread_entry_trampoline",
+                "pthread_create_low_prio_attr",
+                "pthread_create_this",
+                "pthread_create__thread_handle"
+            ],
+            1
+        ],
+        "param.sched_priority": [
+            [
+                "sched_priority_default"
+            ],
+            0
+        ],
+        "_request": [
+            [
+                "request"
+            ],
+            0
+        ]
+    },
+    "threadEntryTrampoline": {
+        "worker_thread": [
+            [
+                "arg"
+            ],
+            0
+        ]
+    },
+    "threadEntry": {
+        "_ret_value": [
+            [
+                "do_mag_calibration_quick__longitude",
+                "do_accel_calibration__mavlink_log_pub",
+                "do_mag_calibration_quick__latitude",
+                "do_airspeed_calibration__mavlink_log_pub",
+                "do_accel_calibration_quick__mavlink_log_pub",
+                "do_mag_calibration_quick__mavlink_log_pub",
+                "param_load_default",
+                "do_mag_calibration_quick__heading_radians",
+                "param_save_default_true",
+                "do_baro_calibration__mavlink_log_pub",
+                "do_esc_calibration__mavlink_log_pub",
+                "do_level_calibration__mavlink_log_pub",
+                "do_mag_calibration__mavlink_log_pub",
+                "do_gyro_calibration__mavlink_log_pub",
+                "do_trim_calibration__mavlink_log_pub"
+            ],
+            0
+        ]
+    },
+    "setMagQuickData": {
+        "_latitude": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "_heading_radians": [
+            [
+                "heading_rad"
+            ],
+            0
+        ],
+        "_longitude": [
+            [
+                "lon"
+            ],
+            0
+        ]
+    }
+}

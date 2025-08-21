@@ -1,0 +1,210 @@
+{
+    "process_position_datagram": {
+        "hedge.cur_position.address": [
+            [
+                "input_buffer"
+            ],
+            0
+        ],
+        "hedge.cur_position.x__mm": [
+            [
+                "input_buffer",
+                "uint16_t"
+            ],
+            1
+        ],
+        "hedge.cur_position.z__mm": [
+            [
+                "input_buffer",
+                "uint16_t"
+            ],
+            1
+        ],
+        "hedge.cur_position.y__mm": [
+            [
+                "input_buffer",
+                "uint16_t"
+            ],
+            1
+        ]
+    },
+    "process_position_highres_datagram": {
+        "hedge.cur_position.address": [
+            [
+                "input_buffer"
+            ],
+            0
+        ]
+    },
+    "process_beacons_positions_datagram": {
+        "address": [
+            [
+                "input_buffer",
+                "i"
+            ],
+            1
+        ],
+        "z__mm": [
+            [
+                "z"
+            ],
+            0
+        ],
+        "x__mm": [
+            [
+                "x"
+            ],
+            0
+        ],
+        "y__mm": [
+            [
+                "y"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "input_buffer"
+            ],
+            0
+        ],
+        "stationary_beacon": [
+            [
+                "get_or_alloc_beacon_address"
+            ],
+            0
+        ]
+    },
+    "process_beacons_positions_highres_datagram": {
+        "y__mm": [
+            [
+                "y"
+            ],
+            0
+        ],
+        "stationary_beacon": [
+            [
+                "get_or_alloc_beacon_address"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "input_buffer"
+            ],
+            0
+        ],
+        "x__mm": [
+            [
+                "x"
+            ],
+            0
+        ],
+        "z__mm": [
+            [
+                "z"
+            ],
+            0
+        ],
+        "address": [
+            [
+                "i",
+                "input_buffer"
+            ],
+            1
+        ]
+    },
+    "process_beacons_distances_datagram": {
+        "address": [
+            [
+                "i",
+                "input_buffer"
+            ],
+            1
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        ".distance__m": [
+            [
+                "distance"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "find_beacon_instance_address"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "good_byte": [
+            [
+                "0x47",
+                "0x10",
+                "0x16",
+                "input_buffer",
+                "num_bytes_in_block_received",
+                "0xff"
+            ],
+            1
+        ],
+        "block_crc": [
+            [
+                "calc_crc_modbus_num_bytes_in_block_received",
+                "calc_crc_modbus_input_buffer"
+            ],
+            0
+        ],
+        "data_id": [
+            [
+                "input_buffer",
+                "num_bytes_in_block_received",
+                "ap_beacon_marvelmind_positions_datagram_highres_id",
+                "uint16_t",
+                "input_buffer"
+            ],
+            1
+        ],
+        "num_bytes_read": [
+            [
+                "uart_available_16384u"
+            ],
+            0
+        ],
+        "parse_state": [
+            [
+                "recv_hdr",
+                "recv_dgram"
+            ],
+            0
+        ]
+    },
+    "set_stationary_beacons_positions": {
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "order_stationary_beacons": {
+        "beacon_to_swap": [
+            [
+                "i",
+                "hedge_positions_beacons_beacons"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "hedge_positions_beacons_num_beacons"
+            ],
+            0
+        ]
+    }
+}

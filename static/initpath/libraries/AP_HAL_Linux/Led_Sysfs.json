@@ -1,0 +1,22 @@
+{
+    "init": {
+        "_brightness_fd": [
+            [
+                "open_br_path",
+                "open_o_cloexec",
+                "open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "set_brightness": {
+        "br": [
+            [
+                "_max_brightness",
+                "uint8_max",
+                "brightness"
+            ],
+            0
+        ]
+    }
+}

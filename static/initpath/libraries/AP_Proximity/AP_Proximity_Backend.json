@@ -1,0 +1,60 @@
+{
+    "set_status": {
+        "state.status": [
+            [
+                "status"
+            ],
+            0
+        ]
+    },
+    "correct_angle_for_orientation": {
+        "angle_sign": [
+            [
+                "params_orientation"
+            ],
+            0
+        ]
+    },
+    "database_prepare_for_push": {
+        "oaDb": [
+            [
+                "oadatabase"
+            ],
+            0
+        ],
+        "body_to_ned": [
+            [
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ]
+    },
+    "database_push": {
+        "temp_pos.z": [
+            [
+                "temp_pos_z"
+            ],
+            0
+        ],
+        "rotated_object_3D": [
+            [
+                "object_3d",
+                "body_to_ned"
+            ],
+            0
+        ],
+        "oaDb": [
+            [
+                "oadatabase"
+            ],
+            0
+        ],
+        "temp_pos": [
+            [
+                "rotated_object_3d",
+                "current_pos"
+            ],
+            0
+        ]
+    }
+}

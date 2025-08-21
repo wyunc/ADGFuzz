@@ -1,0 +1,116 @@
+{
+    "Fill_Format": {
+        "pkt.msgid": [
+            [
+                "log_format_msg"
+            ],
+            0
+        ],
+        "pkt.length": [
+            [
+                "s_msg_len"
+            ],
+            0
+        ],
+        "pkt.head2": [
+            [
+                "head_byte2"
+            ],
+            0
+        ],
+        "pkt.type": [
+            [
+                "s_msg_type"
+            ],
+            0
+        ],
+        "pkt.head1": [
+            [
+                "head_byte1"
+            ],
+            0
+        ]
+    },
+    "Fill_Format_Units": {
+        "pkt.time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "pkt.msgid": [
+            [
+                "log_format_units_msg"
+            ],
+            0
+        ],
+        "pkt.head2": [
+            [
+                "head_byte2"
+            ],
+            0
+        ],
+        "pkt.head1": [
+            [
+                "head_byte1"
+            ],
+            0
+        ],
+        "pkt.format_type": [
+            [
+                "s_msg_type"
+            ],
+            0
+        ]
+    },
+    "Write_RCOUT": {
+        "enabled_mask": [
+            [
+                "get_output_channel_mask_k_gpio"
+            ],
+            0
+        ]
+    },
+    "Write_Power": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "safety_and_armed": [
+            [
+                "uint8_t_hal_util_safety_switch_state"
+            ],
+            0
+        ]
+    },
+    "Write_Compass_instance": {
+        "mag_offsets": [
+            [
+                "compass_get_offsets_mag_instance"
+            ],
+            0
+        ],
+        "mag_motor_offsets": [
+            [
+                "compass_get_motor_offsets_mag_instance"
+            ],
+            0
+        ],
+        "mag_field": [
+            [
+                "compass_get_field_mag_instance"
+            ],
+            0
+        ]
+    },
+    "Write_Compass": {
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    }
+}

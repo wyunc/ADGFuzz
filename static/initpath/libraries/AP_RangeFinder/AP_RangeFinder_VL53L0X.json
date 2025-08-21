@@ -1,0 +1,178 @@
+{
+    "get_SPAD_info": {
+        "type_is_aperture": [
+            [
+                "0x01",
+                "read_register_0x92"
+            ],
+            1
+        ],
+        "count": [
+            [
+                "0x7f",
+                "read_register_0x92"
+            ],
+            1
+        ]
+    },
+    "getSequenceStepEnables": {
+        "final_range": [
+            [
+                "0x1",
+                "read_register_system_sequence_config"
+            ],
+            1
+        ],
+        "tcc": [
+            [
+                "0x1",
+                "read_register_system_sequence_config"
+            ],
+            1
+        ],
+        "dss": [
+            [
+                "0x1",
+                "read_register_system_sequence_config"
+            ],
+            1
+        ],
+        "msrc": [
+            [
+                "0x1",
+                "read_register_system_sequence_config"
+            ],
+            1
+        ],
+        "pre_range": [
+            [
+                "0x1",
+                "read_register_system_sequence_config"
+            ],
+            1
+        ]
+    },
+    "getSequenceStepTimeouts": {
+        "final_range_vcsel_period_pclks": [
+            [
+                "get_vcsel_pulse_period_vcsel_period_final_range"
+            ],
+            0
+        ],
+        "final_range_mclks": [
+            [
+                "timeouts_pre_range_mclks",
+                "decode_timeout_final_range_config_timeout_macrop_hi",
+                "decode_timeout_read_register16"
+            ],
+            0
+        ],
+        "msrc_dss_tcc_mclks": [
+            [
+                "read_register_msrc_config_timeout_macrop"
+            ],
+            0
+        ],
+        "pre_range_mclks": [
+            [
+                "decode_timeout_pre_range_config_timeout_macrop_hi",
+                "decode_timeout_read_register16"
+            ],
+            0
+        ],
+        "pre_range_vcsel_period_pclks": [
+            [
+                "get_vcsel_pulse_period_vcsel_period_pre_range"
+            ],
+            0
+        ]
+    },
+    "setMeasurementTimingBudget": {
+        "final_range_timeout_us": [
+            [
+                "budget_us",
+                "end_overhead",
+                "msrc_overhead",
+                "tcc_overhead",
+                "pre_range_overhead",
+                "start_overhead",
+                "timeouts_msrc_dss_tcc_us",
+                "dss_overhead",
+                "timeouts_pre_range_us",
+                "final_range_overhead"
+            ],
+            1
+        ],
+        "measurement_timing_budget_us": [
+            [
+                "budget_us"
+            ],
+            0
+        ],
+        "final_range_timeout_mclks": [
+            [
+                "timeouts_pre_range_mclks"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "first_spad_to_enable": [
+            [
+                "spad_type_is_aperture"
+            ],
+            0
+        ],
+        "stop_variable": [
+            [
+                "read_register_0x91"
+            ],
+            0
+        ],
+        "measurement_timing_budget_us": [
+            [
+                "get_measurement_timing_budget"
+            ],
+            0
+        ]
+    },
+    "start_continuous": {
+        "start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "reading_mm": [
+            [
+                "read_register16_result_range_status"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "counter",
+                "sum_mm"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "sum_mm": [
+            [
+                "range_mm"
+            ],
+            0
+        ]
+    }
+}

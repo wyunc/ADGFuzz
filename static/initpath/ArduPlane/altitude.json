@@ -1,0 +1,352 @@
+{
+    "check_home_alt_change": {
+        "next_WP_loc.alt": [
+            [
+                "ahrs_get_home_alt",
+                "auto_state_last_home_alt_cm"
+            ],
+            2
+        ],
+        "auto_state.last_home_alt_cm": [
+            [
+                "ahrs_get_home_alt"
+            ],
+            1
+        ]
+    },
+    "setup_glide_slope": {
+        "auto_state.wp_distance": [
+            [
+                "current_loc_get_distance_next_wp_loc"
+            ],
+            0
+        ],
+        "auto_state.wp_proportion": [
+            [
+                "current_loc_line_path_proportion_next_wp_loc",
+                "current_loc_line_path_proportion_prev_wp_loc"
+            ],
+            0
+        ]
+    },
+    "set_target_altitude_current": {
+        "target_altitude.terrain_alt_cm": [
+            [
+                "terrain_altitude"
+            ],
+            0
+        ],
+        "target_altitude.amsl_cm": [
+            [
+                "current_loc_alt"
+            ],
+            0
+        ]
+    },
+    "set_target_altitude_current_adjusted": {
+        "target_altitude.amsl_cm": [
+            [
+                "adjusted_altitude_cm"
+            ],
+            0
+        ]
+    },
+    "set_target_altitude_location": {
+        "target_altitude.terrain_alt_cm": [
+            [
+                "home_alt",
+                "loc_alt"
+            ],
+            0
+        ],
+        "target_altitude.amsl_cm": [
+            [
+                "home_alt",
+                "loc_alt"
+            ],
+            0
+        ]
+    },
+    "change_target_altitude": {
+        "target_altitude.amsl_cm": [
+            [
+                "change_cm"
+            ],
+            0
+        ],
+        "target_altitude.terrain_alt_cm": [
+            [
+                "change_cm"
+            ],
+            0
+        ]
+    },
+    "set_target_altitude_proportion": {
+        "target_altitude.offset_cm": [
+            [
+                "proportion",
+                "target_altitude_offset_cm",
+                "float"
+            ],
+            0
+        ]
+    },
+    "constrain_target_altitude_location": {
+        "target_altitude.amsl_cm": [
+            [
+                "constrain_int32_loc2_alt",
+                "constrain_int32_loc1_alt",
+                "constrain_int32_target_altitude_amsl_cm"
+            ],
+            0
+        ]
+    },
+    "check_fbwb_altitude": {
+        "target_altitude.amsl_cm": [
+            [
+                "home_alt",
+                "target_altitude_amsl_cm",
+                "plane_fence_get_safe_alt_max",
+                "plane_fence_get_safe_alt_min",
+                "plane_g_cruise_alt_floor"
+            ],
+            2
+        ],
+        "enabled_fences": [
+            [
+                "plane_fence_get_enabled_fences"
+            ],
+            0
+        ],
+        "target_altitude.terrain_alt_cm": [
+            [
+                "target_altitude_terrain_alt_cm",
+                "plane_fence_get_safe_alt_max",
+                "plane_fence_get_safe_alt_min",
+                "plane_g_cruise_alt_floor"
+            ],
+            2
+        ]
+    },
+    "set_offset_altitude_location": {
+        "target_altitude.offset_cm": [
+            [
+                "height",
+                "target_altitude_terrain_alt_cm",
+                "start_loc_alt",
+                "destination_loc_alt"
+            ],
+            0
+        ]
+    },
+    "above_location_current": {
+        "loc_alt_cm": [
+            [
+                "home_alt",
+                "home_alt"
+            ],
+            1
+        ]
+    },
+    "mission_alt_offset": {
+        "ret": [
+            [
+                "g_alt_offset",
+                "landing_alt_offset"
+            ],
+            0
+        ]
+    },
+    "height_above_target": {
+        "target_alt": [
+            [
+                "next_wp_loc_alt",
+                "ahrs_get_home_alt"
+            ],
+            0
+        ]
+    },
+    "lookahead_adjustment": {
+        "bearing_cd": [
+            [
+                "ahrs_yaw_sensor",
+                "nav_controller_target_bearing_cd"
+            ],
+            0
+        ],
+        "lookahead": [
+            [
+                "terrain_lookahead_distance",
+                "terrain_lookahead_bearing_cd",
+                "target_altitude_offset_cm",
+                "terrain_lookahead_climb_ratio"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "g_terrain_lookahead",
+                "auto_state_wp_distance"
+            ],
+            0
+        ],
+        "climb_ratio": [
+            [
+                "ahrs_groundspeed",
+                "tecs_controller_get_max_climbrate"
+            ],
+            1
+        ]
+    },
+    "rangefinder_correction": {
+        "using_rangefinder": [
+            [
+                "land",
+                "g_rangefinder_landing",
+                "flight_stage"
+            ],
+            0
+        ]
+    },
+    "rangefinder_terrain_correction": {
+        "height": [
+            [
+                "terrain_amsl2",
+                "terrain_amsl1"
+            ],
+            1
+        ],
+        "auto_state.terrain_correction": [
+            [
+                "terrain_amsl2",
+                "terrain_amsl1"
+            ],
+            1
+        ]
+    },
+    "rangefinder_height_update": {
+        "rangefinder_state.correction": [
+            [
+                "height_above_target",
+                "rangefinder_state_height_estimate",
+                "terrain_altitude",
+                "rangefinder_state_correction"
+            ],
+            1
+        ],
+        "range_ok": [
+            [
+                "good",
+                "rangefinder_status_orient_orientation"
+            ],
+            0
+        ],
+        "rangefinder_state.initial_range": [
+            [
+                "rangefinder_distance_orient_orientation"
+            ],
+            1
+        ],
+        "rangefinder_state.initial_correction": [
+            [
+                "height_above_target",
+                "rangefinder_state_height_estimate",
+                "terrain_altitude"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            1
+        ],
+        "orientation": [
+            [
+                "rangefinder_orientation"
+            ],
+            0
+        ],
+        "rangefinder_state.last_correction_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rangefinder_state.height_estimate": [
+            [
+                "rangefinder_distance_orient_orientation",
+                "v_z"
+            ],
+            2
+        ],
+        "rangefinder_state.last_distance": [
+            [
+                "rangefinder_distance_orient_orientation"
+            ],
+            1
+        ]
+    },
+    "handle_external_hagl": {
+        "hagl.timeout_ms": [
+            [
+                "uint32_t_packet_param3"
+            ],
+            0
+        ],
+        "hagl.hagl": [
+            [
+                "packet_param1"
+            ],
+            0
+        ],
+        "hagl": [
+            [
+                "plane_external_hagl"
+            ],
+            0
+        ],
+        "hagl.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "get_external_HAGL": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "height_agl": [
+            [
+                "hagl_hagl"
+            ],
+            0
+        ],
+        "hagl": [
+            [
+                "plane_external_hagl"
+            ],
+            0
+        ]
+    },
+    "get_landing_height": {
+        "rangefinder_active": [
+            [
+                "rangefinder_state_in_range",
+                "g_rangefinder_landing"
+            ],
+            0
+        ],
+        "height": [
+            [
+                "height_above_target",
+                "rangefinder_correction"
+            ],
+            0
+        ]
+    }
+}

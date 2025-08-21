@@ -1,0 +1,97 @@
+{
+    "sumd_decode": {
+        "failsafe": [
+            [
+                "sumd_id_failsafe",
+                "_rxpacket_status"
+            ],
+            0
+        ],
+        "channel_count": [
+            [
+                "uint16_t",
+                "_rxpacket_length"
+            ],
+            0
+        ],
+        "_rxpacket.length": [
+            [
+                "byte",
+                "max_chan_count",
+                "uint8_t"
+            ],
+            0
+        ],
+        "rx_count": [
+            [
+                "_cnt"
+            ],
+            0
+        ],
+        "_rxpacket.status": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.header": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_decode_state": [
+            [
+                "sumd_decode_state_got_crc16_byte_2",
+                "sumd_decode_state_got_state",
+                "sumd_decode_state_got_crc",
+                "sumd_decode_state_got_header",
+                "sumd_decode_state_got_len",
+                "sumd_decode_state_unsynced",
+                "sumd_decode_state_got_data",
+                "sumd_decode_state_got_crc16_byte_1"
+            ],
+            0
+        ],
+        "_crc16": [
+            [
+                "sumd_crc16__crc16",
+                "0x0000",
+                "sumd_crc16_byte"
+            ],
+            0
+        ],
+        "_rxpacket.telemetry": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_crc8": [
+            [
+                "0x00",
+                "sumd_crc8__crc8",
+                "sumd_crc8_byte"
+            ],
+            0
+        ],
+        "_rxpacket.crc16_low": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.crc8": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.crc16_high": [
+            [
+                "byte"
+            ],
+            0
+        ]
+    }
+}

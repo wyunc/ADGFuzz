@@ -1,0 +1,36 @@
+{
+    "_accumulate_gyro": {
+        "num_samples_available": [
+            [
+                "l3g4200d_reg_fifo_src_entries_mask",
+                "fifo_status"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_i",
+                "vector3f_buffer",
+                "l3g4200d_gyro_scale_r_s"
+            ],
+            0
+        ]
+    },
+    "_accumulate_accel": {
+        "accel": [
+            [
+                "vector3f_i",
+                "adxl345_accelerometer_scale_m_s",
+                "vector3f_buffer"
+            ],
+            0
+        ],
+        "num_samples_available": [
+            [
+                "fifo_status",
+                "0x3f"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "read": {
+        "_state.consumed_mah": [
+            [
+                "_state_last_time_micros",
+                "micros",
+                "_state_current_amps",
+                "1e"
+            ],
+            2
+        ],
+        "_state.current_amps": [
+            [
+                "current_amps"
+            ],
+            0
+        ],
+        "torqeedo": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_state.temperature": [
+            [
+                "temp_c"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "volts"
+            ],
+            0
+        ],
+        "_state.temperature_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "capacity_remaining_pct": {
+        "percentage": [
+            [
+                "remaining_pct"
+            ],
+            0
+        ]
+    }
+}

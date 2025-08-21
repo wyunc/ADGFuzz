@@ -1,0 +1,105 @@
+{
+    "aggregator_thread_func": {
+        "muorb": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    },
+    "test_runner": {
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    },
+    "px4muorb_orb_initialize": {
+        "muorb_func_ptrs": [
+            [
+                "func_ptrs"
+            ],
+            0
+        ]
+    },
+    "run_test": {
+        "test_to_run": [
+            [
+                "test"
+            ],
+            0
+        ]
+    },
+    "px4muorb_topic_advertised": {
+        "rxHandler": [
+            [
+                "channel_get_rx_handler"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    },
+    "px4muorb_add_subscriber": {
+        "rxHandler": [
+            [
+                "channel_get_rx_handler"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    },
+    "px4muorb_remove_subscriber": {
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ],
+        "rxHandler": [
+            [
+                "channel_get_rx_handler"
+            ],
+            0
+        ]
+    },
+    "px4muorb_send_topic_data": {
+        "rxHandler": [
+            [
+                "channel_get_rx_handler"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    },
+    "px4muorb_get_cpu_load": {
+        "cpu_load": [
+            [
+                "int_cpu_load",
+                "float"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    }
+}

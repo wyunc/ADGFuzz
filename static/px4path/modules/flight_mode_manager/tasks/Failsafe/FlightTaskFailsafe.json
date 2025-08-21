@@ -1,0 +1,43 @@
+{
+    "activate": {
+        "ret": [
+            [
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_position_setpoint": [
+            [
+                "_position"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_acceleration_setpoint": [
+            [
+                "vector3f__",
+                "vector3f__f"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ]
+    }
+}

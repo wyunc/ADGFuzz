@@ -1,0 +1,112 @@
+{
+    "init": {
+        "num_instances": [
+            [
+                "serial_instance"
+            ],
+            1
+        ],
+        ".status": [
+            [
+                "not_connected"
+            ],
+            0
+        ],
+        ".signal_quality_pct": [
+            [
+                "signal_quality_unknown"
+            ],
+            0
+        ]
+    },
+    "update": {
+        ".status": [
+            [
+                "not_connected"
+            ],
+            0
+        ]
+    },
+    "_add_backend": {
+        "num_instances": [
+            [
+                "instance"
+            ],
+            0
+        ]
+    },
+    "detect_instance": {
+        "_type": [
+            [
+                "type",
+                "instance",
+                "params",
+                "_type_get"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "tofsensep_i2c_default_addr",
+                "instance",
+                "_address",
+                "tfminiplus_addr_default",
+                "params",
+                "ap_range_finder_maxsonari2cxl_default_addr"
+            ],
+            0
+        ],
+        "serial_create_fn": [
+            [
+                "create"
+            ],
+            0
+        ],
+        "num_instances": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "serial_create_fn_params",
+                "serial_create_fn_state",
+                "serial_create_fn_instance"
+            ],
+            0
+        ]
+    },
+    "distance_orient": {
+        "backend": [
+            [
+                "find_instance_orientation"
+            ],
+            0
+        ]
+    },
+    "has_data_orient": {
+        "backend": [
+            [
+                "find_instance_orientation"
+            ],
+            0
+        ]
+    },
+    "get_temp": {
+        "backend": [
+            [
+                "find_instance_orientation"
+            ],
+            0
+        ]
+    },
+    "Log_RFND": {
+        "s": [
+            [
+                "get_backend_i"
+            ],
+            0
+        ]
+    }
+}

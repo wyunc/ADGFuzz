@@ -1,0 +1,70 @@
+{
+    "update": {
+        "thrust": [
+            [
+                "thrust_scale",
+                "input_servos",
+                "input_servos",
+                "input_servos"
+            ],
+            2
+        ],
+        "pitch_thrust": [
+            [
+                "actuator"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_thrust",
+                "vector3f_mass",
+                "gravity_mss",
+                "velocity_air_ef",
+                "terminal_velocity",
+                "eas2tas",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "roll_thrust": [
+            [
+                "actuator"
+            ],
+            0
+        ],
+        "rot_accel.z": [
+            [
+                "terminal_rotation_rate",
+                "radians",
+                "gyro_z"
+            ],
+            0
+        ],
+        "rot_accel.y": [
+            [
+                "terminal_rotation_rate",
+                "gyro_y",
+                "radians"
+            ],
+            0
+        ],
+        "rot_accel.x": [
+            [
+                "gyro_x",
+                "terminal_rotation_rate",
+                "radians"
+            ],
+            0
+        ],
+        "yaw_thrust": [
+            [
+                "input_servos",
+                "input_servos",
+                "rotor_rot_accel",
+                "actuator"
+            ],
+            2
+        ]
+    }
+}

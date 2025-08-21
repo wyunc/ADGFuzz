@@ -1,0 +1,51 @@
+{
+    "update": {
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "angle_bf_target": [
+            [
+                "_params_neutral_angles_get",
+                "_params_retract_angles_get"
+            ],
+            0
+        ]
+    },
+    "get_location_target": {
+        "_target_loc": [
+            [
+                "target_loc"
+            ],
+            0
+        ]
+    },
+    "set_attitude_euler": {
+        "current_angle_deg.y": [
+            [
+                "pitch_deg"
+            ],
+            0
+        ],
+        "current_angle_deg.z": [
+            [
+                "yaw_bf_deg"
+            ],
+            0
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "current_angle_deg.x": [
+            [
+                "roll_deg"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "update": {
+        "posRelSensorBF": [
+            [
+                "_sitl_optflow_pos_offset"
+            ],
+            0
+        ],
+        "relVelSensor": [
+            [
+                "gyro",
+                "pos_rel_sensor_bf",
+                "rotmat_mul_transpose_velocity"
+            ],
+            0
+        ],
+        "flowScaleFactorX": [
+            [
+                "flow_scaler_x"
+            ],
+            0
+        ],
+        "relPosSensorEF": [
+            [
+                "pos_rel_sensor_bf",
+                "rotmat"
+            ],
+            0
+        ],
+        "state.flowRate.x": [
+            [
+                "rel_vel_sensor_y",
+                "rotmat_c_z",
+                "rel_pos_sensor_ef_z",
+                "1e38f",
+                "_sitl_state_height_agl",
+                "gyro_x",
+                "rand_float",
+                "_sitl_flow_noise",
+                "flow_scale_factor_x"
+            ],
+            1
+        ],
+        "state.bodyRate": [
+            [
+                "vector2f_gyro_y",
+                "vector2f_gyro_x"
+            ],
+            0
+        ],
+        "flowScaleFactorY": [
+            [
+                "flow_scaler_y"
+            ],
+            0
+        ],
+        "last_flow_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.flowRate.y": [
+            [
+                "rotmat_c_z",
+                "rel_pos_sensor_ef_z",
+                "1e38f",
+                "_sitl_state_height_agl",
+                "rel_vel_sensor_x",
+                "gyro_y",
+                "rand_float",
+                "flow_scale_factor_y",
+                "_sitl_flow_noise"
+            ],
+            1
+        ],
+        "optflow_delay": [
+            [
+                "_sitl_flow_delay"
+            ],
+            0
+        ],
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "next_optflow_index",
+                "optflow_data"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    }
+}

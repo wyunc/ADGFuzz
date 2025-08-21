@@ -1,0 +1,294 @@
+{
+    "init": {
+        "_mnt_mode_out_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "_mnt_range_roll_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "_gimbal_roll_cmd_publisher": [
+            [
+                "_node_advertise",
+                "double",
+                "model_name"
+            ],
+            1
+        ],
+        "_gimbal_yaw_cmd_publisher": [
+            [
+                "_node_advertise",
+                "double",
+                "model_name"
+            ],
+            1
+        ],
+        "_mnt_range_yaw_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "_gimbal_pitch_cmd_publisher": [
+            [
+                "_node_advertise",
+                "double",
+                "model_name"
+            ],
+            1
+        ],
+        "_mnt_range_pitch_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_last_time_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "hrt_absolute_time",
+                "1e6f"
+            ],
+            1
+        ]
+    },
+    "gimbalIMUCallback": {
+        "_q_gimbal": [
+            [
+                "q_gimbal_flu",
+                "q_flu_to_frd",
+                "q_flu_to_frd_inversed"
+            ],
+            0
+        ]
+    },
+    "pollSetpoint": {
+        "_pitch_stp": [
+            [
+                "gimbal_att_stp_theta"
+            ],
+            0
+        ],
+        "_pitch_rate_stp": [
+            [
+                "msg_angular_velocity_y"
+            ],
+            0
+        ],
+        "_roll_rate_stp": [
+            [
+                "msg_angular_velocity_x"
+            ],
+            0
+        ],
+        "_yaw_rate_stp": [
+            [
+                "msg_angular_velocity_z"
+            ],
+            0
+        ],
+        "_gimbal_device_flags": [
+            [
+                "msg_flags"
+            ],
+            0
+        ],
+        "_roll_stp": [
+            [
+                "constrain_msg_index_roll",
+                "gimbal_att_stp_phi",
+                "_roll_min",
+                "constrain__mnt_range_roll",
+                "_roll_max",
+                "constrain_msg_control",
+                "constrain_radians"
+            ],
+            0
+        ],
+        "_yaw_stp": [
+            [
+                "_yaw_max",
+                "constrain__mnt_range_yaw",
+                "gimbal_att_stp_psi",
+                "_yaw_min",
+                "constrain_msg_control",
+                "constrain_radians",
+                "constrain_msg_index_yaw"
+            ],
+            0
+        ]
+    },
+    "publishDeviceInfo": {
+        "device_info.yaw_min": [
+            [
+                "_yaw_min"
+            ],
+            0
+        ],
+        "device_info.firmware_version": [
+            [
+                "_firmware_version"
+            ],
+            0
+        ],
+        "device_info.roll_max": [
+            [
+                "_roll_max"
+            ],
+            0
+        ],
+        "device_info.pitch_min": [
+            [
+                "_pitch_min"
+            ],
+            0
+        ],
+        "device_info.yaw_max": [
+            [
+                "_yaw_max"
+            ],
+            0
+        ],
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ],
+        "device_info.gimbal_device_id": [
+            [
+                "_gimbal_device_id"
+            ],
+            0
+        ],
+        "device_info.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "device_info.custom_cap_flags": [
+            [
+                "_custom_cap_flags"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ],
+        "device_info.roll_min": [
+            [
+                "_roll_min"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_accepted",
+                "uint8_t"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "device_info.cap_flags": [
+            [
+                "_cap_flags"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "device_info.pitch_max": [
+            [
+                "_pitch_max"
+            ],
+            0
+        ],
+        "device_info.uid": [
+            [
+                "_uid"
+            ],
+            0
+        ],
+        "device_info.hardware_version": [
+            [
+                "_hardware_version"
+            ],
+            0
+        ]
+    },
+    "publishDeviceAttitude": {
+        "gimbal_att.angular_velocity_x": [
+            [
+                "_gimbal_rate"
+            ],
+            0
+        ],
+        "gimbal_att.angular_velocity_z": [
+            [
+                "_gimbal_rate"
+            ],
+            0
+        ],
+        "gimbal_att.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gimbal_att.angular_velocity_y": [
+            [
+                "_gimbal_rate"
+            ],
+            0
+        ]
+    },
+    "publishJointCommand": {
+        "last_stp": [
+            [
+                "compute_joint_setpoint_att_stp",
+                "constrain_new_stp",
+                "constrain_max_stp",
+                "compute_joint_setpoint_last_stp",
+                "compute_joint_setpoint_dt",
+                "compute_joint_setpoint_rate_stp",
+                "constrain_min_stp"
+            ],
+            1
+        ]
+    },
+    "computeJointSetpoint": {
+        "stp_from_rate": [
+            [
+                "last_stp",
+                "rate_stp",
+                "dt"
+            ],
+            1
+        ]
+    }
+}

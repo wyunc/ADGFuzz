@@ -1,0 +1,132 @@
+{
+    "handle_setup_signing": {
+        "backend": [
+            [
+                "gcs_chan_i"
+            ],
+            0
+        ],
+        "key.magic": [
+            [
+                "signing_key_magic"
+            ],
+            0
+        ],
+        "key.timestamp": [
+            [
+                "packet_initial_timestamp"
+            ],
+            0
+        ]
+    },
+    "load_signing_key": {
+        "signing.accept_unsigned_callback": [
+            [
+                "accept_unsigned_callback"
+            ],
+            0
+        ],
+        "signing.flags": [
+            [
+                "mavlink_signing_flag_sign_outgoing"
+            ],
+            0
+        ],
+        "_channel_status.signing_streams": [
+            [
+                "nullptr",
+                "signing_streams"
+            ],
+            0
+        ],
+        "signing.link_id": [
+            [
+                "chan",
+                "uint8_t"
+            ],
+            0
+        ],
+        "signing.timestamp": [
+            [
+                "1000ul",
+                "key_timestamp",
+                "100ul",
+                "60ul"
+            ],
+            0
+        ],
+        "all_zero": [
+            [
+                "key_timestamp"
+            ],
+            0
+        ],
+        "_channel_status.signing": [
+            [
+                "nullptr",
+                "signing"
+            ],
+            0
+        ]
+    },
+    "update_signing_timestamp": {
+        "timestamp": [
+            [
+                "timestamp_usec",
+                "epoch_offset",
+                "1000ull"
+            ],
+            1
+        ],
+        "status": [
+            [
+                "mavlink_get_channel_status_chan"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "mavlink_channel_t",
+                "i",
+                "mavlink_comm_0"
+            ],
+            0
+        ]
+    },
+    "save_signing_timestamp": {
+        "last_signing_save_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "status": [
+            [
+                "mavlink_get_channel_status_chan"
+            ],
+            0
+        ],
+        "key.timestamp": [
+            [
+                "status_signing_timestamp"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "mavlink_channel_t",
+                "mavlink_comm_0",
+                "i"
+            ],
+            0
+        ]
+    },
+    "signing_enabled": {
+        "status": [
+            [
+                "mavlink_get_channel_status_chan"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "update_is_flying_5Hz": {
+        "isFlyingProbability": [
+            [
+                "is_flying_probability",
+                "float",
+                "quadplane_is_flying",
+                "aspeed",
+                "aparm_airspeed_min",
+                "ahrs_airspeed_estimate_aspeed",
+                "gps_confirmed_movement"
+            ],
+            3
+        ],
+        "flags.flying": [
+            [
+                "is_flying"
+            ],
+            1
+        ],
+        "ground_mode": [
+            [
+                "arming_is_armed_and_safety_off",
+                "is_flying"
+            ],
+            0
+        ],
+        "auto_state.started_flying_in_auto_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "crash_state.impact_timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "started_flying_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "ground_speed_thresh_cm": [
+            [
+                "aparm_min_groundspeed",
+                "uint32_t",
+                "gps_is_flying_speed_cms"
+            ],
+            0
+        ],
+        "auto_state.last_flying_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "previous_is_flying": [
+            [
+                "is_flying"
+            ],
+            1
+        ]
+    },
+    "crash_detection_update": {
+        "crash_state.debounce_timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "crashed_near_land_waypoint": [
+            [
+                "current_loc_get_distance_mission_get_current_nav_cmd_content_location"
+            ],
+            0
+        ],
+        "crash_state.debounce_time_total_ms": [
+            [
+                "crash_detection_delay_ms"
+            ],
+            0
+        ]
+    },
+    "in_preLaunch_flight_stage": {
+        ".id": [
+            [
+                "mav_cmd_nav_takeoff"
+            ],
+            0
+        ]
+    }
+}

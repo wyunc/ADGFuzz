@@ -1,0 +1,74 @@
+{
+    "limitTilt": {
+        "angle": [
+            [
+                "min_angle",
+                "acosf_dot_product_unit",
+                "min_max_angle"
+            ],
+            0
+        ],
+        "body_unit": [
+            [
+                "sinf_angle",
+                "cosf_angle",
+                "world_unit",
+                "rejection_unit"
+            ],
+            0
+        ],
+        "rejection": [
+            [
+                "world_unit",
+                "body_unit_dot_world_unit"
+            ],
+            1
+        ]
+    },
+    "bodyzToAttitude": {
+        "body_y": [
+            [
+                "body_z",
+                "body_z",
+                "y_c"
+            ],
+            1
+        ]
+    },
+    "cross_sphere_line": {
+        "cd_len": [
+            [
+                "line_a",
+                "line_b",
+                "line_a",
+                "sphere_c",
+                "_length",
+                "sphere_c"
+            ],
+            2
+        ],
+        "res": [
+            [
+                "sqrtf_sphere_r",
+                "sqrtf_cd_len",
+                "line_a",
+                "line_b",
+                "line_a",
+                "line_b",
+                "line_a",
+                "sphere_c",
+                "line_a",
+                "line_b"
+            ],
+            3
+        ]
+    },
+    "addIfNotNan": {
+        "setpoint": [
+            [
+                "addition"
+            ],
+            0
+        ]
+    }
+}

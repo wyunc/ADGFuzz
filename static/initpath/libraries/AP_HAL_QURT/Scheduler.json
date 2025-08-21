@@ -1,0 +1,112 @@
+{
+    "init": {
+        "param.sched_priority": [
+            [
+                "apm_io_priority",
+                "apm_uart_priority",
+                "apm_timer_priority"
+            ],
+            0
+        ],
+        "_main_thread_ctx": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "thread_create": {
+        "thread": [
+            [
+                "proc",
+                "task_t",
+                "new"
+            ],
+            0
+        ],
+        "stack_size": [
+            [
+                "8192u"
+            ],
+            0
+        ],
+        "thread_priority": [
+            [
+                "calculate_thread_priority_priority",
+                "calculate_thread_priority_base"
+            ],
+            0
+        ]
+    },
+    "delay": {
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "persistent_data.scheduler_task": [
+            [
+                "hal_util_persistent_data_scheduler_task"
+            ],
+            1
+        ]
+    },
+    "register_timer_failsafe": {
+        "_failsafe": [
+            [
+                "failsafe"
+            ],
+            0
+        ]
+    },
+    "reboot": {
+        "msg.msg_id": [
+            [
+                "qurt_msg_id_reboot"
+            ],
+            0
+        ]
+    },
+    "_timer_thread": {
+        "sched": [
+            [
+                "arg",
+                "scheduler"
+            ],
+            0
+        ]
+    },
+    "_uart_thread": {
+        "p": [
+            [
+                "hal_serial_i"
+            ],
+            0
+        ],
+        "sched": [
+            [
+                "scheduler",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "_io_thread": {
+        "sched": [
+            [
+                "scheduler",
+                "arg"
+            ],
+            0
+        ]
+    },
+    "set_system_initialized": {
+        "_main_thread_ctx": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "update": {
+        "yaw_angle_deg": [
+            [
+                "sector"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_yaw_angle_deg"
+            ],
+            0
+        ],
+        "current_loc.alt": [
+            [
+                "_0e2",
+                "sitl_state_altitude"
+            ],
+            0
+        ],
+        "current_loc.lng": [
+            [
+                "_0e7",
+                "sitl_state_longitude"
+            ],
+            0
+        ],
+        "current_loc.lat": [
+            [
+                "_0e7",
+                "sitl_state_latitude"
+            ],
+            0
+        ]
+    },
+    "get_distance_to_fence": {
+        "max_dist": [
+            [
+                "test_dist"
+            ],
+            0
+        ],
+        "angle_deg": [
+            [
+                "wrap_360_sitl_state_yaw_deg",
+                "wrap_360_angle_deg"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "proximity_max_range",
+                "test_dist"
+            ],
+            1
+        ],
+        "loc": [
+            [
+                "current_loc"
+            ],
+            0
+        ]
+    },
+    "get_upward_distance": {
+        "distance": [
+            [
+                "fence_alt_max_get_sitl_state_height_agl"
+            ],
+            0
+        ]
+    }
+}

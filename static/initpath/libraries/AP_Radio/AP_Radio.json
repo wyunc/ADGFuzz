@@ -1,0 +1,21 @@
+{
+    "init": {
+        "driver": [
+            [
+                "ap_radio_cc2500_this",
+                "ap_radio_cypress_this",
+                "ap_radio_beken_this",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "play_tune": {
+        "pkt.len": [
+            [
+                "strlen_tune_str"
+            ],
+            1
+        ]
+    }
+}

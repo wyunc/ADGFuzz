@@ -1,0 +1,333 @@
+{
+    "Init": {
+        "df_NumPages": [
+            [
+                "df_page_per_block"
+            ],
+            0
+        ],
+        "bufsize": [
+            [
+                "_front__params_file_bufsize"
+            ],
+            0
+        ],
+        "buffer": [
+            [
+                "uint8_t",
+                "hal_util_malloc_type_df_page_size",
+                "hal_util_malloc_type_mem_dma_safe"
+            ],
+            0
+        ]
+    },
+    "StartWrite": {
+        "df_PageAdr": [
+            [
+                "page_adr"
+            ],
+            0
+        ]
+    },
+    "FinishWrite": {
+        "log_num": [
+            [
+                "start_read_df_page_adr"
+            ],
+            0
+        ]
+    },
+    "_WritePrioritisedBlock": {
+        "last_messagewrite_message_sent": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "space": [
+            [
+                "writebuf_space"
+            ],
+            0
+        ],
+        "must_dribble": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "ReadBlock": {
+        "pBuffer": [
+            [
+                "uintptr_t",
+                "void",
+                "p_buffer",
+                "df_page_size",
+                "df_read_buffer_idx"
+            ],
+            1
+        ],
+        "size": [
+            [
+                "df_page_size",
+                "df_read_buffer_idx"
+            ],
+            1
+        ],
+        "df_Read_BufferIdx": [
+            [
+                "df_page_size",
+                "df_read_buffer_idx"
+            ],
+            1
+        ],
+        "df_Read_PageAdr": [
+            [
+                "df_read_page_adr"
+            ],
+            1
+        ]
+    },
+    "StartLogFile": {
+        "df_Write_FileNumber": [
+            [
+                "file_number"
+            ],
+            0
+        ],
+        "df_FileNumber": [
+            [
+                "file_number"
+            ],
+            0
+        ]
+    },
+    "EraseAll": {
+        "new_log_pending": [
+            [
+                "log_write_started"
+            ],
+            0
+        ]
+    },
+    "periodic_1Hz": {
+        "rate_limiter": [
+            [
+                "ap_logger_rate_limiter__front__params_blk_ratemax",
+                "ap_logger_rate_limiter__front",
+                "new_nothrow",
+                "ap_logger_rate_limiter__front__params_disarm_ratemax"
+            ],
+            0
+        ]
+    },
+    "periodic_10Hz": {
+        "status_msg": [
+            [
+                "none"
+            ],
+            0
+        ]
+    },
+    "validate_log_structure": {
+        "next_file": [
+            [
+                "start_read_page",
+                "df_page_per_block",
+                "start_read_get_block"
+            ],
+            1
+        ],
+        "page_start": [
+            [
+                "find_last_page_of_log_file"
+            ],
+            2
+        ],
+        "df_EraseFrom": [
+            [
+                "find_last_page_of_log_file"
+            ],
+            2
+        ],
+        "wrapped": [
+            [
+                "is_wrapped"
+            ],
+            0
+        ],
+        "first_file": [
+            [
+                "start_read_page",
+                "df_page_per_block",
+                "start_read_get_block"
+            ],
+            1
+        ],
+        "last_file": [
+            [
+                "start_read_page",
+                "df_page_per_block",
+                "start_read_get_block"
+            ],
+            1
+        ]
+    },
+    "start_new_log": {
+        "new_log_num": [
+            [
+                "get_file_number"
+            ],
+            0
+        ],
+        "last_page": [
+            [
+                "find_last_page"
+            ],
+            0
+        ],
+        "hdr.utc_secs": [
+            [
+                "1000000u",
+                "utc_usec"
+            ],
+            0
+        ]
+    },
+    "get_log_boundaries": {
+        "look": [
+            [
+                "log_num_from_list_entry_list_entry"
+            ],
+            1
+        ],
+        "end_page": [
+            [
+                "df_file_page",
+                "df_num_pages",
+                "find_last_page_of_log_look",
+                "find_last_page_of_log_log_num"
+            ],
+            1
+        ],
+        "num": [
+            [
+                "get_num_logs"
+            ],
+            0
+        ]
+    },
+    "get_log_info": {
+        "size": [
+            [
+                "sizeof_file_header",
+                "uint32_t",
+                "end",
+                "start",
+                "sizeof_page_header",
+                "df_page_size",
+                "df_num_pages"
+            ],
+            0
+        ],
+        "time_utc": [
+            [
+                "df_file_time"
+            ],
+            0
+        ],
+        "df_FileTime": [
+            [
+                "utc_usec",
+                "1000000u"
+            ],
+            0
+        ]
+    },
+    "io_timer": {
+        "io_timer_heartbeat": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "version": [
+            [
+                "df_logging_format"
+            ],
+            0
+        ],
+        "status_msg": [
+            [
+                "erase_complete",
+                "recovery_complete"
+            ],
+            0
+        ],
+        "aligned_sector": [
+            [
+                "df_num_pages",
+                "df_page_per_block",
+                "df_page_size",
+                "df_page_per_sector",
+                "df_page_size",
+                "df_num_pages",
+                "df_page_per_sector",
+                "df_erase_from",
+                "df_page_per_sector"
+            ],
+            3
+        ],
+        "next_sector": [
+            [
+                "df_page_per_block",
+                "df_page_size",
+                "df_page_per_sector",
+                "df_page_size",
+                "get_sector_df_erase_from"
+            ],
+            2
+        ]
+    },
+    "write_log_page": {
+        "nbytes": [
+            [
+                "writebuf_read_sizeof",
+                "df_page_size",
+                "sizeof_ph",
+                "writebuf_read_buffer",
+                "writebuf_read_ph"
+            ],
+            1
+        ],
+        "ph.FileNumber": [
+            [
+                "df_write_file_number"
+            ],
+            0
+        ],
+        "ph.FilePage": [
+            [
+                "df_write_file_page"
+            ],
+            0
+        ],
+        "ph.crc": [
+            [
+                "df_logging_format",
+                "df_write_file_page"
+            ],
+            0
+        ]
+    },
+    "flash_test": {
+        "first_bad_byte": [
+            [
+                "j"
+            ],
+            0
+        ]
+    }
+}

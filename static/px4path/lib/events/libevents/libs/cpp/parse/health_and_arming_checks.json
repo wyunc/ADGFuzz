@@ -1,0 +1,213 @@
+{
+    "handleEvent": {
+        "health_enum": [
+            [
+                "event_argument_enum_def"
+            ],
+            0
+        ],
+        "check.description": [
+            [
+                "event_description"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "log2_entry_iter_first"
+            ],
+            0
+        ],
+        "current_results": [
+            [
+                "static_cast",
+                "event_argument_value_int",
+                "int",
+                "_chunks"
+            ],
+            1
+        ],
+        "check.message": [
+            [
+                "event_message"
+            ],
+            0
+        ],
+        "mode_group_enum": [
+            [
+                "event_argument_enum_def"
+            ],
+            0
+        ],
+        "health_component.arming_check.warning": [
+            [
+                "health_component_bitmask"
+            ],
+            0
+        ],
+        "chunk_id": [
+            [
+                "static_cast",
+                "event_argument_value_int",
+                "int"
+            ],
+            0
+        ],
+        "mode_group.can_arm": [
+            [
+                "event_argument_value_int",
+                "entry_iter_first"
+            ],
+            1
+        ],
+        "mode_group.name": [
+            [
+                "entry_iter_second_name"
+            ],
+            0
+        ],
+        "entry_iter.second.health.is_present": [
+            [
+                "entry_iter_second_bitmask",
+                "event_argument_value_int"
+            ],
+            1
+        ],
+        "health_component.arming_check.error": [
+            [
+                "health_component_bitmask"
+            ],
+            0
+        ],
+        "check.type": [
+            [
+                "arming_check",
+                "event_group",
+                "health"
+            ],
+            0
+        ],
+        "check.affected_mode_groups": [
+            [
+                "event_argument_value_int"
+            ],
+            0
+        ],
+        "entry_iter.second.health.error": [
+            [
+                "event_argument_value_int",
+                "entry_iter_second_bitmask"
+            ],
+            1
+        ],
+        "check.affected_health_component_index": [
+            [
+                "event_argument_value_int",
+                "static_cast",
+                "uint8_t"
+            ],
+            0
+        ],
+        "health_component.bitmask": [
+            [
+                "entry_iter_first"
+            ],
+            0
+        ],
+        "health_component.name": [
+            [
+                "entry_iter_second_name"
+            ],
+            0
+        ],
+        "health_component.label": [
+            [
+                "entry_iter_second_description"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "other",
+                "health_summary",
+                "arming_check_summary"
+            ],
+            0
+        ],
+        "entry_iter.second.health.warning": [
+            [
+                "event_argument_value_int",
+                "entry_iter_second_bitmask"
+            ],
+            1
+        ],
+        "mode_group.can_run": [
+            [
+                "event_argument_value_int",
+                "entry_iter_first"
+            ],
+            1
+        ],
+        "_expectedEvent": [
+            [
+                "other",
+                "arming_check_summary"
+            ],
+            0
+        ],
+        "check.log_levels": [
+            [
+                "event_event_data_log_levels"
+            ],
+            0
+        ]
+    },
+    "updateResultsFromChunks": {
+        "_results._health_components.health_components": [
+            [
+                "chunk__health_components_health_components"
+            ],
+            0
+        ],
+        ".health_component": [
+            [
+                "health_component_iter_second"
+            ],
+            0
+        ],
+        "chunk": [
+            [
+                "chunk_iter_second"
+            ],
+            0
+        ],
+        "health_component": [
+            [
+                "health_component_iter_first",
+                "_results__health_components_health_components"
+            ],
+            1
+        ],
+        "_results._mode_groups.groups": [
+            [
+                "chunk__mode_groups_groups"
+            ],
+            0
+        ],
+        "mode_group": [
+            [
+                "mode_group_idx",
+                "chunk__mode_groups_groups"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_expectedEvent": [
+            [
+                "arming_check_summary"
+            ],
+            0
+        ]
+    }
+}

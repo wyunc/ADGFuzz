@@ -1,0 +1,59 @@
+{
+    "st24_decode": {
+        "rx_count": [
+            [
+                "d_packet_count"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "_rxpacket_st24_data",
+                "channel_data24",
+                "channel_data12"
+            ],
+            0
+        ],
+        "rssi": [
+            [
+                "d_rssi"
+            ],
+            0
+        ],
+        "_rxpacket.crc8": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_decode_state": [
+            [
+                "st24_decode_state_got_data",
+                "st24_decode_state_got_len",
+                "st24_decode_state_unsynced",
+                "st24_decode_state_got_stx1",
+                "st24_decode_state_got_stx2",
+                "st24_decode_state_got_type"
+            ],
+            0
+        ],
+        "stride_count": [
+            [
+                "max_chan_count"
+            ],
+            1
+        ],
+        "_rxpacket.type": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.length": [
+            [
+                "byte"
+            ],
+            0
+        ]
+    }
+}

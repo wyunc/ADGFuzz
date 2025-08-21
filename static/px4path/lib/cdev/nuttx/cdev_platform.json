@@ -1,0 +1,38 @@
+{
+    "cdev_open": {
+        "cdev": [
+            [
+                "filp_f_inode_i_private",
+                "c_dev"
+            ],
+            0
+        ]
+    },
+    "cdev_close": {
+        "cdev": [
+            [
+                "filp_f_inode_i_private",
+                "c_dev"
+            ],
+            0
+        ]
+    },
+    "cdev_ioctl": {
+        "cdev": [
+            [
+                "c_dev",
+                "filp_f_inode_i_private"
+            ],
+            0
+        ]
+    },
+    "cdev_poll": {
+        "cdev": [
+            [
+                "filp_f_inode_i_private",
+                "c_dev"
+            ],
+            0
+        ]
+    }
+}

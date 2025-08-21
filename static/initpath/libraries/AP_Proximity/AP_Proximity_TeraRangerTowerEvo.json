@@ -1,0 +1,63 @@
+{
+    "update": {
+        "_last_request_sent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_mode": {
+        "_last_request_sent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_sensor_data": {
+        "_current_init_state": [
+            [
+                "init_state_stream_start",
+                "init_state_finished",
+                "init_state_rate",
+                "init_state_sequence"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "_uart_read"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "_uart_available"
+            ],
+            0
+        ]
+    },
+    "update_sector_data": {
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "0xffff",
+                "distance_mm",
+                "0x0001"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_angle_deg"
+            ],
+            0
+        ]
+    }
+}

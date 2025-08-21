@@ -1,0 +1,145 @@
+{
+    "publish": {
+        "mount_orientation.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "_calculate_pitch": {
+        "z": [
+            [
+                "altitude",
+                "global_position_alt"
+            ],
+            0
+        ],
+        "dx": [
+            [
+                "y1",
+                "x2",
+                "x1",
+                "y2",
+                "dy"
+            ],
+            0
+        ],
+        "target_distance": [
+            [
+                "sqrtf_dx",
+                "sqrtf_dy"
+            ],
+            0
+        ]
+    },
+    "check_and_handle_setpoint_timeout": {
+        "type_angle": [
+            [
+                "angle",
+                "control_data_type"
+            ],
+            0
+        ],
+        "timeout": [
+            [
+                "2_s",
+                "control_data_timestamp_last_update",
+                "now"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "i",
+                "control_data_type_data_angle_angular_velocity",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "_handle_position_update": {
+        "alt": [
+            [
+                "control_data_type_data_lonlat_altitude"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "control_data_type_data_lonlat_lat"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "control_data_type_data_lonlat_lon"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "control_data_type_data_lonlat_pitch_offset"
+            ],
+            0
+        ],
+        "vlat": [
+            [
+                "vehicle_global_position_lat"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "control_data_type_data_lonlat_yaw_offset",
+                "get_bearing_to_next_waypoint_lon",
+                "get_bearing_to_next_waypoint_vlon",
+                "get_bearing_to_next_waypoint_lat",
+                "get_bearing_to_next_waypoint_vlat"
+            ],
+            0
+        ],
+        "vlon": [
+            [
+                "vehicle_global_position_lon"
+            ],
+            0
+        ]
+    },
+    "_calculate_angle_output": {
+        "euler_vehicle": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "_landed": [
+            [
+                "vehicle_land_detected_landed",
+                "vehicle_land_detected_maybe_landed"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "constrain__last_update",
+                "constrain_t",
+                "_f",
+                "_e"
+            ],
+            0
+        ],
+        "euler_gimbal": [
+            [
+                "q_setpoint"
+            ],
+            0
+        ],
+        "q_setpoint_valid": [
+            [
+                "q_setpoint_is_all_finite"
+            ],
+            0
+        ]
+    }
+}

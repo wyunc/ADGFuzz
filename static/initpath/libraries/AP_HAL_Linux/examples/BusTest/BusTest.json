@@ -1,0 +1,25 @@
+{
+    "loop": {
+        "dev": [
+            [
+                "get_device_i",
+                "get_device__name",
+                "get_device_whoami_list"
+            ],
+            0
+        ],
+        "bus_type": [
+            [
+                "char",
+                "new"
+            ],
+            0
+        ],
+        "spi_sem": [
+            [
+                "dev_get_semaphore"
+            ],
+            0
+        ]
+    }
+}

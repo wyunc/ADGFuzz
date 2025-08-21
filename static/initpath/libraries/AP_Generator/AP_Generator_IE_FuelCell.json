@@ -1,0 +1,78 @@
+{
+    "init": {
+        "_health_warn_last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_uart": [
+            [
+                "serialmanager_find_serial_serial_protocol_generator"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_healthy": [
+            [
+                "millis",
+                "healthy_timeout_ms",
+                "_last_time_ms"
+            ],
+            1
+        ]
+    },
+    "decode": {
+        "end_char": [
+            [
+                "c"
+            ],
+            1
+        ],
+        "_checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "check_status": {
+        "_health_warn_last_ms": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "check_for_err_code_if_changed": {
+        "_last_sub_err_code": [
+            [
+                "_sub_err_code"
+            ],
+            0
+        ],
+        "_last_err_code": [
+            [
+                "_err_code"
+            ],
+            0
+        ]
+    },
+    "is_running": {
+        "_state": [
+            [
+                "running"
+            ],
+            0
+        ]
+    },
+    "update_state_msg": {
+        "_last_state": [
+            [
+                "_state"
+            ],
+            0
+        ]
+    }
+}

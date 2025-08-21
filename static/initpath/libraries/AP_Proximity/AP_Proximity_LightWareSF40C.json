@@ -1,0 +1,212 @@
+{
+    "initialise": {
+        "_last_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "restart_sensor": {
+        "_sensor_state.motor_state": [
+            [
+                "unknown"
+            ],
+            0
+        ],
+        "_last_restart_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_message": {
+        "flags": [
+            [
+                "write",
+                "payload_len",
+                "0x01"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc_xmodem_update_payload",
+                "crc_xmodem_update_crc",
+                "crc_xmodem_update_proximity_sf40c_header",
+                "crc_xmodem_update_highbyte",
+                "crc_xmodem_update_flags",
+                "crc_xmodem_update_lowbyte",
+                "crc_xmodem_update_uint8_tmsgid",
+                "crc_xmodem_update_i"
+            ],
+            0
+        ]
+    },
+    "request_stream_start": {
+        "desired_rate": [
+            [
+                "proximity_sf40c_desired_output_rate"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "htole32"
+            ],
+            0
+        ]
+    },
+    "process_replies": {
+        "nbytes": [
+            [
+                "_uart_available"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_uart_read"
+            ],
+            0
+        ]
+    },
+    "parse_byte": {
+        "_last_reply_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_msg.crc_expected": [
+            [
+                "crc_xmodem_update__msg_crc_expected",
+                "crc_xmodem_update_b"
+            ],
+            0
+        ],
+        "_msg.payload_len": [
+            [
+                "uint16_value__msg_flags_low",
+                "uint16_value__msg_flags_high"
+            ],
+            0
+        ],
+        "_msg.state": [
+            [
+                "msg_id",
+                "crc_h",
+                "crc_l",
+                "header",
+                "flags_l",
+                "payload",
+                "flags_h"
+            ],
+            0
+        ],
+        "_msg.msgid": [
+            [
+                "message_id"
+            ],
+            0
+        ]
+    },
+    "process_message": {
+        "_sensor_state.output_rate": [
+            [
+                "_msg_payload"
+            ],
+            0
+        ],
+        "database_ready": [
+            [
+                "database_prepare_for_push_current_pos",
+                "database_prepare_for_push_body_to_ned"
+            ],
+            0
+        ],
+        "point_start_index": [
+            [
+                "buff_to_uint16__msg_payload"
+            ],
+            0
+        ],
+        "dist_max_cm": [
+            [
+                "distance_max"
+            ],
+            0
+        ],
+        "combined_dist_m": [
+            [
+                "int16_max",
+                "buff_to_uint16__msg_payload",
+                "int16_t",
+                "buff_to_uint16_idx"
+            ],
+            2
+        ],
+        "idx": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_sensor_state.streaming": [
+            [
+                "buff_to_uint32__msg_payload"
+            ],
+            0
+        ],
+        "_face_distance": [
+            [
+                "buff_to_uint16__msg_payload",
+                "int16_t",
+                "buff_to_uint16_idx"
+            ],
+            2
+        ],
+        "_sensor_state.motor_state": [
+            [
+                "motor_state",
+                "_msg_payload"
+            ],
+            0
+        ],
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_face": [
+            [
+                "frontend_boundary_get_face_angle_deg"
+            ],
+            1
+        ],
+        "point_count": [
+            [
+                "buff_to_uint16__msg_payload"
+            ],
+            0
+        ],
+        "dist_min_cm": [
+            [
+                "distance_min"
+            ],
+            0
+        ],
+        "combined_angle_deg": [
+            [
+                "buff_to_uint16__msg_payload",
+                "wrap_360_i",
+                "wrap_360_point_start_index",
+                "params_orientation",
+                "params_yaw_correction"
+            ],
+            5
+        ]
+    }
+}

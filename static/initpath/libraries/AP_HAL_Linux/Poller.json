@@ -1,0 +1,68 @@
+{
+    "on_can_read": {
+        "r": [
+            [
+                "read_val",
+                "eagain",
+                "read__fd",
+                "errno",
+                "read_sizeof"
+            ],
+            0
+        ]
+    },
+    "register_pollable": {
+        "epev.data.ptr": [
+            [
+                "static_cast",
+                "void",
+                "p"
+            ],
+            0
+        ],
+        "epev.events": [
+            [
+                "events"
+            ],
+            0
+        ]
+    },
+    "poll": {
+        "r": [
+            [
+                "epoll_wait_max_events",
+                "epoll_wait__epfd",
+                "epoll_wait_events"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "eintr"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "events",
+                "_data_ptr",
+                "pollable",
+                "i",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "wakeup": {
+        "r": [
+            [
+                "sizeof_val",
+                "val",
+                "write__wakeup_get_fd",
+                "errno",
+                "eintr"
+            ],
+            0
+        ]
+    }
+}

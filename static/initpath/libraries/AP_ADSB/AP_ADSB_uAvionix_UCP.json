@@ -1,0 +1,425 @@
+{
+    "init": {
+        "_port": [
+            [
+                "serialmanager_find_serial_serial_protocol_adsb"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "run_state.last_packet_GPS_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "run_state.last_packet_Transponder_Control_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "_port_available_10ul",
+                "_port_available_gdl90_rx_max_packet_length"
+            ],
+            0
+        ],
+        "rx.last_msg_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_msg": {
+        "_frontend.out_state.ctrl.squawkCode": [
+            [
+                "rx_decoded_transponder_status_v3_squawk_code",
+                "rx_decoded_transponder_status_squawk_code"
+            ],
+            0
+        ],
+        "_frontend.out_state.tx_status.squawk": [
+            [
+                "rx_decoded_transponder_status_v3_squawk_code",
+                "rx_decoded_transponder_status_squawk_code"
+            ],
+            0
+        ],
+        "run_state.last_gcs_send_message_Transponder_Status_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_frontend.out_state.tx_status.NIC_NACp": [
+            [
+                "rx_decoded_ownship_report_report_na_cp",
+                "rx_decoded_transponder_status_v3_na_cp",
+                "rx_decoded_transponder_status_v3_nic",
+                "rx_decoded_ownship_report_report_nic"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.modeSEnabled": [
+            [
+                "rx_decoded_transponder_status_mode_s_enabled",
+                "rx_decoded_transponder_status_v3_mode_s_enabled"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.x_bit": [
+            [
+                "rx_decoded_transponder_status_x_bit"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.es1090TxEnabled": [
+            [
+                "rx_decoded_transponder_status_v3_es1090tx_enabled",
+                "rx_decoded_transponder_status_es1090tx_enabled"
+            ],
+            0
+        ],
+        "_frontend.out_state.tx_status.boardTemp": [
+            [
+                "rx_decoded_transponder_status_v3_temperature"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.modeAEnabled": [
+            [
+                "rx_decoded_transponder_status_mode_a_enabled",
+                "rx_decoded_transponder_status_v3_mode_a_enabled"
+            ],
+            0
+        ],
+        "run_state.last_packet_Transponder_Ownship_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "run_state.last_packet_Transponder_Config_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_frontend.out_state.ctrl.modeCEnabled": [
+            [
+                "rx_decoded_transponder_status_v3_mode_c_enabled",
+                "rx_decoded_transponder_status_mode_c_enabled"
+            ],
+            0
+        ],
+        "run_state.last_packet_Transponder_Id_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "run_state.last_packet_Transponder_Heartbeat_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "run_state.last_packet_Transponder_Status_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "str_len": [
+            [
+                "sizeof_rx_decoded_identification_primary_fw_part_number"
+            ],
+            0
+        ]
+    },
+    "send_Transponder_Control": {
+        "msg.airGroundState": [
+            [
+                "_frontend_out_state_is_flying",
+                "adsb_on_ground",
+                "adsb_airborne_subsonic"
+            ],
+            0
+        ],
+        "msg.squawkCode": [
+            [
+                "_frontend_out_state_ctrl_squawk_code"
+            ],
+            0
+        ],
+        "msg.es1090TxEnabled": [
+            [
+                "_frontend_out_state_ctrl_es1090tx_enabled"
+            ],
+            0
+        ],
+        "msg.modeAEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_a_enabled"
+            ],
+            0
+        ],
+        "msg.identActive": [
+            [
+                "_frontend_out_state_ctrl_ident_active"
+            ],
+            0
+        ],
+        "msg.modeCEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_c_enabled"
+            ],
+            0
+        ],
+        "msg.version": [
+            [
+                "gdl90_transponder_control_version"
+            ],
+            0
+        ],
+        "msg.emergencyState": [
+            [
+                "adsb_emergency_uas_lost_link",
+                "millis",
+                "ap_adsb_uavionix_gcs_lost_comms_long_timeout_ms",
+                "gcs_sysid_myggcs_last_seen_time_ms",
+                "adsb_emergency_none"
+            ],
+            2
+        ],
+        "msg.modeSEnabled": [
+            [
+                "_frontend_out_state_ctrl_mode_s_enabled"
+            ],
+            0
+        ],
+        "msg.messageId": [
+            [
+                "gdl90_id_transponder_control"
+            ],
+            0
+        ],
+        "msg.baroCrossChecked": [
+            [
+                "adsb_nic_baro_unverified"
+            ],
+            0
+        ]
+    },
+    "send_GPS_Data": {
+        "gotAccHoriz": [
+            [
+                "gps_horizontal_accuracy_acc_horiz"
+            ],
+            0
+        ],
+        "msg.HPL_mm": [
+            [
+                "acc_horiz",
+                "1e3",
+                "got_acc_horiz",
+                "uint32_max"
+            ],
+            0
+        ],
+        "msg.longitude_ddE7": [
+            [
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "_frontend__my_loc_lng",
+                "int32_max"
+            ],
+            2
+        ],
+        "msg.horizontalVelocityFOM_mmps": [
+            [
+                "gps_speed_accuracy_acc_vel",
+                "1e3",
+                "uint16_max",
+                "acc_vel"
+            ],
+            0
+        ],
+        "msg.horizontalFOM_mm": [
+            [
+                "acc_horiz",
+                "1e3",
+                "got_acc_horiz",
+                "uint32_max"
+            ],
+            0
+        ],
+        "msg.utcTime_s": [
+            [
+                "1e",
+                "gps_time_epoch_usec"
+            ],
+            0
+        ],
+        "msg.latitude_ddE7": [
+            [
+                "_frontend__my_loc_lat",
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "int32_max"
+            ],
+            2
+        ],
+        "msg.verticalFOM_cm": [
+            [
+                "acc_vert",
+                "uint16_max",
+                "1e2",
+                "gps_vertical_accuracy_acc_vert"
+            ],
+            0
+        ],
+        "msg.verticalVelocity_cmps": [
+            [
+                "velocity_z",
+                "int16_max",
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "1e2"
+            ],
+            2
+        ],
+        "msg.verticalVelocityFOM_mmps": [
+            [
+                "msg_horizontal_velocity_fom_mmps"
+            ],
+            0
+        ],
+        "msg.altitudeGnss_mm": [
+            [
+                "int32_max",
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "_frontend__my_loc_alt"
+            ],
+            2
+        ],
+        "msg.satsUsed": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "msg.messageId": [
+            [
+                "gdl90_id_gps_data"
+            ],
+            0
+        ],
+        "msg.VPL_cm": [
+            [
+                "uint32_max"
+            ],
+            0
+        ],
+        "msg.eastVelocity_mmps": [
+            [
+                "1e3",
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "int32_max",
+                "velocity_y"
+            ],
+            2
+        ],
+        "msg.navState": [
+            [
+                "nav_state"
+            ],
+            0
+        ],
+        "velocity": [
+            [
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "gps_velocity",
+                "vector3f"
+            ],
+            2
+        ],
+        "msg.northVelocity_mmps": [
+            [
+                "velocity_x",
+                "1e3",
+                "gps_fix_3d",
+                "gps_fix",
+                "gps_status",
+                "int32_max"
+            ],
+            2
+        ],
+        "msg.fixType": [
+            [
+                "gps_fix",
+                "gps_status"
+            ],
+            1
+        ]
+    },
+    "parseByte": {
+        "status.prev_data": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc16_ccitt_gdl90_uint8_t",
+                "msg_raw",
+                "status_length"
+            ],
+            0
+        ],
+        "crc_LSB": [
+            [
+                "msg_raw",
+                "status_length"
+            ],
+            0
+        ],
+        "msg.crc": [
+            [
+                "crc_lsb",
+                "crc_msb",
+                "uint16_t"
+            ],
+            0
+        ],
+        "status.state": [
+            [
+                "gdl90_rx_unstuff",
+                "gdl90_rx_in_packet",
+                "gdl90_rx_idle"
+            ],
+            0
+        ],
+        "crc_MSB": [
+            [
+                "msg_raw",
+                "status_length"
+            ],
+            0
+        ]
+    }
+}

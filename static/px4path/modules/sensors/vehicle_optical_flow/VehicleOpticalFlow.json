@@ -1,0 +1,256 @@
+{
+    "ParametersUpdate": {
+        "_flow_rotation": [
+            [
+                "get_rot_matrix_enum",
+                "get_rot_matrix_rotation_param_sens_flow_rot_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "flow_vel.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_oldest": [
+            [
+                "sensor_optical_flow_integration_timespan_us",
+                "sensor_optical_flow_timestamp_sample"
+            ],
+            0
+        ],
+        "flow_vel_ne": [
+            [
+                "vel_optflow_body",
+                "r_to_earth"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.distance_m": [
+            [
+                "nan",
+                "_distance_sum_count",
+                "sensor_optical_flow_distance_m",
+                "range_sample_data"
+            ],
+            1
+        ],
+        "vehicle_optical_flow.max_flow_rate": [
+            [
+                "_param_sens_flow_maxr_get",
+                "sensor_optical_flow_max_flow_rate"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.timestamp_sample": [
+            [
+                "sensor_optical_flow_timestamp_sample"
+            ],
+            0
+        ],
+        "min_interval_s": [
+            [
+                "1e",
+                "sensor_optical_flow_integration_timespan_us"
+            ],
+            0
+        ],
+        "zeroval": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "flow_dt": [
+            [
+                "1e",
+                "vehicle_optical_flow_integration_timespan_us"
+            ],
+            0
+        ],
+        "timestamp_newest": [
+            [
+                "sensor_optical_flow_timestamp"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.max_ground_distance": [
+            [
+                "sensor_optical_flow_max_ground_distance",
+                "_param_sens_flow_maxhgt_get"
+            ],
+            0
+        ],
+        "_flow_integral": [
+            [
+                "_param_sens_flow_scale_get"
+            ],
+            0
+        ],
+        "flow_compensated_XY_rad": [
+            [
+                "gyro_rate_integral_xy",
+                "flow_xy_rad"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.min_ground_distance": [
+            [
+                "_param_sens_flow_minhgt_get",
+                "sensor_optical_flow_min_ground_distance"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.device_id": [
+            [
+                "sensor_optical_flow_device_id"
+            ],
+            0
+        ],
+        "_delta_angle": [
+            [
+                "_flow_rotation",
+                "delta_angle"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.quality": [
+            [
+                "_accumulated_count",
+                "sensor_optical_flow_quality"
+            ],
+            1
+        ],
+        "range": [
+            [
+                "_distance_sum_count",
+                "sensor_optical_flow_distance_m",
+                "range_sample_data"
+            ],
+            1
+        ],
+        "interval_us": [
+            [
+                "1e6f",
+                "_param_sens_flow_rate_get"
+            ],
+            0
+        ],
+        "_flow_timestamp_sample_last": [
+            [
+                "sensor_optical_flow_timestamp_sample"
+            ],
+            0
+        ],
+        "flow_vel.timestamp_sample": [
+            [
+                "vehicle_optical_flow_timestamp_sample"
+            ],
+            0
+        ],
+        "integration_gap_threshold_us": [
+            [
+                "sensor_optical_flow_integration_timespan_us"
+            ],
+            0
+        ],
+        "R_to_earth": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "vehicle_optical_flow.integration_timespan_us": [
+            [
+                "sensor_optical_flow_integration_timespan_us"
+            ],
+            1
+        ]
+    },
+    "UpdateDistanceSensor": {
+        "sample.data": [
+            [
+                "distance_sensor_current_distance"
+            ],
+            0
+        ],
+        "ndist": [
+            [
+                "orb_group_count_distance_sensor",
+                "orb_group_count_orb_id"
+            ],
+            0
+        ],
+        "sample.time_us": [
+            [
+                "distance_sensor_timestamp"
+            ],
+            0
+        ],
+        "_last_range_sensor_update": [
+            [
+                "distance_sensor_timestamp"
+            ],
+            0
+        ],
+        "_distance_sensor_selected": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "UpdateSensorGyro": {
+        "gyro_sample.data": [
+            [
+                "_gyro_calibration_correct_vector3f",
+                "_gyro_calibration_correct_sensor_gyro_y",
+                "_gyro_calibration_correct_sensor_gyro_x",
+                "_gyro_calibration_correct_sensor_gyro_z"
+            ],
+            0
+        ],
+        "gyro_sample.dt": [
+            [
+                "sensor_gyro_timestamp_sample",
+                "1e"
+            ],
+            1
+        ],
+        "last_generation": [
+            [
+                "_sensor_gyro_sub_get_last_generation"
+            ],
+            0
+        ],
+        "_gyro_timestamp_sample_last": [
+            [
+                "sensor_gyro_timestamp_sample"
+            ],
+            0
+        ],
+        "gyro_sample.time_us": [
+            [
+                "sensor_gyro_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "ClearAccumulatedData": {
+        "_distance_sum": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

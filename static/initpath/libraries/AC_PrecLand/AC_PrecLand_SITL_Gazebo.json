@@ -1,0 +1,17 @@
+{
+    "update": {
+        "_have_los_meas": [
+            [
+                "millis",
+                "irlock_last_update_ms"
+            ],
+            1
+        ],
+        "_state.healthy": [
+            [
+                "irlock_healthy"
+            ],
+            0
+        ]
+    }
+}

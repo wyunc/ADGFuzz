@@ -1,0 +1,11 @@
+{
+    "update": {
+        "desired_steering": [
+            [
+                "input_expo_g2_manual_steering_expo",
+                "input_expo_desired_steering"
+            ],
+            0
+        ]
+    }
+}

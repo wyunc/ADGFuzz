@@ -1,0 +1,10 @@
+{
+    "testBias": {
+        "estimated_bias": [
+            [
+                "_ekf_get_accel_bias"
+            ],
+            0
+        ]
+    }
+}

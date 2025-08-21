@@ -1,0 +1,40 @@
+{
+    "nmea_printf": {
+        "s": [
+            [
+                "nmea_vaprintf_fmt",
+                "nmea_vaprintf_ap"
+            ],
+            0
+        ]
+    },
+    "publish": {
+        "ground_track_deg": [
+            [
+                "degrees_d_ground_track_rad"
+            ],
+            0
+        ],
+        "tm": [
+            [
+                "gmtime_r_tvd",
+                "gmtime_r_tv_tv_sec"
+            ],
+            0
+        ],
+        "speed_knots": [
+            [
+                "m_per_sec_to_knots",
+                "d_speed_2d"
+            ],
+            1
+        ],
+        "deg": [
+            [
+                "fabs_d_latitude",
+                "fabs_d_longitude"
+            ],
+            0
+        ]
+    }
+}

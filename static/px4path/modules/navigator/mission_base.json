@@ -1,0 +1,765 @@
+{
+    "updateDatamanCache": {
+        "_load_mission_index": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "constrain_int32_c",
+                "constrain__mission_current_seq",
+                "int32_t__mission_count"
+            ],
+            1
+        ]
+    },
+    "updateMavlinkMission": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ],
+        "mission_items_changed": [
+            [
+                "new_mission_mission_id",
+                "_mission_mission_id"
+            ],
+            0
+        ],
+        "mission_data_changed": [
+            [
+                "check_mission_data_changed_new_mission"
+            ],
+            0
+        ],
+        "_mission": [
+            [
+                "new_mission"
+            ],
+            0
+        ]
+    },
+    "on_inactive": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ]
+    },
+    "on_inactivation": {
+        "_work_item_type": [
+            [
+                "work_item_type_default"
+            ],
+            0
+        ],
+        "_inactivation_index": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ],
+        "_mission_type": [
+            [
+                "mission_type_none"
+            ],
+            0
+        ]
+    },
+    "on_activation": {
+        "resume_index": [
+            [
+                "_inactivation_index"
+            ],
+            0
+        ],
+        "_mission_activation_index": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ]
+    },
+    "on_active": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ],
+        "mission_dataman_id": [
+            [
+                "static_cast",
+                "_mission_mission_dataman_id",
+                "dm_item_t"
+            ],
+            0
+        ]
+    },
+    "isLanding": {
+        "on_landing_stage": [
+            [
+                "num_found_items",
+                "d_current",
+                "next_mission_items_index",
+                "0u",
+                "_mission_current_seq",
+                "_navigator_get_acceptance_radius",
+                "mission_item_loiter_radius_abs"
+            ],
+            0
+        ]
+    },
+    "update_mission": {
+        "seq_total": [
+            [
+                "_mission_count"
+            ],
+            0
+        ],
+        "_mission_type": [
+            [
+                "mission_type_mission",
+                "mission_type_none"
+            ],
+            0
+        ],
+        "_work_item_type": [
+            [
+                "work_item_type_default"
+            ],
+            0
+        ]
+    },
+    "advance_mission": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "set_next_mission_item"
+            ],
+            0
+        ]
+    },
+    "set_mission_items": {
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_vtol_land"
+            ],
+            0
+        ]
+    },
+    "loadCurrentMissionItem": {
+        "dm_item": [
+            [
+                "dm_item_t",
+                "static_cast",
+                "_mission_mission_dataman_id"
+            ],
+            0
+        ]
+    },
+    "setEndOfMissionItems": {
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_idle"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_mission_type": [
+            [
+                "mission_type_none"
+            ],
+            0
+        ]
+    },
+    "set_mission_item_reached": {
+        "seq_reached": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ]
+    },
+    "set_mission_result": {
+        "seq_current": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ]
+    },
+    "handleLanding": {
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint",
+                "nav_cmd_land"
+            ],
+            0
+        ],
+        "num_found_items": [
+            [
+                "1u"
+            ],
+            0
+        ],
+        "_mission_item.time_inside": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_mission_item.acceptance_radius": [
+            [
+                "_navigator_get_acceptance_radius"
+            ],
+            0
+        ],
+        "_mission_item.altitude": [
+            [
+                "_global_pos_sub_get_alt",
+                "pos_sp_triplet_current_alt"
+            ],
+            1
+        ],
+        "new_work_item_type": [
+            [
+                "work_item_type_precision_land",
+                "work_item_type_move_to_land_after_transition",
+                "work_item_type_move_to_land"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_mission_item.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "report_do_jump_mission_changed": {
+        "item_changed_index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "item_do_jump_remaining": [
+            [
+                "do_jumps_remaining"
+            ],
+            0
+        ]
+    },
+    "checkMissionRestart": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ]
+    },
+    "check_mission_valid": {
+        "mission_id": [
+            [
+                "_mission_mission_id"
+            ],
+            0
+        ],
+        "seq_total": [
+            [
+                "_mission_count"
+            ],
+            0
+        ],
+        "home_position_counter": [
+            [
+                "_navigator_get_home_position_update_count"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "mission_feasibility_checker_check_mission_feasible__mission"
+            ],
+            0
+        ],
+        "geofence_id": [
+            [
+                "_mission_geofence_id"
+            ],
+            0
+        ]
+    },
+    "heading_sp_update": {
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.yaw": [
+            [
+                "_mission_item_yaw"
+            ],
+            0
+        ],
+        "yaw_offset": [
+            [
+                "_navigator_get_vroi_yaw_offset"
+            ],
+            0
+        ],
+        "_mission_item.yaw": [
+            [
+                "nan",
+                "yaw"
+            ],
+            0
+        ]
+    },
+    "do_abort_landing": {
+        "next.alt": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "vehicle_command.param2": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_mission_item.acceptance_radius": [
+            [
+                "_navigator_get_acceptance_radius"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_mission_item.origin": [
+            [
+                "origin_onboard"
+            ],
+            0
+        ],
+        "vehicle_command.param6": [
+            [
+                "_mission_item_lon"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_reposition"
+            ],
+            0
+        ],
+        "_is_current_planned_mission_item_valid": [
+            [
+                "go_to_previous_item_false",
+                "px4_ok"
+            ],
+            0
+        ],
+        "vehicle_command.param5": [
+            [
+                "_mission_item_lat"
+            ],
+            0
+        ],
+        "next.lat": [
+            [
+                "nan",
+                "double"
+            ],
+            0
+        ],
+        "_mission_item.altitude": [
+            [
+                "alt_sp"
+            ],
+            0
+        ],
+        "alt_landing": [
+            [
+                "get_absolute_altitude_for_item__mission_item"
+            ],
+            0
+        ],
+        "next.lon": [
+            [
+                "nan",
+                "double"
+            ],
+            0
+        ],
+        "_mission_item.loiter_radius": [
+            [
+                "_navigator_get_loiter_radius"
+            ],
+            0
+        ],
+        "vehicle_command.param7": [
+            [
+                "alt_sp"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_loiter_unlimited"
+            ],
+            0
+        ]
+    },
+    "publish_navigator_mission_item": {
+        "navigator_mission_item.latitude": [
+            [
+                "_mission_item_lat"
+            ],
+            0
+        ],
+        "navigator_mission_item.altitude": [
+            [
+                "_mission_item_altitude"
+            ],
+            0
+        ],
+        "navigator_mission_item.altitude_is_relative": [
+            [
+                "_mission_item_altitude_is_relative"
+            ],
+            0
+        ],
+        "navigator_mission_item.frame": [
+            [
+                "_mission_item_frame",
+                "_mission_item_origin"
+            ],
+            0
+        ],
+        "navigator_mission_item.autocontinue": [
+            [
+                "_mission_item_autocontinue"
+            ],
+            0
+        ],
+        "navigator_mission_item.acceptance_radius": [
+            [
+                "_mission_item_acceptance_radius"
+            ],
+            0
+        ],
+        "navigator_mission_item.yaw": [
+            [
+                "_mission_item_yaw"
+            ],
+            0
+        ],
+        "navigator_mission_item.nav_cmd": [
+            [
+                "_mission_item_nav_cmd"
+            ],
+            0
+        ],
+        "navigator_mission_item.longitude": [
+            [
+                "_mission_item_lon"
+            ],
+            0
+        ],
+        "navigator_mission_item.sequence_current": [
+            [
+                "_mission_current_seq"
+            ],
+            0
+        ],
+        "navigator_mission_item.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "navigator_mission_item.loiter_radius": [
+            [
+                "_mission_item_loiter_radius"
+            ],
+            0
+        ],
+        "navigator_mission_item.loiter_exit_xtrack": [
+            [
+                "_mission_item_loiter_exit_xtrack"
+            ],
+            0
+        ],
+        "navigator_mission_item.time_inside": [
+            [
+                "get_time_inside__mission_item"
+            ],
+            0
+        ],
+        "navigator_mission_item.vtol_back_transition": [
+            [
+                "_mission_item_vtol_back_transition"
+            ],
+            0
+        ],
+        "navigator_mission_item.force_heading": [
+            [
+                "_mission_item_force_heading"
+            ],
+            0
+        ]
+    },
+    "getNonJumpItem": {
+        "mission_index": [
+            [
+                "new_mission_do_jump_mission_index"
+            ],
+            1
+        ],
+        "mission": [
+            [
+                "new_mission"
+            ],
+            0
+        ],
+        "jump_count": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "mission_dataman_id": [
+            [
+                "dm_item_t",
+                "_mission_mission_dataman_id"
+            ],
+            0
+        ]
+    },
+    "setMissionIndex": {
+        "_mission.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_mission.current_seq": [
+            [
+                "index"
+            ],
+            0
+        ]
+    },
+    "getPreviousPositionItems": {
+        "num_found_items": [
+            [
+                "0u",
+                "0u"
+            ],
+            1
+        ],
+        "found_next_item": [
+            [
+                "px4_ok",
+                "get_non_jump_item_next_mission_index",
+                "get_non_jump_item_next_mission_item",
+                "get_non_jump_item_false",
+                "get_non_jump_item_true"
+            ],
+            0
+        ]
+    },
+    "getNextPositionItems": {
+        "found_next_item": [
+            [
+                "get_non_jump_item_next_mission_item",
+                "px4_ok",
+                "get_non_jump_item_true",
+                "get_non_jump_item_next_mission_index",
+                "get_non_jump_item_false"
+            ],
+            0
+        ],
+        "num_found_items": [
+            [
+                "0u",
+                "0u"
+            ],
+            1
+        ]
+    },
+    "setMissionToClosestItem": {
+        "min_dist": [
+            [
+                "dist"
+            ],
+            0
+        ],
+        "min_dist_index": [
+            [
+                "mission_item_index"
+            ],
+            0
+        ],
+        "mission_dataman_id": [
+            [
+                "_mission_mission_dataman_id",
+                "dm_item_t",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "resetMission": {
+        "_mission.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_mission.mission_id": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "_mission.count": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "resetMissionJumpCounter": {
+        "mission_dataman_id": [
+            [
+                "static_cast",
+                "dm_item_t",
+                "_mission_mission_dataman_id"
+            ],
+            0
+        ],
+        "mission_index": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "mission_item.do_jump_current_count": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "cacheItem": {
+        "_last_camera_trigger_item": [
+            [
+                "mission_item"
+            ],
+            0
+        ],
+        "_last_speed_change_item": [
+            [
+                "mission_item"
+            ],
+            0
+        ],
+        "_last_gimbal_configure_item": [
+            [
+                "mission_item"
+            ],
+            0
+        ],
+        "_last_camera_mode_item": [
+            [
+                "mission_item"
+            ],
+            0
+        ],
+        "_last_gimbal_control_item": [
+            [
+                "mission_item"
+            ],
+            0
+        ]
+    },
+    "updateCachedItemsUpToIndex": {
+        "dm_current": [
+            [
+                "dm_item_t",
+                "_mission_mission_dataman_id"
+            ],
+            0
+        ]
+    },
+    "checkClimbRequired": {
+        "mission_dataman_id": [
+            [
+                "dm_item_t",
+                "static_cast",
+                "_mission_mission_dataman_id"
+            ],
+            0
+        ],
+        ".vehicle_type": [
+            [
+                "vehicle_type_fixed_wing"
+            ],
+            0
+        ],
+        "_mission_init_climb_altitude_amsl": [
+            [
+                "nan",
+                "get_absolute_altitude_for_item_mission"
+            ],
+            1
+        ]
+    },
+    "canRunMissionFeasibility": {
+        ".status": [
+            [
+                "gf_status_ready"
+            ],
+            0
+        ]
+    },
+    "updateMissionAltAfterHomeChanged": {
+        "_home_update_counter": [
+            [
+                "_navigator_get_home_position_update_count"
+            ],
+            0
+        ],
+        "altitude_diff": [
+            [
+                "_navigator_get_position_setpoint_triplet_current_alt",
+                "get_absolute_altitude_for_item__mission_item"
+            ],
+            1
+        ]
+    }
+}

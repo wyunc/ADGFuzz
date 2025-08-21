@@ -1,0 +1,74 @@
+{
+    "init": {
+        "ctrl": [
+            [
+                "uint32_t",
+                "mmap_prot_read",
+                "mmap_0x1000",
+                "mmap_prot_write",
+                "mmap_rcout_pruss_ctrl_base",
+                "mmap_map_shared",
+                "mmap_mem_fd"
+            ],
+            0
+        ],
+        "mem_fd": [
+            [
+                "open_o_sync",
+                "open_o_cloexec",
+                "open_o_rdwr"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "struct",
+                "mmap_rcout_pruss_ram_base",
+                "mmap_prot_read",
+                "mmap_0x1000",
+                "mmap_prot_write",
+                "mmap_map_shared",
+                "mmap_mem_fd"
+            ],
+            0
+        ],
+        "iram": [
+            [
+                "mmap_0x2000",
+                "uint32_t",
+                "mmap_prot_read",
+                "mmap_prot_write",
+                "mmap_rcout_pruss_iram_base",
+                "mmap_map_shared",
+                "mmap_mem_fd"
+            ],
+            0
+        ]
+    },
+    "set_freq": {
+        ".time_t": [
+            [
+                "freq_hz",
+                "tick_per_s"
+            ],
+            1
+        ]
+    },
+    "write": {
+        ".time_high": [
+            [
+                "period_us",
+                "tick_per_us"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "len": [
+            [
+                "pwm_chan_count"
+            ],
+            0
+        ]
+    }
+}

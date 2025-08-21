@@ -1,0 +1,335 @@
+{
+    "set_range": {
+        "high_in": [
+            [
+                "high"
+            ],
+            0
+        ],
+        "type_in": [
+            [
+                "range"
+            ],
+            0
+        ]
+    },
+    "set_angle": {
+        "type_in": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "high_in": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "control_in": [
+            [
+                "pwm_to_angle",
+                "pwm_to_range"
+            ],
+            0
+        ],
+        "radio_in": [
+            [
+                "override_value",
+                "hal_rcin_read_ch_in"
+            ],
+            0
+        ]
+    },
+    "norm_input": {
+        "ret": [
+            [
+                "float",
+                "radio_in",
+                "radio_min",
+                "radio_trim",
+                "reversed",
+                "radio_max"
+            ],
+            1
+        ]
+    },
+    "norm_input_dz": {
+        "ret": [
+            [
+                "dead_zone",
+                "radio_trim",
+                "float",
+                "radio_max",
+                "radio_min",
+                "reversed",
+                "radio_in",
+                "dead_zone",
+                "radio_trim"
+            ],
+            3
+        ]
+    },
+    "norm_input_ignore_trim": {
+        "ret": [
+            [
+                "radio_min",
+                "radio_in",
+                "float",
+                "reversed",
+                "radio_max"
+            ],
+            0
+        ]
+    },
+    "set_override": {
+        "override_value": [
+            [
+                "v"
+            ],
+            0
+        ],
+        "last_override_time": [
+            [
+                "millis",
+                "timestamp_ms"
+            ],
+            0
+        ]
+    },
+    "stick_mixing": {
+        "servo_out": [
+            [
+                "radio_in",
+                "radio_trim",
+                "float",
+                "fabsf_ch_inf",
+                "servo_in",
+                "control_in"
+            ],
+            1
+        ]
+    },
+    "read_6pos_switch": {
+        "pulsewidth": [
+            [
+                "get_radio_in"
+            ],
+            0
+        ]
+    },
+    "debounce_completed": {
+        "switch_state.last_edge_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "switch_state.debounce_position": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "switch_state.current_position": [
+            [
+                "position"
+            ],
+            0
+        ]
+    },
+    "read_aux": {
+        "aux_string": [
+            [
+                "string_for_aux_function__option"
+            ],
+            0
+        ],
+        "switch_state.current_position": [
+            [
+                "int8_t",
+                "new_position"
+            ],
+            0
+        ],
+        "_option": [
+            [
+                "option_get",
+                "aux_func"
+            ],
+            0
+        ],
+        "switch_state.debounce_position": [
+            [
+                "int8_t",
+                "new_position"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_avoid_adsb": {
+        "avoidance": [
+            [
+                "ap_avoidance"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_avoid_proximity": {
+        "avoid": [
+            [
+                "ac_avoid"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_record_video": {
+        "ch_flag": [
+            [
+                "high"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_camera_image_tracking": {
+        "ch_flag": [
+            [
+                "trk_none",
+                "high",
+                "vector2f",
+                "trk_point"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_fence": {
+        "ch_flag": [
+            [
+                "high"
+            ],
+            0
+        ]
+    },
+    "do_aux_function_sprayer": {
+        "ch_flag": [
+            [
+                "hal_util_get_soft_armed",
+                "high"
+            ],
+            0
+        ]
+    },
+    "run_aux_function": {
+        "ret": [
+            [
+                "do_aux_function_ch_option",
+                "do_aux_function_pos"
+            ],
+            0
+        ]
+    },
+    "do_aux_function": {
+        "torqeedo": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ],
+        "optflow": [
+            [
+                "opticalflow"
+            ],
+            0
+        ],
+        "ch_flag": [
+            [
+                "external",
+                "three",
+                "high"
+            ],
+            0
+        ],
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "source_set": [
+            [
+                "tertiary",
+                "primary",
+                "secondary"
+            ],
+            0
+        ],
+        "lg": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "camera": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "init_aux": {
+        "position": [
+            [
+                "low"
+            ],
+            0
+        ]
+    },
+    "read_3pos_switch": {
+        "ret": [
+            [
+                "rc_option_is_enabled_allow_switch_rev",
+                "reversed",
+                "low",
+                "high",
+                "middle"
+            ],
+            1
+        ],
+        "in": [
+            [
+                "get_radio_in"
+            ],
+            0
+        ]
+    },
+    "duplicate_options_exist": {
+        "c": [
+            [
+                "channel_i"
+            ],
+            0
+        ],
+        "option": [
+            [
+                "c_option_get"
+            ],
+            0
+        ]
+    },
+    "convert_options": {
+        "c": [
+            [
+                "channel_i"
+            ],
+            0
+        ]
+    }
+}

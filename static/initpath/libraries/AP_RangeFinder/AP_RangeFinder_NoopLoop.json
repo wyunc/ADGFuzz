@@ -1,0 +1,30 @@
+{
+    "get_reading": {
+        "checksum": [
+            [
+                "linebuf",
+                "i"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "uart_available"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "linebuf"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "linebuf",
+                "int32_t"
+            ],
+            1
+        ]
+    }
+}

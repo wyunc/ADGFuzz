@@ -1,0 +1,28 @@
+{
+    "getEffectivenessMatrix": {
+        "_forwards_motors_mask": [
+            [
+                "_rotors_get_forwards_motors"
+            ],
+            0
+        ],
+        "rotors_added_successfully": [
+            [
+                "_rotors_add_actuators_configuration"
+            ],
+            0
+        ],
+        "surfaces_added_successfully": [
+            [
+                "_control_surfaces_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_first_control_surface_idx": [
+            [
+                "configuration_num_actuators_matrix"
+            ],
+            0
+        ]
+    }
+}

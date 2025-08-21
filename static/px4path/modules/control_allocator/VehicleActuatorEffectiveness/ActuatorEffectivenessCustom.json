@@ -1,0 +1,22 @@
+{
+    "getEffectivenessMatrix": {
+        "motors_added_successfully": [
+            [
+                "_motors_add_actuators_configuration"
+            ],
+            0
+        ],
+        "_motors_mask": [
+            [
+                "_motors_get_motors"
+            ],
+            0
+        ],
+        "torque_added_successfully": [
+            [
+                "_torque_add_actuators_configuration"
+            ],
+            0
+        ]
+    }
+}

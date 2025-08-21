@@ -1,0 +1,64 @@
+{
+    "handle_global_position_control": {
+        "external_control": [
+            [
+                "externalcontrol"
+            ],
+            0
+        ],
+        "alt_cm": [
+            [
+                "static_cast",
+                "cmd_pos_altitude",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "handle_velocity_control": {
+        "external_control": [
+            [
+                "externalcontrol"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "cmd_vel_twist_angular_z"
+            ],
+            0
+        ],
+        "linear_velocity": [
+            [
+                "ahrs_body_to_earth_linear_velocity_base_link"
+            ],
+            0
+        ]
+    },
+    "arm": {
+        "external_control": [
+            [
+                "externalcontrol"
+            ],
+            0
+        ]
+    },
+    "disarm": {
+        "external_control": [
+            [
+                "externalcontrol"
+            ],
+            0
+        ]
+    },
+    "convert_alt_frame": {
+        "frame_out": [
+            [
+                "above_terrain",
+                "absolute",
+                "above_home"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "record_video": {
+        "_cam_state.recording_video": [
+            [
+                "start_recording"
+            ],
+            0
+        ]
+    },
+    "set_zoom": {
+        "_cam_state.zoom_value": [
+            [
+                "zoom_value"
+            ],
+            0
+        ],
+        "_cam_state.zoom_type": [
+            [
+                "zoom_type",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "set_tracking": {
+        "_cam_state.tracking_p2": [
+            [
+                "p2"
+            ],
+            0
+        ],
+        "_cam_state.tracking_p1": [
+            [
+                "p1"
+            ],
+            0
+        ],
+        "_cam_state.tracking_type": [
+            [
+                "tracking_type",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "get_state": {
+        "cam_state": [
+            [
+                "_cam_state"
+            ],
+            0
+        ]
+    }
+}

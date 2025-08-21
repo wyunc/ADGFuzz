@@ -1,0 +1,24 @@
+{
+    "update": {
+        "rot_accel": [
+            [
+                "quad_rot_accel"
+            ],
+            0
+        ],
+        "battery_current": [
+            [
+                "fabsf_throttle",
+                "filtered_servo_range_input",
+                "filtered_servo_angle_input"
+            ],
+            1
+        ],
+        "accel_body": [
+            [
+                "quad_accel_body"
+            ],
+            0
+        ]
+    }
+}

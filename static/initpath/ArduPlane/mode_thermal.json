@@ -1,0 +1,46 @@
+{
+    "update_soaring": {
+        "current_nav_cmd": [
+            [
+                "plane_mission_get_current_nav_cmd"
+            ],
+            0
+        ],
+        "loiterStatus": [
+            [
+                "plane_g2_soaring_controller_check_cruise_criteria_next_wp",
+                "plane_g2_soaring_controller_check_cruise_criteria_prev_wp"
+            ],
+            0
+        ],
+        "time_in_loiter_ms": [
+            [
+                "plane_soaring_mode_timer_ms",
+                "millis"
+            ],
+            0
+        ],
+        "plane.soaring_mode_timer_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "navigate": {
+        "radius": [
+            [
+                "plane_g2_soaring_controller_get_thermalling_radius"
+            ],
+            0
+        ]
+    },
+    "exit_heading_aligned": {
+        "current_nav_cmd": [
+            [
+                "plane_mission_get_current_nav_cmd"
+            ],
+            0
+        ]
+    }
+}

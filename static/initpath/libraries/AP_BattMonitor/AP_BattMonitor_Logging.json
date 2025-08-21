@@ -1,0 +1,16 @@
+{
+    "Log_Write_BAT": {
+        "temperature_cd": [
+            [
+                "temperature"
+            ],
+            0
+        ],
+        "has_curr": [
+            [
+                "has_current"
+            ],
+            0
+        ]
+    }
+}

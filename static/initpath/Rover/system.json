@@ -1,0 +1,70 @@
+{
+    "init_ardupilot": {
+        "initial_mode": [
+            [
+                "mode_from_mode_num_numberg_initial_mode_get",
+                "mode_from_mode_num_enum",
+                "mode_initializing"
+            ],
+            0
+        ]
+    },
+    "update_ahrs_flyforward": {
+        "throttle_over_thresh": [
+            [
+                "g_throttle_cruise",
+                "g2_motors_get_throttle"
+            ],
+            0
+        ],
+        "desired_speed_over_thresh": [
+            [
+                "g2_attitude_control_speed_control_active",
+                "g2_attitude_control_get_desired_speed"
+            ],
+            0
+        ],
+        "flyforward": [
+            [
+                "millis",
+                "millis"
+            ],
+            2
+        ]
+    },
+    "set_mode": {
+        "control_mode_reason": [
+            [
+                "reason"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "rover_mode_from_mode_num_new_mode"
+            ],
+            0
+        ],
+        "control_mode": [
+            [
+                "new_mode"
+            ],
+            0
+        ]
+    },
+    "notify_mode": {
+        "flags.autopilot_mode": [
+            [
+                "mode_is_autopilot_mode"
+            ],
+            0
+        ],
+        "notify.flags.flight_mode": [
+            [
+                "uint8_t",
+                "mode_mode_number"
+            ],
+            0
+        ]
+    }
+}

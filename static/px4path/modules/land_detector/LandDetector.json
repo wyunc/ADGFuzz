@@ -1,0 +1,171 @@
+{
+    "Run": {
+        "maybe_landedDetected": [
+            [
+                "_maybe_landed_hysteresis_get_state"
+            ],
+            0
+        ],
+        "_land_detected.vertical_movement": [
+            [
+                "_get_vertical_movement"
+            ],
+            0
+        ],
+        "landDetected": [
+            [
+                "_landed_hysteresis_get_state"
+            ],
+            0
+        ],
+        "_land_detected.horizontal_movement": [
+            [
+                "_get_horizontal_movement"
+            ],
+            0
+        ],
+        "_land_detected.freefall": [
+            [
+                "freefall_detected"
+            ],
+            0
+        ],
+        "_land_detected.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_previous_armed_state": [
+            [
+                "actuator_armed_armed"
+            ],
+            1
+        ],
+        "_land_detected.rotational_movement": [
+            [
+                "_get_rotational_movement"
+            ],
+            0
+        ],
+        "_land_detected.has_low_throttle": [
+            [
+                "_get_has_low_throttle"
+            ],
+            0
+        ],
+        "_land_detected.maybe_landed": [
+            [
+                "maybe_landed_detected"
+            ],
+            0
+        ],
+        "flight_time": [
+            [
+                "_param_total_flight_time_high_get",
+                "hrt_absolute_time",
+                "uint64_t",
+                "hrt_absolute_time",
+                "static_cast",
+                "0xffffffff"
+            ],
+            3
+        ],
+        "_land_detected.at_rest": [
+            [
+                "land_detected",
+                "_at_rest"
+            ],
+            1
+        ],
+        "_land_detected.in_ground_effect": [
+            [
+                "_ground_effect_hysteresis_get_state"
+            ],
+            1
+        ],
+        "_land_detected.close_to_ground_or_skipped_check": [
+            [
+                "_get_close_to_ground_or_skipped_check"
+            ],
+            0
+        ],
+        "_acceleration": [
+            [
+                "vehicle_acceleration_xyz",
+                "vector3f"
+            ],
+            0
+        ],
+        "_angular_velocity": [
+            [
+                "vehicle_angular_velocity_xyz",
+                "vector3f"
+            ],
+            0
+        ],
+        "_land_detected.ground_contact": [
+            [
+                "ground_contact_detected"
+            ],
+            0
+        ],
+        "_land_detected.in_descend": [
+            [
+                "_get_in_descend"
+            ],
+            0
+        ],
+        "_land_detected.landed": [
+            [
+                "land_detected"
+            ],
+            0
+        ],
+        "_time_last_move_detect_us": [
+            [
+                "vehicle_angular_velocity_timestamp_sample"
+            ],
+            0
+        ],
+        "ground_contactDetected": [
+            [
+                "_ground_contact_hysteresis_get_state"
+            ],
+            0
+        ],
+        "freefallDetected": [
+            [
+                "_freefall_hysteresis_get_state"
+            ],
+            0
+        ],
+        "GYRO_NORM_MAX": [
+            [
+                "radians__f"
+            ],
+            0
+        ]
+    },
+    "UpdateVehicleAtRest": {
+        "_time_last_move_detect_us": [
+            [
+                "imu_status_timestamp"
+            ],
+            0
+        ],
+        "_device_id_gyro": [
+            [
+                "sensor_selection_gyro_device_id"
+            ],
+            0
+        ],
+        "_at_rest": [
+            [
+                "1_s",
+                "hrt_elapsed_time__time_last_move_detect_us"
+            ],
+            0
+        ]
+    }
+}

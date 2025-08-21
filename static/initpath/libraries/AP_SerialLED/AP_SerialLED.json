@@ -1,0 +1,10 @@
+{
+    "set_num_profiled": {
+        "Clock_mask": [
+            [
+                "get_output_channel_mask_aux_servo_function_t_uint8_tk_profi_led_clock"
+            ],
+            0
+        ]
+    }
+}

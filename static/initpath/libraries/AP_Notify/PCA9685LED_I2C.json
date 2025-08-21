@@ -1,0 +1,85 @@
+{
+    "init": {
+        "new_mode1": [
+            [
+                "mode1",
+                "pca9685_mode_sleep",
+                "pca9685_mode_auto_increment"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "hal_i2c_mgr_get_device_pca9685_address"
+            ],
+            0
+        ]
+    },
+    "hw_set_rgb": {
+        "rgb.b": [
+            [
+                "blue"
+            ],
+            0
+        ],
+        "rgb.r": [
+            [
+                "red"
+            ],
+            0
+        ],
+        "rgb.g": [
+            [
+                "green"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "red_channel_lsb": [
+            [
+                "0x_ff",
+                "rgb_r",
+                "0x10"
+            ],
+            1
+        ],
+        "green_channel_msb": [
+            [
+                "rgb_g",
+                "0x10"
+            ],
+            1
+        ],
+        "blue_channel_lsb": [
+            [
+                "rgb_b",
+                "0x10",
+                "0x_ff"
+            ],
+            1
+        ],
+        "green_channel_lsb": [
+            [
+                "0x_ff",
+                "rgb_g",
+                "0x10"
+            ],
+            1
+        ],
+        "red_channel_msb": [
+            [
+                "rgb_r",
+                "0x10"
+            ],
+            1
+        ],
+        "blue_channel_msb": [
+            [
+                "rgb_b",
+                "0x10"
+            ],
+            1
+        ]
+    }
+}

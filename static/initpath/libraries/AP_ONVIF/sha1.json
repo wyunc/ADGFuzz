@@ -1,0 +1,65 @@
+{
+    "sha1_compile": {
+        "v3": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v0": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v1": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "w": [
+            [
+                "ctx_wbuf"
+            ],
+            0
+        ],
+        "v4": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ]
+    },
+    "sha1_hash": {
+        "sp": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "space": [
+            [
+                "pos",
+                "sha1_block_size"
+            ],
+            0
+        ]
+    },
+    "sha1_end": {
+        "i": [
+            [
+                "uint32_t",
+                "sha1_mask",
+                "ctx_count"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "sbuf_switch_to_reader": {
+        "ptr": [
+            [
+                "base"
+            ],
+            0
+        ],
+        "end": [
+            [
+                "buf_ptr"
+            ],
+            0
+        ]
+    },
+    "sbuf_write_data": {
+        "ptr": [
+            [
+                "len"
+            ],
+            0
+        ]
+    }
+}

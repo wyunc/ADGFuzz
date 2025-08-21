@@ -1,0 +1,113 @@
+{
+    "set_interface_ports": {
+        "fdm_port_in": [
+            [
+                "port_in"
+            ],
+            0
+        ],
+        "fdm_port_out": [
+            [
+                "port_out"
+            ],
+            0
+        ],
+        "fdm_address": [
+            [
+                "address"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "accel_body": [
+            [
+                "vector3f_pkt_z_accel",
+                "vector3f_gravity_mss",
+                "dcm_transposed",
+                "vector3f_pkt_x_accel",
+                "vector3f_pkt_y_accel"
+            ],
+            0
+        ],
+        "location.lat": [
+            [
+                "pkt_latitude",
+                "_0e7"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_pkt_yaw_rate",
+                "vector3f_pkt_roll_rate",
+                "vector3f_pkt_pitch_rate"
+            ],
+            0
+        ],
+        "position.z": [
+            [
+                "_0e",
+                "location_alt",
+                "home_alt"
+            ],
+            0
+        ],
+        "location.alt": [
+            [
+                "_0e2",
+                "pkt_altitude"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "dt_inv": [
+            [
+                "_0e6",
+                "pkt_timestamp_us",
+                "float"
+            ],
+            1
+        ],
+        "prev_timestamp_us": [
+            [
+                "pkt_timestamp_us"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "pkt_airspeed"
+            ],
+            0
+        ],
+        "location.lng": [
+            [
+                "pkt_longitude",
+                "_0e7"
+            ],
+            0
+        ],
+        "velocity_air_bf": [
+            [
+                "vector3f_pkt_speed_d",
+                "vector3f_pkt_speed_e",
+                "vector3f_pkt_speed_n",
+                "wind_ef",
+                "dcm_transposed"
+            ],
+            2
+        ],
+        "time_now_us": [
+            [
+                "pkt_timestamp_us"
+            ],
+            1
+        ]
+    }
+}

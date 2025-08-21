@@ -1,0 +1,29 @@
+{
+    "set_freq": {
+        "_freq_hz": [
+            [
+                "freq_hz"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "safety_mask": [
+            [
+                "get_singleton",
+                "nullptr",
+                "board_config_get_safety_mask"
+            ],
+            1
+        ]
+    },
+    "push": {
+        "esc_telem": [
+            [
+                "ap_esc_telem_sitl",
+                "new_nothrow"
+            ],
+            0
+        ]
+    }
+}

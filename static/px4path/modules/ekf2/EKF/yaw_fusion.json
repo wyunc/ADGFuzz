@@ -1,0 +1,88 @@
+{
+    "fuseYaw": {
+        "gate_sigma": [
+            [
+                "max__params_heading_innov_gate",
+                "max__f"
+            ],
+            0
+        ],
+        "gate_limit": [
+            [
+                "aid_src_status_innovation_variance",
+                "sqrtf_gate_sigma",
+                "sqrtf_sq"
+            ],
+            0
+        ],
+        "aid_src_status.innovation": [
+            [
+                "constrain_gate_limit",
+                "constrain_aid_src_status_innovation"
+            ],
+            0
+        ],
+        "_time_last_heading_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src_status.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "heading_innov_var_inv": [
+            [
+                "aid_src_status_innovation_variance",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "resetQuatStateYaw": {
+        "_R_to_earth": [
+            [
+                "update_yaw_in_rot_mat__state_quat_nominal",
+                "update_yaw_in_rot_mat_yaw",
+                "update_yaw_in_rot_mat_dcmf"
+            ],
+            0
+        ],
+        "ev_q_error_updated": [
+            [
+                "q_error",
+                "_ev_q_error_filt_get_state",
+                "_normalized"
+            ],
+            0
+        ],
+        "quat_before_reset": [
+            [
+                "_state_quat_nominal"
+            ],
+            0
+        ],
+        "_state_reset_status.quat_change": [
+            [
+                "_state_reset_status_quat_change",
+                "q_error"
+            ],
+            0
+        ],
+        "_time_last_heading_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_state.quat_nominal": [
+            [
+                "quat_after_reset"
+            ],
+            0
+        ]
+    }
+}

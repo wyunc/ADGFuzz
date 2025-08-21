@@ -1,0 +1,22 @@
+{
+    "controlZeroInnovationHeadingUpdate": {
+        "aid_src_status.observation_variance": [
+            [
+                "_control_status_flags_tilt_align"
+            ],
+            1
+        ],
+        "aid_src_status.observation": [
+            [
+                "get_euler_yaw__state_quat_nominal"
+            ],
+            0
+        ],
+        "aid_src_status.innovation": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    }
+}

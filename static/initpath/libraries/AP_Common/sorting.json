@@ -1,0 +1,32 @@
+{
+    "insertion_sort_uint16": {
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "i",
+                "data"
+            ],
+            0
+        ]
+    },
+    "bisect_search_uint16": {
+        "low": [
+            [
+                "mid",
+                "n"
+            ],
+            0
+        ],
+        "high": [
+            [
+                "mid"
+            ],
+            0
+        ]
+    }
+}

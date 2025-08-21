@@ -1,0 +1,246 @@
+{
+    "set_interface_ports": {
+        "_sw_address": [
+            [
+                "address"
+            ],
+            0
+        ]
+    },
+    "send_servos": {
+        "aileron": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "filtered_servo_range_input"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "sock_sendto_buflen",
+                "sock_sendto_buf",
+                "sock_sendto__sw_address",
+                "sock_sendto__sw_port"
+            ],
+            0
+        ],
+        "elevator": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "rudder": [
+            [
+                "filtered_servo_angle_input"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "recv_fdm": {
+        "nread": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_pkt",
+                "sock_recv_tmp_pkt"
+            ],
+            0
+        ]
+    },
+    "process_packet": {
+        "position.y": [
+            [
+                "posdelta_y"
+            ],
+            0
+        ],
+        "ground_level": [
+            [
+                "curr_location_alt",
+                "pkt_altitude_ground"
+            ],
+            0
+        ],
+        "posdelta": [
+            [
+                "origin_get_distance_ned_curr_location"
+            ],
+            0
+        ],
+        "last_data_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "pkt_v_eas"
+            ],
+            0
+        ],
+        "origin.lat": [
+            [
+                "home_lat"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "curr_location_lat"
+            ],
+            0
+        ],
+        "first_pkt_timestamp_ms": [
+            [
+                "pkt_timestamp"
+            ],
+            0
+        ],
+        "time_base_us": [
+            [
+                "pkt_timestamp",
+                "_0e3f"
+            ],
+            2
+        ],
+        "wind_ef": [
+            [
+                "vector3f_pkt_vy",
+                "vector3f_pkt_vz",
+                "vector3f_pkt_vz_wind",
+                "vector3f_pkt_vx",
+                "dcm",
+                "vector3f_pkt_vy_wind",
+                "vector3f_pkt_vx_wind"
+            ],
+            0
+        ],
+        "velocity_ef": [
+            [
+                "vector3f_pkt_vy",
+                "vector3f_pkt_vz",
+                "dcm",
+                "vector3f_pkt_vx"
+            ],
+            0
+        ],
+        "position.x": [
+            [
+                "posdelta_x"
+            ],
+            0
+        ],
+        "home.lng": [
+            [
+                "curr_location_lng"
+            ],
+            0
+        ],
+        "curr_location.lng": [
+            [
+                "_0e7",
+                "pkt_position_longitude"
+            ],
+            0
+        ],
+        "origin.lng": [
+            [
+                "home_lng"
+            ],
+            0
+        ],
+        "curr_location.lat": [
+            [
+                "_0e7",
+                "pkt_position_latitude"
+            ],
+            0
+        ],
+        "curr_location.alt": [
+            [
+                "pkt_altitude_msl"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "pkt_v_eas"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_gravity_mss",
+                "vector3f_pkt_az",
+                "vector3f_pkt_ay",
+                "vector3f_pkt_ax"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "radians_pkt_d_yaw",
+                "radians_pkt_d_pitch",
+                "vector3f_radians",
+                "vector3f_pkt_d_roll"
+            ],
+            0
+        ],
+        "deltat": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "position.z": [
+            [
+                "posdelta_z",
+                "curr_location_alt"
+            ],
+            0
+        ]
+    },
+    "interim_update": {
+        "time_now_us": [
+            [
+                "frame_time_us"
+            ],
+            0
+        ],
+        "delta_time": [
+            [
+                "frame_time_us",
+                "1e"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "report.last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "report_last_report_ms",
+                "_0e",
+                "millis"
+            ],
+            1
+        ]
+    }
+}

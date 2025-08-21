@@ -1,0 +1,47 @@
+{
+    "calc_pwm": {
+        "output_pwm": [
+            [
+                "pwm_from_scaled_value_output_scaled"
+            ],
+            0
+        ]
+    },
+    "set_output_pwm": {
+        "output_pwm": [
+            [
+                "pwm"
+            ],
+            0
+        ]
+    },
+    "set_angle": {
+        "high_out": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "set_range": {
+        "high_out": [
+            [
+                "high"
+            ],
+            0
+        ]
+    },
+    "get_output_norm": {
+        "ret": [
+            [
+                "output_pwm",
+                "servo_max",
+                "servo_min",
+                "servo_max",
+                "float",
+                "servo_min"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "init": {
+        "_last_loop_time_s": [
+            [
+                "_loop_rate_hz"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "_num_common_tasks",
+                "num_tasks",
+                "uint16_t",
+                "new_nothrow"
+            ],
+            2
+        ],
+        "old": [
+            [
+                "i",
+                "_priority",
+                "tasks",
+                "_common_tasks"
+            ],
+            1
+        ],
+        "_log_performance_bit": [
+            [
+                "log_performance_bit"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "task": [
+            [
+                "common_tasks_offset",
+                "_vehicle_tasks",
+                "vehicle_tasks_offset",
+                "_common_tasks",
+                "run_vehicle_task"
+            ],
+            0
+        ],
+        "_spare_micros": [
+            [
+                "micros",
+                "micros",
+                "_task_time_started"
+            ],
+            4
+        ],
+        "vehicle_task": [
+            [
+                "_vehicle_tasks",
+                "vehicle_tasks_offset"
+            ],
+            0
+        ],
+        "persistent_data.scheduler_task": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "common_task": [
+            [
+                "common_tasks_offset",
+                "_common_tasks"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_last_run",
+                "i",
+                "_tick_counter"
+            ],
+            0
+        ],
+        "_task_time_allowed": [
+            [
+                "get_loop_period_us",
+                "task_max_time_micros"
+            ],
+            0
+        ],
+        "interval_ticks": [
+            [
+                "is_zero_task_rate_hz",
+                "task_rate_hz",
+                "_loop_rate_hz"
+            ],
+            0
+        ]
+    },
+    "load_average": {
+        "used_time": [
+            [
+                "_spare_micros",
+                "_spare_ticks",
+                "get_loop_period_us"
+            ],
+            1
+        ]
+    },
+    "loop": {
+        "time_available": [
+            [
+                "get_loop_period_us",
+                "micros",
+                "uint32_t__loop_sample_time_us"
+            ],
+            4
+        ],
+        "loop_delay_us": [
+            [
+                "sitl",
+                "sitl_loop_delay_get",
+                "1000u"
+            ],
+            0
+        ],
+        "_last_loop_time_s": [
+            [
+                "get_loop_period_s",
+                "_0e",
+                "uint32_t__loop_sample_time_us"
+            ],
+            1
+        ],
+        "_loop_sample_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "_loop_timer_start_us": [
+            [
+                "uint32_t__loop_sample_time_us"
+            ],
+            1
+        ],
+        "extra_loop_us": [
+            [
+                "100u",
+                "0u",
+                "5000u",
+                "50u"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Performance": {
+        "pd": [
+            [
+                "hal_util_persistent_data"
+            ],
+            0
+        ]
+    },
+    "task_info": {
+        "ti": [
+            [
+                "perf_info_get_task_info_i"
+            ],
+            0
+        ],
+        "task_name": [
+            [
+                "common_tasks_offset",
+                "_name",
+                "_common_tasks",
+                "_vehicle_tasks",
+                "vehicle_tasks_offset"
+            ],
+            0
+        ],
+        "common_task": [
+            [
+                "common_tasks_offset",
+                "_common_tasks"
+            ],
+            0
+        ],
+        "total_time": [
+            [
+                "ti_elapsed_time_us"
+            ],
+            0
+        ],
+        "vehicle_task": [
+            [
+                "vehicle_tasks_offset",
+                "_vehicle_tasks"
+            ],
+            0
+        ]
+    }
+}

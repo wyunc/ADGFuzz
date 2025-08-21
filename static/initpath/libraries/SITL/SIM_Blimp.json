@@ -1,0 +1,272 @@
+{
+    "calculate_forces": {
+        ".Fx": [
+            [
+                "cos__angle",
+                "cos_fin",
+                "fin",
+                "sin__angle",
+                "sin_fin",
+                "_t"
+            ],
+            0
+        ],
+        "rot_accel.y": [
+            [
+                "moment_of_inertia_y",
+                "rot_t_y"
+            ],
+            0
+        ],
+        "rot_T.y": [
+            [
+                "mass",
+                "fin",
+                "cog_z",
+                "radius",
+                "sinf_ang_ef_y",
+                "sinf_m_pi",
+                "_fz",
+                "gravity_mss"
+            ],
+            0
+        ],
+        ".Fz": [
+            [
+                "fin",
+                "_t",
+                "sin__angle",
+                "sin_fin"
+            ],
+            0
+        ],
+        "body_acc.y": [
+            [
+                "mass",
+                "f_bf_y"
+            ],
+            0
+        ],
+        ".last_angle": [
+            [
+                "_angle",
+                "i",
+                "fin"
+            ],
+            0
+        ],
+        "F_BF.y": [
+            [
+                "i",
+                "fin",
+                "f_bf_y",
+                "_fy"
+            ],
+            0
+        ],
+        "rot_T.z": [
+            [
+                "_fx",
+                "fin",
+                "radius"
+            ],
+            0
+        ],
+        ".N": [
+            [
+                "sq_fin",
+                "sq__vel",
+                "sq_i",
+                "k_nor"
+            ],
+            0
+        ],
+        "ang_ef": [
+            [
+                "dcm",
+                "ang"
+            ],
+            0
+        ],
+        ".T": [
+            [
+                "sq_fin",
+                "sq__vel",
+                "sq_i",
+                "k_tan"
+            ],
+            0
+        ],
+        ".vel": [
+            [
+                "degrees__angle",
+                "fin",
+                "_vel",
+                "degrees_fin",
+                "degrees_i",
+                "i",
+                "frame_time_us",
+                "_0e",
+                "degrees__last_angle"
+            ],
+            1
+        ],
+        ".dir": [
+            [
+                "_n",
+                "i",
+                "fin"
+            ],
+            0
+        ],
+        ".angle": [
+            [
+                "filtered_servo_angle_input",
+                "radians",
+                "filtered_servo_angle_i"
+            ],
+            0
+        ],
+        ".Fy": [
+            [
+                "cos_fin",
+                "fin",
+                "_t",
+                "cos__angle"
+            ],
+            0
+        ],
+        "0": [
+            [
+                "else",
+                "i",
+                "fin",
+                "_dir"
+            ],
+            0
+        ],
+        "rot_T.x": [
+            [
+                "mass",
+                "sinf_ang_ef_x",
+                "cog_z",
+                "sinf_m_pi",
+                "gravity_mss"
+            ],
+            0
+        ],
+        "rot_accel.z": [
+            [
+                "rot_t_z",
+                "moment_of_inertia_z"
+            ],
+            0
+        ],
+        "body_acc.x": [
+            [
+                "mass",
+                "f_bf_x"
+            ],
+            0
+        ],
+        ".servo_angle": [
+            [
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_i"
+            ],
+            0
+        ],
+        "rot_accel.x": [
+            [
+                "rot_t_x",
+                "moment_of_inertia_x"
+            ],
+            0
+        ],
+        "F_BF.x": [
+            [
+                "_fx",
+                "i",
+                "fin",
+                "f_bf_x"
+            ],
+            0
+        ],
+        "body_acc.z": [
+            [
+                "mass",
+                "f_bf_z"
+            ],
+            0
+        ],
+        "F_BF.z": [
+            [
+                "_fz",
+                "i",
+                "fin",
+                "f_bf_z"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "gyro.z": [
+            [
+                "gyro_z",
+                "radians_radians"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "frame_time_us",
+                "_0e",
+                "_todouble",
+                "frame_time_us",
+                "_0e",
+                "dcm_transposed",
+                "mass",
+                "drag_constant",
+                "velocity_ef_length_squared",
+                "velocity_ef_normalized",
+                "dcm_transposed",
+                "vector3f_gravity_mss",
+                "vector3f_gravity_mss",
+                "dcm"
+            ],
+            8
+        ],
+        "rate_hz": [
+            [
+                "sitl_loop_rate_hz"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "radians_radians",
+                "gyro_x"
+            ],
+            0
+        ],
+        "gyro.y": [
+            [
+                "gyro_y",
+                "radians_radians"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "frame_time_us",
+                "_0e",
+                "mass",
+                "gyro_length_squared",
+                "drag_gyr_constant",
+                "gyro_normalized",
+                "dcm_transposed"
+            ],
+            6
+        ]
+    }
+}

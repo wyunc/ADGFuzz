@@ -1,0 +1,77 @@
+{
+    "do_level_calibration": {
+        "last_progress_report": [
+            [
+                "500_ms",
+                "hrt_elapsed_time_start"
+            ],
+            2
+        ],
+        "pitch_offset_current": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "pitch_mean": [
+            [
+                "counter",
+                "_f",
+                "att_euler_theta"
+            ],
+            0
+        ],
+        "roll_offset_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "att_euler": [
+            [
+                "eulerf",
+                "board_rotation_offset",
+                "dcmf"
+            ],
+            0
+        ],
+        "roll_mean": [
+            [
+                "counter",
+                "att_euler_phi",
+                "_f"
+            ],
+            0
+        ],
+        "pitch_mean_degrees": [
+            [
+                "degrees_pitch_mean"
+            ],
+            0
+        ],
+        "pitch_offset_handle": [
+            [
+                "param_find"
+            ],
+            0
+        ],
+        "roll_mean_degrees": [
+            [
+                "degrees_roll_mean"
+            ],
+            0
+        ],
+        "roll_offset_current": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

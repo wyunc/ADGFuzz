@@ -1,0 +1,58 @@
+{
+    "update": {
+        "last_output": [
+            [
+                "throttle_servo",
+                "input_servos",
+                "slew_rate",
+                "micros64",
+                "_0e"
+            ],
+            4
+        ],
+        "state.choke": [
+            [
+                "choke_servo",
+                "choke_servo",
+                "input_servos"
+            ],
+            1
+        ],
+        "state.ignition": [
+            [
+                "ignition_servo",
+                "ignition_servo",
+                "input_servos"
+            ],
+            1
+        ],
+        "starter_time_us": [
+            [
+                "micros64",
+                "micros64"
+            ],
+            2
+        ],
+        "last_update_us": [
+            [
+                "micros64",
+                "micros64"
+            ],
+            1
+        ],
+        "state.starter": [
+            [
+                "starter_servo",
+                "starter_servo",
+                "input_servos"
+            ],
+            1
+        ],
+        "last_state": [
+            [
+                "state"
+            ],
+            0
+        ]
+    }
+}

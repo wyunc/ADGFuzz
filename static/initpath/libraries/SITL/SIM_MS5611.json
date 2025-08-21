@@ -1,0 +1,243 @@
+{
+    "convert_forward": {
+        "SENS": [
+            [
+                "prom",
+                "sens2",
+                "sens",
+                "d_t"
+            ],
+            0
+        ],
+        "SENS2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "t2",
+                "d_t",
+                "prom",
+                "temp"
+            ],
+            0
+        ],
+        "_D2": [
+            [
+                "d2"
+            ],
+            0
+        ],
+        "_D1": [
+            [
+                "d1"
+            ],
+            0
+        ],
+        "Temp_C": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "OFF2": [
+            [
+                "sq_temp",
+                "aux"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "prom",
+                "_d2",
+                "uint32_t"
+            ],
+            0
+        ],
+        "P_Pa": [
+            [
+                "off",
+                "_d1",
+                "sens"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "prom",
+                "off",
+                "off2",
+                "d_t"
+            ],
+            0
+        ],
+        "T2": [
+            [
+                "0x80000000",
+                "d_t"
+            ],
+            0
+        ],
+        "Aux": [
+            [
+                "sq_temp"
+            ],
+            0
+        ]
+    },
+    "convert": {
+        "Q2": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q3": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "TEMP_forward": [
+            [
+                "d_t",
+                "int64_t_prom",
+                "q6",
+                "1l"
+            ],
+            0
+        ],
+        "Aux": [
+            [
+                "sq_temp_forward"
+            ],
+            0
+        ],
+        "D2": [
+            [
+                "sqrt_int64_t",
+                "sqrt_sq",
+                "temp",
+                "int64_t_prom",
+                "d_t",
+                "q5",
+                "sqrt_prom"
+            ],
+            0
+        ],
+        "Q6": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "OFF": [
+            [
+                "q2",
+                "off2",
+                "int64_t_prom",
+                "d_t",
+                "off",
+                "q4",
+                "1l"
+            ],
+            0
+        ],
+        "Q1": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "SENS": [
+            [
+                "int64_t_prom",
+                "sens",
+                "sens2",
+                "d_t",
+                "q1",
+                "1l",
+                "q3"
+            ],
+            0
+        ],
+        "D1": [
+            [
+                "off",
+                "float_1l",
+                "sens",
+                "p_pa"
+            ],
+            0
+        ],
+        "SENS2": [
+            [
+                "aux",
+                "sq_temp_forward"
+            ],
+            0
+        ],
+        "TEMP": [
+            [
+                "temp_c"
+            ],
+            0
+        ],
+        "OFF2": [
+            [
+                "aux",
+                "sq_temp_forward"
+            ],
+            0
+        ],
+        "Q4": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "Q5": [
+            [
+                "qx_coeff"
+            ],
+            0
+        ],
+        "dT": [
+            [
+                "temp",
+                "int64_t_prom",
+                "float_d2",
+                "q6",
+                "1l",
+                "q5"
+            ],
+            0
+        ]
+    },
+    "get_pressure_temperature_readings": {
+        "Temp_C": [
+            [
+                "kelvin_to_c_t_k",
+                "sitl_temp_board_offset"
+            ],
+            0
+        ],
+        "P_Pa": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "sim_alt": [
+            [
+                "rand_float",
+                "sitl_state_altitude"
+            ],
+            0
+        ]
+    }
+}

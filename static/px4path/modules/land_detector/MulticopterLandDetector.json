@@ -1,0 +1,132 @@
+{
+    "_update_topics": {
+        "_hover_thrust_estimate_last_valid": [
+            [
+                "hte_timestamp"
+            ],
+            0
+        ],
+        "_vehicle_thrust_setpoint_throttle": [
+            [
+                "vehicle_thrust_setpoint_xyz"
+            ],
+            0
+        ],
+        "_params.hoverThrottle": [
+            [
+                "hte_hover_thrust"
+            ],
+            0
+        ],
+        "_takeoff_state": [
+            [
+                "takeoff_status_takeoff_state"
+            ],
+            0
+        ],
+        "_flag_control_climb_rate_enabled": [
+            [
+                "vehicle_control_mode_flag_control_climb_rate_enabled"
+            ],
+            0
+        ]
+    },
+    "_update_params": {
+        "_params.useHoverThrustEstimate": [
+            [
+                "use_hover_thrust_estimate"
+            ],
+            0
+        ],
+        "lndmc_upper_threshold": [
+            [
+                "min__params_land_speed",
+                "min__params_crawl_speed"
+            ],
+            0
+        ]
+    },
+    "_get_ground_contact_state": {
+        "_horizontal_movement": [
+            [
+                "v_xy_longer_than__param_lndmc_xy_vel_max_get"
+            ],
+            0
+        ],
+        "ground_contact": [
+            [
+                "_vehicle_thrust_setpoint_throttle",
+                "_params_hover_throttle",
+                "hrt_absolute_time",
+                "_hover_thrust_estimate_last_valid",
+                "1_s",
+                "_params_min_throttle"
+            ],
+            6
+        ],
+        "_close_to_ground_or_skipped_check": [
+            [
+                "_vehicle_local_position_dist_bottom_valid",
+                "_dist_bottom_is_observable",
+                "_is_close_to_ground"
+            ],
+            1
+        ],
+        "lpos_available": [
+            [
+                "hrt_absolute_time",
+                "_vehicle_local_position_timestamp",
+                "1_s"
+            ],
+            1
+        ],
+        "vertical_velocity_threshold": [
+            [
+                "_param_lndmc_z_vel_max_get"
+            ],
+            0
+        ],
+        "_below_gnd_effect_hgt": [
+            [
+                "_vehicle_local_position_dist_bottom",
+                "_param_lndmc_alt_gnd_effect_get"
+            ],
+            0
+        ]
+    },
+    "_get_maybe_landed_state": {
+        "_rotational_movement": [
+            [
+                "_angular_velocity_xy_norm",
+                "radians__param_lndmc_rot_max_get"
+            ],
+            1
+        ],
+        "minimum_thrust_now": [
+            [
+                "_params_min_throttle",
+                "_params_hover_throttle",
+                "_params_min_man_throttle",
+                "_vehicle_thrust_setpoint_throttle"
+            ],
+            1
+        ],
+        "vertical_estimate": [
+            [
+                "_vehicle_local_position_v_z_valid",
+                "_vehicle_local_position_timestamp",
+                "hrt_absolute_time",
+                "1_s"
+            ],
+            3
+        ]
+    },
+    "_get_ground_effect_state": {
+        "_takeoff_state": [
+            [
+                "takeoff_state_rampup"
+            ],
+            0
+        ]
+    }
+}

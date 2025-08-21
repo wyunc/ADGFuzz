@@ -1,0 +1,554 @@
+{
+    "healthy": {
+        "horizErrSq": [
+            [
+                "sq_innov_vel_pos"
+            ],
+            0
+        ]
+    },
+    "errorScore": {
+        "arsp": [
+            [
+                "dal_airspeed"
+            ],
+            0
+        ],
+        "score": [
+            [
+                "mag_test_ratio_z",
+                "pos_test_ratio",
+                "mag_test_ratio_y",
+                "vel_test_ratio",
+                "tas_test_ratio",
+                "mag_test_ratio_x",
+                "hgt_test_ratio"
+            ],
+            0
+        ]
+    },
+    "getHeightControlLimit": {
+        "_rng": [
+            [
+                "dal_rangefinder"
+            ],
+            0
+        ],
+        "height": [
+            [
+                "float_rotation_pitch_270",
+                "float__rng_max_distance_cm_orient",
+                "terrain_state"
+            ],
+            0
+        ]
+    },
+    "getEulerAngles": {
+        "euler": [
+            [
+                "dal_get_trim"
+            ],
+            0
+        ]
+    },
+    "getGyroBias": {
+        "gyroBias": [
+            [
+                "_tofloat",
+                "state_struct_gyro_bias",
+                "dt_ekf_avg"
+            ],
+            0
+        ]
+    },
+    "getAccelBias": {
+        "accelBias": [
+            [
+                "state_struct_accel_bias",
+                "dt_ekf_avg",
+                "_tofloat"
+            ],
+            0
+        ]
+    },
+    "getRotationBodyToNED": {
+        "mat": [
+            [
+                "dal_get_rotation_vehicle_body_to_autopilot_body"
+            ],
+            0
+        ]
+    },
+    "getQuaternion": {
+        "ret": [
+            [
+                "output_data_new_quat_tofloat"
+            ],
+            0
+        ]
+    },
+    "getWind": {
+        "wind.y": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ],
+        "wind.x": [
+            [
+                "state_struct_wind_vel_x"
+            ],
+            0
+        ]
+    },
+    "getVelNED": {
+        "vel": [
+            [
+                "vel_offset_ned",
+                "output_data_new_velocity",
+                "_tofloat"
+            ],
+            0
+        ]
+    },
+    "getAirSpdVec": {
+        "vel": [
+            [
+                "_tofloat",
+                "vel_offset_ned",
+                "tnb",
+                "output_data_new_velocity"
+            ],
+            0
+        ],
+        "vel.y": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ],
+        "vel.x": [
+            [
+                "state_struct_wind_vel_x"
+            ],
+            0
+        ]
+    },
+    "getAirSpdHealthData": {
+        "age_ms": [
+            [
+                "tas_data_delayed_time_ms",
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "innovationVariance": [
+            [
+                "var_innov_vtas",
+                "float"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "innov_vtas",
+                "float"
+            ],
+            0
+        ]
+    },
+    "getPosNE": {
+        "gps": [
+            [
+                "dal_gps"
+            ],
+            0
+        ],
+        "gpsloc": [
+            [
+                "gps_location_selected_gps"
+            ],
+            0
+        ],
+        "posNE": [
+            [
+                "output_data_new_position_xy",
+                "output_data_new_position_xy_tofloat",
+                "public_origin_get_distance_ne_ftype_gpsloc_tofloat",
+                "_tofloat",
+                "pos_offset_ned_xy",
+                "public_origin_get_distance_ne_ftype_ekf_origin"
+            ],
+            0
+        ],
+        "posNE.y": [
+            [
+                "rng_bcn_receiver_pos_y"
+            ],
+            0
+        ],
+        "posNE.x": [
+            [
+                "rng_bcn_receiver_pos_x"
+            ],
+            0
+        ]
+    },
+    "getPosD_local": {
+        "posD": [
+            [
+                "output_data_new_position_z",
+                "pos_offset_ned_z"
+            ],
+            0
+        ]
+    },
+    "getPosD": {
+        "ret": [
+            [
+                "get_pos_d_local_pos_d"
+            ],
+            0
+        ],
+        "posD": [
+            [
+                "local_origin_alt",
+                "public_origin_alt"
+            ],
+            0
+        ]
+    },
+    "getHAGL": {
+        "HAGL": [
+            [
+                "output_data_new_position_z",
+                "pos_offset_ned_z",
+                "terrain_state"
+            ],
+            0
+        ]
+    },
+    "getLLH": {
+        "loc.lng": [
+            [
+                "ekf_origin_lng"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "ekf_origin_lat"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "last_known_position_d",
+                "ekf_origin_alt"
+            ],
+            0
+        ]
+    },
+    "getGPSLLH": {
+        "gps": [
+            [
+                "dal_gps"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location_selected_gps"
+            ],
+            0
+        ]
+    },
+    "getEkfControlLimits": {
+        "ekfNavVelGainScaler": [
+            [
+                "state_struct_position",
+                "terrain_state"
+            ],
+            0
+        ],
+        "ekfGndSpdLimit": [
+            [
+                "state_struct_position",
+                "rng_on_gnd",
+                "terrain_state",
+                "frontend__max_flow_rate"
+            ],
+            0
+        ]
+    },
+    "getOriginLLH": {
+        "loc": [
+            [
+                "public_origin"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "float",
+                "ekf_gps_ref_hgt",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "getMagNED": {
+        "magNED": [
+            [
+                "_tofloat",
+                "state_struct_earth_magfield"
+            ],
+            0
+        ]
+    },
+    "getMagXYZ": {
+        "magXYZ": [
+            [
+                "_tofloat",
+                "state_struct_body_magfield"
+            ],
+            0
+        ]
+    },
+    "getMagOffsets": {
+        "magOffsets": [
+            [
+                "state_struct_body_magfield_tofloat",
+                "compass_get_offsets_mag_select_index"
+            ],
+            0
+        ],
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ],
+        "maxMagVar": [
+            [
+                "5e"
+            ],
+            0
+        ],
+        "variancesConverged": [
+            [
+                "max_mag_var",
+                "p"
+            ],
+            0
+        ]
+    },
+    "getInnovations": {
+        "tasInnov": [
+            [
+                "innov_vtas"
+            ],
+            0
+        ],
+        "velInnov.z": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "magInnov.x": [
+            [
+                "1e3f",
+                "innov_mag"
+            ],
+            0
+        ],
+        "posInnov.x": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "yawInnov": [
+            [
+                "innov_yaw"
+            ],
+            0
+        ],
+        "posInnov.y": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "magInnov.y": [
+            [
+                "1e3f",
+                "innov_mag"
+            ],
+            0
+        ],
+        "velInnov.x": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "magInnov.z": [
+            [
+                "1e3f",
+                "innov_mag"
+            ],
+            0
+        ],
+        "velInnov.y": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "posInnov.z": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ]
+    },
+    "getSynthAirDataInnovations": {
+        "betaInnov": [
+            [
+                "innov_beta"
+            ],
+            0
+        ],
+        "dragInnov.y": [
+            [
+                "innov_drag"
+            ],
+            0
+        ],
+        "dragInnov.x": [
+            [
+                "innov_drag"
+            ],
+            0
+        ]
+    },
+    "getVariances": {
+        "hgtVar": [
+            [
+                "sqrt_f_hgt_test_ratio"
+            ],
+            0
+        ],
+        "magVar.x": [
+            [
+                "sqrt_f_mag_test_ratio_x",
+                "sqrt_f_yaw_test_ratio"
+            ],
+            0
+        ],
+        "magVar.z": [
+            [
+                "sqrt_f_mag_test_ratio_z",
+                "sqrt_f_yaw_test_ratio"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "pos_reset_ne_tofloat"
+            ],
+            0
+        ],
+        "velVar": [
+            [
+                "sqrt_f_vel_test_ratio"
+            ],
+            0
+        ],
+        "posVar": [
+            [
+                "sqrt_f_pos_test_ratio"
+            ],
+            0
+        ],
+        "magVar.y": [
+            [
+                "sqrt_f_mag_test_ratio_y",
+                "sqrt_f_yaw_test_ratio"
+            ],
+            0
+        ],
+        "tasVar": [
+            [
+                "sqrt_f_tas_test_ratio"
+            ],
+            0
+        ]
+    },
+    "getVelInnovationsAndVariancesForSource": {
+        "innovations.x": [
+            [
+                "flow_innov"
+            ],
+            0
+        ],
+        "variances": [
+            [
+                "gps_vel_var_innov_tofloat",
+                "ext_nav_vel_var_innov_tofloat"
+            ],
+            0
+        ],
+        "innovations": [
+            [
+                "gps_vel_innov_tofloat",
+                "ext_nav_vel_innov_tofloat"
+            ],
+            0
+        ],
+        "variances.x": [
+            [
+                "flow_var_innov"
+            ],
+            0
+        ],
+        "innovations.y": [
+            [
+                "flow_innov"
+            ],
+            0
+        ],
+        "variances.y": [
+            [
+                "flow_var_innov"
+            ],
+            0
+        ]
+    },
+    "getFilterStatus": {
+        "status": [
+            [
+                "filter_status"
+            ],
+            0
+        ]
+    },
+    "send_status_report": {
+        "velVar": [
+            [
+                "tas_var",
+                "hgt_var",
+                "pos_var"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "sqrt_f_aux_rng_test_ratio"
+            ],
+            0
+        ]
+    }
+}

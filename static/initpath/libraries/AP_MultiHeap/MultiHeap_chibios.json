@@ -1,0 +1,13 @@
+{
+    "heap_create": {
+        "heap": [
+            [
+                "memory_heap_t",
+                "malloc_size",
+                "malloc_memory_heap_t",
+                "malloc_sizeof"
+            ],
+            0
+        ]
+    }
+}

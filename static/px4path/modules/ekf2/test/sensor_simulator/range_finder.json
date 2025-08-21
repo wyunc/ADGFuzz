@@ -1,0 +1,38 @@
+{
+    "send": {
+        "_range_sample.time_us": [
+            [
+                "time"
+            ],
+            0
+        ]
+    },
+    "setData": {
+        "_range_sample.rng": [
+            [
+                "range_data_meters"
+            ],
+            0
+        ],
+        "_range_sample.quality": [
+            [
+                "range_quality"
+            ],
+            0
+        ]
+    },
+    "setLimits": {
+        "_min_distance": [
+            [
+                "min_distance_m"
+            ],
+            0
+        ],
+        "_max_distance": [
+            [
+                "max_distance_m"
+            ],
+            0
+        ]
+    }
+}

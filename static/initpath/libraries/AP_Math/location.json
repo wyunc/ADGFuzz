@@ -1,0 +1,14 @@
+{
+    "get_bearing_cd": {
+        "bearing": [
+            [
+                "degx100",
+                "atan2f_origin_x",
+                "atan2f_destination_x",
+                "atan2f_destination_y",
+                "atan2f_origin_y"
+            ],
+            0
+        ]
+    }
+}

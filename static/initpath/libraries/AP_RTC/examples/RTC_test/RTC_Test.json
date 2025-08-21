@@ -1,0 +1,19 @@
+{
+    "loop": {
+        "last_run_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "delta": [
+            [
+                "rtc_get_time_utc_min",
+                "rtc_get_time_utc_sec",
+                "rtc_get_time_utc_ms",
+                "rtc_get_time_utc_hour"
+            ],
+            0
+        ]
+    }
+}

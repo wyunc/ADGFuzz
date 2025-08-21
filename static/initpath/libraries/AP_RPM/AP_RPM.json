@@ -1,0 +1,63 @@
+{
+    "init": {
+        "num_instances": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "convert_params": {
+        "param_instance": [
+            [
+                "i",
+                "_instance",
+                "conversion_table"
+            ],
+            0
+        ],
+        "info.type": [
+            [
+                "ap_var_type",
+                "var_info",
+                "_type",
+                "i",
+                "_new_index",
+                "conversion_table"
+            ],
+            1
+        ],
+        "info.old_group_element": [
+            [
+                "_old_element",
+                "i",
+                "conversion_table"
+            ],
+            0
+        ],
+        "type_set": [
+            [
+                "get_param_by_index_rpm_type",
+                "get_param_by_index_ap_param_int8",
+                "get_param_by_index_this"
+            ],
+            0
+        ],
+        "info.new_name": [
+            [
+                "param_name"
+            ],
+            0
+        ]
+    },
+    "get_rpm": {
+        "rpm_value": [
+            [
+                "_rate_rpm",
+                "instance",
+                "state"
+            ],
+            0
+        ]
+    }
+}

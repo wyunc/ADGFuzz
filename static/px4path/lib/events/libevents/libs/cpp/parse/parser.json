@@ -1,0 +1,227 @@
+{
+    "loadDefinitions": {
+        "enum_type": [
+            [
+                "string",
+                "event_enum_at_get"
+            ],
+            0
+        ],
+        "arg_def.description": [
+            [
+                "arg_at_get",
+                "string"
+            ],
+            0
+        ],
+        "message": [
+            [
+                "event_at_get",
+                "string"
+            ],
+            0
+        ],
+        "arg_def.type": [
+            [
+                "arg_def_enum_def_type",
+                "from_string_type"
+            ],
+            1
+        ],
+        "name": [
+            [
+                "event_at_get",
+                "enum_iter_key",
+                "string"
+            ],
+            0
+        ],
+        "event_group_iter": [
+            [
+                "_begin",
+                "comp_iter_value"
+            ],
+            1
+        ],
+        "type": [
+            [
+                "arg_at_get",
+                "string",
+                "event_at_get",
+                "from_string_enum_type"
+            ],
+            0
+        ],
+        "supported_components": [
+            [
+                "_supported_protocols",
+                "0xff",
+                "stoul_comp_iter_key"
+            ],
+            1
+        ],
+        "entry": [
+            [
+                "entry_iter_value",
+                "group_iter_value"
+            ],
+            0
+        ],
+        "event_iter": [
+            [
+                "event_group_iter_value",
+                "_begin"
+            ],
+            1
+        ],
+        "id": [
+            [
+                "0xff",
+                "stoul_comp_iter_key",
+                "0xffffff",
+                "stoul_event_iter_key"
+            ],
+            2
+        ],
+        "event": [
+            [
+                "event_iter_value"
+            ],
+            0
+        ],
+        "mode_iter": [
+            [
+                "entry_begin"
+            ],
+            0
+        ],
+        "enum_iter": [
+            [
+                "_begin"
+            ],
+            0
+        ],
+        "entry_def.name": [
+            [
+                "entry_at_get",
+                "string"
+            ],
+            0
+        ],
+        "is_bitfield": [
+            [
+                "bool",
+                "event_enum_at_get"
+            ],
+            0
+        ],
+        "arg": [
+            [
+                "arg_iter_value"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "static_cast",
+                "stoull_entry_iter_key",
+                "int",
+                "stoull_group_iter_key"
+            ],
+            0
+        ],
+        "arg_def.enum_def": [
+            [
+                "find_enum_definition_type",
+                "find_enum_definition_event_namespace"
+            ],
+            0
+        ],
+        "group_name": [
+            [
+                "event_group_iter_key"
+            ],
+            1
+        ],
+        "arg_def.name": [
+            [
+                "arg_at_get",
+                "string"
+            ],
+            0
+        ],
+        "entry_def.description": [
+            [
+                "entry_at_get",
+                "string"
+            ],
+            0
+        ],
+        "comp_iter": [
+            [
+                "j",
+                "_begin"
+            ],
+            0
+        ],
+        "description": [
+            [
+                "event_at_get",
+                "string",
+                "event_enum_at_get"
+            ],
+            0
+        ],
+        "instance_arg_index": [
+            [
+                "event_at_get",
+                "int"
+            ],
+            0
+        ],
+        "event_namespace": [
+            [
+                "_get",
+                "string",
+                "comp_iter_value"
+            ],
+            1
+        ],
+        "proto": [
+            [
+                "string",
+                "proto_iter_value_get"
+            ],
+            0
+        ],
+        "entry_separator": [
+            [
+                "string",
+                "event_enum_at_get"
+            ],
+            0
+        ],
+        "entry_iter": [
+            [
+                "_begin",
+                "enum_iter_value"
+            ],
+            1
+        ],
+        "navigation_mode_groups": [
+            [
+                "_navigation_mode_groups",
+                "0xff",
+                "stoul_comp_iter_key"
+            ],
+            1
+        ],
+        "group_iter": [
+            [
+                "_begin",
+                "comp_iter_value"
+            ],
+            2
+        ]
+    }
+}

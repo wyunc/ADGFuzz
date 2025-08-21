@@ -1,0 +1,188 @@
+{
+    "update": {
+        "ekf_origin": [
+            [
+                "sitl_state_home"
+            ],
+            0
+        ],
+        "last_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "_0e",
+                "micros"
+            ],
+            1
+        ]
+    },
+    "get_forces_on_vehicle": {
+        "forces_ef": [
+            [
+                "veh_forces_ef"
+            ],
+            0
+        ]
+    },
+    "send_report": {
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_buf",
+                "mavlink_msg_to_send_buffer_msg"
+            ],
+            0
+        ],
+        "component_id": [
+            [
+                "mav_comp_id_user11"
+            ],
+            0
+        ]
+    },
+    "get_payload_location": {
+        "payload_loc": [
+            [
+                "sitl_state_home"
+            ],
+            1
+        ]
+    },
+    "update_payload": {
+        "force_drag_NED": [
+            [
+                "drag_coef",
+                "surface_area_m2",
+                "air_density",
+                "velocity_air_ned_length_squared",
+                "velocity_air_ned_normalized"
+            ],
+            1
+        ],
+        "accel_NED": [
+            [
+                "weight_kg",
+                "tension_force_ned",
+                "force_drag_ned",
+                "force_gravity_ned"
+            ],
+            0
+        ],
+        "accel_NED.z": [
+            [
+                "accel_ned_z"
+            ],
+            0
+        ],
+        "velocity_air_NED": [
+            [
+                "velocity_ned",
+                "wind_ef"
+            ],
+            0
+        ],
+        "velocity_NED.z": [
+            [
+                "velocity_ned_z"
+            ],
+            0
+        ],
+        "position_NED": [
+            [
+                "position_ned",
+                "payload_to_veh_length",
+                "line_length",
+                "veh_pos",
+                "veh_pos",
+                "velocity_ned",
+                "dt",
+                "_todouble"
+            ],
+            1
+        ],
+        "force_gravity_NED": [
+            [
+                "vector3f_weight_kg",
+                "vector3f_gravity_mss"
+            ],
+            0
+        ],
+        "veh_forces_ef": [
+            [
+                "tension_force_ned"
+            ],
+            0
+        ],
+        "tension_force_NED": [
+            [
+                "velocity_to_accel_tc",
+                "payload_to_veh_length",
+                "line_length",
+                "force_drag_ned_projected_payload_to_veh_norm",
+                "force_gravity_ned_projected_payload_to_veh_norm",
+                "weight_kg",
+                "tension_force_centripetal_ned",
+                "velocity_diff_ned"
+            ],
+            1
+        ],
+        "landed_orig": [
+            [
+                "landed"
+            ],
+            0
+        ],
+        "velocity_perpendicular": [
+            [
+                "velocity_ned_projected_payload_to_veh_norm",
+                "velocity_ned"
+            ],
+            1
+        ],
+        "tension_force_centripetal_NED": [
+            [
+                "payload_to_veh_normalized_tofloat",
+                "weight_kg",
+                "velocity_perpendicular_length_squared",
+                "line_length"
+            ],
+            2
+        ],
+        "velocity_NED": [
+            [
+                "dt",
+                "accel_ned"
+            ],
+            0
+        ],
+        "velocity_diff_NED": [
+            [
+                "velocity_ned",
+                "veh_vel_ef",
+                "_projected_payload_to_veh_norm"
+            ],
+            0
+        ],
+        "position_NED.z": [
+            [
+                "alt_terrain_cm"
+            ],
+            0
+        ]
+    }
+}

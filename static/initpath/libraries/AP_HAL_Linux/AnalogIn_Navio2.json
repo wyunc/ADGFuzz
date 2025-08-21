@@ -1,0 +1,42 @@
+{
+    "set_channel": {
+        "_fd": [
+            [
+                "open_o_cloexec",
+                "open_channel_path",
+                "open_o_rdonly"
+            ],
+            0
+        ]
+    },
+    "set_pin": {
+        "_pin": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    },
+    "voltage_average": {
+        "_value": [
+            [
+                "atoi_buffer"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_board_voltage_pin": [
+            [
+                "channel"
+            ],
+            0
+        ],
+        "_servorail_pin": [
+            [
+                "channel"
+            ],
+            0
+        ]
+    }
+}

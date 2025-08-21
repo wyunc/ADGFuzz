@@ -1,0 +1,111 @@
+{
+    "init": {
+        "_oabendyruler": [
+            [
+                "new_nothrow",
+                "ap_oa_bendy_ruler"
+            ],
+            0
+        ],
+        "_oadijkstra": [
+            [
+                "ap_oa_dijkstra__options",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "avoidance_thread": {
+        "avoidance_result.next_destination": [
+            [
+                "avoidance_request2_next_destination"
+            ],
+            0
+        ],
+        "avoidance_latest_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "avoidance_result.result_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "avoidance_result.next_destination_new": [
+            [
+                "oa_not_required",
+                "oa_error",
+                "oa_success",
+                "avoidance_result_next_destination",
+                "oa_success",
+                "avoidance_request_next_destination"
+            ],
+            2
+        ],
+        "avoidance_result.ret_state": [
+            [
+                "oa_not_required",
+                "oa_error",
+                "oa_success"
+            ],
+            1
+        ],
+        "avoidance_result.dest_to_next_dest_clear": [
+            [
+                "dest_to_next_dest_clear"
+            ],
+            0
+        ],
+        "origin_set": [
+            [
+                "ahrs_get_origin_ekf_origin"
+            ],
+            0
+        ],
+        "avoidance_result.path_planner_used": [
+            [
+                "map_bendytype_to_pathplannerused_bendy_type",
+                "none",
+                "dijkstras"
+            ],
+            1
+        ],
+        "avoidance_request2": [
+            [
+                "avoidance_request"
+            ],
+            0
+        ],
+        "avoidance_result.origin_new": [
+            [
+                "oa_not_required",
+                "oa_error",
+                "oa_success",
+                "avoidance_result_origin_new",
+                "oa_success",
+                "avoidance_request_origin"
+            ],
+            2
+        ],
+        "avoidance_result.destination_new": [
+            [
+                "oa_not_required",
+                "oa_error",
+                "oa_success",
+                "oa_success",
+                "avoidance_result_destination",
+                "avoidance_request_destination"
+            ],
+            2
+        ],
+        "avoidance_result.destination": [
+            [
+                "avoidance_request2_destination"
+            ],
+            0
+        ]
+    }
+}

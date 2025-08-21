@@ -1,0 +1,129 @@
+{
+    "get_resting_voltage": {
+        "cell_volt": [
+            [
+                "charge_pct",
+                "soc_table",
+                "i",
+                "_soc_pct",
+                "i",
+                "soc_table",
+                "_volt_per_cell",
+                "i",
+                "soc_table",
+                "_soc_pct",
+                "i",
+                "soc_table",
+                "_volt_per_cell"
+            ],
+            4
+        ],
+        "max_cell_voltage": [
+            [
+                "_volt_per_cell",
+                "soc_table"
+            ],
+            0
+        ]
+    },
+    "set_initial_SoC": {
+        "remaining_Ah": [
+            [
+                "capacity_ah",
+                "i",
+                "soc_table",
+                "voltage",
+                "max_voltage",
+                "soc_table",
+                "_volt_per_cell",
+                "_volt_per_cell",
+                "i",
+                "soc_table",
+                "_volt_per_cell",
+                "i",
+                "soc_table",
+                "_soc_pct",
+                "i",
+                "soc_table",
+                "_soc_pct"
+            ],
+            7
+        ]
+    },
+    "setup": {
+        "max_voltage": [
+            [
+                "_max_voltage"
+            ],
+            0
+        ],
+        "capacity_Ah": [
+            [
+                "_capacity_ah"
+            ],
+            0
+        ],
+        "resistance": [
+            [
+                "_resistance"
+            ],
+            0
+        ]
+    },
+    "init_voltage": {
+        "voltage_set": [
+            [
+                "voltage"
+            ],
+            0
+        ]
+    },
+    "set_current": {
+        "temperature.last_update_micros": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "remaining_Ah": [
+            [
+                "remaining_ah",
+                "delta_ah"
+            ],
+            0
+        ],
+        "delta_Ah": [
+            [
+                "current",
+                "micros64",
+                "_0e"
+            ],
+            2
+        ],
+        "last_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "temperature.kelvin": [
+            [
+                "temperature_last_update_micros",
+                "micros64",
+                "temperature_kelvin",
+                "current"
+            ],
+            2
+        ],
+        "voltage": [
+            [
+                "voltage_set",
+                "get_resting_voltage_remaining_ah",
+                "get_resting_voltage_capacity_ah",
+                "current",
+                "resistance"
+            ],
+            1
+        ]
+    }
+}

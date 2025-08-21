@@ -1,0 +1,33 @@
+{
+    "handle_frame": {
+        "dist_mm": [
+            [
+                "8u",
+                "frame_data",
+                "16u",
+                "int32_t",
+                "24u"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "frame_data"
+            ],
+            0
+        ],
+        "snr": [
+            [
+                "le16toh_ptr_frame_data"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "0x200u",
+                "frame_id"
+            ],
+            0
+        ]
+    }
+}

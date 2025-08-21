@@ -1,0 +1,52 @@
+{
+    "measure": {
+        "cmd": [
+            [
+                "tr_measure"
+            ],
+            0
+        ]
+    },
+    "collect_raw": {
+        "raw_distance": [
+            [
+                "d",
+                "uint16_t_d"
+            ],
+            0
+        ]
+    },
+    "process_raw_measure": {
+        "output_distance_cm": [
+            [
+                "tr_out_of_range_add_cm",
+                "max_distance_cm",
+                "raw_distance"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "accum.sum": [
+            [
+                "_distance_cm"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "accum_sum",
+                "accum_count"
+            ],
+            0
+        ]
+    }
+}

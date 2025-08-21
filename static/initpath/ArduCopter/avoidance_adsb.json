@@ -1,0 +1,53 @@
+{
+    "handle_avoidance_vertical": {
+        "velocity_neu.z": [
+            [
+                "copter_wp_nav_get_default_speed_up",
+                "copter_wp_nav_get_default_speed_down"
+            ],
+            0
+        ],
+        "should_climb": [
+            [
+                "obstacle__location_alt",
+                "my_loc_alt"
+            ],
+            0
+        ]
+    },
+    "handle_avoidance_horizontal": {
+        "velocity_neu.x": [
+            [
+                "copter_wp_nav_get_default_speed_xy"
+            ],
+            0
+        ],
+        "velocity_neu.y": [
+            [
+                "copter_wp_nav_get_default_speed_xy"
+            ],
+            0
+        ]
+    },
+    "handle_avoidance_perpendicular": {
+        "velocity_neu.z": [
+            [
+                "copter_wp_nav_get_default_speed_down",
+                "copter_wp_nav_get_default_speed_up"
+            ],
+            0
+        ],
+        "velocity_neu.y": [
+            [
+                "copter_wp_nav_get_default_speed_xy"
+            ],
+            0
+        ],
+        "velocity_neu.x": [
+            [
+                "copter_wp_nav_get_default_speed_xy"
+            ],
+            0
+        ]
+    }
+}

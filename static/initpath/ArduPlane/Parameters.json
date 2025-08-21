@@ -1,0 +1,71 @@
+{
+    "load_parameters": {
+        "fence_type_new": [
+            [
+                "ap_int8",
+                "find_ptype_fence_type"
+            ],
+            0
+        ],
+        "fences_exist": [
+            [
+                "ap_fence_polyfence_total_fence_count"
+            ],
+            0
+        ],
+        "fence_type_new_val": [
+            [
+                "ac_fence_type_polygon"
+            ],
+            0
+        ],
+        "fence_action_new_val": [
+            [
+                "ac_fence_action_guided",
+                "ac_fence_action_guided_throttle_pass",
+                "ac_fence_action_report_only",
+                "ac_fence_action_rtl_and_land"
+            ],
+            0
+        ],
+        "fence_enable": [
+            [
+                "ap_int8",
+                "find_ptype_fence_enable"
+            ],
+            0
+        ],
+        "fences_used": [
+            [
+                "fence_action_old_get"
+            ],
+            0
+        ],
+        "ap_fence": [
+            [
+                "fence"
+            ],
+            0
+        ],
+        "fence_action_new": [
+            [
+                "ap_int8",
+                "find_ptype",
+                "find_fence_action_info_old_new_name"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "rc_channel_chan_param_get"
+            ],
+            0
+        ],
+        "old_key": [
+            [
+                "g_k_param_airspeed"
+            ],
+            0
+        ]
+    }
+}

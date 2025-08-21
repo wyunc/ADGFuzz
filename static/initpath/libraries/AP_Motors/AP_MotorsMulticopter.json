@@ -1,0 +1,198 @@
+{
+    "output_boost_throttle": {
+        "throttle": [
+            [
+                "get_throttle__boost_scale"
+            ],
+            0
+        ]
+    },
+    "output_min": {
+        "_spool_state": [
+            [
+                "shut_down"
+            ],
+            0
+        ]
+    },
+    "update_throttle_filter": {
+        "rate": [
+            [
+                "1e6",
+                "fabsf__throttle_slew_slope"
+            ],
+            0
+        ],
+        "_throttle_slew_rate": [
+            [
+                "_throttle_slew_filter_apply__dt",
+                "_throttle_slew_filter_apply_rate"
+            ],
+            0
+        ],
+        "new_thr": [
+            [
+                "_throttle_filter_get"
+            ],
+            0
+        ],
+        "last_thr": [
+            [
+                "_throttle_filter_get"
+            ],
+            0
+        ]
+    },
+    "get_current_limit_max_throttle": {
+        "batt_idx": [
+            [
+                "thr_lin_get_battery_index"
+            ],
+            0
+        ],
+        "_throttle_limit": [
+            [
+                "_batt_current",
+                "_batt_current",
+                "battery_get_resistance_batt_idx",
+                "battery_voltage_batt_idx",
+                "battery_voltage_thr_lin_get_battery_min_voltage",
+                "_batt_current_max",
+                "_dt",
+                "_batt_current_time_constant"
+            ],
+            3
+        ]
+    },
+    "set_actuator_with_slew": {
+        "actuator_output": [
+            [
+                "input",
+                "_dt",
+                "_slew_up_time",
+                "_dt",
+                "_slew_dn_time"
+            ],
+            4
+        ]
+    },
+    "get_thrust": {
+        "actuator": [
+            [
+                "_actuator",
+                "thr_lin_get_spin_min_thr_lin_get_spin_max",
+                "motor_num"
+            ],
+            0
+        ],
+        "thr_out": [
+            [
+                "thr_lin_get_compensation_gain",
+                "thr_lin_actuator_to_thrust_actuator"
+            ],
+            0
+        ]
+    },
+    "output_logic": {
+        "_thrust_boost_ratio": [
+            [
+                "_dt",
+                "_spool_up_time",
+                "_spool_down_time",
+                "_spool_up_time",
+                "minimum_spool_time"
+            ],
+            2
+        ],
+        "_disarm_safe_timer": [
+            [
+                "_safe_time",
+                "_dt"
+            ],
+            0
+        ],
+        "_throttle_thrust_max": [
+            [
+                "_dt",
+                "_spool_up_time",
+                "_spool_down_time",
+                "_spool_up_time",
+                "minimum_spool_time",
+                "get_current_limit_max_throttle"
+            ],
+            2
+        ],
+        "_spin_up_ratio": [
+            [
+                "_spool_down_time",
+                "_spool_up_time",
+                "minimum_spool_time",
+                "_dt",
+                "thr_lin_get_spin_min",
+                "_spin_arm",
+                "_dt",
+                "_spool_up_time"
+            ],
+            4
+        ],
+        "_spool_desired": [
+            [
+                "shut_down"
+            ],
+            0
+        ],
+        "_spool_state": [
+            [
+                "spooling_down",
+                "throttle_unlimited",
+                "ground_idle",
+                "spooling_up",
+                "shut_down"
+            ],
+            0
+        ]
+    },
+    "set_throttle_passthrough_for_esc_calibration": {
+        "pwm_out": [
+            [
+                "get_pwm_output_min",
+                "get_pwm_output_max",
+                "throttle_input"
+            ],
+            0
+        ]
+    },
+    "output_motor_mask": {
+        "_motor_mask_override": [
+            [
+                "mask"
+            ],
+            0
+        ],
+        "pwm_output": [
+            [
+                "get_pwm_output_max",
+                "get_pwm_output_min",
+                "_actuator",
+                "i",
+                "get_pwm_output_min"
+            ],
+            2
+        ],
+        "diff_thrust": [
+            [
+                "rudder_dt",
+                "get_roll_factor_i"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "function": [
+            [
+                "get_motor_function_i"
+            ],
+            0
+        ]
+    }
+}

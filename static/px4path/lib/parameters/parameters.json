@@ -1,0 +1,469 @@
+{
+    "param_init": {
+        "param_export_perf": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "param_set_perf": [
+            [
+                "perf_alloc_pc_elapsed"
+            ],
+            0
+        ],
+        "param_find_perf": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ],
+        "autosave_instance": [
+            [
+                "param_autosave",
+                "new"
+            ],
+            0
+        ],
+        "param_get_perf": [
+            [
+                "perf_alloc_pc_count"
+            ],
+            0
+        ]
+    },
+    "param_notify_changes": {
+        "pup.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pup.custom_default": [
+            [
+                "runtime_defaults_size"
+            ],
+            0
+        ],
+        "pup.export_count": [
+            [
+                "perf_event_count_param_export_perf"
+            ],
+            0
+        ],
+        "pup.find_count": [
+            [
+                "perf_event_count_param_find_perf"
+            ],
+            0
+        ],
+        "pup.instance": [
+            [
+                "param_instance"
+            ],
+            0
+        ],
+        "pup.get_count": [
+            [
+                "perf_event_count_param_get_perf"
+            ],
+            0
+        ],
+        "pup.changed": [
+            [
+                "user_config_size"
+            ],
+            0
+        ],
+        "pup.active": [
+            [
+                "params_active_count"
+            ],
+            0
+        ],
+        "param_topic": [
+            [
+                "orb_advertise_parameter_update",
+                "pup",
+                "orb_advertise_orb_id"
+            ],
+            0
+        ],
+        "pup.set_count": [
+            [
+                "perf_event_count_param_set_perf"
+            ],
+            0
+        ]
+    },
+    "param_get": {
+        "retrieve_value": [
+            [
+                "user_config_get_param"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_get_default_value_internal": {
+        "val": [
+            [
+                "runtime_defaults_get_param_f",
+                "runtime_defaults_get_param_i"
+            ],
+            0
+        ]
+    },
+    "param_get_default_value": {
+        "ret": [
+            [
+                "param_get_default_value_internal_param",
+                "param_get_default_value_internal_default_val"
+            ],
+            0
+        ]
+    },
+    "param_value_is_default": {
+        "user_config_value": [
+            [
+                "user_config_get_param"
+            ],
+            0
+        ],
+        "runtime_default_value": [
+            [
+                "runtime_defaults_get_param"
+            ],
+            0
+        ],
+        "user_config_value.i": [
+            [
+                "runtime_default_value_i"
+            ],
+            0
+        ]
+    },
+    "param_set_internal": {
+        "param_changed": [
+            [
+                "user_config_value_i",
+                "flt_epsilon",
+                "fabsf_new_value_f",
+                "fabsf_user_config_value_f",
+                "new_value_i"
+            ],
+            0
+        ],
+        "user_config_value": [
+            [
+                "user_config_get_param"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "px4_error",
+                "px4_ok"
+            ],
+            0
+        ]
+    },
+    "param_set_default_value": {
+        "firmware_default_value": [
+            [
+                "firmware_defaults_get_param"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "px4_error",
+                "px4_ok"
+            ],
+            0
+        ],
+        "setting_to_static_default": [
+            [
+                "fabsf_firmware_default_value_f",
+                "new_value",
+                "fabsf_new_value",
+                "flt_epsilon",
+                "firmware_default_value_i"
+            ],
+            0
+        ]
+    },
+    "param_reset_internal": {
+        "param_found": [
+            [
+                "user_config_contains_param"
+            ],
+            0
+        ]
+    },
+    "param_reset_excludes": {
+        "len": [
+            [
+                "strlen_index",
+                "strlen_excludes"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "param_name_param"
+            ],
+            0
+        ]
+    },
+    "param_reset_specific": {
+        "name": [
+            [
+                "param_name_param"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strlen_index",
+                "strlen_resets"
+            ],
+            0
+        ]
+    },
+    "param_set_default_file": {
+        "param_default_file": [
+            [
+                "nullptr",
+                "strdup_filename"
+            ],
+            0
+        ]
+    },
+    "param_set_backup_file": {
+        "param_backup_file": [
+            [
+                "strdup_filename",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "param_save_default": {
+        "fd_verify": [
+            [
+                "open_filename",
+                "open_o_rdonly",
+                "open_param_backup_file",
+                "open_px4_o_mode_666"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "flash_param_save_nullptr",
+                "param_verify_fd_verify",
+                "lseek_seek_set",
+                "param_export_internal_fd",
+                "param_export_internal_nullptr",
+                "lseek_fd_verify",
+                "px4_error"
+            ],
+            0
+        ],
+        "shutdown_lock_ret": [
+            [
+                "px4_shutdown_lock"
+            ],
+            0
+        ],
+        "fd_backup_file": [
+            [
+                "open_px4_o_mode_666",
+                "open_param_backup_file",
+                "open_o_trunc",
+                "open_o_creat",
+                "open_o_wronly"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_px4_o_mode_666",
+                "open_filename",
+                "open_o_trunc",
+                "open_o_creat",
+                "open_o_wronly"
+            ],
+            0
+        ],
+        "filename": [
+            [
+                "param_get_default_file"
+            ],
+            0
+        ],
+        "backup_export_ret": [
+            [
+                "param_export_internal_nullptr",
+                "param_export_internal_fd_backup_file"
+            ],
+            0
+        ]
+    },
+    "param_load_default": {
+        "fd_load": [
+            [
+                "open_o_rdonly",
+                "open_filename"
+            ],
+            0
+        ],
+        "filename": [
+            [
+                "param_get_default_file"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "param_load_fd_load"
+            ],
+            0
+        ]
+    },
+    "param_verify_callback": {
+        "param": [
+            [
+                "param_find_no_notification_node_name"
+            ],
+            0
+        ]
+    },
+    "param_verify": {
+        "result": [
+            [
+                "bson_decoder_next_decoder"
+            ],
+            0
+        ]
+    },
+    "param_export": {
+        "shutdown_lock_ret": [
+            [
+                "px4_shutdown_lock"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_filename",
+                "open_o_rdwr",
+                "open_px4_o_mode_666",
+                "open_o_creat"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "param_export_internal_fd",
+                "flash_param_save_filter",
+                "param_export_internal_filter",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "param_export_internal": {
+        "i": [
+            [
+                "user_config_value_i"
+            ],
+            0
+        ],
+        "user_config_value": [
+            [
+                "user_config_get_param"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "double",
+                "user_config_value_f"
+            ],
+            0
+        ],
+        "runtime_default_value": [
+            [
+                "runtime_defaults_get_param"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "param_size_param"
+            ],
+            0
+        ],
+        "changed_params": [
+            [
+                "user_config_contained_as_bitset"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "param_name_param"
+            ],
+            0
+        ]
+    },
+    "param_import_callback": {
+        "param": [
+            [
+                "param_find_no_notification_node_name"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "node_d"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "node_i32"
+            ],
+            0
+        ]
+    },
+    "param_import_internal": {
+        "result": [
+            [
+                "bson_decoder_next_decoder"
+            ],
+            0
+        ]
+    },
+    "param_print_status": {
+        "filename": [
+            [
+                "param_get_default_file"
+            ],
+            0
+        ],
+        "last_autosave": [
+            [
+                "autosave_instance_last_autosave"
+            ],
+            0
+        ]
+    }
+}

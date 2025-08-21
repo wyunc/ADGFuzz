@@ -1,0 +1,14 @@
+{
+    "update_thread": {
+        "w": [
+            [
+                "render_window_video_mode",
+                "new_nothrow",
+                "render_window_rows",
+                "render_window_columns",
+                "render_window_scale"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "init": {
+        "ret": [
+            [
+                "nullptr",
+                "_dev_write_register_0x03",
+                "_dev_write_register_toshiba_led_enable",
+                "_dev_transfer_val",
+                "_dev_transfer_sizeof"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "move_toshiba_led_i2c_addr",
+                "move_hal_i2c_mgr_get_device",
+                "move__bus"
+            ],
+            0
+        ]
+    },
+    "hw_set_rgb": {
+        "rgb": [
+            [
+                "blue",
+                "green",
+                "red"
+            ],
+            0
+        ]
+    }
+}

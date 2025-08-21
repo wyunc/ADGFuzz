@@ -1,0 +1,101 @@
+{
+    "_storage_open": {
+        "p": [
+            [
+                "nullptr",
+                "esp_partition_subtype_any",
+                "esp_partition_find_first_esp_partition_type_t0x45"
+            ],
+            0
+        ]
+    },
+    "_mark_dirty": {
+        "end": [
+            [
+                "loc",
+                "length"
+            ],
+            0
+        ],
+        "line": [
+            [
+                "storage_line_shift",
+                "loc"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "_last_empty_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_flash_write_data": {
+        "_last_re_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "address": [
+            [
+                "offset",
+                "sector",
+                "storage_sector_size"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "esp_partition_write_length",
+                "esp_partition_write_address",
+                "esp_partition_write_data",
+                "esp_ok",
+                "esp_partition_write_p"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "_flash_re_initialise"
+            ],
+            0
+        ]
+    },
+    "_flash_read_data": {
+        "address": [
+            [
+                "offset",
+                "storage_sector_size",
+                "sector"
+            ],
+            0
+        ]
+    },
+    "_flash_erase_sector": {
+        "address": [
+            [
+                "storage_sector_size",
+                "sector"
+            ],
+            0
+        ]
+    },
+    "get_storage_ptr": {
+        "size": [
+            [
+                "sizeof__buffer"
+            ],
+            0
+        ],
+        "ptr": [
+            [
+                "_buffer"
+            ],
+            0
+        ]
+    }
+}

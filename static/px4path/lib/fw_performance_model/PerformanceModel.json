@@ -1,0 +1,105 @@
+{
+    "getMaximumClimbRate": {
+        "service_ceiling": [
+            [
+                "_param_service_ceiling_get"
+            ],
+            0
+        ],
+        "delta_rho": [
+            [
+                "k_air_density_sea_level_standard_atmos",
+                "sanitise_air_density_air_density"
+            ],
+            1
+        ],
+        "climbrate_max": [
+            [
+                "_param_fw_t_clmb_max_get"
+            ],
+            0
+        ],
+        "ceiling_pressure": [
+            [
+                "get_pressure_from_altitude_service_ceiling"
+            ],
+            0
+        ]
+    },
+    "getAirDensityThrottleScale": {
+        "eas2tas": [
+            [
+                "sqrtf_air_density",
+                "sqrtf_k_air_density_sea_level_standard_atmos"
+            ],
+            0
+        ],
+        "eas2tas_at_11km_amsl": [
+            [
+                "sqrtf_k_air_density_standard_atmos11000amsl",
+                "sqrtf_k_air_density_sea_level_standard_atmos"
+            ],
+            0
+        ],
+        "air_density_throttle_scale": [
+            [
+                "constrain_eas2tas_at_11km_amsl",
+                "constrain__f",
+                "constrain_eas2tas"
+            ],
+            0
+        ],
+        "air_density": [
+            [
+                "sanitise_air_density_air_density"
+            ],
+            0
+        ]
+    },
+    "getTrimThrottleForCalibratedAirspeed": {
+        "throttle_trim": [
+            [
+                "_param_fw_airspd_trim_get",
+                "calibrated_airspeed_sp",
+                "slope_above_trim",
+                "slope_below_trim",
+                "_param_fw_thr_trim_get"
+            ],
+            0
+        ]
+    },
+    "getMinimumSinkRate": {
+        "air_density": [
+            [
+                "sanitise_air_density_air_density"
+            ],
+            0
+        ]
+    },
+    "getMinimumCalibratedAirspeed": {
+        "load_factor": [
+            [
+                "max_flt_epsilon",
+                "max_load_factor"
+            ],
+            0
+        ]
+    },
+    "getCalibratedStallAirspeed": {
+        "load_factor": [
+            [
+                "max_flt_epsilon",
+                "max_load_factor"
+            ],
+            0
+        ]
+    },
+    "sanitiseAirDensity": {
+        "air_density": [
+            [
+                "k_air_density_sea_level_standard_atmos"
+            ],
+            0
+        ]
+    }
+}

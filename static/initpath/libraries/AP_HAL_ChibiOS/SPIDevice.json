@@ -1,0 +1,241 @@
+{
+    "set_speed": {
+        "freq_flag": [
+            [
+                "freq_flag_low",
+                "freq_flag_high"
+            ],
+            0
+        ]
+    },
+    "set_slowdown": {
+        "slowdown": [
+            [
+                "constrain_int16_slowdown"
+            ],
+            0
+        ],
+        "freq_flag_high": [
+            [
+                "derive_freq_flag_device_desc_highspeed",
+                "derive_freq_flag_slowdown"
+            ],
+            0
+        ]
+    },
+    "do_transfer": {
+        "msg": [
+            [
+                "osal_thread_suspend_timeout_s_spi_devices",
+                "osal_thread_suspend_timeout_s_device_desc_bus",
+                "osal_thread_suspend_timeout_s_timeout_us",
+                "osal_thread_suspend_timeout_s_time_us2i",
+                "osal_thread_suspend_timeout_s__driver_thread"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "spi_polled_exchange_send",
+                "spi_polled_exchange_spi_devices",
+                "spi_polled_exchange_device_desc_bus",
+                "spi_polled_exchange_i",
+                "spi_polled_exchange__driver"
+            ],
+            0
+        ],
+        "old_cs_forced": [
+            [
+                "cs_forced"
+            ],
+            0
+        ],
+        "timeout_us": [
+            [
+                "20000u",
+                "len",
+                "32u"
+            ],
+            0
+        ]
+    },
+    "clock_pulse": {
+        "timeout_us": [
+            [
+                "32u",
+                "20000u",
+                "n"
+            ],
+            0
+        ],
+        "msg": [
+            [
+                "osal_thread_suspend_timeout_s_time_us2i",
+                "osal_thread_suspend_timeout_s__driver_thread",
+                "osal_thread_suspend_timeout_s_timeout_us",
+                "osal_thread_suspend_timeout_s_device_desc_bus",
+                "osal_thread_suspend_timeout_s_spi_devices"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "ret": [
+            [
+                "do_transfer_recv_len",
+                "do_transfer_buf",
+                "do_transfer_send_len"
+            ],
+            0
+        ]
+    },
+    "transfer_fullduplex": {
+        "ret": [
+            [
+                "do_transfer_len",
+                "do_transfer_buf"
+            ],
+            0
+        ]
+    },
+    "stop_peripheral": {
+        "sbus": [
+            [
+                "spi_devices",
+                "bus"
+            ],
+            0
+        ]
+    },
+    "acquire_bus": {
+        "bus.spicfg.dummyrx": [
+            [
+                "uint32_t",
+                "malloc_dma"
+            ],
+            0
+        ],
+        "bus.spicfg.end_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "bus.spicfg.cr1": [
+            [
+                "uint16_t",
+                "device_desc_mode",
+                "freq_flag"
+            ],
+            0
+        ],
+        "bus.spicfg.dummytx": [
+            [
+                "uint32_t",
+                "malloc_dma"
+            ],
+            0
+        ],
+        "bus.spicfg.sspad": [
+            [
+                "pal_pad_device_desc_pal_line"
+            ],
+            0
+        ],
+        "bus.spicfg.cfg2": [
+            [
+                "device_desc_mode"
+            ],
+            0
+        ],
+        "bus.spicfg.cfg1": [
+            [
+                "freq_flag"
+            ],
+            0
+        ],
+        "bus.spicfg.ssport": [
+            [
+                "pal_port_device_desc_pal_line"
+            ],
+            0
+        ],
+        "bus.spi_mode": [
+            [
+                "device_desc_mode"
+            ],
+            0
+        ]
+    },
+    "set_register_rw_callback": {
+        ".register_rw_cb": [
+            [
+                "cb"
+            ],
+            0
+        ]
+    },
+    "test_clock_freq": {
+        "target_freq": [
+            [
+                "2000000ul"
+            ],
+            0
+        ],
+        "spicfg.cfg1": [
+            [
+                "derive_freq_flag_bus__busid",
+                "derive_freq_flag_bus_target_freq",
+                "derive_freq_flag_bus_i",
+                "derive_freq_flag_bus_spi_devices"
+            ],
+            0
+        ],
+        "buf1": [
+            [
+                "hal_util_malloc_type_mem_dma_safe",
+                "hal_util_malloc_type_len",
+                "uint8_t"
+            ],
+            0
+        ],
+        "buf2": [
+            [
+                "hal_util_malloc_type_mem_dma_safe",
+                "hal_util_malloc_type_len",
+                "uint8_t"
+            ],
+            0
+        ],
+        "t0": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "t1": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "msg": [
+            [
+                "osal_thread_suspend_timeout_s_spi_devices",
+                "osal_thread_suspend_timeout_s__driver_thread",
+                "osal_thread_suspend_timeout_s_ch_time_ms2i",
+                "osal_thread_suspend_timeout_s_i"
+            ],
+            0
+        ],
+        "spicfg.cr1": [
+            [
+                "derive_freq_flag_bus__busid",
+                "derive_freq_flag_bus_target_freq",
+                "derive_freq_flag_bus_i",
+                "derive_freq_flag_bus_spi_devices"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "checkAndReport": {
+        "exists": [
+            [
+                "_vehicle_optical_flow_sub_advertised"
+            ],
+            0
+        ],
+        "valid": [
+            [
+                "hrt_elapsed_time_flow_sens_timestamp",
+                "1_s",
+                "_vehicle_optical_flow_sub_copy_flow_sens"
+            ],
+            0
+        ]
+    }
+}

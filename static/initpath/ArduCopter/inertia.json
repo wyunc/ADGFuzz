@@ -1,0 +1,22 @@
+{
+    "read_inertia": {
+        "current_loc.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "alt_above_origin_cm": [
+            [
+                "inertial_nav_get_position_z_up_cm"
+            ],
+            0
+        ],
+        "current_loc.lng": [
+            [
+                "loc_lng"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "publish": {
+        "velned.n_sats": [
+            [
+                "d_num_sats",
+                "d_have_lock"
+            ],
+            0
+        ],
+        "SBP_POS_LLH_MSGTYPE": [
+            [
+                "0x020a"
+            ],
+            0
+        ],
+        "SBP_VEL_NED_MSGTYPE": [
+            [
+                "0x020e"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "t.wn": [
+            [
+                "gps_tow_week"
+            ],
+            0
+        ],
+        "velned.h_accuracy": [
+            [
+                "1e3"
+            ],
+            0
+        ],
+        "velned.n": [
+            [
+                "d_speed_n",
+                "1e3"
+            ],
+            0
+        ],
+        "SBP_HEARTBEAT_MSGTYPE": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "t.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "velned.d": [
+            [
+                "d_speed_d",
+                "1e3"
+            ],
+            0
+        ],
+        "pos.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pos.lon": [
+            [
+                "d_longitude"
+            ],
+            0
+        ],
+        "pos.lat": [
+            [
+                "d_latitude"
+            ],
+            0
+        ],
+        "SBP_GPS_TIME_MSGTYPE": [
+            [
+                "0x0102"
+            ],
+            0
+        ],
+        "pos.height": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "pos.h_accuracy": [
+            [
+                "d_horizontal_acc"
+            ],
+            0
+        ],
+        "velned.e": [
+            [
+                "d_speed_e",
+                "1e3"
+            ],
+            0
+        ],
+        "pos.v_accuracy": [
+            [
+                "d_vertical_acc"
+            ],
+            0
+        ],
+        "dops.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "pos.n_sats": [
+            [
+                "d_num_sats",
+                "d_have_lock"
+            ],
+            0
+        ],
+        "SBP_DOPS_MSGTYPE": [
+            [
+                "0x0208"
+            ],
+            0
+        ],
+        "velned.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "velned.v_accuracy": [
+            [
+                "1e3"
+            ],
+            0
+        ]
+    }
+}

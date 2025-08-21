@@ -1,0 +1,34 @@
+{
+    "control_yaw": {
+        "_body_rate_setpoint": [
+            [
+                "constrain_yaw_body_rate_setpoint_raw",
+                "constrain__max_rate",
+                "_f"
+            ],
+            0
+        ],
+        "constrained_roll": [
+            [
+                "radians__f",
+                "constrain_fabsf",
+                "constrain_constrained_roll",
+                "constrain_radians",
+                "constrain_roll",
+                "constrain_roll_setpoint",
+                "fabsf_roll_setpoint",
+                "constrain__f"
+            ],
+            0
+        ],
+        "_euler_rate_setpoint": [
+            [
+                "tanf_constrained_roll",
+                "airspeed",
+                "cosf_pitch",
+                "constants_one_g"
+            ],
+            0
+        ]
+    }
+}

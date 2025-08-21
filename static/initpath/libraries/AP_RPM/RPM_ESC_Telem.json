@@ -1,0 +1,21 @@
+{
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.rate_rpm": [
+            [
+                "_scaling",
+                "state_instance",
+                "esc_telem_get_average_motor_rpm_state_instance",
+                "esc_telem_get_average_motor_rpm_ap_rpm__params",
+                "esc_telem_get_average_motor_rpm__esc_mask",
+                "ap_rpm__params"
+            ],
+            1
+        ]
+    }
+}

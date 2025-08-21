@@ -1,0 +1,18 @@
+{
+    "init": {
+        "rpi_version": [
+            [
+                "from_hal_util_detect_linux_board_type"
+            ],
+            0
+        ],
+        "gpioDriver": [
+            [
+                "new_nothrow",
+                "gpio_rpi_bcm",
+                "gpio_rpi_rp1"
+            ],
+            0
+        ]
+    }
+}

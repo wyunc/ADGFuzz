@@ -1,0 +1,120 @@
+{
+    "ekf_has_absolute_position": {
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "ekf_has_relative_position": {
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "ekf_alt_ok": {
+        "filt_status": [
+            [
+                "inertial_nav_get_filter_status"
+            ],
+            0
+        ]
+    },
+    "allocate_motors": {
+        "motors_var_info": [
+            [
+                "var_info"
+            ],
+            0
+        ],
+        "loiter_nav": [
+            [
+                "ac_loiter_ahrs_view",
+                "ac_loiter_inertial_nav",
+                "ac_loiter_attitude_control",
+                "new_nothrow",
+                "ac_loiter_pos_control"
+            ],
+            0
+        ],
+        "circle_nav": [
+            [
+                "ac_circle_ahrs_view",
+                "ac_circle_inertial_nav",
+                "ac_circle_pos_control",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "attitude_control_var_info": [
+            [
+                "var_info"
+            ],
+            0
+        ],
+        "attitude_control": [
+            [
+                "ac_attitude_control_multi_6do_f_ahrs_view",
+                "ac_attitude_control_heli_motors",
+                "ac_attitude_control_heli_aparm",
+                "ac_attitude_control_multi_ahrs_view",
+                "new_nothrow",
+                "ac_attitude_control_multi_6do_f_aparm",
+                "ac_attitude_control_multi_6do_f_motors",
+                "ac_attitude_control_multi_motors",
+                "ac_attitude_control_multi_aparm",
+                "ac_attitude_control_heli_ahrs_view"
+            ],
+            0
+        ],
+        "pos_control": [
+            [
+                "ac_pos_control_motors",
+                "ac_pos_control_inertial_nav",
+                "new_nothrow",
+                "ac_pos_control_attitude_control",
+                "ac_pos_control_ahrs_view"
+            ],
+            0
+        ],
+        "ahrs_view": [
+            [
+                "ahrs_create_view_rotation_none"
+            ],
+            0
+        ],
+        "motors": [
+            [
+                "ap_motors_matrix_6do_f_scripting_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_tailsitter_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_heli_single_copter_scheduler_get_loop_rate_hz",
+                "new_nothrow",
+                "ap_motors_coax_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_heli_quad_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_single_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_heli_dual_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_tri_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_matrix_scripting_dynamic_copter_scheduler_get_loop_rate_hz",
+                "ap_motors_matrix_copter_scheduler_get_loop_rate_hz"
+            ],
+            0
+        ],
+        "wp_nav": [
+            [
+                "ac_wp_nav_oa_ahrs_view",
+                "ac_wp_nav_oa_attitude_control",
+                "ac_wp_nav_oa_pos_control",
+                "new_nothrow",
+                "ac_wp_nav_ahrs_view",
+                "ac_wp_nav_inertial_nav",
+                "ac_wp_nav_oa_inertial_nav",
+                "ac_wp_nav_pos_control",
+                "ac_wp_nav_attitude_control"
+            ],
+            0
+        ]
+    }
+}

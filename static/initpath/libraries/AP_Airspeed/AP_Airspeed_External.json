@@ -1,0 +1,34 @@
+{
+    "get_differential_pressure": {
+        "pressure": [
+            [
+                "press_count",
+                "sum_pressure"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "temperature": [
+            [
+                "temperature_count",
+                "sum_temperature"
+            ],
+            0
+        ]
+    },
+    "handle_external": {
+        "sum_temperature": [
+            [
+                "pkt_temperature"
+            ],
+            0
+        ],
+        "sum_pressure": [
+            [
+                "pkt_differential_pressure"
+            ],
+            0
+        ]
+    }
+}

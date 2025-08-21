@@ -1,0 +1,83 @@
+{
+    "calcTargetBearing": {
+        "pure_pursuit_status.target_bearing": [
+            [
+                "curr_pos_to_path",
+                "wrap_pi_prev_wp_to_curr_pos",
+                "prev_wp_ned",
+                "curr_pos_ned",
+                "prev_wp_to_intersection_point",
+                "prev_wp_ned",
+                "curr_pos_ned",
+                "wrap_pi_curr_pos_to_intersection_point",
+                "wrap_pi_curr_pos_to_path",
+                "curr_wp_ned",
+                "curr_pos_ned",
+                "wrap_pi_atan2f",
+                "wrap_pi_curr_pos_to_curr_wp",
+                "wrap_pi_atan2f"
+            ],
+            5
+        ],
+        "prev_wp_to_curr_wp_u": [
+            [
+                "prev_wp_to_curr_wp_unit_or_zero"
+            ],
+            0
+        ],
+        "pure_pursuit_status.crosstrack_error": [
+            [
+                "crosstrack_error"
+            ],
+            0
+        ],
+        "prev_wp_to_closest_point_on_path": [
+            [
+                "curr_pos_to_path",
+                "prev_wp_ned",
+                "curr_pos_ned"
+            ],
+            1
+        ],
+        "prev_wp_to_curr_wp": [
+            [
+                "prev_wp_ned",
+                "curr_wp_ned"
+            ],
+            0
+        ],
+        "pure_pursuit_status.distance_to_waypoint": [
+            [
+                "curr_pos_to_curr_wp_norm"
+            ],
+            0
+        ],
+        "curr_wp_to_closest_point_on_path": [
+            [
+                "curr_pos_to_path",
+                "curr_wp_ned",
+                "curr_pos_ned"
+            ],
+            1
+        ],
+        "pure_pursuit_status.bearing_to_waypoint": [
+            [
+                "curr_wp_ned",
+                "curr_pos_ned",
+                "wrap_pi_atan2f",
+                "wrap_pi_curr_pos_to_curr_wp"
+            ],
+            2
+        ],
+        "pure_pursuit_status.lookahead_distance": [
+            [
+                "lookahead_min",
+                "constrain_fabsf",
+                "lookahead_max",
+                "constrain_lookahead_gain",
+                "constrain_vehicle_speed"
+            ],
+            1
+        ]
+    }
+}

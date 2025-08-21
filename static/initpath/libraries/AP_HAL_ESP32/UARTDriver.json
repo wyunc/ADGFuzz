@@ -1,0 +1,32 @@
+{
+    "vprintf": {
+        "p": [
+            [
+                "uart_desc",
+                "uart_num",
+                "_port"
+            ],
+            0
+        ]
+    },
+    "_begin": {
+        "p": [
+            [
+                "_port",
+                "uart_desc",
+                "uart_num"
+            ],
+            0
+        ]
+    },
+    "_flush": {
+        "p": [
+            [
+                "_port",
+                "uart_desc",
+                "uart_num"
+            ],
+            0
+        ]
+    }
+}

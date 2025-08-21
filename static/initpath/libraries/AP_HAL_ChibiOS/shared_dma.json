@@ -1,0 +1,58 @@
+{
+    "unregister": {
+        ".obj": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "lock_stream": {
+        "cont": [
+            [
+                "locks",
+                "locks",
+                "stream_id",
+                "_mutex_owner",
+                "_mutex_owner",
+                "stream_id",
+                "nullptr"
+            ],
+            1
+        ]
+    },
+    "lock_core": {
+        ".deallocate": [
+            [
+                "deallocate"
+            ],
+            0
+        ],
+        ".obj": [
+            [
+                "this",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "lock": {
+        "contention": [
+            [
+                "lock_stream_stream_id1",
+                "lock_stream_stream_id2"
+            ],
+            2
+        ]
+    },
+    "dma_info": {
+        "_contention_stats": [
+            [
+                "shared_dma_max_stream_id",
+                "dma_stats",
+                "new_nothrow"
+            ],
+            0
+        ]
+    }
+}

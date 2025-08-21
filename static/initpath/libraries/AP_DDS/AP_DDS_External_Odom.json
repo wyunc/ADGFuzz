@@ -1,0 +1,43 @@
+{
+    "handle_external_odom": {
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ],
+        "ros_transform_stamped": [
+            [
+                "msg_transforms",
+                "i"
+            ],
+            0
+        ]
+    },
+    "convert_transform": {
+        "rotation.q4": [
+            [
+                "ros_transform_rotation_z"
+            ],
+            0
+        ],
+        "rotation.q1": [
+            [
+                "ros_transform_rotation_w"
+            ],
+            0
+        ],
+        "rotation.q2": [
+            [
+                "ros_transform_rotation_x"
+            ],
+            0
+        ],
+        "rotation.q3": [
+            [
+                "ros_transform_rotation_y"
+            ],
+            0
+        ]
+    }
+}

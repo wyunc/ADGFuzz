@@ -1,0 +1,232 @@
+{
+    "Run": {
+        "status.y_filt": [
+            [
+                "_sys_id_get_filtered_output_data"
+            ],
+            0
+        ],
+        "status.innov": [
+            [
+                "_sys_id_get_innovation"
+            ],
+            0
+        ],
+        "status.fitness": [
+            [
+                "_sys_id_get_fitness"
+            ],
+            0
+        ],
+        "_interval_sum": [
+            [
+                "constrain__last_run",
+                "1e",
+                "constrain_timestamp_sample",
+                "_f"
+            ],
+            1
+        ],
+        "coeff": [
+            [
+                "_sys_id_get_coefficients"
+            ],
+            0
+        ],
+        "status.dt_model": [
+            [
+                "_filter_dt",
+                "static_cast",
+                "float",
+                "_model_update_scaler"
+            ],
+            1
+        ],
+        "_last_publish": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "status.u_filt": [
+            [
+                "_sys_id_get_filtered_input_data"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "vehicle_torque_setpoint_timestamp"
+            ],
+            1
+        ],
+        "_control_power": [
+            [
+                "vector3f_controls_status_control_power"
+            ],
+            0
+        ],
+        "status.att_p": [
+            [
+                "constrain_radians",
+                "constrain__f",
+                "compute_pid_gmvc_num",
+                "compute_pid_gmvc_den",
+                "compute_pid_gmvc__f",
+                "compute_pid_gmvc_desired_rise_time",
+                "compute_pid_gmvc_model_dt",
+                "_f"
+            ],
+            2
+        ],
+        "status.ki": [
+            [
+                "compute_pid_gmvc_num",
+                "compute_pid_gmvc_den",
+                "compute_pid_gmvc__f",
+                "compute_pid_gmvc_desired_rise_time",
+                "compute_pid_gmvc_model_dt"
+            ],
+            1
+        ],
+        "coeff_var": [
+            [
+                "_sys_id_get_variances"
+            ],
+            0
+        ],
+        "status.kd": [
+            [
+                "compute_pid_gmvc_num",
+                "compute_pid_gmvc_den",
+                "compute_pid_gmvc__f",
+                "compute_pid_gmvc_desired_rise_time",
+                "compute_pid_gmvc_model_dt"
+            ],
+            1
+        ],
+        "status.state": [
+            [
+                "yaw_pause",
+                "_param_mc_at_rise_time_get",
+                "static_cast",
+                "int"
+            ],
+            1
+        ],
+        "status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "status.kc": [
+            [
+                "compute_pid_gmvc_num",
+                "compute_pid_gmvc_den",
+                "compute_pid_gmvc__f",
+                "compute_pid_gmvc_desired_rise_time",
+                "compute_pid_gmvc_model_dt"
+            ],
+            1
+        ],
+        "_interval_count": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_last_model_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "checkFilters": {
+        "model_dt": [
+            [
+                "_interval_sum",
+                "_interval_count",
+                "max_model_dt",
+                "max__filter_dt",
+                "max_int"
+            ],
+            3
+        ],
+        "filter_rate_hz": [
+            [
+                "_f",
+                "_interval_sum",
+                "_interval_count"
+            ],
+            2
+        ]
+    },
+    "updateStateMachine": {
+        "converged_thr": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_input_scale": [
+            [
+                "_param_mc_pitchrate_p_get",
+                "_f",
+                "_param_mc_rollrate_p_get",
+                "_param_mc_yawrate_p_get",
+                "_param_mc_pitchrate_k_get",
+                "_param_mc_rollrate_k_get",
+                "_param_mc_yawrate_k_get"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "complete",
+                "pitch_pause",
+                "yaw",
+                "roll",
+                "init",
+                "pitch",
+                "verification",
+                "roll_pause",
+                "idle",
+                "fail",
+                "wait_for_disarm",
+                "test",
+                "yaw_pause"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "mc_autotune_attitude_control",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

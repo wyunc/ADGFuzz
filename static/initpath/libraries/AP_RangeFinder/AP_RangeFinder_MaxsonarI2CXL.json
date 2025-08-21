@@ -1,0 +1,49 @@
+{
+    "start_reading": {
+        "cmd": [
+            [
+                "ap_range_finder_maxsonari2cxl_command_take_range_reading"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "ret": [
+            [
+                "_dev_transfer_uint8_t",
+                "_dev_transfer_nullptr",
+                "sizeof_val",
+                "val"
+            ],
+            0
+        ],
+        "reading_cm": [
+            [
+                "be16toh_val"
+            ],
+            0
+        ]
+    },
+    "_timer": {
+        "distance": [
+            [
+                "d"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "distance"
+            ],
+            0
+        ]
+    }
+}

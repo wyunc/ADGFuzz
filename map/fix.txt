@@ -1,0 +1,25 @@
+'vel' : 'vel', 'spd', 'speed'
+'velocity' : 'spd', 'speed'
+'accel' : 'accel', 'angle'
+'acceleration' : 'accel', 'angle'
+'rate' : 'rate', 'flow'
+'flow' : 'flow', 'rate'
+'downlink' : 'downlink', 'dnlink'
+'roll' : 'roll', 'rll'
+'battery' : 'batt', 'batte'
+'throttle': 'throttle', 'thr'
+'down' : 'dn'
+'msp': 'msp', 'gps'
+'eahrs' : 'eahrs', 'gps'
+'pitch' : 'pitch', 'pit'
+'attitude' : 'attitude', 'rll', 'pit', 'yaw'
+'target' : 'target', 'targ'
+'servo' : 'servo', 'svo', 'sv', 'srv'
+'servos' : 'servo', 'svo', 'sv', 'srv'
+'rotation' : 'rotation', 'rot'
+'button' : 'button', 'btn'
+"barometer" : "baro"
+"channels" : "channel"
+"voltage" : "voltage", "volt"
+"obstacle" : "obstacle", "obs"
+"oreoled" : "oreo"

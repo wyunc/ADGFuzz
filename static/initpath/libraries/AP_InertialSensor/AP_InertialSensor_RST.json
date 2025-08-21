@@ -1,0 +1,38 @@
+{
+    "_init_gyro": {
+        "_gyro_scale": [
+            [
+                "m_pi",
+                "70e"
+            ],
+            0
+        ]
+    },
+    "_init_accel": {
+        "_accel_scale": [
+            [
+                "accel_one_g",
+                "_244e"
+            ],
+            0
+        ]
+    },
+    "gyro_measure": {
+        "gyro": [
+            [
+                "vector3f_raw_data",
+                "_gyro_scale"
+            ],
+            0
+        ]
+    },
+    "accel_measure": {
+        "accel": [
+            [
+                "_accel_scale",
+                "vector3f_raw_data"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move__addr",
+                "move__bus",
+                "move_hal_i2c_mgr_get_device"
+            ],
+            0
+        ]
+    }
+}

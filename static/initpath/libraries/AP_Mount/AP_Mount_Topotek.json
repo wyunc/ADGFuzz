@@ -1,0 +1,391 @@
+{
+    "update": {
+        "angle_bf_target": [
+            [
+                "_params_neutral_angles_get",
+                "_params_retract_angles_get"
+            ],
+            0
+        ],
+        "_last_req_current_info_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_mode": [
+            [
+                "_mode"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "last_current_angle_ms": [
+            [
+                "_last_current_angle_ms"
+            ],
+            0
+        ]
+    },
+    "set_tracking": {
+        "track_center_y": [
+            [
+                "track_total_height",
+                "p1_y",
+                "p2_y",
+                "int16_t",
+                "track_total_height",
+                "p1_y",
+                "track_total_height",
+                "p1_y",
+                "p2_y",
+                "int16_t",
+                "int16_t"
+            ],
+            2
+        ],
+        "tracking_type": [
+            [
+                "trk_point"
+            ],
+            0
+        ],
+        "track_width": [
+            [
+                "track_range",
+                "p2_x",
+                "p1_x",
+                "track_total_width",
+                "int16_t",
+                "p2_x",
+                "p1_x",
+                "track_total_width",
+                "int16_t",
+                "int16_t"
+            ],
+            3
+        ],
+        "track_height": [
+            [
+                "track_total_height",
+                "p1_y",
+                "p2_y",
+                "int16_t",
+                "track_total_height",
+                "p1_y",
+                "p2_y",
+                "int16_t",
+                "track_range",
+                "int16_t"
+            ],
+            3
+        ],
+        "track_center_x": [
+            [
+                "track_total_width",
+                "p2_x",
+                "p1_x",
+                "track_total_width",
+                "int16_t",
+                "p1_x",
+                "int16_t",
+                "p2_x",
+                "p1_x",
+                "track_total_width",
+                "int16_t"
+            ],
+            2
+        ]
+    },
+    "cancel_tracking": {
+        "track_set": [
+            [
+                "_last_tracking_state",
+                "tracking_in_progress"
+            ],
+            0
+        ]
+    },
+    "get_rangefinder_distance": {
+        "distance_m": [
+            [
+                "_measure_dist_m"
+            ],
+            0
+        ]
+    },
+    "read_incoming_packets": {
+        "data_bytes_received": [
+            [
+                "ap_mount_topotek_packetlen_min",
+                "_msg_buff_len"
+            ],
+            0
+        ],
+        "crc_char1": [
+            [
+                "hex2char_crc_value",
+                "0x0f"
+            ],
+            0
+        ],
+        "_parser.state": [
+            [
+                "_parser_state",
+                "uint8_t",
+                "parse_state",
+                "waiting_for_crc_low",
+                "waiting_for_crc_high",
+                "waiting_for_header2",
+                "waiting_for_id1",
+                "waiting_for_control",
+                "waiting_for_addr1",
+                "waiting_for_header1",
+                "waiting_for_header3"
+            ],
+            0
+        ],
+        "crc_value": [
+            [
+                "calculate_crc__msg_buff",
+                "calculate_crc__msg_buff_len"
+            ],
+            0
+        ],
+        "crc_char2": [
+            [
+                "hex2char_crc_value",
+                "0x0f"
+            ],
+            0
+        ],
+        "_parser.data_len": [
+            [
+                "uint8_t",
+                "char_to_hex_b"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "_uart_available_1024u"
+            ],
+            0
+        ]
+    },
+    "send_angle_target": {
+        "pitch_angle_cd": [
+            [
+                "constrain_int16_angle_rad_pitch",
+                "constrain_int16_degrees",
+                "uint16_t"
+            ],
+            0
+        ],
+        "roll_angle_cd": [
+            [
+                "constrain_int16_degrees",
+                "uint16_t",
+                "constrain_int16_angle_rad_roll"
+            ],
+            0
+        ],
+        "yaw_angle_cd": [
+            [
+                "_params_yaw_angle_min",
+                "constrain_int16_degrees",
+                "_params_yaw_angle_max",
+                "constrain_int16_angle_rad_get_bf_yaw",
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "send_rate_target": {
+        "pitch_angle_speed": [
+            [
+                "constrain_int16_degrees",
+                "constrain_int16_rate_rads_pitch",
+                "angular_velocity_conversion"
+            ],
+            0
+        ],
+        "yaw_angle_speed": [
+            [
+                "constrain_int16_degrees",
+                "constrain_int16_rate_rads_yaw",
+                "angular_velocity_conversion"
+            ],
+            0
+        ],
+        "roll_angle_speed": [
+            [
+                "constrain_int16_rate_rads_roll",
+                "constrain_int16_degrees",
+                "angular_velocity_conversion"
+            ],
+            0
+        ]
+    },
+    "send_location_info": {
+        "lat_min": [
+            [
+                "1e",
+                "labs_loc_lat",
+                "int16_t",
+                "1e",
+                "labs_loc_lat"
+            ],
+            2
+        ],
+        "veh_yaw_deg": [
+            [
+                "wrap_360_ahrs_get_yaw",
+                "wrap_360_degrees"
+            ],
+            0
+        ],
+        "lng_min": [
+            [
+                "1e",
+                "labs_loc_lng",
+                "int16_t",
+                "1e",
+                "labs_loc_lng"
+            ],
+            2
+        ],
+        "alt_amsl_m": [
+            [
+                "alt_amsl_cm"
+            ],
+            0
+        ]
+    },
+    "gimbal_angle_analyse": {
+        "_current_angle_rad.z": [
+            [
+                "radians_yaw_angle_cd"
+            ],
+            0
+        ],
+        "yaw_angle_cd": [
+            [
+                "wrap_180_cd_hexchar4_to_int16",
+                "wrap_180_cd__msg_buff"
+            ],
+            0
+        ],
+        "_last_current_angle_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_current_angle_rad.y": [
+            [
+                "radians_pitch_angle_cd"
+            ],
+            0
+        ],
+        "pitch_angle_cd": [
+            [
+                "hexchar4_to_int16__msg_buff"
+            ],
+            0
+        ],
+        "roll_angle_cd": [
+            [
+                "hexchar4_to_int16__msg_buff"
+            ],
+            0
+        ],
+        "_current_angle_rad.x": [
+            [
+                "radians_roll_angle_cd"
+            ],
+            0
+        ]
+    },
+    "gimbal_record_analyse": {
+        "_recording": [
+            [
+                "_msg_buff"
+            ],
+            0
+        ]
+    },
+    "gimbal_track_analyse": {
+        "_last_tracking_state": [
+            [
+                "tracking_status",
+                "_msg_buff"
+            ],
+            1
+        ]
+    },
+    "gimbal_version_analyse": {
+        "_firmware_ver": [
+            [
+                "version"
+            ],
+            0
+        ],
+        "data_buf_len": [
+            [
+                "char_to_hex__msg_buff"
+            ],
+            0
+        ],
+        "ver_num": [
+            [
+                "char_to_hex_i",
+                "char_to_hex__msg_buff"
+            ],
+            0
+        ]
+    },
+    "send_variablelen_packet": {
+        "crc": [
+            [
+                "calculate_crc_send_buff_ofs",
+                "calculate_crc_send_buff"
+            ],
+            0
+        ],
+        "send_buff_ofs": [
+            [
+                "databuff_len"
+            ],
+            0
+        ],
+        "packet_size": [
+            [
+                "databuff_len",
+                "ap_mount_topotek_packetlen_min"
+            ],
+            0
+        ],
+        "header": [
+            [
+                "fixed_len"
+            ],
+            0
+        ]
+    },
+    "set_gimbal_lock": {
+        "_last_lock": [
+            [
+                "lock"
+            ],
+            0
+        ]
+    }
+}

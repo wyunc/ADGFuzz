@@ -1,0 +1,69 @@
+{
+    "do_gyro_calibration": {
+        "ydiff": [
+            [
+                "worker_data_offset",
+                "worker_data_filter",
+                "_median"
+            ],
+            0
+        ],
+        "maxoff": [
+            [
+                "radians"
+            ],
+            0
+        ],
+        "xdiff": [
+            [
+                "worker_data_offset",
+                "worker_data_filter",
+                "_median"
+            ],
+            0
+        ],
+        "calibration": [
+            [
+                "worker_data_calibrations",
+                "uorb_index"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "try_count",
+                "px4_error",
+                "max_tries",
+                "px4_ok"
+            ],
+            0
+        ],
+        "orb_gyro_count": [
+            [
+                "orb_group_count_sensor_gyro",
+                "orb_group_count_orb_id"
+            ],
+            0
+        ],
+        "cal_return": [
+            [
+                "gyro_calibration_worker_worker_data"
+            ],
+            0
+        ],
+        "worker_data.mavlink_log_pub": [
+            [
+                "mavlink_log_pub"
+            ],
+            0
+        ],
+        "zdiff": [
+            [
+                "worker_data_offset",
+                "worker_data_filter",
+                "_median"
+            ],
+            0
+        ]
+    }
+}

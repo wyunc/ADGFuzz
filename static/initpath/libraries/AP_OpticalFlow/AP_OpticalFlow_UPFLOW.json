@@ -1,0 +1,70 @@
+{
+    "update": {
+        "flowScaler": [
+            [
+                "_flow_scaler"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "uart_read",
+                "uint8_t"
+            ],
+            1
+        ],
+        "gyro_sum.y": [
+            [
+                "gyro_y"
+            ],
+            0
+        ],
+        "state.surface_quality": [
+            [
+                "updata_quality"
+            ],
+            0
+        ],
+        "gyro_sum.x": [
+            [
+                "gyro_x"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "uart_available_1024u"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "state.bodyRate": [
+            [
+                "gyro_sum_y",
+                "vector2f",
+                "gyro_sum_count",
+                "gyro_sum_x"
+            ],
+            0
+        ],
+        "state.flowRate": [
+            [
+                "updata_integration_timespan",
+                "_0e",
+                "upflow_pixel_scaling"
+            ],
+            1
+        ],
+        "flowScaleFactor": [
+            [
+                "flow_scaler"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "get_sensor_status_flags": {
+        "present": [
+            [
+                "control_sensors_present"
+            ],
+            0
+        ],
+        "health": [
+            [
+                "control_sensors_health"
+            ],
+            0
+        ],
+        "enabled": [
+            [
+                "control_sensors_enabled"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "mavlink_system.sysid": [
+            [
+                "sysid_this_mav"
+            ],
+            0
+        ]
+    },
+    "send_textv": {
+        "mask": [
+            [
+                "statustext_send_channel_mask",
+                "_num_gcs"
+            ],
+            0
+        ]
+    },
+    "send_to_active_channels": {
+        "c": [
+            [
+                "chan_i"
+            ],
+            0
+        ],
+        "entry": [
+            [
+                "mavlink_get_msg_entry_msgid"
+            ],
+            0
+        ]
+    },
+    "send_named_float": {
+        "packet.value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "packet.time_boot_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "enable_high_latency_connections": {
+        "high_latency_link_enabled": [
+            [
+                "enabled"
+            ],
+            0
+        ]
+    },
+    "install_alternative_protocol": {
+        "link": [
+            [
+                "chan_c"
+            ],
+            0
+        ],
+        "alternative.handler": [
+            [
+                "handler"
+            ],
+            0
+        ]
+    },
+    "update_sensor_status_flags": {
+        "optflow": [
+            [
+                "opticalflow"
+            ],
+            0
+        ],
+        "logging_enabled": [
+            [
+                "logger_logging_enabled"
+            ],
+            0
+        ],
+        "visual_odom": [
+            [
+                "visualodom"
+            ],
+            0
+        ],
+        "enabled": [
+            [
+                "_airspeed_use",
+                "ahrs_airspeed_sensor_enabled",
+                "nullptr",
+                "get_singleton"
+            ],
+            2
+        ],
+        "logging_healthy": [
+            [
+                "logger_logging_failed"
+            ],
+            0
+        ],
+        "use": [
+            [
+                "airspeed_use"
+            ],
+            0
+        ],
+        "logging_present": [
+            [
+                "logger_logging_present"
+            ],
+            0
+        ],
+        "barometer": [
+            [
+                "baro"
+            ],
+            0
+        ]
+    },
+    "gcs_out_of_space_to_send": {
+        "link": [
+            [
+                "gcs_chan_chan"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "handle_rally_point": {
+        "rally_point.alt": [
+            [
+                "packet_alt"
+            ],
+            0
+        ],
+        "rally_point.flags": [
+            [
+                "packet_flags"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "rally"
+            ],
+            0
+        ],
+        "rally_point.break_alt": [
+            [
+                "packet_break_alt"
+            ],
+            0
+        ],
+        "rally_point.lng": [
+            [
+                "packet_lng"
+            ],
+            0
+        ],
+        "rally_point.land_dir": [
+            [
+                "packet_land_dir"
+            ],
+            0
+        ],
+        "rally_point.lat": [
+            [
+                "packet_lat"
+            ],
+            0
+        ]
+    },
+    "handle_rally_fetch_point": {
+        "r": [
+            [
+                "rally"
+            ],
+            0
+        ]
+    }
+}

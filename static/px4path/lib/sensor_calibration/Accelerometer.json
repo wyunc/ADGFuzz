@@ -1,0 +1,123 @@
+{
+    "set_device_id": {
+        "_external": [
+            [
+                "device_external_device_id"
+            ],
+            1
+        ],
+        "_device_id": [
+            [
+                "device_id"
+            ],
+            0
+        ]
+    },
+    "SensorCorrectionsUpdate": {
+        "_thermal_offset": [
+            [
+                "vector3f",
+                "corrections_accel_offset_1",
+                "corrections_accel_offset_2",
+                "corrections_accel_offset_3",
+                "corrections_accel_offset_0"
+            ],
+            0
+        ]
+    },
+    "set_offset": {
+        "_offset": [
+            [
+                "offset"
+            ],
+            0
+        ]
+    },
+    "set_scale": {
+        "_scale": [
+            [
+                "scale"
+            ],
+            0
+        ]
+    },
+    "set_rotation": {
+        "_rotation": [
+            [
+                "dcmf_get_sensor_level_adjustment",
+                "get_rot_matrix_rotation"
+            ],
+            0
+        ],
+        "_rotation_enum": [
+            [
+                "rotation"
+            ],
+            0
+        ]
+    },
+    "set_calibration_index": {
+        "_calibration_index": [
+            [
+                "calibration_index"
+            ],
+            0
+        ]
+    },
+    "ParametersUpdate": {
+        "_calibration_index": [
+            [
+                "_device_id",
+                "find_current_calibration_index_sensor_string"
+            ],
+            0
+        ]
+    },
+    "ParametersLoad": {
+        "rotation_value": [
+            [
+                "get_calibration_param_int32_sensor_string",
+                "rotation_none",
+                "_calibration_index"
+            ],
+            0
+        ],
+        "_priority": [
+            [
+                "get_calibration_param_int32_sensor_string",
+                "default_external_priority",
+                "_external",
+                "default_priority",
+                "_calibration_index"
+            ],
+            0
+        ]
+    },
+    "Reset": {
+        "_priority": [
+            [
+                "_external",
+                "default_external_priority",
+                "default_priority"
+            ],
+            0
+        ],
+        "_scale": [
+            [
+                "_f",
+                "vector3f"
+            ],
+            0
+        ]
+    },
+    "ParametersSave": {
+        "_calibration_index": [
+            [
+                "desired_calibration_index",
+                "find_available_calibration_index_sensor_string",
+                "_device_id"
+            ],
+            0
+        ]
+    }
+}

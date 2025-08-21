@@ -1,0 +1,364 @@
+{
+    "controlMagFusion": {
+        "R_DECL": [
+            [
+                "sq"
+            ],
+            0
+        ],
+        "R_MAG": [
+            [
+                "max_sq",
+                "sq",
+                "max__params_mag_noise"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_mag_y": [
+            [
+                "_f",
+                "aid_src_test_ratio"
+            ],
+            0
+        ],
+        "mag_consistent_or_no_ne_aiding": [
+            [
+                "_control_status_flags_mag_heading_consistent",
+                "is_north_east_aiding_active"
+            ],
+            0
+        ],
+        "declination_rad": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "origin_newer_than_last_mag": [
+            [
+                "aid_src_time_last_fuse",
+                "global_origin_get_projection_reference_timestamp"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "_control_status.flags.mag_dec": [
+            [
+                "_control_status_flags_mag",
+                "_control_status_flags_vehicle_at_rest",
+                "is_north_east_aiding_active"
+            ],
+            1
+        ],
+        "_innov_check_fail_status.flags.reject_mag_x": [
+            [
+                "_f",
+                "aid_src_test_ratio"
+            ],
+            0
+        ],
+        "update_all_states": [
+            [
+                "_control_status_flags_mag_hdg",
+                "_control_status_flags_mag_3d"
+            ],
+            0
+        ],
+        "_fault_status.flags.bad_mag_x": [
+            [
+                "aid_src_innovation_variance",
+                "aid_src_observation_variance"
+            ],
+            0
+        ],
+        "_params.mag_fusion_type": [
+            [
+                "auto",
+                "_control_status_flags_mag_3d"
+            ],
+            0
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out_aid_src_time_last_fuse",
+                "is_timed_out__params_reset_timeout_max"
+            ],
+            0
+        ],
+        "_wmm_mag_time_last_checked": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "update_tilt": [
+            [
+                "_control_status_flags_mag_3d"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_mag"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_mag_z": [
+            [
+                "_f",
+                "aid_src_test_ratio"
+            ],
+            0
+        ],
+        "_fault_status.flags.bad_mag_y": [
+            [
+                "aid_src_innovation_variance",
+                "aid_src_observation_variance"
+            ],
+            0
+        ],
+        "_fault_status.flags.bad_mag_z": [
+            [
+                "aid_src_innovation_variance",
+                "aid_src_observation_variance"
+            ],
+            0
+        ],
+        "reset_heading": [
+            [
+                "_control_status_flags_mag_hdg",
+                "_control_status_flags_mag_3d",
+                "_control_status_flags_yaw_align"
+            ],
+            0
+        ]
+    },
+    "checkHaglYawResetReq": {
+        "above_mag_anomalies": [
+            [
+                "get_terrain_v_pos",
+                "mag_anomalies_max_hagl",
+                "_gpos_altitude"
+            ],
+            0
+        ]
+    },
+    "resetMagStates": {
+        "_state.mag_B": [
+            [
+                "r_to_body",
+                "_wmm_earth_field_gauss",
+                "mag"
+            ],
+            0
+        ],
+        "mag_B_before_reset": [
+            [
+                "_state_mag_b"
+            ],
+            0
+        ],
+        "R_to_body": [
+            [
+                "quat_to_inverse_rot_mat__state_quat_nominal"
+            ],
+            0
+        ],
+        "_flt_mag_align_start_time": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "mag_I": [
+            [
+                "_r_to_earth",
+                "_wmm_earth_field_gauss",
+                "mag"
+            ],
+            0
+        ],
+        "mag_I_before_reset": [
+            [
+                "_state_mag_i"
+            ],
+            0
+        ],
+        "_state.mag_I": [
+            [
+                "mag_i"
+            ],
+            0
+        ]
+    },
+    "checkMagHeadingConsistency": {
+        "innovation": [
+            [
+                "wrap_pi_get_euler_yaw",
+                "atan2f_mag_earth_pred",
+                "r_to_earth",
+                "_state_mag_b",
+                "mag_sample_mag",
+                "get_mag_declination",
+                "wrap_pi__r_to_earth"
+            ],
+            4
+        ],
+        "mag_bias_var": [
+            [
+                "get_mag_bias_variance"
+            ],
+            0
+        ],
+        "R_to_earth": [
+            [
+                "update_yaw_in_rot_mat__r_to_earth",
+                "update_yaw_in_rot_mat__f"
+            ],
+            0
+        ]
+    },
+    "checkMagField": {
+        "inc_tol_rad": [
+            [
+                "radians__params_mag_check_inclination_tolerance_deg"
+            ],
+            0
+        ],
+        "inc_error_rad": [
+            [
+                "wrap_pi__wmm_inclination_rad",
+                "wrap_pi__mag_inclination"
+            ],
+            0
+        ],
+        "_time_last_mag_check_failing": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_mag_inclination": [
+            [
+                "1e",
+                "fmaxf_mag_earth_norm",
+                "asinf_mag_earth"
+            ],
+            0
+        ],
+        "mag_earth": [
+            [
+                "mag_sample",
+                "_r_to_earth"
+            ],
+            0
+        ],
+        "_mag_strength": [
+            [
+                "mag_sample_length"
+            ],
+            0
+        ]
+    },
+    "resetMagHeading": {
+        "mag_bias_var": [
+            [
+                "get_mag_bias_variance"
+            ],
+            0
+        ],
+        "R_to_earth": [
+            [
+                "update_yaw_in_rot_mat__r_to_earth",
+                "update_yaw_in_rot_mat__f"
+            ],
+            0
+        ],
+        "_time_last_heading_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "yaw_new_variance": [
+            [
+                "max__params_mag_heading_noise",
+                "sq",
+                "max_sq"
+            ],
+            0
+        ],
+        "yaw_new": [
+            [
+                "mag",
+                "r_to_earth",
+                "_state_mag_b",
+                "get_mag_declination",
+                "atan2f_mag_earth_pred"
+            ],
+            3
+        ]
+    },
+    "updateWorldMagneticModel": {
+        "_wmm_earth_field_gauss": [
+            [
+                "dcmf_eulerf",
+                "dcmf_inclination_rad",
+                "dcmf_declination_rad",
+                "vector3f_strength_gauss"
+            ],
+            0
+        ],
+        "_wmm_declination_rad": [
+            [
+                "radians_latitude_deg",
+                "radians_get_mag_declination_degrees",
+                "radians_longitude_deg"
+            ],
+            1
+        ],
+        "declination_changed": [
+            [
+                "fabsf__wmm_declination_rad",
+                "radians__f",
+                "fabsf_declination_rad"
+            ],
+            0
+        ],
+        "_wmm_inclination_rad": [
+            [
+                "radians_latitude_deg",
+                "radians_longitude_deg",
+                "radians_get_mag_inclination_degrees"
+            ],
+            1
+        ],
+        "strength_changed": [
+            [
+                "fabsf_strength_gauss",
+                "fabsf__wmm_field_strength_gauss"
+            ],
+            0
+        ],
+        "inclination_changed": [
+            [
+                "fabsf__wmm_inclination_rad",
+                "radians__f",
+                "fabsf_inclination_rad"
+            ],
+            0
+        ],
+        "_wmm_field_strength_gauss": [
+            [
+                "get_mag_strength_gauss_longitude_deg",
+                "get_mag_strength_gauss_latitude_deg"
+            ],
+            1
+        ]
+    }
+}

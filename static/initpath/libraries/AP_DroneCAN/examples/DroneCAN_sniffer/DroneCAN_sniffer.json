@@ -1,0 +1,145 @@
+{
+    "count_msg": {
+        ".avg_period_us": [
+            [
+                "i",
+                "counters",
+                "_count",
+                "_last_time_us",
+                "i",
+                "micros64",
+                "counters",
+                "_avg_period_us"
+            ],
+            2
+        ],
+        ".max_period_us": [
+            [
+                "_last_time_us",
+                "i",
+                "micros64",
+                "counters"
+            ],
+            2
+        ],
+        ".min_period_us": [
+            [
+                "_last_time_us",
+                "i",
+                "micros64",
+                "counters"
+            ],
+            2
+        ],
+        ".last_time_us": [
+            [
+                "micros64",
+                "micros64"
+            ],
+            1
+        ],
+        ".msg_name": [
+            [
+                "name"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "node_status_pub": [
+            [
+                "new_nothrow",
+                "new_nothrow",
+                "driver_index",
+                "canard_interface",
+                "uavcan_protocol_node_status",
+                "publisher"
+            ],
+            1
+        ],
+        "node_info.software_version.major": [
+            [
+                "ap_dronecan_sw_vers_major"
+            ],
+            0
+        ],
+        "node_info.hardware_version.major": [
+            [
+                "ap_dronecan_hw_vers_major"
+            ],
+            0
+        ],
+        "node_info.name.len": [
+            [
+                "sizeof_node_info_name_data",
+                "driver_index",
+                "snprintf_charnode_info_name_data"
+            ],
+            0
+        ],
+        "node_info.hardware_version.minor": [
+            [
+                "ap_dronecan_hw_vers_minor"
+            ],
+            0
+        ],
+        "node_info_srv": [
+            [
+                "new_nothrow",
+                "server",
+                "uavcan_protocol_get_node_info_request",
+                "allocate_static_callback_cb_get_node_info_request",
+                "new_nothrow",
+                "driver_index",
+                "canard_interface"
+            ],
+            1
+        ],
+        "node_info.software_version.minor": [
+            [
+                "ap_dronecan_sw_vers_minor"
+            ],
+            0
+        ],
+        "hal_mutable": [
+            [
+                "get_hal_mutable"
+            ],
+            0
+        ]
+    },
+    "send_node_status": {
+        "msg.health": [
+            [
+                "uavcan_protocol_nodestatus_health_ok"
+            ],
+            0
+        ],
+        "msg.uptime_sec": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "msg.mode": [
+            [
+                "uavcan_protocol_nodestatus_mode_operational"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "last_status_send": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_print_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "update": {
+        "target_turn_rate": [
+            [
+                "desired_steering",
+                "radians_g2_acro_turn_rate"
+            ],
+            0
+        ]
+    }
+}

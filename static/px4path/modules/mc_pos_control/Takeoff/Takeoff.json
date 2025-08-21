@@ -1,0 +1,41 @@
+{
+    "generateInitialRampValue": {
+        "_takeoff_ramp_vz_init": [
+            [
+                "max_velocity_p_gain",
+                "constants_one_g"
+            ],
+            1
+        ]
+    },
+    "updateTakeoffState": {
+        "_takeoff_ramp_progress": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_takeoff_state": [
+            [
+                "ready_for_takeoff",
+                "disarmed",
+                "flight",
+                "spoolup",
+                "rampup"
+            ],
+            0
+        ]
+    },
+    "updateRamp": {
+        "upwards_velocity_limit": [
+            [
+                "dt",
+                "_takeoff_ramp_time",
+                "_f",
+                "takeoff_desired_vz",
+                "_takeoff_ramp_vz_init"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "init": {
+        "icucfg.frequency": [
+            [
+                "input_capture_frequency"
+            ],
+            0
+        ],
+        "channel_config.alvl": [
+            [
+                "eicu_input_active_high",
+                "eicu_input_active_low"
+            ],
+            0
+        ],
+        "_icu_drv": [
+            [
+                "icu_drv"
+            ],
+            0
+        ],
+        "aux_channel_config.alvl": [
+            [
+                "eicu_input_active_high",
+                "eicu_input_active_low"
+            ],
+            0
+        ],
+        "aux_chan": [
+            [
+                "get_pair_channel_chan"
+            ],
+            0
+        ],
+        "channel_config.capture_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "aux_channel_config.capture_cb": [
+            [
+                "_irq_handler"
+            ],
+            0
+        ]
+    },
+    "_irq_handler": {
+        "mask": [
+            [
+                "get_pair_channel_aux_channel",
+                "stm32_tim_sr_cc1of",
+                "aux_channel"
+            ],
+            1
+        ],
+        "pulse.w0": [
+            [
+                "get_pair_channel_aux_channel",
+                "eicup_tim_ccr"
+            ],
+            1
+        ],
+        "pulse.w1": [
+            [
+                "aux_channel",
+                "eicup_tim_ccr"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "widths1": [
+            [
+                "uint16_t_pulse_w1",
+                "uint16_t_pulse_w0"
+            ],
+            0
+        ],
+        "last_value": [
+            [
+                "pulse_w1"
+            ],
+            0
+        ],
+        "widths0": [
+            [
+                "uint16_t_last_value",
+                "uint16_t_pulse_w0"
+            ],
+            0
+        ]
+    }
+}

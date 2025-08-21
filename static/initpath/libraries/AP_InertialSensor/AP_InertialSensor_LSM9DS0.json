@@ -1,0 +1,157 @@
+{
+    "_init_sensor": {
+        "success": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ],
+        "_drdy_pin_g": [
+            [
+                "hal_gpio_channel__drdy_pin_num_g"
+            ],
+            0
+        ],
+        "_spi_sem": [
+            [
+                "_dev_gyro_get_semaphore"
+            ],
+            0
+        ],
+        "_drdy_pin_a": [
+            [
+                "hal_gpio_channel__drdy_pin_num_a"
+            ],
+            0
+        ]
+    },
+    "_hardware_init": {
+        "whoami_g": [
+            [
+                "_register_read_g_who_am_i_g"
+            ],
+            0
+        ],
+        "whoami": [
+            [
+                "_register_read_xm_who_am_i_xm"
+            ],
+            0
+        ]
+    },
+    "_gyro_disable_i2c": {
+        "a": [
+            [
+                "_register_read_g_0x05"
+            ],
+            0
+        ]
+    },
+    "_accel_disable_i2c": {
+        "a": [
+            [
+                "_register_read_xm_0x15",
+                "_register_read_xm_0x02"
+            ],
+            0
+        ]
+    },
+    "_set_gyro_scale": {
+        "_gyro_scale": [
+            [
+                "deg_to_rad"
+            ],
+            0
+        ]
+    },
+    "_set_accel_scale": {
+        "_accel_scale": [
+            [
+                "gravity_mss",
+                "float",
+                "scale"
+            ],
+            0
+        ]
+    },
+    "_accel_data_ready": {
+        "status": [
+            [
+                "_register_read_xm_status_reg_a"
+            ],
+            0
+        ]
+    },
+    "_gyro_data_ready": {
+        "status": [
+            [
+                "_register_read_g_status_reg_g"
+            ],
+            0
+        ]
+    },
+    "_read_data_transaction_a": {
+        "regtemp": [
+            [
+                "0x_c0",
+                "out_temp_l_xm"
+            ],
+            0
+        ],
+        "_temperature": [
+            [
+                "_temp_filter_apply_traw"
+            ],
+            0
+        ],
+        "accel_data": [
+            [
+                "_accel_scale"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "0x_c0",
+                "out_x_l_a"
+            ],
+            0
+        ]
+    },
+    "_read_data_transaction_g": {
+        "reg": [
+            [
+                "0x_c0",
+                "out_x_l_g"
+            ],
+            0
+        ],
+        "gyro_data": [
+            [
+                "_gyro_scale"
+            ],
+            0
+        ]
+    },
+    "_dump_registers": {
+        "reg": [
+            [
+                "out_temp_l_xm"
+            ],
+            1
+        ],
+        "last": [
+            [
+                "act_dur"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "_register_read_g_reg",
+                "_register_read_xm_reg"
+            ],
+            0
+        ]
+    }
+}

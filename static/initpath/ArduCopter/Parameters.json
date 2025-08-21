@@ -1,0 +1,182 @@
+{
+    "convert_pid_parameters": {
+        "rc_feel_rp_conversion_info": [
+            [
+                "k_param_rc_feel_rp",
+                "ap_param_int8"
+            ],
+            0
+        ]
+    },
+    "convert_lgr_parameters": {
+        "servo_max": [
+            [
+                "find_ptype",
+                "find_pname",
+                "ap_int16"
+            ],
+            0
+        ],
+        "servo_trim": [
+            [
+                "find_ptype",
+                "find_pname",
+                "ap_int16"
+            ],
+            0
+        ],
+        "servo_reversed": [
+            [
+                "find_ptype",
+                "find_pname",
+                "ap_int16"
+            ],
+            0
+        ],
+        "old_retract": [
+            [
+                "old_pwm_get",
+                "uint16_t"
+            ],
+            0
+        ],
+        "servo_min": [
+            [
+                "find_ptype",
+                "find_pname",
+                "ap_int16"
+            ],
+            0
+        ],
+        "old_deploy": [
+            [
+                "old_pwm_get",
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "convert_tradheli_parameters": {
+        "tailspeed_pct": [
+            [
+                "uint16_t",
+                "tailspeed_get"
+            ],
+            0
+        ],
+        "swash_pos2_exist": [
+            [
+                "find_old_parameter_swash_pos_2",
+                "find_old_parameter_singleheli_conversion_info"
+            ],
+            0
+        ],
+        "swash_type_exists": [
+            [
+                "find_old_parameter_swash_type_info",
+                "find_old_parameter_swash_type"
+            ],
+            0
+        ],
+        "swash2_pos3_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash2_pos_3"
+            ],
+            0
+        ],
+        "swash2_pos2_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash2_pos_2"
+            ],
+            0
+        ],
+        "swash1_pos3_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash1_pos_3"
+            ],
+            0
+        ],
+        "swash1_phang_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash1_phang"
+            ],
+            0
+        ],
+        "ap2": [
+            [
+                "find_ptype"
+            ],
+            0
+        ],
+        "swash_pos3_exist": [
+            [
+                "find_old_parameter_swash_pos_3",
+                "find_old_parameter_singleheli_conversion_info"
+            ],
+            0
+        ],
+        "table_size": [
+            [
+                "array_size_dualheli_conversion_info",
+                "array_size_rscheli_conversion_info",
+                "array_size_rschelipct_conversion_info",
+                "array_size_collhelipct_conversion_info",
+                "array_size_singleheli_conversion_info"
+            ],
+            0
+        ],
+        "swash_pos1_exist": [
+            [
+                "find_old_parameter_swash_pos_1",
+                "find_old_parameter_singleheli_conversion_info"
+            ],
+            0
+        ],
+        "swash1_pos2_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash1_pos_2"
+            ],
+            0
+        ],
+        "swash2_phang_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash2_phang"
+            ],
+            0
+        ],
+        "swash2_pos1_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash2_pos_1"
+            ],
+            0
+        ],
+        "swash1_pos1_exist": [
+            [
+                "find_old_parameter_dualheli_conversion_info",
+                "find_old_parameter_swash1_pos_1"
+            ],
+            0
+        ],
+        "swash_phang_exist": [
+            [
+                "find_old_parameter_swash_phang",
+                "find_old_parameter_singleheli_conversion_info"
+            ],
+            0
+        ],
+        "tailspeed": [
+            [
+                "ap_int16",
+                "find_ptype"
+            ],
+            0
+        ]
+    }
+}

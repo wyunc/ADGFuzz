@@ -1,0 +1,62 @@
+{
+    "__wrap_snprintf": {
+        "done": [
+            [
+                "chvsnprintf_str",
+                "hal_util_vsnprintf_size",
+                "chvsnprintf_fmt",
+                "hal_util_vsnprintf_str",
+                "hal_util_vsnprintf_fmt",
+                "chvsnprintf_arg",
+                "chvsnprintf_size",
+                "hal_util_vsnprintf_arg"
+            ],
+            0
+        ]
+    },
+    "__wrap_vasprintf": {
+        "buf": [
+            [
+                "calloc_len",
+                "char"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "vsnprintf_ap",
+                "vsnprintf_fmt",
+                "vsnprintf_null"
+            ],
+            0
+        ]
+    },
+    "__wrap_asprintf": {
+        "ret": [
+            [
+                "vasprintf_ap",
+                "vasprintf_fmt",
+                "vasprintf_strp"
+            ],
+            0
+        ]
+    },
+    "__wrap_printf": {
+        "done": [
+            [
+                "vprintf_console_hook_fmt",
+                "vprintf_console_hook_arg"
+            ],
+            0
+        ]
+    },
+    "__wrap_fprintf": {
+        "done": [
+            [
+                "vprintf_console_hook_arg",
+                "vprintf_console_hook_fmt"
+            ],
+            0
+        ]
+    }
+}

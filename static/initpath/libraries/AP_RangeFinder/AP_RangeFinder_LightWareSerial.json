@@ -1,0 +1,38 @@
+{
+    "get_reading": {
+        "msb_set": [
+            [
+                "bit_is_set_c"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "max_distance_cm",
+                "uint16_max",
+                "lightware_out_of_range_add_cm",
+                "valid_count",
+                "lightware_dist_max_cm",
+                "strtof_linebuf",
+                "strtof_nullptr",
+                "0x7f",
+                "c",
+                "c"
+            ],
+            4
+        ],
+        "protocol_state": [
+            [
+                "binary",
+                "legacy"
+            ],
+            0
+        ],
+        "last_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

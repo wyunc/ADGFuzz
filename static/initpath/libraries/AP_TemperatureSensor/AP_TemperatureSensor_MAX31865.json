@@ -1,0 +1,27 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move_hal_spi_get_device",
+                "move_name"
+            ],
+            0
+        ]
+    },
+    "thread_tick": {
+        "temperature": [
+            [
+                "float",
+                "htobe16_raw_data"
+            ],
+            2
+        ],
+        "is_fault": [
+            [
+                "0x0001",
+                "htobe16_raw_data"
+            ],
+            1
+        ]
+    }
+}

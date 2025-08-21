@@ -1,0 +1,86 @@
+{
+    "irq_handler": {
+        ".last_pulse_us": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        ".dt_sum": [
+            [
+                "timestamp",
+                "state_instance",
+                "irq_state",
+                "_last_pulse_us"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.rate_rpm": [
+            [
+                "signal_quality_filter_apply_rpm"
+            ],
+            0
+        ],
+        "state.signal_quality": [
+            [
+                "powf_quality",
+                "fabsf_filter_value",
+                "fabsf_rpm",
+                "signal_quality_filter_get",
+                "state_signal_quality"
+            ],
+            2
+        ],
+        "maximum": [
+            [
+                "_maximum",
+                "state_instance",
+                "ap_rpm__params"
+            ],
+            0
+        ],
+        "last_pin": [
+            [
+                "get_pin"
+            ],
+            0
+        ],
+        "irqstate": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ],
+        "rpm": [
+            [
+                "_0e6",
+                "float",
+                "static_cast",
+                "_dt_count",
+                "state_instance",
+                "_dt_sum",
+                "irq_state",
+                "state_instance",
+                "_scaling",
+                "ap_rpm__params"
+            ],
+            2
+        ],
+        "minimum": [
+            [
+                "_minimum",
+                "state_instance",
+                "ap_rpm__params"
+            ],
+            0
+        ]
+    }
+}

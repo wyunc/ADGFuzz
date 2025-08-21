@@ -1,0 +1,88 @@
+{
+    "section": {
+        "i": [
+            [
+                "_triangle_index_v",
+                "_triangle_index_inclusive"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "_subtriangle_index_inclusive",
+                "_subtriangle_index_i",
+                "_subtriangle_index_v"
+            ],
+            0
+        ]
+    },
+    "_from_neighbor_umbrella": {
+        "x1": [
+            [
+                "idx",
+                "_v1_c1",
+                "_neighbor_umbrellas"
+            ],
+            0
+        ],
+        "x2": [
+            [
+                "idx",
+                "_v2_c1",
+                "_neighbor_umbrellas"
+            ],
+            0
+        ],
+        "x0": [
+            [
+                "idx",
+                "_v0_c0",
+                "v",
+                "_neighbor_umbrella_component_idx",
+                "_inverses",
+                "_v0_c4",
+                "_neighbor_umbrellas"
+            ],
+            2
+        ],
+        "x4": [
+            [
+                "v",
+                "_neighbor_umbrella_component_idx",
+                "_inverses",
+                "idx",
+                "_v4_c4",
+                "_neighbor_umbrellas"
+            ],
+            2
+        ]
+    },
+    "_triangle_index": {
+        "w": [
+            [
+                "_inverses",
+                "w_z",
+                "v",
+                "w_x",
+                "w_y"
+            ],
+            0
+        ],
+        "w.z": [
+            [
+                "w_z"
+            ],
+            0
+        ]
+    },
+    "_subtriangle_index": {
+        "w": [
+            [
+                "v",
+                "_mid_inverses",
+                "triangle_index"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,324 @@
+{
+    "_process_byte": {
+        "_start_frame_time_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "check_frame": {
+        "_last_frame_time_us": [
+            [
+                "timestamp_us",
+                "_last_rx_frame_time_us"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc8_dvb_s2_update__frame_length",
+                "crc8_dvb_s2_update_crsf_header_len",
+                "crc8_dvb_s2_update__frame_bytes"
+            ],
+            0
+        ],
+        "_frame_ofs": [
+            [
+                "crsf_header_len",
+                "_frame_length"
+            ],
+            1
+        ],
+        "_last_tx_frame_time_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ]
+    },
+    "skip_to_next_frame": {
+        "_frame_ofs": [
+            [
+                "memchr_crsf_address_flight_controller",
+                "uint8_t",
+                "const",
+                "memchr__frame_ofs",
+                "memchr__frame_bytes",
+                "_frame_bytes"
+            ],
+            1
+        ],
+        "_start_frame_time_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "b": [
+            [
+                "_uart_read"
+            ],
+            0
+        ],
+        "_last_frame_time_us": [
+            [
+                "micros",
+                "millis"
+            ],
+            1
+        ],
+        "_use_lq_for_rssi": [
+            [
+                "rc_option_is_enabled_use_crsf_lq_as_rssi"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "_uart_available",
+                "255u"
+            ],
+            0
+        ]
+    },
+    "write_frame": {
+        "crc": [
+            [
+                "crc8_dvb_s2_i",
+                "crc8_dvb_s2_crc",
+                "crc8_dvb_s2_frame_payload",
+                "crc8_dvb_s2_frame_type"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "frame",
+                "uint8_t",
+                "i"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    },
+    "decode_crsf_packet": {
+        "fptr": [
+            [
+                "_frame",
+                "uint8_t"
+            ],
+            0
+        ],
+        "rc_active": [
+            [
+                "_uart"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    },
+    "decode_variable_bit_channels": {
+        "channelMask": [
+            [
+                "crsf_subset_rc_res_mask_11b",
+                "crsf_subset_rc_res_mask_10b",
+                "crsf_subset_rc_res_mask_13b",
+                "crsf_subset_rc_res_mask_12b"
+            ],
+            0
+        ],
+        "channel_data": [
+            [
+                "payload",
+                "const",
+                "subset_channels_frame"
+            ],
+            0
+        ],
+        "readByte": [
+            [
+                "payload",
+                "read_byte_index"
+            ],
+            0
+        ],
+        "bitsMerged": [
+            [
+                "channel_bits"
+            ],
+            0
+        ],
+        "channelBits": [
+            [
+                "crsf_subset_rc_res_bits_10b",
+                "crsf_subset_rc_res_bits_13b",
+                "crsf_subset_rc_res_bits_11b",
+                "crsf_subset_rc_res_bits_12b"
+            ],
+            0
+        ],
+        "channelScale": [
+            [
+                "crsf_subset_rc_channel_scale_12b",
+                "crsf_subset_rc_channel_scale_11b",
+                "crsf_subset_rc_channel_scale_10b",
+                "crsf_subset_rc_channel_scale_13b"
+            ],
+            0
+        ],
+        "numOfChannels": [
+            [
+                "crsf_max_channels",
+                "channel_bits",
+                "uint8_t_crsf_subset_rc_starting_channel_bits",
+                "uint8_t_frame_length"
+            ],
+            0
+        ]
+    },
+    "process_telemetry": {
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    },
+    "process_link_stats_frame": {
+        "_link_status.active_antenna": [
+            [
+                "link_active_antenna"
+            ],
+            0
+        ],
+        "_link_status.tx_power": [
+            [
+                "link_uplink_tx_power",
+                "tx_powers"
+            ],
+            0
+        ],
+        "_link_status.rssi": [
+            [
+                "int16_t_roundf",
+                "derive_scaled_lq_value_link_uplink_status",
+                "int16_t_rssi_dbm"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "data",
+                "link_statistics_frame",
+                "const"
+            ],
+            0
+        ],
+        "_link_status.link_quality": [
+            [
+                "link_uplink_status"
+            ],
+            0
+        ],
+        "_link_status.snr": [
+            [
+                "link_uplink_snr",
+                "int8_min"
+            ],
+            0
+        ],
+        "_link_status.rssi_dbm": [
+            [
+                "link_uplink_rssi_ant2",
+                "link_uplink_rssi_ant1"
+            ],
+            1
+        ],
+        "_link_status.rf_mode": [
+            [
+                "link_rf_mode",
+                "crsf_rf_max_modes",
+                "rf_mode_max_modes",
+                "1u"
+            ],
+            1
+        ]
+    },
+    "process_link_stats_rx_frame": {
+        "_link_status.rssi": [
+            [
+                "link_rssi_percent",
+                "derive_scaled_lq_value_link_link_quality"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "data",
+                "const",
+                "link_statistics_rx_frame"
+            ],
+            0
+        ]
+    },
+    "process_link_stats_tx_frame": {
+        "_link_status.rssi": [
+            [
+                "link_rssi_percent",
+                "derive_scaled_lq_value_link_link_quality"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "const",
+                "link_statistics_tx_frame",
+                "data"
+            ],
+            0
+        ]
+    },
+    "change_baud_rate": {
+        "uart": [
+            [
+                "get_available_uart"
+            ],
+            0
+        ],
+        "_new_baud_rate": [
+            [
+                "baudrate"
+            ],
+            0
+        ]
+    },
+    "process_handshake": {
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    },
+    "start_bind": {
+        "telem": [
+            [
+                "crsf_telem"
+            ],
+            0
+        ]
+    }
+}

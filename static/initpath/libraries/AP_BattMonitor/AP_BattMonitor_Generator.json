@@ -1,0 +1,37 @@
+{
+    "read": {
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "generator_get_current"
+            ],
+            0
+        ],
+        "_state.consumed_wh": [
+            [
+                "_state_consumed_mah",
+                "_state_voltage"
+            ],
+            0
+        ],
+        "_state.consumed_mah": [
+            [
+                "generator_get_fuel_remaining",
+                "_params__pack_capacity_get",
+                "generator_get_batt_consumed"
+            ],
+            0
+        ],
+        "_state.voltage": [
+            [
+                "generator_get_voltage"
+            ],
+            0
+        ]
+    }
+}

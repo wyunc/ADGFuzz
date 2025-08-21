@@ -1,0 +1,211 @@
+{
+    "update_vtol_state": {
+        "_common_vtol_mode": [
+            [
+                "fixed_wing",
+                "rotary_wing",
+                "transition_to_mc",
+                "transition_to_fw"
+            ],
+            0
+        ],
+        "_vtol_mode": [
+            [
+                "transition_front_p1",
+                "transition_front_p2",
+                "mc_mode",
+                "transition_back",
+                "fw_mode"
+            ],
+            0
+        ],
+        "exit_backtransition_tilt_condition": [
+            [
+                "_param_vt_tilt_mc_get"
+            ],
+            0
+        ],
+        "_trans_finished_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "exit_backtransition_speed_condition": [
+            [
+                "_param_mpc_xy_cruise_get",
+                "_attc_get_calibrated_airspeed",
+                "vector3f__local_pos_vz",
+                "vector3f__local_pos_vx",
+                "r_to_body",
+                "vector3f__local_pos_vy"
+            ],
+            1
+        ],
+        "exit_backtransition_time_condition": [
+            [
+                "_param_vt_b_trans_dur_get",
+                "_time_since_trans_start"
+            ],
+            0
+        ],
+        "_tilt_control": [
+            [
+                "_param_vt_tilt_fw_get"
+            ],
+            0
+        ]
+    },
+    "update_mc_state": {
+        "_tilt_control": [
+            [
+                "_param_vt_tilt_mc_get",
+                "pusher_assist"
+            ],
+            0
+        ]
+    },
+    "update_fw_state": {
+        "_tilt_control": [
+            [
+                "_param_vt_tilt_fw_get"
+            ],
+            0
+        ]
+    },
+    "update_transition_state": {
+        "_mc_yaw_weight": [
+            [
+                "constrain__mc_yaw_weight"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "_theta",
+                "attitude_setpoint_euler_theta",
+                "eulerf_quatf",
+                "eulerf__mc_virtual_att_sp_q_d"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "_phi",
+                "eulerf__fw_virtual_att_sp_q_d",
+                "attitude_setpoint_euler_phi",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "attitude_setpoint_euler_psi"
+            ],
+            0
+        ],
+        "_mc_throttle_weight": [
+            [
+                "constrain__mc_throttle_weight",
+                "move_linear_progress"
+            ],
+            0
+        ],
+        "_thrust_transition": [
+            [
+                "max__thrust_transition",
+                "_fw_virtual_att_sp_thrust_body",
+                "max_fronttrans_thr_min",
+                "_mc_virtual_att_sp_thrust_body"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_mc_roll_weight": [
+            [
+                "constrain__mc_roll_weight"
+            ],
+            0
+        ],
+        "progress": [
+            [
+                "backtrans_throttle_upramp_dur_s",
+                "time_until_motors_are_up",
+                "_time_since_trans_start",
+                "backtrans_throttle_downramp_dur_s",
+                "constrain_progress"
+            ],
+            0
+        ],
+        "_tilt_control": [
+            [
+                "max_ramped_up_tilt",
+                "max__tilt_control",
+                "move_linear__param_vt_tilt_fw_get",
+                "_param_vt_tilt_mc_get"
+            ],
+            0
+        ]
+    },
+    "fill_actuator_outputs": {
+        "timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_sample": [
+            [
+                "_vehicle_thrust_setpoint_virtual_fw_timestamp_sample",
+                "_vehicle_torque_setpoint_virtual_fw_timestamp_sample",
+                "_vehicle_thrust_setpoint_virtual_mc_timestamp_sample",
+                "_vehicle_torque_setpoint_virtual_mc_timestamp_sample"
+            ],
+            0
+        ],
+        "tiltrotor_extra_controls.collective_thrust_normalized_setpoint": [
+            [
+                "_f",
+                "_vehicle_thrust_setpoint_virtual_mc_xyz",
+                "_vehicle_thrust_setpoint_virtual_fw_xyz",
+                "_mc_throttle_weight"
+            ],
+            1
+        ],
+        "tiltrotor_extra_controls.collective_tilt_normalized_setpoint": [
+            [
+                "_tilt_control"
+            ],
+            0
+        ],
+        "tiltrotor_extra_controls.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "blendThrottleAfterFrontTransition": {
+        "tecs_throttle": [
+            [
+                "_v_att_sp_thrust_body"
+            ],
+            0
+        ]
+    },
+    "blendThrottleDuringBacktransition": {
+        "_thrust_transition": [
+            [
+                "_last_thr_in_fw_mode",
+                "target_throttle",
+                "scale"
+            ],
+            0
+        ]
+    }
+}

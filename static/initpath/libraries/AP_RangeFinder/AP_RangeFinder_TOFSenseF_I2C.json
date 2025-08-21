@@ -1,0 +1,55 @@
+{
+    "get_reading": {
+        "reading_mm": [
+            [
+                "packet_distance_mm"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "sizeof_packet",
+                "_dev_transfer_uint8_t",
+                "packet",
+                "_dev_transfer_nullptr"
+            ],
+            0
+        ],
+        "signal_strength": [
+            [
+                "packet_signal_strength_and_status",
+                "uint16_t"
+            ],
+            0
+        ],
+        "status": [
+            [
+                "packet_signal_strength_and_status",
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "distance_mm": [
+            [
+                "dist_mm"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "distance_mm"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,464 @@
+{
+    "init": {
+        "_inertial_history": [
+            [
+                "uint16_troundf__lag",
+                "uint16_troundf_update_rate_hz",
+                "object_array",
+                "inertial_data_frame_s",
+                "new_nothrow"
+            ],
+            1
+        ],
+        "_current_target_state": [
+            [
+                "target_never_seen"
+            ],
+            0
+        ],
+        "_backend": [
+            [
+                "ac_prec_land_sitl_gazebo__backend_state",
+                "new_nothrow",
+                "ac_prec_land_ir_lock_this",
+                "nullptr",
+                "ac_prec_land_sitl_gazebo_this",
+                "ac_prec_land_sitl_this",
+                "ac_prec_land_companion_this",
+                "ac_prec_land_sitl__backend_state",
+                "ac_prec_land_companion__backend_state",
+                "ac_prec_land_ir_lock__backend_state"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "inertial_data_newest.time_usec": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "inertial_data_newest.Tbn": [
+            [
+                "_ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "inertial_data_newest.inertialNavVelocity": [
+            [
+                "curr_vel"
+            ],
+            0
+        ],
+        "rangefinder_alt_m": [
+            [
+                "rangefinder_alt_cm"
+            ],
+            0
+        ],
+        "curr_vel.z": [
+            [
+                "curr_vel_z"
+            ],
+            0
+        ],
+        "_last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "inertial_data_newest.inertialNavVelocityValid": [
+            [
+                "status_flags_horiz_vel"
+            ],
+            0
+        ]
+    },
+    "check_target_status": {
+        "dist_to_last_target_loc_xy": [
+            [
+                "_last_target_pos_rel_origin_ned_y",
+                "curr_pos",
+                "vector2f",
+                "_length",
+                "_last_target_pos_rel_origin_ned_x"
+            ],
+            0
+        ],
+        "_current_target_state": [
+            [
+                "target_recently_lost",
+                "target_found",
+                "target_never_seen",
+                "target_out_of_range"
+            ],
+            0
+        ],
+        "dist_to_last_loc_xy": [
+            [
+                "curr_pos",
+                "vector2f",
+                "_last_vehicle_pos_ned_y",
+                "_length",
+                "_last_vehicle_pos_ned_x"
+            ],
+            0
+        ]
+    },
+    "get_target_position_cm": {
+        "ret.x": [
+            [
+                "curr_pos_x",
+                "_target_pos_rel_out_ne_x"
+            ],
+            0
+        ],
+        "ret.y": [
+            [
+                "curr_pos_y",
+                "_target_pos_rel_out_ne_y"
+            ],
+            0
+        ]
+    },
+    "get_target_position_measurement_cm": {
+        "ret": [
+            [
+                "_target_pos_rel_meas_ned"
+            ],
+            0
+        ]
+    },
+    "get_target_position_relative_cm": {
+        "ret": [
+            [
+                "_target_pos_rel_out_ne"
+            ],
+            0
+        ]
+    },
+    "get_target_velocity_relative_cms": {
+        "ret": [
+            [
+                "_target_vel_rel_out_ne"
+            ],
+            0
+        ]
+    },
+    "get_target_velocity_cms": {
+        "target_vel_cms": [
+            [
+                "vehicle_velocity_cms",
+                "target_vel_rel_cms"
+            ],
+            0
+        ]
+    },
+    "run_estimator": {
+        "_inertial_data_delayed": [
+            [
+                "_inertial_history"
+            ],
+            0
+        ],
+        "_target_vel_rel_est_NE.y": [
+            [
+                "_ekf_y_get_vel",
+                "_inertial_data_delayed_inertial_nav_velocity_y"
+            ],
+            0
+        ],
+        "_estimator_init_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "vehicleDelVel": [
+            [
+                "_inertial_data_delayed_corrected_vehicle_delta_velocity_ned"
+            ],
+            0
+        ],
+        "_target_vel_rel_est_NE.x": [
+            [
+                "_inertial_data_delayed_inertial_nav_velocity_x",
+                "_ekf_x_get_vel"
+            ],
+            0
+        ],
+        "NIS_y": [
+            [
+                "_ekf_y_get_pos_nis_xy_pos_var",
+                "_ekf_y_get_pos_nis__target_pos_rel_meas_ned_y"
+            ],
+            0
+        ],
+        "inertial_data": [
+            [
+                "_inertial_history",
+                "i"
+            ],
+            0
+        ],
+        "_target_pos_rel_est_NE.y": [
+            [
+                "_inertial_data_delayed_inertial_nav_velocity_y",
+                "_target_pos_rel_meas_ned_y",
+                "_ekf_y_get_pos",
+                "_inertial_data_delayed_dt"
+            ],
+            0
+        ],
+        "NIS_x": [
+            [
+                "_ekf_x_get_pos_nis_xy_pos_var",
+                "_ekf_x_get_pos_nis__target_pos_rel_meas_ned_x"
+            ],
+            0
+        ],
+        "xy_pos_var": [
+            [
+                "sq_ahrs_get_gyro_length",
+                "sq__target_pos_rel_meas_ned_z"
+            ],
+            0
+        ],
+        "_target_pos_rel_est_NE.x": [
+            [
+                "_inertial_data_delayed_inertial_nav_velocity_x",
+                "_target_pos_rel_meas_ned_x",
+                "_inertial_data_delayed_dt",
+                "_ekf_x_get_pos"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "_inertial_data_delayed_dt"
+            ],
+            0
+        ]
+    },
+    "retrieve_los_meas": {
+        "_last_backend_los_meas_ms": [
+            [
+                "_backend_los_meas_time_ms"
+            ],
+            1
+        ]
+    },
+    "construct_pos_meas_using_rangefinder": {
+        "alt_valid": [
+            [
+                "rangefinder_alt_valid",
+                "rangefinder_alt_m",
+                "_backend_distance_to_target"
+            ],
+            0
+        ],
+        "_last_target_pos_rel_origin_NED.z": [
+            [
+                "pos_ned_z"
+            ],
+            0
+        ],
+        "approach_vector_NED": [
+            [
+                "_inertial_data_delayed_tbn",
+                "_approach_vector_body"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "target_vec_valid": [
+            [
+                "target_vec_unit_body_projected__approach_vector_body_dot__approach_vector_body"
+            ],
+            0
+        ],
+        "_last_vehicle_pos_NED": [
+            [
+                "pos_ned"
+            ],
+            0
+        ],
+        "_target_pos_rel_meas_NED": [
+            [
+                "_inertial_data_delayed_tbn",
+                "_cam_offset",
+                "_inertial_data_delayed_tbn",
+                "ins_get_imu_pos_offset_ahrs_get_primary_accel_index",
+                "_inertial_data_delayed_tbn",
+                "target_vec_unit_body",
+                "_backend_distance_to_target",
+                "rangefinder_alt_m",
+                "cam_pos_ned_projected_approach_vector_ned_length",
+                "target_vec_unit_ned_projected_approach_vector_ned_length"
+            ],
+            6
+        ],
+        "_inertial_data_delayed": [
+            [
+                "_inertial_history"
+            ],
+            0
+        ]
+    },
+    "run_output_prediction": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_last_valid_target_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "Tbn": [
+            [
+                "_inertial_history",
+                "_tbn",
+                "_inertial_history_available"
+            ],
+            0
+        ],
+        "land_ofs_ned_m": [
+            [
+                "vector3f",
+                "_ahrs_get_rotation_body_to_ned",
+                "_land_ofs_cm_y",
+                "_land_ofs_cm_x"
+            ],
+            0
+        ],
+        "_last_target_pos_rel_origin_NED.x": [
+            [
+                "last_target_loc_rel_origin_2d_x"
+            ],
+            0
+        ],
+        "_target_vel_rel_out_NE.y": [
+            [
+                "vel_ned_rel_imu_y",
+                "inertial_data_corrected_vehicle_delta_velocity_ned_y"
+            ],
+            0
+        ],
+        "cam_pos_horizontal_ned": [
+            [
+                "vector3f",
+                "_cam_offset_get_x",
+                "_cam_offset_get_y",
+                "tbn"
+            ],
+            0
+        ],
+        "_target_pos_rel_out_NE.x": [
+            [
+                "imu_pos_ned_x",
+                "land_ofs_ned_m_x",
+                "_target_vel_rel_out_ne_x",
+                "cam_pos_horizontal_ned_x",
+                "inertial_data_dt"
+            ],
+            0
+        ],
+        "_target_vel_rel_out_NE.x": [
+            [
+                "vel_ned_rel_imu_x",
+                "inertial_data_corrected_vehicle_delta_velocity_ned_x"
+            ],
+            0
+        ],
+        "imu_pos_ned": [
+            [
+                "tbn",
+                "ins_get_imu_pos_offset__ahrs_get_primary_accel_index"
+            ],
+            1
+        ],
+        "_target_vel_rel_out_NE": [
+            [
+                "_target_vel_rel_est_ne"
+            ],
+            0
+        ],
+        "inertial_data": [
+            [
+                "_inertial_history",
+                "i"
+            ],
+            0
+        ],
+        "_target_pos_rel_out_NE.y": [
+            [
+                "cam_pos_horizontal_ned_y",
+                "land_ofs_ned_m_y",
+                "_target_vel_rel_out_ne_y",
+                "inertial_data_dt",
+                "imu_pos_ned_y"
+            ],
+            0
+        ],
+        "_last_target_pos_rel_origin_NED.y": [
+            [
+                "last_target_loc_rel_origin_2d_y"
+            ],
+            0
+        ],
+        "_target_pos_rel_out_NE": [
+            [
+                "_target_pos_rel_est_ne"
+            ],
+            0
+        ],
+        "vel_ned_rel_imu": [
+            [
+                "ins_get_imu_pos_offset__ahrs_get_primary_accel_index",
+                "tbn",
+                "_ahrs_get_gyro"
+            ],
+            1
+        ]
+    },
+    "get_target_location": {
+        "loc.alt": [
+            [
+                "_last_target_pos_rel_origin_ned_z"
+            ],
+            0
+        ]
+    },
+    "get_target_velocity": {
+        "target_vel": [
+            [
+                "target_vel_rel_cms",
+                "_last_veh_velocity_ned_ms_xy"
+            ],
+            0
+        ]
+    }
+}

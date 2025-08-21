@@ -1,0 +1,493 @@
+{
+    "Rx": {
+        "rx_time_us": [
+            [
+                "when"
+            ],
+            0
+        ],
+        "last_delta_rx_time_us": [
+            [
+                "ld"
+            ],
+            0
+        ],
+        "sync_time_us": [
+            [
+                "when"
+            ],
+            1
+        ],
+        "delta_rx_time_us": [
+            [
+                "when"
+            ],
+            1
+        ]
+    },
+    "queue": {
+        "added": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "pending_head": [
+            [
+                "sz_buffer",
+                "len"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "sz_buffer"
+            ],
+            0
+        ]
+    },
+    "dequeue": {
+        "pending_tail": [
+            [
+                "len",
+                "sz_buffer"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "sz_buffer"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "len"
+            ],
+            0
+        ]
+    },
+    "radio_init": {
+        "drone_crc": [
+            [
+                "calculate_block_crc32_0xfffffffful",
+                "calculate_block_crc32_serialid"
+            ],
+            0
+        ],
+        "spd": [
+            [
+                "beken_g_tx_speed"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "beken_read_reg_bk2425_r1_whoami"
+            ],
+            0
+        ],
+        "next_switch_us": [
+            [
+                "isr_timeout_time_us",
+                "micros"
+            ],
+            1
+        ]
+    },
+    "trigger_irq_radio_event": {
+        "isr_irq_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "trigger_timeout_event": {
+        "isr_timeout_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "start_recv_bind": {
+        "synctm.packet_timer": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "bind_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_data_packet": {
+        "fwupload.chan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "fwupload.file_length_round": [
+            [
+                "fwupload_file_length",
+                "0x0f",
+                "0x7f"
+            ],
+            0
+        ],
+        "fwupload.fw_type": [
+            [
+                "telem_fw",
+                "telem_play"
+            ],
+            0
+        ],
+        "fwupload.file_length": [
+            [
+                "m_data",
+                "m_len",
+                "uint16_t_m_data"
+            ],
+            0
+        ]
+    },
+    "update_SRT_telemetry": {
+        "t_status.note_adjust": [
+            [
+                "get_tx_buzzer_adjust"
+            ],
+            0
+        ],
+        "t_status.flight_mode": [
+            [
+                "flags_flight_mode"
+            ],
+            0
+        ],
+        "t_status.tx_max": [
+            [
+                "get_tx_max_power"
+            ],
+            0
+        ]
+    },
+    "UpdateTxData": {
+        "address_lo": [
+            [
+                "0xff",
+                "0x0004",
+                "fwupload_sent",
+                "0x0002"
+            ],
+            1
+        ],
+        "flight_mode": [
+            [
+                "t_status_flight_mode"
+            ],
+            0
+        ],
+        "address_hi": [
+            [
+                "0x0004",
+                "fwupload_sent",
+                "0x0002"
+            ],
+            1
+        ],
+        "wifi": [
+            [
+                "t_status_tx_max",
+                "t_status_wifi_chan"
+            ],
+            0
+        ],
+        "note_adjust": [
+            [
+                "t_status_note_adjust"
+            ],
+            0
+        ],
+        "tx": [
+            [
+                "beken_pkt_data_dfu",
+                "beken_pkt_data_tx"
+            ],
+            0
+        ],
+        "pps": [
+            [
+                "t_status_pps"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "t_status_flags"
+            ],
+            0
+        ],
+        "packetType": [
+            [
+                "bk_pkt_type_dfu",
+                "bk_pkt_type_telemetry",
+                "bk_pkt_type_tune"
+            ],
+            0
+        ],
+        "hopping": [
+            [
+                "adaptive_hopping"
+            ],
+            0
+        ]
+    },
+    "check_fw_ack": {
+        "ack_to": [
+            [
+                "fwupload_added",
+                "fwupload_file_length"
+            ],
+            0
+        ]
+    },
+    "map_stick_mode": {
+        "tmp": [
+            [
+                "pwm_channels"
+            ],
+            0
+        ]
+    },
+    "UpdateFccScan": {
+        "beken.fcc.channel": [
+            [
+                "channel_fcc_low"
+            ],
+            0
+        ]
+    },
+    "irq_handler": {
+        "now": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "beken.pktDataDfu.channel": [
+            [
+                "syncch_channel"
+            ],
+            0
+        ],
+        "beken.pktDataTx.channel": [
+            [
+                "syncch_channel"
+            ],
+            0
+        ],
+        "bk_sta": [
+            [
+                "beken_read_status"
+            ],
+            0
+        ],
+        "beken.fcc.last_cd": [
+            [
+                "beken_carrier_detect"
+            ],
+            0
+        ],
+        "delta": [
+            [
+                "ch_time_us2i_next_switch_us",
+                "ch_time_us2i_now"
+            ],
+            0
+        ],
+        "next_switch_us": [
+            [
+                "when",
+                "synctm_sync_time_us"
+            ],
+            0
+        ],
+        "fifo_sta": [
+            [
+                "beken_read_reg_bk_fifo_status"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "beken_read_reg_bk_r_rx_pl_wid_cmd"
+            ],
+            0
+        ],
+        "txDfu": [
+            [
+                "update_tx_data"
+            ],
+            0
+        ],
+        "synctm.tx_time_us": [
+            [
+                "when"
+            ],
+            0
+        ],
+        "bNext": [
+            [
+                "b_rx"
+            ],
+            0
+        ]
+    },
+    "irq_timeout": {
+        "ss": [
+            [
+                "int32_t_next_switch_us",
+                "int32_t_when"
+            ],
+            0
+        ],
+        "next_switch_us": [
+            [
+                "d",
+                "synctm_sync_time_us",
+                "micros",
+                "when"
+            ],
+            1
+        ],
+        "delta": [
+            [
+                "ch_time_us2i_now",
+                "ch_time_us2i_next_switch_us"
+            ],
+            0
+        ]
+    },
+    "irq_handler_thd": {
+        "evt": [
+            [
+                "ch_evt_wait_any_all_events"
+            ],
+            0
+        ]
+    },
+    "save_bind_info": {
+        "info.magic": [
+            [
+                "bind_magic"
+            ],
+            0
+        ]
+    },
+    "NextChannel": {
+        "hopping_current": [
+            [
+                "hopping_wanted"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "channel_count_logical",
+                "countdown_chan",
+                "channel_count_logical"
+            ],
+            1
+        ],
+        "countdown": [
+            [
+                "countdown_invalid"
+            ],
+            0
+        ],
+        "hopping_countdown": [
+            [
+                "countdown_invalid"
+            ],
+            0
+        ]
+    },
+    "SafeTable": {
+        "channel": [
+            [
+                "channel_safe_table",
+                "channel_count_logical"
+            ],
+            0
+        ],
+        "table": [
+            [
+                "channel_count_logical"
+            ],
+            0
+        ]
+    },
+    "SetChannelIfSafe": {
+        "lastchan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    },
+    "Get": {
+        "f": [
+            [
+                "channel",
+                "bind_hop_data"
+            ],
+            0
+        ]
+    },
+    "Miss": {
+        "bit": [
+            [
+                "channel_count_logical",
+                "channel_bit_table",
+                "channel"
+            ],
+            0
+        ],
+        "delta1": [
+            [
+                "missed",
+                "rx",
+                "bind_hop_data",
+                "channel"
+            ],
+            1
+        ],
+        "delta2": [
+            [
+                "missed",
+                "rx",
+                "0x80",
+                "bind_hop_data",
+                "channel"
+            ],
+            1
+        ],
+        "oh": [
+            [
+                "hopping"
+            ],
+            0
+        ]
+    }
+}

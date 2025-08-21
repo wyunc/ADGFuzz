@@ -1,0 +1,264 @@
+{
+    "type_slope_do_land": {
+        "type_slope_stage": [
+            [
+                "normal"
+            ],
+            0
+        ]
+    },
+    "type_slope_verify_land": {
+        "probably_crashed": [
+            [
+                "aparm_crash_detection_enable",
+                "is_flying",
+                "fabsf_sink_rate"
+            ],
+            0
+        ],
+        "LG_inst": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "below_flare_sec": [
+            [
+                "sink_rate",
+                "flare_sec",
+                "height"
+            ],
+            0
+        ],
+        "on_approach_stage": [
+            [
+                "type_slope_is_on_approach"
+            ],
+            0
+        ],
+        "on_flight_line": [
+            [
+                "fabsf_nav_controller_crosstrack_error",
+                "nav_controller_data_is_stale"
+            ],
+            0
+        ],
+        "below_flare_alt": [
+            [
+                "height",
+                "flare_alt"
+            ],
+            0
+        ],
+        "reached_pre_flare_alt": [
+            [
+                "pre_flare_alt",
+                "height"
+            ],
+            0
+        ],
+        "height_flare_log": [
+            [
+                "height"
+            ],
+            0
+        ],
+        "land_WP_loc": [
+            [
+                "next_wp_loc"
+            ],
+            0
+        ],
+        "land_bearing_cd": [
+            [
+                "prev_wp_loc_get_bearing_to_next_wp_loc"
+            ],
+            0
+        ],
+        "type_slope_stage": [
+            [
+                "preflare",
+                "approach",
+                "final"
+            ],
+            0
+        ],
+        "below_prev_WP": [
+            [
+                "prev_wp_loc_alt",
+                "current_loc_alt"
+            ],
+            0
+        ],
+        "heading_lined_up": [
+            [
+                "abs_nav_controller_bearing_error_cd",
+                "nav_controller_data_is_stale"
+            ],
+            0
+        ],
+        "reached_pre_flare_sec": [
+            [
+                "sink_rate",
+                "pre_flare_sec",
+                "height"
+            ],
+            0
+        ]
+    },
+    "type_slope_adjust_landing_slope_for_rangefinder_bump": {
+        "correction_delta": [
+            [
+                "fabsf_rangefinder_state_correction",
+                "fabsf_rangefinder_state_last_stable_correction"
+            ],
+            0
+        ],
+        "rangefinder_state.last_stable_correction": [
+            [
+                "rangefinder_state_correction"
+            ],
+            0
+        ],
+        "new_slope_deg": [
+            [
+                "degrees_slope",
+                "degrees_atanf"
+            ],
+            0
+        ],
+        "alt_offset": [
+            [
+                "rangefinder_state_correction"
+            ],
+            0
+        ],
+        "prev_WP_loc.alt": [
+            [
+                "wp_distance",
+                "adjusted_altitude_cm_fn",
+                "rangefinder_state_correction",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "next_wp_loc_alt"
+            ],
+            3
+        ],
+        "initial_slope_deg": [
+            [
+                "degrees_initial_slope",
+                "degrees_atanf"
+            ],
+            0
+        ]
+    },
+    "type_slope_setup_landing_glide_slope": {
+        "loc.alt": [
+            [
+                "flare_alt",
+                "prev_wp_loc_alt",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "ahrs_groundspeed",
+                "flare_sec",
+                "land_projection",
+                "flare_alt",
+                "prev_wp_loc_alt",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "ahrs_groundspeed",
+                "flare_sec",
+                "prev_wp_loc_alt",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "flare_alt",
+                "prev_wp_loc_alt",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "ahrs_groundspeed",
+                "flare_sec",
+                "prev_wp_loc_alt",
+                "next_wp_loc_alt",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "ahrs_groundspeed",
+                "tecs_controller_get_land_sinkrate_weight",
+                "floatflare_effectivness_pct",
+                "prev_wp_loc_get_distance_next_wp_loc",
+                "ahrs_groundspeed"
+            ],
+            11
+        ],
+        "loc": [
+            [
+                "next_wp_loc"
+            ],
+            0
+        ],
+        "target_altitude_offset_cm": [
+            [
+                "loc_alt",
+                "prev_wp_loc_alt"
+            ],
+            0
+        ],
+        "is_first_calc": [
+            [
+                "is_zero_slope"
+            ],
+            0
+        ],
+        "land_bearing_cd": [
+            [
+                "prev_wp_loc_get_bearing_to_next_wp_loc"
+            ],
+            0
+        ],
+        "land_proportion": [
+            [
+                "current_loc_line_path_proportion_prev_wp_loc",
+                "current_loc_line_path_proportion_loc"
+            ],
+            0
+        ]
+    },
+    "type_slope_is_flaring": {
+        "type_slope_stage": [
+            [
+                "final"
+            ],
+            0
+        ]
+    },
+    "type_slope_is_on_approach": {
+        "type_slope_stage": [
+            [
+                "preflare"
+            ],
+            0
+        ]
+    },
+    "type_slope_is_expecting_impact": {
+        "type_slope_stage": [
+            [
+                "final"
+            ],
+            0
+        ]
+    },
+    "type_slope_is_complete": {
+        "type_slope_stage": [
+            [
+                "final"
+            ],
+            0
+        ]
+    },
+    "type_slope_is_throttle_suppressed": {
+        "type_slope_stage": [
+            [
+                "final"
+            ],
+            0
+        ]
+    }
+}

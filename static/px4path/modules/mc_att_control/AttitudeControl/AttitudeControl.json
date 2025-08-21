@@ -1,0 +1,17 @@
+{
+    "setProportionalGain": {
+        "_yaw_w": [
+            [
+                "constrain_yaw_weight",
+                "constrain__f"
+            ],
+            0
+        ],
+        "_proportional_gain": [
+            [
+                "proportional_gain"
+            ],
+            0
+        ]
+    }
+}

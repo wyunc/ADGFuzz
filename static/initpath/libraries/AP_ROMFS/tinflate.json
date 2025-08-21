@@ -1,0 +1,255 @@
+{
+    "tinf_build_bits_base": {
+        "sum": [
+            [
+                "first",
+                "i",
+                "bits"
+            ],
+            0
+        ]
+    },
+    "tinf_build_tree": {
+        "sum": [
+            [
+                "t_table",
+                "i"
+            ],
+            0
+        ]
+    },
+    "uzlib_get_byte": {
+        "val": [
+            [
+                "d_read_source_d"
+            ],
+            0
+        ]
+    },
+    "tinf_getbit": {
+        "bit": [
+            [
+                "d_tag",
+                "0x01"
+            ],
+            0
+        ],
+        "tag": [
+            [
+                "uzlib_get_byte_d"
+            ],
+            0
+        ]
+    },
+    "tinf_read_bits": {
+        "limit": [
+            [
+                "num"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "mask"
+            ],
+            0
+        ]
+    },
+    "tinf_decode_symbol": {
+        "sum": [
+            [
+                "t_table",
+                "t_table",
+                "len",
+                "tinf_getbit_d",
+                "len"
+            ],
+            1
+        ]
+    },
+    "tinf_decode_trees": {
+        "sym": [
+            [
+                "tinf_decode_symbol_d",
+                "tinf_decode_symbol_lt"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "tinf_read_bits_lbits",
+                "tinf_read_bits_lbase",
+                "tinf_read_bits_d"
+            ],
+            0
+        ],
+        "hlimit": [
+            [
+                "tinf_read_bits_d",
+                "tinf_read_bits_d"
+            ],
+            2
+        ],
+        "fill_value": [
+            [
+                "lengths",
+                "num"
+            ],
+            0
+        ],
+        "clen": [
+            [
+                "tinf_read_bits_d"
+            ],
+            0
+        ],
+        "hclen": [
+            [
+                "tinf_read_bits_d"
+            ],
+            0
+        ]
+    },
+    "tinf_inflate_block_data": {
+        "sym": [
+            [
+                "tinf_decode_symbol_d",
+                "tinf_decode_symbol_lt"
+            ],
+            0
+        ],
+        "lzOff": [
+            [
+                "d_dict_idx",
+                "d_dict_size",
+                "tinf_read_bits_d",
+                "tinf_read_bits_dist",
+                "tinf_read_bits_dist_bits",
+                "tinf_read_bits_dist_base"
+            ],
+            1
+        ],
+        "dist": [
+            [
+                "tinf_decode_symbol_d",
+                "tinf_decode_symbol_dt"
+            ],
+            0
+        ],
+        "curlen": [
+            [
+                "tinf_read_bits_length_bits",
+                "tinf_read_bits_d",
+                "tinf_read_bits_sym",
+                "tinf_read_bits_length_base"
+            ],
+            0
+        ]
+    },
+    "tinf_inflate_uncompressed_block": {
+        "c": [
+            [
+                "uzlib_get_byte_d"
+            ],
+            0
+        ],
+        "curlen": [
+            [
+                "uzlib_get_byte_d"
+            ],
+            1
+        ],
+        "invlength": [
+            [
+                "uzlib_get_byte_d"
+            ],
+            0
+        ]
+    },
+    "uzlib_uncompress_init": {
+        "readSource": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "dict_size": [
+            [
+                "dict_len"
+            ],
+            0
+        ],
+        "source_limit": [
+            [
+                "null"
+            ],
+            0
+        ],
+        "dict_ring": [
+            [
+                "char",
+                "unsigned",
+                "dict"
+            ],
+            0
+        ]
+    },
+    "uzlib_uncompress": {
+        "btype": [
+            [
+                "tinf_read_bits_d"
+            ],
+            0
+        ],
+        "bfinal": [
+            [
+                "tinf_getbit_d"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "tinf_decode_trees_d_dtree",
+                "tinf_inflate_uncompressed_block_d",
+                "tinf_inflate_block_data_d_dtree",
+                "tinf_decode_trees_d_ltree",
+                "tinf_inflate_block_data_d",
+                "tinf_decode_trees_d",
+                "tinf_inflate_block_data_d_ltree"
+            ],
+            0
+        ]
+    },
+    "uzlib_uncompress_chksum": {
+        "data": [
+            [
+                "d_dest"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "uzlib_crc32_data",
+                "uzlib_adler32_data",
+                "uzlib_adler32_d_dest",
+                "uzlib_crc32_d_checksum",
+                "uzlib_adler32_d_checksum",
+                "uzlib_crc32_d_dest"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "uzlib_uncompress_d"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "tinf_get_le_uint32_d",
+                "tinf_get_be_uint32_d"
+            ],
+            0
+        ]
+    }
+}

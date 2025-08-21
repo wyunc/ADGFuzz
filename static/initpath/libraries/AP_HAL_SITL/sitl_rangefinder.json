@@ -1,0 +1,19 @@
+{
+    "_sonar_pin_voltage": {
+        "voltage": [
+            [
+                "sitl_model_rangefinder_range",
+                "_sitl_sonar_scale"
+            ],
+            1
+        ]
+    },
+    "_update_rangefinder": {
+        "sonar_pin_voltage": [
+            [
+                "_sonar_pin_voltage"
+            ],
+            0
+        ]
+    }
+}

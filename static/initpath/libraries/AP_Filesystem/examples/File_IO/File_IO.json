@@ -1,0 +1,52 @@
+{
+    "setup": {
+        "ret": [
+            [
+                "fs_mkdir_dir_path"
+            ],
+            0
+        ]
+    },
+    "write_file": {
+        "write_size": [
+            [
+                "_write_to_write",
+                "_write_write_buf",
+                "fs_write_open_fd"
+            ],
+            0
+        ],
+        "to_write": [
+            [
+                "strlen_write_buf"
+            ],
+            0
+        ],
+        "open_fd": [
+            [
+                "_open_o_trunc",
+                "fs_open_file_path",
+                "_open_o_creat",
+                "_open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "read_file": {
+        "open_fd": [
+            [
+                "_open_o_rdonly",
+                "fs_open_file_path"
+            ],
+            0
+        ],
+        "read_size": [
+            [
+                "_read_read_buf",
+                "_read_sizeof",
+                "fs_read_open_fd"
+            ],
+            0
+        ]
+    }
+}

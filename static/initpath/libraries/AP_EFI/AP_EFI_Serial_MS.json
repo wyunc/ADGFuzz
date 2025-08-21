@@ -1,0 +1,166 @@
+{
+    "update": {
+        "last_request_delta": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "available": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "last_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "expected_bytes": [
+            [
+                "rt_last_offset",
+                "rt_first_offset"
+            ],
+            0
+        ]
+    },
+    "read_incoming_realtime_data": {
+        "internal_state.cylinder_status.injection_time_ms": [
+            [
+                "read_byte_crc32",
+                "float",
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "response_flag": [
+            [
+                "read_byte_crc32"
+            ],
+            0
+        ],
+        "internal_state.atmospheric_pressure_kpa": [
+            [
+                "read_byte_crc32",
+                "float",
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "internal_state.engine_load_percent": [
+            [
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "internal_state.intake_manifold_pressure_kpa": [
+            [
+                "read_byte_crc32",
+                "float",
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "message_length": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature": [
+            [
+                "deg_f_to_kelvin_temp_float"
+            ],
+            0
+        ],
+        "internal_state.engine_speed_rpm": [
+            [
+                "read_byte_crc32",
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "internal_state.estimated_consumed_fuel_volume_cm3": [
+            [
+                "internal_state_last_updated_ms",
+                "millis",
+                "internal_state_fuel_consumption_rate_cm3pm"
+            ],
+            1
+        ],
+        "internal_state.last_updated_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "received_CRC": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "internal_state.fuel_pressure": [
+            [
+                "read_byte_crc32",
+                "float",
+                "read_byte_crc32"
+            ],
+            2
+        ],
+        "internal_state.intake_manifold_temperature": [
+            [
+                "deg_f_to_kelvin_temp_float"
+            ],
+            0
+        ],
+        "internal_state.throttle_position_percent": [
+            [
+                "roundf_temp_float"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.ignition_timing_deg": [
+            [
+                "read_byte_crc32",
+                "float",
+                "read_byte_crc32"
+            ],
+            1
+        ],
+        "internal_state.fuel_consumption_rate_cm3pm": [
+            [
+                "get_coef1",
+                "internal_state_cylinder_status_injection_time_ms",
+                "internal_state_engine_speed_rpm",
+                "get_coef2"
+            ],
+            1
+        ],
+        "offset": [
+            [
+                "rt_first_offset"
+            ],
+            0
+        ]
+    },
+    "send_request": {
+        "length": [
+            [
+                "last_offset",
+                "first_offset"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc32_compute_byte_data",
+                "crc32_compute_byte_crc",
+                "crc32_compute_byte_i"
+            ],
+            0
+        ]
+    }
+}

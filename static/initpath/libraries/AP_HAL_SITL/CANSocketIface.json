@@ -1,0 +1,94 @@
+{
+    "_pollWrite": {
+        "ok": [
+            [
+                "transport_send_tx_frame"
+            ],
+            0
+        ],
+        "tx": [
+            [
+                "_tx_queue"
+            ],
+            0
+        ],
+        "stats.last_transmit_us": [
+            [
+                "micros64"
+            ],
+            1
+        ]
+    },
+    "_pollRead": {
+        "ok": [
+            [
+                "transport_receive_rx_frame"
+            ],
+            0
+        ],
+        "rx.timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "can_type": [
+            [
+                "_self_index",
+                "_sitl_can_transport"
+            ],
+            0
+        ],
+        "transport": [
+            [
+                "nullptr",
+                "can_multicast",
+                "can_socket_can",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "select": {
+        "read_select": [
+            [
+                "_has_ready_rx"
+            ],
+            0
+        ],
+        "_pollfd.fd": [
+            [
+                "transport_get_read_fd"
+            ],
+            0
+        ],
+        "now_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "need_block": [
+            [
+                "write_select"
+            ],
+            0
+        ]
+    },
+    "set_event_handle": {
+        "sem_handle": [
+            [
+                "handle"
+            ],
+            0
+        ]
+    }
+}

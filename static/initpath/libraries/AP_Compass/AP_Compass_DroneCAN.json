@@ -1,0 +1,43 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_mag_msg": {
+        "raw_field": [
+            [
+                "mag"
+            ],
+            0
+        ]
+    },
+    "handle_magnetic_field": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id"
+            ],
+            0
+        ]
+    },
+    "handle_magnetic_field_2": {
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_sensor_id"
+            ],
+            0
+        ],
+        "sensor_id": [
+            [
+                "msg_sensor_id"
+            ],
+            0
+        ]
+    }
+}

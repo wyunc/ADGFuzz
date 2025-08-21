@@ -1,0 +1,116 @@
+{
+    "update": {
+        "sample.longitude": [
+            [
+                "aux_global_position_lon"
+            ],
+            0
+        ],
+        "sample.lat_lon_reset_counter": [
+            [
+                "aux_global_position_lat_lon_reset_counter"
+            ],
+            0
+        ],
+        "sample.time_us": [
+            [
+                "aux_global_position_timestamp_sample",
+                "int64_t",
+                "static_cast",
+                "_param_ekf2_agp_delay_get"
+            ],
+            1
+        ],
+        "_state": [
+            [
+                "starting",
+                "active",
+                "stopped"
+            ],
+            0
+        ],
+        "pos_noise": [
+            [
+                "max__param_ekf2_agp_noise_get",
+                "max_sample_eph"
+            ],
+            0
+        ],
+        "_time_last_buffer_push": [
+            [
+                "imu_delayed_time_us"
+            ],
+            0
+        ],
+        "sample.epv": [
+            [
+                "aux_global_position_epv"
+            ],
+            0
+        ],
+        "pos_var": [
+            [
+                "sq_pos_noise"
+            ],
+            0
+        ],
+        "sample.latitude": [
+            [
+                "aux_global_position_lat"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "ekf_get_lat_lon_alt",
+                "_xy",
+                "position"
+            ],
+            0
+        ],
+        "sample.eph": [
+            [
+                "aux_global_position_eph"
+            ],
+            0
+        ],
+        "fused": [
+            [
+                "ekf_fuse_horizontal_position_aid_src"
+            ],
+            0
+        ],
+        "sample.altitude_amsl": [
+            [
+                "aux_global_position_alt"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_aux_global_position"
+            ],
+            0
+        ],
+        "_reset_counters.lat_lon": [
+            [
+                "sample_lat_lon_reset_counter"
+            ],
+            0
+        ],
+        "_test_ratio_filtered": [
+            [
+                "max_aid_src_test_ratio_filtered",
+                "max_fabsf",
+                "fabsf_aid_src_test_ratio_filtered"
+            ],
+            0
+        ],
+        "aid_src.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

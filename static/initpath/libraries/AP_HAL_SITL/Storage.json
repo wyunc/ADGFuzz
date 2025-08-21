@@ -1,0 +1,132 @@
+{
+    "_storage_open": {
+        "log_fd": [
+            [
+                "open_hal_storage_file",
+                "open_o_rdwr",
+                "open_o_creat"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "read_hal_storage_size",
+                "read_log_fd",
+                "read__buffer"
+            ],
+            0
+        ],
+        "_initialisedType": [
+            [
+                "flash",
+                "sd_card",
+                "fram"
+            ],
+            0
+        ]
+    },
+    "_mark_dirty": {
+        "end": [
+            [
+                "length",
+                "loc"
+            ],
+            0
+        ],
+        "line": [
+            [
+                "storage_line_shift",
+                "loc"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "offset": [
+            [
+                "storage_line_size",
+                "i"
+            ],
+            0
+        ],
+        "_last_empty_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "sitl_flash_open": {
+        "flash_fd": [
+            [
+                "open_o_rdwr",
+                "open_o_creat"
+            ],
+            0
+        ]
+    },
+    "sitl_flash_erasepage": {
+        "ret": [
+            [
+                "page",
+                "pwrite_sizeof",
+                "pwrite_fill",
+                "pwrite_flash_fd",
+                "sizeof_fill",
+                "hal_flash_sector_size"
+            ],
+            0
+        ]
+    },
+    "_flash_write_data": {
+        "ret": [
+            [
+                "sitl_flash_write_length",
+                "sitl_flash_write_offset",
+                "sitl_flash_write_base_address",
+                "sitl_flash_write_data"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "_flash_re_initialise"
+            ],
+            0
+        ],
+        "base_address": [
+            [
+                "sitl_flash_getpageaddr_sector"
+            ],
+            0
+        ],
+        "_last_re_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "_flash_read_data": {
+        "base_address": [
+            [
+                "sitl_flash_getpageaddr_sector"
+            ],
+            0
+        ]
+    },
+    "get_storage_ptr": {
+        "ptr": [
+            [
+                "_buffer"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "sizeof__buffer"
+            ],
+            0
+        ]
+    }
+}

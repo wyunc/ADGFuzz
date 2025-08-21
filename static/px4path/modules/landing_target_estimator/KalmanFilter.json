@@ -1,0 +1,105 @@
+{
+    "init": {
+        "_x": [
+            [
+                "initial"
+            ],
+            0
+        ],
+        "_covariance": [
+            [
+                "cov_init"
+            ],
+            0
+        ]
+    },
+    "predict": {
+        "_covariance": [
+            [
+                "acc_unc",
+                "g_transpose",
+                "g",
+                "a_transpose",
+                "a"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "beta": [
+            [
+                "_innov_cov",
+                "meas"
+            ],
+            1
+        ],
+        "_innovCov": [
+            [
+                "meas_unc"
+            ],
+            0
+        ],
+        "kalmanGain": [
+            [
+                "_innov_cov"
+            ],
+            0
+        ],
+        "_covariance": [
+            [
+                "kh",
+                "identity"
+            ],
+            0
+        ],
+        "_x": [
+            [
+                "kalman_gain",
+                "meas"
+            ],
+            1
+        ]
+    },
+    "getState": {
+        "state": [
+            [
+                "_x"
+            ],
+            0
+        ],
+        "state0": [
+            [
+                "_x"
+            ],
+            0
+        ],
+        "state1": [
+            [
+                "_x"
+            ],
+            0
+        ]
+    },
+    "getCovariance": {
+        "covariance": [
+            [
+                "_covariance"
+            ],
+            0
+        ]
+    },
+    "getInnovations": {
+        "innovCov": [
+            [
+                "_innov_cov"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "_residual"
+            ],
+            0
+        ]
+    }
+}

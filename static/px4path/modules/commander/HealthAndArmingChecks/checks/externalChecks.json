@@ -1,0 +1,140 @@
+{
+    "addRegistration": {
+        ".reply": [
+            [
+                "arming_check_reply_s",
+                "new"
+            ],
+            0
+        ],
+        ".replaces_nav_state": [
+            [
+                "replaces_nav_state"
+            ],
+            0
+        ],
+        "free_registration_index": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".nav_mode_id": [
+            [
+                "nav_mode_id"
+            ],
+            0
+        ]
+    },
+    "checkAndReport": {
+        "modes": [
+            [
+                "reporter_get_mode_group_nav_mode_id",
+                "all",
+                "reporter_get_mode_group_replaces_nav_state"
+            ],
+            0
+        ],
+        "nav_mode_id": [
+            [
+                "_nav_mode_id",
+                "reply_registration_id",
+                "_registrations"
+            ],
+            0
+        ],
+        "unresponsive_modes": [
+            [
+                "reporter_get_mode_group_nav_mode_id"
+            ],
+            0
+        ],
+        "replaces_nav_state": [
+            [
+                "_replaces_nav_state",
+                "reply_registration_id",
+                "_registrations"
+            ],
+            0
+        ],
+        "reply": [
+            [
+                "_reply",
+                "reg_idx",
+                "_registrations"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "request.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "request.request_id": [
+            [
+                "_current_request_id"
+            ],
+            0
+        ],
+        "_last_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "max_num_no_reply": [
+            [
+                "_registrations",
+                "num_no_reply_until_unresponsive",
+                "_waiting_for_first_response",
+                "i",
+                "num_no_reply_until_unresponsive_init"
+            ],
+            0
+        ],
+        "no_reply": [
+            [
+                "_active_registrations_mask",
+                "_reply_received_mask"
+            ],
+            0
+        ],
+        ".reply": [
+            [
+                "reply"
+            ],
+            0
+        ],
+        "max_num_updates": [
+            [
+                "orb_queue_length"
+            ],
+            0
+        ]
+    },
+    "setExternalNavStates": {
+        "_first_external_nav_state": [
+            [
+                "first_external_nav_state"
+            ],
+            0
+        ],
+        "_last_external_nav_state": [
+            [
+                "last_external_nav_state"
+            ],
+            0
+        ]
+    },
+    "checkNonRegisteredModes": {
+        "external_nav_state": [
+            [
+                "_first_external_nav_state"
+            ],
+            0
+        ]
+    }
+}

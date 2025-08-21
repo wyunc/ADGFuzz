@@ -1,0 +1,149 @@
+{
+    "simulation_timeval": {
+        "first_usec": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "tv": [
+            [
+                "first_tv"
+            ],
+            0
+        ],
+        "tv_sec": [
+            [
+                "micros64",
+                "micros64",
+                "1000000ull",
+                "tv_tv_usec",
+                "1000000ull"
+            ],
+            2
+        ],
+        "first_tv.tv_sec": [
+            [
+                "sitl_start_time_utc"
+            ],
+            0
+        ],
+        "tv_usec": [
+            [
+                "micros64",
+                "1000000ull",
+                "tv_tv_usec",
+                "1000000ull"
+            ],
+            2
+        ]
+    },
+    "gps_time": {
+        "time_week_ms": [
+            [
+                "gps_leapseconds_millis",
+                "1000ull",
+                "tv_tv_sec",
+                "ap_sec_per_week",
+                "ap_msec_per_sec",
+                "tv_tv_usec"
+            ],
+            3
+        ],
+        "time_week": [
+            [
+                "gps_leapseconds_millis",
+                "1000ull",
+                "tv_tv_sec",
+                "ap_sec_per_week"
+            ],
+            2
+        ]
+    },
+    "read": {
+        "state.time_week": [
+            [
+                "time_week"
+            ],
+            0
+        ],
+        "speedN": [
+            [
+                "sitl_state_speed_n"
+            ],
+            0
+        ],
+        "speedE": [
+            [
+                "sitl_state_speed_e"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "speed_d"
+            ],
+            0
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d"
+            ],
+            0
+        ],
+        "altitude": [
+            [
+                "sitl_state_altitude"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "speed_n"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "sitl_state_latitude"
+            ],
+            0
+        ],
+        "speedD": [
+            [
+                "sitl_state_speed_d"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "sitl_state_longitude"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.velocity.y": [
+            [
+                "speed_e"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "time_week_ms"
+            ],
+            0
+        ]
+    }
+}

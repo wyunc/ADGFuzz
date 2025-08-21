@@ -1,0 +1,49 @@
+{
+    "_process_byte": {
+        "_rxpacket.crc16_high": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "_rxpacket.length": [
+            [
+                "byte",
+                "sumd_max_channels",
+                "uint8_t"
+            ],
+            0
+        ],
+        "_decode_state": [
+            [
+                "sumd_decode_state_got_state",
+                "sumd_decode_state_got_len",
+                "sumd_decode_state_got_data",
+                "sumd_decode_state_got_header",
+                "sumd_decode_state_got_crc",
+                "sumd_decode_state_unsynced"
+            ],
+            0
+        ],
+        "_rxpacket.status": [
+            [
+                "byte",
+                "sumd_id_failsafe"
+            ],
+            0
+        ],
+        "last_packet_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "_crc16": [
+            [
+                "crc_xmodem_update__crc16",
+                "crc_xmodem_update_byte"
+            ],
+            0
+        ]
+    }
+}

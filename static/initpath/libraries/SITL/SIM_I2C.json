@@ -1,0 +1,34 @@
+{
+    "init": {
+        "dev_i": [
+            [
+                "i",
+                "i2c_devices"
+            ],
+            0
+        ],
+        "dev_j": [
+            [
+                "i",
+                "i2c_devices"
+            ],
+            1
+        ]
+    },
+    "ioctl_rdwr": {
+        "addr": [
+            [
+                "data_msgs",
+                "_addr"
+            ],
+            0
+        ],
+        "bus": [
+            [
+                "data_msgs",
+                "_bus"
+            ],
+            0
+        ]
+    }
+}

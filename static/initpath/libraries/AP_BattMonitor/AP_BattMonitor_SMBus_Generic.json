@@ -1,0 +1,46 @@
+{
+    "timer": {
+        "_state.voltage": [
+            [
+                "data",
+                "float"
+            ],
+            0
+        ],
+        "_cell_count": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_state.current_amps": [
+            [
+                "int16_t",
+                "data",
+                "float"
+            ],
+            0
+        ],
+        "_cell_count_check_start_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "check_pec_support": {
+        "version": [
+            [
+                "data",
+                "0x_f0"
+            ],
+            0
+        ]
+    }
+}

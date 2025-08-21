@@ -1,0 +1,55 @@
+{
+    "set_leds": {
+        "_led_control.led_mask": [
+            [
+                "board_front_led_mask",
+                "board_rear_led_mask"
+            ],
+            0
+        ],
+        "_led_control.mode": [
+            [
+                "mode_blink_fast",
+                "mode_flash",
+                "mode_blink_normal",
+                "mode_on"
+            ],
+            0
+        ],
+        "_led_control.color": [
+            [
+                "color_green",
+                "color_yellow",
+                "color_white",
+                "color_blue",
+                "color_red",
+                "color_purple"
+            ],
+            0
+        ],
+        "_old_home_position_valid": [
+            [
+                "_failsafe_flags_sub_get_home_position_invalid"
+            ],
+            1
+        ],
+        "_old_nav_state": [
+            [
+                "_vehicle_status_sub_get_nav_state"
+            ],
+            1
+        ],
+        "_old_gps_lock_valid": [
+            [
+                "_failsafe_flags_sub_get_global_position_invalid"
+            ],
+            1
+        ],
+        "_old_battery_status_warning": [
+            [
+                "_battery_status_sub_get_warning"
+            ],
+            0
+        ]
+    }
+}

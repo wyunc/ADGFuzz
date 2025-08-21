@@ -1,0 +1,85 @@
+{
+    "updateParams": {
+        ".tilt_index": [
+            [
+                "tilt_param"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "i",
+                "_position",
+                "_geometry_rotors"
+            ],
+            0
+        ],
+        "axis": [
+            [
+                "vector3f__f",
+                "_axis",
+                "i",
+                "_geometry_rotors"
+            ],
+            0
+        ],
+        "_geometry.num_rotors": [
+            [
+                "min_num_rotors_max",
+                "min_static_cast",
+                "min__param_ca_rotor_count_get",
+                "min_int"
+            ],
+            0
+        ]
+    },
+    "computeEffectivenessMatrix": {
+        "thrust": [
+            [
+                "geometry_rotors",
+                "_thrust_coef",
+                "i",
+                "axis_norm",
+                "_axis",
+                "i",
+                "geometry_rotors"
+            ],
+            2
+        ],
+        "position": [
+            [
+                "geometry_rotors",
+                "_position",
+                "i"
+            ],
+            0
+        ],
+        "moment": [
+            [
+                "geometry_rotors",
+                "_thrust_coef",
+                "i",
+                "position_cross_axis",
+                "geometry_rotors",
+                "_moment_ratio",
+                "i",
+                "_f",
+                "axis_norm",
+                "_axis",
+                "i",
+                "geometry_rotors"
+            ],
+            3
+        ],
+        "upwards": [
+            [
+                "fabsf_axis",
+                "axis_norm",
+                "_axis",
+                "i",
+                "geometry_rotors"
+            ],
+            1
+        ]
+    }
+}

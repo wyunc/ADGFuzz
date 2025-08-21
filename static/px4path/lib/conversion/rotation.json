@@ -1,0 +1,54 @@
+{
+    "rotate_3i": {
+        "z": [
+            [
+                "constrain_roundf",
+                "constrain_r",
+                "float",
+                "int16_max",
+                "int16_min"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "constrain_roundf",
+                "constrain_r",
+                "float",
+                "int16_max",
+                "int16_min"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "constrain_roundf",
+                "constrain_r",
+                "float",
+                "int16_max",
+                "int16_min"
+            ],
+            0
+        ]
+    },
+    "rotate_3f": {
+        "y": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "z": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "r"
+            ],
+            0
+        ]
+    }
+}

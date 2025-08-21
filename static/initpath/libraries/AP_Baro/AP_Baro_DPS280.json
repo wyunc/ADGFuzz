@@ -1,0 +1,153 @@
+{
+    "fix_config_bits16": {
+        "v": [
+            [
+                "bits",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "fix_config_bits32": {
+        "v": [
+            [
+                "bits",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "read_calibration": {
+        "calibration.C30": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C11": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C21": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C00": [
+            [
+                "0x0f",
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C01": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C1": [
+            [
+                "0x0f",
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C0": [
+            [
+                "0x0f",
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C10": [
+            [
+                "0x0f",
+                "buf"
+            ],
+            0
+        ],
+        "calibration.C20": [
+            [
+                "buf"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "calculate_PT": {
+        "pressure": [
+            [
+                "cal_c30",
+                "cal_c11",
+                "cal_c21",
+                "scaling_16",
+                "float_up",
+                "float_ut",
+                "scaling_16",
+                "cal_c01",
+                "cal_c20",
+                "cal_c00",
+                "cal_c10"
+            ],
+            2
+        ],
+        "temperature": [
+            [
+                "float_ut",
+                "scaling_16",
+                "cal_c1",
+                "cal_c0"
+            ],
+            1
+        ],
+        "cal": [
+            [
+                "calibration"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "temperature_sum": [
+            [
+                "temperature"
+            ],
+            0
+        ],
+        "pressure_sum": [
+            [
+                "pressure"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "press": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "last_temperature": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    }
+}

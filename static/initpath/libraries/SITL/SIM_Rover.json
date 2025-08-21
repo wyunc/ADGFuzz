@@ -1,0 +1,182 @@
+{
+    "calc_yaw_rate": {
+        "rate": [
+            [
+                "m_pi",
+                "turn_circle_steering",
+                "speed",
+                "max_yaw_rate"
+            ],
+            3
+        ]
+    },
+    "calc_lat_accel": {
+        "yaw_rate": [
+            [
+                "calc_yaw_rate_speed",
+                "calc_yaw_rate_steering_angle"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "speed",
+                "radians_yaw_rate"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "accel_body": [
+            [
+                "vector3f_gravity_mss",
+                "vector3f_gravity_mss",
+                "dcm",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "_todouble",
+                "frame_time_us",
+                "_0e",
+                "vector3f_gravity_mss",
+                "dcm",
+                "frame_time_us",
+                "_0e"
+            ],
+            3
+        ]
+    },
+    "update_ackermann_or_skid": {
+        "accel": [
+            [
+                "max_accel",
+                "max_speed",
+                "max_speed",
+                "input_servos",
+                "cosf_steering_angle_rad",
+                "input_servos",
+                "input_servos",
+                "velocity_body_x"
+            ],
+            5
+        ],
+        "steering": [
+            [
+                "input_servos",
+                "sinf_steering_angle_rad",
+                "input_servos",
+                "input_servos"
+            ],
+            2
+        ],
+        "yaw_rate": [
+            [
+                "calc_yaw_rate_steering",
+                "calc_yaw_rate_speed"
+            ],
+            0
+        ],
+        "velocity_body": [
+            [
+                "dcm_transposed",
+                "velocity_ef"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_radians",
+                "vector3f_yaw_rate"
+            ],
+            0
+        ],
+        "accel_body.y": [
+            [
+                "radians_yaw_rate",
+                "velocity_body_x"
+            ],
+            1
+        ],
+        "steering_angle_rad": [
+            [
+                "radians_vectored_angle_max",
+                "radians_steering"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_accel"
+            ],
+            0
+        ]
+    },
+    "update_omni3": {
+        "motor1": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "vector3f_twist_z"
+            ],
+            0
+        ],
+        "velocity_body": [
+            [
+                "velocity_ef",
+                "dcm_transposed"
+            ],
+            0
+        ],
+        "accel_y": [
+            [
+                "twist_y",
+                "omni3_max_accel",
+                "velocity_body_y",
+                "omni3_max_speed"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_accel_x",
+                "vector3f_accel_y"
+            ],
+            0
+        ],
+        "motor3": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "accel_x": [
+            [
+                "velocity_body_x",
+                "omni3_max_accel",
+                "omni3_max_speed",
+                "twist_x"
+            ],
+            0
+        ],
+        "twist": [
+            [
+                "minv",
+                "wheel_ang_vel"
+            ],
+            0
+        ],
+        "motor2": [
+            [
+                "input_servos"
+            ],
+            0
+        ]
+    }
+}

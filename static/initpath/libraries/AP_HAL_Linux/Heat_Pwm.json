@@ -1,0 +1,32 @@
+{
+    "set_imu_temp": {
+        "_last_temp_update": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "float",
+                "current",
+                "_target",
+                "_period_ns",
+                "_ki",
+                "float",
+                "current",
+                "_target",
+                "_kp"
+            ],
+            2
+        ]
+    },
+    "set_imu_target_temp": {
+        "_target": [
+            [
+                "target"
+            ],
+            0
+        ]
+    }
+}

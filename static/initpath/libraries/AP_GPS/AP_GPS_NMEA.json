@@ -1,0 +1,539 @@
+{
+    "read": {
+        "numc": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "port_read"
+            ],
+            0
+        ]
+    },
+    "_decode": {
+        "_sentence_type": [
+            [
+                "_gps_sentence_other"
+            ],
+            0
+        ],
+        "valid_sentence": [
+            [
+                "_term_complete"
+            ],
+            0
+        ],
+        "_crc32": [
+            [
+                "c",
+                "crc_crc32_const",
+                "crc_crc32_uint8_t",
+                "crc_crc32__crc32"
+            ],
+            0
+        ],
+        "_is_checksum_term": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "_term_number": [
+            [
+                "_term_offset"
+            ],
+            0
+        ],
+        "_is_unicore": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "_new_gps_yaw": [
+            [
+                "qnan"
+            ],
+            0
+        ]
+    },
+    "_have_new_message": {
+        "_last_fix_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "_term_complete": {
+        "_new_speed": [
+            [
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "_phd_fields",
+                "ag_pos_stddev_z"
+            ],
+            0
+        ],
+        "_phd.msg_class": [
+            [
+                "atol__term"
+            ],
+            0
+        ],
+        "crc_ok": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term",
+                "_is_unicore",
+                "_parity",
+                "_crc32"
+            ],
+            1
+        ],
+        "ag": [
+            [
+                "_agrica"
+            ],
+            0
+        ],
+        "state.gps_yaw": [
+            [
+                "_ksxt_fields",
+                "wrap_360__new_gps_yaw"
+            ],
+            0
+        ],
+        "_last_VTG_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "uh": [
+            [
+                "_uniheadinga"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d_rtk_float",
+                "no_fix",
+                "gps_ok_fix_3d_dgps",
+                "gps_ok_fix_3d"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "ag_lat",
+                "_0e7",
+                "_ksxt_fields"
+            ],
+            0
+        ],
+        "_new_altitude": [
+            [
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "_new_gps_yaw": [
+            [
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "state.relposheading_ts": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.gps_yaw_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.velocity.y": [
+            [
+                "_phd_fields",
+                "_ksxt_fields",
+                "kmh_to_mps"
+            ],
+            0
+        ],
+        "_last_AGRICA_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_3D_velocity_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360__new_course"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_sentence_type": [
+            [
+                "_gps_sentence_uniheadinga",
+                "_gps_sentence_hdt",
+                "_gps_sentence_versiona",
+                "_gps_sentence_agrica",
+                "_gps_sentence_ksxt",
+                "_gps_sentence_ths",
+                "_gps_sentence_gga",
+                "_gps_sentence_phd",
+                "_gps_sentence_vtg",
+                "_gps_sentence_rmc",
+                "_gps_sentence_other"
+            ],
+            0
+        ],
+        "_new_satellite_count": [
+            [
+                "atol__term"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "ag_pos_stddev_xy_length",
+                "_phd_fields"
+            ],
+            0
+        ],
+        "_last_yaw_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_GGA_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_new_hdop": [
+            [
+                "uint16_t",
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "_last_KSXT_pos_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.relPosHeading": [
+            [
+                "uh_heading"
+            ],
+            1
+        ],
+        "state.relPosLength": [
+            [
+                "uh_baseline_length"
+            ],
+            1
+        ],
+        "state.undulation": [
+            [
+                "ag_undulation"
+            ],
+            0
+        ],
+        "_new_time": [
+            [
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "_last_RMC_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.relPosD": [
+            [
+                "tanf_uh_pitch",
+                "tanf_radians",
+                "uh_baseline_length"
+            ],
+            2
+        ],
+        "_new_longitude": [
+            [
+                "_parse_degrees"
+            ],
+            0
+        ],
+        "_new_latitude": [
+            [
+                "_parse_degrees"
+            ],
+            0
+        ],
+        "_phd.msg_id": [
+            [
+                "atol__term"
+            ],
+            0
+        ],
+        "_phd.itow": [
+            [
+                "strtoul_nullptr",
+                "strtoul__term"
+            ],
+            0
+        ],
+        "_new_date": [
+            [
+                "atol__term"
+            ],
+            0
+        ],
+        "term_type": [
+            [
+                "_term"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "_phd_fields",
+                "ag_vel_stddev_length"
+            ],
+            0
+        ],
+        "state.velocity": [
+            [
+                "ag_vel_ned"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "_phd_fields",
+                "_ksxt_fields",
+                "kmh_to_mps"
+            ],
+            0
+        ],
+        "_last_vvelocity_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.time_week_ms": [
+            [
+                "_last_itow_ms"
+            ],
+            0
+        ],
+        "_last_vaccuracy_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.location.lng": [
+            [
+                "_0e7",
+                "_ksxt_fields",
+                "ag_lng"
+            ],
+            0
+        ],
+        "_new_quality_indicator": [
+            [
+                "_term"
+            ],
+            0
+        ],
+        "_new_course": [
+            [
+                "_parse_decimal_100__term"
+            ],
+            0
+        ],
+        "state.gps_yaw_accuracy": [
+            [
+                "uh_heading_sd"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "_phd_fields",
+                "_ksxt_fields",
+                "kmh_to_mps"
+            ],
+            0
+        ]
+    },
+    "parse_agrica_field": {
+        "term_number": [
+            [
+                "hdr_align"
+            ],
+            0
+        ],
+        "ag.lng": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "ag.lat": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "ag": [
+            [
+                "_agrica"
+            ],
+            0
+        ],
+        "ag.itow": [
+            [
+                "atol_term"
+            ],
+            0
+        ],
+        "ag.alt": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "ag.rtk_status": [
+            [
+                "atol_term"
+            ],
+            0
+        ],
+        "ag.undulation": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "ag.heading_status": [
+            [
+                "atol_term"
+            ],
+            0
+        ],
+        "ag.vel_NED.z": [
+            [
+                "atof_term"
+            ],
+            0
+        ]
+    },
+    "parse_uniheadinga_field": {
+        "uh.heading": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "uh.baseline_length": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "term_number": [
+            [
+                "hdr_align"
+            ],
+            0
+        ],
+        "uh.heading_sd": [
+            [
+                "atof_term"
+            ],
+            0
+        ],
+        "uh": [
+            [
+                "_uniheadinga"
+            ],
+            0
+        ],
+        "uh.pitch": [
+            [
+                "atof_term"
+            ],
+            0
+        ]
+    },
+    "parse_versiona_field": {
+        "v": [
+            [
+                "_versiona"
+            ],
+            0
+        ]
+    },
+    "send_config": {
+        "rate_s": [
+            [
+                "params_rate_ms"
+            ],
+            1
+        ],
+        "type": [
+            [
+                "gps_type_unicore_movingbase_nmea",
+                "get_type"
+            ],
+            0
+        ],
+        "rate_hz": [
+            [
+                "params_rate_ms",
+                "1000u"
+            ],
+            1
+        ],
+        "last_config_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

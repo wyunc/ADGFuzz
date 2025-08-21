@@ -1,0 +1,18 @@
+{
+    "bitmask_tests": {
+        "x2": [
+            [
+                "x"
+            ],
+            0
+        ]
+    },
+    "bitmask_assignment": {
+        "x": [
+            [
+                "y"
+            ],
+            0
+        ]
+    }
+}

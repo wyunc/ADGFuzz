@@ -1,0 +1,42 @@
+{
+    "copy_state_to_frontend": {
+        "_state.distance_count": [
+            [
+                "distance_count"
+            ],
+            0
+        ],
+        "_state.total_count": [
+            [
+                "total_count"
+            ],
+            0
+        ],
+        "_state.error_count": [
+            [
+                "error_count"
+            ],
+            0
+        ],
+        "_state.last_reading_ms": [
+            [
+                "last_reading_ms"
+            ],
+            0
+        ],
+        "_state.dist_count_change": [
+            [
+                "distance_count",
+                "_state_distance_count"
+            ],
+            0
+        ],
+        "_state.dt_ms": [
+            [
+                "_state_last_reading_ms",
+                "last_reading_ms"
+            ],
+            0
+        ]
+    }
+}

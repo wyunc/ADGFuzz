@@ -1,0 +1,80 @@
+{
+    "controlEvHeightFusion": {
+        "measurement_var": [
+            [
+                "max_pos_cov",
+                "max_measurement_var",
+                "sq__params_ev_pos_noise",
+                "max__params_gps_pos_noise",
+                "max_sq",
+                "sq"
+            ],
+            0
+        ],
+        "bias_est": [
+            [
+                "_ev_hgt_b_est"
+            ],
+            0
+        ],
+        "measurement": [
+            [
+                "ev_sample_pos",
+                "r_ev_to_ekf",
+                "_r_to_earth",
+                "_params_ev_pos_body",
+                "_params_imu_pos_body"
+            ],
+            3
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out__params_hgt_fusion_timeout_max",
+                "is_timed_out_aid_src_time_last_fuse"
+            ],
+            0
+        ],
+        "pos_cov": [
+            [
+                "r_ev_to_ekf_transpose",
+                "diag_ev_sample_position_var",
+                "r_ev_to_ekf"
+            ],
+            0
+        ],
+        "_height_sensor_ref": [
+            [
+                "ev"
+            ],
+            0
+        ],
+        "measurement_valid": [
+            [
+                "px4_isfinite_measurement",
+                "px4_isfinite_measurement_var"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "orientation_var_max": [
+            [
+                "ev_sample_orientation_var",
+                "max_ev_sample_orientation_var"
+            ],
+            0
+        ]
+    },
+    "stopEvHgtFusion": {
+        "_height_sensor_ref": [
+            [
+                "unknown"
+            ],
+            0
+        ]
+    }
+}

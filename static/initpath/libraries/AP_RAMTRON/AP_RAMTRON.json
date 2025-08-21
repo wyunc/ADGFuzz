@@ -1,0 +1,97 @@
+{
+    "init": {
+        "fujitsu": [
+            [
+                "const",
+                "rdid",
+                "fujitsu_rdid"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "petabytes": [
+            [
+                "const",
+                "rdid",
+                "petabytes_rdid"
+            ],
+            0
+        ],
+        "cypress": [
+            [
+                "const",
+                "cypress_rdid",
+                "rdid"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "hal_spi_get_device"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "offset": [
+            [
+                "maxread"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "maxread"
+            ],
+            0
+        ],
+        "buf": [
+            [
+                "maxread"
+            ],
+            0
+        ],
+        "crc2": [
+            [
+                "crc_crc32_size",
+                "crc_crc32_buf"
+            ],
+            0
+        ],
+        "crc1": [
+            [
+                "crc_crc32_size",
+                "crc_crc32_buf"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "crc2": [
+            [
+                "crc_crc32_rbuf",
+                "crc_crc32_nverify"
+            ],
+            0
+        ],
+        "nverify": [
+            [
+                "sizeof_rbuf",
+                "size"
+            ],
+            0
+        ],
+        "crc1": [
+            [
+                "crc_crc32_buf",
+                "crc_crc32_nverify"
+            ],
+            0
+        ]
+    }
+}

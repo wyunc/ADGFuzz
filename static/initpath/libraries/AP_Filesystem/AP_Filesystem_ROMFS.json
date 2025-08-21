@@ -1,0 +1,111 @@
+{
+    "open": {
+        ".data": [
+            [
+                "find_decompress_fname",
+                "find_decompress_idx",
+                "find_decompress__size",
+                "find_decompress_file"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "ebusy",
+                "erofs",
+                "enoent",
+                "enfile"
+            ],
+            0
+        ]
+    },
+    "close": {
+        "errno": [
+            [
+                "ebadf"
+            ],
+            0
+        ],
+        ".data": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "stat": {
+        "errno": [
+            [
+                "enoent"
+            ],
+            0
+        ],
+        "st_size": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "unlink": {
+        "errno": [
+            [
+                "erofs"
+            ],
+            0
+        ]
+    },
+    "mkdir": {
+        "errno": [
+            [
+                "erofs"
+            ],
+            0
+        ]
+    },
+    "opendir": {
+        "errno": [
+            [
+                "enfile"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "dir_list__path",
+                "dir_list__ofs",
+                "dir_list_dir",
+                "dir_list_idx"
+            ],
+            0
+        ],
+        ".path": [
+            [
+                "strdup_pathname"
+            ],
+            0
+        ]
+    },
+    "closedir": {
+        "idx": [
+            [
+                "dir",
+                "dirp",
+                "rdir"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "ebadf"
+            ],
+            0
+        ],
+        ".path": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "get_yaw_out": {
+        "yaw_output": [
+            [
+                "pitch_cdeg",
+                "fabsf_deadzone_cdeg",
+                "fabsf_roll_cdeg",
+                "fabsf_pitch_cdeg",
+                "_min_dz_ang_deg",
+                "_gain"
+            ],
+            3
+        ],
+        "last_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "first_activate_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dir": [
+            [
+                "_direction_get",
+                "direction",
+                "_takeoff_direction_get",
+                "_landing_direction_get"
+            ],
+            0
+        ],
+        "pitch_enable": [
+            [
+                "uint8_t__options_get",
+                "uint8_t_pitch_enable"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "last_check_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

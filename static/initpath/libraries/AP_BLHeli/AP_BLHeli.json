@@ -1,0 +1,565 @@
+{
+    "msp_process_byte": {
+        "msp.dataSize": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "msp.packetType": [
+            [
+                "msp_packet_reply",
+                "msp_packet_command"
+            ],
+            0
+        ],
+        "msp.escMode": [
+            [
+                "protocol_none"
+            ],
+            0
+        ],
+        "msp.state": [
+            [
+                "msp_command_received",
+                "msp_idle",
+                "msp_header_size",
+                "msp_header_start",
+                "msp_header_arrow",
+                "msp_header_cmd",
+                "c",
+                "msp_header_m"
+            ],
+            0
+        ],
+        "msp.cmdMSP": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "blheli_crc_update": {
+        "blheli.crc": [
+            [
+                "crc_xmodem_update_c",
+                "crc_xmodem_update_blheli_crc"
+            ],
+            0
+        ]
+    },
+    "blheli_4way_process_byte": {
+        "blheli.command": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "blheli_crc1",
+                "c"
+            ],
+            0
+        ],
+        "blheli.address": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "blheli.param_len": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "blheli.state": [
+            [
+                "blheli_header_addr_low",
+                "blheli_header_cmd",
+                "blheli_command_received",
+                "blheli_header_addr_high",
+                "blheli_crc2",
+                "blheli_header_len",
+                "blheli_idle",
+                "blheli_header_start",
+                "blheli_crc1"
+            ],
+            0
+        ],
+        "blheli.crc1": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "msp_send_reply": {
+        "b": [
+            [
+                "msp_buf",
+                "len"
+            ],
+            0
+        ]
+    },
+    "msp_process_command": {
+        "msp.portIndex": [
+            [
+                "msp_buf"
+            ],
+            0
+        ],
+        "nmotors": [
+            [
+                "msp_data_size"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "hal_rcout_read_motor_map",
+                "get_u16_i",
+                "get_u16_msp_buf",
+                "hal_rcout_read_i",
+                "mixed_type"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "num_motors"
+            ],
+            0
+        ],
+        "msp.escMode": [
+            [
+                "esc_protocol",
+                "protocol_4way",
+                "enum",
+                "msp_buf"
+            ],
+            0
+        ],
+        "motors_disabled_mask": [
+            [
+                "get_disabled_channel_mask"
+            ],
+            0
+        ]
+    },
+    "blheli_send_reply": {
+        "b": [
+            [
+                "len",
+                "blheli_buf"
+            ],
+            0
+        ]
+    },
+    "BL_SendBuf": {
+        "send_crc": [
+            [
+                "is_mcu_connected"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "bl_crc_len",
+                "bl_crc_buf"
+            ],
+            0
+        ],
+        "blheli.ack": [
+            [
+                "ack_d_general_error"
+            ],
+            0
+        ],
+        "serial_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "BL_ReadBuf": {
+        "req_bytes": [
+            [
+                "len",
+                "is_mcu_connected",
+                "len"
+            ],
+            1
+        ],
+        "n": [
+            [
+                "hal_rcout_serial_read_bytes_blheli_buf",
+                "hal_rcout_serial_read_bytes_req_bytes"
+            ],
+            0
+        ],
+        "blheli.ack": [
+            [
+                "ack_d_general_error"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "bl_crc_len",
+                "bl_crc_blheli_buf"
+            ],
+            0
+        ]
+    },
+    "BL_ReadA": {
+        "ret": [
+            [
+                "bl_read_buf_n",
+                "bl_read_buf_buf"
+            ],
+            0
+        ]
+    },
+    "BL_ConnectEx": {
+        "blheli.ack": [
+            [
+                "ack_d_general_error"
+            ],
+            0
+        ]
+    },
+    "BL_WriteA": {
+        "blheli.ack": [
+            [
+                "ack_d_general_error"
+            ],
+            0
+        ]
+    },
+    "BL_VerifyFlash": {
+        "blheli.ack": [
+            [
+                "ack_ok",
+                "ack_d_general_error",
+                "ack_i_verify_error"
+            ],
+            0
+        ],
+        "ack": [
+            [
+                "bl_get_ack"
+            ],
+            0
+        ]
+    },
+    "blheli_process_command": {
+        "blheli.ack": [
+            [
+                "ack_ok",
+                "ack_i_invalid_cmd",
+                "ack_d_general_error",
+                "ack_i_invalid_channel"
+            ],
+            0
+        ],
+        "blheli.address": [
+            [
+                "blheli_buf"
+            ],
+            1
+        ],
+        "cmd": [
+            [
+                "blheli_chan",
+                "im_atm_blb",
+                "blheli_interface_mode",
+                "cmd_read_flash_atm",
+                "cmd_read_flash_sil"
+            ],
+            0
+        ],
+        "blheli.chan": [
+            [
+                "blheli_buf"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "blheli_buf",
+                "blheli_param_len"
+            ],
+            0
+        ],
+        "msp.escMode": [
+            [
+                "protocol_none"
+            ],
+            0
+        ]
+    },
+    "process_input": {
+        "last_valid_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "msp.escMode": [
+            [
+                "protocol_4way",
+                "protocol_none"
+            ],
+            0
+        ],
+        "blheli.state": [
+            [
+                "blheli_idle"
+            ],
+            0
+        ],
+        "msp.state": [
+            [
+                "msp_idle"
+            ],
+            0
+        ]
+    },
+    "protocol_handler": {
+        "uart": [
+            [
+                "_uart"
+            ],
+            0
+        ]
+    },
+    "run_connection_test": {
+        "blheli.chan": [
+            [
+                "chan",
+                "blheli_chan"
+            ],
+            1
+        ],
+        "debug_uart": [
+            [
+                "hal_console",
+                "nullptr"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "blheli_interface_mode",
+                "cmd_read_flash_atm",
+                "im_atm_blb",
+                "blheli_chan",
+                "cmd_read_flash_sil"
+            ],
+            0
+        ],
+        "blheli.address": [
+            [
+                "esc_status_addr",
+                "blheli_interface_mode",
+                "0x7c00",
+                "im_atm_blb",
+                "blheli_chan"
+            ],
+            0
+        ],
+        "blheli.ack": [
+            [
+                "ack_ok"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "reversed": [
+            [
+                "motor_map",
+                "i",
+                "1u",
+                "channel_reversible_mask_get"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "motor_mask": [
+            [
+                "mask"
+            ],
+            0
+        ],
+        "mixed_type": [
+            [
+                "channel_reversible_mask_get",
+                "mask"
+            ],
+            0
+        ],
+        "serial_manager": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "motors": [
+            [
+                "motors_ugv"
+            ],
+            0
+        ],
+        "digital_mask": [
+            [
+                "mask"
+            ],
+            0
+        ],
+        "otype": [
+            [
+                "mode_neopixel",
+                "output_mode_type",
+                "output_type_get",
+                "mode_pwm_none"
+            ],
+            1
+        ],
+        "telem_uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_esc_telemetry"
+            ],
+            0
+        ],
+        "motormask": [
+            [
+                "motors_get_motor_mask"
+            ],
+            0
+        ],
+        "last_control_port": [
+            [
+                "control_port"
+            ],
+            0
+        ]
+    },
+    "read_telemetry_packet": {
+        "normalized_motor_idx": [
+            [
+                "chan_offset",
+                "last_telem_esc",
+                "motor_map"
+            ],
+            1
+        ],
+        "crc": [
+            [
+                "crc8_dvb_i",
+                "crc8_dvb_crc",
+                "crc8_dvb_0x07",
+                "crc8_dvb_buf"
+            ],
+            0
+        ],
+        "trpm": [
+            [
+                "hal_rcout_get_erpm_motor_idx",
+                "motor_poles",
+                "motor_poles",
+                "buf"
+            ],
+            1
+        ]
+    },
+    "log_bidir_telemetry": {
+        "last_telem_esc": [
+            [
+                "idx_pos",
+                "num_motors"
+            ],
+            1
+        ],
+        "motor_idx": [
+            [
+                "motor_map"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "trpm": [
+            [
+                "hal_rcout_get_erpm_motor_idx",
+                "motor_poles"
+            ],
+            0
+        ]
+    },
+    "update_telemetry": {
+        "telem_rate_us": [
+            [
+                "1000000u",
+                "num_motors",
+                "uint32_t_telem_rate_get"
+            ],
+            0
+        ],
+        "last_telem_byte_read_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "mask": [
+            [
+                "num_motors",
+                "idx_pos",
+                "motor_map",
+                "1u"
+            ],
+            1
+        ],
+        "last_telem_esc": [
+            [
+                "num_motors",
+                "idx_pos"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "telem_uart_available"
+            ],
+            0
+        ],
+        "last_telem_request_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

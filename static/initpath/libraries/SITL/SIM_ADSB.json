@@ -1,0 +1,252 @@
+{
+    "update": {
+        "velocity_ef.y": [
+            [
+                "rand_normal_vel_max",
+                "rand_normal_vel_min"
+            ],
+            0
+        ],
+        "stationary_object_created_ms": [
+            [
+                "millis64"
+            ],
+            0
+        ],
+        "position.z": [
+            [
+                "fabsf__sitl_adsb_altitude_m"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "delta_t",
+                "velocity_ef"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "adsb_emitter_type_point_obstacle",
+                "rand",
+                "adsb_emitter_type"
+            ],
+            0
+        ],
+        "ICAO_address": [
+            [
+                "uint32_t",
+                "rand"
+            ],
+            0
+        ],
+        "vel_min": [
+            [
+                "vel_max"
+            ],
+            0
+        ],
+        "position.y": [
+            [
+                "rand_normal__sitl_adsb_radius_m",
+                "aircraft_location_get_distance_ne_origin"
+            ],
+            1
+        ],
+        "location": [
+            [
+                "origin"
+            ],
+            1
+        ],
+        "aircraft_location": [
+            [
+                "aircraft_get_location"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ],
+        "position.x": [
+            [
+                "rand_normal__sitl_adsb_radius_m",
+                "aircraft_location_get_distance_ne_origin"
+            ],
+            1
+        ],
+        "velocity_ef.x": [
+            [
+                "rand_normal_vel_max",
+                "rand_normal_vel_min"
+            ],
+            0
+        ]
+    },
+    "update_simulated_vehicles": {
+        "delta_t": [
+            [
+                "_0e",
+                "micros"
+            ],
+            1
+        ],
+        "aircraft_loc": [
+            [
+                "aircraft_get_location"
+            ],
+            0
+        ],
+        "last_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "num_vehicles": [
+            [
+                "_sitl_adsb_plane_count"
+            ],
+            0
+        ],
+        "vehicle": [
+            [
+                "vehicles",
+                "i"
+            ],
+            0
+        ],
+        "_sitl": [
+            [
+                "sitl"
+            ],
+            0
+        ]
+    },
+    "send_report": {
+        "adsb_vehicle.lon": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "adsb_vehicle.hor_velocity": [
+            [
+                "norm_vehicle_velocity_ef_y",
+                "norm_vehicle_velocity_ef_x"
+            ],
+            0
+        ],
+        "vehicle_system_id": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "adsb_vehicle.ICAO_address": [
+            [
+                "vehicle_icao_address"
+            ],
+            0
+        ],
+        "adsb_vehicle.altitude": [
+            [
+                "vehicle_position_z"
+            ],
+            0
+        ],
+        "adsb_vehicle.heading": [
+            [
+                "wrap_360_cd_degrees",
+                "wrap_360_cd_atan2f",
+                "wrap_360_cd_vehicle_velocity_ef_y",
+                "wrap_360_cd_vehicle_velocity_ef_x"
+            ],
+            0
+        ],
+        "last_report_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "vehicle_component_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "adsb_vehicle.emitter_type": [
+            [
+                "vehicle_type"
+            ],
+            0
+        ],
+        "adsb_vehicle.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "heartbeat.autopilot": [
+            [
+                "mav_autopilot_ardupilotmega"
+            ],
+            0
+        ],
+        "adsb_vehicle.ver_velocity": [
+            [
+                "vehicle_velocity_ef_z"
+            ],
+            0
+        ],
+        "adsb_vehicle.altitude_type": [
+            [
+                "adsb_altitude_type_pressure_qnh"
+            ],
+            0
+        ],
+        "vehicle": [
+            [
+                "i",
+                "vehicles"
+            ],
+            0
+        ],
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_tx_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "heartbeat.type": [
+            [
+                "mav_type_adsb"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_msgbuf"
+            ],
+            0
+        ],
+        "health_report": [
+            [
+                "uavionix_adsb_rf_health_ok"
+            ],
+            0
+        ]
+    }
+}

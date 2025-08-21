@@ -1,0 +1,98 @@
+{
+    "update_fw": {
+        "f": [
+            [
+                "fopen_fw_name"
+            ],
+            0
+        ],
+        "nread": [
+            [
+                "fread_f",
+                "fread_buffer_size",
+                "fread_buffer"
+            ],
+            0
+        ],
+        "buffer": [
+            [
+                "calloc_buffer_size"
+            ],
+            0
+        ],
+        "update_partition": [
+            [
+                "esp_ota_get_next_update_partition_null"
+            ],
+            0
+        ]
+    },
+    "mount_sdcard_mmc": {
+        "ret": [
+            [
+                "esp_vfs_fat_sdmmc_mount_mount_config",
+                "esp_vfs_fat_sdmmc_mount_host",
+                "esp_vfs_fat_sdmmc_mount_card",
+                "esp_vfs_fat_sdmmc_mount_slot_config"
+            ],
+            0
+        ],
+        "slot_config": [
+            [
+                "sdmmc_slot_config_default"
+            ],
+            0
+        ],
+        "host": [
+            [
+                "sdmmc_host_default"
+            ],
+            0
+        ]
+    },
+    "mount_sdcard_spi": {
+        "slot_config.gpio_cs": [
+            [
+                "bus__cs"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "esp_vfs_fat_sdspi_mount_mount_config",
+                "esp_vfs_fat_sdspi_mount_card",
+                "spi_bus_initialize_spi_host_device_thost_slot",
+                "esp_vfs_fat_sdspi_mount_slot_config",
+                "esp_vfs_fat_sdspi_mount_host",
+                "spi_dma_chan",
+                "bus_cfg"
+            ],
+            0
+        ],
+        "host.max_freq_khz": [
+            [
+                "sdmmc_freq_probing"
+            ],
+            0
+        ],
+        "host": [
+            [
+                "sdspi_host_default"
+            ],
+            0
+        ],
+        "slot_config.host_id": [
+            [
+                "host_slot",
+                "spi_host_device_t"
+            ],
+            0
+        ],
+        "slot_config": [
+            [
+                "sdspi_device_config_default"
+            ],
+            0
+        ]
+    }
+}

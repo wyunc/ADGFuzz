@@ -1,0 +1,57 @@
+{
+    "update": {
+        "receive_bytes": [
+            [
+                "output_limit_max_bytes_output_data_rate"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "mavlink_input_buffer_read_send_bytes",
+                "read_from_autopilot_charbuf",
+                "sock_recv_receive_bytes",
+                "mavlink_input_buffer_space",
+                "mavlink_input_buffer_read_buf",
+                "sock_recv_buf"
+            ],
+            1
+        ],
+        "sock": [
+            [
+                "listener_accept",
+                "nullptr"
+            ],
+            0
+        ],
+        "send_bytes": [
+            [
+                "input_limit_max_bytes_input_data_rate"
+            ],
+            0
+        ]
+    },
+    "sendQueuedData": {
+        "lastSentFlowCtrl": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "percentage_remaining": [
+            [
+                "mavlink_input_buffer_get_size",
+                "mavlink_input_buffer_space"
+            ],
+            0
+        ],
+        "written": [
+            [
+                "write_to_autopilot_charbuf",
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_buf"
+            ],
+            1
+        ]
+    }
+}

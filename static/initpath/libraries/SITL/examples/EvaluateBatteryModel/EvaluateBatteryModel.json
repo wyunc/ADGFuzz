@@ -1,0 +1,36 @@
+{
+    "setup": {
+        "min_voltage": [
+            [
+                "frame_get_max_volt"
+            ],
+            1
+        ],
+        "resistance": [
+            [
+                "frame_get_resistance"
+            ],
+            0
+        ],
+        "amp_hour_capacity": [
+            [
+                "frame_get_capacity"
+            ],
+            0
+        ],
+        "current": [
+            [
+                "strtof_null",
+                "strtof_argv"
+            ],
+            0
+        ],
+        "time": [
+            [
+                "1e6",
+                "time_step"
+            ],
+            0
+        ]
+    }
+}

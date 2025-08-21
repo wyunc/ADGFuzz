@@ -1,0 +1,101 @@
+{
+    "check": {
+        "mission": [
+            [
+                "_mission"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "afs_manual",
+                "afs_mode"
+            ],
+            0
+        ],
+        "ap_fence": [
+            [
+                "fence"
+            ],
+            0
+        ],
+        "gps_lock_ok": [
+            [
+                "millis",
+                "gps_last_fix_time_ms"
+            ],
+            1
+        ],
+        "_saved_wp": [
+            [
+                "mission_get_current_nav_cmd_index"
+            ],
+            0
+        ],
+        "_last_gps_loss_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "gcs_link_ok": [
+            [
+                "_gcs_fail_time_seconds",
+                "millis",
+                "gcs_sysid_myggcs_last_seen_time_ms"
+            ],
+            2
+        ],
+        "_last_comms_loss_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_state": [
+            [
+                "state_gps_loss",
+                "state_auto",
+                "state_data_link_loss"
+            ],
+            0
+        ]
+    },
+    "check_altlimit": {
+        "alt_amsl": [
+            [
+                "baro_get_altitude_difference_baro_get_pressure",
+                "baro_get_altitude_difference__qnh_pressure"
+            ],
+            0
+        ]
+    },
+    "gcs_terminate": {
+        "is_terminating": [
+            [
+                "should_crash_vehicle"
+            ],
+            0
+        ]
+    },
+    "max_range_update": {
+        "_first_location": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "_term_range_notice_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "distance_km": [
+            [
+                "_first_location_get_distance_gps_location"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "send_message": {
+        "flags": [
+            [
+                "payload_len",
+                "0x01",
+                "write"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc_xmodem_update_highbyte",
+                "crc_xmodem_update_lowbyte",
+                "crc_xmodem_update_i",
+                "crc_xmodem_update_msgid",
+                "crc_xmodem_update_flags",
+                "crc_xmodem_update_payload",
+                "crc_xmodem_update_proximity_lightware_header",
+                "crc_xmodem_update_crc"
+            ],
+            0
+        ]
+    },
+    "parse_byte": {
+        "_crc_expected": [
+            [
+                "crc_xmodem_update__crc_expected",
+                "crc_xmodem_update_b"
+            ],
+            0
+        ],
+        "_parse_state": [
+            [
+                "payload",
+                "msg_id",
+                "crc_h",
+                "header",
+                "crc_l",
+                "flags_h",
+                "flags_l"
+            ],
+            0
+        ],
+        "_msg.payload_len": [
+            [
+                "uint16_value__msg_flags_low",
+                "uint16_value__msg_flags_high"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "_enter": {
+        "plane.next_WP_loc": [
+            [
+                "plane_prev_wp_loc",
+                "plane_current_loc"
+            ],
+            0
+        ]
+    },
+    "_exit": {
+        "restart": [
+            [
+                "mav_cmd_nav_land",
+                "plane_mission_get_current_nav_cmd_id"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "plane.nav_pitch_cd": [
+            [
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "nav_cmd_id": [
+            [
+                "plane_mission_get_current_nav_cmd_id"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "plane_landing_constrain_roll_plane_g_level_roll_limit",
+                "ahrs_roll_sensor",
+                "plane_landing_constrain_roll_100ul",
+                "plane_landing_constrain_roll_plane_nav_roll_cd"
+            ],
+            0
+        ]
+    },
+    "is_landing": {
+        "plane.flight_stage": [
+            [
+                "land"
+            ],
+            0
+        ]
+    }
+}

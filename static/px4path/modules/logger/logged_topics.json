@@ -1,0 +1,93 @@
+{
+    "add_default_topics": {
+        "topic_list": [
+            [
+                "orb_get_topics"
+            ],
+            0
+        ]
+    },
+    "add_topics_from_file": {
+        "fp": [
+            [
+                "fopen_fname"
+            ],
+            0
+        ],
+        "nfields": [
+            [
+                "sscanf_interval_ms",
+                "sscanf_instance",
+                "sscanf_line",
+                "sscanf_topic_name",
+                "sscanf_pr_iu32"
+            ],
+            0
+        ],
+        "name_len": [
+            [
+                "strlen_topic_name"
+            ],
+            0
+        ]
+    },
+    "add_topic": {
+        "topics": [
+            [
+                "orb_get_topics"
+            ],
+            0
+        ],
+        "sub.id": [
+            [
+                "static_cast",
+                "orb_id",
+                "topic_o_id"
+            ],
+            0
+        ],
+        ".interval_ms": [
+            [
+                "_rate_factor"
+            ],
+            1
+        ],
+        "sub.instance": [
+            [
+                "instance"
+            ],
+            0
+        ],
+        "success": [
+            [
+                "add_topic_topics",
+                "add_topic_instance",
+                "add_topic_optional",
+                "add_topic_i",
+                "add_topic_interval_ms"
+            ],
+            0
+        ],
+        "sub": [
+            [
+                "_subscriptions_count",
+                "_subscriptions_sub"
+            ],
+            0
+        ],
+        "sub.interval_ms": [
+            [
+                "_rate_factor"
+            ],
+            1
+        ]
+    },
+    "initialize_logged_topics": {
+        "ntopics": [
+            [
+                "add_topics_from_file_px4_storagedir"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "activate": {
+        "_gear": [
+            [
+                "empty_landing_gear_default_keep"
+            ],
+            0
+        ],
+        "_time_stamp_activate": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "initEkfResetCounters": {
+        "_reset_counters.vz": [
+            [
+                "_sub_vehicle_local_position_get_vz_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.vxy": [
+            [
+                "_sub_vehicle_local_position_get_vxy_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.hagl": [
+            [
+                "_sub_vehicle_local_position_get_dist_bottom_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.xy": [
+            [
+                "_sub_vehicle_local_position_get_xy_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.z": [
+            [
+                "_sub_vehicle_local_position_get_z_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.heading": [
+            [
+                "_sub_vehicle_local_position_get_heading_reset_counter"
+            ],
+            0
+        ]
+    },
+    "updateInitialize": {
+        "_deltatime": [
+            [
+                "min__time_stamp_last",
+                "min__time_stamp_current",
+                "_timeout",
+                "1e6f"
+            ],
+            0
+        ],
+        "_time_stamp_last": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "_checkEkfResetCounters": {
+        "_dist_to_bottom": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_reset_counters.vz": [
+            [
+                "_sub_vehicle_local_position_get_vz_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.hagl": [
+            [
+                "_sub_vehicle_local_position_get_dist_bottom_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.vxy": [
+            [
+                "_sub_vehicle_local_position_get_vxy_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.heading": [
+            [
+                "_sub_vehicle_local_position_get_heading_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.xy": [
+            [
+                "_sub_vehicle_local_position_get_xy_reset_counter"
+            ],
+            0
+        ],
+        "_reset_counters.z": [
+            [
+                "_sub_vehicle_local_position_get_z_reset_counter"
+            ],
+            0
+        ]
+    },
+    "_resetSetpoints": {
+        "_yawspeed_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "_evaluateVehicleLocalPosition": {
+        "_global_local_alt0": [
+            [
+                "_sub_vehicle_local_position_get_ref_alt"
+            ],
+            0
+        ],
+        "_unaided_yaw": [
+            [
+                "_sub_vehicle_local_position_get_unaided_heading"
+            ],
+            0
+        ],
+        "_is_yaw_good_for_control": [
+            [
+                "_sub_vehicle_local_position_get_heading_good_for_control"
+            ],
+            0
+        ],
+        "_yaw": [
+            [
+                "_sub_vehicle_local_position_get_heading",
+                "nan"
+            ],
+            0
+        ],
+        "_dist_to_bottom": [
+            [
+                "_sub_vehicle_local_position_get_dist_bottom",
+                "nan"
+            ],
+            0
+        ]
+    },
+    "_evaluateVehicleLocalPositionSetpoint": {
+        "_acceleration_setpoint_feedback": [
+            [
+                "vector3f_vehicle_local_position_setpoint_acceleration"
+            ],
+            0
+        ]
+    },
+    "_evaluateDistanceToGround": {
+        "_dist_to_ground": [
+            [
+                "_dist_to_bottom",
+                "_position",
+                "_sub_home_position_get_z"
+            ],
+            0
+        ]
+    },
+    "_setDefaultConstraints": {
+        "_constraints.speed_down": [
+            [
+                "_param_mpc_z_vel_max_dn_get"
+            ],
+            0
+        ],
+        "_constraints.speed_up": [
+            [
+                "_param_mpc_z_vel_max_up_get"
+            ],
+            0
+        ]
+    },
+    "_checkTakeoff": {
+        "velocity_triggered_takeoff": [
+            [
+                "_velocity_setpoint"
+            ],
+            0
+        ],
+        "position_triggered_takeoff": [
+            [
+                "_sub_vehicle_local_position_get_hagl_min",
+                "_position_setpoint",
+                "_position"
+            ],
+            2
+        ]
+    }
+}

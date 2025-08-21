@@ -1,0 +1,70 @@
+{
+    "checkAndReport": {
+        "worst_battery_time_s": [
+            [
+                "battery_time_remaining_s"
+            ],
+            0
+        ],
+        "critical_or_higher": [
+            [
+                "reporter_failsafe_flags_battery_warning",
+                "warning_critical"
+            ],
+            0
+        ],
+        "oldest_update": [
+            [
+                "hrt_absolute_time",
+                "battery_timestamp"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "battery_sub_get_instance"
+            ],
+            0
+        ],
+        ".battery_warning": [
+            [
+                "warning_none",
+                "warning_failed",
+                "battery_warning",
+                "warning_none",
+                "warning_critical"
+            ],
+            1
+        ],
+        "below_configured_arm_threshold": [
+            [
+                "battery_remaining",
+                "_f",
+                "_param_com_arm_bat_min_get"
+            ],
+            1
+        ],
+        "_last_armed": [
+            [
+                "context_is_armed"
+            ],
+            0
+        ],
+        "configured_arm_threshold_in_use": [
+            [
+                "context_is_armed",
+                "_param_com_arm_bat_min_get",
+                "flt_epsilon"
+            ],
+            0
+        ]
+    },
+    "rtlEstimateCheck": {
+        "hysteresis_factor": [
+            [
+                "reporter_failsafe_flags_battery_low_remaining_time"
+            ],
+            0
+        ]
+    }
+}

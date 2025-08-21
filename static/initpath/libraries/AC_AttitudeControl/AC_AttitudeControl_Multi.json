@@ -1,0 +1,120 @@
+{
+    "update_althold_lean_angle_max": {
+        "_althold_lean_angle_max": [
+            [
+                "_dt",
+                "acosf_ac_attitude_control_angle_limit_throttle_max",
+                "acosf_thr_max",
+                "acosf_throttle_in",
+                "_angle_limit_tc"
+            ],
+            1
+        ],
+        "thr_max": [
+            [
+                "_motors_multi_get_throttle_thrust_max"
+            ],
+            0
+        ]
+    },
+    "set_throttle_out": {
+        "throttle_in": [
+            [
+                "get_throttle_boosted_throttle_in"
+            ],
+            0
+        ]
+    },
+    "set_throttle_mix_max": {
+        "_throttle_rpy_mix_desired": [
+            [
+                "_thr_mix_min",
+                "_thr_mix_max",
+                "ratio"
+            ],
+            0
+        ]
+    },
+    "get_throttle_boosted": {
+        "_angle_boost": [
+            [
+                "throttle_in",
+                "_ahrs_cos_roll",
+                "_ahrs_cos_pitch",
+                "cosf__thrust_angle",
+                "throttle_in"
+            ],
+            5
+        ]
+    },
+    "update_throttle_gain_boost": {
+        "pd_boost": [
+            [
+                "_throttle_gain_boost"
+            ],
+            0
+        ],
+        "angle_p_boost": [
+            [
+                "_throttle_gain_boost"
+            ],
+            0
+        ]
+    },
+    "update_throttle_rpy_mix": {
+        "_throttle_rpy_mix": [
+            [
+                "_dt",
+                "_motors_get_throttle",
+                "_motors_get_throttle_hover",
+                "_motors_get_throttle_out_throttle_in",
+                "ac_attitude_control_max",
+                "_throttle_rpy_mix_desired"
+            ],
+            4
+        ]
+    },
+    "rate_controller_run_dt": {
+        "_pd_scale_used": [
+            [
+                "_pd_scale"
+            ],
+            0
+        ],
+        "_rate_gyro": [
+            [
+                "gyro"
+            ],
+            0
+        ],
+        "_rate_gyro_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "ang_vel_body": [
+            [
+                "_sysid_ang_vel_body",
+                "_ang_vel_body"
+            ],
+            0
+        ]
+    },
+    "rate_controller_target_reset": {
+        "_pd_scale": [
+            [
+                "vectorf_111"
+            ],
+            0
+        ]
+    },
+    "rate_controller_run": {
+        "gyro_latest": [
+            [
+                "_ahrs_get_gyro_latest"
+            ],
+            0
+        ]
+    }
+}

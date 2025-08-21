@@ -1,0 +1,306 @@
+{
+    "Init": {
+        "_blocks": [
+            [
+                "calloc_struct",
+                "calloc_sizeof",
+                "calloc__blockcount",
+                "dm_block",
+                "calloc_dm_block",
+                "nullptr",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "enqueue_block": {
+        "next": [
+            [
+                "block"
+            ],
+            0
+        ],
+        "queue.youngest": [
+            [
+                "block"
+            ],
+            0
+        ],
+        "queue.oldest": [
+            [
+                "block"
+            ],
+            0
+        ]
+    },
+    "free_seqno_from_queue": {
+        "_blocks_free": [
+            [
+                "dequeue_seqno_seqno",
+                "dequeue_seqno_queue"
+            ],
+            1
+        ]
+    },
+    "_WritePrioritisedBlock": {
+        "copied": [
+            [
+                "size",
+                "remaining_space_in_current_block"
+            ],
+            3
+        ],
+        "_current_block": [
+            [
+                "next_block"
+            ],
+            0
+        ],
+        "_latest_block_len": [
+            [
+                "size",
+                "remaining_space_in_current_block"
+            ],
+            3
+        ]
+    },
+    "free_all_blocks": {
+        "_blockcount_free": [
+            [
+                "_blockcount"
+            ],
+            0
+        ],
+        "_blocks_pending.oldest": [
+            [
+                "nullptr",
+                "_blocks_pending_youngest"
+            ],
+            0
+        ],
+        "_current_block": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_blocks_sent.oldest": [
+            [
+                "nullptr",
+                "_blocks_sent_youngest"
+            ],
+            0
+        ],
+        "_blocks_retry.oldest": [
+            [
+                "_blocks_retry_youngest",
+                "nullptr"
+            ],
+            0
+        ],
+        "_blocks_free": [
+            [
+                "_blocks",
+                "i",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "stop_logging": {
+        "_last_response_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_ack": {
+        "_target_system_id": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "_link": [
+            [
+                "link"
+            ],
+            0
+        ],
+        "_target_component_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "_last_response_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_retry": {
+        "_last_response_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "victim": [
+            [
+                "dequeue_seqno_seqno",
+                "dequeue_seqno__blocks_sent"
+            ],
+            0
+        ]
+    },
+    "stats_collect": {
+        "stats.state_retry": [
+            [
+                "queue_size__blocks_retry"
+            ],
+            1
+        ],
+        "stats.state_free": [
+            [
+                "stack_size__blocks_free"
+            ],
+            1
+        ],
+        "stats.state_retry_min": [
+            [
+                "queue_size__blocks_retry"
+            ],
+            1
+        ],
+        "stats.state_pending_min": [
+            [
+                "queue_size__blocks_pending"
+            ],
+            1
+        ],
+        "stats.state_free_min": [
+            [
+                "stack_size__blocks_free"
+            ],
+            1
+        ],
+        "stats.state_sent": [
+            [
+                "queue_size__blocks_sent"
+            ],
+            1
+        ],
+        "stats.state_pending": [
+            [
+                "queue_size__blocks_pending"
+            ],
+            1
+        ],
+        "stats.state_sent_min": [
+            [
+                "queue_size__blocks_sent"
+            ],
+            1
+        ],
+        "stats.state_pending_max": [
+            [
+                "queue_size__blocks_pending"
+            ],
+            1
+        ],
+        "stats.state_free_max": [
+            [
+                "stack_size__blocks_free"
+            ],
+            1
+        ],
+        "stats.state_retry_max": [
+            [
+                "queue_size__blocks_retry"
+            ],
+            1
+        ],
+        "stats.state_sent_max": [
+            [
+                "queue_size__blocks_sent"
+            ],
+            1
+        ]
+    },
+    "send_log_blocks_from_queue": {
+        "tmp": [
+            [
+                "dequeue_seqno_queue_oldest_seqno",
+                "dequeue_seqno_queue"
+            ],
+            0
+        ]
+    },
+    "do_resends": {
+        "oldest": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "count_to_send": [
+            [
+                "_blockcount"
+            ],
+            0
+        ],
+        "block": [
+            [
+                "_blocks_sent_oldest"
+            ],
+            0
+        ]
+    },
+    "periodic_1Hz": {
+        "rate_limiter": [
+            [
+                "new_nothrow",
+                "ap_logger_rate_limiter__front__params_disarm_ratemax",
+                "ap_logger_rate_limiter__front",
+                "ap_logger_rate_limiter__front__params_mav_ratemax"
+            ],
+            0
+        ]
+    },
+    "send_log_block": {
+        "current_tx_seq": [
+            [
+                "chan_status_current_tx_seq",
+                "mavlink_seq"
+            ],
+            1
+        ],
+        "chan_status": [
+            [
+                "mavlink_get_channel_status__link_get_chan"
+            ],
+            0
+        ],
+        "_last_send_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "block.last_sent": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "istate": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ]
+    }
+}

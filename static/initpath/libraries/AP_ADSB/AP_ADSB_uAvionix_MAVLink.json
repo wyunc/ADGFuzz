@@ -1,0 +1,137 @@
+{
+    "update": {
+        "_frontend.out_state.last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_frontend.out_state.last_config_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "chan": [
+            [
+                "mavlink_comm_0",
+                "_frontend_out_state_chan",
+                "mavlink_channel_t"
+            ],
+            0
+        ]
+    },
+    "send_dynamic_out": {
+        "utcTime": [
+            [
+                "gps_time_epoch_usec",
+                "1000000ull"
+            ],
+            1
+        ],
+        "latitude": [
+            [
+                "_frontend__my_loc_lat"
+            ],
+            0
+        ],
+        "squawk": [
+            [
+                "_frontend_out_state_cfg_squawk_octal"
+            ],
+            0
+        ],
+        "accVel": [
+            [
+                "1e3",
+                "acc_vel_f",
+                "ushrt_max"
+            ],
+            0
+        ],
+        "accVert": [
+            [
+                "acc_vert_f",
+                "ushrt_max",
+                "1e2"
+            ],
+            0
+        ],
+        "gps": [
+            [
+                "_frontend__my_loc"
+            ],
+            1
+        ],
+        "nsVog": [
+            [
+                "gps_velocity_x",
+                "1e2"
+            ],
+            0
+        ],
+        "velVert": [
+            [
+                "1e2",
+                "gps_velocity_z"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "_frontend__my_loc_lng"
+            ],
+            0
+        ],
+        "ewVog": [
+            [
+                "gps_velocity_y",
+                "1e2"
+            ],
+            0
+        ],
+        "fixType": [
+            [
+                "gps_status"
+            ],
+            0
+        ],
+        "numSats": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "altPres": [
+            [
+                "1e3",
+                "int_max",
+                "_my_loc_baro_alt_press_diff_sea_level"
+            ],
+            0
+        ],
+        "altGNSS": [
+            [
+                "_frontend__my_loc_alt"
+            ],
+            0
+        ],
+        "accHoriz": [
+            [
+                "1e3",
+                "acc_horiz_f",
+                "uint_max"
+            ],
+            0
+        ]
+    },
+    "send_configure": {
+        "icao": [
+            [
+                "encode_icao_uint32_t_frontend_out_state_cfg_icao_id",
+                "_frontend_out_state_cfg_icao_id"
+            ],
+            0
+        ]
+    }
+}

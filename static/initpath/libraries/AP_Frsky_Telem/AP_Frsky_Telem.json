@@ -1,0 +1,22 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "_backend": [
+            [
+                "nullptr",
+                "ap_frsky_s_port_passthrough_port",
+                "ap_frsky_s_port_passthrough__frsky_parameters",
+                "ap_frsky_s_port_port",
+                "ap_frsky_s_port_passthrough_use_external_data",
+                "new_nothrow",
+                "ap_frsky_d_port"
+            ],
+            0
+        ]
+    }
+}

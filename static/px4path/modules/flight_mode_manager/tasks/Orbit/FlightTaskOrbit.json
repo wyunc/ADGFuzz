@@ -1,0 +1,232 @@
+{
+    "applyCommandParameters": {
+        "_started_clockwise": [
+            [
+                "command_param1"
+            ],
+            2
+        ],
+        "_orbit_radius": [
+            [
+                "fabsf_radius_parameter"
+            ],
+            1
+        ],
+        "_initial_heading": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_orbit_velocity": [
+            [
+                "sign_from_bool_new_is_clockwise",
+                "command_param2",
+                "fabsf__orbit_velocity"
+            ],
+            2
+        ],
+        "_yaw_behaviour": [
+            [
+                "_param_mc_orbit_yaw_mod_get",
+                "command_param3"
+            ],
+            0
+        ]
+    },
+    "sendTelemetry": {
+        "orbit_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "orbit_status.z": [
+            [
+                "_global_local_alt0",
+                "_position_setpoint",
+                "_position",
+                "px4_isfinite__position_setpoint"
+            ],
+            1
+        ],
+        "orbit_status.radius": [
+            [
+                "_orbit_radius",
+                "sign_no_zero__orbit_velocity"
+            ],
+            0
+        ],
+        "orbit_status.yaw_behaviour": [
+            [
+                "_yaw_behaviour"
+            ],
+            0
+        ]
+    },
+    "_sanitizeParams": {
+        "velocity": [
+            [
+                "sign_velocity",
+                "sqrtf__acceleration_max",
+                "fabsf__velocity_max",
+                "sqrtf_radius",
+                "constrain_velocity",
+                "constrain__velocity_max",
+                "constrain_fabsf"
+            ],
+            0
+        ],
+        "exceeds_maximum_acceleration": [
+            [
+                "constrain__param_mc_orbit_rad_max_get",
+                "constrain_radius",
+                "constrain__radius_min",
+                "_acceleration_max"
+            ],
+            1
+        ]
+    },
+    "activate": {
+        "_initial_heading": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_center": [
+            [
+                "_position"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_position_is_all_finite",
+                "_velocity_is_all_finite",
+                "activate_last_setpoint"
+            ],
+            0
+        ],
+        "_orbit_radius": [
+            [
+                "_radius_min"
+            ],
+            0
+        ],
+        "_orbit_velocity": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "ret": [
+            [
+                "update"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "_slew_rate_yaw_update__deltatime",
+                "_slew_rate_yaw_update__yaw_setpoint"
+            ],
+            0
+        ]
+    },
+    "_adjustParametersByStick": {
+        "_orbit_velocity": [
+            [
+                "sign_from_bool__started_clockwise",
+                "_param_mpc_acc_hor_get",
+                "_deltatime",
+                "_sticks_get_position_expo"
+            ],
+            1
+        ],
+        "_orbit_radius": [
+            [
+                "_param_mpc_xy_cruise_get",
+                "sign_from_bool__started_clockwise",
+                "_deltatime",
+                "_sticks_get_position_expo"
+            ],
+            1
+        ]
+    },
+    "_generate_circle_approach_setpoints": {
+        "_position_setpoint": [
+            [
+                "out_setpoints_position"
+            ],
+            0
+        ],
+        "_yaw_setpoint": [
+            [
+                "vector2f__position",
+                "vector2f__center",
+                "atan2f_position_to_center_xy"
+            ],
+            2
+        ],
+        "_acceleration_setpoint": [
+            [
+                "out_setpoints_acceleration"
+            ],
+            0
+        ],
+        "_velocity_setpoint": [
+            [
+                "out_setpoints_velocity"
+            ],
+            0
+        ],
+        "_jerk_setpoint": [
+            [
+                "out_setpoints_jerk"
+            ],
+            0
+        ]
+    },
+    "_generate_circle_setpoints": {
+        "velocity_xy": [
+            [
+                "_slew_rate_velocity_get_state",
+                "center_to_position_xy_norm",
+                "velocity_xy_unit_or_zero",
+                "_orbit_radius",
+                "vector2f_center_to_position_unit_or_zero"
+            ],
+            0
+        ],
+        "center_to_position": [
+            [
+                "_position",
+                "_center"
+            ],
+            0
+        ]
+    },
+    "_generate_circle_yaw_setpoints": {
+        "_yaw_setpoint": [
+            [
+                "nan",
+                "_initial_heading",
+                "atan2f_center_to_position",
+                "_position",
+                "_center"
+            ],
+            1
+        ],
+        "_yawspeed_setpoint": [
+            [
+                "_orbit_radius",
+                "_orbit_velocity",
+                "nan"
+            ],
+            0
+        ]
+    }
+}

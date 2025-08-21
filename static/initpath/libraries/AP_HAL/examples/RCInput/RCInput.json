@@ -1,0 +1,17 @@
+{
+    "read_channels": {
+        "max_channels_display": [
+            [
+                "hal_rcin_num_channels",
+                "max_channels"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "hal_rcin_read_i"
+            ],
+            0
+        ]
+    }
+}

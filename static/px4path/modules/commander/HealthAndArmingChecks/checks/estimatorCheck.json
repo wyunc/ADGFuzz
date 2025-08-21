@@ -1,0 +1,215 @@
+{
+    "checkAndReport": {
+        "pre_flt_fail_innov_pos_horiz": [
+            [
+                "estimator_status_pre_flt_fail_innov_pos_horiz"
+            ],
+            0
+        ],
+        "required_groups": [
+            [
+                "nav_modes",
+                "reporter_failsafe_flags_mode_req_attitude"
+            ],
+            0
+        ],
+        "pre_flt_fail_innov_heading": [
+            [
+                "estimator_status_pre_flt_fail_innov_heading"
+            ],
+            0
+        ],
+        "pre_flt_fail_innov_vel_horiz": [
+            [
+                "estimator_status_pre_flt_fail_innov_vel_horiz"
+            ],
+            0
+        ],
+        "param_ekf2_en_handle": [
+            [
+                "param_find_no_notification"
+            ],
+            0
+        ]
+    },
+    "checkEstimatorStatus": {
+        "_gps_was_fused": [
+            [
+                "estimator_status_control_mode_flags",
+                "cs_gnss_pos"
+            ],
+            1
+        ],
+        "ekf_gps_check_fail": [
+            [
+                "estimator_status_gps_check_fail_flags"
+            ],
+            0
+        ],
+        "required_modes.message_modes": [
+            [
+                "required_modes_fail_modes",
+                "all",
+                "none"
+            ],
+            0
+        ],
+        "message": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "required_groups_mag": [
+            [
+                "required_groups",
+                "none"
+            ],
+            0
+        ],
+        "log_level": [
+            [
+                "error",
+                "info",
+                "warning",
+                "disabled",
+                "reporter_failsafe_flags_local_position_invalid"
+            ],
+            0
+        ],
+        "required_modes.fail_modes": [
+            [
+                "none"
+            ],
+            0
+        ]
+    },
+    "checkSensorBias": {
+        "test_uncertainty": [
+            [
+                "sqrtf_bias_gyro_bias_variance",
+                "sqrtf_axis_index",
+                "sqrtf_fmaxf",
+                "sqrtf_bias_accel_bias_variance"
+            ],
+            0
+        ],
+        "ekf_gb_test_limit": [
+            [
+                "bias_gyro_bias_limit"
+            ],
+            0
+        ],
+        "ekf_ab_test_limit": [
+            [
+                "bias_accel_bias_limit"
+            ],
+            0
+        ]
+    },
+    "lowPositionAccuracy": {
+        ".local_position_accuracy_low": [
+            [
+                "local_position_valid_but_low_accuracy"
+            ],
+            0
+        ]
+    },
+    "setModeRequirementFlags": {
+        "failsafe_flags.local_altitude_invalid": [
+            [
+                "1_s",
+                "lpos_timestamp",
+                "hrt_absolute_time",
+                "lpos_z_valid"
+            ],
+            1
+        ],
+        "norm_in_tolerance": [
+            [
+                "fabsf__f",
+                "fabsf_q_norm",
+                "1e"
+            ],
+            1
+        ],
+        "gpos_critical_warning_thrld": [
+            [
+                "max_eph_critical",
+                "max_max",
+                "max__f"
+            ],
+            0
+        ],
+        "v_xy_valid": [
+            [
+                "lpos_v_xy_valid"
+            ],
+            0
+        ],
+        "xy_valid": [
+            [
+                "lpos_xy_valid"
+            ],
+            0
+        ],
+        "global_pos_valid": [
+            [
+                "gpos_alt_valid",
+                "gpos_lat_lon_valid"
+            ],
+            0
+        ],
+        "eph_critical": [
+            [
+                "_param_com_pos_fs_eph_get",
+                "infinity"
+            ],
+            1
+        ],
+        "condition_angular_velocity_finite": [
+            [
+                "vector3f_angular_velocity_xyz_is_all_finite"
+            ],
+            0
+        ],
+        "lpos_eph_threshold_relaxed": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "failsafe_flags.angular_velocity_invalid": [
+            [
+                "angular_velocity_invalid"
+            ],
+            0
+        ]
+    },
+    "checkPosVelValidity": {
+        "valid": [
+            [
+                "was_valid"
+            ],
+            0
+        ],
+        "level_check_pass": [
+            [
+                "data_accuracy",
+                "required_accuracy",
+                "was_valid",
+                "data_timestamp_us",
+                "now",
+                "1_s",
+                "data_valid"
+            ],
+            2
+        ],
+        "last_fail_time_us": [
+            [
+                "now"
+            ],
+            0
+        ]
+    }
+}

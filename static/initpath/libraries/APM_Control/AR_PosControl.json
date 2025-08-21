@@ -1,0 +1,262 @@
+{
+    "update": {
+        "_desired_lat_accel": [
+            [
+                "_vel_desired_is_zero",
+                "accel_target_fr_y"
+            ],
+            1
+        ],
+        "turn_speed_min": [
+            [
+                "safe_sqrt__turn_radius",
+                "safe_sqrt__atc_get_turn_lat_accel_max"
+            ],
+            0
+        ],
+        "_accel_target": [
+            [
+                "_body_to_earth2d__reversed",
+                "ahrs_body_to_earth2d_vector2f",
+                "_pid_vel_update_all_curr_vel_ned_xy",
+                "dt",
+                "_pid_vel_update_all__vel_target",
+                "_accel_desired"
+            ],
+            1
+        ],
+        "vel_i": [
+            [
+                "_pid_vel_get_i_projected_lat_vec_ef"
+            ],
+            0
+        ],
+        "_desired_speed": [
+            [
+                "_atc_get_desired_speed_accel_limited_dt",
+                "_atc_get_desired_speed_accel_limited_des_speed"
+            ],
+            0
+        ],
+        "vel_target_FR": [
+            [
+                "ahrs_earth_to_body2d__vel_target"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_vel_target.y": [
+            [
+                "vel_3d_cms_y"
+            ],
+            0
+        ],
+        "pos_target": [
+            [
+                "_pos_target"
+            ],
+            0
+        ],
+        "_vel_target.x": [
+            [
+                "vel_3d_cms_x"
+            ],
+            0
+        ],
+        "_desired_turn_rate_rads": [
+            [
+                "_atc_get_turn_rate_from_lat_accel__desired_lat_accel",
+                "_atc_get_turn_rate_from_lat_accel__desired_speed"
+            ],
+            0
+        ],
+        "avoid": [
+            [
+                "ac_avoid"
+            ],
+            0
+        ],
+        "accel_max_cmss": [
+            [
+                "_accel_max",
+                "_lat_accel_max"
+            ],
+            0
+        ],
+        "accel_target_FR": [
+            [
+                "ahrs_earth_to_body2d__accel_target"
+            ],
+            0
+        ],
+        "_vel_target": [
+            [
+                "_p_pos_update_all_pos_target_x",
+                "_p_pos_update_all_pos_target_y",
+                "_vel_desired",
+                "_p_pos_update_all_curr_pos_ne"
+            ],
+            0
+        ],
+        "des_speed": [
+            [
+                "_vel_target_length_turn_speed_min",
+                "vel_target_fr_x"
+            ],
+            1
+        ],
+        "lat_vec_ef": [
+            [
+                "ahrs_body_to_earth2d_vector2f"
+            ],
+            0
+        ]
+    },
+    "set_limits": {
+        "_jerk_max": [
+            [
+                "jerk_max"
+            ],
+            0
+        ],
+        "_speed_max": [
+            [
+                "speed_max"
+            ],
+            0
+        ],
+        "_accel_max": [
+            [
+                "accel_max"
+            ],
+            0
+        ],
+        "_lat_accel_max": [
+            [
+                "lat_accel_max"
+            ],
+            0
+        ]
+    },
+    "set_turn_params": {
+        "_turn_radius": [
+            [
+                "turn_radius"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_pos_target.y": [
+            [
+                "pos_ne_y"
+            ],
+            0
+        ],
+        "_pos_target.x": [
+            [
+                "pos_ne_x"
+            ],
+            0
+        ],
+        "_accel_desired": [
+            [
+                "ahrs_get_accel_ef_xy"
+            ],
+            0
+        ],
+        "_vel_desired": [
+            [
+                "vel_ned_xy"
+            ],
+            0
+        ]
+    },
+    "input_pos_vel_accel_target": {
+        "accel_max": [
+            [
+                "_accel_max",
+                "_lat_accel_max"
+            ],
+            0
+        ]
+    },
+    "set_pos_vel_accel_target": {
+        "_pos_target": [
+            [
+                "pos"
+            ],
+            0
+        ],
+        "_vel_desired": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "_accel_desired": [
+            [
+                "accel"
+            ],
+            0
+        ]
+    },
+    "get_srate": {
+        "velocity_srate": [
+            [
+                "_pid_vel_get_pid_info_x_slew_rate"
+            ],
+            0
+        ]
+    },
+    "write_log": {
+        "pos_target_2d_cm": [
+            [
+                "get_pos_target_tofloat"
+            ],
+            0
+        ],
+        "curr_accel_NED": [
+            [
+                "ahrs_get_accel_ef"
+            ],
+            0
+        ]
+    },
+    "init_ekf_xy_reset": {
+        "_ekf_xy_reset_ms": [
+            [
+                "ahrs_get_last_pos_north_east_reset_pos_shift"
+            ],
+            0
+        ]
+    },
+    "handle_ekf_xy_reset": {
+        "_ekf_xy_reset_ms": [
+            [
+                "ahrs_get_last_pos_north_east_reset_pos_shift"
+            ],
+            1
+        ],
+        "_vel_desired": [
+            [
+                "vel_ned_xy",
+                "_pid_vel_get_error"
+            ],
+            0
+        ],
+        "_pos_target": [
+            [
+                "pos_ne",
+                "_topostype",
+                "_p_pos_get_error"
+            ],
+            0
+        ]
+    }
+}

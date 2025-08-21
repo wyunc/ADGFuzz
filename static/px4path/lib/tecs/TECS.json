@@ -1,0 +1,687 @@
+{
+    "initialize": {
+        "control_setpoint.altitude_rate_setpoint": [
+            [
+                "_calc_altitude_control_output_param",
+                "_calc_altitude_control_output_setpoint",
+                "_calc_altitude_control_output_input"
+            ],
+            0
+        ],
+        "control_setpoint.altitude_rate_setpoint_direct": [
+            [
+                "_altitude_reference_model_get_altitude_reference_alt_rate"
+            ],
+            0
+        ],
+        "_airspeed_state.speed": [
+            [
+                "equivalent_airspeed",
+                "equivalent_airspeed_trim"
+            ],
+            0
+        ],
+        "_fast_descend": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_debug_output.altitude_rate_control": [
+            [
+                "control_setpoint_altitude_rate_setpoint"
+            ],
+            0
+        ],
+        "_debug_output.throttle_integrator": [
+            [
+                "_throttle_integ_state"
+            ],
+            0
+        ],
+        "_throttle_setpoint": [
+            [
+                "_calc_throttle_control_output_ste_rate",
+                "_calc_throttle_control_output_param",
+                "_calc_throttle_control_output_limit",
+                "_calc_throttle_control_output_flag"
+            ],
+            0
+        ],
+        "_pitch_setpoint": [
+            [
+                "_calc_pitch_control_output_flag",
+                "_calc_pitch_control_output_input",
+                "_calc_pitch_control_output_seb_rate",
+                "_calc_pitch_control_output_param"
+            ],
+            0
+        ],
+        "control_setpoint.altitude_reference": [
+            [
+                "_altitude_reference_model_get_altitude_reference"
+            ],
+            0
+        ],
+        "_debug_output.total_energy_rate_estimate": [
+            [
+                "ste_rate_estimate"
+            ],
+            0
+        ],
+        "init_state_alt_rate": [
+            [
+                "px4_isfinite_state_alt_rate",
+                "_f",
+                "state_alt_rate"
+            ],
+            0
+        ],
+        "_debug_output.pitch_integrator": [
+            [
+                "_pitch_integ_state"
+            ],
+            0
+        ],
+        "control_setpoint.tas_setpoint": [
+            [
+                "setpoint_tas_setpoint",
+                "eas_to_tas",
+                "equivalent_airspeed"
+            ],
+            0
+        ],
+        "_airspeed_state.speed_rate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "control_setpoint.tas_rate_setpoint": [
+            [
+                "_calc_airspeed_control_output_param",
+                "_calc_airspeed_control_output_flag",
+                "_calc_airspeed_control_output_setpoint",
+                "_calc_airspeed_control_output_input"
+            ],
+            0
+        ],
+        "_debug_output.true_airspeed_derivative_control": [
+            [
+                "control_setpoint_tas_rate_setpoint"
+            ],
+            0
+        ],
+        "_debug_output.energy_balance_rate_estimate": [
+            [
+                "seb_rate_estimate"
+            ],
+            0
+        ],
+        "_debug_output.total_energy_rate_sp": [
+            [
+                "ste_rate_setpoint"
+            ],
+            0
+        ],
+        ".alt_rate": [
+            [
+                "altitude_rate"
+            ],
+            0
+        ],
+        "init_state_alt": [
+            [
+                "state_alt",
+                "_f",
+                "px4_isfinite_state_alt"
+            ],
+            0
+        ],
+        "_debug_output.energy_balance_rate_sp": [
+            [
+                "seb_rate_setpoint"
+            ],
+            0
+        ],
+        "_enabled_fast_descend_timestamp": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_debug_output.true_airspeed_derivative_control": [
+            [
+                "control_setpoint_tas_rate_setpoint"
+            ],
+            0
+        ],
+        "control_setpoint.altitude_rate_setpoint": [
+            [
+                "setpoint_altitude_rate_setpoint_direct",
+                "_calc_altitude_control_output_setpoint",
+                "_calc_altitude_control_output_param",
+                "_calc_altitude_control_output_input"
+            ],
+            0
+        ],
+        "_debug_status.altitude_reference": [
+            [
+                "_altitude_reference_model_get_altitude_reference_alt"
+            ],
+            0
+        ],
+        "control_setpoint.tas_rate_setpoint": [
+            [
+                "_calc_airspeed_control_output_setpoint",
+                "_calc_airspeed_control_output_flag",
+                "_calc_airspeed_control_output_param",
+                "_calc_airspeed_control_output_input"
+            ],
+            0
+        ],
+        "_debug_status.true_airspeed_sp": [
+            [
+                "calc_true_airspeed_setpoint_eas_setpoint",
+                "calc_true_airspeed_setpoint_eas_to_tas"
+            ],
+            0
+        ],
+        "_debug_status.true_airspeed_filtered": [
+            [
+                "_airspeed_filter_get_state_speed",
+                "eas_to_tas"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "param_equivalent_airspeed_trim",
+                "input_equivalent_airspeed"
+            ],
+            0
+        ],
+        ".tas_rate": [
+            [
+                "_airspeed_filter_get_state_speed_rate",
+                "eas_to_tas"
+            ],
+            0
+        ],
+        "_height_rate_setpoint_direct": [
+            [
+                "nan",
+                "_velocity_control_traj_generator_get_current_velocity"
+            ],
+            0
+        ],
+        "airspeed_derivative": [
+            [
+                "input_equivalent_airspeed_rate"
+            ],
+            0
+        ],
+        "_debug_status.height_rate_direct": [
+            [
+                "_altitude_reference_model_get_height_rate_setpoint_direct"
+            ],
+            0
+        ],
+        "control_setpoint.altitude_reference": [
+            [
+                "_altitude_reference_model_get_altitude_reference"
+            ],
+            0
+        ],
+        "_debug_output.pitch_integrator": [
+            [
+                "_pitch_integ_state"
+            ],
+            0
+        ],
+        "_control_param.fast_descend": [
+            [
+                "_fast_descend"
+            ],
+            0
+        ],
+        "_debug_status.height_rate_reference": [
+            [
+                "_altitude_reference_model_get_altitude_reference_alt_rate"
+            ],
+            0
+        ],
+        "_debug_output.throttle_integrator": [
+            [
+                "_throttle_integ_state"
+            ],
+            0
+        ],
+        "_debug_status.fast_descend": [
+            [
+                "_fast_descend"
+            ],
+            0
+        ],
+        "_debug_status.control": [
+            [
+                "_control_get_debug_output"
+            ],
+            0
+        ],
+        "_airspeed_state.speed": [
+            [
+                "kalman_gain",
+                "static_cast",
+                "1_s",
+                "now",
+                "float",
+                "new_state_predicted",
+                "innovation"
+            ],
+            2
+        ],
+        ".alt_rate": [
+            [
+                "hgt_rate",
+                "hgt_rate_sp"
+            ],
+            0
+        ],
+        "_update_timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "target_sinkrate_m_s": [
+            [
+                "min_param_target_sinkrate",
+                "min_param_max_sink_rate"
+            ],
+            0
+        ],
+        "_airspeed_state.speed_rate": [
+            [
+                "kalman_gain",
+                "static_cast",
+                "1_s",
+                "now",
+                "float",
+                "new_state_predicted",
+                "innovation"
+            ],
+            2
+        ],
+        "control_altitude": [
+            [
+                "px4_isfinite_altitude_setpoint"
+            ],
+            0
+        ],
+        "target_climbrate_m_s": [
+            [
+                "min_param_target_climbrate",
+                "min_param_max_climb_rate"
+            ],
+            0
+        ],
+        "control_setpoint.altitude_rate_setpoint_direct": [
+            [
+                "_altitude_reference_model_get_height_rate_setpoint_direct"
+            ],
+            0
+        ],
+        "height_rate_target": [
+            [
+                "constrain_height_rate_target",
+                "constrain_target_sinkrate_m_s",
+                "constrain_target_climbrate_m_s"
+            ],
+            0
+        ],
+        "control_setpoint.tas_setpoint": [
+            [
+                "setpoint_tas_setpoint",
+                "calc_true_airspeed_setpoint_eas_setpoint",
+                "calc_true_airspeed_setpoint_eas_to_tas"
+            ],
+            0
+        ],
+        "_debug_output.altitude_rate_control": [
+            [
+                "control_setpoint_altitude_rate_setpoint"
+            ],
+            0
+        ],
+        "delta_trajectory_to_target_m": [
+            [
+                "setpoint_alt",
+                "_velocity_control_traj_generator_get_current_position",
+                "_alt_control_traj_generator_get_current_position"
+            ],
+            1
+        ],
+        "current_alt": [
+            [
+                "_f",
+                "altitude",
+                "px4_isfinite_altitude"
+            ],
+            0
+        ],
+        ".equivalent_airspeed_rate": [
+            [
+                "speed_deriv_forward",
+                "eas_to_tas"
+            ],
+            0
+        ],
+        "_debug_status.true_airspeed_derivative": [
+            [
+                "_airspeed_filter_get_state_speed_rate",
+                "eas_to_tas"
+            ],
+            0
+        ]
+    },
+    "_calcAltitudeControlOutput": {
+        "altitude_rate_output": [
+            [
+                "constrain_altitude_rate_output",
+                "constrain_param_max_sink_rate",
+                "constrain_param_max_climb_rate"
+            ],
+            0
+        ]
+    },
+    "_detectUnderspeed": {
+        "tas_starting_to_underspeed": [
+            [
+                "max_tas_fully_undersped",
+                "max_param_tas_min",
+                "max_tas_error_bound"
+            ],
+            0
+        ],
+        "tas_error_bound": [
+            [
+                "param_equivalent_airspeed_trim",
+                "param_tas_error_percentage"
+            ],
+            0
+        ],
+        "tas_underspeed_soft_bound": [
+            [
+                "param_equivalent_airspeed_trim",
+                "param_tas_error_percentage"
+            ],
+            0
+        ],
+        "tas_fully_undersped": [
+            [
+                "max_tas_underspeed_soft_bound",
+                "max_param_tas_min",
+                "max_tas_error_bound"
+            ],
+            0
+        ]
+    },
+    "_calcPitchControl": {
+        "pitch_increment": [
+            [
+                "dt",
+                "max_input_tas",
+                "param_vert_accel_limit",
+                "max_flt_epsilon"
+            ],
+            0
+        ],
+        "_debug_output.energy_balance_rate_sp": [
+            [
+                "seb_rate_setpoint"
+            ],
+            0
+        ],
+        "_pitch_setpoint": [
+            [
+                "constrain__pitch_setpoint",
+                "constrain_param_pitch_max",
+                "constrain_param_pitch_min"
+            ],
+            0
+        ],
+        "_debug_output.energy_balance_rate_estimate": [
+            [
+                "seb_rate_estimate"
+            ],
+            0
+        ],
+        "_debug_output.pitch_integrator": [
+            [
+                "_pitch_integ_state"
+            ],
+            0
+        ]
+    },
+    "_calcPitchControlUpdate": {
+        "_pitch_integ_state": [
+            [
+                "dt",
+                "min_pitch_integ_input",
+                "max__f",
+                "max_pitch_integ_input",
+                "climb_angle_to_seb_rate",
+                "min__f",
+                "_get_control_error_seb_rate",
+                "param_integrator_gain_pitch"
+            ],
+            1
+        ],
+        "climb_angle_to_SEB_rate": [
+            [
+                "constants_one_g",
+                "input_tas"
+            ],
+            0
+        ]
+    },
+    "_calcPitchControlOutput": {
+        "pitch_setpoint_unc": [
+            [
+                "climb_angle_to_seb_rate",
+                "_pitch_integ_state",
+                "seb_rate_correction"
+            ],
+            0
+        ],
+        "climb_angle_to_SEB_rate": [
+            [
+                "constants_one_g",
+                "param_equivalent_airspeed_trim",
+                "input_tas"
+            ],
+            1
+        ]
+    },
+    "_calcThrottleControl": {
+        "_debug_output.total_energy_rate_estimate": [
+            [
+                "ste_rate_estimate"
+            ],
+            0
+        ],
+        "throttle_setpoint": [
+            [
+                "param_throttle_min"
+            ],
+            0
+        ],
+        "throttle_increment_limit": [
+            [
+                "param_throttle_slewrate",
+                "param_throttle_min",
+                "param_throttle_max",
+                "dt"
+            ],
+            0
+        ],
+        "_debug_output.total_energy_rate_sp": [
+            [
+                "ste_rate_setpoint"
+            ],
+            0
+        ],
+        "_debug_output.throttle_integrator": [
+            [
+                "_throttle_integ_state"
+            ],
+            0
+        ],
+        "STE_rate_estimate_raw": [
+            [
+                "specific_energy_rates_spe_rate_estimate",
+                "specific_energy_rates_ske_rate_estimate"
+            ],
+            0
+        ],
+        "_throttle_setpoint": [
+            [
+                "constrain_param_throttle_max",
+                "constrain_throttle_setpoint",
+                "constrain_param_throttle_min"
+            ],
+            0
+        ]
+    },
+    "_calcThrottleControlUpdate": {
+        "_throttle_integ_state": [
+            [
+                "min_throttle_integ_input",
+                "min__f",
+                "max_throttle_integ_input",
+                "max__f",
+                "px4_isfinite_throttle_integ_input",
+                "_f"
+            ],
+            1
+        ],
+        "STE_rate_to_throttle": [
+            [
+                "limit_ste_rate_min",
+                "limit_ste_rate_max"
+            ],
+            0
+        ]
+    },
+    "_calcThrottleControlOutput": {
+        "throttle_setpoint": [
+            [
+                "_throttle_integ_state",
+                "max__throttle_integ_state",
+                "param_throttle_max",
+                "_ratio_undersped"
+            ],
+            0
+        ],
+        "throttle_predicted": [
+            [
+                "limit_ste_rate_max",
+                "param_throttle_trim",
+                "param_throttle_max",
+                "ste_rate_setpoint",
+                "param_throttle_trim",
+                "param_throttle_min",
+                "limit_ste_rate_min",
+                "param_throttle_trim"
+            ],
+            2
+        ],
+        "STE_rate_to_throttle": [
+            [
+                "limit_ste_rate_min",
+                "limit_ste_rate_max"
+            ],
+            0
+        ]
+    },
+    "initControlParams": {
+        "_control_param.throttle_trim": [
+            [
+                "throttle_trim"
+            ],
+            0
+        ],
+        "_control_param.pitch_max": [
+            [
+                "pitch_limit_max"
+            ],
+            0
+        ],
+        "_control_param.throttle_max": [
+            [
+                "throttle_setpoint_max"
+            ],
+            0
+        ],
+        "_control_param.tas_min": [
+            [
+                "eas_to_tas",
+                "_equivalent_airspeed_min"
+            ],
+            0
+        ],
+        "_control_param.throttle_min": [
+            [
+                "throttle_min"
+            ],
+            0
+        ],
+        "_control_param.pitch_min": [
+            [
+                "pitch_limit_min"
+            ],
+            0
+        ],
+        "_reference_param.target_climbrate": [
+            [
+                "target_climbrate"
+            ],
+            0
+        ],
+        "_reference_param.target_sinkrate": [
+            [
+                "target_sinkrate"
+            ],
+            0
+        ],
+        "_control_param.tas_max": [
+            [
+                "eas_to_tas",
+                "_equivalent_airspeed_max"
+            ],
+            0
+        ]
+    },
+    "_setFastDescend": {
+        "_fast_descend": [
+            [
+                "_fast_descend_alt_err",
+                "constrain_alt_setpoint",
+                "constrain__f",
+                "_f",
+                "constrain_alt"
+            ],
+            0
+        ],
+        "_enabled_fast_descend_timestamp": [
+            [
+                "0u",
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    }
+}

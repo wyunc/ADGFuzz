@@ -1,0 +1,30 @@
+{
+    "process_request": {
+        "last_command_sent_timestamp_": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "last_command_sent_": [
+            [
+                "data_command"
+            ],
+            0
+        ]
+    },
+    "process_reply": {
+        "topic_size": [
+            [
+                "ucdr_topic_size_vehicle_command_ack"
+            ],
+            0
+        ],
+        "time_offset_us": [
+            [
+                "session__time_offset"
+            ],
+            0
+        ]
+    }
+}

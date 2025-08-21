@@ -1,0 +1,166 @@
+{
+    "cal_update": {
+        "flags.compass_cal_running": [
+            [
+                "running"
+            ],
+            0
+        ]
+    },
+    "_start_calibration": {
+        "prio": [
+            [
+                "priority_i"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_get_state_prio_orientation_get",
+                "rotation",
+                "rotation_none",
+                "enum",
+                "_get_state_prio_external"
+            ],
+            0
+        ]
+    },
+    "_start_calibration_mask": {
+        "_compass_cal_autoreboot": [
+            [
+                "autoreboot"
+            ],
+            0
+        ],
+        "_cal_autosave": [
+            [
+                "autosave"
+            ],
+            0
+        ]
+    },
+    "start_calibration_all": {
+        "_compass_cal_autoreboot": [
+            [
+                "autoreboot"
+            ],
+            0
+        ],
+        "_cal_autosave": [
+            [
+                "autosave"
+            ],
+            0
+        ]
+    },
+    "_cancel_calibration": {
+        "prio": [
+            [
+                "priority_i"
+            ],
+            0
+        ]
+    },
+    "_accept_calibration": {
+        "scale_factor": [
+            [
+                "cal_report_scale_factor"
+            ],
+            0
+        ],
+        "cal_report": [
+            [
+                "cal_get_report"
+            ],
+            0
+        ],
+        "cal": [
+            [
+                "priority_i",
+                "_calibrator"
+            ],
+            1
+        ]
+    },
+    "send_mag_cal_progress": {
+        "calibrator": [
+            [
+                "_calibrator",
+                "link_get_chan",
+                "compass_max_instances",
+                "next_cal_progress_idx"
+            ],
+            2
+        ],
+        "cal_state": [
+            [
+                "calibrator_get_state"
+            ],
+            0
+        ]
+    },
+    "send_mag_cal_report": {
+        "cal_report": [
+            [
+                "_get_report",
+                "_calibrator",
+                "next_cal_report_idx",
+                "link_get_chan",
+                "compass_max_instances"
+            ],
+            2
+        ]
+    },
+    "get_uncorrected_field": {
+        "diagonals": [
+            [
+                "get_diagonals_instance"
+            ],
+            0
+        ],
+        "offdiagonals": [
+            [
+                "get_offdiagonals_instance"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "mat",
+                "get_field_instance",
+                "get_offsets_instance"
+            ],
+            0
+        ]
+    },
+    "mag_cal_fixed_yaw": {
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "lat_deg": [
+            [
+                "_0e",
+                "loc_lat"
+            ],
+            0
+        ],
+        "offsets": [
+            [
+                "measurement",
+                "dcm_transposed",
+                "r"
+            ],
+            1
+        ],
+        "lon_deg": [
+            [
+                "_0e",
+                "loc_lng"
+            ],
+            0
+        ]
+    }
+}

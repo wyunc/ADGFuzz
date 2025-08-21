@@ -1,0 +1,242 @@
+{
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "obj": [
+            [
+                "new",
+                "internal_combustion_engine_control"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_throttle_control": [
+            [
+                "_throttle_control_slew_rate_update__throttle_control",
+                "_throttle_control_slew_rate_update_control_interval"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "running",
+                "fault",
+                "starting",
+                "stopped"
+            ],
+            0
+        ],
+        "control_interval": [
+            [
+                "1e",
+                "constrain__last_time_run",
+                "constrain_static_cast",
+                "constrain_now",
+                "constrain_float"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_last_time_run": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "user_request": [
+            [
+                "on",
+                "off"
+            ],
+            0
+        ],
+        "_starting_sub_state": [
+            [
+                "run",
+                "rest"
+            ],
+            0
+        ],
+        "throttle_in": [
+            [
+                "actuator_motors_control"
+            ],
+            0
+        ]
+    },
+    "publishControl": {
+        "ice_control.user_request": [
+            [
+                "uint8_t",
+                "user_request",
+                "static_cast"
+            ],
+            0
+        ],
+        "ice_status.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "ice_control.starter_engine_control": [
+            [
+                "_starter_engine_control"
+            ],
+            0
+        ],
+        "ice_control.choke_control": [
+            [
+                "_choke_control"
+            ],
+            0
+        ],
+        "ice_control.throttle_control": [
+            [
+                "_throttle_control"
+            ],
+            0
+        ],
+        "ice_status.state": [
+            [
+                "_state",
+                "uint8_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "ice_control.ignition_on": [
+            [
+                "_ignition_on"
+            ],
+            0
+        ],
+        "ice_control.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "controlEngineRunning": {
+        "_starter_engine_control": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_throttle_control": [
+            [
+                "throttle_in"
+            ],
+            0
+        ],
+        "_choke_control": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "controlEngineStop": {
+        "_throttle_control": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_choke_control": [
+            [
+                "_param_ice_stop_choke_get",
+                "_f"
+            ],
+            0
+        ],
+        "_starter_engine_control": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "controlEngineFault": {
+        "_choke_control": [
+            [
+                "_f",
+                "_param_ice_stop_choke_get"
+            ],
+            0
+        ],
+        "_starter_engine_control": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_throttle_control": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "controlEngineStartup": {
+        "_choke_control": [
+            [
+                "now",
+                "_state_start_time",
+                "_f",
+                "1_s",
+                "_f",
+                "max__param_ice_ign_delay_get",
+                "_f",
+                "_param_ice_choke_st_dur_get"
+            ],
+            2
+        ],
+        "cycle_timeout_duration": [
+            [
+                "1_s",
+                "_f",
+                "max__param_ice_ign_delay_get",
+                "_param_ice_strt_dur_get",
+                "_f",
+                "_param_ice_choke_st_dur_get"
+            ],
+            3
+        ],
+        "_starting_rest_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_starter_engine_control": [
+            [
+                "now",
+                "_state_start_time",
+                "_f",
+                "1_s",
+                "_f",
+                "max__param_ice_ign_delay_get"
+            ],
+            1
+        ],
+        "_throttle_control": [
+            [
+                "_param_ice_strt_thr_get"
+            ],
+            0
+        ]
+    }
+}

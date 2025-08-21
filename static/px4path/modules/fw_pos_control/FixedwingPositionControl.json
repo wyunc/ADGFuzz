@@ -1,0 +1,2371 @@
+{
+    "vehicle_control_mode_poll": {
+        "was_armed": [
+            [
+                "_control_mode_flag_armed"
+            ],
+            0
+        ]
+    },
+    "vehicle_command_poll": {
+        "_commanded_manual_airspeed_setpoint": [
+            [
+                "vehicle_command_param2"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.cruising_speed": [
+            [
+                "vehicle_command_param2"
+            ],
+            0
+        ]
+    },
+    "airspeed_poll": {
+        "_eas2tas": [
+            [
+                "constrain_airspeed_validated_calibrated_airspeed_m_s",
+                "constrain_airspeed_validated_true_airspeed_m_s"
+            ],
+            0
+        ],
+        "_airspeed_valid": [
+            [
+                "airspeed_valid"
+            ],
+            0
+        ],
+        "_airspeed_eas": [
+            [
+                "airspeed_validated_calibrated_airspeed_m_s"
+            ],
+            0
+        ],
+        "_time_airspeed_last_valid": [
+            [
+                "airspeed_validated_timestamp"
+            ],
+            0
+        ]
+    },
+    "wind_poll": {
+        "_wind_valid": [
+            [
+                "hrt_absolute_time",
+                "hrt_absolute_time",
+                "wind_est_timeout"
+            ],
+            1
+        ]
+    },
+    "manual_control_setpoint_poll": {
+        "_manual_control_setpoint_for_airspeed": [
+            [
+                "_f",
+                "_manual_control_setpoint_throttle",
+                "_manual_control_setpoint_pitch"
+            ],
+            0
+        ],
+        "_manual_control_setpoint_for_height_rate": [
+            [
+                "_f",
+                "_manual_control_setpoint_throttle",
+                "_manual_control_setpoint_pitch"
+            ],
+            0
+        ]
+    },
+    "vehicle_attitude_poll": {
+        "_body_acceleration_x": [
+            [
+                "_local_pos_ax",
+                "_local_pos_az",
+                "r_transpose",
+                "_local_pos_ay",
+                "vector3f"
+            ],
+            1
+        ],
+        "R": [
+            [
+                "r",
+                "r_offset"
+            ],
+            0
+        ],
+        "_pitch": [
+            [
+                "euler_angles"
+            ],
+            0
+        ],
+        "_yaw": [
+            [
+                "euler_angles"
+            ],
+            0
+        ],
+        "_yawrate": [
+            [
+                "rates"
+            ],
+            0
+        ],
+        "_body_velocity_x": [
+            [
+                "_local_pos_vx",
+                "r_transpose",
+                "vector3f",
+                "_local_pos_vz",
+                "_local_pos_vy"
+            ],
+            1
+        ]
+    },
+    "get_manual_airspeed_setpoint": {
+        "altctrl_airspeed": [
+            [
+                "_performance_model_get_calibrated_trim_airspeed"
+            ],
+            0
+        ]
+    },
+    "adapt_airspeed_setpoint": {
+        "calibrated_airspeed_setpoint": [
+            [
+                "_body_velocity_x",
+                "_performance_model_get_calibrated_trim_airspeed",
+                "_param_fw_gnd_spd_min_get"
+            ],
+            1
+        ]
+    },
+    "tecs_status_publish": {
+        "tecs_status.throttle_integ": [
+            [
+                "debug_output_control_throttle_integrator"
+            ],
+            0
+        ],
+        "tecs_status.height_rate": [
+            [
+                "_local_pos_vz"
+            ],
+            0
+        ],
+        "tecs_status.total_energy_balance_rate": [
+            [
+                "debug_output_control_energy_balance_rate_estimate"
+            ],
+            0
+        ],
+        "tecs_status.total_energy_balance_rate_sp": [
+            [
+                "debug_output_control_energy_balance_rate_sp"
+            ],
+            0
+        ],
+        "tecs_status.equivalent_airspeed_sp": [
+            [
+                "equivalent_airspeed_sp"
+            ],
+            0
+        ],
+        "tecs_status.altitude_time_constant": [
+            [
+                "_tecs_get_altitude_error_time_constant"
+            ],
+            0
+        ],
+        "tecs_status.fast_descend_ratio": [
+            [
+                "debug_output_fast_descend"
+            ],
+            0
+        ],
+        "tecs_status.height_rate_direct": [
+            [
+                "debug_output_height_rate_direct"
+            ],
+            0
+        ],
+        "tecs_status.pitch_integ": [
+            [
+                "debug_output_control_pitch_integrator"
+            ],
+            0
+        ],
+        "tecs_status.altitude_reference": [
+            [
+                "debug_output_altitude_reference"
+            ],
+            0
+        ],
+        "tecs_status.underspeed_ratio": [
+            [
+                "_tecs_get_underspeed_ratio"
+            ],
+            0
+        ],
+        "tecs_status.true_airspeed_derivative": [
+            [
+                "debug_output_true_airspeed_derivative"
+            ],
+            0
+        ],
+        "tecs_status.total_energy_rate": [
+            [
+                "debug_output_control_total_energy_rate_estimate"
+            ],
+            0
+        ],
+        "tecs_status.true_airspeed_sp": [
+            [
+                "debug_output_true_airspeed_sp"
+            ],
+            0
+        ],
+        "tecs_status.height_rate_setpoint": [
+            [
+                "debug_output_control_altitude_rate_control"
+            ],
+            0
+        ],
+        "tecs_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "tecs_status.throttle_sp": [
+            [
+                "_tecs_get_throttle_setpoint"
+            ],
+            0
+        ],
+        "tecs_status.height_rate_reference": [
+            [
+                "debug_output_height_rate_reference"
+            ],
+            0
+        ],
+        "tecs_status.altitude_sp": [
+            [
+                "alt_sp"
+            ],
+            0
+        ],
+        "tecs_status.throttle_trim": [
+            [
+                "throttle_trim"
+            ],
+            0
+        ],
+        "tecs_status.total_energy_rate_sp": [
+            [
+                "debug_output_control_total_energy_rate_sp"
+            ],
+            0
+        ],
+        "tecs_status.true_airspeed_filtered": [
+            [
+                "debug_output_true_airspeed_filtered"
+            ],
+            0
+        ],
+        "tecs_status.true_airspeed_derivative_raw": [
+            [
+                "true_airspeed_derivative_raw"
+            ],
+            0
+        ],
+        "tecs_status.true_airspeed_derivative_sp": [
+            [
+                "debug_output_control_true_airspeed_derivative_control"
+            ],
+            0
+        ],
+        "tecs_status.pitch_sp_rad": [
+            [
+                "_tecs_get_pitch_setpoint"
+            ],
+            0
+        ]
+    },
+    "status_publish": {
+        "npfg_status.bearing_feas": [
+            [
+                "_npfg_get_bearing_feas"
+            ],
+            0
+        ],
+        "pos_ctrl_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "npfg_status.wind_est_valid": [
+            [
+                "_wind_valid"
+            ],
+            0
+        ],
+        "npfg_status.lat_accel_ff": [
+            [
+                "_npfg_get_lateral_accel_ff"
+            ],
+            0
+        ],
+        "pos_ctrl_status.xtrack_error": [
+            [
+                "_npfg_get_track_error"
+            ],
+            0
+        ],
+        "npfg_status.heading_ref": [
+            [
+                "_npfg_get_heading_ref"
+            ],
+            0
+        ],
+        "npfg_status.adapted_period": [
+            [
+                "_npfg_get_adapted_period"
+            ],
+            0
+        ],
+        "npfg_status.p_gain": [
+            [
+                "_npfg_get_p_gain"
+            ],
+            0
+        ],
+        "npfg_status.lat_accel": [
+            [
+                "_npfg_get_lateral_accel"
+            ],
+            0
+        ],
+        "npfg_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pos_ctrl_status.nav_bearing": [
+            [
+                "_npfg_get_bearing"
+            ],
+            1
+        ],
+        "npfg_status.bearing_feas_on_track": [
+            [
+                "_npfg_get_on_track_bearing_feas"
+            ],
+            0
+        ],
+        "npfg_status.airspeed_ref": [
+            [
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "npfg_status.track_error_bound": [
+            [
+                "_npfg_get_track_error_bound"
+            ],
+            0
+        ],
+        "npfg_status.time_const": [
+            [
+                "_npfg_get_time_const"
+            ],
+            0
+        ],
+        "npfg_status.min_ground_speed_ref": [
+            [
+                "_npfg_get_min_ground_speed_ref"
+            ],
+            0
+        ],
+        "npfg_status.bearing": [
+            [
+                "_npfg_get_bearing"
+            ],
+            1
+        ],
+        "pos_ctrl_status.target_bearing": [
+            [
+                "_target_bearing"
+            ],
+            0
+        ],
+        "npfg_status.signed_track_error": [
+            [
+                "_npfg_get_track_error"
+            ],
+            0
+        ],
+        "npfg_status.can_run_factor": [
+            [
+                "_npfg_can_run__wind_valid",
+                "_npfg_can_run__local_pos"
+            ],
+            0
+        ],
+        "pos_ctrl_status.acceptance_radius": [
+            [
+                "_npfg_switch_distance"
+            ],
+            0
+        ],
+        "pos_ctrl_status.type": [
+            [
+                "_position_sp_type"
+            ],
+            0
+        ]
+    },
+    "landing_status_publish": {
+        "pos_ctrl_landing_status.lateral_touchdown_offset": [
+            [
+                "_lateral_touchdown_position_offset"
+            ],
+            0
+        ],
+        "pos_ctrl_landing_status.flaring": [
+            [
+                "_flare_states_flaring"
+            ],
+            0
+        ],
+        "pos_ctrl_landing_status.abort_status": [
+            [
+                "_landing_abort_status"
+            ],
+            0
+        ],
+        "pos_ctrl_landing_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "getCorrectedNpfgRollSetpoint": {
+        "_time_since_first_reduced_roll": [
+            [
+                "now",
+                "0u"
+            ],
+            0
+        ],
+        "_time_since_last_npfg_call": [
+            [
+                "now"
+            ],
+            0
+        ]
+    },
+    "get_waypoint_heading_distance": {
+        "waypoint_prev": [
+            [
+                "temp_prev"
+            ],
+            0
+        ],
+        "waypoint_prev.alt": [
+            [
+                "_current_altitude"
+            ],
+            0
+        ],
+        "waypoint_next.alt": [
+            [
+                "_current_altitude"
+            ],
+            0
+        ],
+        "waypoint_next": [
+            [
+                "temp_next"
+            ],
+            0
+        ]
+    },
+    "getManualHeightRateSetpoint": {
+        "height_rate_setpoint": [
+            [
+                "_param_climbrate_target_get",
+                "dead_band",
+                "_manual_control_setpoint_for_height_rate",
+                "dead_band",
+                "_param_sinkrate_target_get"
+            ],
+            3
+        ]
+    },
+    "updateManualTakeoffStatus": {
+        "_completed_manual_takeoff": [
+            [
+                "at_controllable_airspeed",
+                "is_hovering",
+                "_landed"
+            ],
+            0
+        ]
+    },
+    "set_control_mode_current": {
+        "roll_body": [
+            [
+                "radians__param_fw_r_lim_get",
+                "_manual_control_setpoint_roll"
+            ],
+            0
+        ],
+        "_hdg_hold_yaw": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "doing_backtransition": [
+            [
+                "_vehicle_status_in_transition_to_fw",
+                "_vehicle_status_in_transition_mode"
+            ],
+            0
+        ],
+        "_control_mode_current": [
+            [
+                "fw_posctrl_mode_auto_path",
+                "fw_posctrl_mode_other",
+                "fw_posctrl_mode_auto",
+                "fw_posctrl_mode_auto_altitude",
+                "fw_posctrl_mode_auto_takeoff",
+                "fw_posctrl_mode_manual_position",
+                "fw_posctrl_mode_transition_to_hover_heading_hold",
+                "fw_posctrl_mode_auto_climbrate",
+                "fw_posctrl_mode_transition_to_hover_line_follow",
+                "fw_posctrl_mode_manual_altitude",
+                "fw_posctrl_mode_auto_landing_straight",
+                "fw_posctrl_mode_auto_landing_circular"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_time_in_fixed_bank_loiter": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ]
+    },
+    "move_position_setpoint_for_vtol_transition": {
+        "current_sp.lon": [
+            [
+                "_transition_waypoint"
+            ],
+            0
+        ],
+        "transition_heading": [
+            [
+                "px4_isfinite_current_sp_yaw",
+                "current_sp_yaw",
+                "_yaw"
+            ],
+            0
+        ],
+        "current_sp.lat": [
+            [
+                "_transition_waypoint"
+            ],
+            0
+        ]
+    },
+    "control_auto": {
+        "current_sp": [
+            [
+                "pos_sp_curr"
+            ],
+            0
+        ],
+        "_position_sp_type": [
+            [
+                "handle_setpoint_type_pos_sp_next",
+                "handle_setpoint_type_current_sp"
+            ],
+            1
+        ],
+        "pitch_body": [
+            [
+                "radians__param_fw_psp_off_get"
+            ],
+            0
+        ]
+    },
+    "control_auto_fixed_bank_alt_hold": {
+        "yaw_body": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "radians__param_nav_gpsf_r_get"
+            ],
+            0
+        ]
+    },
+    "control_auto_descend": {
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "radians__param_nav_gpsf_r_get"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "control_auto_position": {
+        "position_sp_alt": [
+            [
+                "pos_sp_curr_alt",
+                "min__min_current_sp_distance_xy",
+                "min_d_curr",
+                "min_d_curr_prev",
+                "max_fabsf",
+                "max_pos_sp_curr_loiter_radius",
+                "d_curr_prev",
+                "pos_sp_prev_alt",
+                "pos_sp_curr_alt",
+                "max_acc_rad",
+                "pos_sp_prev_alt",
+                "max_fabsf",
+                "max_pos_sp_curr_loiter_radius",
+                "d_curr_prev",
+                "pos_sp_prev_alt",
+                "pos_sp_curr_alt",
+                "max_acc_rad",
+                "d_curr_prev"
+            ],
+            4
+        ],
+        "prev_wp_local": [
+            [
+                "_global_local_proj_ref_project_pos_sp_prev_lon",
+                "_global_local_proj_ref_project_pos_sp_prev_lat"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_eas2tas",
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "tecs_fw_thr_min": [
+            [
+                "_param_fw_thr_min_get"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "curr_wp_local": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lon",
+                "_global_local_proj_ref_project_pos_sp_curr_lat"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "tecs_fw_thr_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "acc_rad": [
+            [
+                "_npfg_switch_distance"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ]
+    },
+    "control_auto_velocity": {
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_target_bearing": [
+            [
+                "wrap_pi_target_velocity",
+                "wrap_pi_atan2f",
+                "target_velocity"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_eas2tas",
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "tecs_fw_thr_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "position_sp_alt": [
+            [
+                "pos_sp_curr_alt"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "tecs_fw_thr_min": [
+            [
+                "_param_fw_thr_min_get"
+            ],
+            0
+        ]
+    },
+    "control_auto_loiter": {
+        "_new_landing_gear_position": [
+            [
+                "gear_down"
+            ],
+            0
+        ],
+        "close_to_circle": [
+            [
+                "_npfg_switch_distance",
+                "pos_sp_curr_loiter_radius",
+                "_param_nav_loiter_rad_get",
+                "vehicle_to_loiter_center_norm"
+            ],
+            1
+        ],
+        "target_airspeed": [
+            [
+                "_eas2tas",
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "tecs_fw_thr_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "alt_sp": [
+            [
+                "pos_sp_curr_alt"
+            ],
+            0
+        ],
+        "airspeed_sp": [
+            [
+                "_f",
+                "pos_sp_curr_cruising_speed"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "tecs_fw_thr_min": [
+            [
+                "_param_fw_thr_min_get"
+            ],
+            0
+        ],
+        "_spoilers_setpoint": [
+            [
+                "_param_fw_spoilers_lnd_get"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "prev_wp": [
+            [
+                "curr_pos"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_flaps_setpoint": [
+            [
+                "_f",
+                "_param_fw_flaps_lnd_scl_get"
+            ],
+            0
+        ],
+        "curr_wp": [
+            [
+                "vector2d_pos_sp_curr_lon",
+                "vector2d_pos_sp_curr_lat"
+            ],
+            0
+        ]
+    },
+    "controlAutoFigureEight": {
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "params.loiter_radius": [
+            [
+                "pos_sp_curr_loiter_radius"
+            ],
+            0
+        ],
+        "tecs_fw_thr_min": [
+            [
+                "_param_fw_thr_min_get"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_figure_eight_get_airspeed_setpoint"
+            ],
+            0
+        ],
+        "params.loiter_direction_counter_clockwise": [
+            [
+                "pos_sp_curr_loiter_direction_counter_clockwise"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "params.loiter_orientation": [
+            [
+                "pos_sp_curr_loiter_orientation"
+            ],
+            0
+        ],
+        "_closest_point_on_path": [
+            [
+                "_figure_eight_get_closest_point"
+            ],
+            0
+        ],
+        "params.loiter_minor_radius": [
+            [
+                "pos_sp_curr_loiter_minor_radius"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "_figure_eight_get_roll_setpoint"
+            ],
+            0
+        ],
+        "params.center_pos_local": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lon",
+                "_global_local_proj_ref_project_pos_sp_curr_lat"
+            ],
+            0
+        ],
+        "tecs_fw_thr_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "_target_bearing": [
+            [
+                "_figure_eight_get_target_bearing"
+            ],
+            0
+        ]
+    },
+    "publishFigureEightStatus": {
+        "figure_eight_status.orientation": [
+            [
+                "pos_sp_loiter_orientation"
+            ],
+            0
+        ],
+        "figure_eight_status.x": [
+            [
+                "static_cast",
+                "1e7",
+                "pos_sp_lat",
+                "int32_t"
+            ],
+            0
+        ],
+        "figure_eight_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "figure_eight_status.minor_radius": [
+            [
+                "pos_sp_loiter_minor_radius"
+            ],
+            0
+        ],
+        "figure_eight_status.z": [
+            [
+                "pos_sp_alt"
+            ],
+            0
+        ],
+        "figure_eight_status.y": [
+            [
+                "static_cast",
+                "1e7",
+                "pos_sp_lon",
+                "int32_t"
+            ],
+            0
+        ],
+        "figure_eight_status.major_radius": [
+            [
+                "pos_sp_loiter_direction_counter_clockwise",
+                "pos_sp_loiter_radius",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "control_auto_path": {
+        "curr_wp_local": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lon",
+                "_global_local_proj_ref_project_pos_sp_curr_lat"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_npfg_get_airspeed_ref",
+                "_eas2tas"
+            ],
+            0
+        ],
+        "tecs_fw_thr_min": [
+            [
+                "_param_fw_thr_min_get"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "tecs_fw_thr_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ]
+    },
+    "control_auto_takeoff": {
+        "takeoff_bearing": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lon",
+                "_global_local_proj_ref_project_pos_sp_curr_lat",
+                "start_pos_local",
+                "launch_local_position",
+                "atan2f_takeoff_bearing_vector",
+                "_yaw"
+            ],
+            3
+        ],
+        "_att_sp.yaw_sp_move_rate": [
+            [
+                "_manual_control_setpoint_yaw"
+            ],
+            0
+        ],
+        "_takeoff_ground_alt": [
+            [
+                "_current_altitude"
+            ],
+            0
+        ],
+        "_flaps_setpoint": [
+            [
+                "_param_fw_flaps_to_scl_get"
+            ],
+            0
+        ],
+        "launch_detection_status.launch_detection_state": [
+            [
+                "_launch_detector_get_launch_detected"
+            ],
+            0
+        ],
+        "_att_sp.fw_control_yaw_wheel": [
+            [
+                "_runway_takeoff_control_yaw"
+            ],
+            0
+        ],
+        "launch_detection_status.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "constrain_roll_near_ground_roll_body",
+                "get_corrected_npfg_roll_setpoint",
+                "constrain_roll_near_ground__current_altitude",
+                "_runway_takeoff_get_roll_get_corrected_npfg_roll_setpoint",
+                "constrain_roll_near_ground__takeoff_ground_alt"
+            ],
+            0
+        ],
+        "adjusted_min_airspeed": [
+            [
+                "_performance_model_get_minimum_calibrated_airspeed_get_load_factor",
+                "takeoff_airspeed"
+            ],
+            0
+        ],
+        "_launch_global_position": [
+            [
+                "global_position"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch",
+                "_runway_takeoff_get_pitch_get_tecs_pitch",
+                "radians__takeoff_pitch_min_get"
+            ],
+            0
+        ],
+        "altitude_setpoint_amsl": [
+            [
+                "pos_sp_curr_alt",
+                "k_clearance_altitude_buffer"
+            ],
+            1
+        ],
+        "_new_landing_gear_position": [
+            [
+                "gear_up"
+            ],
+            0
+        ],
+        "pitch_max": [
+            [
+                "_runway_takeoff_get_max_pitch__param_fw_p_lim_max_get",
+                "_runway_takeoff_get_max_pitch_radians"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw",
+                "_runway_takeoff_get_yaw_bearing"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_eas2tas",
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "bearing": [
+            [
+                "_npfg_get_bearing"
+            ],
+            0
+        ]
+    },
+    "control_auto_landing_straight": {
+        "_att_sp.yaw_sp_move_rate": [
+            [
+                "_manual_control_setpoint_yaw"
+            ],
+            0
+        ],
+        "_flaps_setpoint": [
+            [
+                "_param_fw_flaps_lnd_scl_get"
+            ],
+            0
+        ],
+        "adjusted_min_airspeed": [
+            [
+                "airspeed_land",
+                "_performance_model_get_minimum_calibrated_airspeed_get_load_factor"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw",
+                "_npfg_get_bearing"
+            ],
+            0
+        ],
+        "touchdown_time": [
+            [
+                "_param_fw_lnd_fl_time_get",
+                "max__param_fw_lnd_td_time_get"
+            ],
+            0
+        ],
+        "_spoilers_setpoint": [
+            [
+                "_param_fw_spoilers_lnd_get"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint",
+                "constrain_roll_near_ground_terrain_alt",
+                "constrain_roll_near_ground__current_altitude",
+                "constrain_roll_near_ground_roll_body"
+            ],
+            0
+        ],
+        "flare_ramp_interpolator_sqrt": [
+            [
+                "sqrtf_flare_ramp_interpolator"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "seconds_since_flare_start": [
+            [
+                "hrt_elapsed_time__flare_states_start_time",
+                "_e"
+            ],
+            0
+        ],
+        "glide_slope_sink_rate": [
+            [
+                "_landing_approach_entrance_offset_vector_norm",
+                "_landing_approach_entrance_rel_alt",
+                "airspeed_land",
+                "sqrtf_glide_slope"
+            ],
+            1
+        ],
+        "_flare_states.initial_throttle_setpoint": [
+            [
+                "_att_sp_thrust_body"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_npfg_get_airspeed_ref",
+                "_eas2tas"
+            ],
+            0
+        ],
+        "_flare_states.initial_height_rate_setpoint": [
+            [
+                "_local_pos_vz"
+            ],
+            0
+        ],
+        "_flare_states.start_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "local_approach_entrance": [
+            [
+                "calculate_landing_approach_vector",
+                "_global_local_proj_ref_project_pos_sp_curr_lat",
+                "calculate_touchdown_position_local_land_point",
+                "calculate_touchdown_position_control_interval",
+                "_global_local_proj_ref_project_pos_sp_curr_lon"
+            ],
+            2
+        ],
+        "flare_rel_alt": [
+            [
+                "_param_fw_lnd_flalt_get",
+                "_local_pos_vz",
+                "max__param_fw_lnd_fl_time_get"
+            ],
+            0
+        ],
+        "_new_landing_gear_position": [
+            [
+                "gear_down"
+            ],
+            0
+        ],
+        "altitude_setpoint": [
+            [
+                "_current_altitude",
+                "glide_slope_rel_alt",
+                "glide_slope_reference_alt"
+            ],
+            0
+        ]
+    },
+    "control_auto_landing_circular": {
+        "seconds_since_flare_start": [
+            [
+                "hrt_elapsed_time__flare_states_start_time",
+                "_e"
+            ],
+            0
+        ],
+        "local_landing_orbit_center": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lon",
+                "_global_local_proj_ref_project_pos_sp_curr_lat"
+            ],
+            0
+        ],
+        "_flare_states.initial_throttle_setpoint": [
+            [
+                "_att_sp_thrust_body"
+            ],
+            0
+        ],
+        "adjusted_min_airspeed": [
+            [
+                "airspeed_land",
+                "_performance_model_get_minimum_calibrated_airspeed_get_load_factor"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "_flare_states.initial_height_rate_setpoint": [
+            [
+                "_local_pos_vz"
+            ],
+            0
+        ],
+        "glide_slope_sink_rate": [
+            [
+                "airspeed_land",
+                "sqrtf_glide_slope",
+                "radians__param_fw_lnd_ang_get"
+            ],
+            1
+        ],
+        "_flare_states.start_time": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "target_airspeed": [
+            [
+                "_eas2tas",
+                "_npfg_get_airspeed_ref"
+            ],
+            0
+        ],
+        "loiter_radius": [
+            [
+                "pos_sp_curr_loiter_radius",
+                "_param_nav_loiter_rad_get"
+            ],
+            0
+        ],
+        "flare_rel_alt": [
+            [
+                "max__param_fw_lnd_fl_time_get",
+                "_param_fw_lnd_flalt_get",
+                "_local_pos_vz"
+            ],
+            0
+        ],
+        "_att_sp.yaw_sp_move_rate": [
+            [
+                "_manual_control_setpoint_yaw"
+            ],
+            0
+        ],
+        "terrain_alt": [
+            [
+                "get_landing_terrain_altitude_estimate_pos_sp_curr_alt",
+                "get_landing_terrain_altitude_estimate_now",
+                "get_landing_terrain_altitude_estimate_abort_on_terrain_timeout",
+                "get_landing_terrain_altitude_estimate_false"
+            ],
+            0
+        ],
+        "_spoilers_setpoint": [
+            [
+                "_param_fw_spoilers_lnd_get"
+            ],
+            0
+        ],
+        "_flaps_setpoint": [
+            [
+                "_param_fw_flaps_lnd_scl_get"
+            ],
+            0
+        ],
+        "touchdown_time": [
+            [
+                "_param_fw_lnd_fl_time_get",
+                "max__param_fw_lnd_td_time_get"
+            ],
+            0
+        ],
+        "_time_started_landing": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint",
+                "constrain_roll_near_ground_terrain_alt",
+                "constrain_roll_near_ground_roll_body",
+                "constrain_roll_near_ground__current_altitude"
+            ],
+            0
+        ],
+        "flare_ramp_interpolator_sqrt": [
+            [
+                "sqrtf_flare_ramp_interpolator"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ]
+    },
+    "control_manual_altitude": {
+        "roll_body": [
+            [
+                "radians__param_fw_r_lim_get",
+                "_manual_control_setpoint_roll"
+            ],
+            0
+        ],
+        "height_rate_sp": [
+            [
+                "get_manual_height_rate_setpoint"
+            ],
+            0
+        ],
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "throttle_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ]
+    },
+    "control_manual_position": {
+        "is_low_height": [
+            [
+                "check_low_height_conditions"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "get_tecs_pitch",
+                "current_setpoint_theta"
+            ],
+            0
+        ],
+        "_time_last_xy_reset": [
+            [
+                "_local_pos_timestamp"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "current_setpoint_psi",
+                "_yaw"
+            ],
+            0
+        ],
+        "height_rate_sp": [
+            [
+                "get_manual_height_rate_setpoint"
+            ],
+            0
+        ],
+        "calibrated_airspeed_sp": [
+            [
+                "_npfg_get_airspeed_ref",
+                "_eas2tas"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "radians__param_fw_r_lim_get",
+                "_manual_control_setpoint_roll",
+                "get_corrected_npfg_roll_setpoint",
+                "current_setpoint_phi"
+            ],
+            0
+        ],
+        "_hdg_hold_yaw": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "throttle_max": [
+            [
+                "_param_fw_thr_max_get"
+            ],
+            0
+        ],
+        "_hdg_hold_position": [
+            [
+                "curr_pos_local"
+            ],
+            0
+        ]
+    },
+    "control_backtransition_heading_hold": {
+        "ground_speed": [
+            [
+                "vector2f_cosf",
+                "sinf__local_pos_heading",
+                "_performance_model_get_calibrated_trim_airspeed",
+                "_airspeed_eas",
+                "_eas2tas",
+                "vector2f__local_pos_heading"
+            ],
+            2
+        ],
+        "yaw_body": [
+            [
+                "_local_pos_heading"
+            ],
+            1
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "virtual_target_point": [
+            [
+                "vector2f__backtrans_heading",
+                "vector2f_cosf",
+                "hdg_hold_dist_next",
+                "sinf__backtrans_heading"
+            ],
+            0
+        ]
+    },
+    "control_backtransition_line_follow": {
+        "curr_wp_local": [
+            [
+                "_global_local_proj_ref_project_pos_sp_curr_lat",
+                "_global_local_proj_ref_project_pos_sp_curr_lon"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "get_corrected_npfg_roll_setpoint"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "_yaw"
+            ],
+            0
+        ],
+        "_lpos_where_backtrans_started": [
+            [
+                "curr_pos_local"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_backtrans_heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.vy": [
+            [
+                "nan",
+                "trajectory_setpoint_velocity"
+            ],
+            0
+        ],
+        "_current_altitude": [
+            [
+                "_f",
+                "_local_pos_ref_alt",
+                "_local_pos_z"
+            ],
+            1
+        ],
+        "flaps_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.vx": [
+            [
+                "nan",
+                "trajectory_setpoint_velocity"
+            ],
+            0
+        ],
+        "_lpos_where_backtrans_started": [
+            [
+                "vector2f_nan"
+            ],
+            0
+        ],
+        "flaps_setpoint.normalized_setpoint": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        "_pos_sp_triplet.current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ],
+        "_current_longitude": [
+            [
+                "gpos_lon"
+            ],
+            0
+        ],
+        "landing_gear.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.alt": [
+            [
+                "trajectory_setpoint_position",
+                "_f",
+                "_local_pos_ref_alt",
+                "nan"
+            ],
+            1
+        ],
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ],
+        "landing_gear.landing_gear": [
+            [
+                "gear_keep"
+            ],
+            1
+        ],
+        "_pos_sp_triplet.current.lon": [
+            [
+                "nan",
+                "double",
+                "lon",
+                "static_cast"
+            ],
+            0
+        ],
+        "_air_density": [
+            [
+                "air_data_rho",
+                "px4_isfinite_air_data_rho"
+            ],
+            0
+        ],
+        "_current_latitude": [
+            [
+                "gpos_lat"
+            ],
+            0
+        ],
+        ".timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_min_current_sp_distance_xy": [
+            [
+                "flt_max"
+            ],
+            0
+        ],
+        "_last_time_position_control_called": [
+            [
+                "_local_pos_timestamp"
+            ],
+            0
+        ],
+        "_att_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.lat": [
+            [
+                "nan",
+                "lat",
+                "double",
+                "static_cast"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "_roll_slew_rate_update_roll_body",
+                "attitude_setpoint_phi",
+                "_roll_slew_rate_update_control_interval"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "attitude_setpoint_psi"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.cruising_throttle": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_position_setpoint_current_valid": [
+            [
+                "valid_setpoint"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.loiter_radius": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "attitude_setpoint_theta"
+            ],
+            0
+        ],
+        "_xy_reset_counter": [
+            [
+                "_local_pos_xy_reset_counter"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.cruising_speed": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "reference_latitude": [
+            [
+                "_",
+                "_local_pos_ref_lat"
+            ],
+            0
+        ],
+        "_z_reset_counter": [
+            [
+                "_local_pos_z_reset_counter"
+            ],
+            0
+        ],
+        "direction": [
+            [
+                "normalized_velocity_sp_2d_cross_acceleration_normal_normalized"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.timestamp": [
+            [
+                "trajectory_setpoint_timestamp"
+            ],
+            0
+        ],
+        "normalized_velocity_sp_2d": [
+            [
+                "velocity_sp_2d_normalized"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.timestamp": [
+            [
+                "trajectory_setpoint_timestamp"
+            ],
+            0
+        ],
+        "spoilers_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_pos_sp_triplet.current.vz": [
+            [
+                "nan",
+                "trajectory_setpoint_velocity"
+            ],
+            0
+        ],
+        "reference_longitude": [
+            [
+                "_",
+                "_local_pos_ref_lon"
+            ],
+            0
+        ],
+        "spoilers_setpoint.normalized_setpoint": [
+            [
+                "_f"
+            ],
+            1
+        ],
+        ".flight_phase": [
+            [
+                "flight_phase_unknown"
+            ],
+            0
+        ]
+    },
+    "reset_takeoff_state": {
+        "_takeoff_ground_alt": [
+            [
+                "_current_altitude"
+            ],
+            0
+        ]
+    },
+    "reset_landing_state": {
+        "_flare_states": [
+            [
+                "flare_states"
+            ],
+            0
+        ]
+    },
+    "tecs_update_pitch_throttle": {
+        "airspeed_rate_estimate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        ".flight_phase": [
+            [
+                "flight_phase_level",
+                "flight_phase_descend",
+                "flight_phase_climb"
+            ],
+            0
+        ]
+    },
+    "constrainRollNearGround": {
+        "roll_wingtip_strike": [
+            [
+                "_param_fw_wing_span_get",
+                "max__param_fw_wing_height_get",
+                "max_terrain_altitude",
+                "max_altitude"
+            ],
+            1
+        ]
+    },
+    "initializeAutoLanding": {
+        "height_above_land_point": [
+            [
+                "pos_sp_prev_alt",
+                "land_point_altitude",
+                "_current_altitude"
+            ],
+            0
+        ],
+        "_time_started_landing": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "landing_approach_vector": [
+            [
+                "local_land_point",
+                "local_position",
+                "_global_local_proj_ref_project_pos_sp_prev_lat",
+                "_global_local_proj_ref_project_pos_sp_prev_lon"
+            ],
+            1
+        ],
+        "_landing_approach_entrance_offset_vector": [
+            [
+                "vector2f_cosf",
+                "vector2f__yaw",
+                "sinf__yaw",
+                "tanf_radians",
+                "tanf__param_fw_lnd_ang_get",
+                "landing_approach_vector_norm",
+                "max_flt_epsilon",
+                "max_height_above_land_point",
+                "landing_approach_vector_unit_or_zero"
+            ],
+            3
+        ],
+        "glide_slope": [
+            [
+                "max_flt_epsilon",
+                "max_height_above_land_point"
+            ],
+            1
+        ]
+    },
+    "updateTECSAltitudeTimeConstant": {
+        "alt_tracking_tc": [
+            [
+                "_param_fw_thrtc_sc_get",
+                "_param_fw_t_h_error_tc_get"
+            ],
+            0
+        ]
+    },
+    "getLandingTerrainAltitudeEstimate": {
+        "_last_valid_terrain_alt_estimate": [
+            [
+                "_local_pos_ref_alt",
+                "_local_pos_dist_bottom",
+                "_local_pos_z"
+            ],
+            1
+        ],
+        "terrain_timed_out": [
+            [
+                "now",
+                "terrain_alt_timeout",
+                "now"
+            ],
+            1
+        ],
+        "terrain_first_measurement_timed_out": [
+            [
+                "now",
+                "terrain_alt_first_measurement_timeout",
+                "_time_started_landing"
+            ],
+            0
+        ]
+    },
+    "publishLocalPositionSetpoint": {
+        "local_position_setpoint.x": [
+            [
+                "_closest_point_on_path"
+            ],
+            1
+        ],
+        "local_position_setpoint.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "local_position_setpoint.vz": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "local_position_setpoint.z": [
+            [
+                "_reference_altitude",
+                "current_waypoint_alt"
+            ],
+            0
+        ],
+        "local_position_setpoint.vy": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "local_position_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "local_position_setpoint.y": [
+            [
+                "_closest_point_on_path"
+            ],
+            1
+        ],
+        "local_position_setpoint.vx": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "local_position_setpoint.yawspeed": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "publishOrbitStatus": {
+        "orbit_status.x": [
+            [
+                "pos_sp_lat",
+                "double",
+                "static_cast"
+            ],
+            0
+        ],
+        "orbit_status.yaw_behaviour": [
+            [
+                "orbit_yaw_behaviour_hold_front_tangent_to_circle"
+            ],
+            0
+        ],
+        "orbit_status.z": [
+            [
+                "pos_sp_alt"
+            ],
+            0
+        ],
+        "orbit_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "orbit_status.y": [
+            [
+                "pos_sp_lon",
+                "double",
+                "static_cast"
+            ],
+            0
+        ],
+        "orbit_status.radius": [
+            [
+                "pos_sp_loiter_radius",
+                "_param_nav_loiter_rad_get",
+                "_f",
+                "pos_sp_loiter_direction_counter_clockwise"
+            ],
+            1
+        ]
+    },
+    "navigateWaypoints": {
+        "start_waypoint_to_vehicle": [
+            [
+                "vehicle_pos",
+                "start_waypoint"
+            ],
+            0
+        ],
+        "end_waypoint_to_vehicle": [
+            [
+                "end_waypoint",
+                "vehicle_pos"
+            ],
+            0
+        ],
+        "start_waypoint_to_end_waypoint": [
+            [
+                "end_waypoint",
+                "start_waypoint"
+            ],
+            0
+        ]
+    },
+    "navigateWaypoint": {
+        "_target_bearing": [
+            [
+                "vehicle_to_waypoint_normalized",
+                "atan2f_unit_path_tangent"
+            ],
+            1
+        ],
+        "vehicle_to_waypoint": [
+            [
+                "waypoint_pos",
+                "vehicle_pos"
+            ],
+            0
+        ],
+        "path_curvature": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_closest_point_on_path": [
+            [
+                "waypoint_pos"
+            ],
+            0
+        ]
+    },
+    "navigateLine": {
+        "_target_bearing": [
+            [
+                "line_bearing",
+                "line_segment_normalized",
+                "atan2f_unit_path_tangent"
+            ],
+            1
+        ],
+        "point_1_to_vehicle": [
+            [
+                "point_on_line_1",
+                "vehicle_pos"
+            ],
+            0
+        ],
+        "path_curvature": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "point_on_line_to_vehicle": [
+            [
+                "point_on_line",
+                "vehicle_pos"
+            ],
+            0
+        ],
+        "line_segment": [
+            [
+                "point_on_line_2",
+                "point_on_line_1"
+            ],
+            0
+        ],
+        "_closest_point_on_path": [
+            [
+                "point_on_line_to_vehicle_dot_unit_path_tangent",
+                "point_on_line_1",
+                "point_1_to_vehicle_dot_unit_path_tangent",
+                "line_segment_normalized",
+                "point_on_line"
+            ],
+            1
+        ]
+    },
+    "navigateLoiter": {
+        "vector_center_to_vehicle": [
+            [
+                "loiter_center",
+                "vehicle_pos"
+            ],
+            0
+        ],
+        "dist_to_center": [
+            [
+                "vector_center_to_vehicle_norm"
+            ],
+            0
+        ],
+        "path_curvature": [
+            [
+                "loiter_direction_counter_clockwise",
+                "_f",
+                "radius"
+            ],
+            1
+        ],
+        "_closest_point_on_path": [
+            [
+                "loiter_center",
+                "radius",
+                "ground_vel_normalized",
+                "vector_center_to_vehicle_normalized",
+                "vector2f"
+            ],
+            1
+        ],
+        "_target_bearing": [
+            [
+                "loiter_direction_counter_clockwise",
+                "_f",
+                "ground_vel_normalized",
+                "vector_center_to_vehicle_normalized",
+                "vector2f",
+                "vector2f",
+                "atan2f_unit_path_tangent"
+            ],
+            3
+        ]
+    },
+    "navigatePathTangent": {
+        "_closest_point_on_path": [
+            [
+                "position_setpoint"
+            ],
+            0
+        ],
+        "_target_bearing": [
+            [
+                "unit_path_tangent",
+                "atan2f_unit_path_tangent"
+            ],
+            0
+        ]
+    },
+    "navigateBearing": {
+        "_target_bearing": [
+            [
+                "atan2f_unit_path_tangent",
+                "sinf_bearing",
+                "cosf_bearing",
+                "vector2f"
+            ],
+            1
+        ],
+        "_closest_point_on_path": [
+            [
+                "vehicle_pos"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "fixedwing_position_control_vtol",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    },
+    "getLoadFactor": {
+        "roll_body": [
+            [
+                "_phi",
+                "eulerf__att_sp_q_d",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "load_factor_from_bank_angle": [
+            [
+                "flt_epsilon",
+                "max_roll_body",
+                "max_cosf"
+            ],
+            0
+        ]
+    }
+}

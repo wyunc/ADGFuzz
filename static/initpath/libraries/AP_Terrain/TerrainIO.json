@@ -1,0 +1,204 @@
+{
+    "check_disk_read": {
+        "disk_io_state": [
+            [
+                "disk_io_wait_read"
+            ],
+            0
+        ],
+        "disk_block.block": [
+            [
+                "_grid",
+                "cache",
+                "i"
+            ],
+            0
+        ]
+    },
+    "check_disk_write": {
+        "disk_block.block": [
+            [
+                "_grid",
+                "cache",
+                "i"
+            ],
+            0
+        ],
+        "disk_io_state": [
+            [
+                "disk_io_wait_write"
+            ],
+            0
+        ]
+    },
+    "schedule_disk_io": {
+        ".last_access_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        ".grid": [
+            [
+                "disk_block_block"
+            ],
+            0
+        ],
+        "disk_io_state": [
+            [
+                "disk_io_idle"
+            ],
+            0
+        ],
+        ".state": [
+            [
+                "grid_cache_valid"
+            ],
+            0
+        ],
+        "cache_idx": [
+            [
+                "find_io_idx_grid_cache_diskwait",
+                "find_io_idx_grid_cache_dirty"
+            ],
+            0
+        ]
+    },
+    "open_file": {
+        "lon_tmp": [
+            [
+                "abs_int32_tblock_lon_degrees"
+            ],
+            0
+        ],
+        "terrain_dir": [
+            [
+                "hal_util_get_custom_terrain_directory",
+                "hal_board_terrain_directory"
+            ],
+            0
+        ],
+        "directory_created": [
+            [
+                "fs_mkdir_file_path"
+            ],
+            0
+        ],
+        "lat_tmp": [
+            [
+                "99u",
+                "abs_int32_tblock_lat_degrees"
+            ],
+            0
+        ],
+        "block": [
+            [
+                "disk_block_block"
+            ],
+            0
+        ],
+        "file_lat_degrees": [
+            [
+                "block_lat_degrees"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strlen_file_path",
+                "nullptr"
+            ],
+            1
+        ],
+        "fd": [
+            [
+                "fs_open_file_path",
+                "_open_o_rdwr",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "file_lon_degrees": [
+            [
+                "block_lon_degrees"
+            ],
+            0
+        ]
+    },
+    "seek_offset": {
+        "file_offset": [
+            [
+                "sizeof_grid_io_block",
+                "block_grid_idx_y",
+                "east_blocks_block",
+                "block_grid_idx_x",
+                "sizeof_union"
+            ],
+            1
+        ],
+        "block": [
+            [
+                "disk_block_block"
+            ],
+            0
+        ]
+    },
+    "write_block": {
+        "disk_io_state": [
+            [
+                "disk_io_done_write"
+            ],
+            0
+        ],
+        "disk_block.block.crc": [
+            [
+                "get_block_crc_disk_block_block"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "fs_write_fd",
+                "_write_sizeof",
+                "_write_disk_block"
+            ],
+            0
+        ]
+    },
+    "read_block": {
+        "disk_block.block.lon": [
+            [
+                "disk_block_block_lon"
+            ],
+            1
+        ],
+        "disk_block.block.lat": [
+            [
+                "disk_block_block_lat"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "fs_read_fd",
+                "_read_sizeof",
+                "_read_disk_block"
+            ],
+            0
+        ],
+        "disk_io_state": [
+            [
+                "disk_io_done_read"
+            ],
+            0
+        ]
+    },
+    "io_timer": {
+        "last_retry_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

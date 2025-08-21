@@ -1,0 +1,38 @@
+{
+    "init": {
+        "slowdown": [
+            [
+                "constrain_int16__sdcard_slowdown_get"
+            ],
+            0
+        ],
+        "delay_ms": [
+            [
+                "uint16_t__boot_delay_ms_get"
+            ],
+            0
+        ]
+    },
+    "throw_error": {
+        "last_print_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "safety_button_handle_pressed": {
+        "safety_state": [
+            [
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ],
+        "safety_options": [
+            [
+                "get_safety_button_options"
+            ],
+            0
+        ]
+    }
+}

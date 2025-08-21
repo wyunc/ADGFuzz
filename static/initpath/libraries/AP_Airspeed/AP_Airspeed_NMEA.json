@@ -1,0 +1,111 @@
+{
+    "init": {
+        "_uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_air_speed"
+            ],
+            0
+        ],
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "get_airspeed": {
+        "_last_speed": [
+            [
+                "count",
+                "_speed"
+            ],
+            2
+        ],
+        "_temp_sum": [
+            [
+                "_temp"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "_uart_read"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "_uart_available"
+            ],
+            0
+        ]
+    },
+    "get_temperature": {
+        "_last_temp": [
+            [
+                "_temp_sum",
+                "_temp_count"
+            ],
+            1
+        ]
+    },
+    "decode": {
+        "valid_sentence": [
+            [
+                "decode_latest_term"
+            ],
+            0
+        ],
+        "_term_is_checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "decode_latest_term": {
+        "_sentence_type": [
+            [
+                "tpye_mtw",
+                "type_vhw"
+            ],
+            0
+        ],
+        "_temp": [
+            [
+                "strtof_null",
+                "strtof__term"
+            ],
+            0
+        ],
+        "term_type": [
+            [
+                "_term"
+            ],
+            0
+        ],
+        "_speed": [
+            [
+                "strtof_null",
+                "km_per_hour_to_m_per_sec",
+                "strtof__term"
+            ],
+            0
+        ],
+        "checksum": [
+            [
+                "nibble_high",
+                "_checksum",
+                "nibble_low",
+                "4u"
+            ],
+            0
+        ]
+    }
+}

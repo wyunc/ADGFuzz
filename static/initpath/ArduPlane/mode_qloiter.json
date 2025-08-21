@@ -1,0 +1,54 @@
+{
+    "_enter": {
+        "quadplane.last_loiter_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "descent_rate_cms": [
+            [
+                "quadplane_landing_descent_rate_cms_height_above_ground"
+            ],
+            0
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "loiter_nav_get_roll"
+            ],
+            0
+        ],
+        "height_above_ground": [
+            [
+                "plane_relative_ground_altitude_plane_g_rangefinder_landing"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "loiter_nav_get_pitch"
+            ],
+            0
+        ],
+        "last_pos_set_ms": [
+            [
+                "last_target_loc_set_ms"
+            ],
+            0
+        ],
+        "last_vel_set_ms": [
+            [
+                "quadplane_poscontrol_last_velocity_match_ms"
+            ],
+            0
+        ],
+        "quadplane.last_loiter_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

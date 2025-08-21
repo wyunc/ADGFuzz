@@ -1,0 +1,329 @@
+{
+    "init": {
+        "_gcs_cleared_messages_first_sent": [
+            [
+                "uint32_t",
+                "max",
+                "numeric_limits"
+            ],
+            0
+        ],
+        "_threat_level": [
+            [
+                "mav_collision_threat_level_none"
+            ],
+            0
+        ],
+        "_obstacles": [
+            [
+                "new_nothrow",
+                "_obstacles_max",
+                "obstacle"
+            ],
+            0
+        ],
+        "_obstacles_allocated": [
+            [
+                "_obstacles_max"
+            ],
+            0
+        ]
+    },
+    "deinit": {
+        "_obstacles": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "add_obstacle": {
+        ".timestamp_ms": [
+            [
+                "obstacle_timestamp_ms"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "_obstacle_count",
+                "i",
+                "i"
+            ],
+            1
+        ],
+        ".src": [
+            [
+                "src"
+            ],
+            0
+        ],
+        "._location": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "._velocity": [
+            [
+                "vel_ned"
+            ],
+            0
+        ],
+        "oldest_timestamp": [
+            [
+                "_obstacles",
+                "max",
+                "_timestamp_ms",
+                "i",
+                "uint32_t",
+                "numeric_limits"
+            ],
+            0
+        ],
+        ".src_id": [
+            [
+                "src_id"
+            ],
+            0
+        ]
+    },
+    "get_adsb_samples": {
+        "loc": [
+            [
+                "_adsb_get_location_vehicle"
+            ],
+            0
+        ],
+        "src_id": [
+            [
+                "src_id_for_adsb_vehicle_vehicle"
+            ],
+            0
+        ]
+    },
+    "closest_approach_xy": {
+        "line_segment_ne": [
+            [
+                "time_horizon",
+                "vector2f_obstacle_vel",
+                "vector2f_my_vel"
+            ],
+            1
+        ],
+        "delta_pos_ne": [
+            [
+                "obstacle_loc_get_distance_ne_my_loc"
+            ],
+            0
+        ]
+    },
+    "closest_approach_z": {
+        "delta_vel_d": [
+            [
+                "my_vel",
+                "obstacle_vel"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "fabsf_delta_pos_d",
+                "fabsf_time_horizon",
+                "fabsf_delta_vel_d",
+                "obstacle_loc_alt",
+                "my_loc_alt"
+            ],
+            1
+        ]
+    },
+    "update_threat_level": {
+        "obstacle.closest_approach_z": [
+            [
+                "closest_approach_z_my_loc",
+                "closest_approach_z_obstacle_age",
+                "closest_approach_z_my_vel",
+                "closest_approach_z_obstacle_loc",
+                "closest_approach_z__warn_time_horizon",
+                "closest_approach_z_obstacle_vel",
+                "closest_approach_z__fail_time_horizon"
+            ],
+            1
+        ],
+        "obstacle_loc": [
+            [
+                "obstacle__location"
+            ],
+            0
+        ],
+        "obstacle_vel": [
+            [
+                "obstacle__velocity"
+            ],
+            0
+        ],
+        "obstacle_age": [
+            [
+                "obstacle_timestamp_ms",
+                "millis"
+            ],
+            0
+        ],
+        "obstacle.time_to_closest_approach": [
+            [
+                "net_velocity_ne_length",
+                "obstacle_distance_to_closest_approach"
+            ],
+            0
+        ],
+        "obstacle.threat_level": [
+            [
+                "mav_collision_threat_level_low",
+                "mav_collision_threat_level_none",
+                "mav_collision_threat_level_high"
+            ],
+            0
+        ],
+        "net_velocity_ne": [
+            [
+                "vector2f_my_vel",
+                "vector2f_obstacle_vel"
+            ],
+            0
+        ],
+        "obstacle.distance_to_closest_approach": [
+            [
+                "closest_approach_xy_obstacle_loc",
+                "closest_approach_xy__warn_time_horizon",
+                "closest_approach_xy_obstacle_age",
+                "closest_approach_xy__fail_time_horizon",
+                "closest_approach_xy_obstacle_vel",
+                "closest_approach_xy_my_vel",
+                "closest_approach_xy_my_loc",
+                "my_loc_get_distance_obstacle_loc"
+            ],
+            2
+        ],
+        "obstacle.closest_approach_xy": [
+            [
+                "closest_approach_xy_obstacle_loc",
+                "closest_approach_xy__warn_time_horizon",
+                "closest_approach_xy_obstacle_age",
+                "closest_approach_xy__fail_time_horizon",
+                "closest_approach_xy_obstacle_vel",
+                "closest_approach_xy_my_vel",
+                "closest_approach_xy_my_loc"
+            ],
+            1
+        ]
+    },
+    "handle_threat_gcs_notify": {
+        "_gcs_cleared_messages_first_sent": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_gcs_report_time": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "obstacle_is_more_serious_threat": {
+        "current": [
+            [
+                "_current_most_serious_threat",
+                "_obstacles"
+            ],
+            0
+        ]
+    },
+    "check_for_threats": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "obstacle_age": [
+            [
+                "millis",
+                "obstacle_timestamp_ms"
+            ],
+            0
+        ],
+        "_current_most_serious_threat": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "obstacle": [
+            [
+                "i",
+                "_obstacles"
+            ],
+            0
+        ]
+    },
+    "handle_avoidance_local": {
+        "action": [
+            [
+                "mav_collision_action",
+                "_fail_action_get",
+                "mav_collision_action_report",
+                "mav_collision_action_none"
+            ],
+            0
+        ],
+        "_latest_action": [
+            [
+                "handle_avoidance_action",
+                "handle_avoidance_threat",
+                "mav_collision_action_none"
+            ],
+            0
+        ],
+        "_last_state_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_threat_level": [
+            [
+                "mav_collision_threat_level_none",
+                "threat_threat_level"
+            ],
+            1
+        ]
+    },
+    "get_vector_perpendicular": {
+        "delta_pos_z": [
+            [
+                "my_abs_pos_alt",
+                "obstacle__location_alt"
+            ],
+            0
+        ],
+        "delta_pos_xy": [
+            [
+                "obstacle__location_get_distance_ne_my_abs_pos"
+            ],
+            0
+        ],
+        "vec_neu": [
+            [
+                "perpendicular_xyz_obstacle__location",
+                "perpendicular_xyz_obstacle__velocity",
+                "vector3f_delta_pos_xy_y",
+                "vector3f_delta_pos_xy_x",
+                "vector3f_delta_pos_z",
+                "perpendicular_xyz_my_abs_pos"
+            ],
+            1
+        ]
+    }
+}

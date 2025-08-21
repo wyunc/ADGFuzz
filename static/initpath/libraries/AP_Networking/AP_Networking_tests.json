@@ -1,0 +1,190 @@
+{
+    "test_UDP_client": {
+        "s": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "sock_recv_buf",
+                "sock_recv_sizeof"
+            ],
+            0
+        ],
+        "sock": [
+            [
+                "socket_apm_true",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "dest": [
+            [
+                "param_test_ipaddr_get_str"
+            ],
+            0
+        ]
+    },
+    "test_TCP_client": {
+        "ret": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_buf"
+            ],
+            0
+        ],
+        "dest": [
+            [
+                "param_test_ipaddr_get_str"
+            ],
+            0
+        ],
+        "sock": [
+            [
+                "socket_apm_false",
+                "new_nothrow"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "test_TCP_discard": {
+        "sock": [
+            [
+                "new_nothrow",
+                "socket_apm_false"
+            ],
+            0
+        ],
+        "last_report_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "buf": [
+            [
+                "uint8_t",
+                "malloc_bufsize"
+            ],
+            0
+        ],
+        "total_sent": [
+            [
+                "sock_send_buf",
+                "sock_send_bufsize"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dest": [
+            [
+                "param_test_ipaddr_get_str"
+            ],
+            0
+        ]
+    },
+    "test_TCP_reflect": {
+        "dt": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "buf": [
+            [
+                "uint8_t",
+                "malloc_bufsize"
+            ],
+            0
+        ],
+        "will_send": [
+            [
+                "max_disparity"
+            ],
+            0
+        ],
+        "sock": [
+            [
+                "socket_apm_false",
+                "new"
+            ],
+            0
+        ],
+        "dest": [
+            [
+                "param_test_ipaddr_get_str"
+            ],
+            0
+        ],
+        "total_sent": [
+            [
+                "sock_send_buf",
+                "sock_send_bufsize"
+            ],
+            0
+        ],
+        "last_report_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "last_recv": [
+            [
+                "sock_recv_buf",
+                "sock_recv_bufsize"
+            ],
+            2
+        ]
+    },
+    "test_connector_loopback": {
+        "listen_sock": [
+            [
+                "new",
+                "socket_apm_false"
+            ],
+            0
+        ],
+        "last_report_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "client": [
+            [
+                "new",
+                "socket_apm_false"
+            ],
+            0
+        ],
+        "sock": [
+            [
+                "listen_sock_accept"
+            ],
+            0
+        ],
+        "total_rx": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_buf"
+            ],
+            1
+        ]
+    }
+}

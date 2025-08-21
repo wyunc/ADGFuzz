@@ -1,0 +1,45 @@
+{
+    "check_for_mission_change": {
+        "cmd_idx": [
+            [
+                "_index",
+                "cmd",
+                "num_cmds",
+                "mission_get_current_nav_index"
+            ],
+            1
+        ],
+        "update_time_changed": [
+            [
+                "mission_last_change_time_ms",
+                "mis_change_detect_last_change_time_ms"
+            ],
+            1
+        ],
+        "mis_change_detect.last_change_time_ms": [
+            [
+                "mission_last_change_time_ms"
+            ],
+            1
+        ],
+        "curr_cmd_idx_changed": [
+            [
+                "mis_change_detect_curr_cmd_index",
+                "mission_get_current_nav_index"
+            ],
+            1
+        ],
+        "mis_change_detect.cmd_count": [
+            [
+                "num_cmds"
+            ],
+            0
+        ],
+        "mis_change_detect.curr_cmd_index": [
+            [
+                "mission_get_current_nav_index"
+            ],
+            1
+        ]
+    }
+}

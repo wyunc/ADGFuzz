@@ -1,0 +1,19 @@
+{
+    "setup": {
+        "timer": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "read_time": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ]
+    }
+}

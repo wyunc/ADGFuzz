@@ -1,0 +1,100 @@
+{
+    "trigger_pic": {
+        "pkt.command": [
+            [
+                "mav_cmd_image_start_capture"
+            ],
+            0
+        ],
+        "pkt.param4": [
+            [
+                "image_index"
+            ],
+            0
+        ]
+    },
+    "record_video": {
+        "pkt.command": [
+            [
+                "mav_cmd_video_start_capture",
+                "mav_cmd_video_stop_capture"
+            ],
+            0
+        ]
+    },
+    "set_zoom": {
+        "pkt.param2": [
+            [
+                "zoom_value"
+            ],
+            0
+        ],
+        "pkt.command": [
+            [
+                "mav_cmd_set_camera_zoom"
+            ],
+            0
+        ],
+        "pkt.param1": [
+            [
+                "zoom_type_continuous",
+                "zoom_type_range"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "fw_ver_major": [
+            [
+                "_cam_info_firmware_version",
+                "0x000000ff"
+            ],
+            0
+        ],
+        "fw_ver_build": [
+            [
+                "0x_ff000000",
+                "_cam_info_firmware_version"
+            ],
+            0
+        ],
+        "fw_ver_revision": [
+            [
+                "0x00ff0000",
+                "_cam_info_firmware_version"
+            ],
+            0
+        ],
+        "fw_ver_minor": [
+            [
+                "0x0000ff00",
+                "_cam_info_firmware_version"
+            ],
+            0
+        ]
+    },
+    "find_camera": {
+        "_last_caminfo_req_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_link": [
+            [
+                "find_by_mavtype_and_compid_compid",
+                "find_by_mavtype_and_compid__sysid",
+                "find_by_mavtype_and_compid_mav_type_camera"
+            ],
+            0
+        ],
+        "_compid": [
+            [
+                "mav_comp_id_camera",
+                "mav_comp_id_camera6",
+                "_instance"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "update": {
+        "up_distance_min": [
+            [
+                "sensor_min_distance_cm"
+            ],
+            0
+        ],
+        "_distance_max": [
+            [
+                "sensor_max_distance_cm"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_angle"
+            ],
+            0
+        ],
+        "_distance_min": [
+            [
+                "sensor_min_distance_cm"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "sensor_distance"
+            ],
+            0
+        ],
+        "_last_upward_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_distance_upward": [
+            [
+                "sensor_distance_cm"
+            ],
+            1
+        ],
+        "angle": [
+            [
+                "uint8_t",
+                "sensor_orientation"
+            ],
+            1
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rngfnd": [
+            [
+                "rangefinder"
+            ],
+            0
+        ],
+        "up_distance_max": [
+            [
+                "sensor_max_distance_cm"
+            ],
+            0
+        ],
+        "sensor": [
+            [
+                "rngfnd_get_backend_i"
+            ],
+            0
+        ]
+    },
+    "get_upward_distance": {
+        "distance": [
+            [
+                "_distance_upward"
+            ],
+            0
+        ]
+    }
+}

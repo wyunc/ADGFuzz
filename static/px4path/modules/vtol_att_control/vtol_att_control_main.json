@@ -1,0 +1,207 @@
+{
+    "vehicle_status_poll": {
+        "_transition_command": [
+            [
+                "vehicle_vtol_state_mc"
+            ],
+            0
+        ],
+        "_nav_state_prev": [
+            [
+                "_vehicle_status_nav_state"
+            ],
+            0
+        ]
+    },
+    "action_request_poll": {
+        "_transition_command": [
+            [
+                "vehicle_vtol_state_mc",
+                "vehicle_vtol_state_fw"
+            ],
+            0
+        ]
+    },
+    "vehicle_cmd_poll": {
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_accepted",
+                "vehicle_cmd_result_temporarily_rejected"
+            ],
+            1
+        ],
+        "command_ack.command": [
+            [
+                "vehicle_command_command"
+            ],
+            0
+        ],
+        "_transition_command": [
+            [
+                "int_vehicle_command_param1"
+            ],
+            1
+        ],
+        "command_ack.target_component": [
+            [
+                "vehicle_command_source_component"
+            ],
+            0
+        ],
+        "_immediate_transition": [
+            [
+                "int_vehicle_command_param2",
+                "px4_isfinite_vehicle_command_param2"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "vehicle_command_source_system"
+            ],
+            0
+        ]
+    },
+    "update_callbacks": {
+        "_previous_vtol_mode": [
+            [
+                "_vtol_type_get_mode"
+            ],
+            1
+        ]
+    },
+    "Run": {
+        "_prev_published_vtol_vehicle_status": [
+            [
+                "_vtol_vehicle_status"
+            ],
+            0
+        ],
+        "_home_position_z": [
+            [
+                "nan",
+                "home_position_z"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_calibrated_airspeed": [
+            [
+                "nan",
+                "airspeed_validated_calibrated_airspeed_m_s",
+                "_param_fw_use_airspd_get",
+                "airspeed_from_sensor"
+            ],
+            1
+        ],
+        "spoiler_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_time_last_airspeed_update": [
+            [
+                "airspeed_validated_timestamp"
+            ],
+            0
+        ],
+        "flaps_setpoint.normalized_setpoint": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "spoiler_setpoint.normalized_setpoint": [
+            [
+                "_f",
+                "_param_vt_spoiler_mc_ld_get"
+            ],
+            1
+        ],
+        "fw_att_sp_updated": [
+            [
+                "_fw_virtual_att_sp_sub_update__fw_virtual_att_sp"
+            ],
+            0
+        ],
+        "_air_density": [
+            [
+                "air_data_rho"
+            ],
+            0
+        ],
+        "mc_att_sp_updated": [
+            [
+                "_mc_virtual_att_sp_sub_update__mc_virtual_att_sp"
+            ],
+            0
+        ],
+        "_vtol_vehicle_status.vehicle_vtol_state": [
+            [
+                "vehicle_vtol_state_transition_to_fw",
+                "vehicle_vtol_state_transition_to_mc",
+                "vehicle_vtol_state_mc",
+                "vehicle_vtol_state_fw"
+            ],
+            0
+        ],
+        "_vtol_vehicle_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "airspeed_validated.airspeed_source": [
+            [
+                "sensor_3"
+            ],
+            0
+        ],
+        "current_vtol_mode": [
+            [
+                "_vtol_type_get_mode"
+            ],
+            0
+        ],
+        "flaps_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "should_run": [
+            [
+                "_vehicle_torque_setpoint_virtual_fw_sub_update__vehicle_torque_setpoint_virtual_fw",
+                "_vehicle_torque_setpoint_virtual_mc_sub_update__vehicle_torque_setpoint_virtual_mc"
+            ],
+            2
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "vtol_attitude_control"
+            ],
+            0
+        ]
+    }
+}

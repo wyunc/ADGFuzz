@@ -1,0 +1,58 @@
+{
+    "param_ioctl": {
+        "data": [
+            [
+                "arg",
+                "paramiocautosave_t",
+                "paramiochash_t",
+                "paramiocexport_t",
+                "paramiocgetusedindex_t",
+                "paramiocforusedindex_t",
+                "paramiocreset_t",
+                "paramiocset_t",
+                "paramioccountused_t",
+                "paramiocloaddefault_t",
+                "paramiocused_t",
+                "paramiocget_t",
+                "paramiocfind_t",
+                "paramiocsetdefault_t",
+                "paramiocsetused_t",
+                "paramiocresetgroup_t",
+                "paramiocsavedefault_t",
+                "paramiocunsaved_t"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "param_set_no_notification_data_param",
+                "enotty",
+                "param_get_used_index_data_param",
+                "param_for_used_index_data_index",
+                "param_export_nullptr",
+                "param_value_unsaved_data_param",
+                "param_get_data_val",
+                "param_set_data_param",
+                "param_save_default_data_blocking",
+                "param_used_data_param",
+                "param_reset_data_param",
+                "param_load_default",
+                "param_set_data_val",
+                "param_hash_check",
+                "param_find_no_notification_data_name",
+                "param_reset_no_notification_data_param",
+                "param_set_default_value_data_val",
+                "param_find_data_name",
+                "param_count_used",
+                "param_set_no_notification_data_val",
+                "param_set_default_value_data_param",
+                "param_export_data_filename",
+                "param_get_default_value_data_param",
+                "param_get_data_param",
+                "ok",
+                "param_get_default_value_data_val"
+            ],
+            0
+        ]
+    }
+}

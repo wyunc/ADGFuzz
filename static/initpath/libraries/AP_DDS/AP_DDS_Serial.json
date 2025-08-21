@@ -1,0 +1,31 @@
+{
+    "serial_transport_open": {
+        "dds": [
+            [
+                "ap_dds_client",
+                "t_args"
+            ],
+            0
+        ],
+        "serial_manager": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "serial.port": [
+            [
+                "serial_manager_find_serial_serial_protocol_dds_xrce"
+            ],
+            1
+        ]
+    },
+    "ddsSerialInit": {
+        "comm": [
+            [
+                "serial_transport_comm"
+            ],
+            0
+        ]
+    }
+}

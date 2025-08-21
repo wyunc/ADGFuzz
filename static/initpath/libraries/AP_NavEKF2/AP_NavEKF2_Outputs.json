@@ -1,0 +1,525 @@
+{
+    "healthy": {
+        "horizErrSq": [
+            [
+                "sq_innov_vel_pos"
+            ],
+            0
+        ]
+    },
+    "getHeightControlLimit": {
+        "_rng": [
+            [
+                "dal_rangefinder"
+            ],
+            0
+        ],
+        "height": [
+            [
+                "float__rng_max_distance_cm_orient",
+                "float_rotation_pitch_270",
+                "terrain_state"
+            ],
+            0
+        ]
+    },
+    "getEulerAngles": {
+        "euler": [
+            [
+                "dal_get_trim"
+            ],
+            0
+        ]
+    },
+    "getGyroBias": {
+        "gyroBias": [
+            [
+                "dt_ekf_avg",
+                "state_struct_gyro_bias_tofloat"
+            ],
+            0
+        ]
+    },
+    "getGyroScaleErrorPercentage": {
+        "gyroScale.y": [
+            [
+                "state_struct_gyro_scale_y"
+            ],
+            0
+        ],
+        "gyroScale.z": [
+            [
+                "state_struct_gyro_scale_z"
+            ],
+            0
+        ],
+        "gyroScale.x": [
+            [
+                "state_struct_gyro_scale_x",
+                "gyro_scale_z",
+                "gyro_scale_y"
+            ],
+            0
+        ]
+    },
+    "getRotationBodyToNED": {
+        "mat": [
+            [
+                "dal_get_rotation_vehicle_body_to_autopilot_body"
+            ],
+            0
+        ]
+    },
+    "getQuaternion": {
+        "ret": [
+            [
+                "output_data_new_quat_tofloat"
+            ],
+            0
+        ]
+    },
+    "getWind": {
+        "wind.x": [
+            [
+                "state_struct_wind_vel_x"
+            ],
+            0
+        ],
+        "wind.y": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ]
+    },
+    "getVelNED": {
+        "vel": [
+            [
+                "vel_offset_ned",
+                "_tofloat",
+                "output_data_new_velocity"
+            ],
+            0
+        ]
+    },
+    "getAirSpdVec": {
+        "vel.x": [
+            [
+                "state_struct_wind_vel_x"
+            ],
+            0
+        ],
+        "vel.y": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "output_data_new_velocity",
+                "_tofloat",
+                "tnb",
+                "vel_offset_ned"
+            ],
+            0
+        ]
+    },
+    "getAccelZBias": {
+        "zbias": [
+            [
+                "dt_ekf_avg",
+                "state_struct_accel_zbias"
+            ],
+            0
+        ]
+    },
+    "getPosNE": {
+        "gpsloc": [
+            [
+                "dal_gps_location"
+            ],
+            0
+        ],
+        "posNE.x": [
+            [
+                "receiver_pos_x",
+                "temp_pos_ne_x",
+                "pos_offset_ned_x",
+                "output_data_new_position_x"
+            ],
+            0
+        ],
+        "posNE.y": [
+            [
+                "output_data_new_position_y",
+                "receiver_pos_y",
+                "temp_pos_ne_y",
+                "pos_offset_ned_y"
+            ],
+            0
+        ],
+        "tempPosNE": [
+            [
+                "ekf_origin_get_distance_ne_ftype_gpsloc"
+            ],
+            0
+        ]
+    },
+    "getPosD": {
+        "posD": [
+            [
+                "ekf_origin_alt",
+                "ekf_gps_ref_hgt",
+                "output_data_new_position_z",
+                "float",
+                "pos_offset_ned_z"
+            ],
+            0
+        ]
+    },
+    "getHAGL": {
+        "HAGL": [
+            [
+                "terrain_state",
+                "output_data_new_position_z",
+                "pos_offset_ned_z"
+            ],
+            0
+        ]
+    },
+    "getLLH": {
+        "gps": [
+            [
+                "dal_gps"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "gpsloc_lng",
+                "ekf_origin_lng"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "ekf_origin_lat",
+                "gpsloc_lat"
+            ],
+            0
+        ],
+        "gpsloc": [
+            [
+                "gps_location"
+            ],
+            0
+        ]
+    },
+    "getEkfControlLimits": {
+        "ekfGndSpdLimit": [
+            [
+                "rng_on_gnd",
+                "terrain_state",
+                "frontend__max_flow_rate",
+                "state_struct_position"
+            ],
+            0
+        ],
+        "ekfNavVelGainScaler": [
+            [
+                "terrain_state",
+                "state_struct_position"
+            ],
+            0
+        ]
+    },
+    "getOriginLLH": {
+        "loc.alt": [
+            [
+                "float",
+                "int32_t",
+                "ekf_gps_ref_hgt"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "ekf_origin"
+            ],
+            0
+        ]
+    },
+    "getMagNED": {
+        "magNED": [
+            [
+                "state_struct_earth_magfield",
+                "_tofloat"
+            ],
+            0
+        ]
+    },
+    "getMagXYZ": {
+        "magXYZ": [
+            [
+                "_tofloat",
+                "state_struct_body_magfield"
+            ],
+            0
+        ]
+    },
+    "getMagOffsets": {
+        "compass": [
+            [
+                "dal_compass"
+            ],
+            0
+        ],
+        "variancesConverged": [
+            [
+                "p",
+                "max_mag_var"
+            ],
+            0
+        ],
+        "magOffsets": [
+            [
+                "compass_get_offsets_mag_select_index",
+                "_tofloat",
+                "state_struct_body_magfield"
+            ],
+            0
+        ],
+        "maxMagVar": [
+            [
+                "5e"
+            ],
+            0
+        ]
+    },
+    "getInnovations": {
+        "yawInnov": [
+            [
+                "innov_yaw"
+            ],
+            0
+        ],
+        "tasInnov": [
+            [
+                "innov_vtas"
+            ],
+            0
+        ],
+        "posInnov.x": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "velInnov.y": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "magInnov.x": [
+            [
+                "innov_mag",
+                "1e3f"
+            ],
+            0
+        ],
+        "velInnov.z": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "posInnov.y": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "velInnov.x": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "posInnov.z": [
+            [
+                "innov_vel_pos"
+            ],
+            0
+        ],
+        "magInnov.y": [
+            [
+                "innov_mag",
+                "1e3f"
+            ],
+            0
+        ],
+        "magInnov.z": [
+            [
+                "innov_mag",
+                "1e3f"
+            ],
+            0
+        ]
+    },
+    "getVariances": {
+        "posVar": [
+            [
+                "sqrt_f_pos_test_ratio"
+            ],
+            0
+        ],
+        "magVar.z": [
+            [
+                "sqrt_f_yaw_test_ratio",
+                "sqrt_f_mag_test_ratio_z"
+            ],
+            0
+        ],
+        "tasVar": [
+            [
+                "sqrt_f_tas_test_ratio"
+            ],
+            0
+        ],
+        "velVar": [
+            [
+                "sqrt_f_vel_test_ratio"
+            ],
+            0
+        ],
+        "magVar.x": [
+            [
+                "sqrt_f_mag_test_ratio_x",
+                "sqrt_f_yaw_test_ratio"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "pos_reset_ne_tofloat"
+            ],
+            0
+        ],
+        "magVar.y": [
+            [
+                "sqrt_f_mag_test_ratio_y",
+                "sqrt_f_yaw_test_ratio"
+            ],
+            0
+        ],
+        "hgtVar": [
+            [
+                "sqrt_f_hgt_test_ratio"
+            ],
+            0
+        ]
+    },
+    "getFilterStatus": {
+        "status": [
+            [
+                "filter_status"
+            ],
+            0
+        ]
+    },
+    "getFilterGpsStatus": {
+        "faults.flags.bad_horiz_drift": [
+            [
+                "gps_check_status_bad_horiz_drift"
+            ],
+            0
+        ],
+        "faults.flags.bad_yaw": [
+            [
+                "gps_check_status_bad_yaw"
+            ],
+            0
+        ],
+        "faults.flags.bad_hAcc": [
+            [
+                "gps_check_status_bad_h_acc"
+            ],
+            0
+        ],
+        "faults.flags.bad_sAcc": [
+            [
+                "gps_check_status_bad_s_acc"
+            ],
+            0
+        ],
+        "faults.flags.bad_vert_vel": [
+            [
+                "gps_check_status_bad_vert_vel"
+            ],
+            0
+        ],
+        "faults.flags.bad_vAcc": [
+            [
+                "gps_check_status_bad_v_acc"
+            ],
+            0
+        ],
+        "faults.flags.bad_sats": [
+            [
+                "gps_check_status_bad_sats"
+            ],
+            0
+        ],
+        "faults.flags.bad_fix": [
+            [
+                "gps_check_status_bad_fix"
+            ],
+            0
+        ],
+        "faults.flags.bad_horiz_vel": [
+            [
+                "gps_check_status_bad_horiz_vel"
+            ],
+            0
+        ],
+        "faults.flags.bad_hdop": [
+            [
+                "gps_check_status_bad_hdop"
+            ],
+            0
+        ]
+    },
+    "send_status_report": {
+        "mag_max": [
+            [
+                "fmax_f_fmax_f",
+                "fmax_f_mag_var_y",
+                "fmax_f_mag_var_x",
+                "mag_var_z"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "sqrt_f_aux_rng_test_ratio"
+            ],
+            0
+        ],
+        "velVar": [
+            [
+                "pos_var",
+                "hgt_var",
+                "tas_var"
+            ],
+            0
+        ]
+    }
+}

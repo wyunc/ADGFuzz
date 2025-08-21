@@ -1,0 +1,32 @@
+{
+    "rc_calibration_checks": {
+        "channel": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ],
+        "channel_name": [
+            [
+                "channel_names",
+                "i"
+            ],
+            0
+        ]
+    },
+    "motor_checks": {
+        "ret": [
+            [
+                "rover_g2_motors_pre_arm_check_report"
+            ],
+            0
+        ],
+        "torqeedo": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

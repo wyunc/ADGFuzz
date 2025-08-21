@@ -1,0 +1,187 @@
+{
+    "auto_takeoff_check": {
+        "takeoff_state.accel_event_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "takeoff_state.throttle_max_timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "got_event": [
+            [
+                "takeoff_state_accel_event_counter",
+                "g_takeoff_throttle_min_accel",
+                "tecs_controller_get_v_xdot"
+            ],
+            2
+        ],
+        "auto_state.baro_takeoff_alt": [
+            [
+                "barometer_get_altitude"
+            ],
+            0
+        ],
+        "takeoff_state.start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "do_takeoff_attitude_check": [
+            [
+                "flight_option_enabled_disable_toff_attitude_chk"
+            ],
+            0
+        ],
+        "wait_time_ms": [
+            [
+                "uint16_t_g_takeoff_throttle_delay"
+            ],
+            0
+        ],
+        "takeoff_state.rudder_takeoff_warn_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "takeoff_state.last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "takeoff_state.last_tkoff_arm_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "takeoff_state.last_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "takeoff_calc_roll": {
+        "takeoff_roll_limit_cd": [
+            [
+                "roll_limit_cd",
+                "g_level_roll_limit"
+            ],
+            0
+        ],
+        "lim2": [
+            [
+                "mode_takeoff_target_alt",
+                "mode_takeoff_level_alt"
+            ],
+            0
+        ],
+        "nav_roll_cd": [
+            [
+                "constrain_int32_takeoff_roll_limit_cd",
+                "constrain_int32_nav_roll_cd"
+            ],
+            0
+        ],
+        "lim1": [
+            [
+                "mode_takeoff_level_alt"
+            ],
+            0
+        ],
+        "current_baro_alt": [
+            [
+                "barometer_get_altitude"
+            ],
+            0
+        ]
+    },
+    "takeoff_calc_pitch": {
+        "pitch_min_cd": [
+            [
+                "get_takeoff_pitch_min_cd",
+                "int32_t_mode_takeoff_ground_pitch",
+                "constrain_int32_auto_state_takeoff_pitch_cd",
+                "sq_roll_error_rad",
+                "sq_cosf",
+                "gps_ground_speed",
+                "float",
+                "aparm_airspeed_cruise",
+                "constrain_int32_nav_pitch_cd",
+                "auto_state_takeoff_pitch_cd",
+                "constrain_int32_min_pitch_cd"
+            ],
+            2
+        ],
+        "roll_error_rad": [
+            [
+                "radians_labs",
+                "radians_ahrs_roll_sensor",
+                "radians_nav_roll_cd"
+            ],
+            0
+        ]
+    },
+    "takeoff_calc_throttle": {
+        "takeoff_state.throttle_lim_min": [
+            [
+                "takeoff_state_throttle_lim_max",
+                "aparm_throttle_cruise",
+                "aparm_takeoff_throttle_min"
+            ],
+            0
+        ],
+        "use_throttle_range": [
+            [
+                "throttle_range",
+                "uint32_t",
+                "aparm_takeoff_options"
+            ],
+            0
+        ],
+        "takeoff_state.throttle_lim_max": [
+            [
+                "aparm_throttle_max",
+                "aparm_takeoff_throttle_max"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "takeoff_state_throttle_max_timer_ms",
+                "millis"
+            ],
+            0
+        ],
+        "below_lvl_alt": [
+            [
+                "mode_takeoff_level_alt",
+                "auto_state_baro_takeoff_alt",
+                "barometer_get_altitude"
+            ],
+            1
+        ]
+    },
+    "check_takeoff_timeout": {
+        "ground_speed": [
+            [
+                "gps_ground_speed"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

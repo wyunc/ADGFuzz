@@ -1,0 +1,25 @@
+{
+    "print_message": {
+        "f": [
+            [
+                "m_fields"
+            ],
+            0
+        ],
+        "m": [
+            [
+                "msg_msgid",
+                "message_info"
+            ],
+            0
+        ]
+    },
+    "_tmain": {
+        "chan": [
+            [
+                "mavlink_comm_0"
+            ],
+            0
+        ]
+    }
+}

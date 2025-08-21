@@ -1,0 +1,41 @@
+{
+    "update": {
+        "_reporter._mavlink_log_pub": [
+            [
+                "nullptr",
+                "_mavlink_log_pub"
+            ],
+            0
+        ],
+        "reported": [
+            [
+                "_reporter_report_force_reporting"
+            ],
+            0
+        ],
+        "results_changed": [
+            [
+                "_reporter_finalize"
+            ],
+            0
+        ],
+        "health_report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_failsafe_flags.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

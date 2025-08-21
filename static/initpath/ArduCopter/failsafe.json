@@ -1,0 +1,24 @@
+{
+    "failsafe_enable": {
+        "failsafe_last_timestamp": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "failsafe_check": {
+        "failsafe_last_ticks": [
+            [
+                "scheduler_ticks"
+            ],
+            1
+        ],
+        "failsafe_last_timestamp": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

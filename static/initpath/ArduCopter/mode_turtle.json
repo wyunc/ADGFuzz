@@ -1,0 +1,133 @@
+{
+    "change_motor_direction": {
+        "inverse_direction": [
+            [
+                "reverse",
+                "dshot_reverse",
+                "dshot_normal"
+            ],
+            0
+        ],
+        "direction": [
+            [
+                "reverse",
+                "dshot_normal",
+                "dshot_reverse"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "cos_threshold": [
+            [
+                "sqrtf"
+            ],
+            0
+        ],
+        "stick_deflection_yaw": [
+            [
+                "copter_failsafe_radio",
+                "rc_has_ever_seen_rc_input",
+                "channel_yaw_norm_input_dz"
+            ],
+            1
+        ],
+        "stick_deflection_pitch_expo": [
+            [
+                "fabsf_stick_deflection_pitch",
+                "crash_flip_expo",
+                "power3_stick_deflection_pitch_abs"
+            ],
+            2
+        ],
+        "flip_power": [
+            [
+                "crash_flip_stick_minf",
+                "crash_flip_expo",
+                "power3_crash_flip_stick_minf",
+                "crash_flip_stick_minf",
+                "crash_flip_expo",
+                "power3_crash_flip_stick_minf",
+                "sq_stick_deflection_roll_expo",
+                "crash_flip_expo",
+                "fabsf_stick_deflection_yaw",
+                "power3_stick_deflection_yaw_abs",
+                "sqrtf_stick_deflection_pitch_expo",
+                "sqrtf_sq"
+            ],
+            6
+        ],
+        "motors_output": [
+            [
+                "is_zero_flip_power",
+                "motors_thr_lin_thrust_to_actuator_flip_power"
+            ],
+            0
+        ],
+        "stick_deflection_roll_expo": [
+            [
+                "fabsf_stick_deflection_roll",
+                "crash_flip_expo",
+                "power3_stick_deflection_roll_abs"
+            ],
+            2
+        ],
+        "cos_phi": [
+            [
+                "sqrtf",
+                "fabsf_stick_deflection_pitch",
+                "fabsf_stick_deflection_roll",
+                "sqrtf_stick_deflection_pitch_abs",
+                "fabsf_stick_deflection_yaw",
+                "sq_stick_deflection_roll_abs",
+                "sqrtf_sq"
+            ],
+            4
+        ],
+        "sign_roll": [
+            [
+                "copter_failsafe_radio",
+                "rc_has_ever_seen_rc_input",
+                "channel_roll_norm_input_dz"
+            ],
+            2
+        ],
+        "motors_input": [
+            [
+                "input_normalized"
+            ],
+            0
+        ],
+        "sign_pitch": [
+            [
+                "copter_failsafe_radio",
+                "rc_has_ever_seen_rc_input",
+                "channel_pitch_norm_input_dz"
+            ],
+            2
+        ]
+    },
+    "output_to_motors": {
+        "allow_output": [
+            [
+                "motors_armed",
+                "motors_get_interlock"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "motors_output",
+                "motors_get_pwm_output_max",
+                "motors_get_pwm_output_min"
+            ],
+            0
+        ],
+        "last_throttle_warning_output_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "init": {
+        "backend": [
+            [
+                "ap_gripper_servo_config",
+                "new_nothrow",
+                "ap_gripper_epm_config"
+            ],
+            0
+        ]
+    }
+}

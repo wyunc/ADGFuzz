@@ -1,0 +1,111 @@
+{
+    "updateParams": {
+        "_max_yaw_rate": [
+            [
+                "m_deg_to_rad_f",
+                "_param_ro_yaw_rate_limit_get"
+            ],
+            0
+        ]
+    },
+    "updateAttControl": {
+        "rover_attitude_status.measured_yaw": [
+            [
+                "eulerf_vehicle_attitude_quaternion_psi"
+            ],
+            1
+        ],
+        "_dt": [
+            [
+                "constrain_timestamp_prev",
+                "constrain__timestamp",
+                "1e",
+                "constrain_5000_ms",
+                "constrain_1_ms"
+            ],
+            0
+        ],
+        "rover_attitude_status.adjusted_yaw_setpoint": [
+            [
+                "wrap_pi__adjusted_yaw_setpoint_get_state"
+            ],
+            0
+        ],
+        "vehicle_attitude_quaternion": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "rover_attitude_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "generateAttitudeAndThrottleSetpoint": {
+        "rover_attitude_setpoint.yaw_setpoint": [
+            [
+                "yaw_delta",
+                "wrap_pi_sign",
+                "wrap_pi_manual_control_setpoint_throttle",
+                "wrap_pi__vehicle_yaw",
+                "_vehicle_yaw"
+            ],
+            2
+        ],
+        "rover_attitude_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_y": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_throttle_setpoint.throttle_body_x": [
+            [
+                "manual_control_setpoint_throttle"
+            ],
+            0
+        ]
+    },
+    "generateRateSetpoint": {
+        "_last_rate_setpoint_update": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "yaw_slew_rate": [
+            [
+                "min__max_yaw_rate",
+                "min_max_possible_yaw_rate"
+            ],
+            0
+        ],
+        "rover_rate_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_rate_setpoint.yaw_rate_setpoint": [
+            [
+                "constrain__max_yaw_rate",
+                "constrain_yaw_rate_setpoint"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "set_device_type": {
+        "_device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "devtype"
+            ],
+            0
+        ]
+    },
+    "set_scale": {
+        "rescale": [
+            [
+                "scale"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "roundf_rescale",
+                "roundf_s"
+            ],
+            0
+        ],
+        "_scale": [
+            [
+                "scale"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.temperature": [
+            [
+                "_temperature"
+            ],
+            0
+        ],
+        "report.z": [
+            [
+                "_scale",
+                "z"
+            ],
+            0
+        ],
+        "report.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "report.x": [
+            [
+                "x",
+                "_scale"
+            ],
+            0
+        ],
+        "report.device_id": [
+            [
+                "_device_id"
+            ],
+            0
+        ],
+        "report.error_count": [
+            [
+                "_error_count"
+            ],
+            0
+        ],
+        "report.y": [
+            [
+                "_scale",
+                "y"
+            ],
+            0
+        ]
+    },
+    "updateFIFO": {
+        "sample.device_id": [
+            [
+                "_device_id"
+            ],
+            0
+        ],
+        "report.samples": [
+            [
+                "n"
+            ],
+            0
+        ],
+        "report.x": [
+            [
+                "sum_sample_x",
+                "n",
+                "_scale",
+                "float",
+                "n",
+                "sum_n",
+                "sample_x",
+                "_last_sample"
+            ],
+            1
+        ],
+        "report.temperature": [
+            [
+                "_temperature"
+            ],
+            0
+        ],
+        "sample.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.timestamp_sample": [
+            [
+                "sample_timestamp_sample"
+            ],
+            0
+        ],
+        "report.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "report.z": [
+            [
+                "sample_z",
+                "n",
+                "_scale",
+                "float",
+                "n",
+                "sum_n",
+                "sum_sample_z",
+                "_last_sample"
+            ],
+            1
+        ],
+        "report.y": [
+            [
+                "sample_y",
+                "n",
+                "_scale",
+                "float",
+                "n",
+                "sum_n",
+                "sum_sample_y",
+                "_last_sample"
+            ],
+            1
+        ],
+        "N": [
+            [
+                "sample_samples"
+            ],
+            0
+        ],
+        "report.device_id": [
+            [
+                "_device_id"
+            ],
+            0
+        ],
+        "report.error_count": [
+            [
+                "_error_count"
+            ],
+            0
+        ],
+        "sample.scale": [
+            [
+                "_scale"
+            ],
+            0
+        ]
+    },
+    "UpdateClipLimit": {
+        "_clip_limit": [
+            [
+                "fabsf__scale",
+                "fabsf__range"
+            ],
+            0
+        ]
+    }
+}

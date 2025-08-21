@@ -1,0 +1,55 @@
+{
+    "updateParams": {
+        ".max_angle": [
+            [
+                "radians_i",
+                "radians__params",
+                "radians__max_angle"
+            ],
+            0
+        ],
+        "_count": [
+            [
+                "count"
+            ],
+            0
+        ],
+        ".min_angle": [
+            [
+                "radians_i",
+                "radians__min_angle",
+                "radians__params"
+            ],
+            0
+        ]
+    },
+    "updateTorqueSign": {
+        "tilting_forwards": [
+            [
+                "int",
+                "geometry_rotors",
+                "i",
+                "_tilt_index",
+                "_params",
+                "_tilt_direction"
+            ],
+            1
+        ],
+        "rotated_pos": [
+            [
+                "eulerf",
+                "dcmf",
+                "geometry_rotors",
+                "geometry_rotors",
+                "i",
+                "_tilt_index",
+                "_tilt_direction",
+                "radians_float_params",
+                "_position",
+                "i",
+                "_f"
+            ],
+            2
+        ]
+    }
+}

@@ -1,0 +1,359 @@
+{
+    "init": {
+        "primary_compass_old_param": [
+            [
+                "ap_param_int8",
+                "k_param_compass"
+            ],
+            0
+        ],
+        "oldvalue": [
+            [
+                "value_get"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "j",
+                "_priority_did_stored_list"
+            ],
+            0
+        ],
+        ".expected_dev_id": [
+            [
+                "_state",
+                "_dev_id"
+            ],
+            0
+        ],
+        "info.type": [
+            [
+                "ap_param_float"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "_unreg_compass_count"
+            ],
+            0
+        ],
+        "primary_param_exists": [
+            [
+                "find_old_parameter_value",
+                "find_old_parameter_primary_compass_old_param"
+            ],
+            0
+        ]
+    },
+    "_reorder_compass_params": {
+        "curr_state_id": [
+            [
+                "j",
+                "compass_max_instances"
+            ],
+            0
+        ]
+    },
+    "register_compass": {
+        "instance": [
+            [
+                "compass_max_instances",
+                "i",
+                "uint8_t_i"
+            ],
+            0
+        ],
+        "_unreg_compass_count": [
+            [
+                "i"
+            ],
+            0
+        ],
+        ".priority": [
+            [
+                "_update_priority_list_dev_id"
+            ],
+            1
+        ]
+    },
+    "_driver_enabled": {
+        "mask": [
+            [
+                "uint8_t_driver_type",
+                "1u"
+            ],
+            0
+        ]
+    },
+    "_probe_external_i2c_compasses": {
+        "default_rotation": [
+            [
+                "ap_compass_ist8310_default_rotation",
+                "rotation_pitch_180_yaw_90"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "bmm350_i2c_addr_min",
+                "bmm150_i2c_addr_min"
+            ],
+            0
+        ],
+        "all_external": [
+            [
+                "px4_board_pixhawk2",
+                "get_board_type"
+            ],
+            0
+        ]
+    },
+    "_detect_backends": {
+        "serial_port": [
+            [
+                "external_ahrs_get_port_compass"
+            ],
+            0
+        ]
+    },
+    "probe_dronecan_compasses": {
+        "_uavcan_backend": [
+            [
+                "probe_i",
+                "probe_j"
+            ],
+            0
+        ],
+        "detected_devid": [
+            [
+                "get_detected_devid_j"
+            ],
+            0
+        ],
+        ".priority": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "_detect_runtime": {
+        "last_try": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_uavcan_backend": [
+            [
+                "probe_i"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "learn": [
+            [
+                "new_nothrow",
+                "compass_learn_this"
+            ],
+            0
+        ],
+        "_first_usable": [
+            [
+                "uint8_t_i"
+            ],
+            0
+        ],
+        "code": [
+            [
+                "healthy",
+                "error_resolved",
+                "unhealthy"
+            ],
+            1
+        ],
+        "old_healthy": [
+            [
+                "healthy"
+            ],
+            0
+        ],
+        ".healthy": [
+            [
+                "i",
+                "_last_update_ms",
+                "_state",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_offsets": {
+        "id": [
+            [
+                "_get_state_id_priority",
+                "_get_state_id_i"
+            ],
+            0
+        ]
+    },
+    "set_and_save_offsets": {
+        "id": [
+            [
+                "_get_state_id_priority",
+                "_get_state_id_i"
+            ],
+            0
+        ]
+    },
+    "set_and_save_diagonals": {
+        "id": [
+            [
+                "_get_state_id_priority",
+                "_get_state_id_i"
+            ],
+            0
+        ]
+    },
+    "set_and_save_offdiagonals": {
+        "id": [
+            [
+                "_get_state_id_i",
+                "_get_state_id_priority"
+            ],
+            0
+        ]
+    },
+    "set_and_save_scale_factor": {
+        "id": [
+            [
+                "_get_state_id_priority",
+                "_get_state_id_i"
+            ],
+            0
+        ]
+    },
+    "save_offsets": {
+        "id": [
+            [
+                "_get_state_id_i",
+                "_get_state_id_priority"
+            ],
+            0
+        ]
+    },
+    "set_and_save_orientation": {
+        "id": [
+            [
+                "_get_state_id_i",
+                "_get_state_id_priority"
+            ],
+            0
+        ]
+    },
+    "set_motor_compensation": {
+        "id": [
+            [
+                "_get_state_id_i",
+                "_get_state_id_priority"
+            ],
+            0
+        ]
+    },
+    "save_motor_compensation": {
+        "id": [
+            [
+                "_get_state_id_k"
+            ],
+            0
+        ]
+    },
+    "calculate_heading": {
+        "headX": [
+            [
+                "field_x",
+                "dcm_matrix_c_y",
+                "field_y",
+                "dcm_matrix_c_z",
+                "dcm_matrix_c_x",
+                "field_z",
+                "dcm_matrix_c_x"
+            ],
+            1
+        ],
+        "heading": [
+            [
+                "atan2f_head_x",
+                "atan2f_head_y",
+                "atan2f_m_pi"
+            ],
+            0
+        ],
+        "headY": [
+            [
+                "field_z",
+                "dcm_matrix_c_z",
+                "dcm_matrix_c_y",
+                "field_y"
+            ],
+            0
+        ],
+        "field": [
+            [
+                "get_field_i"
+            ],
+            0
+        ]
+    },
+    "configured": {
+        "dev_id_cache_value": [
+            [
+                "_state",
+                "_dev_id",
+                "_get_state_id_priority",
+                "_get_state_id_i"
+            ],
+            1
+        ]
+    },
+    "consistent": {
+        "xy_ang_diff": [
+            [
+                "mag_field_xy_angle_primary_mag_field_xy"
+            ],
+            0
+        ],
+        "xyz_ang_diff": [
+            [
+                "mag_field_angle_primary_mag_field"
+            ],
+            0
+        ],
+        "mag_field": [
+            [
+                "get_field_i"
+            ],
+            0
+        ],
+        "xy_len_diff": [
+            [
+                "_length",
+                "mag_field_xy",
+                "primary_mag_field_xy"
+            ],
+            0
+        ]
+    },
+    "have_scale_factor": {
+        "id": [
+            [
+                "_get_state_id_i",
+                "_get_state_id_priority"
+            ],
+            0
+        ]
+    }
+}

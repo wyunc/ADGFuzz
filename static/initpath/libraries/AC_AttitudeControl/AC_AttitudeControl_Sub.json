@@ -1,0 +1,93 @@
+{
+    "update_althold_lean_angle_max": {
+        "thr_max": [
+            [
+                "_motors_multi_get_throttle_thrust_max"
+            ],
+            0
+        ],
+        "_althold_lean_angle_max": [
+            [
+                "acosf_throttle_in",
+                "acosf_ac_attitude_control_angle_limit_throttle_max",
+                "acosf_thr_max",
+                "_dt",
+                "_angle_limit_tc"
+            ],
+            1
+        ]
+    },
+    "set_throttle_out": {
+        "_throttle_in": [
+            [
+                "throttle_in"
+            ],
+            0
+        ]
+    },
+    "get_throttle_boosted": {
+        "_angle_boost": [
+            [
+                "throttle_in",
+                "_ahrs_cos_roll",
+                "_ahrs_cos_pitch",
+                "throttle_in",
+                "_ahrs_cos_roll",
+                "_ahrs_cos_pitch"
+            ],
+            4
+        ]
+    },
+    "update_throttle_rpy_mix": {
+        "_throttle_rpy_mix": [
+            [
+                "_dt",
+                "_throttle_rpy_mix_desired",
+                "ac_attitude_control_max"
+            ],
+            0
+        ]
+    },
+    "rate_controller_run": {
+        "_rate_gyro": [
+            [
+                "_ahrs_get_gyro_latest"
+            ],
+            0
+        ],
+        "_rate_gyro_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "input_euler_angle_roll_pitch_slew_yaw": {
+        "current_yaw": [
+            [
+                "ahrs_get_yaw"
+            ],
+            0
+        ],
+        "yaw_error": [
+            [
+                "wrap_pi_euler_yaw_angle",
+                "wrap_pi_current_yaw"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "direction"
+            ],
+            0
+        ],
+        "euler_yaw_angle": [
+            [
+                "wrap_pi_euler_yaw_angle_cd",
+                "wrap_pi_radians"
+            ],
+            0
+        ]
+    }
+}

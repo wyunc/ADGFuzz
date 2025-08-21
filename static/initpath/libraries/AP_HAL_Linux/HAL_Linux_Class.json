@@ -1,0 +1,32 @@
+{
+    "run": {
+        "module_path": [
+            [
+                "ap_module_default_directory",
+                "gopt_optarg"
+            ],
+            0
+        ],
+        "serial_idx": [
+            [
+                "opt",
+                "mapping"
+            ],
+            1
+        ]
+    },
+    "setup_signal_handlers": {
+        "sa.sa_handler": [
+            [
+                "exit_signal_handler"
+            ],
+            0
+        ],
+        "sa.sa_flags": [
+            [
+                "sa_nocldstop"
+            ],
+            0
+        ]
+    }
+}

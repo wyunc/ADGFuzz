@@ -1,0 +1,90 @@
+{
+    "set_device_path": {
+        "device_path": [
+            [
+                "path"
+            ],
+            0
+        ]
+    },
+    "_begin": {
+        "_device": [
+            [
+                "new_nothrow",
+                "console_device",
+                "_parse_device_path_device_path"
+            ],
+            0
+        ],
+        "_connected": [
+            [
+                "_device_open"
+            ],
+            0
+        ]
+    },
+    "_write_fd": {
+        "_connected": [
+            [
+                "_device_open"
+            ],
+            0
+        ]
+    },
+    "_write_pending_bytes": {
+        "n_vec": [
+            [
+                "_writebuf_peekiovec_n",
+                "_writebuf_peekiovec_vec"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "mavlink_packetise__writebuf",
+                "mavlink_packetise_n",
+                "_writebuf_available"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "_write_fd_i",
+                "_write_fd__data",
+                "i",
+                "_write_fd_n",
+                "_write_fd_tmpbuf",
+                "_len",
+                "_write_fd_vec",
+                "_write_fd_uint16_tvec"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "ret": [
+            [
+                "_read_fd__len",
+                "_read_fd__data",
+                "_read_fd_vec",
+                "_read_fd_i"
+            ],
+            0
+        ],
+        "n_vec": [
+            [
+                "_readbuf_reserve_vec",
+                "_readbuf_reserve__readbuf_space"
+            ],
+            0
+        ]
+    },
+    "configure_parity": {
+        "parity": [
+            [
+                "v"
+            ],
+            0
+        ]
+    }
+}

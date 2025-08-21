@@ -1,0 +1,182 @@
+{
+    "register_driver": {
+        "ret": [
+            [
+                "px4_ok",
+                "enospc"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "px4_dev_t_name",
+                "px4_dev_t_c_devdata",
+                "new"
+            ],
+            0
+        ]
+    },
+    "unregister_driver": {
+        "dev": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "einval",
+                "px4_ok"
+            ],
+            0
+        ]
+    },
+    "px4_open": {
+        "dev": [
+            [
+                "get_dev_path",
+                "v_file_mode",
+                "v_file_path",
+                "new"
+            ],
+            0
+        ],
+        "nret": [
+            [
+                "thread_name",
+                "pthread_getname_np_pthread_self",
+                "namelen"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "va_arg_int",
+                "va_arg_p"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "einval",
+                "dev_open_i",
+                "enoent",
+                "dev_open_filemap"
+            ],
+            1
+        ]
+    },
+    "px4_close": {
+        "dev": [
+            [
+                "get_file_fd"
+            ],
+            0
+        ],
+        ".cdev": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "dev_close_fd",
+                "einval",
+                "dev_close_filemap",
+                "px4_error"
+            ],
+            0
+        ]
+    },
+    "px4_ioctl": {
+        "ret": [
+            [
+                "dev_ioctl_cmd",
+                "dev_ioctl_arg",
+                "einval",
+                "dev_ioctl_filemap",
+                "dev_ioctl_fd"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "get_file_fd"
+            ],
+            0
+        ]
+    },
+    "px4_poll": {
+        ".sem": [
+            [
+                "sem"
+            ],
+            0
+        ],
+        ".priv": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "dev": [
+            [
+                "get_file_i",
+                "get_file_fds",
+                "get_file__fd"
+            ],
+            0
+        ],
+        "ts.tv_nsec": [
+            [
+                "billion",
+                "uint64_t",
+                "ts_tv_nsec",
+                "timeout"
+            ],
+            1
+        ],
+        "nret": [
+            [
+                "thread_name",
+                "pthread_getname_np_pthread_self",
+                "namelen"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "billion"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "dev_poll_filemap",
+                "px4_sem_timedwait_ts",
+                "dev_poll_fds",
+                "dev_poll_i",
+                "dev_poll_true",
+                "dev_poll__fd",
+                "px4_sem_timedwait_sem",
+                "dev_poll_false"
+            ],
+            0
+        ]
+    },
+    "px4_access": {
+        "dev": [
+            [
+                "get_dev_pathname"
+            ],
+            0
+        ],
+        "errno": [
+            [
+                "einval"
+            ],
+            0
+        ]
+    }
+}

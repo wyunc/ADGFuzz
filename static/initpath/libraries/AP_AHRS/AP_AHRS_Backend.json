@@ -1,0 +1,173 @@
+{
+    "add_trim": {
+        "trim.x": [
+            [
+                "roll_in_radians",
+                "to_rad_ap_ahrs_trim_limit",
+                "to_rad_to_rad",
+                "trim_x"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "_trim_get"
+            ],
+            0
+        ],
+        "trim.y": [
+            [
+                "to_rad_to_rad",
+                "to_rad_ap_ahrs_trim_limit",
+                "trim_y",
+                "pitch_in_radians"
+            ],
+            0
+        ]
+    },
+    "update_orientation": {
+        "last_orientation_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "orientation": [
+            [
+                "_board_orientation_get",
+                "rotation",
+                "enum"
+            ],
+            0
+        ]
+    },
+    "calc_trig": {
+        "cy": [
+            [
+                "yaw_vector_x"
+            ],
+            0
+        ],
+        "sp": [
+            [
+                "rot_c_x"
+            ],
+            0
+        ],
+        "sr": [
+            [
+                "sinf_r",
+                "safe_sqrt_cx2",
+                "rot_c_y"
+            ],
+            1
+        ],
+        "cx2": [
+            [
+                "rot_c_x"
+            ],
+            0
+        ],
+        "cr": [
+            [
+                "rot_c_z",
+                "cosf_r"
+            ],
+            0
+        ],
+        "sy": [
+            [
+                "yaw_vector_y"
+            ],
+            0
+        ]
+    },
+    "update_cd_values": {
+        "yaw_sensor": [
+            [
+                "degrees_yaw"
+            ],
+            0
+        ],
+        "roll_sensor": [
+            [
+                "degrees_roll"
+            ],
+            0
+        ],
+        "pitch_sensor": [
+            [
+                "degrees_pitch"
+            ],
+            0
+        ]
+    },
+    "update_AOA_SSA": {
+        "_SSA": [
+            [
+                "degrees_vel_len",
+                "degrees_safe_asin",
+                "degrees_aoa_velocity_y"
+            ],
+            0
+        ],
+        "_last_AOA_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "vel_len": [
+            [
+                "aoa_velocity_length"
+            ],
+            0
+        ],
+        "rot": [
+            [
+                "get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "_AOA": [
+            [
+                "degrees_aoa_velocity_z",
+                "degrees_aoa_velocity_x",
+                "degrees_atanf"
+            ],
+            0
+        ],
+        "aoa_velocity": [
+            [
+                "wind_estimate",
+                "rot_mul_transpose_aoa_wind",
+                "rot_mul_transpose_aoa_velocity"
+            ],
+            1
+        ]
+    },
+    "Log_Write_Home_And_Origin": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "set_takeoff_expected": {
+        "takeoff_expected_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_touchdown_expected": {
+        "touchdown_expected_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

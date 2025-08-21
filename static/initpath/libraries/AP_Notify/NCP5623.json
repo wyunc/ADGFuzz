@@ -1,0 +1,45 @@
+{
+    "write": {
+        "data": [
+            [
+                "255u",
+                "0x1fu"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_dev_transfer_nullptr",
+                "_dev_transfer_msg"
+            ],
+            0
+        ]
+    },
+    "write_pwm": {
+        "reg": [
+            [
+                "ncp5623_led_pwm0"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ret": [
+            [
+                "write_0x1f",
+                "write_pwm_off",
+                "write_ncp5623_led_enable"
+            ],
+            0
+        ],
+        "_dev": [
+            [
+                "move_i",
+                "move_hal_i2c_mgr_get_device",
+                "move__bus",
+                "move_addrs"
+            ],
+            0
+        ]
+    }
+}

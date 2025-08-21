@@ -1,0 +1,17 @@
+{
+    "set_linear_velocity_and_yaw_rate": {
+        "yaw_rate_cds": [
+            [
+                "degrees_yaw_rate_rads",
+                "isnan_yaw_rate_rads"
+            ],
+            0
+        ],
+        "velocity_up_cms": [
+            [
+                "velocity_neu_ms"
+            ],
+            0
+        ]
+    }
+}

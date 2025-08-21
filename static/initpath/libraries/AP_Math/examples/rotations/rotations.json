@@ -1,0 +1,126 @@
+{
+    "test_rotation_accuracy": {
+        "small_rotation": [
+            [
+                "vector3f_rot_angle"
+            ],
+            0
+        ],
+        "attitude": [
+            [
+                "r2"
+            ],
+            0
+        ],
+        "rot_angle": [
+            [
+                "to_rad_i"
+            ],
+            0
+        ]
+    },
+    "test_euler": {
+        "diff": [
+            [
+                "v",
+                "v",
+                "rotmat"
+            ],
+            2
+        ],
+        "roll_diff": [
+            [
+                "fabsf_qe_roll",
+                "fabsf_q_roll",
+                "fabsf_qc_roll",
+                "fabsf_wrap_pi"
+            ],
+            0
+        ],
+        "yaw_diff": [
+            [
+                "fabsf_qc_yaw",
+                "fabsf_q_yaw",
+                "fabsf_wrap_pi",
+                "fabsf_qe_yaw"
+            ],
+            0
+        ],
+        "accuracy": [
+            [
+                "_0e"
+            ],
+            0
+        ],
+        "pitch_diff": [
+            [
+                "fabsf_qc_pitch",
+                "fabsf_q_pitch",
+                "fabsf_wrap_pi",
+                "fabsf_qe_pitch"
+            ],
+            0
+        ],
+        "q_accuracy": [
+            [
+                "_0e"
+            ],
+            0
+        ]
+    },
+    "test_rotate_inverse": {
+        "r": [
+            [
+                "rotation_none"
+            ],
+            0
+        ]
+    },
+    "have_rotation": {
+        "v2": [
+            [
+                "m_transposed",
+                "v"
+            ],
+            1
+        ],
+        "r": [
+            [
+                "rotation_none"
+            ],
+            0
+        ]
+    },
+    "test_rotate_matrix": {
+        "vec2": [
+            [
+                "vec",
+                "m"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "rotation_none"
+            ],
+            0
+        ]
+    },
+    "test_rotation_duplicates": {
+        "r": [
+            [
+                "rotation",
+                "rotation_max",
+                "uint8_t",
+                "enum"
+            ],
+            0
+        ],
+        "r2": [
+            [
+                "rotation_none"
+            ],
+            0
+        ]
+    }
+}

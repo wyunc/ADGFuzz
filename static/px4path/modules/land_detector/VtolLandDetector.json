@@ -1,0 +1,10 @@
+{
+    "_get_freefall_state": {
+        "free_fall_detected": [
+            [
+                "_get_freefall_state"
+            ],
+            0
+        ]
+    }
+}

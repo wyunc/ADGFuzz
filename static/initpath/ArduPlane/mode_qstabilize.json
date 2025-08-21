@@ -1,0 +1,72 @@
+{
+    "update": {
+        "plane.nav_pitch_cd": [
+            [
+                "plane_quadplane_aparm_angle_max",
+                "plane_channel_pitch_get_range",
+                "float",
+                "plane_channel_pitch_get_control_in"
+            ],
+            1
+        ],
+        "plane.nav_roll_cd": [
+            [
+                "plane_quadplane_aparm_angle_max",
+                "float",
+                "plane_channel_roll_get_range",
+                "plane_channel_roll_get_control_in"
+            ],
+            1
+        ]
+    },
+    "run": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pilot_throttle_scaled": [
+            [
+                "quadplane_get_pilot_throttle"
+            ],
+            0
+        ]
+    },
+    "set_tailsitter_roll_pitch": {
+        "plane.nav_roll_cd": [
+            [
+                "plane_quadplane_aparm_angle_max",
+                "plane_quadplane_tailsitter_max_roll_angle",
+                "roll_input"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "plane_quadplane_aparm_angle_max",
+                "pitch_input"
+            ],
+            0
+        ]
+    },
+    "set_limited_roll_pitch": {
+        "plane.nav_roll_cd": [
+            [
+                "plane_roll_limit_cd",
+                "roll_input",
+                "plane_quadplane_aparm_angle_max"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "plane_aparm_pitch_limit_max",
+                "plane_quadplane_aparm_angle_max",
+                "plane_pitch_limit_min",
+                "pitch_input"
+            ],
+            0
+        ]
+    }
+}

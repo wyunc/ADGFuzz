@@ -1,0 +1,111 @@
+{
+    "init": {
+        "sm": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "space_required": [
+            [
+                "pashr_length",
+                "gga_length",
+                "rmc_length"
+            ],
+            0
+        ],
+        "speed_knots": [
+            [
+                "gps_ground_speed",
+                "speed_length",
+                "m_per_sec_to_knots"
+            ],
+            0
+        ],
+        "fix_quality": [
+            [
+                "ahrs_get_location_loc",
+                "gps_ok_fix_3d",
+                "gps_status"
+            ],
+            1
+        ],
+        "pitch_deg": [
+            [
+                "wrap_180_degrees",
+                "wrap_180_ahrs_get_pitch"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "gps_ground_course",
+                "wrap_360_degrees",
+                "wrap_360_speed_y",
+                "wrap_360_speed_x",
+                "wrap_360_atan2f"
+            ],
+            0
+        ],
+        "_last_run_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "speed": [
+            [
+                "ahrs_groundspeed_vector"
+            ],
+            0
+        ],
+        "roll_deg": [
+            [
+                "wrap_180_ahrs_get_roll",
+                "wrap_180_degrees"
+            ],
+            0
+        ],
+        "time_sec": [
+            [
+                "time_usec"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "yaw_deg": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_ahrs_get_yaw"
+            ],
+            0
+        ],
+        "min_dec": [
+            [
+                "unsigned",
+                "_e",
+                "fabs_loc_lat",
+                "fabs_loc_lng",
+                "fabs_loc_lat",
+                "fabs__0e",
+                "_0e7",
+                "fabs_loc_lng"
+            ],
+            1
+        ],
+        "tm": [
+            [
+                "gmtime_r_time_sec",
+                "gmtime_r_tmd"
+            ],
+            0
+        ]
+    }
+}

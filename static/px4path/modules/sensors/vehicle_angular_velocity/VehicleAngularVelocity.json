@@ -1,0 +1,403 @@
+{
+    "UpdateSampleRate": {
+        "_filter_sample_rate_hz": [
+            [
+                "imu_status_get_gyro_raw_rate_hz",
+                "nan"
+            ],
+            1
+        ],
+        "publish_interval_us": [
+            [
+                "1e6f",
+                "nan",
+                "imu_status_get_gyro_rate_hz"
+            ],
+            1
+        ],
+        "samples": [
+            [
+                "roundf_publish_interval_us",
+                "roundf_configured_interval_us"
+            ],
+            0
+        ],
+        "configured_interval_us": [
+            [
+                "1e6f",
+                "_param_imu_gyro_ratemax_get"
+            ],
+            0
+        ],
+        "sample_rate_changed": [
+            [
+                "fabsf_sample_rate_hz",
+                "imu_status_get_gyro_raw_rate_hz",
+                "nan",
+                "fabsf__filter_sample_rate_hz"
+            ],
+            1
+        ]
+    },
+    "ResetFilters": {
+        "_angular_velocity_raw_prev": [
+            [
+                "angular_velocity_uncalibrated"
+            ],
+            0
+        ]
+    },
+    "SensorBiasUpdate": {
+        "_bias": [
+            [
+                "bias_gyro_bias",
+                "vector3f"
+            ],
+            0
+        ]
+    },
+    "SensorSelectionUpdate": {
+        "_selected_sensor_device_id": [
+            [
+                "sensor_gyro_fifo_sub_get_device_id",
+                "sensor_gyro_sub_get_device_id"
+            ],
+            0
+        ],
+        "_filter_sample_rate_hz": [
+            [
+                "sensor_gyro_fifo_sub_get_dt",
+                "nan",
+                "_f",
+                "1e"
+            ],
+            0
+        ],
+        "device_id": [
+            [
+                "sensor_gyro_fifo_sub_get_device_id",
+                "sensor_gyro_sub_get_device_id",
+                "imu_status_get_gyro_device_id",
+                "sensor_selection_gyro_device_id"
+            ],
+            1
+        ]
+    },
+    "ParametersUpdate": {
+        "nf_freq_changed": [
+            [
+                "_param_imu_gyro_nf0_frq_get",
+                "_param_imu_gyro_nf1_frq_get",
+                "fabsf_nf_get_notch_freq"
+            ],
+            0
+        ],
+        "imu_gyro_ratemax": [
+            [
+                "constrain__param_imu_gyro_ratemax_get",
+                "int32_t",
+                "_param_imu_gyro_ratemax_get"
+            ],
+            0
+        ],
+        "nf_bw_changed": [
+            [
+                "_param_imu_gyro_nf1_bw_get",
+                "fabsf_nf_get_bandwidth",
+                "_param_imu_gyro_nf0_bw_get"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_esc_rpm_update_perf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "nf0_enabled": [
+            [
+                "_f",
+                "_param_imu_gyro_nf0_bw_get",
+                "_param_imu_gyro_nf0_frq_get"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_esc_rpm_disable_perf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_fft_disable_perf": [
+            [
+                "perf_alloc_pc_count",
+                "perf_alloc_module_name"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_esc_rpm": [
+            [
+                "int32_t",
+                "constrain__param_imu_gyro_dnf_hmc_get",
+                "new",
+                "notch_filter_harmonic",
+                "nullptr"
+            ],
+            1
+        ],
+        "nf0_enabled_prev": [
+            [
+                "_f",
+                "_param_imu_gyro_nf0_bw_get",
+                "_param_imu_gyro_nf0_frq_get"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_esc_rpm_init_perf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_dynamic_notch_filter_fft_update_perf": [
+            [
+                "perf_alloc_pc_count",
+                "perf_alloc_module_name"
+            ],
+            0
+        ],
+        "_esc_rpm_harmonics": [
+            [
+                "int32_t",
+                "constrain__param_imu_gyro_dnf_hmc_get"
+            ],
+            1
+        ],
+        "nf1_enabled": [
+            [
+                "_param_imu_gyro_nf1_bw_get",
+                "_param_imu_gyro_nf1_frq_get",
+                "_f"
+            ],
+            0
+        ],
+        "nf1_enabled_prev": [
+            [
+                "_param_imu_gyro_nf1_bw_get",
+                "_param_imu_gyro_nf1_frq_get",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "UpdateDynamicNotchEscRpm": {
+        "nf": [
+            [
+                "_esc_rpm_harmonics",
+                "esc",
+                "_dynamic_notch_filter_esc_rpm",
+                "axis"
+            ],
+            1
+        ],
+        "allow_update": [
+            [
+                "max__param_imu_gyro_dnf_min_get",
+                "_param_imu_gyro_dnf_bw_get",
+                "_param_imu_gyro_dnf_bw_get",
+                "max_esc_hz",
+                "max_harmonic",
+                "fabsf_nf_get_notch_freq",
+                "nf_initialized",
+                "nf_get_bandwidth",
+                "axis_init",
+                "axis"
+            ],
+            4
+        ],
+        "esc_report": [
+            [
+                "esc",
+                "esc_status_esc"
+            ],
+            0
+        ],
+        "enabled": [
+            [
+                "esc_rpm",
+                "_param_imu_gyro_dnf_en_get",
+                "_dynamic_notch_filter_esc_rpm"
+            ],
+            0
+        ],
+        "esc_hz": [
+            [
+                "abs_esc_report_esc_rpm",
+                "_f"
+            ],
+            0
+        ],
+        "force_update": [
+            [
+                "_esc_available",
+                "esc",
+                "force"
+            ],
+            0
+        ],
+        "esc_connected": [
+            [
+                "esc_report_esc_rpm",
+                "esc",
+                "esc_status_esc_online_flags"
+            ],
+            0
+        ],
+        "notch_freq_changed": [
+            [
+                "max__param_imu_gyro_dnf_min_get",
+                "_param_imu_gyro_dnf_bw_get",
+                "_param_imu_gyro_dnf_bw_get",
+                "max_esc_hz",
+                "max_harmonic",
+                "fabsf_nf_get_notch_freq"
+            ],
+            4
+        ]
+    },
+    "UpdateDynamicNotchFFT": {
+        "peak_freq": [
+            [
+                "axis",
+                "peak",
+                "peak_frequencies"
+            ],
+            0
+        ],
+        "bandwidth": [
+            [
+                "constrain_sensor_gyro_fft_resolution_hz",
+                "constrain__f"
+            ],
+            0
+        ],
+        "nf": [
+            [
+                "_dynamic_notch_filter_fft",
+                "axis",
+                "peak"
+            ],
+            0
+        ],
+        "enabled": [
+            [
+                "fft",
+                "_param_imu_gyro_dnf_en_get"
+            ],
+            0
+        ],
+        "peak_freq_min": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "FilterAngularVelocity": {
+        "peak": [
+            [
+                "max_num_fft_peaks"
+            ],
+            0
+        ]
+    },
+    "FilterAngularAcceleration": {
+        "angular_acceleration_filtered": [
+            [
+                "_f",
+                "_update_angular_acceleration",
+                "axis",
+                "_lp_filter_acceleration"
+            ],
+            0
+        ],
+        "angular_acceleration": [
+            [
+                "inverse_dt_s",
+                "_angular_velocity_raw_prev_axis",
+                "data",
+                "n"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "time_now_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "N": [
+            [
+                "sensor_fifo_data_samples"
+            ],
+            0
+        ],
+        "inverse_dt_s": [
+            [
+                "1e6f",
+                "sensor_fifo_data_dt"
+            ],
+            0
+        ],
+        "_timestamp_sample_last": [
+            [
+                "sensor_data_timestamp_sample",
+                "1e6f",
+                "_filter_sample_rate_hz"
+            ],
+            0
+        ],
+        "FIFO_SIZE_MAX": [
+            [
+                "sizeof_sensor_fifo_data_x"
+            ],
+            0
+        ],
+        "selection_updated": [
+            [
+                "sensor_selection_update_time_now_us"
+            ],
+            0
+        ]
+    },
+    "CalibrateAndPublish": {
+        "angular_velocity.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "_angular_acceleration": [
+            [
+                "_calibration_rotation",
+                "angular_acceleration_uncalibrated"
+            ],
+            0
+        ],
+        "angular_velocity.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_angular_velocity": [
+            [
+                "_bias",
+                "_calibration_correct_angular_velocity_uncalibrated"
+            ],
+            0
+        ]
+    }
+}

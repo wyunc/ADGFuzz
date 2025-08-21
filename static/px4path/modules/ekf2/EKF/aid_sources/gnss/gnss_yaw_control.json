@@ -1,0 +1,106 @@
+{
+    "controlGnssYawFusion": {
+        "is_fusion_failing": [
+            [
+                "is_timed_out__params_reset_timeout_max",
+                "is_timed_out__aid_src_gnss_yaw_time_last_fuse"
+            ],
+            0
+        ],
+        "continuing_conditions_passing": [
+            [
+                "_control_status_flags_tilt_align"
+            ],
+            0
+        ],
+        "is_new_data_available": [
+            [
+                "px4_isfinite_gnss_sample_yaw"
+            ],
+            0
+        ]
+    },
+    "updateGnssYaw": {
+        "yaw_acc": [
+            [
+                "px4_isfinite_gnss_sample_yaw_acc",
+                "_f",
+                "gnss_sample_yaw_acc"
+            ],
+            0
+        ],
+        "measured_hdg": [
+            [
+                "wrap_pi_gnss_sample_yaw_offset",
+                "wrap_pi_gnss_sample_yaw"
+            ],
+            0
+        ],
+        "R_YAW": [
+            [
+                "sq_yaw_acc",
+                "sq_fmaxf",
+                "sq__params_gnss_heading_noise"
+            ],
+            0
+        ]
+    },
+    "fuseGnssYaw": {
+        "antenna_yaw_offset": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_time_last_heading_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "Kfusion": [
+            [
+                "aid_src_innovation_variance",
+                "h",
+                "p"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_gnss_yaw"
+            ],
+            0
+        ]
+    },
+    "resetYawToGnss": {
+        "yaw_variance": [
+            [
+                "sq_fmaxf",
+                "sq__e",
+                "sq__params_gnss_heading_noise"
+            ],
+            0
+        ],
+        "ant_vec_ef": [
+            [
+                "_r_to_earth",
+                "cosf_gnss_yaw_offset",
+                "sinf_gnss_yaw_offset"
+            ],
+            1
+        ],
+        "measured_yaw": [
+            [
+                "gnss_yaw"
+            ],
+            0
+        ]
+    }
+}

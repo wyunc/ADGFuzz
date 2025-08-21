@@ -1,0 +1,109 @@
+{
+    "reset": {
+        "_flashing_step": [
+            [
+                "gmb_param_not_flashing"
+            ],
+            0
+        ]
+    },
+    "fetch_params": {
+        ".state": [
+            [
+                "gmb_paramstate_fetch_again"
+            ],
+            0
+        ]
+    },
+    "get_param": {
+        "value": [
+            [
+                "def_val",
+                "param",
+                "_params",
+                "_value"
+            ],
+            0
+        ]
+    },
+    "set_param": {
+        ".value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "_last_set_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        ".state": [
+            [
+                "gmb_paramstate_attempting_to_set"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_last_set_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_request_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        ".state": [
+            [
+                "gmb_paramstate_nonexistant"
+            ],
+            0
+        ],
+        "_flashing_step": [
+            [
+                "gmb_param_flashing_waiting_for_ack"
+            ],
+            0
+        ]
+    },
+    "handle_param_value": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        ".value": [
+            [
+                "packet_param_value"
+            ],
+            0
+        ],
+        "_flashing_step": [
+            [
+                "gmb_param_not_flashing"
+            ],
+            0
+        ],
+        ".state": [
+            [
+                "gmb_paramstate_consistent"
+            ],
+            0
+        ]
+    },
+    "flash": {
+        "_flashing_step": [
+            [
+                "gmb_param_flashing_waiting_for_set"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "testBias": {
+        "estimated_bias": [
+            [
+                "_ekf_get_gyro_bias"
+            ],
+            0
+        ]
+    }
+}

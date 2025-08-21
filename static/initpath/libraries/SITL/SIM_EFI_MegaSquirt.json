@@ -1,0 +1,60 @@
+{
+    "update": {
+        "crc": [
+            [
+                "crc32_ms_buf",
+                "crc32_ms_sizeof",
+                "crc32_ms_r_command"
+            ],
+            0
+        ],
+        "table7.mat_cF": [
+            [
+                "c_to_f_baro_get_temperature"
+            ],
+            0
+        ],
+        "crc2": [
+            [
+                "be32toh_r_command_crc"
+            ],
+            0
+        ],
+        "table7.rpm": [
+            [
+                "sitl_state_rpm"
+            ],
+            1
+        ],
+        "table7.throttle_pos": [
+            [
+                "sitl_state_rpm"
+            ],
+            2
+        ]
+    },
+    "send_table": {
+        "crc": [
+            [
+                "htobe32_outbuf",
+                "htobe32_crc32_ms",
+                "htobe32_sizeof"
+            ],
+            0
+        ],
+        "table_size": [
+            [
+                "be16toh_r_command_table_offset",
+                "sizeof_table7",
+                "be16toh_r_command_table_size"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "htobe16_table_size"
+            ],
+            0
+        ]
+    }
+}

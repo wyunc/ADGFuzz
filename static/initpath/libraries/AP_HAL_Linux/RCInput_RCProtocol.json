@@ -1,0 +1,64 @@
+{
+    "open_sbus": {
+        "fd": [
+            [
+                "open_path",
+                "open_o_cloexec",
+                "open_o_nonblock",
+                "open_o_rdwr"
+            ],
+            0
+        ]
+    },
+    "open_115200": {
+        "fd": [
+            [
+                "open_o_rdwr",
+                "open_o_cloexec",
+                "open_o_nonblock",
+                "open_path"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "fd_115200": [
+            [
+                "open_115200_dev_115200"
+            ],
+            0
+        ],
+        "fd_inverted": [
+            [
+                "open_sbus_dev_inverted"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "last_frame_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "fd_inverted": [
+            [
+                "open_sbus_dev_inverted",
+                "open_115200_dev_inverted"
+            ],
+            0
+        ],
+        "_num_channels": [
+            [
+                "rc_num_channels",
+                "read_b",
+                "read_fd_115200",
+                "read_sizeof",
+                "read_fd_inverted"
+            ],
+            1
+        ]
+    }
+}

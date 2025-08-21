@@ -1,0 +1,394 @@
+{
+    "is_active": {
+        "_was_active": [
+            [
+                "_param_cp_dist_get"
+            ],
+            1
+        ],
+        "_time_activated": [
+            [
+                "get_time"
+            ],
+            0
+        ]
+    },
+    "modifySetpoint": {
+        "_vehicle_yaw": [
+            [
+                "eulerf__vehicle_attitude_psi"
+            ],
+            0
+        ],
+        "constraints.timestamp": [
+            [
+                "get_time"
+            ],
+            0
+        ],
+        "_vehicle_attitude": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "original_setpoint": [
+            [
+                "setpoint_accel"
+            ],
+            0
+        ]
+    },
+    "_updateObstacleMap": {
+        "obstacle_distance": [
+            [
+                "_sub_obstacle_distance_get"
+            ],
+            0
+        ],
+        "_obstacle_map_body_frame.timestamp": [
+            [
+                "max_obstacle_distance_timestamp",
+                "max__obstacle_map_body_frame_timestamp",
+                "max_distance_sensor_timestamp"
+            ],
+            0
+        ]
+    },
+    "_updateObstacleData": {
+        "_closest_dist_dir": [
+            [
+                "cosf_angle",
+                "sinf_angle"
+            ],
+            1
+        ],
+        "_closest_dist": [
+            [
+                "uint16_max",
+                "i",
+                "_obstacle_map_body_frame_distances"
+            ],
+            1
+        ]
+    },
+    "_calculateConstrainedSetpoint": {
+        "_last_timeout_warning": [
+            [
+                "get_time"
+            ],
+            1
+        ],
+        "is_stick_deflected": [
+            [
+                "setpoint_accel_norm"
+            ],
+            1
+        ],
+        "_min_dist_to_keep": [
+            [
+                "max__obstacle_map_body_frame_min_distance",
+                "max__param_cp_dist_get"
+            ],
+            0
+        ],
+        "setpoint_accel": [
+            [
+                "vel_comp_accel_dir",
+                "infinity",
+                "_constrain_acceleration_setpoint_setpoint_length"
+            ],
+            2
+        ]
+    },
+    "_addObstacleSensorData": {
+        "msg_lower_angle": [
+            [
+                "get_lower_bound_angle_obstacle_increment",
+                "get_lower_bound_angle_j",
+                "get_lower_bound_angle_obstacle_angle_offset"
+            ],
+            0
+        ],
+        "vehicle_orientation_deg": [
+            [
+                "degrees_vehicle_yaw"
+            ],
+            0
+        ],
+        "msg_upper_angle": [
+            [
+                "get_lower_bound_angle_obstacle_increment",
+                "get_lower_bound_angle_j",
+                "get_lower_bound_angle_obstacle_angle_offset"
+            ],
+            0
+        ]
+    },
+    "_enterData": {
+        "sensor_range_cm": [
+            [
+                "static_cast",
+                "uint16_t",
+                "sensor_range"
+            ],
+            0
+        ]
+    },
+    "_transformSetpoint": {
+        "sp_angle_body_frame": [
+            [
+                "setpoint",
+                "atan2f_setpoint",
+                "_vehicle_yaw"
+            ],
+            0
+        ],
+        "_setpoint_dir": [
+            [
+                "setpoint_unit_or_zero"
+            ],
+            0
+        ],
+        "_setpoint_index": [
+            [
+                "floor_bin_size",
+                "floor_sp_angle_with_offset_deg"
+            ],
+            0
+        ]
+    },
+    "_addDistanceSensorData": {
+        "bin": [
+            [
+                "round_distance_sensor_h_fov",
+                "round_degrees",
+                "int",
+                "bin_size",
+                "round_sensor_yaw_body_deg"
+            ],
+            1
+        ],
+        "upper_bound": [
+            [
+                "round_distance_sensor_h_fov",
+                "round_degrees",
+                "int",
+                "bin_size",
+                "round_sensor_yaw_body_deg"
+            ],
+            0
+        ],
+        "sensor_yaw_body_deg": [
+            [
+                "degrees_wrap_2pi",
+                "degrees_sensor_yaw_body_rad"
+            ],
+            0
+        ],
+        "sensor_range": [
+            [
+                "static_cast",
+                "distance_sensor_max_distance",
+                "uint16_t"
+            ],
+            0
+        ],
+        "distance_reading": [
+            [
+                "min_distance_sensor_current_distance",
+                "distance_sensor_max_distance",
+                "min_distance_sensor_max_distance"
+            ],
+            0
+        ],
+        "wrapped_bin": [
+            [
+                "wrap_bin_bin_count",
+                "wrap_bin_bin"
+            ],
+            0
+        ]
+    },
+    "_adaptSetpointDirection": {
+        "setpoint_dir": [
+            [
+                "sinf_angle",
+                "cosf_angle"
+            ],
+            0
+        ],
+        "best_cost": [
+            [
+                "_f",
+                "filter_size",
+                "_f",
+                "_param_cp_dist_get",
+                "_obstacle_map_body_frame_distances",
+                "_param_cp_dist_get",
+                "abs_i",
+                "_f",
+                "abs_sp_index_original",
+                "_obstacle_map_body_frame_distances",
+                "wrap_bin_j",
+                "wrap_bin_i",
+                "wrap_bin_bin_count"
+            ],
+            4
+        ],
+        "setpoint_index": [
+            [
+                "wrap_bin_j",
+                "wrap_bin_i",
+                "wrap_bin_bin_count"
+            ],
+            2
+        ],
+        "j": [
+            [
+                "filter_size",
+                "sp_index_original",
+                "bin_size",
+                "floor__param_cp_guide_ang_get"
+            ],
+            2
+        ],
+        "angle": [
+            [
+                "_obstacle_map_body_frame_angle_offset",
+                "bin_size",
+                "radians_floatnew_sp_index",
+                "wrap_2pi_angle",
+                "wrap_2pi_vehicle_yaw_angle_rad"
+            ],
+            0
+        ]
+    },
+    "_getObstacleDistance": {
+        "obstacle_distance": [
+            [
+                "_f",
+                "get_bin_at_angle_bin_size",
+                "get_bin_at_angle_sp_angle_with_offset_deg",
+                "_obstacle_map_body_frame_distances"
+            ],
+            1
+        ],
+        "sp_angle_with_offset_deg": [
+            [
+                "_obstacle_map_body_frame_angle_offset",
+                "wrap_360_degrees",
+                "wrap_360_sp_angle_body_frame"
+            ],
+            0
+        ],
+        "sp_angle_body_frame": [
+            [
+                "direction_norm",
+                "direction",
+                "atan2f_dir",
+                "_vehicle_yaw"
+            ],
+            1
+        ]
+    },
+    "_getScale": {
+        "scale_distance": [
+            [
+                "max__param_mpc_vel_manual_get",
+                "_param_mpc_xy_p_get",
+                "max__min_dist_to_keep"
+            ],
+            0
+        ],
+        "scale": [
+            [
+                "powf_scale",
+                "_min_dist_to_keep",
+                "powf_scale_distance",
+                "reference_distance",
+                "min_scale"
+            ],
+            0
+        ]
+    },
+    "_getVelocityCompensationAcceleration": {
+        "stop_distance": [
+            [
+                "_min_dist_to_keep",
+                "i",
+                "now",
+                "_data_timestamps",
+                "max_setpoint_vel_dot",
+                "max__f",
+                "max_bin_direction",
+                "_param_cp_delay_get",
+                "1e",
+                "i",
+                "_obstacle_map_body_frame_distances"
+            ],
+            5
+        ],
+        "max_range": [
+            [
+                "_data_maxranges",
+                "i"
+            ],
+            0
+        ],
+        "vel_comp_accel": [
+            [
+                "min__f",
+                "_f",
+                "min_max_vel",
+                "max_setpoint_vel_dot",
+                "max__f",
+                "max_bin_direction",
+                "_param_mpc_xy_vel_p_acc_get",
+                "min_curr_vel_parallel"
+            ],
+            2
+        ],
+        "vel_comp_accel_dir": [
+            [
+                "sinf_bin_angle",
+                "cosf_bin_angle"
+            ],
+            1
+        ]
+    },
+    "_publishVehicleCmdDoLoiter": {
+        "command.param1": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "command.timestamp": [
+            [
+                "get_time"
+            ],
+            0
+        ],
+        "command.param2": [
+            [
+                "px4_custom_main_mode_auto",
+                "float"
+            ],
+            0
+        ],
+        "command.command": [
+            [
+                "vehicle_cmd_do_set_mode"
+            ],
+            0
+        ],
+        "command.param3": [
+            [
+                "px4_custom_sub_mode_auto_loiter",
+                "float"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "send_attitude": {
+        "r": [
+            [
+                "ahrs_get_roll",
+                "plane_quadplane_ahrs_view_roll"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "plane_quadplane_ahrs_view_yaw",
+                "ahrs_get_yaw"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "plane_quadplane_ahrs_view_pitch",
+                "radians_plane_g_pitch_trim",
+                "ahrs_get_pitch"
+            ],
+            0
+        ],
+        "omega": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ]
+    },
+    "send_attitude_target": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "plane_quadplane_attitude_control_get_throttle_in"
+            ],
+            0
+        ],
+        "quat": [
+            [
+                "plane_quadplane_attitude_control_get_attitude_target_quat"
+            ],
+            0
+        ],
+        "ang_vel": [
+            [
+                "plane_quadplane_attitude_control_get_attitude_target_ang_vel"
+            ],
+            0
+        ]
+    },
+    "send_nav_controller_output": {
+        "quadplane": [
+            [
+                "plane_quadplane"
+            ],
+            0
+        ],
+        "error": [
+            [
+                "quadplane_pos_control_get_pos_target_cm_xy_tofloat",
+                "quadplane_inertial_nav_get_position_xy_cm"
+            ],
+            2
+        ],
+        "nav_controller": [
+            [
+                "plane_nav_controller"
+            ],
+            0
+        ],
+        "targets": [
+            [
+                "quadplane_attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ]
+    },
+    "send_position_target_global_int": {
+        "POSITION_TARGET_TYPEMASK_LAST_BYTE": [
+            [
+                "0x_f000"
+            ],
+            0
+        ],
+        "next_WP_loc": [
+            [
+                "plane_next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "send_wind": {
+        "wind": [
+            [
+                "ahrs_wind_estimate"
+            ],
+            0
+        ]
+    },
+    "send_pid_tuning": {
+        "g": [
+            [
+                "plane_g"
+            ],
+            0
+        ],
+        "pid_info": [
+            [
+                "plane_steer_controller_get_pid_info",
+                "plane_yaw_controller_get_pid_info",
+                "plane_quadplane_attitude_control_get_rate_pitch_pid_get_pid_info",
+                "plane_quadplane_pos_control_get_accel_z_pid_get_pid_info",
+                "plane_pitch_controller_get_pid_info",
+                "plane_roll_controller_get_pid_info",
+                "plane_quadplane_attitude_control_get_rate_roll_pid_get_pid_info",
+                "plane_quadplane_attitude_control_get_rate_yaw_pid_get_pid_info"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ]
+    },
+    "send_hygrometer": {
+        "last_hygrometer_send_idx": [
+            [
+                "airspeed_max_sensors",
+                "i"
+            ],
+            1
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_change_alt_request": {
+        "plane.next_WP_loc.alt": [
+            [
+                "plane_home_alt",
+                "cmd_content_location_alt"
+            ],
+            0
+        ],
+        "plane.next_WP_loc.terrain_alt": [
+            [
+                "cmd_content_location_terrain_alt"
+            ],
+            0
+        ]
+    },
+    "convert_MAV_CMD_NAV_TAKEOFF_to_COMMAND_INT": {
+        "out.z": [
+            [
+                "in_param7"
+            ],
+            0
+        ],
+        "out.target_component": [
+            [
+                "in_target_component"
+            ],
+            0
+        ],
+        "out.command": [
+            [
+                "in_command"
+            ],
+            0
+        ],
+        "out.frame": [
+            [
+                "mav_frame_local_offset_ned"
+            ],
+            0
+        ],
+        "out.target_system": [
+            [
+                "in_target_system"
+            ],
+            0
+        ]
+    },
+    "handle_set_attitude_target": {
+        "plane.guided_state.forced_rpy_cd.x": [
+            [
+                "degrees_q_get_euler_roll"
+            ],
+            0
+        ],
+        "plane.guided_state.forced_rpy_cd.z": [
+            [
+                "degrees_q_get_euler_yaw"
+            ],
+            0
+        ],
+        "plane.guided_state.last_forced_rpy_ms.x": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "attitude_mask": [
+            [
+                "att_target_type_mask",
+                "0b10000111"
+            ],
+            0
+        ],
+        "plane.guided_state.last_forced_throttle_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "plane.guided_state.last_forced_rpy_ms.y": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "att_target.type_mask": [
+            [
+                "att_target_type_mask",
+                "0x_ff"
+            ],
+            0
+        ],
+        "plane.guided_state.last_forced_rpy_ms.z": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "plane.guided_state.forced_throttle": [
+            [
+                "att_target_thrust"
+            ],
+            0
+        ],
+        "plane.guided_state.forced_rpy_cd.y": [
+            [
+                "degrees_q_get_euler_pitch"
+            ],
+            0
+        ]
+    },
+    "handle_set_position_target_local_ned": {
+        "plane.next_WP_loc.alt": [
+            [
+                "packet_z"
+            ],
+            0
+        ]
+    },
+    "handle_set_position_target_global_int": {
+        "alt_cm": [
+            [
+                "pos_target_alt"
+            ],
+            0
+        ],
+        "alt_mask": [
+            [
+                "0b1111111111111011"
+            ],
+            0
+        ]
+    }
+}

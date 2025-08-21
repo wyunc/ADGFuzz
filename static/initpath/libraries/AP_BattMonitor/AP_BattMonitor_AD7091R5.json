@@ -1,0 +1,92 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "hal_i2c_mgr_get_device_ad7091r5_i2c_addr",
+                "hal_i2c_mgr_get_device_ad7091r5_i2c_bus"
+            ],
+            0
+        ],
+        "curr_buff_pt": [
+            [
+                "_curr_pin_get",
+                "ad7091r5_base_pin"
+            ],
+            0
+        ],
+        "volt_buff_pt": [
+            [
+                "_volt_pin_get",
+                "ad7091r5_base_pin"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_state.current_amps": [
+            [
+                "_data_to_volt_curr_buff_pt",
+                "_data_to_volt__data",
+                "_data_to_volt__analog_data",
+                "_curr_amp_offset",
+                "_curr_amp_per_volt"
+            ],
+            0
+        ],
+        "dt_us": [
+            [
+                "micros",
+                "_state_last_time_micros"
+            ],
+            1
+        ],
+        "_state.last_time_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_state.voltage": [
+            [
+                "_volt_multiplier",
+                "_volt_offset",
+                "_data_to_volt__data",
+                "_data_to_volt_volt_buff_pt",
+                "_data_to_volt__analog_data"
+            ],
+            0
+        ],
+        "_state.healthy": [
+            [
+                "_health"
+            ],
+            0
+        ]
+    },
+    "_read_adc": {
+        ".data": [
+            [
+                "ad7091r5_res_mask",
+                "i",
+                "data",
+                "uint16_t"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "ad7091r5_ch_id_data",
+                "ad7091r5_ch_id_i"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_dev_transfer_nullptr",
+                "_dev_transfer_data",
+                "_dev_transfer_sizeof"
+            ],
+            0
+        ]
+    }
+}

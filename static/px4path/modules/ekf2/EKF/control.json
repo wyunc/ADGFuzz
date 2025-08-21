@@ -1,0 +1,16 @@
+{
+    "controlFusionModes": {
+        "_control_status_prev.value": [
+            [
+                "_control_status_value"
+            ],
+            0
+        ],
+        "_state_reset_count_prev": [
+            [
+                "_state_reset_status_reset_count"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "run": {
+        "pilot_desired_throttle": [
+            [
+                "get_pilot_desired_throttle"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "copter.air_mode": [
+            [
+                "airmode_enabled"
+            ],
+            0
+        ]
+    },
+    "exit": {
+        "copter.air_mode": [
+            [
+                "airmode_disabled"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_angle_rates": {
+        "rate_ef_level_cd.y": [
+            [
+                "sqrt_controller_pitch_angle",
+                "g_dt",
+                "sqrt_controller_g2_command_model_acro_rp_get_rate",
+                "g_acro_balance_pitch",
+                "sqrt_controller_angle_max",
+                "attitude_control_get_accel_pitch_max_cdss",
+                "acro_level_max_overshoot",
+                "constrain_int32_pitch_angle",
+                "constrain_int32_acro_level_max_angle"
+            ],
+            0
+        ],
+        "roll_in": [
+            [
+                "norm_pitch_in",
+                "norm_roll_in"
+            ],
+            2
+        ],
+        "att_target": [
+            [
+                "attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ],
+        "rate_bf_request_cd.y": [
+            [
+                "g2_command_model_acro_rp_get_rate",
+                "input_expo_pitch_in",
+                "rate_bf_level_cd_y",
+                "rate_bf_request_cd_y",
+                "input_expo_g2_command_model_acro_rp_get_expo"
+            ],
+            0
+        ],
+        "rate_bf_request_cd.z": [
+            [
+                "rate_bf_request_cd_z",
+                "rate_bf_level_cd_z",
+                "input_expo_yaw_in",
+                "g2_command_model_acro_y_get_rate",
+                "fabsf_rate_bf_request_cd_x",
+                "fabsf_fabsf",
+                "fabsf_rate_bf_request_cd_y",
+                "fabsf_rate_bf_level_cd_x",
+                "fabsf_rate_bf_request_cd_z",
+                "fabsf_rate_bf_level_cd_z",
+                "fabsf_rate_bf_level_cd_y",
+                "input_expo_g2_command_model_acro_y_get_expo"
+            ],
+            1
+        ],
+        "yaw_out": [
+            [
+                "rate_bf_request_cd_z"
+            ],
+            0
+        ],
+        "rate_ef_level_cd.x": [
+            [
+                "sqrt_controller_roll_angle",
+                "sqrt_controller_g2_command_model_acro_rp_get_rate",
+                "g_dt",
+                "constrain_int32_roll_angle",
+                "attitude_control_get_accel_roll_max_cdss",
+                "sqrt_controller_angle_max",
+                "g_acro_balance_roll",
+                "acro_level_max_overshoot",
+                "constrain_int32_acro_level_max_angle"
+            ],
+            0
+        ],
+        "rate_bf_level_cd": [
+            [
+                "float_max",
+                "abs_yaw_in",
+                "ahrs_cos_pitch",
+                "float_roll_in",
+                "float_abs",
+                "float_pitch_in"
+            ],
+            1
+        ],
+        "rate_bf_request_cd.x": [
+            [
+                "g2_command_model_acro_rp_get_rate",
+                "rate_bf_level_cd_x",
+                "input_expo_g2_command_model_acro_rp_get_expo",
+                "input_expo_roll_in",
+                "rate_bf_request_cd_x"
+            ],
+            0
+        ],
+        "roll_out": [
+            [
+                "rate_bf_request_cd_x"
+            ],
+            0
+        ],
+        "pitch_out": [
+            [
+                "rate_bf_request_cd_y"
+            ],
+            0
+        ],
+        "pitch_in": [
+            [
+                "norm_pitch_in",
+                "norm_roll_in"
+            ],
+            2
+        ],
+        "pitch_angle": [
+            [
+                "wrap_180_cd_att_target_y"
+            ],
+            0
+        ],
+        "roll_angle": [
+            [
+                "wrap_180_cd_att_target_x"
+            ],
+            0
+        ],
+        "angle_max": [
+            [
+                "copter_aparm_angle_max"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "init": {
+        "rot": [
+            [
+                "get_rotation_rotation_custom_1",
+                "get_rotation_i",
+                "get_rotation_rotation"
+            ],
+            0
+        ]
+    },
+    "convert": {
+        "rot": [
+            [
+                "get_rotation_r"
+            ],
+            0
+        ]
+    },
+    "set": {
+        "rot": [
+            [
+                "get_rotation_r"
+            ],
+            0
+        ]
+    },
+    "from_rotation": {
+        "rot": [
+            [
+                "get_rotation_r"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "rot_q",
+                "rot_q_todouble"
+            ],
+            0
+        ]
+    },
+    "rotate": {
+        "v": [
+            [
+                "v_tofloat",
+                "rot_m",
+                "_todouble"
+            ],
+            0
+        ],
+        "rot": [
+            [
+                "get_rotation_r"
+            ],
+            0
+        ]
+    }
+}

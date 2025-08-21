@@ -1,0 +1,355 @@
+{
+    "start": {
+        "devtype": [
+            [
+                "devtype_ins_icm40609",
+                "devtype_ins_icm42670",
+                "devtype_ins_iim42652",
+                "devtype_ins_icm40605",
+                "devtype_ins_iim42653",
+                "devtype_ins_icm45686",
+                "devtype_ins_icm42605",
+                "devtype_ins_icm42688"
+            ],
+            0
+        ],
+        "backend_period_us": [
+            [
+                "1000000ul",
+                "backend_rate_hz"
+            ],
+            0
+        ],
+        "highres_sampling": [
+            [
+                "dev_bus_type",
+                "bus_type_spi"
+            ],
+            0
+        ],
+        "gyro_scale": [
+            [
+                "gyro_scale_highres_4000dps",
+                "gyro_scale_highres_2000dps",
+                "gyro_scale_4000dps"
+            ],
+            0
+        ],
+        "accel_scale": [
+            [
+                "accel_scale_highres_32g",
+                "accel_scale_32g",
+                "accel_scale_highres_16g"
+            ],
+            0
+        ],
+        "fifo_buffer": [
+            [
+                "hal_util_malloc_type_mem_dma_safe",
+                "hal_util_malloc_type_inv3_highres_sample_size",
+                "hal_util_malloc_type_inv3_fifo_buffer_len",
+                "hal_util_malloc_type_inv3_sample_size"
+            ],
+            0
+        ],
+        "fifo_config1": [
+            [
+                "0x0f",
+                "0x07"
+            ],
+            0
+        ],
+        "periodic_handle": [
+            [
+                "dev_register_periodic_callback_read_fifo",
+                "dev_register_periodic_callback_void",
+                "dev_register_periodic_callback_backend_period_us",
+                "dev_register_periodic_callback_functor_bind_member"
+            ],
+            0
+        ]
+    },
+    "accumulate_samples": {
+        "temp_filtered": [
+            [
+                "temp_filter_apply_temp"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "temp_sensitivity",
+                "d_temperature",
+                "temp_zero"
+            ],
+            0
+        ],
+        "tstart": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "accel_scale"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "data",
+                "i"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "gyro_scale"
+            ],
+            0
+        ]
+    },
+    "uint20_to_float": {
+        "value32bit": [
+            [
+                "12u",
+                "uint32_t_bits",
+                "uint32_t_msb",
+                "lsb",
+                "4u",
+                "int32_t",
+                "0x_fff00000"
+            ],
+            1
+        ]
+    },
+    "accumulate_highres_samples": {
+        "temp_filtered": [
+            [
+                "temp_filter_apply_temp"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "accel_scale"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "gyro_scale"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "temp_zero",
+                "d_temperature",
+                "temp_sensitivity"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "data",
+                "i"
+            ],
+            0
+        ],
+        "tstart": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "read_fifo": {
+        "samples": [
+            [
+                "nullptr",
+                "fifo_buffer",
+                "uint8_t"
+            ],
+            1
+        ],
+        "n_samples": [
+            [
+                "inv3_fifo_buffer_len"
+            ],
+            1
+        ],
+        "reg_data": [
+            [
+                "inv3reg_fifo_data",
+                "inv3reg_70_fifo_data",
+                "inv3reg_456_fifo_data"
+            ],
+            0
+        ],
+        "fifo_sample_size": [
+            [
+                "highres_sampling",
+                "inv3_highres_sample_size",
+                "inv3_sample_size"
+            ],
+            0
+        ],
+        "reg_counth": [
+            [
+                "inv3reg_70_fifo_counth",
+                "inv3reg_fifo_counth",
+                "inv3reg_456_fifo_counth"
+            ],
+            0
+        ]
+    },
+    "set_filter_and_scaling": {
+        "aaf_delt": [
+            [
+                "accel_aaf_delt"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "register_read_inv3reg_42xxx_intf_config1"
+            ],
+            0
+        ],
+        "fast_sampling": [
+            [
+                "bus_type_spi",
+                "dev_bus_type"
+            ],
+            0
+        ],
+        "aaf_enable": [
+            [
+                "register_read_bank_inv3reg_gyro_config_static2"
+            ],
+            0
+        ],
+        "aaf_bitshift": [
+            [
+                "accel_aaf_bitshift"
+            ],
+            0
+        ],
+        "odr_config": [
+            [
+                "0x04",
+                "0x05",
+                "0x03",
+                "0x06"
+            ],
+            0
+        ],
+        "backend_rate_hz": [
+            [
+                "calculate_fast_sampling_backend_rate_backend_rate_hz"
+            ],
+            0
+        ],
+        "aaf_deltsqr": [
+            [
+                "accel_aaf_deltsqr"
+            ],
+            0
+        ]
+    },
+    "set_filter_and_scaling_icm42670": {
+        "v": [
+            [
+                "register_read_inv3reg_42xxx_intf_config1"
+            ],
+            0
+        ]
+    },
+    "set_filter_and_scaling_icm456xy": {
+        "fast_sampling": [
+            [
+                "dev_bus_type",
+                "bus_type_spi"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "register_read_bank_icm456xy_0x58",
+                "register_read_bank_icm456xy_inv3bank_456_ipreg_top1_addr",
+                "register_read_bank_icm456xy_0x7b",
+                "register_read_bank_icm456xy_0x_a6",
+                "register_read_bank_icm456xy_inv3bank_456_ipreg_sys2_addr",
+                "register_read_bank_icm456xy_inv3bank_456_ipreg_sys1_addr"
+            ],
+            0
+        ],
+        "backend_rate_hz": [
+            [
+                "calculate_fast_sampling_backend_rate_backend_rate_hz",
+                "constrain_int16_backend_rate_hz"
+            ],
+            0
+        ],
+        "fifo_config": [
+            [
+                "1u"
+            ],
+            0
+        ]
+    },
+    "check_whoami": {
+        "whoami": [
+            [
+                "register_read_inv3reg_456_whoami",
+                "register_read_inv3reg_whoami"
+            ],
+            0
+        ],
+        "inv3_type": [
+            [
+                "icm42670",
+                "iim42653",
+                "icm42605",
+                "icm40609",
+                "icm45686",
+                "icm42688",
+                "iim42652",
+                "icm40605"
+            ],
+            0
+        ]
+    },
+    "register_write_bank_icm456xy": {
+        "addr": [
+            [
+                "reg",
+                "bank_addr"
+            ],
+            0
+        ]
+    },
+    "hardware_init": {
+        "fifo_config": [
+            [
+                "0x03"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "register_read_bank_icm456xy_0x68",
+                "register_read_bank_icm456xy_inv3bank_456_ipreg_top1_addr"
+            ],
+            0
+        ],
+        "_clip_limit": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ]
+    }
+}

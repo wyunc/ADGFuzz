@@ -1,0 +1,39 @@
+{
+    "control_winch": {
+        "rate_limited": [
+            [
+                "get_rate_limited_by_accel_dt",
+                "get_rate_limited_by_accel_config_rate_desired"
+            ],
+            0
+        ],
+        "config.rate_desired": [
+            [
+                "config_rate_max",
+                "config_pos_p",
+                "config_length_desired"
+            ],
+            1
+        ],
+        "scaled_output": [
+            [
+                "linear_interpolate_config_rate_max",
+                "linear_interpolate_rate_limited"
+            ],
+            0
+        ],
+        "control_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "line_length": [
+            [
+                "millis",
+                "config_rate_desired"
+            ],
+            2
+        ]
+    }
+}

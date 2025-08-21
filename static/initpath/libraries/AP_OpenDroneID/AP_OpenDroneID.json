@@ -1,0 +1,338 @@
+{
+    "init": {
+        "_chan": [
+            [
+                "mavlink_channel_t_gcs_get_channel_from_port_number__mav_port"
+            ],
+            0
+        ]
+    },
+    "load_UAS_ID_from_persistent_memory": {
+        "id_type_len": [
+            [
+                "sizeof_id_type"
+            ],
+            0
+        ],
+        "id_len": [
+            [
+                "sizeof_id_str"
+            ],
+            0
+        ],
+        "ua_type_len": [
+            [
+                "sizeof_ua_type"
+            ],
+            0
+        ]
+    },
+    "set_basic_id": {
+        "pkt_basic_id.target_component": [
+            [
+                "mav_comp_id_odid_txrx_1"
+            ],
+            0
+        ],
+        "pkt_basic_id.id_type": [
+            [
+                "atoi_id_type"
+            ],
+            0
+        ],
+        "pkt_basic_id.ua_type": [
+            [
+                "atoi_ua_type"
+            ],
+            0
+        ],
+        "pkt_basic_id.target_system": [
+            [
+                "gcs_sysid_this_mav"
+            ],
+            1
+        ]
+    },
+    "pre_arm_check": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_was_armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            1
+        ],
+        "can_num_drivers": [
+            [
+                "can_get_num_drivers"
+            ],
+            0
+        ],
+        "dronecan": [
+            [
+                "get_dronecan_i"
+            ],
+            0
+        ],
+        "pkt_basic_id.id_type": [
+            [
+                "mav_odid_id_type_none"
+            ],
+            0
+        ]
+    },
+    "send_dynamic_out": {
+        "_last_send_system_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_send_location_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_static_out": {
+        "last_lost_tx_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_msg_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "next_msg_to_send": [
+            [
+                "next_msg_uint8_t",
+                "uint8_t_next_msg_enum_end",
+                "next_msg_next_msg_to_send"
+            ],
+            0
+        ],
+        "last_lost_operator_msg_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_chan": [
+            [
+                "mavlink_channel_t_gcs_get_channel_from_port_number__mav_port"
+            ],
+            0
+        ],
+        "msg_spacing_ms": [
+            [
+                "_mavlink_static_period_ms"
+            ],
+            0
+        ]
+    },
+    "send_location_message": {
+        "height_above_takeoff": [
+            [
+                "curr_alt_asml_cm",
+                "takeoff_alt_asml_cm"
+            ],
+            0
+        ],
+        "uav_status": [
+            [
+                "mav_odid_status_airborne",
+                "hal_util_get_soft_armed",
+                "mav_odid_status_ground",
+                "mav_odid_status_emergency"
+            ],
+            0
+        ],
+        "horizontal_accuracy_mav": [
+            [
+                "mav_odid_hor_acc_unknown",
+                "create_enum_horizontal_accuracy_horizontal_accuracy"
+            ],
+            0
+        ],
+        "time_week_ms": [
+            [
+                "gps_time_week_ms"
+            ],
+            0
+        ],
+        "need_send_location": [
+            [
+                "dronecan_send_all"
+            ],
+            0
+        ],
+        "altitude_barometric": [
+            [
+                "create_altitude_base_press_mbar",
+                "create_altitude_barometer_get_pressure",
+                "create_altitude_barometer_get_altitude_difference"
+            ],
+            0
+        ],
+        "altitude_geodetic": [
+            [
+                "undulation",
+                "alt_amsl_cm"
+            ],
+            0
+        ],
+        "timestamp": [
+            [
+                "float_time_week_ms",
+                "odid_inv_timestamp",
+                "create_location_timestamp_timestamp"
+            ],
+            0
+        ],
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "vertical_accuracy_mav": [
+            [
+                "mav_odid_ver_acc_unknown",
+                "create_enum_vertical_accuracy_vertical_accuracy"
+            ],
+            0
+        ],
+        "timestamp_accuracy_mav": [
+            [
+                "create_enum_timestamp_accuracy",
+                "mav_odid_time_acc_unknown"
+            ],
+            0
+        ],
+        "got_bad_gps_fix": [
+            [
+                "gps_ok_fix_3d",
+                "gps_status"
+            ],
+            0
+        ],
+        "barometer": [
+            [
+                "baro"
+            ],
+            0
+        ],
+        "speed_horizontal": [
+            [
+                "create_speed_horizontal_ahrs_groundspeed"
+            ],
+            0
+        ],
+        "speed_accuracy_mav": [
+            [
+                "mav_odid_speed_acc_unknown",
+                "create_enum_speed_accuracy_speed_accuracy"
+            ],
+            0
+        ],
+        "direction": [
+            [
+                "odid_inv_dir",
+                "wrap_360_ahrs_groundspeed_vector_angle",
+                "wrap_360_degrees"
+            ],
+            0
+        ],
+        "climb_rate": [
+            [
+                "create_speed_vertical_vel_ned_z"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "current_location_lat"
+            ],
+            0
+        ],
+        "barometer_accuracy": [
+            [
+                "mav_odid_ver_acc_unknown",
+                "create_enum_vertical_accuracy__baro_accuracy"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "current_location_lng"
+            ],
+            0
+        ]
+    },
+    "create_altitude": {
+        "altitude": [
+            [
+                "odid_inv_alt"
+            ],
+            0
+        ]
+    },
+    "create_location_timestamp": {
+        "timestamp": [
+            [
+                "odid_inv_timestamp"
+            ],
+            0
+        ]
+    },
+    "handle_msg": {
+        "pkt_system.timestamp": [
+            [
+                "pkt_system_update_timestamp"
+            ],
+            0
+        ],
+        "pkt_system.operator_altitude_geo": [
+            [
+                "pkt_system_update_operator_altitude_geo"
+            ],
+            0
+        ],
+        "pkt_system.operator_longitude": [
+            [
+                "pkt_system_update_operator_longitude"
+            ],
+            0
+        ],
+        "last_system_ms": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ],
+        "last_arm_status_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "pkt_system.operator_latitude": [
+            [
+                "pkt_system_update_operator_latitude"
+            ],
+            0
+        ]
+    }
+}

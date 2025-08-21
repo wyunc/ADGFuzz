@@ -1,0 +1,32 @@
+{
+    "load_parameters": {
+        "cruise_speed_info": [
+            [
+                "ap_param_float",
+                "k_param_speed_cruise"
+            ],
+            0
+        ],
+        "wp_speed_old_info": [
+            [
+                "ap_param_float",
+                "k_param_g2"
+            ],
+            0
+        ],
+        "ch7_opt_old_val": [
+            [
+                "ch7_opt_old_get",
+                "uint8_t"
+            ],
+            0
+        ],
+        "ch7_option_info": [
+            [
+                "ap_param_int8",
+                "k_param_ch7_option"
+            ],
+            0
+        ]
+    }
+}

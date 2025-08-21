@@ -1,0 +1,294 @@
+{
+    "make_gps_time": {
+        "tm.tm_sec": [
+            [
+                "100u"
+            ],
+            0
+        ],
+        "unix_to_GPS_secs": [
+            [
+                "315964800ul"
+            ],
+            0
+        ],
+        "tm.tm_year": [
+            [
+                "100u",
+                "bcd_date"
+            ],
+            0
+        ],
+        "tm.tm_mon": [
+            [
+                "100u",
+                "bcd_date"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "gps_leapseconds_millis",
+                "1000u",
+                "unix_to_gps_secs",
+                "ap_mktime_tm",
+                "ap_sec_per_week"
+            ],
+            3
+        ],
+        "tm.tm_hour": [
+            [
+                "100u",
+                "100u",
+                "1000u",
+                "bcd_milliseconds"
+            ],
+            1
+        ],
+        "state.time_week_ms": [
+            [
+                "gps_leapseconds_millis",
+                "1000u",
+                "unix_to_gps_secs",
+                "ap_mktime_tm",
+                "1000u",
+                "ap_msec_per_sec",
+                "ap_sec_per_week"
+            ],
+            4
+        ],
+        "tm.tm_min": [
+            [
+                "100u"
+            ],
+            0
+        ],
+        "tm.tm_mday": [
+            [
+                "10000u",
+                "bcd_date"
+            ],
+            0
+        ]
+    },
+    "fill_3d_velocity": {
+        "state.velocity.x": [
+            [
+                "state_ground_speed",
+                "cosf_gps_heading"
+            ],
+            0
+        ],
+        "state.velocity.y": [
+            [
+                "state_ground_speed",
+                "sinf_gps_heading"
+            ],
+            0
+        ],
+        "gps_heading": [
+            [
+                "radians_state_ground_course"
+            ],
+            0
+        ]
+    },
+    "velocity_to_speed_course": {
+        "s.ground_course": [
+            [
+                "wrap_360_s_velocity_x",
+                "wrap_360_degrees",
+                "wrap_360_s_velocity_y",
+                "wrap_360_atan2f"
+            ],
+            0
+        ],
+        "s.ground_speed": [
+            [
+                "s_velocity_xy_length"
+            ],
+            0
+        ]
+    },
+    "_detection_message": {
+        "dstate": [
+            [
+                "state_instance",
+                "gps_detect_state"
+            ],
+            1
+        ]
+    },
+    "send_mavlink_gps_rtk": {
+        "instance": [
+            [
+                "state_instance"
+            ],
+            0
+        ]
+    },
+    "set_uart_timestamp": {
+        "state.last_corrected_gps_time_us": [
+            [
+                "port_receive_time_constraint_us_nbytes"
+            ],
+            0
+        ]
+    },
+    "check_new_itow": {
+        "_last_itow_ms": [
+            [
+                "itow"
+            ],
+            0
+        ],
+        "uart_us": [
+            [
+                "_last_pps_time_us",
+                "micros64",
+                "port_receive_time_constraint_us_msg_length"
+            ],
+            0
+        ],
+        "_pseudo_itow_delta_ms": [
+            [
+                "itow",
+                "1000u",
+                "millis",
+                "gps_min_period_ms",
+                "constrain_int16_state_instance",
+                "constrain_int16_gps_get_rate_ms",
+                "1000ull"
+            ],
+            4
+        ],
+        "state.last_corrected_gps_time_us": [
+            [
+                "jitter_correction_correct_offboard_timestamp_usec__pseudo_itow",
+                "jitter_correction_correct_offboard_timestamp_usec_uart_us"
+            ],
+            1
+        ],
+        "lag_s": [
+            [
+                "1000u",
+                "state_last_corrected_gps_time_us",
+                "millis"
+            ],
+            1
+        ],
+        "_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "calculate_moving_base_yaw": {
+        "interim_state.gps_yaw": [
+            [
+                "wrap_360_reported_heading_deg",
+                "wrap_360_degrees",
+                "wrap_360_rotation_offset_rad"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "ahrs_get_gyro"
+            ],
+            0
+        ],
+        "max_D": [
+            [
+                "antenna_tilt_max_lag_z",
+                "reported_distance",
+                "offset_length",
+                "antenna_tilt_min_lag_z",
+                "permitted_error_length_pct"
+            ],
+            2
+        ],
+        "antenna_tilt_max_lag": [
+            [
+                "_antenna_offset_get",
+                "_mb_params_base_offset_get",
+                "interim_state_instance",
+                "gps_params",
+                "ahrs_get_rotation_body_to_ned"
+            ],
+            2
+        ],
+        "antenna_tilt_min_lag": [
+            [
+                "ahrs_get_rotation_body_to_ned",
+                "_antenna_offset_get",
+                "_mb_params_base_offset_get",
+                "interim_state_instance",
+                "gps_params"
+            ],
+            2
+        ],
+        "min_D": [
+            [
+                "antenna_tilt_max_lag_z",
+                "reported_distance",
+                "offset_length",
+                "antenna_tilt_min_lag_z",
+                "permitted_error_length_pct"
+            ],
+            2
+        ],
+        "interim_state.gps_yaw_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "rotation_offset_rad": [
+            [
+                "vector2f_offset_y_angle",
+                "vector2f_offset_x"
+            ],
+            0
+        ]
+    },
+    "set_alt_amsl_cm": {
+        "_state.location.alt": [
+            [
+                "_state_undulation",
+                "alt_amsl_cm"
+            ],
+            0
+        ]
+    },
+    "logging_loop": {
+        ".fd": [
+            [
+                "_open_o_wronly",
+                "fs_open_fname",
+                "_open_o_append",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "header.n": [
+            [
+                "n"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "0x7fe53b04u"
+            ],
+            0
+        ],
+        "header.time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

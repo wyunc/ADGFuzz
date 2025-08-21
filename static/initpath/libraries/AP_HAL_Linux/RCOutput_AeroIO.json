@@ -1,0 +1,45 @@
+{
+    "init": {
+        "_spi": [
+            [
+                "move_hal_spi_get_device",
+                "move_device_name"
+            ],
+            0
+        ]
+    },
+    "push": {
+        "_pending_freq_write_mask": [
+            [
+                "_pending_duty_write_mask"
+            ],
+            0
+        ]
+    },
+    "_hw_write": {
+        "tx.prefix": [
+            [
+                "write_prefix"
+            ],
+            0
+        ],
+        "tx.val": [
+            [
+                "htobe16_data"
+            ],
+            0
+        ],
+        "address": [
+            [
+                "waddress_address"
+            ],
+            0
+        ],
+        "tx.addr": [
+            [
+                "htobe16_address"
+            ],
+            0
+        ]
+    }
+}

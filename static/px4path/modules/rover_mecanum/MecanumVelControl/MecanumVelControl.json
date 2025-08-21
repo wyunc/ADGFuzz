@@ -1,0 +1,203 @@
+{
+    "updateVelControl": {
+        "rover_velocity_status.measured_speed_body_x": [
+            [
+                "_vehicle_speed_body_x"
+            ],
+            0
+        ],
+        "rover_velocity_status.adjusted_speed_body_x_setpoint": [
+            [
+                "_speed_x_setpoint_get_state"
+            ],
+            0
+        ],
+        "rover_velocity_status.pid_throttle_body_y_integral": [
+            [
+                "_pid_speed_y_get_integral"
+            ],
+            0
+        ],
+        "rover_velocity_status.adjusted_speed_body_y_setpoint": [
+            [
+                "_speed_y_setpoint_get_state"
+            ],
+            0
+        ],
+        "rover_velocity_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_dt": [
+            [
+                "constrain_1_ms",
+                "constrain__timestamp",
+                "constrain_timestamp_prev",
+                "1e",
+                "constrain_5000_ms"
+            ],
+            0
+        ],
+        "rover_velocity_status.pid_throttle_body_x_integral": [
+            [
+                "_pid_speed_x_get_integral"
+            ],
+            0
+        ],
+        "rover_velocity_status.measured_speed_body_y": [
+            [
+                "_vehicle_speed_body_y"
+            ],
+            0
+        ]
+    },
+    "updateSubscriptions": {
+        "_vehicle_yaw": [
+            [
+                "eulerf__vehicle_attitude_quaternion_psi"
+            ],
+            0
+        ],
+        "_vehicle_attitude_quaternion": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "_vehicle_speed_body_y": [
+            [
+                "_f",
+                "_param_ro_speed_th_get",
+                "fabsf_velocity_in_body_frame",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame"
+            ],
+            1
+        ],
+        "_vehicle_speed_body_x": [
+            [
+                "_f",
+                "_param_ro_speed_th_get",
+                "fabsf_velocity_in_body_frame",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame"
+            ],
+            1
+        ]
+    },
+    "generateVelocitySetpoint": {
+        "offboard_vel_control": [
+            [
+                "_offboard_control_mode_position",
+                "_offboard_control_mode_velocity"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.bearing": [
+            [
+                "atan2f_velocity_in_local_frame",
+                "velocity_in_local_frame"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.yaw": [
+            [
+                "_vehicle_yaw"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.speed": [
+            [
+                "velocity_in_local_frame_norm"
+            ],
+            0
+        ]
+    },
+    "generateAttitudeAndThrottleSetpoint": {
+        "speed_body_x_setpoint": [
+            [
+                "_param_ro_speed_th_get",
+                "fabsf_speed_body_x_setpoint",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame",
+                "_f"
+            ],
+            1
+        ],
+        "speed_body_y_setpoint": [
+            [
+                "_param_ro_speed_th_get",
+                "_vehicle_attitude_quaternion_rotate_vector_inverse_velocity_in_local_frame",
+                "fabsf_speed_body_y_setpoint",
+                "_f"
+            ],
+            1
+        ],
+        "_last_attitude_setpoint_update": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "speed_body_x_setpoint_normalized": [
+            [
+                "normalization",
+                "fabsf__rover_steering_setpoint_normalized_speed_diff",
+                "_f",
+                "sinf_theta",
+                "cosf_theta"
+            ],
+            1
+        ],
+        "rover_attitude_setpoint.yaw_setpoint": [
+            [
+                "_vehicle_yaw",
+                "_mecanum_velocity_setpoint_yaw"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "atan2f_fabsf",
+                "atan2f_speed_body_y_setpoint_normalized",
+                "fabsf_speed_body_x_setpoint_normalized"
+            ],
+            0
+        ],
+        "speed_body_y_setpoint_normalized": [
+            [
+                "normalization",
+                "fabsf__rover_steering_setpoint_normalized_speed_diff",
+                "_f",
+                "sinf_theta",
+                "cosf_theta"
+            ],
+            1
+        ],
+        "rover_throttle_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_attitude_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

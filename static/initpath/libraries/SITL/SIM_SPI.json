@@ -1,0 +1,18 @@
+{
+    "init": {
+        "dev_i": [
+            [
+                "i",
+                "spi_devices"
+            ],
+            0
+        ],
+        "dev_j": [
+            [
+                "i",
+                "spi_devices"
+            ],
+            1
+        ]
+    }
+}

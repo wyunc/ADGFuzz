@@ -1,0 +1,46 @@
+{
+    "step_arm_cfft_f32": {
+        "Sint": [
+            [
+                "fft__fft_instance_sint"
+            ],
+            0
+        ],
+        "fftLen": [
+            [
+                "fft__fft_instance_fft_len_rfft"
+            ],
+            0
+        ]
+    },
+    "calculate_candans_estimator": {
+        "d": [
+            [
+                "candan_factor",
+                "k_max",
+                "k_max",
+                "fft__rfft_data",
+                "k_max",
+                "k_max",
+                "fft__rfft_data",
+                "k_max",
+                "k_max",
+                "k_max",
+                "fft__rfft_data",
+                "k_max",
+                "k_max",
+                "k_max",
+                "fft__rfft_data",
+                "k_max",
+                "k_max",
+                "k_max",
+                "fft__rfft_data",
+                "k_max",
+                "k_max",
+                "k_max",
+                "fft__rfft_data"
+            ],
+            9
+        ]
+    }
+}

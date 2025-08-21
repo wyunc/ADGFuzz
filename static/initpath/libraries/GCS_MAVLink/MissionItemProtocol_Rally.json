@@ -1,0 +1,48 @@
+{
+    "get_item_as_mission_item": {
+        "ret_packet.x": [
+            [
+                "rallypoint_lat"
+            ],
+            0
+        ],
+        "ret_packet.frame": [
+            [
+                "mav_frame_global_relative_alt",
+                "mav_frame_global_terrain_alt",
+                "mav_frame_global"
+            ],
+            0
+        ],
+        "ret_packet.command": [
+            [
+                "mav_cmd_nav_rally_point"
+            ],
+            0
+        ],
+        "ret_packet.z": [
+            [
+                "rallypoint_alt"
+            ],
+            0
+        ],
+        "ret_packet.y": [
+            [
+                "rallypoint_lng"
+            ],
+            0
+        ],
+        "ret_packet.mission_type": [
+            [
+                "mav_mission_type_rally"
+            ],
+            0
+        ],
+        "rallyp": [
+            [
+                "rally"
+            ],
+            0
+        ]
+    }
+}

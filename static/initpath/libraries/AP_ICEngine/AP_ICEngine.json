@@ -1,0 +1,178 @@
+{
+    "param_conversion": {
+        "chan": [
+            [
+                "rc_channel_start_chan"
+            ],
+            0
+        ],
+        "pwm_off": [
+            [
+                "param_value"
+            ],
+            0
+        ],
+        "info.type": [
+            [
+                "ap_param_int16",
+                "ap_param_int8"
+            ],
+            0
+        ],
+        "pwm_on": [
+            [
+                "param_value"
+            ],
+            0
+        ],
+        "info.old_group_element": [
+            [
+                "elem_element"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "start_chan_last_value": [
+            [
+                "c_get_radio_in"
+            ],
+            1
+        ],
+        "last_uncommanded_stop_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "starter_last_run_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "filtered_rpm_value": [
+            [
+                "_rpm_filter_apply_rpm_value"
+            ],
+            0
+        ],
+        "initial_height": [
+            [
+                "pos_z"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "rc_find_channel_for_option_ice_start_stop"
+            ],
+            0
+        ],
+        "start_chan_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "starter_start_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state": [
+            [
+                "ice_starting",
+                "ice_off",
+                "ice_running",
+                "ice_start_delay"
+            ],
+            0
+        ]
+    },
+    "throttle_override": {
+        "percentage": [
+            [
+                "idle_percent",
+                "redline_throttle_percentage",
+                "redline_governor_integrator",
+                "base_throttle",
+                "start_percent_get"
+            ],
+            0
+        ],
+        "redline.governor_integrator": [
+            [
+                "redline_throttle_percentage",
+                "idle_slew",
+                "scheduler_get_loop_period_s"
+            ],
+            1
+        ]
+    },
+    "engine_control": {
+        "cvalue": [
+            [
+                "c_get_radio_in"
+            ],
+            0
+        ],
+        "height_required": [
+            [
+                "height_delay"
+            ],
+            0
+        ],
+        "allow_single_start_while_disarmed": [
+            [
+                "engine_control_options_allow_start_while_disarmed",
+                "flags"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "rc_find_channel_for_option_ice_start_stop"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "ice_start_height_delay",
+                "ice_starting",
+                "ice_off"
+            ],
+            0
+        ]
+    },
+    "update_idle_governor": {
+        "idle_governor_integrator": [
+            [
+                "scheduler_get_loop_period_s",
+                "idle_slew",
+                "min_throttle_base"
+            ],
+            1
+        ],
+        "ap_rpm": [
+            [
+                "rpm"
+            ],
+            0
+        ],
+        "underspeed": [
+            [
+                "rpmv",
+                "idle_rpm"
+            ],
+            1
+        ],
+        "min_throttle": [
+            [
+                "roundf_idle_governor_integrator"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "init": {
+        "position_hold": [
+            [
+                "loiter",
+                "poshold",
+                "copter_flightmode_mode_number"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_climb_rate_cms": {
+        "target_climb_rate": [
+            [
+                "copter_mode_autotune_get_avoidance_adjusted_climbrate_target_climb_rate",
+                "copter_get_pilot_desired_climb_rate_copter_channel_throttle_get_control_in"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_rp_yrate_cd": {
+        "yaw_rate_cds": [
+            [
+                "copter_mode_autotune_get_pilot_desired_yaw_rate"
+            ],
+            0
+        ]
+    }
+}

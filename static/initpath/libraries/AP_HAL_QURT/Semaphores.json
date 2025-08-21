@@ -1,0 +1,62 @@
+{
+    "check_owner": {
+        "owner": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "take": {
+        "owner": [
+            [
+                "pthread_self"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "pthread_mutex_lock__lock"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "take_nonblocking": {
+        "ok": [
+            [
+                "pthread_mutex_trylock__lock"
+            ],
+            0
+        ],
+        "owner": [
+            [
+                "pthread_self"
+            ],
+            0
+        ]
+    },
+    "wait": {
+        "ts.tv_nsec": [
+            [
+                "1000ul",
+                "1000000u",
+                "1000000000l",
+                "timeout_us"
+            ],
+            0
+        ],
+        "ts.tv_sec": [
+            [
+                "1000000ul",
+                "timeout_us"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "init": {
+        "_actuators_pub": [
+            [
+                "model_name",
+                "actuators",
+                "_node_advertise"
+            ],
+            1
+        ],
+        "wheel_speed_topic": [
+            [
+                "model_name"
+            ],
+            0
+        ]
+    },
+    "updateOutputs": {
+        "scaled_output": [
+            [
+                "i",
+                "double",
+                "outputs",
+                "output_offset"
+            ],
+            0
+        ]
+    },
+    "wheelSpeedCallback": {
+        "wheel_encoders.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

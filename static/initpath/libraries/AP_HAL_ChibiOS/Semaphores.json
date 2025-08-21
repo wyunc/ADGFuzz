@@ -1,0 +1,92 @@
+{
+    "give": {
+        "mtx": [
+            [
+                "mutex_t",
+                "_lock"
+            ],
+            0
+        ]
+    },
+    "take": {
+        "mtx": [
+            [
+                "mutex_t",
+                "_lock"
+            ],
+            0
+        ],
+        "start": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "take_nonblocking": {
+        "mtx": [
+            [
+                "_lock",
+                "mutex_t"
+            ],
+            0
+        ]
+    },
+    "check_owner": {
+        "owner": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ],
+        "mtx": [
+            [
+                "_lock",
+                "mutex_t"
+            ],
+            0
+        ]
+    },
+    "wait": {
+        "timeout_us": [
+            [
+                "60000u"
+            ],
+            1
+        ],
+        "sem": [
+            [
+                "_lock",
+                "binary_semaphore_t"
+            ],
+            0
+        ]
+    },
+    "wait_blocking": {
+        "sem": [
+            [
+                "binary_semaphore_t",
+                "_lock"
+            ],
+            0
+        ]
+    },
+    "signal": {
+        "sem": [
+            [
+                "_lock",
+                "binary_semaphore_t"
+            ],
+            0
+        ]
+    },
+    "signal_ISR": {
+        "sem": [
+            [
+                "_lock",
+                "binary_semaphore_t"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "init": {
+        "_remain": [
+            [
+                "sizeof__data"
+            ],
+            0
+        ],
+        "_pdata": [
+            [
+                "_data",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "_remain": [
+            [
+                "sizeof__data",
+                "uint8_t",
+                "_data"
+            ],
+            0
+        ],
+        "_pdata": [
+            [
+                "sizeof_magic",
+                "uint8_t",
+                "memmem__data",
+                "memmem_sizeof",
+                "magic",
+                "_data",
+                "sizeof__data",
+                "sizeof__data"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "wind_pressure_correction": {
+        "error": [
+            [
+                "wcoef_yp",
+                "wcoef_yn",
+                "wcoef_zp",
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio",
+                "sq_airspeed_vec_bf_y",
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio",
+                "sq_airspeed_vec_bf_z",
+                "wcoef_xn",
+                "wcoef_zn",
+                "wcoef_xp",
+                "sq_airspeed_vec_bf_x",
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio"
+            ],
+            4
+        ],
+        ".dynamic_pressure.x": [
+            [
+                "sq_airspeed_vec_bf_x",
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio"
+            ],
+            2
+        ],
+        ".dynamic_pressure.z": [
+            [
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio",
+                "sq_airspeed_vec_bf_z"
+            ],
+            2
+        ],
+        ".dynamic_pressure.y": [
+            [
+                "ssl_air_density",
+                "ahrs_get_air_density_ratio",
+                "sq_airspeed_vec_bf_y"
+            ],
+            2
+        ],
+        "wcoef": [
+            [
+                "_wind_coeff",
+                "sensors",
+                "instance"
+            ],
+            0
+        ]
+    }
+}

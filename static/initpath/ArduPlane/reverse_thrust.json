@@ -1,0 +1,33 @@
+{
+    "allow_reverse_thrust": {
+        "nav_cmd": [
+            [
+                "mav_cmd_nav_loiter_to_alt",
+                "mission_get_current_nav_cmd_id",
+                "mav_cmd_nav_land",
+                "mav_cmd_nav_spline_waypoint",
+                "mav_cmd_nav_loiter_unlim"
+            ],
+            0
+        ]
+    },
+    "get_throttle_input": {
+        "ret": [
+            [
+                "channel_throttle_get_control_in",
+                "channel_throttle_get_control_in_zero_dz"
+            ],
+            0
+        ]
+    },
+    "get_adjusted_throttle_input": {
+        "ret": [
+            [
+                "throttle_curve_channel_throttle_norm_input",
+                "throttle_curve_aparm_throttle_cruise",
+                "channel_throttle_get_range"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "loop": {
+        "mod": [
+            [
+                "slew_limiter_modifier_input",
+                "slew_limiter_modifier_dt_s"
+            ],
+            0
+        ],
+        "waveform_time_us": [
+            [
+                "dt_us"
+            ],
+            0
+        ],
+        "waveform_time_s": [
+            [
+                "_0e"
+            ],
+            0
+        ],
+        "input": [
+            [
+                "chirp_update_waveform_time_s",
+                "chirp_update_magnitude"
+            ],
+            0
+        ],
+        "slew_rate": [
+            [
+                "slew_limiter_get_slew_rate"
+            ],
+            0
+        ]
+    }
+}

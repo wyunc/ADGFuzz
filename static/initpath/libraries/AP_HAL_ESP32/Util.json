@@ -1,0 +1,43 @@
+{
+    "std_realloc": {
+        "new_mem": [
+            [
+                "calloc_size"
+            ],
+            0
+        ]
+    },
+    "get_system_id": {
+        "ret": [
+            [
+                "esp_efuse_mac_get_default_base_mac_addr",
+                "esp_efuse_mac_get_custom_base_mac_addr"
+            ],
+            0
+        ]
+    },
+    "get_system_id_unformatted": {
+        "len": [
+            [
+                "array_size_base_mac_addr"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "esp_efuse_mac_get_default_base_mac_addr",
+                "esp_efuse_mac_get_custom_base_mac_addr"
+            ],
+            0
+        ]
+    },
+    "was_watchdog_reset": {
+        "reason": [
+            [
+                "esp_rst_wdt",
+                "esp_reset_reason"
+            ],
+            0
+        ]
+    }
+}

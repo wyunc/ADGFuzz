@@ -1,0 +1,30 @@
+{
+    "takeoff_check": {
+        "takeoff_check_warning_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "motor_mask": [
+            [
+                "motors_get_motor_mask"
+            ],
+            0
+        ],
+        "telem_active": [
+            [
+                "esc_telem_is_telemetry_active_motor_mask"
+            ],
+            0
+        ],
+        "rpm_adequate": [
+            [
+                "esc_telem_are_motors_running_motor_mask",
+                "_are_motors_running_g2_takeoff_rpm_min",
+                "_are_motors_running_g2_takeoff_rpm_max"
+            ],
+            0
+        ]
+    }
+}

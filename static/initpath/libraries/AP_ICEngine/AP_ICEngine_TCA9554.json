@@ -1,0 +1,44 @@
+{
+    "TCA9554_init": {
+        "ret": [
+            [
+                "dev_tca9554_write_register_tca9554_pins",
+                "dev_tca9554_write_register_tca9554_output",
+                "dev_tca9554_write_register_tca9554_conf",
+                "dev_tca9554_write_register_tca9554_out_default",
+                "dev_tca9554_write_register_true"
+            ],
+            0
+        ],
+        "dev_TCA9554": [
+            [
+                "move_tca9554_i2c_bus",
+                "move_tca9554_i2c_addr",
+                "move_hal_i2c_mgr_get_device"
+            ],
+            0
+        ]
+    },
+    "TCA9554_set": {
+        "last_reg_check_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_state": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "set_starter": {
+        "initialised": [
+            [
+                "tca9554_init"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "get_altitude_difference_simple": {
+        "ret": [
+            [
+                "temp_k",
+                "expf_logf",
+                "expf_scaling"
+            ],
+            0
+        ],
+        "temp_K": [
+            [
+                "c_to_kelvin_get_ground_temperature"
+            ],
+            0
+        ],
+        "scaling": [
+            [
+                "pressure",
+                "base_pressure"
+            ],
+            0
+        ]
+    },
+    "get_temperature_from_altitude": {
+        "idx": [
+            [
+                "find_atmosphere_layer_by_altitude_alt"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "geometric_alt_to_geopotential_alt"
+            ],
+            0
+        ]
+    },
+    "get_altitude_from_pressure": {
+        "pressure_ratio": [
+            [
+                "atmospheric_1976_consts",
+                "_pressure_pa",
+                "find_atmosphere_layer_by_pressure_pressure",
+                "pressure"
+            ],
+            1
+        ],
+        "fac": [
+            [
+                "find_atmosphere_layer_by_pressure_pressure",
+                "gravity_mss",
+                "_temp_k",
+                "r_specific",
+                "atmospheric_1976_consts",
+                "atmospheric_1976_consts",
+                "_temp_lapse",
+                "find_atmosphere_layer_by_pressure_pressure"
+            ],
+            2
+        ],
+        "alt": [
+            [
+                "powf_pressure_ratio",
+                "_amsl_m",
+                "_temp_lapse",
+                "find_atmosphere_layer_by_pressure_pressure",
+                "_temp_k",
+                "logf_pressure_ratio",
+                "atmospheric_1976_consts",
+                "powf_fac"
+            ],
+            1
+        ]
+    },
+    "get_pressure_temperature_for_alt_amsl": {
+        "fac": [
+            [
+                "atmospheric_1976_consts",
+                "_temp_lapse",
+                "find_atmosphere_layer_by_altitude_alt_amsl",
+                "expf_temperature_k",
+                "_amsl_m",
+                "atmospheric_1976_consts",
+                "expf_gravity_mss",
+                "gravity_mss",
+                "expf_r_specific",
+                "r_specific",
+                "geometric_alt_to_geopotential_alt_amsl",
+                "find_atmosphere_layer_by_altitude_alt_amsl"
+            ],
+            3
+        ],
+        "temp_ratio": [
+            [
+                "_temp_k",
+                "atmospheric_1976_consts",
+                "temperature_k",
+                "find_atmosphere_layer_by_altitude_alt_amsl"
+            ],
+            1
+        ],
+        "pressure": [
+            [
+                "powf_fac",
+                "_pressure_pa",
+                "atmospheric_1976_consts",
+                "powf_temp_ratio",
+                "find_atmosphere_layer_by_altitude_alt_amsl"
+            ],
+            1
+        ],
+        "temperature_K": [
+            [
+                "get_temperature_by_altitude_layer_alt_amsl",
+                "get_temperature_by_altitude_layer_idx"
+            ],
+            0
+        ]
+    },
+    "get_air_density_for_alt_amsl": {
+        "temp_ratio": [
+            [
+                "_temp_k",
+                "atmospheric_1976_consts",
+                "get_temperature_by_altitude_layer_alt_amsl",
+                "get_temperature_by_altitude_layer_idx",
+                "find_atmosphere_layer_by_altitude_alt_amsl"
+            ],
+            2
+        ],
+        "rho": [
+            [
+                "powf_fac",
+                "powf_temp_ratio",
+                "find_atmosphere_layer_by_altitude_alt_amsl",
+                "_density",
+                "atmospheric_1976_consts"
+            ],
+            1
+        ],
+        "fac": [
+            [
+                "_amsl_m",
+                "atmospheric_1976_consts",
+                "_temp_lapse",
+                "find_atmosphere_layer_by_altitude_alt_amsl",
+                "expf_temp",
+                "geometric_alt_to_geopotential_alt_amsl",
+                "find_atmosphere_layer_by_altitude_alt_amsl",
+                "r_specific",
+                "expf_gravity_mss",
+                "gravity_mss",
+                "expf_r_specific",
+                "atmospheric_1976_consts"
+            ],
+            3
+        ]
+    },
+    "get_EAS2TAS_extended": {
+        "density": [
+            [
+                "array_size_atmospheric_1976_consts",
+                "get_air_density_for_alt_amsl_altitude",
+                "atmospheric_1976_consts",
+                "_density"
+            ],
+            1
+        ]
+    },
+    "get_EAS2TAS_for_alt_amsl": {
+        "density": [
+            [
+                "get_air_density_for_alt_amsl_alt_amsl"
+            ],
+            0
+        ]
+    },
+    "get_altitude_difference": {
+        "alt2": [
+            [
+                "get_altitude_from_pressure_pressure"
+            ],
+            0
+        ],
+        "alt1": [
+            [
+                "get_altitude_from_pressure_base_pressure"
+            ],
+            0
+        ]
+    },
+    "get_EAS2TAS_simple": {
+        "eas2tas_squared": [
+            [
+                "pressure",
+                "ssl_air_density",
+                "temp_k",
+                "isa_gas_constant"
+            ],
+            0
+        ],
+        "tempK": [
+            [
+                "altitude",
+                "c_to_kelvin_get_ground_temperature",
+                "isa_lapse_rate"
+            ],
+            0
+        ]
+    },
+    "_get_EAS2TAS": {
+        "altitude": [
+            [
+                "get_altitude_amsl"
+            ],
+            0
+        ]
+    },
+    "get_sealevel_pressure": {
+        "p0": [
+            [
+                "pressure",
+                "min_pressure",
+                "1e6",
+                "get_altitude_difference_p0",
+                "altitude",
+                "get_altitude_difference_pressure",
+                "delta",
+                "get_altitude_difference_p0",
+                "altitude",
+                "get_altitude_difference_pressure",
+                "get_altitude_difference_p0",
+                "altitude",
+                "get_altitude_difference_pressure",
+                "get_altitude_difference_delta"
+            ],
+            4
+        ]
+    }
+}

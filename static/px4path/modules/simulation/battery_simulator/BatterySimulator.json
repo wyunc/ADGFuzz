@@ -1,0 +1,87 @@
+{
+    "Run": {
+        "vbatt": [
+            [
+                "_battery_cell_count",
+                "_battery_empty_cell_voltage"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "arming_state_armed",
+                "vehicle_status_arming_state"
+            ],
+            0
+        ],
+        "_battery_percentage": [
+            [
+                "hrt_absolute_time",
+                "max__battery_percentage",
+                "_param_sim_bat_drain_get",
+                "_f",
+                "max__param_bat_min_pct_get"
+            ],
+            2
+        ],
+        "_last_integration_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "updateCommands": {
+        "failure_unit": [
+            [
+                "int",
+                "static_cast",
+                "vehicle_command_param1"
+            ],
+            0
+        ],
+        "ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "int",
+                "vehicle_command_param3",
+                "static_cast"
+            ],
+            0
+        ],
+        "ack.command": [
+            [
+                "vehicle_command_command"
+            ],
+            0
+        ],
+        "failure_type": [
+            [
+                "int",
+                "vehicle_command_param2",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "battery_simulator"
+            ],
+            0
+        ]
+    }
+}

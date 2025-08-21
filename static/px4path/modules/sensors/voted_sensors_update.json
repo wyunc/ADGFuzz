@@ -1,0 +1,283 @@
+{
+    "parametersUpdate": {
+        "priority_change": [
+            [
+                "_gyro_priority_configured",
+                "_accel_priority_configured",
+                "uorb_index",
+                "uorb_index",
+                "_gyro_priority_configured",
+                "uorb_index",
+                "_accel_priority_configured"
+            ],
+            2
+        ],
+        "accel_cal_index": [
+            [
+                "find_current_calibration_index_imu_get_accel_device_id"
+            ],
+            0
+        ],
+        "gyro_cal_index": [
+            [
+                "find_current_calibration_index_imu_get_gyro_device_id"
+            ],
+            0
+        ]
+    },
+    "imuPoll": {
+        ".timestamp": [
+            [
+                "imu_report_timestamp_sample"
+            ],
+            0
+        ],
+        "gyro_rate": [
+            [
+                "imu_report_delta_angle",
+                "imu_report_delta_angle_dt",
+                "float",
+                "_e6f",
+                "vector3f"
+            ],
+            1
+        ],
+        "raw.gyro_calibration_count": [
+            [
+                "_last_sensor_data",
+                "_gyro_last_best_vote",
+                "i",
+                "_gyro_calibration_count"
+            ],
+            1
+        ],
+        "_selection.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        ".accel_calibration_count": [
+            [
+                "imu_report_accel_calibration_count"
+            ],
+            0
+        ],
+        "_selection.accel_device_id": [
+            [
+                "_accel_device_id",
+                "i",
+                "_accel_last_best_vote"
+            ],
+            1
+        ],
+        "raw.accel_calibration_count": [
+            [
+                "_last_sensor_data",
+                "i",
+                "_accel_last_best_vote",
+                "_accel_calibration_count"
+            ],
+            1
+        ],
+        "_accel.last_best_vote": [
+            [
+                "uint8_t",
+                "i",
+                "_accel_last_best_vote"
+            ],
+            1
+        ],
+        "accel_data": [
+            [
+                "imu_report_delta_velocity",
+                "float",
+                "_e6f",
+                "imu_report_delta_velocity_dt",
+                "vector3f"
+            ],
+            1
+        ],
+        "raw.timestamp": [
+            [
+                "_last_sensor_data",
+                "_timestamp",
+                "_gyro_last_best_vote",
+                "i"
+            ],
+            1
+        ],
+        ".gyro_calibration_count": [
+            [
+                "imu_report_gyro_calibration_count"
+            ],
+            0
+        ],
+        ".accelerometer_integral_dt": [
+            [
+                "imu_report_delta_velocity_dt"
+            ],
+            0
+        ],
+        "_gyro.last_best_vote": [
+            [
+                "uint8_t",
+                "_gyro_last_best_vote",
+                "i"
+            ],
+            1
+        ],
+        "raw.accelerometer_clipping": [
+            [
+                "_accelerometer_clipping",
+                "_last_sensor_data",
+                "i",
+                "_accel_last_best_vote"
+            ],
+            1
+        ],
+        ".gyro_clipping": [
+            [
+                "imu_report_delta_angle_clipping"
+            ],
+            0
+        ],
+        "_selection.gyro_device_id": [
+            [
+                "_gyro_last_best_vote",
+                "i",
+                "_gyro_device_id"
+            ],
+            1
+        ],
+        "time_now_us": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "raw.gyro_integral_dt": [
+            [
+                "_last_sensor_data",
+                "_gyro_integral_dt",
+                "_gyro_last_best_vote",
+                "i"
+            ],
+            1
+        ],
+        "raw.gyro_clipping": [
+            [
+                "_last_sensor_data",
+                "_gyro_clipping",
+                "_gyro_last_best_vote",
+                "i"
+            ],
+            1
+        ],
+        ".gyro_integral_dt": [
+            [
+                "imu_report_delta_angle_dt"
+            ],
+            0
+        ],
+        "raw.accelerometer_integral_dt": [
+            [
+                "_accelerometer_integral_dt",
+                "_last_sensor_data",
+                "i",
+                "_accel_last_best_vote"
+            ],
+            1
+        ],
+        ".accelerometer_clipping": [
+            [
+                "imu_report_delta_velocity_clipping"
+            ],
+            0
+        ]
+    },
+    "checkFailover": {
+        "failover_reason": [
+            [
+                "high_error_density",
+                "no_data",
+                "stale_data",
+                "timeout",
+                "high_error_count"
+            ],
+            0
+        ],
+        "flags": [
+            [
+                "sensor_voter_failover_state"
+            ],
+            0
+        ],
+        "_last_error_message": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "failover_index": [
+            [
+                "sensor_voter_failover_index"
+            ],
+            0
+        ],
+        "sensor.last_failover_count": [
+            [
+                "sensor_voter_failover_count"
+            ],
+            0
+        ]
+    },
+    "initSensorClass": {
+        "sensor_data.subscription_count": [
+            [
+                "i"
+            ],
+            1
+        ]
+    },
+    "sensorsPoll": {
+        "status.gyro_device_id_primary": [
+            [
+                "_selection_gyro_device_id"
+            ],
+            0
+        ],
+        "status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "status.accel_device_id_primary": [
+            [
+                "_selection_accel_device_id"
+            ],
+            0
+        ]
+    },
+    "calcAccelInconsistency": {
+        "accel_mean": [
+            [
+                "accel_all",
+                "sensor_index",
+                "accel_count"
+            ],
+            0
+        ]
+    },
+    "calcGyroInconsistency": {
+        "gyro_mean": [
+            [
+                "sensor_index",
+                "gyro_all",
+                "gyro_count"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "init": {
+        "position_hold": [
+            [
+                "plane_mode_qloiter",
+                "plane_previous_mode"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_rp_yrate_cd": {
+        "yaw_rate_cds": [
+            [
+                "plane_quadplane_get_desired_yaw_rate_cds"
+            ],
+            0
+        ],
+        "des_roll_cd": [
+            [
+                "plane_nav_roll_cd"
+            ],
+            0
+        ],
+        "des_pitch_cd": [
+            [
+                "plane_nav_pitch_cd"
+            ],
+            0
+        ]
+    }
+}

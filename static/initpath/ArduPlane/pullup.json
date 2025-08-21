@@ -1,0 +1,127 @@
+{
+    "pullup_start": {
+        "stage": [
+            [
+                "wait_airspeed"
+            ],
+            0
+        ]
+    },
+    "verify_pullup": {
+        "pitchup_complete": [
+            [
+                "aparm_pitch_limit_min",
+                "ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "ahrs": [
+            [
+                "plane_ahrs"
+            ],
+            0
+        ],
+        "airspeed_low": [
+            [
+                "float",
+                "plane_target_airspeed_cm",
+                "ahrs_get_eas2tas",
+                "ahrs_get_dcm_rotation_body_to_ned_c_x",
+                "ahrs_get_accel_x",
+                "gravity_mss",
+                "aspeed",
+                "ahrs_airspeed_estimate_aspeed",
+                "sqrtf_ahrs_get_eas2tas"
+            ],
+            2
+        ],
+        "stage": [
+            [
+                "push_nose_down",
+                "wait_pitch",
+                "wait_level",
+                "none"
+            ],
+            0
+        ],
+        "roll_control_lost": [
+            [
+                "fabsf_ahrs_roll_sensor",
+                "aparm_roll_limit"
+            ],
+            0
+        ],
+        "current_loc": [
+            [
+                "plane_current_loc"
+            ],
+            0
+        ],
+        "aparm": [
+            [
+                "plane_aparm"
+            ],
+            0
+        ]
+    },
+    "stabilize_pullup": {
+        "plane.last_stabilize_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "demanded_rate_dps": [
+            [
+                "degrees_pullup_accel",
+                "degrees_vtas_ref"
+            ],
+            0
+        ],
+        "plane.nav_pitch_cd": [
+            [
+                "pitch_dem",
+                "plane_aparm_pitch_limit_min"
+            ],
+            0
+        ],
+        "VTAS_ref": [
+            [
+                "aspeed",
+                "ahrs_get_eas2tas"
+            ],
+            0
+        ],
+        "elev_trim_offset_cd": [
+            [
+                "elev_offset",
+                "ng_limit",
+                "plane_scheduler_get_loop_period_s",
+                "ng_jerk_limit",
+                "ng_limit"
+            ],
+            1
+        ],
+        "speed_scaler": [
+            [
+                "plane_get_speed_scaler"
+            ],
+            0
+        ],
+        "ahrs": [
+            [
+                "plane_ahrs"
+            ],
+            0
+        ],
+        "pullup_accel": [
+            [
+                "gravity_mss",
+                "plane_scheduler_get_loop_period_s",
+                "ng_jerk_limit",
+                "ng_limit"
+            ],
+            1
+        ]
+    }
+}

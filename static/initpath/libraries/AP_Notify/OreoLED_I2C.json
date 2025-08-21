@@ -1,0 +1,74 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "move_oreoled_base_i2c_addr",
+                "move_hal_i2c_mgr_get_device",
+                "move__bus"
+            ],
+            0
+        ]
+    },
+    "command_send": {
+        "ret": [
+            [
+                "_dev_transfer_cmd_buff",
+                "_dev_transfer_cmd_num_bytes",
+                "_dev_transfer_sizeof",
+                "_dev_transfer_reply"
+            ],
+            0
+        ],
+        "cmd_xor": [
+            [
+                "oreoled_base_i2c_addr",
+                "cmd_led_num"
+            ],
+            0
+        ]
+    },
+    "boot_leds": {
+        "cmd.led_num": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_timer": {
+        "_last_sync_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "cmd.led_num": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_last_boot_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_led_control": {
+        "_pattern_override": [
+            [
+                "packet_pattern"
+            ],
+            0
+        ],
+        "pattern": [
+            [
+                "oreoled_pattern",
+                "packet_custom_bytes",
+                "custom_header_length"
+            ],
+            0
+        ]
+    }
+}

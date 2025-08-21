@@ -1,0 +1,58 @@
+{
+    "control_data_set_lon_lat": {
+        "control_data.type": [
+            [
+                "lon_lat"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.pitch_fixed_angle": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.altitude": [
+            [
+                "altitude"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.pitch_offset": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.lon": [
+            [
+                "lon"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.lat": [
+            [
+                "lat"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.roll_offset": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "control_data.type_data.lonlat.yaw_offset": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "control_data.timestamp_last_update": [
+            [
+                "timestamp"
+            ],
+            0
+        ]
+    }
+}

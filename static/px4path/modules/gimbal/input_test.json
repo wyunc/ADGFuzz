@@ -1,0 +1,78 @@
+{
+    "set_test_input_angles": {
+        "_pitch_deg": [
+            [
+                "pitch_deg"
+            ],
+            0
+        ],
+        "_roll_deg": [
+            [
+                "roll_deg"
+            ],
+            0
+        ],
+        "_rollrate_deg_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yaw_deg": [
+            [
+                "yaw_deg"
+            ],
+            0
+        ],
+        "_pitchrate_deg_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_yawrate_deg_s": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "set_test_input_angle_rates": {
+        "_yaw_deg": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_pitchrate_deg_s": [
+            [
+                "pitchrate_deg_s"
+            ],
+            0
+        ],
+        "_yawrate_deg_s": [
+            [
+                "yawrate_deg_s"
+            ],
+            0
+        ],
+        "_roll_deg": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_pitch_deg": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_rollrate_deg_s": [
+            [
+                "rollrate_deg_s"
+            ],
+            0
+        ]
+    }
+}

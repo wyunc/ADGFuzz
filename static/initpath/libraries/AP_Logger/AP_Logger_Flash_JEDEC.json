@@ -1,0 +1,125 @@
+{
+    "Init": {
+        "dev": [
+            [
+                "hal_spi_get_device"
+            ],
+            0
+        ],
+        "dev_sem": [
+            [
+                "dev_get_semaphore"
+            ],
+            0
+        ]
+    },
+    "WaitReady": {
+        "t": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "getSectorCount": {
+        "df_NumPages": [
+            [
+                "df_page_per_block",
+                "blocks"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "jedec_device_id"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "buf"
+            ],
+            0
+        ],
+        "erase_cmd": [
+            [
+                "jedec_block64_erase"
+            ],
+            0
+        ]
+    },
+    "Enter4ByteAddressMode": {
+        "cmd": [
+            [
+                "0x_b7"
+            ],
+            0
+        ]
+    },
+    "PageToBuffer": {
+        "df_Read_PageAdr": [
+            [
+                "page_num"
+            ],
+            0
+        ],
+        "PageAdr": [
+            [
+                "df_page_size",
+                "page_num"
+            ],
+            0
+        ]
+    },
+    "BufferToPage": {
+        "PageAdr": [
+            [
+                "df_page_size",
+                "page_num"
+            ],
+            0
+        ]
+    },
+    "SectorErase": {
+        "PageAdr": [
+            [
+                "df_page_size",
+                "df_page_per_block",
+                "block_num"
+            ],
+            0
+        ]
+    },
+    "Sector4kErase": {
+        "SectorAddr": [
+            [
+                "df_page_per_sector",
+                "df_page_size",
+                "sector_num"
+            ],
+            0
+        ]
+    },
+    "StartErase": {
+        "erase_start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "jedec_bulk_erase"
+            ],
+            0
+        ]
+    },
+    "WriteEnable": {
+        "b": [
+            [
+                "jedec_write_enable"
+            ],
+            0
+        ]
+    }
+}

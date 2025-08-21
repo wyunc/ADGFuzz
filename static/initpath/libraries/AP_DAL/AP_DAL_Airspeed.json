@@ -1,0 +1,59 @@
+{
+    "start_frame": {
+        "old_RASI": [
+            [
+                "rasi"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rash"
+            ],
+            0
+        ],
+        "_RASH.primary": [
+            [
+                "airspeed_get_primary"
+            ],
+            0
+        ],
+        "RASI.airspeed": [
+            [
+                "airspeed_get_airspeed_i"
+            ],
+            0
+        ],
+        "RASI.use": [
+            [
+                "airspeed_use_i"
+            ],
+            0
+        ],
+        "RASI.last_update_ms": [
+            [
+                "airspeed_last_update_ms_i"
+            ],
+            0
+        ],
+        "RASI.healthy": [
+            [
+                "airspeed_healthy_i"
+            ],
+            0
+        ],
+        "_RASH.num_sensors": [
+            [
+                "airspeed_get_num_sensors"
+            ],
+            0
+        ],
+        "RASI": [
+            [
+                "_rasi",
+                "i"
+            ],
+            0
+        ]
+    }
+}

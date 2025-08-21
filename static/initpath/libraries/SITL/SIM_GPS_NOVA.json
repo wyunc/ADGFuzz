@@ -1,0 +1,95 @@
+{
+    "publish": {
+        "bestvel.horspd": [
+            [
+                "norm_d_speed_n",
+                "norm_d_speed_e"
+            ],
+            0
+        ],
+        "bestvel.trkgnd": [
+            [
+                "to_deg_d_speed_e",
+                "to_deg_atan2f",
+                "to_deg_d_speed_n"
+            ],
+            0
+        ],
+        "gps_tow": [
+            [
+                "gps_time"
+            ],
+            0
+        ],
+        "bestvel.vertspd": [
+            [
+                "d_speed_d"
+            ],
+            0
+        ],
+        "bestpos.lng": [
+            [
+                "d_longitude"
+            ],
+            0
+        ],
+        "bestpos.hgt": [
+            [
+                "d_altitude"
+            ],
+            0
+        ],
+        "header.week": [
+            [
+                "gps_tow_week"
+            ],
+            0
+        ],
+        "header.headerlength": [
+            [
+                "sizeof_header"
+            ],
+            0
+        ],
+        "bestpos.lat": [
+            [
+                "d_latitude"
+            ],
+            0
+        ],
+        "bestpos.svsused": [
+            [
+                "d_have_lock",
+                "d_num_sats"
+            ],
+            0
+        ],
+        "header.tow": [
+            [
+                "gps_tow_ms"
+            ],
+            0
+        ],
+        "header.messagelength": [
+            [
+                "sizeof_psrdop",
+                "sizeof_bestvel",
+                "sizeof_bestpos"
+            ],
+            0
+        ]
+    },
+    "nova_send_message": {
+        "crc": [
+            [
+                "crc_crc32_payload",
+                "crc_crc32_crc",
+                "crc_crc32_uint32_t",
+                "header",
+                "crc_crc32_payloadlen",
+                "headerlength"
+            ],
+            0
+        ]
+    }
+}

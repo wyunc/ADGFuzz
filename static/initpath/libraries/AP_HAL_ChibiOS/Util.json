@@ -1,0 +1,314 @@
+{
+    "std_realloc": {
+        "new_mem": [
+            [
+                "malloc_size"
+            ],
+            0
+        ]
+    },
+    "toneAlarm_init": {
+        ".mode": [
+            [
+                "pwm_output_active_high",
+                "pwm_output_active_low",
+                "active_high"
+            ],
+            0
+        ],
+        "_toneAlarm_pwm_group.chan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "_toneAlarm_types": [
+            [
+                "types"
+            ],
+            0
+        ],
+        "_toneAlarm_pwm_group.pwm_drv": [
+            [
+                "pwm_drv"
+            ],
+            0
+        ],
+        "_toneAlarm_pwm_group.pwm_cfg": [
+            [
+                "pwm_cfg"
+            ],
+            0
+        ]
+    },
+    "thread_info": {
+        "stats": [
+            [
+                "tp_stats"
+            ],
+            0
+        ],
+        "tp": [
+            [
+                "ch_reg_first_thread"
+            ],
+            0
+        ],
+        "total_stack": [
+            [
+                "uint32_t_tp_wabase",
+                "__main_thread_stack_end__",
+                "uint32_t_tp",
+                "__main_thread_stack_base__",
+                "const",
+                "uint32_t_uint8_t",
+                "uint32_t_const",
+                "uint8_t"
+            ],
+            0
+        ],
+        "kernel_stats.m_crit_isr.cumulative": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "isr_stack_size": [
+            [
+                "__main_stack_base__",
+                "__main_stack_end__",
+                "const",
+                "uint32_t_uint8_t",
+                "uint32_t_const",
+                "uint8_t"
+            ],
+            0
+        ],
+        "cumulative_cycles": [
+            [
+                "uint64_t",
+                "tp_stats_cumulative",
+                "currcore_kernel_stats_m_crit_isr_cumulative"
+            ],
+            0
+        ],
+        "stats.cumulative": [
+            [
+                "0u"
+            ],
+            0
+        ]
+    },
+    "mem_info": {
+        "num_heaps": [
+            [
+                "malloc_get_heaps_regions",
+                "malloc_get_heaps_heaps"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "heaps",
+                "nullptr",
+                "largest",
+                "largest"
+            ],
+            1
+        ]
+    },
+    "get_persistent_params": {
+        "odid": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "ins": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "load_persistent_params": {
+        "size": [
+            [
+                "hal_flash_getpagesize"
+            ],
+            0
+        ],
+        "addr": [
+            [
+                "hal_flash_getpageaddr"
+            ],
+            0
+        ]
+    },
+    "get_persistent_param_by_name": {
+        "eq": [
+            [
+                "strchr_p",
+                "strchr_int"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strtok_r_s",
+                "strtok_r_saveptr"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "strlen_persistent_header",
+                "persistent_params_get_writeable_string"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "strlen_value"
+            ],
+            0
+        ]
+    },
+    "apply_persistent_params": {
+        "pname": [
+            [
+                "strtok_r_saveptr",
+                "strtok_r_s"
+            ],
+            1
+        ],
+        "s": [
+            [
+                "str_get_writeable_string",
+                "strlen_persistent_header"
+            ],
+            0
+        ],
+        "eq": [
+            [
+                "strchr_int",
+                "strchr_p"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "strtof_null",
+                "strtof_eq"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "find_pname",
+                "ap_int32",
+                "find_ptype"
+            ],
+            0
+        ]
+    },
+    "uart_info": {
+        "uart": [
+            [
+                "hal_serial_i"
+            ],
+            0
+        ],
+        "sys_uart_stats.last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dt_ms": [
+            [
+                "sys_uart_stats_last_ms",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "uart_log": {
+        "dt_ms": [
+            [
+                "millis",
+                "log_uart_stats_last_ms"
+            ],
+            1
+        ],
+        "log_uart_stats.last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "uart": [
+            [
+                "hal_serial_i"
+            ],
+            0
+        ]
+    },
+    "get_random_vals": {
+        "val": [
+            [
+                "get_random16"
+            ],
+            0
+        ],
+        "true_random_vals": [
+            [
+                "stm32_rand_generate_nonblocking_data",
+                "sizeof_uint16_t",
+                "stm32_rand_generate_nonblocking_size"
+            ],
+            0
+        ]
+    },
+    "log_stack_info": {
+        "pkt.thread_id": [
+            [
+                "thread_id"
+            ],
+            0
+        ],
+        "last_tp": [
+            [
+                "ch_reg_next_thread_last_tp",
+                "ch_reg_first_thread"
+            ],
+            1
+        ],
+        "pkt.stack_total": [
+            [
+                "__main_thread_stack_end__",
+                "const",
+                "uint8_t",
+                "uint32_t_tp",
+                "__main_thread_stack_base__",
+                "uint32_t_tp_wabase",
+                "uint32_t_const",
+                "__main_stack_base__",
+                "const",
+                "uint8_t",
+                "__main_stack_end__",
+                "uint32_t_const",
+                "uint32_t_uint8_t",
+                "uint32_t_uint8_t"
+            ],
+            1
+        ],
+        "pkt.stack_free": [
+            [
+                "stack_free___main_stack_base__",
+                "stack_free_tp_wabase"
+            ],
+            0
+        ]
+    }
+}

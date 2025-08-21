@@ -1,0 +1,33 @@
+{
+    "update": {
+        "lift_accel": [
+            [
+                "dcm_c_z",
+                "gravity_mss",
+                "terminal_velocity",
+                "climb_rate",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "rot_accel": [
+            [
+                "gyro",
+                "radians",
+                "terminal_rotation_rate"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "terminal_velocity",
+                "eas2tas",
+                "velocity_air_ef",
+                "gravity_mss",
+                "dcm_transposed",
+                "vector3f_lift_accel"
+            ],
+            1
+        ]
+    }
+}

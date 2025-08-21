@@ -1,0 +1,89 @@
+{
+    "throttleControl": {
+        "accelerating": [
+            [
+                "fabsf_current_motor_setpoint",
+                "fabsf_throttle_setpoint"
+            ],
+            0
+        ]
+    },
+    "attitudeControl": {
+        "yaw_setpoint": [
+            [
+                "wrap_pi_yaw_setpoint"
+            ],
+            0
+        ],
+        "vehicle_yaw": [
+            [
+                "wrap_pi_vehicle_yaw"
+            ],
+            0
+        ]
+    },
+    "speedControl": {
+        "forward_speed_normalized": [
+            [
+                "pid_speed_update_dt",
+                "pid_speed_update_vehicle_speed"
+            ],
+            0
+        ]
+    },
+    "rateControl": {
+        "speed_diff_normalized": [
+            [
+                "pid_yaw_rate_update_dt",
+                "pid_yaw_rate_update_vehicle_yaw_rate"
+            ],
+            0
+        ]
+    },
+    "globalToLocalSetpointTriplet": {
+        "curr_wp_ned": [
+            [
+                "vector2f_nan",
+                "global_ned_proj_ref_project_position_setpoint_triplet_current_lon",
+                "global_ned_proj_ref_project_position_setpoint_triplet_current_lat",
+                "curr_pos_ned_is_all_finite",
+                "curr_pos_ned"
+            ],
+            0
+        ],
+        "next_wp_ned": [
+            [
+                "vector2f_nan",
+                "global_ned_proj_ref_project_position_setpoint_triplet_next_lat",
+                "global_ned_proj_ref_project_position_setpoint_triplet_next_lon"
+            ],
+            0
+        ]
+    },
+    "calcWaypointTransitionAngle": {
+        "curr_to_next_wp_ned": [
+            [
+                "next_wp_ned",
+                "curr_wp_ned"
+            ],
+            0
+        ],
+        "cosin": [
+            [
+                "constrain",
+                "curr_to_next_wp_ned_unit_or_zero",
+                "_f",
+                "curr_to_prev_wp_ned_unit_or_zero",
+                "float"
+            ],
+            0
+        ],
+        "curr_to_prev_wp_ned": [
+            [
+                "curr_wp_ned",
+                "prev_wp_ned"
+            ],
+            0
+        ]
+    }
+}

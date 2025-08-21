@@ -1,0 +1,10 @@
+{
+    "setup": {
+        "toshiba_led.pNotify": [
+            [
+                "notify"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,139 @@
+{
+    "get_scheduler_tasks": {
+        "log_bit": [
+            [
+                "mask_log_pm"
+            ],
+            0
+        ],
+        "task_count": [
+            [
+                "array_size_scheduler_tasks"
+            ],
+            0
+        ],
+        "tasks": [
+            [
+                "scheduler_tasks"
+            ],
+            0
+        ]
+    },
+    "set_target_velocity_NED": {
+        "target_speed_m": [
+            [
+                "sq_vel_ned_y",
+                "safe_sqrt_vel_ned_x",
+                "safe_sqrt_sq"
+            ],
+            0
+        ],
+        "target_yaw_cd": [
+            [
+                "degrees_vel_ned_x",
+                "degrees_atan2f",
+                "degrees_vel_ned_y"
+            ],
+            0
+        ]
+    },
+    "get_steering_and_throttle": {
+        "steering": [
+            [
+                "g2_motors_get_steering"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "g2_motors_get_throttle"
+            ],
+            0
+        ]
+    },
+    "nav_scripting_enable": {
+        "mode": [
+            [
+                "mode_auto_mode_number",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "ahrs_update": {
+        "have_position": [
+            [
+                "ahrs_get_location_current_loc"
+            ],
+            0
+        ],
+        "ground_speed": [
+            [
+                "velocity_xy_length",
+                "ahrs_groundspeed"
+            ],
+            0
+        ]
+    },
+    "gcs_failsafe_check": {
+        "do_failsafe": [
+            [
+                "uint32_t_uint32_max",
+                "uint32_t_g2_fs_gcs_timeout",
+                "millis",
+                "gcs_sysid_myggcs_last_seen_time_ms"
+            ],
+            3
+        ]
+    },
+    "one_second_loop": {
+        "mavlink_system.sysid": [
+            [
+                "g_sysid_this_mav"
+            ],
+            0
+        ],
+        "flags.armed": [
+            [
+                "arming_is_armed"
+            ],
+            0
+        ],
+        "flags.flying": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "flags.pre_arm_check": [
+            [
+                "arming_pre_arm_checks_false"
+            ],
+            0
+        ]
+    },
+    "get_wp_distance_m": {
+        "distance": [
+            [
+                "control_mode_get_distance_to_destination"
+            ],
+            0
+        ]
+    },
+    "get_wp_bearing_deg": {
+        "bearing": [
+            [
+                "control_mode_wp_bearing"
+            ],
+            0
+        ]
+    },
+    "get_wp_crosstrack_error_m": {
+        "xtrack_error": [
+            [
+                "control_mode_crosstrack_error"
+            ],
+            0
+        ]
+    }
+}

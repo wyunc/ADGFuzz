@@ -1,0 +1,29 @@
+{
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "pressure_sum": [
+            [
+                "float",
+                "buf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "float",
+                "buf",
+                "int32_t",
+                "uint32_t"
+            ],
+            0
+        ]
+    }
+}

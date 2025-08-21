@@ -1,0 +1,58 @@
+{
+    "handle_msg": {
+        "_min_distance_cm": [
+            [
+                "packet_min_distance"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_max_distance_cm": [
+            [
+                "packet_max_distance"
+            ],
+            0
+        ],
+        "distance_cm": [
+            [
+                "packet_current_distance"
+            ],
+            0
+        ],
+        "sensor_type": [
+            [
+                "packet_type",
+                "mav_distance_sensor"
+            ],
+            0
+        ],
+        "signal_quality": [
+            [
+                "signal_quality_min",
+                "signal_quality_unknown",
+                "packet_signal_quality"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.distance_m": [
+            [
+                "distance_cm"
+            ],
+            0
+        ],
+        "state.signal_quality_pct": [
+            [
+                "signal_quality_unknown",
+                "signal_quality"
+            ],
+            0
+        ]
+    }
+}

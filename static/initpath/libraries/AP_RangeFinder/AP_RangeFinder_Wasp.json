@@ -1,0 +1,51 @@
+{
+    "get_reading": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "count",
+                "strtof_null",
+                "strtof_linebuf"
+            ],
+            2
+        ],
+        "configuration_state": [
+            [
+                "wasp_cfg_encoding"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "configuration_state": [
+            [
+                "wasp_cfg_mavg",
+                "wasp_cfg_rate"
+            ],
+            0
+        ]
+    },
+    "parse_response": {
+        "configuration_state": [
+            [
+                "wasp_cfg_aut",
+                "wasp_cfg_done",
+                "wasp_cfg_avg",
+                "wasp_cfg_protocol",
+                "wasp_cfg_thr",
+                "wasp_cfg_frq",
+                "wasp_cfg_mavg",
+                "wasp_cfg_medf",
+                "wasp_cfg_encoding",
+                "wasp_cfg_go",
+                "wasp_cfg_auv"
+            ],
+            0
+        ]
+    }
+}

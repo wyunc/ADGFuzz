@@ -1,0 +1,1105 @@
+{
+    "set_start_location": {
+        "ground_level": [
+            [
+                "home_alt"
+            ],
+            0
+        ],
+        "home_yaw": [
+            [
+                "start_yaw"
+            ],
+            0
+        ],
+        "location": [
+            [
+                "start_loc"
+            ],
+            1
+        ],
+        "origin": [
+            [
+                "start_loc"
+            ],
+            1
+        ]
+    },
+    "ground_height_difference": {
+        "h2": [
+            [
+                "local_ground_level"
+            ],
+            0
+        ]
+    },
+    "set_precland": {
+        "precland": [
+            [
+                "_precland"
+            ],
+            0
+        ]
+    },
+    "update_position": {
+        "origin.lng": [
+            [
+                "location_lng"
+            ],
+            0
+        ],
+        "accel_ef": [
+            [
+                "accel_body",
+                "dcm"
+            ],
+            0
+        ],
+        "location.alt": [
+            [
+                "home_alt",
+                "int32_t",
+                "position_z",
+                "static_cast"
+            ],
+            0
+        ],
+        "origin.lat": [
+            [
+                "location_lat"
+            ],
+            0
+        ],
+        "diffNE": [
+            [
+                "origin_get_distance_ne_double_location"
+            ],
+            0
+        ],
+        "last_one_hz_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pos_home": [
+            [
+                "position"
+            ],
+            0
+        ],
+        "location": [
+            [
+                "origin"
+            ],
+            0
+        ]
+    },
+    "update_mag_field_bf": {
+        "mag_bf": [
+            [
+                "sitl_mag_mot_get",
+                "dcm_transposed",
+                "battery_current",
+                "sitl_mag_anomaly_ned_get",
+                "sitl_mag_anomaly_hgt",
+                "home_alt",
+                "fmaxf_position_z",
+                "ground_level",
+                "r"
+            ],
+            3
+        ]
+    },
+    "time_advance": {
+        "last_time_us": [
+            [
+                "frame_time_us"
+            ],
+            1
+        ]
+    },
+    "setup_frame_time": {
+        "target_speedup": [
+            [
+                "new_speedup"
+            ],
+            0
+        ],
+        "rate_hz": [
+            [
+                "new_rate"
+            ],
+            0
+        ],
+        "frame_time_us": [
+            [
+                "uint64_t_rate_hz",
+                "uint64_t__0e6f"
+            ],
+            0
+        ],
+        "last_wall_time_us": [
+            [
+                "get_wall_time_us"
+            ],
+            0
+        ]
+    },
+    "adjust_frame_time": {
+        "rate_hz": [
+            [
+                "new_rate"
+            ],
+            0
+        ],
+        "frame_time_us": [
+            [
+                "uint64_t_new_rate",
+                "uint64_t__0e6f"
+            ],
+            0
+        ]
+    },
+    "sync_frame_time": {
+        "last_frame_count": [
+            [
+                "frame_counter"
+            ],
+            0
+        ],
+        "achieved_rate_hz": [
+            [
+                "frame_counter",
+                "1000ull",
+                "get_wall_time_us"
+            ],
+            3
+        ],
+        "sleep_debt_us": [
+            [
+                "rate_hz",
+                "_0e6",
+                "target_speedup",
+                "get_wall_time_us",
+                "get_wall_time_us",
+                "_0e5",
+                "get_wall_time_us"
+            ],
+            3
+        ],
+        "last_fps_report_ms": [
+            [
+                "1000ull",
+                "get_wall_time_us"
+            ],
+            2
+        ]
+    },
+    "rand_normal": {
+        "result": [
+            [
+                "mean",
+                "rand",
+                "rand_max",
+                "rand",
+                "rand_max",
+                "rand",
+                "rand_max",
+                "sqrt_log",
+                "sqrt_r",
+                "stddev"
+            ],
+            5
+        ],
+        "n2": [
+            [
+                "rand",
+                "rand_max",
+                "rand",
+                "rand_max",
+                "sqrt_log",
+                "sqrt_r",
+                "rand",
+                "rand_max"
+            ],
+            4
+        ]
+    },
+    "fill_fdm": {
+        "fdm.speedE": [
+            [
+                "smoothing_velocity_ef_y",
+                "velocity_ef_y"
+            ],
+            0
+        ],
+        "fdm.speedD": [
+            [
+                "smoothing_velocity_ef_z",
+                "velocity_ef_z"
+            ],
+            0
+        ],
+        "fdm.airspeed": [
+            [
+                "airspeed_pitot"
+            ],
+            0
+        ],
+        "fdm.range": [
+            [
+                "rangefinder_range"
+            ],
+            0
+        ],
+        "fdm.is_lock_step_scheduled": [
+            [
+                "lock_step_scheduled"
+            ],
+            0
+        ],
+        "fdm.scanner.ranges": [
+            [
+                "scanner_ranges"
+            ],
+            0
+        ],
+        "fdm.latitude": [
+            [
+                "_0e",
+                "location_lat",
+                "smoothing_location_lat"
+            ],
+            0
+        ],
+        "fdm.wind_vane_apparent.direction": [
+            [
+                "wind_vane_apparent_direction"
+            ],
+            0
+        ],
+        "m": [
+            [
+                "sitl_ahrs_rotation_inv",
+                "dcm"
+            ],
+            0
+        ],
+        "fdm.scanner.points": [
+            [
+                "scanner_points"
+            ],
+            0
+        ],
+        "fdm.rollRate": [
+            [
+                "degrees_smoothing_gyro_x",
+                "degrees_gyro_x"
+            ],
+            0
+        ],
+        "fdm.yawRate": [
+            [
+                "degrees_gyro_z",
+                "degrees_smoothing_gyro_z"
+            ],
+            0
+        ],
+        "fdm.longitude": [
+            [
+                "smoothing_location_lng",
+                "_0e",
+                "location_lng"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "get_position_relhome"
+            ],
+            0
+        ],
+        "fdm.rollDeg": [
+            [
+                "degrees_r"
+            ],
+            0
+        ],
+        "fdm.timestamp_us": [
+            [
+                "time_now_us"
+            ],
+            0
+        ],
+        "fdm.yAccel": [
+            [
+                "smoothing_accel_body_y",
+                "accel_body_y"
+            ],
+            0
+        ],
+        "ahrs_rotation_inv": [
+            [
+                "sitl_ahrs_rotation_transposed"
+            ],
+            0
+        ],
+        "fdm.wind_vane_apparent.speed": [
+            [
+                "wind_vane_apparent_speed"
+            ],
+            0
+        ],
+        "full_count": [
+            [
+                "hal_sitl_get_uart_output_full_queue_count"
+            ],
+            0
+        ],
+        "vel": [
+            [
+                "get_velocity_ef"
+            ],
+            0
+        ],
+        "fdm.velocity_air_bf": [
+            [
+                "velocity_air_bf"
+            ],
+            0
+        ],
+        "fdm.xAccel": [
+            [
+                "smoothing_accel_body_x",
+                "accel_body_x"
+            ],
+            0
+        ],
+        "fdm.zAccel": [
+            [
+                "smoothing_accel_body_z",
+                "accel_body_z"
+            ],
+            0
+        ],
+        "last_imu_rotation": [
+            [
+                "rotation",
+                "ahrs_orientation_get",
+                "enum"
+            ],
+            1
+        ],
+        "fdm.pitchDeg": [
+            [
+                "degrees_p"
+            ],
+            0
+        ],
+        "fdm.battery_current": [
+            [
+                "battery_current"
+            ],
+            0
+        ],
+        "fdm.motor_mask": [
+            [
+                "sitl_vibe_motor_mask",
+                "motor_mask"
+            ],
+            0
+        ],
+        "fdm.bodyMagField": [
+            [
+                "mag_bf"
+            ],
+            0
+        ],
+        "fdm.speedN": [
+            [
+                "smoothing_velocity_ef_x",
+                "velocity_ef_x"
+            ],
+            0
+        ],
+        "fdm.battery_voltage": [
+            [
+                "battery_voltage"
+            ],
+            0
+        ],
+        "last_speedup": [
+            [
+                "sitl_speedup"
+            ],
+            0
+        ],
+        "fdm.altitude": [
+            [
+                "location_alt",
+                "_0e",
+                "smoothing_location_alt"
+            ],
+            0
+        ],
+        "last_ticks": [
+            [
+                "scheduler_ticks"
+            ],
+            1
+        ],
+        "fdm.yawDeg": [
+            [
+                "degrees_y"
+            ],
+            0
+        ],
+        "fdm.pitchRate": [
+            [
+                "degrees_gyro_y",
+                "degrees_smoothing_gyro_y"
+            ],
+            0
+        ],
+        "fdm.rcin_chan_count": [
+            [
+                "rcin_chan_count"
+            ],
+            0
+        ],
+        "fdm.wind_ef": [
+            [
+                "wind_ef"
+            ],
+            0
+        ],
+        "fdm.heading": [
+            [
+                "degrees_velocity_ef_x",
+                "degrees_atan2f",
+                "degrees_velocity_ef_y"
+            ],
+            0
+        ],
+        "fdm.home": [
+            [
+                "home"
+            ],
+            0
+        ]
+    },
+    "perpendicular_distance_to_rangefinder_surface": {
+        "orientation": [
+            [
+                "sitl_sonar_rot_get",
+                "rotation"
+            ],
+            0
+        ]
+    },
+    "rangefinder_range": {
+        "altitude": [
+            [
+                "sitl_sonar_noise",
+                "v_z",
+                "cosf_radians",
+                "cosf_pitch",
+                "rel_pos_sensor_ef_z",
+                "perpendicular_distance_to_rangefinder_surface",
+                "cosf_roll",
+                "rand_float"
+            ],
+            0
+        ],
+        "relPosSensorEF": [
+            [
+                "rotmat",
+                "rel_pos_sensor_bf"
+            ],
+            0
+        ],
+        "relPosSensorBF": [
+            [
+                "sitl_rngfnd_pos_offset"
+            ],
+            0
+        ],
+        "orientation": [
+            [
+                "rotation",
+                "sitl_sonar_rot_get"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "sitl_state_roll_deg",
+                "rangefinder_beam_width"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "sitl_state_pitch_deg",
+                "rangefinder_beam_width"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "rotmat"
+            ],
+            0
+        ]
+    },
+    "update_home": {
+        "loc.lat": [
+            [
+                "sitl_opos_lat_get",
+                "_0e7"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "_0e7",
+                "sitl_opos_lng_get"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "sitl_opos_alt_get",
+                "_0e2"
+            ],
+            0
+        ]
+    },
+    "update_dynamics": {
+        "accel_body.x": [
+            [
+                "gravity_mss",
+                "accel_body_x"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "_todouble",
+                "_0e",
+                "frame_time_us"
+            ],
+            1
+        ],
+        "velocity_ef.x": [
+            [
+                "gnd_movement_x"
+            ],
+            0
+        ],
+        "gyro.y": [
+            [
+                "gyro_y",
+                "radians_radians"
+            ],
+            0
+        ],
+        "gnd_movement_bf": [
+            [
+                "gnd_movement",
+                "dcm_transposed"
+            ],
+            0
+        ],
+        "position.z": [
+            [
+                "frame_height",
+                "ground_height_difference",
+                "ground_level",
+                "home_alt"
+            ],
+            0
+        ],
+        "v_bf.x": [
+            [
+                "tconst",
+                "m_2pi",
+                "_0e",
+                "frame_time_us",
+                "v_bf_x",
+                "gnd_movement_x"
+            ],
+            2
+        ],
+        "y": [
+            [
+                "_0e",
+                "frame_time_us",
+                "yaw_rate"
+            ],
+            1
+        ],
+        "last_ground_contact_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "was_on_ground": [
+            [
+                "on_ground"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "rot_accel",
+                "_0e",
+                "frame_time_us"
+            ],
+            1
+        ],
+        "velocity_ef.y": [
+            [
+                "gnd_movement_y"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "gyro_x",
+                "radians_radians",
+                "yaw_rate"
+            ],
+            0
+        ],
+        "air_density": [
+            [
+                "get_air_density_for_alt_amsl_location_alt",
+                "sq_eas2tas",
+                "ssl_air_density"
+            ],
+            0
+        ],
+        "accel_body": [
+            [
+                "vector3f_gravity_mss",
+                "vector3f_gravity_mss",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "eas2tas": [
+            [
+                "ahrs_get_eas2tas",
+                "get_eas2tas_for_alt_amsl_location_alt"
+            ],
+            0
+        ],
+        "dcm": [
+            [
+                "rot"
+            ],
+            0
+        ],
+        "velocity_air_bf": [
+            [
+                "wind_ef",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "velocity_ef": [
+            [
+                "vector3f_gravity_mss",
+                "_0e",
+                "frame_time_us",
+                "dcm_transposed"
+            ],
+            3
+        ],
+        "v_bf.y": [
+            [
+                "gnd_movement_bf_y"
+            ],
+            0
+        ],
+        "accel_body.z": [
+            [
+                "gravity_mss",
+                "accel_body_z"
+            ],
+            1
+        ],
+        "accel_body.y": [
+            [
+                "accel_body_y",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "gyro.z": [
+            [
+                "gyro_z",
+                "radians_radians",
+                "yaw_rate"
+            ],
+            0
+        ],
+        "ship_movement": [
+            [
+                "sitl_models_shipsim_get_ground_speed_adjustment_location",
+                "sitl_models_shipsim_get_ground_speed_adjustment_yaw_rate"
+            ],
+            0
+        ]
+    },
+    "update_wind": {
+        "turbulence_vertical_speed": [
+            [
+                "input_wind_turbulence",
+                "iir_coef",
+                "float",
+                "static_cast"
+            ],
+            1
+        ],
+        "turbulence_azimuth": [
+            [
+                "rand"
+            ],
+            0
+        ],
+        "turbulence_horizontal_speed": [
+            [
+                "input_wind_turbulence",
+                "iir_coef",
+                "float",
+                "static_cast"
+            ],
+            1
+        ],
+        "wind_ef.z": [
+            [
+                "get_local_updraft_origin",
+                "get_local_updraft_home_get_distance_ned_double",
+                "get_local_updraft_position"
+            ],
+            0
+        ]
+    },
+    "smooth_sensors": {
+        "smoothing.last_update_us": [
+            [
+                "time_now_us"
+            ],
+            1
+        ],
+        "error_q": [
+            [
+                "current_q",
+                "desired_q"
+            ],
+            0
+        ],
+        "smoothing.location.alt": [
+            [
+                "smoothing_position_z",
+                "home_alt",
+                "int32_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "accel_e.z": [
+            [
+                "gravity_mss",
+                "accel_e_z"
+            ],
+            1
+        ],
+        "smoothing.position": [
+            [
+                "smoothing_velocity_ef",
+                "position",
+                "_todouble",
+                "_0e",
+                "time_now_us",
+                "smoothing_last_update_us"
+            ],
+            2
+        ],
+        "smoothing.location": [
+            [
+                "origin",
+                "location"
+            ],
+            0
+        ],
+        "accel_e.x": [
+            [
+                "accel_e_x",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "smoothing.gyro": [
+            [
+                "time_constant",
+                "angle_differential",
+                "gyro"
+            ],
+            0
+        ],
+        "accel_e.y": [
+            [
+                "gravity_mss",
+                "accel_e_y"
+            ],
+            1
+        ],
+        "smoothing.accel_body": [
+            [
+                "velocity_ef",
+                "smoothing_velocity_ef",
+                "smoothing_position",
+                "position",
+                "_tofloat",
+                "time_constant",
+                "time_constant",
+                "dcm",
+                "vector3f_gravity_mss",
+                "accel_body",
+                "accel_body",
+                "vector3f_gravity_mss",
+                "smoothing_rotation_b2e_transposed"
+            ],
+            3
+        ],
+        "smoothing.velocity_ef": [
+            [
+                "velocity_ef",
+                "smoothing_velocity_ef",
+                "smoothing_position",
+                "position",
+                "_tofloat",
+                "time_constant",
+                "time_constant",
+                "dcm",
+                "vector3f_gravity_mss",
+                "accel_body",
+                "velocity_ef",
+                "_0e",
+                "time_now_us",
+                "smoothing_last_update_us"
+            ],
+            5
+        ],
+        "smoothing.rotation_b2e": [
+            [
+                "dcm"
+            ],
+            0
+        ]
+    },
+    "extrapolate_sensors": {
+        "accel_earth.z": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "velocity_air_bf": [
+            [
+                "wind_ef",
+                "delta_time",
+                "dcm",
+                "dcm_transposed"
+            ],
+            3
+        ],
+        "accel_body": [
+            [
+                "vector3f_gravity_mss",
+                "dcm_transposed",
+                "dcm"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "delta_time",
+                "_todouble",
+                "delta_time",
+                "dcm"
+            ],
+            2
+        ]
+    },
+    "update_external_payload": {
+        "external_payload_mass": [
+            [
+                "gripper_payload_mass",
+                "gripper_epm_payload_mass",
+                "sprayer_payload_mass"
+            ],
+            0
+        ],
+        "local_ground_level": [
+            [
+                "precland__device_height"
+            ],
+            0
+        ],
+        "range": [
+            [
+                "rangefinder_range"
+            ],
+            0
+        ]
+    },
+    "add_shove_forces": {
+        "shove.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "body_accel.z": [
+            [
+                "sitl_shove_z"
+            ],
+            0
+        ],
+        "body_accel.y": [
+            [
+                "sitl_shove_y"
+            ],
+            0
+        ],
+        "body_accel.x": [
+            [
+                "sitl_shove_x"
+            ],
+            0
+        ]
+    },
+    "get_local_updraft": {
+        "w": [
+            [
+                "exp_i_thermal",
+                "thermals_w",
+                "i_thermal",
+                "exp_r2",
+                "exp_thermals_r"
+            ],
+            0
+        ],
+        "r2": [
+            [
+                "rel_vec_y",
+                "rel_vec_x"
+            ],
+            0
+        ],
+        "relVec": [
+            [
+                "current_pos",
+                "thermal_pos"
+            ],
+            0
+        ],
+        "scenario": [
+            [
+                "sitl_thermal_scenario"
+            ],
+            0
+        ],
+        "driftX": [
+            [
+                "current_pos_z",
+                "sitl_wind_speed",
+                "cosf_deg_to_rad",
+                "cosf_sitl_wind_direction"
+            ],
+            0
+        ],
+        "driftY": [
+            [
+                "current_pos_z",
+                "sitl_wind_speed",
+                "sinf_deg_to_rad",
+                "sinf_sitl_wind_direction"
+            ],
+            0
+        ]
+    },
+    "add_twist_forces": {
+        "rot_accel.z": [
+            [
+                "sitl_twist_z"
+            ],
+            0
+        ],
+        "twist.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "rot_accel.y": [
+            [
+                "sitl_twist_y"
+            ],
+            0
+        ],
+        "ground_behavior": [
+            [
+                "sitl_gnd_behav_get",
+                "ground_behaviour"
+            ],
+            0
+        ],
+        "rot_accel.x": [
+            [
+                "sitl_twist_x"
+            ],
+            0
+        ]
+    },
+    "add_slungpayload_forces": {
+        "body_accel": [
+            [
+                "mass",
+                "forces_ef",
+                "dcm_transposed"
+            ],
+            1
+        ]
+    },
+    "update_eas_airspeed": {
+        "airspeed_pitot": [
+            [
+                "cosf_pitot_aoa",
+                "radians",
+                "m_pi_2",
+                "radians",
+                "cosf_max_pitot_aoa",
+                "eas2tas",
+                "velocity_air_ef_length"
+            ],
+            3
+        ],
+        "pitot_aoa": [
+            [
+                "atan2f_sq",
+                "atan2f_velocity_air_bf_y",
+                "sq_velocity_air_bf_z",
+                "velocity_air_bf_x",
+                "atan2f_sqrtf"
+            ],
+            0
+        ]
+    }
+}

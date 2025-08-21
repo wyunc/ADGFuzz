@@ -1,0 +1,69 @@
+{
+    "get_servo_angle_max": {
+        "angle": [
+            [
+                "_servo_max_angle_8_get",
+                "_servo_max_angle_5_get",
+                "_servo_max_angle_6_get",
+                "_servo_max_angle_3_get",
+                "nan",
+                "_servo_max_angle_7_get",
+                "_servo_max_angle_1_get",
+                "_servo_max_angle_4_get",
+                "_servo_max_angle_2_get"
+            ],
+            0
+        ]
+    },
+    "get_servo_angle_min": {
+        "angle": [
+            [
+                "_servo_min_angle_6_get",
+                "_servo_min_angle_2_get",
+                "_servo_min_angle_3_get",
+                "_servo_min_angle_4_get",
+                "nan",
+                "_servo_min_angle_8_get",
+                "_servo_min_angle_1_get",
+                "_servo_min_angle_5_get",
+                "_servo_min_angle_7_get"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "max_val": [
+            [
+                "get_servo_angle_max_i"
+            ],
+            0
+        ],
+        "servo_topic": [
+            [
+                "model_name",
+                "to_string_i"
+            ],
+            1
+        ],
+        "min_val": [
+            [
+                "get_servo_angle_min_i"
+            ],
+            0
+        ]
+    },
+    "updateOutputs": {
+        "output": [
+            [
+                "outputs",
+                "_angular_range_rad",
+                "_mixing_output_min_value_i",
+                "_mixing_output_min_value_i",
+                "_mixing_output_max_value_i",
+                "_angle_min_rad",
+                "i"
+            ],
+            1
+        ]
+    }
+}

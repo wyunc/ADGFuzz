@@ -1,0 +1,10 @@
+{
+    "init": {
+        "_dev": [
+            [
+                "hal_spi_get_device"
+            ],
+            0
+        ]
+    }
+}

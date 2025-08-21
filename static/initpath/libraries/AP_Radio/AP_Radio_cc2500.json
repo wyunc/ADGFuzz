@@ -1,0 +1,647 @@
+{
+    "probe": {
+        "dev": [
+            [
+                "hal_spi_get_device"
+            ],
+            0
+        ],
+        "r1": [
+            [
+                "r2"
+            ],
+            0
+        ]
+    },
+    "radio_init": {
+        "packet_timer": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_search"
+            ],
+            0
+        ],
+        "sysid_crc": [
+            [
+                "strnlen_sizeof",
+                "calc_crc_const",
+                "strnlen_sysid",
+                "calc_crc_uint8_tsysid"
+            ],
+            0
+        ],
+        "listLength": [
+            [
+                "num_channels"
+            ],
+            0
+        ],
+        "factory_test": [
+            [
+                "get_factory_test"
+            ],
+            0
+        ]
+    },
+    "trigger_irq_radio_event": {
+        "irq_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "start_recv_bind": {
+        "packet_timer": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "handle_data_packet": {
+        "fwupload.length": [
+            [
+                "m_len"
+            ],
+            0
+        ],
+        "fwupload.fw_type": [
+            [
+                "telem_play",
+                "telem_fw"
+            ],
+            0
+        ],
+        "fwupload.offset": [
+            [
+                "ofs"
+            ],
+            0
+        ],
+        "fwupload.chan": [
+            [
+                "chan"
+            ],
+            0
+        ]
+    },
+    "handle_D16_packet": {
+        "packet3": [
+            [
+                "packet"
+            ],
+            0
+        ],
+        "chanskip": [
+            [
+                "packet"
+            ],
+            1
+        ],
+        "channr": [
+            [
+                "0x3f",
+                "packet"
+            ],
+            1
+        ]
+    },
+    "handle_SRT_packet": {
+        "tx_rssi": [
+            [
+                "pkt_data"
+            ],
+            1
+        ],
+        "channr": [
+            [
+                "pkt_channr"
+            ],
+            0
+        ],
+        "tx_date.firmware_day": [
+            [
+                "pkt_data"
+            ],
+            1
+        ],
+        "tx_date.firmware_month": [
+            [
+                "pkt_data"
+            ],
+            1
+        ],
+        "fwupload.acked": [
+            [
+                "fwupload_len"
+            ],
+            0
+        ],
+        "tx_date.firmware_year": [
+            [
+                "pkt_data"
+            ],
+            1
+        ],
+        "pkt": [
+            [
+                "srt_packet",
+                "packet",
+                "const",
+                "struct"
+            ],
+            0
+        ],
+        "chanskip": [
+            [
+                "pkt_chanskip"
+            ],
+            0
+        ],
+        "tx_pps": [
+            [
+                "pkt_data"
+            ],
+            1
+        ]
+    },
+    "have_channel": {
+        "separation": [
+            [
+                "bind_hop_data",
+                "int",
+                "i",
+                "channel"
+            ],
+            0
+        ]
+    },
+    "setup_hopping_table_SRT": {
+        "cc_wifi_high": [
+            [
+                "wifi_chan_map",
+                "t_status_wifi_chan",
+                "wifi_separation"
+            ],
+            2
+        ],
+        "cc_wifi_low": [
+            [
+                "wifi_chan_map",
+                "t_status_wifi_chan",
+                "wifi_separation"
+            ],
+            2
+        ],
+        "val": [
+            [
+                "bind_tx_id",
+                "bind_tx_id",
+                "max_channel_number"
+            ],
+            2
+        ],
+        "last_wifi_channel": [
+            [
+                "t_status_wifi_chan"
+            ],
+            0
+        ]
+    },
+    "handle_autobind_packet": {
+        "lcrc": [
+            [
+                "calc_crc_packet",
+                "calc_crc_sizeof",
+                "calc_crc_pkt"
+            ],
+            0
+        ],
+        "bindOffset": [
+            [
+                "auto_bind_offset"
+            ],
+            0
+        ],
+        "rssi_dbm": [
+            [
+                "map_rssi_to_d_bm_rssi_raw"
+            ],
+            0
+        ],
+        "pkt": [
+            [
+                "packet",
+                "const",
+                "struct",
+                "autobind_packet_cc2500"
+            ],
+            0
+        ],
+        "t_status.wifi_chan": [
+            [
+                "pkt_wifi_chan"
+            ],
+            0
+        ],
+        "rssi_raw": [
+            [
+                "sizeof_autobind_packet_cc2500",
+                "packet",
+                "sizeof_struct"
+            ],
+            0
+        ],
+        "listLength": [
+            [
+                "num_channels"
+            ],
+            0
+        ]
+    },
+    "irq_handler": {
+        "rssi_raw": [
+            [
+                "packet",
+                "cc_len"
+            ],
+            0
+        ],
+        "Lqi": [
+            [
+                "0x7f",
+                "packet",
+                "cc_len"
+            ],
+            0
+        ],
+        "ccLen": [
+            [
+                "cc2500_read_reg_cc2500_read_burst",
+                "cc2500_read_reg_cc2500_3b_rxbytes"
+            ],
+            0
+        ],
+        "ok": [
+            [
+                "handle_d16_packet_packet",
+                "handle_autobind_packet_lqi",
+                "handle_srt_packet_packet",
+                "handle_autobind_packet_packet"
+            ],
+            0
+        ],
+        "packet_timer": [
+            [
+                "irq_time_us"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_bind_complete",
+                "state_starting",
+                "state_data",
+                "state_search"
+            ],
+            0
+        ],
+        "matched": [
+            [
+                "cc_len2",
+                "cc_len"
+            ],
+            0
+        ],
+        "listLength": [
+            [
+                "num_channels"
+            ],
+            0
+        ],
+        "t_status.rssi": [
+            [
+                "uint8_t_rssi_filtered"
+            ],
+            0
+        ],
+        "rssi_filtered": [
+            [
+                "map_rssi_to_d_bm_rssi_raw"
+            ],
+            1
+        ],
+        "ccLen2": [
+            [
+                "cc2500_read_reg_cc2500_read_burst",
+                "cc2500_read_reg_cc2500_3b_rxbytes"
+            ],
+            0
+        ]
+    },
+    "set_fcc_channel": {
+        "chan": [
+            [
+                "max_channel_number"
+            ],
+            0
+        ]
+    },
+    "irq_timeout": {
+        "last_fcc_chan": [
+            [
+                "get_fcc_test"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_search",
+                "state_data",
+                "state_fcctest"
+            ],
+            0
+        ],
+        "autobind_start_recv_ms": [
+            [
+                "millis",
+                "micros"
+            ],
+            1
+        ]
+    },
+    "irq_handler_thd": {
+        "irq_time_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "evt": [
+            [
+                "ch_evt_wait_any_all_events"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_search"
+            ],
+            0
+        ],
+        "packet_timer": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    },
+    "initTuneRx": {
+        "best_bindOffset": [
+            [
+                "bind_offset"
+            ],
+            0
+        ],
+        "timeTunedMs": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "check_best_LQI": {
+        "bindOffset": [
+            [
+                "best_bind_offset"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_bind_binding"
+            ],
+            0
+        ]
+    },
+    "tuneRx": {
+        "best_lqi": [
+            [
+                "lqi"
+            ],
+            0
+        ],
+        "best_bindOffset": [
+            [
+                "bind_offset"
+            ],
+            0
+        ],
+        "Lqi": [
+            [
+                "0x7f",
+                "packet",
+                "cc_len"
+            ],
+            0
+        ]
+    },
+    "getBindData": {
+        "listLength": [
+            [
+                "n",
+                "packet",
+                "list_length",
+                "bind_mask",
+                "uint64_t",
+                "num_channels"
+            ],
+            1
+        ]
+    },
+    "nextChannel": {
+        "channr": [
+            [
+                "list_length",
+                "skip"
+            ],
+            0
+        ]
+    },
+    "parse_frSkyX": {
+        "word_temp": [
+            [
+                "c",
+                "i"
+            ],
+            0
+        ],
+        "chan_count": [
+            [
+                "j",
+                "i"
+            ],
+            1
+        ]
+    },
+    "check_crc": {
+        "lcrc": [
+            [
+                "calc_crc_cc_len",
+                "calc_crc_packet"
+            ],
+            0
+        ]
+    },
+    "save_bind_info": {
+        "info.bindOffset": [
+            [
+                "bind_offset"
+            ],
+            0
+        ],
+        "info.wifi_chan": [
+            [
+                "t_status_wifi_chan"
+            ],
+            0
+        ],
+        "info.magic": [
+            [
+                "bind_magic"
+            ],
+            0
+        ]
+    },
+    "load_bind_info": {
+        "listLength": [
+            [
+                "num_channels"
+            ],
+            0
+        ],
+        "t_status.wifi_chan": [
+            [
+                "info_wifi_chan"
+            ],
+            0
+        ],
+        "bindOffset": [
+            [
+                "info_bind_offset"
+            ],
+            0
+        ]
+    },
+    "send_D16_telemetry": {
+        "lcrc": [
+            [
+                "calc_crc_frame"
+            ],
+            0
+        ]
+    },
+    "send_SRT_telemetry": {
+        "pkt.payload.fw.len": [
+            [
+                "sizeof_pkt_payload_fw_data",
+                "fwupload_length",
+                "fwupload_acked"
+            ],
+            2
+        ],
+        "t_status.tx_max": [
+            [
+                "get_tx_max_power"
+            ],
+            0
+        ],
+        "fwupload.len": [
+            [
+                "pkt_payload_fw_len"
+            ],
+            0
+        ],
+        "t_status.note_adjust": [
+            [
+                "get_tx_buzzer_adjust"
+            ],
+            0
+        ],
+        "pkt.payload.fw.seq": [
+            [
+                "fwupload_sequence"
+            ],
+            0
+        ],
+        "t_status.flight_mode": [
+            [
+                "flags_flight_mode"
+            ],
+            0
+        ],
+        "pkt.payload.fw.offset": [
+            [
+                "fwupload_acked",
+                "fwupload_offset"
+            ],
+            0
+        ],
+        "pkt.payload.status": [
+            [
+                "t_status"
+            ],
+            0
+        ],
+        "pkt.type": [
+            [
+                "fwupload_fw_type",
+                "telem_status"
+            ],
+            0
+        ],
+        "pkt.length": [
+            [
+                "sizeof_pkt"
+            ],
+            0
+        ]
+    },
+    "check_fw_ack": {
+        "ack_to": [
+            [
+                "fwupload_offset",
+                "fwupload_acked"
+            ],
+            0
+        ]
+    },
+    "map_stick_mode": {
+        "tmp": [
+            [
+                "channels"
+            ],
+            0
+        ]
+    },
+    "check_double_bind": {
+        "packet_timer": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "protocolState": [
+            [
+                "state_search"
+            ],
+            0
+        ]
+    }
+}

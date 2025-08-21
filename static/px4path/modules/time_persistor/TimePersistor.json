@@ -1,0 +1,47 @@
+{
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "time_persistor"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "ts.tv_sec": [
+            [
+                "t"
+            ],
+            0
+        ],
+        "_file": [
+            [
+                "fopen_time_file_path"
+            ],
+            0
+        ]
+    },
+    "read_time": {
+        "status": [
+            [
+                "px4_ok"
+            ],
+            0
+        ]
+    },
+    "write_time": {
+        "status": [
+            [
+                "px4_ok"
+            ],
+            0
+        ]
+    }
+}

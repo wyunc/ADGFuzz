@@ -1,0 +1,358 @@
+{
+    "init": {
+        "_port": [
+            [
+                "serialmanager_find_serial_serial_protocol_adsb"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_operating_squawk": [
+            [
+                "_frontend_out_state_cfg_squawk_octal"
+            ],
+            0
+        ],
+        "last_operating_alt": [
+            [
+                "_frontend__my_loc_alt"
+            ],
+            0
+        ],
+        "last_packet_GPS_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_operating_rf_select": [
+            [
+                "_frontend_out_state_cfg_rf_select"
+            ],
+            0
+        ],
+        "last_packet_PreFlight_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_packet_initialize_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_packet_Operating_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "_port_available_payload_xp_max_size"
+            ],
+            0
+        ]
+    },
+    "request_packet": {
+        "pkt.type": [
+            [
+                "request"
+            ],
+            0
+        ]
+    },
+    "handle_ack": {
+        "last_ack_transponder_mode": [
+            [
+                "0x03",
+                "msg_payload"
+            ],
+            1
+        ],
+        "transponder_type": [
+            [
+                "msg_payload"
+            ],
+            0
+        ]
+    },
+    "handle_adsb_in_msg": {
+        "vehicle.info.ICAO_address": [
+            [
+                "le24toh_ptr_msg_payload"
+            ],
+            0
+        ],
+        "vehicle.info.ver_velocity": [
+            [
+                "int16_t",
+                "le16toh_ptr_msg_payload"
+            ],
+            0
+        ],
+        "validFlags": [
+            [
+                "le16toh_ptr_msg_payload"
+            ],
+            0
+        ],
+        "vehicle.info.heading": [
+            [
+                "float",
+                "sagetech_scaler_heading_cm",
+                "msg_payload"
+            ],
+            0
+        ],
+        "velNS": [
+            [
+                "sagetech_scaler_knots_to_cms",
+                "le16toh_ptr_msg_payload",
+                "int32_t"
+            ],
+            0
+        ],
+        "velEW": [
+            [
+                "sagetech_scaler_knots_to_cms",
+                "le16toh_ptr_msg_payload",
+                "int32_t"
+            ],
+            0
+        ],
+        "vehicle.info.lon": [
+            [
+                "le24toh_ptr_msg_payload",
+                "int32_t",
+                "sagetech_scaler_latlng"
+            ],
+            0
+        ],
+        "vehicle.info.altitude": [
+            [
+                "le24toh_ptr_msg_payload",
+                "int32_t"
+            ],
+            0
+        ],
+        "vehicle.info.hor_velocity": [
+            [
+                "vector2f_vel_ns_length",
+                "vector2f_vel_ew"
+            ],
+            0
+        ],
+        "vehicle.last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "vehicle.info.lat": [
+            [
+                "le24toh_ptr_msg_payload",
+                "int32_t",
+                "sagetech_scaler_latlng"
+            ],
+            0
+        ]
+    },
+    "parse_byte_XP": {
+        "message_in.packet.type": [
+            [
+                "static_cast",
+                "msg_type_xp",
+                "data"
+            ],
+            0
+        ],
+        "message_in.packet.id": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.packet.payload_length": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.packet.checksum": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.packet.checksumFletcher": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "message_in.state": [
+            [
+                "waiting_for_checksum_fletcher",
+                "waiting_for_msg_type",
+                "waiting_for_payload_len",
+                "waiting_for_payload_contents",
+                "waiting_for_checksum",
+                "data",
+                "waiting_for_assm_addr",
+                "waiting_for_end",
+                "waiting_for_msg_id",
+                "waiting_for_start",
+                "0x01"
+            ],
+            0
+        ]
+    },
+    "checksum_verify_XP": {
+        "checksum": [
+            [
+                "checksum_generate_xp_msg"
+            ],
+            0
+        ]
+    },
+    "checksum_assign_XP": {
+        "checksum": [
+            [
+                "checksum_generate_xp_msg"
+            ],
+            0
+        ],
+        "msg.checksumFletcher": [
+            [
+                "lowbyte_checksum"
+            ],
+            0
+        ],
+        "msg.checksum": [
+            [
+                "highbyte_checksum"
+            ],
+            0
+        ]
+    },
+    "send_msg_Installation": {
+        "pkt.type": [
+            [
+                "installation_set"
+            ],
+            0
+        ],
+        "icao_hex": [
+            [
+                "convert_base_to_decimal__frontend_out_state_cfg_icao_id_param"
+            ],
+            0
+        ],
+        "pkt.id": [
+            [
+                "mode_c",
+                "transponder_type"
+            ],
+            0
+        ]
+    },
+    "send_msg_PreFlight": {
+        "pkt.type": [
+            [
+                "preflight_set"
+            ],
+            0
+        ]
+    },
+    "send_msg_Operating": {
+        "pkt.type": [
+            [
+                "operating_set"
+            ],
+            0
+        ],
+        "squawk": [
+            [
+                "convert_base_to_decimal_last_operating_squawk"
+            ],
+            0
+        ],
+        "alt_feet_adj": [
+            [
+                "feet_to_meters",
+                "last_operating_alt",
+                "int32_t"
+            ],
+            2
+        ]
+    },
+    "send_msg_GPS": {
+        "speed": [
+            [
+                "loc_groundspeed_vector"
+            ],
+            0
+        ],
+        "speed_knots": [
+            [
+                "speed_length",
+                "m_per_sec_to_knots"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_speed_angle"
+            ],
+            0
+        ],
+        "lat_minutes": [
+            [
+                "int_lat_deg",
+                "_0e",
+                "loc_lat",
+                "double"
+            ],
+            2
+        ],
+        "time_sec": [
+            [
+                "loc_epoch_from_rtc_us"
+            ],
+            1
+        ],
+        "loc": [
+            [
+                "_frontend__my_loc"
+            ],
+            0
+        ],
+        "pkt.type": [
+            [
+                "gps_set"
+            ],
+            0
+        ],
+        "tm": [
+            [
+                "gmtime_r_tmd",
+                "gmtime_r_time_sec"
+            ],
+            0
+        ],
+        "lon_minutes": [
+            [
+                "_0e",
+                "loc_lng",
+                "double",
+                "int_lon_deg"
+            ],
+            2
+        ]
+    }
+}

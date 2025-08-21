@@ -1,0 +1,93 @@
+{
+    "init": {
+        "const_freq": [
+            [
+                "time_const_freq"
+            ],
+            0
+        ],
+        "wMax": [
+            [
+                "frequency_stop_hz",
+                "m_2pi"
+            ],
+            0
+        ],
+        "record": [
+            [
+                "time_record"
+            ],
+            0
+        ],
+        "B": [
+            [
+                "logf_w_max",
+                "logf_w_min"
+            ],
+            0
+        ],
+        "wMin": [
+            [
+                "frequency_start_hz",
+                "m_2pi"
+            ],
+            0
+        ],
+        "fade_out": [
+            [
+                "time_fade_out"
+            ],
+            0
+        ],
+        "fade_in": [
+            [
+                "time_fade_in"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "output": [
+            [
+                "expf_b",
+                "record",
+                "sinf_w_min",
+                "sinf_const_freq",
+                "cosf_m_pi",
+                "m_pi",
+                "cosf_fade_out",
+                "cosf_record",
+                "cosf_fade_in",
+                "cosf_time",
+                "fade_out",
+                "expf_time",
+                "sinf_time",
+                "b",
+                "waveform_magnitude",
+                "const_freq",
+                "expf_const_freq",
+                "sinf_record"
+            ],
+            2
+        ],
+        "waveform_freq_rads": [
+            [
+                "expf_b",
+                "record",
+                "expf_time",
+                "w_max",
+                "w_min",
+                "const_freq",
+                "expf_const_freq"
+            ],
+            0
+        ],
+        "complete": [
+            [
+                "record",
+                "time"
+            ],
+            0
+        ]
+    }
+}

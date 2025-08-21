@@ -1,0 +1,31 @@
+{
+    "init": {
+        "_backend": [
+            [
+                "ac_custom_control_pid__dt",
+                "new_nothrow",
+                "ac_custom_control_pid_this",
+                "ac_custom_control_pid__ahrs",
+                "ac_custom_control_pid__att_control",
+                "ac_custom_control_pid__motors"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "motor_out_rpy": [
+            [
+                "_backend_update"
+            ],
+            0
+        ]
+    },
+    "set_custom_controller": {
+        "_custom_controller_active": [
+            [
+                "enabled"
+            ],
+            0
+        ]
+    }
+}

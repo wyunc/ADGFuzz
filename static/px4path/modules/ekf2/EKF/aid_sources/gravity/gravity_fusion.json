@@ -1,0 +1,67 @@
+{
+    "controlGravityFusion": {
+        "measurement_var": [
+            [
+                "max_sq",
+                "max__params_gravity_noise",
+                "sq"
+            ],
+            0
+        ],
+        "lower_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "index",
+                "_aid_src_gravity_innovation_variance",
+                "h",
+                "p"
+            ],
+            0
+        ],
+        "upper_accel_limit": [
+            [
+                "constants_one_g"
+            ],
+            0
+        ],
+        "_aid_src_gravity.time_last_fuse": [
+            [
+                "imu_time_us"
+            ],
+            0
+        ],
+        "accel_lpf_norm_sq": [
+            [
+                "_accel_lpf_get_state_norm_squared"
+            ],
+            0
+        ],
+        "state_vector": [
+            [
+                "_state_vector"
+            ],
+            0
+        ],
+        "accel_clipping": [
+            [
+                "imu_delta_vel_clipping"
+            ],
+            0
+        ],
+        "innovation": [
+            [
+                "vector3f_imu_delta_vel_dt",
+                "vector3f_imu_delta_vel",
+                "vector3f__state_accel_bias_unit",
+                "_state_quat_nominal_rotate_vector_inverse__f",
+                "_state_quat_nominal_rotate_vector_inverse_vector3f"
+            ],
+            1
+        ]
+    }
+}

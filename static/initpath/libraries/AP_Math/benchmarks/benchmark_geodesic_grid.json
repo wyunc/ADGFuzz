@@ -1,0 +1,55 @@
+{
+    "section_triangle": {
+        "j": [
+            [
+                "section_index"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ],
+        "b": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ],
+        "a": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ]
+    },
+    "BM_GeodesicGridSections": {
+        "s": [
+            [
+                "section_v"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "c",
+                "a"
+            ],
+            0
+        ],
+        "section": [
+            [
+                "state_range"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "init": {
+        "fd": [
+            [
+                "sl_client_config_uart_baudrate",
+                "sl_client_config_uart_qurt_uart_esc"
+            ],
+            0
+        ]
+    },
+    "send_esc_packet": {
+        "crc": [
+            [
+                "calc_crc_modbus_packet_size",
+                "calc_crc_modbus_out"
+            ],
+            0
+        ],
+        "packet_size": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "send_receive": {
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "safety_mask": [
+            [
+                "boardconfig_get_safety_mask"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "i",
+                "period"
+            ],
+            0
+        ],
+        "last_fb_req_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_esc_feedback": {
+        "tdata.temperature_cdeg": [
+            [
+                "pkt_temperature"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "pkt_id_state"
+            ],
+            0
+        ],
+        "tdata.current": [
+            [
+                "pkt_current"
+            ],
+            0
+        ],
+        "tdata.voltage": [
+            [
+                "pkt_voltage"
+            ],
+            0
+        ]
+    },
+    "handle_power_status": {
+        "esc_current": [
+            [
+                "pkt_current"
+            ],
+            0
+        ],
+        "esc_voltage": [
+            [
+                "pkt_voltage"
+            ],
+            0
+        ]
+    },
+    "check_response": {
+        "n": [
+            [
+                "sl_client_uart_read_charbuf",
+                "sl_client_uart_read_fd",
+                "sizeof_buf",
+                "pkt_length"
+            ],
+            0
+        ],
+        "crc2": [
+            [
+                "buf",
+                "pkt_length"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "calc_crc_modbus_pkt_length"
+            ],
+            0
+        ],
+        "pkt": [
+            [
+                "esc_packet",
+                "struct",
+                "buf"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,285 @@
+{
+    "parameters_update": {
+        "rate_i": [
+            [
+                "_param_fw_yr_i_get",
+                "_param_fw_pr_i_get",
+                "vector3f__param_fw_rr_i_get"
+            ],
+            0
+        ],
+        "rate_p": [
+            [
+                "_param_fw_yr_p_get",
+                "vector3f__param_fw_rr_p_get",
+                "_param_fw_pr_p_get"
+            ],
+            0
+        ],
+        "rate_d": [
+            [
+                "_param_fw_yr_d_get",
+                "vector3f__param_fw_rr_d_get",
+                "_param_fw_pr_d_get"
+            ],
+            0
+        ]
+    },
+    "vehicle_manual_poll": {
+        "_rates_sp.roll": [
+            [
+                "_manual_control_setpoint_yaw",
+                "radians__param_fw_acro_z_max_get",
+                "radians__param_fw_acro_x_max_get",
+                "_manual_control_setpoint_roll"
+            ],
+            0
+        ],
+        "airspeed_scaling_sq": [
+            [
+                "_airspeed_scaling"
+            ],
+            0
+        ],
+        "_rates_sp.pitch": [
+            [
+                "_manual_control_setpoint_pitch",
+                "radians__param_fw_acro_y_max_get"
+            ],
+            0
+        ],
+        "_rates_sp.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_rates_sp.yaw": [
+            [
+                "_manual_control_setpoint_yaw",
+                "_manual_control_setpoint_roll",
+                "radians__param_fw_acro_x_max_get",
+                "radians__param_fw_acro_z_max_get"
+            ],
+            0
+        ]
+    },
+    "vehicle_land_detected_poll": {
+        "_landed": [
+            [
+                "vehicle_land_detected_landed"
+            ],
+            0
+        ]
+    },
+    "get_airspeed_and_update_scaling": {
+        "_airspeed_scaling": [
+            [
+                "max_min_airspeed",
+                "max_airspeed",
+                "_param_fw_airspd_trim_get"
+            ],
+            1
+        ],
+        "min_airspeed": [
+            [
+                "max__param_fw_airspd_stall_get"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "_param_fw_airspd_stall_get",
+                "max__airspeed_validated_sub_get_calibrated_airspeed_m_s",
+                "_param_fw_airspd_trim_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_battery_scale": [
+            [
+                "battery_status_scale"
+            ],
+            0
+        ],
+        "spoilers_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "flaps_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "rate_ctrl_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "get_airspeed_and_update_scaling"
+            ],
+            0
+        ],
+        "rates": [
+            [
+                "vector3f_angular_velocity_xyz"
+            ],
+            0
+        ],
+        "_vehicle_torque_setpoint.timestamp_sample": [
+            [
+                "angular_velocity_timestamp_sample"
+            ],
+            0
+        ],
+        "params_updated": [
+            [
+                "_parameter_update_sub_updated"
+            ],
+            0
+        ],
+        "_vehicle_thrust_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "flaps_setpoint.normalized_setpoint": [
+            [
+                "max__f",
+                "_f",
+                "max__manual_control_setpoint_flaps"
+            ],
+            1
+        ],
+        "_vehicle_torque_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "control_u": [
+            [
+                "_airspeed_scaling",
+                "angular_acceleration_setpoint"
+            ],
+            0
+        ],
+        "_vehicle_thrust_setpoint.timestamp_sample": [
+            [
+                "angular_velocity_timestamp_sample"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "dt_max",
+                "dt_min",
+                "1e",
+                "constrain_time_now_us",
+                "constrain__last_run",
+                "_f",
+                "constrain_vehicle_angular_velocity_timestamp_sample"
+            ],
+            0
+        ],
+        "body_rates_setpoint": [
+            [
+                "vector3f__rates_sp_roll",
+                "vector3f__rates_sp_pitch",
+                "vector3f__rates_sp_yaw"
+            ],
+            0
+        ],
+        "_in_fw_or_transition_wo_tailsitter_transition": [
+            [
+                "vehicle_type_fixed_wing",
+                "_vehicle_status_vehicle_type",
+                "is_in_transition_except_tailsitter"
+            ],
+            1
+        ],
+        "helper": [
+            [
+                "_vehicle_torque_setpoint_xyz"
+            ],
+            0
+        ],
+        "spoilers_setpoint.normalized_setpoint": [
+            [
+                "px4_isfinite__manual_control_setpoint_aux1",
+                "max__manual_control_setpoint_aux1",
+                "max__f",
+                "_f",
+                "px4_isfinite__manual_control_setpoint_flaps",
+                "max__manual_control_setpoint_flaps"
+            ],
+            1
+        ],
+        "_last_run": [
+            [
+                "vehicle_angular_velocity_timestamp_sample",
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "trim": [
+            [
+                "_airspeed_scaling"
+            ],
+            0
+        ],
+        "scaled_gain_ff": [
+            [
+                "_airspeed_scaling",
+                "gain_ff"
+            ],
+            0
+        ]
+    },
+    "updateActuatorControlsStatus": {
+        "control_signal": [
+            [
+                "_vehicle_torque_setpoint_xyz",
+                "i",
+                "_control_prev"
+            ],
+            0
+        ],
+        "_energy_integration_time": [
+            [
+                "_f",
+                "dt"
+            ],
+            0
+        ],
+        "status.timestamp": [
+            [
+                "_vehicle_torque_setpoint_timestamp"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "fixedwing_rate_control_vtol",
+                "new"
+            ],
+            0
+        ]
+    }
+}

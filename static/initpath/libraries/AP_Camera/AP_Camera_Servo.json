@@ -1,0 +1,20 @@
+{
+    "trigger_pic": {
+        "trigger_counter": [
+            [
+                "_params_trigger_duration",
+                "uint16_max"
+            ],
+            0
+        ]
+    },
+    "configure": {
+        "iso_counter": [
+            [
+                "_params_trigger_duration",
+                "uint16_max"
+            ],
+            0
+        ]
+    }
+}

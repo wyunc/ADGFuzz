@@ -1,0 +1,31 @@
+{
+    "update": {
+        "innovation": [
+            [
+                "vel_obs_i",
+                "ekf_state_vel_i"
+            ],
+            0
+        ],
+        "zero_velocity_update_data_ready": [
+            [
+                "imu_delayed_time_us"
+            ],
+            0
+        ],
+        "_time_last_fuse": [
+            [
+                "imu_delayed_time_us"
+            ],
+            0
+        ],
+        "innov_var": [
+            [
+                "ekf_get_velocity_variance",
+                "ekf_control_status_flags_tilt_align",
+                "sq"
+            ],
+            1
+        ]
+    }
+}

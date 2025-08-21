@@ -1,0 +1,46 @@
+{
+    "GetCalibrationParamFloat": {
+        "value": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "SetCalibrationParamsVector3f": {
+        "ret": [
+            [
+                "px4_ok",
+                "px4_error"
+            ],
+            0
+        ],
+        "axis_char": [
+            [
+                "axis"
+            ],
+            0
+        ]
+    },
+    "DeviceExternal": {
+        "external": [
+            [
+                "px4_spi_bus_external_id_devid_s_bus",
+                "px4_i2c_device_external_device_id"
+            ],
+            0
+        ],
+        "bus_type": [
+            [
+                "id_devid_s_bus_type"
+            ],
+            0
+        ],
+        "id.devid": [
+            [
+                "device_id"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "checkAndReport": {
+        "warning_timeout_passed": [
+            [
+                "hrt_absolute_time",
+                "60_s"
+            ],
+            1
+        ],
+        "_last_wind_warning": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "wind_limit_exceeded": [
+            [
+                "_param_com_wind_max_get",
+                "wind_longer_than__param_com_wind_max_get",
+                "flt_epsilon"
+            ],
+            0
+        ]
+    }
+}

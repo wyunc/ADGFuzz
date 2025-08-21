@@ -1,0 +1,39 @@
+{
+    "get_reading": {
+        "reading_m": [
+            [
+                "params_scaling",
+                "pwm_source_get_pwm_avg_us"
+            ],
+            1
+        ]
+    },
+    "check_stop_pin": {
+        "last_stop_pin": [
+            [
+                "params_stop_pin"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "was_out_of_range": [
+            [
+                "out_of_range"
+            ],
+            1
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "params_offset"
+            ],
+            0
+        ]
+    }
+}

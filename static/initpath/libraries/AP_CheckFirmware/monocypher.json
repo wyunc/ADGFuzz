@@ -1,0 +1,1328 @@
+{
+    "neq0": {
+        "half": [
+            [
+                "diff",
+                "u32"
+            ],
+            0
+        ]
+    },
+    "crypto_wipe": {
+        "v_secret": [
+            [
+                "secret",
+                "u8"
+            ],
+            0
+        ]
+    },
+    "chacha20_rounds": {
+        "t5": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t4": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t12": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t9": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t0": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t2": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t13": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t10": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t14": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t3": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t1": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t7": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t11": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t6": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "in"
+            ],
+            0
+        ],
+        "t15": [
+            [
+                "in"
+            ],
+            0
+        ]
+    },
+    "poly_block": {
+        "u4": [
+            [
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "0xffffffff",
+                "0xffffffff",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "0xffffffff",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "0xffffffff",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "u64",
+                "ctx_h",
+                "ctx_c",
+                "ctx_r",
+                "ctx_r",
+                "ctx_h",
+                "ctx_c"
+            ],
+            23
+        ]
+    },
+    "poly_take_input": {
+        "word": [
+            [
+                "ctx_c_idx"
+            ],
+            0
+        ],
+        "byte": [
+            [
+                "ctx_c_idx"
+            ],
+            0
+        ]
+    },
+    "crypto_poly1305_update": {
+        "message": [
+            [
+                "align_ctx_c_idx",
+                "align_message_size"
+            ],
+            1
+        ],
+        "nb_blocks": [
+            [
+                "align_ctx_c_idx",
+                "align_message_size"
+            ],
+            2
+        ]
+    },
+    "crypto_poly1305_final": {
+        "c": [
+            [
+                "ctx_pad",
+                "i",
+                "u64",
+                "ctx_h"
+            ],
+            0
+        ]
+    },
+    "blake2b_incr": {
+        "y": [
+            [
+                "ctx_input_idx"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "ctx_input_offset"
+            ],
+            0
+        ]
+    },
+    "blake2b_compress": {
+        "input": [
+            [
+                "ctx_input"
+            ],
+            0
+        ],
+        "v14": [
+            [
+                "iv",
+                "u64",
+                "is_last_block"
+            ],
+            0
+        ],
+        "v6": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v7": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v11": [
+            [
+                "iv"
+            ],
+            0
+        ],
+        "v5": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v12": [
+            [
+                "iv",
+                "ctx_input_offset"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "rotr64_b",
+                "rotr64_c"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "rotr64_a",
+                "rotr64_d"
+            ],
+            1
+        ],
+        "v1": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v3": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v4": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "v13": [
+            [
+                "iv",
+                "ctx_input_offset"
+            ],
+            0
+        ],
+        "v9": [
+            [
+                "iv"
+            ],
+            0
+        ],
+        "v8": [
+            [
+                "iv"
+            ],
+            0
+        ],
+        "v10": [
+            [
+                "iv"
+            ],
+            0
+        ],
+        "v15": [
+            [
+                "iv"
+            ],
+            0
+        ],
+        "v0": [
+            [
+                "ctx_hash"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "y",
+                "x"
+            ],
+            0
+        ]
+    },
+    "blake2b_set_input": {
+        "word": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "byte": [
+            [
+                "index"
+            ],
+            0
+        ]
+    },
+    "crypto_blake2b_update": {
+        "message_size": [
+            [
+                "align_message_size",
+                "align_ctx_input_idx"
+            ],
+            1
+        ],
+        "message": [
+            [
+                "align_message_size",
+                "align_ctx_input_idx"
+            ],
+            1
+        ]
+    },
+    "crypto_blake2b_final": {
+        "nb_words": [
+            [
+                "ctx_hash_size"
+            ],
+            0
+        ]
+    },
+    "wipe_block": {
+        "a": [
+            [
+                "b_a"
+            ],
+            0
+        ]
+    },
+    "extended_hash": {
+        "r": [
+            [
+                "u32",
+                "u64",
+                "digest_size"
+            ],
+            0
+        ]
+    },
+    "crypto_argon2i_general": {
+        "segment_start": [
+            [
+                "pass_number",
+                "segment",
+                "nb_blocks",
+                "segment"
+            ],
+            3
+        ],
+        "c": [
+            [
+                "current_block",
+                "block",
+                "work_area"
+            ],
+            1
+        ],
+        "r": [
+            [
+                "gidx_next_ctx",
+                "block",
+                "work_area"
+            ],
+            2
+        ],
+        "segment_end": [
+            [
+                "nb_blocks",
+                "segment"
+            ],
+            1
+        ],
+        "p": [
+            [
+                "work_area",
+                "u64",
+                "previous_block",
+                "block",
+                "work_area"
+            ],
+            1
+        ]
+    },
+    "fe_cswap": {
+        "x": [
+            [
+                "i",
+                "f",
+                "mask",
+                "g"
+            ],
+            0
+        ]
+    },
+    "fe_ccopy": {
+        "x": [
+            [
+                "i",
+                "g",
+                "mask",
+                "f"
+            ],
+            0
+        ]
+    },
+    "fe_frombytes": {
+        "t4": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t7": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t2": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t5": [
+            [
+                "load32_le_s"
+            ],
+            0
+        ],
+        "t0": [
+            [
+                "load32_le_s"
+            ],
+            0
+        ],
+        "t6": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t1": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t3": [
+            [
+                "load24_le_s"
+            ],
+            0
+        ],
+        "t9": [
+            [
+                "load24_le_s",
+                "0x7fffff"
+            ],
+            0
+        ]
+    },
+    "fe_tobytes": {
+        "q": [
+            [
+                "i32",
+                "t",
+                "i"
+            ],
+            0
+        ]
+    },
+    "fe_mul_small": {
+        "t6": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t1": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t9": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t0": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t7": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t8": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t5": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t2": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t4": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ],
+        "t3": [
+            [
+                "g",
+                "f",
+                "i64"
+            ],
+            0
+        ]
+    },
+    "fe_mul": {
+        "F1": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "G5": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "g0": [
+            [
+                "g"
+            ],
+            0
+        ],
+        "G4": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "G6": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "F7": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "F9": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "G3": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "f8": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "f6": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "F5": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f4": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "G2": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "f2": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "G9": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "f0": [
+            [
+                "f"
+            ],
+            0
+        ],
+        "G1": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "F3": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "G7": [
+            [
+                "g"
+            ],
+            1
+        ],
+        "G8": [
+            [
+                "g"
+            ],
+            1
+        ]
+    },
+    "fe_sq": {
+        "f7_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f6_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f5_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f4_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f3_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f2_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f1_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f0_2": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f9_38": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f8_19": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f7_38": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f6_19": [
+            [
+                "f"
+            ],
+            1
+        ],
+        "f5_38": [
+            [
+                "f"
+            ],
+            1
+        ]
+    },
+    "fe_isodd": {
+        "isodd": [
+            [
+                "s"
+            ],
+            0
+        ]
+    },
+    "fe_isequal": {
+        "isdifferent": [
+            [
+                "crypto_verify32_fs",
+                "crypto_verify32_gs"
+            ],
+            0
+        ]
+    },
+    "invsqrt": {
+        "ms": [
+            [
+                "fe_isequal_quartic",
+                "fe_isequal_check"
+            ],
+            0
+        ],
+        "p1": [
+            [
+                "fe_isequal_quartic",
+                "fe_isequal_check"
+            ],
+            0
+        ],
+        "m1": [
+            [
+                "fe_isequal_quartic",
+                "fe_isequal_check"
+            ],
+            0
+        ]
+    },
+    "scalarmult": {
+        "b": [
+            [
+                "scalar_bit_scalar",
+                "scalar_bit_pos"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "nb_bits"
+            ],
+            0
+        ]
+    },
+    "multiply": {
+        "carry": [
+            [
+                "u64",
+                "a",
+                "p",
+                "i",
+                "j"
+            ],
+            0
+        ]
+    },
+    "is_above_l": {
+        "carry": [
+            [
+                "x",
+                "u64",
+                "l",
+                "i"
+            ],
+            0
+        ]
+    },
+    "remove_l": {
+        "carry": [
+            [
+                "x",
+                "i",
+                "l",
+                "is_above_l_x",
+                "u32",
+                "u64"
+            ],
+            1
+        ]
+    },
+    "mod_l": {
+        "carry": [
+            [
+                "j",
+                "r",
+                "xr",
+                "l",
+                "x",
+                "u64",
+                "i"
+            ],
+            0
+        ]
+    },
+    "ge_frombytes_vartime": {
+        "is_square": [
+            [
+                "invsqrt_h_x"
+            ],
+            0
+        ]
+    },
+    "slide_init": {
+        "next_check": [
+            [
+                "u8",
+                "i"
+            ],
+            0
+        ]
+    },
+    "slide_step": {
+        "next_digit": [
+            [
+                "i8",
+                "j",
+                "scalar_bit_scalar",
+                "scalar_bit_i",
+                "width",
+                "scalar_bit_w",
+                "s"
+            ],
+            2
+        ],
+        "lsb": [
+            [
+                "j",
+                "scalar_bit_scalar",
+                "scalar_bit_i",
+                "width",
+                "scalar_bit_w"
+            ],
+            2
+        ],
+        "i": [
+            [
+                "ctx_next_digit",
+                "ctx_next_index"
+            ],
+            0
+        ],
+        "next_check": [
+            [
+                "width",
+                "u8"
+            ],
+            1
+        ],
+        "next_index": [
+            [
+                "s",
+                "width",
+                "i16"
+            ],
+            1
+        ]
+    },
+    "ge_double_scalarmult_vartime": {
+        "b_digit": [
+            [
+                "slide_step_b_w_width",
+                "slide_step_b_slide",
+                "slide_step_b",
+                "slide_step_i"
+            ],
+            0
+        ],
+        "p_digit": [
+            [
+                "slide_step_i",
+                "slide_step_p_w_width",
+                "slide_step_p_slide",
+                "slide_step_p"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "b_slide_next_check",
+                "p_slide_next_check"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "p"
+            ],
+            0
+        ]
+    },
+    "lookup_add": {
+        "select": [
+            [
+                "teeth",
+                "teeth",
+                "j"
+            ],
+            2
+        ]
+    },
+    "crypto_sign_init_first_pass_custom_hash": {
+        "a": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ],
+        "prefix": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ]
+    },
+    "crypto_sign_init_second_pass": {
+        "half_sig": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ]
+    },
+    "crypto_sign_final": {
+        "a": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ],
+        "half_sig": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ]
+    },
+    "crypto_sign": {
+        "actx": [
+            [
+                "ctx",
+                "crypto_sign_ctx_abstract"
+            ],
+            0
+        ]
+    },
+    "crypto_check_final": {
+        "R_check": [
+            [
+                "ctx_pk"
+            ],
+            0
+        ],
+        "R": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "ctx_buf"
+            ],
+            0
+        ]
+    },
+    "crypto_check": {
+        "actx": [
+            [
+                "ctx",
+                "crypto_check_ctx_abstract"
+            ],
+            0
+        ]
+    },
+    "add_xl": {
+        "carry": [
+            [
+                "x",
+                "load32_le_s",
+                "load32_le_i",
+                "l",
+                "i"
+            ],
+            1
+        ]
+    },
+    "crypto_x25519_dirty_fast": {
+        "b": [
+            [
+                "secret_key"
+            ],
+            1
+        ],
+        "c": [
+            [
+                "secret_key"
+            ],
+            1
+        ],
+        "a": [
+            [
+                "secret_key"
+            ],
+            1
+        ]
+    },
+    "crypto_hidden_to_curve": {
+        "is_square": [
+            [
+                "invsqrt_t1"
+            ],
+            0
+        ]
+    },
+    "crypto_curve_to_hidden": {
+        "is_square": [
+            [
+                "invsqrt_t3"
+            ],
+            0
+        ]
+    },
+    "redc": {
+        "carry": [
+            [
+                "i",
+                "x",
+                "s",
+                "j",
+                "u64",
+                "k",
+                "t"
+            ],
+            0
+        ]
+    }
+}

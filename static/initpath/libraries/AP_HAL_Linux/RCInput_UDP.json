@@ -1,0 +1,47 @@
+{
+    "init": {
+        "_port": [
+            [
+                "rcinput_udp_def_port"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "_last_buf_ts": [
+            [
+                "_buf_timestamp_us"
+            ],
+            0
+        ],
+        "seq_delta": [
+            [
+                "_buf_sequence"
+            ],
+            0
+        ],
+        "_last_buf_seq": [
+            [
+                "_buf_sequence"
+            ],
+            0
+        ],
+        "time_delta": [
+            [
+                "_buf_timestamp_us"
+            ],
+            0
+        ],
+        "n_channels": [
+            [
+                "_socket_recv_sizeof",
+                "_socket_recv__buf",
+                "sizeof_uint16_t",
+                "offsetof_struct",
+                "offsetof_pwms",
+                "offsetof_rc_udp_packet"
+            ],
+            3
+        ]
+    }
+}

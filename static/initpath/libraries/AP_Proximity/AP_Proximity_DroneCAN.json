@@ -1,0 +1,52 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "face": [
+            [
+                "frontend_boundary_get_face_object_item_pitch_deg",
+                "frontend_boundary_get_face_object_item_yaw_deg"
+            ],
+            0
+        ]
+    },
+    "handle_measurement": {
+        "_status": [
+            [
+                "good",
+                "not_connected",
+                "no_data"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "msg_pitch",
+                "msg_distance",
+                "msg_yaw"
+            ],
+            0
+        ],
+        "driver": [
+            [
+                "get_dronecan_backend_ap_dronecan",
+                "get_dronecan_backend_msg_sensor_id",
+                "get_dronecan_backend_transfer_source_node_id",
+                "get_dronecan_backend_true"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "select_pin": {
+        "_pin_fd": [
+            [
+                "fd_analog_sources",
+                "_pin"
+            ],
+            0
+        ]
+    },
+    "read_average": {
+        "_value": [
+            [
+                "_sum_count",
+                "_sum_value"
+            ],
+            0
+        ]
+    },
+    "read_latest": {
+        "_sum_value": [
+            [
+                "atoi_sbuf",
+                "_voltage_scaling"
+            ],
+            1
+        ]
+    },
+    "set_pin": {
+        "_pin": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    }
+}

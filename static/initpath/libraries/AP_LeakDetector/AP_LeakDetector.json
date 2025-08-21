@@ -1,0 +1,28 @@
+{
+    "init": {
+        ".instance": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_status": [
+            [
+                "millis",
+                "leakdetector_cooldown_ms",
+                "millis"
+            ],
+            2
+        ]
+    },
+    "set_detect": {
+        "_last_detect_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

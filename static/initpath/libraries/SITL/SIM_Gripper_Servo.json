@@ -1,0 +1,41 @@
+{
+    "update": {
+        "jaw_gap": [
+            [
+                "abs_release_pwm",
+                "abs_grab_pwm",
+                "gripper_servo_pin",
+                "input_servos",
+                "position_slew_rate",
+                "_0e",
+                "micros64",
+                "gap"
+            ],
+            7
+        ],
+        "reported_position": [
+            [
+                "abs_release_pwm",
+                "abs_grab_pwm",
+                "gripper_servo_pin",
+                "input_servos",
+                "position_slew_rate",
+                "_0e",
+                "micros64"
+            ],
+            7
+        ],
+        "last_update_us": [
+            [
+                "micros64"
+            ],
+            1
+        ],
+        "last_report_us": [
+            [
+                "micros64"
+            ],
+            1
+        ]
+    }
+}

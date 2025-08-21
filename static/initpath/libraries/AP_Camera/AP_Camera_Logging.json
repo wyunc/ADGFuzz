@@ -1,0 +1,22 @@
+{
+    "Write_CameraInfo": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "timestamp_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "mount": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

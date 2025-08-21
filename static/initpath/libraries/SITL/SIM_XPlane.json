@@ -1,0 +1,518 @@
+{
+    "add_dref": {
+        "fixed_value": [
+            [
+                "dref_get_get",
+                "double"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "dref_get_get",
+                "double"
+            ],
+            0
+        ],
+        "drefs": [
+            [
+                "new_nothrow",
+                "d_ref",
+                "struct"
+            ],
+            1
+        ],
+        "name": [
+            [
+                "strdup_name"
+            ],
+            0
+        ],
+        "range": [
+            [
+                "dref_get_get",
+                "double"
+            ],
+            0
+        ]
+    },
+    "add_joyinput": {
+        "type": [
+            [
+                "button",
+                "atoi_label"
+            ],
+            1
+        ],
+        "channel": [
+            [
+                "d_get_get",
+                "double"
+            ],
+            0
+        ],
+        "mask": [
+            [
+                "d_get_get",
+                "double"
+            ],
+            0
+        ],
+        "joyinputs": [
+            [
+                "new_nothrow",
+                "joy_input",
+                "struct"
+            ],
+            1
+        ],
+        "input_max": [
+            [
+                "d_get_get",
+                "double"
+            ],
+            0
+        ],
+        "input_min": [
+            [
+                "d_get_get",
+                "double"
+            ],
+            0
+        ]
+    },
+    "handle_setting": {
+        "dref_debug": [
+            [
+                "d_get_get",
+                "double"
+            ],
+            0
+        ]
+    },
+    "load_dref_map": {
+        "type_s": [
+            [
+                "d_get_to_str_c_str"
+            ],
+            0
+        ],
+        "obj": [
+            [
+                "load_json_fname"
+            ],
+            0
+        ],
+        "joyinputs": [
+            [
+                "joyinputs_next"
+            ],
+            1
+        ],
+        "map_filename": [
+            [
+                "strdup_map_json",
+                "nullptr"
+            ],
+            1
+        ],
+        "label": [
+            [
+                "i_first_c_str"
+            ],
+            0
+        ],
+        "o": [
+            [
+                "object",
+                "obj_get"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "drefs_next",
+                "i_second"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "o_begin"
+            ],
+            0
+        ]
+    },
+    "select_data": {
+        "all_mask": [
+            [
+                "1u",
+                "array_size_required_data"
+            ],
+            0
+        ]
+    },
+    "receive_data": {
+        "gyro.z": [
+            [
+                "radians_data",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "xplane_frame_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "velocity_ef.z": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "tdiff": [
+            [
+                "float",
+                "const",
+                "_0e6f"
+            ],
+            2
+        ],
+        "pos.z": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "loc.lng": [
+            [
+                "1e7",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "p": [
+            [
+                "pkt",
+                "pkt_len"
+            ],
+            0
+        ],
+        "last_data_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "gyro.y": [
+            [
+                "radians_data",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "accel_earth": [
+            [
+                "dcm",
+                "accel_body"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "feet_to_meters",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "velocity_ef.x": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "ground_level": [
+            [
+                "loc_alt",
+                "feet_to_meters",
+                "float",
+                "const"
+            ],
+            2
+        ],
+        "accel_body.y": [
+            [
+                "gravity_mss",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "time_now_us": [
+            [
+                "frame_time_us",
+                "float",
+                "const",
+                "_0e6f",
+                "float",
+                "const",
+                "_0e6f"
+            ],
+            4
+        ],
+        "v": [
+            [
+                "j_input_min",
+                "j_axis",
+                "float",
+                "const",
+                "j_input_max"
+            ],
+            1
+        ],
+        "accel_earth.z": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "origin": [
+            [
+                "home"
+            ],
+            0
+        ],
+        "m": [
+            [
+                "j_mask",
+                "uint32_t_data"
+            ],
+            0
+        ],
+        "home.lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "pos.x": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "rcin_chan_count": [
+            [
+                "j_channel"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "joyinputs"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "knots_to_meters_per_second",
+                "float",
+                "const"
+            ],
+            2
+        ],
+        "delta_time": [
+            [
+                "frame_time_us",
+                "1e"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "1e7",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "pitch": [
+            [
+                "radians_data"
+            ],
+            0
+        ],
+        "accel_body.x": [
+            [
+                "gravity_mss",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "roll": [
+            [
+                "radians_data"
+            ],
+            0
+        ],
+        "position_zero": [
+            [
+                "pos_y",
+                "pos_z",
+                "pos_x"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "pos"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "radians_data"
+            ],
+            0
+        ],
+        "accel_body.z": [
+            [
+                "gravity_mss",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "pos.y": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "home.alt": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "velocity_ef.y": [
+            [
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "idx": [
+            [
+                "find_data_index_code"
+            ],
+            0
+        ],
+        "gyro.x": [
+            [
+                "radians_data",
+                "float",
+                "const"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "wait_time_ms",
+                "socket_in_recv_pkt",
+                "socket_in_recv_sizeof",
+                "pkt_len"
+            ],
+            0
+        ],
+        "home.lng": [
+            [
+                "loc_lng"
+            ],
+            0
+        ]
+    },
+    "handle_rref": {
+        "ref": [
+            [
+                "const",
+                "r_ref_packet",
+                "struct",
+                "pkt"
+            ],
+            1
+        ],
+        "xplane_version": [
+            [
+                "uint32_t_ref_value_f"
+            ],
+            0
+        ]
+    },
+    "send_drefs": {
+        "v": [
+            [
+                "d_channel",
+                "input_servos",
+                "d_range"
+            ],
+            0
+        ],
+        "d": [
+            [
+                "drefs"
+            ],
+            0
+        ]
+    },
+    "send_dref": {
+        "d.value": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "request_dref": {
+        "d.rate_hz": [
+            [
+                "rate"
+            ],
+            0
+        ],
+        "d.code": [
+            [
+                "code"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "report.last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "millis",
+                "_0e",
+                "report_last_report_ms"
+            ],
+            1
+        ]
+    }
+}

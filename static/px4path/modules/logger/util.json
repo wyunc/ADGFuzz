@@ -1,0 +1,110 @@
+{
+    "get_log_time": {
+        "utc_time_sec": [
+            [
+                "1e9",
+                "1e6",
+                "utc_offset_sec",
+                "hrt_absolute_time",
+                "gps_pos_time_utc_usec",
+                "ts_tv_nsec",
+                "ts_tv_sec"
+            ],
+            0
+        ]
+    },
+    "check_free_space": {
+        "min_free_bytes": [
+            [
+                "300ull",
+                "1024ull",
+                "uint64_t",
+                "statfs_buf_f_blocks",
+                "statfs_buf_f_bsize"
+            ],
+            1
+        ],
+        "num_sess": [
+            [
+                "num_dates"
+            ],
+            0
+        ],
+        "day_min": [
+            [
+                "day"
+            ],
+            0
+        ],
+        "n": [
+            [
+                "sess_idx",
+                "log_root_dir",
+                "snprintf_directory_to_delete",
+                "snprintf_sizeof"
+            ],
+            1
+        ],
+        "month_min": [
+            [
+                "month"
+            ],
+            0
+        ],
+        "sess_dir_index": [
+            [
+                "sess_idx"
+            ],
+            1
+        ],
+        "year_min": [
+            [
+                "year"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "opendir_log_root_dir"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "max_log_dirs_to_keep": [
+            [
+                "int32_max"
+            ],
+            0
+        ]
+    },
+    "remove_directory": {
+        "ret": [
+            [
+                "rmdir_dir",
+                "remove_directory_buf",
+                "unlink_buf"
+            ],
+            1
+        ],
+        "buf": [
+            [
+                "new",
+                "char",
+                "strlen_dir",
+                "strlen_p_d_name"
+            ],
+            2
+        ],
+        "d": [
+            [
+                "opendir_dir"
+            ],
+            0
+        ]
+    }
+}

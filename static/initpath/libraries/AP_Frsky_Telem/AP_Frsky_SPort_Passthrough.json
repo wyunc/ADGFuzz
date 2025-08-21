@@ -1,0 +1,128 @@
+{
+    "send_sport_frame": {
+        "external_data.packet.frame": [
+            [
+                "frame"
+            ],
+            0
+        ],
+        "external_data.packet.appid": [
+            [
+                "appid"
+            ],
+            0
+        ],
+        "external_data.packet.data": [
+            [
+                "data"
+            ],
+            0
+        ]
+    },
+    "is_packet_ready": {
+        "packet_ready": [
+            [
+                "_sport_push_buffer_pending",
+                "gcs_vehicle_initialised",
+                "queue_empty",
+                "rpm_num_sensors",
+                "get_singleton",
+                "nullptr",
+                "terrain_enabled",
+                "mission_get_current_nav_index",
+                "downlink_sensor_id",
+                "_passthrough_new_byte",
+                "terrain",
+                "battery_num_instances",
+                "windvane_enabled",
+                "_use_external_data",
+                "_s_port_bidir_tx_packet_queue_is_empty",
+                "mission"
+            ],
+            1
+        ]
+    },
+    "process_packet": {
+        "_passthrough.gps_lng_sample": [
+            [
+                "calc_gps_latlng__passthrough_send_latitude"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "prev_byte": [
+            [
+                "_passthrough_new_byte"
+            ],
+            0
+        ],
+        "numc": [
+            [
+                "_port_available_1024u"
+            ],
+            0
+        ],
+        "_passthrough.new_byte": [
+            [
+                "_port_read"
+            ],
+            0
+        ]
+    },
+    "is_passthrough_byte": {
+        "byte": [
+            [
+                "downlink_sensor_id"
+            ],
+            0
+        ]
+    },
+    "get_telem_data": {
+        "packet_count": [
+            [
+                "idx"
+            ],
+            0
+        ],
+        ".frame": [
+            [
+                "external_data_packet_frame"
+            ],
+            0
+        ],
+        "item": [
+            [
+                "run_wfq_scheduler_false"
+            ],
+            0
+        ],
+        ".appid": [
+            [
+                "external_data_packet_appid"
+            ],
+            0
+        ],
+        ".data": [
+            [
+                "external_data_packet_data"
+            ],
+            0
+        ]
+    },
+    "set_sensor_id": {
+        "sensor": [
+            [
+                "0x_ff",
+                "calc_sensor_id_idx"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "param_idx_get"
+            ],
+            0
+        ]
+    }
+}

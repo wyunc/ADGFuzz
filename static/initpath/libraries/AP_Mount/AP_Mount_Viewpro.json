@@ -1,0 +1,383 @@
+{
+    "update": {
+        "angle_bf_target": [
+            [
+                "_params_retract_angles_get",
+                "_params_neutral_angles_get"
+            ],
+            0
+        ],
+        "mnt_target.target_type": [
+            [
+                "angle"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "healthy": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "read_incoming_packets": {
+        "expected_crc": [
+            [
+                "calc_crc__msg_buff",
+                "calc_crc__msg_buff_len"
+            ],
+            0
+        ],
+        "_parsed_msg.data_len": [
+            [
+                "0x3f"
+            ],
+            0
+        ],
+        "_parsed_msg.state": [
+            [
+                "waiting_for_length",
+                "waiting_for_crc",
+                "waiting_for_data",
+                "waiting_for_header1",
+                "waiting_for_header2",
+                "waiting_for_frameid",
+                "waiting_for_header3"
+            ],
+            0
+        ],
+        "nbytes": [
+            [
+                "_uart_available_1024u"
+            ],
+            0
+        ]
+    },
+    "process_packet": {
+        "_current_angle_rad.y": [
+            [
+                "ap_mount_viewpro_output_to_deg",
+                "uint16_value__msg_buff",
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start"
+            ],
+            0
+        ],
+        "_image_sensor": [
+            [
+                "image_sensor_0x07",
+                "image_sensor__msg_buff_data_start",
+                "image_sensor__msg_buff"
+            ],
+            0
+        ],
+        "_current_angle_rad.x": [
+            [
+                "uint16_value_0x0f",
+                "uint16_value__msg_buff",
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start"
+            ],
+            0
+        ],
+        "_last_tracking_status": [
+            [
+                "_msg_buff_data_start",
+                "_msg_buff",
+                "0x18"
+            ],
+            1
+        ],
+        "_firmware_version": [
+            [
+                "atoi_const",
+                "0x_ff",
+                "atoi_charfw_patch_str",
+                "atoi_charfw_major_str",
+                "atoi_const",
+                "0x_ff",
+                "atoi_const",
+                "0x_ff",
+                "atoi_charfw_minor_str"
+            ],
+            3
+        ],
+        "_rangefinder_dist_m": [
+            [
+                "uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start"
+            ],
+            0
+        ],
+        "_zoom_times": [
+            [
+                "uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start"
+            ],
+            0
+        ],
+        "control_cmd": [
+            [
+                "_msg_buff_data_start",
+                "comm_config_cmd",
+                "_msg_buff"
+            ],
+            0
+        ],
+        "_current_angle_rad.z": [
+            [
+                "ap_mount_viewpro_output_to_deg",
+                "uint16_value__msg_buff",
+                "radians_int16_t_uint16_value__msg_buff",
+                "uint16_value__msg_buff_data_start"
+            ],
+            0
+        ],
+        "_recording": [
+            [
+                "_msg_buff_data_start",
+                "_msg_buff",
+                "0x07"
+            ],
+            2
+        ],
+        "_last_current_angle_rad_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "send_packet": {
+        "send_buff_ofs": [
+            [
+                "databuff_len"
+            ],
+            0
+        ],
+        "packet_size": [
+            [
+                "databuff_len",
+                "ap_mount_viewpro_packetlen_min"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "calc_crc_send_buff_ofs",
+                "calc_crc_send_buff"
+            ],
+            0
+        ]
+    },
+    "set_lock": {
+        "_last_lock": [
+            [
+                "lock"
+            ],
+            0
+        ]
+    },
+    "send_target_rates": {
+        "pitch_rate_output": [
+            [
+                "degrees_pitch_rads"
+            ],
+            0
+        ],
+        "yaw_rate_output": [
+            [
+                "degrees_yaw_rads"
+            ],
+            0
+        ]
+    },
+    "send_target_angles": {
+        "yaw_angle_output": [
+            [
+                "degrees_yaw_bf_rad",
+                "ap_mount_viewpro_deg_to_output"
+            ],
+            0
+        ],
+        "pitch_angle_output": [
+            [
+                "ap_mount_viewpro_deg_to_output",
+                "degrees_pitch_rad"
+            ],
+            0
+        ],
+        "yaw_bf_rad": [
+            [
+                "wrap_pi_ahrs_get_yaw",
+                "yaw_is_ef",
+                "yaw_rad",
+                "radians__params_yaw_angle_max",
+                "wrap_pi_yaw_rad",
+                "radians__params_yaw_angle_min"
+            ],
+            2
+        ]
+    },
+    "send_camera_command": {
+        "sensor_id": [
+            [
+                "img_sensor",
+                "uint16_t"
+            ],
+            0
+        ],
+        "operation_cmd": [
+            [
+                "cmd",
+                "0x7f",
+                "uint16_t"
+            ],
+            0
+        ],
+        "zoom_speed": [
+            [
+                "value",
+                "uint16_t",
+                "0x07"
+            ],
+            0
+        ],
+        "rangefinder_cmd": [
+            [
+                "lrf_cmd",
+                "uint16_t",
+                "0x07"
+            ],
+            0
+        ]
+    },
+    "send_tracking_command": {
+        "e1_packet.content.param2": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "e1_packet.content.cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ],
+        "e1_packet.content.frame_id": [
+            [
+                "e1"
+            ],
+            0
+        ],
+        "e1_packet.content.source": [
+            [
+                "ir",
+                "eo1"
+            ],
+            1
+        ]
+    },
+    "send_m_ahrs": {
+        "second_hundredths": [
+            [
+                "sec",
+                "ms",
+                "hour",
+                "min"
+            ],
+            0
+        ],
+        "veh_yaw_deg": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_ahrs_get_yaw"
+            ],
+            0
+        ],
+        "vel_yaw_deg": [
+            [
+                "wrap_360_degrees",
+                "wrap_360_vel_ned_xy_angle"
+            ],
+            0
+        ],
+        "gps_vdop": [
+            [
+                "gps_get_vdop"
+            ],
+            0
+        ],
+        "date": [
+            [
+                "0x0f",
+                "0x1f",
+                "0x7f",
+                "day",
+                "sec",
+                "hour",
+                "min",
+                "ms",
+                "day",
+                "month",
+                "month"
+            ],
+            1
+        ]
+    },
+    "set_zoom": {
+        "zoom_cmd": [
+            [
+                "zoom_in",
+                "stop_focus_and_zoom",
+                "zoom_out"
+            ],
+            0
+        ]
+    },
+    "set_lens": {
+        "new_image_sensor": [
+            [
+                "image_sensor_lens"
+            ],
+            0
+        ]
+    },
+    "set_camera_source": {
+        "new_image_sensor": [
+            [
+                "ir",
+                "eo1",
+                "eo1_ir_pip",
+                "ir_eo1_pip"
+            ],
+            0
+        ]
+    },
+    "send_camera_settings": {
+        "zoom_level": [
+            [
+                "linear_interpolate__zoom_times",
+                "linear_interpolate_ap_mount_viewpro_zoom_max"
+            ],
+            0
+        ]
+    },
+    "get_rangefinder_distance": {
+        "distance_m": [
+            [
+                "_rangefinder_dist_m"
+            ],
+            0
+        ]
+    }
+}

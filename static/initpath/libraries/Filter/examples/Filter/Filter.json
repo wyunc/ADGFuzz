@@ -1,0 +1,16 @@
+{
+    "readTemp": {
+        "raw_temp": [
+            [
+                "_temp_filter_apply__temp_sensor"
+            ],
+            0
+        ],
+        "_temp_sensor": [
+            [
+                "buf"
+            ],
+            0
+        ]
+    }
+}

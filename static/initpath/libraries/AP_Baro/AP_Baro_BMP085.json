@@ -1,0 +1,180 @@
+{
+    "_init": {
+        "b1": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "b2": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "mb": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac4": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac6": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac1": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac3": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "md": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac5": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "ac2": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "_eoc": [
+            [
+                "hal_gpio_channel_bmp085_eoc"
+            ],
+            0
+        ],
+        "sem": [
+            [
+                "_dev_get_semaphore"
+            ],
+            0
+        ],
+        "mc": [
+            [
+                "int16_t",
+                "bb_buff"
+            ],
+            0
+        ],
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "pressure": [
+            [
+                "_pressure_filter_getf"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "_temp"
+            ],
+            0
+        ]
+    },
+    "_cmd_read_pressure": {
+        "_last_press_read_command_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_read_pressure": {
+        "_last_press_read_command_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_cmd_read_temp": {
+        "_last_temp_read_command_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_read_temp": {
+        "_raw_temp": [
+            [
+                "buf"
+            ],
+            1
+        ]
+    },
+    "_calculate": {
+        "p": [
+            [
+                "b1",
+                "mc",
+                "int32_t",
+                "ac2",
+                "b5",
+                "md",
+                "ac6",
+                "ac3",
+                "ac5",
+                "int32_t",
+                "b5",
+                "b2",
+                "_raw_temp",
+                "0x80000000",
+                "ac1",
+                "oversampling",
+                "_raw_pressure",
+                "uint32_t",
+                "oversampling",
+                "x3",
+                "ac4",
+                "uint32_t"
+            ],
+            7
+        ],
+        "_temp": [
+            [
+                "b5"
+            ],
+            0
+        ]
+    }
+}

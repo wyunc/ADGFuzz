@@ -1,0 +1,171 @@
+{
+    "controlGpsFusion": {
+        "gnss_sample": [
+            [
+                "_gps_sample_delayed"
+            ],
+            0
+        ],
+        "do_vel_pos_reset": [
+            [
+                "should_reset_gps_fusion",
+                "try_yaw_emergency_reset"
+            ],
+            0
+        ],
+        "_gps_intermittent": [
+            [
+                "is_newest_sample_recent_gnss_max_interval",
+                "is_newest_sample_recent__time_last_gps_buffer_push"
+            ],
+            0
+        ],
+        "_gps_data_ready": [
+            [
+                "_gps_buffer_pop_first_older_than__gps_sample_delayed",
+                "_gps_buffer_pop_first_older_than_imu_delayed_time_us"
+            ],
+            0
+        ]
+    },
+    "controlGnssVelFusion": {
+        "starting_conditions_passing": [
+            [
+                "_gps_checks_passed",
+                "continuing_conditions_passing"
+            ],
+            0
+        ]
+    },
+    "controlGnssPosFusion": {
+        "gpos_init_conditions_passing": [
+            [
+                "_params_gnss_ctrl",
+                "static_cast",
+                "int32_t",
+                "hpos",
+                "_gps_checks_passed"
+            ],
+            1
+        ],
+        "starting_conditions_passing": [
+            [
+                "continuing_conditions_passing",
+                "_gps_checks_passed"
+            ],
+            0
+        ]
+    },
+    "updateGnssVel": {
+        "innov_limit": [
+            [
+                "sqrtf_aid_src_innovation_variance",
+                "max__params_gps_vel_innov_gate",
+                "max__f"
+            ],
+            1
+        ],
+        "velocity": [
+            [
+                "gnss_sample_vel",
+                "_r_to_earth",
+                "_state_gyro_bias",
+                "imu_sample_delta_ang_dt",
+                "imu_sample_delta_ang",
+                "_params_imu_pos_body",
+                "_params_gps_pos_body"
+            ],
+            4
+        ],
+        "vel_var": [
+            [
+                "sq__params_gps_vel_noise",
+                "sq_gnss_sample_sacc",
+                "sq_max"
+            ],
+            0
+        ]
+    },
+    "updateGnssPos": {
+        "innovation": [
+            [
+                "_gpos",
+                "_xy",
+                "vector3f_pos_offset_body",
+                "vector3f__r_to_earth",
+                "measurement"
+            ],
+            2
+        ],
+        "pos_var": [
+            [
+                "max_sq",
+                "max_pos_noise",
+                "sq"
+            ],
+            0
+        ],
+        "pos_noise": [
+            [
+                "max__params_gps_pos_noise",
+                "max_gnss_sample_hacc",
+                "_params_pos_noaid_noise"
+            ],
+            0
+        ],
+        "pos_offset_body": [
+            [
+                "_params_gps_pos_body",
+                "_params_imu_pos_body"
+            ],
+            0
+        ]
+    },
+    "controlGnssYawEstimator": {
+        "vel_var": [
+            [
+                "aid_src_vel_observation_variance"
+            ],
+            0
+        ]
+    },
+    "isYawEmergencyEstimateAvailable": {
+        "yaw_var": [
+            [
+                "_yaw_estimator_get_yaw_var"
+            ],
+            0
+        ]
+    },
+    "isYawFailure": {
+        "euler_yaw": [
+            [
+                "get_euler_yaw__r_to_earth"
+            ],
+            0
+        ],
+        "yaw_error": [
+            [
+                "wrap_pi_euler_yaw",
+                "wrap_pi__yaw_estimator_get_yaw"
+            ],
+            0
+        ]
+    },
+    "resetYawToEKFGSF": {
+        "quat_reset": [
+            [
+                "_state_reset_count_prev_quat",
+                "_state_reset_status_reset_count_quat"
+            ],
+            0
+        ],
+        "yaw_alignment_changed": [
+            [
+                "_control_status_prev_flags_yaw_align",
+                "_control_status_flags_yaw_align"
+            ],
+            0
+        ]
+    }
+}

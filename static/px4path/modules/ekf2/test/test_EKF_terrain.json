@@ -1,0 +1,28 @@
+{
+    "runFlowAndRngScenario": {
+        "min_ground_distance": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "max_flow_rate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "flow_sample": [
+            [
+                "_sensor_simulator__flow_data_at_rest"
+            ],
+            0
+        ],
+        "max_ground_distance": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    }
+}

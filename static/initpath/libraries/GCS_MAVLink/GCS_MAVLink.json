@@ -1,0 +1,45 @@
+{
+    "set_channel_private": {
+        "mask": [
+            [
+                "1u",
+                "unsigned",
+                "_chan"
+            ],
+            0
+        ]
+    },
+    "comm_send_buffer": {
+        "written": [
+            [
+                "mavlink_comm_port",
+                "_write_buf",
+                "_write_len",
+                "chan"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "gcs_chan_chan"
+            ],
+            0
+        ]
+    },
+    "comm_send_lock": {
+        "chan": [
+            [
+                "uint8_t_chan_m"
+            ],
+            0
+        ]
+    },
+    "comm_send_unlock": {
+        "chan": [
+            [
+                "uint8_t_chan_m"
+            ],
+            0
+        ]
+    }
+}

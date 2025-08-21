@@ -1,0 +1,59 @@
+{
+    "test_prescaler": {
+        "expected_delta": [
+            [
+                "calculate_bitrate_prescaler_clock",
+                "calculate_bitrate_prescaler_at_least_freq",
+                "calculate_bitrate_prescaler_target_rate"
+            ],
+            1
+        ],
+        ".type": [
+            [
+                "none",
+                "_type",
+                "test_index",
+                "test_results",
+                "dshot"
+            ],
+            0
+        ],
+        "rate_delta": [
+            [
+                "target_rate",
+                "fabsf_float",
+                "fabsf_prescaler",
+                "fabsf_clock"
+            ],
+            0
+        ]
+    },
+    "test_prescaler_neopixel": {
+        "target_rate": [
+            [
+                "neop_bit_width_ticks"
+            ],
+            0
+        ],
+        "bit_0_width_us": [
+            [
+                "clock",
+                "calculate_bitrate_prescaler_target_rate",
+                "calculate_bitrate_prescaler_clock",
+                "calculate_bitrate_prescaler_false",
+                "neop_bit_0_ticks"
+            ],
+            2
+        ],
+        "bit_1_width_us": [
+            [
+                "clock",
+                "calculate_bitrate_prescaler_target_rate",
+                "calculate_bitrate_prescaler_clock",
+                "calculate_bitrate_prescaler_false",
+                "neop_bit_1_ticks"
+            ],
+            2
+        ]
+    }
+}

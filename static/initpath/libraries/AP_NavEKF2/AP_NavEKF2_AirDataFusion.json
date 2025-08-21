@@ -1,0 +1,204 @@
+{
+    "FuseAirspeed": {
+        "res": [
+            [
+                "p",
+                "kh",
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "tasHealth": [
+            [
+                "tas_test_ratio",
+                "bad_im_udata"
+            ],
+            0
+        ],
+        "lastTasPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "vwe": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ],
+        "ve": [
+            [
+                "state_struct_velocity_y"
+            ],
+            0
+        ],
+        "SK_TAS": [
+            [
+                "p",
+                "sh_tas",
+                "r_tas",
+                "state_struct_velocity_z"
+            ],
+            2
+        ],
+        "R_TAS": [
+            [
+                "sq_constrain_ftype",
+                "constrain_ftype_eas2tas",
+                "sq_frontend__eas_noise"
+            ],
+            0
+        ],
+        "lastTasFailTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "VtasPred": [
+            [
+                "state_struct_velocity_z",
+                "state_struct_velocity_x",
+                "norm_ve",
+                "norm_vwe",
+                "state_struct_wind_vel_x"
+            ],
+            3
+        ],
+        "EAS2TAS": [
+            [
+                "dal_get_eas2tas"
+            ],
+            0
+        ],
+        "tasTestRatio": [
+            [
+                "sq_ftypefrontend__tas_innov_gate",
+                "sq_innov_vtas",
+                "var_innov_vtas"
+            ],
+            0
+        ],
+        "innovVtas": [
+            [
+                "tas_data_delayed_tas",
+                "vtas_pred"
+            ],
+            0
+        ],
+        "varInnovVtas": [
+            [
+                "sk_tas"
+            ],
+            0
+        ],
+        "tasTimeout": [
+            [
+                "imu_sample_time_ms",
+                "last_tas_pass_time_ms",
+                "frontend_tas_retry_time_ms"
+            ],
+            0
+        ]
+    },
+    "SelectTasFusion": {
+        "prevTasStep_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "SelectBetaFusion": {
+        "f_required": [
+            [
+                "use_airspeed",
+                "imu_sample_time_ms",
+                "use_compass",
+                "last_pos_pass_time_ms",
+                "frontend_pos_retry_time_no_vel_ms"
+            ],
+            0
+        ],
+        "f_feasible": [
+            [
+                "assume_zero_sideslip",
+                "inhibit_wind_states"
+            ],
+            0
+        ],
+        "f_timeTrigger": [
+            [
+                "imu_sample_time_ms",
+                "frontend_beta_avg_ms",
+                "prev_beta_step_ms"
+            ],
+            0
+        ],
+        "prevBetaStep_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "FuseSideslip": {
+        "vel_rel_wind.z": [
+            [
+                "state_struct_velocity_z"
+            ],
+            1
+        ],
+        "temp": [
+            [
+                "r_beta",
+                "state_struct_quat",
+                "state_struct_quat",
+                "sh_beta",
+                "state_struct_quat",
+                "sq_sh_beta",
+                "state_struct_quat",
+                "p"
+            ],
+            4
+        ],
+        "innovBeta": [
+            [
+                "vel_rel_wind_y",
+                "vel_rel_wind_x"
+            ],
+            0
+        ],
+        "vel_rel_wind.y": [
+            [
+                "state_struct_velocity_y",
+                "state_struct_wind_vel_y"
+            ],
+            2
+        ],
+        "res": [
+            [
+                "i",
+                "kh",
+                "j",
+                "p"
+            ],
+            0
+        ],
+        "vel_rel_wind": [
+            [
+                "prev_tnb"
+            ],
+            0
+        ],
+        "vel_rel_wind.x": [
+            [
+                "state_struct_velocity_x",
+                "state_struct_wind_vel_x"
+            ],
+            2
+        ]
+    }
+}

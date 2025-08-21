@@ -1,0 +1,719 @@
+{
+    "FuseAirspeed": {
+        "isConsistent": [
+            [
+                "bad_im_udata",
+                "tas_test_ratio"
+            ],
+            0
+        ],
+        "tasTestRatio": [
+            [
+                "var_innov_vtas",
+                "sq_ftypefrontend__tas_innov_gate",
+                "sq_innov_vtas"
+            ],
+            0
+        ],
+        "innovVtas": [
+            [
+                "tas_data_delayed_tas",
+                "vtas_pred"
+            ],
+            0
+        ],
+        "tasTimeout": [
+            [
+                "last_tas_pass_time_ms",
+                "frontend_tas_retry_time_ms",
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "varInnovVtas": [
+            [
+                "sk_tas"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "kh",
+                "p",
+                "j",
+                "i"
+            ],
+            0
+        ],
+        "VtasPred": [
+            [
+                "norm_ve",
+                "state_struct_velocity_z",
+                "state_struct_wind_vel_x",
+                "state_struct_velocity_x",
+                "norm_vwe"
+            ],
+            3
+        ],
+        "vwe": [
+            [
+                "state_struct_wind_vel_y"
+            ],
+            0
+        ],
+        "lastTasPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "stateIndex": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "ve": [
+            [
+                "state_struct_velocity_y"
+            ],
+            0
+        ],
+        "lastTasFailTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "sh_tas",
+                "tas_data_delayed_tas_variance",
+                "p",
+                "state_struct_velocity_z"
+            ],
+            1
+        ]
+    },
+    "SelectTasFusion": {
+        "prevTasStep_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ]
+    },
+    "SelectBetaDragFusion": {
+        "f_beta_feasible": [
+            [
+                "inhibit_wind_states",
+                "assume_zero_sideslip"
+            ],
+            0
+        ],
+        "f_required": [
+            [
+                "frontend__beta_mask",
+                "is_dead_reckoning",
+                "no_yaw_sensor"
+            ],
+            0
+        ],
+        "prevBetaDragStep_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "noYawSensor": [
+            [
+                "use_compass",
+                "using_noncompass_for_yaw"
+            ],
+            0
+        ],
+        "dragTimeout": [
+            [
+                "imu_sample_time_ms",
+                "frontend_drag_fail_time_limit_ms",
+                "last_drag_pass_time_ms"
+            ],
+            0
+        ],
+        "f_timeTrigger": [
+            [
+                "imu_sample_time_ms",
+                "prev_beta_drag_step_ms",
+                "frontend_beta_avg_ms"
+            ],
+            0
+        ]
+    },
+    "FuseSideslip": {
+        "innovBeta": [
+            [
+                "constrain_ftype_vel_rel_wind_x",
+                "constrain_ftype_vel_rel_wind_y"
+            ],
+            0
+        ],
+        "vel_rel_wind": [
+            [
+                "prev_tnb"
+            ],
+            0
+        ],
+        "stateIndex": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "vel_rel_wind.z": [
+            [
+                "state_struct_velocity_z"
+            ],
+            1
+        ],
+        "vel_rel_wind.x": [
+            [
+                "state_struct_velocity_x",
+                "state_struct_wind_vel_x"
+            ],
+            2
+        ],
+        "temp": [
+            [
+                "r_beta",
+                "sh_beta",
+                "state_struct_quat",
+                "p",
+                "state_struct_quat",
+                "state_struct_quat",
+                "state_struct_quat"
+            ],
+            4
+        ],
+        "res": [
+            [
+                "j",
+                "kh",
+                "i",
+                "p"
+            ],
+            0
+        ],
+        "vel_rel_wind.y": [
+            [
+                "state_struct_velocity_y",
+                "state_struct_wind_vel_y"
+            ],
+            2
+        ]
+    },
+    "FuseDragForces": {
+        "HK30": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK0": [
+            [
+                "state_struct_velocity_x",
+                "state_struct_wind_vel_y",
+                "state_struct_wind_vel_x",
+                "state_struct_velocity_y"
+            ],
+            4
+        ],
+        "HK13": [
+            [
+                "hk11",
+                "hk7"
+            ],
+            0
+        ],
+        "HK2": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "hk0",
+                "state_struct_quat",
+                "state_struct_velocity_z",
+                "hk1",
+                "state_struct_quat"
+            ],
+            5
+        ],
+        "HK17": [
+            [
+                "hk6"
+            ],
+            0
+        ],
+        "HK4": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "hk0",
+                "state_struct_quat",
+                "state_struct_velocity_z",
+                "hk1",
+                "state_struct_quat"
+            ],
+            5
+        ],
+        "HK14": [
+            [
+                "hk5",
+                "hk4"
+            ],
+            0
+        ],
+        "predAccel": [
+            [
+                "rel_wind_earth",
+                "prev_tnb",
+                "sq_rel_wind_body",
+                "frontend__momentum_drag_coef_get",
+                "state_struct_accel_bias",
+                "axis_index",
+                "dt_ekf_avg",
+                "drag_sample_delayed_accel_xy",
+                "frontend__ballistic_coef_x",
+                "drag_force_sign",
+                "frontend__ballistic_coef_y",
+                "sq_dal_get_eas2tas",
+                "fmax_f_density_ratio"
+            ],
+            7
+        ],
+        "using_bcoef_y": [
+            [
+                "frontend__ballistic_coef_y"
+            ],
+            1
+        ],
+        "HK10": [
+            [
+                "hk9",
+                "hk3",
+                "kaccy"
+            ],
+            0
+        ],
+        "using_mcoef": [
+            [
+                "frontend__momentum_drag_coef_get"
+            ],
+            1
+        ],
+        "HK15": [
+            [
+                "hk2"
+            ],
+            0
+        ],
+        "HK20": [
+            [
+                "hk14",
+                "hk9",
+                "hk19",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK24": [
+            [
+                "hk14",
+                "hk9",
+                "hk21",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "lastDragPassTime_ms": [
+            [
+                "imu_sample_time_ms"
+            ],
+            0
+        ],
+        "airSpd": [
+            [
+                "sqrt_f_sq",
+                "frontend__momentum_drag_coef_get",
+                "sqrt_f_mea_acc",
+                "sqrt_f_fabs_f",
+                "frontend__ballistic_coef_x",
+                "sqrt_f_bcoef_y",
+                "frontend__ballistic_coef_y",
+                "sqrt_f_bcoef_x",
+                "fmax_f_density_ratio",
+                "sqrt_f_mcoef",
+                "fabs_f_mea_acc"
+            ],
+            4
+        ],
+        "HK6": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "hk0",
+                "state_struct_quat",
+                "hk1",
+                "state_struct_velocity_z",
+                "state_struct_quat"
+            ],
+            5
+        ],
+        "HK26": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk25",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK27": [
+            [
+                "hk19",
+                "hk21",
+                "hk7",
+                "hk9"
+            ],
+            0
+        ],
+        "HK16": [
+            [
+                "hk5",
+                "hk4"
+            ],
+            0
+        ],
+        "HK32": [
+            [
+                "innov_drag_var_y",
+                "kaccx",
+                "kaccy",
+                "innov_drag_var_x"
+            ],
+            0
+        ],
+        "HK19": [
+            [
+                "p",
+                "hk12",
+                "sq_kaccy"
+            ],
+            0
+        ],
+        "HK21": [
+            [
+                "hk13",
+                "p",
+                "sq_kaccx"
+            ],
+            0
+        ],
+        "HK11": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "state_struct_quat",
+                "state_struct_quat"
+            ],
+            4
+        ],
+        "using_bcoef_x": [
+            [
+                "frontend__ballistic_coef_x"
+            ],
+            1
+        ],
+        "HK3": [
+            [
+                "kaccx",
+                "kaccy"
+            ],
+            0
+        ],
+        "HK7": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "state_struct_quat",
+                "sq_q3",
+                "sq_q2",
+                "sq_q1",
+                "state_struct_quat",
+                "sq_q0"
+            ],
+            4
+        ],
+        "HK23": [
+            [
+                "hk14",
+                "hk19",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK28": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk25",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "innovDragVar.y": [
+            [
+                "hk14",
+                "hk23",
+                "r_acc",
+                "hk19",
+                "hk20",
+                "hk30",
+                "hk28",
+                "hk27",
+                "hk31",
+                "hk26",
+                "hk15",
+                "hk17",
+                "hk16",
+                "hk12",
+                "hk24",
+                "hk22",
+                "hk29",
+                "hk18"
+            ],
+            0
+        ],
+        "HK12": [
+            [
+                "hk11",
+                "hk9"
+            ],
+            0
+        ],
+        "dragForceSign": [
+            [
+                "is_positive_axis_index",
+                "is_positive_rel_wind_body"
+            ],
+            0
+        ],
+        "HK18": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK29": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK9": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "state_struct_quat",
+                "sq_q3",
+                "sq_q2",
+                "sq_q1",
+                "state_struct_quat",
+                "sq_q0"
+            ],
+            4
+        ],
+        "HK22": [
+            [
+                "hk14",
+                "hk9",
+                "hk21",
+                "hk17",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "HK31": [
+            [
+                "hk14",
+                "hk9",
+                "hk17",
+                "hk7",
+                "p",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk12"
+            ],
+            0
+        ],
+        "res": [
+            [
+                "p",
+                "j",
+                "i",
+                "kh"
+            ],
+            0
+        ],
+        "HK1": [
+            [
+                "state_struct_velocity_x",
+                "state_struct_wind_vel_y",
+                "state_struct_wind_vel_x",
+                "state_struct_velocity_y"
+            ],
+            4
+        ],
+        "Kaccx": [
+            [
+                "fmax_f_density_ratio",
+                "frontend__momentum_drag_coef_get",
+                "air_spd",
+                "fmax_f_1e",
+                "fmax_f_mcoef",
+                "fmax_f_bcoef_x",
+                "fmax_f_rho",
+                "sq_dal_get_eas2tas"
+            ],
+            2
+        ],
+        "Kaccy": [
+            [
+                "fmax_f_density_ratio",
+                "frontend__momentum_drag_coef_get",
+                "air_spd",
+                "fmax_f_1e",
+                "fmax_f_mcoef",
+                "fmax_f_bcoef_y",
+                "fmax_f_rho",
+                "sq_dal_get_eas2tas"
+            ],
+            2
+        ],
+        "HK8": [
+            [
+                "kaccx",
+                "hk3",
+                "hk7"
+            ],
+            0
+        ],
+        "HK5": [
+            [
+                "state_struct_quat",
+                "state_struct_quat",
+                "hk0",
+                "state_struct_quat",
+                "state_struct_velocity_z",
+                "hk1",
+                "state_struct_quat"
+            ],
+            5
+        ],
+        "R_ACC": [
+            [
+                "sq_frontend__drag_obs_noise",
+                "sq_fmax_f"
+            ],
+            0
+        ],
+        "innovDragVar.x": [
+            [
+                "hk14",
+                "hk21",
+                "hk23",
+                "r_acc",
+                "hk17",
+                "hk20",
+                "hk30",
+                "hk28",
+                "hk27",
+                "hk31",
+                "hk26",
+                "hk15",
+                "hk13",
+                "hk16",
+                "hk24",
+                "hk22",
+                "hk29",
+                "hk18"
+            ],
+            0
+        ],
+        "HK25": [
+            [
+                "hk9",
+                "p",
+                "hk7"
+            ],
+            0
+        ]
+    }
+}

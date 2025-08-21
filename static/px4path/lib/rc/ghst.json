@@ -1,0 +1,129 @@
+{
+    "ghst_config": {
+        "ret_val": [
+            [
+                "tcsetattr_uart_fd",
+                "tcsetattr_tcsanow",
+                "tcsetattr_t"
+            ],
+            0
+        ]
+    },
+    "ghst_parse": {
+        "frame": [
+            [
+                "sizeof_current_frame_position",
+                "sizeof_ghst_frame_t"
+            ],
+            1
+        ],
+        "parser_state": [
+            [
+                "unsynced"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "sizeof_current_frame_position",
+                "sizeof_ghst_frame_t"
+            ],
+            1
+        ],
+        "current_frame_position": [
+            [
+                "sizeof_current_frame_position",
+                "sizeof_ghst_frame_t",
+                "0u"
+            ],
+            1
+        ],
+        "ghst_frame_ptr": [
+            [
+                "uint8_t",
+                "ghst_frame"
+            ],
+            0
+        ]
+    },
+    "ghst_parse_buffer": {
+        "ghst_frame_ptr": [
+            [
+                "ghst_frame",
+                "uint8_t"
+            ],
+            0
+        ],
+        "num_values": [
+            [
+                "max_channels",
+                "ghst_max_num_channels"
+            ],
+            0
+        ],
+        "link_stats": [
+            [
+                "last_link_stats"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "ghst_frame_header_length",
+                "ghst_frame_payload",
+                "2u"
+            ],
+            0
+        ],
+        "rcChannels": [
+            [
+                "ghst_frame_payload",
+                "ghst_payload_data_t"
+            ],
+            0
+        ],
+        "current_frame_position": [
+            [
+                "1u",
+                "1u",
+                "3u",
+                "ghst_frame_header_length",
+                "sizeof_ghst_frame_header_t",
+                "0u"
+            ],
+            3
+        ],
+        "last_link_stats.rssi_dbm": [
+            [
+                "rssi_values_rssid_bm"
+            ],
+            0
+        ],
+        "parser_state": [
+            [
+                "unsynced",
+                "synced"
+            ],
+            0
+        ],
+        "rssiValues": [
+            [
+                "ghst_payload_rssi_t",
+                "ghst_frame_payload"
+            ],
+            0
+        ],
+        "last_link_stats.link_quality": [
+            [
+                "rssi_values_lq"
+            ],
+            0
+        ]
+    }
+}

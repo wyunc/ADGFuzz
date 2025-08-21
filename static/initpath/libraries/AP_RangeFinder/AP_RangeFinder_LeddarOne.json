@@ -1,0 +1,60 @@
+{
+    "get_reading": {
+        "last_available_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "modbus_status": [
+            [
+                "leddarone_modbus_state_sent_request",
+                "read_len",
+                "leddarone_modbus_state_pre_send_request",
+                "leddarone_modbus_state_available",
+                "leddarone_modbus_state_init"
+            ],
+            0
+        ],
+        "last_sending_request_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "leddarone_status": [
+            [
+                "parse_response_number_detections"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "number_detections",
+                "sum_distance_mm"
+            ],
+            0
+        ]
+    },
+    "CRC16": {
+        "lCRCLo": [
+            [
+                "lowbyte_crc"
+            ],
+            0
+        ],
+        "lCRCHi": [
+            [
+                "highbyte_crc"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "calc_crc_modbus_a_length",
+                "calc_crc_modbus_a_buffer"
+            ],
+            0
+        ]
+    }
+}

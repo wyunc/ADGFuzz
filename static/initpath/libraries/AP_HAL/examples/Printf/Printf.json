@@ -1,0 +1,25 @@
+{
+    "test_printf_floats": {
+        "ret": [
+            [
+                "_fmt",
+                "hal_util_snprintf_sizeof",
+                "i",
+                "float_tests",
+                "double",
+                "hal_util_snprintf_buf",
+                "_v"
+            ],
+            0
+        ]
+    },
+    "test_printf_null_termination": {
+        "ret": [
+            [
+                "hal_util_snprintf_buf",
+                "hal_util_snprintf_sizeof"
+            ],
+            0
+        ]
+    }
+}

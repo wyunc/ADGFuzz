@@ -1,0 +1,67 @@
+{
+    "check_battery_disconnected": {
+        "recent_battery_measurement": [
+            [
+                "1_s",
+                "hrt_absolute_time",
+                "battery_status_sub_get_timestamp"
+            ],
+            0
+        ]
+    },
+    "set_motor_actuators": {
+        "actuator_test.function": [
+            [
+                "function_motor1",
+                "i"
+            ],
+            0
+        ],
+        "actuator_test.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "actuator_test.value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "actuator_test.action": [
+            [
+                "action_release_control",
+                "release_control",
+                "action_do_control"
+            ],
+            0
+        ]
+    },
+    "do_esc_calibration": {
+        "now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current_before_calibration": [
+            [
+                "battery_status_sub_get_current_a"
+            ],
+            0
+        ],
+        "timeout_start": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "battery_connected_before_calibration": [
+            [
+                "battery_status_sub_get_connected"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,1003 @@
+{
+    "init": {
+        "bc": [
+            [
+                "board_config"
+            ],
+            0
+        ],
+        "_commands_max": [
+            [
+                "ap_mission_eeprom_command_size",
+                "_storage_size",
+                "4u"
+            ],
+            0
+        ],
+        "_last_change_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "size_kb": [
+            [
+                "bc_get_sdcard_mission_kb"
+            ],
+            0
+        ],
+        "_failed_sdcard_storage": [
+            [
+                "_storage_attach_file_size_kb",
+                "_storage_attach_file_ap_mission_sdcard_filename"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "_flags.state": [
+            [
+                "mission_running"
+            ],
+            0
+        ]
+    },
+    "stop": {
+        "_flags.state": [
+            [
+                "mission_stopped"
+            ],
+            0
+        ]
+    },
+    "resume": {
+        "_flags.state": [
+            [
+                "mission_running"
+            ],
+            0
+        ],
+        "_nav_cmd": [
+            [
+                "tmp_cmd"
+            ],
+            1
+        ]
+    },
+    "starts_with_takeoff_cmd": {
+        "cmd_index": [
+            [
+                "_nav_cmd_index",
+                "ap_mission_first_real_command",
+                "_restart",
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "reset": {
+        "_prev_nav_cmd_id": [
+            [
+                "ap_mission_cmd_id_none"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_wp_index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_do_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_nav_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "clear": {
+        "_flags.state": [
+            [
+                "mission_stopped"
+            ],
+            0
+        ],
+        "_nav_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_do_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "truncate": {
+        "_last_change_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_last_change_time_prev_ms": [
+            [
+                "_last_change_time_ms"
+            ],
+            0
+        ],
+        "persistent_data.waypoint_num": [
+            [
+                "_nav_cmd_index"
+            ],
+            0
+        ]
+    },
+    "start_command": {
+        "_jump_tag.tag": [
+            [
+                "cmd_content_jump_target"
+            ],
+            0
+        ]
+    },
+    "add_cmd": {
+        "cmd.index": [
+            [
+                "_cmd_total"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "write_cmd_to_storage_cmd",
+                "write_cmd_to_storage__cmd_total"
+            ],
+            0
+        ]
+    },
+    "is_nav_cmd": {
+        "cmd.id": [
+            [
+                "mav_cmd_nav_attitude_time"
+            ],
+            0
+        ]
+    },
+    "get_next_nav_cmd": {
+        "cmd_index": [
+            [
+                "start_index"
+            ],
+            0
+        ]
+    },
+    "set_current_cmd": {
+        "_flags.state": [
+            [
+                "mission_stopped"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_wp_index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_nav_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ],
+        "_do_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ],
+        "_do_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_id": [
+            [
+                "ap_mission_cmd_id_none"
+            ],
+            0
+        ],
+        "_nav_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "cmd_index"
+            ],
+            0
+        ]
+    },
+    "restart_current_nav_cmd": {
+        "nav_cmd_index": [
+            [
+                "get_current_nav_index"
+            ],
+            0
+        ]
+    },
+    "get_item": {
+        "tmp.command": [
+            [
+                "cmd_id"
+            ],
+            0
+        ],
+        "ret_packet": [
+            [
+                "tmp"
+            ],
+            0
+        ],
+        "tmp.seq": [
+            [
+                "index"
+            ],
+            0
+        ]
+    },
+    "read_cmd_from_storage": {
+        "cmd.content.location.loiter_ccw": [
+            [
+                "packed_content_location_flags_loiter_ccw"
+            ],
+            0
+        ],
+        "cmd.p1": [
+            [
+                "_storage_read_uint16_pos_in_storage"
+            ],
+            0
+        ],
+        "cmd.content.location.alt": [
+            [
+                "packed_content_location_alt"
+            ],
+            0
+        ],
+        "cmd.content.location": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "cmd.content.location.origin_alt": [
+            [
+                "packed_content_location_flags_origin_alt"
+            ],
+            0
+        ],
+        "cmd.id": [
+            [
+                "_storage_read_uint16_pos_in_storage",
+                "_storage_read_byte_pos_in_storage",
+                "mav_cmd_nav_waypoint"
+            ],
+            1
+        ],
+        "cmd.content.location.lng": [
+            [
+                "packed_content_location_lng"
+            ],
+            0
+        ],
+        "cmd.content.location.lat": [
+            [
+                "packed_content_location_lat"
+            ],
+            0
+        ],
+        "cmd.index": [
+            [
+                "index"
+            ],
+            0
+        ],
+        "cmd.content.location.relative_alt": [
+            [
+                "packed_content_location_flags_relative_alt"
+            ],
+            0
+        ],
+        "pos_in_storage": [
+            [
+                "index",
+                "ap_mission_eeprom_command_size"
+            ],
+            0
+        ],
+        "cmd.content.location.terrain_alt": [
+            [
+                "packed_content_location_flags_terrain_alt"
+            ],
+            0
+        ],
+        "cmd.content.location.loiter_xtrack": [
+            [
+                "packed_content_location_flags_loiter_xtrack"
+            ],
+            0
+        ]
+    },
+    "write_cmd_to_storage": {
+        "_last_change_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "packed.location.flags.relative_alt": [
+            [
+                "cmd_content_location_relative_alt"
+            ],
+            0
+        ],
+        "packed.location.alt": [
+            [
+                "cmd_content_location_alt"
+            ],
+            0
+        ],
+        "packed.location.flags.type_specific_bit_1": [
+            [
+                "1u",
+                "cmd_type_specific_bits"
+            ],
+            0
+        ],
+        "packed.location.lng": [
+            [
+                "cmd_content_location_lng"
+            ],
+            0
+        ],
+        "packed.location.flags.loiter_ccw": [
+            [
+                "cmd_content_location_loiter_ccw"
+            ],
+            0
+        ],
+        "packed.location.flags.origin_alt": [
+            [
+                "cmd_content_location_origin_alt"
+            ],
+            0
+        ],
+        "packed.location.flags.type_specific_bit_0": [
+            [
+                "1u",
+                "cmd_type_specific_bits"
+            ],
+            0
+        ],
+        "pos_in_storage": [
+            [
+                "ap_mission_eeprom_command_size",
+                "index"
+            ],
+            0
+        ],
+        "packed.location.flags.loiter_xtrack": [
+            [
+                "cmd_content_location_loiter_xtrack"
+            ],
+            0
+        ],
+        "packed.location.lat": [
+            [
+                "cmd_content_location_lat"
+            ],
+            0
+        ],
+        "packed.location.flags.terrain_alt": [
+            [
+                "cmd_content_location_terrain_alt"
+            ],
+            0
+        ]
+    },
+    "write_home_to_storage": {
+        "home_cmd.content.location": [
+            [
+                "ahrs_get_home"
+            ],
+            0
+        ],
+        "home_cmd.id": [
+            [
+                "mav_cmd_nav_waypoint"
+            ],
+            0
+        ]
+    },
+    "mission_cmd_to_mavlink_int": {
+        "packet.seq": [
+            [
+                "cmd_index"
+            ],
+            0
+        ],
+        "packet.param2": [
+            [
+                "cmd_content_repeat_relay_repeat_count",
+                "cmd_content_mount_control_roll",
+                "cmd_content_nav_delay_hour_utc",
+                "cmd_p1",
+                "cmd_content_digicam_control_zoom_pos",
+                "cmd_content_repeat_servo_pwm",
+                "packet_param2",
+                "cmd_content_do_engine_control_cold_start",
+                "cmd_content_digicam_configure_shutter_speed",
+                "cmd_content_relay_state",
+                "cmd_content_set_camera_zoom_zoom_value",
+                "cmd_content_gripper_action",
+                "cmd_content_image_start_capture_interval_s",
+                "lowbyte_cmd_p1",
+                "cmd_content_set_camera_focus_focus_value",
+                "cmd_content_jump_num_times",
+                "cmd_content_auxfunction_switchpos",
+                "cmd_content_guided_limits_alt_min",
+                "cmd_content_servo_pwm",
+                "cmd_content_winch_action",
+                "cmd_content_gimbal_manager_pitchyaw_yaw_angle_deg",
+                "cmd_content_altitude_wait_descent_rate",
+                "cmd_content_scripting_p1",
+                "cmd_content_speed_target_ms",
+                "cmd_content_set_camera_source_primary_source",
+                "cmd_content_yaw_turn_rate_dps",
+                "cmd_content_nav_script_time_timeout_s",
+                "cmd_content_nav_attitude_time_roll_deg",
+                "cmd_content_set_yaw_speed_speed"
+            ],
+            0
+        ],
+        "packet.z": [
+            [
+                "cmd_content_location_alt",
+                "mav_mount_mode_mavlink_targeting",
+                "cmd_content_gimbal_manager_pitchyaw_gimbal_id",
+                "cmd_content_digicam_configure_engine_cutoff_time"
+            ],
+            0
+        ],
+        "packet.x": [
+            [
+                "cmd_content_nav_attitude_time_climb_rate",
+                "cmd_content_location_lat",
+                "cmd_content_nav_script_time_arg3",
+                "cmd_content_digicam_control_shooting_cmd",
+                "cmd_content_digicam_configure_exposure_type",
+                "cmd_content_gimbal_manager_pitchyaw_flags"
+            ],
+            0
+        ],
+        "packet.frame": [
+            [
+                "mav_frame_global_terrain_alt",
+                "mav_frame_global_relative_alt",
+                "mav_frame_global"
+            ],
+            0
+        ],
+        "packet.command": [
+            [
+                "cmd_id"
+            ],
+            0
+        ],
+        "packet.param4": [
+            [
+                "cmd_content_nav_delay_sec_utc",
+                "cmd_content_yaw_relative_angle",
+                "cmd_content_nav_attitude_time_yaw_deg",
+                "cmd_content_scripting_p3",
+                "cmd_content_digicam_control_focus_lock",
+                "engine_control_options_allow_start_while_disarmed",
+                "cmd_content_location_loiter_xtrack",
+                "cmd_content_digicam_configure_iso",
+                "cmd_content_nav_script_time_arg2_get",
+                "cmd_content_guided_limits_horiz_max",
+                "cmd_content_winch_release_rate",
+                "cmd_content_gimbal_manager_pitchyaw_yaw_rate_degs",
+                "cmd_content_image_start_capture_start_seq_number",
+                "cmd_content_repeat_servo_cycle_time",
+                "cmd_content_location_loiter_ccw"
+            ],
+            0
+        ],
+        "packet.param3": [
+            [
+                "cmd_content_nav_script_time_arg1_get",
+                "cmd_p1",
+                "cmd_content_winch_release_length",
+                "cmd_content_altitude_wait_wiggle_time",
+                "cmd_content_do_engine_control_height_delay_cm",
+                "cmd_content_yaw_direction",
+                "packet_param3",
+                "cmd_content_repeat_relay_cycle_time",
+                "highbyte_cmd_p1",
+                "cmd_content_cam_trigg_dist_trigger",
+                "cmd_content_digicam_control_zoom_step",
+                "float",
+                "cmd_content_mount_control_yaw",
+                "cmd_content_set_yaw_speed_relative_angle",
+                "cmd_content_gimbal_manager_pitchyaw_pitch_rate_degs",
+                "cmd_content_speed_throttle_pct",
+                "cmd_content_set_camera_source_secondary_source",
+                "cmd_content_repeat_servo_repeat_count",
+                "cmd_content_nav_attitude_time_pitch_deg",
+                "cmd_content_digicam_configure_aperture",
+                "cmd_content_image_start_capture_total_num_images",
+                "cmd_content_guided_limits_alt_max",
+                "cmd_content_scripting_p2"
+            ],
+            0
+        ],
+        "packet.y": [
+            [
+                "cmd_content_digicam_configure_cmd_id",
+                "cmd_content_digicam_control_cmd_id",
+                "cmd_content_nav_script_time_arg4",
+                "cmd_content_location_lng"
+            ],
+            0
+        ],
+        "packet.param1": [
+            [
+                "cmd_content_nav_attitude_time_time_sec",
+                "cmd_p1",
+                "cmd_content_repeat_relay_num",
+                "cmd_content_set_camera_zoom_zoom_type",
+                "cmd_content_nav_delay_seconds",
+                "cmd_content_video_start_capture_video_stream_id",
+                "cmd_content_do_vtol_transition_target_state",
+                "cmd_content_do_engine_control_start_control",
+                "cmd_content_jump_target",
+                "cmd_content_speed_speed_type",
+                "cmd_content_set_camera_focus_focus_type",
+                "cmd_content_set_camera_source_instance",
+                "cmd_content_gripper_num",
+                "cmd_content_nav_script_time_command",
+                "cmd_content_video_stop_capture_video_stream_id",
+                "cmd_content_relay_num",
+                "cmd_content_servo_channel",
+                "lowbyte_cmd_p1",
+                "cmd_content_cam_trigg_dist_meters",
+                "cmd_content_auxfunction_function",
+                "cmd_content_mount_control_pitch",
+                "cmd_content_digicam_configure_shooting_mode",
+                "cmd_content_delay_seconds",
+                "cmd_content_gimbal_manager_pitchyaw_pitch_angle_deg",
+                "cmd_content_set_yaw_speed_angle_deg",
+                "cmd_content_repeat_servo_channel",
+                "cmd_content_image_start_capture_instance",
+                "cmd_content_distance_meters",
+                "cmd_content_digicam_control_session",
+                "cmd_content_yaw_angle_deg",
+                "cmd_content_winch_num",
+                "cmd_content_altitude_wait_altitude"
+            ],
+            0
+        ]
+    },
+    "complete": {
+        "_flags.state": [
+            [
+                "mission_complete"
+            ],
+            0
+        ]
+    },
+    "advance_current_nav_cmd": {
+        "_prev_nav_cmd_wp_index": [
+            [
+                "_nav_cmd_index"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_index": [
+            [
+                "_nav_cmd_index"
+            ],
+            0
+        ],
+        "cmd_index": [
+            [
+                "starting_index",
+                "ap_mission_first_real_command",
+                "_nav_cmd_index"
+            ],
+            0
+        ],
+        "_do_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ],
+        "_prev_nav_cmd_id": [
+            [
+                "_nav_cmd_id"
+            ],
+            0
+        ],
+        "_nav_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ],
+        "_do_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "advance_current_do_cmd": {
+        "cmd_index": [
+            [
+                "ap_mission_first_real_command",
+                "_do_cmd_index"
+            ],
+            0
+        ],
+        "_do_cmd": [
+            [
+                "cmd"
+            ],
+            0
+        ]
+    },
+    "get_next_cmd": {
+        "cmd": [
+            [
+                "temp_cmd"
+            ],
+            0
+        ],
+        "cmd_index": [
+            [
+                "start_index",
+                "temp_cmd_content_jump_target"
+            ],
+            0
+        ],
+        "temp_cmd.content.jump.target": [
+            [
+                "get_index_of_jump_tag_temp_cmd_content_jump_target"
+            ],
+            0
+        ],
+        "temp_cmd.id": [
+            [
+                "mav_cmd_do_jump"
+            ],
+            0
+        ],
+        "jump_index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "get_next_do_cmd": {
+        "cmd": [
+            [
+                "temp_cmd"
+            ],
+            0
+        ]
+    },
+    "jump_to_tag": {
+        "index": [
+            [
+                "get_index_of_jump_tag_tag"
+            ],
+            0
+        ]
+    },
+    "get_last_jump_tag": {
+        "tag": [
+            [
+                "_jump_tag_tag"
+            ],
+            0
+        ],
+        "age": [
+            [
+                "_jump_tag_age"
+            ],
+            0
+        ]
+    },
+    "init_jump_tracking": {
+        ".index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "increment_jump_times_run": {
+        ".index": [
+            [
+                "cmd_index"
+            ],
+            0
+        ]
+    },
+    "check_eeprom_version": {
+        "eeprom_version": [
+            [
+                "_storage_read_uint32"
+            ],
+            0
+        ]
+    },
+    "jump_to_landing_sequence": {
+        "land_idx": [
+            [
+                "get_landing_sequence_start_current_loc"
+            ],
+            0
+        ]
+    },
+    "jump_to_closest_mission_leg": {
+        "landing_start_index": [
+            [
+                "tmp_index"
+            ],
+            0
+        ],
+        "min_distance": [
+            [
+                "tmp_distance"
+            ],
+            0
+        ]
+    },
+    "jump_to_abort_landing_sequence": {
+        "count": [
+            [
+                "num_commands"
+            ],
+            0
+        ],
+        "min_distance": [
+            [
+                "tmp_content_location_get_distance_current_loc",
+                "flt_max"
+            ],
+            1
+        ],
+        "abort_index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "is_best_land_sequence": {
+        "do_land_start_index": [
+            [
+                "get_landing_sequence_start_current_loc"
+            ],
+            0
+        ]
+    },
+    "distance_to_landing": {
+        "prev_loc": [
+            [
+                "temp_cmd_content_location"
+            ],
+            0
+        ],
+        "tot_distance": [
+            [
+                "prev_loc_get_distance_temp_cmd_content_location"
+            ],
+            1
+        ],
+        "index": [
+            [
+                "temp_cmd_index"
+            ],
+            0
+        ]
+    },
+    "distance_to_mission_leg": {
+        "p.x": [
+            [
+                "mission_vector_x",
+                "p_x"
+            ],
+            0
+        ],
+        "prev_loc": [
+            [
+                "temp_cmd_content_location"
+            ],
+            0
+        ],
+        "mission_vector": [
+            [
+                "prev_loc_get_distance_ned_alt_frame_temp_cmd_content_location"
+            ],
+            0
+        ],
+        "p.y": [
+            [
+                "p_y",
+                "mission_vector_y"
+            ],
+            0
+        ],
+        "p.z": [
+            [
+                "mission_vector_z",
+                "p_z"
+            ],
+            0
+        ],
+        "index": [
+            [
+                "temp_cmd_index",
+                "start_index"
+            ],
+            0
+        ],
+        "rejoin_index": [
+            [
+                "temp_cmd_index"
+            ],
+            0
+        ],
+        "rejoin_distance": [
+            [
+                "_length",
+                "prev_loc_get_distance_ned_alt_frame_current_loc",
+                "pos_projected_mission_vector",
+                "prev_loc_get_distance_ned_alt_frame_current_loc_length"
+            ],
+            3
+        ]
+    },
+    "contains_item": {
+        "count": [
+            [
+                "num_commands"
+            ],
+            0
+        ]
+    },
+    "contains_terrain_alt_items": {
+        "_contains_terrain_alt_items": [
+            [
+                "calculate_contains_terrain_alt_items"
+            ],
+            0
+        ],
+        "_last_contains_relative_calculated_ms": [
+            [
+                "_last_change_time_ms"
+            ],
+            0
+        ]
+    },
+    "calculate_contains_terrain_alt_items": {
+        "count": [
+            [
+                "num_commands"
+            ],
+            0
+        ]
+    },
+    "reset_wp_history": {
+        "_resume_cmd.index": [
+            [
+                "ap_mission_cmd_index_none"
+            ],
+            0
+        ]
+    },
+    "calc_rewind_pos": {
+        "rewind_cmd": [
+            [
+                "temp_cmd"
+            ],
+            0
+        ],
+        "passed_wp_loc": [
+            [
+                "temp_cmd_content_location"
+            ],
+            0
+        ],
+        "rewind_cmd.content.location.alt": [
+            [
+                "passed_wp_loc_get_distance_temp_cmd_content_location",
+                "fabsf_rewind_distance",
+                "dist_vec_z"
+            ],
+            2
+        ],
+        "prev_loc": [
+            [
+                "temp_cmd_content_location",
+                "_exit_position"
+            ],
+            0
+        ],
+        "dist_vec": [
+            [
+                "passed_wp_loc_get_distance_ned_temp_cmd_content_location"
+            ],
+            0
+        ],
+        "resume_index": [
+            [
+                "last_wp_passed"
+            ],
+            1
+        ],
+        "rewind_distance": [
+            [
+                "_repeat_dist",
+                "prev_loc_get_distance_temp_cmd_content_location"
+            ],
+            1
+        ]
+    },
+    "format_conversion": {
+        "new_fmt.command": [
+            [
+                "old_fmt_command"
+            ],
+            0
+        ],
+        "new_fmt.timeout_s": [
+            [
+                "old_fmt_timeout_s"
+            ],
+            0
+        ]
+    }
+}

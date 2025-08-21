@@ -1,0 +1,89 @@
+{
+    "heap_create": {
+        "max_heap_size": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "magic": [
+            [
+                "heap_magic"
+            ],
+            0
+        ],
+        "new_heap": [
+            [
+                "malloc_heap",
+                "malloc_struct",
+                "malloc_sizeof",
+                "heap",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "heap_destroy": {
+        "heapp": [
+            [
+                "heap_ptr",
+                "heap",
+                "struct"
+            ],
+            0
+        ]
+    },
+    "heap_allocate": {
+        "allocation_size": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "header": [
+            [
+                "malloc_size",
+                "malloc_heap_allocation_header",
+                "heap_allocation_header",
+                "malloc_sizeof"
+            ],
+            0
+        ],
+        "hp": [
+            [
+                "struct",
+                "heap_ptr",
+                "heap"
+            ],
+            1
+        ],
+        "current_heap_usage": [
+            [
+                "size"
+            ],
+            0
+        ]
+    },
+    "heap_free": {
+        "header": [
+            [
+                "heap_allocation_header",
+                "ptr",
+                "struct"
+            ],
+            0
+        ],
+        "current_heap_usage": [
+            [
+                "header_allocation_size"
+            ],
+            1
+        ],
+        "heapp": [
+            [
+                "header_hp"
+            ],
+            0
+        ]
+    }
+}

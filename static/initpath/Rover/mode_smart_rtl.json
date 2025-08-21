@@ -1,0 +1,43 @@
+{
+    "_enter": {
+        "smart_rtl_state": [
+            [
+                "wait_for_path_cleanup"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "_loitering": [
+            [
+                "rover_mode_loiter_enter"
+            ],
+            0
+        ],
+        "smart_rtl_state": [
+            [
+                "failure",
+                "stop_at_home",
+                "path_follow"
+            ],
+            0
+        ]
+    },
+    "get_desired_location": {
+        "destination": [
+            [
+                "g2_wp_nav_get_destination"
+            ],
+            0
+        ]
+    },
+    "save_position": {
+        "save_pos": [
+            [
+                "rover_control_mode",
+                "rover_mode_smartrtl"
+            ],
+            0
+        ]
+    }
+}

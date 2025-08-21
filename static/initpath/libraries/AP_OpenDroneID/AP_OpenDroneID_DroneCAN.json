@@ -1,0 +1,73 @@
+{
+    "dronecan_init": {
+        "driver_mask": [
+            [
+                "1u",
+                "uavcan_get_driver_index"
+            ],
+            1
+        ]
+    },
+    "dronecan_send_location": {
+        "pkt": [
+            [
+                "pkt_location"
+            ],
+            0
+        ]
+    },
+    "dronecan_send_basic_id": {
+        "pkt": [
+            [
+                "pkt_basic_id"
+            ],
+            0
+        ]
+    },
+    "dronecan_send_system": {
+        "pkt": [
+            [
+                "pkt_system"
+            ],
+            0
+        ]
+    },
+    "dronecan_send_self_id": {
+        "pkt": [
+            [
+                "pkt_self_id"
+            ],
+            0
+        ]
+    },
+    "dronecan_send_operator_id": {
+        "pkt": [
+            [
+                "pkt_operator_id"
+            ],
+            0
+        ]
+    },
+    "handle_arm_status": {
+        "status.status": [
+            [
+                "msg_status"
+            ],
+            0
+        ]
+    },
+    "set_arm_status": {
+        "last_arm_status_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "arm_status": [
+            [
+                "status"
+            ],
+            0
+        ]
+    }
+}

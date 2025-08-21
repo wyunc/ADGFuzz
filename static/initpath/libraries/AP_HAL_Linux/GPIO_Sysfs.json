@@ -1,0 +1,93 @@
+{
+    "write": {
+        "fd": [
+            [
+                "_open_pin_value_o_wronly",
+                "_open_pin_value_pin"
+            ],
+            0
+        ],
+        "pin": [
+            [
+                "pin_table",
+                "vpin"
+            ],
+            0
+        ]
+    },
+    "mode": {
+        "gpio_sysfs": [
+            [
+                "from_hal_gpio"
+            ],
+            0
+        ]
+    },
+    "_pinMode": {
+        "dir": [
+            [
+                "output"
+            ],
+            0
+        ]
+    },
+    "_open_pin_value": {
+        "r": [
+            [
+                "snprintf_gpio_path_max",
+                "snprintf_gpio_base_path",
+                "snprintf_path",
+                "snprintf_pin"
+            ],
+            0
+        ]
+    },
+    "_export_pin": {
+        "r": [
+            [
+                "snprintf_gpio_base_path",
+                "snprintf_pin",
+                "snprintf_gpio_path",
+                "snprintf_gpio_path_max"
+            ],
+            0
+        ],
+        "pin": [
+            [
+                "pin_table",
+                "vpin"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "open_gpio_base_path",
+                "open_o_cloexec",
+                "open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "_gpio_script_write": {
+        "pv.value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "pv.pin": [
+            [
+                "vpin"
+            ],
+            0
+        ]
+    },
+    "_gpio_script_thread": {
+        "system_ret": [
+            [
+                "system_cmd"
+            ],
+            0
+        ]
+    }
+}

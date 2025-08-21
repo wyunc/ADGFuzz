@@ -1,0 +1,50 @@
+{
+    "test_page_program": {
+        "rdata": [
+            [
+                "jedec_dev_get_page_size",
+                "new",
+                "uint8_t"
+            ],
+            0
+        ],
+        "start_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "jedec_dev_get_page_size",
+                "new",
+                "uint8_t"
+            ],
+            0
+        ],
+        "chip_data": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "test_sector_erase": {
+        "next_check_ms": [
+            [
+                "delay_ms",
+                "millis"
+            ],
+            1
+        ]
+    },
+    "test_mass_erase": {
+        "next_check_ms": [
+            [
+                "delay_ms",
+                "millis"
+            ],
+            1
+        ]
+    }
+}

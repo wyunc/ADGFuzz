@@ -1,0 +1,62 @@
+{
+    "failsafe_short_on_event": {
+        "failsafe.state": [
+            [
+                "fstype"
+            ],
+            0
+        ],
+        "failsafe.short_timer_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "failsafe.saved_mode_number": [
+            [
+                "control_mode_mode_number"
+            ],
+            0
+        ]
+    },
+    "failsafe_long_on_event": {
+        "failsafe.state": [
+            [
+                "fstype"
+            ],
+            0
+        ],
+        "reason": [
+            [
+                "control_mode_name",
+                "gcs_failsafe"
+            ],
+            0
+        ]
+    },
+    "failsafe_short_off_event": {
+        "failsafe.state": [
+            [
+                "failsafe_none"
+            ],
+            0
+        ]
+    },
+    "failsafe_long_off_event": {
+        "failsafe.state": [
+            [
+                "failsafe_none"
+            ],
+            0
+        ]
+    },
+    "handle_battery_failsafe": {
+        "already_landing": [
+            [
+                "flight_stage",
+                "land"
+            ],
+            0
+        ]
+    }
+}

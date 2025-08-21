@@ -1,0 +1,42 @@
+{
+    "should_assist": {
+        "clear_delay_ms": [
+            [
+                "delay"
+            ],
+            1
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "allowed_envelope_error_cd": [
+            [
+                "500u"
+            ],
+            0
+        ],
+        "max_angle_cd": [
+            [
+                "angle",
+                "100u"
+            ],
+            0
+        ],
+        "height_above_ground": [
+            [
+                "plane_relative_ground_altitude_plane_g_rangefinder_landing"
+            ],
+            0
+        ],
+        "force_assist": [
+            [
+                "state",
+                "force_enabled"
+            ],
+            0
+        ]
+    }
+}

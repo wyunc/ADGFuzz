@@ -1,0 +1,22 @@
+{
+    "timer": {
+        "field": [
+            [
+                "buffer_rx",
+                "buffer_ry",
+                "buffer_rz",
+                "vector3f",
+                "range_scale"
+            ],
+            3
+        ]
+    },
+    "_dump_registers": {
+        "reg": [
+            [
+                "qmc5883p_reg_data_output_x"
+            ],
+            0
+        ]
+    }
+}

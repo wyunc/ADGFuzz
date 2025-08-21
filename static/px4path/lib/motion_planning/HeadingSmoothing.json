@@ -1,0 +1,26 @@
+{
+    "reset": {
+        "wrapped_heading": [
+            [
+                "wrap_pi_heading"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "unwrapped_heading_setpoint": [
+            [
+                "wrap_pi_heading_setpoint",
+                "wrap_pi_get_smoothed_heading",
+                "get_smoothed_heading"
+            ],
+            1
+        ],
+        "wrapped_current_heading": [
+            [
+                "wrap_pi_get_smoothed_heading"
+            ],
+            0
+        ]
+    }
+}

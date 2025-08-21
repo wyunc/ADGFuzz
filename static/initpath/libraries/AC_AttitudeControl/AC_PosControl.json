@@ -1,0 +1,897 @@
+{
+    "input_pos_xyz": {
+        "accel_max_z_cmss": [
+            [
+                "_accel_max_z_cmss",
+                "calculate_overspeed_gain"
+            ],
+            1
+        ],
+        "jerk_max_z_cmsss": [
+            [
+                "_jerk_max_z_cmsss",
+                "calculate_overspeed_gain"
+            ],
+            1
+        ],
+        "posz": [
+            [
+                "pos_z"
+            ],
+            0
+        ],
+        "vel_max_xy_cms": [
+            [
+                "dest_vector_xy_length",
+                "kinematic_limit__vel_max_xy_cms",
+                "kinematic_limit__vel_max_up_cms",
+                "kinematic_limit_dest_vector",
+                "kinematic_limit__vel_max_down_cms",
+                "pos_offset_z_scaler_terrain_buffer",
+                "pos_offset_z_scaler_pos_terrain_target"
+            ],
+            2
+        ],
+        "dest_vector": [
+            [
+                "pos",
+                "_tofloat",
+                "_pos_desired"
+            ],
+            0
+        ],
+        "vel_max_z_cms": [
+            [
+                "fabsf_dest_vector_z",
+                "fabsf_vel_max_cms"
+            ],
+            0
+        ]
+    },
+    "pos_offset_z_scaler": {
+        "pos_offset_error_z": [
+            [
+                "_pos_terrain",
+                "pos_offset_z",
+                "_pos_target_z",
+                "_inav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    },
+    "set_max_speed_accel_xy": {
+        "_jerk_max_xy_cmsss": [
+            [
+                "gravity_mss",
+                "_attitude_control_get_ang_vel_roll_max_rads__attitude_control_get_ang_vel_pitch_max_rads",
+                "safe_sqrt__jerk_max_xy_cmsss",
+                "_shaping_jerk_xy",
+                "safe_sqrt__accel_max_xy_cmss",
+                "safe_sqrt_snap_max_cmssss"
+            ],
+            1
+        ],
+        "_vel_max_xy_cms": [
+            [
+                "speed_cms"
+            ],
+            0
+        ],
+        "_accel_max_xy_cmss": [
+            [
+                "accel_cmss"
+            ],
+            0
+        ],
+        "snap_max_cmssss": [
+            [
+                "gravity_mss",
+                "_attitude_control_get_accel_roll_max_radss__attitude_control_get_accel_pitch_max_radss"
+            ],
+            0
+        ]
+    },
+    "relax_velocity_controller_xy": {
+        "decay": [
+            [
+                "_dt",
+                "poscontrol_relax_tc"
+            ],
+            0
+        ]
+    },
+    "init_xy_controller": {
+        "_last_update_xy_ticks": [
+            [
+                "scheduler_ticks32"
+            ],
+            0
+        ],
+        "angle_max": [
+            [
+                "_attitude_control_get_althold_lean_angle_max_cd_get_lean_angle_max_cd"
+            ],
+            0
+        ],
+        "_pitch_target": [
+            [
+                "att_target_euler_cd_y"
+            ],
+            0
+        ],
+        "_yaw_target": [
+            [
+                "att_target_euler_cd_z"
+            ],
+            0
+        ],
+        "att_target_euler_cd": [
+            [
+                "_attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ],
+        "_roll_target": [
+            [
+                "att_target_euler_cd_x"
+            ],
+            0
+        ],
+        "accel_max": [
+            [
+                "angle_to_accel_angle_max"
+            ],
+            0
+        ]
+    },
+    "update_offsets_xy": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "is_active_xy": {
+        "dt_ticks": [
+            [
+                "scheduler_ticks32",
+                "_last_update_xy_ticks"
+            ],
+            0
+        ]
+    },
+    "update_xy_controller": {
+        "comb_pos": [
+            [
+                "_inav_get_position_neu_cm"
+            ],
+            1
+        ],
+        "_last_update_xy_ticks": [
+            [
+                "scheduler_ticks32"
+            ],
+            0
+        ],
+        "accel_target": [
+            [
+                "_dt",
+                "_disturb_vel",
+                "_inav_get_velocity_xy_cms",
+                "_limit_vector_xy",
+                "_pid_vel_xy_update_all__vel_target_xy",
+                "ahrs_control_scale_xy"
+            ],
+            2
+        ],
+        "accel_max": [
+            [
+                "angle_to_accel_angle_max"
+            ],
+            0
+        ],
+        "accel_fwd_unlimited": [
+            [
+                "_ahrs_sin_yaw",
+                "_ahrs_cos_yaw",
+                "_limit_vector_x",
+                "_limit_vector_y"
+            ],
+            0
+        ],
+        "accel_fwd_limited": [
+            [
+                "_accel_target_x",
+                "_ahrs_cos_yaw",
+                "_ahrs_sin_yaw",
+                "_accel_target_y"
+            ],
+            0
+        ],
+        "angle_max": [
+            [
+                "_attitude_control_get_althold_lean_angle_max_cd_get_lean_angle_max_cd"
+            ],
+            0
+        ],
+        "vel_target": [
+            [
+                "_p_pos_xy_update_all__pos_target_x",
+                "_p_pos_xy_update_all_comb_pos",
+                "ahrs_control_scale_xy",
+                "_p_pos_xy_update_all__pos_target_y"
+            ],
+            0
+        ],
+        "_fwd_pitch_is_limited": [
+            [
+                "is_negative_pitch_target_unlimited",
+                "accel_to_angle_accel_fwd_limited",
+                "accel_to_angle_accel_fwd_unlimited",
+                "accel_to_angle_accel_max"
+            ],
+            2
+        ]
+    },
+    "set_max_speed_accel_z": {
+        "_jerk_max_z_cmsss": [
+            [
+                "min__pid_accel_z_filt_e_hz",
+                "_shaping_jerk_z",
+                "min__pid_accel_z_filt_t_hz",
+                "min_gravity_mss",
+                "min_m_2pi",
+                "min__accel_max_z_cmss"
+            ],
+            0
+        ],
+        "_vel_max_up_cms": [
+            [
+                "speed_up"
+            ],
+            0
+        ],
+        "_vel_max_down_cms": [
+            [
+                "fabsf_speed_down"
+            ],
+            1
+        ],
+        "_accel_max_z_cmss": [
+            [
+                "accel_cmss"
+            ],
+            0
+        ]
+    },
+    "init_z_controller_no_descent": {
+        "_vel_offset.z": [
+            [
+                "_vel_offset_z"
+            ],
+            0
+        ],
+        "_accel_offset.z": [
+            [
+                "_accel_offset_z"
+            ],
+            0
+        ],
+        "_accel_desired.z": [
+            [
+                "_accel_desired_z"
+            ],
+            0
+        ],
+        "_vel_target.z": [
+            [
+                "_vel_target_z"
+            ],
+            0
+        ],
+        "_accel_target.z": [
+            [
+                "_accel_target_z"
+            ],
+            0
+        ],
+        "_vel_desired.z": [
+            [
+                "_vel_desired_z"
+            ],
+            0
+        ]
+    },
+    "init_z_controller_stopping_point": {
+        "_pos_target.z": [
+            [
+                "_pos_offset_z",
+                "_pos_desired_z"
+            ],
+            0
+        ]
+    },
+    "init_z_controller": {
+        "_accel_target.z": [
+            [
+                "get_z_accel_cmss__accel_max_z_cmss"
+            ],
+            0
+        ],
+        "_vel_desired.z": [
+            [
+                "_vel_target_z",
+                "_vel_offset_z"
+            ],
+            0
+        ],
+        "_pos_desired.z": [
+            [
+                "_pos_offset_z",
+                "_pos_target_z"
+            ],
+            0
+        ],
+        "_last_update_z_ticks": [
+            [
+                "scheduler_ticks32"
+            ],
+            0
+        ],
+        "_accel_desired.z": [
+            [
+                "_accel_target_z",
+                "_accel_offset_z",
+                "_accel_terrain"
+            ],
+            0
+        ],
+        "_vel_target.z": [
+            [
+                "_inav_get_velocity_z_up_cms"
+            ],
+            0
+        ],
+        "_pos_target.z": [
+            [
+                "_inav_get_position_z_up_cm"
+            ],
+            0
+        ]
+    },
+    "input_accel_z": {
+        "jerk_max_z_cmsss": [
+            [
+                "_jerk_max_z_cmsss",
+                "calculate_overspeed_gain"
+            ],
+            0
+        ]
+    },
+    "input_vel_accel_z": {
+        "jerk_max_z_cmsss": [
+            [
+                "calculate_overspeed_gain",
+                "_jerk_max_z_cmsss"
+            ],
+            1
+        ],
+        "accel_max_z_cmss": [
+            [
+                "_accel_max_z_cmss",
+                "calculate_overspeed_gain"
+            ],
+            1
+        ]
+    },
+    "land_at_climb_rate_cm": {
+        "_limit_vector.z": [
+            [
+                "_limit_vector_z"
+            ],
+            0
+        ]
+    },
+    "input_pos_vel_accel_z": {
+        "accel_max_z_cmss": [
+            [
+                "_accel_max_z_cmss",
+                "calculate_overspeed_gain"
+            ],
+            1
+        ],
+        "jerk_max_z_cmsss": [
+            [
+                "calculate_overspeed_gain",
+                "_jerk_max_z_cmsss"
+            ],
+            1
+        ],
+        "pos": [
+            [
+                "posp"
+            ],
+            0
+        ]
+    },
+    "update_offsets_z": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_pos_offset_target.z": [
+            [
+                "_pos_offset_target_z",
+                "_pos_offset_z"
+            ],
+            1
+        ]
+    },
+    "is_active_z": {
+        "dt_ticks": [
+            [
+                "_last_update_z_ticks",
+                "scheduler_ticks32"
+            ],
+            0
+        ]
+    },
+    "update_z_controller": {
+        "z_accel_meas": [
+            [
+                "get_z_accel_cmss"
+            ],
+            0
+        ],
+        "thr_out": [
+            [
+                "_pid_accel_z_update_all__accel_target_z",
+                "_pid_accel_z_update_all_z_accel_meas",
+                "_pid_accel_z_update_all__dt",
+                "_pid_accel_z_get_ff",
+                "_pid_accel_z_update_all__motors_limit_throttle_lower",
+                "_pid_accel_z_update_all__motors_limit_throttle_upper",
+                "_motors_get_throttle_hover",
+                "get_throttle_with_vibration_override"
+            ],
+            0
+        ],
+        "_last_update_z_ticks": [
+            [
+                "scheduler_ticks32"
+            ],
+            0
+        ],
+        "_vel_z_control_ratio": [
+            [
+                "_vel_max_down_cms",
+                "_pid_vel_z_get_error",
+                "_dt"
+            ],
+            1
+        ],
+        "_pos_desired.z": [
+            [
+                "_pos_offset_z",
+                "_pos_target_z",
+                "_pos_terrain"
+            ],
+            0
+        ],
+        "curr_vel_z": [
+            [
+                "_inav_get_velocity_z_up_cms"
+            ],
+            0
+        ],
+        "_pos_target.z": [
+            [
+                "_pos_offset_z",
+                "_pos_target_z",
+                "_pos_desired_z",
+                "_pos_terrain"
+            ],
+            1
+        ],
+        "_vel_target.z": [
+            [
+                "_p_pos_z_update_all__inav_get_position_z_up_cm",
+                "_vel_offset_z",
+                "_vel_desired_z",
+                "ahrs_get_control_scale_z",
+                "_p_pos_z_update_all_pos_target_zf",
+                "_vel_terrain"
+            ],
+            0
+        ],
+        "_accel_target.z": [
+            [
+                "_pid_vel_z_update_all__motors_limit_throttle_lower",
+                "_accel_terrain",
+                "_pid_vel_z_update_all__dt",
+                "_pid_vel_z_update_all_curr_vel_z",
+                "_accel_desired_z",
+                "ahrs_get_control_scale_z",
+                "_accel_offset_z",
+                "_pid_vel_z_update_all__vel_target_z",
+                "_pid_vel_z_update_all__motors_limit_throttle_upper"
+            ],
+            0
+        ]
+    },
+    "set_pos_vel_accel": {
+        "_vel_desired": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "_accel_desired": [
+            [
+                "accel"
+            ],
+            0
+        ],
+        "_pos_desired": [
+            [
+                "pos"
+            ],
+            0
+        ]
+    },
+    "init_pos_terrain_cm": {
+        "_pos_terrain_target": [
+            [
+                "pos_terrain_cm"
+            ],
+            0
+        ],
+        "_pos_desired.z": [
+            [
+                "pos_terrain_cm"
+            ],
+            0
+        ],
+        "_pos_terrain": [
+            [
+                "pos_terrain_cm"
+            ],
+            0
+        ]
+    },
+    "init_offsets_xy": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "init_offsets_z": {
+        "_vel_offset.z": [
+            [
+                "_vel_offset_target_z"
+            ],
+            0
+        ],
+        "_pos_offset.z": [
+            [
+                "_pos_offset_target_z"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_accel_offset.z": [
+            [
+                "_accel_offset_target_z"
+            ],
+            0
+        ]
+    },
+    "get_posvelaccel_offset": {
+        "accel_offset_NED.z": [
+            [
+                "_accel_offset_target_z"
+            ],
+            0
+        ],
+        "pos_offset_NED.z": [
+            [
+                "_pos_offset_target_z"
+            ],
+            0
+        ],
+        "vel_offset_NED.z": [
+            [
+                "_vel_offset_target_z"
+            ],
+            0
+        ]
+    },
+    "set_posvelaccel_offset_target_xy_cm": {
+        "_posvelaccel_offset_target_xy_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_posvelaccel_offset_target_z_cm": {
+        "_accel_offset_target.z": [
+            [
+                "accel_offset_target_z_cmss"
+            ],
+            0
+        ],
+        "_posvelaccel_offset_target_z_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_pos_offset_target.z": [
+            [
+                "pos_offset_target_z_cm"
+            ],
+            0
+        ],
+        "_vel_offset_target.z": [
+            [
+                "vel_offset_target_z_cms"
+            ],
+            0
+        ]
+    },
+    "get_stopping_point_xy_cm": {
+        "stopping_point": [
+            [
+                "_topostype",
+                "_pos_offset_xy",
+                "_inav_get_position_xy_cm_topostype",
+                "_inav_get_velocity_xy_cms",
+                "_vel_offset_xy",
+                "curr_vel_length",
+                "stopping_distance__vel_max_xy_cms",
+                "stopping_distance_vel_total",
+                "stopping_distance__accel_max_xy_cmss",
+                "stopping_distance_k_p"
+            ],
+            4
+        ],
+        "kP": [
+            [
+                "_p_pos_xy_k_p"
+            ],
+            0
+        ]
+    },
+    "get_stopping_point_z_cm": {
+        "curr_vel_z": [
+            [
+                "_inav_get_velocity_z_up_cms",
+                "_vel_offset_z"
+            ],
+            0
+        ],
+        "stopping_point": [
+            [
+                "poscontrol_stopping_dist_up_max",
+                "_inav_get_position_z_up_cm",
+                "_pos_offset_z",
+                "stopping_distance_curr_vel_z",
+                "stopping_distance__p_pos_z_k_p",
+                "stopping_distance__accel_max_z_cmss",
+                "poscontrol_stopping_dist_down_max"
+            ],
+            1
+        ]
+    },
+    "get_throttle_with_vibration_override": {
+        "thr_per_accelz_cmss": [
+            [
+                "gravity_mss",
+                "_motors_get_throttle_hover"
+            ],
+            0
+        ]
+    },
+    "standby_xyz_reset": {
+        "_pos_target": [
+            [
+                "_inav_get_position_neu_cm_topostype"
+            ],
+            0
+        ]
+    },
+    "crosstrack_error": {
+        "dot_error": [
+            [
+                "_vel_desired_xy_normalized",
+                "_tofloat",
+                "_pos_target_xy",
+                "_inav_get_position_xy_cm"
+            ],
+            2
+        ]
+    },
+    "update_terrain": {
+        "_pos_terrain": [
+            [
+                "pos_terrain"
+            ],
+            0
+        ]
+    },
+    "accel_to_lean_angles": {
+        "cos_pitch_target": [
+            [
+                "cosf_m_pi",
+                "cosf_pitch_target"
+            ],
+            0
+        ],
+        "accel_right": [
+            [
+                "_ahrs_sin_yaw",
+                "_ahrs_cos_yaw",
+                "accel_x_cmss",
+                "accel_y_cmss"
+            ],
+            0
+        ],
+        "accel_forward": [
+            [
+                "_ahrs_cos_yaw",
+                "accel_x_cmss",
+                "accel_y_cmss",
+                "_ahrs_sin_yaw"
+            ],
+            0
+        ],
+        "pitch_target": [
+            [
+                "accel_to_angle_accel_forward"
+            ],
+            0
+        ],
+        "roll_target": [
+            [
+                "accel_to_angle_cos_pitch_target",
+                "accel_to_angle_accel_right"
+            ],
+            0
+        ]
+    },
+    "lean_angles_to_accel_xy": {
+        "att_target_euler": [
+            [
+                "_attitude_control_get_att_target_euler_rad"
+            ],
+            0
+        ],
+        "accel_cmss": [
+            [
+                "lean_angles_to_accel_att_target_euler"
+            ],
+            0
+        ],
+        "att_target_euler.z": [
+            [
+                "_ahrs_yaw"
+            ],
+            0
+        ],
+        "accel_y_cmss": [
+            [
+                "accel_cmss_y"
+            ],
+            0
+        ],
+        "accel_x_cmss": [
+            [
+                "accel_cmss_x"
+            ],
+            0
+        ]
+    },
+    "calculate_yaw_and_rate_yaw": {
+        "_yaw_rate_target": [
+            [
+                "_vel_desired_xy_length",
+                "accel_turn_length",
+                "degrees"
+            ],
+            3
+        ],
+        "accel_turn": [
+            [
+                "_vel_desired_xy",
+                "_accel_desired_xy",
+                "_vel_desired_xy_length",
+                "_vel_desired_xy_length",
+                "_accel_desired_x",
+                "_vel_desired_x",
+                "_accel_desired_y",
+                "_vel_desired_y"
+            ],
+            2
+        ],
+        "_yaw_target": [
+            [
+                "degrees__vel_desired_xy_angle",
+                "_attitude_control_get_att_target_euler_cd_z"
+            ],
+            0
+        ]
+    },
+    "init_ekf_xy_reset": {
+        "_ekf_xy_reset_ms": [
+            [
+                "_ahrs_get_last_pos_north_east_reset_pos_shift"
+            ],
+            0
+        ]
+    },
+    "handle_ekf_xy_reset": {
+        "_ekf_xy_reset_ms": [
+            [
+                "_ahrs_get_last_pos_north_east_reset_pos_shift"
+            ],
+            1
+        ]
+    },
+    "init_ekf_z_reset": {
+        "_ekf_z_reset_ms": [
+            [
+                "_ahrs_get_last_pos_down_reset_alt_shift"
+            ],
+            0
+        ]
+    },
+    "handle_ekf_z_reset": {
+        "_vel_target.z": [
+            [
+                "_inav_get_velocity_z_up_cms",
+                "_pid_vel_z_get_error"
+            ],
+            0
+        ],
+        "_pos_target.z": [
+            [
+                "_p_pos_z_get_error",
+                "_inav_get_position_z_up_cm"
+            ],
+            0
+        ],
+        "_ekf_z_reset_ms": [
+            [
+                "_ahrs_get_last_pos_down_reset_alt_shift"
+            ],
+            1
+        ],
+        "_vel_desired.z": [
+            [
+                "_vel_target_z",
+                "_vel_terrain",
+                "_vel_offset_z"
+            ],
+            0
+        ],
+        "_pos_desired.z": [
+            [
+                "_pos_offset_z",
+                "_pos_target_z",
+                "_pos_terrain"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,197 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "baud": [
+            [
+                "serial_manager_find_baudrate_serial_protocol_generator"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_generator"
+            ],
+            0
+        ]
+    },
+    "move_header_in_buffer": {
+        "body_length": [
+            [
+                "initial_offset"
+            ],
+            1
+        ]
+    },
+    "get_reading": {
+        "last_reading.output_current": [
+            [
+                "be16toh_u_packet_output_current"
+            ],
+            0
+        ],
+        "checksum_buffer": [
+            [
+                "u_parse_buffer"
+            ],
+            0
+        ],
+        "last_reading.rpm": [
+            [
+                "be16toh_u_packet_rpm"
+            ],
+            0
+        ],
+        "last_reading.errors": [
+            [
+                "be16toh_u_packet_errors"
+            ],
+            0
+        ],
+        "body_length": [
+            [
+                "nbytes"
+            ],
+            0
+        ],
+        "last_reading.seconds_until_maintenance": [
+            [
+                "be16toh_u_packet_seconds_until_maintenance_high",
+                "be16toh_u_packet_seconds_until_maintenance_low"
+            ],
+            0
+        ],
+        "last_reading.output_voltage": [
+            [
+                "be16toh_u_packet_output_voltage"
+            ],
+            0
+        ],
+        "point": [
+            [
+                "be16toh_u_packet_version"
+            ],
+            1
+        ],
+        "checksum": [
+            [
+                "be16toh_ptr_checksum_buffer",
+                "be16toh_ptr_i"
+            ],
+            0
+        ],
+        "last_reading.mode": [
+            [
+                "mode",
+                "u_packet_mode"
+            ],
+            0
+        ],
+        "major": [
+            [
+                "be16toh_u_packet_version"
+            ],
+            1
+        ],
+        "idle_state_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "minor": [
+            [
+                "be16toh_u_packet_version"
+            ],
+            1
+        ]
+    },
+    "update_heat": {
+        "heat": [
+            [
+                "run_rpm",
+                "last_reading_rpm",
+                "heat_environment_loss_factor",
+                "millis"
+            ],
+            3
+        ],
+        "last_heat_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "check_maintenance_required": {
+        "last_maintenance_warning_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update_runstate": {
+        "commanded_runstate": [
+            [
+                "stop",
+                "idle"
+            ],
+            1
+        ]
+    },
+    "Log_Write": {
+        "last_logged_reading_ms": [
+            [
+                "last_reading_ms"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "errors": [
+            [
+                "last_reading_errors"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "update_frontend_readings": {
+        "_voltage": [
+            [
+                "last_reading_output_voltage"
+            ],
+            0
+        ],
+        "_rpm": [
+            [
+                "last_reading_rpm"
+            ],
+            0
+        ],
+        "_current": [
+            [
+                "last_reading_output_current"
+            ],
+            0
+        ]
+    },
+    "healthy": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

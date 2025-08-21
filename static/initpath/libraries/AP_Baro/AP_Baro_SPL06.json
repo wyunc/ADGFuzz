@@ -1,0 +1,159 @@
+{
+    "_init": {
+        "_instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ],
+        "_c30": [
+            [
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c01": [
+            [
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "type": [
+            [
+                "spl06",
+                "unknown",
+                "spa06"
+            ],
+            0
+        ],
+        "_c11": [
+            [
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c20": [
+            [
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c1": [
+            [
+                "0x_f000",
+                "buf",
+                "0x8",
+                "uint16_t",
+                "0x0f"
+            ],
+            0
+        ],
+        "_c31": [
+            [
+                "0x_f0",
+                "0x80",
+                "0x_f000",
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c0": [
+            [
+                "0x_f0",
+                "0x80",
+                "0x_f000",
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c21": [
+            [
+                "buf",
+                "uint16_t"
+            ],
+            0
+        ],
+        "_c40": [
+            [
+                "0x_f000",
+                "buf",
+                "0x8",
+                "uint16_t",
+                "0x0f"
+            ],
+            0
+        ],
+        "_c00": [
+            [
+                "0x_f0",
+                "uint32_t",
+                "0x80",
+                "buf",
+                "0x_fff00000"
+            ],
+            0
+        ],
+        "SPL06_CALIB_COEFFS_LEN": [
+            [
+                "spl06_reg_calib_coeffs_start",
+                "spl06_reg_calib_coeffs_end",
+                "spa06_reg_calib_coeffs_end"
+            ],
+            0
+        ],
+        "_c10": [
+            [
+                "uint32_t",
+                "buf",
+                "0x8",
+                "0x_fff00000",
+                "0x0f"
+            ],
+            0
+        ]
+    },
+    "_update_temperature": {
+        "_temperature": [
+            [
+                "_c0",
+                "_c1",
+                "raw_value_scale_factor_spl06_temperature_oversampling",
+                "temp_raw",
+                "float",
+                "float"
+            ],
+            2
+        ]
+    },
+    "_update_pressure": {
+        "_pressure_sum": [
+            [
+                "_c11",
+                "_c31",
+                "_c01",
+                "_temp_raw",
+                "float",
+                "_c21",
+                "raw_value_scale_factor_spl06_pressure_oversampling",
+                "press_raw",
+                "float",
+                "_c10",
+                "_c20",
+                "_c30",
+                "_c40",
+                "float",
+                "_c00",
+                "raw_value_scale_factor_spl06_pressure_oversampling",
+                "press_raw",
+                "float"
+            ],
+            4
+        ]
+    }
+}

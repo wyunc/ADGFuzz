@@ -1,0 +1,236 @@
+{
+    "run": {
+        "_dataman_state": [
+            [
+                "load",
+                "read",
+                "error",
+                "read_wait",
+                "update_request_wait"
+            ],
+            0
+        ],
+        "_error_state": [
+            [
+                "read_wait",
+                "read"
+            ],
+            0
+        ],
+        "status.status": [
+            [
+                "gf_status_ready",
+                "gf_status_loading"
+            ],
+            0
+        ],
+        "status.geofence_id": [
+            [
+                "_stats_opaque_id"
+            ],
+            1
+        ],
+        "status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "_updateFence": {
+        "polygon.fence_type": [
+            [
+                "mission_fence_point_nav_cmd"
+            ],
+            0
+        ],
+        "home_check_okay": [
+            [
+                "check_home_requirements_for_geofence_polygon"
+            ],
+            0
+        ],
+        "polygon.circle_radius": [
+            [
+                "mission_fence_point_circle_radius"
+            ],
+            0
+        ],
+        "current_position_check_okay": [
+            [
+                "check_current_position_requirements_for_geofence_polygon"
+            ],
+            0
+        ],
+        "polygon.vertex_count": [
+            [
+                "mission_fence_point_vertex_count"
+            ],
+            0
+        ],
+        "polygon": [
+            [
+                "_num_polygons",
+                "polygon_info",
+                "new",
+                "_num_polygons",
+                "polygon_info",
+                "new"
+            ],
+            2
+        ],
+        "current_seq": [
+            [
+                "mission_fence_point_vertex_count"
+            ],
+            0
+        ]
+    },
+    "isCloserThanMaxDistToHome": {
+        "inside_fence": [
+            [
+                "dist_xy",
+                "_param_gf_max_hor_dist_get"
+            ],
+            0
+        ]
+    },
+    "isBelowMaxAltitude": {
+        "inside_fence": [
+            [
+                "_navigator_get_home_position_alt",
+                "altitude",
+                "_param_gf_max_ver_dist_get"
+            ],
+            1
+        ]
+    },
+    "insidePolygon": {
+        "i": [
+            [
+                "polygon_vertex_count",
+                "j"
+            ],
+            0
+        ]
+    },
+    "insideCircle": {
+        "dx": [
+            [
+                "x2",
+                "y1",
+                "y2",
+                "dy",
+                "x1"
+            ],
+            0
+        ]
+    },
+    "loadFromFile": {
+        "stats.num_items": [
+            [
+                "point_counter"
+            ],
+            0
+        ],
+        "stats.opaque_id": [
+            [
+                "crc32_for_fence_point_crc32",
+                "crc32_for_fence_point_mission_fence_point"
+            ],
+            1
+        ],
+        "ret_val": [
+            [
+                "px4_error",
+                "px4_ok"
+            ],
+            0
+        ],
+        "vertex.frame": [
+            [
+                "nav_frame_global"
+            ],
+            0
+        ],
+        "vertex.nav_cmd": [
+            [
+                "nav_cmd_fence_polygon_vertex_inclusion"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_geofence_filename"
+            ],
+            0
+        ],
+        "vertex.lon": [
+            [
+                "lon_m",
+                "lon_s",
+                "lon_d"
+            ],
+            0
+        ],
+        "mission_fence_point.vertex_count": [
+            [
+                "point_counter"
+            ],
+            0
+        ],
+        "vertex.lat": [
+            [
+                "lat_m",
+                "lat_d",
+                "lat_s"
+            ],
+            0
+        ]
+    },
+    "isHomeRequired": {
+        "geofence_action_rtl": [
+            [
+                "gf_action_rtl",
+                "get_geofence_action"
+            ],
+            0
+        ],
+        "max_horizontal_enabled": [
+            [
+                "_param_gf_max_hor_dist_get",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "max_vertical_enabled": [
+            [
+                "flt_epsilon",
+                "_param_gf_max_ver_dist_get"
+            ],
+            0
+        ]
+    },
+    "printStatus": {
+        "num_inclusion_circles": [
+            [
+                "num_exclusion_circles"
+            ],
+            0
+        ],
+        "num_inclusion_polygons": [
+            [
+                "num_exclusion_polygons"
+            ],
+            0
+        ],
+        "total_num_vertices": [
+            [
+                "i",
+                "_polygons",
+                "_vertex_count"
+            ],
+            0
+        ]
+    }
+}

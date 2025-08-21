@@ -1,0 +1,393 @@
+{
+    "some_fences_enabled": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "report_error": {
+        "_error_last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_error_last_id": [
+            [
+                "error_id"
+            ],
+            0
+        ],
+        "error_msg": [
+            [
+                "get_error_msg_error_id"
+            ],
+            0
+        ]
+    },
+    "check_inclusion_polygon_updated": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "create_inclusion_polygon_with_margin": {
+        "temp_point": [
+            [
+                "num_points",
+                "j",
+                "_get_inclusion_polygon_num_points",
+                "fence_polyfence_get_inclusion_polygon_i",
+                "j",
+                "num_points",
+                "j",
+                "_get_inclusion_polygon_num_points",
+                "fence_polyfence_get_inclusion_polygon_i",
+                "j",
+                "margin_cm",
+                "_get_inclusion_polygon_num_points",
+                "fence_polyfence_get_inclusion_polygon_i",
+                "j"
+            ],
+            6
+        ],
+        "_inclusion_polygon_numpoints": [
+            [
+                "new_points"
+            ],
+            0
+        ],
+        "num_inclusion_polygons": [
+            [
+                "fence_polyfence_get_inclusion_polygon_count"
+            ],
+            0
+        ],
+        "err_id": [
+            [
+                "dijkstra_error_overlapping_polygon_points",
+                "dijkstra_error_fence_disabled",
+                "dijkstra_error_out_of_memory",
+                "dijkstra_error_overlapping_polygon_lines"
+            ],
+            0
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_inclusion_polygon_update_ms": [
+            [
+                "fence_polyfence_get_inclusion_polygon_update_ms"
+            ],
+            0
+        ]
+    },
+    "check_exclusion_polygon_updated": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "create_exclusion_polygon_with_margin": {
+        "num_exclusion_polygons": [
+            [
+                "fence_polyfence_get_exclusion_polygon_count"
+            ],
+            0
+        ],
+        "err_id": [
+            [
+                "dijkstra_error_out_of_memory",
+                "dijkstra_error_fence_disabled",
+                "dijkstra_error_overlapping_polygon_points",
+                "dijkstra_error_overlapping_polygon_lines"
+            ],
+            0
+        ],
+        "_exclusion_polygon_numpoints": [
+            [
+                "new_points"
+            ],
+            0
+        ],
+        "_exclusion_polygon_update_ms": [
+            [
+                "fence_polyfence_get_exclusion_polygon_update_ms"
+            ],
+            0
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "temp_point": [
+            [
+                "margin_cm",
+                "_get_exclusion_polygon_num_points",
+                "fence_polyfence_get_exclusion_polygon_i",
+                "num_points",
+                "j",
+                "j",
+                "_get_exclusion_polygon_num_points",
+                "fence_polyfence_get_exclusion_polygon_i",
+                "num_points",
+                "j",
+                "j",
+                "_get_exclusion_polygon_num_points",
+                "fence_polyfence_get_exclusion_polygon_i",
+                "j"
+            ],
+            6
+        ]
+    },
+    "check_exclusion_circle_updated": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "create_exclusion_circle_with_margin": {
+        "err_id": [
+            [
+                "dijkstra_error_out_of_memory",
+                "dijkstra_error_fence_disabled"
+            ],
+            0
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_exclusion_circle_update_ms": [
+            [
+                "fence_polyfence_get_exclusion_circle_update_ms"
+            ],
+            0
+        ],
+        "scaler": [
+            [
+                "cosf_floatnum_points_per_circle",
+                "margin_cm",
+                "radius",
+                "cosf_radians"
+            ],
+            0
+        ],
+        "num_points_per_circle": [
+            [
+                "array_size_unit_offsets"
+            ],
+            0
+        ],
+        "num_exclusion_circles": [
+            [
+                "fence_polyfence_get_exclusion_circle_count"
+            ],
+            0
+        ]
+    },
+    "get_point": {
+        "point": [
+            [
+                "_exclusion_circle_pts",
+                "_inclusion_polygon_pts",
+                "_exclusion_polygon_pts",
+                "_exclusion_polygon_numpoints",
+                "_inclusion_polygon_numpoints"
+            ],
+            1
+        ]
+    },
+    "intersects_fence": {
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "dist_cm": [
+            [
+                "closest_distance_between_line_and_point_seg_end",
+                "closest_distance_between_line_and_point_center_pos_cm",
+                "closest_distance_between_line_and_point_seg_start"
+            ],
+            0
+        ],
+        "boundary": [
+            [
+                "_get_exclusion_polygon_num_points",
+                "fence_polyfence_get_inclusion_polygon_i",
+                "fence_polyfence_get_exclusion_polygon_i",
+                "_get_inclusion_polygon_num_points"
+            ],
+            0
+        ],
+        "radius_cm_sq": [
+            [
+                "sq_radius"
+            ],
+            0
+        ]
+    },
+    "create_fence_visgraph": {
+        "err_id": [
+            [
+                "dijkstra_error_fence_disabled",
+                "dijkstra_error_out_of_memory",
+                "dijkstra_error_too_many_fence_points"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "fence": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    },
+    "update_visible_node_distances": {
+        "item": [
+            [
+                "i",
+                "v",
+                "visgraphs"
+            ],
+            1
+        ],
+        "matching_id": [
+            [
+                "item_id2",
+                "curr_node_id",
+                "item_id1"
+            ],
+            0
+        ],
+        "curr_node": [
+            [
+                "curr_node_idx",
+                "_short_path_data"
+            ],
+            0
+        ],
+        ".distance_from_idx": [
+            [
+                "curr_node_idx"
+            ],
+            0
+        ],
+        ".distance_cm": [
+            [
+                "curr_node_idx",
+                "item_distance_cm",
+                "_short_path_data",
+                "_distance_cm"
+            ],
+            1
+        ]
+    },
+    "find_node_from_id": {
+        "node_idx": [
+            [
+                "id_id_num"
+            ],
+            0
+        ]
+    },
+    "find_closest_node_idx": {
+        "lowest_dist": [
+            [
+                "_path_destination",
+                "_length",
+                "node_pos",
+                "flt_max",
+                "node_distance_cm",
+                "flt_max"
+            ],
+            2
+        ],
+        "node": [
+            [
+                "_short_path_data",
+                "i"
+            ],
+            0
+        ],
+        "node_idx": [
+            [
+                "i"
+            ],
+            1
+        ]
+    },
+    "calc_shortest_path": {
+        ".distance_from_idx": [
+            [
+                "current_node_idx"
+            ],
+            0
+        ],
+        ".distance_cm": [
+            [
+                "i",
+                "_source_visgraph",
+                "_distance_cm"
+            ],
+            0
+        ],
+        "err_id": [
+            [
+                "dijkstra_error_out_of_memory",
+                "dijkstra_error_could_not_find_path",
+                "dijkstra_error_no_position_estimate"
+            ],
+            0
+        ],
+        "nidx": [
+            [
+                "_distance_from_idx",
+                "_short_path_data"
+            ],
+            0
+        ]
+    },
+    "get_shortest_path_point": {
+        "id": [
+            [
+                "_path",
+                "point_num",
+                "_path_numpoints"
+            ],
+            0
+        ]
+    },
+    "convert_node_to_point": {
+        "pos": [
+            [
+                "_path_destination",
+                "_path_source"
+            ],
+            0
+        ]
+    }
+}

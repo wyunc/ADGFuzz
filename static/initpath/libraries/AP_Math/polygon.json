@@ -1,0 +1,127 @@
+{
+    "Polygon_outside": {
+        "m1": [
+            [
+                "v",
+                "i",
+                "p_x",
+                "_x",
+                "v",
+                "i",
+                "_y",
+                "i"
+            ],
+            5
+        ],
+        "complete": [
+            [
+                "polygon_complete_v",
+                "polygon_complete_n"
+            ],
+            0
+        ],
+        "m2": [
+            [
+                "v",
+                "p_y",
+                "_y",
+                "i",
+                "v",
+                "i",
+                "i",
+                "_x"
+            ],
+            5
+        ]
+    },
+    "Polygon_intersects": {
+        "v2": [
+            [
+                "v",
+                "i"
+            ],
+            1
+        ],
+        "intersection": [
+            [
+                "intersect_tmp"
+            ],
+            0
+        ],
+        "v1": [
+            [
+                "v",
+                "i"
+            ],
+            0
+        ],
+        "complete": [
+            [
+                "polygon_complete_n",
+                "polygon_complete_v"
+            ],
+            0
+        ],
+        "intersect_dist_sq": [
+            [
+                "sq_intersect_tmp_y",
+                "sq_p1_y",
+                "sq_p1_x",
+                "sq_intersect_tmp_x",
+                "flt_max"
+            ],
+            1
+        ]
+    },
+    "Polygon_closest_distance_line": {
+        "v1": [
+            [
+                "i",
+                "v"
+            ],
+            0
+        ],
+        "v2": [
+            [
+                "i",
+                "v"
+            ],
+            0
+        ],
+        "closest_sq": [
+            [
+                "closest_distance_between_lines_squared_v1",
+                "closest_distance_between_lines_squared_p1",
+                "closest_distance_between_lines_squared_p2",
+                "closest_distance_between_lines_squared_v2",
+                "flt_max"
+            ],
+            1
+        ]
+    },
+    "Polygon_closest_distance_point": {
+        "v1": [
+            [
+                "i",
+                "v"
+            ],
+            0
+        ],
+        "closest_sq": [
+            [
+                "flt_max",
+                "closest_distance_between_line_and_point_squared_v1",
+                "closest_distance_between_line_and_point_squared_v2",
+                "closest_distance_between_line_and_point_squared_p"
+            ],
+            1
+        ],
+        "v2": [
+            [
+                "i",
+                "v"
+            ],
+            0
+        ]
+    }
+}

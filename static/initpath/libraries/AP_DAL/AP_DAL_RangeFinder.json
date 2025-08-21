@@ -1,0 +1,78 @@
+{
+    "start_frame": {
+        "_RRNI.orientation": [
+            [
+                "backend_orientation"
+            ],
+            0
+        ],
+        "old": [
+            [
+                "_rrnh",
+                "_rrni"
+            ],
+            0
+        ],
+        "_RRNI.pos_offset": [
+            [
+                "backend_get_pos_offset"
+            ],
+            0
+        ],
+        "_RRNI.status": [
+            [
+                "backend_status",
+                "uint8_t"
+            ],
+            0
+        ],
+        "_RRNH.ground_clearance_cm": [
+            [
+                "rangefinder_ground_clearance_cm_orient_rotation_pitch_270"
+            ],
+            0
+        ],
+        "_RRNI.distance_cm": [
+            [
+                "backend_distance_cm"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "rangefinder_get_backend_i"
+            ],
+            0
+        ],
+        "_RRNH.max_distance_cm": [
+            [
+                "rangefinder_max_distance_cm_orient_rotation_pitch_270"
+            ],
+            0
+        ]
+    },
+    "handle_message": {
+        "_RRNH": [
+            [
+                "msg"
+            ],
+            0
+        ],
+        "_backend": [
+            [
+                "new_nothrow",
+                "ap_dal_range_finder_backend",
+                "_rrnh_num_sensors"
+            ],
+            0
+        ],
+        "_RRNI": [
+            [
+                "new_nothrow",
+                "log_rrni",
+                "_rrnh_num_sensors"
+            ],
+            0
+        ]
+    }
+}

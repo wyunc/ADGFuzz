@@ -1,0 +1,70 @@
+{
+    "setGains": {
+        "_gain_derivative": [
+            [
+                "d"
+            ],
+            0
+        ],
+        "_gain_proportional": [
+            [
+                "p"
+            ],
+            0
+        ],
+        "_gain_integral": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "output": [
+            [
+                "_gain_proportional",
+                "_gain_derivative",
+                "update_derivative_feedback",
+                "update_derivative_dt",
+                "feedback",
+                "_setpoint",
+                "_integral"
+            ],
+            1
+        ],
+        "_last_feedback": [
+            [
+                "feedback"
+            ],
+            0
+        ]
+    },
+    "updateIntegral": {
+        "integral_new": [
+            [
+                "error",
+                "_gain_integral",
+                "dt"
+            ],
+            0
+        ],
+        "_integral": [
+            [
+                "constrain__limit_integral",
+                "constrain_integral_new"
+            ],
+            0
+        ]
+    },
+    "updateDerivative": {
+        "feedback_change": [
+            [
+                "_last_feedback",
+                "feedback",
+                "dt",
+                "_f"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "set_update_rate": {
+        "mask": [
+            [
+                "_swashplate_get_output_mask",
+                "1u",
+                "ap_motors_mot_4"
+            ],
+            0
+        ],
+        "_speed_hz": [
+            [
+                "speed_hz"
+            ],
+            0
+        ]
+    },
+    "init_outputs": {
+        "_frame_class": [
+            [
+                "motor_frame_heli"
+            ],
+            0
+        ]
+    },
+    "calculate_scalars": {
+        "_collective_zero_thrust_pct": [
+            [
+                "_collective_zero_thrust_deg",
+                "_collective_max_deg",
+                "_collective_min_deg"
+            ],
+            0
+        ],
+        "_collective_land_min_pct": [
+            [
+                "_collective_land_min_deg",
+                "_collective_max_deg",
+                "_collective_min_deg"
+            ],
+            0
+        ]
+    },
+    "update_motor_control": {
+        "_heliflags.rotor_spooldown_complete": [
+            [
+                "_main_rotor_is_spooldown_complete"
+            ],
+            0
+        ]
+    },
+    "move_actuators": {
+        "pitch_out": [
+            [
+                "float",
+                "_cyclic_max",
+                "norm_pitch_out",
+                "norm_roll_out"
+            ],
+            2
+        ],
+        "roll_out": [
+            [
+                "float",
+                "_cyclic_max",
+                "norm_pitch_out",
+                "norm_roll_out"
+            ],
+            2
+        ],
+        "yaw_offset": [
+            [
+                "get_yaw_offset_collective_out"
+            ],
+            0
+        ],
+        "collective_out_scaled": [
+            [
+                "_collective_min",
+                "float",
+                "_collective_max",
+                "_collective_min",
+                "_collective_land_min_pct",
+                "coll_in"
+            ],
+            2
+        ]
+    },
+    "move_yaw": {
+        "_servo4_out": [
+            [
+                "yaw_out"
+            ],
+            0
+        ]
+    },
+    "get_yaw_offset": {
+        "yaw_offset": [
+            [
+                "_collective_yaw_scale",
+                "_yaw_trim_get",
+                "powf_fabsf",
+                "powf__collective_zero_thrust_pct",
+                "powf_collective"
+            ],
+            0
+        ]
+    },
+    "servo_test": {
+        "_oscillate_angle": [
+            [
+                "_dt",
+                "m_pi"
+            ],
+            0
+        ],
+        "_yaw_in": [
+            [
+                "sinf__oscillate_angle"
+            ],
+            1
+        ],
+        "_roll_in": [
+            [
+                "sinf__oscillate_angle"
+            ],
+            1
+        ],
+        "_collective_test": [
+            [
+                "_dt"
+            ],
+            0
+        ],
+        "_servo_test_cycle_time": [
+            [
+                "_dt"
+            ],
+            0
+        ],
+        "_pitch_in": [
+            [
+                "_dt",
+                "cosf__oscillate_angle"
+            ],
+            1
+        ]
+    },
+    "heli_motors_param_conversions": {
+        "c": [
+            [
+                "get_channel_for_k_motor4"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "constrain_uint16_pwm_max",
+                "constrain_uint16_pwm_min",
+                "float",
+                "c_get_trim",
+                "c_get_output_min"
+            ],
+            2
+        ],
+        "pwm_max": [
+            [
+                "c_get_output_max"
+            ],
+            0
+        ]
+    },
+    "have_DDFP_tail": {
+        "type": [
+            [
+                "directdrive_fixedpitch_ccw",
+                "get_tail_type"
+            ],
+            0
+        ]
+    },
+    "use_tail_RSC": {
+        "type": [
+            [
+                "directdrive_varpit_ext_gov",
+                "get_tail_type"
+            ],
+            0
+        ]
+    },
+    "Log_Write": {
+        "cyclic_angle_scaler": [
+            [
+                "get_cyclic_angle_scaler",
+                "sqrtf"
+            ],
+            0
+        ]
+    }
+}

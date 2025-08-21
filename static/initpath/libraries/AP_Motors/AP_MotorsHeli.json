@@ -1,0 +1,92 @@
+{
+    "init": {
+        "_frame_class": [
+            [
+                "frame_class"
+            ],
+            0
+        ],
+        "_servo_test_cycle_counter": [
+            [
+                "_servo_test"
+            ],
+            0
+        ],
+        "_frame_type": [
+            [
+                "frame_type"
+            ],
+            0
+        ],
+        "_mav_type": [
+            [
+                "mav_type_helicopter"
+            ],
+            0
+        ]
+    },
+    "output_disarmed": {
+        "_roll_in": [
+            [
+                "_roll_radio_passthrough"
+            ],
+            0
+        ],
+        "_pitch_in": [
+            [
+                "_pitch_radio_passthrough"
+            ],
+            0
+        ],
+        "_yaw_in": [
+            [
+                "_yaw_radio_passthrough"
+            ],
+            0
+        ]
+    },
+    "output_logic": {
+        "_spool_state": [
+            [
+                "spooling_down",
+                "spooling_up",
+                "shut_down",
+                "ground_idle",
+                "throttle_unlimited"
+            ],
+            0
+        ],
+        "_spool_desired": [
+            [
+                "ground_idle",
+                "shut_down"
+            ],
+            0
+        ]
+    },
+    "update_throttle_hover": {
+        "curr_collective": [
+            [
+                "_collective_zero_thrust_pct",
+                "get_throttle"
+            ],
+            0
+        ]
+    },
+    "set_rotor_runup_complete": {
+        "_heliflags.rotor_runup_complete": [
+            [
+                "new_value"
+            ],
+            0
+        ]
+    },
+    "heli_motors_param_conversions": {
+        "table_size": [
+            [
+                "array_size_rsc_arot_conversion_info"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "serial_manager_find_serial_msp_protocol",
+                "serial_manager_find_serial_protocol_instance",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "_msp_status.last_flight_mode": [
+            [
+                "notify_flags_flight_mode"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_msp_status.current_screen": [
+            [
+                "osd_is_readonly_screen",
+                "osd_get_current_screen",
+                "_msp_status_current_screen"
+            ],
+            1
+        ],
+        "_msp_status.slow_flashing_on": [
+            [
+                "_msp_status_slow_flashing_on"
+            ],
+            0
+        ],
+        "_msp_status.flashing_on": [
+            [
+                "_msp_status_flashing_on"
+            ],
+            0
+        ],
+        "_msp_status.last_flight_mode_change_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

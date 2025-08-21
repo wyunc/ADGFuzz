@@ -1,0 +1,12 @@
+{
+    "init": {
+        "_driver": [
+            [
+                "ap_visual_odom_mav_this",
+                "new_nothrow",
+                "ap_visual_odom_intel_t265_this"
+            ],
+            0
+        ]
+    }
+}

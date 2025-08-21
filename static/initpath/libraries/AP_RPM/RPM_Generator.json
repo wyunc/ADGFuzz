@@ -1,0 +1,13 @@
+{
+    "update": {
+        "state.rate_rpm": [
+            [
+                "ap_rpm__params",
+                "_scaling",
+                "generator_get_rpm",
+                "state_instance"
+            ],
+            0
+        ]
+    }
+}

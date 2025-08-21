@@ -1,0 +1,10 @@
+{
+    "init": {
+        "state.start_time_ns": [
+            [
+                "ts_to_nsec_ts"
+            ],
+            0
+        ]
+    }
+}

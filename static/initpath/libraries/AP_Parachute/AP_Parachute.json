@@ -1,0 +1,70 @@
+{
+    "release": {
+        "_release_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "need_disarm": [
+            [
+                "uint32_t_skip_disarm_before_parachute_release",
+                "_options_get"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "delay_ms": [
+            [
+                "uint32_t",
+                "_delay_ms"
+            ],
+            0
+        ],
+        "hold_forever": [
+            [
+                "_options_get",
+                "uint32_t_hold_open"
+            ],
+            0
+        ],
+        "time_diff": [
+            [
+                "millis",
+                "_release_time"
+            ],
+            0
+        ],
+        "_relay": [
+            [
+                "relay"
+            ],
+            0
+        ]
+    },
+    "set_sink_rate": {
+        "_sink_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "arming_checks": {
+        "_relay": [
+            [
+                "relay"
+            ],
+            0
+        ]
+    },
+    "get_legacy_relay_index": {
+        "index": [
+            [
+                "_release_type"
+            ],
+            0
+        ]
+    }
+}

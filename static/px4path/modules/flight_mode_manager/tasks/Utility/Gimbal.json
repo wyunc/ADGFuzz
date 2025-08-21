@@ -1,0 +1,156 @@
+{
+    "checkForTelemetry": {
+        "_telemtry_timestamp": [
+            [
+                "gimbal_device_attitude_status_timestamp"
+            ],
+            0
+        ],
+        "_telemetry_flags": [
+            [
+                "gimbal_device_attitude_status_device_flags"
+            ],
+            0
+        ],
+        "_telemetry_yaw": [
+            [
+                "eulerf_gimbal_device_attitude_status_q",
+                "_psi",
+                "eulerf_quatf"
+            ],
+            0
+        ]
+    },
+    "acquireGimbalControlIfNeeded": {
+        "vehicle_command.target_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.target_component": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_command.source_component": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.source_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.param2": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_configure"
+            ],
+            0
+        ],
+        "vehicle_command.param1": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ]
+    },
+    "releaseGimbalControlIfNeeded": {
+        "vehicle_command.command": [
+            [
+                "vehicle_cmd_do_gimbal_manager_configure"
+            ],
+            0
+        ],
+        "vehicle_command.source_component": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.target_component": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.target_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.source_system": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "vehicle_command.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publishGimbalManagerSetAttitude": {
+        "gimbal_setpoint.angular_velocity_z": [
+            [
+                "gimbal_rates"
+            ],
+            0
+        ],
+        "gimbal_setpoint.angular_velocity_y": [
+            [
+                "gimbal_rates"
+            ],
+            0
+        ],
+        "gimbal_setpoint.origin_sysid": [
+            [
+                "_param_mav_sys_id_get"
+            ],
+            0
+        ],
+        "gimbal_setpoint.origin_compid": [
+            [
+                "_param_mav_comp_id_get"
+            ],
+            0
+        ],
+        "gimbal_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "gimbal_setpoint.flags": [
+            [
+                "gimbal_flags"
+            ],
+            0
+        ],
+        "gimbal_setpoint.angular_velocity_x": [
+            [
+                "gimbal_rates"
+            ],
+            0
+        ]
+    }
+}

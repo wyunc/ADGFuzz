@@ -1,0 +1,28 @@
+{
+    "get_unit_vector_body": {
+        "ret.z": [
+            [
+                "_target_info_pos_z"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ret_length"
+            ],
+            0
+        ],
+        "ret.x": [
+            [
+                "_target_info_pos_y"
+            ],
+            0
+        ],
+        "ret.y": [
+            [
+                "_target_info_pos_x"
+            ],
+            0
+        ]
+    }
+}

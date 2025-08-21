@@ -1,0 +1,43 @@
+{
+    "ends_with": {
+        "len_str": [
+            [
+                "strlen_str"
+            ],
+            0
+        ],
+        "len_suffix": [
+            [
+                "strlen_suffix"
+            ],
+            0
+        ]
+    },
+    "filter_calibration_params": {
+        "name": [
+            [
+                "param_name_handle"
+            ],
+            0
+        ]
+    },
+    "open": {
+        "ret": [
+            [
+                "access_calibration_storage",
+                "access_w_ok",
+                "access_r_ok"
+            ],
+            0
+        ]
+    },
+    "store": {
+        "ret": [
+            [
+                "param_export_calibration_storage",
+                "param_export_filter_calibration_params"
+            ],
+            0
+        ]
+    }
+}

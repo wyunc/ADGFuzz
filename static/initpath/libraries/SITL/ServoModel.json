@@ -1,0 +1,82 @@
+{
+    "apply_simple_filter": {
+        "cutoff": [
+            [
+                "sitl_servo_servo_speed",
+                "m_pi"
+            ],
+            0
+        ]
+    },
+    "apply_filter": {
+        "delay_len": [
+            [
+                "sitl_servo_servo_delay",
+                "sitl_loop_rate_hz"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "dt",
+                "sitl_servo_servo_speed",
+                "angle_deg",
+                "filter_apply_v"
+            ],
+            3
+        ],
+        "delay": [
+            [
+                "new_nothrow",
+                "object_buffer",
+                "float"
+            ],
+            0
+        ]
+    },
+    "filter_range": {
+        "v": [
+            [
+                "pwm_min",
+                "float_pwm_max",
+                "pwm",
+                "float_pwm_min"
+            ],
+            0
+        ]
+    },
+    "filter_angle": {
+        "v": [
+            [
+                "float_pwm_max",
+                "pwm_min",
+                "pwm",
+                "pwm_max",
+                "float_pwm_min"
+            ],
+            0
+        ]
+    },
+    "set_pwm_range": {
+        "pwm_min": [
+            [
+                "_pwm_min"
+            ],
+            0
+        ],
+        "pwm_max": [
+            [
+                "_pwm_max"
+            ],
+            0
+        ]
+    },
+    "set_deflection": {
+        "angle_deg": [
+            [
+                "fabsf__angle_deg"
+            ],
+            0
+        ]
+    }
+}

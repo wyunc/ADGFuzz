@@ -1,0 +1,94 @@
+{
+    "pinMode": {
+        "io_conf.pull_up_en": [
+            [
+                "gpio_pullup_disable"
+            ],
+            0
+        ],
+        "io_conf.pull_down_en": [
+            [
+                "gpio_pulldown_disable",
+                "output",
+                "gpio_pulldown_enable"
+            ],
+            0
+        ],
+        "io_conf.intr_type": [
+            [
+                "gpio_intr_disable"
+            ],
+            0
+        ],
+        "io_conf.mode": [
+            [
+                "output",
+                "gpio_mode_output",
+                "gpio_mode_input"
+            ],
+            0
+        ],
+        "io_conf.pin_bit_mask": [
+            [
+                "gpio_by_pin_num_pin",
+                "1ull"
+            ],
+            1
+        ]
+    },
+    "write": {
+        "g": [
+            [
+                "gpio_by_pin_num__pin",
+                "gpio_by_pin_num_pin"
+            ],
+            0
+        ]
+    },
+    "toggle": {
+        "g": [
+            [
+                "gpio_by_pin_num_pin",
+                "gpio_by_pin_num__pin"
+            ],
+            0
+        ]
+    },
+    "mode": {
+        "io_conf.pull_down_en": [
+            [
+                "gpio_pulldown_disable",
+                "output",
+                "gpio_pulldown_enable"
+            ],
+            0
+        ],
+        "io_conf.pin_bit_mask": [
+            [
+                "1ull",
+                "gpio_by_pin_num__pin"
+            ],
+            1
+        ],
+        "io_conf.pull_up_en": [
+            [
+                "gpio_pullup_disable"
+            ],
+            0
+        ],
+        "io_conf.mode": [
+            [
+                "output",
+                "gpio_mode_input",
+                "gpio_mode_output"
+            ],
+            0
+        ],
+        "io_conf.intr_type": [
+            [
+                "gpio_intr_disable"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "fence_check": {
+        "loc.lat": [
+            [
+                "home_lat",
+                "return_point"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "fence_get_safe_alt_min",
+                "fence_get_safe_alt_max",
+                "home_alt",
+                "fence_get_return_altitude",
+                "g_rtl_altitude"
+            ],
+            0
+        ],
+        "new_breaches": [
+            [
+                "fence_check_landing_or_landed"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "calc_best_rally_or_home_location_get_rtl_altitude_cm",
+                "calc_best_rally_or_home_location_current_loc"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "return_point",
+                "home_lng"
+            ],
+            0
+        ],
+        "plane.previous_mode_reason": [
+            [
+                "unknown"
+            ],
+            0
+        ],
+        "fence_act": [
+            [
+                "fence_get_action"
+            ],
+            0
+        ],
+        "armed": [
+            [
+                "arming_is_armed"
+            ],
+            0
+        ],
+        "mission_id": [
+            [
+                "plane_mission_get_current_nav_cmd_id"
+            ],
+            0
+        ],
+        "orig_breaches": [
+            [
+                "fence_get_breaches"
+            ],
+            0
+        ]
+    },
+    "in_fence_recovery": {
+        "current_mode_breach": [
+            [
+                "fence_breached",
+                "plane_control_mode_reason"
+            ],
+            0
+        ],
+        "previous_mode_breach": [
+            [
+                "fence_breached",
+                "plane_previous_mode_reason"
+            ],
+            0
+        ],
+        "plane.control_mode_reason": [
+            [
+                "qland_instead_of_rtl"
+            ],
+            0
+        ]
+    }
+}

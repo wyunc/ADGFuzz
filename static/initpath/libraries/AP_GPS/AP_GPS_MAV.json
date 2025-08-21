@@ -1,0 +1,200 @@
+{
+    "handle_msg": {
+        "loc.alt": [
+            [
+                "packet_alt"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "packet_hdop"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "packet_time_week_ms"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "packet_lat"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "packet_lon"
+            ],
+            0
+        ],
+        "vel.z": [
+            [
+                "packet_vd"
+            ],
+            0
+        ],
+        "have_va": [
+            [
+                "gps_input_ignore_flag_vertical_accuracy",
+                "packet_ignore_flags"
+            ],
+            0
+        ],
+        "_last_itow_ms": [
+            [
+                "state_time_week_ms"
+            ],
+            0
+        ],
+        "state.last_corrected_gps_time_us": [
+            [
+                "jitter_correct_offboard_timestamp_msec_now_ms",
+                "jitter_correct_offboard_timestamp_msec_timestamp_ms",
+                "1000ull"
+            ],
+            1
+        ],
+        "state.location": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "have_yaw": [
+            [
+                "packet_yaw"
+            ],
+            0
+        ],
+        "have_vdop": [
+            [
+                "packet_ignore_flags",
+                "gps_input_ignore_flag_vdop"
+            ],
+            0
+        ],
+        "state.gps_yaw_time_ms": [
+            [
+                "jitter_correct_offboard_timestamp_msec_now_ms",
+                "jitter_correct_offboard_timestamp_msec_timestamp_ms",
+                "millis"
+            ],
+            2
+        ],
+        "timestamp_ms": [
+            [
+                "packet_time_week_ms",
+                "packet_time_week",
+                "ap_msec_per_week",
+                "packet_time_week"
+            ],
+            1
+        ],
+        "state.gps_yaw": [
+            [
+                "wrap_360_packet_yaw"
+            ],
+            0
+        ],
+        "have_alt": [
+            [
+                "packet_ignore_flags",
+                "gps_input_ignore_flag_alt"
+            ],
+            0
+        ],
+        "have_hdop": [
+            [
+                "packet_ignore_flags",
+                "gps_input_ignore_flag_hdop"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "packet_time_week"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_status",
+                "packet_fix_type"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "state.speed_accuracy": [
+            [
+                "packet_speed_accuracy"
+            ],
+            0
+        ],
+        "have_vel_h": [
+            [
+                "gps_input_ignore_flag_vel_horiz",
+                "packet_ignore_flags"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "packet_satellites_visible"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "packet_vdop"
+            ],
+            0
+        ],
+        "have_vel_v": [
+            [
+                "gps_input_ignore_flag_vel_vert",
+                "packet_ignore_flags"
+            ],
+            0
+        ],
+        "have_sa": [
+            [
+                "packet_ignore_flags",
+                "gps_input_ignore_flag_speed_accuracy"
+            ],
+            0
+        ],
+        "state.velocity": [
+            [
+                "vel"
+            ],
+            0
+        ],
+        "have_ha": [
+            [
+                "packet_ignore_flags",
+                "gps_input_ignore_flag_horizontal_accuracy"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "packet_horiz_accuracy"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "packet_vert_accuracy"
+            ],
+            0
+        ]
+    }
+}

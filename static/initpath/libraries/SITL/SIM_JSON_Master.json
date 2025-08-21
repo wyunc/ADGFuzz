@@ -1,0 +1,74 @@
+{
+    "init": {
+        "instance": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "port": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "list": [
+            [
+                "list_next",
+                "_list"
+            ],
+            0
+        ],
+        "next": [
+            [
+                "socket_list",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "receive": {
+        "_ip": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "connected": [
+            [
+                "port",
+                "list_sock_out_connect__ip",
+                "list_sock_out_connect_port"
+            ],
+            0
+        ],
+        "list": [
+            [
+                "_list"
+            ],
+            0
+        ],
+        "use_servos": [
+            [
+                "sitl_ride_along_master_get",
+                "list_instance"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "list_sock_in_recv_buffer",
+                "list_sock_in_recv_sizeof"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "list": [
+            [
+                "_list"
+            ],
+            0
+        ]
+    }
+}

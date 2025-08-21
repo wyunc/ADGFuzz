@@ -1,0 +1,10 @@
+{
+    "checkAndReport": {
+        ".offboard_control_signal_lost": [
+            [
+                "offboard_available"
+            ],
+            0
+        ]
+    }
+}

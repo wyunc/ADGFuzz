@@ -1,0 +1,407 @@
+{
+    "on_activation": {
+        "_state": [
+            [
+                "start"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "vehicle_local_position": [
+            [
+                "_navigator_get_local_position"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ],
+        "current.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ]
+    },
+    "on_active": {
+        "_target_pose_updated": [
+            [
+                "_target_pose_sub_update__target_pose"
+            ],
+            0
+        ]
+    },
+    "run_state_start": {
+        "_point_reached_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ]
+    },
+    "run_state_horizontal_approach": {
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ],
+        "y": [
+            [
+                "_target_pose_y_abs"
+            ],
+            0
+        ],
+        "x": [
+            [
+                "_target_pose_x_abs"
+            ],
+            0
+        ],
+        "_point_reached_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_navigator_get_global_position_alt",
+                "_approach_alt"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ]
+    },
+    "run_state_descend_above_target": {
+        "current.type": [
+            [
+                "setpoint_type_land"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ]
+    },
+    "run_state_search": {
+        "_target_acquired_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_navigator_get_global_position_alt",
+                "pos_sp_triplet_current_alt"
+            ],
+            1
+        ]
+    },
+    "switch_to_state_start": {
+        "_state": [
+            [
+                "start"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_horizontal_approach": {
+        "_approach_alt": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "horizontal_approach"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_descend_above_target": {
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "descend_above_target"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_final_approach": {
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "final_approach"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_search": {
+        "_state": [
+            [
+                "search"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "vehicle_local_position": [
+            [
+                "_navigator_get_local_position"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_param_pld_srch_alt_get",
+                "vehicle_local_position_ref_alt"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_fallback": {
+        "current.type": [
+            [
+                "setpoint_type_land"
+            ],
+            0
+        ],
+        "current.lon": [
+            [
+                "_navigator_get_global_position_lon"
+            ],
+            0
+        ],
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "fallback"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.alt": [
+            [
+                "_navigator_get_global_position_alt"
+            ],
+            0
+        ],
+        "current.lat": [
+            [
+                "_navigator_get_global_position_lat"
+            ],
+            0
+        ]
+    },
+    "switch_to_state_done": {
+        "_state_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "done"
+            ],
+            0
+        ]
+    },
+    "check_state_conditions": {
+        "vehicle_local_position": [
+            [
+                "_navigator_get_local_position"
+            ],
+            0
+        ]
+    },
+    "slewrate": {
+        "sp_x": [
+            [
+                "_param_acceleration_hor",
+                "sp_acc_normalized",
+                "hrt_absolute_time",
+                "sec2usec",
+                "hrt_absolute_time",
+                "sec2usec",
+                "sp_vel_normalized",
+                "_param_xy_vel_cruise",
+                "max_spd",
+                "hrt_absolute_time",
+                "sec2usec"
+            ],
+            5
+        ],
+        "sp_y": [
+            [
+                "_param_acceleration_hor",
+                "sp_acc_normalized",
+                "hrt_absolute_time",
+                "sec2usec",
+                "hrt_absolute_time",
+                "sec2usec",
+                "sp_vel_normalized",
+                "_param_xy_vel_cruise",
+                "max_spd",
+                "hrt_absolute_time",
+                "sec2usec"
+            ],
+            5
+        ],
+        "_last_slewrate_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_sp_pev": [
+            [
+                "_param_acceleration_hor",
+                "sp_acc_normalized",
+                "hrt_absolute_time",
+                "sec2usec",
+                "hrt_absolute_time",
+                "sec2usec",
+                "sp_vel_normalized",
+                "_param_xy_vel_cruise",
+                "max_spd",
+                "hrt_absolute_time",
+                "sec2usec"
+            ],
+            5
+        ]
+    }
+}

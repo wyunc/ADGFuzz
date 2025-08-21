@@ -1,0 +1,68 @@
+{
+    "on_activation": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ]
+    },
+    "setActiveMissionItems": {
+        "_work_item_type": [
+            [
+                "work_item_type_transition_after_takeoff"
+            ],
+            1
+        ],
+        "current.alt_acceptance_radius": [
+            [
+                "flt_max"
+            ],
+            0
+        ],
+        "mission_dataman_id": [
+            [
+                "static_cast",
+                "_mission_mission_dataman_id",
+                "dm_item_t"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "_mission_item.yaw": [
+            [
+                "_navigator_get_local_position_heading"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            0
+        ],
+        "num_found_items": [
+            [
+                "0u"
+            ],
+            1
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ]
+    }
+}

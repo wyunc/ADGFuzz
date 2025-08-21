@@ -1,0 +1,10 @@
+{
+    "set_home_to_current_location_inflight": {
+        "temp_loc.alt": [
+            [
+                "ekf_origin_alt"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+{
+    "upload_fw": {
+        "ret": [
+            [
+                "verify_rev2_fw_size",
+                "sync",
+                "get_info_info_bl_rev",
+                "get_info_bl_rev",
+                "erase",
+                "program_fw_size",
+                "verify_rev3_fw_size",
+                "reboot"
+            ],
+            0
+        ]
+    },
+    "recv_byte_with_timeout": {
+        "start": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "uart_read"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "uint8_t_v"
+            ],
+            0
+        ]
+    },
+    "recv_bytes": {
+        "ret": [
+            [
+                "recv_byte_with_timeout_p"
+            ],
+            0
+        ]
+    },
+    "drain": {
+        "ret": [
+            [
+                "recv_byte_with_timeout_c"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "ret": [
+            [
+                "send_p"
+            ],
+            0
+        ]
+    },
+    "get_sync": {
+        "ret": [
+            [
+                "recv_byte_with_timeout_c",
+                "recv_byte_with_timeout_timeout_ms"
+            ],
+            0
+        ]
+    },
+    "get_info": {
+        "ret": [
+            [
+                "val",
+                "recv_bytes_uint8_t",
+                "sizeof_val"
+            ],
+            0
+        ]
+    },
+    "program": {
+        "ret": [
+            [
+                "get_sync"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "prog_multi_max",
+                "size"
+            ],
+            1
+        ]
+    },
+    "verify_rev2": {
+        "ret": [
+            [
+                "recv_byte_with_timeout_c",
+                "get_sync"
+            ],
+            0
+        ],
+        "sent": [
+            [
+                "size"
+            ],
+            1
+        ]
+    },
+    "verify_rev3": {
+        "fill_blank": [
+            [
+                "0xff"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "crc32_small_fw",
+                "crc32_small_sum",
+                "crc32_small_fill_blank",
+                "crc32_small_fw_size_local"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "sizeof_crc",
+                "get_info_info_flash_size",
+                "recv_bytes_uint8_t_crc",
+                "get_info_fw_size_remote"
+            ],
+            0
+        ]
+    }
+}

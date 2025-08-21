@@ -1,0 +1,78 @@
+{
+    "capturePreResetState": {
+        "position_before_reset": [
+            [
+                "_ekf_get_position"
+            ],
+            0
+        ],
+        "vert_vel_reset_counter_before_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "velocity_before_reset": [
+            [
+                "_ekf_get_velocity"
+            ],
+            0
+        ],
+        "horz_pos_reset_counter_before_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "vert_pos_reset_counter_before_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "horz_vel_reset_counter_before_reset": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "capturePostResetState": {
+        "velocity_after_reset": [
+            [
+                "_ekf_get_velocity"
+            ],
+            0
+        ],
+        "vert_pos_reset_counter_after_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "vert_vel_reset_counter_after_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "horz_pos_reset_counter_after_reset": [
+            [
+                "c"
+            ],
+            0
+        ],
+        "position_after_reset": [
+            [
+                "_ekf_get_position"
+            ],
+            0
+        ],
+        "horz_vel_reset_counter_after_reset": [
+            [
+                "c"
+            ],
+            0
+        ]
+    }
+}

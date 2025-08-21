@@ -1,0 +1,90 @@
+{
+    "init": {
+        "uart": [
+            [
+                "hal_serial_i"
+            ],
+            0
+        ],
+        ".idx": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "set_options": {
+        "opt": [
+            [
+                "i",
+                "state"
+            ],
+            0
+        ]
+    },
+    "get_passthru": {
+        "baud2": [
+            [
+                "state2_baudrate"
+            ],
+            0
+        ],
+        "state1": [
+            [
+                "get_state_by_id_passthru_port1"
+            ],
+            0
+        ],
+        "baud1": [
+            [
+                "state1_baudrate"
+            ],
+            0
+        ],
+        "port2": [
+            [
+                "get_serial_by_id_passthru_port2"
+            ],
+            0
+        ],
+        "state2": [
+            [
+                "get_state_by_id_passthru_port2"
+            ],
+            0
+        ],
+        "timeout_s": [
+            [
+                "passthru_timeout"
+            ],
+            0
+        ],
+        "port1": [
+            [
+                "get_serial_by_id_passthru_port1"
+            ],
+            0
+        ]
+    },
+    "register_port": {
+        "p": [
+            [
+                "port"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "p_next",
+                "port"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "port_state_idx"
+            ],
+            0
+        ]
+    }
+}

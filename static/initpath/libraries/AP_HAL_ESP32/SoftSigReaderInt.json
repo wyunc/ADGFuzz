@@ -1,0 +1,63 @@
+{
+    "init": {
+        "io_conf.pin_bit_mask": [
+            [
+                "gpio_input_pin_sel"
+            ],
+            0
+        ],
+        "io_conf.intr_type": [
+            [
+                "gpio_intr_anyedge"
+            ],
+            0
+        ],
+        "io_conf.pull_up_en": [
+            [
+                "gpio_pullup_t"
+            ],
+            0
+        ],
+        "gpio_evt_queue": [
+            [
+                "x_queue_create_sizeof",
+                "x_queue_create_uint32_t"
+            ],
+            0
+        ],
+        "io_conf.mode": [
+            [
+                "gpio_mode_input"
+            ],
+            0
+        ],
+        "io_conf.pull_down_en": [
+            [
+                "gpio_pulldown_t"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "last_value": [
+            [
+                "pulse_w1"
+            ],
+            0
+        ],
+        "widths1": [
+            [
+                "uint16_t_pulse_w0",
+                "uint16_t_pulse_w1"
+            ],
+            0
+        ],
+        "widths0": [
+            [
+                "uint16_t_pulse_w0",
+                "uint16_t_last_value"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,201 @@
+{
+    "updateVoltage": {
+        "_voltage_v": [
+            [
+                "voltage_v"
+            ],
+            0
+        ]
+    },
+    "updateCurrent": {
+        "_current_a": [
+            [
+                "current_a"
+            ],
+            0
+        ]
+    },
+    "updateTemperature": {
+        "_temperature_c": [
+            [
+                "temperature_c"
+            ],
+            0
+        ]
+    },
+    "updateBatteryStatus": {
+        "_battery_initialized": [
+            [
+                "_connected",
+                "timestamp",
+                "2_s",
+                "timestamp"
+            ],
+            1
+        ],
+        "_warning": [
+            [
+                "determine_warning__state_of_charge"
+            ],
+            0
+        ],
+        "_state_of_charge_volt_based": [
+            [
+                "calculate_state_of_charge_voltage_based__current_a",
+                "calculate_state_of_charge_voltage_based__voltage_v"
+            ],
+            0
+        ]
+    },
+    "sumDischarged": {
+        "_last_timestamp": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_discharged_mah": [
+            [
+                "_f",
+                "1e3f",
+                "timestamp",
+                "1e6",
+                "current_a"
+            ],
+            2
+        ]
+    },
+    "calculateStateOfChargeVoltageBased": {
+        "cell_voltage": [
+            [
+                "_internal_resistance_estimate",
+                "voltage_v",
+                "_params_n_cells",
+                "_params_r_internal",
+                "current_a"
+            ],
+            0
+        ]
+    },
+    "updateInternalResistanceEstimation": {
+        "_estimation_covariance_norm": [
+            [
+                "estimation_covariance_temp_norm"
+            ],
+            0
+        ],
+        "RSL_est_temp": [
+            [
+                "voltage_v",
+                "x_transpose",
+                "_rls_est",
+                "_rls_est",
+                "x_transpose",
+                "lambda",
+                "x"
+            ],
+            3
+        ],
+        "_RLS_est": [
+            [
+                "rsl_est_temp"
+            ],
+            0
+        ],
+        "_estimation_covariance": [
+            [
+                "estimation_covariance_temp"
+            ],
+            0
+        ],
+        "_internal_resistance_estimate": [
+            [
+                "_params_n_cells",
+                "max__rls_est",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "resetInternalResistanceEstimation": {
+        "_internal_resistance_estimate": [
+            [
+                "r_default"
+            ],
+            0
+        ]
+    },
+    "estimateStateOfCharge": {
+        "state_of_charge_current_based": [
+            [
+                "max__params_capacity",
+                "max__discharged_mah",
+                "max__f"
+            ],
+            0
+        ],
+        "_state_of_charge": [
+            [
+                "min_state_of_charge_current_based",
+                "_state_of_charge_volt_based",
+                "3e",
+                "_discharged_mah_loop",
+                "max__state_of_charge",
+                "_params_capacity",
+                "max__f",
+                "_state_of_charge_volt_based",
+                "min__state_of_charge"
+            ],
+            1
+        ]
+    },
+    "computeScale": {
+        "_scale": [
+            [
+                "constrain__f",
+                "_cell_voltage_filter_v_get_state",
+                "_f",
+                "constrain__scale",
+                "_params_v_charged"
+            ],
+            0
+        ]
+    },
+    "computeRemainingTime": {
+        "_vehicle_status_is_fw": [
+            [
+                "vehicle_type_fixed_wing",
+                "vehicle_status_vehicle_type"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "vehicle_status_arming_state",
+                "arming_state_armed"
+            ],
+            0
+        ],
+        "time_remaining_s": [
+            [
+                "_f",
+                "1e3f",
+                "flt_epsilon",
+                "fmaxf__current_average_filter_a_get_state",
+                "_state_of_charge",
+                "_params_capacity",
+                "nan"
+            ],
+            2
+        ]
+    },
+    "updateParams": {
+        "n_cells": [
+            [
+                "_first_parameter_update",
+                "_params_n_cells"
+            ],
+            0
+        ]
+    }
+}

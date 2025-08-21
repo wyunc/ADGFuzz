@@ -1,0 +1,309 @@
+{
+    "parameters_updated": {
+        "updated": [
+            [
+                "update_effectiveness_source"
+            ],
+            0
+        ]
+    },
+    "update_allocation_method": {
+        "method": [
+            [
+                "_param_ca_method_get",
+                "allocation_method",
+                "desired_methods",
+                "i"
+            ],
+            1
+        ],
+        "_num_control_allocation": [
+            [
+                "_actuator_effectiveness_num_matrices"
+            ],
+            0
+        ],
+        "_allocation_method_id": [
+            [
+                "_param_ca_method_get",
+                "allocation_method"
+            ],
+            1
+        ]
+    },
+    "update_effectiveness_source": {
+        "_effectiveness_source_id": [
+            [
+                "effectiveness_source",
+                "_param_ca_airframe_get"
+            ],
+            1
+        ],
+        "_actuator_effectiveness": [
+            [
+                "new",
+                "actuator_effectiveness_helicopter_this",
+                "actuator_effectiveness_tiltrotor_vtol_this",
+                "actuator_effectiveness_mc_tilt_this",
+                "actuator_effectiveness_helicopter_servos",
+                "actuator_effectiveness_uuv_this",
+                "actuator_effectiveness_standard_vtol_this",
+                "actuator_effectiveness_multirotor_this",
+                "actuator_effectiveness_fixed_wing_this",
+                "actuator_effectiveness_tailsitter_vtol_this",
+                "nullptr",
+                "actuator_effectiveness_custom_this",
+                "actuator_effectiveness_rover_ackermann",
+                "actuator_effectiveness_helicopter_coaxial_this",
+                "actuator_effectiveness_helicopter_motors"
+            ],
+            1
+        ]
+    },
+    "Run": {
+        "_timestamp_sample": [
+            [
+                "vehicle_torque_setpoint_timestamp_sample",
+                "vehicle_thrust_setpoint_timestamp_sample"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "_torque_sp": [
+            [
+                "vector3f_vehicle_torque_setpoint_xyz"
+            ],
+            0
+        ],
+        "_last_status_pub": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "flight_phase": [
+            [
+                "hover_flight",
+                "transition_hf_to_ff",
+                "transition_ff_to_hf",
+                "forward_flight"
+            ],
+            0
+        ],
+        "_armed": [
+            [
+                "vehicle_status_arming_state",
+                "arming_state_armed"
+            ],
+            0
+        ],
+        "_thrust_sp": [
+            [
+                "vector3f_vehicle_thrust_setpoint_xyz"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "constrain_now",
+                "constrain__last_run",
+                "1e6f"
+            ],
+            0
+        ],
+        "_publish_controls": [
+            [
+                "vehicle_control_mode_flag_control_allocation_enabled"
+            ],
+            0
+        ]
+    },
+    "update_effectiveness_matrix_if_needed": {
+        "reason": [
+            [
+                "configuration_update"
+            ],
+            0
+        ],
+        "NUM_CONTROLS": [
+            [
+                "num_controls"
+            ],
+            0
+        ],
+        "_last_effectiveness_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "matrix": [
+            [
+                "i",
+                "_control_allocation_selection_indexes",
+                "actuator_idx",
+                "config_effectiveness_matrices"
+            ],
+            1
+        ],
+        "total_num_actuators": [
+            [
+                "i",
+                "config_num_actuators_matrix"
+            ],
+            0
+        ],
+        "trims.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "publish_control_allocator_status": {
+        "actuator_max": [
+            [
+                "matrix_index",
+                "_control_allocation",
+                "_get_actuator_max"
+            ],
+            0
+        ],
+        "actuator_sp": [
+            [
+                "matrix_index",
+                "_get_actuator_setpoint",
+                "_control_allocation"
+            ],
+            0
+        ],
+        "control_allocator_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "control_allocator_status.handled_motor_failure_mask": [
+            [
+                "_handled_motor_failure_bitmask"
+            ],
+            0
+        ],
+        "allocated_control": [
+            [
+                "_get_allocated_control",
+                "matrix_index",
+                "_control_allocation"
+            ],
+            0
+        ],
+        "actuator_min": [
+            [
+                "matrix_index",
+                "_get_actuator_min",
+                "_control_allocation"
+            ],
+            0
+        ]
+    },
+    "publish_actuator_controls": {
+        "actuator_servos.timestamp": [
+            [
+                "actuator_motors_timestamp"
+            ],
+            0
+        ],
+        "actuator_motors.reversible_flags": [
+            [
+                "_param_r_rev_get"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "servos_idx",
+                "motors_idx"
+            ],
+            0
+        ],
+        "stopped_motors": [
+            [
+                "_actuator_effectiveness_get_stopped_motors",
+                "_handled_motor_failure_bitmask"
+            ],
+            0
+        ],
+        "actuator_motors.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "actuator_motors.timestamp_sample": [
+            [
+                "_timestamp_sample"
+            ],
+            0
+        ],
+        "actuator_servos.timestamp_sample": [
+            [
+                "_timestamp_sample"
+            ],
+            0
+        ],
+        "actuator_sp": [
+            [
+                "_get_actuator_setpoint_actuator_idx_matrix",
+                "_control_allocation_selection_indexes",
+                "actuator_idx",
+                "_control_allocation",
+                "_get_actuator_setpoint_selected_matrix"
+            ],
+            1
+        ]
+    },
+    "check_for_motor_failures": {
+        "_handled_motor_failure_bitmask": [
+            [
+                "failure_detector_status_motor_failure_mask"
+            ],
+            0
+        ],
+        "num_motors_failed": [
+            [
+                "count_set_bits_failure_detector_status_motor_failure_mask"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "control_allocator",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    },
+    "print_status": {
+        "effectiveness": [
+            [
+                "_get_effectiveness_matrix",
+                "_control_allocation",
+                "i"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "set_speed": {
+        "_speed": [
+            [
+                "_desc_highspeed",
+                "_desc_lowspeed"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "r": [
+            [
+                "msgs",
+                "ioctl__desc_mode",
+                "ioctl_spi_ioc_wr_mode",
+                "ioctl_nmsgs",
+                "ioctl_fd",
+                "ioctl_spi_ioc_message"
+            ],
+            0
+        ],
+        ".speed_hz": [
+            [
+                "_speed"
+            ],
+            0
+        ],
+        "_bus.last_mode": [
+            [
+                "_desc_mode"
+            ],
+            0
+        ],
+        ".bits_per_word": [
+            [
+                "_desc_bits_per_word"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "_desc_subdev",
+                "_bus_fd"
+            ],
+            0
+        ],
+        ".rx_buf": [
+            [
+                "recv",
+                "uint64_t"
+            ],
+            0
+        ],
+        ".tx_buf": [
+            [
+                "send",
+                "uint64_t"
+            ],
+            0
+        ],
+        ".len": [
+            [
+                "send_len",
+                "recv_len"
+            ],
+            0
+        ]
+    },
+    "transfer_fullduplex": {
+        ".len": [
+            [
+                "len"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "ioctl_spi_ioc_wr_mode",
+                "msgs",
+                "ioctl_spi_ioc_message",
+                "ioctl_fd",
+                "ioctl__desc_mode"
+            ],
+            0
+        ],
+        ".tx_buf": [
+            [
+                "send",
+                "uint64_t"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "_bus_fd",
+                "_desc_subdev"
+            ],
+            0
+        ],
+        ".speed_hz": [
+            [
+                "_speed"
+            ],
+            0
+        ],
+        ".bits_per_word": [
+            [
+                "_desc_bits_per_word"
+            ],
+            0
+        ],
+        ".rx_buf": [
+            [
+                "recv",
+                "uint64_t"
+            ],
+            0
+        ]
+    },
+    "_unregister": {
+        "it": [
+            [
+                "_buses_begin"
+            ],
+            0
+        ]
+    },
+    "teardown": {
+        "it": [
+            [
+                "_buses_begin"
+            ],
+            0
+        ]
+    }
+}

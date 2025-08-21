@@ -1,0 +1,31 @@
+{
+    "process_pulse": {
+        "timestamp_us": [
+            [
+                "width_high",
+                "width_low"
+            ],
+            0
+        ],
+        "state.bit_ofs": [
+            [
+                "baudrate",
+                "width_high",
+                "byte_width",
+                "half_bit",
+                "byte_width",
+                "baudrate",
+                "half_bit",
+                "width_low"
+            ],
+            2
+        ],
+        "byte": [
+            [
+                "state_byte",
+                "0x_ff"
+            ],
+            0
+        ]
+    }
+}

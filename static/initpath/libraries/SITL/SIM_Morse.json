@@ -1,0 +1,337 @@
+{
+    "parse_sensors": {
+        "length": [
+            [
+                "n"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strstr_json",
+                "strchr_p",
+                "strstr_p",
+                "strlen_key_key",
+                "strlen_key_section",
+                "strstr_key_key",
+                "strstr_key_section"
+            ],
+            0
+        ],
+        "key": [
+            [
+                "i",
+                "keytable"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "realloc_sizeof",
+                "vector3f",
+                "float",
+                "n",
+                "realloc_vector3f",
+                "realloc_float",
+                "realloc_v_data"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "vector3f_array",
+                "vector3f",
+                "struct",
+                "key_ptr",
+                "float_array"
+            ],
+            0
+        ]
+    },
+    "connect_sockets": {
+        "control_sock": [
+            [
+                "new_nothrow",
+                "nullptr",
+                "socket_apm_native_false"
+            ],
+            0
+        ],
+        "sensors_sock": [
+            [
+                "new_nothrow",
+                "nullptr",
+                "socket_apm_native_false"
+            ],
+            0
+        ]
+    },
+    "sensors_receive": {
+        "sensor_buffer_len": [
+            [
+                "sensor_buffer",
+                "uint8_t",
+                "memrchr_sensor_buffer",
+                "memrchr_sensor_buffer_len",
+                "const",
+                "sensors_sock_recv_sizeof",
+                "sensors_sock_recv_sensor_buffer_len",
+                "sensors_sock_recv_sensor_buffer"
+            ],
+            2
+        ],
+        "p1": [
+            [
+                "uint8_t",
+                "memrchr_sensor_buffer",
+                "memrchr_p2",
+                "const"
+            ],
+            0
+        ],
+        "control_sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "sensors_sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "parse_ok": [
+            [
+                "parse_sensors_const",
+                "parse_sensors_char_p1"
+            ],
+            0
+        ]
+    },
+    "output_rover_regular": {
+        "velocity_body": [
+            [
+                "velocity_ef",
+                "dcm_transposed"
+            ],
+            0
+        ],
+        "force": [
+            [
+                "max_speed",
+                "input_servos",
+                "max_speed",
+                "max_accel",
+                "velocity_body_x"
+            ],
+            4
+        ],
+        "steer": [
+            [
+                "input_servos",
+                "radians"
+            ],
+            2
+        ]
+    },
+    "output_rover_skid": {
+        "steering_rps": [
+            [
+                "input_servos",
+                "radians_steer_rate_max_dps",
+                "input_servos"
+            ],
+            2
+        ],
+        "speed_ms": [
+            [
+                "input_servos",
+                "input_servos",
+                "max_speed"
+            ],
+            2
+        ]
+    },
+    "output_quad": {
+        "m_back": [
+            [
+                "motors"
+            ],
+            0
+        ],
+        "m_left": [
+            [
+                "motors"
+            ],
+            0
+        ],
+        "m_front": [
+            [
+                "motors"
+            ],
+            0
+        ],
+        "m_right": [
+            [
+                "motors"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "dt_us": [
+            [
+                "state_timestamp",
+                "_0e6",
+                "_0e",
+                "state_timestamp",
+                "state_timestamp",
+                "last_state_timestamp"
+            ],
+            3
+        ],
+        "last_state": [
+            [
+                "state"
+            ],
+            0
+        ],
+        "last_time_s": [
+            [
+                "state_timestamp"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "state_timestamp",
+                "last_state_timestamp",
+                "_0e6",
+                "state_timestamp",
+                "_0e6",
+                "_0e",
+                "state_timestamp",
+                "state_timestamp",
+                "last_state_timestamp"
+            ],
+            6
+        ],
+        "extrapolated_s": [
+            [
+                "state_timestamp",
+                "last_state_timestamp"
+            ],
+            3
+        ],
+        "scanner.ranges": [
+            [
+                "state_scanner_ranges"
+            ],
+            0
+        ],
+        "accel_body.x": [
+            [
+                "gravity_mss",
+                "accel_body_x"
+            ],
+            1
+        ],
+        "scanner.points": [
+            [
+                "state_scanner_points"
+            ],
+            0
+        ],
+        "accel_body.z": [
+            [
+                "gravity_mss",
+                "accel_body_z"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "vector3d_state_gps_z",
+                "vector3d_state_gps_y",
+                "vector3d_state_gps_x"
+            ],
+            0
+        ],
+        "accel_body.y": [
+            [
+                "gravity_mss",
+                "accel_body_y"
+            ],
+            1
+        ]
+    },
+    "report_FPS": {
+        "dt": [
+            [
+                "state_timestamp"
+            ],
+            0
+        ],
+        "last_socket_frame_counter": [
+            [
+                "socket_frame_counter"
+            ],
+            0
+        ],
+        "last_frame_count_s": [
+            [
+                "state_timestamp"
+            ],
+            0
+        ],
+        "frames": [
+            [
+                "socket_frame_counter"
+            ],
+            0
+        ]
+    },
+    "send_report": {
+        "packet.sensor_type": [
+            [
+                "mav_distance_sensor_laser"
+            ],
+            0
+        ],
+        "packet.time_usec": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "send_report_last_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "v": [
+            [
+                "vector2f__y",
+                "vector2f_scanner_points_data",
+                "vector2f__x",
+                "vector2f_i"
+            ],
+            0
+        ],
+        "distance_cm": [
+            [
+                "v_length"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_msgbuf"
+            ],
+            0
+        ]
+    }
+}

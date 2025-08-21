@@ -1,0 +1,248 @@
+{
+    "updateParams": {
+        "_max_yaw_rate": [
+            [
+                "m_deg_to_rad_f",
+                "_param_ro_yaw_rate_limit_get"
+            ],
+            0
+        ]
+    },
+    "updatePosControl": {
+        "_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_dt": [
+            [
+                "1e",
+                "constrain__timestamp",
+                "constrain_timestamp_prev",
+                "constrain_1_ms",
+                "constrain_5000_ms"
+            ],
+            0
+        ]
+    },
+    "updateSubscriptions": {
+        "_vehicle_yaw": [
+            [
+                "eulerf__vehicle_attitude_quaternion_psi"
+            ],
+            0
+        ],
+        "_vehicle_attitude_quaternion": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ],
+        "_curr_pos_ned": [
+            [
+                "vector2f_vehicle_local_position_y",
+                "vector2f_vehicle_local_position_x"
+            ],
+            0
+        ]
+    },
+    "generatePositionSetpoint": {
+        "rover_position_setpoint.yaw": [
+            [
+                "_vehicle_yaw"
+            ],
+            0
+        ],
+        "rover_position_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_position_setpoint.cruising_speed": [
+            [
+                "_param_ro_speed_limit_get"
+            ],
+            0
+        ]
+    },
+    "manualPositionMode": {
+        "mecanum_velocity_setpoint.yaw": [
+            [
+                "_vehicle_yaw",
+                "nan",
+                "wrap_pi_yaw_delta",
+                "wrap_pi__vehicle_yaw"
+            ],
+            2
+        ],
+        "mecanum_velocity_setpoint.speed": [
+            [
+                "velocity_setpoint_body_norm",
+                "velocity_norm"
+            ],
+            1
+        ],
+        "pos_ctl_course_direction_local": [
+            [
+                "_vehicle_attitude_quaternion_rotate_vector_velocity_normalized"
+            ],
+            0
+        ],
+        "target_waypoint_ned": [
+            [
+                "pos_ctl_course_direction_temp",
+                "fabsf_start_to_curr_pos",
+                "_param_pp_lookahd_max_get",
+                "fabsf__pos_ctl_course_direction",
+                "_curr_pos_ned"
+            ],
+            3
+        ],
+        "start_to_curr_pos": [
+            [
+                "_curr_pos_ned",
+                "_curr_pos_ned"
+            ],
+            1
+        ],
+        "mecanum_velocity_setpoint.bearing": [
+            [
+                "_vehicle_attitude_quaternion_rotate_vector_velocity_setpoint_body",
+                "atan2f_velocity_setpoint_local",
+                "bearing_setpoint"
+            ],
+            1
+        ],
+        "velocity": [
+            [
+                "velocity_setpoint_body",
+                "_f",
+                "vector3f_velocity_setpoint_body"
+            ],
+            0
+        ],
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "autoPositionMode": {
+        "mecanum_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.yaw": [
+            [
+                "position_setpoint_triplet_current_yaw",
+                "_vehicle_yaw",
+                "_vehicle_yaw"
+            ],
+            1
+        ],
+        "_waypoint_transition_angle": [
+            [
+                "calc_waypoint_transition_angle__next_wp_ned",
+                "calc_waypoint_transition_angle__prev_wp_ned",
+                "calc_waypoint_transition_angle__curr_wp_ned"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.speed": [
+            [
+                "_f",
+                "velocity_magnitude"
+            ],
+            0
+        ],
+        "_curr_wp_type": [
+            [
+                "position_setpoint_triplet_current_type"
+            ],
+            0
+        ],
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "auto_stop": [
+            [
+                "distance_to_curr_wp",
+                "_param_nav_acc_rad_get"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.bearing": [
+            [
+                "bearing_setpoint",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "goToPositionMode": {
+        "mecanum_velocity_setpoint.speed": [
+            [
+                "_f",
+                "min_max_speed",
+                "min_speed_setpoint"
+            ],
+            1
+        ],
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.yaw": [
+            [
+                "_pos_ctl_yaw_setpoint",
+                "_vehicle_yaw"
+            ],
+            0
+        ],
+        "mecanum_velocity_setpoint.bearing": [
+            [
+                "_f",
+                "bearing_setpoint"
+            ],
+            0
+        ],
+        "distance_to_target": [
+            [
+                "target_waypoint_ned",
+                "_curr_pos_ned",
+                "_norm"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

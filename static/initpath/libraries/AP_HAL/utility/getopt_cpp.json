@@ -1,0 +1,44 @@
+{
+    "getoption": {
+        "optopt": [
+            [
+                "optind",
+                "argv",
+                "int"
+            ],
+            1
+        ],
+        "longindex": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "optarg": [
+            [
+                "optind",
+                "argv",
+                "nullptr",
+                "optind",
+                "strcspn_place",
+                "argv"
+            ],
+            2
+        ],
+        "oli": [
+            [
+                "strchr_optstring",
+                "strchr_optopt"
+            ],
+            0
+        ],
+        ".flag": [
+            [
+                "longopts",
+                "_val",
+                "i"
+            ],
+            0
+        ]
+    }
+}

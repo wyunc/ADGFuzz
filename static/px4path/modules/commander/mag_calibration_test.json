@@ -1,0 +1,75 @@
+{
+    "generate2SidesMagData": {
+        "theta": [
+            [
+                "_f",
+                "float_n_samples",
+                "m_pi_f",
+                "_f"
+            ],
+            1
+        ],
+        "i": [
+            [
+                "int_n_samples"
+            ],
+            0
+        ],
+        "psi": [
+            [
+                "_f",
+                "float_n_samples",
+                "m_pi_f",
+                "_f"
+            ],
+            1
+        ]
+    },
+    "generateRegularData": {
+        "phi": [
+            [
+                "static_cast",
+                "m_pi_f",
+                "float",
+                "n",
+                "_f",
+                "sinf_d_phi",
+                "static_cast",
+                "m_pi_f",
+                "int",
+                "sinf_theta",
+                "_f"
+            ],
+            1
+        ],
+        "theta": [
+            [
+                "static_cast",
+                "m_pi_f",
+                "int",
+                "static_cast",
+                "sqrtf_a",
+                "m_pi_f",
+                "float",
+                "m"
+            ],
+            2
+        ],
+        "d_phi": [
+            [
+                "m_pi_f",
+                "float",
+                "static_cast",
+                "m_pi_f",
+                "int",
+                "static_cast",
+                "sqrtf_a",
+                "m_pi_f",
+                "mag_str",
+                "n_samples",
+                "_f"
+            ],
+            4
+        ]
+    }
+}

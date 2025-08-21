@@ -1,0 +1,16 @@
+{
+    "register_delay_callback": {
+        "_delay_cb": [
+            [
+                "proc"
+            ],
+            0
+        ],
+        "_min_delay_cb_ms": [
+            [
+                "min_time_ms"
+            ],
+            0
+        ]
+    }
+}

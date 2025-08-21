@@ -1,0 +1,20 @@
+{
+    "print_vprintf": {
+        "p": [
+            [
+                "buffer_printer",
+                "static_cast",
+                "s"
+            ],
+            0
+        ]
+    },
+    "set_txspace": {
+        "_txspace": [
+            [
+                "space"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,480 @@
+{
+    "updateParams": {
+        "dz": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "rev": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "min": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "reversed_case": [
+            [
+                "function_throttle",
+                "_rc_function",
+                "_parameters_max",
+                "function_throttle",
+                "_rc_function",
+                "_parameters_trim",
+                "function_throttle",
+                "_rc_function",
+                "_parameters_rev"
+            ],
+            4
+        ],
+        "max": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "new_throttle_trim": [
+            [
+                "function_throttle",
+                "_rc_function",
+                "_parameters_max",
+                "_parameters_min",
+                "function_throttle",
+                "_rc_function"
+            ],
+            3
+        ],
+        "normal_case": [
+            [
+                "function_throttle",
+                "_rc_function",
+                "_parameters_trim",
+                "_parameters_min",
+                "function_throttle",
+                "_rc_function",
+                "function_throttle",
+                "_rc_function",
+                "_parameters_rev"
+            ],
+            4
+        ]
+    },
+    "set_params_from_rc": {
+        "rc_val": [
+            [
+                "get_rc_value_i",
+                "_f",
+                "get_rc_value_function_param_1"
+            ],
+            0
+        ]
+    },
+    "map_flight_modes_buttons": {
+        "flightmode_buttons": [
+            [
+                "_param_rc_map_fltm_btn_get"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "min": [
+            [
+                "_parameters_min",
+                "i"
+            ],
+            0
+        ],
+        "_channel_count_previous": [
+            [
+                "input_rc_channel_count"
+            ],
+            0
+        ],
+        "channel_count_stable": [
+            [
+                "input_rc_channel_count"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "input_rc_values",
+                "i"
+            ],
+            0
+        ],
+        "dz": [
+            [
+                "_parameters_dz",
+                "i"
+            ],
+            0
+        ],
+        "input_source_stable": [
+            [
+                "input_rc_input_source"
+            ],
+            0
+        ],
+        "_last_rc_to_param_map_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_rc.signal_lost": [
+            [
+                "_rc_signal_lost_hysteresis_get_state"
+            ],
+            0
+        ],
+        "fs_ch": [
+            [
+                "_param_rc_map_failsafe_get",
+                "_rc_function"
+            ],
+            0
+        ],
+        "_last_timestamp_signal": [
+            [
+                "input_rc_timestamp_last_signal"
+            ],
+            0
+        ],
+        "max": [
+            [
+                "i",
+                "_parameters_max"
+            ],
+            0
+        ],
+        "_input_source_previous": [
+            [
+                "input_rc_input_source"
+            ],
+            0
+        ],
+        "_rc.rssi": [
+            [
+                "input_rc_rssi"
+            ],
+            0
+        ],
+        "_channel_count_max": [
+            [
+                "min_input_rc_channel_count",
+                "min_rc_max_chan_count"
+            ],
+            1
+        ],
+        "_rc.channel_count": [
+            [
+                "input_rc_channel_count"
+            ],
+            0
+        ],
+        "_rc.timestamp": [
+            [
+                "input_rc_timestamp_last_signal"
+            ],
+            0
+        ],
+        "_rc.frame_drop_count": [
+            [
+                "input_rc_rc_lost_frame_count"
+            ],
+            0
+        ],
+        "trim": [
+            [
+                "i",
+                "_parameters_trim"
+            ],
+            0
+        ]
+    },
+    "UpdateManualSwitches": {
+        "_manual_switches_previous": [
+            [
+                "switches"
+            ],
+            0
+        ],
+        "switches.return_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_return_th_get",
+                "get_rc_switch_on_off_position_function_return"
+            ],
+            0
+        ],
+        "_manual_switches_last_publish": [
+            [
+                "switches"
+            ],
+            0
+        ],
+        "switches_changed": [
+            [
+                "switches"
+            ],
+            0
+        ],
+        "slot_max": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "switches.loiter_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_loiter_th_get",
+                "get_rc_switch_on_off_position_function_loiter"
+            ],
+            0
+        ],
+        "_manual_switches_last_publish.switch_changes": [
+            [
+                "_manual_switches_last_publish_switch_changes"
+            ],
+            1
+        ],
+        "switches.transition_switch": [
+            [
+                "get_rc_switch_on_off_position_function_transition",
+                "get_rc_switch_on_off_position__param_rc_trans_th_get"
+            ],
+            0
+        ],
+        "switches.offboard_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_offb_th_get",
+                "get_rc_switch_on_off_position_function_offboard"
+            ],
+            0
+        ],
+        "switches.arm_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_armswitch_th_get",
+                "get_rc_switch_on_off_position_function_armswitch"
+            ],
+            0
+        ],
+        "slot_width_half": [
+            [
+                "_f",
+                "mode_slot_num"
+            ],
+            1
+        ],
+        "switches.kill_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_killswitch_th_get",
+                "get_rc_switch_on_off_position_function_killswitch"
+            ],
+            0
+        ],
+        "switches.video_switch": [
+            [
+                "get_rc_switch_on_off_position_function_aux_4"
+            ],
+            0
+        ],
+        "switches.photo_switch": [
+            [
+                "get_rc_switch_on_off_position_function_aux_3"
+            ],
+            0
+        ],
+        "slot_min": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_manual_switches_last_publish.timestamp_sample": [
+            [
+                "_manual_switches_previous_timestamp_sample"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "get_rc_value_function_fltbtn_slot_1",
+                "get_rc_value_slot",
+                "_param_rc_map_fltmode_get",
+                "_rc_channels"
+            ],
+            0
+        ],
+        "switches.engage_main_motor_switch": [
+            [
+                "get_rc_switch_on_off_position__param_rc_eng_mot_th_get",
+                "get_rc_switch_on_off_position_function_engage_main_motor"
+            ],
+            0
+        ],
+        "switches.mode_slot": [
+            [
+                "mode_slot_none",
+                "mode_slot_num",
+                "slot"
+            ],
+            3
+        ],
+        "switches.gear_switch": [
+            [
+                "get_rc_switch_on_off_position_function_gear",
+                "get_rc_switch_on_off_position__param_rc_gear_th_get"
+            ],
+            0
+        ],
+        "_manual_switches_last_publish.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "switches.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "UpdateManualControlInput": {
+        "manual_control_input.yaw": [
+            [
+                "get_rc_value__f",
+                "get_rc_value_function_yaw"
+            ],
+            0
+        ],
+        "manual_control_input.aux5": [
+            [
+                "get_rc_value__f",
+                "get_rc_value_function_aux_5"
+            ],
+            0
+        ],
+        "manual_control_input.aux4": [
+            [
+                "get_rc_value__f",
+                "get_rc_value_function_aux_4"
+            ],
+            0
+        ],
+        "manual_control_input.data_source": [
+            [
+                "source_rc"
+            ],
+            0
+        ],
+        "manual_control_input.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "manual_control_input.pitch": [
+            [
+                "get_rc_value_function_pitch",
+                "get_rc_value__f"
+            ],
+            0
+        ],
+        "manual_control_input.aux2": [
+            [
+                "get_rc_value__f",
+                "get_rc_value_function_aux_2"
+            ],
+            0
+        ],
+        "manual_control_input.roll": [
+            [
+                "get_rc_value__f",
+                "get_rc_value_function_roll"
+            ],
+            0
+        ],
+        "manual_control_input.aux1": [
+            [
+                "get_rc_value_function_aux_1",
+                "get_rc_value__f"
+            ],
+            0
+        ],
+        "manual_control_input.valid": [
+            [
+                "_rc_calibrated"
+            ],
+            0
+        ],
+        "manual_control_input.flaps": [
+            [
+                "get_rc_value_function_flaps",
+                "get_rc_value__f"
+            ],
+            0
+        ],
+        "manual_control_input.aux3": [
+            [
+                "get_rc_value_function_aux_3",
+                "get_rc_value__f"
+            ],
+            0
+        ],
+        "_last_manual_control_input_publish": [
+            [
+                "manual_control_input_timestamp"
+            ],
+            0
+        ],
+        "manual_control_input.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "manual_control_input.throttle": [
+            [
+                "get_rc_value_function_throttle",
+                "get_rc_value__f"
+            ],
+            0
+        ],
+        "manual_control_input.aux6": [
+            [
+                "get_rc_value_function_aux_6",
+                "get_rc_value__f"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "rc_update"
+            ],
+            0
+        ]
+    }
+}

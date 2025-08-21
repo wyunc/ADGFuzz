@@ -1,0 +1,110 @@
+{
+    "read": {
+        "numc": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "parsed": [
+            [
+                "_parse_gps"
+            ],
+            0
+        ],
+        "_msg_id": [
+            [
+                "port_read"
+            ],
+            1
+        ],
+        "_payload_length": [
+            [
+                "uint16_t",
+                "port_read"
+            ],
+            1
+        ]
+    },
+    "_parse_gps": {
+        "state.num_sats": [
+            [
+                "_buffer_nav_satellites"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "int32_t_be32toh",
+                "int32_t__buffer_nav_longitude"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "int32_t__buffer_nav_altitude_ellipsoid",
+                "int32_t_be32toh",
+                "int32_t_be32toh",
+                "int32_t__buffer_nav_altitude_msl"
+            ],
+            2
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360_int16_t",
+                "wrap_360_be16toh",
+                "wrap_360__buffer_nav_ground_course"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "no_fix",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_2d"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "int32_t_be32toh",
+                "int32_t__buffer_nav_latitude"
+            ],
+            0
+        ],
+        "state.ground_speed": [
+            [
+                "int32_t_be32toh",
+                "int32_t__buffer_nav_ground_speed"
+            ],
+            0
+        ]
+    },
+    "_accumulate": {
+        "_checksum": [
+            [
+                "val",
+                "0x7fff"
+            ],
+            0
+        ]
+    },
+    "_detect": {
+        "state.payload_length": [
+            [
+                "state_payload_counter",
+                "data",
+                "state_checksum"
+            ],
+            0
+        ],
+        "state.checksum": [
+            [
+                "0x7fff",
+                "data",
+                "state_checksum"
+            ],
+            0
+        ]
+    }
+}

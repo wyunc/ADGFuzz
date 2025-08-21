@@ -1,0 +1,77 @@
+{
+    "sbus_format_frame": {
+        "lastch9": [
+            [
+                "sbus_min",
+                "channels",
+                "i"
+            ],
+            1
+        ],
+        "nchan": [
+            [
+                "num_channels",
+                "sbus_channels"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "uint16_t_1000u",
+                "uint16_t_v1",
+                "0x07ff"
+            ],
+            0
+        ],
+        "v1": [
+            [
+                "1600u",
+                "uint32_t_pwmval",
+                "uint32_t_sbus_min"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "nchan": [
+            [
+                "sbus_channels",
+                "num_servo_channels"
+            ],
+            0
+        ],
+        "last_micros": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "c": [
+            [
+                "srv_channel_i"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "sbus1_uart": [
+            [
+                "serial_manager_find_serial_serial_protocol_sbus1"
+            ],
+            0
+        ],
+        "serial_manager": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "sbus_frame_interval": [
+            [
+                "1000ul",
+                "sbus_rate_get"
+            ],
+            1
+        ]
+    }
+}

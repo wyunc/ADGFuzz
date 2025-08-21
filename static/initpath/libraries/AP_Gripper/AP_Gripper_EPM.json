@@ -1,0 +1,76 @@
+{
+    "init_gripper": {
+        "_uavcan_fd": [
+            [
+                "open_o_cloexec",
+                "open_uavcan_node_file"
+            ],
+            0
+        ]
+    },
+    "grab": {
+        "config.state": [
+            [
+                "state_grabbing"
+            ],
+            0
+        ],
+        "cmd": [
+            [
+                "make_uavcan_command"
+            ],
+            0
+        ],
+        "_last_grab_or_release": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "release": {
+        "cmd": [
+            [
+                "make_uavcan_command"
+            ],
+            0
+        ],
+        "_last_grab_or_release": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "config.state": [
+            [
+                "state_releasing"
+            ],
+            0
+        ]
+    },
+    "update_gripper": {
+        "config.state": [
+            [
+                "state_grabbed",
+                "state_released"
+            ],
+            0
+        ]
+    },
+    "released": {
+        "config.state": [
+            [
+                "state_grabbing"
+            ],
+            0
+        ]
+    },
+    "grabbed": {
+        "config.state": [
+            [
+                "state_grabbing"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,323 @@
+{
+    "output_ch": {
+        "previous_radio_in": [
+            [
+                "c_get_radio_in",
+                "pwm_from_range_c_norm_input_ignore_trim",
+                "pwm_from_angle",
+                "pwm_from_angle_c_norm_input_dz"
+            ],
+            1
+        ],
+        "c": [
+            [
+                "rc_channel_passthrough_from"
+            ],
+            0
+        ],
+        "output_pwm": [
+            [
+                "c_get_radio_trim",
+                "c_get_radio_in",
+                "pwm_from_range_c_norm_input_ignore_trim",
+                "pwm_from_angle",
+                "pwm_from_angle_c_norm_input_dz"
+            ],
+            1
+        ],
+        "passthrough_from": [
+            [
+                "int8_t_int16_tfunction",
+                "k_rcin1_mapped",
+                "ch_num",
+                "k_rcin1"
+            ],
+            0
+        ]
+    },
+    "output_ch_all": {
+        "max_chan": [
+            [
+                "num_servo_channels"
+            ],
+            0
+        ]
+    },
+    "update_aux_servo_function": {
+        "function": [
+            [
+                "_function_get",
+                "i",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "enable_aux_servos": {
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ]
+    },
+    "set_digital_outputs": {
+        "c": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ],
+        "disabled_mask": [
+            [
+                "hal_rcout_get_disabled_channels_dig_mask"
+            ],
+            0
+        ]
+    },
+    "set_output_pwm_trimmed": {
+        "value2": [
+            [
+                "i",
+                "_get_trim",
+                "channels",
+                "value"
+            ],
+            0
+        ]
+    },
+    "copy_radio_in_out": {
+        "c": [
+            [
+                "rc_channel_channels",
+                "_channel_i",
+                "_channel__ch_num"
+            ],
+            0
+        ]
+    },
+    "copy_radio_in_out_mask": {
+        "c": [
+            [
+                "_channel_i",
+                "_channel__ch_num",
+                "rc_channel_channels"
+            ],
+            0
+        ]
+    },
+    "set_failsafe_pwm": {
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ]
+    },
+    "set_failsafe_limit": {
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "c_get_limit_pwm_limit"
+            ],
+            0
+        ]
+    },
+    "set_output_limit": {
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ],
+        "cin": [
+            [
+                "rc_channel_c_ch_num"
+            ],
+            0
+        ],
+        "pwm": [
+            [
+                "c_get_limit_pwm_limit"
+            ],
+            0
+        ]
+    },
+    "move_servo": {
+        "pwm": [
+            [
+                "c_servo_min",
+                "c_servo_max",
+                "c_get_reversed",
+                "float_angle_max",
+                "float_angle_min",
+                "float_value"
+            ],
+            2
+        ],
+        "c": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "find_channel": {
+        "chan": [
+            [
+                "__builtin_ffs_function",
+                "__builtin_ffs_functions",
+                "__builtin_ffs__channel_mask"
+            ],
+            1
+        ]
+    },
+    "set_output_scaled": {
+        ".output_scaled": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "get_slew_limited_output_scaled": {
+        "slew": [
+            [
+                "_slew"
+            ],
+            0
+        ]
+    },
+    "set_default_function": {
+        "old": [
+            [
+                "chan",
+                "channels",
+                "_function"
+            ],
+            0
+        ]
+    },
+    "adjust_trim": {
+        "new_trim": [
+            [
+                "c_servo_trim"
+            ],
+            0
+        ],
+        "trim_scaled": [
+            [
+                "float_c_servo_trim",
+                "c_servo_min",
+                "float_c_servo_min",
+                "c_servo_max"
+            ],
+            0
+        ],
+        "change": [
+            [
+                "v",
+                "c_reversed"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ]
+    },
+    "get_output_pwm": {
+        "value": [
+            [
+                "_get_output_pwm",
+                "channels",
+                "chan"
+            ],
+            0
+        ]
+    },
+    "set_output_norm": {
+        "c": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "set_slew_rate": {
+        "max_change": [
+            [
+                "dt",
+                "slew_rate",
+                "range"
+            ],
+            0
+        ],
+        "_slew": [
+            [
+                "new_nothrow",
+                "slew_list_function"
+            ],
+            1
+        ],
+        "last_scaled_output": [
+            [
+                "functions",
+                "_output_scaled",
+                "function"
+            ],
+            0
+        ]
+    },
+    "save_output_min_max": {
+        "reversed": [
+            [
+                "max_pwm",
+                "min_pwm"
+            ],
+            0
+        ]
+    },
+    "constrain_pwm": {
+        "c": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "upgrade_parameters": {
+        "c": [
+            [
+                "i",
+                "channels"
+            ],
+            0
+        ]
+    },
+    "set_rc_frequency": {
+        "c": [
+            [
+                "channels",
+                "i"
+            ],
+            0
+        ]
+    }
+}

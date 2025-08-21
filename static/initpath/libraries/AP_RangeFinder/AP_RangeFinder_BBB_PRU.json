@@ -1,0 +1,62 @@
+{
+    "detect": {
+        "ctrl": [
+            [
+                "mmap_mem_fd",
+                "mmap_prot_read",
+                "mmap_0x1000",
+                "uint32_t",
+                "mmap_pru0_ctrl_base",
+                "mmap_prot_write",
+                "mmap_map_shared"
+            ],
+            0
+        ],
+        "rangerpru": [
+            [
+                "mmap_pru0_dram_base",
+                "mmap_pru0_iram_size",
+                "mmap_mem_fd",
+                "mmap_prot_read",
+                "mmap_0x1000",
+                "mmap_pru0_iram_base",
+                "mmap_pru0_dram_size",
+                "mmap_prot_write",
+                "mmap_map_shared",
+                "volatile",
+                "struct",
+                "range"
+            ],
+            1
+        ],
+        "mem_fd": [
+            [
+                "open_o_rdwr",
+                "open_o_cloexec",
+                "open_o_sync"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "state.status": [
+            [
+                "rangerpru_status",
+                "status"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.distance_m": [
+            [
+                "rangerpru_distance"
+            ],
+            0
+        ]
+    }
+}

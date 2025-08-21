@@ -1,0 +1,10 @@
+{
+    "muorb_init": {
+        "channel": [
+            [
+                "get_instance"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "init": {
+        "_driver": [
+            [
+                "probe_i",
+                "probe",
+                "probe_hal_i2c_mgr_get_device",
+                "probe_move",
+                "probe_notify_display_i2c_addr"
+            ],
+            0
+        ]
+    },
+    "draw_char": {
+        "line": [
+            [
+                "_font",
+                "i",
+                "c"
+            ],
+            0
+        ]
+    },
+    "update_gps": {
+        "fixname": [
+            [
+                "gpsfixname"
+            ],
+            0
+        ]
+    },
+    "update_text": {
+        "text_is_valid": [
+            [
+                "_send_text_valid_millis",
+                "millis",
+                "p_notify__send_text_updated_millis"
+            ],
+            0
+        ],
+        "to_copy": [
+            [
+                "strlen_txt",
+                "strlen__mstartpos",
+                "sizeof_msg"
+            ],
+            1
+        ]
+    }
+}

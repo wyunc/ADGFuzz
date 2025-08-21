@@ -1,0 +1,17 @@
+{
+    "checkConvergence": {
+        "_quat_state": [
+            [
+                "quatf_axis_anglef",
+                "quatf_rate_setpoint_new"
+            ],
+            0
+        ],
+        "rate_setpoint": [
+            [
+                "_attitude_control_update__quat_state"
+            ],
+            1
+        ]
+    }
+}

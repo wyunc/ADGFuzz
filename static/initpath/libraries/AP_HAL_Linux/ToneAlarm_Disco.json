@@ -1,0 +1,10 @@
+{
+    "init": {
+        "bebop_out": [
+            [
+                "from_hal_rcout"
+            ],
+            0
+        ]
+    }
+}

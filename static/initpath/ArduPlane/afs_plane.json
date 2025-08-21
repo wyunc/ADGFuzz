@@ -1,0 +1,10 @@
+{
+    "setup_IO_failsafe": {
+        "mask": [
+            [
+                "plane_quadplane_motors_get_motor_mask"
+            ],
+            0
+        ]
+    }
+}

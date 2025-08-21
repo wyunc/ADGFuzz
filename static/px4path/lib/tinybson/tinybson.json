@@ -1,0 +1,163 @@
+{
+    "read_x": {
+        "bufpos": [
+            [
+                "s"
+            ],
+            0
+        ],
+        "total_decoded_size": [
+            [
+                "s",
+                "read_decoder_fd",
+                "read_s",
+                "read_p"
+            ],
+            1
+        ]
+    },
+    "bson_decoder_init_file": {
+        "node.type": [
+            [
+                "bson_undefined"
+            ],
+            0
+        ]
+    },
+    "bson_decoder_init_buf": {
+        "bufsize": [
+            [
+                "uint32_t",
+                "uint8_t"
+            ],
+            1
+        ],
+        "node.type": [
+            [
+                "bson_undefined"
+            ],
+            0
+        ]
+    },
+    "bson_decoder_next": {
+        "node.subtype": [
+            [
+                "bson_binary_subtype_t",
+                "tbyte"
+            ],
+            0
+        ],
+        "node.b": [
+            [
+                "tbyte"
+            ],
+            0
+        ],
+        "node.type": [
+            [
+                "bson_type_t",
+                "tbyte"
+            ],
+            0
+        ]
+    },
+    "bson_decoder_copy_data": {
+        "result": [
+            [
+                "read_x_buf",
+                "read_x_decoder",
+                "read_x_decoder_pending"
+            ],
+            0
+        ]
+    },
+    "write_x": {
+        "bufpos": [
+            [
+                "s"
+            ],
+            0
+        ],
+        "total_document_size": [
+            [
+                "write_p",
+                "write_encoder_fd",
+                "write_encoder_buf",
+                "write_s",
+                "write_encoder_bufpos"
+            ],
+            1
+        ],
+        "buf": [
+            [
+                "realloc_bson_buf_increment",
+                "realloc_encoder_bufsize",
+                "uint8_t",
+                "realloc_encoder_buf"
+            ],
+            1
+        ],
+        "bufsize": [
+            [
+                "bson_buf_increment"
+            ],
+            0
+        ]
+    },
+    "write_name": {
+        "len": [
+            [
+                "strlen_name"
+            ],
+            0
+        ]
+    },
+    "bson_encoder_init_file": {
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "bson_encoder_init_buf_file": {
+        "buf": [
+            [
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "bson_encoder_init_buf": {
+        "buf": [
+            [
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "bson_encoder_fini": {
+        "total_document_size": [
+            [
+                "write_encoder_buf",
+                "write_encoder_bufpos",
+                "write_encoder_fd"
+            ],
+            1
+        ],
+        "bson_doc_bytes": [
+            [
+                "encoder_total_document_size"
+            ],
+            0
+        ]
+    },
+    "bson_encoder_append_string": {
+        "len": [
+            [
+                "strlen_string"
+            ],
+            0
+        ]
+    }
+}

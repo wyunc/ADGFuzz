@@ -1,0 +1,37 @@
+{
+    "dir_list": {
+        "last_char": [
+            [
+                "strlen_dirname",
+                "_filename",
+                "ofs",
+                "files"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "strlen_dirname",
+                "_filename",
+                "ofs",
+                "files",
+                "strchr_start_name"
+            ],
+            3
+        ]
+    },
+    "find_size": {
+        "f": [
+            [
+                "find_file_name"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "f_decompressed_size"
+            ],
+            0
+        ]
+    }
+}

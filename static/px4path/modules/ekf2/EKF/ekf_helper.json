@@ -1,0 +1,669 @@
+{
+    "isHeightResetRequired": {
+        "continuous_bad_accel_hgt": [
+            [
+                "is_timed_out__time_good_vert_accel",
+                "is_timed_out_uint64_t_params_bad_acc_reset_delay_us"
+            ],
+            0
+        ],
+        "hgt_fusion_timeout": [
+            [
+                "is_timed_out__time_last_hgt_fuse",
+                "is_timed_out__params_hgt_fusion_timeout_max"
+            ],
+            0
+        ]
+    },
+    "getEkfGlobalOrigin": {
+        "origin_time": [
+            [
+                "_local_origin_lat_lon_get_projection_reference_timestamp"
+            ],
+            0
+        ],
+        "latitude": [
+            [
+                "_local_origin_lat_lon_get_projection_reference_lat"
+            ],
+            0
+        ],
+        "longitude": [
+            [
+                "_local_origin_lat_lon_get_projection_reference_lon"
+            ],
+            0
+        ],
+        "origin_alt": [
+            [
+                "get_ekf_global_origin_altitude"
+            ],
+            0
+        ]
+    },
+    "checkLatLonValidity": {
+        "lat_valid": [
+            [
+                "px4_isfinite_latitude",
+                "abs_latitude"
+            ],
+            0
+        ],
+        "lon_valid": [
+            [
+                "abs_longitude",
+                "px4_isfinite_longitude"
+            ],
+            0
+        ]
+    },
+    "setLatLonOrigin": {
+        "delta_pos": [
+            [
+                "get_local_horizontal_position",
+                "get_local_horizontal_position"
+            ],
+            2
+        ]
+    },
+    "setAltOrigin": {
+        "local_alt_prev": [
+            [
+                "_gpos_altitude"
+            ],
+            0
+        ],
+        "_local_origin_alt": [
+            [
+                "altitude"
+            ],
+            0
+        ],
+        "delta_origin_alt": [
+            [
+                "altitude"
+            ],
+            0
+        ]
+    },
+    "resetLatLonTo": {
+        "delta_horz_pos": [
+            [
+                "get_local_horizontal_position",
+                "_local_origin_lat_lon_project__gpos_latitude_deg",
+                "zero_ref_project__gpos_latitude_deg",
+                "_gpos_longitude_deg"
+            ],
+            1
+        ],
+        "_time_last_hor_pos_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    },
+    "initialiseAltitudeTo": {
+        "_local_origin_alt": [
+            [
+                "altitude",
+                "_gpos_altitude"
+            ],
+            1
+        ]
+    },
+    "get_ekf_gpos_accuracy": {
+        "ekf_eph": [
+            [
+                "infinity"
+            ],
+            0
+        ],
+        "ekf_epv": [
+            [
+                "infinity"
+            ],
+            0
+        ]
+    },
+    "get_ekf_lpos_accuracy": {
+        "ekf_epv": [
+            [
+                "sqrtf_pos_idx",
+                "sqrtf_p"
+            ],
+            0
+        ],
+        "ekf_eph": [
+            [
+                "sqrtf_pos_idx",
+                "max_hpos_err",
+                "sqrtf_p_trace",
+                "max__aid_src_ev_pos_innovation_norm",
+                "max_vector2f",
+                "max__aid_src_gnss_pos_innovation_norm"
+            ],
+            1
+        ]
+    },
+    "get_ekf_vel_accuracy": {
+        "ekf_evh": [
+            [
+                "max_vel_err_conservative",
+                "max_hvel_err",
+                "sqrtf_p_trace",
+                "sqrtf_vel_idx"
+            ],
+            1
+        ],
+        "vel_err_conservative": [
+            [
+                "max__aid_src_ev_pos_innovation_norm",
+                "max__aid_src_gnss_pos_innovation_norm",
+                "max_vector2f",
+                "max__params_rng_gnd_clearance",
+                "max__aid_src_gnss_vel_innovation_norm",
+                "max_vel_err_conservative",
+                "vector2f__aid_src_optical_flow_innovation_norm",
+                "max_get_hagl",
+                "max__aid_src_ev_vel_innovation_norm"
+            ],
+            1
+        ],
+        "ekf_evv": [
+            [
+                "sqrtf_p",
+                "sqrtf_vel_idx"
+            ],
+            0
+        ]
+    },
+    "get_ekf_ctrl_limits": {
+        "relying_on_rangefinder": [
+            [
+                "is_only_active_source_of_vertical_position_aiding__control_status_flags_rng_hgt"
+            ],
+            0
+        ],
+        "relying_on_optical_flow": [
+            [
+                "is_only_active_source_of_horizontal_aiding__control_status_flags_opt_flow"
+            ],
+            0
+        ],
+        "vz_max": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "vxy_max": [
+            [
+                "constrain_get_hagl",
+                "_flow_min_distance",
+                "max_rangefinder_hagl_min",
+                "max_flow_hagl_min",
+                "_flow_max_rate",
+                "nan"
+            ],
+            3
+        ],
+        "hagl_max_z": [
+            [
+                "_range_sensor_get_valid_max_val",
+                "nan"
+            ],
+            1
+        ],
+        "hagl_min": [
+            [
+                "_range_sensor_get_valid_min_val",
+                "nan",
+                "_flow_min_distance",
+                "max_rangefinder_hagl_min",
+                "max_flow_hagl_min"
+            ],
+            2
+        ],
+        "hagl_max_xy": [
+            [
+                "min_flow_hagl_max",
+                "min_rangefinder_hagl_max",
+                "max_flow_hagl_max",
+                "_flow_max_distance",
+                "nan"
+            ],
+            1
+        ]
+    },
+    "getHeadingInnovationTestRatio": {
+        "test_ratio": [
+            [
+                "max_test_ratio_filtered",
+                "max_fabsf",
+                "max_test_ratio",
+                "max__aid_src_ev_yaw_test_ratio_filtered",
+                "max__aid_src_gnss_yaw_test_ratio_filtered",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "getHorizontalVelocityInnovationTestRatio": {
+        "test_ratio": [
+            [
+                "max__aid_src_ev_vel_test_ratio_filtered",
+                "max_test_ratio",
+                "max_i",
+                "max_fabsf",
+                "max_test_ratio_filtered",
+                "_f",
+                "max__aid_src_gnss_vel_test_ratio_filtered"
+            ],
+            0
+        ]
+    },
+    "getVerticalVelocityInnovationTestRatio": {
+        "test_ratio": [
+            [
+                "_f",
+                "max_fabsf",
+                "max__aid_src_gnss_vel_test_ratio_filtered",
+                "max_test_ratio",
+                "max__aid_src_ev_vel_test_ratio_filtered"
+            ],
+            0
+        ]
+    },
+    "getHorizontalPositionInnovationTestRatio": {
+        "test_ratio": [
+            [
+                "max__aux_global_position_test_ratio_filtered",
+                "max_test_ratio_filtered",
+                "max_fabsf",
+                "_f",
+                "max_test_ratio"
+            ],
+            0
+        ]
+    },
+    "getVerticalPositionInnovationTestRatio": {
+        "hgt_sum": [
+            [
+                "sqrtf__aid_src_baro_hgt_test_ratio_filtered",
+                "sqrtf__aid_src_rng_hgt_test_ratio_filtered",
+                "sqrtf__aid_src_gnss_hgt_test_ratio_filtered",
+                "sqrtf_fabsf",
+                "sqrtf__aid_src_ev_hgt_test_ratio_filtered",
+                "_f"
+            ],
+            0
+        ]
+    },
+    "getHeightAboveGroundInnovationTestRatio": {
+        "hagl_sum": [
+            [
+                "_f",
+                "sqrtf__aid_src_rng_hgt_test_ratio_filtered",
+                "sqrtf_fabsf"
+            ],
+            0
+        ]
+    },
+    "fuse": {
+        "_state.vel": [
+            [
+                "innovation",
+                "constrain_vel_dof",
+                "_e3f",
+                "constrain_vel_idx",
+                "constrain__state_vel",
+                "constrain_k_slice"
+            ],
+            0
+        ],
+        "_state.quat_nominal": [
+            [
+                "delta_quat",
+                "_state_quat_nominal"
+            ],
+            0
+        ],
+        "_gpos": [
+            [
+                "k_slice",
+                "innovation",
+                "pos_dof",
+                "pos_idx"
+            ],
+            1
+        ],
+        "_state.terrain": [
+            [
+                "1e4f",
+                "constrain_k",
+                "innovation",
+                "constrain_terrain_idx",
+                "constrain__state_terrain"
+            ],
+            0
+        ],
+        "_R_to_earth": [
+            [
+                "dcmf__state_quat_nominal"
+            ],
+            0
+        ]
+    },
+    "updateHorizontalDeadReckoningstatus": {
+        "_time_last_horizontal_aiding": [
+            [
+                "_time_delayed_us",
+                "_params_no_aid_timeout_max"
+            ],
+            0
+        ],
+        "_control_status.flags.wind_dead_reckoning": [
+            [
+                "inertial_dead_reckoning"
+            ],
+            0
+        ],
+        "_control_status.flags.inertial_dead_reckoning": [
+            [
+                "inertial_dead_reckoning"
+            ],
+            0
+        ]
+    },
+    "updateVerticalDeadReckoningStatus": {
+        "_time_last_v_pos_aiding": [
+            [
+                "_time_last_hgt_fuse"
+            ],
+            0
+        ],
+        "_time_last_v_vel_aiding": [
+            [
+                "_time_last_ver_vel_fuse"
+            ],
+            0
+        ]
+    },
+    "getTiltVariance": {
+        "rot_var_ned": [
+            [
+                "get_rot_var_ned"
+            ],
+            0
+        ]
+    },
+    "updateGroundEffect": {
+        "_control_status.flags.gnd_effect": [
+            [
+                "_params_gnd_effect_max_hgt",
+                "get_hagl"
+            ],
+            1
+        ]
+    },
+    "updateIMUBiasInhibit": {
+        "_accel_magnitude_filt": [
+            [
+                "fmaxf_accel_corrected_norm",
+                "_f",
+                "_f",
+                "constrain_imu_delayed_delta_ang_dt",
+                "constrain_imu_delayed_delta_vel_dt",
+                "constrain__params_acc_bias_learn_tc"
+            ],
+            2
+        ],
+        "gyro_corrected": [
+            [
+                "_state_gyro_bias",
+                "imu_delayed_delta_ang",
+                "imu_delayed_delta_ang_dt"
+            ],
+            0
+        ],
+        "is_bias_observable": [
+            [
+                "fabsf_index",
+                "fabsf__r_to_earth"
+            ],
+            0
+        ],
+        "do_inhibit_all_gyro_axes": [
+            [
+                "int32_t",
+                "static_cast",
+                "_params_imu_ctrl",
+                "gyro_bias"
+            ],
+            0
+        ],
+        "accel_corrected": [
+            [
+                "_state_accel_bias",
+                "imu_delayed_delta_vel",
+                "imu_delayed_delta_vel_dt"
+            ],
+            0
+        ],
+        "_ang_rate_magnitude_filt": [
+            [
+                "fmaxf_gyro_corrected_norm"
+            ],
+            0
+        ]
+    },
+    "fuseDirectStateMeasurement": {
+        "KR": [
+            [
+                "r",
+                "k"
+            ],
+            0
+        ],
+        "P": [
+            [
+                "a",
+                "p_multiply_by_transpose_a",
+                "kr_multiply_by_transpose_k",
+                "p"
+            ],
+            0
+        ],
+        "PH": [
+            [
+                "p_col_state_index",
+                "p_row_state_index"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "eye",
+                "float",
+                "size",
+                "k_multiply_by_transpose_h"
+            ],
+            0
+        ]
+    },
+    "measurementUpdate": {
+        "P": [
+            [
+                "a",
+                "p_multiply_by_transpose_a",
+                "p",
+                "kr_multiply_by_transpose_k"
+            ],
+            0
+        ],
+        "PH": [
+            [
+                "h",
+                "p"
+            ],
+            0
+        ],
+        "KR": [
+            [
+                "k",
+                "r"
+            ],
+            0
+        ],
+        "A": [
+            [
+                "size",
+                "k_multiply_by_transpose_h",
+                "float",
+                "eye"
+            ],
+            0
+        ]
+    },
+    "resetAidSourceStatusZeroInnovation": {
+        "status.innovation": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.test_ratio": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "status.innovation_filtered": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.test_ratio_filtered": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "status.innovation_variance": [
+            [
+                "status_observation_variance"
+            ],
+            0
+        ]
+    },
+    "updateAidSourceStatus": {
+        "status.innovation_filtered": [
+            [
+                "constrain_tau",
+                "constrain_dt_s",
+                "_f",
+                "constrain_status_innovation_filtered",
+                "innovation",
+                "status_innovation_filtered",
+                "constrain_innov_limit"
+            ],
+            1
+        ],
+        "status.innovation_variance": [
+            [
+                "innovation_variance"
+            ],
+            0
+        ],
+        "innov_limit": [
+            [
+                "innovation_gate",
+                "k_normalized_innovation_limit",
+                "sqrtf_innovation_variance"
+            ],
+            0
+        ],
+        "status.test_ratio": [
+            [
+                "sq_innovation_gate",
+                "innovation_variance",
+                "sq_innovation"
+            ],
+            1
+        ],
+        "kTestRatioLimit": [
+            [
+                "sq_k_normalized_innovation_limit"
+            ],
+            0
+        ],
+        "status.innovation_rejected": [
+            [
+                "innovation_rejected"
+            ],
+            0
+        ],
+        "kNormalizedInnovationLimit": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "dt_s": [
+            [
+                "1e",
+                "constrain_timestamp_sample",
+                "_f",
+                "constrain_status_timestamp_sample"
+            ],
+            0
+        ],
+        "status.observation": [
+            [
+                "observation"
+            ],
+            0
+        ],
+        "status.test_ratio_filtered": [
+            [
+                "sign_innovation",
+                "constrain_tau",
+                "constrain_dt_s",
+                "_f",
+                "constrain_status_test_ratio_filtered",
+                "sq_innovation_gate",
+                "innovation_variance",
+                "sq_innovation",
+                "status_test_ratio_filtered",
+                "constrain_k_test_ratio_limit"
+            ],
+            2
+        ],
+        "status.observation_variance": [
+            [
+                "observation_variance"
+            ],
+            0
+        ],
+        "status.timestamp_sample": [
+            [
+                "timestamp_sample"
+            ],
+            0
+        ],
+        "status.innovation": [
+            [
+                "innovation"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "watchdog_save": {
+        "fd": [
+            [
+                "open_o_creat",
+                "open_o_trunc",
+                "open_o_wronly"
+            ],
+            0
+        ]
+    },
+    "watchdog_load": {
+        "fd": [
+            [
+                "open_o_rdonly"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "read_fd",
+                "nwords",
+                "ssize_t",
+                "read_nwords",
+                "read_data"
+            ],
+            0
+        ]
+    },
+    "setup_signal_handlers": {
+        "sa.sa_handler": [
+            [
+                "exit_signal_handler"
+            ],
+            0
+        ],
+        "sa.sa_flags": [
+            [
+                "sa_nocldstop"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "fill_count": [
+            [
+                "1u"
+            ],
+            0
+        ],
+        "pd": [
+            [
+                "util_persistent_data"
+            ],
+            0
+        ],
+        "using_watchdog": [
+            [
+                "watchdog_enabled"
+            ],
+            0
+        ],
+        "utilInstance.last_persistent_data": [
+            [
+                "util_instance_persistent_data"
+            ],
+            0
+        ],
+        "last_watchdog_save": [
+            [
+                "millis",
+                "millis"
+            ],
+            1
+        ]
+    }
+}

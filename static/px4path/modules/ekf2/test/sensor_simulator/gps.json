@@ -1,0 +1,139 @@
+{
+    "send": {
+        "dt": [
+            [
+                "static_cast",
+                "float",
+                "1e",
+                "time",
+                "_gps_data_time_us"
+            ],
+            0
+        ],
+        "_gps_data.time_us": [
+            [
+                "time"
+            ],
+            0
+        ]
+    },
+    "setData": {
+        "_gps_data": [
+            [
+                "gps"
+            ],
+            0
+        ]
+    },
+    "setAltitude": {
+        "_gps_data.alt": [
+            [
+                "alt"
+            ],
+            0
+        ]
+    },
+    "setLatitude": {
+        "_gps_data.lat": [
+            [
+                "lat"
+            ],
+            0
+        ]
+    },
+    "setLongitude": {
+        "_gps_data.lon": [
+            [
+                "lon"
+            ],
+            0
+        ]
+    },
+    "setVelocity": {
+        "_gps_data.vel": [
+            [
+                "vel"
+            ],
+            0
+        ]
+    },
+    "setYaw": {
+        "_gps_data.yaw": [
+            [
+                "yaw"
+            ],
+            0
+        ]
+    },
+    "setYawOffset": {
+        "_gps_data.yaw_offset": [
+            [
+                "yaw_offset"
+            ],
+            0
+        ]
+    },
+    "setFixType": {
+        "_gps_data.fix_type": [
+            [
+                "fix_type"
+            ],
+            0
+        ]
+    },
+    "setNumberOfSatellites": {
+        "_gps_data.nsats": [
+            [
+                "num_satellites"
+            ],
+            0
+        ]
+    },
+    "setPdop": {
+        "_gps_data.pdop": [
+            [
+                "pdop"
+            ],
+            0
+        ]
+    },
+    "setPositionRateNED": {
+        "_gps_pos_rate": [
+            [
+                "rate"
+            ],
+            0
+        ]
+    },
+    "stepHeightByMeters": {
+        "_gps_data.alt": [
+            [
+                "hgt_change"
+            ],
+            0
+        ]
+    },
+    "stepHorizontalPositionByMeters": {
+        "hpos_new": [
+            [
+                "hpos_change",
+                "vector2f",
+                "hpos_n_curr",
+                "hpos_e_curr"
+            ],
+            0
+        ],
+        "_gps_data.lon": [
+            [
+                "lon_new"
+            ],
+            0
+        ],
+        "_gps_data.lat": [
+            [
+                "lat_new"
+            ],
+            0
+        ]
+    }
+}

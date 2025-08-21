@@ -1,0 +1,89 @@
+{
+    "Write_ACC": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "Write_GYR": {
+        "now": [
+            [
+                "use_sample_timestamp",
+                "micros64",
+                "sample_us"
+            ],
+            0
+        ]
+    },
+    "Write_IMU_instance": {
+        "gyro": [
+            [
+                "get_gyro_imu_instance"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "get_accel_imu_instance"
+            ],
+            0
+        ]
+    },
+    "Write_IMU": {
+        "n": [
+            [
+                "get_accel_count_get_gyro_count"
+            ],
+            0
+        ],
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "Write_Vibration": {
+        "vibration": [
+            [
+                "get_vibration_levels_i"
+            ],
+            0
+        ],
+        "time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "write_notch_log_messages": {
+        "notches": [
+            [
+                "notch_calculated_notch_freq_hz"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "harmonic_notches",
+                "notch"
+            ],
+            0
+        ],
+        "now_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "primary_gyro": [
+            [
+                "ahrs_get_primary_gyro_index"
+            ],
+            0
+        ]
+    }
+}

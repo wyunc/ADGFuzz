@@ -1,0 +1,38 @@
+{
+    "send": {
+        "airspeed_sample.eas2tas": [
+            [
+                "_f",
+                "_indicated_airspeed_data",
+                "_true_airspeed_data"
+            ],
+            1
+        ],
+        "airspeed_sample.true_airspeed": [
+            [
+                "_true_airspeed_data"
+            ],
+            0
+        ],
+        "airspeed_sample.time_us": [
+            [
+                "time"
+            ],
+            0
+        ]
+    },
+    "setData": {
+        "_true_airspeed_data": [
+            [
+                "true_airspeed"
+            ],
+            0
+        ],
+        "_indicated_airspeed_data": [
+            [
+                "indicated_airspeed"
+            ],
+            0
+        ]
+    }
+}

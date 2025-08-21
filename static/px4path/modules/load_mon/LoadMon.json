@@ -1,0 +1,125 @@
+{
+    "task_spawn": {
+        "obj": [
+            [
+                "load_mon",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    },
+    "cpuload": {
+        "cpuload.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "mem": [
+            [
+                "mallinfo"
+            ],
+            0
+        ],
+        "_last_spent_time_stamp": [
+            [
+                "spent_time_stamp_struct_tms_utime",
+                "spent_time_stamp_struct_tms_stime"
+            ],
+            1
+        ],
+        "cpuload.ram_usage": [
+            [
+                "mem_arena",
+                "mem_uordblks",
+                "float",
+                "kb_page_cache",
+                "kb_slab_reclaimable",
+                "kb_main_total",
+                "kb_main_buffers",
+                "kb_main_free",
+                "kb_main_total"
+            ],
+            2
+        ],
+        "irqstate": [
+            [
+                "enter_critical_section"
+            ],
+            0
+        ],
+        "cpuload.load": [
+            [
+                "px4muorb_get_cpu_load",
+                "times_spent_time_stamp_struct",
+                "_curr_start_time",
+                "system_load_tasks",
+                "_f",
+                "_total_runtime",
+                "system_load_tasks",
+                "spent_time_stamp_struct_tms_utime",
+                "spent_time_stamp_struct_tms_stime"
+            ],
+            7
+        ],
+        "_last_idle_time": [
+            [
+                "_total_runtime",
+                "_total_runtime",
+                "system_load_tasks",
+                "system_load_tasks"
+            ],
+            1
+        ],
+        "_last_idle_time_sample": [
+            [
+                "_curr_start_time",
+                "system_load_tasks",
+                "system_load_tasks",
+                "_curr_start_time"
+            ],
+            1
+        ],
+        "_last_total_time_stamp": [
+            [
+                "times_spent_time_stamp_struct"
+            ],
+            1
+        ]
+    },
+    "stack_usage": {
+        "filelist": [
+            [
+                "system_load_tasks",
+                "_tcb_group_tg_filelist"
+            ],
+            0
+        ],
+        "_stack_task_index": [
+            [
+                "config_fs_procfs_max_tasks"
+            ],
+            0
+        ],
+        "task_stack_info.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "task_stack_info.stack_free": [
+            [
+                "up_check_tcbstack_remain_system_load_tasks",
+                "up_check_tcbstack_remain__stack_task_index",
+                "up_check_tcbstack_remain__tcb"
+            ],
+            1
+        ]
+    }
+}

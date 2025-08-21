@@ -1,0 +1,12 @@
+{
+    "height_relative_home_equivalent": {
+        "relative_home_altitude": [
+            [
+                "height_amsl_cm",
+                "terrain_difference",
+                "terrain_altitude"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "stabilization_required": {
+        "vehicle_type": [
+            [
+                "vehicle_type_rotary_wing"
+            ],
+            0
+        ]
+    },
+    "getVehicleControlMode": {
+        "vehicle_control_mode.flag_control_rates_enabled": [
+            [
+                "stabilization_required_vehicle_type"
+            ],
+            0
+        ],
+        "vehicle_control_mode.flag_control_attitude_enabled": [
+            [
+                "stabilization_required_vehicle_type"
+            ],
+            0
+        ]
+    }
+}

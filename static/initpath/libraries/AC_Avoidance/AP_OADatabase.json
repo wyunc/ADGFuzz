@@ -1,0 +1,173 @@
+{
+    "init": {
+        "dist_to_radius_scalar": [
+            [
+                "tanf_radians",
+                "tanf__beam_width"
+            ],
+            0
+        ]
+    },
+    "queue_push": {
+        "item": [
+            [
+                "pos",
+                "distance",
+                "normal",
+                "dist_to_radius_scalar",
+                "timestamp_ms",
+                "_radius_min"
+            ],
+            0
+        ]
+    },
+    "init_queue": {
+        "_queue.size": [
+            [
+                "_queue_size_param"
+            ],
+            0
+        ],
+        "_queue.items": [
+            [
+                "nullptr",
+                "new_nothrow",
+                "oa_db_item",
+                "_queue_size",
+                "object_buffer"
+            ],
+            0
+        ]
+    },
+    "init_database": {
+        "_database.size": [
+            [
+                "_database_size_param"
+            ],
+            0
+        ],
+        "_database.items": [
+            [
+                "_database_size",
+                "oa_db_item",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "process_queue": {
+        "pop_success": [
+            [
+                "_queue_items_pop_item"
+            ],
+            0
+        ],
+        "queue_available": [
+            [
+                "_queue_items_available_100u"
+            ],
+            0
+        ],
+        "item.send_to_gcs": [
+            [
+                "get_send_to_gcs_flags_item_importance"
+            ],
+            0
+        ]
+    },
+    "database_item_add": {
+        ".send_to_gcs": [
+            [
+                "get_send_to_gcs_flags__importance",
+                "get_send_to_gcs_flags__database_items",
+                "get_send_to_gcs_flags__database_count"
+            ],
+            0
+        ]
+    },
+    "database_item_remove": {
+        ".send_to_gcs": [
+            [
+                "get_send_to_gcs_flags__importance",
+                "get_send_to_gcs_flags__database_items",
+                "get_send_to_gcs_flags_index"
+            ],
+            0
+        ]
+    },
+    "database_item_refresh": {
+        ".radius": [
+            [
+                "radius"
+            ],
+            0
+        ],
+        ".send_to_gcs": [
+            [
+                "get_send_to_gcs_flags_index",
+                "get_send_to_gcs_flags__database_items",
+                "get_send_to_gcs_flags__importance"
+            ],
+            0
+        ],
+        ".timestamp_ms": [
+            [
+                "timestamp_ms"
+            ],
+            0
+        ]
+    },
+    "database_items_remove_all_expired": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "expiry_ms": [
+            [
+                "uint32_t",
+                "_database_expiry_seconds"
+            ],
+            0
+        ]
+    },
+    "is_close_to_item_in_database": {
+        "distance_sq": [
+            [
+                "_database_items",
+                "item_pos",
+                "_length_squared",
+                "index",
+                "_pos"
+            ],
+            0
+        ]
+    },
+    "send_adsb_vehicle": {
+        "num_to_send": [
+            [
+                "1u",
+                "interval_ms",
+                "_last_send_to_gcs_ms",
+                "chan",
+                "millis"
+            ],
+            2
+        ],
+        "chan_as_bitmask": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "_next_index_to_send",
+                "chan",
+                "_highest_index_sent"
+            ],
+            0
+        ]
+    }
+}

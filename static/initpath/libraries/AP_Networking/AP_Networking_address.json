@@ -1,0 +1,19 @@
+{
+    "set_default_uint32": {
+        "b": [
+            [
+                "uint8_t",
+                "v"
+            ],
+            0
+        ]
+    },
+    "get_str": {
+        "ip": [
+            [
+                "get_uint32"
+            ],
+            0
+        ]
+    }
+}

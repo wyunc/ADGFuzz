@@ -1,0 +1,75 @@
+{
+    "set_size": {
+        "buf": [
+            [
+                "uint8_t",
+                "calloc__size"
+            ],
+            0
+        ],
+        "head": [
+            [
+                "tail"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "_size"
+            ],
+            0
+        ]
+    },
+    "clear": {
+        "head": [
+            [
+                "tail"
+            ],
+            0
+        ]
+    },
+    "is_empty": {
+        "head": [
+            [
+                "tail"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "data": [
+            [
+                "len",
+                "head",
+                "size"
+            ],
+            1
+        ]
+    },
+    "advance": {
+        "head": [
+            [
+                "n",
+                "size"
+            ],
+            0
+        ]
+    },
+    "commit": {
+        "tail": [
+            [
+                "len",
+                "size"
+            ],
+            0
+        ]
+    },
+    "read_byte": {
+        "data": [
+            [
+                "peek"
+            ],
+            1
+        ]
+    }
+}

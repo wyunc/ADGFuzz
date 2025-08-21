@@ -1,0 +1,225 @@
+{
+    "update": {
+        "follow_target_estimator.lon_est": [
+            [
+                "get_lat_lon_alt_est"
+            ],
+            0
+        ],
+        "follow_target_estimator.last_filter_reset_timestamp": [
+            [
+                "_last_filter_reset_timestamp"
+            ],
+            0
+        ],
+        "deltatime": [
+            [
+                "1e",
+                "constrain_now",
+                "constrain__last_iteration_timestamp"
+            ],
+            0
+        ],
+        "vehicle_local_position_invalid": [
+            [
+                "_vehicle_local_position_timestamp"
+            ],
+            0
+        ],
+        "follow_target_estimator.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "follow_target_estimator.alt_est": [
+            [
+                "get_lat_lon_alt_est"
+            ],
+            0
+        ],
+        "_last_iteration_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ],
+        "follow_target_estimator.lat_est": [
+            [
+                "get_lat_lon_alt_est"
+            ],
+            0
+        ],
+        "follow_target_estimator.prediction_count": [
+            [
+                "_prediction_count"
+            ],
+            0
+        ],
+        "follow_target_estimator.stale": [
+            [
+                "is_stale_gps_message_stale_timeout_ms"
+            ],
+            0
+        ],
+        "measurement_in_the_past": [
+            [
+                "_last_position_fusion_timestamp",
+                "follow_target_timestamp"
+            ],
+            0
+        ],
+        "follow_target_estimator.valid": [
+            [
+                "_filter_states_is_finite"
+            ],
+            1
+        ],
+        "duplicate_measurement_received": [
+            [
+                "_last_follow_target_timestamp",
+                "follow_target_timestamp"
+            ],
+            0
+        ],
+        "follow_target_estimator.fusion_count": [
+            [
+                "_fusion_count"
+            ],
+            0
+        ]
+    },
+    "update_filter_gains": {
+        "filter_gains.K_p": [
+            [
+                "powf_filter_gains_responsiveness"
+            ],
+            1
+        ],
+        "filter_gains.H_v": [
+            [
+                "powf_filter_gains_responsiveness"
+            ],
+            2
+        ],
+        "filter_gains.H_p": [
+            [
+                "powf_filter_gains_responsiveness"
+            ],
+            1
+        ],
+        "filter_gains.G_v": [
+            [
+                "powf_filter_gains_responsiveness"
+            ],
+            2
+        ],
+        "filter_gains.responsiveness": [
+            [
+                "_",
+                "constrain__param_flw_tgt_rs_get"
+            ],
+            1
+        ],
+        "filter_gains.G_p": [
+            [
+                "powf_filter_gains_responsiveness"
+            ],
+            1
+        ]
+    },
+    "measurement_update": {
+        "_pos_measurement_old": [
+            [
+                "pos_measured"
+            ],
+            0
+        ],
+        "_vel_measurement_old": [
+            [
+                "vel_measured"
+            ],
+            0
+        ],
+        "_filter_states.acc_ned_est": [
+            [
+                "dt_update_vel",
+                "_filter_gains_h_v",
+                "vel_measured",
+                "_filter_states_vel_ned_est"
+            ],
+            1
+        ],
+        "_last_follow_target_timestamp": [
+            [
+                "follow_target_timestamp"
+            ],
+            0
+        ],
+        "_filter_states.vel_ned_est": [
+            [
+                "_filter_gains_h_p",
+                "vel_measured",
+                "_filter_states_pos_ned_est",
+                "pos_measured",
+                "vel_measured",
+                "_filter_states_vel_ned_est",
+                "dt_update_pos",
+                "_filter_gains_g_v"
+            ],
+            2
+        ],
+        "_last_velocity_fusion_timestamp": [
+            [
+                "follow_target_timestamp"
+            ],
+            0
+        ],
+        "_last_position_fusion_timestamp": [
+            [
+                "follow_target_timestamp"
+            ],
+            0
+        ],
+        "_filter_states.pos_ned_est": [
+            [
+                "_filter_gains_g_p",
+                "pos_measured",
+                "_filter_states_pos_ned_est",
+                "pos_measured"
+            ],
+            1
+        ]
+    },
+    "prediction_update": {
+        "_filter_states.pos_ned_est": [
+            [
+                "_filter_states_vel_ned_est",
+                "_filter_states_acc_ned_est",
+                "deltatime"
+            ],
+            2
+        ],
+        "_filter_states.vel_ned_est": [
+            [
+                "_filter_states_acc_ned_est",
+                "deltatime"
+            ],
+            1
+        ]
+    },
+    "reset": {
+        "_last_position_fusion_timestamp": [
+            [
+                "_last_velocity_fusion_timestamp"
+            ],
+            0
+        ],
+        "_last_filter_reset_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    }
+}

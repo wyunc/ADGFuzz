@@ -1,0 +1,71 @@
+{
+    "update_direction": {
+        "_frontend._direction_apparent_raw": [
+            [
+                "ahrs_get_yaw",
+                "wrap_pi_atan2f",
+                "wrap_pi_wind_vector_ef_x",
+                "wrap_pi_wind_vector_ef_y",
+                "wrap_pi_sitl_get_apparent_wind_dir"
+            ],
+            0
+        ],
+        "wind_vector_ef.y": [
+            [
+                "sitl_state_speed_e"
+            ],
+            0
+        ],
+        "wind_speed": [
+            [
+                "sitl_wind_speed_active"
+            ],
+            0
+        ],
+        "wind_dir_rad": [
+            [
+                "radians_sitl_wind_direction_active"
+            ],
+            0
+        ],
+        "wind_vector_ef.x": [
+            [
+                "sitl_state_speed_n"
+            ],
+            0
+        ]
+    },
+    "update_speed": {
+        "wind_dir_rad": [
+            [
+                "radians_sitl_wind_direction_active"
+            ],
+            0
+        ],
+        "_frontend._speed_apparent_raw": [
+            [
+                "wind_vector_ef_length",
+                "sitl_get_apparent_wind_spd"
+            ],
+            0
+        ],
+        "wind_vector_ef.y": [
+            [
+                "sitl_state_speed_e"
+            ],
+            0
+        ],
+        "wind_speed": [
+            [
+                "sitl_wind_speed_active"
+            ],
+            0
+        ],
+        "wind_vector_ef.x": [
+            [
+                "sitl_state_speed_n"
+            ],
+            0
+        ]
+    }
+}

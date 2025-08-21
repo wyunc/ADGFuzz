@@ -1,0 +1,100 @@
+{
+    "param_get": {
+        "used_params": [
+            [
+                "failsafe_instance_params"
+            ],
+            0
+        ],
+        "param_iter": [
+            [
+                "used_params_find_param"
+            ],
+            0
+        ]
+    },
+    "param_set_used": {
+        "used_params": [
+            [
+                "failsafe_instance_params"
+            ],
+            0
+        ]
+    },
+    "set_param_value": {
+        "param_iter.second.val": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "used_params": [
+            [
+                "failsafe_instance_params"
+            ],
+            0
+        ]
+    },
+    "set_param_value_int32": {
+        "param_value.i": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "set_param_value_float": {
+        "param_value.f": [
+            [
+                "value"
+            ],
+            0
+        ]
+    },
+    "failsafe_update": {
+        "time_ms": [
+            [
+                "emscripten_date_now"
+            ],
+            0
+        ],
+        "state.mission_finished": [
+            [
+                "mission_finished"
+            ],
+            0
+        ],
+        "state.armed": [
+            [
+                "armed"
+            ],
+            0
+        ],
+        "state.vehicle_type": [
+            [
+                "vehicle_type"
+            ],
+            0
+        ],
+        "state.vtol_in_transition_mode": [
+            [
+                "vtol_in_transition_mode"
+            ],
+            0
+        ],
+        "state.user_intended_mode": [
+            [
+                "user_intended_mode"
+            ],
+            0
+        ]
+    },
+    "selected_action": {
+        "action": [
+            [
+                "failsafe_instance_current_selected_action"
+            ],
+            0
+        ]
+    }
+}

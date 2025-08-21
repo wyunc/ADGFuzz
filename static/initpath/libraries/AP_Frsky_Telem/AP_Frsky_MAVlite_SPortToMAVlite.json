@@ -1,0 +1,63 @@
+{
+    "reset": {
+        "parse_state": [
+            [
+                "want_len"
+            ],
+            0
+        ]
+    },
+    "update_checksum": {
+        "checksum": [
+            [
+                "c"
+            ],
+            0
+        ]
+    },
+    "process": {
+        "expected_seq": [
+            [
+                "packet_raw",
+                "0x3f"
+            ],
+            1
+        ],
+        "parse_state": [
+            [
+                "error"
+            ],
+            0
+        ],
+        "rxmsg": [
+            [
+                "_rxmsg"
+            ],
+            0
+        ]
+    },
+    "parse": {
+        "_rxmsg.msgid": [
+            [
+                "byte"
+            ],
+            0
+        ],
+        "parse_state": [
+            [
+                "error",
+                "want_checksum",
+                "want_payload",
+                "want_msgid",
+                "message_received"
+            ],
+            0
+        ],
+        "_rxmsg.len": [
+            [
+                "byte"
+            ],
+            0
+        ]
+    }
+}

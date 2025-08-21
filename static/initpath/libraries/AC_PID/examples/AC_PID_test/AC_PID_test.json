@@ -1,0 +1,46 @@
+{
+    "loop": {
+        "pid": [
+            [
+                "ac_pid_test_imax",
+                "new_nothrow",
+                "ac_pid_test_filter",
+                "ac_pid_test_p",
+                "ac_pid_test_i",
+                "ac_pid_test_d"
+            ],
+            0
+        ],
+        "error": [
+            [
+                "c_get_radio_in",
+                "c_get_radio_in"
+            ],
+            2
+        ],
+        "c": [
+            [
+                "rc_channel"
+            ],
+            0
+        ],
+        "control_D": [
+            [
+                "pid_get_d"
+            ],
+            0
+        ],
+        "control_P": [
+            [
+                "pid_get_p"
+            ],
+            0
+        ],
+        "control_I": [
+            [
+                "pid_get_i"
+            ],
+            0
+        ]
+    }
+}

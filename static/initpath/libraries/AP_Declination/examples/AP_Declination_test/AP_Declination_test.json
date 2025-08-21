@@ -1,0 +1,83 @@
+{
+    "get_declination": {
+        "decNE": [
+            [
+                "floorf_lon",
+                "floorf_lat",
+                "dec_tbl"
+            ],
+            4
+        ],
+        "decSE": [
+            [
+                "floorf_lon",
+                "floorf_lat",
+                "dec_tbl"
+            ],
+            4
+        ],
+        "decmin": [
+            [
+                "lon",
+                "dec_sw",
+                "floorf_lon",
+                "dec_se"
+            ],
+            1
+        ],
+        "decNW": [
+            [
+                "floorf_lon",
+                "floorf_lat",
+                "dec_tbl"
+            ],
+            4
+        ],
+        "decmax": [
+            [
+                "lon",
+                "dec_nw",
+                "floorf_lon",
+                "dec_ne"
+            ],
+            1
+        ],
+        "decSW": [
+            [
+                "floorf_lon",
+                "floorf_lat",
+                "dec_tbl"
+            ],
+            4
+        ]
+    },
+    "setup": {
+        "pass": [
+            [
+                "fail"
+            ],
+            0
+        ],
+        "declination": [
+            [
+                "get_declination_i",
+                "get_declination_j"
+            ],
+            0
+        ],
+        "total_time": [
+            [
+                "micros",
+                "micros"
+            ],
+            1
+        ],
+        "declination_test": [
+            [
+                "get_declination_i",
+                "get_declination_j"
+            ],
+            0
+        ]
+    }
+}

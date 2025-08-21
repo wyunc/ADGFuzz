@@ -1,0 +1,18 @@
+{
+    "init": {
+        "p": [
+            [
+                "i",
+                "ports"
+            ],
+            0
+        ],
+        "p.state.idx": [
+            [
+                "i",
+                "ap_serialmanager_scr_port_1"
+            ],
+            0
+        ]
+    }
+}

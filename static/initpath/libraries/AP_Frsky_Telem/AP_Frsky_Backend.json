@@ -1,0 +1,144 @@
+{
+    "calc_nav_alt": {
+        "_SPort_data.vario_vspd": [
+            [
+                "get_vspeed_ms",
+                "int32_t"
+            ],
+            0
+        ],
+        "current_height": [
+            [
+                "get_nav_alt_m"
+            ],
+            0
+        ],
+        "_SPort_data.alt_nav_cm": [
+            [
+                "float_to_uint16_current_height",
+                "float_to_uint16__s_port_data_alt_nav_meters"
+            ],
+            0
+        ],
+        "_SPort_data.alt_nav_meters": [
+            [
+                "float_to_uint16_current_height"
+            ],
+            0
+        ]
+    },
+    "format_gps": {
+        "dm_deg": [
+            [
+                "uint8_t",
+                "dec"
+            ],
+            0
+        ]
+    },
+    "calc_gps_position": {
+        "_SPort_data.alt_gps_meters": [
+            [
+                "float_to_uint16_alt"
+            ],
+            0
+        ],
+        "_SPort_data.yaw": [
+            [
+                "uint16_t",
+                "_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "_SPort_data.alt_gps_cm": [
+            [
+                "float_to_uint16__s_port_data_alt_gps_meters",
+                "float_to_uint16_alt"
+            ],
+            0
+        ],
+        "_SPort_data.lonmmmm": [
+            [
+                "format_gps_fabsf",
+                "format_gps_loc_lng",
+                "_s_port_data_londddmm"
+            ],
+            1
+        ],
+        "_SPort_data.lat_ns": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_SPort_data.latdddmm": [
+            [
+                "format_gps_loc_lat",
+                "format_gps_fabsf"
+            ],
+            1
+        ],
+        "_SPort_data.speed_in_centimeter": [
+            [
+                "float_to_uint16_speed",
+                "float_to_uint16__s_port_data_speed_in_meter"
+            ],
+            0
+        ],
+        "_SPort_data.lon_ew": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "_SPort_data.latmmmm": [
+            [
+                "_s_port_data_latdddmm",
+                "format_gps_loc_lat",
+                "format_gps_fabsf"
+            ],
+            1
+        ],
+        "alt": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "speed": [
+            [
+                "ahrs_groundspeed"
+            ],
+            0
+        ],
+        "_SPort_data.speed_in_meter": [
+            [
+                "float_to_int16_speed"
+            ],
+            0
+        ],
+        "_SPort_data.londddmm": [
+            [
+                "format_gps_fabsf",
+                "format_gps_loc_lng"
+            ],
+            1
+        ]
+    },
+    "calc_rpm": {
+        "value": [
+            [
+                "roundf_rpm_value",
+                "int32_t",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

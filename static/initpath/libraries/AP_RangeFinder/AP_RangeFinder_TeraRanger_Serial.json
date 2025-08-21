@@ -1,0 +1,21 @@
+{
+    "get_reading": {
+        "reading_m": [
+            [
+                "dist_max_cm",
+                "linebuf",
+                "uint16_t",
+                "count",
+                "max_distance_cm_out_of_range_add_cm"
+            ],
+            2
+        ],
+        "crc": [
+            [
+                "crc_crc8_linebuf",
+                "crc_crc8_frame_length"
+            ],
+            0
+        ]
+    }
+}

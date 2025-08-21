@@ -1,0 +1,138 @@
+{
+    "ekf_check": {
+        "ekf_check_state.last_warn_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "flags.ekf_bad": [
+            [
+                "ekf_check_state_bad_variance"
+            ],
+            0
+        ],
+        "checks_passed": [
+            [
+                "ekf_has_relative_position",
+                "ekf_has_absolute_position",
+                "ekf_over_threshold"
+            ],
+            2
+        ],
+        "ekf_check_state.fail_count": [
+            [
+                "ekf_check_iterations_max"
+            ],
+            0
+        ]
+    },
+    "ekf_over_threshold": {
+        "mag_max": [
+            [
+                "fmaxf_fmaxf",
+                "fmaxf_mag_variance_x",
+                "mag_variance_z",
+                "fmaxf_mag_variance_y"
+            ],
+            0
+        ],
+        "position_var": [
+            [
+                "pos_variance_filt_apply_position_var",
+                "pos_variance_filt_apply_dt"
+            ],
+            0
+        ],
+        "height_var": [
+            [
+                "hgt_variance_filt_apply_dt",
+                "hgt_variance_filt_apply_height_var"
+            ],
+            0
+        ],
+        "variances_valid": [
+            [
+                "ahrs_get_variances_mag_variance",
+                "ahrs_get_variances_position_var",
+                "ahrs_get_variances_tas_variance",
+                "ahrs_get_variances_vel_var",
+                "ahrs_get_variances_height_var"
+            ],
+            0
+        ],
+        "vel_var": [
+            [
+                "vel_variance_filt_apply_dt",
+                "vel_variance_filt_apply_vel_var"
+            ],
+            0
+        ],
+        "last_ekf_check_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "dt": [
+            [
+                "micros",
+                "1e"
+            ],
+            1
+        ]
+    },
+    "check_ekf_reset": {
+        "new_ekfYawReset_ms": [
+            [
+                "ahrs_get_last_yaw_reset_angle_yaw_angle_change_rad"
+            ],
+            0
+        ],
+        "ekf_primary_core": [
+            [
+                "ahrs_get_primary_core_index"
+            ],
+            0
+        ],
+        "ekfYawReset_ms": [
+            [
+                "new_ekf_yaw_reset_ms"
+            ],
+            0
+        ]
+    },
+    "check_vibration": {
+        "do_bad_vibe_actions": [
+            [
+                "flightmode_has_manual_throttle",
+                "ahrs_is_vibration_affected",
+                "innov_vel_d_pos_d_positive",
+                "vel_variance_filt_get",
+                "innovation_checks_valid",
+                "motors_armed",
+                "g2_fs_vibe_enabled"
+            ],
+            2
+        ],
+        "vibration_check.clear_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "innov_velD_posD_positive": [
+            [
+                "is_positive_vel_innovation_z",
+                "is_positive_pos_innovation_z"
+            ],
+            0
+        ],
+        "vibration_check.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

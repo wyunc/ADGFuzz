@@ -1,0 +1,159 @@
+{
+    "_process_byte": {
+        "_start_frame_time_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "_frame_crc": [
+            [
+                "crc8_dvb_s2_byte",
+                "crc8_dvb_s2__frame_crc",
+                "crc8_dvb_s2__frame_type"
+            ],
+            0
+        ],
+        "_last_tx_frame_time_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "_last_frame_time_us": [
+            [
+                "timestamp_us",
+                "_last_rx_frame_time_us"
+            ],
+            0
+        ]
+    },
+    "write_frame": {
+        "tdelay": [
+            [
+                "micros64",
+                "uart_receive_time_constraint_us"
+            ],
+            2
+        ],
+        "crc": [
+            [
+                "crc8_dvb_s2_i",
+                "crc8_dvb_s2_frame_payload",
+                "crc8_dvb_s2_crc",
+                "crc8_dvb_s2_frame_type"
+            ],
+            0
+        ],
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ],
+        "val": [
+            [
+                "i",
+                "frame",
+                "uint8_t"
+            ],
+            0
+        ]
+    },
+    "decode_ghost_packet": {
+        "channels": [
+            [
+                "radio_frame_channels"
+            ],
+            0
+        ],
+        "fptr": [
+            [
+                "uint8_t",
+                "_frame"
+            ],
+            0
+        ],
+        "lowres_channels": [
+            [
+                "radio_frame_lowres_channels"
+            ],
+            0
+        ],
+        "radio_frame": [
+            [
+                "_frame_payload",
+                "const"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "ghst_ul_rc_chans_hs4_12_5to8",
+                "_frame_type",
+                "ghst_ul_rc_chans_hs4_5to8"
+            ],
+            0
+        ]
+    },
+    "process_telemetry": {
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    },
+    "process_link_stats_frame": {
+        "_link_status.link_quality": [
+            [
+                "link_link_quality"
+            ],
+            0
+        ],
+        "rssi_dbm": [
+            [
+                "link_rssi_dbm"
+            ],
+            0
+        ],
+        "_link_status.rf_mode": [
+            [
+                "link_protocol"
+            ],
+            0
+        ],
+        "_link_status.rssi": [
+            [
+                "derive_scaled_lq_value_link_link_quality",
+                "int16_t_roundf",
+                "int16_t_rssi_dbm"
+            ],
+            0
+        ],
+        "link": [
+            [
+                "const",
+                "link_statistics_frame",
+                "data"
+            ],
+            0
+        ]
+    },
+    "is_telemetry_supported": {
+        "_link_status.rf_mode": [
+            [
+                "ghst_rf_mode_race250"
+            ],
+            0
+        ]
+    },
+    "process_handshake": {
+        "uart": [
+            [
+                "get_current_uart"
+            ],
+            0
+        ]
+    }
+}

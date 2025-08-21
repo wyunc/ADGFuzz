@@ -1,0 +1,219 @@
+{
+    "liftCoeff": {
+        "M": [
+            [
+                "coefficient_mcoeff"
+            ],
+            0
+        ],
+        "flatPlate": [
+            [
+                "pow_alpha",
+                "copysign_alpha",
+                "exp_m",
+                "exp_alpha0",
+                "exp_alpha",
+                "cos_alpha",
+                "pow_sin"
+            ],
+            1
+        ],
+        "result": [
+            [
+                "max_alpha_delta",
+                "coefficient_alpha_stall",
+                "coefficient_c_lift_a",
+                "coefficient_c_lift_0",
+                "exp_m",
+                "exp_alpha0",
+                "exp_alpha",
+                "flat_plate"
+            ],
+            6
+        ]
+    },
+    "dragCoeff": {
+        "c_lift_a0": [
+            [
+                "coefficient_c_lift_a"
+            ],
+            0
+        ],
+        "AR": [
+            [
+                "pow_b",
+                "coefficient_s"
+            ],
+            1
+        ],
+        "c_drag_a": [
+            [
+                "ar",
+                "coefficient_c_drag_p",
+                "pow_c_lift_0",
+                "m_pi",
+                "coefficient_oswald",
+                "pow_alpha",
+                "pow_c_lift_a0"
+            ],
+            2
+        ],
+        "b": [
+            [
+                "coefficient_b"
+            ],
+            0
+        ],
+        "c_lift_0": [
+            [
+                "coefficient_c_lift_0"
+            ],
+            0
+        ]
+    },
+    "calculate_forces": {
+        "angle_of_attack": [
+            [
+                "atan2f_velocity_air_bf_z",
+                "atan2f_velocity_air_bf_x"
+            ],
+            0
+        ],
+        "rot_accel": [
+            [
+                "get_torque_force",
+                "get_torque_thrust",
+                "get_torque_elevator",
+                "get_torque_rudder",
+                "get_torque_aileron"
+            ],
+            0
+        ],
+        "accel_body.x": [
+            [
+                "vel_body_x"
+            ],
+            0
+        ],
+        "elevator": [
+            [
+                "filtered_servo_angle_input",
+                "ch2",
+                "ch1",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input"
+            ],
+            6
+        ],
+        "beta": [
+            [
+                "atan2f_velocity_air_bf_y",
+                "atan2f_velocity_air_bf_x"
+            ],
+            0
+        ],
+        "thrust": [
+            [
+                "filtered_servo_range_input",
+                "filtered_servo_angle_input",
+                "thrust_scale",
+                "icengine_update_input"
+            ],
+            1
+        ],
+        "aileron": [
+            [
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input",
+                "filtered_servo_angle_input"
+            ],
+            6
+        ],
+        "rudder": [
+            [
+                "fabsf_dspoiler1_right",
+                "fabsf_dspoiler1_left",
+                "fabsf_dspoiler2_right",
+                "filtered_servo_angle_input",
+                "ch2",
+                "ch1",
+                "fabsf_dspoiler2_left"
+            ],
+            0
+        ],
+        "vel_body": [
+            [
+                "velocity_ef",
+                "dcm_transposed"
+            ],
+            0
+        ],
+        "battery_current": [
+            [
+                "sq_throttle",
+                "filtered_servo_range_input",
+                "filtered_servo_angle_input",
+                "sitl_batt_voltage",
+                "sitl_batt_voltage"
+            ],
+            2
+        ],
+        "launch_triggered": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "launch_start_ms": [
+            [
+                "millis64"
+            ],
+            1
+        ],
+        "accel_body": [
+            [
+                "get_force_aileron",
+                "get_force_elevator",
+                "get_force_rudder",
+                "vector3f_thrust",
+                "mass"
+            ],
+            1
+        ],
+        "force.x": [
+            [
+                "launch_accel",
+                "mass"
+            ],
+            0
+        ],
+        "force.z": [
+            [
+                "launch_accel",
+                "mass"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "gyro.z": [
+            [
+                "velocity_bf_x",
+                "radians",
+                "filtered_servo_angle_input"
+            ],
+            2
+        ],
+        "velocity_bf": [
+            [
+                "velocity_ef",
+                "dcm_transposed"
+            ],
+            0
+        ]
+    }
+}

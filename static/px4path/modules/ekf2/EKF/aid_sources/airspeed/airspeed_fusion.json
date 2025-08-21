@@ -1,0 +1,160 @@
+{
+    "controlAirDataFusion": {
+        "is_fusion_failing": [
+            [
+                "is_timed_out__aid_src_airspeed_time_last_fuse",
+                "is_timed_out_uint64_t10e6"
+            ],
+            0
+        ],
+        "sideslip_timed_out": [
+            [
+                "is_timed_out__aid_src_sideslip_time_last_fuse",
+                "is_timed_out_uint64_t10e6"
+            ],
+            0
+        ],
+        "_aid_src_airspeed.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "airspeed_sample": [
+            [
+                "_airspeed_sample_delayed"
+            ],
+            0
+        ],
+        "airspeed_timed_out": [
+            [
+                "is_timed_out__aid_src_airspeed_time_last_fuse",
+                "is_timed_out_uint64_t10e6"
+            ],
+            0
+        ],
+        "is_airspeed_significant": [
+            [
+                "airspeed_sample_true_airspeed",
+                "_params_arsp_thr"
+            ],
+            0
+        ],
+        "is_airspeed_consistent": [
+            [
+                "_f",
+                "_aid_src_airspeed_test_ratio"
+            ],
+            0
+        ],
+        "_innov_check_fail_status.flags.reject_airspeed": [
+            [
+                "_aid_src_airspeed_innovation_rejected"
+            ],
+            0
+        ]
+    },
+    "updateAirspeed": {
+        "innov_var": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "innov": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "fuseAirspeed": {
+        "update_wind_only": [
+            [
+                "_control_status_flags_wind_dead_reckoning"
+            ],
+            0
+        ],
+        "_time_last_hor_vel_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "K": [
+            [
+                "h",
+                "aid_src_innovation_variance",
+                "p"
+            ],
+            0
+        ],
+        "innov_var": [
+            [
+                "aid_src_innovation_variance"
+            ],
+            0
+        ],
+        "K_wind": [
+            [
+                "wind_vel_dof",
+                "k_slice",
+                "wind_vel_idx"
+            ],
+            0
+        ],
+        "action_string": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "H": [
+            [
+                "flt_epsilon",
+                "compute_airspeed_h__state_vector"
+            ],
+            0
+        ]
+    },
+    "resetWindUsingAirspeed": {
+        "sideslip_var": [
+            [
+                "sq_radians"
+            ],
+            0
+        ],
+        "euler_yaw": [
+            [
+                "get_euler_yaw__r_to_earth"
+            ],
+            0
+        ]
+    },
+    "resetVelUsingAirspeed": {
+        "_aid_src_airspeed.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "vel_var": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "euler_yaw": [
+            [
+                "get_euler_yaw__r_to_earth"
+            ],
+            0
+        ]
+    }
+}

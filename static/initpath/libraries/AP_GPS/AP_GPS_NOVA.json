@@ -1,0 +1,220 @@
+{
+    "read": {
+        "_init_blob_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "init_str": [
+            [
+                "_init_blob_index",
+                "_initialisation_blob"
+            ],
+            0
+        ]
+    },
+    "parse": {
+        "nova_msg.nova_state": [
+            [
+                "crc2",
+                "headerdata",
+                "preamble3",
+                "headerlength",
+                "crc3",
+                "preamble1",
+                "data",
+                "crc4",
+                "crc1",
+                "preamble2"
+            ],
+            0
+        ],
+        "nova_msg.header.nova_headeru.headerlength": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "crc_crc32_uint8_t",
+                "uint32_t",
+                "nova_msg_header_nova_headeru_messagelength",
+                "nova_msg_header_data",
+                "uint8_t",
+                "nova_msg_data",
+                "nova_msg_header_nova_headeru_headerlength",
+                "crc_crc32_crc",
+                "crc_crc32_uint32_t"
+            ],
+            0
+        ],
+        "nova_msg.crc": [
+            [
+                "temp",
+                "uint32_t"
+            ],
+            0
+        ]
+    },
+    "process_message": {
+        "psrdopu": [
+            [
+                "nova_msg_data_psrdopu"
+            ],
+            0
+        ],
+        "state.ground_course": [
+            [
+                "float",
+                "bestvelu_trkgnd"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "psrdopu_hdop",
+                "uint16_t"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d_rtk_float",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps",
+                "no_fix",
+                "gps_ok_fix_3d_rtk_fixed"
+            ],
+            0
+        ],
+        "_new_speed": [
+            [
+                "_new_position"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "float",
+                "bestvelu_vertspd"
+            ],
+            0
+        ],
+        "state.ground_speed": [
+            [
+                "bestvelu_horspd",
+                "float"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "psrdopu_htdop",
+                "uint16_t"
+            ],
+            0
+        ],
+        "state.rtk_num_sats": [
+            [
+                "bestposu_svsused"
+            ],
+            0
+        ],
+        "bestvelu": [
+            [
+                "nova_msg_data_bestvelu"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "nova_msg_header_nova_headeru_week"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "norm_bestposu_latsdev",
+                "norm_bestposu_lngsdev"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "bestposu_undulation"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "bestposu_svsused"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "nova_msg_header_nova_headeru_tow",
+                "uint32_t"
+            ],
+            0
+        ],
+        "messageid": [
+            [
+                "nova_msg_header_nova_headeru_messageid"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "int32_t",
+                "bestposu_lat",
+                "1e7",
+                "double"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "int32_t",
+                "1e7",
+                "bestposu_lng",
+                "double"
+            ],
+            0
+        ],
+        "_last_vel_time": [
+            [
+                "nova_msg_header_nova_headeru_tow",
+                "uint32_t"
+            ],
+            0
+        ],
+        "state.rtk_age_ms": [
+            [
+                "bestposu_diffage"
+            ],
+            0
+        ],
+        "bestposu": [
+            [
+                "nova_msg_data_bestposu"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "float",
+                "bestposu_hgtsdev"
+            ],
+            0
+        ]
+    }
+}

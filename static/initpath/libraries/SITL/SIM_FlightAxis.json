@@ -1,0 +1,304 @@
+{
+    "parse_reply": {
+        ".ref": [
+            [
+                "atof_p"
+            ],
+            1
+        ],
+        "reply": [
+            [
+                "strlen_i",
+                "strstr_keytable",
+                "strlen_keytable",
+                "strstr_reply",
+                "strlen__key",
+                "strchr_p",
+                "strstr_i",
+                "strstr__key",
+                "strstr_reply0"
+            ],
+            1
+        ]
+    },
+    "soap_request_start": {
+        "sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "socknext": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "soap_request_end": {
+        "ret": [
+            [
+                "sock_recv_sizeof",
+                "sock_recv_replybuf",
+                "sock_recv_sizeof",
+                "sock_recv_replybuf",
+                "sock_recv_ret"
+            ],
+            1
+        ],
+        "sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "strstr_replybuf"
+            ],
+            0
+        ],
+        "expected_length": [
+            [
+                "replybuf",
+                "strstr_p",
+                "strtoul_p",
+                "strtoul_nullptr"
+            ],
+            2
+        ]
+    },
+    "exchange_data": {
+        "average_frame_time_s": [
+            [
+                "state_m_current_physics_time_sec",
+                "state_m_current_physics_time_sec"
+            ],
+            2
+        ],
+        "sock": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "channels": [
+            [
+                "hal_scheduler_is_system_initialized"
+            ],
+            0
+        ],
+        "col": [
+            [
+                "scaled_servos",
+                "scaled_servos",
+                "scaled_servos"
+            ],
+            3
+        ],
+        "activation_frame_counter": [
+            [
+                "frame_counter"
+            ],
+            0
+        ],
+        "pitch_rate": [
+            [
+                "scaled_servos",
+                "scaled_servos",
+                "scaled_servos"
+            ],
+            3
+        ],
+        "reply": [
+            [
+                "soap_request_end",
+                "nullptr"
+            ],
+            0
+        ],
+        "last_recv_sec": [
+            [
+                "timestamp_sec"
+            ],
+            0
+        ],
+        "roll_rate": [
+            [
+                "scaled_servos",
+                "scaled_servos"
+            ],
+            2
+        ]
+    },
+    "update": {
+        "accel_body": [
+            [
+                "velocity_ef",
+                "state_m_current_physics_time_sec",
+                "dcm_transposed"
+            ],
+            2
+        ],
+        "last_input": [
+            [
+                "input"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "state_m_airspeed_mps"
+            ],
+            0
+        ],
+        "time_now_us": [
+            [
+                "state_m_current_physics_time_sec",
+                "_0e6",
+                "average_frame_time_s",
+                "state_m_current_physics_time_sec",
+                "_0e6",
+                "glitch_threshold_us",
+                "_0e6"
+            ],
+            3
+        ],
+        "initial_time_s": [
+            [
+                "state_m_current_physics_time_sec",
+                "_0e",
+                "_0e",
+                "glitch_threshold_us",
+                "state_m_current_physics_time_sec"
+            ],
+            2
+        ],
+        "battery_voltage": [
+            [
+                "state_m_battery_voltage_volts"
+            ],
+            0
+        ],
+        "accel_ef.z": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "airspeed3d": [
+            [
+                "sitl_ahrs_rotation",
+                "dcm_mul_transpose_airspeed_3d_ef"
+            ],
+            0
+        ],
+        "airspeed_pitot": [
+            [
+                "airspeed3d_x"
+            ],
+            0
+        ],
+        "last_time_s": [
+            [
+                "state_m_current_physics_time_sec"
+            ],
+            0
+        ],
+        "extrapolated_s": [
+            [
+                "average_frame_time_s"
+            ],
+            1
+        ],
+        "last_velocity_ef": [
+            [
+                "velocity_ef"
+            ],
+            0
+        ],
+        "accel_body.x": [
+            [
+                "gravity_mss",
+                "accel_body_x"
+            ],
+            1
+        ],
+        "accel_body.z": [
+            [
+                "gravity_mss",
+                "accel_body_z"
+            ],
+            1
+        ],
+        "position": [
+            [
+                "position_offset"
+            ],
+            0
+        ],
+        "battery_current": [
+            [
+                "state_m_battery_current_draw_amps"
+            ],
+            0
+        ],
+        "airspeed_3d_ef": [
+            [
+                "vector3f_state_m_wind_z_mps",
+                "vector3f_state_m_wind_x_mps",
+                "vector3f_state_m_wind_y_mps",
+                "velocity_ef"
+            ],
+            1
+        ],
+        "accel_body.y": [
+            [
+                "gravity_mss",
+                "accel_body_y"
+            ],
+            1
+        ]
+    },
+    "report_FPS": {
+        "last_frame_count_s": [
+            [
+                "state_m_current_physics_time_sec"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "state_m_current_physics_time_sec"
+            ],
+            0
+        ],
+        "frames": [
+            [
+                "socket_frame_counter"
+            ],
+            0
+        ],
+        "last_socket_frame_counter": [
+            [
+                "socket_frame_counter"
+            ],
+            0
+        ]
+    },
+    "socket_creator": {
+        "socket_pid": [
+            [
+                "getpid"
+            ],
+            0
+        ],
+        "socknext": [
+            [
+                "new_nothrow",
+                "socket_apm_native_false"
+            ],
+            1
+        ]
+    }
+}

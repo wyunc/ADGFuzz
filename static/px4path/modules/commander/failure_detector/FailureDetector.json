@@ -1,0 +1,276 @@
+{
+    "update": {
+        "failure_unit": [
+            [
+                "vehicle_command_param1",
+                "int",
+                "static_cast"
+            ],
+            0
+        ],
+        "failure_type": [
+            [
+                "int",
+                "vehicle_command_param2",
+                "static_cast"
+            ],
+            0
+        ],
+        "ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "ack.command": [
+            [
+                "vehicle_command_command"
+            ],
+            0
+        ],
+        "status_prev": [
+            [
+                "_status"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "int",
+                "vehicle_command_param3",
+                "static_cast"
+            ],
+            0
+        ]
+    },
+    "manipulateEscStatus": {
+        "i_esc": [
+            [
+                "_actuator_function",
+                "actuator_function_motor1",
+                "status_esc",
+                "i"
+            ],
+            0
+        ],
+        ".actuator_function": [
+            [
+                "_actuator_function",
+                "status_esc",
+                "i"
+            ],
+            1
+        ]
+    },
+    "updateAttitudeStatus": {
+        "pitch": [
+            [
+                "_f",
+                "euler_rotated_theta"
+            ],
+            0
+        ],
+        "max_roll_deg": [
+            [
+                "_param_fd_fail_r_get"
+            ],
+            0
+        ],
+        "roll_status": [
+            [
+                "max_roll",
+                "fabsf_roll",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "pitch_status": [
+            [
+                "max_pitch",
+                "fabsf_pitch",
+                "flt_epsilon"
+            ],
+            0
+        ],
+        "_status.flags.roll": [
+            [
+                "_roll_failure_hysteresis_get_state"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "_f",
+                "euler_rotated_phi"
+            ],
+            0
+        ],
+        "max_pitch_deg": [
+            [
+                "_param_fd_fail_p_get"
+            ],
+            0
+        ],
+        "time_now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_status.flags.pitch": [
+            [
+                "_pitch_failure_hysteresis_get_state"
+            ],
+            0
+        ]
+    },
+    "updateExternalAtsStatus": {
+        "ats_trigger_status": [
+            [
+                "_param_fd_ext_ats_trig_get",
+                "uint32_t",
+                "3_ms",
+                "pwm_input_pulse_width"
+            ],
+            1
+        ],
+        "time_now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_status.flags.ext": [
+            [
+                "_ext_ats_failure_hysteresis_get_state"
+            ],
+            0
+        ]
+    },
+    "updateEscsStatus": {
+        "time_now": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "is_esc_failure": [
+            [
+                "esc_status_esc",
+                "min_connected_esc_max",
+                "min_esc_status_esc_count",
+                "esc_status_esc_armed_flags",
+                "i",
+                "_failures"
+            ],
+            3
+        ]
+    },
+    "updateImbalancedPropStatus": {
+        "_imu_status_timestamp_prev": [
+            [
+                "imu_status_timestamp"
+            ],
+            0
+        ],
+        "metric": [
+            [
+                "sqrtf_imu_status_var_accel",
+                "sqrtf__f",
+                "sqrtf_max",
+                "sqrtf_imu_status_var_accel",
+                "sqrtf__f",
+                "sqrtf_max",
+                "sqrtf_imu_status_var_accel",
+                "sqrtf__f",
+                "sqrtf_max",
+                "_f"
+            ],
+            3
+        ],
+        "_selected_accel_device_id": [
+            [
+                "selection_accel_device_id"
+            ],
+            0
+        ],
+        "updated": [
+            [
+                "_vehicle_imu_status_sub_updated"
+            ],
+            0
+        ],
+        "_status.flags.imbalanced_prop": [
+            [
+                "_param_fd_imb_prop_thr_get",
+                "_imbalanced_prop_lpf_update_metric"
+            ],
+            2
+        ],
+        "dt": [
+            [
+                "constrain_imu_status_timestamp",
+                "constrain__imu_status_timestamp_prev",
+                "_f",
+                "1e"
+            ],
+            0
+        ]
+    },
+    "updateMotorStatus": {
+        "limited_esc_count": [
+            [
+                "min_esc_status_esc_count",
+                "min_connected_esc_max"
+            ],
+            0
+        ],
+        "esc_was_valid": [
+            [
+                "_motor_failure_esc_valid_current_mask",
+                "actuator_function_motor1",
+                "cur_esc_report_actuator_function"
+            ],
+            1
+        ],
+        "throttle_above_threshold": [
+            [
+                "_param_fd_motor_throttle_thres_get",
+                "fabsf_actuator_motors_control",
+                "_f",
+                "fabsf_i_esc"
+            ],
+            1
+        ],
+        "critical_esc_failure": [
+            [
+                "_motor_failure_esc_under_current_mask",
+                "_motor_failure_esc_timed_out_mask"
+            ],
+            0
+        ],
+        "cur_esc_report": [
+            [
+                "esc_status_idx",
+                "esc_status_esc"
+            ],
+            0
+        ],
+        "esc_timeout_currently_flagged": [
+            [
+                "_motor_failure_esc_timed_out_mask",
+                "actuator_function_motor1",
+                "cur_esc_report_actuator_function"
+            ],
+            1
+        ],
+        "esc_timed_out": [
+            [
+                "hrt_absolute_time",
+                "cur_esc_report_timestamp",
+                "300_ms"
+            ],
+            2
+        ]
+    }
+}

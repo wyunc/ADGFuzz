@@ -1,0 +1,166 @@
+{
+    "_begin": {
+        "_state": [
+            [
+                "initialized"
+            ],
+            0
+        ]
+    },
+    "start_listen": {
+        "destAddr.sin_addr.s_addr": [
+            [
+                "htonl_inaddr_any"
+            ],
+            0
+        ],
+        "destAddr.sin_port": [
+            [
+                "htons"
+            ],
+            0
+        ],
+        "err": [
+            [
+                "bind_accept_socket",
+                "bind_sockaddr",
+                "sizeof_dest_addr",
+                "listen_accept_socket",
+                "dest_addr",
+                "bind_struct"
+            ],
+            0
+        ],
+        "accept_socket": [
+            [
+                "socket_af_inet",
+                "socket_ipproto_tcp",
+                "socket_sock_stream"
+            ],
+            0
+        ],
+        "destAddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ]
+    },
+    "try_accept": {
+        "i": [
+            [
+                "available_socket"
+            ],
+            0
+        ],
+        "addrLen": [
+            [
+                "sizeof_source_addr"
+            ],
+            0
+        ]
+    },
+    "read_data": {
+        "count": [
+            [
+                "recv_void_buffer",
+                "recv_i",
+                "recv_socket_list",
+                "sizeof__buffer"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "initialized"
+            ],
+            0
+        ]
+    },
+    "write_data": {
+        "count": [
+            [
+                "send_socket_list",
+                "send_void",
+                "_writebuf_peekbytes__buffer",
+                "_writebuf_peekbytes_sizeof",
+                "_buffer",
+                "send_i"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "initialized"
+            ],
+            0
+        ]
+    },
+    "initialize_wifi": {
+        "cfg": [
+            [
+                "wifi_init_config_default"
+            ],
+            0
+        ],
+        "wifi_config.sta.sae_pwe_h2e": [
+            [
+                "wpa3_sae_pwe_both"
+            ],
+            0
+        ],
+        "wifi_config.ap.authmode": [
+            [
+                "wifi_auth_wpa2_psk",
+                "wifi_auth_open"
+            ],
+            0
+        ],
+        "wifi_config.sta.threshold.authmode": [
+            [
+                "wifi_auth_open"
+            ],
+            0
+        ],
+        "wifi_config.ap.channel": [
+            [
+                "wifi_channel"
+            ],
+            0
+        ],
+        "s_wifi_event_group": [
+            [
+                "x_event_group_create"
+            ],
+            0
+        ],
+        "netif": [
+            [
+                "esp_netif_create_default_wifi_sta"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "nvs_flash_init"
+            ],
+            0
+        ]
+    },
+    "_wifi_thread": {
+        "self": [
+            [
+                "wi_fi_driver",
+                "arg"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "initialized",
+                "connected"
+            ],
+            0
+        ]
+    }
+}

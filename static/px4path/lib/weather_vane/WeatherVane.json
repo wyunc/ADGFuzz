@@ -1,0 +1,37 @@
+{
+    "update": {
+        "_flag_control_position_enabled": [
+            [
+                "vehicle_control_mode_flag_control_position_enabled"
+            ],
+            0
+        ],
+        "_flag_control_manual_enabled": [
+            [
+                "vehicle_control_mode_flag_control_manual_enabled"
+            ],
+            0
+        ]
+    },
+    "getWeathervaneYawrate": {
+        "R_yaw": [
+            [
+                "eulerf_vehicle_local_position_heading"
+            ],
+            0
+        ],
+        "roll_exceeding_treshold": [
+            [
+                "radians__param_wv_roll_min_get",
+                "asinf_body_z_sp"
+            ],
+            2
+        ],
+        "body_z_sp": [
+            [
+                "r_yaw"
+            ],
+            0
+        ]
+    }
+}

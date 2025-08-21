@@ -1,0 +1,67 @@
+{
+    "update": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "handle_frame": {
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_object_count": [
+            [
+                "frame_data"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "frame_id"
+            ],
+            0
+        ]
+    },
+    "parse_distance_message": {
+        "objects_dist": [
+            [
+                "obstacle_fr_length"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "correct_angle_for_orientation_obstacle_fr_x",
+                "correct_angle_for_orientation_degrees",
+                "correct_angle_for_orientation_atan2f",
+                "correct_angle_for_orientation_obstacle_fr_y",
+                "correct_angle_for_orientation_wrap_360"
+            ],
+            0
+        ],
+        "obstacle_fr.y": [
+            [
+                "frame_data"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_yaw"
+            ],
+            0
+        ],
+        "obstacle_fr.x": [
+            [
+                "0x07u",
+                "frame_data"
+            ],
+            0
+        ]
+    }
+}

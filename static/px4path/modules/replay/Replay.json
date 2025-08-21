@@ -1,0 +1,330 @@
+{
+    "setupReplayFile": {
+        "_replay_file": [
+            [
+                "strdup_file_name"
+            ],
+            0
+        ]
+    },
+    "setParameter": {
+        "handle": [
+            [
+                "param_find_parameter_name_c_str"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "parameter_value",
+                "int32_t",
+                "float"
+            ],
+            0
+        ],
+        "param_format": [
+            [
+                "param_type_handle"
+            ],
+            0
+        ]
+    },
+    "setUserParams": {
+        "param_value_double": [
+            [
+                "stod_value_string"
+            ],
+            0
+        ]
+    },
+    "readDynamicParams": {
+        "change_event": [
+            [
+                "stod_value_string",
+                "param_name",
+                "1e6",
+                "uint64_t",
+                "stod_time_string"
+            ],
+            2
+        ]
+    },
+    "readFileHeader": {
+        "_file_start_time": [
+            [
+                "msg_header_timestamp"
+            ],
+            0
+        ]
+    },
+    "readFileDefinitions": {
+        "_data_section_start": [
+            [
+                "ulog_msg_header_len",
+                "file_tellg",
+                "streamoff"
+            ],
+            0
+        ]
+    },
+    "readFlagBits": {
+        "contains_appended_data": [
+            [
+                "uint8_t",
+                "_read_buffer_data",
+                "ulog_incompat_flag0_data_appended_mask"
+            ],
+            2
+        ],
+        "_read_until_file_position": [
+            [
+                "appended_offsets"
+            ],
+            0
+        ]
+    },
+    "readFormat": {
+        "pos": [
+            [
+                "str_format_find"
+            ],
+            0
+        ],
+        "name": [
+            [
+                "str_format_substr_pos"
+            ],
+            0
+        ],
+        "format": [
+            [
+                "char",
+                "_read_buffer_data"
+            ],
+            0
+        ],
+        "fields": [
+            [
+                "str_format_substr_pos"
+            ],
+            0
+        ]
+    },
+    "findFieldOffset": {
+        "offset": [
+            [
+                "size_of_full_type_type_name_full"
+            ],
+            0
+        ],
+        "cur_field_name": [
+            [
+                "format_substr_space_pos",
+                "format_substr_field_end"
+            ],
+            0
+        ],
+        "field_size": [
+            [
+                "size_of_full_type_type_name_full"
+            ],
+            0
+        ],
+        "type_name_full": [
+            [
+                "format_substr_prev_field_end",
+                "format_substr_space_pos"
+            ],
+            0
+        ],
+        "field_end": [
+            [
+                "format_find_prev_field_end",
+                "format_find"
+            ],
+            0
+        ],
+        "space_pos": [
+            [
+                "format_find_prev_field_end"
+            ],
+            0
+        ]
+    },
+    "readAndApplyParameter": {
+        "type": [
+            [
+                "key_substr_pos"
+            ],
+            0
+        ],
+        "param_name": [
+            [
+                "key_substr_pos"
+            ],
+            0
+        ],
+        "handle": [
+            [
+                "param_find_param_name_c_str"
+            ],
+            0
+        ],
+        "pos": [
+            [
+                "key_find"
+            ],
+            0
+        ],
+        "key_len": [
+            [
+                "_read_buffer_data",
+                "uint8_t"
+            ],
+            1
+        ]
+    },
+    "nextDataMessage": {
+        "subscription.next_read_pos": [
+            [
+                "file_tellg"
+            ],
+            1
+        ],
+        "subscription.orb_meta": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "last_additional_message_pos": [
+            [
+                "_data_section_start",
+                "sub_next_read_pos"
+            ],
+            1
+        ],
+        "param_change": [
+            [
+                "_dynamic_parameter_schedule",
+                "_next_param_change"
+            ],
+            0
+        ],
+        "subscription": [
+            [
+                "i",
+                "_subscriptions"
+            ],
+            0
+        ],
+        "_speed_factor": [
+            [
+                "_f",
+                "atof_speedup"
+            ],
+            0
+        ],
+        "next_file_time": [
+            [
+                "subscription_next_timestamp"
+            ],
+            0
+        ],
+        "_replay_start_time": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_offset": [
+            [
+                "get_timestamp_offset"
+            ],
+            0
+        ],
+        "t": [
+            [
+                "10_ms",
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "publish_timestamp": [
+            [
+                "handle_topic_delay_timestamp_offset",
+                "handle_topic_delay_next_file_time"
+            ],
+            0
+        ],
+        "orb_advert": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "compat": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "sub": [
+            [
+                "i",
+                "int",
+                "_subscriptions"
+            ],
+            1
+        ],
+        "speedup": [
+            [
+                "getenv"
+            ],
+            0
+        ]
+    },
+    "readTopicDataToBuffer": {
+        "msg_read_size": [
+            [
+                "sub_orb_meta_o_size_no_padding"
+            ],
+            0
+        ],
+        "msg_write_size": [
+            [
+                "sub_orb_meta_o_size"
+            ],
+            0
+        ]
+    },
+    "publishTopic": {
+        "sub.orb_advert": [
+            [
+                "orb_advertise_multi_sub_orb_meta",
+                "orb_advertise_data",
+                "orb_advertise_sub_orb_meta",
+                "orb_advertise_multi_data",
+                "orb_advertise_multi_instance"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "sub_compat_apply_data"
+            ],
+            0
+        ]
+    },
+    "applyParams": {
+        "r": [
+            [
+                "new",
+                "replay"
+            ],
+            0
+        ]
+    }
+}

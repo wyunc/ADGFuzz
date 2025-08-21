@@ -1,0 +1,310 @@
+{
+    "passthrough_bf_roll_pitch_rate_yaw": {
+        "_euler_angle_target.z": [
+            [
+                "wrap_2pi_att_error_euler_rad_z",
+                "wrap_2pi__ahrs_yaw",
+                "wrap_2pi_m_pi",
+                "wrap_2pi__euler_angle_target_z"
+            ],
+            0
+        ],
+        "_euler_angle_target.y": [
+            [
+                "wrap_pi_att_error_euler_rad_y",
+                "wrap_pi__ahrs_pitch",
+                "wrap_pi__euler_angle_target_x",
+                "wrap_pi_m_pi"
+            ],
+            0
+        ],
+        "_ang_vel_target.y": [
+            [
+                "_ahrs_get_gyro_y"
+            ],
+            0
+        ],
+        "_ang_vel_target.z": [
+            [
+                "radians_yaw_rate_bf_cds",
+                "_dt",
+                "get_accel_yaw_max_radss",
+                "radians_yaw_rate_bf_cds",
+                "_ang_vel_target_z"
+            ],
+            3
+        ],
+        "_ang_vel_body.y": [
+            [
+                "_ang_vel_target_y"
+            ],
+            0
+        ],
+        "_euler_angle_target.x": [
+            [
+                "wrap_pi__ahrs_roll",
+                "wrap_pi__euler_angle_target_x",
+                "wrap_pi_m_pi",
+                "wrap_pi_att_error_euler_rad_x"
+            ],
+            0
+        ],
+        "_passthrough_pitch": [
+            [
+                "pitch_passthrough"
+            ],
+            0
+        ],
+        "_ang_vel_body.x": [
+            [
+                "_ang_vel_target_x"
+            ],
+            0
+        ],
+        "_passthrough_roll": [
+            [
+                "roll_passthrough"
+            ],
+            0
+        ],
+        "_ang_vel_body": [
+            [
+                "update_ang_vel_target_from_att_error__att_error_rot_vec_rad"
+            ],
+            0
+        ],
+        "_ang_vel_target.x": [
+            [
+                "_ahrs_get_gyro_x"
+            ],
+            0
+        ],
+        "_passthrough_yaw": [
+            [
+                "degrees_yaw_rate_bf_rads"
+            ],
+            0
+        ],
+        "_thrust_error_angle": [
+            [
+                "_att_error_rot_vec_rad_xy_length"
+            ],
+            0
+        ],
+        "_ang_vel_body.z": [
+            [
+                "_ang_vel_target_z"
+            ],
+            0
+        ]
+    },
+    "integrate_bf_rate_error_to_angle_errors": {
+        "_att_error_rot_vec_rad.y": [
+            [
+                "_att_error_rot_vec_rad_y",
+                "ac_attitude_heli_acro_overshoot_angle_rad"
+            ],
+            0
+        ],
+        "_att_error_rot_vec_rad.z": [
+            [
+                "ac_attitude_heli_acro_overshoot_angle_rad",
+                "_att_error_rot_vec_rad_z"
+            ],
+            0
+        ],
+        "_att_error_rot_vec_rad": [
+            [
+                "_ahrs_get_gyro",
+                "_ang_vel_target",
+                "_dt"
+            ],
+            0
+        ],
+        "_att_error_rot_vec_rad.x": [
+            [
+                "_att_error_rot_vec_rad_x",
+                "ac_attitude_heli_acro_overshoot_angle_rad"
+            ],
+            0
+        ]
+    },
+    "input_rate_bf_roll_pitch_yaw": {
+        "_passthrough_yaw": [
+            [
+                "yaw_rate_bf_cds"
+            ],
+            0
+        ]
+    },
+    "rate_controller_run": {
+        "_rate_gyro": [
+            [
+                "_ahrs_get_gyro_latest"
+            ],
+            0
+        ],
+        "_rate_gyro_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "_ang_vel_body": [
+            [
+                "_sysid_ang_vel_body"
+            ],
+            0
+        ]
+    },
+    "update_althold_lean_angle_max": {
+        "_althold_lean_angle_max": [
+            [
+                "acosf_throttle_in",
+                "acosf_ac_attitude_heli_angle_limit_throttle_max",
+                "_angle_limit_tc",
+                "_dt"
+            ],
+            1
+        ]
+    },
+    "rate_bf_to_motor_roll_pitch": {
+        "yawratevector.x": [
+            [
+                "cosf__dt",
+                "cosf_rate_rads_z"
+            ],
+            0
+        ],
+        "piro_pitch_i": [
+            [
+                "_pid_rate_pitch_get_i"
+            ],
+            0
+        ],
+        "piro_roll_i": [
+            [
+                "_pid_rate_roll_get_i"
+            ],
+            0
+        ],
+        "roll_out": [
+            [
+                "ac_attitude_rate_rp_controller_out_max",
+                "_pid_rate_roll_get_ff",
+                "_pid_rate_roll_update_all_rate_roll_target_rads",
+                "_pid_rate_roll_update_all_rate_rads_x",
+                "_pid_rate_roll_update_all__motors_limit_roll",
+                "_actuator_sysid_x",
+                "_pid_rate_roll_update_all__dt"
+            ],
+            2
+        ],
+        "pitch_out": [
+            [
+                "ac_attitude_rate_rp_controller_out_max",
+                "_actuator_sysid_y",
+                "_pid_rate_pitch_update_all_rate_rads_y",
+                "_pid_rate_pitch_update_all_rate_pitch_target_rads",
+                "_pid_rate_pitch_update_all__dt",
+                "_pid_rate_pitch_update_all__motors_limit_pitch",
+                "_pid_rate_pitch_get_ff"
+            ],
+            2
+        ],
+        "yawratevector.y": [
+            [
+                "sinf__dt",
+                "sinf_rate_rads_z"
+            ],
+            0
+        ]
+    },
+    "rate_target_to_motor_yaw": {
+        "yaw_out": [
+            [
+                "_pid_rate_yaw_update_all_rate_target_rads",
+                "_pid_rate_yaw_update_all__motors_limit_yaw",
+                "_pid_rate_yaw_update_all_rate_yaw_actual_rads",
+                "_actuator_sysid_z",
+                "_pid_rate_yaw_update_all__dt",
+                "ac_attitude_rate_yaw_controller_out_max",
+                "_feedforward_scalar",
+                "_pid_rate_yaw_get_ff"
+            ],
+            2
+        ]
+    },
+    "set_throttle_out": {
+        "throttle_in": [
+            [
+                "get_throttle_boosted_throttle_in"
+            ],
+            0
+        ]
+    },
+    "get_throttle_boosted": {
+        "_angle_boost": [
+            [
+                "fabsf__thrust_angle",
+                "fabsf_cosf",
+                "throttle_in",
+                "_ahrs_cos_roll",
+                "_ahrs_cos_pitch",
+                "_motors",
+                "ap_motors_heli",
+                "_get_coll_mid",
+                "throttle_in"
+            ],
+            6
+        ]
+    },
+    "input_euler_angle_roll_pitch_euler_rate_yaw": {
+        "euler_roll_angle_cd": [
+            [
+                "wrap_180_cd_euler_roll_angle_cd"
+            ],
+            0
+        ]
+    },
+    "input_euler_angle_roll_pitch_yaw": {
+        "euler_roll_angle_cd": [
+            [
+                "wrap_180_cd_euler_roll_angle_cd"
+            ],
+            0
+        ]
+    },
+    "input_thrust_vector_rate_heading": {
+        "euler_roll_angle_cd": [
+            [
+                "wrap_180_cd_euler_roll_angle_cd",
+                "degrees_angle_target_x"
+            ],
+            0
+        ],
+        "angle_target": [
+            [
+                "attitude_from_thrust_vector__ahrs_yaw_to_vector312",
+                "attitude_from_thrust_vector_thrust_vector"
+            ],
+            0
+        ]
+    },
+    "input_thrust_vector_heading": {
+        "euler_roll_angle_cd": [
+            [
+                "degrees_angle_target_x",
+                "wrap_180_cd_euler_roll_angle_cd"
+            ],
+            0
+        ],
+        "angle_target": [
+            [
+                "attitude_from_thrust_vector_thrust_vector",
+                "attitude_from_thrust_vector__ahrs_yaw_to_vector312"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,342 @@
+{
+    "init": {
+        "_mav_type": [
+            [
+                "mav_type_quadrotor",
+                "mav_type_decarotor",
+                "mav_type_hexarotor",
+                "mav_type_tricopter",
+                "mav_type_octorotor",
+                "mav_type_dodecarotor",
+                "mav_type_generic"
+            ],
+            0
+        ],
+        "_active_frame_type": [
+            [
+                "frame_type"
+            ],
+            0
+        ],
+        "_active_frame_class": [
+            [
+                "frame_class"
+            ],
+            0
+        ],
+        "expected_num_motors": [
+            [
+                "num_motors"
+            ],
+            0
+        ]
+    },
+    "set_update_rate": {
+        "_speed_hz": [
+            [
+                "speed_hz"
+            ],
+            0
+        ]
+    },
+    "set_frame_class_and_type": {
+        "_active_frame_class": [
+            [
+                "frame_class"
+            ],
+            0
+        ],
+        "_active_frame_type": [
+            [
+                "frame_type"
+            ],
+            0
+        ]
+    },
+    "output_armed_stabilizing": {
+        "pitch_thrust": [
+            [
+                "_pitch_in",
+                "thr_lin_get_compensation_gain",
+                "_pitch_in_ff"
+            ],
+            1
+        ],
+        "roll_thrust": [
+            [
+                "_roll_in",
+                "thr_lin_get_compensation_gain",
+                "_roll_in_ff"
+            ],
+            1
+        ],
+        "motor_yaw_allowed": [
+            [
+                "fabsf_i",
+                "fabsf__motor_lost_index",
+                "fabsf__yaw_factor",
+                "_thrust_rpyt_out",
+                "_motor_lost_index",
+                "i"
+            ],
+            2
+        ],
+        "_throttle_out": [
+            [
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "_thrust_rpyt_out",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "i",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "_thrust_rpyt_out",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "i",
+                "i",
+                "boost_ratio_rpy_high",
+                "boost_ratio__motor_lost_index",
+                "_thrust_rpyt_out",
+                "boost_ratio__thrust_rpyt_out",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "boost_ratio_compensation_gain",
+                "boost_ratio__throttle_thrust_max",
+                "thr_lin_get_compensation_gain"
+            ],
+            10
+        ],
+        "yaw_thrust": [
+            [
+                "boost_ratio_yaw_allowed_min",
+                "float",
+                "_yaw_headroom",
+                "boost_ratio_yaw_allowed",
+                "boost_ratio_motor_yaw_allowed",
+                "_yaw_in_ff",
+                "thr_lin_get_compensation_gain",
+                "_yaw_in"
+            ],
+            3
+        ]
+    },
+    "check_for_failed_motor": {
+        "thrust_balance": [
+            [
+                "i",
+                "_thrust_rpyt_out_filt",
+                "i",
+                "_thrust_rpyt_out_filt",
+                "number_motors"
+            ],
+            2
+        ],
+        "alpha": [
+            [
+                "_dt"
+            ],
+            0
+        ],
+        "_motor_lost_index": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "add_motors": {
+        "motor": [
+            [
+                "i",
+                "motors"
+            ],
+            0
+        ]
+    },
+    "add_motors_raw": {
+        "m": [
+            [
+                "i",
+                "motors"
+            ],
+            0
+        ]
+    },
+    "setup_quad_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_quadrotor"
+            ],
+            0
+        ]
+    },
+    "setup_hexa_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_hexarotor"
+            ],
+            0
+        ]
+    },
+    "setup_octa_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_octorotor"
+            ],
+            0
+        ]
+    },
+    "setup_octaquad_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_octorotor"
+            ],
+            0
+        ]
+    },
+    "setup_dodecahexa_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_dodecarotor"
+            ],
+            0
+        ]
+    },
+    "setup_y6_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_hexarotor"
+            ],
+            0
+        ]
+    },
+    "setup_deca_matrix": {
+        "_mav_type": [
+            [
+                "mav_type_decarotor"
+            ],
+            0
+        ]
+    },
+    "setup_motors": {
+        "success": [
+            [
+                "setup_octa_matrix_frame_type",
+                "setup_dodecahexa_matrix_frame_type",
+                "setup_deca_matrix_frame_type",
+                "setup_quad_matrix_frame_type",
+                "setup_y6_matrix_frame_type",
+                "setup_hexa_matrix_frame_type",
+                "setup_octaquad_matrix_frame_type"
+            ],
+            0
+        ],
+        "_mav_type": [
+            [
+                "mav_type_generic"
+            ],
+            0
+        ]
+    },
+    "normalise_rpy_factors": {
+        "pitch_fac": [
+            [
+                "fabsf__pitch_factor",
+                "fabsf_i"
+            ],
+            0
+        ],
+        "yaw_fac": [
+            [
+                "fabsf__yaw_factor",
+                "fabsf_i"
+            ],
+            0
+        ],
+        "throttle_fac": [
+            [
+                "max_i",
+                "max__throttle_factor"
+            ],
+            0
+        ],
+        "roll_fac": [
+            [
+                "fabsf__roll_factor",
+                "fabsf_i"
+            ],
+            0
+        ]
+    },
+    "get_factors": {
+        "roll": [
+            [
+                "_roll_factor",
+                "i"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "_pitch_factor",
+                "i"
+            ],
+            0
+        ],
+        "yaw": [
+            [
+                "_yaw_factor",
+                "i"
+            ],
+            0
+        ],
+        "testing_order": [
+            [
+                "i",
+                "_test_order"
+            ],
+            0
+        ],
+        "throttle": [
+            [
+                "i",
+                "_throttle_factor"
+            ],
+            0
+        ]
+    }
+}

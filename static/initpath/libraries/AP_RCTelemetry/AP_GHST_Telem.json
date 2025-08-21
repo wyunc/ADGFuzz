@@ -1,0 +1,288 @@
+{
+    "process_rf_mode_changes": {
+        "_noted_lq_as_rssi_active": [
+            [
+                "rc_option_is_enabled_use_crsf_lq_as_rssi"
+            ],
+            1
+        ],
+        "_telem_last_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_telem_last_avg_rate": [
+            [
+                "_scheduler_avg_packet_rate"
+            ],
+            0
+        ],
+        "_telem_is_high_speed": [
+            [
+                "is_high_speed_telemetry_current_rf_mode"
+            ],
+            1
+        ],
+        "_rf_mode": [
+            [
+                "get_rf_mode"
+            ],
+            1
+        ],
+        "uart": [
+            [
+                "nullptr",
+                "ghost_get_uart"
+            ],
+            0
+        ]
+    },
+    "is_high_speed_telemetry": {
+        "rf_mode": [
+            [
+                "ghst_rf_mode_race250",
+                "ghst_rf_mode_race"
+            ],
+            0
+        ]
+    },
+    "_process_frame": {
+        "_enable_telemetry": [
+            [
+                "ghost_is_telemetry_supported"
+            ],
+            0
+        ]
+    },
+    "calc_battery": {
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ],
+        "_telem.battery.voltage": [
+            [
+                "htole16__battery_voltage",
+                "htole16_uint16_t",
+                "htole16_roundf"
+            ],
+            0
+        ],
+        "_telem.battery.rx_voltage": [
+            [
+                "htole16_hal_analogin_board_voltage",
+                "htole16_uint16_t",
+                "htole16_roundf"
+            ],
+            0
+        ],
+        "_telem.battery.current": [
+            [
+                "htole16_uint16_t",
+                "htole16_roundf",
+                "htole16_current"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_battery_frame"
+            ],
+            0
+        ],
+        "_telem.battery.consumed": [
+            [
+                "htole16_uint16_t",
+                "htole16_roundf",
+                "htole16_used_mah"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "ghst_dl_pack_stat"
+            ],
+            0
+        ]
+    },
+    "calc_gps": {
+        "_telem.gps.latitude": [
+            [
+                "htole32_loc_lat"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_gps_frame"
+            ],
+            0
+        ],
+        "_telem.gps.altitude": [
+            [
+                "htole16_loc_alt",
+                "htole16_constrain_int16"
+            ],
+            0
+        ],
+        "_telem.gps.longitude": [
+            [
+                "htole32_loc_lng"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "ghst_dl_gps_primary"
+            ],
+            0
+        ]
+    },
+    "calc_gps2": {
+        "_telem.gps2.home_dist": [
+            [
+                "home_loc_get_distance_loc"
+            ],
+            0
+        ],
+        "_telem.gps2.flags": [
+            [
+                "gps_ok_fix_2d",
+                "gps_status",
+                "0x1"
+            ],
+            1
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_telem.gps2.home_heading": [
+            [
+                "loc_get_bearing_to_home_loc"
+            ],
+            0
+        ],
+        "_telem_type": [
+            [
+                "ghst_dl_gps_secondary"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_gps_secondary_frame"
+            ],
+            0
+        ],
+        "_telem.gps2.satellites": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "_telem.gps2.groundspeed": [
+            [
+                "htole16_roundf",
+                "htole16_gps_ground_speed"
+            ],
+            0
+        ],
+        "_telem.gps2.gps_heading": [
+            [
+                "htole16_roundf",
+                "htole16_gps_ground_course"
+            ],
+            0
+        ],
+        "home_loc": [
+            [
+                "_ahrs_get_home"
+            ],
+            0
+        ]
+    },
+    "calc_attitude": {
+        "_telem_type": [
+            [
+                "ghst_dl_magbaro"
+            ],
+            0
+        ],
+        "_telem.sensor.baro_alt": [
+            [
+                "htole16_alt",
+                "htole16_roundf"
+            ],
+            0
+        ],
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "compass_calculate_heading__ahrs_get_rotation_body_to_ned"
+            ],
+            0
+        ],
+        "_telem.sensor.compass_heading": [
+            [
+                "htole16_heading",
+                "htole16_degrees",
+                "htole16_wrap_pi"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "baro_get_altitude"
+            ],
+            0
+        ],
+        "_telem_size": [
+            [
+                "sizeof_sensor_frame"
+            ],
+            0
+        ]
+    },
+    "_get_telem_data": {
+        "type": [
+            [
+                "_telem_type"
+            ],
+            0
+        ],
+        "_is_tx_active": [
+            [
+                "is_tx_active"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "_telem_size"
+            ],
+            0
+        ],
+        "device_address": [
+            [
+                "ghst_address_ghst_receiver"
+            ],
+            0
+        ]
+    }
+}

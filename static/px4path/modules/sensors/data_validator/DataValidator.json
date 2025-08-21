@@ -1,0 +1,53 @@
+{
+    "put": {
+        "_time_last": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_priority": [
+            [
+                "priority_in"
+            ],
+            0
+        ],
+        "_error_count": [
+            [
+                "error_count_in"
+            ],
+            0
+        ],
+        "delta_val": [
+            [
+                "val",
+                "i",
+                "_lp",
+                "i",
+                "_mean"
+            ],
+            1
+        ],
+        "_error_density": [
+            [
+                "error_count_in"
+            ],
+            0
+        ]
+    },
+    "confidence": {
+        "ret": [
+            [
+                "error_density_window",
+                "error_density_window"
+            ],
+            1
+        ],
+        "_error_mask": [
+            [
+                "error_flag_no_error"
+            ],
+            0
+        ]
+    }
+}

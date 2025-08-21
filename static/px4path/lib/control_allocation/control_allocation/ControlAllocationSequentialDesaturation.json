@@ -1,0 +1,51 @@
+{
+    "allocate": {
+        "_prev_actuator_sp": [
+            [
+                "_actuator_sp"
+            ],
+            0
+        ]
+    },
+    "desaturateActuators": {
+        "gain": [
+            [
+                "compute_desaturation_gain_actuator_sp",
+                "compute_desaturation_gain_desaturation_vector"
+            ],
+            0
+        ]
+    },
+    "computeDesaturationGain": {
+        "k_max": [
+            [
+                "desaturation_vector_i",
+                "_actuator_max_i",
+                "_actuator_min_i",
+                "actuator_sp_i",
+                "_f"
+            ],
+            1
+        ],
+        "k_min": [
+            [
+                "desaturation_vector_i",
+                "_actuator_max_i",
+                "_actuator_min_i",
+                "actuator_sp_i",
+                "_f"
+            ],
+            1
+        ]
+    },
+    "mixYaw": {
+        "_actuator_max": [
+            [
+                "_actuator_min",
+                "minimum_yaw_margin",
+                "max_prev"
+            ],
+            0
+        ]
+    }
+}

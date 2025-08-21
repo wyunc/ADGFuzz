@@ -1,0 +1,26 @@
+{
+    "esc_calibration_auto": {
+        "tstart": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "esc_calibration_notify": {
+        "esc_calibration_notify_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "esc_calibration_setup": {
+        "tstart": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

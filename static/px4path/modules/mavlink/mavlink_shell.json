@@ -1,0 +1,55 @@
+{
+    "start": {
+        "remote_out_fd": [
+            [
+                "dup__shell_fds"
+            ],
+            0
+        ],
+        "_from_shell_fd": [
+            [
+                "p1"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "errno"
+            ],
+            0
+        ],
+        "remote_in_fd": [
+            [
+                "dup__shell_fds"
+            ],
+            0
+        ],
+        "_to_shell_fd": [
+            [
+                "p2"
+            ],
+            0
+        ]
+    },
+    "shell_start_thread": {
+        "remote_out_fd": [
+            [
+                "atoi_argv"
+            ],
+            0
+        ],
+        "remote_in_fd": [
+            [
+                "atoi_argv"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "nsh_consolemain_null",
+                "enomem"
+            ],
+            0
+        ]
+    }
+}

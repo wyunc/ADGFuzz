@@ -1,0 +1,221 @@
+{
+    "generate_wgn": {
+        "S": [
+            [
+                "v2",
+                "v1"
+            ],
+            0
+        ],
+        "X": [
+            [
+                "s",
+                "float_logf",
+                "float_sqrtf",
+                "float_float",
+                "v1",
+                "v2",
+                "float_s"
+            ],
+            0
+        ],
+        "V1": [
+            [
+                "u1"
+            ],
+            0
+        ],
+        "U1": [
+            [
+                "rand",
+                "float",
+                "rand_max"
+            ],
+            0
+        ],
+        "U2": [
+            [
+                "rand",
+                "float",
+                "rand_max"
+            ],
+            0
+        ],
+        "V2": [
+            [
+                "u2"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "sensor_gps.latitude_deg": [
+            [
+                "gpos_lat",
+                "constants_radius_of_earth",
+                "degrees_doublegenerate_wgn"
+            ],
+            1
+        ],
+        "sensor_gps.vel_e_m_s": [
+            [
+                "lpos_vx",
+                "lpos_vz",
+                "vector3f",
+                "lpos_vy"
+            ],
+            1
+        ],
+        "sensor_gps.epv": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.vel_d_m_s": [
+            [
+                "lpos_vx",
+                "lpos_vz",
+                "vector3f",
+                "lpos_vy"
+            ],
+            1
+        ],
+        "sensor_gps.eph": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.satellites_used": [
+            [
+                "_sim_gps_used_get"
+            ],
+            0
+        ],
+        "sensor_gps.timestamp_sample": [
+            [
+                "gpos_timestamp_sample"
+            ],
+            0
+        ],
+        "device_id.devid_s.devtype": [
+            [
+                "drv_gps_devtype_sim"
+            ],
+            0
+        ],
+        "sensor_gps.vel_n_m_s": [
+            [
+                "lpos_vx",
+                "lpos_vz",
+                "vector3f",
+                "lpos_vy"
+            ],
+            1
+        ],
+        "sensor_gps.heading": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_gps.longitude_deg": [
+            [
+                "degrees_doublegenerate_wgn",
+                "constants_radius_of_earth",
+                "gpos_lon"
+            ],
+            1
+        ],
+        "sensor_gps.altitude_msl_m": [
+            [
+                "gpos_alt",
+                "double",
+                "generate_wgn"
+            ],
+            1
+        ],
+        "sensor_gps.altitude_ellipsoid_m": [
+            [
+                "gpos_alt",
+                "double",
+                "generate_wgn"
+            ],
+            1
+        ],
+        "sensor_gps.vel_m_s": [
+            [
+                "sqrtf_gps_vel",
+                "lpos_vx",
+                "lpos_vz",
+                "vector3f",
+                "lpos_vy"
+            ],
+            1
+        ],
+        "sensor_gps.c_variance_rad": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.heading_offset": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "sensor_gps.device_id": [
+            [
+                "device_id_devid"
+            ],
+            0
+        ],
+        "sensor_gps.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "sensor_gps.s_variance_m_s": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.hdop": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "sensor_gps.vdop": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "device_id.devid_s.bus_type": [
+            [
+                "device_bus_type_simulation"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "instance": [
+            [
+                "sensor_gps_sim",
+                "new"
+            ],
+            0
+        ],
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ]
+    }
+}

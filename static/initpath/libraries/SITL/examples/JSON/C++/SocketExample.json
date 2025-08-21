@@ -1,0 +1,84 @@
+{
+    "make_sockaddr": {
+        "sockaddr.sin_family": [
+            [
+                "af_inet"
+            ],
+            0
+        ],
+        "sockaddr.sin_addr.s_addr": [
+            [
+                "inet_addr_address"
+            ],
+            0
+        ],
+        "sockaddr.sin_len": [
+            [
+                "sizeof_sockaddr"
+            ],
+            0
+        ],
+        "sockaddr.sin_port": [
+            [
+                "htons_port"
+            ],
+            0
+        ]
+    },
+    "set_blocking": {
+        "fcntl_ret": [
+            [
+                "fcntl_f_getfl",
+                "o_nonblock",
+                "fcntl_fd",
+                "fcntl_fcntl",
+                "fcntl_f_setfl"
+            ],
+            0
+        ]
+    },
+    "last_recv_address": {
+        "port": [
+            [
+                "ntohs_in_addr_sin_port"
+            ],
+            0
+        ],
+        "ip_addr": [
+            [
+                "inet_ntoa_in_addr_sin_addr"
+            ],
+            0
+        ]
+    },
+    "pollin": {
+        "tv.tv_usec": [
+            [
+                "1000ul",
+                "timeout_ms"
+            ],
+            0
+        ],
+        "tv.tv_sec": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ]
+    },
+    "pollout": {
+        "tv.tv_usec": [
+            [
+                "1000ul",
+                "timeout_ms"
+            ],
+            0
+        ],
+        "tv.tv_sec": [
+            [
+                "timeout_ms"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "update_i": {
+        "integrator_length": [
+            [
+                "_integrator_length"
+            ],
+            0
+        ],
+        "_integrator": [
+            [
+                "_ki",
+                "_error",
+                "dt"
+            ],
+            1
+        ]
+    },
+    "set_integrator": {
+        "_integrator": [
+            [
+                "i"
+            ],
+            0
+        ]
+    }
+}

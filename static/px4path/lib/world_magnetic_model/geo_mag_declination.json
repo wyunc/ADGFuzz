@@ -1,0 +1,100 @@
+{
+    "get_lookup_table_index": {
+        "val": [
+            [
+                "constrain_max",
+                "constrain_min",
+                "constrain_sampling_res",
+                "constrain_val"
+            ],
+            0
+        ]
+    },
+    "get_table_data": {
+        "longitude_deg": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "latitude_deg": [
+            [
+                "constrain_latitude_deg",
+                "constrain_sampling_max_lat",
+                "constrain_sampling_min_lat"
+            ],
+            0
+        ],
+        "data_max": [
+            [
+                "constrain_longitude_deg",
+                "constrain_min_lon",
+                "_f",
+                "sampling_res",
+                "get_lookup_table_index_sampling_max_lon",
+                "get_lookup_table_index_min_lon",
+                "get_lookup_table_index_sampling_min_lon",
+                "get_lookup_table_index_sampling_min_lat",
+                "get_lookup_table_index_min_lat",
+                "get_lookup_table_index_sampling_max_lat",
+                "table",
+                "get_lookup_table_index_sampling_max_lon",
+                "get_lookup_table_index_min_lon",
+                "get_lookup_table_index_sampling_min_lon",
+                "get_lookup_table_index_sampling_min_lat",
+                "get_lookup_table_index_min_lat",
+                "get_lookup_table_index_sampling_max_lat",
+                "table"
+            ],
+            5
+        ],
+        "lat_scale": [
+            [
+                "constrain_min_lat",
+                "constrain_latitude_deg",
+                "_f",
+                "sampling_res"
+            ],
+            0
+        ],
+        "min_lon": [
+            [
+                "floorf_longitude_deg",
+                "floorf_sampling_res",
+                "sampling_res"
+            ],
+            0
+        ],
+        "data_min": [
+            [
+                "constrain_longitude_deg",
+                "constrain_min_lon",
+                "_f",
+                "sampling_res",
+                "get_lookup_table_index_sampling_max_lon",
+                "get_lookup_table_index_min_lon",
+                "get_lookup_table_index_sampling_min_lon",
+                "get_lookup_table_index_sampling_min_lat",
+                "get_lookup_table_index_min_lat",
+                "get_lookup_table_index_sampling_max_lat",
+                "table",
+                "get_lookup_table_index_sampling_max_lon",
+                "get_lookup_table_index_min_lon",
+                "get_lookup_table_index_sampling_min_lon",
+                "get_lookup_table_index_sampling_min_lat",
+                "get_lookup_table_index_min_lat",
+                "get_lookup_table_index_sampling_max_lat",
+                "table"
+            ],
+            5
+        ],
+        "min_lat": [
+            [
+                "floorf_sampling_res",
+                "floorf_latitude_deg",
+                "sampling_res"
+            ],
+            0
+        ]
+    }
+}

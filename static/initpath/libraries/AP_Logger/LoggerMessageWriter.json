@@ -1,0 +1,126 @@
+{
+    "reset": {
+        "ap": [
+            [
+                "first_type",
+                "first_param_default",
+                "first_token"
+            ],
+            0
+        ],
+        "stage": [
+            [
+                "write_new_fence_message",
+                "write_new_mission_message",
+                "formats",
+                "write_new_rally_message",
+                "firmware_string"
+            ],
+            0
+        ],
+        "param_default": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ]
+    },
+    "check_process_limit": {
+        "limit_us": [
+            [
+                "1000u"
+            ],
+            0
+        ]
+    },
+    "process": {
+        "start_us": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "_rally": [
+            [
+                "rally"
+            ],
+            0
+        ],
+        "prot": [
+            [
+                "hal_rcin_protocol"
+            ],
+            0
+        ],
+        "param_default": [
+            [
+                "logger_quiet_nanf"
+            ],
+            0
+        ],
+        "_mission": [
+            [
+                "mission"
+            ],
+            0
+        ],
+        "fwver": [
+            [
+                "fwversion"
+            ],
+            0
+        ],
+        "ap": [
+            [
+                "next_scalar_token",
+                "next_scalar_type",
+                "next_scalar_param_default"
+            ],
+            0
+        ],
+        "stage": [
+            [
+                "rc_output",
+                "ver",
+                "write_mission_items",
+                "param_space_used",
+                "multipliers",
+                "rc_protocol",
+                "parms",
+                "system_id",
+                "write_fence_items",
+                "vehicle_messages",
+                "write_all_rally_points",
+                "git_versions",
+                "done",
+                "running_subwriters",
+                "units"
+            ],
+            0
+        ]
+    },
+    "writeentiremission": {
+        "stage": [
+            [
+                "running_subwriters"
+            ],
+            0
+        ]
+    },
+    "writeallrallypoints": {
+        "stage": [
+            [
+                "running_subwriters"
+            ],
+            0
+        ]
+    },
+    "writeallfence": {
+        "stage": [
+            [
+                "running_subwriters"
+            ],
+            0
+        ]
+    }
+}

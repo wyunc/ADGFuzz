@@ -1,0 +1,107 @@
+{
+    "init": {
+        "_driver": [
+            [
+                "ap_kdecan_driver",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_telemetry.num_poles": [
+            [
+                "num_poles"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "srv_channel_i"
+            ],
+            0
+        ]
+    },
+    "handle_frame": {
+        ".value": [
+            [
+                "frame_id",
+                "mask_ext_id"
+            ],
+            0
+        ],
+        "bitmask": [
+            [
+                "id_source_id",
+                "1ul",
+                "esc_node_id_first"
+            ],
+            0
+        ],
+        "idx": [
+            [
+                "id_source_id",
+                "esc_node_id_first"
+            ],
+            0
+        ],
+        "num_poles": [
+            [
+                "default_num_poles",
+                "_telemetry_num_poles"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "_telemetry.timer_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_init.detected_bitmask_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_output.last_new_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_output.thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ]
+    },
+    "send_packet_uint16": {
+        "data_be16": [
+            [
+                "htobe16_data"
+            ],
+            0
+        ]
+    },
+    "send_packet": {
+        "frame": [
+            [
+                "can_frame_flag_eff",
+                "data_len",
+                "data",
+                "can_frame_id_value"
+            ],
+            0
+        ]
+    }
+}

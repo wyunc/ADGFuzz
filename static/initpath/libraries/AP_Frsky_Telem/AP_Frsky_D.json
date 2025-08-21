@@ -1,0 +1,38 @@
+{
+    "send_uint16": {
+        "bytes": [
+            [
+                "uint8_t",
+                "data",
+                "id"
+            ],
+            0
+        ]
+    },
+    "send": {
+        "_ahrs": [
+            [
+                "ahrs"
+            ],
+            0
+        ],
+        "_D.last_200ms_frame": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_D.last_1000ms_frame": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ]
+    }
+}

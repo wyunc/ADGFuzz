@@ -1,0 +1,35 @@
+{
+    "calibrate_cancel_check": {
+        "command_ack.command": [
+            [
+                "cmd_command"
+            ],
+            0
+        ],
+        "command_ack.result": [
+            [
+                "vehicle_cmd_result_accepted",
+                "vehicle_cmd_result_denied"
+            ],
+            0
+        ],
+        "command_ack.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "command_ack.target_system": [
+            [
+                "cmd_source_system"
+            ],
+            0
+        ],
+        "command_ack.target_component": [
+            [
+                "cmd_source_component"
+            ],
+            0
+        ]
+    }
+}

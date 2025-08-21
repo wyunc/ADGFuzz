@@ -1,0 +1,202 @@
+{
+    "set_utc_usec": {
+        "rtc_shift": [
+            [
+                "int64_t_now",
+                "int64_t_time_utc_usec"
+            ],
+            1
+        ],
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "rtc_source_type": [
+            [
+                "type"
+            ],
+            0
+        ],
+        "oldest_acceptable_date_us": [
+            [
+                "1640995200ull"
+            ],
+            0
+        ]
+    },
+    "get_utc_usec": {
+        "usec": [
+            [
+                "rtc_shift",
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "clock_ms_to_hms_fields": {
+        "hour": [
+            [
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms"
+            ],
+            4
+        ],
+        "sec": [
+            [
+                "time_ms",
+                "time_ms"
+            ],
+            2
+        ],
+        "min": [
+            [
+                "time_ms",
+                "time_ms",
+                "time_ms",
+                "time_ms"
+            ],
+            3
+        ]
+    },
+    "clock_s_to_date_fields": {
+        "year": [
+            [
+                "tm_tm_year"
+            ],
+            0
+        ],
+        "month": [
+            [
+                "tm_tm_mon"
+            ],
+            0
+        ],
+        "hour": [
+            [
+                "tm_tm_hour"
+            ],
+            0
+        ],
+        "tm": [
+            [
+                "gmtime_r_utc_sec",
+                "gmtime_r_tmd"
+            ],
+            0
+        ],
+        "min": [
+            [
+                "tm_tm_min"
+            ],
+            0
+        ],
+        "utc_sec": [
+            [
+                "utc_sec32"
+            ],
+            0
+        ],
+        "day": [
+            [
+                "tm_tm_mday"
+            ],
+            0
+        ],
+        "wday": [
+            [
+                "tm_tm_wday"
+            ],
+            0
+        ],
+        "sec": [
+            [
+                "tm_tm_sec"
+            ],
+            0
+        ]
+    },
+    "get_system_clock_utc": {
+        "time_ms": [
+            [
+                "1000u"
+            ],
+            0
+        ]
+    },
+    "get_local_time": {
+        "ms_local": [
+            [
+                "1000u",
+                "tz_min"
+            ],
+            1
+        ]
+    },
+    "get_date_and_time_utc": {
+        "min": [
+            [
+                "tm_tm_min"
+            ],
+            0
+        ],
+        "hour": [
+            [
+                "tm_tm_hour"
+            ],
+            0
+        ],
+        "month": [
+            [
+                "tm_tm_mon"
+            ],
+            0
+        ],
+        "year": [
+            [
+                "tm_tm_year"
+            ],
+            0
+        ],
+        "utc_sec": [
+            [
+                "1000u",
+                "time_us"
+            ],
+            0
+        ],
+        "sec": [
+            [
+                "tm_tm_sec"
+            ],
+            0
+        ],
+        "tm": [
+            [
+                "gmtime_r_tmd",
+                "gmtime_r_utc_sec"
+            ],
+            0
+        ],
+        "day": [
+            [
+                "tm_tm_mday"
+            ],
+            0
+        ],
+        "ms": [
+            [
+                "1000u",
+                "time_us"
+            ],
+            0
+        ]
+    }
+}

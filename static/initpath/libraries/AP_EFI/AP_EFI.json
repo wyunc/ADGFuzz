@@ -1,0 +1,40 @@
+{
+    "init": {
+        "backend": [
+            [
+                "ap_efi_serial_hirth_this",
+                "ap_efi_currawong_ecu_this",
+                "ap_efi_scripting_this",
+                "ap_efi_nwpmu_this",
+                "new_nothrow",
+                "ap_efi_serial_lutan_this",
+                "ap_efi_serial_ms_this",
+                "ap_efi_drone_can_this",
+                "ap_efi_mav_this"
+            ],
+            0
+        ]
+    },
+    "send_mavlink_status": {
+        "ignition_voltage": [
+            [
+                "state_ignition_voltage"
+            ],
+            0
+        ],
+        "fuel_pressure": [
+            [
+                "state_fuel_pressure"
+            ],
+            0
+        ]
+    },
+    "get_state": {
+        "_state": [
+            [
+                "state"
+            ],
+            0
+        ]
+    }
+}

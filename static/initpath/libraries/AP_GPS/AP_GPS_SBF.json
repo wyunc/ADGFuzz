@@ -1,0 +1,360 @@
+{
+    "read": {
+        "_config_last_ack_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_init_blob_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "available_bytes": [
+            [
+                "port_available"
+            ],
+            0
+        ],
+        "port_enable_len": [
+            [
+                "strlen__port_enable"
+            ],
+            0
+        ],
+        "config_string": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "config_step": [
+            [
+                "complete"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "port_read"
+            ],
+            0
+        ],
+        "config_length": [
+            [
+                "strlen_config_string"
+            ],
+            0
+        ]
+    },
+    "parse": {
+        "sbf_msg.sbf_state": [
+            [
+                "preamble2",
+                "blockid1",
+                "crc1",
+                "length2",
+                "preamble1",
+                "crc2",
+                "data",
+                "blockid2",
+                "length1",
+                "command_line"
+            ],
+            0
+        ],
+        "config_step": [
+            [
+                "constellation",
+                "sbas",
+                "complete",
+                "blob",
+                "sso",
+                "sga"
+            ],
+            0
+        ],
+        "sbf_msg.length": [
+            [
+                "uint16_t",
+                "temp"
+            ],
+            0
+        ],
+        "_config_last_ack_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "sbf_msg.blockid": [
+            [
+                "uint16_t",
+                "temp"
+            ],
+            0
+        ],
+        "config_string": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "crc": [
+            [
+                "sbf_msg_data",
+                "sbf_msg_length",
+                "sbf_msg_blockid",
+                "crc16_ccitt_uint8_t"
+            ],
+            0
+        ],
+        "sbf_msg.crc": [
+            [
+                "uint16_t",
+                "temp"
+            ],
+            0
+        ]
+    },
+    "is_DNU": {
+        "DNU": [
+            [
+                "2e"
+            ],
+            0
+        ]
+    },
+    "process_message": {
+        "state.rtk_num_sats": [
+            [
+                "temp_info_nr_sv"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "temp_nr_sv"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "sqrt_max_variance_squared"
+            ],
+            0
+        ],
+        "floatDNU": [
+            [
+                "2e"
+            ],
+            0
+        ],
+        "state.rtk_baseline_y_mm": [
+            [
+                "1e3",
+                "temp_info_delta_east"
+            ],
+            0
+        ],
+        "state.rtk_age_ms": [
+            [
+                "temp_mean_corr_age",
+                "uint32_t",
+                "temp_info_corr_age"
+            ],
+            0
+        ],
+        "blockid": [
+            [
+                "8191u",
+                "sbf_msg_blockid"
+            ],
+            0
+        ],
+        "state.have_undulation": [
+            [
+                "is_dnu_temp_undulation"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "float",
+                "temp_vu"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "temp_w_nc"
+            ],
+            0
+        ],
+        "state.rtk_baseline_x_mm": [
+            [
+                "1e3",
+                "temp_info_delta_north"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "1e7",
+                "double",
+                "rad_to_deg_double",
+                "int32_t",
+                "temp_latitude"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "uint32_t",
+                "temp_tow"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "sbf_msg_data_msg5939u",
+                "sbf_msg_data_msg4007u",
+                "sbf_msg_data_msg5908u",
+                "sbf_msg_data_msg4028u",
+                "sbf_msg_data_msg4014u",
+                "sbf_msg_data_msg4001u"
+            ],
+            0
+        ],
+        "errorBits": [
+            [
+                "0x8f"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "temp_h_accuracy",
+                "float"
+            ],
+            0
+        ],
+        "doubleDNU": [
+            [
+                "2e"
+            ],
+            0
+        ],
+        "RxError": [
+            [
+                "temp_rx_error"
+            ],
+            0
+        ],
+        "RxState": [
+            [
+                "temp_rx_state"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "temp_longitude",
+                "1e7",
+                "double",
+                "rad_to_deg_double",
+                "int32_t"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "float",
+                "temp_v_accuracy"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "temp_hdop"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps",
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d_rtk_float",
+                "no_fix",
+                "gps_ok_fix_2d"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "temp_undulation"
+            ],
+            0
+        ],
+        "state.velocity.y": [
+            [
+                "float",
+                "temp_ve"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "temp_vn",
+                "float"
+            ],
+            0
+        ],
+        "state.rtk_baseline_z_mm": [
+            [
+                "temp_info_delta_up",
+                "1e3"
+            ],
+            0
+        ],
+        "state.vdop": [
+            [
+                "temp_vdop"
+            ],
+            0
+        ],
+        "max_variance_squared": [
+            [
+                "max_temp_cov_vu_vu",
+                "temp_cov_vn_vn",
+                "max_temp_cov_ve_ve"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "height": [
+            [
+                "temp_height",
+                "temp_undulation"
+            ],
+            0
+        ]
+    },
+    "is_configured": {
+        "config_step": [
+            [
+                "complete",
+                "ap_sim_gps_sbf_enabled"
+            ],
+            0
+        ]
+    }
+}

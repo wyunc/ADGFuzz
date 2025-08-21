@@ -1,0 +1,52 @@
+{
+    "should_publish_previous": {
+        "offset": [
+            [
+                "strlen__log_msg_text"
+            ],
+            0
+        ]
+    },
+    "should_publish_current": {
+        "_log_msg.timestamp": [
+            [
+                "now"
+            ],
+            0
+        ],
+        "_last_log_chunk_seq": [
+            [
+                "msg_statustext_chunk_seq"
+            ],
+            0
+        ],
+        "_last_log_id": [
+            [
+                "msg_statustext_id"
+            ],
+            0
+        ],
+        "publication_message_is_full": [
+            [
+                "sizeof__log_msg_text",
+                "strlen__log_msg_text"
+            ],
+            0
+        ],
+        "_log_msg.severity": [
+            [
+                "msg_statustext_severity"
+            ],
+            0
+        ],
+        "max_to_add": [
+            [
+                "strlen__log_msg_text",
+                "min_sizeof",
+                "min__log_msg_text",
+                "sizeof_msg_statustext_text"
+            ],
+            1
+        ]
+    }
+}

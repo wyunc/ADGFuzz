@@ -1,0 +1,193 @@
+{
+    "update_vtol_state": {
+        "exit_backtransition_time_condition": [
+            [
+                "_time_since_trans_start",
+                "_param_vt_b_trans_dur_get"
+            ],
+            0
+        ],
+        "_mc_throttle_weight": [
+            [
+                "mc_weight"
+            ],
+            0
+        ],
+        "_mc_pitch_weight": [
+            [
+                "mc_weight"
+            ],
+            0
+        ],
+        "exit_backtransition_speed_condition": [
+            [
+                "_param_mpc_xy_cruise_get",
+                "vector3f__local_pos_vx",
+                "vector3f__local_pos_vz",
+                "r_to_body",
+                "vector3f__local_pos_vy",
+                "_attc_get_calibrated_airspeed"
+            ],
+            1
+        ],
+        "_mc_yaw_weight": [
+            [
+                "mc_weight"
+            ],
+            0
+        ],
+        "_common_vtol_mode": [
+            [
+                "transition_to_mc",
+                "rotary_wing",
+                "fixed_wing",
+                "transition_to_fw"
+            ],
+            0
+        ],
+        "_vtol_mode": [
+            [
+                "transition_to_mc",
+                "mc_mode",
+                "fw_mode",
+                "transition_to_fw"
+            ],
+            0
+        ],
+        "_trans_finished_ts": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_mc_roll_weight": [
+            [
+                "mc_weight"
+            ],
+            0
+        ]
+    },
+    "update_transition_state": {
+        "dt": [
+            [
+                "1e6f",
+                "min__last_time_pusher_transition_update",
+                "min_now"
+            ],
+            0
+        ],
+        "_pusher_throttle": [
+            [
+                "_param_vt_f_trans_thr_get"
+            ],
+            0
+        ],
+        "_mc_throttle_weight": [
+            [
+                "_time_since_trans_start",
+                "get_minimum_front_transition_time",
+                "constrain_mc_weight",
+                "_param_vt_b_trans_ramp_get"
+            ],
+            1
+        ],
+        "_mc_pitch_weight": [
+            [
+                "_time_since_trans_start",
+                "get_minimum_front_transition_time",
+                "constrain_mc_weight",
+                "_param_vt_b_trans_ramp_get"
+            ],
+            1
+        ],
+        "_mc_yaw_weight": [
+            [
+                "_time_since_trans_start",
+                "get_minimum_front_transition_time",
+                "constrain_mc_weight",
+                "_param_vt_b_trans_ramp_get"
+            ],
+            1
+        ],
+        "pitch_body": [
+            [
+                "eulerf__mc_virtual_att_sp_q_d",
+                "attitude_setpoint_euler_theta",
+                "_theta",
+                "radians__param_fw_psp_off_get",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "attitude_setpoint_euler_psi"
+            ],
+            0
+        ],
+        "_airspeed_trans_blend_margin": [
+            [
+                "get_transition_airspeed",
+                "get_blend_airspeed"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "eulerf__fw_virtual_att_sp_q_d",
+                "attitude_setpoint_euler_phi",
+                "_phi",
+                "eulerf_quatf"
+            ],
+            0
+        ],
+        "_mc_roll_weight": [
+            [
+                "_time_since_trans_start",
+                "get_minimum_front_transition_time",
+                "constrain_mc_weight",
+                "_param_vt_b_trans_ramp_get"
+            ],
+            1
+        ],
+        "_last_time_pusher_transition_update": [
+            [
+                "hrt_absolute_time"
+            ],
+            1
+        ]
+    },
+    "update_mc_state": {
+        "_pusher_throttle": [
+            [
+                "pusher_assist"
+            ],
+            0
+        ]
+    },
+    "fill_actuator_outputs": {
+        "timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "timestamp_sample": [
+            [
+                "_vehicle_thrust_setpoint_virtual_mc_timestamp_sample",
+                "_vehicle_torque_setpoint_virtual_fw_timestamp_sample",
+                "_vehicle_thrust_setpoint_virtual_fw_timestamp_sample",
+                "_vehicle_torque_setpoint_virtual_mc_timestamp_sample"
+            ],
+            0
+        ]
+    },
+    "blendThrottleAfterFrontTransition": {
+        "tecs_throttle": [
+            [
+                "_v_att_sp_thrust_body"
+            ],
+            0
+        ]
+    }
+}

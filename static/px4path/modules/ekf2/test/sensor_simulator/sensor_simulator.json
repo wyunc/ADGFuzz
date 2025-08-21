@@ -1,0 +1,162 @@
+{
+    "loadSensorDataFromFile": {
+        "last_sample": [
+            [
+                "_replay_data_back"
+            ],
+            0
+        ],
+        "sensor_sample.timestamp": [
+            [
+                "stoul_timestamp"
+            ],
+            0
+        ],
+        "sensor_sample.sensor_type": [
+            [
+                "vision",
+                "gps",
+                "baro",
+                "mag",
+                "airspeed",
+                "landing_status",
+                "range",
+                "imu",
+                "flow"
+            ],
+            0
+        ]
+    },
+    "runMicroseconds": {
+        "update_imu": [
+            [
+                "_imu_should_send__time"
+            ],
+            0
+        ],
+        "start_time": [
+            [
+                "_time"
+            ],
+            0
+        ]
+    },
+    "runReplayMicroseconds": {
+        "start_time": [
+            [
+                "_time"
+            ],
+            0
+        ],
+        "update_imu": [
+            [
+                "_imu_should_send__time"
+            ],
+            0
+        ]
+    },
+    "setSensorDataFromReplayData": {
+        "sample": [
+            [
+                "_replay_data",
+                "_current_replay_data_index"
+            ],
+            0
+        ]
+    },
+    "setSingleReplaySample": {
+        "flow_sample.quality": [
+            [
+                "sample_sensor_data"
+            ],
+            0
+        ],
+        "landed": [
+            [
+                "abs_sample_sensor_data"
+            ],
+            0
+        ]
+    },
+    "runTrajectoryMicroseconds": {
+        "update_imu": [
+            [
+                "_imu_should_send__time"
+            ],
+            0
+        ],
+        "start_time": [
+            [
+                "_time"
+            ],
+            0
+        ]
+    },
+    "setSensorDataFromTrajectory": {
+        "distance_to_ground": [
+            [
+                "_trajectory",
+                "_get_current_position"
+            ],
+            0
+        ],
+        "specific_force": [
+            [
+                "accel_world",
+                "constants_one_g",
+                "r_world_to_body"
+            ],
+            1
+        ],
+        "vel_body": [
+            [
+                "vel_world",
+                "r_world_to_body"
+            ],
+            0
+        ],
+        "flow_sample": [
+            [
+                "_flow_data_at_rest"
+            ],
+            0
+        ],
+        "R_world_to_body": [
+            [
+                "_r_body_to_world_transpose"
+            ],
+            0
+        ],
+        "mag_field_body": [
+            [
+                "_f",
+                "vector3f",
+                "r_world_to_body"
+            ],
+            1
+        ]
+    },
+    "simulateOrientation": {
+        "_R_body_to_world": [
+            [
+                "dcmf_orientation"
+            ],
+            0
+        ],
+        "sensed_gravity_body": [
+            [
+                "constants_one_g",
+                "_r_body_to_world_transpose"
+            ],
+            1
+        ],
+        "body_mag_field": [
+            [
+                "vector3f",
+                "_f",
+                "_r_body_to_world_transpose"
+            ],
+            1
+        ]
+    }
+}

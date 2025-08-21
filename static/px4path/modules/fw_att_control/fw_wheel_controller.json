@@ -1,0 +1,37 @@
+{
+    "control_bodyrate": {
+        "id": [
+            [
+                "max__f",
+                "min__f",
+                "min_id",
+                "groundspeed_scaler",
+                "dt",
+                "max_id",
+                "body_z_rate",
+                "_body_rate_setpoint"
+            ],
+            1
+        ],
+        "_integrator": [
+            [
+                "constrain__integrator_max",
+                "constrain_id",
+                "constrain__k_i",
+                "constrain__integrator"
+            ],
+            0
+        ]
+    },
+    "control_attitude": {
+        "_body_rate_setpoint": [
+            [
+                "wrap_pi_yaw",
+                "wrap_pi_yaw_setpoint",
+                "_tc",
+                "_max_rate"
+            ],
+            1
+        ]
+    }
+}

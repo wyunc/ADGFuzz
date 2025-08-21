@@ -1,0 +1,78 @@
+{
+    "set_imu_temp": {
+        "heater.last_update_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "heater.sum": [
+            [
+                "current"
+            ],
+            0
+        ],
+        "dt": [
+            [
+                "heater_last_update_ms",
+                "millis"
+            ],
+            1
+        ],
+        "heater.last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "target": [
+            [
+                "heater_imu_target_temperature_get",
+                "constrain_int16_target"
+            ],
+            0
+        ],
+        "heater_on": [
+            [
+                "0x_ffffu",
+                "100u",
+                "uint32_t_heater_output",
+                "get_random16"
+            ],
+            0
+        ],
+        "heater.temperature": [
+            [
+                "heater_sum",
+                "heater_count"
+            ],
+            0
+        ],
+        "heater.output": [
+            [
+                "heater_pi_controller_update_heater_temperature",
+                "heater_pi_controller_update_target",
+                "heater_output",
+                "heater_pi_controller_update_dt"
+            ],
+            0
+        ]
+    },
+    "get_board_heater_temperature": {
+        "temperature": [
+            [
+                "heater_temperature"
+            ],
+            0
+        ]
+    },
+    "get_board_heater_arming_temperature": {
+        "temperature": [
+            [
+                "heater_imu_target_temperature",
+                "heater_imu_arming_temperature_margin_low"
+            ],
+            0
+        ]
+    }
+}

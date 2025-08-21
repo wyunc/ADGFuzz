@@ -1,0 +1,358 @@
+{
+    "setIMUData": {
+        "_min_obs_interval_us": [
+            [
+                "_obs_buffer_length",
+                "_imu_buffer_get_oldest_time_us",
+                "imu_sample_time_us"
+            ],
+            1
+        ],
+        "_time_latest_us": [
+            [
+                "imu_sample_time_us"
+            ],
+            0
+        ],
+        "imu_max_dt": [
+            [
+                "_params_filter_update_interval_us",
+                "1e"
+            ],
+            1
+        ],
+        "_initialised": [
+            [
+                "init_imu_sample_time_us"
+            ],
+            0
+        ],
+        "imu_downsampled": [
+            [
+                "_imu_down_sampler_get_down_sampled_imu_and_trigger_reset"
+            ],
+            0
+        ],
+        "imu_downsampled.delta_vel_dt": [
+            [
+                "constrain_imu_min_dt",
+                "constrain_imu_downsampled_delta_vel_dt",
+                "constrain_imu_max_dt"
+            ],
+            0
+        ],
+        "imu_downsampled.delta_ang_dt": [
+            [
+                "constrain_imu_downsampled_delta_ang_dt",
+                "constrain_imu_max_dt",
+                "constrain_imu_min_dt"
+            ],
+            0
+        ],
+        "imu_min_dt": [
+            [
+                "_params_filter_update_interval_us",
+                "1e"
+            ],
+            1
+        ]
+    },
+    "setMagData": {
+        "_mag_buffer": [
+            [
+                "ring_buffer",
+                "_obs_buffer_length",
+                "new",
+                "nullptr",
+                "mag_sample"
+            ],
+            0
+        ],
+        "_time_last_mag_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ],
+        "mag_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "setGpsData": {
+        "_time_last_gnss_yaw_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ],
+        "_time_last_gps_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ],
+        "_gps_buffer": [
+            [
+                "new",
+                "gnss_sample",
+                "nullptr",
+                "ring_buffer",
+                "_obs_buffer_length"
+            ],
+            0
+        ],
+        "gnss_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "setBaroData": {
+        "baro_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_time_last_baro_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ],
+        "_baro_buffer": [
+            [
+                "baro_sample",
+                "new",
+                "_obs_buffer_length",
+                "nullptr",
+                "ring_buffer"
+            ],
+            0
+        ]
+    },
+    "setAirspeedData": {
+        "_airspeed_buffer": [
+            [
+                "new",
+                "_obs_buffer_length",
+                "nullptr",
+                "airspeed_sample",
+                "ring_buffer"
+            ],
+            0
+        ],
+        "airspeed_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "setRangeData": {
+        "range_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_range_buffer": [
+            [
+                "new",
+                "nullptr",
+                "range_sample",
+                "ring_buffer",
+                "_obs_buffer_length"
+            ],
+            0
+        ],
+        "_time_last_range_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ]
+    },
+    "setOpticalFlowData": {
+        "optflow_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_flow_buffer": [
+            [
+                "ring_buffer",
+                "flow_sample",
+                "nullptr",
+                "_imu_buffer_length",
+                "new"
+            ],
+            0
+        ]
+    },
+    "setExtVisionData": {
+        "ev_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ],
+        "_ext_vision_buffer": [
+            [
+                "ext_vision_sample",
+                "_obs_buffer_length",
+                "new",
+                "ring_buffer",
+                "nullptr"
+            ],
+            0
+        ],
+        "_time_last_ext_vision_buffer_push": [
+            [
+                "_time_latest_us"
+            ],
+            0
+        ]
+    },
+    "setAuxVelData": {
+        "_auxvel_buffer": [
+            [
+                "nullptr",
+                "ring_buffer",
+                "aux_vel_sample",
+                "new",
+                "_obs_buffer_length"
+            ],
+            0
+        ],
+        "auxvel_sample_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "setSystemFlagData": {
+        "_system_flag_buffer": [
+            [
+                "new",
+                "ring_buffer",
+                "system_flag_update",
+                "_obs_buffer_length",
+                "nullptr"
+            ],
+            0
+        ],
+        "system_flags_new.time_us": [
+            [
+                "time_us"
+            ],
+            0
+        ]
+    },
+    "setDragData": {
+        "_drag_buffer": [
+            [
+                "new",
+                "_obs_buffer_length",
+                "nullptr",
+                "ring_buffer",
+                "drag_sample"
+            ],
+            0
+        ],
+        "_drag_down_sampled.time_us": [
+            [
+                "imu_time_us",
+                "_drag_sample_count"
+            ],
+            0
+        ],
+        "_drag_sample_time_dt": [
+            [
+                "imu_delta_vel_dt"
+            ],
+            0
+        ],
+        "min_sample_ratio": [
+            [
+                "uint8_t",
+                "ceilf_float_imu_buffer_length",
+                "_obs_buffer_length"
+            ],
+            0
+        ]
+    },
+    "initialise_interface": {
+        "_time_latest_us": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "_time_delayed_us": [
+            [
+                "timestamp"
+            ],
+            0
+        ],
+        "ekf_delay_ms": [
+            [
+                "_params_delay_max_ms"
+            ],
+            0
+        ],
+        "_obs_buffer_length": [
+            [
+                "roundf_ekf_delay_ms",
+                "roundf_filter_update_period_ms",
+                "min__obs_buffer_length",
+                "min__imu_buffer_length"
+            ],
+            0
+        ],
+        "filter_update_period_ms": [
+            [
+                "_f",
+                "_params_filter_update_interval_us"
+            ],
+            0
+        ],
+        "_imu_buffer_length": [
+            [
+                "max_intceilf__params_delay_max_ms",
+                "ceilf_filter_update_period_ms"
+            ],
+            0
+        ]
+    },
+    "isOtherSourceOfHorizontalAidingThan": {
+        "nb_sources": [
+            [
+                "get_number_of_active_horizontal_aiding_sources"
+            ],
+            0
+        ]
+    },
+    "isOtherSourceOfHorizontalPositionAidingThan": {
+        "nb_sources": [
+            [
+                "get_number_of_active_horizontal_position_aiding_sources"
+            ],
+            0
+        ]
+    },
+    "isOtherSourceOfVerticalPositionAidingThan": {
+        "nb_sources": [
+            [
+                "get_number_of_active_vertical_position_aiding_sources"
+            ],
+            0
+        ]
+    }
+}

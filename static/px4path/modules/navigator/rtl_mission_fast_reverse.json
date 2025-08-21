@@ -1,0 +1,138 @@
+{
+    "on_activation": {
+        "_is_current_planned_mission_item_valid": [
+            [
+                "is_mission_valid"
+            ],
+            0
+        ]
+    },
+    "setActiveMissionItems": {
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_waypoint"
+            ],
+            0
+        ],
+        "_mission_item.yaw": [
+            [
+                "_navigator_get_local_position_heading"
+            ],
+            0
+        ],
+        "current.alt_acceptance_radius": [
+            [
+                "flt_max"
+            ],
+            0
+        ],
+        "_work_item_type": [
+            [
+                "work_item_type_transition_after_takeoff",
+                "work_item_type_move_to_land"
+            ],
+            1
+        ],
+        "mission_dataman_id": [
+            [
+                "dm_item_t",
+                "_mission_mission_dataman_id",
+                "static_cast"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        "current.type": [
+            [
+                "setpoint_type_position"
+            ],
+            0
+        ]
+    },
+    "handleLanding": {
+        "_mission_item.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "needs_to_land": [
+            [
+                "_land_detected_sub_get_landed"
+            ],
+            0
+        ],
+        "new_work_item_type": [
+            [
+                "work_item_type_climb",
+                "work_item_type_move_to_land",
+                "work_item_type_precision_land",
+                "work_item_type_move_to_land_after_transition"
+            ],
+            0
+        ],
+        "pos_sp_triplet": [
+            [
+                "_navigator_get_position_setpoint_triplet"
+            ],
+            0
+        ],
+        ".vehicle_type": [
+            [
+                "vehicle_type_fixed_wing"
+            ],
+            0
+        ],
+        "_mission_item.land_precision": [
+            [
+                "_param_rtl_pld_md_get"
+            ],
+            0
+        ],
+        "_mission_item.lat": [
+            [
+                "_home_pos_sub_get_lat"
+            ],
+            0
+        ],
+        "_mission_item.nav_cmd": [
+            [
+                "nav_cmd_land",
+                "nav_cmd_waypoint"
+            ],
+            0
+        ],
+        "_mission_item.altitude": [
+            [
+                "_home_pos_sub_get_alt",
+                "_global_pos_sub_get_alt",
+                "_global_pos_sub_get_alt",
+                "pos_sp_triplet_current_alt"
+            ],
+            1
+        ],
+        "_mission_item.lon": [
+            [
+                "_home_pos_sub_get_lon"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "pos_sp_triplet_current"
+            ],
+            0
+        ]
+    }
+}

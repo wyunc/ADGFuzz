@@ -1,0 +1,133 @@
+{
+    "onSubscriptionAdded": {
+        "_vehicle_attitude_groundtruth_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_airspeed_validated_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_vehicle_air_data_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_optical_flow_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_vehicle_visual_odometry_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_vehicle_local_position_groundtruth_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_vehicle_magnetometer_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_vehicle_global_position_groundtruth_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_distance_sensor_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_airspeed_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_sensor_combined_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "_aux_global_position_msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ]
+    },
+    "publishEkf2Topics": {
+        "sensor_combined.gyro_integral_dt": [
+            [
+                "static_cast",
+                "uint32_t",
+                "sensor_combined_timestamp"
+            ],
+            1
+        ],
+        "_last_sensor_combined_timestamp": [
+            [
+                "sensor_combined_timestamp"
+            ],
+            0
+        ],
+        "sensor_combined.accelerometer_integral_dt": [
+            [
+                "static_cast",
+                "uint32_t",
+                "sensor_combined_timestamp"
+            ],
+            1
+        ],
+        "t": [
+            [
+                "timestamp_relative",
+                "ekf2_timestamps_timestamp"
+            ],
+            0
+        ]
+    },
+    "findTimestampAndPublish": {
+        "sub": [
+            [
+                "msg_id",
+                "_subscriptions"
+            ],
+            0
+        ]
+    },
+    "onEnterMainLoop": {
+        "_speed_factor": [
+            [
+                "_f"
+            ],
+            0
+        ]
+    },
+    "onExitMainLoop": {
+        "sub": [
+            [
+                "msg_id",
+                "_subscriptions"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "controlFakeHgtFusion": {
+        "innov_gate": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "obs_var": [
+            [
+                "sq__params_pos_noaid_noise"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_fake_hgt"
+            ],
+            0
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out_uint64_t4e5",
+                "is_timed_out_aid_src_time_last_fuse"
+            ],
+            0
+        ],
+        "continuing_conditions_passing": [
+            [
+                "is_vertical_aiding_active"
+            ],
+            0
+        ]
+    },
+    "resetFakeHgtFusion": {
+        "_aid_src_fake_hgt.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ]
+    }
+}

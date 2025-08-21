@@ -1,0 +1,18 @@
+{
+    "check_flightmode": {
+        "plane.control_mode": [
+            [
+                "plane_mode_avoid_adsb"
+            ],
+            0
+        ]
+    },
+    "handle_avoidance_vertical": {
+        "new_loc.alt": [
+            [
+                "plane_current_loc_alt"
+            ],
+            0
+        ]
+    }
+}

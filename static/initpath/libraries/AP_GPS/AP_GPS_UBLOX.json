@@ -1,0 +1,776 @@
+{
+    "_request_next_config": {
+        "list_length": [
+            [
+                "array_size_config_l5_ovrd_ena",
+                "mb_use_uart2",
+                "array_size_config_mb_rover_uart2",
+                "array_size_config_mb_base_uart1",
+                "array_size_config_l5_ovrd_dis",
+                "array_size_config_mb_base_uart2",
+                "array_size_config_mb_rover_uart1",
+                "array_size_config_m10"
+            ],
+            0
+        ],
+        "_f9_config_time": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_next_message": [
+            [
+                "step_pvt"
+            ],
+            0
+        ],
+        "list": [
+            [
+                "mb_use_uart2",
+                "config_l5_ovrd_ena",
+                "config_mb_base_uart2",
+                "config_mb_base_uart1",
+                "config_mb_rover_uart1",
+                "config_l5_ovrd_dis",
+                "config_mb_rover_uart2",
+                "config_m10"
+            ],
+            0
+        ],
+        "cfg_count": [
+            [
+                "populate_f9_gnss"
+            ],
+            0
+        ]
+    },
+    "_verify_rate": {
+        "desired_rate": [
+            [
+                "rate_velned",
+                "have_pvt_msg",
+                "gps__raw_data",
+                "rate_dop",
+                "rate_status",
+                "rate_hw",
+                "rate_posllh",
+                "rate_tim_tm2",
+                "rate_sol",
+                "rate_timegps",
+                "rate_hw2",
+                "rate_pvt"
+            ],
+            0
+        ],
+        "config_msg_id": [
+            [
+                "config_tim_tm2",
+                "config_rate_mon_hw",
+                "config_rate_pvt",
+                "config_rate_sol",
+                "config_rate_dop",
+                "config_rate_posllh",
+                "config_rate_status",
+                "config_rate_timegps",
+                "config_rate_raw",
+                "config_rate_mon_hw2",
+                "config_rate_velned"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "_msg_id": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "_class": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "numc": [
+            [
+                "port_available_8192u"
+            ],
+            0
+        ],
+        "_last_config_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_ck_b": [
+            [
+                "_ck_a",
+                "data"
+            ],
+            0
+        ],
+        "_payload_length": [
+            [
+                "data",
+                "uint16_t"
+            ],
+            0
+        ]
+    },
+    "log_mon_hw": {
+        "pkt.noisePerMS": [
+            [
+                "_buffer_mon_hw_68_noise_per_ms"
+            ],
+            0
+        ],
+        "pkt.jamInd": [
+            [
+                "_buffer_mon_hw_68_jam_ind"
+            ],
+            0
+        ],
+        "pkt.aPower": [
+            [
+                "_buffer_mon_hw_68_a_power"
+            ],
+            0
+        ],
+        "pkt.agcCnt": [
+            [
+                "_buffer_mon_hw_68_agc_cnt"
+            ],
+            0
+        ]
+    },
+    "log_rxm_raw": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "log_rxm_rawx": {
+        "now": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "_parse_gps": {
+        "state.ground_speed": [
+            [
+                "_buffer_pvt_gspeed",
+                "_buffer_velned_speed_2d"
+            ],
+            0
+        ],
+        "next_fix": [
+            [
+                "state_status",
+                "gps_ok_fix_2d",
+                "no_fix",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps"
+            ],
+            0
+        ],
+        "state.location.lat": [
+            [
+                "_buffer_pvt_lat",
+                "353632610l",
+                "_buffer_posllh_latitude"
+            ],
+            0
+        ],
+        "active_config.set_index": [
+            [
+                "find_active_config_index_id"
+            ],
+            1
+        ],
+        "state.time_week": [
+            [
+                "_buffer_timegps_week",
+                "_buffer_solution_week"
+            ],
+            0
+        ],
+        "state.accHeading": [
+            [
+                "1e",
+                "_buffer_relposned_acc_heading"
+            ],
+            0
+        ],
+        "_last_relposned_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_hardware_generation": [
+            [
+                "_buffer_svinfo_header_global_flags",
+                "hardware_generation_mask",
+                "ublox_f9",
+                "ublox_m10",
+                "ublox_m9"
+            ],
+            0
+        ],
+        "_last_relposned_itow": [
+            [
+                "_buffer_relposned_i_tow"
+            ],
+            0
+        ],
+        "_buffer.nav_tp5.freqPeriod": [
+            [
+                "_pps_freq"
+            ],
+            1
+        ],
+        "_buffer.nav_settings.minElev": [
+            [
+                "gps__min_elevation"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "_buffer_velned_ned_north",
+                "_buffer_pvt_vel_n"
+            ],
+            0
+        ],
+        "state.relPosD": [
+            [
+                "_buffer_relposned_rel_pos_d"
+            ],
+            0
+        ],
+        "_buffer.nav_settings.dynModel": [
+            [
+                "gps__navfilter"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "_buffer_velned_ned_down",
+                "_buffer_pvt_vel_d"
+            ],
+            0
+        ],
+        "state.ground_course": [
+            [
+                "wrap_360__buffer_pvt_head_mot",
+                "wrap_360__0e",
+                "wrap_360__buffer_velned_heading_2d"
+            ],
+            0
+        ],
+        "state.location.lng": [
+            [
+                "_buffer_pvt_lon",
+                "1491652300l",
+                "_buffer_posllh_longitude"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "_buffer_pvt_h_acc",
+                "_buffer_posllh_horizontal_accuracy",
+                "_0e"
+            ],
+            0
+        ],
+        "state.undulation": [
+            [
+                "_buffer_pvt_h_msl",
+                "_buffer_posllh_altitude_msl",
+                "_buffer_pvt_h_ellipsoid",
+                "_buffer_posllh_altitude_ellipsoid"
+            ],
+            0
+        ],
+        "_buffer.nav_tp5.freqPeriodLock": [
+            [
+                "_pps_freq"
+            ],
+            1
+        ],
+        "start_gnss": [
+            [
+                "_buffer_gnss"
+            ],
+            0
+        ],
+        "state.gps_yaw_accuracy": [
+            [
+                "1e",
+                "_buffer_relposned_acc_heading"
+            ],
+            0
+        ],
+        "cfg_data": [
+            [
+                "config_key_size_id",
+                "_buffer",
+                "uint8_t",
+                "const",
+                "sizeof_ubx_cfg_valget"
+            ],
+            1
+        ],
+        "state.vertical_accuracy": [
+            [
+                "_buffer_pvt_v_acc",
+                "_0e",
+                "_buffer_posllh_vertical_accuracy"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "gps_ok_fix_2d",
+                "gps_ok_fix_3d_rtk_float",
+                "no_fix",
+                "gps_ok_fix_3d_rtk_fixed",
+                "gps_ok_fix_3d",
+                "gps_ok_fix_3d_dgps"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "_buffer_velned_speed_accuracy",
+                "_buffer_pvt_s_acc"
+            ],
+            0
+        ],
+        "_last_vel_time": [
+            [
+                "_buffer_pvt_itow",
+                "_buffer_velned_itow"
+            ],
+            0
+        ],
+        "state.relposheading_ts": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_pvt_itow": [
+            [
+                "_buffer_pvt_itow"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "_buffer_pvt_p_dop",
+                "_buffer_dop_h_dop",
+                "_buffer_solution_position_dop"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_buffer.nav_tp5.flags": [
+            [
+                "0x003f"
+            ],
+            1
+        ],
+        "state.vdop": [
+            [
+                "_buffer_pvt_p_dop",
+                "_buffer_dop_v_dop"
+            ],
+            0
+        ],
+        "cfg_len": [
+            [
+                "config_key_size_id",
+                "_payload_length",
+                "sizeof_ubx_cfg_valget"
+            ],
+            1
+        ],
+        "state.time_week_ms": [
+            [
+                "_buffer_solution_itow",
+                "millis",
+                "_buffer_pvt_itow"
+            ],
+            0
+        ],
+        ".flags": [
+            [
+                "0x_fffffffe",
+                "_flags",
+                "_buffer_gnss_config_block",
+                "i",
+                "0x00000001"
+            ],
+            0
+        ],
+        "_new_speed": [
+            [
+                "_new_position"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "_buffer_pvt_num_sv",
+                "_buffer_solution_satellites"
+            ],
+            0
+        ],
+        "state.relPosHeading": [
+            [
+                "1e",
+                "_buffer_relposned_rel_pos_heading"
+            ],
+            0
+        ],
+        "_last_pos_time": [
+            [
+                "_buffer_pvt_itow",
+                "_buffer_posllh_itow"
+            ],
+            0
+        ],
+        "state.relPosLength": [
+            [
+                "_buffer_relposned_rel_pos_length"
+            ],
+            0
+        ],
+        "key_size": [
+            [
+                "config_key_size_id"
+            ],
+            0
+        ],
+        "_ublox_port": [
+            [
+                "_buffer_prt_port_id"
+            ],
+            0
+        ],
+        "mod": [
+            [
+                "memmem_sizeof",
+                "memmem__buffer_mon_ver_extension"
+            ],
+            0
+        ],
+        ".resTrkCh": [
+            [
+                "gnss_count",
+                "_buffer_gnss_num_trk_ch_hw"
+            ],
+            0
+        ],
+        ".maxTrkCh": [
+            [
+                "_buffer_gnss_num_trk_ch_hw"
+            ],
+            0
+        ],
+        "state.velocity.y": [
+            [
+                "_buffer_velned_ned_east",
+                "_buffer_pvt_vel_e"
+            ],
+            0
+        ],
+        "_hardware_variant": [
+            [
+                "ublox_f9_zed",
+                "ublox_f9_neo"
+            ],
+            0
+        ],
+        "_buffer.sbas.mode": [
+            [
+                "gps__sbas_mode"
+            ],
+            0
+        ],
+        "HardwareGenerationMask": [
+            [
+                "0x07"
+            ],
+            0
+        ]
+    },
+    "pps_interrupt": {
+        "_last_pps_time_us": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "set_pps_desired_freq": {
+        "_pps_freq": [
+            [
+                "freq"
+            ],
+            0
+        ]
+    },
+    "_update_checksum": {
+        "ck_b": [
+            [
+                "data"
+            ],
+            1
+        ]
+    },
+    "_send_message": {
+        "header.preamble2": [
+            [
+                "preamble2"
+            ],
+            0
+        ],
+        "header.msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "header.preamble1": [
+            [
+                "preamble1"
+            ],
+            0
+        ],
+        "ck_a": [
+            [
+                "ck_b"
+            ],
+            0
+        ],
+        "header.length": [
+            [
+                "size"
+            ],
+            0
+        ],
+        "header.msg_class": [
+            [
+                "msg_class"
+            ],
+            0
+        ]
+    },
+    "_request_message_rate": {
+        "msg.msg_class": [
+            [
+                "msg_class"
+            ],
+            0
+        ],
+        "msg.msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ]
+    },
+    "_configure_message_rate": {
+        "msg.msg_id": [
+            [
+                "msg_id"
+            ],
+            0
+        ],
+        "msg.msg_class": [
+            [
+                "msg_class"
+            ],
+            0
+        ],
+        "msg.rate": [
+            [
+                "rate"
+            ],
+            0
+        ]
+    },
+    "_configure_valset": {
+        "ret": [
+            [
+                "_send_message_sizeof",
+                "_send_message_buf",
+                "_send_message_msg_cfg_valset",
+                "_send_message_class_cfg"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "config_key_size_key"
+            ],
+            0
+        ],
+        "msg.layers": [
+            [
+                "layers"
+            ],
+            0
+        ],
+        "msg.key": [
+            [
+                "uint32_t_key"
+            ],
+            0
+        ]
+    },
+    "_configure_valget": {
+        "msg.key": [
+            [
+                "key"
+            ],
+            0
+        ]
+    },
+    "_configure_config_set": {
+        "active_config.list": [
+            [
+                "list"
+            ],
+            0
+        ],
+        "active_config.unconfig_bit": [
+            [
+                "unconfig_bit"
+            ],
+            0
+        ],
+        "active_config.layers": [
+            [
+                "layers"
+            ],
+            0
+        ],
+        "active_config.count": [
+            [
+                "count"
+            ],
+            0
+        ]
+    },
+    "_configure_list_valset": {
+        "msg.layers": [
+            [
+                "layers"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_send_message_msg_len",
+                "_send_message_buf",
+                "_send_message_msg_cfg_valset",
+                "_send_message_class_cfg"
+            ],
+            0
+        ],
+        "payload": [
+            [
+                "sizeof_config_key",
+                "buf",
+                "config_key_size__key",
+                "config_key_size_i",
+                "config_key_size_list"
+            ],
+            1
+        ],
+        "msg_len": [
+            [
+                "sizeof_config_key",
+                "config_key_size__key",
+                "config_key_size_i",
+                "config_key_size_list",
+                "sizeof_msg_key",
+                "sizeof_msg"
+            ],
+            1
+        ]
+    },
+    "_save_cfg": {
+        "_last_cfg_sent_time": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "_detect": {
+        "state.payload_length": [
+            [
+                "data"
+            ],
+            0
+        ],
+        "state.ck_b": [
+            [
+                "data",
+                "state_ck_a"
+            ],
+            0
+        ]
+    },
+    "_configure_rate": {
+        "msg.measure_rate_ms": [
+            [
+                "gps_get_rate_ms_state_instance"
+            ],
+            0
+        ]
+    },
+    "get_lag": {
+        "gps._auto_config": [
+            [
+                "gps_auto_config_disable"
+            ],
+            0
+        ]
+    },
+    "get_RTCMV3": {
+        "len": [
+            [
+                "rtcm3_parser_get_len_bytes"
+            ],
+            0
+        ]
+    },
+    "supports_F9_config": {
+        "_hardware_generation": [
+            [
+                "ublox_f9",
+                "ublox_m10"
+            ],
+            0
+        ]
+    }
+}

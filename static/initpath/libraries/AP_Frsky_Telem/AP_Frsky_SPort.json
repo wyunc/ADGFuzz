@@ -1,0 +1,104 @@
+{
+    "send": {
+        "numc": [
+            [
+                "_port_available_1024u"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "rpm2_id",
+                "rpm1_id"
+            ],
+            0
+        ],
+        "_battery": [
+            [
+                "battery"
+            ],
+            0
+        ]
+    },
+    "send_sport_frame": {
+        "tdelay_us": [
+            [
+                "port_receive_time_constraint_us",
+                "micros64"
+            ],
+            2
+        ],
+        "c": [
+            [
+                "buf",
+                "i"
+            ],
+            0
+        ],
+        "sum": [
+            [
+                "0xff",
+                "buf",
+                "i"
+            ],
+            0
+        ]
+    },
+    "should_process_packet": {
+        "crc": [
+            [
+                "_parse_state_rx_buffer",
+                "i",
+                "0x00ff"
+            ],
+            0
+        ]
+    },
+    "process_byte": {
+        "_parse_state.state": [
+            [
+                "in_frame",
+                "start",
+                "xor",
+                "idle"
+            ],
+            0
+        ]
+    },
+    "get_packet": {
+        "sport_packet": [
+            [
+                "sp"
+            ],
+            0
+        ]
+    },
+    "sport_telemetry_push": {
+        "_sport_push_buffer.packet.appid": [
+            [
+                "appid"
+            ],
+            0
+        ],
+        "_sport_push_buffer.packet.sensor": [
+            [
+                "sensor"
+            ],
+            0
+        ],
+        "_sport_push_buffer.packet.frame": [
+            [
+                "frame"
+            ],
+            0
+        ],
+        "_sport_push_buffer.packet.data": [
+            [
+                "data",
+                "uint32_t",
+                "static_cast"
+            ],
+            0
+        ]
+    }
+}

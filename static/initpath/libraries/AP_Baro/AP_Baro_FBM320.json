@@ -1,0 +1,298 @@
+{
+    "read_calibration": {
+        "calibration.C12": [
+            [
+                "r",
+                "0x0c"
+            ],
+            0
+        ],
+        "calibration.C8": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C10": [
+            [
+                "r",
+                "0x_ff00"
+            ],
+            0
+        ],
+        "calibration.C1": [
+            [
+                "r",
+                "0x_ff00"
+            ],
+            0
+        ],
+        "calibration.C6": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C3": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C7": [
+            [
+                "r",
+                "uint32_t"
+            ],
+            0
+        ],
+        "calibration.C11": [
+            [
+                "r",
+                "0x_ff"
+            ],
+            0
+        ],
+        "calibration.C4": [
+            [
+                "r",
+                "uint32_t"
+            ],
+            0
+        ],
+        "calibration.C5": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C0": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C9": [
+            [
+                "r"
+            ],
+            0
+        ],
+        "calibration.C2": [
+            [
+                "r",
+                "0x_ff"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "instance": [
+            [
+                "_frontend_register_sensor"
+            ],
+            0
+        ]
+    },
+    "calculate_PT": {
+        "PP4": [
+            [
+                "pp2",
+                "pp3"
+            ],
+            0
+        ],
+        "X03": [
+            [
+                "cal_c3",
+                "dt"
+            ],
+            0
+        ],
+        "X01": [
+            [
+                "dt",
+                "cal_c1"
+            ],
+            0
+        ],
+        "X11": [
+            [
+                "dt2",
+                "cal_c5"
+            ],
+            0
+        ],
+        "DT2": [
+            [
+                "x03",
+                "x02",
+                "x01"
+            ],
+            0
+        ],
+        "DT": [
+            [
+                "cal_c0",
+                "ut"
+            ],
+            0
+        ],
+        "X32": [
+            [
+                "pp4",
+                "cf",
+                "cal_c11"
+            ],
+            0
+        ],
+        "X21": [
+            [
+                "dt2",
+                "cal_c8"
+            ],
+            0
+        ],
+        "X23": [
+            [
+                "x22",
+                "x21"
+            ],
+            0
+        ],
+        "CF": [
+            [
+                "cal_c12",
+                "dt2"
+            ],
+            0
+        ],
+        "PP1": [
+            [
+                "up",
+                "x13"
+            ],
+            0
+        ],
+        "PP2": [
+            [
+                "x26",
+                "pp1"
+            ],
+            0
+        ],
+        "X13": [
+            [
+                "cal_c4",
+                "x11",
+                "x12"
+            ],
+            0
+        ],
+        "PP3": [
+            [
+                "x26",
+                "pp1",
+                "0x7ff"
+            ],
+            0
+        ],
+        "temperature": [
+            [
+                "x03",
+                "x02",
+                "x01"
+            ],
+            0
+        ],
+        "X24": [
+            [
+                "x23",
+                "cal_c7"
+            ],
+            0
+        ],
+        "pressure": [
+            [
+                "x31",
+                "pp4",
+                "x32"
+            ],
+            0
+        ],
+        "cal": [
+            [
+                "calibration"
+            ],
+            0
+        ],
+        "X31": [
+            [
+                "cal_c10",
+                "pp4",
+                "cf"
+            ],
+            0
+        ],
+        "X26": [
+            [
+                "cal_c7",
+                "x25",
+                "x22",
+                "x24",
+                "x21"
+            ],
+            0
+        ],
+        "X25": [
+            [
+                "x23",
+                "cal_c7",
+                "0x7ff"
+            ],
+            0
+        ],
+        "X02": [
+            [
+                "cal_c2",
+                "dt"
+            ],
+            0
+        ],
+        "X12": [
+            [
+                "cal_c6",
+                "dt2"
+            ],
+            0
+        ],
+        "X22": [
+            [
+                "dt2",
+                "cal_c9"
+            ],
+            0
+        ]
+    },
+    "timer": {
+        "value_T": [
+            [
+                "buf",
+                "uint32_t"
+            ],
+            1
+        ],
+        "pressure_sum": [
+            [
+                "pressure"
+            ],
+            0
+        ],
+        "temperature_sum": [
+            [
+                "temperature"
+            ],
+            0
+        ]
+    }
+}

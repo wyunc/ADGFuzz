@@ -1,0 +1,66 @@
+{
+    "update_sensor_instance": {
+        "finished": [
+            [
+                "data_hot_soaked"
+            ],
+            0
+        ],
+        "data.device_id": [
+            [
+                "baro_data_device_id"
+            ],
+            0
+        ],
+        "relative_temperature": [
+            [
+                "data_ref_temp",
+                "double",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.ref_temp": [
+            [
+                "_min_temperature_rise",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.high_temp": [
+            [
+                "data_low_temp",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.low_temp": [
+            [
+                "data_sensor_sample_filt"
+            ],
+            0
+        ]
+    },
+    "finish": {
+        "result": [
+            [
+                "enabled",
+                "param_set_no_notification_param_find"
+            ],
+            0
+        ]
+    },
+    "finish_sensor_instance": {
+        "result": [
+            [
+                "coef_index",
+                "res",
+                "float",
+                "px4_ok",
+                "param_set_no_notification_param_find",
+                "param_set_no_notification_str"
+            ],
+            1
+        ]
+    }
+}

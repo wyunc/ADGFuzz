@@ -1,0 +1,63 @@
+{
+    "run": {
+        "target_roll": [
+            [
+                "drift_speedgain",
+                "vel_x",
+                "drift_speedlimit",
+                "vel_y",
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw",
+                "channel_yaw_get_control_in",
+                "_",
+                "float",
+                "drift_speedgain"
+            ],
+            3
+        ],
+        "assisted_throttle": [
+            [
+                "get_throttle_assist_get_pilot_desired_throttle",
+                "get_throttle_assist_vel_z"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "g2_command_model_acro_y_get_rate",
+                "fabsf_pitch_vel"
+            ],
+            1
+        ],
+        "vel": [
+            [
+                "inertial_nav_get_velocity_neu_cms"
+            ],
+            0
+        ],
+        "target_pitch": [
+            [
+                "_",
+                "drift_speedgain",
+                "vel_x",
+                "drift_speedlimit",
+                "vel_y",
+                "ahrs_sin_yaw",
+                "ahrs_cos_yaw"
+            ],
+            2
+        ]
+    },
+    "get_throttle_assist": {
+        "thr_assist": [
+            [
+                "fabsf_pilot_throttle_scaled",
+                "float",
+                "drift_thr_assist_gain",
+                "drift_thr_assist_max",
+                "velz"
+            ],
+            0
+        ]
+    }
+}

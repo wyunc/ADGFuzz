@@ -1,0 +1,243 @@
+{
+    "update": {
+        "max_sats": [
+            [
+                "_satellites_used",
+                "_gps_state",
+                "i"
+            ],
+            0
+        ],
+        "_is_new_output_data_available": [
+            [
+                "_gps_updated",
+                "i",
+                "_primary_instance"
+            ],
+            1
+        ],
+        "_selected_gps": [
+            [
+                "i",
+                "_primary_instance"
+            ],
+            1
+        ],
+        "best_fix": [
+            [
+                "_gps_state",
+                "i",
+                "_fix_type"
+            ],
+            0
+        ]
+    },
+    "blend_gps_data": {
+        "dt_max": [
+            [
+                "i",
+                "_gps_dt"
+            ],
+            0
+        ],
+        "sum_of_vpos_weights": [
+            [
+                "i",
+                "vpos_blend_weights"
+            ],
+            0
+        ],
+        "min_us": [
+            [
+                "_timestamp",
+                "_gps_state",
+                "i"
+            ],
+            0
+        ],
+        "max_us": [
+            [
+                "_timestamp",
+                "_gps_state",
+                "i"
+            ],
+            0
+        ],
+        "speed_accuracy_sum_sq": [
+            [
+                "_gps_state",
+                "i",
+                "_s_variance_m_s"
+            ],
+            0
+        ],
+        "sum_of_spd_weights": [
+            [
+                "i",
+                "spd_blend_weights"
+            ],
+            0
+        ],
+        "dt_min": [
+            [
+                "i",
+                "gps_timeout_s",
+                "_gps_dt"
+            ],
+            0
+        ],
+        "present_dt": [
+            [
+                "_f",
+                "_gps_state",
+                "hrt_now_us",
+                "i",
+                "_timestamp",
+                "1e"
+            ],
+            0
+        ],
+        "raw_dt": [
+            [
+                "_f",
+                "_gps_state",
+                "i",
+                "_time_prev_us",
+                "_timestamp",
+                "1e"
+            ],
+            0
+        ],
+        "horizontal_accuracy_sum_sq": [
+            [
+                "_eph",
+                "_gps_state",
+                "i"
+            ],
+            0
+        ],
+        "_gps_time_ref_index": [
+            [
+                "i",
+                "i"
+            ],
+            2
+        ],
+        "_gps_blended_state": [
+            [
+                "gps_blend_states_blend_weights"
+            ],
+            1
+        ],
+        "_selected_gps": [
+            [
+                "gps_max_receivers_blend"
+            ],
+            0
+        ],
+        "sum_of_hpos_weights": [
+            [
+                "hpos_blend_weights",
+                "i"
+            ],
+            0
+        ],
+        "vertical_accuracy_sum_sq": [
+            [
+                "_epv",
+                "_gps_state",
+                "i"
+            ],
+            0
+        ]
+    },
+    "update_gps_offsets": {
+        "max_alt_offset": [
+            [
+                "fmax_i",
+                "fmax_max_alt_offset",
+                "fmax__altitude_msl_m",
+                "fmax_fabs",
+                "fmax_j",
+                "fmax__gps_state"
+            ],
+            0
+        ],
+        "j": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "omega_lpf": [
+            [
+                "fmaxf__blending_time_constant"
+            ],
+            0
+        ]
+    },
+    "calc_gps_blend_output": {
+        "gps_blended_state.latitude_deg": [
+            [
+                "lat_deg_res"
+            ],
+            0
+        ],
+        "lon_deg_orig": [
+            [
+                "i",
+                "_longitude_deg",
+                "_gps_state"
+            ],
+            0
+        ],
+        "lon_deg_now": [
+            [
+                "gps_blended_state_longitude_deg"
+            ],
+            0
+        ],
+        "lat_deg_now": [
+            [
+                "gps_blended_state_latitude_deg"
+            ],
+            0
+        ],
+        "gps_blended_state.longitude_deg": [
+            [
+                "lon_deg_res"
+            ],
+            0
+        ],
+        "gps_blended_state.altitude_msl_m": [
+            [
+                "gps_blended_state_altitude_msl_m",
+                "i",
+                "double",
+                "blend_weights",
+                "gps_blended_state_altitude_msl_m",
+                "i",
+                "_altitude_msl_m",
+                "_gps_state",
+                "_hgt_offset_m"
+            ],
+            3
+        ],
+        "lat_deg_orig": [
+            [
+                "i",
+                "_gps_state",
+                "_latitude_deg"
+            ],
+            0
+        ],
+        "blended_NE_offset_m": [
+            [
+                "horiz_offset",
+                "i",
+                "blend_weights"
+            ],
+            0
+        ]
+    }
+}

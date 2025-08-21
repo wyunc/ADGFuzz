@@ -1,0 +1,223 @@
+{
+    "subscribe_msgs": {
+        "driver_index": [
+            [
+                "ap_dronecan_get_driver_index"
+            ],
+            0
+        ]
+    },
+    "handle_status": {
+        "istate.misfire_status": [
+            [
+                "observed",
+                "not_observed",
+                "not_supported"
+            ],
+            0
+        ],
+        "istate.engine_load_percent": [
+            [
+                "pkt_engine_load_percent"
+            ],
+            0
+        ],
+        "istate.temperature_status": [
+            [
+                "above_nominal",
+                "not_supported",
+                "egt_above_nominal",
+                "overheating",
+                "ok",
+                "below_nominal"
+            ],
+            0
+        ],
+        "istate.fuel_consumption_rate_cm3pm": [
+            [
+                "pkt_fuel_consumption_rate_cm3pm"
+            ],
+            0
+        ],
+        "istate.oil_pressure": [
+            [
+                "pkt_oil_pressure"
+            ],
+            0
+        ],
+        "istate.coolant_temperature": [
+            [
+                "pkt_coolant_temperature"
+            ],
+            0
+        ],
+        "istate.last_updated_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "istate.detonation_status": [
+            [
+                "observed",
+                "not_observed",
+                "not_supported"
+            ],
+            0
+        ],
+        "istate.intake_manifold_pressure_kpa": [
+            [
+                "pkt_intake_manifold_pressure_kpa"
+            ],
+            0
+        ],
+        "c.ignition_timing_deg": [
+            [
+                "cs_ignition_timing_deg"
+            ],
+            0
+        ],
+        "istate.oil_temperature": [
+            [
+                "pkt_oil_temperature"
+            ],
+            0
+        ],
+        "c.lambda_coefficient": [
+            [
+                "cs_lambda_coefficient"
+            ],
+            0
+        ],
+        "istate.atmospheric_pressure_kpa": [
+            [
+                "pkt_atmospheric_pressure_kpa"
+            ],
+            0
+        ],
+        "c.cylinder_head_temperature": [
+            [
+                "cs_cylinder_head_temperature"
+            ],
+            0
+        ],
+        "istate.intake_manifold_temperature": [
+            [
+                "pkt_intake_manifold_temperature"
+            ],
+            0
+        ],
+        "istate.oil_pressure_status": [
+            [
+                "ok",
+                "above_nominal",
+                "not_supported",
+                "below_nominal"
+            ],
+            0
+        ],
+        "c.injection_time_ms": [
+            [
+                "cs_injection_time_ms"
+            ],
+            0
+        ],
+        "istate.spark_dwell_time_ms": [
+            [
+                "pkt_spark_dwell_time_ms"
+            ],
+            0
+        ],
+        "istate.throttle_position_percent": [
+            [
+                "pkt_throttle_position_percent"
+            ],
+            0
+        ],
+        "istate.debris_status": [
+            [
+                "detected",
+                "not_detected",
+                "not_supported"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "istate_cylinder_status"
+            ],
+            0
+        ],
+        "c.exhaust_gas_temperature": [
+            [
+                "cs_exhaust_gas_temperature"
+            ],
+            0
+        ],
+        "cs": [
+            [
+                "pkt_cylinder_status_data"
+            ],
+            0
+        ],
+        "istate.fuel_pressure_status": [
+            [
+                "ok",
+                "above_nominal",
+                "not_supported",
+                "below_nominal"
+            ],
+            0
+        ],
+        "istate.crankshaft_sensor_status": [
+            [
+                "error",
+                "ok",
+                "not_supported"
+            ],
+            0
+        ],
+        "istate.spark_plug_usage": [
+            [
+                "spark_plug_usage_pkt_spark_plug_usage"
+            ],
+            0
+        ],
+        "istate.engine_speed_rpm": [
+            [
+                "pkt_engine_speed_rpm"
+            ],
+            0
+        ],
+        "istate.ecu_index": [
+            [
+                "pkt_ecu_index"
+            ],
+            0
+        ],
+        "istate.estimated_consumed_fuel_volume_cm3": [
+            [
+                "pkt_estimated_consumed_fuel_volume_cm3"
+            ],
+            0
+        ],
+        "istate.engine_state": [
+            [
+                "engine_state_pkt_state"
+            ],
+            0
+        ],
+        "istate.fuel_pressure": [
+            [
+                "pkt_fuel_pressure"
+            ],
+            0
+        ],
+        "istate": [
+            [
+                "internal_state"
+            ],
+            0
+        ]
+    }
+}

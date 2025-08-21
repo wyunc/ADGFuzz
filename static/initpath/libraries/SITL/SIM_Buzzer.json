@@ -1,0 +1,41 @@
+{
+    "update": {
+        "tone.dEndFrequency": [
+            [
+                "frequency"
+            ],
+            0
+        ],
+        "on_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "xenvelope.dSustainTime": [
+            [
+                "duration_ms"
+            ],
+            0
+        ],
+        "tone.dStartFrequency": [
+            [
+                "frequency"
+            ],
+            0
+        ],
+        "tone.waveType": [
+            [
+                "osc_square"
+            ],
+            0
+        ],
+        "on": [
+            [
+                "sitl_pin_mask_get",
+                "_pin"
+            ],
+            0
+        ]
+    }
+}

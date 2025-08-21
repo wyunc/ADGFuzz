@@ -1,0 +1,18 @@
+{
+    "get_reading": {
+        "reading_m": [
+            [
+                "float_buf",
+                "buf",
+                "count"
+            ],
+            1
+        ],
+        "crc": [
+            [
+                "buf"
+            ],
+            0
+        ]
+    }
+}

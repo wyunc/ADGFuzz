@@ -1,0 +1,272 @@
+{
+    "set_bidir_dshot_mask": {
+        "iomcu_mask": [
+            [
+                "1u",
+                "chan_offset"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "pwm_group_list",
+                "i"
+            ],
+            0
+        ],
+        "_bdshot.mask": [
+            [
+                "mask",
+                "chan_offset",
+                "_bdshot_disabled_mask"
+            ],
+            1
+        ]
+    },
+    "bdshot_setup_group_ic_DMA": {
+        "mode": [
+            [
+                "i",
+                "_mode",
+                "group_pwm_cfg_channels"
+            ],
+            0
+        ],
+        "group.bdshot.curr_telem_chan": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "curr_chan": [
+            [
+                "i"
+            ],
+            0
+        ]
+    },
+    "bdshot_ic_dma_allocate": {
+        "group": [
+            [
+                "i",
+                "pwm_group_list"
+            ],
+            0
+        ]
+    },
+    "bdshot_ic_dma_deallocate": {
+        "group": [
+            [
+                "i",
+                "pwm_group_list"
+            ],
+            0
+        ]
+    },
+    "bdshot_prepare_for_next_pulse": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "chan": [
+            [
+                "group_bdshot_prev_telem_chan",
+                "group_chan"
+            ],
+            0
+        ],
+        "group.bdshot.telempsc": [
+            [
+                "uint16_t",
+                "telem_ic_sample",
+                "bdshot_get_output_rate_hz_group_current_mode",
+                "lrintf_floatgroup_pwm_drv_clock"
+            ],
+            0
+        ],
+        "active_channels": [
+            [
+                "group_ch_mask",
+                "group_en_mask"
+            ],
+            0
+        ],
+        "group.bdshot.curr_ic_dma_handle": [
+            [
+                "group_bdshot_curr_telem_chan",
+                "group_bdshot_ic_dma_handle"
+            ],
+            0
+        ]
+    },
+    "bdshot_receive_pulses_DMAR": {
+        "ccr_ofs": [
+            [
+                "group_bdshot_curr_telem_chan",
+                "offsetof_stm32_tim_t",
+                "group_bdshot_telem_tim_ch",
+                "offsetof_ccr"
+            ],
+            1
+        ],
+        "ARR": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "dshot_state": [
+            [
+                "recv_start"
+            ],
+            0
+        ],
+        "CR1": [
+            [
+                "tim_cr1_arpe",
+                "stm32_tim_cr1_urs",
+                "stm32_tim_cr1_udis",
+                "stm32_tim_cr1_cen"
+            ],
+            0
+        ],
+        "DCR": [
+            [
+                "stm32_tim_dcr_dbl",
+                "stm32_tim_dcr_dba_ccr_ofs"
+            ],
+            0
+        ],
+        "PSC": [
+            [
+                "group_bdshot_telempsc"
+            ],
+            0
+        ],
+        "ic_dma": [
+            [
+                "group_dma",
+                "group_bdshot_curr_telem_chan",
+                "group_has_shared_ic_up_dma",
+                "group_bdshot_ic_dma"
+            ],
+            1
+        ]
+    },
+    "bdshot_config_icu_dshot": {
+        "CCMR1_FILT": [
+            [
+                "tim_ccmr1_ic2f_1",
+                "tim_ccmr1_ic1f_1"
+            ],
+            0
+        ],
+        "CCMR2_FILT": [
+            [
+                "tim_ccmr2_ic4f_1",
+                "tim_ccmr2_ic3f_1"
+            ],
+            0
+        ]
+    },
+    "bdshot_finish_dshot_gcr_transaction": {
+        "group": [
+            [
+                "pwm_group",
+                "p"
+            ],
+            0
+        ],
+        "bdshot.prev_telem_chan": [
+            [
+                "group_bdshot_curr_telem_chan"
+            ],
+            0
+        ],
+        "dshot_state": [
+            [
+                "recv_complete",
+                "recv_failed"
+            ],
+            0
+        ],
+        "dma": [
+            [
+                "group_has_shared_ic_up_dma",
+                "group_bdshot_ic_dma",
+                "group_dma",
+                "group_bdshot_curr_telem_chan"
+            ],
+            1
+        ],
+        "bdshot.curr_telem_chan": [
+            [
+                "bdshot_find_next_ic_channel_group"
+            ],
+            0
+        ]
+    },
+    "bdshot_decode_dshot_telemetry": {
+        "group.bdshot.last_print": [
+            [
+                "rcout_micros"
+            ],
+            1
+        ],
+        "reversed": [
+            [
+                "1u",
+                "chan",
+                "group_bdshot_telem_tim_ch"
+            ],
+            0
+        ],
+        "group.dshot_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "dma_up_irq_callback": {
+        "dshot_state": [
+            [
+                "send_complete"
+            ],
+            0
+        ],
+        "group": [
+            [
+                "pwm_group",
+                "p"
+            ],
+            0
+        ]
+    },
+    "bdshot_decode_telemetry_from_erpm": {
+        "erpm": [
+            [
+                "0xff_u",
+                "9u",
+                "encodederpm",
+                "0xfffffe00u",
+                "2u",
+                "1000000u",
+                "encodederpm",
+                "0x000001ff_u",
+                "60u",
+                "100u"
+            ],
+            2
+        ],
+        "normalized_chan": [
+            [
+                "chan",
+                "chan_offset"
+            ],
+            0
+        ]
+    }
+}

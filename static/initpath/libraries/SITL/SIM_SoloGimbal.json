@@ -1,0 +1,147 @@
+{
+    "param_send": {
+        "param_value.param_value": [
+            [
+                "p_value"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_msgbuf"
+            ],
+            0
+        ],
+        "param_value.param_type": [
+            [
+                "mav_param_type_real32"
+            ],
+            0
+        ]
+    },
+    "send_report": {
+        "heartbeat.autopilot": [
+            [
+                "mav_autopilot_ardupilotmega"
+            ],
+            0
+        ],
+        "last_report_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "gimbal_report.joint_roll": [
+            [
+                "joint_angles_x"
+            ],
+            0
+        ],
+        "gimbal_report.delta_velocity_y": [
+            [
+                "delta_velocity_y"
+            ],
+            0
+        ],
+        "gimbal_report.delta_angle_z": [
+            [
+                "delta_angle_z"
+            ],
+            0
+        ],
+        "last_heartbeat_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "len": [
+            [
+                "mavlink_msg_to_send_buffer_msg",
+                "mavlink_msg_to_send_buffer_msgbuf"
+            ],
+            0
+        ],
+        "heartbeat.type": [
+            [
+                "mav_type_gimbal"
+            ],
+            0
+        ],
+        "gimbal_report.target_system": [
+            [
+                "msg_sysid"
+            ],
+            1
+        ],
+        "gimbal_report.delta_angle_y": [
+            [
+                "delta_angle_y"
+            ],
+            0
+        ],
+        "gimbal_report.joint_el": [
+            [
+                "joint_angles_y"
+            ],
+            0
+        ],
+        "gimbal_report.delta_velocity_z": [
+            [
+                "delta_velocity_z"
+            ],
+            0
+        ],
+        "gimbal_report.delta_velocity_x": [
+            [
+                "delta_velocity_x"
+            ],
+            0
+        ],
+        "value": [
+            [
+                "pkt_param_value"
+            ],
+            0
+        ],
+        "gimbal_report.target_component": [
+            [
+                "msg_compid"
+            ],
+            1
+        ],
+        "gimbal_report.delta_time": [
+            [
+                "delta_time_us",
+                "1e"
+            ],
+            0
+        ],
+        "gimbal_report.delta_angle_x": [
+            [
+                "delta_angle_x"
+            ],
+            0
+        ],
+        "p": [
+            [
+                "param_find_pkt_param_id"
+            ],
+            0
+        ],
+        "gimbal_report.joint_az": [
+            [
+                "joint_angles_z"
+            ],
+            0
+        ],
+        "param_send_last_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

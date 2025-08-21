@@ -1,0 +1,249 @@
+{
+    "print_error": {
+        "last_print_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_and_print_new_error_message": {
+        "error_msg_buf": [
+            [
+                "_heap_allocate_len",
+                "nullptr",
+                "char"
+            ],
+            0
+        ],
+        "len": [
+            [
+                "hal_util_vsnprintf_arg_list_copy",
+                "hal_util_vsnprintf_nullptr",
+                "hal_util_vsnprintf_fmt"
+            ],
+            0
+        ]
+    },
+    "update_stats": {
+        "name_short": [
+            [
+                "strrchr_name"
+            ],
+            0
+        ]
+    },
+    "load_all_scripts_in_dir": {
+        "d": [
+            [
+                "fs_opendir_dirname"
+            ],
+            0
+        ],
+        "script": [
+            [
+                "load_script_l",
+                "load_script_filename"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "strlen_de_d_name"
+            ],
+            0
+        ],
+        "de": [
+            [
+                "fs_readdir_d"
+            ],
+            0
+        ],
+        "filename": [
+            [
+                "_heap_allocate_size",
+                "char"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "strlen_de_d_name",
+                "strlen_dirname"
+            ],
+            0
+        ]
+    },
+    "reset_loop_overtime": {
+        "vm_steps": [
+            [
+                "_vm_steps"
+            ],
+            0
+        ]
+    },
+    "run_next_script": {
+        "old_ref": [
+            [
+                "script_run_ref"
+            ],
+            0
+        ],
+        "scripts": [
+            [
+                "script_next"
+            ],
+            0
+        ],
+        "returned": [
+            [
+                "lua_gettop_l",
+                "lua_gettop_l"
+            ],
+            1
+        ],
+        "next_run_ms": [
+            [
+                "millis64",
+                "lua_l_checknumber_l",
+                "uint64_t"
+            ],
+            1
+        ],
+        "run_ref": [
+            [
+                "lua_l_ref_l",
+                "lua_l_ref_lua_registryindex"
+            ],
+            0
+        ]
+    },
+    "remove_script": {
+        "current": [
+            [
+                "script_next"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "script_next"
+            ],
+            0
+        ]
+    },
+    "reschedule_script": {
+        "next": [
+            [
+                "script",
+                "nullptr",
+                "previous_next"
+            ],
+            0
+        ],
+        "previous": [
+            [
+                "script",
+                "previous_next"
+            ],
+            1
+        ],
+        "next_run_ms": [
+            [
+                "script_next_run_ms"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "sanity": [
+            [
+                "nullptr",
+                "sanity_next"
+            ],
+            1
+        ],
+        "loadEnd": [
+            [
+                "micros"
+            ],
+            0
+        ],
+        "inital_mem": [
+            [
+                "lua_gc_lua_gccount",
+                "lua_gc_lua_gccountb",
+                "lua_gc_l"
+            ],
+            0
+        ],
+        "expansion_size": [
+            [
+                "_heap_get_expansion_size"
+            ],
+            1
+        ],
+        "istate": [
+            [
+                "hal_scheduler_disable_interrupts_save"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis64"
+            ],
+            0
+        ],
+        "endMem": [
+            [
+                "lua_gc_lua_gccount",
+                "lua_gc_lua_gccountb",
+                "lua_gc_l"
+            ],
+            0
+        ],
+        "dir_disable": [
+            [
+                "get_singleton_get_disabled_dir"
+            ],
+            0
+        ],
+        "startMem": [
+            [
+                "lua_gc_lua_gccount",
+                "lua_gc_lua_gccountb",
+                "lua_gc_l"
+            ],
+            0
+        ],
+        "error_msg_buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "lua_state": [
+            [
+                "lua_newstate_alloc",
+                "nullptr",
+                "lua_newstate_null"
+            ],
+            0
+        ],
+        "loaded_mem": [
+            [
+                "lua_gc_lua_gccount",
+                "lua_gc_lua_gccountb",
+                "lua_gc_l"
+            ],
+            0
+        ],
+        "runEnd": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    }
+}

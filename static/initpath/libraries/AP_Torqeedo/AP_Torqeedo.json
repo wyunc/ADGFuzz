@@ -1,0 +1,40 @@
+{
+    "healthy": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ],
+        "num_healthy": [
+            [
+                "num_backends"
+            ],
+            0
+        ]
+    },
+    "clear_motor_error": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "get_batt_info": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    },
+    "get_batt_capacity_Ah": {
+        "backend": [
+            [
+                "get_instance_instance"
+            ],
+            0
+        ]
+    }
+}

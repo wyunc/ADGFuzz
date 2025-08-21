@@ -1,0 +1,336 @@
+{
+    "update": {
+        "disarm_limit": [
+            [
+                "copter_flightmode_has_manual_throttle",
+                "toy_land_manual_disarm_count",
+                "toy_land_disarm_count"
+            ],
+            0
+        ],
+        "throttle_at_min": [
+            [
+                "copter_channel_throttle_get_control_in"
+            ],
+            0
+        ],
+        "last_ch5": [
+            [
+                "get_radio_in_ch_5"
+            ],
+            1
+        ],
+        "last_action": [
+            [
+                "action_none",
+                "action_input",
+                "toy_action__get",
+                "toy_action_actions",
+                "toy_action_action_input"
+            ],
+            1
+        ],
+        "power_button": [
+            [
+                "get_radio_in_ch_6",
+                "uint8_t_ch6_in",
+                "get_radio_in_ch_7",
+                "uint8_t_ch7_in"
+            ],
+            4
+        ],
+        "red_blink_pattern": [
+            [
+                "blink_no_rx"
+            ],
+            0
+        ],
+        "right_press_counter": [
+            [
+                "toy_command_delay"
+            ],
+            0
+        ],
+        "reset_turtle_start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "red_blink_index": [
+            [
+                "green_blink_index"
+            ],
+            0
+        ],
+        "green_blink_pattern": [
+            [
+                "blink_no_rx"
+            ],
+            0
+        ],
+        "filtered_voltage": [
+            [
+                "copter_battery_voltage"
+            ],
+            0
+        ],
+        "left_change": [
+            [
+                "get_radio_in_ch_5",
+                "get_radio_in_ch_5",
+                "uint8_t_ch5_in",
+                "get_radio_in_ch_5"
+            ],
+            3
+        ],
+        "reset_combination": [
+            [
+                "get_radio_in_ch_6",
+                "uint8_t_ch6_in",
+                "get_radio_in_ch_7",
+                "uint8_t_ch7_in",
+                "get_radio_in_ch_6",
+                "uint8_t_ch6_in",
+                "get_radio_in_ch_7",
+                "uint8_t_ch7_in"
+            ],
+            6
+        ],
+        "throttle_arm_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_left_button": [
+            [
+                "get_radio_in_ch_5",
+                "uint8_t_ch5_in",
+                "get_radio_in_ch_5"
+            ],
+            3
+        ],
+        "right_button": [
+            [
+                "get_radio_in_ch_6",
+                "uint8_t_ch5_in",
+                "get_radio_in_ch_5"
+            ],
+            3
+        ],
+        "left_press_counter": [
+            [
+                "toy_command_delay"
+            ],
+            0
+        ],
+        "throttle_near_max": [
+            [
+                "copter_channel_throttle_get_control_in"
+            ],
+            0
+        ],
+        "new_mode": [
+            [
+                "throw",
+                "rtl",
+                "brake",
+                "circle",
+                "alt_hold",
+                "copter_flightmode_mode_number",
+                "sport",
+                "loiter",
+                "land",
+                "drift",
+                "number__get",
+                "auto",
+                "acro",
+                "flowhold",
+                "flip",
+                "stabilize",
+                "number_primary_mode",
+                "number_last_mode_choice",
+                "poshold",
+                "autotune"
+            ],
+            1
+        ],
+        "last_action_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "set_and_remember_mode": {
+        "last_set_mode": [
+            [
+                "mode"
+            ],
+            0
+        ]
+    },
+    "trim_update": {
+        "throttle_mid": [
+            [
+                "c_get_radio_max",
+                "1000ul",
+                "copter_channel_throttle_get_radio_trim",
+                "c_get_radio_min"
+            ],
+            4
+        ],
+        "trim.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "c": [
+            [
+                "rc_channel_i",
+                "copter_channel_throttle"
+            ],
+            0
+        ]
+    },
+    "action_arm": {
+        "needs_gps": [
+            [
+                "copter_flightmode_requires_gps"
+            ],
+            0
+        ]
+    },
+    "throttle_adjust": {
+        "height": [
+            [
+                "copter_inertial_nav_get_position_z_up_cm",
+                "copter_arming_altitude_m"
+            ],
+            0
+        ],
+        "throttle_control": [
+            [
+                "copter_g_throttle_deadzone",
+                "float_soft_start_ms",
+                "throttle_arm_ms",
+                "millis",
+                "limit"
+            ],
+            3
+        ]
+    },
+    "blink_update": {
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "red_blink_index": [
+            [
+                "green_blink_index"
+            ],
+            0
+        ],
+        "green_blink_pattern": [
+            [
+                "blink_full",
+                "blink_8"
+            ],
+            1
+        ],
+        "red_blink_pattern": [
+            [
+                "blink_full",
+                "blink_8"
+            ],
+            1
+        ]
+    },
+    "handle_message": {
+        "last_video_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "red_blink_pattern": [
+            [
+                "uint16_t",
+                "m_value"
+            ],
+            0
+        ],
+        "red_blink_count": [
+            [
+                "m_value"
+            ],
+            0
+        ],
+        "green_blink_pattern": [
+            [
+                "uint16_t",
+                "m_value",
+                "blink_2"
+            ],
+            0
+        ],
+        "green_blink_count": [
+            [
+                "m_value"
+            ],
+            0
+        ],
+        "radio": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "log_disarmed": [
+            [
+                "find_vtype",
+                "ap_int8"
+            ],
+            0
+        ]
+    },
+    "thrust_limiting": {
+        "thrust_mul": [
+            [
+                "linear_interpolate_filtered_voltage",
+                "linear_interpolate_filter_volt_max",
+                "linear_interpolate_filter_thrust_max",
+                "linear_interpolate_filter_thrust_min",
+                "linear_interpolate_filter_volt_min"
+            ],
+            0
+        ]
+    },
+    "load_test_run": {
+        "load_test.row": [
+            [
+                "load_test_row",
+                "array_size_load_data1"
+            ],
+            0
+        ]
+    },
+    "arm_check_compass": {
+        "field": [
+            [
+                "copter_compass_get_field_length"
+            ],
+            0
+        ],
+        "offsets": [
+            [
+                "copter_compass_get_offsets"
+            ],
+            0
+        ]
+    }
+}

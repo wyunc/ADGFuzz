@@ -1,0 +1,143 @@
+{
+    "_uart_open": {
+        "_uart_fd": [
+            [
+                "open_o_noctty",
+                "open_o_rdwr",
+                "open_o_nonblock",
+                "open_hal_rcoutput_tap_device"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "unlock_packet.len": [
+            [
+                "sizeof_unlock_packet_d_req_run_value"
+            ],
+            0
+        ],
+        "config": [
+            [
+                "packet_d_req_config_info_basic"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "config.minChannelValue": [
+            [
+                "rpmmin"
+            ],
+            0
+        ],
+        "packet": [
+            [
+                "0xfe",
+                "escbus_msg_id_config_basic",
+                "sizeof_config_info_basic_request"
+            ],
+            0
+        ],
+        "unlock_packet": [
+            [
+                "escbus_msg_id_run",
+                "0xfe",
+                "_channels_count"
+            ],
+            0
+        ],
+        "config.maxChannelInUse": [
+            [
+                "_channels_count"
+            ],
+            0
+        ],
+        "config.maxChannelValue": [
+            [
+                "rpmmax"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "_send_packet_packet"
+            ],
+            0
+        ]
+    },
+    "_send_packet": {
+        "ret": [
+            [
+                "write_packet_len",
+                "write__uart_fd",
+                "write_packet_head"
+            ],
+            0
+        ],
+        "packet_len": [
+            [
+                "_crc_packet_packet"
+            ],
+            0
+        ]
+    },
+    "push": {
+        "_last_led_update_msec": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "val": [
+            [
+                "uint16_t",
+                "rpm",
+                "rpmstopped",
+                "out",
+                "rpmmax",
+                "motor_mapping"
+            ],
+            0
+        ],
+        "period_us": [
+            [
+                "constrain_int16__esc_pwm_max",
+                "constrain_int16__period",
+                "constrain_int16__esc_pwm_min",
+                "constrain_int16_i"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "_channels_count"
+            ],
+            1
+        ],
+        "ret": [
+            [
+                "_send_packet_packet"
+            ],
+            0
+        ],
+        "packet": [
+            [
+                "_channels_count",
+                "0xfe",
+                "escbus_msg_id_run"
+            ],
+            0
+        ],
+        "packet.len": [
+            [
+                "sizeof_packet_d_req_run_value"
+            ],
+            0
+        ]
+    }
+}

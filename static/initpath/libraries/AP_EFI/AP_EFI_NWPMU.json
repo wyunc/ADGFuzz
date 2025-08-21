@@ -1,0 +1,67 @@
+{
+    "handle_frame": {
+        "internal_state.coolant_temperature": [
+            [
+                "f_to_kelvin_data_coolant_temp",
+                "c_to_kelvin_data_coolant_temp"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.ignition_timing_deg": [
+            [
+                "data_ignition_angle"
+            ],
+            0
+        ],
+        "internal_state.last_updated_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "internal_state.engine_speed_rpm": [
+            [
+                "data_rpm"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "mask_ext_id",
+                "frame_id"
+            ],
+            0
+        ],
+        "internal_state.throttle_position_percent": [
+            [
+                "data_tps"
+            ],
+            0
+        ],
+        "internal_state.atmospheric_pressure_kpa": [
+            [
+                "data_baro"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.cylinder_head_temperature": [
+            [
+                "f_to_kelvin_data_coolant_temp",
+                "c_to_kelvin_data_coolant_temp"
+            ],
+            0
+        ],
+        "internal_state.intake_manifold_pressure_kpa": [
+            [
+                "data_baro"
+            ],
+            0
+        ],
+        "internal_state.cylinder_status.lambda_coefficient": [
+            [
+                "data_lambda"
+            ],
+            0
+        ]
+    }
+}

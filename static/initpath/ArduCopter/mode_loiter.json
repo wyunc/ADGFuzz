@@ -1,0 +1,44 @@
+{
+    "precision_loiter_xy": {
+        "landing_pos": [
+            [
+                "target_pos_topostype"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "inertial_nav_get_position_xy_cm"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "loiter_state": [
+            [
+                "get_alt_hold_state_target_climb_rate"
+            ],
+            0
+        ],
+        "target_yaw_rate": [
+            [
+                "get_pilot_desired_yaw_rate"
+            ],
+            0
+        ],
+        "target_climb_rate": [
+            [
+                "get_pilot_desired_climb_rate_channel_throttle_get_control_in",
+                "get_avoidance_adjusted_climbrate_target_climb_rate",
+                "get_pilot_speed_dn_g_pilot_speed_up"
+            ],
+            0
+        ],
+        "precision_loiter_old_state": [
+            [
+                "_precision_loiter_active"
+            ],
+            0
+        ]
+    }
+}

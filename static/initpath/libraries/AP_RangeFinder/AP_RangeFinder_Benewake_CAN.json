@@ -1,0 +1,33 @@
+{
+    "handle_frame_H30": {
+        "target1_cm": [
+            [
+                "be16toh_ptr_frame_data"
+            ],
+            0
+        ]
+    },
+    "handle_frame": {
+        "id": [
+            [
+                "mask_std_id",
+                "frame_id",
+                "int32_t_frame_id",
+                "int32_t_mask_ext_id"
+            ],
+            0
+        ],
+        "snr": [
+            [
+                "le16toh_ptr_frame_data"
+            ],
+            0
+        ],
+        "dist_cm": [
+            [
+                "le16toh_ptr_frame_data"
+            ],
+            0
+        ]
+    }
+}

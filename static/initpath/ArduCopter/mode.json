@@ -1,0 +1,209 @@
+{
+    "gcs_mode_enabled": {
+        "new_flightmode": [
+            [
+                "mode_from_mode_num_mode_num"
+            ],
+            0
+        ]
+    },
+    "set_mode": {
+        "ignore_checks": [
+            [
+                "motors_armed"
+            ],
+            0
+        ],
+        "user_throttle": [
+            [
+                "new_flightmode_has_manual_throttle"
+            ],
+            0
+        ],
+        "control_mode_reason": [
+            [
+                "reason"
+            ],
+            0
+        ],
+        "_last_reason": [
+            [
+                "reason"
+            ],
+            0
+        ],
+        "flightmode": [
+            [
+                "mode_from_mode_num_mode"
+            ],
+            1
+        ],
+        "mode": [
+            [
+                "guided",
+                "rtl",
+                "auto"
+            ],
+            0
+        ]
+    },
+    "notify_flight_mode": {
+        "flags.autopilot_mode": [
+            [
+                "flightmode_is_autopilot"
+            ],
+            0
+        ],
+        "flags.flight_mode": [
+            [
+                "uint8_t",
+                "flightmode_mode_number"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_lean_angles": {
+        "pitch_out_cd": [
+            [
+                "pitch_out_deg"
+            ],
+            0
+        ],
+        "roll_out_cd": [
+            [
+                "roll_out_deg"
+            ],
+            0
+        ]
+    },
+    "land_run_vertical_control": {
+        "max_horiz_pos_error_cm": [
+            [
+                "copter_precland_get_max_xy_error_before_descending_cm"
+            ],
+            0
+        ],
+        "doing_precision_landing": [
+            [
+                "pos_control_is_active_xy",
+                "copter_precland_target_acquired",
+                "copter_ap_land_repo_active"
+            ],
+            1
+        ],
+        "ignore_descent_limit": [
+            [
+                "g2_land_alt_low",
+                "get_alt_above_ground_cm",
+                "copter_ap_land_complete_maybe"
+            ],
+            0
+        ],
+        "cmb_rate": [
+            [
+                "precland_acceptable_error_cm",
+                "inertial_nav_get_position_xy_cm",
+                "_length",
+                "target_pos",
+                "abs_g_land_speed",
+                "pos_control_get_max_accel_z_cmss",
+                "abs_g_land_speed",
+                "g_land_speed_high",
+                "pos_control_get_max_speed_down_cms",
+                "precland_min_descent_speed_cms",
+                "abs_g_land_speed",
+                "abs_g_land_speed",
+                "g_dt",
+                "sqrt_controller_get_alt_above_ground_cm",
+                "sqrt_controller_g2_land_alt_low",
+                "pos_control_get_pos_z_p_k_p"
+            ],
+            5
+        ]
+    },
+    "land_run_horizontal_control": {
+        "thrust_vector": [
+            [
+                "pos_control_get_thrust_vector"
+            ],
+            0
+        ],
+        "copter.ap.prec_land_active": [
+            [
+                "copter_precland_target_acquired",
+                "copter_ap_land_repo_active"
+            ],
+            0
+        ],
+        "vel_correction": [
+            [
+                "get_pilot_desired_velocity_max_pilot_vel"
+            ],
+            0
+        ],
+        "landing_pos": [
+            [
+                "target_pos_topostype"
+            ],
+            0
+        ],
+        "target_pos": [
+            [
+                "inertial_nav_get_position_xy_cm"
+            ],
+            0
+        ],
+        "thrust_vector.x": [
+            [
+                "gravity_mss",
+                "sinf_radians",
+                "sinf_attitude_limit_cd",
+                "thrust_vector_xy_length"
+            ],
+            3
+        ],
+        "thrust_vector.y": [
+            [
+                "gravity_mss",
+                "sinf_radians",
+                "sinf_attitude_limit_cd",
+                "thrust_vector_xy_length"
+            ],
+            3
+        ],
+        "max_pilot_vel": [
+            [
+                "wp_nav_get_wp_acceleration"
+            ],
+            0
+        ]
+    },
+    "precland_retry_position": {
+        "retry_pos_NEU": [
+            [
+                "retry_pos_neu"
+            ],
+            0
+        ]
+    },
+    "get_pilot_desired_throttle": {
+        "throttle_out": [
+            [
+                "float",
+                "constrain_int16_throttle_control",
+                "channel_throttle_get_control_in",
+                "copter_get_throttle_mid",
+                "throttle_hover"
+            ],
+            5
+        ]
+    },
+    "get_pilot_desired_yaw_rate": {
+        "yaw_in": [
+            [
+                "channel_yaw_norm_input_dz"
+            ],
+            0
+        ]
+    }
+}

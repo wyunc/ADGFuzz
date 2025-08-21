@@ -1,0 +1,148 @@
+{
+    "allocate_buffers": {
+        "__eth_td": [
+            [
+                "stm32_eth_tx_descriptor_t",
+                "malloc_eth_safe_size",
+                "stm32_eth_rx_descriptor_t",
+                "stm32_mac_receive_buffers"
+            ],
+            2
+        ],
+        "rasr_size": [
+            [
+                "mpu_rasr_size_rasr"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "thisif": [
+            [
+                "new_nothrow",
+                "netif"
+            ],
+            0
+        ]
+    },
+    "link_up_cb": {
+        "driver": [
+            [
+                "p",
+                "ap_networking_chibi_os"
+            ],
+            0
+        ]
+    },
+    "link_down_cb": {
+        "driver": [
+            [
+                "ap_networking_chibi_os",
+                "p"
+            ],
+            0
+        ]
+    },
+    "low_level_input": {
+        "len": [
+            [
+                "eth_pad_size",
+                "u16_t",
+                "rd_size"
+            ],
+            0
+        ],
+        "q": [
+            [
+                "pbuf_alloc_pbuf_raw",
+                "pbuf_alloc_len",
+                "pbuf_alloc_pbuf_pool"
+            ],
+            1
+        ]
+    },
+    "thread": {
+        "mask": [
+            [
+                "ch_evt_wait_any_all_events"
+            ],
+            0
+        ],
+        "addr.netmask.addr": [
+            [
+                "htonl_frontend_get_netmask_param"
+            ],
+            0
+        ],
+        "mac_config": [
+            [
+                "thisif_hwaddr"
+            ],
+            0
+        ],
+        "addr.ip.addr": [
+            [
+                "htonl_frontend_get_ip_param"
+            ],
+            0
+        ],
+        "addr.gateway.addr": [
+            [
+                "htonl_frontend_get_gateway_param"
+            ],
+            0
+        ],
+        "result": [
+            [
+                "netifapi_netif_add_addr_netmask",
+                "netifapi_netif_add_addr_ip",
+                "netifapi_netif_add_addr_gateway",
+                "netifapi_netif_add_thisif",
+                "netifapi_netif_add_tcpip_input",
+                "netifapi_netif_add_ethernetif_init",
+                "netifapi_netif_add_null"
+            ],
+            0
+        ],
+        "ethhdr": [
+            [
+                "p_payload",
+                "eth_hdr",
+                "struct"
+            ],
+            0
+        ],
+        "current_link_status": [
+            [
+                "mac_poll_link_status_ethd1"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "activeSettings.nm": [
+            [
+                "ntohl_thisif_netmask_addr"
+            ],
+            1
+        ],
+        "activeSettings.gw": [
+            [
+                "ntohl_thisif_gw_addr"
+            ],
+            1
+        ],
+        "activeSettings.ip": [
+            [
+                "ntohl_thisif_ip_addr_addr"
+            ],
+            1
+        ],
+        "activeSettings.last_change_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

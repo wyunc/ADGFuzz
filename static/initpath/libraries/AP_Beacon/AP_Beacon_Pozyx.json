@@ -1,0 +1,101 @@
+{
+    "update": {
+        "parse_state": [
+            [
+                "parse_state_waiting_for_header",
+                "parse_state_waiting_for_contents",
+                "parse_state_waiting_for_msg_id",
+                "parse_state_waiting_for_len"
+            ],
+            0
+        ],
+        "parse_msg_len": [
+            [
+                "uart_read"
+            ],
+            1
+        ],
+        "parse_msg_id": [
+            [
+                "uart_read"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "uart_available"
+            ],
+            0
+        ]
+    },
+    "parse_buffer": {
+        "vehicle_x": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "position_error": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "beacon_dist": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            1
+        ],
+        "beacon_id": [
+            [
+                "linebuf"
+            ],
+            0
+        ],
+        "beacon_x": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "vehicle_y": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "vehicle_z": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "beacon_y": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "beacon_z": [
+            [
+                "linebuf",
+                "uint32_t"
+            ],
+            0
+        ],
+        "last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

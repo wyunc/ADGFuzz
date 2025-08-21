@@ -1,0 +1,148 @@
+{
+    "init": {
+        "._uavcan": [
+            [
+                "ap_drone_can_i",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "register_driver": {
+        "iface": [
+            [
+                "hal_mutable_can",
+                "i"
+            ],
+            0
+        ],
+        "hal_mutable": [
+            [
+                "get_hal_mutable"
+            ],
+            0
+        ],
+        "drv_num": [
+            [
+                "__driver_number",
+                "_interfaces",
+                "i"
+            ],
+            0
+        ]
+    },
+    "register_11bit_driver": {
+        "driver_index": [
+            [
+                "__driver_number",
+                "i",
+                "_interfaces"
+            ],
+            1
+        ]
+    },
+    "log_text": {
+        "_log_pos": [
+            [
+                "hal_util_snprintf_log_buffer_size",
+                "hal_util_vsnprintf_fmt",
+                "hal_util_vsnprintf__log_buf",
+                "hal_util_snprintf__log_buf",
+                "hal_util_snprintf__log_pos",
+                "hal_util_snprintf_tag",
+                "hal_util_vsnprintf_log_buffer_size",
+                "hal_util_vsnprintf__log_pos",
+                "hal_util_vsnprintf_arg_list",
+                "hal_util_snprintf_log_level_tag"
+            ],
+            0
+        ]
+    },
+    "handle_can_forward": {
+        "can_forward.last_callback_enable_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "can_forward.component_id": [
+            [
+                "msg_compid"
+            ],
+            0
+        ],
+        "can_forward.system_id": [
+            [
+                "msg_sysid"
+            ],
+            0
+        ],
+        "can_forward.chan": [
+            [
+                "chan"
+            ],
+            0
+        ],
+        "can_forward.callback_bus": [
+            [
+                "int8_t_packet_param1"
+            ],
+            1
+        ]
+    },
+    "handle_can_frame": {
+        "frame_buffer": [
+            [
+                "buffer_size",
+                "object_buffer",
+                "buffer_frame",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "handle_can_filter_modify": {
+        "can_forward.num_filter_ids": [
+            [
+                "p_num_ids",
+                "remove_duplicates_uint16_new_ids",
+                "remove_duplicates_uint16_can_forward_num_filter_ids",
+                "remove_duplicates_uint16_p_num_ids"
+            ],
+            1
+        ],
+        "bus": [
+            [
+                "int8_t_p_bus"
+            ],
+            0
+        ],
+        "can_forward.filter_ids": [
+            [
+                "nullptr",
+                "new_nothrow",
+                "can_forward_num_filter_ids",
+                "p_num_ids",
+                "uint16_t",
+                "nullptr"
+            ],
+            1
+        ]
+    },
+    "can_frame_callback": {
+        "id": [
+            [
+                "uint8_t_frame_id",
+                "uint16_t_frame_id"
+            ],
+            0
+        ],
+        "data_len": [
+            [
+                "dlc_to_data_length_frame_dlc"
+            ],
+            0
+        ]
+    }
+}

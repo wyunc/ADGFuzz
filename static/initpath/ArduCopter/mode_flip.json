@@ -1,0 +1,94 @@
+{
+    "init": {
+        "orig_attitude.y": [
+            [
+                "copter_aparm_angle_max",
+                "ahrs_pitch_sensor"
+            ],
+            1
+        ],
+        "orig_attitude.z": [
+            [
+                "ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "pitch_dir": [
+            [
+                "flip_pitch_forward",
+                "flip_pitch_back"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "start"
+            ],
+            0
+        ],
+        "roll_dir": [
+            [
+                "flip_roll_left",
+                "flip_roll_right"
+            ],
+            0
+        ],
+        "orig_attitude.x": [
+            [
+                "copter_aparm_angle_max",
+                "ahrs_roll_sensor"
+            ],
+            1
+        ],
+        "start_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "orig_control_mode": [
+            [
+                "copter_flightmode_mode_number"
+            ],
+            0
+        ]
+    },
+    "run": {
+        "recovery_angle": [
+            [
+                "fabsf_floatahrs_pitch_sensor",
+                "fabsf_orig_attitude_x",
+                "fabsf_floatahrs_roll_sensor",
+                "fabsf_orig_attitude_y"
+            ],
+            0
+        ],
+        "flip_angle": [
+            [
+                "ahrs_roll_sensor",
+                "ahrs_pitch_sensor",
+                "roll_dir",
+                "pitch_dir"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "pitch_a",
+                "abandon",
+                "roll",
+                "pitch_b",
+                "recover"
+            ],
+            0
+        ],
+        "throttle_out": [
+            [
+                "flip_thr_dec",
+                "get_pilot_desired_throttle",
+                "flip_thr_inc"
+            ],
+            0
+        ]
+    }
+}

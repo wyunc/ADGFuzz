@@ -1,0 +1,365 @@
+{
+    "ensure_log_directory_exists": {
+        "ret": [
+            [
+                "_stat_st",
+                "fs_stat__log_directory",
+                "fs_mkdir__log_directory"
+            ],
+            0
+        ]
+    },
+    "Init": {
+        "desired_bufsize": [
+            [
+                "_front__params_file_bufsize"
+            ],
+            1
+        ],
+        "_log_directory": [
+            [
+                "hal_util_get_custom_log_directory"
+            ],
+            1
+        ],
+        "last_log_num": [
+            [
+                "find_last_log"
+            ],
+            0
+        ],
+        "filename": [
+            [
+                "_log_file_name_last_log_num"
+            ],
+            0
+        ]
+    },
+    "log_exists": {
+        "filename": [
+            [
+                "_log_file_name_lognum"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "file_exists_filename"
+            ],
+            0
+        ]
+    },
+    "periodic_1Hz": {
+        "rate_limiter": [
+            [
+                "ap_logger_rate_limiter__front",
+                "ap_logger_rate_limiter__front__params_disarm_ratemax",
+                "ap_logger_rate_limiter__front__params_file_ratemax",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "dirent_to_log_num": {
+        "length": [
+            [
+                "strlen_de_d_name"
+            ],
+            0
+        ],
+        "log_num": [
+            [
+                "strtoul_de_d_name",
+                "strtoul_nullptr"
+            ],
+            1
+        ]
+    },
+    "Prep_MinSpace": {
+        "target_free": [
+            [
+                "int64_t",
+                "mb_to_b",
+                "_front__params_min_mb_free"
+            ],
+            0
+        ],
+        "filename_to_remove": [
+            [
+                "_log_file_name_log_to_remove"
+            ],
+            0
+        ],
+        "log_to_remove": [
+            [
+                "find_oldest_log"
+            ],
+            1
+        ],
+        "avail": [
+            [
+                "disk_space_avail"
+            ],
+            0
+        ]
+    },
+    "_log_file_name": {
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "_lastlog_file_name": {
+        "buf": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "EraseAll": {
+        "erase.was_logging": [
+            [
+                "_write_fd"
+            ],
+            0
+        ]
+    },
+    "_WritePrioritisedBlock": {
+        "space": [
+            [
+                "_writebuf_space"
+            ],
+            0
+        ],
+        "must_dribble": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_messagewrite_message_sent": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_log_boundaries": {
+        "log_num": [
+            [
+                "log_num_from_list_entry_list_entry"
+            ],
+            0
+        ],
+        "end_page": [
+            [
+                "_get_log_size_log_num",
+                "logger_page_size"
+            ],
+            0
+        ]
+    },
+    "get_log_info": {
+        "log_num": [
+            [
+                "log_num_from_list_entry_list_entry"
+            ],
+            0
+        ],
+        "size": [
+            [
+                "_get_log_size_log_num"
+            ],
+            0
+        ],
+        "time_utc": [
+            [
+                "_get_log_time_log_num"
+            ],
+            0
+        ]
+    },
+    "stop_logging": {
+        "have_sem": [
+            [
+                "write_fd_semaphore_take_hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "fd": [
+            [
+                "_write_fd"
+            ],
+            0
+        ]
+    },
+    "PrepForArming_start_logging": {
+        "start_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "start_new_log": {
+        "_need_rtc_update": [
+            [
+                "rtc_get_utc_usec_utc_usec"
+            ],
+            0
+        ],
+        "_write_fd": [
+            [
+                "_open_o_wronly",
+                "fs_open__write_filename",
+                "_open_o_trunc",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "last_log_is_marked_discard": [
+            [
+                "_front__params_log_disarmed",
+                "log_while_disarmed_discard"
+            ],
+            0
+        ],
+        "_last_write_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "log_num": [
+            [
+                "find_last_log"
+            ],
+            0
+        ],
+        "_open_error_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "saved_errno": [
+            [
+                "errno"
+            ],
+            0
+        ],
+        "_write_filename": [
+            [
+                "_log_file_name_log_num",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "write_lastlog_file": {
+        "written": [
+            [
+                "_write_to_write",
+                "_write_buf",
+                "fs_write_fd",
+                "strlen_buf"
+            ],
+            1
+        ],
+        "fd": [
+            [
+                "fs_open_fname",
+                "_open_o_wronly",
+                "_open_o_creat"
+            ],
+            0
+        ],
+        "fname": [
+            [
+                "_lastlog_file_name"
+            ],
+            0
+        ]
+    },
+    "io_timer": {
+        "_io_timer_heartbeat": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_free_space_last_check_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_write_time": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "head": [
+            [
+                "_writebuf_readptr_size"
+            ],
+            0
+        ],
+        "log_num": [
+            [
+                "find_last_log"
+            ],
+            0
+        ],
+        "_open_error_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "_last_write_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_write_offset": [
+            [
+                "fs_write__write_fd",
+                "_write_head",
+                "_write_nbytes"
+            ],
+            1
+        ],
+        "nbytes": [
+            [
+                "_writebuf_chunk",
+                "ofs",
+                "_writebuf_available",
+                "size"
+            ],
+            0
+        ]
+    },
+    "io_thread_alive": {
+        "timeout_ms": [
+            [
+                "sitl_speedup"
+            ],
+            0
+        ]
+    },
+    "erase_next": {
+        "fname": [
+            [
+                "_log_file_name_erase_log_num",
+                "_lastlog_file_name"
+            ],
+            0
+        ]
+    }
+}

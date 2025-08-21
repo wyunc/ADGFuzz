@@ -1,0 +1,139 @@
+{
+    "init": {
+        "frame_class": [
+            [
+                "motor_frame_tailsitter"
+            ],
+            0
+        ],
+        "_has_diff_thrust": [
+            [
+                "function_assigned_k_throttle_left",
+                "function_assigned_k_throttle_right"
+            ],
+            0
+        ],
+        "_mav_type": [
+            [
+                "mav_type_vtol_duorotor"
+            ],
+            0
+        ]
+    },
+    "set_update_rate": {
+        "_speed_hz": [
+            [
+                "speed_hz"
+            ],
+            0
+        ]
+    },
+    "output_armed_stabilizing": {
+        "_throttle": [
+            [
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle"
+            ],
+            5
+        ],
+        "_thrust_right": [
+            [
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle",
+                "_roll_in",
+                "_roll_in_ff",
+                "thr_lin_get_compensation_gain",
+                "thrust_min",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle",
+                "thrust_max"
+            ],
+            7
+        ],
+        "_tilt_left": [
+            [
+                "_yaw_in",
+                "_yaw_in_ff",
+                "_pitch_in",
+                "_pitch_in_ff"
+            ],
+            2
+        ],
+        "_tilt_right": [
+            [
+                "_yaw_in",
+                "_yaw_in_ff",
+                "_pitch_in",
+                "_pitch_in_ff"
+            ],
+            2
+        ],
+        "_thrust_left": [
+            [
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle",
+                "_roll_in",
+                "_roll_in_ff",
+                "thr_lin_get_compensation_gain",
+                "thrust_min",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle",
+                "thrust_max"
+            ],
+            7
+        ],
+        "_throttle_out": [
+            [
+                "thr_lin_get_compensation_gain",
+                "thrust_min",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle",
+                "thrust_max",
+                "get_throttle",
+                "thr_lin_get_compensation_gain",
+                "_throttle_thrust_max",
+                "thr_lin_get_compensation_gain",
+                "_throttle_avg_max",
+                "thr_lin_get_compensation_gain",
+                "_external_min_throttle"
+            ],
+            6
+        ]
+    }
+}

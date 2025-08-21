@@ -1,0 +1,304 @@
+{
+    "read_average": {
+        "_value_ratiometric": [
+            [
+                "_sum_count",
+                "_sum_ratiometric"
+            ],
+            0
+        ],
+        "_value": [
+            [
+                "_sum_value",
+                "_sum_count"
+            ],
+            0
+        ]
+    },
+    "_pin_scaler": {
+        "scaling": [
+            [
+                "pin_config",
+                "pin_config_3",
+                "_scaling",
+                "voltage_scaling",
+                "i",
+                "pin_config_2"
+            ],
+            0
+        ]
+    },
+    "set_pin": {
+        "_pin": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    },
+    "_add_value": {
+        "_sum_value": [
+            [
+                "v"
+            ],
+            0
+        ],
+        "_latest_value": [
+            [
+                "v"
+            ],
+            0
+        ],
+        "_sum_ratiometric": [
+            [
+                "v",
+                "vcc5v"
+            ],
+            0
+        ]
+    },
+    "adccallback": {
+        "num_grp_channels": [
+            [
+                "get_num_grp_channels_index"
+            ],
+            0
+        ],
+        "min_vrefint": [
+            [
+                "uint16_t",
+                "samples",
+                "get_adc_index_adcp"
+            ],
+            2
+        ],
+        "max_vrefint": [
+            [
+                "uint16_t",
+                "samples",
+                "get_adc_index_adcp"
+            ],
+            2
+        ]
+    },
+    "setup_adc": {
+        ".end_cb": [
+            [
+                "adccallback"
+            ],
+            0
+        ],
+        ".cr2": [
+            [
+                "adc_cr2_swstart"
+            ],
+            0
+        ],
+        ".sqr1": [
+            [
+                "adc_sqr1_num_ch_num_grp_channels"
+            ],
+            0
+        ],
+        ".cfgr": [
+            [
+                "adc_cfgr_res_12bits",
+                "adc_cfgr_res_16bits",
+                "adc_cfgr_cont"
+            ],
+            0
+        ],
+        ".num_channels": [
+            [
+                "get_num_grp_channels_index"
+            ],
+            1
+        ],
+        "chan": [
+            [
+                "get_pin_channel_index",
+                "get_pin_channel_i"
+            ],
+            0
+        ],
+        "adcp": [
+            [
+                "adcd3",
+                "adcd2",
+                "adcd1"
+            ],
+            0
+        ]
+    },
+    "read_adc": {
+        "_mcu_vrefint_max": [
+            [
+                "max_vrefint"
+            ],
+            0
+        ],
+        "_mcu_monitor_voltage_accum": [
+            [
+                "val",
+                "get_num_grp_channels_index"
+            ],
+            1
+        ],
+        "_mcu_vrefint_min": [
+            [
+                "min_vrefint"
+            ],
+            0
+        ],
+        "_mcu_monitor_temperature_accum": [
+            [
+                "val",
+                "get_num_grp_channels_index"
+            ],
+            1
+        ]
+    },
+    "timer_tick_adc": {
+        "_board_voltage": [
+            [
+                "get_pin_scaling_index",
+                "get_pin_scaling_i",
+                "buf_adc",
+                "i",
+                "adc_board_scaling"
+            ],
+            0
+        ],
+        "c": [
+            [
+                "j",
+                "_channels"
+            ],
+            0
+        ],
+        "_servorail_voltage": [
+            [
+                "get_pin_scaling_index",
+                "get_pin_scaling_i",
+                "buf_adc",
+                "i",
+                "adc_board_scaling"
+            ],
+            0
+        ],
+        "num_grp_channels": [
+            [
+                "get_num_grp_channels_index"
+            ],
+            0
+        ]
+    },
+    "_timer_tick": {
+        "TS_CAL1": [
+            [
+                "const",
+                "uint16_t",
+                "0x1ff1e820",
+                "volatile"
+            ],
+            0
+        ],
+        "_servorail_voltage": [
+            [
+                "voltage_scaling",
+                "iomcu_get_vservo_adc_count",
+                "hal_iomcu_vservo_scalar"
+            ],
+            0
+        ],
+        "_mcu_voltage_max": [
+            [
+                "float__mcu_vrefint_min",
+                "vrefint_cal"
+            ],
+            0
+        ],
+        "VREFINT_CAL": [
+            [
+                "const",
+                "uint16_t",
+                "0x1ff1e860",
+                "volatile"
+            ],
+            0
+        ],
+        "last_mcu_temp_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "delta_t": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_rssi_voltage": [
+            [
+                "voltage_scaling",
+                "hal_iomcu_vrssi_scalar",
+                "iomcu_get_vrssi_adc_count"
+            ],
+            0
+        ],
+        "_last_run": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "TS_CAL2": [
+            [
+                "const",
+                "uint16_t",
+                "0x1ff1e840",
+                "volatile"
+            ],
+            0
+        ],
+        "_mcu_voltage": [
+            [
+                "float__mcu_monitor_voltage_accum",
+                "float__mcu_monitor_sample_count",
+                "vrefint_cal"
+            ],
+            0
+        ],
+        "_mcu_voltage_min": [
+            [
+                "float__mcu_vrefint_max",
+                "vrefint_cal"
+            ],
+            0
+        ],
+        "_mcu_temperature": [
+            [
+                "ts_cal1",
+                "ts_cal2",
+                "float__mcu_monitor_sample_count",
+                "float__mcu_monitor_temperature_accum"
+            ],
+            0
+        ]
+    },
+    "update_power_flags": {
+        "last_change_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_power_flags": [
+            [
+                "flags"
+            ],
+            0
+        ]
+    }
+}

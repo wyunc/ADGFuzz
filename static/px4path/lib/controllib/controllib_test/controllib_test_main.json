@@ -1,0 +1,92 @@
+{
+    "basicBlocksTest": {
+        "failed": [
+            [
+                "block_integral_test",
+                "block_limit_test",
+                "block_low_pass_test",
+                "block_integral_trap_test",
+                "block_high_pass_test",
+                "block_stats_test",
+                "block_derivative_test",
+                "block_rand_gauss_test",
+                "block_low_pass2test",
+                "block_p_test",
+                "block_rand_uniform_test",
+                "block_pid_test",
+                "block_output_test",
+                "block_delay_test",
+                "block_pi_test",
+                "block_limit_sym_test",
+                "block_pd_test"
+            ],
+            0
+        ]
+    },
+    "blockRandUniformTest": {
+        "mean": [
+            [
+                "block_rand_uniform_update",
+                "i",
+                "block_rand_uniform_update"
+            ],
+            1
+        ]
+    },
+    "blockRandGaussTest": {
+        "sum": [
+            [
+                "new_mean",
+                "block_rand_gauss_update"
+            ],
+            1
+        ],
+        "stdDev": [
+            [
+                "sqrtf_sum",
+                "sqrtf_n"
+            ],
+            0
+        ],
+        "mean": [
+            [
+                "block_rand_gauss_update",
+                "new_mean"
+            ],
+            0
+        ],
+        "newMean": [
+            [
+                "i",
+                "block_rand_gauss_update"
+            ],
+            1
+        ]
+    },
+    "blockDelayTest": {
+        "y1": [
+            [
+                "delay_update_u1"
+            ],
+            0
+        ],
+        "y2": [
+            [
+                "delay_update_u2"
+            ],
+            0
+        ],
+        "y4": [
+            [
+                "delay_update_u4"
+            ],
+            0
+        ],
+        "y3": [
+            [
+                "delay_update_u3"
+            ],
+            0
+        ]
+    }
+}

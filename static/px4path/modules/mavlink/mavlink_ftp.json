@@ -1,0 +1,289 @@
+{
+    "set_unittest_worker": {
+        "_utRcvMsgFunc": [
+            [
+                "rcv_msg_func"
+            ],
+            0
+        ],
+        "_worker_data": [
+            [
+                "worker_data"
+            ],
+            0
+        ]
+    },
+    "_process_request": {
+        "opcode": [
+            [
+                "k_rsp_ack",
+                "k_rsp_nak"
+            ],
+            0
+        ],
+        "last_payload": [
+            [
+                "payload_header",
+                "reinterpret_cast",
+                "last_reply_payload"
+            ],
+            0
+        ],
+        "errorCode": [
+            [
+                "k_err_fail_errno",
+                "_work_open_o_rdonly",
+                "_work_write_payload",
+                "_work_remove_file_payload",
+                "_work_terminate_payload",
+                "_work_open_o_trunc",
+                "_work_open_o_wronly",
+                "_work_calc_file_crc32_payload",
+                "_work_read_payload",
+                "_work_burst_payload",
+                "k_err_unknown_command",
+                "_work_burst_target_system_id",
+                "_work_remove_directory_payload",
+                "k_err_invalid_data_size",
+                "k_err_none",
+                "_work_rename_payload",
+                "_work_open_payload",
+                "_work_truncate_file_payload",
+                "_work_list_payload",
+                "_work_burst_target_comp_id",
+                "_work_create_directory_payload",
+                "k_err_file_not_found",
+                "_work_open_o_creat",
+                "_work_reset_payload",
+                "k_err_fail_file_exists"
+            ],
+            0
+        ],
+        "target_system": [
+            [
+                "target_system_id"
+            ],
+            0
+        ],
+        "_our_errno": [
+            [
+                "enomem"
+            ],
+            0
+        ],
+        "last_reply": [
+            [
+                "reinterpret_cast",
+                "mavlink_file_transfer_protocol_t",
+                "_last_reply"
+            ],
+            0
+        ],
+        "target_component": [
+            [
+                "target_comp_id"
+            ],
+            0
+        ],
+        "req_opcode": [
+            [
+                "payload_opcode"
+            ],
+            0
+        ],
+        "payload": [
+            [
+                "payload_header",
+                "reinterpret_cast",
+                "ftp_req_payload"
+            ],
+            0
+        ]
+    },
+    "_ensure_buffers_exist": {
+        "_last_work_buffer_access": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "_work_buffer1": [
+            [
+                "char",
+                "new",
+                "_work_buffer1_len"
+            ],
+            0
+        ],
+        "_work_buffer2": [
+            [
+                "char",
+                "new",
+                "_work_buffer2_len"
+            ],
+            0
+        ]
+    },
+    "_reply": {
+        "payload": [
+            [
+                "ftp_req_payload",
+                "reinterpret_cast",
+                "payload_header"
+            ],
+            0
+        ],
+        "opcode": [
+            [
+                "payload_seq_number",
+                "k_rsp_ack"
+            ],
+            0
+        ]
+    },
+    "_constructPath": {
+        "root_dir_len": [
+            [
+                "_root_dir_len"
+            ],
+            0
+        ]
+    },
+    "_copy_file": {
+        "blen": [
+            [
+                "_work_buffer2_len"
+            ],
+            0
+        ],
+        "_our_errno": [
+            [
+                "errno"
+            ],
+            0
+        ],
+        "src_fd": [
+            [
+                "dst_fd",
+                "open_src_path",
+                "open_o_rdonly"
+            ],
+            0
+        ],
+        "bytes_read": [
+            [
+                "read__work_buffer2",
+                "read_blen",
+                "read_src_fd"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "write_dst_fd",
+                "write__work_buffer2",
+                "write_bytes_read"
+            ],
+            1
+        ]
+    },
+    "send": {
+        "opcode": [
+            [
+                "k_rsp_nak",
+                "k_rsp_ack"
+            ],
+            0
+        ],
+        "req_opcode": [
+            [
+                "k_cmd_burst_read_file"
+            ],
+            0
+        ],
+        "seq_number": [
+            [
+                "_session_info_stream_seq_number"
+            ],
+            0
+        ],
+        "_work_buffer2": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "pData": [
+            [
+                "k_err_eof",
+                "k_err_none",
+                "k_err_fail_errno",
+                "payload_data"
+            ],
+            1
+        ],
+        "max_bytes_to_send": [
+            [
+                "get_size",
+                "_mavlink_get_free_tx_buf"
+            ],
+            0
+        ],
+        "ftp_msg.target_component": [
+            [
+                "_session_info_stream_target_component_id"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "_session_info_stream_offset"
+            ],
+            0
+        ],
+        "payload": [
+            [
+                "payload_header",
+                "ftp_msg_payload",
+                "reinterpret_cast"
+            ],
+            0
+        ],
+        "_session_info.stream_offset": [
+            [
+                "read_payload_data",
+                "read__session_info_fd",
+                "read_k_max_data_length"
+            ],
+            1
+        ],
+        "_work_buffer1": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_session_info.stream_chunk_transmitted": [
+            [
+                "read_payload_data",
+                "read__session_info_fd",
+                "read_k_max_data_length"
+            ],
+            1
+        ],
+        "size": [
+            [
+                "read_payload_data",
+                "read__session_info_fd",
+                "read_k_max_data_length"
+            ],
+            1
+        ],
+        "ftp_msg.target_system": [
+            [
+                "_session_info_stream_target_system_id"
+            ],
+            0
+        ]
+    }
+}

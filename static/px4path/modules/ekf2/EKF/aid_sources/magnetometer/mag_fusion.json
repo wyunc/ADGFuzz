@@ -1,0 +1,97 @@
+{
+    "fuseMag": {
+        "K_mag_I": [
+            [
+                "mag_i_idx",
+                "kfusion_slice",
+                "mag_i_dof"
+            ],
+            0
+        ],
+        "K_mag_B": [
+            [
+                "kfusion_slice",
+                "mag_b_idx",
+                "mag_b_dof"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "Kfusion": [
+            [
+                "index",
+                "p",
+                "aid_src_innovation_variance",
+                "h"
+            ],
+            0
+        ],
+        "_time_last_heading_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "state_vector": [
+            [
+                "_state_vector"
+            ],
+            0
+        ]
+    },
+    "fuseDeclination": {
+        "innovation": [
+            [
+                "wrap_pi_decl_measurement_rad",
+                "wrap_pi_decl_pred"
+            ],
+            0
+        ],
+        "K_mag_B": [
+            [
+                "mag_b_dof",
+                "kfusion_slice",
+                "mag_b_idx"
+            ],
+            0
+        ],
+        "Kfusion": [
+            [
+                "h",
+                "p",
+                "innovation_variance"
+            ],
+            0
+        ],
+        "K_mag_I": [
+            [
+                "mag_i_dof",
+                "kfusion_slice",
+                "mag_i_idx"
+            ],
+            0
+        ]
+    },
+    "calculate_synthetic_mag_z_measurement": {
+        "mag_z_body_pred": [
+            [
+                "mag_earth_predicted_dot__r_to_earth_col"
+            ],
+            0
+        ],
+        "mag_z_abs": [
+            [
+                "sq_mag_meas",
+                "sqrtf_max",
+                "sqrtf_sq",
+                "sqrtf_mag_earth_predicted_length"
+            ],
+            0
+        ]
+    }
+}

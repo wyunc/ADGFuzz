@@ -1,0 +1,154 @@
+{
+    "update": {
+        "upperRatelimit": [
+            [
+                "travel_limit_gain",
+                "upper_joint_limits"
+            ],
+            0
+        ],
+        "gimbalJointRates.x": [
+            [
+                "lower_ratelimit_x",
+                "gimbal_joint_rates_x",
+                "upper_ratelimit_x"
+            ],
+            0
+        ],
+        "demRateRaw": [
+            [
+                "demanded_angular_rate"
+            ],
+            0
+        ],
+        "last_update_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "rotmat_copter_gimbal": [
+            [
+                "aircraft_get_dcm",
+                "dcm_transposed"
+            ],
+            1
+        ],
+        "copterAngRate_G": [
+            [
+                "aircraft_get_dcm",
+                "ins_get_gyro",
+                "dcm_transposed"
+            ],
+            2
+        ],
+        "gimbalJointRates.z": [
+            [
+                "lower_ratelimit_z",
+                "gimbal_joint_rates_z",
+                "upper_ratelimit_z"
+            ],
+            0
+        ],
+        "delta_angle": [
+            [
+                "micros",
+                "_0e",
+                "true_gyro_bias",
+                "dem_rate_raw"
+            ],
+            4
+        ],
+        "dcm": [
+            [
+                "aircraft_get_dcm"
+            ],
+            1
+        ],
+        "lowerRatelimit": [
+            [
+                "lower_joint_limits",
+                "travel_limit_gain"
+            ],
+            0
+        ],
+        "gimbalJointRates": [
+            [
+                "matrix",
+                "relative_gimbal_rate"
+            ],
+            0
+        ],
+        "elevAngle": [
+            [
+                "joint_angles_y"
+            ],
+            0
+        ],
+        "delta_velocity": [
+            [
+                "micros",
+                "_0e",
+                "ins_get_accel",
+                "aircraft_get_dcm",
+                "dcm_transposed"
+            ],
+            6
+        ],
+        "rollAngle": [
+            [
+                "joint_angles_x"
+            ],
+            0
+        ],
+        "joint_angles": [
+            [
+                "rotmat_copter_gimbal_transposed_to_euler312"
+            ],
+            0
+        ],
+        "relativeGimbalRate": [
+            [
+                "matrix",
+                "gimbal_joint_rates",
+                "copter_ang_rate_g",
+                "demanded_angular_rate"
+            ],
+            0
+        ],
+        "gimbalJointRates.y": [
+            [
+                "upper_ratelimit_y",
+                "lower_ratelimit_y",
+                "gimbal_joint_rates_y"
+            ],
+            0
+        ]
+    },
+    "get_deltas": {
+        "_delta_velocity": [
+            [
+                "delta_velocity"
+            ],
+            0
+        ],
+        "_delta_angle": [
+            [
+                "delta_angle"
+            ],
+            0
+        ],
+        "delta_start_us": [
+            [
+                "micros"
+            ],
+            1
+        ],
+        "_delta_time_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    }
+}

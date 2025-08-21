@@ -1,0 +1,87 @@
+{
+    "set_bus_clock": {
+        "index": [
+            [
+                "bus"
+            ],
+            0
+        ]
+    },
+    "init": {
+        "_dev": [
+            [
+                "nullptr",
+                "px4_i2cbus_initialize_get_device_bus"
+            ],
+            0
+        ],
+        "bus_index": [
+            [
+                "get_device_bus"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_error",
+                "einval",
+                "init",
+                "enoent",
+                "probe"
+            ],
+            0
+        ]
+    },
+    "transfer": {
+        "ret_transfer": [
+            [
+                "i2c_transfer_msgv",
+                "i2c_transfer_msgs",
+                "i2c_transfer__dev"
+            ],
+            0
+        ],
+        ".flags": [
+            [
+                "i2c_m_read"
+            ],
+            0
+        ],
+        ".length": [
+            [
+                "send_len",
+                "recv_len"
+            ],
+            0
+        ],
+        ".frequency": [
+            [
+                "get_device_bus",
+                "_bus_clocks"
+            ],
+            0
+        ],
+        ".addr": [
+            [
+                "get_device_address"
+            ],
+            0
+        ],
+        ".buffer": [
+            [
+                "uint8_t",
+                "const_cast",
+                "recv",
+                "send"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "px4_ok",
+                "px4_error"
+            ],
+            0
+        ]
+    }
+}

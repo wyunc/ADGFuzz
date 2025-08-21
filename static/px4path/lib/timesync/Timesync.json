@@ -1,0 +1,108 @@
+{
+    "update": {
+        "tsync_status.round_trip_time": [
+            [
+                "originate_timestamp_ns",
+                "now_us",
+                "1000ull"
+            ],
+            1
+        ],
+        "tsync_status.estimated_offset": [
+            [
+                "int64_t",
+                "_time_offset"
+            ],
+            0
+        ],
+        "tsync_status.source_protocol": [
+            [
+                "_source"
+            ],
+            0
+        ],
+        "tsync_status.observed_offset": [
+            [
+                "1000ull",
+                "int64_t",
+                "originate_timestamp_ns",
+                "remote_timestamp_ns",
+                "now_us"
+            ],
+            1
+        ],
+        "_filter_alpha": [
+            [
+                "alpha_gain_final",
+                "exp_progress",
+                "alpha_gain_initial"
+            ],
+            1
+        ],
+        "_filter_beta": [
+            [
+                "beta_gain_initial",
+                "exp_progress",
+                "beta_gain_final"
+            ],
+            1
+        ],
+        "deviation": [
+            [
+                "llabs_int64_t_time_offset",
+                "1000ull",
+                "int64_t",
+                "originate_timestamp_ns",
+                "remote_timestamp_ns",
+                "now_us"
+            ],
+            1
+        ],
+        "progress": [
+            [
+                "double",
+                "convergence_window",
+                "_sequence"
+            ],
+            0
+        ],
+        "tsync_status.remote_timestamp": [
+            [
+                "remote_timestamp_ns",
+                "1000ull"
+            ],
+            0
+        ],
+        "tsync_status.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "add_sample": {
+        "_time_skew": [
+            [
+                "_filter_beta",
+                "_filter_alpha",
+                "offset_us",
+                "time_offset_prev"
+            ],
+            1
+        ]
+    },
+    "reset_filter": {
+        "_filter_beta": [
+            [
+                "beta_gain_initial"
+            ],
+            0
+        ],
+        "_filter_alpha": [
+            [
+                "alpha_gain_initial"
+            ],
+            0
+        ]
+    }
+}

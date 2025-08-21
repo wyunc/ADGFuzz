@@ -1,0 +1,11 @@
+{
+    "init": {
+        "fd_": [
+            [
+                "open_o_nonblock",
+                "open_o_rdwr"
+            ],
+            0
+        ]
+    }
+}

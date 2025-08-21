@@ -1,0 +1,20 @@
+{
+    "motor_test_output": {
+        "motor_test.start_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pwm": [
+            [
+                "motor_test_throttle_value",
+                "plane_get_throttle_input",
+                "float",
+                "motors_get_pwm_output_min",
+                "motors_get_pwm_output_max"
+            ],
+            2
+        ]
+    }
+}

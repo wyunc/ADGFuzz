@@ -1,0 +1,86 @@
+{
+    "setPosVelYawSourceSet": {
+        "active_source_set": [
+            [
+                "uint8_t",
+                "source_set_idx"
+            ],
+            0
+        ]
+    },
+    "align_inactive_sources": {
+        "visual_odom": [
+            [
+                "dal_visualodom"
+            ],
+            0
+        ]
+    },
+    "configured": {
+        "_configured": [
+            [
+                "_source_set",
+                "_posxy_configured"
+            ],
+            0
+        ]
+    },
+    "pre_arm_check": {
+        "visualodom_available": [
+            [
+                "dal_visualodom",
+                "vo_enabled"
+            ],
+            1
+        ],
+        "have_rangefinder": [
+            [
+                "dal_rangefinder_has_orientation_rotation_pitch_270",
+                "dal_rangefinder",
+                "nullptr"
+            ],
+            0
+        ],
+        "beacon_available": [
+            [
+                "dal_beacon_enabled",
+                "nullptr",
+                "dal_beacon"
+            ],
+            0
+        ]
+    },
+    "ext_nav_enabled": {
+        "src": [
+            [
+                "i",
+                "_source_set"
+            ],
+            0
+        ]
+    },
+    "wheel_encoder_enabled": {
+        "src": [
+            [
+                "_source_set",
+                "i"
+            ],
+            0
+        ]
+    },
+    "gps_yaw_enabled": {
+        "yaw": [
+            [
+                "source_yaw_src_yaw_get"
+            ],
+            0
+        ],
+        "src": [
+            [
+                "_source_set",
+                "i"
+            ],
+            0
+        ]
+    }
+}

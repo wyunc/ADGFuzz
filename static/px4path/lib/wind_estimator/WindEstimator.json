@@ -1,0 +1,117 @@
+{
+    "initialise": {
+        "initial_sideslip_var": [
+            [
+                "sq_radians",
+                "sq_initial_beta_error_deg"
+            ],
+            0
+        ],
+        "initial_heading_var": [
+            [
+                "sq_radians",
+                "sq_initial_heading_error_deg"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "dt": [
+            [
+                "float",
+                "time_now",
+                "1e"
+            ],
+            0
+        ],
+        "_time_last_update": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "_P": [
+            [
+                "qk"
+            ],
+            0
+        ]
+    },
+    "fuse_airspeed": {
+        "_P": [
+            [
+                "_p",
+                "k",
+                "h_tas"
+            ],
+            0
+        ],
+        "_time_last_airspeed_fuse": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "meas_is_rejected": [
+            [
+                "check_if_meas_is_rejected__tas_gate",
+                "check_if_meas_is_rejected__tas_innov",
+                "check_if_meas_is_rejected__tas_innov_var"
+            ],
+            0
+        ],
+        "_initialised": [
+            [
+                "initialise_vel_i",
+                "initialise_q_att_psi",
+                "_tas_var",
+                "true_airspeed",
+                "initialise_hor_vel_variance",
+                "initialise_eulerf"
+            ],
+            0
+        ]
+    },
+    "fuse_beta": {
+        "_time_last_beta_fuse": [
+            [
+                "time_now"
+            ],
+            0
+        ],
+        "meas_is_rejected": [
+            [
+                "check_if_meas_is_rejected__beta_innov_var",
+                "check_if_meas_is_rejected__beta_innov",
+                "check_if_meas_is_rejected__beta_gate"
+            ],
+            0
+        ],
+        "_initialised": [
+            [
+                "initialise_q_att_psi",
+                "initialise_vel_i",
+                "initialise_eulerf",
+                "initialise_hor_vel_variance"
+            ],
+            0
+        ],
+        "_P": [
+            [
+                "h_beta",
+                "k",
+                "_p"
+            ],
+            0
+        ]
+    },
+    "run_sanity_checks": {
+        "tmp": [
+            [
+                "_p_row",
+                "_p_column"
+            ],
+            0
+        ]
+    }
+}

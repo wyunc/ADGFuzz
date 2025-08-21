@@ -1,0 +1,140 @@
+{
+    "init": {
+        "serial_manager": [
+            [
+                "serialmanager"
+            ],
+            0
+        ]
+    },
+    "send_LTM": {
+        "lt_crc": [
+            [
+                "0x00"
+            ],
+            0
+        ]
+    },
+    "send_Gframe": {
+        "lat": [
+            [
+                "loc_lat"
+            ],
+            0
+        ],
+        "fix_type": [
+            [
+                "gps_status",
+                "uint8_t"
+            ],
+            0
+        ],
+        "gndspeed": [
+            [
+                "roundf_gps_ground_speed",
+                "uint8_t"
+            ],
+            0
+        ],
+        "sats_visible": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "loc_lng"
+            ],
+            0
+        ],
+        "alt": [
+            [
+                "roundf_alt_ahrs",
+                "int32_t"
+            ],
+            0
+        ]
+    },
+    "send_Sframe": {
+        "amp": [
+            [
+                "roundf_current",
+                "uint16_t"
+            ],
+            0
+        ],
+        "flightmode": [
+            [
+                "flags_flight_mode"
+            ],
+            0
+        ],
+        "armstat": [
+            [
+                "flags_armed"
+            ],
+            0
+        ],
+        "failsafe": [
+            [
+                "flags_failsafe_radio"
+            ],
+            0
+        ],
+        "ap_rssi": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "volt": [
+            [
+                "roundf_battery_voltage",
+                "uint16_t"
+            ],
+            0
+        ],
+        "rssi": [
+            [
+                "ap_rssi_read_receiver_rssi_uint8"
+            ],
+            0
+        ],
+        "airspeed": [
+            [
+                "uint8_t",
+                "roundf_aspeed_get_airspeed"
+            ],
+            0
+        ]
+    },
+    "send_Aframe": {
+        "pitch": [
+            [
+                "roundf_ahrs_pitch_sensor"
+            ],
+            0
+        ],
+        "heading": [
+            [
+                "roundf_ahrs_yaw_sensor"
+            ],
+            0
+        ],
+        "roll": [
+            [
+                "roundf_ahrs_roll_sensor"
+            ],
+            0
+        ]
+    },
+    "tick": {
+        "_last_frame_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

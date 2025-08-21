@@ -1,0 +1,73 @@
+{
+    "controlGnssHeightFusion": {
+        "noise": [
+            [
+                "max_gps_sample_vacc",
+                "_params_pos_noaid_noise",
+                "max__params_gps_pos_noise"
+            ],
+            0
+        ],
+        "aid_src": [
+            [
+                "_aid_src_gnss_hgt"
+            ],
+            0
+        ],
+        "measurement": [
+            [
+                "_params_imu_pos_body",
+                "_params_gps_pos_body",
+                "_r_to_earth",
+                "gps_sample_alt"
+            ],
+            3
+        ],
+        "measurement_var": [
+            [
+                "sq_noise"
+            ],
+            0
+        ],
+        "aid_src.time_last_fuse": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "measurement_valid": [
+            [
+                "px4_isfinite_measurement_var",
+                "px4_isfinite_measurement"
+            ],
+            0
+        ],
+        "is_fusion_failing": [
+            [
+                "is_timed_out__params_hgt_fusion_timeout_max",
+                "is_timed_out_aid_src_time_last_fuse"
+            ],
+            0
+        ],
+        "_height_sensor_ref": [
+            [
+                "gnss"
+            ],
+            0
+        ],
+        "bias_est": [
+            [
+                "_gps_hgt_b_est"
+            ],
+            0
+        ]
+    },
+    "stopGpsHgtFusion": {
+        "_height_sensor_ref": [
+            [
+                "unknown"
+            ],
+            0
+        ]
+    }
+}

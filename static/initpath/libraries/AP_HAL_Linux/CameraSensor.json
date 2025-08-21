@@ -1,0 +1,44 @@
+{
+    "set_format": {
+        "fd": [
+            [
+                "open__device_path",
+                "open_o_rdwr",
+                "open_o_cloexec"
+            ],
+            0
+        ],
+        "fmt.format.code": [
+            [
+                "format"
+            ],
+            0
+        ],
+        "fmt.which": [
+            [
+                "v4l2_subdev_format_active"
+            ],
+            0
+        ],
+        "ret": [
+            [
+                "ioctl_fmt",
+                "ioctl_fd",
+                "ioctl_vidioc_subdev_s_fmt"
+            ],
+            0
+        ],
+        "fmt.format.height": [
+            [
+                "height"
+            ],
+            0
+        ],
+        "fmt.format.width": [
+            [
+                "width"
+            ],
+            0
+        ]
+    }
+}

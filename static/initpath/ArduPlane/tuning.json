@@ -1,0 +1,46 @@
+{
+    "save_value": {
+        "f": [
+            [
+                "get_param_pointer_parm"
+            ],
+            0
+        ]
+    },
+    "set_value": {
+        "current_value": [
+            [
+                "f_get"
+            ],
+            0
+        ],
+        "param_bit": [
+            [
+                "parm",
+                "1ull"
+            ],
+            0
+        ],
+        "f": [
+            [
+                "get_param_pointer_parm"
+            ],
+            0
+        ]
+    },
+    "reload_value": {
+        "f": [
+            [
+                "get_param_pointer_parm"
+            ],
+            0
+        ],
+        "param_bit": [
+            [
+                "1ull",
+                "parm"
+            ],
+            0
+        ]
+    }
+}

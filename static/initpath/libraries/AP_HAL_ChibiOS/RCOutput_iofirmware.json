@@ -1,0 +1,151 @@
+{
+    "dshot_send_trampoline": {
+        "rcout": [
+            [
+                "p",
+                "rc_output"
+            ],
+            0
+        ]
+    },
+    "rcout_thread": {
+        "timeout_period_us": [
+            [
+                "_dshot_rate",
+                "_dshot_period_us"
+            ],
+            0
+        ],
+        "_dshot_cycle": [
+            [
+                "_dshot_rate"
+            ],
+            0
+        ],
+        "cycle_start_us": [
+            [
+                "_dshot_rate",
+                "rcout_micros",
+                "rcout_micros"
+            ],
+            2
+        ],
+        "rcout_thread_ctx": [
+            [
+                "ch_thd_get_self_x"
+            ],
+            0
+        ]
+    },
+    "bdshot_disable_pwm_f1": {
+        "TIMx": [
+            [
+                "group_pwm_drv_tim"
+            ],
+            0
+        ]
+    },
+    "bdshot_reset_pwm_f1": {
+        "BDTR": [
+            [
+                "stm32_tim_bdtr_moe",
+                "group_pwm_drv_config_bdtr"
+            ],
+            0
+        ],
+        "TIMx": [
+            [
+                "group_pwm_drv_tim"
+            ],
+            0
+        ],
+        "CR1": [
+            [
+                "stm32_tim_cr1_cen",
+                "stm32_tim_cr1_urs",
+                "stm32_tim_cr1_arpe"
+            ],
+            0
+        ],
+        "CR2": [
+            [
+                "group_pwm_drv_config_cr2"
+            ],
+            0
+        ],
+        "EGR": [
+            [
+                "stm32_tim_egr_ug"
+            ],
+            0
+        ],
+        "PSC": [
+            [
+                "group_pwm_drv_config_frequency",
+                "group_pwm_drv_clock"
+            ],
+            1
+        ],
+        "ARR": [
+            [
+                "group_pwm_drv_period"
+            ],
+            0
+        ]
+    },
+    "bdshot_receive_pulses_DMAR_f1": {
+        "PSC": [
+            [
+                "group_bdshot_telempsc"
+            ],
+            0
+        ],
+        "ic_dma": [
+            [
+                "group_has_shared_ic_up_dma",
+                "group_bdshot_ic_dma",
+                "group_dma",
+                "group_bdshot_curr_telem_chan"
+            ],
+            1
+        ],
+        "CR1": [
+            [
+                "stm32_tim_cr1_urs",
+                "stm32_tim_cr1_cen",
+                "stm32_tim_cr1_udis",
+                "tim_cr1_arpe"
+            ],
+            0
+        ],
+        "DCR": [
+            [
+                "stm32_tim_dcr_dbl",
+                "stm32_tim_dcr_dba_ccr_ofs"
+            ],
+            0
+        ],
+        "dshot_state": [
+            [
+                "recv_start"
+            ],
+            0
+        ],
+        "ARR": [
+            [
+                "0x_ffff"
+            ],
+            0
+        ],
+        "ccr_ofs": [
+            [
+                "offsetof_stm32_tim_t",
+                "offsetof_ccr",
+                "1u",
+                "group_bdshot_curr_telem_chan",
+                "group_bdshot_telem_tim_ch"
+            ],
+            2
+        ]
+    }
+}

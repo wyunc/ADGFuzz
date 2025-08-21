@@ -1,0 +1,133 @@
+{
+    "start": {
+        "r": [
+            [
+                "_configure_accel",
+                "_configure_gyro",
+                "_configure_int1_pin",
+                "_configure_fifo"
+            ],
+            0
+        ]
+    },
+    "_check_err_reg": {
+        "r": [
+            [
+                "_dev_read_registers_v",
+                "_dev_read_registers_bmi160_reg_err_reg"
+            ],
+            0
+        ]
+    },
+    "_configure_accel": {
+        "r": [
+            [
+                "_dev_write_register_bmi160_acc_range_bits",
+                "_dev_write_register_bmi160_reg_acc_conf",
+                "_dev_write_register_bmi160_odr",
+                "_dev_write_register_bmi160_osr",
+                "_dev_write_register_bmi160_reg_acc_range"
+            ],
+            0
+        ],
+        "_accel_scale": [
+            [
+                "bmi160_acc_range",
+                "gravity_mss"
+            ],
+            0
+        ]
+    },
+    "_configure_gyro": {
+        "r": [
+            [
+                "_dev_write_register_bmi160_gyr_range",
+                "_dev_write_register_bmi160_reg_gyr_range",
+                "_dev_write_register_bmi160_osr",
+                "_dev_write_register_bmi160_odr",
+                "_dev_write_register_bmi160_reg_gyr_conf"
+            ],
+            0
+        ],
+        "_gyro_scale": [
+            [
+                "radians__f",
+                "radians_bmi160_gyr_range"
+            ],
+            0
+        ]
+    },
+    "_configure_int1_pin": {
+        "r": [
+            [
+                "_dev_write_register_bmi160_reg_int_map_1",
+                "_dev_write_register_bmi160_int_map_int1_fwm",
+                "_dev_write_register_bmi160_int_fwm_en",
+                "_dev_write_register_bmi160_reg_int_en_1"
+            ],
+            0
+        ],
+        "_int1_pin": [
+            [
+                "hal_gpio_channel_bmi160_int1_gpio"
+            ],
+            0
+        ]
+    },
+    "_configure_fifo": {
+        "r": [
+            [
+                "_dev_write_register_bmi160_reg_cmd",
+                "_dev_write_register_bmi160_cmd_fifo_flush"
+            ],
+            0
+        ]
+    },
+    "_read_fifo": {
+        "accel": [
+            [
+                "_accel_scale"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "_gyro_scale"
+            ],
+            0
+        ],
+        "num_samples": [
+            [
+                "sizeof_struct",
+                "sizeof_raw_data"
+            ],
+            0
+        ],
+        "num_bytes": [
+            [
+                "sizeof_raw_data",
+                "le16toh_num_bytes",
+                "sizeof_raw_data"
+            ],
+            1
+        ]
+    },
+    "_hardware_init": {
+        "ret": [
+            [
+                "_dev_read_registers_v",
+                "_dev_read_registers_bmi160_reg_chipid",
+                "_dev_read_registers_0x7f"
+            ],
+            0
+        ]
+    },
+    "_init": {
+        "ret": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ]
+    }
+}

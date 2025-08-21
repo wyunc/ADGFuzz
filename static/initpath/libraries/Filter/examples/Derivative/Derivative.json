@@ -1,0 +1,31 @@
+{
+    "loop": {
+        "t": [
+            [
+                "_0e",
+                "millis"
+            ],
+            0
+        ],
+        "output": [
+            [
+                "derivative_slope",
+                "_0e6f"
+            ],
+            0
+        ],
+        "s": [
+            [
+                "noise",
+                "sinf_t"
+            ],
+            0
+        ],
+        "t1": [
+            [
+                "micros"
+            ],
+            0
+        ]
+    }
+}

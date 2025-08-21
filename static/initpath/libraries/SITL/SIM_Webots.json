@@ -1,0 +1,195 @@
+{
+    "parse_sensors": {
+        "key": [
+            [
+                "keytable",
+                "i"
+            ],
+            0
+        ],
+        "length": [
+            [
+                "n"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "float_array",
+                "struct",
+                "vector3f_array",
+                "vector3f",
+                "key_ptr"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "realloc_float",
+                "realloc_sizeof",
+                "n",
+                "float",
+                "realloc_vector3f",
+                "vector3f",
+                "realloc_v_data"
+            ],
+            1
+        ],
+        "p": [
+            [
+                "strchr_p",
+                "strstr_key_section",
+                "strstr_json",
+                "strlen_key_section",
+                "strlen_key_key",
+                "strstr_p",
+                "strstr_key_key"
+            ],
+            0
+        ]
+    },
+    "connect_sockets": {
+        "sim_sock": [
+            [
+                "socket_apm_native_false",
+                "new_nothrow",
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "sensors_receive": {
+        "parse_ok": [
+            [
+                "parse_sensors_char_p1",
+                "parse_sensors_const"
+            ],
+            0
+        ],
+        "p1": [
+            [
+                "memrchr_p2",
+                "memrchr_sensor_buffer",
+                "uint8_t",
+                "const"
+            ],
+            0
+        ],
+        "sensor_buffer_len": [
+            [
+                "memrchr_sensor_buffer_len",
+                "memrchr_sensor_buffer",
+                "uint8_t",
+                "const",
+                "sim_sock_recv_sensor_buffer",
+                "sim_sock_recv_sensor_buffer_len",
+                "sim_sock_recv_sizeof",
+                "sensor_buffer"
+            ],
+            2
+        ]
+    },
+    "output_rover": {
+        "motor2": [
+            [
+                "input_servos"
+            ],
+            0
+        ],
+        "motor1": [
+            [
+                "input_servos"
+            ],
+            0
+        ]
+    },
+    "output_tricopter": {
+        "m_right": [
+            [
+                "motors"
+            ],
+            0
+        ],
+        "m_left": [
+            [
+                "motors"
+            ],
+            0
+        ],
+        "m_servo": [
+            [
+                "input_servos"
+            ],
+            1
+        ],
+        "m_back": [
+            [
+                "motors"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "time_now_us": [
+            [
+                "_0e6f",
+                "last_state_timestamp",
+                "state_timestamp"
+            ],
+            1
+        ],
+        "scanner.ranges": [
+            [
+                "state_scanner_ranges"
+            ],
+            0
+        ],
+        "accel_body.z": [
+            [
+                "accel_body_z",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "accel_body.x": [
+            [
+                "accel_body_x",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "valid": [
+            [
+                "sensors_receive"
+            ],
+            0
+        ],
+        "position": [
+            [
+                "vector3d_state_gps_y",
+                "vector3d_state_gps_z",
+                "vector3d_state_gps_x"
+            ],
+            0
+        ],
+        "last_state": [
+            [
+                "state"
+            ],
+            0
+        ],
+        "accel_body.y": [
+            [
+                "accel_body_y",
+                "gravity_mss"
+            ],
+            1
+        ],
+        "scanner.points": [
+            [
+                "state_scanner_points"
+            ],
+            0
+        ]
+    }
+}

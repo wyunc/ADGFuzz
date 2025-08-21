@@ -1,0 +1,108 @@
+{
+    "handle_external": {
+        "state.vdop": [
+            [
+                "pkt_vdop"
+            ],
+            0
+        ],
+        "state.velocity.z": [
+            [
+                "pkt_ned_vel_down"
+            ],
+            0
+        ],
+        "state.horizontal_accuracy": [
+            [
+                "pkt_horizontal_pos_accuracy"
+            ],
+            0
+        ],
+        "state.hdop": [
+            [
+                "pkt_hdop"
+            ],
+            0
+        ],
+        "state.vertical_accuracy": [
+            [
+                "pkt_vertical_pos_accuracy"
+            ],
+            0
+        ],
+        "state.speed_accuracy": [
+            [
+                "pkt_horizontal_vel_accuracy"
+            ],
+            0
+        ],
+        "state.last_gps_time_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.velocity.y": [
+            [
+                "pkt_ned_vel_east"
+            ],
+            0
+        ],
+        "state.num_sats": [
+            [
+                "pkt_satellites_in_view"
+            ],
+            0
+        ],
+        "state.time_week_ms": [
+            [
+                "pkt_ms_tow"
+            ],
+            0
+        ],
+        "state.velocity.x": [
+            [
+                "pkt_ned_vel_north"
+            ],
+            0
+        ],
+        "loc.lng": [
+            [
+                "pkt_longitude"
+            ],
+            0
+        ],
+        "loc.lat": [
+            [
+                "pkt_latitude"
+            ],
+            0
+        ],
+        "state.time_week": [
+            [
+                "pkt_gps_week"
+            ],
+            0
+        ],
+        "loc.alt": [
+            [
+                "pkt_msl_altitude"
+            ],
+            0
+        ],
+        "state.location": [
+            [
+                "loc"
+            ],
+            0
+        ],
+        "state.status": [
+            [
+                "pkt_fix_type",
+                "no_fix",
+                "gps_status"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "update_thread": {
+        "last_colour": [
+            [
+                "blue",
+                "green",
+                "red"
+            ],
+            1
+        ],
+        "w": [
+            [
+                "new_nothrow",
+                "nullptr",
+                "render_window_width",
+                "render_window_height",
+                "render_window_video_mode",
+                "name"
+            ],
+            0
+        ]
+    }
+}

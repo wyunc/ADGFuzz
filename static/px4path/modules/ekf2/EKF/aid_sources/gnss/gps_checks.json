@@ -1,0 +1,167 @@
+{
+    "runGnssChecks": {
+        "_last_gps_fail_us": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.hacc": [
+            [
+                "gps_hacc",
+                "_params_req_hacc"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.hdrift": [
+            [
+                "vector2f__gps_pos_deriv_filt_xy",
+                "_norm",
+                "_params_req_hdrift"
+            ],
+            1
+        ],
+        "_gps_check_fail_status.flags.vspeed": [
+            [
+                "_params_req_vdrift",
+                "fabsf__gps_vel_d_filt"
+            ],
+            0
+        ],
+        "_last_gps_pass_us": [
+            [
+                "_time_delayed_us"
+            ],
+            0
+        ],
+        "_gps_pos_deriv_filt": [
+            [
+                "filt_time_const",
+                "dt",
+                "delta_pos",
+                "constrain__gps_pos_deriv_filt",
+                "constrain_vel_limit",
+                "dt"
+            ],
+            1
+        ],
+        "_gps_alt_prev": [
+            [
+                "gps_alt"
+            ],
+            0
+        ],
+        "lon": [
+            [
+                "gps_lon"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.sacc": [
+            [
+                "_params_req_sacc",
+                "gps_sacc"
+            ],
+            0
+        ],
+        "_gps_vel_d_filt": [
+            [
+                "filt_time_const",
+                "dt",
+                "_f",
+                "_params_req_vdrift",
+                "constrain_gps_vel",
+                "_f"
+            ],
+            3
+        ],
+        "_gps_velNE_filt": [
+            [
+                "filt_time_const",
+                "dt",
+                "gps_vel_ne",
+                "_gps_vel_ne_filt"
+            ],
+            1
+        ],
+        "_gps_check_fail_status.flags.vacc": [
+            [
+                "_params_req_vacc",
+                "gps_vacc"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.nsats": [
+            [
+                "_params_req_nsats",
+                "gps_nsats"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.hspeed": [
+            [
+                "_gps_vel_ne_filt_norm",
+                "_params_req_hdrift"
+            ],
+            1
+        ],
+        "_gps_check_fail_status.flags.fix": [
+            [
+                "gps_fix_type"
+            ],
+            0
+        ],
+        "lat": [
+            [
+                "gps_lat"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.spoofed": [
+            [
+                "gps_spoofed"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.pdop": [
+            [
+                "_params_req_pdop",
+                "gps_pdop"
+            ],
+            0
+        ],
+        "_gps_check_fail_status.flags.vdrift": [
+            [
+                "_params_req_vdrift",
+                "fabsf__gps_pos_deriv_filt"
+            ],
+            1
+        ]
+    },
+    "resetGpsDriftCheckFilters": {
+        "_gps_horizontal_position_drift_rate_m_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_gps_vel_d_filt": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_gps_vertical_position_drift_rate_m_s": [
+            [
+                "nan"
+            ],
+            0
+        ],
+        "_gps_filtered_horizontal_velocity_m_s": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    }
+}

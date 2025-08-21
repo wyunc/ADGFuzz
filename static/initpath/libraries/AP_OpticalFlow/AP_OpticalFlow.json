@@ -1,0 +1,80 @@
+{
+    "init": {
+        "backend": [
+            [
+                "new_nothrow",
+                "detect_this",
+                "ap_optical_flow_sitl_this",
+                "ap_optical_flow_here_flow_this",
+                "ap_optical_flow_onboard_this"
+            ],
+            0
+        ],
+        "_log_bit": [
+            [
+                "log_bit"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "flow_scalerx_as_multiplier": [
+            [
+                "_flow_scaler_x",
+                "new_scaling_x"
+            ],
+            0
+        ],
+        "flow_scalery_as_multiplier": [
+            [
+                "new_scaling_y",
+                "_flow_scaler_y"
+            ],
+            0
+        ],
+        "new_scaling": [
+            [
+                "_calibrator_get_scalars"
+            ],
+            0
+        ],
+        "_flags.healthy": [
+            [
+                "millis",
+                "_last_update_ms"
+            ],
+            0
+        ]
+    },
+    "start_calibration": {
+        "_calibrator": [
+            [
+                "ap_optical_flow_calibrator",
+                "new_nothrow"
+            ],
+            0
+        ]
+    },
+    "update_state": {
+        "_state": [
+            [
+                "state"
+            ],
+            0
+        ],
+        "_last_update_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "Log_Write_Optflow": {
+        "logger": [
+            [
+                "get_singleton"
+            ],
+            0
+        ]
+    }
+}

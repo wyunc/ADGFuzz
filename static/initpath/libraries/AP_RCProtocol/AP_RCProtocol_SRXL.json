@@ -1,0 +1,122 @@
+{
+    "srxl_channels_get_v1v2": {
+        "channel_raw_value": [
+            [
+                "8u",
+                "1u",
+                "0x0000000fu",
+                "2u",
+                "0u",
+                "buffer",
+                "uint32_t"
+            ],
+            1
+        ],
+        "failsafe_state": [
+            [
+                "0u"
+            ],
+            0
+        ],
+        "num_values": [
+            [
+                "frame_len_full",
+                "uint8_t",
+                "3u",
+                "2u",
+                "max_values"
+            ],
+            0
+        ]
+    },
+    "srxl_channels_get_v5": {
+        "num_values": [
+            [
+                "max_values",
+                "0x7"
+            ],
+            2
+        ],
+        "v": [
+            [
+                "0x1ff",
+                "0x7ff",
+                "0x400"
+            ],
+            0
+        ],
+        "b": [
+            [
+                "i",
+                "buffer"
+            ],
+            0
+        ],
+        "failsafe_state": [
+            [
+                "buffer"
+            ],
+            0
+        ]
+    },
+    "_process_byte": {
+        "max_values": [
+            [
+                "unsigned_srxl_max_channels",
+                "max_rcin_channels",
+                "unsigned"
+            ],
+            0
+        ],
+        "crc_receiver": [
+            [
+                "uint16_t",
+                "8u",
+                "1u",
+                "buffer"
+            ],
+            1
+        ],
+        "last_data_us": [
+            [
+                "timestamp_us"
+            ],
+            0
+        ],
+        "decode_state": [
+            [
+                "state_idle",
+                "state_new",
+                "state_idle",
+                "state_collect"
+            ],
+            1
+        ],
+        "crc_fmu": [
+            [
+                "crc_xmodem_update_byte",
+                "crc_xmodem_update_crc_fmu",
+                "crc_xmodem_update_0u"
+            ],
+            0
+        ],
+        "frame_len_full": [
+            [
+                "0u",
+                "srxl_framelen_v2",
+                "srxl_framelen_v1",
+                "srxl_framelen_v5"
+            ],
+            0
+        ],
+        "frame_header": [
+            [
+                "srxl_header_v2",
+                "srxl_header_v1",
+                "srxl_header_v5",
+                "srxl_header_not_impl"
+            ],
+            0
+        ]
+    }
+}

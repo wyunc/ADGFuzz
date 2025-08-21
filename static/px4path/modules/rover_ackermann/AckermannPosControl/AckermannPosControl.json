@@ -1,0 +1,248 @@
+{
+    "updateParams": {
+        "_min_speed": [
+            [
+                "tanf__param_ra_max_str_ang_get",
+                "_param_ra_wheel_base_get",
+                "m_deg_to_rad_f",
+                "_param_ro_yaw_rate_limit_get"
+            ],
+            1
+        ]
+    },
+    "updatePosControl": {
+        "_dt": [
+            [
+                "1e",
+                "constrain_1_ms",
+                "constrain_timestamp_prev",
+                "constrain__timestamp",
+                "constrain_5000_ms"
+            ],
+            0
+        ],
+        "_timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "updateSubscriptions": {
+        "_curr_pos_ned": [
+            [
+                "vector2f_vehicle_local_position_y",
+                "vector2f_vehicle_local_position_x"
+            ],
+            0
+        ],
+        "_vehicle_yaw": [
+            [
+                "eulerf__vehicle_attitude_quaternion_psi"
+            ],
+            0
+        ],
+        "_vehicle_attitude_quaternion": [
+            [
+                "quatf_vehicle_attitude_q"
+            ],
+            0
+        ]
+    },
+    "generatePositionSetpoint": {
+        "rover_position_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "rover_position_setpoint.cruising_speed": [
+            [
+                "_param_ro_speed_limit_get"
+            ],
+            0
+        ],
+        "rover_position_setpoint.yaw": [
+            [
+                "nan"
+            ],
+            0
+        ]
+    },
+    "manualPositionMode": {
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "vector_scaling": [
+            [
+                "_param_pp_lookahd_max_get",
+                "fabsf_start_to_curr_pos",
+                "fabsf__pos_ctl_course_direction"
+            ],
+            0
+        ],
+        "start_to_curr_pos": [
+            [
+                "_curr_pos_ned",
+                "_curr_pos_ned"
+            ],
+            1
+        ],
+        "ackermann_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "yaw_setpoint": [
+            [
+                "wrap_pi_yaw_delta",
+                "wrap_pi__vehicle_yaw"
+            ],
+            0
+        ],
+        "ackermann_velocity_setpoint.backwards": [
+            [
+                "flt_epsilon",
+                "speed_body_x_setpoint"
+            ],
+            0
+        ],
+        "_pos_ctl_course_direction": [
+            [
+                "sin__vehicle_yaw",
+                "vector2f_cos",
+                "vector2f__vehicle_yaw"
+            ],
+            0
+        ]
+    },
+    "autoPositionMode": {
+        "ackermann_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "auto_stop": [
+            [
+                "distance_to_curr_wp",
+                "_param_nav_acc_rad_get"
+            ],
+            0
+        ]
+    },
+    "updateWaypointsAndAcceptanceRadius": {
+        "_waypoint_transition_angle": [
+            [
+                "calc_waypoint_transition_angle__curr_wp_ned",
+                "calc_waypoint_transition_angle__next_wp_ned",
+                "calc_waypoint_transition_angle__prev_wp_ned"
+            ],
+            0
+        ],
+        "_curr_wp_type": [
+            [
+                "position_setpoint_triplet_current_type"
+            ],
+            0
+        ],
+        "_acceptance_radius": [
+            [
+                "_param_nav_acc_rad_get"
+            ],
+            0
+        ]
+    },
+    "updateAcceptanceRadius": {
+        "pos_ctrl_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "theta": [
+            [
+                "_f",
+                "waypoint_transition_angle"
+            ],
+            0
+        ],
+        "acceptance_radius_temp": [
+            [
+                "wheel_base",
+                "sinf_max_steer_angle",
+                "tanf_theta"
+            ],
+            1
+        ],
+        "pos_ctrl_status.acceptance_radius": [
+            [
+                "default_acceptance_radius"
+            ],
+            1
+        ]
+    },
+    "calcSpeedSetpoint": {
+        "cornering_speed": [
+            [
+                "prev_acc_rad",
+                "tanf__f",
+                "tanf_waypoint_transition_angle",
+                "acc_rad",
+                "tanf_prev_waypoint_transition_angle",
+                "constrain_cruising_speed",
+                "_max_yaw_rate",
+                "constrain_cornering_speed",
+                "constrain_miss_speed_min"
+            ],
+            1
+        ]
+    },
+    "goToPositionMode": {
+        "speed_body_x_setpoint": [
+            [
+                "min_speed_setpoint",
+                "min_max_speed"
+            ],
+            0
+        ],
+        "pure_pursuit_status.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ],
+        "distance_to_target": [
+            [
+                "_curr_pos_ned",
+                "target_waypoint_ned",
+                "_norm"
+            ],
+            0
+        ],
+        "ackermann_velocity_setpoint.timestamp": [
+            [
+                "_timestamp"
+            ],
+            0
+        ]
+    },
+    "runSanityChecks": {
+        "_prev_param_check_passed": [
+            [
+                "ret"
+            ],
+            0
+        ]
+    }
+}

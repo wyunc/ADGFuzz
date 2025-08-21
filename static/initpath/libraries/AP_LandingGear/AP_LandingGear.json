@@ -1,0 +1,46 @@
+{
+    "update": {
+        "_last_height_above_ground": [
+            [
+                "constrain_int16_int16_max",
+                "constrain_int16_height_above_ground_m"
+            ],
+            1
+        ],
+        "wow_state_current": [
+            [
+                "hal_gpio_read__pin_weight_on_wheels",
+                "lg_no_wow",
+                "lg_wow",
+                "_pin_weight_on_wheels_polarity",
+                "lg_wow_unknown"
+            ],
+            1
+        ],
+        "gear_state_current": [
+            [
+                "lg_retracted",
+                "lg_retracted",
+                "lg_deployed",
+                "lg_retracting",
+                "deployed",
+                "lg_deploying",
+                "_deployed",
+                "lg_deployed"
+            ],
+            1
+        ],
+        "last_gear_event_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "last_wow_event_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    }
+}

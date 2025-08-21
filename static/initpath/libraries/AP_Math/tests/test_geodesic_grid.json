@@ -1,0 +1,65 @@
+{
+    "test_triangles_indexes": {
+        "subtriangle": [
+            [
+                "_subtriangle_index_triangle",
+                "_subtriangle_index_false",
+                "_subtriangle_index_p_v"
+            ],
+            0
+        ],
+        "expected_subtriangle": [
+            [
+                "p_section",
+                "num_subtriangles"
+            ],
+            0
+        ],
+        "triangle": [
+            [
+                "_triangle_index_false",
+                "_triangle_index_p_v"
+            ],
+            0
+        ],
+        "expected_triangle": [
+            [
+                "p_section",
+                "num_subtriangles"
+            ],
+            0
+        ]
+    },
+    "section_triangle": {
+        "b": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ],
+        "c": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ],
+        "j": [
+            [
+                "section_index"
+            ],
+            0
+        ],
+        "a": [
+            [
+                "mt",
+                "section_index",
+                "triangles"
+            ],
+            2
+        ]
+    }
+}

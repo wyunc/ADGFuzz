@@ -1,0 +1,380 @@
+{
+    "state_idle": {
+        "_current_entry.id": [
+            [
+                "0xffff"
+            ],
+            0
+        ],
+        "_entry_request.id": [
+            [
+                "0xffff"
+            ],
+            0
+        ],
+        "_current_entry.fp": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "state_listing": {
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ],
+        "MAVLINK_PACKET_SIZE": [
+            [
+                "mavlink_msg_id_log_entry_len",
+                "mavlink_num_non_payload_bytes"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "opendir_k_log_dir"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_k_log_list_file_path"
+            ],
+            0
+        ],
+        "bytes_sent": [
+            [
+                "sizeof_mavlink_log_entry_t"
+            ],
+            0
+        ],
+        "_list_request.file_index": [
+            [
+                "ftell_fp"
+            ],
+            0
+        ]
+    },
+    "state_sending_data": {
+        "MAVLINK_PACKET_SIZE": [
+            [
+                "mavlink_msg_id_log_data_len",
+                "mavlink_num_non_payload_bytes"
+            ],
+            0
+        ],
+        "msg.id": [
+            [
+                "_current_entry_id"
+            ],
+            0
+        ],
+        "_file_send_finished": [
+            [
+                "_current_entry_offset",
+                "_current_entry_size_bytes"
+            ],
+            0
+        ],
+        "offset": [
+            [
+                "ftell__current_entry_fp",
+                "_current_entry_offset"
+            ],
+            0
+        ],
+        "_current_entry.offset": [
+            [
+                "msg_count"
+            ],
+            0
+        ],
+        "chunk_finished": [
+            [
+                "_entry_request_start_offset",
+                "_entry_request_byte_count",
+                "_current_entry_offset"
+            ],
+            0
+        ],
+        "bytes_to_read": [
+            [
+                "_current_entry_size_bytes",
+                "_current_entry_offset",
+                "sizeof_msg_data"
+            ],
+            0
+        ],
+        "msg.count": [
+            [
+                "fread__current_entry_fp",
+                "fread_msg_data",
+                "fread_bytes_to_read"
+            ],
+            0
+        ],
+        "msg.ofs": [
+            [
+                "_current_entry_offset"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ],
+        "_current_entry.fp": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "bytes_sent": [
+            [
+                "mavlink_packet_size"
+            ],
+            0
+        ]
+    },
+    "handle_log_request_list": {
+        "_state": [
+            [
+                "listing"
+            ],
+            0
+        ],
+        "_list_request.last_id": [
+            [
+                "request_end",
+                "_num_logs",
+                "0xffff"
+            ],
+            0
+        ],
+        "_list_request.first_id": [
+            [
+                "request_start"
+            ],
+            0
+        ]
+    },
+    "handle_log_request_data": {
+        "_entry_request.byte_count": [
+            [
+                "request_count"
+            ],
+            0
+        ],
+        "entry.fp": [
+            [
+                "fopen_entry_filepath"
+            ],
+            0
+        ],
+        "_entry_request.start_offset": [
+            [
+                "request_ofs"
+            ],
+            0
+        ],
+        "_current_entry.offset": [
+            [
+                "_entry_request_start_offset"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "idle",
+                "sending_data"
+            ],
+            0
+        ],
+        "_current_entry.fp": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_entry_request.id": [
+            [
+                "request_id"
+            ],
+            0
+        ],
+        "_current_entry": [
+            [
+                "entry"
+            ],
+            0
+        ],
+        "entry.offset": [
+            [
+                "request_ofs"
+            ],
+            0
+        ]
+    },
+    "handle_log_request_end": {
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "handle_log_erase": {
+        "_current_entry.fp": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "_state": [
+            [
+                "idle"
+            ],
+            0
+        ]
+    },
+    "create_log_list_file": {
+        "temp_fp": [
+            [
+                "fopen_k_log_list_file_path_temp"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "opendir_k_log_dir"
+            ],
+            0
+        ],
+        "path_is_ok": [
+            [
+                "result_d_name",
+                "snprintf_sizeof",
+                "k_log_dir",
+                "snprintf_dirpath",
+                "sizeof_dirpath",
+                "int"
+            ],
+            1
+        ],
+        "result": [
+            [
+                "nullptr",
+                "readdir_dp"
+            ],
+            0
+        ]
+    },
+    "write_entries_to_file": {
+        "path_is_ok": [
+            [
+                "int",
+                "snprintf_filepath",
+                "result_d_name",
+                "dir",
+                "snprintf_sizeof",
+                "sizeof_filepath"
+            ],
+            1
+        ],
+        "result": [
+            [
+                "readdir_dp",
+                "nullptr"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "opendir_dir"
+            ],
+            0
+        ]
+    },
+    "send_log_entry": {
+        "msg.num_logs": [
+            [
+                "_num_logs"
+            ],
+            0
+        ],
+        "msg.last_log_num": [
+            [
+                "_list_request_last_id"
+            ],
+            0
+        ],
+        "msg.id": [
+            [
+                "_list_request_current_id"
+            ],
+            0
+        ],
+        "msg.time_utc": [
+            [
+                "time_utc"
+            ],
+            0
+        ],
+        "msg.size": [
+            [
+                "size_bytes"
+            ],
+            0
+        ]
+    },
+    "log_entry_from_id": {
+        "dp": [
+            [
+                "opendir_k_log_dir"
+            ],
+            0
+        ],
+        "fp": [
+            [
+                "fopen_k_log_list_file_path"
+            ],
+            0
+        ],
+        "id": [
+            [
+                "log_id"
+            ],
+            0
+        ]
+    },
+    "delete_all_logs": {
+        "result": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "dp": [
+            [
+                "opendir_dir"
+            ],
+            0
+        ],
+        "path_is_ok": [
+            [
+                "int",
+                "sizeof_filepath",
+                "result_d_name",
+                "dir",
+                "snprintf_filepath",
+                "snprintf_sizeof"
+            ],
+            1
+        ]
+    }
+}

@@ -1,0 +1,286 @@
+{
+    "calc_lift_and_drag": {
+        "remainder": [
+            [
+                "fabs_angle_of_attack_deg",
+                "constrain_int16_index_max",
+                "constrain_int16_index_width_deg",
+                "constrain_int16_aoa",
+                "index_width_deg"
+            ],
+            2
+        ],
+        "lift": [
+            [
+                "linear_interpolate_index_width_deg",
+                "array_size_lift_curve",
+                "sail_area",
+                "lift_curve",
+                "linear_interpolate_remainder",
+                "linear_interpolate_index",
+                "wind_speed",
+                "linear_interpolate_lift_curve"
+            ],
+            1
+        ],
+        "drag": [
+            [
+                "linear_interpolate_index_width_deg",
+                "drag_curve",
+                "array_size_lift_curve",
+                "sail_area",
+                "linear_interpolate_remainder",
+                "linear_interpolate_index",
+                "wind_speed",
+                "linear_interpolate_drag_curve"
+            ],
+            1
+        ],
+        "angle_of_attack_deg": [
+            [
+                "wrap_180_angle_of_attack_deg"
+            ],
+            0
+        ]
+    },
+    "get_yaw_rate": {
+        "rate": [
+            [
+                "steering",
+                "speed",
+                "m_pi",
+                "get_turn_circle_steering",
+                "m_pi"
+            ],
+            3
+        ]
+    },
+    "get_lat_accel": {
+        "yaw_rate": [
+            [
+                "get_yaw_rate_speed",
+                "get_yaw_rate_steering"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "speed",
+                "radians_yaw_rate"
+            ],
+            0
+        ]
+    },
+    "update_wave": {
+        "wave_gyro.y": [
+            [
+                "cosf_heading_dif",
+                "atanf_wave_slope",
+                "p",
+                "wave_angle_gain"
+            ],
+            2
+        ],
+        "heading_dif": [
+            [
+                "sitl_wave_direction",
+                "y"
+            ],
+            1
+        ],
+        "wave_heave": [
+            [
+                "wave_heave_gain",
+                "sitl_wave_amp",
+                "m_2pi",
+                "sitl_wave_length",
+                "cosf_wave_phase",
+                "velocity_ef_z"
+            ],
+            3
+        ],
+        "wave_phase": [
+            [
+                "m_2pi",
+                "velocity_ef_x",
+                "sinf_radians",
+                "cosf_radians",
+                "cosf_wave_heading",
+                "velocity_ef_y",
+                "sinf_wave_heading",
+                "sitl_wave_speed",
+                "delta_time",
+                "sitl_wave_length",
+                "wrap_2pi_wave_phase"
+            ],
+            5
+        ],
+        "wave_gyro.x": [
+            [
+                "sinf_heading_dif",
+                "atanf_wave_slope",
+                "r",
+                "wave_angle_gain"
+            ],
+            2
+        ],
+        "wave_gyro": [
+            [
+                "vector3f_p",
+                "vector3f_r",
+                "wave_angle_gain"
+            ],
+            0
+        ]
+    },
+    "update": {
+        "wind_apparent_ef": [
+            [
+                "wind_ef"
+            ],
+            0
+        ],
+        "tide_velocity_ef.y": [
+            [
+                "sitl_tide_speed",
+                "sinf_radians",
+                "sinf_sitl_tide_direction"
+            ],
+            0
+        ],
+        "velocity_body": [
+            [
+                "dcm_transposed"
+            ],
+            0
+        ],
+        "steering": [
+            [
+                "steering_servo_ch",
+                "input_servos",
+                "motorleft_servo_ch",
+                "input_servos",
+                "motorright_servo_ch",
+                "input_servos"
+            ],
+            2
+        ],
+        "position": [
+            [
+                "_0e",
+                "frame_time_us",
+                "_todouble",
+                "tide_velocity_ef",
+                "_0e",
+                "frame_time_us",
+                "temp_dcm"
+            ],
+            4
+        ],
+        "tide_velocity_ef.x": [
+            [
+                "cosf_radians",
+                "sitl_tide_speed",
+                "cosf_sitl_tide_direction"
+            ],
+            0
+        ],
+        "wind_apparent_dir_ef": [
+            [
+                "degrees_wind_apparent_ef_x",
+                "degrees_atan2f",
+                "degrees_wind_apparent_ef_y"
+            ],
+            0
+        ],
+        "accel_body.y": [
+            [
+                "radians_yaw_rate",
+                "velocity_body_x"
+            ],
+            1
+        ],
+        "accel_body": [
+            [
+                "dcm_transposed",
+                "mass",
+                "vector3f_throttle_force",
+                "vector3f_gravity_mss",
+                "vector3f_force_fwd",
+                "sq_speed",
+                "temp_dcm"
+            ],
+            2
+        ],
+        "aoa_deg": [
+            [
+                "input_servos",
+                "direct_wing_servo_ch",
+                "fabsf_wind_apparent_dir_bf",
+                "wrap_180_wind_apparent_dir_ef",
+                "wrap_180_degrees",
+                "wrap_180_yaw",
+                "fabsf_mainsail_angle_bf"
+            ],
+            2
+        ],
+        "gyro": [
+            [
+                "vector3f_yaw_rate",
+                "vector3f_radians",
+                "wave_gyro"
+            ],
+            0
+        ],
+        "accel_earth.z": [
+            [
+                "wave_heave"
+            ],
+            0
+        ],
+        "throttle_force": [
+            [
+                "constrain_int16_input_servos",
+                "constrain_int16_motorleft_servo_ch",
+                "constrain_int16_motorright_servo_ch",
+                "constrain_int16_input_servos",
+                "constrain_int16_throttle_servo_ch",
+                "constrain_int16_input_servos"
+            ],
+            3
+        ],
+        "mainsail_angle_bf": [
+            [
+                "input_servos",
+                "mainsail_servo_ch"
+            ],
+            0
+        ],
+        "yaw_rate": [
+            [
+                "get_yaw_rate_speed",
+                "get_yaw_rate_steering"
+            ],
+            0
+        ],
+        "force_fwd": [
+            [
+                "drag_wf",
+                "lift_wf",
+                "cosf_wind_apparent_dir_bf",
+                "cosf_radians",
+                "sinf_wind_apparent_dir_bf",
+                "sinf_radians"
+            ],
+            2
+        ],
+        "airspeed_pitot": [
+            [
+                "safe_sqrt_sq",
+                "safe_sqrt_wind_apparent_ef_x",
+                "sq_wind_apparent_ef_y"
+            ],
+            1
+        ]
+    }
+}

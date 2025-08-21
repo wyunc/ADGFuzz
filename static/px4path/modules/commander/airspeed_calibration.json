@@ -1,0 +1,37 @@
+{
+    "do_airspeed_calibration": {
+        "result": [
+            [
+                "px4_ok"
+            ],
+            0
+        ],
+        "diff_pres": [
+            [
+                "diff_pres_sub_get"
+            ],
+            0
+        ],
+        "calibration_started": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "differential_pressure_sum": [
+            [
+                "diff_pres_differential_pressure_pa",
+                "_f"
+            ],
+            0
+        ],
+        "differential_pressure_pa": [
+            [
+                "diff_pres_differential_pressure_pa",
+                "maxcount",
+                "differential_pressure_sum_count"
+            ],
+            2
+        ]
+    }
+}

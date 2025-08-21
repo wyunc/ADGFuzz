@@ -1,0 +1,441 @@
+{
+    "_init": {
+        "success": [
+            [
+                "_hardware_init"
+            ],
+            0
+        ],
+        "_drdy_pin": [
+            [
+                "hal_gpio_channel_invensense_drdy_pin"
+            ],
+            0
+        ]
+    },
+    "_fifo_reset": {
+        "last_reset_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "_last_stat_user_ctrl": [
+            [
+                "bit_user_ctrl_fifo_en",
+                "user_ctrl"
+            ],
+            0
+        ]
+    },
+    "start": {
+        "product_id": [
+            [
+                "_register_read_mpureg_product_id"
+            ],
+            0
+        ],
+        "adev": [
+            [
+                "devtype_ins_icm20601",
+                "devtype_ins_icm20689",
+                "devtype_acc_mpu6000",
+                "devtype_ins_icm20789",
+                "devtype_ins_icm20602",
+                "devtype_acc_mpu9250"
+            ],
+            0
+        ],
+        "v": [
+            [
+                "_register_read_mpureg_int_pin_cfg",
+                "bit_int_rd_clear",
+                "bit_latch_int_en"
+            ],
+            0
+        ],
+        "_fifo_accel_scale": [
+            [
+                "_f",
+                "gravity_mss",
+                "_accel_fifo_downsample_rate"
+            ],
+            1
+        ],
+        "gdev": [
+            [
+                "devtype_gyr_mpu9250",
+                "devtype_ins_icm20601",
+                "devtype_ins_icm20689",
+                "devtype_ins_icm20789",
+                "devtype_ins_icm20602",
+                "devtype_gyr_mpu6000"
+            ],
+            0
+        ],
+        "_saved_y_ofs_high": [
+            [
+                "_register_read_mpureg_acc_off_y_h"
+            ],
+            0
+        ],
+        "_fifo_buffer": [
+            [
+                "uint8_t",
+                "hal_util_malloc_type_mem_dma_safe",
+                "hal_util_malloc_type_mpu_fifo_buffer_len",
+                "hal_util_malloc_type_mpu_sample_size"
+            ],
+            0
+        ],
+        "_clip_limit": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "_fifo_gyro_scale": [
+            [
+                "radians",
+                "_gyro_fifo_downsample_rate"
+            ],
+            1
+        ]
+    },
+    "update": {
+        "last_fast_reset_count_report_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "last_fast_reset_count": [
+            [
+                "fast_reset_count"
+            ],
+            0
+        ]
+    },
+    "_data_ready": {
+        "status": [
+            [
+                "_register_read_mpureg_int_status"
+            ],
+            0
+        ]
+    },
+    "_check_register_change": {
+        "v": [
+            [
+                "_register_read_next_reg"
+            ],
+            0
+        ],
+        "next_reg": [
+            [
+                "array_size_reg_value"
+            ],
+            0
+        ]
+    },
+    "_accumulate": {
+        "temp": [
+            [
+                "temp_sensitivity",
+                "int16_val_data",
+                "temp_zero"
+            ],
+            1
+        ],
+        "fsync_set": [
+            [
+                "1u",
+                "int16_val_data"
+            ],
+            0
+        ],
+        "accel": [
+            [
+                "_accel_scale"
+            ],
+            0
+        ],
+        "_temp_filtered": [
+            [
+                "_temp_filter_apply_temp"
+            ],
+            0
+        ],
+        "data": [
+            [
+                "i",
+                "mpu_sample_size",
+                "samples"
+            ],
+            0
+        ],
+        "gyro": [
+            [
+                "_gyro_scale"
+            ],
+            0
+        ]
+    },
+    "_accumulate_sensor_rate_sampling": {
+        "data": [
+            [
+                "samples",
+                "mpu_sample_size",
+                "i"
+            ],
+            0
+        ],
+        "g2": [
+            [
+                "g",
+                "_gyro_scale"
+            ],
+            0
+        ],
+        "a2": [
+            [
+                "_accel_scale",
+                "a"
+            ],
+            0
+        ],
+        "_accum.gyro": [
+            [
+                "g",
+                "_fifo_gyro_scale"
+            ],
+            0
+        ],
+        "_temp_filtered": [
+            [
+                "_temp_filter_apply_temp"
+            ],
+            0
+        ],
+        "unscaled_clip_limit": [
+            [
+                "_accel_scale",
+                "_clip_limit"
+            ],
+            0
+        ],
+        "temp": [
+            [
+                "temp_zero",
+                "int16_val_data",
+                "float",
+                "static_cast",
+                "n_samples",
+                "temp_sensitivity"
+            ],
+            2
+        ],
+        "_accum.accel": [
+            [
+                "_accum_accel_filter_apply_a",
+                "_fifo_accel_scale"
+            ],
+            0
+        ]
+    },
+    "_read_fifo": {
+        "y_ofs": [
+            [
+                "_register_read_mpureg_acc_off_y_h"
+            ],
+            0
+        ],
+        "rx": [
+            [
+                "_fifo_buffer"
+            ],
+            0
+        ],
+        "reg": [
+            [
+                "0x80",
+                "mpureg_fifo_r_w"
+            ],
+            0
+        ],
+        "n_samples": [
+            [
+                "mpu_fifo_buffer_len",
+                "mpu_sample_size",
+                "uint16_val_rx"
+            ],
+            2
+        ]
+    },
+    "_check_raw_temp": {
+        "_raw_temp": [
+            [
+                "int16_val_trx"
+            ],
+            0
+        ]
+    },
+    "_set_filter_register": {
+        "config": [
+            [
+                "mpureg_config_ext_sync_az",
+                "mpureg_config_ext_sync_shift"
+            ],
+            0
+        ],
+        "_gyro_fifo_downsample_rate": [
+            [
+                "constrain_int16_get_fast_sampling_rate",
+                "loop_limit"
+            ],
+            1
+        ],
+        "_accel_fifo_downsample_rate": [
+            [
+                "constrain_int16_get_fast_sampling_rate",
+                "loop_limit"
+            ],
+            1
+        ],
+        "_fast_sampling": [
+            [
+                "_dev_bus_type",
+                "bus_type_spi"
+            ],
+            0
+        ],
+        "fifo_size": [
+            [
+                "invensense_icm20689",
+                "_mpu_type",
+                "invensense_icm20789"
+            ],
+            0
+        ],
+        "_gyro_backend_rate_hz": [
+            [
+                "constrain_int16_get_fast_sampling_rate",
+                "loop_limit"
+            ],
+            1
+        ],
+        "_accel_backend_rate_hz": [
+            [
+                "constrain_int16_get_fast_sampling_rate",
+                "loop_limit"
+            ],
+            1
+        ]
+    },
+    "_check_whoami": {
+        "_mpu_type": [
+            [
+                "invensense_mpu9250",
+                "invensense_icm20601",
+                "invensense_icm20689",
+                "invensense_mpu6500",
+                "invensense_mpu6000",
+                "invensense_icm20608",
+                "invensense_icm20602",
+                "invensense_icm20789"
+            ],
+            0
+        ],
+        "whoami": [
+            [
+                "_register_read_mpureg_whoami"
+            ],
+            0
+        ]
+    },
+    "_hardware_init": {
+        "_last_stat_user_ctrl": [
+            [
+                "_register_read_mpureg_user_ctrl"
+            ],
+            0
+        ]
+    },
+    "_set_passthrough": {
+        "addr": [
+            [
+                "_addr",
+                "bit_read_flag"
+            ],
+            0
+        ],
+        "backend": [
+            [
+                "from__bus_get_backend"
+            ],
+            0
+        ]
+    },
+    "passthrough_read": {
+        "backend": [
+            [
+                "from__bus_get_backend"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_set_passthrough_size",
+                "_set_passthrough_reg"
+            ],
+            0
+        ]
+    },
+    "passthrough_write": {
+        "backend": [
+            [
+                "from__bus_get_backend"
+            ],
+            0
+        ],
+        "r": [
+            [
+                "_set_passthrough_reg",
+                "_set_passthrough_val"
+            ],
+            0
+        ]
+    },
+    "read": {
+        "backend": [
+            [
+                "from__bus_get_backend"
+            ],
+            0
+        ]
+    },
+    "_configure_slaves": {
+        "backend": [
+            [
+                "from__ins_backend"
+            ],
+            0
+        ]
+    },
+    "_configure_periodic_read": {
+        "mpu_slave": [
+            [
+                "ap_invensense_auxiliary_bus_slave",
+                "slave",
+                "static_cast"
+            ],
+            0
+        ],
+        "_ext_sens_data": [
+            [
+                "size"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "init": {
+        "angle_rad": [
+            [
+                "proximity_sector_width_deg",
+                "float",
+                "_sector_middle_deg",
+                "sector"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "float",
+                "_pitch_middle_deg",
+                "layer"
+            ],
+            0
+        ]
+    },
+    "set_face_attributes": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_filtered_distance": {
+        "dt": [
+            [
+                "_last_update_ms",
+                "face_sector",
+                "millis",
+                "face_layer"
+            ],
+            1
+        ]
+    },
+    "update_boundary": {
+        "prev_sector_ccw": [
+            [
+                "get_prev_sector_prev_sector"
+            ],
+            0
+        ],
+        "shortest_distance": [
+            [
+                "proximity_boundary_dist_default",
+                "proximity_boundary_dist_min",
+                "_get_layer",
+                "get_next_sector_sector",
+                "_get_next_sector",
+                "get_prev_sector_sector",
+                "face_sector",
+                "_get__get",
+                "_filtered_distance",
+                "_get",
+                "_get_sector",
+                "_get__filtered_distance",
+                "face_layer"
+            ],
+            4
+        ]
+    },
+    "reset_face": {
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "check_face_timeout": {
+        "_last_check_face_timeout_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "get_distance": {
+        "distance": [
+            [
+                "face_layer",
+                "face_sector",
+                "_distance"
+            ],
+            0
+        ]
+    },
+    "convert_obstacle_num_to_face": {
+        "face.sector": [
+            [
+                "obstacle_num",
+                "proximity_num_sectors"
+            ],
+            1
+        ],
+        "valid_sector": [
+            [
+                "get_next_sector_valid_sector",
+                "obstacle_num",
+                "proximity_num_sectors"
+            ],
+            1
+        ],
+        "face.layer": [
+            [
+                "obstacle_num",
+                "proximity_num_sectors"
+            ],
+            1
+        ]
+    },
+    "get_obstacle": {
+        "start": [
+            [
+                "get_next_sector_face_sector",
+                "face_layer",
+                "_boundary_points"
+            ],
+            1
+        ],
+        "end": [
+            [
+                "face_sector",
+                "face_layer",
+                "_boundary_points"
+            ],
+            1
+        ],
+        "vec_to_obstacle": [
+            [
+                "point_on_line_closest_to_other_point_vector3f",
+                "point_on_line_closest_to_other_point_end",
+                "point_on_line_closest_to_other_point_start"
+            ],
+            0
+        ]
+    },
+    "closest_point_from_segment_to_obstacle": {
+        "start": [
+            [
+                "get_next_sector_face_sector",
+                "face_layer",
+                "_boundary_points"
+            ],
+            1
+        ],
+        "end": [
+            [
+                "face_layer",
+                "face_sector",
+                "_boundary_points"
+            ],
+            1
+        ]
+    },
+    "get_closest_object": {
+        "angle_deg": [
+            [
+                "proximity_middle_layer",
+                "sector",
+                "_angle"
+            ],
+            3
+        ],
+        "distance": [
+            [
+                "proximity_middle_layer",
+                "_distance",
+                "sector"
+            ],
+            3
+        ]
+    },
+    "get_horizontal_object_angle_and_distance": {
+        "angle_deg": [
+            [
+                "_angle",
+                "proximity_middle_layer",
+                "object_number"
+            ],
+            0
+        ],
+        "distance": [
+            [
+                "_get",
+                "proximity_middle_layer",
+                "object_number",
+                "_filtered_distance"
+            ],
+            0
+        ]
+    },
+    "get_obstacle_info": {
+        "pitch_deg": [
+            [
+                "proximity_num_sectors",
+                "obstacle_num",
+                "_pitch",
+                "proximity_num_sectors",
+                "obstacle_num"
+            ],
+            2
+        ],
+        "angle_deg": [
+            [
+                "_angle",
+                "proximity_num_sectors",
+                "obstacle_num",
+                "proximity_num_sectors",
+                "obstacle_num"
+            ],
+            2
+        ],
+        "distance": [
+            [
+                "_get",
+                "proximity_num_sectors",
+                "obstacle_num",
+                "proximity_num_sectors",
+                "obstacle_num",
+                "_filtered_distance"
+            ],
+            2
+        ]
+    },
+    "get_filtered_distance": {
+        "distance": [
+            [
+                "_get",
+                "face_layer",
+                "_filtered_distance",
+                "face_sector"
+            ],
+            0
+        ]
+    }
+}

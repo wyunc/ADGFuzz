@@ -1,0 +1,213 @@
+{
+    "parse": {
+        "msg.checksum": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "msg.length": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "n_processed": [
+            [
+                "process_message"
+            ],
+            0
+        ],
+        "msg.state": [
+            [
+                "data",
+                "endtx",
+                "length",
+                "packettype",
+                "status",
+                "checksum",
+                "starttx"
+            ],
+            0
+        ],
+        "msg.packettype": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "msg.status": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "msg.endtx": [
+            [
+                "temp"
+            ],
+            0
+        ],
+        "msg.checksumcalc": [
+            [
+                "temp"
+            ],
+            0
+        ]
+    },
+    "process_message": {
+        "a": [
+            [
+                "msg_data",
+                "1u"
+            ],
+            1
+        ],
+        "maxpageidx": [
+            [
+                "msg_data"
+            ],
+            0
+        ],
+        "output_type": [
+            [
+                "msg_data"
+            ],
+            0
+        ],
+        "trans_number": [
+            [
+                "msg_data"
+            ],
+            0
+        ],
+        "pageidx": [
+            [
+                "msg_data"
+            ],
+            0
+        ]
+    },
+    "parse_pos_time": {
+        "pos_time.pos_flags2": [
+            [
+                "msg_data",
+                "a"
+            ],
+            0
+        ],
+        "pos_time.time_week": [
+            [
+                "be32toh_ptr_a",
+                "be32toh_ptr_msg_data"
+            ],
+            0
+        ],
+        "pos_time.num_sats": [
+            [
+                "msg_data",
+                "a"
+            ],
+            0
+        ],
+        "pos_time.pos_flags1": [
+            [
+                "msg_data",
+                "a"
+            ],
+            0
+        ],
+        "pos_time.time_week_ms": [
+            [
+                "be32toh_ptr_a",
+                "be32toh_ptr_msg_data"
+            ],
+            0
+        ]
+    },
+    "parse_pos": {
+        "position.altitude": [
+            [
+                "be64todouble_ptr_msg_data",
+                "be64todouble_ptr_a"
+            ],
+            0
+        ],
+        "position.longitude_rad": [
+            [
+                "be64todouble_ptr_msg_data",
+                "be64todouble_ptr_a"
+            ],
+            0
+        ],
+        "position.latitude_rad": [
+            [
+                "be64todouble_ptr_msg_data",
+                "be64todouble_ptr_a"
+            ],
+            0
+        ]
+    },
+    "parse_vel": {
+        "vel.horizontal_velocity": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ],
+        "vel.vertical_velocity": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ],
+        "vel.heading": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ],
+        "vel.velocity_flags": [
+            [
+                "a",
+                "msg_data"
+            ],
+            0
+        ]
+    },
+    "parse_dop": {
+        "dop.hdop": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ]
+    },
+    "parse_pos_sigma": {
+        "pos_sigma.sigma_up": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ],
+        "pos_sigma.sigma_east": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ],
+        "pos_sigma.sigma_north": [
+            [
+                "be32tofloat_ptr_msg_data",
+                "be32tofloat_ptr_a"
+            ],
+            0
+        ]
+    }
+}

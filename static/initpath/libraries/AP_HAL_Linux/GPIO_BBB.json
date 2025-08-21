@@ -1,0 +1,83 @@
+{
+    "init": {
+        "reg_value": [
+            [
+                "cm_per",
+                "i",
+                "cm_offsets"
+            ],
+            0
+        ],
+        ".out": [
+            [
+                "gpio_out",
+                "gpio_bank",
+                "_base",
+                "i"
+            ],
+            0
+        ],
+        ".base": [
+            [
+                "mmap_mem_fd",
+                "mmap_gpio_size",
+                "mmap_prot_write",
+                "mmap_offsets",
+                "mmap_map_shared",
+                "unsigned",
+                "mmap_prot_read",
+                "volatile",
+                "mmap_i"
+            ],
+            0
+        ],
+        ".oe": [
+            [
+                "gpio_oe",
+                "gpio_bank",
+                "_base",
+                "i"
+            ],
+            0
+        ],
+        ".in": [
+            [
+                "gpio_in",
+                "gpio_bank",
+                "_base",
+                "i"
+            ],
+            0
+        ]
+    },
+    "pinMode": {
+        "bankpin": [
+            [
+                "0x1f",
+                "pin"
+            ],
+            0
+        ],
+        "bank": [
+            [
+                "pin"
+            ],
+            0
+        ]
+    },
+    "write": {
+        "bank": [
+            [
+                "pin"
+            ],
+            0
+        ],
+        "bankpin": [
+            [
+                "pin",
+                "0x1f"
+            ],
+            0
+        ]
+    }
+}

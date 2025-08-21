@@ -1,0 +1,67 @@
+{
+    "update_sensor_instance": {
+        "data.high_temp": [
+            [
+                "data_low_temp",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "finished": [
+            [
+                "data_hot_soaked"
+            ],
+            0
+        ],
+        "relative_temperature": [
+            [
+                "data_sensor_sample_filt",
+                "data_ref_temp",
+                "double"
+            ],
+            0
+        ],
+        "data.device_id": [
+            [
+                "gyro_data_device_id"
+            ],
+            0
+        ],
+        "data.ref_temp": [
+            [
+                "_min_temperature_rise",
+                "data_sensor_sample_filt"
+            ],
+            0
+        ],
+        "data.low_temp": [
+            [
+                "data_sensor_sample_filt"
+            ],
+            0
+        ]
+    },
+    "finish": {
+        "result": [
+            [
+                "param_set_no_notification_param_find",
+                "enabled"
+            ],
+            0
+        ]
+    },
+    "finish_sensor_instance": {
+        "result": [
+            [
+                "param_set_no_notification_str",
+                "px4_ok",
+                "float",
+                "coef_index",
+                "res",
+                "axis_index",
+                "param_set_no_notification_param_find"
+            ],
+            1
+        ]
+    }
+}

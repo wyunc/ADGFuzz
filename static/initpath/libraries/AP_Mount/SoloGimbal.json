@@ -1,0 +1,317 @@
+{
+    "present": {
+        "_state": [
+            [
+                "gimbal_state_not_present"
+            ],
+            0
+        ]
+    },
+    "aligned": {
+        "_state": [
+            [
+                "gimbal_state_present_running"
+            ],
+            0
+        ]
+    },
+    "receive_feedback": {
+        "_state": [
+            [
+                "gimbal_state_present_initializing",
+                "gimbal_state_present_running",
+                "gimbal_state_present_aligning",
+                "gimbal_state_not_present"
+            ],
+            0
+        ],
+        "_filtered_joint_angles": [
+            [
+                "_measurement_joint_angles"
+            ],
+            0
+        ],
+        "_last_report_msg_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "send_controls": {
+        "_ang_vel_dem_rads": [
+            [
+                "get_ang_vel_dem_roll_tilt_quat_est",
+                "_ang_vel_dem_rads_len",
+                "radians",
+                "get_ang_vel_dem_yaw_quat_est",
+                "_ang_vel_dem_rads_length",
+                "get_ang_vel_dem_feedforward_quat_est",
+                "get_ang_vel_dem_body_lock",
+                "get_ang_vel_dem_gyro_bias"
+            ],
+            1
+        ],
+        "_max_torque": [
+            [
+                "max_torque"
+            ],
+            0
+        ],
+        "_ang_vel_dem_radsLen": [
+            [
+                "_ang_vel_dem_rads_length"
+            ],
+            0
+        ]
+    },
+    "extract_feedback": {
+        "_measurement.delta_velocity.y": [
+            [
+                "is_zero_accel_gain_y",
+                "accel_gain_y",
+                "report_msg_delta_velocity_y"
+            ],
+            0
+        ],
+        "_log_del_ang": [
+            [
+                "_measurement_delta_angles"
+            ],
+            0
+        ],
+        "_measurement.joint_angles.x": [
+            [
+                "report_msg_joint_roll"
+            ],
+            0
+        ],
+        "_ang_vel_mag_filt": [
+            [
+                "ang_vel_length",
+                "_measurement_delta_time"
+            ],
+            1
+        ],
+        "_log_dt": [
+            [
+                "_measurement_delta_time"
+            ],
+            0
+        ],
+        "_measurement.delta_velocity.z": [
+            [
+                "report_msg_delta_velocity_z",
+                "accel_gain_z",
+                "is_zero_accel_gain_z"
+            ],
+            0
+        ],
+        "_measurement.joint_angles.y": [
+            [
+                "report_msg_joint_el"
+            ],
+            0
+        ],
+        "_measurement.delta_angles.y": [
+            [
+                "report_msg_delta_angle_y"
+            ],
+            0
+        ],
+        "_measurement.delta_angles.x": [
+            [
+                "report_msg_delta_angle_x"
+            ],
+            0
+        ],
+        "_measurement.delta_angles.z": [
+            [
+                "report_msg_delta_angle_z"
+            ],
+            0
+        ],
+        "_measurement.joint_angles.z": [
+            [
+                "report_msg_joint_az"
+            ],
+            0
+        ],
+        "_log_del_vel": [
+            [
+                "_measurement_delta_velocity"
+            ],
+            0
+        ],
+        "_measurement.delta_velocity": [
+            [
+                "_measurement_delta_time",
+                "_gimbal_params_get_accel_bias"
+            ],
+            0
+        ],
+        "_measurement.delta_angles": [
+            [
+                "_measurement_delta_time",
+                "_gimbal_params_get_gyro_bias"
+            ],
+            0
+        ],
+        "_measurement.delta_velocity.x": [
+            [
+                "is_zero_accel_gain_x",
+                "accel_gain_x"
+            ],
+            0
+        ],
+        "_measurement.joint_angles": [
+            [
+                "_gimbal_params_get_joint_bias"
+            ],
+            0
+        ],
+        "_measurement.delta_time": [
+            [
+                "report_msg_delta_time"
+            ],
+            0
+        ],
+        "accel_gain": [
+            [
+                "_gimbal_params_get_accel_gain"
+            ],
+            0
+        ],
+        "ang_vel": [
+            [
+                "_measurement_delta_time",
+                "ekf_gyro_bias",
+                "_measurement_delta_angles"
+            ],
+            0
+        ]
+    },
+    "readVehicleDeltaAngle": {
+        "dAng": [
+            [
+                "ins_get_loop_rate_hz",
+                "ins_get_gyro_ins_index"
+            ],
+            0
+        ]
+    },
+    "update_fast": {
+        "_vehicle_delta_angles": [
+            [
+                "d_ang"
+            ],
+            0
+        ]
+    },
+    "update_joint_angle_est": {
+        "_filtered_joint_angles": [
+            [
+                "joint_del_ang",
+                "_measurement_joint_angles",
+                "tc",
+                "_measurement_delta_time"
+            ],
+            2
+        ],
+        "delta_angle_bias": [
+            [
+                "_measurement_delta_time"
+            ],
+            1
+        ]
+    },
+    "update_target": {
+        "_att_target_euler_rad.x": [
+            [
+                "radians_radians",
+                "_att_target_euler_rad_x",
+                "new_target_x"
+            ],
+            0
+        ],
+        "_att_target_euler_rad.y": [
+            [
+                "radians_radians",
+                "_att_target_euler_rad_y",
+                "new_target_y"
+            ],
+            0
+        ]
+    },
+    "write_logs": {
+        "tstamp": [
+            [
+                "micros64"
+            ],
+            0
+        ]
+    },
+    "gimbal_ang_vel_to_joint_rates": {
+        "joint_rates.z": [
+            [
+                "ang_vel_z",
+                "cosf__measurement_joint_angles_x",
+                "ang_vel_x",
+                "sinf__measurement_joint_angles_y",
+                "cosf__measurement_joint_angles_y"
+            ],
+            4
+        ],
+        "joint_rates.x": [
+            [
+                "ang_vel_x",
+                "ang_vel_z",
+                "cosf__measurement_joint_angles_y",
+                "sinf__measurement_joint_angles_y"
+            ],
+            2
+        ],
+        "joint_rates.y": [
+            [
+                "ang_vel_z",
+                "cosf__measurement_joint_angles_x",
+                "sinf__measurement_joint_angles_x",
+                "ang_vel_x",
+                "ang_vel_y",
+                "sinf__measurement_joint_angles_y",
+                "cosf__measurement_joint_angles_y"
+            ],
+            5
+        ]
+    },
+    "joint_rates_to_gimbal_ang_vel": {
+        "ang_vel.y": [
+            [
+                "joint_rates_y",
+                "joint_rates_z",
+                "sinf__measurement_joint_angles_x"
+            ],
+            1
+        ],
+        "ang_vel.z": [
+            [
+                "sinf__measurement_joint_angles_y",
+                "joint_rates_x",
+                "cosf__measurement_joint_angles_y",
+                "cosf__measurement_joint_angles_x",
+                "joint_rates_z"
+            ],
+            3
+        ],
+        "ang_vel.x": [
+            [
+                "sinf__measurement_joint_angles_y",
+                "joint_rates_x",
+                "cosf__measurement_joint_angles_y",
+                "cosf__measurement_joint_angles_x",
+                "joint_rates_z"
+            ],
+            3
+        ]
+    }
+}

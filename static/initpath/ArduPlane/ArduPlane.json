@@ -1,0 +1,314 @@
+{
+    "get_scheduler_tasks": {
+        "task_count": [
+            [
+                "array_size_scheduler_tasks"
+            ],
+            0
+        ],
+        "log_bit": [
+            [
+                "mask_log_pm"
+            ],
+            0
+        ],
+        "tasks": [
+            [
+                "scheduler_tasks"
+            ],
+            0
+        ]
+    },
+    "ahrs_update": {
+        "steer_state.locked_course_err": [
+            [
+                "wrap_pi_steer_state_locked_course_err",
+                "g_dt",
+                "ahrs_get_yaw_rate_earth"
+            ],
+            0
+        ],
+        "pitch_limit_min": [
+            [
+                "fabsf_ahrs_cos_roll",
+                "aparm_pitch_limit_min"
+            ],
+            0
+        ],
+        "roll_limit_cd": [
+            [
+                "aparm_roll_limit",
+                "ahrs_cos_pitch"
+            ],
+            0
+        ]
+    },
+    "update_speed_height": {
+        "should_run_tecs": [
+            [
+                "control_mode_does_auto_throttle"
+            ],
+            0
+        ]
+    },
+    "update_logging10": {
+        "log_faster": [
+            [
+                "should_log_mask_log_attitude_fast",
+                "should_log_mask_log_attitude_fullrate"
+            ],
+            0
+        ]
+    },
+    "update_logging25": {
+        "log_faster": [
+            [
+                "should_log_mask_log_attitude_fullrate"
+            ],
+            0
+        ]
+    },
+    "one_second_loop": {
+        "last_home_update_ms": [
+            [
+                "gps_last_message_time_ms"
+            ],
+            0
+        ],
+        "loop_rate": [
+            [
+                "scheduler_get_filtered_loop_rate_hz"
+            ],
+            0
+        ],
+        "mavlink_system.sysid": [
+            [
+                "g_sysid_this_mav"
+            ],
+            0
+        ],
+        "flags.armed": [
+            [
+                "arming_arming_required",
+                "arming_is_armed",
+                "no"
+            ],
+            0
+        ],
+        "flags.pre_arm_check": [
+            [
+                "arming_pre_arm_checks_false"
+            ],
+            0
+        ]
+    },
+    "airspeed_ratio_update": {
+        "vg": [
+            [
+                "gps_velocity"
+            ],
+            0
+        ]
+    },
+    "update_GPS_10Hz": {
+        "last_gps_msg_ms": [
+            [
+                "gps_last_message_time_ms"
+            ],
+            0
+        ],
+        "next_WP_loc": [
+            [
+                "home",
+                "prev_wp_loc"
+            ],
+            0
+        ]
+    },
+    "set_flight_stage": {
+        "flight_stage": [
+            [
+                "land"
+            ],
+            1
+        ]
+    },
+    "update_alt": {
+        "tecs_target_alt_cm": [
+            [
+                "relative_target_altitude_cm",
+                "g2_rtl_climb_min",
+                "prev_wp_loc_alt",
+                "home_alt"
+            ],
+            0
+        ],
+        "auto_state.sink_rate": [
+            [
+                "auto_state_sink_rate",
+                "barometer_get_climb_rate",
+                "vel_z",
+                "gps_velocity_z"
+            ],
+            1
+        ],
+        "should_run_tecs": [
+            [
+                "control_mode_does_auto_throttle"
+            ],
+            0
+        ],
+        "distance_beyond_land_wp": [
+            [
+                "current_loc_get_distance_next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "trigger_land_abort": {
+        "plane.auto_state.takeoff_altitude_rel_cm": [
+            [
+                "climb_to_alt_m"
+            ],
+            0
+        ],
+        "mission_id": [
+            [
+                "plane_mission_get_current_nav_cmd_id"
+            ],
+            0
+        ]
+    },
+    "tecs_hgt_afe": {
+        "hgt_afe": [
+            [
+                "rangefinder_correction",
+                "relative_altitude",
+                "height_above_target"
+            ],
+            0
+        ]
+    },
+    "get_wp_distance_m": {
+        "distance": [
+            [
+                "quadplane_using_wp_nav",
+                "quadplane_wp_nav_get_wp_distance_to_destination",
+                "auto_state_wp_distance"
+            ],
+            0
+        ]
+    },
+    "get_wp_bearing_deg": {
+        "bearing": [
+            [
+                "quadplane_using_wp_nav",
+                "quadplane_wp_nav_get_wp_bearing_to_destination",
+                "nav_controller_target_bearing_cd"
+            ],
+            0
+        ]
+    },
+    "get_wp_crosstrack_error_m": {
+        "xtrack_error": [
+            [
+                "quadplane_wp_nav_crosstrack_error",
+                "nav_controller_crosstrack_error",
+                "quadplane_using_wp_nav"
+            ],
+            0
+        ]
+    },
+    "set_target_location": {
+        "loc.alt": [
+            [
+                "plane_home_alt"
+            ],
+            0
+        ]
+    },
+    "get_target_location": {
+        "target_loc": [
+            [
+                "next_wp_loc"
+            ],
+            0
+        ]
+    },
+    "update_target_location": {
+        "next_WP_loc": [
+            [
+                "new_loc"
+            ],
+            0
+        ],
+        "mode_qloiter.last_target_loc_set_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_velocity_match": {
+        "quadplane.poscontrol.last_velocity_match_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "quadplane.poscontrol.velocity_match": [
+            [
+                "velocity"
+            ],
+            0
+        ]
+    },
+    "set_land_descent_rate": {
+        "quadplane.poscontrol.override_descent_rate": [
+            [
+                "descent_rate"
+            ],
+            0
+        ],
+        "quadplane.poscontrol.last_override_descent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "set_crosstrack_start": {
+        "prev_WP_loc": [
+            [
+                "new_start_location"
+            ],
+            0
+        ]
+    },
+    "get_osd_roll_pitch_rad": {
+        "roll": [
+            [
+                "quadplane_ahrs_view_roll",
+                "ahrs_get_roll"
+            ],
+            0
+        ],
+        "pitch": [
+            [
+                "g_pitch_trim",
+                "deg_to_rad",
+                "quadplane_ahrs_view_pitch",
+                "ahrs_get_pitch"
+            ],
+            0
+        ]
+    },
+    "update_current_loc": {
+        "have_position": [
+            [
+                "plane_ahrs_get_location_plane_current_loc"
+            ],
+            0
+        ]
+    }
+}

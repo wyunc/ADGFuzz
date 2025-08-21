@@ -1,0 +1,281 @@
+{
+    "init": {
+        "_port": [
+            [
+                "serialmanager_find_serial_serial_protocol_smart_audio"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "_last_request_sent_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "update_vtx_params": {
+        "pitMode": [
+            [
+                "vtx_get_configured_pitmode"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "0x01",
+                "0x04",
+                "uint8_t_vtx_unlocked",
+                "vtx_get_configured_options"
+            ],
+            1
+        ],
+        "_vtx_freq_change_pending": [
+            [
+                "vtx_update_band",
+                "vtx_update_channel",
+                "vtx_update_frequency"
+            ],
+            0
+        ],
+        "_vtx_options_change_pending": [
+            [
+                "vtx_update_options"
+            ],
+            0
+        ],
+        "_vtx_power_change_pending": [
+            [
+                "vtx_update_power"
+            ],
+            0
+        ]
+    },
+    "send_request": {
+        "request": [
+            [
+                "uint8_t",
+                "reinterpret_cast",
+                "const",
+                "request_frame"
+            ],
+            0
+        ]
+    },
+    "read_response": {
+        "response_buffer": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "correct_parse": [
+            [
+                "parse_response_buffer_response_buffer"
+            ],
+            0
+        ],
+        "header": [
+            [
+                "frame_header"
+            ],
+            0
+        ],
+        "_packet_size": [
+            [
+                "header_length"
+            ],
+            0
+        ],
+        "_packets_sent": [
+            [
+                "_packets_rcvd"
+            ],
+            0
+        ],
+        "response_in_bytes": [
+            [
+                "_port_read"
+            ],
+            0
+        ],
+        "incoming_bytes_count": [
+            [
+                "sizeof_frame_header",
+                "_port_available"
+            ],
+            1
+        ],
+        "b": [
+            [
+                "_port_read"
+            ],
+            0
+        ]
+    },
+    "push_command_only_frame": {
+        "command.frame_size": [
+            [
+                "smartaudio_command_frame_size"
+            ],
+            0
+        ]
+    },
+    "push_uint8_command_frame": {
+        "command.frame_size": [
+            [
+                "smartaudio_u8_command_frame_size"
+            ],
+            0
+        ]
+    },
+    "push_uint16_command_frame": {
+        "command.frame_size": [
+            [
+                "smartaudio_u16_command_frame_size"
+            ],
+            0
+        ]
+    },
+    "unpack_settings": {
+        "power_in_dbm": [
+            [
+                "frame_power_dbm"
+            ],
+            0
+        ],
+        "channel": [
+            [
+                "frame_channel",
+                "vtx_max_channels"
+            ],
+            0
+        ],
+        "num_power_levels": [
+            [
+                "frame_num_power_levels"
+            ],
+            0
+        ],
+        "mode": [
+            [
+                "frame_operation_mode"
+            ],
+            0
+        ],
+        "band": [
+            [
+                "frame_channel",
+                "vtx_max_channels"
+            ],
+            0
+        ],
+        "power": [
+            [
+                "frame_power"
+            ],
+            0
+        ]
+    },
+    "update_vtx_settings": {
+        "opts": [
+            [
+                "0x10",
+                "settings_mode",
+                "0x2"
+            ],
+            0
+        ],
+        "_vtx_use_set_freq": [
+            [
+                "settings_mode"
+            ],
+            0
+        ],
+        "_vtx_power_change_pending": [
+            [
+                "_vtx_options_change_pending",
+                "_vtx_freq_change_pending"
+            ],
+            0
+        ]
+    },
+    "parse_response_buffer": {
+        "fullFrameLength": [
+            [
+                "sizeof_frame_header",
+                "header_length"
+            ],
+            0
+        ],
+        "endPtr": [
+            [
+                "header_payload_length",
+                "buffer"
+            ],
+            0
+        ],
+        "startPtr": [
+            [
+                "buffer"
+            ],
+            0
+        ],
+        "resp": [
+            [
+                "u8response_frame",
+                "const",
+                "u16response_frame",
+                "buffer"
+            ],
+            0
+        ],
+        "_protocol_version": [
+            [
+                "smartaudio_spec_protocol_v1",
+                "smartaudio_spec_protocol_v21",
+                "smartaudio_spec_protocol_v2"
+            ],
+            0
+        ],
+        "headerPayloadLength": [
+            [
+                "full_frame_length"
+            ],
+            0
+        ],
+        "settings.version": [
+            [
+                "smartaudio_spec_protocol_v1",
+                "smartaudio_spec_protocol_v21",
+                "smartaudio_spec_protocol_v2"
+            ],
+            0
+        ],
+        "power": [
+            [
+                "0x_ff",
+                "resp_payload"
+            ],
+            0
+        ],
+        "header": [
+            [
+                "const",
+                "buffer",
+                "frame_header"
+            ],
+            0
+        ]
+    },
+    "update_baud_rate": {
+        "_smartbaud": [
+            [
+                "_smartbaud_direction",
+                "ap_smartaudio_smartbaud_step"
+            ],
+            0
+        ]
+    }
+}

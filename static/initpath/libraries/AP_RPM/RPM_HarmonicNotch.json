@@ -1,0 +1,19 @@
+{
+    "update": {
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.rate_rpm": [
+            [
+                "state_instance",
+                "notch_calculated_notch_freq_hz",
+                "_scaling",
+                "ap_rpm__params"
+            ],
+            0
+        ]
+    }
+}

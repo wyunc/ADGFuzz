@@ -1,0 +1,24 @@
+{
+    "read_sensor_data": {
+        "nbytes": [
+            [
+                "_uart_available"
+            ],
+            0
+        ]
+    },
+    "update_sector_data": {
+        "_last_distance_received_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "face": [
+            [
+                "frontend_boundary_get_face_angle_deg"
+            ],
+            0
+        ]
+    }
+}

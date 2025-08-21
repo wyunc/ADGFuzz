@@ -1,0 +1,77 @@
+{
+    "update_land_and_crash_detectors": {
+        "accel_ef.z": [
+            [
+                "gravity_mss"
+            ],
+            0
+        ],
+        "accel_ef": [
+            [
+                "ahrs_get_accel_ef"
+            ],
+            0
+        ]
+    },
+    "Log_LDET": {
+        "land_detector.last_logged_flags": [
+            [
+                "logging_flags"
+            ],
+            0
+        ],
+        "land_detector.last_logged_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "land_detector.last_logged_count": [
+            [
+                "detector_count"
+            ],
+            0
+        ]
+    },
+    "update_throttle_mix": {
+        "descent_not_demanded": [
+            [
+                "pos_control_get_vel_desired_cms_z"
+            ],
+            0
+        ],
+        "accel_moving": [
+            [
+                "land_check_accel_moving",
+                "land_accel_ef_filter_get_length"
+            ],
+            0
+        ],
+        "large_angle_request": [
+            [
+                "angle_target_xy_length",
+                "land_check_large_angle_cd"
+            ],
+            0
+        ],
+        "large_angle_error": [
+            [
+                "attitude_control_get_att_error_angle_deg",
+                "land_check_angle_error_deg"
+            ],
+            1
+        ],
+        "landing": [
+            [
+                "flightmode_is_landing"
+            ],
+            0
+        ],
+        "angle_target": [
+            [
+                "attitude_control_get_att_target_euler_cd"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "update": {
+        "last_init_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "init_sensor": {
+        "continuous_message": [
+            [
+                "distance_simple",
+                "uint16_t",
+                "static_cast"
+            ],
+            0
+        ],
+        "ping_interval": [
+            [
+                "_sensor_rate_ms"
+            ],
+            0
+        ]
+    },
+    "get_reading": {
+        "averageStruct.sum_cm": [
+            [
+                "protocol_get_distance_mm"
+            ],
+            0
+        ],
+        "reading_m": [
+            [
+                "average_struct_mean"
+            ],
+            0
+        ]
+    },
+    "send_message": {
+        "crc": [
+            [
+                "highbyte_payload_len",
+                "_frame_header1",
+                "_dst_id",
+                "_src_id",
+                "_frame_header2",
+                "lowbyte_msg_id",
+                "highbyte_msg_id",
+                "payload",
+                "lowbyte_payload_len",
+                "i"
+            ],
+            0
+        ]
+    }
+}

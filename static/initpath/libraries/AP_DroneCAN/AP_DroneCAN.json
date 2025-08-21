@@ -1,0 +1,1008 @@
+{
+    "init": {
+        "mem_pool": [
+            [
+                "uint32_t",
+                "sizeof_uint32_t",
+                "new_nothrow",
+                "_pool_size"
+            ],
+            0
+        ],
+        "node_status_msg.health": [
+            [
+                "uavcan_protocol_nodestatus_health_ok"
+            ],
+            0
+        ],
+        "node_status_msg.mode": [
+            [
+                "uavcan_protocol_nodestatus_mode_operational"
+            ],
+            0
+        ],
+        "node_info_rsp.name.len": [
+            [
+                "sizeof_node_info_rsp_name_data",
+                "driver_index",
+                "hal_util_snprintf_charnode_info_rsp_name_data"
+            ],
+            0
+        ],
+        "subscribed": [
+            [
+                "subscribe_msgs_this"
+            ],
+            0
+        ],
+        "node_info_rsp.hardware_version.major": [
+            [
+                "ap_dronecan_hw_vers_major"
+            ],
+            0
+        ],
+        "node_info_rsp.software_version.major": [
+            [
+                "ap_dronecan_sw_vers_major"
+            ],
+            0
+        ],
+        "node_info_rsp.hardware_version.minor": [
+            [
+                "ap_dronecan_hw_vers_minor"
+            ],
+            0
+        ],
+        "uid_len": [
+            [
+                "sizeof_unique_id"
+            ],
+            0
+        ],
+        "node_info_rsp.software_version.minor": [
+            [
+                "ap_dronecan_sw_vers_minor"
+            ],
+            0
+        ],
+        "node": [
+            [
+                "ap_dronecan_default_node",
+                "_dronecan_node"
+            ],
+            0
+        ]
+    },
+    "loop": {
+        "servo_period_us": [
+            [
+                "1000000ul",
+                "unsigned__servo_rate_hz_get"
+            ],
+            0
+        ],
+        "_SRV_last_send_us": [
+            [
+                "micros"
+            ],
+            1
+        ]
+    },
+    "hobbywing_ESC_update": {
+        "hobbywing.last_GetId_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_hobbywing_GetEscID": {
+        "thr_channel": [
+            [
+                "msg_payload_data"
+            ],
+            0
+        ]
+    },
+    "hobbywing_find_esc_index": {
+        "esc_index": [
+            [
+                "i",
+                "dronecan_srv_number",
+                "constrain_int16__esc_offset_get"
+            ],
+            1
+        ]
+    },
+    "send_node_status": {
+        "can_stats_msg.tx_overflow": [
+            [
+                "bus_stats_tx_overflow"
+            ],
+            0
+        ],
+        "can_stats_msg.rx_errors": [
+            [
+                "bus_stats_rx_errors"
+            ],
+            0
+        ],
+        "can_stats_msg.tx_timedout": [
+            [
+                "bus_stats_tx_timedout"
+            ],
+            0
+        ],
+        "iface": [
+            [
+                "hal_can",
+                "j"
+            ],
+            0
+        ],
+        "can_stats_msg.tx_rejected": [
+            [
+                "bus_stats_tx_rejected"
+            ],
+            0
+        ],
+        "node_status_msg.uptime_sec": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "can_stats_msg.busoff_errors": [
+            [
+                "bus_stats_num_busoff_err"
+            ],
+            0
+        ],
+        "can_stats_msg.interface": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "_node_status_last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "can_stats_msg.tx_abort": [
+            [
+                "bus_stats_tx_abort"
+            ],
+            0
+        ],
+        "can_stats_msg.rx_received": [
+            [
+                "bus_stats_rx_received"
+            ],
+            0
+        ],
+        "bus_stats": [
+            [
+                "iface_get_statistics"
+            ],
+            0
+        ],
+        "can_stats_msg.rx_overflow": [
+            [
+                "bus_stats_rx_overflow"
+            ],
+            0
+        ],
+        "can_stats_msg.tx_requests": [
+            [
+                "bus_stats_tx_requests"
+            ],
+            0
+        ],
+        "can_stats_msg.tx_success": [
+            [
+                "bus_stats_tx_success"
+            ],
+            0
+        ]
+    },
+    "handle_node_info_request": {
+        "node_info_rsp.status": [
+            [
+                "node_status_msg"
+            ],
+            0
+        ],
+        "node_info_rsp.status.uptime_sec": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "SRV_send_actuator": {
+        "cmd.command_value": [
+            [
+                "float",
+                "_pulse",
+                "_srv_conf",
+                "starting_servo"
+            ],
+            0
+        ],
+        "cmd.actuator_id": [
+            [
+                "starting_servo"
+            ],
+            0
+        ],
+        "msg.commands.len": [
+            [
+                "i"
+            ],
+            0
+        ],
+        "cmd.command_type": [
+            [
+                "uavcan_equipment_actuator_command_command_type_pwm",
+                "uavcan_equipment_actuator_command_command_type_unitless"
+            ],
+            0
+        ]
+    },
+    "SRV_send_himark": {
+        "msg.cmd.len": [
+            [
+                "i"
+            ],
+            1
+        ],
+        "pulse": [
+            [
+                "constrain_int16__srv_conf",
+                "constrain_int16__pulse",
+                "constrain_int16_i"
+            ],
+            0
+        ]
+    },
+    "SRV_send_esc": {
+        "esc_msg.cmd.len": [
+            [
+                "k"
+            ],
+            0
+        ],
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "dronecan_srv_number",
+                "constrain_int16__esc_offset_get"
+            ],
+            1
+        ]
+    },
+    "SRV_send_esc_hobbywing": {
+        "armed": [
+            [
+                "hal_util_get_soft_armed"
+            ],
+            0
+        ],
+        "i": [
+            [
+                "constrain_int16__esc_offset_get",
+                "dronecan_srv_number"
+            ],
+            1
+        ],
+        "esc_msg.command.len": [
+            [
+                "k"
+            ],
+            0
+        ]
+    },
+    "SRV_push_servos": {
+        "safety_off": [
+            [
+                "safety_disarmed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ],
+        "boardconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "_ESC_armed_mask": [
+            [
+                "_esc_bm"
+            ],
+            1
+        ],
+        ".pulse": [
+            [
+                "srv_channel_i_get_output_pwm"
+            ],
+            0
+        ],
+        "_SRV_armed_mask": [
+            [
+                "_servo_bm"
+            ],
+            1
+        ],
+        "safety_mask": [
+            [
+                "boardconfig_get_safety_mask"
+            ],
+            0
+        ]
+    },
+    "notify_state_send": {
+        "data": [
+            [
+                "uint16_t",
+                "degrees_ahrs_get_yaw",
+                "uint8_t"
+            ],
+            1
+        ],
+        "_last_notify_state_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "msg.aux_data_type": [
+            [
+                "ardupilot_indication_notifystate_vehicle_yaw_earth_centidegrees"
+            ],
+            0
+        ],
+        "now": [
+            [
+                "millis"
+            ],
+            0
+        ]
+    },
+    "gnss_send_fix": {
+        "_gnss.last_send_status_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "pkt.longitude_deg_1e8": [
+            [
+                "uint64_t_loc_lng",
+                "10ull"
+            ],
+            0
+        ],
+        "pkt_auxiliary.vdop": [
+            [
+                "gps_get_vdop"
+            ],
+            0
+        ],
+        "pkt.mode": [
+            [
+                "uavcan_equipment_gnss_fix2_mode_rtk",
+                "uavcan_equipment_gnss_fix2_mode_dgps",
+                "uavcan_equipment_gnss_fix2_mode_single"
+            ],
+            0
+        ],
+        "pkt_status.healthy": [
+            [
+                "gps_is_healthy"
+            ],
+            0
+        ],
+        "pkt.gnss_timestamp.usec": [
+            [
+                "gps_time_epoch_usec"
+            ],
+            0
+        ],
+        "pkt.height_ellipsoid_mm": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "vc3": [
+            [
+                "sq_sacc"
+            ],
+            0
+        ],
+        "pkt.sub_mode": [
+            [
+                "uavcan_equipment_gnss_fix2_sub_mode_rtk_float",
+                "uavcan_equipment_gnss_fix2_sub_mode_dgps_other",
+                "uavcan_equipment_gnss_fix2_sub_mode_dgps_sbas",
+                "uavcan_equipment_gnss_fix2_sub_mode_rtk_fixed"
+            ],
+            0
+        ],
+        "pkt.timestamp.usec": [
+            [
+                "micros64"
+            ],
+            0
+        ],
+        "pkt_status.error_codes": [
+            [
+                "error_codes"
+            ],
+            0
+        ],
+        "pkt.height_msl_mm": [
+            [
+                "loc_alt"
+            ],
+            0
+        ],
+        "pkt.status": [
+            [
+                "uavcan_equipment_gnss_fix2_status_2d_fix",
+                "uavcan_equipment_gnss_fix2_status_3d_fix",
+                "uavcan_equipment_gnss_fix2_status_no_fix"
+            ],
+            0
+        ],
+        "loc": [
+            [
+                "gps_location"
+            ],
+            0
+        ],
+        "pkt.latitude_deg_1e8": [
+            [
+                "10ull",
+                "uint64_t_loc_lat"
+            ],
+            0
+        ],
+        "_gnss.last_gps_lib_fix_ms": [
+            [
+                "gps_last_message_time_ms"
+            ],
+            1
+        ],
+        "vel": [
+            [
+                "gps_velocity"
+            ],
+            0
+        ],
+        "pkt_auxiliary.hdop": [
+            [
+                "gps_get_hdop"
+            ],
+            0
+        ],
+        "pkt.sats_used": [
+            [
+                "gps_num_sats"
+            ],
+            0
+        ],
+        "pkt.gnss_time_standard": [
+            [
+                "uavcan_equipment_gnss_fix2_gnss_time_standard_none",
+                "uavcan_equipment_gnss_fix2_gnss_time_standard_utc"
+            ],
+            0
+        ]
+    },
+    "gnss_send_yaw": {
+        "pkt_heading.heading_accuracy_rad": [
+            [
+                "radians_yaw_acc_deg"
+            ],
+            0
+        ],
+        "pkt_heading.heading_accuracy_valid": [
+            [
+                "is_positive_yaw_acc_deg"
+            ],
+            0
+        ],
+        "pkt_heading.heading_rad": [
+            [
+                "radians_yaw_deg"
+            ],
+            0
+        ],
+        "_gnss.last_lib_yaw_time_ms": [
+            [
+                "yaw_time_ms"
+            ],
+            0
+        ]
+    },
+    "safety_state_send": {
+        "state": [
+            [
+                "safety_armed",
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ],
+        "_last_safety_state_ms": [
+            [
+                "millis"
+            ],
+            1
+        ],
+        "safety_msg.status": [
+            [
+                "ardupilot_indication_safetystate_status_safety_off",
+                "ardupilot_indication_safetystate_status_safety_on"
+            ],
+            0
+        ]
+    },
+    "relay_hardpoint_send": {
+        "_relay.last_send_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    },
+    "handle_button": {
+        "brdconfig": [
+            [
+                "get_singleton"
+            ],
+            0
+        ],
+        "state": [
+            [
+                "hal_util_safety_switch_state"
+            ],
+            0
+        ]
+    },
+    "handle_traffic_report": {
+        "pkt.squawk": [
+            [
+                "msg_squawk"
+            ],
+            0
+        ],
+        "pkt.altitude": [
+            [
+                "msg_alt_m"
+            ],
+            0
+        ],
+        "vehicle.last_update_ms": [
+            [
+                "vehicle_info_tslc",
+                "millis"
+            ],
+            0
+        ],
+        "pkt": [
+            [
+                "vehicle_info"
+            ],
+            0
+        ],
+        "pkt.ver_velocity": [
+            [
+                "msg_velocity"
+            ],
+            0
+        ],
+        "pkt.altitude_type": [
+            [
+                "adsb_altitude_type_geometric",
+                "adsb_altitude_type_pressure_qnh"
+            ],
+            0
+        ],
+        "pkt.emitter_type": [
+            [
+                "msg_traffic_type"
+            ],
+            0
+        ],
+        "pkt.lat": [
+            [
+                "msg_latitude_deg_1e7"
+            ],
+            0
+        ],
+        "pkt.tslc": [
+            [
+                "msg_tslc"
+            ],
+            0
+        ],
+        "pkt.hor_velocity": [
+            [
+                "norm_msg_velocity"
+            ],
+            0
+        ],
+        "pkt.ICAO_address": [
+            [
+                "msg_icao_address"
+            ],
+            0
+        ],
+        "pkt.lon": [
+            [
+                "msg_longitude_deg_1e7"
+            ],
+            0
+        ],
+        "pkt.heading": [
+            [
+                "degrees_msg_heading"
+            ],
+            0
+        ]
+    },
+    "handle_ESC_status": {
+        "esc_index": [
+            [
+                "dronecan_srv_number",
+                "constrain_int16__esc_offset_get",
+                "msg_esc_index"
+            ],
+            1
+        ]
+    },
+    "handle_esc_ext_status": {
+        "esc_index": [
+            [
+                "msg_esc_index",
+                "dronecan_srv_number",
+                "constrain_int16__esc_offset_get"
+            ],
+            1
+        ]
+    },
+    "handle_FlexDebug": {
+        "timestamp_us": [
+            [
+                "uint32_t_transfer_timestamp_usec"
+            ],
+            0
+        ],
+        "flexDebug_list": [
+            [
+                "flex_debug",
+                "new_nothrow",
+                "flex_debug_list"
+            ],
+            1
+        ],
+        "next": [
+            [
+                "flex_debug_list"
+            ],
+            0
+        ],
+        "node_id": [
+            [
+                "transfer_source_node_id"
+            ],
+            1
+        ]
+    },
+    "get_FlexDebug": {
+        "p": [
+            [
+                "flex_debug_list"
+            ],
+            0
+        ],
+        "timestamp_us": [
+            [
+                "p_timestamp_us"
+            ],
+            0
+        ],
+        "msg": [
+            [
+                "p_msg"
+            ],
+            0
+        ]
+    },
+    "handle_debug": {
+        "mavlink_level": [
+            [
+                "mav_severity_warning",
+                "mav_severity_error",
+                "mav_severity_debug",
+                "mav_severity_info"
+            ],
+            0
+        ],
+        "msg_level": [
+            [
+                "msg_level_value"
+            ],
+            0
+        ],
+        "log_level": [
+            [
+                "can_get_log_level"
+            ],
+            0
+        ],
+        "send_mavlink": [
+            [
+                "uint8_t_log_debug",
+                "uint8_t_log_error",
+                "uint8_t_log_warning",
+                "uint8_t_log_info",
+                "uint8_t_log_level"
+            ],
+            0
+        ]
+    },
+    "check_parameter_callback_timeout": {
+        "param_float_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "param_string_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "now_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "param_int_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "set_parameter_on_node": {
+        "param_request_sent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "param_string_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_getset_req.value.real_value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "param_float_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_getset_req.name.len": [
+            [
+                "name",
+                "strncpy_noterm_charparam_getset_req_name_data",
+                "sizeof_param_getset_req_name_data"
+            ],
+            0
+        ],
+        "param_getset_req.value.integer_value": [
+            [
+                "value"
+            ],
+            0
+        ],
+        "param_getset_req.value.union_tag": [
+            [
+                "uavcan_protocol_param_value_real_value",
+                "uavcan_protocol_param_value_string_value",
+                "uavcan_protocol_param_value_integer_value"
+            ],
+            0
+        ],
+        "param_request_node_id": [
+            [
+                "node_id"
+            ],
+            0
+        ],
+        "param_int_cb": [
+            [
+                "cb"
+            ],
+            0
+        ]
+    },
+    "get_parameter_on_node": {
+        "param_float_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_string_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_int_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_getset_req.value.union_tag": [
+            [
+                "uavcan_protocol_param_value_empty"
+            ],
+            0
+        ],
+        "param_request_node_id": [
+            [
+                "node_id"
+            ],
+            0
+        ],
+        "param_request_sent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "param_getset_req.name.len": [
+            [
+                "sizeof_param_getset_req_name_data",
+                "name",
+                "strncpy_noterm_charparam_getset_req_name_data"
+            ],
+            0
+        ]
+    },
+    "handle_param_get_set_response": {
+        "param_int_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "param_getset_req.value.real_value": [
+            [
+                "rsp_value_real_value",
+                "rsp_value_integer_value"
+            ],
+            1
+        ],
+        "param_request_node_id": [
+            [
+                "transfer_source_node_id"
+            ],
+            0
+        ],
+        "param_request_sent_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "param_string_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "param_float_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ],
+        "param_getset_req.value.union_tag": [
+            [
+                "uavcan_protocol_param_value_real_value",
+                "uavcan_protocol_param_value_string_value",
+                "uavcan_protocol_param_value_integer_value"
+            ],
+            0
+        ]
+    },
+    "save_parameters_on_node": {
+        "param_save_request_node_id": [
+            [
+                "node_id"
+            ],
+            0
+        ],
+        "save_param_cb": [
+            [
+                "cb"
+            ],
+            0
+        ],
+        "param_save_req.opcode": [
+            [
+                "uavcan_protocol_param_executeopcode_request_opcode_save"
+            ],
+            0
+        ]
+    },
+    "handle_param_save_response": {
+        "save_param_cb": [
+            [
+                "nullptr"
+            ],
+            0
+        ]
+    },
+    "send_reboot_request": {
+        "request.magic_number": [
+            [
+                "uavcan_protocol_restartnode_request_magic_number"
+            ],
+            0
+        ]
+    },
+    "check_and_reset_option": {
+        "ret": [
+            [
+                "option_is_set_option"
+            ],
+            0
+        ]
+    },
+    "logging": {
+        "s": [
+            [
+                "iface_get_statistics"
+            ],
+            1
+        ],
+        "iface": [
+            [
+                "hal_can",
+                "_driver_index"
+            ],
+            0
+        ],
+        "last_log_ms": [
+            [
+                "millis"
+            ],
+            1
+        ]
+    }
+}

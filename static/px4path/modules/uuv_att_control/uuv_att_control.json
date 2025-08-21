@@ -1,0 +1,168 @@
+{
+    "constrain_actuator_commands": {
+        "roll_u": [
+            [
+                "constrain_roll_u"
+            ],
+            0
+        ],
+        "thrust_x": [
+            [
+                "constrain_thrust_x"
+            ],
+            0
+        ],
+        "yaw_u": [
+            [
+                "constrain_yaw_u"
+            ],
+            0
+        ],
+        "pitch_u": [
+            [
+                "constrain_pitch_u"
+            ],
+            0
+        ]
+    },
+    "control_attitude_geo": {
+        "thrust_z": [
+            [
+                "attitude_setpoint_thrust_body"
+            ],
+            0
+        ],
+        "roll_body": [
+            [
+                "setpoint_euler_angles"
+            ],
+            0
+        ],
+        "pitch_rate_desired": [
+            [
+                "rates_setpoint_pitch"
+            ],
+            0
+        ],
+        "thrust_y": [
+            [
+                "attitude_setpoint_thrust_body"
+            ],
+            0
+        ],
+        "roll_rate_desired": [
+            [
+                "rates_setpoint_roll"
+            ],
+            0
+        ],
+        "pitch_u": [
+            [
+                "torques"
+            ],
+            0
+        ],
+        "pitch_body": [
+            [
+                "setpoint_euler_angles"
+            ],
+            0
+        ],
+        "roll_u": [
+            [
+                "torques"
+            ],
+            0
+        ],
+        "yaw_rate_desired": [
+            [
+                "rates_setpoint_yaw"
+            ],
+            0
+        ],
+        "yaw_body": [
+            [
+                "setpoint_euler_angles"
+            ],
+            0
+        ],
+        "e_R": [
+            [
+                "rot_att_transpose",
+                "rot_des_transpose",
+                "q_att",
+                "dcm",
+                "float",
+                "eulerf_pitch_body",
+                "eulerf_roll_body",
+                "eulerf_yaw_body"
+            ],
+            2
+        ],
+        "yaw_u": [
+            [
+                "torques"
+            ],
+            0
+        ],
+        "thrust_x": [
+            [
+                "attitude_setpoint_thrust_body"
+            ],
+            0
+        ]
+    },
+    "Run": {
+        "_vehicle_torque_setpoint.timestamp_sample": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_vehicle_thrust_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ],
+        "skip_controller": [
+            [
+                "_param_skip_ctrl_get"
+            ],
+            0
+        ],
+        "input_mode": [
+            [
+                "_param_input_mode_get"
+            ],
+            0
+        ],
+        "_vehicle_thrust_setpoint.timestamp_sample": [
+            [
+                "_f"
+            ],
+            0
+        ],
+        "_vehicle_torque_setpoint.timestamp": [
+            [
+                "hrt_absolute_time"
+            ],
+            0
+        ]
+    },
+    "task_spawn": {
+        "_task_id": [
+            [
+                "task_id_is_work_queue"
+            ],
+            0
+        ],
+        "instance": [
+            [
+                "new",
+                "uuv_attitude_control"
+            ],
+            0
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "update": {
+        "motor_mask": [
+            [
+                "sitl_state_motor_mask"
+            ],
+            0
+        ],
+        "state.last_reading_ms": [
+            [
+                "millis"
+            ],
+            0
+        ],
+        "state.rate_rpm": [
+            [
+                "state_instance",
+                "ap_rpm__params",
+                "i",
+                "sitl_state_rpm",
+                "_scaling"
+            ],
+            0
+        ]
+    }
+}
