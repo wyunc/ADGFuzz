@@ -30,6 +30,8 @@ class PostProcess:
         self.temp_value = []
         self.minm_result_file = minm_file
         self.mavcmd_param = MavcmdDictionary()
+        self._logged_min_sets = set()
+        self._io_lock = threading.Lock()
 
     def reboot_minm(self):
         self.close_and_relunch()
@@ -86,8 +88,8 @@ class PostProcess:
         elif type == 'rover':
             type = 'Rover'
 
-        # ARDUPILOT_HOME = os.getenv("ARDUPILOT_HOME")
-        ARDUPILOT_HOME = '~/code/t2-ArduPilot/'  # FIXME: for test, this should be replaced by the top line
+        ARDUPILOT_HOME = os.getenv("ARDUPILOT_HOME")
+        #ARDUPILOT_HOME = '~/code/t2-ArduPilot/'
 
         c = 'gnome-terminal -- ' + ARDUPILOT_HOME + 'Tools/autotest/sim_vehicle.py -v ' + type + ' --console --map -w --out=udp:127.0.0.1:14550 --out=udp:127.0.0.1:14551'
         sim = Popen(c, stdin=PIPE, stderr=PIPE, stdout=PIPE, shell=True)
@@ -106,7 +108,7 @@ class PostProcess:
         #rvmethod.loadmission(self.master)
 
 
-    def reuse_node(self, node, needsleep=True, sleeptime=1): #
+    def reuse_node(self, node, needsleep=True, sleeptime=2): #
         def send_mav_cmd(master, mavfunc, params):
             cmd = self.mavcmd_param.get_index(mavfunc)
             param = params.split(', ')
@@ -156,19 +158,40 @@ class PostProcess:
 
     def stop_threads(self):
         self.running.clear()
-        self.Arithm_thread.join()
+        if self.Arithm_thread and self.Arithm_thread.is_alive():
+            self.Arithm_thread.join()
 
+    def _freeze(self, obj):
+        if isinstance(obj, dict):
+            return tuple(sorted((k, self._freeze(v)) for k, v in obj.items()))
+        if isinstance(obj, (list, tuple)):
+            return tuple(self._freeze(x) for x in obj)
+        if isinstance(obj, set):
+            return tuple(sorted(self._freeze(x) for x in obj))
+        return obj
 
     def minm_inputs(self, quick_lable=True, nnindex=1):
 
-        def save_result_min(file_path1, result_min1):
-            if len(result_min1) == 1:
-                self.bug_inputs.add(result_min1[0][1])
-            logging.info(f'{result_min1} is the smallest set of inputs that can trigger a bug')
-            with open(file_path1, 'a') as file:
-                file.write('================= \n')
-                for node in result_min1:
-                    file.write(' '.join(map(str, node)) + '\n')
+        def save_result_min(file_path1, result_min_indices, test_set):
+            indices_sorted = tuple(sorted(result_min_indices))
+            with self._io_lock:
+                if indices_sorted in self._logged_min_sets:
+                    logging.info(f"(dedup) Skip writing duplicated minimal set {indices_sorted}")
+                    return
+                self._logged_min_sets.add(indices_sorted)
+
+                # nodes_tuple = tuple(test_set[i] for i in indices_sorted)
+                nodes_tuple = tuple(self._freeze(test_set[i]) for i in indices_sorted)
+                self.bug_inputs.add(nodes_tuple)
+
+
+                logging.info(f'{[test_set[i] for i in indices_sorted]} is the smallest set of inputs that can trigger a bug')
+                with open(file_path1, 'a') as file:
+                    file.write('================= \n')
+                    for i in indices_sorted:
+                        node = test_set[i]
+                        file.write(' '.join(map(str, node)) + '\n')
+
         try:
             test_set = self.case_set
             self.reboot_minm()
@@ -178,6 +201,8 @@ class PostProcess:
             if not test_set:
                 print("Test set is empty.")
                 return
+
+            result_min_indices = set()
 
             index = 0
             index_max = -1
@@ -211,7 +236,8 @@ class PostProcess:
                 self.reuse_node(node)
                 #self.bug_oracle.rv_alive(self.master)
                 if self.find_bug():
-                    result_min.append(node)
+                    #result_min.append(node)
+                    result_min_indices.add(index)
                     index_max = index
                     self.reboot_minm()
                     break
@@ -226,40 +252,34 @@ class PostProcess:
             fleft = False
 
             while index_max - index_min > 1:
-                for node in result_min:
-                    self.reuse_node(node)
-                #self.bug_oracle.rv_alive(self.master)
+                for i in sorted(result_min_indices):
+                    self.reuse_node(test_set[i])
                 if self.find_bug():
-                    save_result_min(result_file, result_min)
+                    save_result_min(result_file, result_min_indices, test_set)
                     return
 
                 while current_index > index_min and fright:
                     current_index -= 1
-                    node = test_set[current_index]
-                    self.reuse_node(node)
-                    #self.bug_oracle.rv_alive(self.master)
+                    self.reuse_node(test_set[current_index])
                     if self.find_bug():
-                        result_min.append(node)
+                        result_min_indices.add(current_index)
                         index_min = current_index
                         self.reboot_minm()
                         fright = False
                         fleft = True
                         break
 
-                for node in result_min:
-                    self.reuse_node(node)
-                #self.bug_oracle.rv_alive(self.master)
+                for i in sorted(result_min_indices):
+                    self.reuse_node(test_set[i])
                 if self.find_bug():
-                    save_result_min(result_file, result_min)
+                    save_result_min(result_file, result_min_indices, test_set)
                     return
 
                 while current_index < index_max and fleft:
                     current_index += 1
-                    node = test_set[current_index]
-                    self.reuse_node(node)
-                    #self.bug_oracle.rv_alive(self.master)
+                    self.reuse_node(test_set[current_index])
                     if self.find_bug():
-                        result_min.append(node)
+                        result_min_indices.add(current_index)
                         index_max = current_index
                         self.reboot_minm()
                         fright = True
@@ -267,9 +287,11 @@ class PostProcess:
                         break
 
             #if not found exact minm_inputs:
-            for i in range(index_min,index_max):
-                result_min.append(test_set[i])
-            save_result_min(result_file, result_min)
+            for i in range(index_min, index_max):
+                if i not in result_min_indices:
+                    result_min_indices.add(i)
+
+            save_result_min(result_file, result_min, test_set)
         finally:
             logging.info(f"Cleaning up threads for bug{self.bug_idx}")
             self.stop_threads()
