@@ -413,7 +413,7 @@ class RVoracle:
 
     def post_Arithm(self, master, bugpost):
         try:
-            retries = 2
+            retries = 6
             while bugpost.running.is_set():
                 try:
                     msg = None
