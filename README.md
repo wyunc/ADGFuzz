@@ -400,6 +400,7 @@ python test_ap.py --init 1 --run 2 --file paths/quickresult_old/bug1_ArithmExcep
 Note: If you want to close/exit RV emulator (SITL), press `Ctrl+C` in the newly opened 'Terminal' window
 
 
+### Citation Info
 
 If you find this paper helpful and would like to cite our work, please use the following BibTeX entry.
 
@@ -412,5 +413,6 @@ year={2026}
 }
 
 ```
+
 
 
