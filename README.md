@@ -126,7 +126,7 @@ git submodule update --init --recursive #[~10 minutes]
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt update
-sudo apt install openjdk-15-jdk #for ubuntu version > 22 : sudo apt install openjdk-17-jdk
+sudo apt install openjdk-15-jdk #for ubuntu version >= 22 : sudo apt install openjdk-17-jdk
 sudo apt install openjdk-11-jdk ant
 ### ----------
 
@@ -165,8 +165,7 @@ pip install -r requirements.txt
 # Ignore non-critical warnings or errors during installation.
 ```
 
-> Some parts related to argument parsing, term generation, and synonym table construction are currently hidden.
->
+
 > If you use a different Python version(e.g., 3.10.12), it is also supported; however, you will need to modify `numpy==1.24.4` in `requirements.txt` to `numpy>=1.25,<2.0`.
 
 
@@ -399,5 +398,19 @@ python test_ap.py --init 1 --run 2 --file paths/quickresult_old/bug1_ArithmExcep
 ```
 
 Note: If you want to close/exit RV emulator (SITL), press `Ctrl+C` in the newly opened 'Terminal' window
+
+
+
+If you find this paper helpful and would like to cite our work, please use the following BibTeX entry.
+
+```
+@inproceedings{adgfuzz2026wang,
+author={Yuncheng Wang and Yaowen Zheng and Puzhuo Liu and Dongliang Fang and Jiaxing Cheng and Dingyi Shi and Limin Sun},
+title={ADGFUZZ: Assignment Dependency-Guided Fuzzing for Robotic Vehicles},
+booktitle={Proceedings of the 33rd Annual Network and Distributed System Security Symposium (NDSS)},
+year={2026}
+}
+
+```
 
 
